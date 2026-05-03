@@ -19,7 +19,7 @@
 
 ### 1. إنشاء حساب Resend (إرسال الإيميل)
 - اذهب: <https://resend.com/signup>
-- سجّل بـ بريدك (`shahadealkalaf@gmail.com`)
+- سجّل بـ بريدك (`ibrrawabi@gmail.com`)
 - بعد التسجيل: <https://resend.com/api-keys> → **Create API Key**
   - Name: `ax-pulse-prod`
   - Permission: `Sending access`
@@ -39,7 +39,7 @@
 - سجّل بـ بريدك
 - بعد الدخول: **+ New Form**
   - Form name: `AX Pulse Subscribers`
-  - Email recipient: `shahadealkalaf@gmail.com`
+  - Email recipient: `ibrrawabi@gmail.com`
   - Click **Create Form**
 - انسخ الـ Form ID من الرابط (مثل `xkgwabcd`)
 
@@ -64,7 +64,7 @@ open tmp/digest-2026-05-03.html
 ### 6. تشغيل أول إيميل حقيقي يدوياً (اختبار GitHub Actions)
 - اذهب: <https://github.com/rib198/ax-pulse/actions/workflows/daily-digest.yml>
 - اضغط **Run workflow** → **Run workflow**
-- انتظر دقيقة، ثم تحقق من بريدك (`shahadealkalaf@gmail.com`)
+- انتظر دقيقة، ثم تحقق من بريدك (`ibrrawabi@gmail.com`)
 - يجب أن تستلم النشرة كاملة
 
 ---
