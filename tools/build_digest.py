@@ -30,7 +30,7 @@ OPPS_FILE = ROOT / "data" / "radar" / "opportunities.json"
 SUBSCRIBERS_FILE = ROOT / "data" / "subscribers.json"
 
 SITE_URL = os.environ.get("SITE_URL", "https://rib198.github.io/ax-pulse")
-DIGEST_FROM = os.environ.get("DIGEST_FROM", "AX Pulse <onboarding@resend.dev>")
+DIGEST_FROM = os.environ.get("DIGEST_FROM", "onboarding@resend.dev")
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
 DRY_RUN = os.environ.get("DRY_RUN", "") == "1"
 
@@ -231,6 +231,8 @@ def send_via_resend(to_email, subject, html):
         headers={
             "Authorization": f"Bearer {RESEND_API_KEY}",
             "Content-Type": "application/json",
+            "User-Agent": "AX-Pulse/1.0 (digest-sender)",
+            "Accept": "application/json",
         },
         method="POST",
     )
@@ -244,7 +246,7 @@ def send_via_resend(to_email, subject, html):
             err_body = exc.read().decode("utf-8")
         except Exception:
             err_body = str(exc)
-        return False, f"HTTP {exc.code}: {err_body[:200]}"
+        return False, f"HTTP {exc.code}: {err_body}"
     except Exception as exc:
         return False, str(exc)
 
