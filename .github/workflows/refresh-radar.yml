@@ -1,0 +1,103 @@
+name: Refresh AI Radar
+
+# Cron: every 2 hours (matches X API Basic rate-limit comfortably).
+# manual: workflow_dispatch lets you trigger from the Actions tab anytime.
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      x_limit:
+        description: 'How many X posts to request (max 100)'
+        required: false
+        default: '25'
+      days:
+        description: 'RSS window in days'
+        required: false
+        default: '30'
+
+permissions:
+  contents: write   # needed so the bot can commit data/* back
+
+concurrency:
+  group: refresh-radar
+  cancel-in-progress: false   # never overlap two runs (X rate-limit safety)
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true   # so we can push using GITHUB_TOKEN
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache translation memory
+        uses: actions/cache@v4
+        with:
+          path: data/radar/_translations_ar.json
+          key: translations-${{ github.sha }}
+          restore-keys: |
+            translations-
+
+      - name: Run pulse_radar (X + RSS + Reddit + GitHub + HN)
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: |
+          set -e
+          X_LIMIT="${{ github.event.inputs.x_limit || '25' }}"
+          if [ -z "$X_BEARER_TOKEN" ]; then
+            echo "::warning::X_BEARER_TOKEN غير مضبوط — سيتخطى الـ X collector ويعمل على RSS/Reddit/GitHub فقط"
+            python3 tools/pulse_radar.py
+          else
+            python3 tools/pulse_radar.py --x-limit "$X_LIMIT"
+          fi
+
+      - name: Run fetch_ai_newsletters (RSS supplementary)
+        run: |
+          DAYS="${{ github.event.inputs.days || '30' }}"
+          python3 tools/fetch_ai_newsletters.py --days "$DAYS" --max-per-source 40 || echo "::warning::RSS aggregator failed — continuing"
+
+      - name: Translate new signals to Arabic
+        run: |
+          python3 tools/translate_signals.py || echo "::warning::translation step failed — continuing"
+
+      - name: Commit & push data changes
+        run: |
+          git config user.name  "ax-pulse-bot"
+          git config user.email "ax-pulse-bot@users.noreply.github.com"
+
+          if git diff --quiet -- data/ ; then
+            echo "no data changes — nothing to commit"
+            exit 0
+          fi
+
+          git add data/
+          git commit -m "chore(radar): auto-refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### AX Pulse — جولة تحديث" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/radar/signals.json ]; then
+            count=$(python3 -c "import json; print(json.load(open('data/radar/signals.json')).get('count', 0))")
+            echo "- إشارات: $count" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f data/radar/opportunities.json ]; then
+            opps=$(python3 -c "import json; d=json.load(open('data/radar/opportunities.json')); print(len(d.get('opportunities', [])))")
+            echo "- فرص: $opps" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f data/newsletters/items.json ]; then
+            news=$(python3 -c "import json; print(json.load(open('data/newsletters/items.json')).get('total_items', 0))")
+            echo "- نشرات RSS: $news" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "- وقت التشغيل: $(date -u)" >> $GITHUB_STEP_SUMMARY

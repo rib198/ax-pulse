@@ -1,0 +1,62 @@
+name: Deploy to GitHub Pages
+
+# Auto-deploys the static site whenever main is updated
+# (including when refresh-radar commits new data).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build artifact (static — copy whole repo minus internal tools)
+        run: |
+          mkdir -p _site
+          # Copy everything except internal-only paths
+          rsync -av \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'tools' \
+            --exclude '.ai-bridge' \
+            --exclude 'BRIDGE.md' \
+            --exclude 'bridge' \
+            --exclude 'ai-bridge.html' \
+            --exclude 'mediator.html' \
+            --exclude 'start.command' \
+            --exclude 'start-ai-bridge.command' \
+            --exclude 'fetch.command' \
+            --exclude 'x-radar.command' \
+            --exclude '*.pyc' \
+            --exclude '__pycache__' \
+            --exclude '.DS_Store' \
+            --exclude 'ai-bridge-export-*' \
+            ./ _site/
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

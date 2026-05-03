@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AX Pulse — AI Trend Intelligence</title>
+  <meta name="description" content="The 5-minute brief that turns public AI signals into commercial alpha." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body data-page="landing">
+  <div class="landing-shell">
+    <nav class="landing-nav">
+      <div class="brand">
+        <div class="brand-mark" data-i18n="brand_mark">AX</div>
+        <div class="brand-name">
+          <span data-i18n="brand">AX Pulse</span>
+          <small data-i18n="brand_sub">AI Trend Intelligence</small>
+        </div>
+      </div>
+      <div class="landing-nav-links">
+        <a href="#features" data-i18n="nav_main">Intelligence</a>
+        <a href="#pricing">Pricing</a>
+        <a href="radar.html">Live Radar</a>
+        <a href="dashboard.html" data-i18n="cta_demo">See today's brief</a>
+      </div>
+      <div class="lang-toggle">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="ar">ع</button>
+      </div>
+    </nav>
+
+    <section class="landing-hero">
+      <div class="landing-tag">
+        <span class="live-dot"></span>
+        <span data-i18n="landing_tag">BETA · LAUNCHING WEEK 1</span>
+      </div>
+      <h1 class="landing-headline">
+        <span data-i18n="landing_headline_1">The 5-minute brief that turns</span><br/>
+        <span class="accent" data-i18n="landing_headline_2">AI signals into commercial alpha.</span>
+      </h1>
+      <p class="landing-sub" data-i18n="landing_sub">
+        AX Pulse classifies, clusters, and scores public AI signals from official sources and social communities — then hands you a ranked list of opportunities to build, sell, or invest in this week.
+      </p>
+      <div class="landing-cta">
+        <a class="btn btn-primary" href="radar.html">
+          <span>Open live radar</span>
+          <span>→</span>
+        </a>
+        <a class="btn btn-primary" href="dashboard.html">
+          <span data-i18n="cta_demo">See today's brief</span>
+          <span>→</span>
+        </a>
+        <a class="btn btn-ghost" href="#pricing" data-i18n="cta_join">Join waitlist</a>
+      </div>
+      <form class="waitlist-form">
+        <input type="email" required placeholder="you@company.com" data-i18n-attr="placeholder:waitlist_placeholder" />
+        <button type="submit" class="btn btn-primary" data-i18n="waitlist_btn">Get the brief</button>
+      </form>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="section-eyebrow" data-i18n="section_pricing_eyebrow">PRICING</div>
+      <h2 class="section-h" data-i18n="section_pricing_h">From a 5-minute habit to enterprise intelligence.</h2>
+      <p class="section-d" data-i18n="section_pricing_d">Start free. Upgrade when the brief saves you a meeting.</p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-tier" data-i18n="tier_free">Free</div>
+          <div class="price-amount" data-i18n="price_free">$0</div>
+          <div class="price-desc" data-i18n="free_desc">Daily email brief. Top 3 trends, 24-hour delay.</div>
+          <ul class="price-features">
+            <li data-i18n="feat_free_1">Daily email digest</li>
+            <li data-i18n="feat_free_2">Top 3 trends only</li>
+            <li data-i18n="feat_free_3">24-hour delay</li>
+          </ul>
+          <button class="btn btn-ghost" data-i18n="cta_start_free">Start free</button>
+        </div>
+
+        <div class="price-card featured">
+          <span class="featured-badge" data-i18n="popular_badge">POPULAR</span>
+          <div class="price-tier" data-i18n="tier_pro">Pro</div>
+          <div class="price-amount">
+            <span data-i18n="price_pro">$29</span><small data-i18n="per_month">/month</small>
+          </div>
+          <div class="price-desc" data-i18n="pro_desc">Live dashboard, full opportunity scoring, Arabic mode.</div>
+          <ul class="price-features">
+            <li data-i18n="feat_pro_1">Live dashboard, 4-hour cadence</li>
+            <li data-i18n="feat_pro_2">Full opportunity scoring</li>
+            <li data-i18n="feat_pro_3">Arabic mode + RTL UI</li>
+            <li data-i18n="feat_pro_4">Custom keyword alerts</li>
+            <li data-i18n="feat_pro_5">Notion / CSV export</li>
+          </ul>
+          <button class="btn btn-primary" data-i18n="cta_start_pro">Start 14-day trial</button>
+        </div>
+
+        <div class="price-card">
+          <div class="price-tier" data-i18n="tier_team">Team</div>
+          <div class="price-amount">
+            <span data-i18n="price_team">$99</span><small data-i18n="per_month">/month</small>
+          </div>
+          <div class="price-desc" data-i18n="team_desc">5 seats, weekly PDF report, Slack delivery.</div>
+          <ul class="price-features">
+            <li data-i18n="feat_team_1">Everything in Pro</li>
+            <li data-i18n="feat_team_2">5 seats, shared workspace</li>
+            <li data-i18n="feat_team_3">Weekly PDF report</li>
+            <li data-i18n="feat_team_4">Slack delivery</li>
+          </ul>
+          <button class="btn btn-ghost" data-i18n="cta_start_team">Start trial</button>
+        </div>
+
+        <div class="price-card">
+          <div class="price-tier" data-i18n="tier_enterprise">Enterprise</div>
+          <div class="price-amount" data-i18n="price_ent">Custom</div>
+          <div class="price-desc" data-i18n="ent_desc">Saudi market vertical, white-label reports, API.</div>
+          <ul class="price-features">
+            <li data-i18n="feat_ent_1">Everything in Team</li>
+            <li data-i18n="feat_ent_2">Saudi market vertical</li>
+            <li data-i18n="feat_ent_3">White-label reports</li>
+            <li data-i18n="feat_ent_4">API access</li>
+            <li data-i18n="feat_ent_5">Dedicated analyst</li>
+          </ul>
+          <button class="btn btn-ghost" data-i18n="cta_book">Book a call</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" data-i18n="footer">AX Pulse · Built in 12 hours · 2026</footer>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

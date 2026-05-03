@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>رادار الذكاء الاصطناعي — AX Pulse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/radar.css" />
+</head>
+<body class="radar-body layer-radar">
+  <div class="portrait-guard">
+    <div class="guard-mark">AX</div>
+    <h1>لفّي الهاتف</h1>
+    <p>تجربة الرادار مصممة للعمل بالعرض حتى تبقى الأرض والبيانات واضحة.</p>
+  </div>
+
+  <main class="radar-stage" aria-label="AI Radar">
+    <canvas id="radar-particles" class="radar-particles" aria-hidden="true"></canvas>
+
+    <nav class="radar-nav" aria-label="Radar views">
+      <button class="active" data-layer="radar">Radar</button>
+      <button data-layer="trending">Trending</button>
+      <button data-layer="opportunities">Opportunities</button>
+      <button data-layer="sources">Sources</button>
+      <button data-layer="signals">Signals</button>
+    </nav>
+
+    <div class="radar-lang" aria-label="Language toggle">
+      <button data-lang="ar">ع</button>
+      <button data-lang="en">EN</button>
+    </div>
+
+    <section class="radar-copy" aria-live="polite">
+      <span class="radar-kicker"><span></span> AX Pulse</span>
+      <h1 id="layer-title">رادار الذكاء الاصطناعي</h1>
+      <p id="layer-summary">تحديثات يومية ولحظية للأخبار والنماذج والأدوات والأسعار، مع جزء مستقل لابتكار منتجات مدعومة بالذكاء الاصطناعي وزيادة الدخل.</p>
+    </section>
+
+    <section class="radar-world" aria-label="Technical AI globe">
+      <div class="earth-aura"></div>
+      <div class="earth-halo"></div>
+      <div class="radar-disc"></div>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+      <div class="orbit orbit-three"></div>
+      <div class="orbit orbit-four"></div>
+      <div class="orbit orbit-five"></div>
+      <img class="earth-image" src="assets/img/earth-radar.png" alt="Technical glowing Earth radar" />
+      <div class="earth-overlay-lines"></div>
+      <div class="earth-scan"></div>
+      <div class="always-on-ring" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="scan-orbits" aria-hidden="true">
+        <span class="scan-orbit scan-orbit-a"></span>
+        <span class="scan-orbit scan-orbit-b"></span>
+        <span class="scan-orbit scan-orbit-c"></span>
+      </div>
+      <div class="scan-flashes" aria-hidden="true">
+        <span class="scan-flash flash-a"></span>
+        <span class="scan-flash flash-b"></span>
+        <span class="scan-flash flash-c"></span>
+        <span class="scan-flash flash-d"></span>
+      </div>
+      <div class="earth-pings" aria-hidden="true">
+        <span class="earth-ping ping-a"></span>
+        <span class="earth-ping ping-b"></span>
+        <span class="earth-ping ping-c"></span>
+        <span class="earth-ping ping-d"></span>
+        <span class="earth-ping ping-e"></span>
+      </div>
+      <div class="always-on-badge" aria-hidden="true">
+        <b>24/7</b>
+        <small>AI SCAN</small>
+      </div>
+      <div class="radar-node node-a" data-node="0"></div>
+      <div class="radar-node node-b" data-node="1"></div>
+      <div class="radar-node node-c" data-node="2"></div>
+      <div class="radar-node node-d" data-node="3"></div>
+    </section>
+
+    <div class="data-beams" aria-hidden="true">
+      <span class="beam beam-left"><i></i></span>
+      <span class="beam beam-right"><i></i></span>
+      <span class="beam beam-bottom"><i></i></span>
+      <span class="beam beam-panel"><i></i></span>
+    </div>
+
+    <div class="radar-tags" id="radar-tags" aria-hidden="true"></div>
+
+    <div class="source-spokes" id="source-spokes" aria-hidden="true"></div>
+
+    <section class="floating-strip" id="floating-strip" aria-live="polite"></section>
+
+    <aside class="glass-card card-left" id="card-left"></aside>
+    <aside class="glass-card card-right" id="card-right"></aside>
+    <aside class="glass-card card-bottom" id="card-bottom"></aside>
+
+    <section class="data-panel" id="data-panel" aria-label="Selected radar data"></section>
+
+    <div class="radar-footer">
+      <a href="dashboard.html">Dashboard</a>
+      <span id="radar-updated">Loading data...</span>
+    </div>
+
+    <aside class="detail-side" id="detail-modal" hidden role="complementary" aria-labelledby="detail-title">
+      <header class="detail-head">
+        <span class="detail-source" id="detail-source">—</span>
+        <button class="detail-close" id="detail-close" data-close="1" aria-label="إغلاق">×</button>
+      </header>
+      <h2 class="detail-title" id="detail-title">—</h2>
+      <p class="detail-original" id="detail-original" hidden></p>
+      <div class="detail-meta" id="detail-meta"></div>
+      <p class="detail-text" id="detail-text"></p>
+      <div class="detail-actions">
+        <a class="detail-link" id="detail-link" target="_blank" rel="noreferrer">—</a>
+      </div>
+    </aside>
+  </main>
+
+  <script src="assets/js/radar.js"></script>
+</body>
+</html>

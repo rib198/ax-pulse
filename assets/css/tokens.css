@@ -1,0 +1,141 @@
+/* AX Pulse — Design tokens (Linear-inspired, AX accent) */
+
+:root {
+  /* Surfaces */
+  --bg-deep: #08090a;
+  --bg-panel: #0f1011;
+  --bg-surface: #16171a;
+  --bg-elevated: #191a1b;
+  --bg-hover: #28282c;
+
+  /* Text */
+  --text-primary: #f7f8f8;
+  --text-secondary: #d0d6e0;
+  --text-tertiary: #8a8f98;
+  --text-muted: #62666d;
+
+  /* Borders (semi-transparent white) */
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-default: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.12);
+
+  /* Brand accent — AX Pulse signature green */
+  --accent: #7CFF6B;
+  --accent-hover: #9affb0;
+  --accent-dim: rgba(124, 255, 107, 0.12);
+  --accent-glow: rgba(124, 255, 107, 0.4);
+
+  /* Status */
+  --hot: #FF6B6B;
+  --hot-dim: rgba(255, 107, 107, 0.12);
+  --warn: #ffb547;
+  --warn-dim: rgba(255, 181, 71, 0.12);
+  --ok: #10b981;
+  --ok-dim: rgba(16, 185, 129, 0.12);
+
+  /* Category palette (muted, distinct) */
+  --cat-tools: #5e6ad2;
+  --cat-agents: #7CFF6B;
+  --cat-video: #c084fc;
+  --cat-coding: #38bdf8;
+  --cat-education: #fbbf24;
+  --cat-business: #fb923c;
+  --cat-healthcare: #34d399;
+  --cat-automation: #a78bfa;
+  --cat-arabic: #f472b6;
+  --cat-funding: #facc15;
+
+  /* Spacing — 8px base */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+
+  /* Radius */
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 6px;
+  --r-4: 8px;
+  --r-5: 12px;
+  --r-pill: 9999px;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, system-ui, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-arabic: 'IBM Plex Sans Arabic', 'Inter', system-ui, sans-serif;
+
+  --feat: "cv01", "ss03";
+
+  /* Shadows */
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-3: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 24px var(--accent-glow);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-feature-settings: var(--feat);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+/* In Arabic, replace mono font with Arabic sans (mono Latin fonts mangle Arabic glyphs).
+   Numbers in IBM Plex Sans Arabic are tabular so columns still align. */
+html[dir="rtl"] .topbar-title,
+html[dir="rtl"] .brief-meta,
+html[dir="rtl"] .stat-label,
+html[dir="rtl"] .stat-value,
+html[dir="rtl"] .stat-delta,
+html[dir="rtl"] .section-subtitle,
+html[dir="rtl"] .nav-section-title,
+html[dir="rtl"] .cluster-meta,
+html[dir="rtl"] .cluster-voices,
+html[dir="rtl"] .cluster-growth,
+html[dir="rtl"] .cat,
+html[dir="rtl"] .filter-pill,
+html[dir="rtl"] .price-tier,
+html[dir="rtl"] .price-amount,
+html[dir="rtl"] .landing-tag,
+html[dir="rtl"] .section-eyebrow,
+html[dir="rtl"] .featured-badge,
+html[dir="rtl"] .footer,
+html[dir="rtl"] .lang-toggle,
+html[dir="rtl"] .score-chip-label,
+html[dir="rtl"] .score-total-label,
+html[dir="rtl"] .category-count {
+  font-family: var(--font-arabic);
+  font-feature-settings: "tnum";
+  letter-spacing: 0;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+input, textarea { font-family: inherit; color: inherit; }
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--bg-deep);
+}
