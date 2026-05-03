@@ -11,6 +11,7 @@ Env required:
 - DIGEST_FROM           (optional, default: AX Pulse <onboarding@resend.dev>)
 - SITE_URL              (optional, default: https://rib198.github.io/ax-pulse)
 - DRY_RUN               (optional, set to "1" to skip sending)
+- ALLOW_SEND_FAILURE    (optional, set to "1" to keep CI green if provider rejects email)
 
 Stdlib only — no pip install required.
 """
@@ -29,10 +30,11 @@ SIGNALS_FILE = ROOT / "data" / "radar" / "signals.json"
 OPPS_FILE = ROOT / "data" / "radar" / "opportunities.json"
 SUBSCRIBERS_FILE = ROOT / "data" / "subscribers.json"
 
-SITE_URL = os.environ.get("SITE_URL", "https://rib198.github.io/ax-pulse")
-DIGEST_FROM = os.environ.get("DIGEST_FROM", "onboarding@resend.dev")
+SITE_URL = os.environ.get("SITE_URL") or "https://rib198.github.io/ax-pulse"
+DIGEST_FROM = os.environ.get("DIGEST_FROM") or "AX Pulse <onboarding@resend.dev>"
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
 DRY_RUN = os.environ.get("DRY_RUN", "") == "1"
+ALLOW_SEND_FAILURE = os.environ.get("ALLOW_SEND_FAILURE", "") == "1"
 
 
 def log(msg: str) -> None:
@@ -267,9 +269,31 @@ def send_via_resend(to_email, subject, html):
             err_body = exc.read().decode("utf-8")
         except Exception:
             err_body = str(exc)
-        return False, f"HTTP {exc.code}: {err_body}"
+        return False, format_resend_error(exc.code, err_body)
     except Exception as exc:
         return False, str(exc)
+
+
+def format_resend_error(status_code, body):
+    message = body
+    try:
+        data = json.loads(body)
+        message = data.get("message") or data.get("error") or body
+    except Exception:
+        pass
+
+    low = str(message).lower()
+    hints = []
+    if "from" in low or "sender" in low:
+        hints.append("تحققي من DIGEST_FROM: يجب أن يكون بريد مرسل صالحًا، مثل AX Pulse <onboarding@resend.dev> أو بريد نطاق موثّق.")
+    if "domain" in low or "verify" in low or "verified" in low:
+        hints.append("في Resend، الإرسال من نطاق مخصص يحتاج Domain Verification. مؤقتًا استخدمي onboarding@resend.dev أو فعّلي نطاقك.")
+    if "recipient" in low or "testing" in low or "audience" in low:
+        hints.append("حسابات Resend الجديدة قد تسمح بالإرسال التجريبي فقط إلى بريد الحساب نفسه حتى تفعيل النطاق.")
+    if not hints:
+        hints.append("افتحي Resend Logs لمعرفة الحقل المرفوض، أو جرّبي DRY_RUN=1 للتأكد أن بناء الرسالة سليم.")
+
+    return f"HTTP {status_code}: {message} | " + " ".join(hints)
 
 
 def main() -> int:
@@ -325,7 +349,12 @@ def main() -> int:
     log(f"\n  ────────── ملخص ──────────")
     log(f"  مرسل: {sent}/{len(subscribers)}")
     log(f"  فشل:  {len(failed)}")
-    return 0 if sent > 0 else 1
+    if sent > 0:
+        return 0
+    if ALLOW_SEND_FAILURE:
+        log("  ⚠ لم يتم إرسال أي رسالة، لكن ALLOW_SEND_FAILURE=1 لذلك لن نفشل الـWorkflow.")
+        return 0
+    return 1
 
 
 if __name__ == "__main__":

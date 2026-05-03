@@ -40,6 +40,7 @@ jobs:
           DIGEST_FROM: ${{ secrets.DIGEST_FROM }}
           SITE_URL: 'https://rib198.github.io/ax-pulse'
           DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
+          ALLOW_SEND_FAILURE: '1'
         run: python3 tools/build_digest.py
 
       - name: Summary
