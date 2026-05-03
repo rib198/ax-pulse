@@ -5,6 +5,7 @@ const RadarState = {
   corpusSignals: [],
   timeline: [],
   opportunities: [],
+  productPlaybooks: [],
   researchOpportunities: [],
   accounts: [],
   generatedAt: null,
@@ -185,25 +186,27 @@ async function loadJSON(path, fallback) {
 }
 
 async function loadRadarData() {
-  const [signals, corpus, timeline, opportunities, researchOpportunities, accounts] = await Promise.all([
+  const [signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts] = await Promise.all([
     loadJSON('data/radar/signals.json', { items: [], count: 0 }),
     loadJSON('data/radar/signals_corpus.json', { items: [], count: 0 }),
     loadJSON('data/radar/model_timeline.json', { items: [] }),
     loadJSON('data/radar/opportunities.json', { opportunities: [] }),
+    loadJSON('data/radar/product_playbooks.json', { playbooks: [] }),
     loadJSON('data/radar/research_opportunities.json', { opportunities: [] }),
     loadJSON('data/radar/x_focus_accounts.json', { accounts: [] })
   ]);
-  return { signals, corpus, timeline, opportunities, researchOpportunities, accounts };
+  return { signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts };
 }
 
 async function bootRadar() {
-  const { signals, corpus, timeline, opportunities, researchOpportunities, accounts } = await loadRadarData();
+  const { signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts } = await loadRadarData();
 
   RadarState.signals = signals.items || [];
   RadarState.corpusSignals = sortSignalsByFreshness(corpus.items || RadarState.signals);
   RadarState.timeline = sortTimeline(timeline.items || []);
   RadarState.generatedAt = signals.generated_at;
   RadarState.opportunities = opportunities.opportunities || [];
+  RadarState.productPlaybooks = productPlaybooks.playbooks || [];
   RadarState.researchOpportunities = researchOpportunities.opportunities || [];
   RadarState.accounts = accounts.accounts || [];
   RadarState.knownSignalIds = new Set(RadarState.signals.map(signalKey));
@@ -223,7 +226,7 @@ function startLiveRefresh() {
 }
 
 async function refreshRadarData() {
-  const { signals, corpus, timeline, opportunities, researchOpportunities, accounts } = await loadRadarData();
+  const { signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts } = await loadRadarData();
   const nextSignals = signals.items || [];
   const nextGeneratedAt = signals.generated_at;
   const nextIds = new Set(nextSignals.map(signalKey));
@@ -237,6 +240,7 @@ async function refreshRadarData() {
   RadarState.timeline = sortTimeline(timeline.items || RadarState.timeline);
   RadarState.generatedAt = nextGeneratedAt;
   RadarState.opportunities = opportunities.opportunities || RadarState.opportunities;
+  RadarState.productPlaybooks = productPlaybooks.playbooks || RadarState.productPlaybooks;
   RadarState.researchOpportunities = researchOpportunities.opportunities || RadarState.researchOpportunities;
   RadarState.accounts = accounts.accounts || RadarState.accounts;
   RadarState.knownSignalIds = nextIds;
@@ -459,11 +463,7 @@ function renderCards(layer) {
   const timeline = timelineRows();
   left.innerHTML = timelineCard(timeline[0]);
   right.innerHTML = timelineCard(timeline[1]);
-  bottom.innerHTML = listCard(RadarState.lang === 'ar' ? 'ما يرصده الرادار' : 'What the radar tracks', [
-    [RadarState.lang === 'ar' ? 'نماذج AI' : 'AI models', RadarState.lang === 'ar' ? 'Claude، GPT، Grok، Gemini وما شابهها' : 'Claude, GPT, Grok, Gemini, and similar models'],
-    [RadarState.lang === 'ar' ? 'إصدارات وأدوات' : 'Releases and tools', RadarState.lang === 'ar' ? 'Runway، Midjourney، Hugging Face، GitHub وغيرها' : 'Runway, Midjourney, Hugging Face, GitHub, and more'],
-    [RadarState.lang === 'ar' ? 'أسعار وحدود' : 'Pricing and limits', RadarState.lang === 'ar' ? 'خطط، حدود استخدام، روابط رسمية وتغييرات مهمة' : 'Plans, usage limits, official links, and key changes']
-  ]);
+  bottom.innerHTML = timelineCard(timeline[2]);
 }
 
 function renderDock(layer) {
@@ -948,6 +948,7 @@ function signalKey(item) {
 }
 
 function opportunityRows() {
+  const fromPlaybooks = RadarState.productPlaybooks.slice(0, 8).map((item) => productPlaybookRow(item));
   const fromData = RadarState.opportunities.slice(0, 4).map((opp) => ({
     title: RadarState.lang === 'ar' ? (opp.title_ar || opp.title_en) : (opp.title_en || opp.title_ar),
     category: RadarState.lang === 'ar' ? 'فرصة مرصودة' : 'Detected opportunity',
@@ -989,7 +990,29 @@ function opportunityRows() {
     examples: RadarState.lang === 'ar' ? 'قوالب مدفوعة، خدمة شهرية، أتمتة لفريق صغير' : 'Paid templates, monthly service, automation for a small team',
     why: RadarState.lang === 'ar' ? 'فرصة افتراضية تظهر فقط عند نقص البيانات.' : 'Fallback opportunity shown only when data is thin.'
   }));
-  return interleaveRows(fromData, fromResearch).concat(fallback).slice(0, 12);
+  return fromPlaybooks.concat(interleaveRows(fromData, fromResearch), fallback).slice(0, 16);
+}
+
+function productPlaybookRow(item) {
+  const isAr = RadarState.lang === 'ar';
+  const pick = (base, fallback = '') => item[`${base}_${isAr ? 'ar' : 'en'}`] || item[`${base}_${isAr ? 'en' : 'ar'}`] || fallback;
+  const playbook = item[`seven_day_playbook_${isAr ? 'ar' : 'en'}`] || item.seven_day_playbook_ar || item.seven_day_playbook_en || [];
+  return {
+    title: pick('title'),
+    category: pick('category', isAr ? 'منتج دخل مدعوم بـ AI' : 'AI-powered income product'),
+    capital: pick('capital'),
+    product: pick('product'),
+    buyer: pick('buyer'),
+    time: isAr ? 'خطة تنفيذ 7 أيام' : '7-day execution plan',
+    profit: pick('pricing'),
+    tools: pick('tools'),
+    examples: pick('examples'),
+    why: pick('why'),
+    saudi: pick('saudi_lens'),
+    playbook,
+    source: isAr ? 'قالب دخل' : 'Income playbook',
+    confidence: 0.72
+  };
 }
 
 function interleaveRows(a, b) {
