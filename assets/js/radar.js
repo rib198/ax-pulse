@@ -126,7 +126,7 @@ const I18N = {
   // Layer button labels (also localized in dock pills)
   nav_radar: { ar: 'الرادار', en: 'Radar' },
   nav_trending: { ar: 'الرائج', en: 'Trending' },
-  nav_opportunities: { ar: 'ابتكار المنتجات وزد دخلك', en: 'Income products' },
+  nav_opportunities: { ar: 'المنتجات والدخل', en: 'Products & income' },
   nav_sources: { ar: 'المصادر', en: 'Sources' },
   nav_signals: { ar: 'إشارات', en: 'Signals' },
   // Footer / portrait
@@ -186,16 +186,18 @@ async function loadJSON(path, fallback) {
 }
 
 async function loadRadarData() {
-  const [signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts] = await Promise.all([
+  const [signals, corpus, timeline, opportunities, productPlaybooks, dynamicPlaybooks, researchOpportunities, accounts] = await Promise.all([
     loadJSON('data/radar/signals.json', { items: [], count: 0 }),
     loadJSON('data/radar/signals_corpus.json', { items: [], count: 0 }),
     loadJSON('data/radar/model_timeline.json', { items: [] }),
     loadJSON('data/radar/opportunities.json', { opportunities: [] }),
     loadJSON('data/radar/product_playbooks.json', { playbooks: [] }),
+    loadJSON('data/radar/product_playbooks_dynamic.json', { playbooks: [] }),
     loadJSON('data/radar/research_opportunities.json', { opportunities: [] }),
     loadJSON('data/radar/x_focus_accounts.json', { accounts: [] })
   ]);
-  return { signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts };
+  const chosenPlaybooks = (dynamicPlaybooks.playbooks || []).length ? dynamicPlaybooks : productPlaybooks;
+  return { signals, corpus, timeline, opportunities, productPlaybooks: chosenPlaybooks, researchOpportunities, accounts };
 }
 
 async function bootRadar() {
@@ -567,7 +569,7 @@ function panelChip(item, layer, idx) {
         <span>${escapeHTML(item.category)}</span>
         <p>${escapeHTML(item.title)}</p>
         <small>${escapeHTML(item.buyer || '')}</small>
-        <small>${escapeHTML(item.profit)}</small>
+        <small>${escapeHTML(item.inspiration || item.profit || item.time || '')}</small>
       </button>
     `;
   }
@@ -616,6 +618,12 @@ function openOpportunityDetail(item, idx = 0) {
   if (item.buyer)    sections.push(sect(L('المشتري المستهدف:', 'Target buyer:'), item.buyer));
   if (item.tools)    sections.push(sect(L('الأدوات المطلوبة:', 'Tools needed:'), item.tools));
   if (item.examples) sections.push(sect(L('أمثلة:', 'Examples:'), item.examples));
+  if (item.inspiration) sections.push(sect(L('إلهام مشابه:', 'Similar inspiration:'), item.inspiration));
+  if (item.sourceLinks && item.sourceLinks.length) sections.push(sect(L('مصادر الإلهام:', 'Inspiration sources:'), formatSourceLinks(item.sourceLinks)));
+  if (item.saudi)    sections.push(sect(L('عدسة السعودية:', 'Saudi money lens:'), item.saudi));
+  if (item.playbook && item.playbook.length) {
+    sections.push(sect(L('خطة 7 أيام:', '7-day playbook:'), formatPlaybook(item.playbook)));
+  }
   document.getElementById('detail-text').textContent = sections.filter(Boolean).join('\n\n');
 
   const link = document.getElementById('detail-link');
@@ -634,6 +642,30 @@ function openOpportunityDetail(item, idx = 0) {
   modal.hidden = false;
   // double-rAF to allow transition from initial hidden state
   requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('open')));
+}
+
+function formatPlaybook(items) {
+  return items.map((step, index) => {
+    const prefix = RadarState.lang === 'ar' ? `${index + 1}. ` : `${index + 1}. `;
+    return `${prefix}${step}`;
+  }).join('\n');
+}
+
+function localizedSourceLinks(links) {
+  const isAr = RadarState.lang === 'ar';
+  return links.map((link) => ({
+    label: link[`label_${isAr ? 'ar' : 'en'}`] || link.label || link.label_en || link.label_ar || link.url,
+    source: link.source || link.type || '',
+    url: link.url || ''
+  })).filter((link) => link.label || link.url);
+}
+
+function formatSourceLinks(links) {
+  return links.map((link, index) => {
+    const source = link.source ? ` · ${link.source}` : '';
+    const url = link.url ? `\n${link.url}` : '';
+    return `${index + 1}. ${link.label}${source}${url}`;
+  }).join('\n');
 }
 
 function openTimelineDetail(item, idx = 0, auto = false) {
@@ -948,7 +980,7 @@ function signalKey(item) {
 }
 
 function opportunityRows() {
-  const fromPlaybooks = RadarState.productPlaybooks.slice(0, 8).map((item) => productPlaybookRow(item));
+  const fromPlaybooks = RadarState.productPlaybooks.slice(0, 12).map((item) => productPlaybookRow(item));
   const fromData = RadarState.opportunities.slice(0, 4).map((opp) => ({
     title: RadarState.lang === 'ar' ? (opp.title_ar || opp.title_en) : (opp.title_en || opp.title_ar),
     category: RadarState.lang === 'ar' ? 'فرصة مرصودة' : 'Detected opportunity',
@@ -1004,9 +1036,11 @@ function productPlaybookRow(item) {
     product: pick('product'),
     buyer: pick('buyer'),
     time: isAr ? 'خطة تنفيذ 7 أيام' : '7-day execution plan',
-    profit: pick('pricing'),
-    tools: pick('tools'),
+    profit: item.show_pricing ? pick('pricing') : '',
+    tools: item.tools_required === false ? '' : pick('tools'),
     examples: pick('examples'),
+    inspiration: pick('inspiration'),
+    sourceLinks: localizedSourceLinks(item.source_links || []),
     why: pick('why'),
     saudi: pick('saudi_lens'),
     playbook,
