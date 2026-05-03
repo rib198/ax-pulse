@@ -86,132 +86,153 @@ def escape_html(text: str) -> str:
 def build_html(signals, top_opp):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     top_signals = signals[:5]
+    radar_url = f"{SITE_URL}/radar.html"
 
-    # ---- inline-styled email-safe HTML ----
-    css_body = (
-        "margin:0;padding:0;background:#0a0e16;font-family:-apple-system,BlinkMacSystemFont,"
-        "'Segoe UI','IBM Plex Sans Arabic',Arial,sans-serif;color:#eef7ff;direction:rtl;"
-    )
-    css_wrap = "max-width:600px;margin:0 auto;padding:24px;"
-    css_header = "padding:20px 0 24px;border-bottom:1px solid rgba(110,239,255,0.18);"
-    css_kicker = (
-        "color:#6eefff;font-size:11px;font-weight:600;letter-spacing:0.18em;"
-        "text-transform:uppercase;font-family:'JetBrains Mono','Menlo',monospace;"
-    )
-    css_h1 = (
-        "color:#fff;font-size:22px;font-weight:700;margin:8px 0 0;line-height:1.4;"
-    )
-    css_subtitle = "color:rgba(238,247,255,0.65);font-size:13px;margin:6px 0 0;"
-
-    css_section_head = (
-        "color:#6eefff;font-size:11px;font-weight:600;letter-spacing:0.16em;"
-        "text-transform:uppercase;margin:28px 0 12px;font-family:'JetBrains Mono',monospace;"
-    )
-
-    css_opp_card = (
-        "background:linear-gradient(180deg,rgba(97,241,139,0.08),rgba(97,241,139,0.02));"
-        "border:1px solid rgba(97,241,139,0.32);border-radius:14px;padding:18px 20px;margin:0 0 24px;"
-    )
-    css_opp_title = (
-        "color:#fff;font-size:17px;font-weight:700;margin:0 0 8px;line-height:1.5;"
-    )
-    css_opp_meta = (
-        "color:rgba(97,241,139,0.86);font-size:12px;font-weight:600;margin:0 0 10px;"
-        "font-family:'JetBrains Mono',monospace;"
-    )
-    css_opp_text = (
-        "color:rgba(238,247,255,0.78);font-size:13.5px;line-height:1.7;margin:0;"
-    )
-
-    css_signal = (
-        "border-bottom:1px solid rgba(255,255,255,0.06);padding:14px 0;"
-        "display:block;text-decoration:none;color:#eef7ff;"
-    )
-    css_signal_source = (
-        "color:#6eefff;font-size:10px;font-weight:600;letter-spacing:0.14em;"
-        "text-transform:uppercase;font-family:'JetBrains Mono',monospace;"
-    )
-    css_signal_title = (
-        "color:#fff;font-size:14.5px;font-weight:600;margin:6px 0 0;line-height:1.55;"
-    )
-
-    css_cta = (
-        "display:inline-block;background:linear-gradient(180deg,#6eefff,#4cc8e0);"
-        "color:#001017;font-weight:700;font-size:14px;padding:13px 24px;border-radius:999px;"
-        "text-decoration:none;margin:8px 0;"
-    )
-    css_footer = (
-        "border-top:1px solid rgba(255,255,255,0.06);margin-top:32px;padding-top:18px;"
-        "color:rgba(238,247,255,0.40);font-size:11px;line-height:1.7;"
-    )
-
-    # ---- top opportunity section ----
+    # ---- top opportunity block ----
     if top_opp:
         opp_title = top_opp.get("title_ar") or top_opp.get("title_en") or "—"
         opp_signals = top_opp.get("signal_count", 0)
         opp_conf = int((top_opp.get("confidence") or 0) * 100)
         opp_html = f"""
-        <div style="{css_section_head}">أفضل فرصة اليوم</div>
-        <div style="{css_opp_card}">
-          <div style="{css_opp_meta}">
-            {opp_signals} دليل · ثقة {opp_conf}%
-          </div>
-          <div style="{css_opp_title}">{escape_html(opp_title)}</div>
-          <p style="{css_opp_text}">
-            فرصة مرصودة من إشارات حقيقية في مصادر AI الرسمية والمجتمعات التقنية.
-            افتح اللوحة لرؤية الأدلة كاملة والخطوات.
-          </p>
-        </div>
+        <tr>
+          <td style="padding:32px 0 14px">
+            <div style="color:#61f18b;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;font-family:'JetBrains Mono',Menlo,monospace">▸ أفضل فرصة اليوم</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0 0 8px">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(180deg,rgba(97,241,139,0.10),rgba(97,241,139,0.02));border:1px solid rgba(97,241,139,0.32);border-radius:16px">
+              <tr>
+                <td style="padding:22px 24px">
+                  <div style="color:#61f18b;font-size:11px;font-weight:600;font-family:'JetBrains Mono',Menlo,monospace;letter-spacing:0.06em;margin-bottom:10px">
+                    {opp_signals} دليل &nbsp;·&nbsp; ثقة {opp_conf}%
+                  </div>
+                  <div style="color:#fff;font-size:18px;font-weight:700;line-height:1.55;margin-bottom:10px">{escape_html(opp_title)}</div>
+                  <div style="color:rgba(230,239,255,0.74);font-size:13.5px;line-height:1.85">
+                    فرصة مرصودة من إشارات حقيقية في مصادر AI الرسمية والمجتمعات التقنية. افتح الرادار لرؤية الأدلة الكاملة وخطوات التنفيذ.
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
         """
     else:
         opp_html = ""
 
-    # ---- signals section ----
+    # ---- signals block ----
     signals_html = ""
     if top_signals:
-        signals_html = f'<div style="{css_section_head}">أبرز 5 إشارات</div>'
+        signals_html = """
+        <tr>
+          <td style="padding:32px 0 14px">
+            <div style="color:#6eefff;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;font-family:'JetBrains Mono',Menlo,monospace">▸ أبرز 5 إشارات</div>
+          </td>
+        </tr>
+        """
+        rows = []
         for s in top_signals:
             url = s.get("source_url") or "#"
             src = source_label(s.get("source_id", ""))
             ttl = localized_title(s, lang="ar")
-            signals_html += f"""
-            <a href="{escape_html(url)}" style="{css_signal}">
-              <div style="{css_signal_source}">{escape_html(src)}</div>
-              <div style="{css_signal_title}">{escape_html(ttl)}</div>
-            </a>
-            """
+            rows.append(f"""
+            <tr>
+              <td style="padding:0">
+                <a href="{escape_html(url)}" style="display:block;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.06);text-decoration:none">
+                  <div style="color:#6eefff;font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;font-family:'JetBrains Mono',Menlo,monospace;margin-bottom:6px">{escape_html(src)}</div>
+                  <div style="color:#fff;font-size:14.5px;font-weight:600;line-height:1.6">{escape_html(ttl)}</div>
+                </a>
+              </td>
+            </tr>
+            """)
+        signals_html += f"""
+        <tr>
+          <td style="padding:0">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              {''.join(rows)}
+            </table>
+          </td>
+        </tr>
+        """
 
-    # ---- final HTML ----
+    # ---- final HTML (table-based, email-client safe) ----
     return f"""<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AX Pulse — نَبض اليوم</title>
+  <meta name="color-scheme" content="dark only" />
+  <meta name="supported-color-schemes" content="dark only" />
+  <title>رادار الذكاء الاصطناعي · {today}</title>
 </head>
-<body style="{css_body}">
-  <div style="{css_wrap}">
+<body style="margin:0;padding:0;background-color:#08090a;color:#eef7ff;font-family:-apple-system,BlinkMacSystemFont,'IBM Plex Sans Arabic','Segoe UI',Tahoma,Arial,sans-serif;direction:rtl">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#08090a">
+    <tr>
+      <td align="center" style="padding:32px 16px">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%">
 
-    <div style="{css_header}">
-      <div style="{css_kicker}">AX PULSE · {today}</div>
-      <h1 style="{css_h1}">نَبض الذكاء الاصطناعي اليوم</h1>
-      <p style="{css_subtitle}">5 إشارات + فرصة مرتبة من مصادر حقيقية، بدون ضجيج.</p>
-    </div>
+          <!-- HEADER -->
+          <tr>
+            <td style="padding:0 0 24px;border-bottom:1px solid rgba(110,239,255,0.16)">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="right" style="vertical-align:middle">
+                    <span style="display:inline-block;padding:6px 14px;background-color:rgba(110,239,255,0.10);border:1px solid rgba(110,239,255,0.32);border-radius:999px;color:#6eefff;font-size:11px;font-weight:600;letter-spacing:0.16em;font-family:'JetBrains Mono',Menlo,monospace">RADAR · {today}</span>
+                  </td>
+                  <td align="left" style="vertical-align:middle">
+                    <span style="display:inline-block;padding:8px 14px;background:linear-gradient(180deg,rgba(110,239,255,0.16),rgba(110,239,255,0.06));border:1px solid rgba(110,239,255,0.28);border-radius:10px;color:#6eefff;font-size:13px;font-weight:700;font-family:'JetBrains Mono',Menlo,monospace;letter-spacing:0.06em">رادار</span>
+                  </td>
+                </tr>
+              </table>
+              <h1 style="margin:24px 0 8px;color:#ffffff;font-size:26px;font-weight:700;line-height:1.45">رادار الذكاء الاصطناعي</h1>
+              <p style="margin:0;color:rgba(238,247,255,0.62);font-size:14px;line-height:1.75">5 إشارات + فرصة منتج يومياً، من مصادر AI الموثوقة. بدون ضجيج.</p>
+            </td>
+          </tr>
 
-    {opp_html}
-    {signals_html}
+          {opp_html}
 
-    <div style="text-align:center;margin:32px 0 0;">
-      <a href="{escape_html(SITE_URL)}/radar.html" style="{css_cta}">افتح الرادار الكامل ↗</a>
-    </div>
+          {signals_html}
 
-    <div style="{css_footer}">
-      تستلم هذه الرسالة لأنك مشترك في AX Pulse — نشرة الذكاء الاصطناعي اليومية.
-      <br/>المصادر: OpenAI، Anthropic، Google DeepMind، Hugging Face، X، Reddit، GitHub، Hacker News، arXiv.
-      <br/>للإلغاء: <a href="mailto:unsubscribe@axpulse?subject=unsubscribe" style="color:#6eefff;text-decoration:none;">أزل بريدي</a>
-    </div>
+          <!-- CTA -->
+          <tr>
+            <td align="center" style="padding:40px 0 16px">
+              <a href="{escape_html(radar_url)}" style="display:inline-block;padding:14px 30px;background:linear-gradient(180deg,#6eefff,#4cc8e0);color:#001017;font-weight:700;font-size:14px;text-decoration:none;border-radius:999px;letter-spacing:0.02em">
+                افتح الرادار الكامل  ↗
+              </a>
+            </td>
+          </tr>
 
-  </div>
+          <!-- DIVIDER -->
+          <tr>
+            <td style="padding:24px 0 0">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="height:1px;background:linear-gradient(90deg,transparent,rgba(110,239,255,0.22),transparent);font-size:0;line-height:0">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="padding:24px 0 8px;color:rgba(238,247,255,0.42);font-size:11px;line-height:1.85">
+              تستلم هذه الرسالة لأنك مشترك في <strong style="color:rgba(110,239,255,0.86);font-weight:600">رادار الذكاء الاصطناعي</strong>.
+              <br/>
+              المصادر: OpenAI، Anthropic، Google DeepMind، Hugging Face، X، Reddit، GitHub، Hacker News، arXiv.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 0 16px;color:rgba(238,247,255,0.32);font-size:11px">
+              <a href="mailto:unsubscribe@axpulse?subject=unsubscribe" style="color:rgba(110,239,255,0.62);text-decoration:none">إلغاء الاشتراك</a>
+              &nbsp;·&nbsp;
+              <a href="{escape_html(SITE_URL)}" style="color:rgba(110,239,255,0.62);text-decoration:none">الموقع</a>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
 """
@@ -274,7 +295,7 @@ def main() -> int:
 
     html = build_html(signals, opportunities[0] if opportunities else None)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    subject = f"AX Pulse · نَبض الذكاء الاصطناعي · {today}"
+    subject = f"رادار الذكاء الاصطناعي · {today}"
 
     if DRY_RUN:
         log("  → DRY_RUN — would send to:")
