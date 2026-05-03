@@ -1,0 +1,53 @@
+name: Daily Email Digest
+
+# 6:30 UTC daily = 9:30 KSA. Manual trigger also available.
+on:
+  schedule:
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (write preview HTML, do not send)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build & send digest
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          DIGEST_FROM: ${{ secrets.DIGEST_FROM }}
+          SITE_URL: 'https://rib198.github.io/ax-pulse'
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
+        run: python3 tools/build_digest.py
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### AX Pulse — Daily Digest" >> $GITHUB_STEP_SUMMARY
+          echo "- Run time (UTC): $(date -u)" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/subscribers.json ]; then
+            COUNT=$(python3 -c "import json; d=json.load(open('data/subscribers.json')); print(len([s for s in d.get('subscribers',[]) if isinstance(s,str) and '@' in s]))")
+            echo "- Subscribers: $COUNT" >> $GITHUB_STEP_SUMMARY
+          fi

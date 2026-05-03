@@ -11,6 +11,10 @@ const RadarState = {
   particles: [],
   tickerTimer: null,
   refreshTimer: null,
+  timelineAutoTimer: null,
+  timelinePauseTimer: null,
+  activeTimelineIndex: 0,
+  autoTimelinePaused: false,
   knownSignalIds: new Set(),
   lastLiveItems: [],
   archiveExpanded: false
@@ -290,6 +294,7 @@ function renderLayer(layer) {
   RadarState.layer = layer;
   document.body.className = `radar-body layer-${layer}`;
   clearTicker();
+  scheduleTimelineAutoplay();
   document.querySelectorAll('[data-layer]').forEach((button) => {
     if (button.parentElement && button.parentElement.classList.contains('radar-lang')) return;
     button.classList.toggle('active', button.dataset.layer === layer);
@@ -305,6 +310,35 @@ function renderLayer(layer) {
   renderRadarTags(layer);
   renderSourceSpokes(layer);
   renderFloatingStrip(layer);
+}
+
+function scheduleTimelineAutoplay() {
+  if (RadarState.timelineAutoTimer) window.clearInterval(RadarState.timelineAutoTimer);
+  RadarState.timelineAutoTimer = null;
+  if (RadarState.layer !== 'radar' || !RadarState.timeline.length) return;
+
+  RadarState.timelineAutoTimer = window.setInterval(() => {
+    if (RadarState.layer !== 'radar' || RadarState.autoTimelinePaused) return;
+    const rows = timelineRows();
+    if (!rows.length) return;
+    RadarState.activeTimelineIndex = (RadarState.activeTimelineIndex + 1) % rows.length;
+    openTimelineDetail(rows[RadarState.activeTimelineIndex], RadarState.activeTimelineIndex, true);
+    highlightTimelineChip(RadarState.activeTimelineIndex);
+  }, 6200);
+}
+
+function pauseTimelineAutoplay() {
+  RadarState.autoTimelinePaused = true;
+  if (RadarState.timelinePauseTimer) window.clearTimeout(RadarState.timelinePauseTimer);
+  RadarState.timelinePauseTimer = window.setTimeout(() => {
+    RadarState.autoTimelinePaused = false;
+  }, 18000);
+}
+
+function highlightTimelineChip(idx) {
+  document.querySelectorAll('[data-timeline-idx]').forEach((chip) => {
+    chip.classList.toggle('active', Number(chip.dataset.timelineIdx) === idx);
+  });
 }
 
 function renderRadarTags(layer) {
@@ -465,6 +499,27 @@ function renderDock(layer) {
       });
     });
   }
+  if (layer === 'radar') {
+    panel.querySelectorAll('[data-timeline-idx]').forEach((chip) => {
+      chip.addEventListener('click', (event) => {
+        if (event.target.closest('a')) return;
+        const idx = Number(chip.dataset.timelineIdx);
+        pauseTimelineAutoplay();
+        RadarState.activeTimelineIndex = idx;
+        openTimelineDetail(items[idx], idx, false);
+        highlightTimelineChip(idx);
+      });
+      chip.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        const idx = Number(chip.dataset.timelineIdx);
+        pauseTimelineAutoplay();
+        RadarState.activeTimelineIndex = idx;
+        openTimelineDetail(items[idx], idx, false);
+        highlightTimelineChip(idx);
+      });
+    });
+  }
 
   const archiveToggle = panel.querySelector('[data-archive-toggle]');
   if (archiveToggle) {
@@ -518,7 +573,7 @@ function panelChip(item, layer, idx) {
   }
   if (layer === 'radar' && item.date) {
     return `
-      <article class="signal-chip timeline-chip timeline-${escapeAttr(item.category)}">
+      <article class="signal-chip timeline-chip timeline-${escapeAttr(item.category)}" role="button" tabindex="0" data-timeline-idx="${idx}">
         <span>${escapeHTML(timelineCategoryLabel(item.category))} · ${escapeHTML(formatTimelineDate(item.date))}</span>
         <p>${escapeHTML(localizedTimelineTitle(item))}</p>
         <small>${escapeHTML(timelineShortSummary(item))}</small>
@@ -579,6 +634,77 @@ function openOpportunityDetail(item, idx = 0) {
   modal.hidden = false;
   // double-rAF to allow transition from initial hidden state
   requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('open')));
+}
+
+function openTimelineDetail(item, idx = 0, auto = false) {
+  if (!item) return;
+  const isAr = RadarState.lang === 'ar';
+  const L = (ar, en) => isAr ? ar : en;
+
+  document.getElementById('detail-source').textContent = `${timelineCategoryLabel(item.category)} · ${item.vendor || ''}`;
+  document.getElementById('detail-title').textContent = localizedTimelineTitle(item);
+  document.getElementById('detail-original').hidden = true;
+
+  const meta = document.getElementById('detail-meta');
+  const parts = [
+    `${L('التاريخ', 'Date')}: ${formatTimelineDate(item.date)}`,
+    `${L('الفئة', 'Category')}: ${timelineCategoryLabel(item.category)}`
+  ];
+  if (item.pricing_ar || item.pricing_en) parts.push(`${L('السعر/الحدود', 'Pricing/limits')}: ${localizedTimelinePricing(item)}`);
+  if (auto) parts.push(L('تشغيل تلقائي', 'Auto playback'));
+  meta.innerHTML = parts.map((p) => `<span>${escapeHTML(p)}</span>`).join('');
+
+  const sections = [
+    `${L('ما الذي حدث؟', 'What happened?')}\n${localizedTimelineSummary(item)}`,
+    `${L('لماذا يهم؟', 'Why it matters?')}\n${timelineImpact(item)}`,
+    `${L('ما الذي يرصده الرادار؟', 'What the radar tracks?')}\n${timelineRadarTakeaway(item)}`
+  ];
+  document.getElementById('detail-text').textContent = sections.join('\n\n');
+
+  const link = document.getElementById('detail-link');
+  if (item.source_url) {
+    link.href = item.source_url;
+    link.textContent = isAr ? 'تحقق من المصدر الرسمي ↗' : 'Verify official source ↗';
+    link.style.display = '';
+  } else {
+    link.style.display = 'none';
+  }
+
+  const modal = document.getElementById('detail-modal');
+  modal.dataset.side = (idx % 2 === 0) ? 'right' : 'left';
+  modal.dataset.kind = 'timeline';
+  modal.hidden = false;
+  requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('open')));
+}
+
+function timelineImpact(item) {
+  const isAr = RadarState.lang === 'ar';
+  if (item.category === 'model') {
+    return isAr
+      ? 'تحديث النماذج يغير جودة المخرجات، تكلفة التشغيل، وسرعة بناء المنتجات أو الأتمتة.'
+      : 'Model updates affect output quality, operating cost, and how fast products or automations can be built.';
+  }
+  if (item.category === 'pricing_limits') {
+    return isAr
+      ? 'الأسعار والحدود تحدد هل الفكرة قابلة للتشغيل تجاريًا أم مكلفة قبل الوصول للعميل.'
+      : 'Pricing and limits determine whether an idea can run commercially before reaching customers.';
+  }
+  return isAr
+    ? 'الأدوات والإصدارات الجديدة تكشف ما أصبح ممكنًا الآن، وما يمكن تحويله إلى تجربة أو منتج.'
+    : 'New tools and releases reveal what is now possible and what can become a test or product.';
+}
+
+function timelineRadarTakeaway(item) {
+  const isAr = RadarState.lang === 'ar';
+  const base = localizedTimelinePricing(item);
+  if (base) {
+    return isAr
+      ? `يراقب الرادار هذا كتحديث قابل للتأثير على اختيار الأداة أو تسعير المنتج. ${base}`
+      : `The radar tracks this as an update that can affect tool choice or product pricing. ${base}`;
+  }
+  return isAr
+    ? 'يراقبه الرادار لأنه قد يغير أدوات البناء أو جودة المنتج أو سرعة التنفيذ.'
+    : 'The radar tracks it because it may change build tools, product quality, or execution speed.';
 }
 
 function closeDetail() {
