@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-08T13:03:28+00:00",
+  "generated_at": "2026-05-08T15:12:47+00:00",
   "count": 120,
-  "corpus_count": 2976,
-  "history_snapshot": "data/radar/history/2026-05-08T130328Z0000.json",
+  "corpus_count": 3023,
+  "history_snapshot": "data/radar/history/2026-05-08T151247Z0000.json",
   "note_ar": "يعرض هذا الملف أحدث الإشارات أولًا من القاعدة التراكمية. لا يتم حذف الإشارات القديمة؛ يمكن الاطلاع عليها من signals_corpus.json.",
   "items": [
     {
@@ -34,8 +34,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T09:03:16+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 3,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 4,
       "title_ar": "التألق: تحقيق استبدال خلفية الفيديو الموجهة بالتعليمات الحيوية عبر إرشادات منفصلة"
     },
     {
@@ -63,14 +63,46 @@
       "signal_type": "pain",
       "opportunity_score": 0.98,
       "metrics": {
-        "upvotes": 3,
+        "upvotes": 8,
         "authors": "Zhuofeng Li, Haoxiang Zhang, Cong Wei"
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 2,
       "title_ar": "ما وراء التشابه الدلالي: إعادة التفكير في الاسترجاع للبحث عن الوكلاء عبر تفاعل الجسم المباشر"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.04604",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.04604",
+      "external_id": "2605.04604",
+      "title": "Generative Quantum-inspired Kolmogorov-Arnold Eigensolver",
+      "text": "High-performance computing (HPC) is increasingly important for scalable quantum chemistry workflows that couple classical generative models, quantum circuit simulation, and selected configuration interaction postprocessing. We present the generative quantum-inspired Kolmogorov-Arnold eigensolver (GQKAE), a parameter-efficient extension of the generative quantum eigensolver (GQE) for quantum chemistry. GQKAE replaces the parameter-heavy feed-forward network components in GPT-style generative eigensolvers with hybrid quantum-inspired Kolmogorov-Arnold network modules, forming a compact HQKANsformer backbone. The method preserves autoregressive operator selection and the quantum-selected configuration interaction evaluation pipeline, while using single-qubit DatA Re-Uploading ActivatioN modules to provide expressive nonlinear mappings. Numerical benchmarks on H4, N2, LiH, C2H6, H2O, and the H2O dimer show that GQKAE achieves chemical accuracy comparable to the GPT-based GQE architecture, while reducing trainable parameters and memory by approximately 66% and improving wall-time performance. For strongly correlated systems such as N2 and LiH, GQKAE also improves convergence behavior an",
+      "posted_at": "2026-05-08T12:31:25.805Z",
+      "collected_at": "2026-05-08T15:12:43+00:00",
+      "matched_keywords": [
+        "ai",
+        "app",
+        "benchmark",
+        "model",
+        "pipeline",
+        "system",
+        "workflow"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.98,
+      "metrics": {
+        "upvotes": 1,
+        "authors": "Yu-Cheng Lin, Yu-Chao Hsu, I-Shan Tsai"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "مستوحى من الكم التوليدي Kolmogorov - Arnold Eigensolver"
     },
     {
       "id": "techcrunch_ai:https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
@@ -97,42 +129,9 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 7,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 8,
       "title_ar": "تطلق OpenAI ميزات ذكاء صوتي جديدة في واجهة برمجة التطبيقات الخاصة بها"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.04962",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.04962",
-      "external_id": "2605.04962",
-      "title": "TabEmbed: Benchmarking and Learning Generalist Embeddings for Tabular Understanding",
-      "text": "Foundation models have established unified representations for natural language processing, yet this paradigm remains largely unexplored for tabular data. Existing methods face fundamental limitations: LLM-based approaches lack retrieval-compatible vector outputs, whereas text embedding models often fail to capture tabular structure and numerical semantics. To bridge this gap, we first introduce the Tabular Embedding Benchmark (TabBench), a comprehensive suite designed to evaluate the tabular understanding capability of embedding models. We then propose TabEmbed, the first generalist embedding model that unifies tabular classification and retrieval within a shared embedding space. By reformulating diverse tabular tasks as semantic matching problems, TabEmbed leverages large-scale contrastive learning with positive-aware hard negative mining to discern fine-grained structural and numerical nuances. Experimental results on TabBench demonstrate that TabEmbed significantly outperforms state-of-the-art text embedding models, establishing a new baseline for universal tabular representation learning. Code and datasets are publicly available at https://github.com/qiangminjie27/TabEmbed and",
-      "posted_at": "2026-05-08T01:25:03.021Z",
-      "collected_at": "2026-05-08T04:46:07+00:00",
-      "matched_keywords": [
-        "ai",
-        "app",
-        "benchmark",
-        "dataset",
-        "hard",
-        "llm",
-        "model",
-        "problem"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 0.86,
-      "metrics": {
-        "upvotes": 6,
-        "authors": "Minjie Qiang, Mingming Zhang, Xiaoyi Bao"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
-      "title_ar": "TabEmbed: تضمينات اختصاصي المقارنات المعيارية والتعلم للفهم المجدول"
     },
     {
       "id": "huggingface_daily_papers:2605.06200",
@@ -163,8 +162,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "^2TGPO: تحسين سياسة وكيل المجموعة مع قص مستوي الدوران التكيفي"
     },
     {
@@ -196,8 +195,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 2,
       "title_ar": "BioTool: مجموعة بيانات شاملة لاستدعاء الأدوات لتعزيز القدرات الطبية الحيوية لنماذج اللغة الكبيرة"
     },
     {
@@ -227,8 +226,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "هل نحرز تقدمًا في تعميم النطاق متعدد الوسائط ؟ دراسة معيارية شاملة"
     },
     {
@@ -259,8 +258,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "SwiftI2V: توليد فعال عالي الدقة للصورة إلى الفيديو عبر توليد مشروط للقطاعات"
     },
     {
@@ -290,8 +289,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T07:12:49+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 4,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 5,
       "title_ar": "عند عدم وجود معيار: التحقق من صحة درجات السلامة في LLM المقارنة دون ملصقات الحقيقة الأساسية"
     },
     {
@@ -317,8 +316,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T15:58:23+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 11,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 12,
       "title_ar": "يجمع في الصين 2 مليار $ بقيمة 20 مليار $ مع ارتفاع على المفتوح المصدر"
     },
     {
@@ -348,8 +347,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T11:01:06+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 3,
       "title_ar": "KernelBench - X: معيار شامل لتقييم نوى GPU المولدة من LLM"
     },
     {
@@ -377,8 +376,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T11:31:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 13,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 14,
       "title_ar": "تقوم بارلوا ببناء وكلاء الخدمة الذين يرغب العملاء في التحدث إليهم"
     },
     {
@@ -407,40 +406,9 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T11:01:06+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 3,
       "title_ar": "خصائص التحجيم للاستدلال الاستنتاجي الضمني في المحولات"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.05566",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.05566",
-      "external_id": "2605.05566",
-      "title": "Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration",
-      "text": "Reinforcement learning with verifiable rewards, particularly Group Relative Policy Optimization (GRPO), has significantly advanced the reasoning capabilities of Large Language Models (LLMs). However, in complex tasks, GRPO frequently suffers from the ``zero-advantage problem'': when all sampled rollouts for a query fail, the relative advantage collapses to zero. Consequently, the model loses effective training signals for these questions, wasting the training data and computational budget. While simply increasing the sampling budget for these questions is a common remedy, the static sampling policy inherently constrains reasoning exploration, limiting the success rate. In this paper, we propose Lorem Perturbation for Exploration (LoPE), a simple yet effective training framework to break this exploration bottleneck. We posit that task-irrelevant prompt-space perturbations can shift the model's output distribution enough to unlock orthogonal reasoning pathways for hard questions. Specifically, LoPE prepends sequences stochastically assembled from Lorem Ipsum vocabulary (a pseudo-Latin placeholder text) to the prompts before resampling. Experiments across 1.7B, 4B, and 7B models demon",
-      "posted_at": "2026-05-08T01:17:30.049Z",
-      "collected_at": "2026-05-08T04:46:07+00:00",
-      "matched_keywords": [
-        "ai",
-        "framework",
-        "hard",
-        "llm",
-        "model",
-        "problem"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 0.5,
-      "metrics": {
-        "upvotes": 18,
-        "authors": "Langlin Huang, Chengsong Huang, Jinyuan Li"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
-      "title_ar": "يساعد الهراء: الاضطراب الفضائي الفوري يوسع استكشاف الاستدلال"
     },
     {
       "id": "huggingface_daily_papers:2602.00095",
@@ -468,38 +436,125 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "EDU - CIRCUIT - HW: تقييم نماذج اللغات الكبيرة متعددة الوسائط على حلول STEM للطلاب مكتوبة بخط اليد على مستوى الجامعة في العالم الحقيقي"
     },
     {
-      "id": "github_repos:1163037411",
+      "id": "github_repos:1232083885",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/Roshenrosha/CBbot",
-      "external_id": "1163037411",
-      "title": "Roshenrosha/CBbot",
-      "text": "🤖 Enhance your coding with CBbot, an AI-powered assistant for seamless task automation and integration, ready to use out of the box.",
-      "posted_at": "2026-05-08T13:03:19Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
+      "source_url": "https://github.com/WooYoungSang/warvis-findEvil",
+      "external_id": "1232083885",
+      "title": "WooYoungSang/warvis-findEvil",
+      "text": "W.A.R.V.I.S Find Evil — Woops, A Rather Very Intelligent System. SANS hackathon submission: Go orchestrator + Python MCP forensic tools + Gemma 4 (Ollama).",
+      "posted_at": "2026-05-08T15:12:44Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
       "matched_keywords": [
-        "ai",
-        "ai-powered",
-        "automation"
+        "mcp",
+        "system",
+        "tool"
       ],
       "signal_type": "news",
       "opportunity_score": 0.48,
       "metrics": {
         "stars": 0,
         "forks": 0,
-        "language": "AppleScript"
+        "language": "Python"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "Roshenrosha/CBbot"
+      "title_ar": "WooYoungSang/warvis - findEvil"
+    },
+    {
+      "id": "github_repos:1177628448",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/allnew-llc/banto",
+      "external_id": "1177628448",
+      "title": "allnew-llc/banto",
+      "text": "Budget-gated API key vault for LLM applications on macOS",
+      "posted_at": "2026-05-08T15:12:38Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
+      "matched_keywords": [
+        "app",
+        "application",
+        "llm"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.48,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "language": "Python"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "allnew - lllc/بانتو"
+    },
+    {
+      "id": "github_repos:1231633827",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/muhammad-asim01/hackathon-2026-05-muhammadasim",
+      "external_id": "1231633827",
+      "title": "muhammad-asim01/hackathon-2026-05-muhammadasim",
+      "text": "AI-powered local business lead generation and client acquisition engine for digital agencies.",
+      "posted_at": "2026-05-08T15:12:36Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
+      "matched_keywords": [
+        "ai",
+        "ai-powered",
+        "client"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.48,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "muhammad - asim01/hackathon -2026-05 - muhammadasim"
+    },
+    {
+      "id": "github_repos:1194134396",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/plures/pares-radix",
+      "external_id": "1194134396",
+      "title": "plures/pares-radix",
+      "text": "Praxis base application — plugin-driven platform with inference engine, UX contracts, and LLM integration",
+      "posted_at": "2026-05-08T15:12:38Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
+      "matched_keywords": [
+        "app",
+        "application",
+        "llm"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.48,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "language": "Rust"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "plures/pares - radix"
     },
     {
       "id": "google_deepmind:https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/",
@@ -524,40 +579,8 @@
       "verification_status": "source_linked",
       "title_ar": "قياس التقدم نحو AGI: إطار معرفي",
       "first_seen_at": "2026-05-03T11:14:27+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 55
-    },
-    {
-      "id": "github_repos:1225268335",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/QingchenJia/vibecoding-session-manager",
-      "external_id": "1225268335",
-      "title": "QingchenJia/vibecoding-session-manager",
-      "text": "A terminal tool to manage AI coding agent sessions and skills — list, delete sessions and manage cross-agent skills for Claude Code, Codex (OpenAI), and GitHub Copilot.",
-      "posted_at": "2026-05-08T13:03:14Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
-      "matched_keywords": [
-        "agent",
-        "ai",
-        "claude",
-        "codex",
-        "openai",
-        "tool"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.46,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "QingchenJia/vibecoding - session - manager"
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 56
     },
     {
       "id": "openai_news:https://openai.com/index/cybersecurity-in-the-intelligence-age",
@@ -582,8 +605,8 @@
       "verification_status": "source_linked",
       "title_ar": "الأمن السيبراني في عصر الذكاء",
       "first_seen_at": "2026-05-03T11:14:27+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 55
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 56
     },
     {
       "id": "openai_news:https://openai.com/index/open-source-codex-orchestration-symphony",
@@ -608,34 +631,37 @@
       "verification_status": "source_linked",
       "title_ar": "مواصفات مفتوحة المصدر للتنسيق: سيمفونية",
       "first_seen_at": "2026-05-03T11:14:27+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55
     },
     {
-      "id": "techcrunch_ai:https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/",
-      "source_id": "techcrunch_ai",
-      "source_name": "TechCrunch AI",
-      "source_kind": "news",
-      "source_url": "https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/",
-      "external_id": "https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/",
-      "title": "How Elon Musk left OpenAI, according to Greg Brockman",
-      "text": "Cutthroat negotiations between startup founders are rarely shared so publicly, especially when a company becomes as world-changing as OpenAI. ",
-      "posted_at": "Wed, 06 May 2026 18:23:54 +0000",
-      "collected_at": "2026-05-06T19:16:35+00:00",
+      "id": "huggingface_daily_papers:2605.01640",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.01640",
+      "external_id": "2605.01640",
+      "title": "Prescriptive Scaling Laws for Data Constrained Training",
+      "text": "Training compute is increasingly outpacing the availability of high-quality data. This shifts the central challenge from optimal compute allocation to extracting maximum value from limited data. The widely adopted Chinchilla scaling law assumes every training token is unique. This limits its ability to guide pretraining decisions in data-constrained regimes. We model the excess loss under repetition with a simple additive overfitting penalty and find that it accurately describes model behavior. Our scaling law yields qualitatively new compute-optimal allocation advice. Beyond a point, further repetition is counterproductive and compute is better spent on model capacity. We show that following our law's recommended configuration improves performance in data-constrained regimes. Finally, because our one-parameter form isolates overfitting in a single coefficient, it enables direct comparison across training configurations. As a case study, we show that strong weight decay (λ=1.0) reduces this coefficient by approximately 70%, providing a scaling-law explanation for recent findings that optimal weight decay in data-constrained regimes is an order of magnitude larger than standard prac",
+      "posted_at": "2026-05-08T12:59:32.240Z",
+      "collected_at": "2026-05-08T15:12:43+00:00",
       "matched_keywords": [
         "ai",
-        "founder",
-        "openai",
-        "startup"
+        "app",
+        "model",
+        "product"
       ],
       "signal_type": "news",
       "opportunity_score": 0.44,
-      "metrics": {},
+      "metrics": {
+        "upvotes": 1,
+        "authors": "Justin Lovelace, Christian Belardi, Srivatsa Kundurthy"
+      },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-06T19:16:41+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 19,
-      "title_ar": "كيف غادر إيلون ماسك OpenAI، وفقًا لغريغ بروكمان"
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "قوانين القياس الإلزامية للتدريب المقيد بالبيانات"
     },
     {
       "id": "techcrunch_ai:https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
@@ -659,8 +685,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "مشكلة المكتب الخلفي التي تفسر سبب عدم اتصال المتخصصين بك مرة أخرى"
     },
     {
@@ -684,8 +710,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "حوّل أفضل مطالبات الذكاء الاصطناعي إلى أدوات بنقرة واحدة في Chrome"
     },
     {
@@ -709,8 +735,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 7,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 8,
       "title_ar": "أصبحت شركة Pit الناشئة الجديدة للذكاء الاصطناعي لمؤسسي VOI أحدث نجم صاعد من ستوكهولم"
     },
     {
@@ -734,30 +760,60 @@
       "signal_type": "pain",
       "opportunity_score": 0.4,
       "metrics": {
-        "upvotes": 26,
+        "upvotes": 29,
         "authors": "Ivan Bondarenko, Roman Derunets, Oleg Sedukhin"
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T07:12:49+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 4,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 5,
       "title_ar": "فريق RaguTeam في SemEval -2026 المهمة 8: القائمة والأصدقاء في مجموعة LLM مدبرة من قبل القاضي من أجل توليد استجابة متعددة المنعطفات مخلصة"
     },
     {
-      "id": "github_repos:1164177736",
+      "id": "github_repos:1233078591",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/Fatahhnaz/iphoneclaw",
-      "external_id": "1164177736",
-      "title": "Fatahhnaz/iphoneclaw",
-      "text": "📱 Automate iPhone tasks using AI agents with real user recording and one-command replay for seamless, reusable workflows.",
-      "posted_at": "2026-05-08T13:03:15Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
+      "source_url": "https://github.com/vllnt/skills",
+      "external_id": "1233078591",
+      "title": "vllnt/skills",
+      "text": "Open-source agent skills published by vllnt. Compatible with Claude Code, OpenCode, Cursor, and any runtime that loads skills from Markdown directories.",
+      "posted_at": "2026-05-08T15:12:46Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
       "matched_keywords": [
         "agent",
-        "agents",
+        "claude",
+        "cursor",
+        "open-source"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.38,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "language": "Shell"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "vllnt/skills"
+    },
+    {
+      "id": "github_repos:1231037627",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/tya5/reyn",
+      "external_id": "1231037627",
+      "title": "tya5/reyn",
+      "text": "LLM agent workflow OS with a Markdown DSL. Constrained, validated, replayable execution. Predictability over autonomy.",
+      "posted_at": "2026-05-08T15:12:40Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
+      "matched_keywords": [
+        "agent",
         "ai",
+        "llm",
         "workflow"
       ],
       "signal_type": "news",
@@ -768,40 +824,10 @@
         "language": "Python"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "فتحناز/إفونيكلاو"
-    },
-    {
-      "id": "github_repos:1229955834",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/ar-agents/ar-agents",
-      "external_id": "1229955834",
-      "title": "ar-agents/ar-agents",
-      "text": "Mercado Pago Agent Toolkit for the Vercel AI SDK 6. 89 typed tools across the agent-relevant Mercado Pago API surface.",
-      "posted_at": "2026-05-08T13:03:15Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
-      "matched_keywords": [
-        "agent",
-        "agents",
-        "ai",
-        "tool"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.38,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "وكلاء- ar/وكلاء- ar"
+      "title_ar": "tya5/reyn"
     },
     {
       "id": "openai_news:https://openai.com/index/openai-pwc-finance-collaboration",
@@ -826,8 +852,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T04:50:44+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 35,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 36,
       "title_ar": "تتعاون OpenAI و PwC لإعادة تصور مكتب المدير المالي"
     },
     {
@@ -853,9 +879,38 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-06T15:56:23+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 21,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 22,
       "title_ar": "كيف تبني الشركات الرائدة ميزة الذكاء الاصطناعي"
+    },
+    {
+      "id": "github_repos:1176620622",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/Artifigenz/artifigenz-core",
+      "external_id": "1176620622",
+      "title": "Artifigenz/artifigenz-core",
+      "text": "AI-native products for the agentic era",
+      "posted_at": "2026-05-08T15:12:40Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
+      "matched_keywords": [
+        "agent",
+        "ai",
+        "product"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.34,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "Artifigenz/artifigenz - core"
     },
     {
       "id": "google_ai_blog:https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/",
@@ -878,8 +933,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-04T22:44:36+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 37,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 38,
       "title_ar": "تقليل الاحتكاك والكمون للوظائف طويلة الأمد باستخدام Webhooks في واجهة برمجة تطبيقات الجوزاء"
     },
     {
@@ -907,8 +962,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "التجميع المتوازن: فهم وتحديد تحيز التجميع في GRPO"
     },
     {
@@ -936,8 +991,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "استرداد المكافأة الخفية في السياسات القائمة على الانتشار"
     },
     {
@@ -962,8 +1017,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "داخل VAKRA: المنطق، واستخدام الأدوات، وأنماط فشل الوكلاء"
     },
     {
@@ -988,8 +1043,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T19:01:34+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 28,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 29,
       "title_ar": "طرق جديدة لشراء إعلانات ChatGPT"
     },
     {
@@ -1014,8 +1069,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 6,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 7,
       "title_ar": "تعيد سيمبلكس التفكير في تطوير البرامج مع الدستور الغذائي"
     },
     {
@@ -1038,13 +1093,13 @@
       "signal_type": "news",
       "opportunity_score": 0.3,
       "metrics": {
-        "upvotes": 4,
+        "upvotes": 5,
         "authors": "Liang Yao, Fan Liu, Shengxiang Xu"
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "RemoteZero: الاستدلال الجغرافي المكاني بدون تعليقات توضيحية بشرية"
     },
     {
@@ -1067,26 +1122,70 @@
       "signal_type": "news",
       "opportunity_score": 0.3,
       "metrics": {
-        "upvotes": 9,
+        "upvotes": 10,
         "authors": "You Qin, Kai Liu, Shengqiong Wu"
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 2,
       "title_ar": "الذكاء السمعي البصري في نماذج الأساس الكبيرة"
     },
     {
-      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-2bit-mixed_2_6",
+      "id": "huggingface_models:mlx-community/nesso-0.4B-agentic-mlx",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/mlx-community/nesso-0.4B-agentic-mlx",
+      "external_id": "mlx-community/nesso-0.4B-agentic-mlx",
+      "title": "mlx-community/nesso-0.4B-agentic-mlx — text-generation",
+      "text": "Hugging Face model update text-generation mlx safetensors llama small-language-model slm edge-ai italian bilingual function-calling agentic structured-output tool-use downloads 0 likes 0",
+      "posted_at": "2026-05-08T14:42:28.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "agent",
+        "ai",
+        "model",
+        "tool"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.3,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "mlx",
+          "safetensors",
+          "llama",
+          "small-language-model",
+          "slm",
+          "edge-ai",
+          "italian",
+          "bilingual",
+          "function-calling",
+          "agentic",
+          "structured-output",
+          "tool-use"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "mlx - community/nesso-0.4B-agentic-mlx — توليد النص"
+    },
+    {
+      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-2bit-mixed_2_6",
       "source_id": "huggingface_models",
       "source_name": "Hugging Face multimodal models",
       "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-2bit-mixed_2_6",
-      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-2bit-mixed_2_6",
-      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-2bit-mixed_2_6 — image-text-to-text",
+      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-2bit-mixed_2_6",
+      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-2bit-mixed_2_6",
+      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-2bit-mixed_2_6 — image-text-to-text",
       "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text 2-bit text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x downloads 0 likes 0",
-      "posted_at": "2026-05-08T12:54:50.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
+      "posted_at": "2026-05-08T13:18:54.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
       "matched_keywords": [
         "ai",
         "claude",
@@ -1115,22 +1214,22 @@
         ]
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - MLX -2bit - mixed _2 _6 — image - text — to - text"
+      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - v2 - MLX -2bit - mixed _2 _6 — image - text — to - text"
     },
     {
-      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-3bit-mixed_3_6",
+      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-3bit-mixed_3_6",
       "source_id": "huggingface_models",
       "source_name": "Hugging Face multimodal models",
       "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-3bit-mixed_3_6",
-      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-3bit-mixed_3_6",
-      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-3bit-mixed_3_6 — image-text-to-text",
+      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-3bit-mixed_3_6",
+      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-3bit-mixed_3_6",
+      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-3bit-mixed_3_6 — image-text-to-text",
       "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text 3-bit text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x downloads 0 likes 0",
-      "posted_at": "2026-05-08T12:52:00.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
+      "posted_at": "2026-05-08T13:17:01.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
       "matched_keywords": [
         "ai",
         "claude",
@@ -1159,286 +1258,22 @@
         ]
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - MLX -3bit - mixed _3 _6 — image - text — to - text"
+      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - v2 - MLX -3bit - mixed _3 _6 — image - text — to - text"
     },
     {
-      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-4bit-mixed_4_6",
+      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-4bit-mixed_4_6",
       "source_id": "huggingface_models",
       "source_name": "Hugging Face multimodal models",
       "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-4bit-mixed_4_6",
-      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-4bit-mixed_4_6",
-      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-4bit-mixed_4_6 — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x downloads 0 likes 0",
-      "posted_at": "2026-05-08T12:49:16.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "downloads": 0,
-        "likes": 0,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "mlx",
-          "safetensors",
-          "gemma4",
-          "image-text-to-text",
-          "text-generation-inference",
-          "transformers",
-          "unsloth",
-          "reasoning",
-          "conversational",
-          "en",
-          "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
-          "dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - MLX -4bit - mixed _4 _6 — image - text — to - text"
-    },
-    {
-      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-5bit-int5-affine",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-5bit-int5-affine",
-      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-5bit-int5-affine",
-      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-5bit-int5-affine — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x downloads 280 likes 1",
-      "posted_at": "2026-05-08T12:47:25.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "downloads": 280,
-        "likes": 1,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "mlx",
-          "safetensors",
-          "gemma4",
-          "image-text-to-text",
-          "text-generation-inference",
-          "transformers",
-          "unsloth",
-          "reasoning",
-          "conversational",
-          "en",
-          "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
-          "dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - MLX -5bit - int5 - affine - image — text — to - text"
-    },
-    {
-      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-6bit-int6-affine",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-6bit-int6-affine",
-      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-6bit-int6-affine",
-      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-6bit-int6-affine — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x downloads 475 likes 3",
-      "posted_at": "2026-05-08T12:44:36.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "downloads": 475,
-        "likes": 3,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "mlx",
-          "safetensors",
-          "gemma4",
-          "image-text-to-text",
-          "text-generation-inference",
-          "transformers",
-          "unsloth",
-          "reasoning",
-          "conversational",
-          "en",
-          "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
-          "dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - MLX -6bit - int6 - affine - image — text — to - text"
-    },
-    {
-      "id": "huggingface_models:zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-8bit-int8-affine",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-8bit-int8-affine",
-      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-8bit-int8-affine",
-      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-MLX-8bit-int8-affine — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x downloads 180 likes 1",
-      "posted_at": "2026-05-08T12:42:20.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "downloads": 180,
-        "likes": 1,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "mlx",
-          "safetensors",
-          "gemma4",
-          "image-text-to-text",
-          "text-generation-inference",
-          "transformers",
-          "unsloth",
-          "reasoning",
-          "conversational",
-          "en",
-          "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
-          "dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - MLX -8bit - int8 - affine - image — text — to - text"
-    },
-    {
-      "id": "huggingface_models:zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-2bit-mixed_2_6",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-2bit-mixed_2_6",
-      "external_id": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-2bit-mixed_2_6",
-      "title": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-2bit-mixed_2_6 — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text 2-bit text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x downloads 0 likes 0",
-      "posted_at": "2026-05-08T12:29:57.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "downloads": 0,
-        "likes": 0,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "mlx",
-          "safetensors",
-          "gemma4",
-          "image-text-to-text",
-          "2-bit",
-          "text-generation-inference",
-          "transformers",
-          "unsloth",
-          "reasoning",
-          "conversational",
-          "en",
-          "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-26 B - A4B - it - Claude - Opus - Distilled - v2 - MLX -2bit - mixed _2 _6 — image - text — to - text"
-    },
-    {
-      "id": "huggingface_models:zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-3bit-mixed_3_6",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-3bit-mixed_3_6",
-      "external_id": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-3bit-mixed_3_6",
-      "title": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-3bit-mixed_3_6 — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text 3-bit text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x downloads 0 likes 0",
-      "posted_at": "2026-05-08T12:29:07.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "downloads": 0,
-        "likes": 0,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "mlx",
-          "safetensors",
-          "gemma4",
-          "image-text-to-text",
-          "3-bit",
-          "text-generation-inference",
-          "transformers",
-          "unsloth",
-          "reasoning",
-          "conversational",
-          "en",
-          "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-26 B - A4B - it - Claude - Opus - Distilled - v2 - MLX -3bit - mixed _3 _6 — image - text — to - text"
-    },
-    {
-      "id": "huggingface_models:zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-4bit-mixed_4_6",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-4bit-mixed_4_6",
-      "external_id": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-4bit-mixed_4_6",
-      "title": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-4bit-mixed_4_6 — image-text-to-text",
+      "source_url": "https://huggingface.co/zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-4bit-mixed_4_6",
+      "external_id": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-4bit-mixed_4_6",
+      "title": "zecanard/gemma-4-31B-it-Claude-Opus-Distilled-v2-MLX-4bit-mixed_4_6 — image-text-to-text",
       "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x dataset:TeichAI/claude-4.5-opus-high-reasoning-250x downloads 0 likes 0",
-      "posted_at": "2026-05-08T12:28:15.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
+      "posted_at": "2026-05-08T13:14:31.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
       "matched_keywords": [
         "ai",
         "claude",
@@ -1467,141 +1302,53 @@
         ]
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-26 B - A4B - it - Claude - Opus - Distilled - v2 - MLX -4bit - mixed _4 _6 — image - text — to - text"
+      "title_ar": "zecanard/gemma -4-31 B - it - Claude - Opus - Distilled - v2 - MLX -4bit - mixed _4 _6 — image - text — to - text"
     },
     {
-      "id": "huggingface_models:zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-5bit-int5-affine",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-5bit-int5-affine",
-      "external_id": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-5bit-int5-affine",
-      "title": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-5bit-int5-affine — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x dataset:TeichAI/claude-4.5-opus-high-reasoning-250x downloads 470 likes 1",
-      "posted_at": "2026-05-08T12:27:22.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "downloads": 470,
-        "likes": 1,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "mlx",
-          "safetensors",
-          "gemma4",
-          "image-text-to-text",
-          "text-generation-inference",
-          "transformers",
-          "unsloth",
-          "reasoning",
-          "conversational",
-          "en",
-          "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
-          "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-26 B - A4B - it - Claude - Opus - Distilled — v2 — MLX -5bit — int5 — affine — image - text - to - text"
-    },
-    {
-      "id": "huggingface_models:zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-6bit-int6-affine",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-6bit-int6-affine",
-      "external_id": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-6bit-int6-affine",
-      "title": "zecanard/gemma-4-26B-A4B-it-Claude-Opus-Distilled-v2-MLX-6bit-int6-affine — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text mlx safetensors gemma4 image-text-to-text text-generation-inference transformers unsloth reasoning conversational en dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x dataset:TeichAI/claude-4.5-opus-high-reasoning-250x downloads 553 likes 1",
-      "posted_at": "2026-05-08T12:26:24.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "downloads": 553,
-        "likes": 1,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "mlx",
-          "safetensors",
-          "gemma4",
-          "image-text-to-text",
-          "text-generation-inference",
-          "transformers",
-          "unsloth",
-          "reasoning",
-          "conversational",
-          "en",
-          "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
-          "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "zecanard/gemma -4-26 B - A4B - it - Claude - Opus - Distilled — v2 — MLX -6bit — int6 — affine — image - text - to - text"
-    },
-    {
-      "id": "github_repos:1232903473",
+      "id": "github_repos:964183491",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/Cevoka/seckinai",
-      "external_id": "1232903473",
-      "title": "Cevoka/seckinai",
-      "text": "Seçkin AI — AI Agency Landing Page",
-      "posted_at": "2026-05-08T13:03:17Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
+      "source_url": "https://github.com/Kletternaut/rpicam-gui",
+      "external_id": "964183491",
+      "title": "Kletternaut/rpicam-gui",
+      "text": "Qt5 desktop GUI controller for Raspberry Pi camera control via rpicam-apps. Single-window dual-instance design, GStreamer RTSP/UDP streaming, AI object detection, V4L2-ctl, autofocus, and automated detection actions.",
+      "posted_at": "2026-05-08T15:12:41Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
       "matched_keywords": [
-        "agency",
-        "ai"
+        "ai",
+        "app"
       ],
       "signal_type": "news",
       "opportunity_score": 0.3,
       "metrics": {
         "stars": 0,
         "forks": 0,
-        "language": "TypeScript"
+        "language": "C++"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "سيفوكا/سيكيناي"
+      "title_ar": "Kletternaut/rpicam - gui"
     },
     {
-      "id": "github_repos:1232967350",
+      "id": "github_repos:1233061233",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/M2LabOrg/document-intelligence-pipeline",
-      "external_id": "1232967350",
-      "title": "M2LabOrg/document-intelligence-pipeline",
-      "text": "AI Coding Lab demo: Document Intelligence Pipeline on Azure",
-      "posted_at": "2026-05-08T13:03:16Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
+      "source_url": "https://github.com/Abdul-39/TweetPulse-AI",
+      "external_id": "1233061233",
+      "title": "Abdul-39/TweetPulse-AI",
+      "text": "AI-powered Tweet Sentiment & Hashtag Analyzer using NLP and Transformers",
+      "posted_at": "2026-05-08T15:12:35Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
       "matched_keywords": [
         "ai",
-        "pipeline"
+        "ai-powered"
       ],
       "signal_type": "news",
       "opportunity_score": 0.3,
@@ -1611,38 +1358,35 @@
         "language": null
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "M2LabOrg/document - intelligence - pipeline"
+      "title_ar": "Abdul -39/TweetPulse - AI"
     },
     {
-      "id": "github_repos:1224473370",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/justadm/memory-bank",
-      "external_id": "1224473370",
-      "title": "justadm/memory-bank",
-      "text": "Simple agent memory service built with FastAPI and PostgreSQL",
-      "posted_at": "2026-05-08T13:03:16Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
+      "id": "google_ai_blog:https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "source_id": "google_ai_blog",
+      "source_name": "Google AI Blog",
+      "source_kind": "official",
+      "source_url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "external_id": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "title": "See what happens when creative legends use AI to make ads for small businesses",
+      "text": "Today we're launching The Small Brief, an initiative bringing together four ad industry icons to champion a local businesses they love. Their mission is to build breakth…",
+      "posted_at": "Fri, 08 May 2026 15:00:00 +0000",
+      "collected_at": "2026-05-08T15:12:15+00:00",
       "matched_keywords": [
-        "agent",
-        "service"
+        "ai",
+        "app",
+        "launch"
       ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "Python"
-      },
+      "signal_type": "launch",
+      "opportunity_score": 0.28,
+      "metrics": {},
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "justadm/memory - bank"
+      "title_ar": "تعرف على ما يحدث عندما تستخدم الأساطير الإبداعية الذكاء الاصطناعي لإنشاء إعلانات للشركات الصغيرة"
     },
     {
       "id": "google_ai_blog:https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
@@ -1665,8 +1409,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "8 نصائح من الجوزاء لتنظيم مسكنك (وحياتك)"
     },
     {
@@ -1690,8 +1434,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "كيفية إنشاء تطبيقات ويب قابلة للتطوير باستخدام عامل تصفية الخصوصية في OpenAI"
     },
     {
@@ -1715,8 +1459,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "تطوير المقارنة المعيارية للذكاء الاصطناعي مع ساحة الألعاب"
     },
     {
@@ -1740,8 +1484,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "مراجعة عام Google: 8 مجالات مع اختراقات بحثية في عام 2025"
     },
     {
@@ -1765,8 +1509,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "Gemini 3.1 Flash TTS: الجيل التالي من خطاب الذكاء الاصطناعي التعبيري"
     },
     {
@@ -1790,8 +1534,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "نظرة خاطفة على أدوات واجهة سطر الأوامر"
     },
     {
@@ -1815,8 +1559,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T20:55:04+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 8,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 9,
       "title_ar": "دعوى إيلون ماسك القضائية تضع سجل سلامة OpenAI تحت المجهر"
     },
     {
@@ -1855,52 +1599,9 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T09:03:16+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 3,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 4,
       "title_ar": "Masoond/fake - v30 — text — to — image"
-    },
-    {
-      "id": "huggingface_models:Sciamlab/LFM2.5-VL-450M-landslide-GGUF",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/Sciamlab/LFM2.5-VL-450M-landslide-GGUF",
-      "external_id": "Sciamlab/LFM2.5-VL-450M-landslide-GGUF",
-      "title": "Sciamlab/LFM2.5-VL-450M-landslide-GGUF — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text gguf vlm lfm2 landslide sentinel-2 earth-observation remote-sensing llama.cpp image-text-to-text en dataset:Sciamlab/landslide-sentinel2-vlm base_model:LiquidAI/LFM2-VL-450M downloads 55 likes 0",
-      "posted_at": "2026-05-07T12:50:11.000Z",
-      "collected_at": "2026-05-07T13:23:09+00:00",
-      "matched_keywords": [
-        "ai",
-        "dataset",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.26,
-      "metrics": {
-        "downloads": 156,
-        "likes": 1,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "gguf",
-          "vlm",
-          "lfm2",
-          "landslide",
-          "sentinel-2",
-          "earth-observation",
-          "remote-sensing",
-          "llama.cpp",
-          "image-text-to-text",
-          "en",
-          "dataset:Sciamlab/landslide-sentinel2-vlm",
-          "base_model:LiquidAI/LFM2-VL-450M"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T13:23:12+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 3,
-      "title_ar": "Sciamlab/LFM2.5-VL-450M - LANDSLIDE - GGUF — image — text — to — text"
     },
     {
       "id": "huggingface_models:YuuiKurata/unholyDesireMixSinister_v80_qnn2.28",
@@ -1938,8 +1639,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T11:01:06+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 3,
       "title_ar": "YuuiKurata/unholyDesireMixSinister_v80_qnn2.28 — تحويل النص إلى صورة"
     },
     {
@@ -1979,82 +1680,9 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T11:01:06+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 3,
       "title_ar": "julientassy/fantasy - pixel - lora - v2 — تحويل النص إلى صورة"
-    },
-    {
-      "id": "huggingface_models:LuffyTheFox/Qwopus3.6-35B-A3B-Uncensored-Genesis-GGUF",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/LuffyTheFox/Qwopus3.6-35B-A3B-Uncensored-Genesis-GGUF",
-      "external_id": "LuffyTheFox/Qwopus3.6-35B-A3B-Uncensored-Genesis-GGUF",
-      "title": "LuffyTheFox/Qwopus3.6-35B-A3B-Uncensored-Genesis-GGUF — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text transformers text-generation-inference unsloth qwen3_6 moe reasoning chain-of-thought lora sft multimodal vision tool-use downloads 0 likes 0",
-      "posted_at": "2026-05-08T13:00:11.000Z",
-      "collected_at": "2026-05-08T13:03:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "model",
-        "tool"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.26,
-      "metrics": {
-        "downloads": 0,
-        "likes": 0,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "transformers",
-          "text-generation-inference",
-          "unsloth",
-          "qwen3_6",
-          "moe",
-          "reasoning",
-          "chain-of-thought",
-          "lora",
-          "sft",
-          "multimodal",
-          "vision",
-          "tool-use"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "LuffyTheFox/Qwopus3.6-35B-A3B - Uncensored - Genesis - GGUF - image — text — to — text"
-    },
-    {
-      "id": "github_repos:1231100756",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/Play-New/playable-org",
-      "external_id": "1231100756",
-      "title": "Play-New/playable-org",
-      "text": "Public template for representing an organization as a structured, agent-maintained graph. Markdown corpus + bundled mcp server + four analytical playbooks (ai-exposure, value-map, reshuffle, world-model).",
-      "posted_at": "2026-05-08T13:03:19Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
-      "matched_keywords": [
-        "agent",
-        "ai",
-        "mcp",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.24,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "Play - New/playable - org"
     },
     {
       "id": "bens_bites:https://www.bensbites.com/p/chatgpts-nano-banana",
@@ -2076,8 +1704,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "موزة نانو من ChatGPT"
     },
     {
@@ -2100,8 +1728,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 53,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 54,
       "title_ar": "طرق جديدة لإنشاء صور مخصصة في تطبيق الجوزاء"
     },
     {
@@ -2124,46 +1752,9 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T17:43:57+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 10,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 11,
       "title_ar": "كيف أعادت أنثروبيك ميثوس كتابة نهج فايرفوكس للأمن السيبراني"
-    },
-    {
-      "id": "huggingface_models:SearchingMan/Z-Image-Turbo-student-adapter",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face image models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/SearchingMan/Z-Image-Turbo-student-adapter",
-      "external_id": "SearchingMan/Z-Image-Turbo-student-adapter",
-      "title": "SearchingMan/Z-Image-Turbo-student-adapter — text-to-image",
-      "text": "Hugging Face model update text-to-image diffusers safetensors text-to-image en arxiv:2511.22699 arxiv:2511.22677 arxiv:2511.13649 license:apache-2.0 diffusers:ZImagePipeline region:us downloads 0 likes 0",
-      "posted_at": "2026-05-07T11:40:40.000Z",
-      "collected_at": "2026-05-07T13:23:09+00:00",
-      "matched_keywords": [
-        "model",
-        "pipeline"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.22,
-      "metrics": {
-        "downloads": 45,
-        "likes": 5,
-        "pipeline_tag": "text-to-image",
-        "tags": [
-          "diffusers",
-          "safetensors",
-          "text-to-image",
-          "en",
-          "license:apache-2.0",
-          "diffusers:ZImagePipeline",
-          "region:us"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T13:23:12+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 6,
-      "title_ar": "SearchingMan/Z - Image - Turbo — student - adapter — text — to — image"
     },
     {
       "id": "huggingface_daily_papers:2605.06376",
@@ -2183,13 +1774,13 @@
       "signal_type": "news",
       "opportunity_score": 0.22,
       "metrics": {
-        "upvotes": 17,
+        "upvotes": 18,
         "authors": "Tao Liu, Hao Yan, Mengting Chen"
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T04:46:11+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "مطابقة التوزيع المستمر لتقطير الانتشار بخطوات قليلة"
     },
     {
@@ -2226,151 +1817,66 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T09:03:16+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 3,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 4,
       "title_ar": "duongve/NetaYume-Lumina-Image-2.0-Diffusers-v40 — text — to — image"
     },
     {
-      "id": "github_repos:1208712297",
+      "id": "github_repos:1210718202",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/bruchris/canvas-lms-mcp",
-      "external_id": "1208712297",
-      "title": "bruchris/canvas-lms-mcp",
-      "text": "Canvas LMS MCP server — read courses, assignments, submissions, rubrics, quizzes; grade and comment from any AI agent",
-      "posted_at": "2026-05-08T13:03:20Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
+      "source_url": "https://github.com/invidious9000/transcript-search",
+      "external_id": "1210718202",
+      "title": "invidious9000/transcript-search",
+      "text": "MCP server for full-text search across Claude Code and Codex CLI conversation transcripts. Tantivy-backed, sub-50ms queries over 800K+ documents.",
+      "posted_at": "2026-05-08T15:12:36Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
       "matched_keywords": [
-        "agent",
-        "ai",
+        "claude",
+        "codex",
         "mcp"
       ],
       "signal_type": "news",
       "opportunity_score": 0.2,
       "metrics": {
-        "stars": 2,
-        "forks": 0,
-        "language": "TypeScript"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "bruchris/canvas - lms - mcp"
-    },
-    {
-      "id": "github_repos:1126309492",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/sabinakhatun14588-ctrl/moltbook-agent-guard",
-      "external_id": "1126309492",
-      "title": "sabinakhatun14588-ctrl/moltbook-agent-guard",
-      "text": "🛡️ Protect AI agents on Moltbook with real-time security, ensuring safe interactions and data integrity for users and developers alike.",
-      "posted_at": "2026-05-08T13:03:15Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
-      "matched_keywords": [
-        "agent",
-        "agents",
-        "ai"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.2,
-      "metrics": {
         "stars": 0,
-        "forks": 0,
-        "language": "Python"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "sabinakhatun14588 - ctrl/moltbook - agent - guard"
-    },
-    {
-      "id": "github_repos:1225766375",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/eliskcage/cortex-news",
-      "external_id": "1225766375",
-      "title": "eliskcage/cortex-news",
-      "text": "cortex-news edition 14 — He Said Yes To Mum (30 apr 2026). The day cortex first trusted a non-Claude entity. Includes story-mode/peer-review toggle, live-API receipts confirming 4.6's gyroscope wiring, and the seed_point_son compound.",
-      "posted_at": "2026-05-08T13:03:25Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.16,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "eliskcage/cortex - news"
-    },
-    {
-      "id": "github_repos:1221356259",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/etdofreshai/etl-scripting-language",
-      "external_id": "1221356259",
-      "title": "etdofreshai/etl-scripting-language",
-      "text": "Minimal LLM-oriented scripting language and self-hosting compiler bootstrap.",
-      "posted_at": "2026-05-01T17:00:58Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
-      "matched_keywords": [
-        "ai",
-        "llm"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.16,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "Python"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 1,
-      "title_ar": "etdofreshai/etl - scripting - language"
-    },
-    {
-      "id": "github_repos:1214237264",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/umikok7/roxy-agent",
-      "external_id": "1214237264",
-      "title": "umikok7/roxy-agent",
-      "text": "💧✨ A customizable desktop AI Agent featuring pixel-art Roxy, powered by modular deer-flow runtime with built-in RoxySkills for fans of the Overlord series. ｜ 一款洛琪希主题的像素风桌面 AI Agent，基于 deer-flow 模块化运行时引擎构建，内置 RoxySkills  技能系统",
-      "posted_at": "2026-05-08T13:03:17Z",
-      "collected_at": "2026-05-08T13:03:28+00:00",
-      "matched_keywords": [
-        "agent",
-        "ai"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.16,
-      "metrics": {
-        "stars": 2,
         "forks": 1,
+        "language": "Rust"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "iNVIDIUS9000/البحث في النصوص"
+    },
+    {
+      "id": "github_repos:1179600154",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/pharrellyhy/wonderlens-activity-fullstack-demo",
+      "external_id": "1179600154",
+      "title": "pharrellyhy/wonderlens-activity-fullstack-demo",
+      "text": "WonderLens Activity Demo — split-view interactive browser demo with a multi-agent backend (Director, Script, Visual agents) that generates structured JSON activity recipes for children's photo-based learning experiences.",
+      "posted_at": "2026-04-24T06:14:08Z",
+      "collected_at": "2026-05-08T15:12:47+00:00",
+      "matched_keywords": [
+        "agent",
+        "agents"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.16,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
         "language": "Python"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T13:03:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
       "seen_count": 1,
-      "title_ar": "umikok7/وكيل روكسي"
+      "title_ar": "pharrellyhy/wonderlens - activity - fullstack - demo"
     },
     {
       "id": "openai_news:https://openai.com/index/openai-on-aws",
@@ -2396,8 +1902,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "تأتي نماذج OpenAI والدستور الغذائي والوكلاء المدارون إلى AWS"
     },
     {
@@ -2425,8 +1931,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T09:03:16+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 3,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 4,
       "title_ar": "المد والجزر: كل طبقة تعرف الرمز المميز تحت السياق"
     },
     {
@@ -2451,8 +1957,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-06T11:41:58+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 23,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 24,
       "title_ar": "فتح شبكات التدريب على الذكاء الاصطناعي واسعة النطاق باستخدام MRC (اتصال موثوق متعدد المسارات)"
     },
     {
@@ -2476,8 +1982,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "إنشاء مقاطع فيديو وتحريرها ومشاركتها مجانًا في Google Vids"
     },
     {
@@ -2501,8 +2007,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T15:27:04+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 30,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 31,
       "title_ar": "الدستور الغذائي يكتسب زخماً"
     },
     {
@@ -2527,8 +2033,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "التزامنا بسلامة المجتمع"
     },
     {
@@ -2552,8 +2058,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "نحن بصدد إطلاق اثنين من البولي يوريثين الحراري المتخصص لعصر الوكلاء."
     },
     {
@@ -2576,8 +2082,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "طرق جديدة لتحقيق التوازن بين التكلفة والموثوقية في واجهة برمجة تطبيقات الجوزاء"
     },
     {
@@ -2601,8 +2107,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "انضم إلى دورة ترميز Vibe الجديدة لوكلاء الذكاء الاصطناعي من Google و Kaggle"
     },
     {
@@ -2626,8 +2132,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 53,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 54,
       "title_ar": "OpenAI متاح في FedRAMP معتدل"
     },
     {
@@ -2651,8 +2157,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "يجب على الوكلاء مقابلتك"
     },
     {
@@ -2676,8 +2182,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "ما الذي يجعل الوكلاء الجيدين .md ؟"
     },
     {
@@ -2716,8 +2222,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 19,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 20,
       "title_ar": "storagejuju/kimi-k2.6-ud-q8-k-xl-juju - توليد النص"
     },
     {
@@ -2741,8 +2247,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T01:29:31+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 16,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 17,
       "title_ar": "بنك سينغولار يساعد المصرفيين على التحرك بسرعة مع ChatGPT و Codex"
     },
     {
@@ -2781,8 +2287,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T14:40:13+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 15,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 16,
       "title_ar": "storagejuju/glm-5.1-mxfp4-moe-juju - توليد النص"
     },
     {
@@ -2806,8 +2312,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T17:43:57+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 10,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 11,
       "title_ar": "تطوير الذكاء الصوتي باستخدام نماذج جديدة في واجهة برمجة التطبيقات"
     },
     {
@@ -2831,24 +2337,67 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T19:22:35+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 9,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 10,
       "title_ar": "اختبار الإعلانات في ChatGPT"
     },
     {
-      "id": "huggingface_models:storagejuju/glm-5.1-ud-iq2-m-juju",
+      "id": "huggingface_models:LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Claude-Opus-GGUF",
       "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
+      "source_name": "Hugging Face multimodal models",
       "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/storagejuju/glm-5.1-ud-iq2-m-juju",
-      "external_id": "storagejuju/glm-5.1-ud-iq2-m-juju",
-      "title": "storagejuju/glm-5.1-ud-iq2-m-juju — text-generation",
-      "text": "Hugging Face model update text-generation glm_moe_dsa text-generation gguf juju moe storagellm conversational base_model:zai-org/GLM-5.1 base_model:finetune:zai-org/GLM-5.1 license:mit region:us downloads 0 likes 0",
-      "posted_at": "2026-05-03T13:23:52.000Z",
-      "collected_at": "2026-05-03T13:28:18+00:00",
+      "source_url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Claude-Opus-GGUF",
+      "external_id": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Claude-Opus-GGUF",
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Claude-Opus-GGUF — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text transformers gguf text-generation-inference unsloth qwen3_6 moe reasoning chain-of-thought lora sft multimodal vision downloads 0 likes 0",
+      "posted_at": "2026-05-08T15:10:23.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
       "matched_keywords": [
         "ai",
-        "llm",
+        "claude",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.07,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "image-text-to-text",
+        "tags": [
+          "transformers",
+          "gguf",
+          "text-generation-inference",
+          "unsloth",
+          "qwen3_6",
+          "moe",
+          "reasoning",
+          "chain-of-thought",
+          "lora",
+          "sft",
+          "multimodal",
+          "vision"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "LuffyTheFox/Qwen3.6-35B-A3B - Uncensored - Claude - Opus — GGUF — image — text — to — text"
+    },
+    {
+      "id": "huggingface_models:seupedro/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face multimodal models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/seupedro/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+      "external_id": "seupedro/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+      "title": "seupedro/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated — text-generation",
+      "text": "Hugging Face model update text-generation transformers safetensors qwen3_5_moe image-text-to-text text-generation reasoning distillation chain-of-thought qwen qwen3.6 mixture-of-experts moe downloads 0 likes 0",
+      "posted_at": "2026-05-08T13:19:34.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "claude",
         "model"
       ],
       "signal_type": "news",
@@ -2858,22 +2407,25 @@
         "likes": 0,
         "pipeline_tag": "text-generation",
         "tags": [
+          "transformers",
+          "safetensors",
+          "qwen3_5_moe",
+          "image-text-to-text",
           "text-generation",
-          "gguf",
-          "juju",
-          "moe",
-          "storagellm",
-          "base_model:zai-org/GLM-5.1",
-          "base_model:finetune:zai-org/GLM-5.1",
-          "license:mit",
-          "region:us"
+          "reasoning",
+          "distillation",
+          "chain-of-thought",
+          "qwen",
+          "qwen3.6",
+          "mixture-of-experts",
+          "moe"
         ]
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 9,
-      "title_ar": "storagejuju/glm-5.1-ud-iq2-m-juju - توليد النص"
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "seupedro/Huihui - Qwen3.6-35B-A3B-Claude-4.7-Opus - abiterated — توليد النص"
     },
     {
       "id": "openai_news:https://openai.com/index/where-the-goblins-came-from",
@@ -2895,8 +2447,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "من أين أتت العفاريت"
     },
     {
@@ -2919,8 +2471,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "بناء البنية التحتية للحوسبة لعصر الذكاء"
     },
     {
@@ -2943,8 +2495,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "يعزز Gemini Robotics ER-1.6 التفكير لمساعدة الروبوتات على التنقل في مهام العالم الحقيقي."
     },
     {
@@ -2967,8 +2519,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "توسيع نطاق تعليم الذكاء الاصطناعي المتقدم في جميع أنحاء أفريقيا"
     },
     {
@@ -2991,8 +2543,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "المنصة 37 وبورصة الذكاء الاصطناعي: مساحات جديدة للابتكار والاكتشاف في مجال الذكاء الاصطناعي"
     },
     {
@@ -3015,8 +2567,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "تقديم NVIDIA Nemotron 3 Nano Omni: ذكاء متعدد الوسائط طويل السياق للمستندات ووكلاء الصوت والفيديو"
     },
     {
@@ -3039,8 +2591,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "DeepSeek - V4: سياق مليوني رمز يمكن للوكلاء استخدامه بالفعل"
     },
     {
@@ -3063,8 +2615,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "هذا هو مصممي - كلود"
     },
     {
@@ -3086,7 +2638,7 @@
       "opportunity_score": 0.04,
       "metrics": {
         "downloads": 0,
-        "likes": 184,
+        "likes": 187,
         "pipeline_tag": "text-to-image",
         "tags": [
           "text-to-image",
@@ -3098,8 +2650,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 54,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 55,
       "title_ar": "lodestones/Zeta - Chroma - تحويل النص إلى صورة"
     },
     {
@@ -3122,8 +2674,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 53,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 54,
       "title_ar": "المرحلة التالية من شراكة Microsoft OpenAI"
     },
     {
@@ -3146,8 +2698,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 53,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 54,
       "title_ar": "Ecom - RLVE: بيئات تكيفية يمكن التحقق منها لوكلاء محادثة التجارة الإلكترونية"
     },
     {
@@ -3170,8 +2722,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 53,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 54,
       "title_ar": "بنى أنثروبيك نموذجًا محفوفًا بالمخاطر بحيث لا يمكن إطلاقه"
     },
     {
@@ -3194,8 +2746,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 53,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 54,
       "title_ar": "لا يوجد كلود للمخالب"
     },
     {
@@ -3218,8 +2770,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "تعرف على المزيد حول نماذج العالم التفاعلية في أحدث بودكاست لدينا."
     },
     {
@@ -3242,8 +2794,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "في أحدث بودكاست لدينا، استمع إلى كيفية قيام فريق \"قافزي الدخان\" بجلب الجوزاء إلى مليارات الأشخاص."
     },
     {
@@ -3266,8 +2818,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "تدريب وصقل نماذج التضمين وإعادة التصنيف متعددة الوسائط مع محولات الجمل"
     },
     {
@@ -3290,8 +2842,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 52,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 53,
       "title_ar": "تدريب نماذج لغة الحمض النووي الريبوزي المرسال عبر 25 نوعًا مقابل 165 $"
     },
     {
@@ -3314,8 +2866,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-04T19:09:16+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 39,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 40,
       "title_ar": "كيف تقدم OpenAI الذكاء الاصطناعي الصوتي منخفض الكمون على نطاق واسع"
     },
     {
@@ -3338,8 +2890,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T17:11:08+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 29,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 30,
       "title_ar": "GPT-5.5 فوري: أكثر ذكاءً ووضوحًا وأكثر تخصيصًا"
     },
     {
@@ -3362,8 +2914,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-06T19:16:41+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 19,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 20,
       "title_ar": "تقديم العقود الآجلة لـ ChatGPT: فئة 2026"
     },
     {
@@ -3386,8 +2938,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T01:29:31+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 16,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 17,
       "title_ar": "تستخدم أوبر OpenAI لمساعدة الأشخاص على تحقيق الدخل بشكل أكثر ذكاءً والحجز بشكل أسرع"
     },
     {
@@ -3428,47 +2980,9 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T05:19:40+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 14,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 15,
       "title_ar": "VladShash/deepseek - math - full -7B - lean — prover — dpo -150k — mistral — توليد النص"
-    },
-    {
-      "id": "huggingface_models:BackGwa/Character-LoRA",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face image models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/BackGwa/Character-LoRA",
-      "external_id": "BackGwa/Character-LoRA",
-      "title": "BackGwa/Character-LoRA — text-to-image",
-      "text": "Hugging Face model update text-to-image text-to-image stable-diffusion sdxl lora base_model:BackGwa/LUMIERE-Q base_model:adapter:BackGwa/LUMIERE-Q license:creativeml-openrail-m region:us downloads 0 likes 1",
-      "posted_at": "2026-05-05T18:36:40.000Z",
-      "collected_at": "2026-05-05T19:01:32+00:00",
-      "matched_keywords": [
-        "ai",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.04,
-      "metrics": {
-        "downloads": 0,
-        "likes": 1,
-        "pipeline_tag": "text-to-image",
-        "tags": [
-          "text-to-image",
-          "stable-diffusion",
-          "sdxl",
-          "lora",
-          "base_model:BackGwa/LUMIERE-Q",
-          "base_model:adapter:BackGwa/LUMIERE-Q",
-          "license:creativeml-openrail-m",
-          "region:us"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-05T19:01:34+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 12,
-      "title_ar": "BackGwa/Character - LoRA - تحويل النص إلى صورة"
     },
     {
       "id": "huggingface_models:koyelog/MediMind-411M",
@@ -3504,8 +3018,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T17:43:57+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 9,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 10,
       "title_ar": "koyelog/MediMind -411M — توليد النص"
     },
     {
@@ -3528,8 +3042,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 7,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 8,
       "title_ar": "توسيع نطاق الوصول الموثوق به للسايبر باستخدام GPT-5.5 و GPT-5.5 - Cyber"
     },
     {
@@ -3566,8 +3080,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 6,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 7,
       "title_ar": "BlueTriangles/SDXL_Bodyguard_Catherine — تحويل النص إلى صورة"
     },
     {
@@ -3604,9 +3118,498 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T13:03:28+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
       "title_ar": "BlueTriangles/SDXL_Lynn_Lambretta — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:BlueTriangles/SDXL_Gruier_Serenity",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/BlueTriangles/SDXL_Gruier_Serenity",
+      "external_id": "BlueTriangles/SDXL_Gruier_Serenity",
+      "title": "BlueTriangles/SDXL_Gruier_Serenity — text-to-image",
+      "text": "Hugging Face model update text-to-image diffusers text-to-image lora template:diffusion-lora base_model:OnomaAIResearch/Illustrious-XL-v2.0 base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0 license:cc-by-nc-sa-4.0 region:us downloads 3 likes 0",
+      "posted_at": "2026-05-07T21:52:11.000Z",
+      "collected_at": "2026-05-07T22:49:49+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 7,
+        "likes": 0,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "diffusers",
+          "text-to-image",
+          "lora",
+          "template:diffusion-lora",
+          "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+          "base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0",
+          "license:cc-by-nc-sa-4.0",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-07T22:49:52+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
+      "title_ar": "BlueTriangles/SDXL_Gruier_Serenity — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:GAi92/anima-loras",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/GAi92/anima-loras",
+      "external_id": "GAi92/anima-loras",
+      "title": "GAi92/anima-loras — text-to-image",
+      "text": "Hugging Face model update text-to-image lora text-to-image base_model:circlestone-labs/Anima base_model:adapter:circlestone-labs/Anima license:other region:us downloads 0 likes 5",
+      "posted_at": "2026-05-04T22:51:28.000Z",
+      "collected_at": "2026-05-05T01:27:01+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 6,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "lora",
+          "text-to-image",
+          "base_model:circlestone-labs/Anima",
+          "base_model:adapter:circlestone-labs/Anima",
+          "license:other",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-05T01:27:03+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 6,
+      "title_ar": "GAi92/anima - loras - تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:zhangyi617/sd15_naruto_text_0.1_PGD",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/zhangyi617/sd15_naruto_text_0.1_PGD",
+      "external_id": "zhangyi617/sd15_naruto_text_0.1_PGD",
+      "title": "zhangyi617/sd15_naruto_text_0.1_PGD — text-to-image",
+      "text": "Hugging Face model update text-to-image diffusers tensorboard safetensors stable-diffusion stable-diffusion-diffusers text-to-image diffusers-training lora base_model:runwayml/stable-diffusion-v1-5 base_model:adapter:runwayml/stable-diffusion-v1-5 license:creativeml-openrail-m region:us downloads 0 likes 0",
+      "posted_at": "2026-05-05T09:40:36.000Z",
+      "collected_at": "2026-05-05T09:49:42+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "diffusers",
+          "safetensors",
+          "stable-diffusion",
+          "stable-diffusion-diffusers",
+          "text-to-image",
+          "diffusers-training",
+          "lora",
+          "base_model:runwayml/stable-diffusion-v1-5",
+          "base_model:adapter:runwayml/stable-diffusion-v1-5",
+          "license:creativeml-openrail-m",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-05T09:49:44+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 5,
+      "title_ar": "zhangyi617/sd15_naruto_text_0.1_PGD — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:mradermacher/MedPsy-4B-GGUF",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/mradermacher/MedPsy-4B-GGUF",
+      "external_id": "mradermacher/MedPsy-4B-GGUF",
+      "title": "mradermacher/MedPsy-4B-GGUF — text-generation",
+      "text": "Hugging Face model update text-generation transformers gguf medical healthcare clinical edge qwen3 tether-ai text-generation on-device en base_model:qvac/MedPsy-4B downloads 0 likes 0",
+      "posted_at": "2026-05-08T15:07:18.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "transformers",
+          "gguf",
+          "medical",
+          "healthcare",
+          "clinical",
+          "edge",
+          "qwen3",
+          "tether-ai",
+          "text-generation",
+          "on-device",
+          "en",
+          "base_model:qvac/MedPsy-4B"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "mradermacher/MedPsy -4B - GGUF — توليد النص"
+    },
+    {
+      "id": "huggingface_models:mradermacher/MedPsy-4B-i1-GGUF",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/mradermacher/MedPsy-4B-i1-GGUF",
+      "external_id": "mradermacher/MedPsy-4B-i1-GGUF",
+      "title": "mradermacher/MedPsy-4B-i1-GGUF — text-generation",
+      "text": "Hugging Face model update text-generation transformers gguf medical healthcare clinical edge qwen3 tether-ai text-generation on-device en base_model:qvac/MedPsy-4B downloads 0 likes 0",
+      "posted_at": "2026-05-08T15:06:41.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "transformers",
+          "gguf",
+          "medical",
+          "healthcare",
+          "clinical",
+          "edge",
+          "qwen3",
+          "tether-ai",
+          "text-generation",
+          "on-device",
+          "en",
+          "base_model:qvac/MedPsy-4B"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "mradermacher/MedPsy -4B — i1 - GGUF — توليد النص"
+    },
+    {
+      "id": "huggingface_models:Sandaru2002002035/my-tuned-slm",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/Sandaru2002002035/my-tuned-slm",
+      "external_id": "Sandaru2002002035/my-tuned-slm",
+      "title": "Sandaru2002002035/my-tuned-slm — text-generation",
+      "text": "Hugging Face model update text-generation transformers safetensors smollm3 text-generation conversational arxiv:1910.09700 endpoints_compatible region:us downloads 0 likes 0",
+      "posted_at": "2026-05-08T14:55:37.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "llm",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "transformers",
+          "safetensors",
+          "smollm3",
+          "text-generation",
+          "conversational",
+          "arxiv:1910.09700",
+          "endpoints_compatible",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "Sandaru2002002035/my - tuned - slm — توليد النص"
+    },
+    {
+      "id": "huggingface_models:Spacewanderer8263/Proxy3D-8B",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/Spacewanderer8263/Proxy3D-8B",
+      "external_id": "Spacewanderer8263/Proxy3D-8B",
+      "title": "Spacewanderer8263/Proxy3D-8B — text-generation",
+      "text": "Hugging Face model update text-generation transformers safetensors qwen2_vl_bev text-generation llama-factory full generated_from_trainer conversational base_model:Qwen/Qwen2.5-VL-7B-Instruct base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct license:other endpoints_compatible downloads 12 likes 0",
+      "posted_at": "2026-05-08T14:54:31.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 12,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "transformers",
+          "safetensors",
+          "qwen2_vl_bev",
+          "text-generation",
+          "llama-factory",
+          "full",
+          "generated_from_trainer",
+          "conversational",
+          "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+          "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+          "license:other",
+          "endpoints_compatible"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "Spacewanderer8263/Proxy3D -8B — توليد النص"
+    },
+    {
+      "id": "huggingface_models:0G-AI/0GM-1.0-35B-A3B-0427",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face multimodal models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/0G-AI/0GM-1.0-35B-A3B-0427",
+      "external_id": "0G-AI/0GM-1.0-35B-A3B-0427",
+      "title": "0G-AI/0GM-1.0-35B-A3B-0427 — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text transformers safetensors qwen3_5_moe image-text-to-text moe mixture-of-experts conversational en base_model:Qwen/Qwen3.6-35B-A3B base_model:finetune:Qwen/Qwen3.6-35B-A3B license:apache-2.0 endpoints_compatible downloads 54 likes 0",
+      "posted_at": "2026-05-08T14:36:41.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 54,
+        "likes": 0,
+        "pipeline_tag": "image-text-to-text",
+        "tags": [
+          "transformers",
+          "safetensors",
+          "qwen3_5_moe",
+          "image-text-to-text",
+          "moe",
+          "mixture-of-experts",
+          "conversational",
+          "en",
+          "base_model:Qwen/Qwen3.6-35B-A3B",
+          "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+          "license:apache-2.0",
+          "endpoints_compatible"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "0G - AI/0GM-1.0-35B-A3B-0427 - image - text — to — text"
+    },
+    {
+      "id": "huggingface_models:zecanard/Qwopus3.6-35B-A3B-v1-MLX-2bit-mixed_2_6",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face multimodal models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/zecanard/Qwopus3.6-35B-A3B-v1-MLX-2bit-mixed_2_6",
+      "external_id": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-2bit-mixed_2_6",
+      "title": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-2bit-mixed_2_6 — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text mlx safetensors qwen3_5_moe image-text-to-text 2-bit text-generation-inference transformers unsloth qwen3_6 moe reasoning chain-of-thought downloads 0 likes 0",
+      "posted_at": "2026-05-08T14:00:44.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "image-text-to-text",
+        "tags": [
+          "mlx",
+          "safetensors",
+          "qwen3_5_moe",
+          "image-text-to-text",
+          "2-bit",
+          "text-generation-inference",
+          "transformers",
+          "unsloth",
+          "qwen3_6",
+          "moe",
+          "reasoning",
+          "chain-of-thought"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-2bit-mixed_2_6 - image — text — to — text"
+    },
+    {
+      "id": "huggingface_models:zecanard/Qwopus3.6-35B-A3B-v1-MLX-3bit-mixed_3_6",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face multimodal models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/zecanard/Qwopus3.6-35B-A3B-v1-MLX-3bit-mixed_3_6",
+      "external_id": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-3bit-mixed_3_6",
+      "title": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-3bit-mixed_3_6 — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text mlx safetensors qwen3_5_moe image-text-to-text 3-bit text-generation-inference transformers unsloth qwen3_6 moe reasoning chain-of-thought downloads 0 likes 0",
+      "posted_at": "2026-05-08T13:59:26.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "image-text-to-text",
+        "tags": [
+          "mlx",
+          "safetensors",
+          "qwen3_5_moe",
+          "image-text-to-text",
+          "3-bit",
+          "text-generation-inference",
+          "transformers",
+          "unsloth",
+          "qwen3_6",
+          "moe",
+          "reasoning",
+          "chain-of-thought"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-3bit-mixed_3_6 - image — text — to — text"
+    },
+    {
+      "id": "huggingface_models:zecanard/Qwopus3.6-35B-A3B-v1-MLX-4bit-mixed_4_6",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face multimodal models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/zecanard/Qwopus3.6-35B-A3B-v1-MLX-4bit-mixed_4_6",
+      "external_id": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-4bit-mixed_4_6",
+      "title": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-4bit-mixed_4_6 — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text mlx safetensors qwen3_5_moe image-text-to-text text-generation-inference transformers unsloth qwen3_6 moe reasoning chain-of-thought lora downloads 0 likes 0",
+      "posted_at": "2026-05-08T13:57:54.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "image-text-to-text",
+        "tags": [
+          "mlx",
+          "safetensors",
+          "qwen3_5_moe",
+          "image-text-to-text",
+          "text-generation-inference",
+          "transformers",
+          "unsloth",
+          "qwen3_6",
+          "moe",
+          "reasoning",
+          "chain-of-thought",
+          "lora"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-4bit-mixed_4_6 - image — text — to — text"
+    },
+    {
+      "id": "huggingface_models:zecanard/Qwopus3.6-35B-A3B-v1-MLX-5bit-int5-affine",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face multimodal models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/zecanard/Qwopus3.6-35B-A3B-v1-MLX-5bit-int5-affine",
+      "external_id": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-5bit-int5-affine",
+      "title": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-5bit-int5-affine — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text mlx safetensors qwen3_5_moe image-text-to-text text-generation-inference transformers unsloth qwen3_6 moe reasoning chain-of-thought lora downloads 0 likes 0",
+      "posted_at": "2026-05-08T13:56:03.000Z",
+      "collected_at": "2026-05-08T15:12:44+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "image-text-to-text",
+        "tags": [
+          "mlx",
+          "safetensors",
+          "qwen3_5_moe",
+          "image-text-to-text",
+          "text-generation-inference",
+          "transformers",
+          "unsloth",
+          "qwen3_6",
+          "moe",
+          "reasoning",
+          "chain-of-thought",
+          "lora"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T15:12:47+00:00",
+      "last_seen_at": "2026-05-08T15:12:47+00:00",
+      "seen_count": 1,
+      "title_ar": "zecanard/Qwopus3.6-35B-A3B-v1-MLX-5bit-int5-affine - image — text — to — text"
     }
   ]
 }
