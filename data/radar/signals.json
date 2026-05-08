@@ -1,212 +1,42 @@
 {
-  "generated_at": "2026-05-08T01:47:03+00:00",
+  "generated_at": "2026-05-08T04:46:11+00:00",
   "count": 120,
-  "corpus_count": 2742,
-  "history_snapshot": "data/radar/history/2026-05-08T014703Z0000.json",
+  "corpus_count": 2796,
+  "history_snapshot": "data/radar/history/2026-05-08T044611Z0000.json",
   "note_ar": "يعرض هذا الملف أحدث الإشارات أولًا من القاعدة التراكمية. لا يتم حذف الإشارات القديمة؛ يمكن الاطلاع عليها من signals_corpus.json.",
   "items": [
     {
-      "id": "huggingface_daily_papers:2605.04637",
+      "id": "huggingface_daily_papers:2605.06638",
       "source_id": "huggingface_daily_papers",
       "source_name": "Hugging Face Daily Papers",
       "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.04637",
-      "external_id": "2605.04637",
-      "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
-      "text": "The emergence of \"vibe coding\" platforms, where users describe applications in natural language and AI agents autonomously generate full-stack software, has created a need for rigorous evaluation beyond code-level benchmarks. In order to assess them as virtual software development agencies on understanding business requirements, making architectural decisions, writing production code, handling iterative modifications, and maintaining business readiness, we introduce SWE-WebDev Bench, a 68-metric evaluation framework spanning 25 primary and 43 diagnostic metrics across seven groups, organized along three dimensions: Interaction Mode (App Creation Request (ACR) vs. App Modification Request (AMR)), Agency Angle (Product Manager (PM), Engineering, Ops), and Complexity Tier (T4 multi-role SaaS, T5 AI-native).\n  Our evaluation (six platforms, three domains, 18 evaluation cells) reveals four recurring shortcomings in the current generation of AI app builders: (1) A specification bottleneck, where platforms compress rich business requirements into oversimplified technical plans, (2) A pervasive frontend-backend decoupling, where visually polished UIs mask absent or broken backend infrastru",
-      "posted_at": "2026-05-07T13:43:55.192Z",
-      "collected_at": "2026-05-07T15:58:19+00:00",
-      "matched_keywords": [
-        "agency",
-        "agent",
-        "agents",
-        "ai",
-        "app",
-        "application",
-        "benchmark",
-        "broken",
-        "framework",
-        "need",
-        "product",
-        "saas"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 1.0,
-      "metrics": {
-        "upvotes": 2,
-        "authors": "Siddhant Saxena, Nilesh Trivedi, Vinayaka Jyothi"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T15:58:23+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 6,
-      "title_ar": "SWE - WebDevBench: تقييم منصات تطبيقات وكيل الترميز كوكالات برمجية افتراضية"
-    },
-    {
-      "id": "huggingface_daily_papers:2604.25788",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2604.25788",
-      "external_id": "2604.25788",
-      "title": "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning",
-      "text": "Robotic systems that interact with the physical world must reason about kinematic and dynamic constraints imposed by their own embodiment, their environment, and the task at hand. We introduce KinDER, a benchmark for Kinematic and Dynamic Embodied Reasoning that targets physical reasoning challenges arising in robot learning and planning. KinDER comprises 25 procedurally generated environments, a Gymnasium-compatible Python library with parameterized skills and demonstrations, and a standardized evaluation suite with 13 implemented baselines spanning task and motion planning, imitation learning, reinforcement learning, and foundation-model-based approaches. The environments are designed to isolate five core physical reasoning challenges: basic spatial relations, nonprehensile multi-object manipulation, tool use, combinatorial geometric constraints, and dynamic constraints, disentangled from perception, language understanding, and application-specific complexity. Empirical evaluation shows that existing methods struggle to solve many of the environments, indicating substantial gaps in current approaches to physical reasoning. We additionally include real-to-sim-to-real experiments o",
-      "posted_at": "2026-05-07T18:21:21.535Z",
-      "collected_at": "2026-05-07T20:55:00+00:00",
+      "source_url": "https://huggingface.co/papers/2605.06638",
+      "external_id": "2605.06638",
+      "title": "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key",
+      "text": "Reinforcement learning (RL) has been applied to improve large language model (LLM) reasoning, yet the systematic study of how training scales with task difficulty has been hampered by the lack of controlled, scalable environments. We introduce ScaleLogic, a synthetic logical reasoning framework that offers independent control over two axes of difficulty: the depth of the required proof planning (i.e., the horizon) and the expressiveness of the underlying logic. Our proposed framework supports a wide range of logics: from simple implication-only logic (\"if-then\") towards more expressive first-order reasoning with conjunction (\"and\"), disjunction (\"or\"), negation (\"not\"), and universal quantification (\"for all\"). Using this framework, we show that the RL training compute T follows a power law with respect to reasoning depth D (T propto D^γ, R^{2} > 0.99), and that the scaling exponent γ increases monotonically with logical expressiveness, from 1.04 to 2.60. On downstream mathematics and general reasoning benchmarks, more expressive training settings yield both larger performance gains (up to +10.66 points) and more compute-efficient transfer compared to less expressive settings, demo",
+      "posted_at": "2026-05-08T00:32:43.896Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
       "matched_keywords": [
         "ai",
         "app",
-        "application",
         "benchmark",
-        "model",
-        "struggle",
-        "system",
-        "tool"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 1.0,
-      "metrics": {
-        "upvotes": 1,
-        "authors": "Yixuan Huang, Bowen Li, Vaibhav Saxena"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T20:55:04+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 3,
-      "title_ar": "KinDER: معيار الاستدلال المادي لتعلم الروبوت والتخطيط"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.05185",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.05185",
-      "external_id": "2605.05185",
-      "title": "OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents",
-      "text": "Deep search has become a crucial capability for frontier multimodal agents, enabling models to solve complex questions through active search, evidence verification, and multi-step reasoning. Despite rapid progress, top-tier multimodal search agents remain difficult to reproduce, largely due to the absence of open high-quality training data, transparent trajectory synthesis pipelines, or detailed training recipes. To this end, we introduce OpenSearch-VL, a fully open-source recipe for training frontier multimodal deep search agents with agentic reinforcement learning. First, we curated a dedicated pipeline to construct high-quality training data through Wikipedia path sampling, fuzzy entity rewriting, and source-anchor visual grounding, which jointly reduce shortcuts and one-step retrieval collapse. Based on this pipeline, we curate two training datasets, SearchVL-SFT-36k for SFT and SearchVL-RL-8k for RL. Besides, we design a diverse tool environment that unifies text search, image search, OCR, cropping, sharpening, super-resolution, and perspective correction, enabling agents to combine active perception with external knowledge acquisition. Finally, we propose a multi-turn fatal-a",
-      "posted_at": "2026-05-07T03:38:46.846Z",
-      "collected_at": "2026-05-07T05:19:36+00:00",
-      "matched_keywords": [
-        "agent",
-        "agents",
-        "ai",
-        "dataset",
         "difficult",
-        "model",
-        "open-source",
-        "pipeline",
-        "tool"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 0.98,
-      "metrics": {
-        "upvotes": 82,
-        "authors": "Shuang Chen, Kaituo Feng, Hangting Chen"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T05:19:40+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 10,
-      "title_ar": "OpenSearch - VL: وصفة مفتوحة لوكلاء البحث الحدودي متعدد الوسائط"
-    },
-    {
-      "id": "huggingface_daily_papers:2510.04142",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2510.04142",
-      "external_id": "2510.04142",
-      "title": "Turning Drift into Constraint: Robust Reasoning Alignment in Non-Stationary Environments",
-      "text": "This paper identifies a critical yet underexplored challenge in reasoning alignment from multiple multi-modal large language models (MLLMs): In non-stationary environments, the diverse reasoning distributions of source models often evolve unpredictably, transmitting systematic biases and drift to the target model. To address this, we formulate multi-source reasoning alignment as a constraint satisfaction problem under concept drift theory. We propose Autonomous Preference Optimization (APO), a novel framework that treats inter-model divergences not as noise, but as dynamic negative constraints. APO operates via a two-stage protocol: first, supervised bootstrapping projects the target model into the capability union of source models; second, constraint-aware optimization synthesizes a consistent consensus manifold by explicitly suppressing drifting trajectories via a multi-negative Plackett-Luce objective. Extensive experiments on chest X-ray interpretation demonstrate that our 7B model achieves superior robustness, outperforming even proprietary source models in average accuracy. Furthermore, we release CXR-MAX, a large-scale benchmark comprising 170,982 reasoning trajectories from",
-      "posted_at": "2026-05-07T21:49:42.118Z",
-      "collected_at": "2026-05-08T01:47:00+00:00",
-      "matched_keywords": [
-        "ai",
-        "app",
-        "benchmark",
         "framework",
         "llm",
         "model",
-        "problem",
         "system"
       ],
       "signal_type": "pain",
       "opportunity_score": 0.94,
       "metrics": {
-        "upvotes": 1,
-        "authors": "Xiaoyu Yang, En Yu, Wei Duan"
+        "upvotes": 2,
+        "authors": "Tianle Wang, Zhaoyang Wang, Guangchen Lan"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "تحويل الانجراف إلى قيود: محاذاة التفكير القوي في البيئات غير الثابتة"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.04569",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.04569",
-      "external_id": "2605.04569",
-      "title": "Lightning Unified Video Editing via In-Context Sparse Attention",
-      "text": "Video editing has evolved toward In-Context Learning (ICL) paradigms, yet the resulting quadratic attention costs create a critical computational bottleneck. In this work, we propose In-context Sparse Attention (ISA), the first near-lossless empirical sparse framework tailored for ICL video editing. Our design is grounded in two key insights: first, context tokens exhibit significantly lower saliency than source tokens; second, we theoretically prove and empirically validate that Query sharpness correlates with approximation error. Motivated by these findings, ISA implements an efficient pre-selection strategy to prune redundant context, followed by a dynamic query grouping mechanism that routes high-error queries to full attention and low-error ones to a computationally efficient 0-th order Taylor sparse attention. Furthermore, we build \\texttt{LIVEditor} , a novel lightning video editing model via ISA and a proposed video-editing data pipeline that curated a 1.7M high-quality dataset. Extensive experiments demonstrate that LIVEditor achieves a sim60% reduction in attention-module latency while surpassing state-of-the-art methods across EditVerseBench, IVE-Bench, and VIE-Bench, de",
-      "posted_at": "2026-05-07T02:44:22.473Z",
-      "collected_at": "2026-05-07T05:19:36+00:00",
-      "matched_keywords": [
-        "ai",
-        "app",
-        "cost",
-        "dataset",
-        "framework",
-        "model",
-        "pipeline"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 0.9,
-      "metrics": {
-        "upvotes": 11,
-        "authors": "Shitong Shao, Zikai Zhou, Haopeng Li"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T05:19:40+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 10,
-      "title_ar": "تحرير الفيديو الموحد البرق عبر الاهتمام المتناثر في السياق"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.02910",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.02910",
-      "external_id": "2605.02910",
-      "title": "CreativityBench: Evaluating Agent Creative Reasoning via Affordance-Based Tool Repurposing",
-      "text": "Recent advances in large language models have led to strong performance on reasoning and environment-interaction tasks, yet their ability for creative problem-solving remains underexplored. We study this capability through the lens of creative tool use, where a model repurposes available objects by reasoning about their affordances and attributes rather than relying on canonical usage. As a first step, we introduce CreativityBench, a benchmark for evaluating affordance-based creativity in LLMs. To this end, we build a large-scale affordance knowledge base (KB) with 4K entities and 150K+ affordance annotations, explicitly linking objects, parts, attributes, and actionable uses. Building on this KB, we generate 14K grounded tasks that require identifying non-obvious yet physically plausible solutions under constraints. Evaluations across 10 state-of-the-art LLMs, including closed and open-source models, show that models can often select a plausible object, but fail to identify the correct parts, their affordances, and the underlying physical mechanism needed to solve the task, leading to a significant drop in performance. Furthermore, improvements from model scaling quickly saturate,",
-      "posted_at": "2026-05-07T15:06:04.689Z",
-      "collected_at": "2026-05-07T17:43:54+00:00",
-      "matched_keywords": [
-        "agent",
-        "ai",
-        "benchmark",
-        "llm",
-        "model",
-        "need",
-        "open-source",
-        "problem",
-        "tool"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 0.9,
-      "metrics": {
-        "upvotes": 6,
-        "authors": "Cheng Qian, Hyeonjeong Ha, Jiayu Liu"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T17:43:57+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 5,
-      "title_ar": "CreativityBench: تقييم التفكير الإبداعي للوكيل من خلال إعادة استخدام الأدوات القائمة على التكلفة"
+      "title_ar": "هل يمكن لـ RL تعليم التفكير طويل المدى لـ LLMs ؟ التعبير هو المفتاح"
     },
     {
       "id": "techcrunch_ai:https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
@@ -233,39 +63,171 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "تطلق OpenAI ميزات ذكاء صوتي جديدة في واجهة برمجة التطبيقات الخاصة بها"
     },
     {
-      "id": "github_repos:1114418652",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/dendonkar/newsolution-ai-dashboard",
-      "external_id": "1114418652",
-      "title": "dendonkar/newsolution-ai-dashboard",
-      "text": "📊 Analyze visitor data with this AI-powered dashboard built on Vue 3 and Chart.js, delivering actionable insights for SaaS web services.",
-      "posted_at": "2026-05-08T01:46:50Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "id": "huggingface_daily_papers:2605.04962",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.04962",
+      "external_id": "2605.04962",
+      "title": "TabEmbed: Benchmarking and Learning Generalist Embeddings for Tabular Understanding",
+      "text": "Foundation models have established unified representations for natural language processing, yet this paradigm remains largely unexplored for tabular data. Existing methods face fundamental limitations: LLM-based approaches lack retrieval-compatible vector outputs, whereas text embedding models often fail to capture tabular structure and numerical semantics. To bridge this gap, we first introduce the Tabular Embedding Benchmark (TabBench), a comprehensive suite designed to evaluate the tabular understanding capability of embedding models. We then propose TabEmbed, the first generalist embedding model that unifies tabular classification and retrieval within a shared embedding space. By reformulating diverse tabular tasks as semantic matching problems, TabEmbed leverages large-scale contrastive learning with positive-aware hard negative mining to discern fine-grained structural and numerical nuances. Experimental results on TabBench demonstrate that TabEmbed significantly outperforms state-of-the-art text embedding models, establishing a new baseline for universal tabular representation learning. Code and datasets are publicly available at https://github.com/qiangminjie27/TabEmbed and",
+      "posted_at": "2026-05-08T01:25:03.021Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
       "matched_keywords": [
         "ai",
-        "ai-powered",
-        "saas",
-        "service"
+        "app",
+        "benchmark",
+        "dataset",
+        "hard",
+        "llm",
+        "model",
+        "problem"
       ],
-      "signal_type": "news",
-      "opportunity_score": 0.66,
+      "signal_type": "pain",
+      "opportunity_score": 0.86,
       "metrics": {
-        "stars": 2,
-        "forks": 0,
-        "language": "Vue"
+        "upvotes": 6,
+        "authors": "Minjie Qiang, Mingming Zhang, Xiaoyi Bao"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "dendonkar/newsolution - ai - dashboard"
+      "title_ar": "TabEmbed: تضمينات اختصاصي المقارنات المعيارية والتعلم للفهم المجدول"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.06651",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.06651",
+      "external_id": "2605.06651",
+      "title": "AI Co-Mathematician: Accelerating Mathematicians with Agentic AI",
+      "text": "We introduce the AI co-mathematician, a workbench for mathematicians to interactively leverage AI agents to pursue open-ended research. The AI co-mathematician is optimized to provide holistic support for the exploratory and iterative reality of mathematical workflows, including ideation, literature search, computational exploration, theorem proving and theory building. By providing an asynchronous, stateful workspace that manages uncertainty, refines user intent, tracks failed hypotheses, and outputs native mathematical artifacts, the system mirrors human collaborative workflows. In early tests, the AI co-mathematician helped researchers solve open problems, identify new research directions, and uncover overlooked literature references. Besides demonstrating a highly interactive paradigm for AI-assisted mathematical discovery, the AI co-mathematician also achieves state of the art results on hard problem-solving benchmarks, including scoring 48% on FrontierMath Tier 4, a new high score among all AI systems evaluated.",
+      "posted_at": "2026-05-08T00:41:27.278Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "agent",
+        "agents",
+        "ai",
+        "benchmark",
+        "hard",
+        "problem",
+        "system",
+        "workflow"
+      ],
+      "signal_type": "pain",
+      "opportunity_score": 0.86,
+      "metrics": {
+        "upvotes": 1,
+        "authors": "Daniel Zheng, Ingrid von Glehn, Yori Zwols"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "عالم رياضيات مشارك في الذكاء الاصطناعي: تسريع علماء الرياضيات باستخدام الذكاء الاصطناعي الوكيل"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.06200",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.06200",
+      "external_id": "2605.06200",
+      "title": "A^2TGPO: Agentic Turn-Group Policy Optimization with Adaptive Turn-level Clipping",
+      "text": "Reinforcement learning for agentic large language models (LLMs) typically relies on a sparse, trajectory-level outcome reward, making it difficult to evaluate the contribution of individual tool-calls within multi-turn interactions. Existing approaches to such process credit assignment either depend on separate external process reward models that introduce additional consumption, or tree-based structural rollout that merely redistributes the outcome signal while constraining trajectory diversity. A promising alternative leverages the per-turn change in the policy's predicted probability of the ground-truth, termed Information Gain (IG), as an intrinsic process signal without an external evaluator. However, prior work on leveraging IG signals within the RL training loop faces three systematic challenges: normalizing across turns that face heterogeneous positional contexts can distort the relative standing of individual turns, accumulating a variable number of terms causes advantage magnitudes to drift with trajectory depth, and a fixed clipping range governs policy updates identically for turns with vastly different IG signals. In this paper, we propose A^2TGPO (Agentic Turn-Group P",
+      "posted_at": "2026-05-08T01:37:00.067Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "agent",
+        "ai",
+        "app",
+        "difficult",
+        "llm",
+        "model",
+        "system",
+        "tool"
+      ],
+      "signal_type": "pain",
+      "opportunity_score": 0.8,
+      "metrics": {
+        "upvotes": 5,
+        "authors": "Dingwei Chen, Zefang Zong, Zhipeng Ma"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "^2TGPO: تحسين سياسة وكيل المجموعة مع قص مستوي الدوران التكيفي"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.06643",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.06643",
+      "external_id": "2605.06643",
+      "title": "Are We Making Progress in Multimodal Domain Generalization? A Comprehensive Benchmark Study",
+      "text": "Despite the growing popularity of Multimodal Domain Generalization (MMDG) for enhancing model robustness, it remains unclear whether reported performance gains reflect genuine algorithmic progress or are artifacts of inconsistent evaluation protocols. Current research is fragmented, with studies varying significantly across datasets, modality configurations, and experimental settings. Furthermore, existing benchmarks focus predominantly on action recognition, often neglecting critical real-world challenges such as input corruptions, missing modalities, and model trustworthiness. This lack of standardization obscures a reliable assessment of the field's advancement. To address this issue, we introduce MMDG-Bench, the first unified and comprehensive benchmark for MMDG, which standardizes evaluation across six datasets spanning three diverse tasks: action recognition, mechanical fault diagnosis, and sentiment analysis. MMDG-Bench encompasses six modality combinations, nine representative methods, and multiple evaluation settings. Beyond standard accuracy, it systematically assesses corruption robustness, missing-modality generalization, misclassification detection, and out-of-distribu",
+      "posted_at": "2026-05-08T02:01:13.336Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "ai",
+        "benchmark",
+        "dataset",
+        "missing",
+        "model",
+        "system"
+      ],
+      "signal_type": "pain",
+      "opportunity_score": 0.72,
+      "metrics": {
+        "upvotes": 1,
+        "authors": "Hao Dong, Hongzhao Li, Shupan Li"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "هل نحرز تقدمًا في تعميم النطاق متعدد الوسائط ؟ دراسة معيارية شاملة"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.06356",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.06356",
+      "external_id": "2605.06356",
+      "title": "SwiftI2V: Efficient High-Resolution Image-to-Video Generation via Conditional Segment-wise Generation",
+      "text": "High-resolution image-to-video (I2V) generation aims to synthesize realistic temporal dynamics while preserving fine-grained appearance details of the input image. At 2K resolution, it becomes extremely challenging, and existing solutions suffer from various weaknesses: 1) end-to-end models are often prohibitively expensive in memory and latency; 2) cascading low-resolution generation with a generic video super-resolution tends to hallucinate details and drift from input-specific local structures, since the super-resolution stage is not explicitly conditioned on the input image. To this end, we propose SwiftI2V, an efficient framework tailored for high-resolution I2V. Following the widely used two-stage design, it addresses the efficiency--fidelity dilemma by first generating a low-resolution motion reference to reduce token costs and ease the modeling burden, then performing a strongly image-conditioned 2K synthesis guided by the motion to recover input-faithful details with controlled overhead. Specifically, to make generation more scalable, SwiftI2V introduces Conditional Segment-wise Generation (CSG) to synthesize videos segment-by-segment with a bounded per-step token budget, ",
+      "posted_at": "2026-05-08T01:32:15.243Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "ai",
+        "app",
+        "cost",
+        "expensive",
+        "framework",
+        "introduces",
+        "model"
+      ],
+      "signal_type": "pain",
+      "opportunity_score": 0.7,
+      "metrics": {
+        "upvotes": 3,
+        "authors": "YaoYang Liu, Yuechen Zhang, Wenbo Li"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "SwiftI2V: توليد فعال عالي الدقة للصورة إلى الفيديو عبر توليد مشروط للقطاعات"
     },
     {
       "id": "techcrunch_ai:https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/",
@@ -290,39 +252,39 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T15:58:23+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 6,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 7,
       "title_ar": "يجمع في الصين 2 مليار $ بقيمة 20 مليار $ مع ارتفاع على المفتوح المصدر"
     },
     {
-      "id": "huggingface_daily_papers:2604.24575",
+      "id": "huggingface_daily_papers:2605.06548",
       "source_id": "huggingface_daily_papers",
       "source_name": "Hugging Face Daily Papers",
       "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2604.24575",
-      "external_id": "2604.24575",
-      "title": "Diffusion Model as a Generalist Segmentation Learner",
-      "text": "Diffusion models are primarily trained for image synthesis, yet their denoising trajectories encode rich, spatially aligned visual priors. In this paper, we demonstrate that these priors can be utilized for text-conditioned semantic and open-vocabulary segmentation, and this approach can be generalized to various downstream tasks to make a general-purpose diffusion segmentation framework. Concretely, we introduce DiGSeg (Diffusion Models as a Generalist Segmentation Learner), which repurposes a pretrained diffusion model into a unified segmentation framework. Our approach encodes the input image and ground-truth mask into the latent space and concatenates them as conditioning signals for the diffusion U-Net. A parallel CLIP-aligned text pathway injects language features across multiple scales, enabling the model to align textual queries with evolving visual representations. This design transforms an off-the-shelf diffusion backbone into a universal interface that produces structured segmentation masks conditioned on both appearance and arbitrary text prompts. Extensive experiments demonstrate state-of-the-art performance on standard semantic segmentation benchmarks, as well as stro",
-      "posted_at": "2026-05-07T06:25:19.579Z",
-      "collected_at": "2026-05-07T08:10:02+00:00",
+      "source_url": "https://huggingface.co/papers/2605.06548",
+      "external_id": "2605.06548",
+      "title": "Continuous Latent Diffusion Language Model",
+      "text": "Large language models have achieved remarkable success under the autoregressive paradigm, yet high-quality text generation need not be tied to a fixed left-to-right order. Existing alternatives still struggle to jointly achieve generation efficiency, scalable representation learning, and effective global semantic modeling. We propose Cola DLM, a hierarchical latent diffusion language model that frames text generation through hierarchical information decomposition. Cola DLM first learns a stable text-to-latent mapping with a Text VAE, then models a global semantic prior in continuous latent space with a block-causal DiT, and finally generates text through conditional decoding. From a unified Markov-path perspective, its diffusion process performs latent prior transport rather than token-level observation recovery, thereby separating global semantic organization from local textual realization. This design yields a more flexible non-autoregressive inductive bias, supports semantic compression and prior fitting in continuous space, and naturally extends to other continuous modalities. Through experiments spanning 4 research questions, 8 benchmarks, strictly matched ~2B-parameter autore",
+      "posted_at": "2026-05-08T00:48:45.848Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
       "matched_keywords": [
-        "ai",
         "app",
         "benchmark",
-        "framework",
-        "model"
+        "model",
+        "need",
+        "struggle"
       ],
-      "signal_type": "news",
-      "opportunity_score": 0.62,
+      "signal_type": "pain",
+      "opportunity_score": 0.6,
       "metrics": {
-        "upvotes": 2,
-        "authors": "Haoxiao Wang, Antao Xiang, Haiyang Sun"
+        "upvotes": 15,
+        "authors": "Hongcan Guo, Qinyu Zhao, Yian Zhao"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T08:10:06+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 9,
-      "title_ar": "نموذج الانتشار كمتعلم تجزئة عام"
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "نموذج لغة الانتشار الكامن المستمر"
     },
     {
       "id": "openai_news:https://openai.com/index/parloa",
@@ -349,127 +311,132 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T11:31:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 8,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 9,
       "title_ar": "تقوم بارلوا ببناء وكلاء الخدمة الذين يرغب العملاء في التحدث إليهم"
     },
     {
-      "id": "huggingface_daily_papers:2605.04128",
+      "id": "huggingface_daily_papers:2605.06614",
       "source_id": "huggingface_daily_papers",
       "source_name": "Hugging Face Daily Papers",
       "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.04128",
-      "external_id": "2605.04128",
-      "title": "Awaking Spatial Intelligence in Unified Multimodal Understanding and Generation",
-      "text": "We present JoyAI-Image, a unified multimodal foundation model for visual understanding, text-to-image generation, and instruction-guided image editing. JoyAI-Image couples a spatially enhanced Multimodal Large Language Model (MLLM) with a Multimodal Diffusion Transformer (MMDiT), allowing perception and generation to interact through a shared multimodal interface. Around this architecture, we build a scalable training recipe that combines unified instruction tuning, long-text rendering supervision, spatially grounded data, and both general and spatial editing signals. This design gives the model broad multimodal capability while strengthening geometry-aware reasoning and controllable visual synthesis. Experiments across understanding, generation, long-text rendering, and editing benchmarks show that JoyAI-Image achieves state-of-the-art or highly competitive performance. More importantly, the bidirectional loop between enhanced understanding, controllable spatial editing, and novel-view-assisted reasoning enables the model to move beyond general visual competence toward stronger spatial intelligence. These results suggest a promising path for unified visual models in downstream app",
-      "posted_at": "2026-05-07T02:43:20.139Z",
-      "collected_at": "2026-05-07T05:19:36+00:00",
+      "source_url": "https://huggingface.co/papers/2605.06614",
+      "external_id": "2605.06614",
+      "title": "SkillOS: Learning Skill Curation for Self-Evolving Agents",
+      "text": "LLM-based agents are increasingly deployed to handle streaming tasks, yet they often remain one-off problem solvers that fail to learn from past interactions. Reusable skills distilled from experience provide a natural substrate for self-evolution, where high-quality skill curation serves as the key bottleneck. Existing approaches either rely on manual skill curation, prescribe heuristic skill operations, or train for short-horizon skill operations. However, they still struggle to learn complex long-term curation policies from indirect and delayed feedback. To tackle this challenge, we propose SkillOS, an experience-driven RL training recipe for learning skill curation in self-evolving agents. SkillOS pairs a frozen agent executor that retrieves and applies skills with a trainable skill curator that updates an external SkillRepo from accumulated experience. To provide learning signals for curation, we design composite rewards and train on grouped task streams based on skill-relevant task dependencies, where earlier trajectories update the SkillRepo, and later related tasks evaluate these updates. Across multi-turn agentic tasks and single-turn reasoning tasks, SkillOS consistently ",
+      "posted_at": "2026-05-08T00:48:13.140Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
       "matched_keywords": [
+        "agent",
+        "agents",
         "ai",
         "app",
+        "llm",
+        "problem",
+        "struggle"
+      ],
+      "signal_type": "pain",
+      "opportunity_score": 0.54,
+      "metrics": {
+        "upvotes": 2,
+        "authors": "Siru Ouyang, Jun Yan, Yanfei Chen"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "SkillOS: تنظيم مهارات التعلم للوكلاء المتطورين ذاتيًا"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.05566",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.05566",
+      "external_id": "2605.05566",
+      "title": "Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration",
+      "text": "Reinforcement learning with verifiable rewards, particularly Group Relative Policy Optimization (GRPO), has significantly advanced the reasoning capabilities of Large Language Models (LLMs). However, in complex tasks, GRPO frequently suffers from the ``zero-advantage problem'': when all sampled rollouts for a query fail, the relative advantage collapses to zero. Consequently, the model loses effective training signals for these questions, wasting the training data and computational budget. While simply increasing the sampling budget for these questions is a common remedy, the static sampling policy inherently constrains reasoning exploration, limiting the success rate. In this paper, we propose Lorem Perturbation for Exploration (LoPE), a simple yet effective training framework to break this exploration bottleneck. We posit that task-irrelevant prompt-space perturbations can shift the model's output distribution enough to unlock orthogonal reasoning pathways for hard questions. Specifically, LoPE prepends sequences stochastically assembled from Lorem Ipsum vocabulary (a pseudo-Latin placeholder text) to the prompts before resampling. Experiments across 1.7B, 4B, and 7B models demon",
+      "posted_at": "2026-05-08T01:17:30.049Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "ai",
+        "framework",
+        "hard",
+        "llm",
+        "model",
+        "problem"
+      ],
+      "signal_type": "pain",
+      "opportunity_score": 0.5,
+      "metrics": {
+        "upvotes": 8,
+        "authors": "Langlin Huang, Chengsong Huang, Jinyuan Li"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "يساعد الهراء: الاضطراب الفضائي الفوري يوسع استكشاف الاستدلال"
+    },
+    {
+      "id": "huggingface_daily_papers:2602.00095",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2602.00095",
+      "external_id": "2602.00095",
+      "title": "EDU-CIRCUIT-HW: Evaluating Multimodal Large Language Models on Real-World University-Level STEM Student Handwritten Solutions",
+      "text": "Multimodal Large Language Models (MLLMs) hold significant promise for revolutionizing traditional education and reducing teachers' workload. However, accurately interpreting unconstrained STEM student handwritten solutions with intertwined mathematical formulas, diagrams, and textual reasoning poses a significant challenge due to the lack of authentic and domain-specific benchmarks. Additionally, current evaluation paradigms predominantly rely on the outcomes of downstream tasks (e.g., auto-grading), which often probe only a subset of the recognized content, thereby failing to capture the MLLMs' understanding of complex handwritten logic as a whole. To bridge this gap, we release EDU-CIRCUIT-HW, a dataset consisting of 1,300+ authentic student handwritten solutions from a university-level STEM course. Utilizing the expert-verified verbatim transcriptions and grading reports of student solutions, we simultaneously evaluate various MLLMs' upstream recognition fidelity and downstream auto-grading performance. Our evaluation uncovers an astonishing scale of latent failures within MLLM-recognized student handwritten content, highlighting the models' insufficient reliability for auto-gra",
+      "posted_at": "2026-05-08T02:02:55.991Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "ai",
         "benchmark",
+        "dataset",
         "llm",
         "model"
       ],
       "signal_type": "news",
       "opportunity_score": 0.48,
       "metrics": {
-        "upvotes": 8,
-        "authors": "Lin Song, Wenbo Li, Guoqing Ma"
+        "upvotes": 1,
+        "authors": "Weiyu Sun, Liangliang Chen, Yongnuo Cai"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T05:19:40+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 10,
-      "title_ar": "استيقاظ الذكاء المكاني في الفهم والتوليد الموحد متعدد الوسائط"
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "EDU - CIRCUIT - HW: تقييم نماذج اللغات الكبيرة متعددة الوسائط على حلول STEM للطلاب مكتوبة بخط اليد على مستوى الجامعة في العالم الحقيقي"
     },
     {
-      "id": "huggingface_daily_papers:2605.05662",
+      "id": "huggingface_daily_papers:2605.06416",
       "source_id": "huggingface_daily_papers",
       "source_name": "Hugging Face Daily Papers",
       "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.05662",
-      "external_id": "2605.05662",
-      "title": "XL-SafetyBench: A Country-Grounded Cross-Cultural Benchmark for LLM Safety and Cultural Sensitivity",
-      "text": "Current LLM safety benchmarks are predominantly English-centric and often rely on translation, failing to capture country-specific harms. Moreover, they rarely evaluate a model's ability to detect culturally embedded sensitivities as distinct from universal harms. We introduce XL-SafetyBench. a suite of 5,500 test cases across 10 country-language pairs, comprising a Jailbreak Benchmark of country-grounded adversarial prompts and a Cultural Benchmark where local sensitivities are embedded within innocuous requests. Each item is constructed via a multi-stage pipeline that combines LLM-assisted discovery, automated validation gates, and dual independent native-speaker annotators per country. To distinguish principled refusal from comprehension failure, we evaluate Attack Success Rate (ASR) alongside two complementary metrics we introduce: Neutral-Safe Rate (NSR) and Cultural Sensitivity Rate (CSR). Evaluating 10 frontier and 27 local LLMs reveals two key findings. First, jailbreak robustness and cultural awareness do not show a coupled relationship among frontier models, so a composite safety score obscures per-axis variation. Second, local models exhibit a near-linear ASR-NSR trade-o",
-      "posted_at": "2026-05-07T23:33:30.570Z",
-      "collected_at": "2026-05-08T01:47:00+00:00",
+      "source_url": "https://huggingface.co/papers/2605.06416",
+      "external_id": "2605.06416",
+      "title": "MiA-Signature: Approximating Global Activation for Long-Context Understanding",
+      "text": "A growing body of work in cognitive science suggests that reportable conscious access is associated with global ignition over distributed memory systems, while such activation is only partially accessible as individuals cannot directly access or enumerate all activated contents. This tension suggests a plausible mechanism that cognition may rely on a compact representation that approximates the global influence of activation on downstream processing. Inspired by this idea, we introduce the concept of Mindscape Activation Signature (MiA-Signature), a compressed representation of the global activation pattern induced by a query. In LLM systems, this is instantiated via submodular-based selection of high-level concepts that cover the activated context space, optionally refined through lightweight iterative updates using working memory. The resulting MiA-Signature serves as a conditioning signal that approximates the effect of the full activation state while remaining computationally tractable. Integrating MiA-Signatures into both RAG and agentic systems yields consistent performance gains across multiple long-context understanding tasks.",
+      "posted_at": "2026-05-08T01:09:04.599Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
       "matched_keywords": [
+        "agent",
         "ai",
-        "benchmark",
+        "app",
         "llm",
-        "model",
-        "pipeline"
+        "system"
       ],
       "signal_type": "news",
       "opportunity_score": 0.48,
       "metrics": {
-        "upvotes": 2,
-        "authors": "Dasol Choi, Eugenia Kim, Jaewon Noh"
+        "upvotes": 30,
+        "authors": "Yuqing Li, Jiangnan Li, Mo Yu"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "XL - SafetyBench: معيار ثقافي شامل للبلد لسلامة LLM والحساسية الثقافية"
-    },
-    {
-      "id": "github_repos:1114108090",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/bochote/BrainVision-AI",
-      "external_id": "1114108090",
-      "title": "bochote/BrainVision-AI",
-      "text": "🧠 Classify brain tumors in your browser with BrainVision AI — a fast, privacy-focused tool using client-side machine learning for accurate diagnostics.",
-      "posted_at": "2026-05-08T01:46:57Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
-      "matched_keywords": [
-        "ai",
-        "client",
-        "tool"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.48,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "bochote/BrainVision - AI"
-    },
-    {
-      "id": "github_repos:944800789",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/sylenx/cosmonav-demo",
-      "external_id": "944800789",
-      "title": "sylenx/cosmonav-demo",
-      "text": "🧭 Enable safe navigation for the visually impaired with CosmoNav, an AI-powered app that uses real-time object detection and voice commands.",
-      "posted_at": "2026-05-08T01:46:52Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
-      "matched_keywords": [
-        "ai",
-        "ai-powered",
-        "app"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.48,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "sylenx/cosmonav - demo"
+      "title_ar": "إم آي إيه - التوقيع: تقريب التنشيط العالمي لفهم السياق الطويل"
     },
     {
       "id": "google_deepmind:https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/",
@@ -494,38 +461,8 @@
       "verification_status": "source_linked",
       "title_ar": "قياس التقدم نحو AGI: إطار معرفي",
       "first_seen_at": "2026-05-03T11:14:27+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 50
-    },
-    {
-      "id": "github_repos:1217526982",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/etoryoki/koji-lens",
-      "external_id": "1217526982",
-      "title": "etoryoki/koji-lens",
-      "text": "Local-only CLI to visualize Claude Code costs, tokens, and tool usage. Reads ~/.claude/projects/**/*.jsonl, ships with a built-in web dashboard. β release, MIT.",
-      "posted_at": "2026-05-08T01:46:46Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
-      "matched_keywords": [
-        "claude",
-        "cost",
-        "ships",
-        "tool"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 0.46,
-      "metrics": {
-        "stars": 1,
-        "forks": 0,
-        "language": "TypeScript"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "عدسة إتوريوكي/كوجي"
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 51
     },
     {
       "id": "openai_news:https://openai.com/index/cybersecurity-in-the-intelligence-age",
@@ -550,8 +487,8 @@
       "verification_status": "source_linked",
       "title_ar": "الأمن السيبراني في عصر الذكاء",
       "first_seen_at": "2026-05-03T11:14:27+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 50
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 51
     },
     {
       "id": "openai_news:https://openai.com/index/open-source-codex-orchestration-symphony",
@@ -576,8 +513,8 @@
       "verification_status": "source_linked",
       "title_ar": "مواصفات مفتوحة المصدر للتنسيق: سيمفونية",
       "first_seen_at": "2026-05-03T11:14:27+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50
     },
     {
       "id": "techcrunch_ai:https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/",
@@ -601,40 +538,65 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-06T19:16:41+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 14,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 15,
       "title_ar": "كيف غادر إيلون ماسك OpenAI، وفقًا لغريغ بروكمان"
     },
     {
-      "id": "github_repos:1220043508",
+      "id": "github_repos:1072793156",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/fellwork/aihu",
-      "external_id": "1220043508",
-      "title": "fellwork/aihu",
-      "text": "Meta-framework: SFC shaped authoring, novel internals (arbor reactive tree, MCP-first agents, AI PGO)",
-      "posted_at": "2026-05-08T01:46:47Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "source_url": "https://github.com/Bengilz/aipyapp",
+      "external_id": "1072793156",
+      "title": "Bengilz/aipyapp",
+      "text": "🖥️ Execute Python commands with AIPy, unlocking the potential of large language models to solve complex problems seamlessly.",
+      "posted_at": "2026-05-08T04:46:03Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
       "matched_keywords": [
-        "agent",
-        "agents",
         "ai",
-        "framework",
-        "mcp"
+        "app",
+        "model",
+        "problem"
       ],
-      "signal_type": "news",
-      "opportunity_score": 0.42,
+      "signal_type": "pain",
+      "opportunity_score": 0.44,
       "metrics": {
-        "stars": 0,
+        "stars": 2,
         "forks": 0,
-        "language": "TypeScript"
+        "language": "Python"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "fellwork/aihu"
+      "title_ar": "Bengilz/aipyapp"
+    },
+    {
+      "id": "techcrunch_ai:https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
+      "source_id": "techcrunch_ai",
+      "source_name": "TechCrunch AI",
+      "source_kind": "news",
+      "source_url": "https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
+      "external_id": "https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
+      "title": "The back office problem that explains why specialists never call you back",
+      "text": "Like many AI companies automating work that humans currently do, Basata will eventually face a harder question about where the line is between augmenting workers and displacing them. For now, the founders say the administrative staff they work with aren't worried about that; they're more worried about drowning.",
+      "posted_at": "Fri, 08 May 2026 04:42:29 +0000",
+      "collected_at": "2026-05-08T04:45:34+00:00",
+      "matched_keywords": [
+        "ai",
+        "founder",
+        "hard",
+        "problem"
+      ],
+      "signal_type": "pain",
+      "opportunity_score": 0.42,
+      "metrics": {},
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "مشكلة المكتب الخلفي التي تفسر سبب عدم اتصال المتخصصين بك مرة أخرى"
     },
     {
       "id": "google_ai_blog:https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
@@ -657,8 +619,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "حوّل أفضل مطالبات الذكاء الاصطناعي إلى أدوات بنقرة واحدة في Chrome"
     },
     {
@@ -682,67 +644,68 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "أصبحت شركة Pit الناشئة الجديدة للذكاء الاصطناعي لمؤسسي VOI أحدث نجم صاعد من ستوكهولم"
     },
     {
-      "id": "huggingface_daily_papers:2605.04461",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.04461",
-      "external_id": "2605.04461",
-      "title": "Stream-T1: Test-Time Scaling for Streaming Video Generation",
-      "text": "While Test-Time Scaling (TTS) offers a promising direction to enhance video generation without the surging costs of training, current test-time video generation methods based on diffusion models suffer from exorbitant candidate exploration costs and lack temporal guidance. To address these structural bottlenecks, we propose shifting the focus to streaming video generation. We identify that its chunk-level synthesis and few denoising steps are intrinsically suited for TTS, significantly lowering computational overhead while enabling fine-grained temporal control. Driven by this insight, we introduced Stream-T1, a pioneering comprehensive TTS framework exclusively tailored for streaming video generation. Specifically, Stream-T1 is composed of three units: (1) Stream -Scaled Noise Propagation, which actively refines the initial latent noise of the generating chunk using historically proven, high-quality previous chunk noise, effectively establishes temporal dependency and utilizing the historical Gaussian prior to guide the current generation; (2) Stream -Scaled Reward Pruning, which comprehensively evaluates generated candidates to strike an optimal balance between local spatial aest",
-      "posted_at": "2026-05-07T02:45:37.659Z",
-      "collected_at": "2026-05-07T05:19:36+00:00",
+      "id": "github_repos:1209609017",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/event4u-app/agent-config",
+      "external_id": "1209609017",
+      "title": "event4u-app/agent-config",
+      "text": "agent-config — Behavior, Memory and Delivery Governance for AI Agents",
+      "posted_at": "2026-05-08T04:46:02Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
       "matched_keywords": [
+        "agent",
+        "agents",
         "ai",
-        "cost",
-        "framework",
-        "model"
+        "app"
       ],
-      "signal_type": "pain",
-      "opportunity_score": 0.36,
+      "signal_type": "news",
+      "opportunity_score": 0.38,
       "metrics": {
-        "upvotes": 93,
-        "authors": "Yijing Tu, Shaojin Wu, Mengqi Huang"
+        "stars": 0,
+        "forks": 0,
+        "language": "Python"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T05:19:40+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 10,
-      "title_ar": "Stream - T1: قياس وقت الاختبار لتوليد الفيديو المتدفق"
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "event4u - app/agent - config"
     },
     {
-      "id": "huggingface_daily_papers:2605.05166",
+      "id": "huggingface_daily_papers:2605.06665",
       "source_id": "huggingface_daily_papers",
       "source_name": "Hugging Face Daily Papers",
       "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.05166",
-      "external_id": "2605.05166",
-      "title": "The First Token Knows: Single-Decode Confidence for Hallucination Detection",
-      "text": "Self-consistency detects hallucinations by generating multiple sampled answers to a question and measuring agreement, but this requires repeated decoding and can be sensitive to lexical variation. Semantic self-consistency improves this by clustering sampled answers by meaning using natural language inference, but it adds both sampling cost and external inference overhead. We show that first-token confidence, phi_first, computed from the normalized entropy of the top-K logits at the first content-bearing answer token of a single greedy decode, matches or modestly exceeds semantic self-consistency on closed-book short-answer factual question answering. Across three 7-8B instruction-tuned models and two benchmarks, phi_first achieves a mean AUROC of 0.820, compared with 0.793 for semantic agreement and 0.791 for standard surface-form self-consistency. A subsumption test shows that phi_first is moderately to strongly correlated with semantic agreement, and combining the two signals yields only a small AUROC improvement over phi_first alone. These results suggest that much of the uncertainty information captured by multi-sample agreement is already available in the model's initial toke",
-      "posted_at": "2026-05-07T13:02:36.472Z",
-      "collected_at": "2026-05-07T15:58:19+00:00",
+      "source_url": "https://huggingface.co/papers/2605.06665",
+      "external_id": "2605.06665",
+      "title": "UniPool: A Globally Shared Expert Pool for Mixture-of-Experts",
+      "text": "Modern Mixture-of-Experts (MoE) architectures allocate expert capacity through a rigid per-layer rule: each transformer layer owns a separate expert set. This convention couples depth scaling with linear expert-parameter growth and assumes that every layer needs isolated expert capacity. However, recent analyses and our routing probe challenge this allocation rule: replacing a deeper layer's learned top-k router with uniform random routing drops downstream accuracy by only 1.0-1.6 points across multiple production MoE models. Motivated by this redundancy, we propose UniPool, an MoE architecture that treats expert capacity as a global architectural budget by replacing per-layer expert ownership with a single shared pool accessed by independent per-layer routers. To enable stable and balanced training under sharing, we introduce a pool-level auxiliary loss that balances expert utilization across the entire pool, and adopt NormRouter to provide sparse and scale-stable routing into the shared expert pool. Across five LLaMA-architecture model scales (182M, 469M, 650M, 830M, and 978M parameters) trained on 30B tokens from the Pile, UniPool consistently improves validation loss and perple",
+      "posted_at": "2026-05-08T00:52:17.099Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
       "matched_keywords": [
         "ai",
-        "benchmark",
-        "cost",
-        "model"
+        "model",
+        "need",
+        "product"
       ],
       "signal_type": "pain",
       "opportunity_score": 0.36,
       "metrics": {
-        "upvotes": 1,
-        "authors": "Mina Gabriel"
+        "upvotes": 4,
+        "authors": "Minbin Huang, Han Shi, Chuanyang Zheng"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T15:58:23+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 6,
-      "title_ar": "أول رمز يعرف: ثقة برمز واحد للكشف عن الهلوسة"
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "UniPool: مجموعة خبراء مشتركة عالميًا لمزيج من الخبراء"
     },
     {
       "id": "openai_news:https://openai.com/index/openai-pwc-finance-collaboration",
@@ -767,8 +730,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T04:50:44+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 30,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 31,
       "title_ar": "تتعاون OpenAI و PwC لإعادة تصور مكتب المدير المالي"
     },
     {
@@ -794,67 +757,97 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-06T15:56:23+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 16,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 17,
       "title_ar": "كيف تبني الشركات الرائدة ميزة الذكاء الاصطناعي"
     },
     {
-      "id": "github_repos:606905685",
+      "id": "github_repos:1112930603",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/mohamed-magdy-1/CodexBar",
-      "external_id": "606905685",
-      "title": "mohamed-magdy-1/CodexBar",
-      "text": "🎚️ Track your Codex and Claude Code limits effortlessly with this simple macOS menu bar app, ensuring you never run out of tokens during sessions.",
-      "posted_at": "2026-05-08T01:46:56Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "source_url": "https://github.com/sunl611/newTread",
+      "external_id": "1112930603",
+      "title": "sunl611/newTread",
+      "text": "多平台热点聚合+基于 MCP 的AI分析工具",
+      "posted_at": "2026-05-05T09:49:22Z",
+      "collected_at": "2026-05-05T09:49:44+00:00",
       "matched_keywords": [
-        "app",
-        "claude",
-        "codex"
+        "ai",
+        "mcp",
+        "工具"
       ],
       "signal_type": "news",
       "opportunity_score": 0.34,
       "metrics": {
         "stars": 2,
-        "forks": 0,
-        "language": "CSS"
+        "forks": 2,
+        "language": "HTML"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "mohamed - magdy -1/CodexBar"
+      "first_seen_at": "2026-05-05T09:49:44+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
+      "title_ar": "sunl611/newTread"
     },
     {
-      "id": "github_repos:1114071418",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/Suhail5765/multi-agent-route-safety",
-      "external_id": "1114071418",
-      "title": "Suhail5765/multi-agent-route-safety",
-      "text": "🛣️ Analyze and enhance route safety in real-time using a multi-agent AI system that assesses risks like crime, weather, and traffic.",
-      "posted_at": "2026-05-08T01:46:48Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "id": "huggingface_daily_papers:2605.06130",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.06130",
+      "external_id": "2605.06130",
+      "title": "Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning",
+      "text": "A persistent skill library allows language model agents to reuse successful strategies across tasks. Maintaining such a library requires three coupled capabilities. The agent selects a relevant skill, utilizes it during execution, and distills new skills from experience. Existing methods optimize these capabilities in isolation or with separate reward sources, resulting in partial and conflicting evolution. We propose Skill1, a framework that trains a single policy to co-evolve skill selection, utilization, and distillation toward a shared task-outcome objective. The policy generates a query to search the skill library, re-ranks candidates to select one, solves the task conditioned on it, and distills a new skill from the trajectory. All learning derives from a single task-outcome signal. Its low-frequency trend credits selection and its high-frequency variation credits distillation. Experiments on ALFWorld and WebShop show that Skill1 outperforms prior skill-based and reinforcement learning baselines. Training dynamics confirm the co-evolution of the three capabilities, and ablations show that removing any credit signal degrades the evolution.",
+      "posted_at": "2026-05-08T00:44:04.336Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
       "matched_keywords": [
         "agent",
+        "agents",
         "ai",
-        "system"
+        "framework",
+        "model"
       ],
       "signal_type": "news",
       "opportunity_score": 0.34,
       "metrics": {
-        "stars": 1,
-        "forks": 1,
-        "language": "Python"
+        "upvotes": 1,
+        "authors": "Yaorui Shi, Yuxin Chen, Zhengxi Lu"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "Suhail5765/سلامة مسارات الوكلاء المتعددين"
+      "title_ar": "المهارة 1: التطور الموحد للعوامل المعززة للمهارات عبر تعلم التعزيز"
+    },
+    {
+      "id": "github_repos:1232533851",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/cuongtransc/ct-obsidian-formater",
+      "external_id": "1232533851",
+      "title": "cuongtransc/ct-obsidian-formater",
+      "text": "An Obsidian plugin that cleans up Markdown pasted from AI assistants — primarily Gemini — and applies light Markdown lint fixes.",
+      "posted_at": "2026-05-08T04:46:01Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
+      "matched_keywords": [
+        "ai",
+        "app",
+        "gemini"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.34,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "cuongtransc/ct - obsidian - formater"
     },
     {
       "id": "google_ai_blog:https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/",
@@ -877,9 +870,67 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-04T22:44:36+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 32,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 33,
       "title_ar": "تقليل الاحتكاك والكمون للوظائف طويلة الأمد باستخدام Webhooks في واجهة برمجة تطبيقات الجوزاء"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.04077",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.04077",
+      "external_id": "2605.04077",
+      "title": "Balanced Aggregation: Understanding and Fixing Aggregation Bias in GRPO",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) has become a central paradigm for improving reasoning and code generation in large language models, and GRPO-style training is widely adopted for its simplicity and effectiveness. However, an important design choice remains underexplored: how token-level policy gradient terms are aggregated within each sampled group. Standard GRPO uses sequence aggregation, while recent work has advocated token aggregation as a better alternative. We show that these two rules induce different optimization biases: token aggregation introduces sign-length coupling, while sequence aggregation implicitly downweights longer responses through sequence-level equal weighting. To address this tension, we propose Balanced Aggregation (BA), a simple drop-in replacement that computes token-level means separately within the positive and negative subsets and then combines them with sequence-count-based weights. Experiments with Qwen2.5-Math-7B and Qwen3-1.7B on DAPO-17k and Polaris, evaluated on six reasoning and coding benchmarks, show that BA consistently improves training stability and final performance over standard token and sequence aggregation. Our ana",
+      "posted_at": "2026-05-08T03:08:22.854Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "ai",
+        "benchmark",
+        "introduces",
+        "model"
+      ],
+      "signal_type": "launch",
+      "opportunity_score": 0.32,
+      "metrics": {
+        "upvotes": 0,
+        "authors": "Zhiyuan Zeng, Jiameng Huang, Zhangyue Yin"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "التجميع المتوازن: فهم وتحديد تحيز التجميع في GRPO"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.00623",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.00623",
+      "external_id": "2605.00623",
+      "title": "Recovering Hidden Reward in Diffusion-Based Policies",
+      "text": "This paper introduces EnergyFlow, a framework that unifies generative action modeling with inverse reinforcement learning by parameterizing a scalar energy function whose gradient is the denoising field. We establish that under maximum-entropy optimality, the score function learned via denoising score matching recovers the gradient of the expert's soft Q-function, enabling reward extraction without adversarial training. Formally, we prove that constraining the learned field to be conservative reduces hypothesis complexity and tightens out-of-distribution generalization bounds. We further characterize the identifiability of recovered rewards and bound how score estimation errors propagate to action preferences. Empirically, EnergyFlow achieves state-of-the-art imitation performance on various manipulation tasks while providing an effective reward signal for downstream reinforcement learning that outperforms both adversarial IRL methods and likelihood-based alternatives. These results show that the structural constraints required for valid reward extraction simultaneously serve as beneficial inductive biases for policy generalization. The code is available at https://github.com/sotaa",
+      "posted_at": "2026-05-08T01:26:56.219Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "ai",
+        "framework",
+        "introduces",
+        "model"
+      ],
+      "signal_type": "launch",
+      "opportunity_score": 0.32,
+      "metrics": {
+        "upvotes": 1,
+        "authors": "Yanbiao Ji, Qiuchang Li, Yuting Hu"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "استرداد المكافأة الخفية في السياسات القائمة على الانتشار"
     },
     {
       "id": "huggingface_blog:https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
@@ -903,8 +954,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "داخل VAKRA: المنطق، واستخدام الأدوات، وأنماط فشل الوكلاء"
     },
     {
@@ -929,96 +980,9 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T19:01:34+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 23,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 24,
       "title_ar": "طرق جديدة لشراء إعلانات ChatGPT"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.00380",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.00380",
-      "external_id": "2605.00380",
-      "title": "ResRL: Boosting LLM Reasoning via Negative Sample Projection Residual Reinforcement Learning",
-      "text": "Reinforcement Learning with Verifiable Rewards (RLVR) enhances reasoning of Large Language Models (LLMs) but usually exhibits limited generation diversity due to the over-incentivization of positive rewards. Although methods like Negative Sample Reinforcement (NSR) mitigate this issue by upweighting penalty from negative samples, they may suppress the semantic distributions shared between positive and negative responses. To boost reasoning ability without losing diversity, this paper proposes negative sample projection Residual Reinforcement Learning (ResRL) that decouples similar semantic distributions among positive and negative responses. We theoretically link Lazy Likelihood Displacement (LLD) to negative-positive head-gradient interference and derive a single-forward proxy that upper-bounds representation alignment to guide conservative advantage reweighting. ResRL then projects negative-token hidden representations onto an SVD-based low-rank positive subspace and uses projection residuals to modulate negative gradients, improving reasoning while preserving diversity and outperforming strong baselines on average across twelve benchmarks spanning Mathematics, Code, Agent Tasks,",
-      "posted_at": "2026-05-07T06:04:32.489Z",
-      "collected_at": "2026-05-07T08:10:02+00:00",
-      "matched_keywords": [
-        "agent",
-        "benchmark",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "upvotes": 3,
-        "authors": "Zihan Lin, Xiaohan Wang, Jie Cao"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T08:10:06+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 9,
-      "title_ar": "ResRL: تعزيز الاستدلال LLM من خلال نموذج سلبي لتعلم التعزيز المتبقي للإسقاط"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.03314",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.03314",
-      "external_id": "2605.03314",
-      "title": "When to Think, When to Speak: Learning Disclosure Policies for LLM Reasoning",
-      "text": "In single-stream autoregressive interfaces, the same tokens both update the model state and constitute an irreversible public commitment. This coupling creates a silence tax: additional deliberation postpones the first task-relevant content, while naive early streaming risks premature commitments that bias subsequent generations. We introduce Side-by-Side (SxS) Interleaved Reasoning, which makes disclosure timing a controllable decision within standard autoregressive generation. SxS interleaves partial disclosures with continued private reasoning in the same context, but releases content only when it is supported by the reasoning so far. To learn such pacing without incentivizing filler, we construct entailment-aligned interleaved trajectories by matching answer prefixes to supporting reasoning prefixes, then train with SFT to acquire the dual-action semantics and RL to recover reasoning performance under the new format. Across two Qwen3 architectures/scales (MoE Qwen3-30B-A3B, dense Qwen3-4B) and both in-domain (AIME25) and out-of-domain (GPQA-Diamond) benchmarks, SxS improves accuracy--content-latency Pareto trade-offs under token-level proxies such as inter-update waiting.",
-      "posted_at": "2026-05-07T08:22:44.507Z",
-      "collected_at": "2026-05-07T11:31:24+00:00",
-      "matched_keywords": [
-        "ai",
-        "benchmark",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "upvotes": 1,
-        "authors": "Jiaqi Wei, Xuehang Guo, Pengfei Yu"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T11:31:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 8,
-      "title_ar": "متى تفكر، ومتى تتحدث: تعلم سياسات الإفصاح عن التفكير في LLM"
-    },
-    {
-      "id": "huggingface_daily_papers:2604.27393",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2604.27393",
-      "external_id": "2604.27393",
-      "title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
-      "text": "Recent progress in multimodal large language models (MLLMs) has brought AI capabilities from static offline data processing to real-time streaming interaction, yet they still remain far from human-level multimodal interaction. The key bottlenecks are no longer modality coverage or latency alone, but the interaction paradigm itself. First, perception and response are still separated into alternating phases, preventing models from incorporating new inputs for timely adjustment during generation. Second, most current models remain reactive, responding only to explicit user requests instead of acting proactively in the evolving multimodal environment. We present MiniCPM-o 4.5, our latest effort towards human-like multimodal interaction, which mitigates these gaps by real-time full-duplex omni-modal interaction. It can see, listen, and speak simultaneously in real-time, while also exhibiting proactive behaviors such as issuing reminders or comments based on its continuous understanding of the live scene. The key technique behind MiniCPM-o 4.5 is Omni-Flow, a unified streaming framework that aligns omni-modal inputs and outputs along a shared temporal axis. This formulation converts conv",
-      "posted_at": "2026-05-07T13:01:04.436Z",
-      "collected_at": "2026-05-07T15:58:19+00:00",
-      "matched_keywords": [
-        "ai",
-        "framework",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "upvotes": 6,
-        "authors": "Junbo Cui, Bokai Xu, Chongyi Wang"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T15:58:23+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 6,
-      "title_ar": "MiniCPM - o 4.5: نحو تفاعل متعدد الوسائط كامل الدوبلكس في الوقت الفعلي"
     },
     {
       "id": "openai_news:https://openai.com/index/simplex",
@@ -1042,108 +1006,137 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
       "title_ar": "تعيد سيمبلكس التفكير في تطوير البرامج مع الدستور الغذائي"
     },
     {
-      "id": "github_repos:1114120913",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/Sneaky-Pablo/AI-Powered-Legacy-Protection-POC",
-      "external_id": "1114120913",
-      "title": "Sneaky-Pablo/AI-Powered-Legacy-Protection-POC",
-      "text": "🛡️ Empower families with AI-driven legacy planning and legal guidance for Spanish speakers, ensuring accessibility and personalized support worldwide.",
-      "posted_at": "2026-05-08T01:46:55Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "id": "huggingface_daily_papers:2605.04451",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.04451",
+      "external_id": "2605.04451",
+      "title": "RemoteZero: Geospatial Reasoning with Zero Human Annotations",
+      "text": "Geospatial reasoning requires models to resolve complex spatial semantics and user intent into precise target locations for Earth observation. Recent progress has liberated the reasoning path from manual curation, allowing models to generate their own inference chains. Yet a final dependency remains: they are still supervised by human-annotated ground-truth coordinates. This leaves the reasoning process autonomous, but not its spatial endpoint, and prevents true self-evolution on abundant unlabeled remote sensing data. To break this bottleneck, we introduce RemoteZero, a box-supervision-free framework for geospatial reasoning. RemoteZero is motivated by a simple asymmetry: an MLLM is typically better at verifying whether a region satisfies a query than at directly generating precise coordinates. Leveraging this stronger discriminative ability, RemoteZero replaces geometric supervision with intrinsic semantic verification and enables GRPO training without box annotations. The resulting framework further supports iterative self-evolution, allowing the model to improve from unlabeled remote sensing imagery through its own verification signal. Experiments show that RemoteZero achieves ",
+      "posted_at": "2026-05-08T02:59:21.529Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
       "matched_keywords": [
         "ai",
-        "ai-powered"
+        "framework",
+        "llm",
+        "model"
       ],
       "signal_type": "news",
       "opportunity_score": 0.3,
       "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript"
+        "upvotes": 1,
+        "authors": "Liang Yao, Fan Liu, Shengxiang Xu"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "Sneaky - Pablo/AI - Powered - Legacy - Protection - POC"
+      "title_ar": "RemoteZero: الاستدلال الجغرافي المكاني بدون تعليقات توضيحية بشرية"
     },
     {
-      "id": "github_repos:1232042791",
+      "id": "github_repos:1206618428",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/garudust-org/garudust-hub",
-      "external_id": "1232042791",
-      "title": "garudust-org/garudust-hub",
-      "text": "Open tool registry for Garudust Agent — write in Bash, Python, Node.js, or Rust and install in one command.",
-      "posted_at": "2026-05-08T01:46:53Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "source_url": "https://github.com/xyz111131/AI-Tools-for-Statistical-Research",
+      "external_id": "1206618428",
+      "title": "xyz111131/AI-Tools-for-Statistical-Research",
+      "text": "Course materials for \"AI Tools for Statistical Research\"",
+      "posted_at": "2026-05-08T04:46:04Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
       "matched_keywords": [
-        "agent",
+        "ai",
         "tool"
       ],
       "signal_type": "news",
       "opportunity_score": 0.3,
       "metrics": {
-        "stars": 1,
+        "stars": 2,
         "forks": 0,
-        "language": "Rust"
+        "language": "Jupyter Notebook"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "garudust - org/garudust - hub"
+      "title_ar": "xyz111131/أدوات الذكاء الاصطناعي للبحث الإحصائي"
     },
     {
-      "id": "github_repos:1232440631",
+      "id": "github_repos:1231588481",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/Pavikurra/global-water-reuse-ai",
-      "external_id": "1232440631",
-      "title": "Pavikurra/global-water-reuse-ai",
-      "text": "Open-data and machine learning platform for estimating global greywater production, wastewater reuse potential, and sustainable water infrastructure readiness.",
-      "posted_at": "2026-05-08T01:46:51Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "source_url": "https://github.com/ramprakash28/ai_tools_data_science",
+      "external_id": "1231588481",
+      "title": "ramprakash28/ai_tools_data_science",
+      "text": "List of AI tools for data science domain",
+      "posted_at": "2026-05-08T04:46:03Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
       "matched_keywords": [
         "ai",
-        "product"
+        "tool"
       ],
       "signal_type": "news",
       "opportunity_score": 0.3,
       "metrics": {
         "stars": 0,
         "forks": 0,
-        "language": "Jupyter Notebook"
+        "language": null
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "Pavikurra/global - water - reuse - ai"
+      "title_ar": "ramprakash28/ai_tools_data_science"
     },
     {
-      "id": "github_repos:1170871696",
+      "id": "github_repos:1228876896",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/dharani25007-code/codebuddy",
-      "external_id": "1170871696",
-      "title": "dharani25007-code/codebuddy",
-      "text": "CodeBuddy – AI-powered multi-mode coding assistant with interview simulation, debugging, optimization, ML architecture, and secure code execution built using Flask and OpenRouter.",
-      "posted_at": "2026-05-08T01:46:51Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "source_url": "https://github.com/KrishnaBhatia22-11/aqi-early-warning-system",
+      "external_id": "1228876896",
+      "title": "KrishnaBhatia22-11/aqi-early-warning-system",
+      "text": "AI-Driven Early Warning System for Urban Air Quality Risk Zones with Explainable AI",
+      "posted_at": "2026-05-08T04:45:56Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
       "matched_keywords": [
         "ai",
-        "ai-powered"
+        "system"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.3,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "كريشنا باتيا 22-11/نظام الإنذار المبكر"
+    },
+    {
+      "id": "github_repos:1142944498",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/nazilagundogdu/CatSignal",
+      "external_id": "1142944498",
+      "title": "nazilagundogdu/CatSignal",
+      "text": "AI system that combines passive device data (and light owner input) to detect early behavioral patterns in domestic cats.",
+      "posted_at": "2026-05-08T04:45:52Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
+      "matched_keywords": [
+        "ai",
+        "system"
       ],
       "signal_type": "news",
       "opportunity_score": 0.3,
@@ -1153,99 +1146,10 @@
         "language": "HTML"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "dharani25007 - code/codebuddy"
-    },
-    {
-      "id": "github_repos:1232495499",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/hieuchaydi/MCPGuard",
-      "external_id": "1232495499",
-      "title": "hieuchaydi/MCPGuard",
-      "text": "Catch broken schemas, unsafe permissions, and secret leaks in MCP servers before agents call them",
-      "posted_at": "2026-05-08T01:46:44Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
-      "matched_keywords": [
-        "agent",
-        "agents",
-        "broken",
-        "mcp"
-      ],
-      "signal_type": "pain",
-      "opportunity_score": 0.3,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": null
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "hieuchaydi/MCPGuard"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.03848",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.03848",
-      "external_id": "2605.03848",
-      "title": "Parameter-Efficient Multi-View Proficiency Estimation: From Discriminative Classification to Generative Feedback",
-      "text": "Estimating how well a person performs an action, rather than which action is performed, is central to coaching, rehabilitation, and talent identification. This task is challenging because proficiency is encoded in subtle differences in timing, balance, body mechanics, and execution, often distributed across multiple views and short temporal events. We discuss three recent contributions to multi-view proficiency estimation on Ego-Exo4D. SkillFormer introduces a parameter-efficient discriminative architecture for selective multi-view fusion; PATS improves temporal sampling by preserving locally dense excerpts of fundamental movements; and ProfVLM reformulates proficiency estimation as conditional language generation, producing both a proficiency label and expert-style feedback through a gated cross-view projector and a compact language backbone. Together, these methods achieve state-of-the-art accuracy on Ego-Exo4D with up to 20x fewer trainable parameters and up to 3x fewer training epochs than video-transformer baselines, while moving from closed-set classification toward interpretable feedback generation. These results highlight a shift toward efficient, multi-view systems that co",
-      "posted_at": "2026-05-07T04:24:50.717Z",
-      "collected_at": "2026-05-07T08:10:02+00:00",
-      "matched_keywords": [
-        "ai",
-        "introduces",
-        "system"
-      ],
-      "signal_type": "launch",
-      "opportunity_score": 0.28,
-      "metrics": {
-        "upvotes": 3,
-        "authors": "Edoardo Bianchi, Antonio Liotta"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T08:10:06+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 9,
-      "title_ar": "تقدير كفاءة العرض المتعدد للمعلمات: من التصنيف التمييزي إلى التغذية الراجعة التوليدية"
-    },
-    {
-      "id": "github_repos:1229488898",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/ryusei-mogi/AgentMux",
-      "external_id": "1229488898",
-      "title": "ryusei-mogi/AgentMux",
-      "text": "Quota-aware local OpenAI-compatible LLM gateway for coding agents.",
-      "posted_at": "2026-05-08T01:46:52Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
-      "matched_keywords": [
-        "agent",
-        "agents",
-        "ai",
-        "llm",
-        "openai"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.28,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "ryusei - mogi/AgentMux"
+      "title_ar": "nazilagundogdu/CatSignal"
     },
     {
       "id": "google_ai_blog:https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
@@ -1268,8 +1172,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "8 نصائح من الجوزاء لتنظيم مسكنك (وحياتك)"
     },
     {
@@ -1293,8 +1197,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "كيفية إنشاء تطبيقات ويب قابلة للتطوير باستخدام عامل تصفية الخصوصية في OpenAI"
     },
     {
@@ -1318,8 +1222,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "تطوير المقارنة المعيارية للذكاء الاصطناعي مع ساحة الألعاب"
     },
     {
@@ -1343,8 +1247,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "مراجعة عام Google: 8 مجالات مع اختراقات بحثية في عام 2025"
     },
     {
@@ -1368,8 +1272,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "Gemini 3.1 Flash TTS: الجيل التالي من خطاب الذكاء الاصطناعي التعبيري"
     },
     {
@@ -1393,8 +1297,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "نظرة خاطفة على أدوات واجهة سطر الأوامر"
     },
     {
@@ -1418,8 +1322,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T20:55:04+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 3,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 4,
       "title_ar": "دعوى إيلون ماسك القضائية تضع سجل سلامة OpenAI تحت المجهر"
     },
     {
@@ -1459,8 +1363,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
       "title_ar": "julientassy/fantasy - pixel - lora - v1 — تحويل النص إلى صورة"
     },
     {
@@ -1499,39 +1403,66 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
       "title_ar": "qiji10086/chilloutmix — تحويل النص إلى صورة"
     },
     {
-      "id": "github_repos:1232482880",
+      "id": "huggingface_daily_papers:2605.04647",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.04647",
+      "external_id": "2605.04647",
+      "title": "ReflectDrive-2: Reinforcement-Learning-Aligned Self-Editing for Discrete Diffusion Driving",
+      "text": "We introduce ReflectDrive-2, a masked discrete diffusion planner with separate action expert for autonomous driving that represents plans as discrete trajectory tokens and generates them through parallel masked decoding. This discrete token space enables in-place trajectory revision: AutoEdit rewrites selected tokens using the same model, without requiring an auxiliary refinement network. To train this capability, we use a two-stage procedure. First, we construct structure-aware perturbations of expert trajectories along longitudinal progress and lateral heading directions and supervise the model to recover the original expert trajectory. We then fine-tune the full decision--draft--reflect rollout with reinforcement learning (RL), assigning terminal driving reward to the final post-edit trajectory and propagating policy-gradient credit through full-rollout transitions. Full-rollout RL proves crucial for coupling drafting and editing: under supervised training alone, inference-time AutoEdit improves PDMS by at most 0.3, whereas RL increases its gain to 1.9. We also co-design an efficient reflective decoding stack for the decision--draft--reflect pipeline, combining shared-prefix KV ",
+      "posted_at": "2026-05-08T00:54:47.005Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "ai",
+        "model",
+        "pipeline"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.26,
+      "metrics": {
+        "upvotes": 5,
+        "authors": "Huimin Wang, Yue Wang, Bihao Cui"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "ReflectDrive -2: التحرير الذاتي المتوافق مع التعزيز والتعلم لقيادة الانتشار المنفصل"
+    },
+    {
+      "id": "github_repos:1176543850",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/Internet-solutionist/coin_v2.1",
-      "external_id": "1232482880",
-      "title": "Internet-solutionist/coin_v2.1",
-      "text": "Sovereign 6-Agent AI Trading Firm - CoIn Counter Insurance. We do not predict the market. We insure against it. Diagnostic edge-hunting agents with mathematical rigor and local-first capable models.",
-      "posted_at": "2026-05-08T01:46:55Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "source_url": "https://github.com/serverlessclaw/serverlessclaw",
+      "external_id": "1176543850",
+      "title": "serverlessclaw/serverlessclaw",
+      "text": "Official ServerlessClaw: The authoritative autonomous AI agent swarm for AWS. Zero idle cost, self-evolving, and infinite scale. Powered by OpenClaw.",
+      "posted_at": "2026-05-08T04:46:04Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
       "matched_keywords": [
         "agent",
-        "agents",
         "ai",
-        "model"
+        "cost"
       ],
-      "signal_type": "news",
-      "opportunity_score": 0.24,
+      "signal_type": "pain",
+      "opportunity_score": 0.26,
       "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "Python"
+        "stars": 13,
+        "forks": 2,
+        "language": "TypeScript"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "مؤيد حلول الإنترنت/coin_v2.1"
+      "title_ar": "serverlessclaw/Serverlessclaw"
     },
     {
       "id": "bens_bites:https://www.bensbites.com/p/chatgpts-nano-banana",
@@ -1553,8 +1484,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "موزة نانو من ChatGPT"
     },
     {
@@ -1577,8 +1508,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 48,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 49,
       "title_ar": "طرق جديدة لإنشاء صور مخصصة في تطبيق الجوزاء"
     },
     {
@@ -1601,23 +1532,23 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T17:43:57+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 6,
       "title_ar": "كيف أعادت أنثروبيك ميثوس كتابة نهج فايرفوكس للأمن السيبراني"
     },
     {
-      "id": "huggingface_models:rahuldshetty/satellite-omni-lisa",
+      "id": "huggingface_models:samuelfaj/Qwen3.6-35B-A3B-4bit-MTPLX-Optimized-Speed",
       "source_id": "huggingface_models",
       "source_name": "Hugging Face multimodal models",
       "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/rahuldshetty/satellite-omni-lisa",
-      "external_id": "rahuldshetty/satellite-omni-lisa",
-      "title": "rahuldshetty/satellite-omni-lisa — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text safetensors satellite remote-sensing segmentation multimodal vision-language LISA image-generation image-text-to-text dataset:rahuldshetty/satellite-multitask-omni arxiv:2308.00692 arxiv:2312.05284 downloads 0 likes 0",
-      "posted_at": "2026-05-07T20:53:03.000Z",
-      "collected_at": "2026-05-07T20:55:01+00:00",
+      "source_url": "https://huggingface.co/samuelfaj/Qwen3.6-35B-A3B-4bit-MTPLX-Optimized-Speed",
+      "external_id": "samuelfaj/Qwen3.6-35B-A3B-4bit-MTPLX-Optimized-Speed",
+      "title": "samuelfaj/Qwen3.6-35B-A3B-4bit-MTPLX-Optimized-Speed — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text mlx safetensors qwen3_5_moe image-text-to-text conversational base_model:Qwen/Qwen3.6-35B-A3B base_model:quantized:Qwen/Qwen3.6-35B-A3B license:apache-2.0 4-bit region:us downloads 0 likes 0",
+      "posted_at": "2026-05-08T01:37:37.000Z",
+      "collected_at": "2026-05-08T01:47:00+00:00",
       "matched_keywords": [
-        "dataset",
+        "app",
         "model"
       ],
       "signal_type": "news",
@@ -1627,69 +1558,152 @@
         "likes": 0,
         "pipeline_tag": "image-text-to-text",
         "tags": [
+          "mlx",
           "safetensors",
-          "satellite",
-          "remote-sensing",
-          "segmentation",
-          "multimodal",
-          "vision-language",
-          "LISA",
-          "image-generation",
+          "qwen3_5_moe",
+          "lightning-mlx",
+          "mtplx",
+          "qwen3.6",
+          "apple-silicon",
           "image-text-to-text",
-          "dataset:rahuldshetty/satellite-multitask-omni",
-          "arxiv:2308.00692",
-          "arxiv:2312.05284"
+          "conversational",
+          "base_model:Qwen/Qwen3.6-35B-A3B",
+          "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+          "license:apache-2.0"
         ]
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T20:55:04+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 3,
-      "title_ar": "rahuldshetty/satellite - omni - lisa — image — text — to — text"
+      "first_seen_at": "2026-05-08T01:47:03+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
+      "title_ar": "samuelfaj/Qwen3.6-35B-A3B-4bit - MTPLX - Optimized - Speed - image — text — to — text"
     },
     {
-      "id": "github_repos:1212203006",
+      "id": "huggingface_daily_papers:2605.06376",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.06376",
+      "external_id": "2605.06376",
+      "title": "Continuous-Time Distribution Matching for Few-Step Diffusion Distillation",
+      "text": "Step distillation has become a leading technique for accelerating diffusion models, among which Distribution Matching Distillation (DMD) and Consistency Distillation are two representative paradigms. While consistency methods enforce self-consistency along the full PF-ODE trajectory to steer it toward the clean data manifold, vanilla DMD relies on sparse supervision at a few predefined discrete timesteps. This restricted discrete-time formulation and mode-seeking nature of the reverse KL divergence tends to exhibit visual artifacts and over-smoothed outputs, often necessitating complex auxiliary modules -- such as GANs or reward models -- to restore visual fidelity. In this work, we introduce Continuous-Time Distribution Matching (CDM), migrating the DMD framework from discrete anchoring to continuous optimization for the first time. CDM achieves this through two continuous-time designs. First, we replace the fixed discrete schedule with a dynamic continuous schedule of random length, so that distribution matching is enforced at arbitrary points along sampling trajectories rather than only at a few fixed anchors. Second, we propose a continuous-time alignment objective that perform",
+      "posted_at": "2026-05-08T01:43:03.116Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "framework",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.22,
+      "metrics": {
+        "upvotes": 13,
+        "authors": "Tao Liu, Hao Yan, Mengting Chen"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "مطابقة التوزيع المستمر لتقطير الانتشار بخطوات قليلة"
+    },
+    {
+      "id": "github_repos:1184158610",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/shreydevkar/gridos",
-      "external_id": "1212203006",
-      "title": "shreydevkar/gridos",
-      "text": "The deterministic AI spreadsheet engine. GridOS combines LLM reasoning with an AST collision-resolution engine to generate reliable, complex financial models without breaking.",
-      "posted_at": "2026-05-08T01:46:51Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "source_url": "https://github.com/human-pages-ai/agentflex",
+      "external_id": "1184158610",
+      "title": "human-pages-ai/agentflex",
+      "text": "Where AI Agents Show Off — agentflex.vip",
+      "posted_at": "2026-05-07T05:19:27Z",
+      "collected_at": "2026-05-07T05:19:40+00:00",
       "matched_keywords": [
-        "ai",
-        "llm",
-        "model"
+        "agent",
+        "agents",
+        "ai"
       ],
       "signal_type": "news",
       "opportunity_score": 0.2,
       "metrics": {
-        "stars": 2,
-        "forks": 1,
-        "language": "Python"
+        "stars": 1,
+        "forks": 0,
+        "language": "HTML"
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "shreydevkar/gridos"
+      "first_seen_at": "2026-05-07T05:19:40+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
+      "title_ar": "human - pages - ai/agentflex"
     },
     {
-      "id": "github_repos:1232385330",
+      "id": "github_repos:1200310216",
       "source_id": "github_repos",
       "source_name": "GitHub Repositories",
       "source_kind": "code",
-      "source_url": "https://github.com/favcrm/mcp",
-      "external_id": "1232385330",
-      "title": "favcrm/mcp",
-      "text": "FavCRM MCP — install snippets, examples, docs for the Model Context Protocol server at api.favcrm.io/mcp",
-      "posted_at": "2026-05-08T01:46:46Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
+      "source_url": "https://github.com/tomevault-io/claude-code-plugins",
+      "external_id": "1200310216",
+      "title": "tomevault-io/claude-code-plugins",
+      "text": "AI instruction files for Claude Code — custom marketplace plugins",
+      "posted_at": "2026-05-05T20:50:30Z",
+      "collected_at": "2026-05-05T20:50:49+00:00",
       "matched_keywords": [
-        "mcp",
-        "model"
+        "ai",
+        "claude"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.16,
+      "metrics": {
+        "stars": 1,
+        "forks": 1,
+        "language": null
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-05T20:50:49+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
+      "title_ar": "tomevault - oi/clude - code - plugins"
+    },
+    {
+      "id": "github_repos:1121460191",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/Chat2AnyLLM/awesome-claude-skills",
+      "external_id": "1121460191",
+      "title": "Chat2AnyLLM/awesome-claude-skills",
+      "text": "A curated list of awesome claude skills",
+      "posted_at": "2026-05-05T01:26:58Z",
+      "collected_at": "2026-05-05T01:27:03+00:00",
+      "matched_keywords": [
+        "claude",
+        "llm"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.16,
+      "metrics": {
+        "stars": 120,
+        "forks": 28,
+        "language": "Python"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-05T01:27:03+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
+      "title_ar": "Chat2AnyLLM/awesome - clude - skills"
+    },
+    {
+      "id": "github_repos:1200310255",
+      "source_id": "github_repos",
+      "source_name": "GitHub Repositories",
+      "source_kind": "code",
+      "source_url": "https://github.com/tomevault-io/cursor-plugins",
+      "external_id": "1200310255",
+      "title": "tomevault-io/cursor-plugins",
+      "text": "AI instruction files for Cursor — Team Marketplace plugins",
+      "posted_at": "2026-05-08T04:45:56Z",
+      "collected_at": "2026-05-08T04:46:11+00:00",
+      "matched_keywords": [
+        "ai",
+        "cursor"
       ],
       "signal_type": "news",
       "opportunity_score": 0.16,
@@ -1699,38 +1713,10 @@
         "language": null
       },
       "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
       "seen_count": 1,
-      "title_ar": "favcrm/mcp"
-    },
-    {
-      "id": "github_repos:1113958834",
-      "source_id": "github_repos",
-      "source_name": "GitHub Repositories",
-      "source_kind": "code",
-      "source_url": "https://github.com/TTPufd/cc-manage",
-      "external_id": "1113958834",
-      "title": "TTPufd/cc-manage",
-      "text": "🛠️ Manage Claude and Codex API configurations seamlessly in VS Code with an intuitive sidebar extension for easy switching and monitoring.",
-      "posted_at": "2026-05-08T01:46:45Z",
-      "collected_at": "2026-05-08T01:47:03+00:00",
-      "matched_keywords": [
-        "claude",
-        "codex"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.16,
-      "metrics": {
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "TTPufd/cc - management"
+      "title_ar": "tomevault - io/cursor - plugins"
     },
     {
       "id": "openai_news:https://openai.com/index/openai-on-aws",
@@ -1756,39 +1742,9 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "تأتي نماذج OpenAI والدستور الغذائي والوكلاء المدارون إلى AWS"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.05724",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.05724",
-      "external_id": "2605.05724",
-      "title": "Auto Research with Specialist Agents Develops Effective and Non-Trivial Training Recipes",
-      "text": "We study auto research as a closed empirical loop driven by external measurement. Each submitted trial carries a hypothesis, an executable code edit, an evaluator-owned outcome, and feedback that shapes the next proposal. The output is not a generated paper or a single model checkpoint, but an auditable trajectory of proposals, code diffs, experiments, scores, and failure labels. We instantiate this loop with specialist agents that partition recipe surfaces and share measured lineage across trials. The central empirical finding is that lineage feedback lets agents turn evaluator outcomes, including crashes, budget overruns, size failures, and accuracy-gate misses, into later program-level recipe edits rather than one-shot suggestions. Across 1,197 headline-run trials plus 600 Parameter Golf control trials after one-time setup and launch, humans did not choose proposals, edit recipes, override scores, or repair failed trials during the search. In the three headline runs, the same submitted-trial loop reduces Parameter Golf validation bpb by 0.81%, raises NanoChat-D12 CORE by 38.7%, and reduces CIFAR-10 Airbench96 wallclock by 4.59%, with each task measured by its own external evalua",
-      "posted_at": "2026-05-08T00:14:50.931Z",
-      "collected_at": "2026-05-08T01:47:00+00:00",
-      "matched_keywords": [
-        "agent",
-        "agents",
-        "ai",
-        "launch",
-        "model"
-      ],
-      "signal_type": "launch",
-      "opportunity_score": 0.12,
-      "metrics": {
-        "upvotes": 1,
-        "authors": "Jingjie Ning, Xiaochuan Li, Ji Zeng"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "أبحاث السيارات مع وكلاء متخصصين يطورون وصفات تدريب فعالة وغير تافهة"
     },
     {
       "id": "openai_news:https://openai.com/index/mrc-supercomputer-networking",
@@ -1812,8 +1768,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-06T11:41:58+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 18,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 19,
       "title_ar": "فتح شبكات التدريب على الذكاء الاصطناعي واسعة النطاق باستخدام MRC (اتصال موثوق متعدد المسارات)"
     },
     {
@@ -1837,8 +1793,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "إنشاء مقاطع فيديو وتحريرها ومشاركتها مجانًا في Google Vids"
     },
     {
@@ -1862,8 +1818,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T15:27:04+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 25,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 26,
       "title_ar": "الدستور الغذائي يكتسب زخماً"
     },
     {
@@ -1888,9 +1844,53 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "التزامنا بسلامة المجتمع"
+    },
+    {
+      "id": "huggingface_models:zensation-ai/zenbrain",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/zensation-ai/zenbrain",
+      "external_id": "zensation-ai/zenbrain",
+      "title": "zensation-ai/zenbrain — text-generation",
+      "text": "Hugging Face model update text-generation memory neuroscience ai-memory-architecture autonomous-ai knowledge-management long-term-memory episodic-memory hebbian-learning spaced-repetition bayesian rag agents downloads 0 likes 0",
+      "posted_at": "2026-05-08T04:04:47.000Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "agent",
+        "agents",
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.09,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "memory",
+          "neuroscience",
+          "ai-memory-architecture",
+          "autonomous-ai",
+          "knowledge-management",
+          "long-term-memory",
+          "episodic-memory",
+          "hebbian-learning",
+          "spaced-repetition",
+          "bayesian",
+          "rag",
+          "agents"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "zensation - ai/zenbrain — توليد النص"
     },
     {
       "id": "google_ai_blog:https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1913,8 +1913,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "نحن بصدد إطلاق اثنين من البولي يوريثين الحراري المتخصص لعصر الوكلاء."
     },
     {
@@ -1937,8 +1937,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "طرق جديدة لتحقيق التوازن بين التكلفة والموثوقية في واجهة برمجة تطبيقات الجوزاء"
     },
     {
@@ -1962,8 +1962,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "انضم إلى دورة ترميز Vibe الجديدة لوكلاء الذكاء الاصطناعي من Google و Kaggle"
     },
     {
@@ -1987,8 +1987,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 48,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 49,
       "title_ar": "OpenAI متاح في FedRAMP معتدل"
     },
     {
@@ -2012,8 +2012,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "يجب على الوكلاء مقابلتك"
     },
     {
@@ -2037,89 +2037,9 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "ما الذي يجعل الوكلاء الجيدين .md ؟"
-    },
-    {
-      "id": "huggingface_models:storagejuju/kimi-k2.6-ud-q8-k-xl-juju",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/storagejuju/kimi-k2.6-ud-q8-k-xl-juju",
-      "external_id": "storagejuju/kimi-k2.6-ud-q8-k-xl-juju",
-      "title": "storagejuju/kimi-k2.6-ud-q8-k-xl-juju — text-generation",
-      "text": "Hugging Face model update text-generation kimi_k25 text-generation gguf juju moe storagellm conversational custom_code base_model:moonshotai/Kimi-K2.6 base_model:quantized:moonshotai/Kimi-K2.6 license:mit compressed-tensors downloads 0 likes 0",
-      "posted_at": "2026-05-03T13:25:11.000Z",
-      "collected_at": "2026-05-03T13:28:18+00:00",
-      "matched_keywords": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.07,
-      "metrics": {
-        "downloads": 0,
-        "likes": 0,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "text-generation",
-          "gguf",
-          "juju",
-          "moe",
-          "storagellm",
-          "base_model:moonshotai/Kimi-K2.6",
-          "base_model:finetune:moonshotai/Kimi-K2.6",
-          "license:mit",
-          "region:us"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 17,
-      "title_ar": "storagejuju/kimi-k2.6-ud-q8-k-xl-juju - توليد النص"
-    },
-    {
-      "id": "huggingface_models:storagejuju/glm-5.1-mxfp4-moe-juju",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/storagejuju/glm-5.1-mxfp4-moe-juju",
-      "external_id": "storagejuju/glm-5.1-mxfp4-moe-juju",
-      "title": "storagejuju/glm-5.1-mxfp4-moe-juju — text-generation",
-      "text": "Hugging Face model update text-generation glm_moe_dsa text-generation gguf juju moe storagellm conversational base_model:zai-org/GLM-5.1 base_model:finetune:zai-org/GLM-5.1 license:mit region:us downloads 0 likes 0",
-      "posted_at": "2026-05-03T14:21:47.000Z",
-      "collected_at": "2026-05-03T14:40:10+00:00",
-      "matched_keywords": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.07,
-      "metrics": {
-        "downloads": 0,
-        "likes": 0,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "text-generation",
-          "gguf",
-          "juju",
-          "moe",
-          "storagellm",
-          "base_model:zai-org/GLM-5.1",
-          "base_model:finetune:zai-org/GLM-5.1",
-          "license:mit",
-          "region:us"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-03T14:40:13+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 12,
-      "title_ar": "storagejuju/glm-5.1-mxfp4-moe-juju - توليد النص"
     },
     {
       "id": "openai_news:https://openai.com/index/singular-bank",
@@ -2142,8 +2062,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T01:29:31+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 11,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 12,
       "title_ar": "بنك سينغولار يساعد المصرفيين على التحرك بسرعة مع ChatGPT و Codex"
     },
     {
@@ -2167,8 +2087,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T17:43:57+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 6,
       "title_ar": "تطوير الذكاء الصوتي باستخدام نماذج جديدة في واجهة برمجة التطبيقات"
     },
     {
@@ -2192,8 +2112,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T19:22:35+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 4,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 5,
       "title_ar": "اختبار الإعلانات في ChatGPT"
     },
     {
@@ -2216,7 +2136,7 @@
       "opportunity_score": 0.07,
       "metrics": {
         "downloads": 207,
-        "likes": 2,
+        "likes": 5,
         "pipeline_tag": "text-generation",
         "tags": [
           "transformers",
@@ -2235,209 +2155,9 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T13:03:50+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 4,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 5,
       "title_ar": "Brian6145/Qwen3.6-27B - Claude - Opus - Sonnet — Distilled — NVFP4 — MTP - توليد النص"
-    },
-    {
-      "id": "huggingface_daily_papers:2605.06196",
-      "source_id": "huggingface_daily_papers",
-      "source_name": "Hugging Face Daily Papers",
-      "source_kind": "scientific_paper",
-      "source_url": "https://huggingface.co/papers/2605.06196",
-      "external_id": "2605.06196",
-      "title": "The Granularity Axis: A Micro-to-Macro Latent Direction for Social Roles in Language Models",
-      "text": "Large language models (LLMs) are routinely prompted to take on social roles ranging from individuals to institutions, yet it remains unclear whether their internal representations encode the granularity of such roles, from micro-level individual experience to macro-level organizational, institutional, or national reasoning. We show that they do. We define a contrast-based Granularity Axis as the difference between mean macro- and micro-role hidden states. In Qwen3-8B, this axis aligns with the principal axis (PC1) of the role representation space at cosine 0.972 and accounts for 52.6% of its variance, indicating that granularity is the dominant geometric axis organizing prompted social roles. We construct 75 social roles across five granularity levels and collect 91,200 role-conditioned responses over shared questions and prompt variants, then extract role-level hidden states and project them onto the axis. Role projections increase monotonically across all five levels, remain stable across layers, prompt variants, endpoint definitions, held-out splits, and score-filtered subsets, and transfer to Llama-3.1-8B-Instruct. The axis is also causally relevant: activation steering along i",
-      "posted_at": "2026-05-08T00:13:04.036Z",
-      "collected_at": "2026-05-08T01:47:00+00:00",
-      "matched_keywords": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.07,
-      "metrics": {
-        "upvotes": 1,
-        "authors": "Chonghan Qin, Xiachong Feng, Ziyun Song"
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "محور الحبيبية: اتجاه كامن من الميكرو إلى الماكرو للأدوار الاجتماعية في نماذج اللغة"
-    },
-    {
-      "id": "huggingface_models:selink/Qwen3-4B-ru-claude-sft",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/selink/Qwen3-4B-ru-claude-sft",
-      "external_id": "selink/Qwen3-4B-ru-claude-sft",
-      "title": "selink/Qwen3-4B-ru-claude-sft — text-generation",
-      "text": "Hugging Face model update text-generation transformers safetensors qwen3 text-generation generated_from_trainer trl sft conversational base_model:Qwen/Qwen3-4B base_model:finetune:Qwen/Qwen3-4B text-generation-inference endpoints_compatible downloads 0 likes 0",
-      "posted_at": "2026-05-08T01:46:37.000Z",
-      "collected_at": "2026-05-08T01:47:00+00:00",
-      "matched_keywords": [
-        "ai",
-        "claude",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.07,
-      "metrics": {
-        "downloads": 0,
-        "likes": 0,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "transformers",
-          "safetensors",
-          "qwen3",
-          "text-generation",
-          "generated_from_trainer",
-          "trl",
-          "sft",
-          "conversational",
-          "base_model:Qwen/Qwen3-4B",
-          "base_model:finetune:Qwen/Qwen3-4B",
-          "text-generation-inference",
-          "endpoints_compatible"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "selink/Qwen3 -4B - ru — clude — sft — توليد النص"
-    },
-    {
-      "id": "huggingface_models:QuantTrio/DeepSeek-V3.1-AWQ-Lite",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/QuantTrio/DeepSeek-V3.1-AWQ-Lite",
-      "external_id": "QuantTrio/DeepSeek-V3.1-AWQ-Lite",
-      "title": "QuantTrio/DeepSeek-V3.1-AWQ-Lite — text-generation",
-      "text": "Hugging Face model update text-generation transformers safetensors deepseek_v3 text-generation vLLM AWQ conversational custom_code zh en arxiv:2412.19437 base_model:deepseek-ai/DeepSeek-V3.1 downloads 2313 likes 3",
-      "posted_at": "2026-05-08T01:34:26.000Z",
-      "collected_at": "2026-05-08T01:47:00+00:00",
-      "matched_keywords": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.07,
-      "metrics": {
-        "downloads": 2313,
-        "likes": 3,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "transformers",
-          "safetensors",
-          "deepseek_v3",
-          "text-generation",
-          "vLLM",
-          "AWQ",
-          "conversational",
-          "custom_code",
-          "zh",
-          "en",
-          "arxiv:2412.19437",
-          "base_model:deepseek-ai/DeepSeek-V3.1"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "QuantTrio/DeepSeek-V3.1-AWQ-Lite - توليد النص"
-    },
-    {
-      "id": "huggingface_models:QuantTrio/DeepSeek-V3.2-Exp-AWQ",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/QuantTrio/DeepSeek-V3.2-Exp-AWQ",
-      "external_id": "QuantTrio/DeepSeek-V3.2-Exp-AWQ",
-      "title": "QuantTrio/DeepSeek-V3.2-Exp-AWQ — text-generation",
-      "text": "Hugging Face model update text-generation transformers safetensors deepseek_v32 text-generation vLLM AWQ conversational base_model:deepseek-ai/DeepSeek-V3.2-Exp base_model:quantized:deepseek-ai/DeepSeek-V3.2-Exp license:mit endpoints_compatible 4-bit downloads 344 likes 4",
-      "posted_at": "2026-05-08T01:34:14.000Z",
-      "collected_at": "2026-05-08T01:47:00+00:00",
-      "matched_keywords": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.07,
-      "metrics": {
-        "downloads": 344,
-        "likes": 4,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "transformers",
-          "safetensors",
-          "deepseek_v32",
-          "text-generation",
-          "vLLM",
-          "AWQ",
-          "conversational",
-          "base_model:deepseek-ai/DeepSeek-V3.2-Exp",
-          "base_model:quantized:deepseek-ai/DeepSeek-V3.2-Exp",
-          "license:mit",
-          "endpoints_compatible",
-          "4-bit"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "QuantTrio/DeepSeek-V3.2-Exp-AWQ - توليد النص"
-    },
-    {
-      "id": "huggingface_models:QuantTrio/DeepSeek-V3.1-AWQ",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/QuantTrio/DeepSeek-V3.1-AWQ",
-      "external_id": "QuantTrio/DeepSeek-V3.1-AWQ",
-      "title": "QuantTrio/DeepSeek-V3.1-AWQ — text-generation",
-      "text": "Hugging Face model update text-generation transformers safetensors deepseek_v3 text-generation vLLM GPTQ conversational custom_code zh en arxiv:2412.19437 base_model:deepseek-ai/DeepSeek-V3.1 downloads 182 likes 5",
-      "posted_at": "2026-05-08T01:33:48.000Z",
-      "collected_at": "2026-05-08T01:47:00+00:00",
-      "matched_keywords": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.07,
-      "metrics": {
-        "downloads": 182,
-        "likes": 5,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "transformers",
-          "safetensors",
-          "deepseek_v3",
-          "text-generation",
-          "vLLM",
-          "GPTQ",
-          "conversational",
-          "custom_code",
-          "zh",
-          "en",
-          "arxiv:2412.19437",
-          "base_model:deepseek-ai/DeepSeek-V3.1"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
-      "title_ar": "QuantTrio/DeepSeek-V3.1-AWQ - توليد النص"
     },
     {
       "id": "huggingface_models:Jackrong/Negentropy-claude-opus-4.7-9B-GGUF",
@@ -2459,7 +2179,7 @@
       "opportunity_score": 0.07,
       "metrics": {
         "downloads": 0,
-        "likes": 0,
+        "likes": 1,
         "pipeline_tag": "image-text-to-text",
         "tags": [
           "gguf",
@@ -2478,8 +2198,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
       "title_ar": "Jackrong/Negentropy - claude - opus-4.7-9B - GGUF - image — text — to — text"
     },
     {
@@ -2502,7 +2222,7 @@
       "opportunity_score": 0.07,
       "metrics": {
         "downloads": 0,
-        "likes": 1,
+        "likes": 2,
         "pipeline_tag": "image-text-to-text",
         "tags": [
           "safetensors",
@@ -2520,9 +2240,37 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-08T01:47:03+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 1,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
       "title_ar": "OrionLLM/GRM-2.6-Opus - image — text — to — text"
+    },
+    {
+      "id": "huggingface_daily_papers:2605.05922",
+      "source_id": "huggingface_daily_papers",
+      "source_name": "Hugging Face Daily Papers",
+      "source_kind": "scientific_paper",
+      "source_url": "https://huggingface.co/papers/2605.05922",
+      "external_id": "2605.05922",
+      "title": "Think, then Score: Decoupled Reasoning and Scoring for Video Reward Modeling",
+      "text": "Recent advances in generative video models are increasingly driven by post-training and test-time scaling, both of which critically depend on the quality of video reward models (RMs). An ideal reward model should predict accurate rewards that align with human preferences across diverse scenarios. However, existing paradigms face a fundamental dilemma: Discriminative RMs regress rewards directly on features extracted by multimodal large language models (MLLMs) without explicit reasoning, making them prone to shortcut learning and heavily reliant on massive data scaling for generalization. In contrast, Generative RMs with Chain-of-Thought (CoT) reasoning exhibit superior interpretability and generalization potential, as they leverage fine-grained semantic supervision to internalize the rationales behind human preferences. However, they suffer from inherent optimization bottlenecks due to the coupling of reasoning and scoring within a single autoregressive inference chain. To harness the generalization benefits of CoT reasoning while mitigating the training instability of coupled reasoning and scoring, we introduce DeScore, a training-efficient and generalizable video reward model. De",
+      "posted_at": "2026-05-08T00:52:28.496Z",
+      "collected_at": "2026-05-08T04:46:07+00:00",
+      "matched_keywords": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.07,
+      "metrics": {
+        "upvotes": 0,
+        "authors": "Yuan Wang, Ouxiang Li, Yulong Xu"
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T04:46:11+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 1,
+      "title_ar": "التفكير، ثم النتيجة: التفكير المنفصل والتسجيل لنمذجة مكافأة الفيديو"
     },
     {
       "id": "openai_news:https://openai.com/index/where-the-goblins-came-from",
@@ -2544,8 +2292,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "من أين أتت العفاريت"
     },
     {
@@ -2568,8 +2316,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "بناء البنية التحتية للحوسبة لعصر الذكاء"
     },
     {
@@ -2592,8 +2340,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "يعزز Gemini Robotics ER-1.6 التفكير لمساعدة الروبوتات على التنقل في مهام العالم الحقيقي."
     },
     {
@@ -2616,8 +2364,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "توسيع نطاق تعليم الذكاء الاصطناعي المتقدم في جميع أنحاء أفريقيا"
     },
     {
@@ -2640,8 +2388,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "المنصة 37 وبورصة الذكاء الاصطناعي: مساحات جديدة للابتكار والاكتشاف في مجال الذكاء الاصطناعي"
     },
     {
@@ -2664,8 +2412,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "تقديم NVIDIA Nemotron 3 Nano Omni: ذكاء متعدد الوسائط طويل السياق للمستندات ووكلاء الصوت والفيديو"
     },
     {
@@ -2688,8 +2436,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "DeepSeek - V4: سياق مليوني رمز يمكن للوكلاء استخدامه بالفعل"
     },
     {
@@ -2712,8 +2460,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "هذا هو مصممي - كلود"
     },
     {
@@ -2747,8 +2495,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T12:25:28+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 49,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 50,
       "title_ar": "lodestones/Zeta - Chroma - تحويل النص إلى صورة"
     },
     {
@@ -2771,8 +2519,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 48,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 49,
       "title_ar": "المرحلة التالية من شراكة Microsoft OpenAI"
     },
     {
@@ -2795,8 +2543,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 48,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 49,
       "title_ar": "Ecom - RLVE: بيئات تكيفية يمكن التحقق منها لوكلاء محادثة التجارة الإلكترونية"
     },
     {
@@ -2819,8 +2567,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 48,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 49,
       "title_ar": "بنى أنثروبيك نموذجًا محفوفًا بالمخاطر بحيث لا يمكن إطلاقه"
     },
     {
@@ -2843,8 +2591,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 48,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 49,
       "title_ar": "لا يوجد كلود للمخالب"
     },
     {
@@ -2867,8 +2615,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "تعرف على المزيد حول نماذج العالم التفاعلية في أحدث بودكاست لدينا."
     },
     {
@@ -2891,8 +2639,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "في أحدث بودكاست لدينا، استمع إلى كيفية قيام فريق \"قافزي الدخان\" بجلب الجوزاء إلى مليارات الأشخاص."
     },
     {
@@ -2915,8 +2663,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "تدريب وصقل نماذج التضمين وإعادة التصنيف متعددة الوسائط مع محولات الجمل"
     },
     {
@@ -2939,8 +2687,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-03T13:28:21+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 47,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 48,
       "title_ar": "تدريب نماذج لغة الحمض النووي الريبوزي المرسال عبر 25 نوعًا مقابل 165 $"
     },
     {
@@ -2963,8 +2711,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-04T19:09:16+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 34,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 35,
       "title_ar": "كيف تقدم OpenAI الذكاء الاصطناعي الصوتي منخفض الكمون على نطاق واسع"
     },
     {
@@ -2987,8 +2735,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-05T17:11:08+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 24,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 25,
       "title_ar": "GPT-5.5 فوري: أكثر ذكاءً ووضوحًا وأكثر تخصيصًا"
     },
     {
@@ -3011,8 +2759,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-06T19:16:41+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 14,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 15,
       "title_ar": "تقديم العقود الآجلة لـ ChatGPT: فئة 2026"
     },
     {
@@ -3035,8 +2783,8 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T01:29:31+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 11,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 12,
       "title_ar": "تستخدم أوبر OpenAI لمساعدة الأشخاص على تحقيق الدخل بشكل أكثر ذكاءً والحجز بشكل أسرع"
     },
     {
@@ -3077,8 +2825,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T05:19:40+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 9,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 10,
       "title_ar": "VladShash/deepseek - math - full -7B - lean — prover — dpo -150k — mistral — توليد النص"
     },
     {
@@ -3115,90 +2863,9 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T17:43:57+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 5,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 6,
       "title_ar": "koyelog/MediMind -411M — توليد النص"
-    },
-    {
-      "id": "huggingface_models:khairi/6L-ALT-f32-student-SFT",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/khairi/6L-ALT-f32-student-SFT",
-      "external_id": "khairi/6L-ALT-f32-student-SFT",
-      "title": "khairi/6L-ALT-f32-student-SFT — text-generation",
-      "text": "Hugging Face model update text-generation transformers safetensors opt text-generation generated_from_trainer sft trl conversational base_model:khairi/6L-ALT-f32-student base_model:finetune:khairi/6L-ALT-f32-student text-generation-inference endpoints_compatible downloads 188 likes 0",
-      "posted_at": "2026-05-06T20:55:59.000Z",
-      "collected_at": "2026-05-06T21:00:37+00:00",
-      "matched_keywords": [
-        "ai",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.04,
-      "metrics": {
-        "downloads": 352,
-        "likes": 0,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "transformers",
-          "safetensors",
-          "opt",
-          "text-generation",
-          "generated_from_trainer",
-          "sft",
-          "trl",
-          "conversational",
-          "base_model:khairi/6L-ALT-f32-student",
-          "base_model:finetune:khairi/6L-ALT-f32-student",
-          "text-generation-inference",
-          "endpoints_compatible"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-06T21:00:40+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 3,
-      "title_ar": "khairi/6L - ALT - f32 - Student — SFT — إنشاء نص"
-    },
-    {
-      "id": "huggingface_models:OrionLLM/GRM-2.6-Plus",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face multimodal models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/OrionLLM/GRM-2.6-Plus",
-      "external_id": "OrionLLM/GRM-2.6-Plus",
-      "title": "OrionLLM/GRM-2.6-Plus — image-text-to-text",
-      "text": "Hugging Face model update image-text-to-text safetensors qwen3_5 image-text-to-text conversational base_model:Qwen/Qwen3.6-27B base_model:finetune:Qwen/Qwen3.6-27B license:apache-2.0 eval-results region:us downloads 532 likes 25",
-      "posted_at": "2026-05-04T21:52:00.000Z",
-      "collected_at": "2026-05-04T22:44:33+00:00",
-      "matched_keywords": [
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.04,
-      "metrics": {
-        "downloads": 736,
-        "likes": 33,
-        "pipeline_tag": "image-text-to-text",
-        "tags": [
-          "safetensors",
-          "qwen3_5",
-          "image-text-to-text",
-          "conversational",
-          "base_model:Qwen/Qwen3.6-27B",
-          "base_model:finetune:Qwen/Qwen3.6-27B",
-          "license:apache-2.0",
-          "eval-results",
-          "region:us"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-04T22:44:36+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 3,
-      "title_ar": "OrionLLM/GRM-2.6-Plus - image — text — to — text"
     },
     {
       "id": "openai_news:https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
@@ -3220,135 +2887,9 @@
       "metrics": {},
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "توسيع نطاق الوصول الموثوق به للسايبر باستخدام GPT-5.5 و GPT-5.5 - Cyber"
-    },
-    {
-      "id": "huggingface_models:LLM-OS-Models/Qwen3.5-9B-Terminal-SFT-2Epoch-FullFT-2BData",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/LLM-OS-Models/Qwen3.5-9B-Terminal-SFT-2Epoch-FullFT-2BData",
-      "external_id": "LLM-OS-Models/Qwen3.5-9B-Terminal-SFT-2Epoch-FullFT-2BData",
-      "title": "LLM-OS-Models/Qwen3.5-9B-Terminal-SFT-2Epoch-FullFT-2BData — text-generation",
-      "text": "Hugging Face model update text-generation transformers safetensors qwen3_5 image-text-to-text terminal sft vllm tb2-lite text-generation conversational en ko downloads 8 likes 0",
-      "posted_at": "2026-05-07T22:44:42.000Z",
-      "collected_at": "2026-05-07T22:49:48+00:00",
-      "matched_keywords": [
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.04,
-      "metrics": {
-        "downloads": 8,
-        "likes": 0,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "transformers",
-          "safetensors",
-          "qwen3_5",
-          "image-text-to-text",
-          "terminal",
-          "sft",
-          "vllm",
-          "tb2-lite",
-          "text-generation",
-          "conversational",
-          "en",
-          "ko"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
-      "title_ar": "LLM - OS - Models/Qwen3.5-9B - Terminal — SFT -2Epoch — FullFT -2BData — توليد النص"
-    },
-    {
-      "id": "huggingface_models:LLM-OS-Models/Qwen3.5-4B-Terminal-SFT-2Epoch-FullFT-2BData",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/LLM-OS-Models/Qwen3.5-4B-Terminal-SFT-2Epoch-FullFT-2BData",
-      "external_id": "LLM-OS-Models/Qwen3.5-4B-Terminal-SFT-2Epoch-FullFT-2BData",
-      "title": "LLM-OS-Models/Qwen3.5-4B-Terminal-SFT-2Epoch-FullFT-2BData — text-generation",
-      "text": "Hugging Face model update text-generation transformers safetensors qwen3_5 image-text-to-text terminal sft vllm tb2-lite text-generation conversational en ko downloads 13 likes 0",
-      "posted_at": "2026-05-07T22:44:40.000Z",
-      "collected_at": "2026-05-07T22:49:48+00:00",
-      "matched_keywords": [
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.04,
-      "metrics": {
-        "downloads": 13,
-        "likes": 0,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "transformers",
-          "safetensors",
-          "qwen3_5",
-          "image-text-to-text",
-          "terminal",
-          "sft",
-          "vllm",
-          "tb2-lite",
-          "text-generation",
-          "conversational",
-          "en",
-          "ko"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
-      "title_ar": "LLM - OS - Models/Qwen3.5-4B - Terminal — SFT -2Epoch — FullFT -2BData — توليد النص"
-    },
-    {
-      "id": "huggingface_models:LLM-OS-Models/Qwen3.5-2B-Terminal-SFT-2Epoch-FullFT-SameCount",
-      "source_id": "huggingface_models",
-      "source_name": "Hugging Face text generation models",
-      "source_kind": "model_hub",
-      "source_url": "https://huggingface.co/LLM-OS-Models/Qwen3.5-2B-Terminal-SFT-2Epoch-FullFT-SameCount",
-      "external_id": "LLM-OS-Models/Qwen3.5-2B-Terminal-SFT-2Epoch-FullFT-SameCount",
-      "title": "LLM-OS-Models/Qwen3.5-2B-Terminal-SFT-2Epoch-FullFT-SameCount — text-generation",
-      "text": "Hugging Face model update text-generation transformers safetensors qwen3_5 image-text-to-text terminal sft vllm tb2-lite text-generation conversational en ko downloads 37 likes 0",
-      "posted_at": "2026-05-07T22:44:38.000Z",
-      "collected_at": "2026-05-07T22:49:48+00:00",
-      "matched_keywords": [
-        "llm",
-        "model"
-      ],
-      "signal_type": "news",
-      "opportunity_score": 0.04,
-      "metrics": {
-        "downloads": 37,
-        "likes": 0,
-        "pipeline_tag": "text-generation",
-        "tags": [
-          "transformers",
-          "safetensors",
-          "qwen3_5",
-          "image-text-to-text",
-          "terminal",
-          "sft",
-          "vllm",
-          "tb2-lite",
-          "text-generation",
-          "conversational",
-          "en",
-          "ko"
-        ]
-      },
-      "verification_status": "source_linked",
-      "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
-      "title_ar": "LLM - OS - Models/Qwen3.5-2B - Terminal — SFT -2Epoch — FullFT — SameCount — توليد النص"
     },
     {
       "id": "huggingface_models:VINUKO/Sonic_the_Werehog",
@@ -3383,8 +2924,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "VINUKO/Sonic_the_Werehog — تحويل النص إلى صورة"
     },
     {
@@ -3421,8 +2962,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "BlueTriangles/SDXL_Bodyguard_Catherine — تحويل النص إلى صورة"
     },
     {
@@ -3459,8 +3000,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "BlueTriangles/SDXL_Rita_Bernal — تحويل النص إلى صورة"
     },
     {
@@ -3497,8 +3038,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "BlueTriangles/SDXL_Fa_Yuiry — تحويل النص إلى صورة"
     },
     {
@@ -3535,8 +3076,8 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "BlueTriangles/SDXL _999_Maetel — تحويل النص إلى صورة"
     },
     {
@@ -3573,9 +3114,446 @@
       },
       "verification_status": "source_linked",
       "first_seen_at": "2026-05-07T22:49:52+00:00",
-      "last_seen_at": "2026-05-08T01:47:03+00:00",
-      "seen_count": 2,
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
       "title_ar": "BlueTriangles/SDXL_Young_Nanase — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:BlueTriangles/SDXL_Sasada_Jun",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/BlueTriangles/SDXL_Sasada_Jun",
+      "external_id": "BlueTriangles/SDXL_Sasada_Jun",
+      "title": "BlueTriangles/SDXL_Sasada_Jun — text-to-image",
+      "text": "Hugging Face model update text-to-image diffusers text-to-image lora template:diffusion-lora base_model:OnomaAIResearch/Illustrious-XL-v2.0 base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0 license:cc-by-nc-sa-4.0 region:us downloads 7 likes 0",
+      "posted_at": "2026-05-07T21:54:47.000Z",
+      "collected_at": "2026-05-07T22:49:49+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 7,
+        "likes": 0,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "diffusers",
+          "text-to-image",
+          "lora",
+          "template:diffusion-lora",
+          "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+          "base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0",
+          "license:cc-by-nc-sa-4.0",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-07T22:49:52+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
+      "title_ar": "BlueTriangles/SDXL_Sasada_Jun — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:BlueTriangles/SDXL_Tsunemori_Akane",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/BlueTriangles/SDXL_Tsunemori_Akane",
+      "external_id": "BlueTriangles/SDXL_Tsunemori_Akane",
+      "title": "BlueTriangles/SDXL_Tsunemori_Akane — text-to-image",
+      "text": "Hugging Face model update text-to-image diffusers text-to-image lora template:diffusion-lora base_model:OnomaAIResearch/Illustrious-XL-v2.0 base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0 license:cc-by-nc-sa-4.0 region:us downloads 6 likes 0",
+      "posted_at": "2026-05-07T21:54:10.000Z",
+      "collected_at": "2026-05-07T22:49:49+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 6,
+        "likes": 0,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "diffusers",
+          "text-to-image",
+          "lora",
+          "template:diffusion-lora",
+          "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+          "base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0",
+          "license:cc-by-nc-sa-4.0",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-07T22:49:52+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
+      "title_ar": "BlueTriangles/SDXL_Tsunemori_Akane — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:BlueTriangles/SDXL_Lynn_Lambretta",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/BlueTriangles/SDXL_Lynn_Lambretta",
+      "external_id": "BlueTriangles/SDXL_Lynn_Lambretta",
+      "title": "BlueTriangles/SDXL_Lynn_Lambretta — text-to-image",
+      "text": "Hugging Face model update text-to-image diffusers text-to-image lora template:diffusion-lora base_model:OnomaAIResearch/Illustrious-XL-v2.0 base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0 license:cc-by-nc-sa-4.0 region:us downloads 5 likes 0",
+      "posted_at": "2026-05-07T21:53:18.000Z",
+      "collected_at": "2026-05-07T22:49:49+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 5,
+        "likes": 0,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "diffusers",
+          "text-to-image",
+          "lora",
+          "template:diffusion-lora",
+          "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+          "base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0",
+          "license:cc-by-nc-sa-4.0",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-07T22:49:52+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
+      "title_ar": "BlueTriangles/SDXL_Lynn_Lambretta — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:BlueTriangles/SDXL_CowboyBepop_Julia",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/BlueTriangles/SDXL_CowboyBepop_Julia",
+      "external_id": "BlueTriangles/SDXL_CowboyBepop_Julia",
+      "title": "BlueTriangles/SDXL_CowboyBepop_Julia — text-to-image",
+      "text": "Hugging Face model update text-to-image diffusers text-to-image lora template:diffusion-lora base_model:OnomaAIResearch/Illustrious-XL-v2.0 base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0 license:cc-by-nc-sa-4.0 region:us downloads 4 likes 0",
+      "posted_at": "2026-05-07T21:52:47.000Z",
+      "collected_at": "2026-05-07T22:49:49+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 4,
+        "likes": 0,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "diffusers",
+          "text-to-image",
+          "lora",
+          "template:diffusion-lora",
+          "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+          "base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0",
+          "license:cc-by-nc-sa-4.0",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-07T22:49:52+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
+      "title_ar": "BlueTriangles/SDXL_CowboyBepop_Julia — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:BlueTriangles/SDXL_Gruier_Serenity",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/BlueTriangles/SDXL_Gruier_Serenity",
+      "external_id": "BlueTriangles/SDXL_Gruier_Serenity",
+      "title": "BlueTriangles/SDXL_Gruier_Serenity — text-to-image",
+      "text": "Hugging Face model update text-to-image diffusers text-to-image lora template:diffusion-lora base_model:OnomaAIResearch/Illustrious-XL-v2.0 base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0 license:cc-by-nc-sa-4.0 region:us downloads 3 likes 0",
+      "posted_at": "2026-05-07T21:52:11.000Z",
+      "collected_at": "2026-05-07T22:49:49+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 3,
+        "likes": 0,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "diffusers",
+          "text-to-image",
+          "lora",
+          "template:diffusion-lora",
+          "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+          "base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0",
+          "license:cc-by-nc-sa-4.0",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-07T22:49:52+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
+      "title_ar": "BlueTriangles/SDXL_Gruier_Serenity — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:Hyeongwon/P19-split3-prob-9x-bs512-lr4e5-zero3-ep3",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/Hyeongwon/P19-split3-prob-9x-bs512-lr4e5-zero3-ep3",
+      "external_id": "Hyeongwon/P19-split3-prob-9x-bs512-lr4e5-zero3-ep3",
+      "title": "Hyeongwon/P19-split3-prob-9x-bs512-lr4e5-zero3-ep3 — text-generation",
+      "text": "Hugging Face model update text-generation transformers safetensors qwen3 text-generation generated_from_trainer sft trl conversational base_model:Hyeongwon/Qwen3-4B-Base base_model:finetune:Hyeongwon/Qwen3-4B-Base text-generation-inference endpoints_compatible downloads 0 likes 0",
+      "posted_at": "2026-05-07T17:38:04.000Z",
+      "collected_at": "2026-05-07T17:43:54+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "transformers",
+          "safetensors",
+          "qwen3",
+          "text-generation",
+          "generated_from_trainer",
+          "sft",
+          "trl",
+          "conversational",
+          "base_model:Hyeongwon/Qwen3-4B-Base",
+          "base_model:finetune:Hyeongwon/Qwen3-4B-Base",
+          "text-generation-inference",
+          "endpoints_compatible"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-07T17:43:57+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 3,
+      "title_ar": "Hyeongwon/P19 - split3 - prob -9x — bs512 - lr4e5 — zero3 — ep3 — توليد النص"
+    },
+    {
+      "id": "huggingface_models:allenai/Molmo2-ER",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face multimodal models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/allenai/Molmo2-ER",
+      "external_id": "allenai/Molmo2-ER",
+      "title": "allenai/Molmo2-ER — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text transformers safetensors molmo2 image-text-to-text multimodal vision-language-model embodied-reasoning spatial-reasoning molmo conversational custom_code en downloads 559 likes 4",
+      "posted_at": "2026-05-08T01:26:17.000Z",
+      "collected_at": "2026-05-08T01:47:00+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 559,
+        "likes": 5,
+        "pipeline_tag": "image-text-to-text",
+        "tags": [
+          "transformers",
+          "safetensors",
+          "molmo2",
+          "image-text-to-text",
+          "multimodal",
+          "vision-language-model",
+          "embodied-reasoning",
+          "spatial-reasoning",
+          "molmo",
+          "conversational",
+          "custom_code",
+          "en"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T01:47:03+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
+      "title_ar": "allenai/Molmo2 - ER - image - text — to — text"
+    },
+    {
+      "id": "huggingface_models:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face multimodal models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
+      "external_id": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
+      "title": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic — image-text-to-text",
+      "text": "Hugging Face model update image-text-to-text transformers safetensors qwen3_5_moe image-text-to-text heretic uncensored decensored abliterated conversational base_model:Qwen/Qwen3.6-35B-A3B base_model:finetune:Qwen/Qwen3.6-35B-A3B license:apache-2.0 downloads 46540 likes 67",
+      "posted_at": "2026-05-07T23:45:08.000Z",
+      "collected_at": "2026-05-08T01:47:00+00:00",
+      "matched_keywords": [
+        "llm",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 46540,
+        "likes": 67,
+        "pipeline_tag": "image-text-to-text",
+        "tags": [
+          "transformers",
+          "safetensors",
+          "qwen3_5_moe",
+          "image-text-to-text",
+          "heretic",
+          "uncensored",
+          "decensored",
+          "abliterated",
+          "conversational",
+          "base_model:Qwen/Qwen3.6-35B-A3B",
+          "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+          "license:apache-2.0"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T01:47:03+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
+      "title_ar": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic - image — text — to — text"
+    },
+    {
+      "id": "huggingface_models:Visck/lorena",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face image models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/Visck/lorena",
+      "external_id": "Visck/lorena",
+      "title": "Visck/lorena — text-to-image",
+      "text": "Hugging Face model update text-to-image diffusers text-to-image lora template:diffusion-lora base_model:Tongyi-MAI/Z-Image-Turbo base_model:adapter:Tongyi-MAI/Z-Image-Turbo region:us downloads 0 likes 0",
+      "posted_at": "2026-05-07T23:01:04.000Z",
+      "collected_at": "2026-05-08T01:47:01+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-to-image",
+        "tags": [
+          "diffusers",
+          "text-to-image",
+          "lora",
+          "template:diffusion-lora",
+          "base_model:Tongyi-MAI/Z-Image-Turbo",
+          "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-08T01:47:03+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
+      "title_ar": "Visck/lorena — تحويل النص إلى صورة"
+    },
+    {
+      "id": "huggingface_models:Hyeongwon/P19-split3-prob-9x-bs512-lr2e5-zero3-ep3",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/Hyeongwon/P19-split3-prob-9x-bs512-lr2e5-zero3-ep3",
+      "external_id": "Hyeongwon/P19-split3-prob-9x-bs512-lr2e5-zero3-ep3",
+      "title": "Hyeongwon/P19-split3-prob-9x-bs512-lr2e5-zero3-ep3 — text-generation",
+      "text": "Hugging Face model update text-generation transformers safetensors qwen3 text-generation generated_from_trainer sft trl conversational base_model:Hyeongwon/Qwen3-4B-Base base_model:finetune:Hyeongwon/Qwen3-4B-Base text-generation-inference endpoints_compatible downloads 0 likes 0",
+      "posted_at": "2026-05-07T17:35:12.000Z",
+      "collected_at": "2026-05-07T17:43:54+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 0,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "transformers",
+          "safetensors",
+          "qwen3",
+          "text-generation",
+          "generated_from_trainer",
+          "sft",
+          "trl",
+          "conversational",
+          "base_model:Hyeongwon/Qwen3-4B-Base",
+          "base_model:finetune:Hyeongwon/Qwen3-4B-Base",
+          "text-generation-inference",
+          "endpoints_compatible"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-07T17:43:57+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
+      "title_ar": "Hyeongwon/P19 - split3 - prob -9x — bs512 - lr2e5 — zero3 — ep3 — توليد النص"
+    },
+    {
+      "id": "huggingface_models:dany0407/eli5_casual_lm-model",
+      "source_id": "huggingface_models",
+      "source_name": "Hugging Face text generation models",
+      "source_kind": "model_hub",
+      "source_url": "https://huggingface.co/dany0407/eli5_casual_lm-model",
+      "external_id": "dany0407/eli5_casual_lm-model",
+      "title": "dany0407/eli5_casual_lm-model — text-generation",
+      "text": "Hugging Face model update text-generation transformers tensorboard safetensors gpt2 text-generation generated_from_trainer base_model:distilbert/distilgpt2 base_model:finetune:distilbert/distilgpt2 license:apache-2.0 text-generation-inference endpoints_compatible region:us downloads 1 likes 0",
+      "posted_at": "2026-05-05T12:57:52.000Z",
+      "collected_at": "2026-05-05T13:03:47+00:00",
+      "matched_keywords": [
+        "ai",
+        "model"
+      ],
+      "signal_type": "news",
+      "opportunity_score": 0.04,
+      "metrics": {
+        "downloads": 47,
+        "likes": 0,
+        "pipeline_tag": "text-generation",
+        "tags": [
+          "transformers",
+          "tensorboard",
+          "safetensors",
+          "gpt2",
+          "text-generation",
+          "generated_from_trainer",
+          "base_model:distilbert/distilgpt2",
+          "base_model:finetune:distilbert/distilgpt2",
+          "license:apache-2.0",
+          "text-generation-inference",
+          "endpoints_compatible",
+          "region:us"
+        ]
+      },
+      "verification_status": "source_linked",
+      "first_seen_at": "2026-05-05T13:03:50+00:00",
+      "last_seen_at": "2026-05-08T04:46:11+00:00",
+      "seen_count": 2,
+      "title_ar": "dany0407/eli5_casual_lm — model — توليد النص"
     }
   ]
 }
