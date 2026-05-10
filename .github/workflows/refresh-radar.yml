@@ -35,12 +35,6 @@ jobs:
           fetch-depth: 1
           persist-credentials: true   # so we can push using GITHUB_TOKEN
 
-      - name: Sync latest main
-        run: |
-          BRANCH="${GITHUB_REF_NAME:-main}"
-          git fetch origin "$BRANCH"
-          git checkout -B "$BRANCH" "origin/$BRANCH"
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
