@@ -34,8 +34,16 @@
   "features": {
     "show_locked_previews": true,
     "show_new_badge_days": 3,
+    "auto_archive_days": 90,
     "enable_analytics": true,
     "enable_arabic_first": true
+  },
+  "analytics": {
+    "$comment": "Public analytics opt-in. Set plausible_domain or posthog_key in your deploy environment to activate. Both are free at small scale.",
+    "plausible_domain": "",
+    "plausible_script": "https://plausible.io/js/script.js",
+    "posthog_key": "",
+    "posthog_host": "https://app.posthog.com"
   },
   "legal": {
     "privacy_path": "/privacy.html",

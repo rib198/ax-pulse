@@ -1,20 +1,29 @@
-name: Refresh AI Radar
+name: Refresh Radar (agent pipeline)
 
-# Cron: every 2 hours (matches X API Basic rate-limit comfortably).
-# manual: workflow_dispatch lets you trigger from the Actions tab anytime.
+# Cron: every 2 hours. Runs the 14-agent pipeline end-to-end on free
+# GitHub Actions minutes (~2 min per run, ~720 min/month — well below
+# the 2,000 min/month free quota for public repos).
 on:
   schedule:
     - cron: '0 */2 * * *'
   workflow_dispatch:
     inputs:
       x_limit:
-        description: 'How many X posts to request (max 100)'
+        description: 'X posts per query (max 100)'
         required: false
         default: '25'
-      days:
-        description: 'RSS window in days'
+      limit:
+        description: 'Items per source'
         required: false
-        default: '30'
+        default: '25'
+      use_openai:
+        description: 'Use OpenAI for editor + opportunities (set false for cheap rule-based run)'
+        required: false
+        default: 'true'
+      budget:
+        description: 'Max OpenAI calls per run'
+        required: false
+        default: '40'
 
 permissions:
   contents: write   # needed so the bot can commit data/* back
@@ -33,12 +42,18 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          persist-credentials: true   # so we can push using GITHUB_TOKEN
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      - name: Install OpenAI SDK (only if key is set)
+        if: ${{ env.OPENAI_API_KEY != '' && github.event.inputs.use_openai != 'false' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: pip install --quiet openai
 
       - name: Cache translation memory
         uses: actions/cache@v4
@@ -48,32 +63,44 @@ jobs:
           restore-keys: |
             translations-
 
-      - name: Run pulse_radar (X + RSS + Reddit + GitHub + HN)
-        env:
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-        run: |
-          set -e
-          X_LIMIT="${{ github.event.inputs.x_limit || '25' }}"
-          if [ -z "$X_BEARER_TOKEN" ]; then
-            echo "::warning::X_BEARER_TOKEN غير مضبوط — سيتخطى الـ X collector ويعمل على RSS/Reddit/GitHub فقط"
-            python3 tools/pulse_radar.py
-          else
-            python3 tools/pulse_radar.py --x-limit "$X_LIMIT"
-          fi
-
-      - name: Run fetch_ai_newsletters (RSS supplementary)
+      # ----- Step 1: optional supplementary RSS fetch (Ben's Bites, TLDR AI, etc.) -----
+      - name: Fetch supplementary AI newsletters
         run: |
           DAYS="${{ github.event.inputs.days || '30' }}"
           python3 tools/fetch_ai_newsletters.py --days "$DAYS" --max-per-source 40 || echo "::warning::RSS aggregator failed — continuing"
 
+      # ----- Step 2: run the full 14-agent pipeline -----
+      - name: Run radar agent pipeline
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FEEDLY_TOKEN: ${{ secrets.FEEDLY_TOKEN }}
+          FEEDLY_STREAM_ID: ${{ secrets.FEEDLY_STREAM_ID }}
+        run: |
+          set -e
+          X_LIMIT="${{ github.event.inputs.x_limit || '25' }}"
+          LIMIT="${{ github.event.inputs.limit || '25' }}"
+          BUDGET="${{ github.event.inputs.budget || '40' }}"
+          USE_OPENAI="${{ github.event.inputs.use_openai || 'true' }}"
+
+          ARGS="--limit $LIMIT --x-limit $X_LIMIT --budget $BUDGET"
+          if [ "$USE_OPENAI" = "false" ] || [ -z "$OPENAI_API_KEY" ]; then
+            echo "::notice::running rule-based mode (no OpenAI calls)"
+            ARGS="$ARGS --no-openai"
+          else
+            echo "::notice::OpenAI key detected — agents 7/8/12 will use it"
+          fi
+          python3 tools/run_radar_agents.py $ARGS
+
+      # ----- Step 3: translate any new signals into Arabic (free MyMemory API) -----
       - name: Translate new signals to Arabic
         run: |
           python3 tools/translate_signals.py || echo "::warning::translation step failed — continuing"
 
       - name: Commit & push data changes
         run: |
-          git config user.name  "ax-pulse-bot"
-          git config user.email "ax-pulse-bot@users.noreply.github.com"
+          git config user.name  "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
 
           if git diff --quiet -- data/ ; then
             echo "no data changes — nothing to commit"
@@ -87,17 +114,23 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "### AX Pulse — جولة تحديث" >> $GITHUB_STEP_SUMMARY
+          echo "### Radar — agent pipeline run" >> $GITHUB_STEP_SUMMARY
           if [ -f data/radar/signals.json ]; then
             count=$(python3 -c "import json; print(json.load(open('data/radar/signals.json')).get('count', 0))")
-            echo "- إشارات: $count" >> $GITHUB_STEP_SUMMARY
+            echo "- signals: $count" >> $GITHUB_STEP_SUMMARY
           fi
           if [ -f data/radar/opportunities.json ]; then
             opps=$(python3 -c "import json; d=json.load(open('data/radar/opportunities.json')); print(len(d.get('opportunities', [])))")
-            echo "- فرص: $opps" >> $GITHUB_STEP_SUMMARY
+            free=$(python3 -c "import json; d=json.load(open('data/radar/opportunities.json')); print(sum(1 for o in d.get('opportunities', []) if o.get('tier')=='free'))")
+            premium=$(python3 -c "import json; d=json.load(open('data/radar/opportunities.json')); print(sum(1 for o in d.get('opportunities', []) if o.get('tier')=='premium'))")
+            echo "- opportunities: $opps (free: $free, premium: $premium)" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f data/radar/agents/run_log.json ]; then
+            calls=$(python3 -c "import json; print(json.load(open('data/radar/agents/run_log.json')).get('openai_calls', 0))")
+            echo "- openai calls: $calls" >> $GITHUB_STEP_SUMMARY
           fi
           if [ -f data/newsletters/items.json ]; then
             news=$(python3 -c "import json; print(json.load(open('data/newsletters/items.json')).get('total_items', 0))")
-            echo "- نشرات RSS: $news" >> $GITHUB_STEP_SUMMARY
+            echo "- RSS newsletter items: $news" >> $GITHUB_STEP_SUMMARY
           fi
-          echo "- وقت التشغيل: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "- run time: $(date -u)" >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,123 @@
+# Decap CMS configuration for Radar
+# Free, git-based admin panel. No database, no backend, no monthly cost.
+# Editors sign in with GitHub or Netlify Identity, then Decap commits
+# their edits as PRs (or directly) to this repo.
+#
+# To activate:
+#   1. Choose backend below (Netlify Identity recommended — easiest).
+#   2. Replace `your-github-username/your-repo` with your real repo path.
+#   3. Deploy the site (Netlify: free tier covers this).
+#   4. Invite an editor from the Netlify Identity tab.
+
+backend:
+  # ---- Option A: Netlify Identity + Git Gateway (recommended, easiest) ----
+  name: git-gateway
+  branch: main
+
+  # ---- Option B: GitHub OAuth (if not using Netlify) ----
+  # Comment out the two lines above and uncomment these. Requires a GitHub
+  # OAuth app + a small OAuth proxy. See https://decapcms.org/docs/github-backend/
+  #
+  # name: github
+  # repo: rib198/ax-pulse
+  # branch: main
+
+# Editorial workflow turns every edit into a draft PR for review.
+# Set to 'simple' to commit directly to main (faster, less safe).
+publish_mode: editorial_workflow
+
+media_folder: assets/media
+public_folder: /assets/media
+
+# Force RTL Arabic-friendly UI strings on the editor page.
+locale: ar
+
+collections:
+  # ---- 1. Site config (price, product info, Stripe placeholders) ----
+  - name: 'site_config'
+    label: 'إعدادات الموقع'
+    files:
+      - file: 'data/config.json'
+        label: 'الإعدادات العامة'
+        name: 'config'
+        format: 'json'
+        fields:
+          - name: 'product'
+            label: 'بيانات المنتج'
+            widget: 'object'
+            fields:
+              - { name: 'name_ar', label: 'الاسم بالعربية', widget: 'string' }
+              - { name: 'name_en', label: 'الاسم بالإنجليزية', widget: 'string' }
+              - { name: 'tagline_ar', label: 'الوصف بالعربية', widget: 'string' }
+              - { name: 'tagline_en', label: 'الوصف بالإنجليزية', widget: 'string' }
+              - { name: 'support_email', label: 'بريد الدعم', widget: 'string' }
+              - { name: 'primary_locale', label: 'اللغة الأساسية', widget: 'select', options: ['ar', 'en'] }
+          - name: 'subscription'
+            label: 'الاشتراك'
+            widget: 'object'
+            fields:
+              - { name: 'enabled', label: 'مفعّل', widget: 'boolean', default: true }
+              - { name: 'price_usd', label: 'السعر (دولار)', widget: 'number', default: 15, valueType: 'int' }
+              - { name: 'price_label_ar', label: 'بطاقة السعر بالعربية', widget: 'string' }
+              - { name: 'price_label_en', label: 'بطاقة السعر بالإنجليزية', widget: 'string' }
+              - { name: 'free_preview_count', label: 'عدد الفرص المجانية للمعاينة', widget: 'number', default: 3, valueType: 'int' }
+              - { name: 'free_preview_chars', label: 'عدد الأحرف للمعاينة', widget: 'number', default: 220, valueType: 'int' }
+          - name: 'features'
+            label: 'مزايا'
+            widget: 'object'
+            fields:
+              - { name: 'show_locked_previews', label: 'عرض معاينة المحتوى المقفل', widget: 'boolean', default: true }
+              - { name: 'show_new_badge_days', label: 'مدى ظهور شارة "جديد" (يوم)', widget: 'number', default: 3, valueType: 'int' }
+              - { name: 'auto_archive_days', label: 'أيام قبل الأرشفة التلقائية', widget: 'number', default: 90, valueType: 'int' }
+              - { name: 'enable_analytics', label: 'تفعيل التحليلات', widget: 'boolean', default: true }
+
+  # ---- 2. Manual opportunities (override / supplement the agent output) ----
+  # These get layered on top of agent-generated opportunities. The frontend
+  # reads from data/radar/opportunities.json which the agents own; manual
+  # entries written here go to a separate file the editor can later promote.
+  - name: 'manual_opportunities'
+    label: 'فرص مُدارة يدوياً'
+    folder: 'data/manual/opportunities'
+    create: true
+    slug: '{{slug}}'
+    extension: 'json'
+    format: 'json'
+    fields:
+      - { name: 'id', label: 'المعرف', widget: 'string' }
+      - { name: 'title_ar', label: 'العنوان بالعربية', widget: 'string' }
+      - { name: 'title_en', label: 'العنوان بالإنجليزية', widget: 'string' }
+      - { name: 'thesis_ar', label: 'الفكرة بالعربية', widget: 'text' }
+      - { name: 'tier', label: 'الفئة', widget: 'select', options: ['free', 'premium'], default: 'premium' }
+      - { name: 'status', label: 'الحالة', widget: 'select', options: ['draft', 'published', 'archived'], default: 'draft' }
+      - { name: 'is_featured', label: 'مميز', widget: 'boolean', default: false }
+      - { name: 'category', label: 'التصنيف', widget: 'string', required: false }
+      - { name: 'sortOrder', label: 'ترتيب العرض', widget: 'number', default: 0, valueType: 'int' }
+      - { name: 'publishedAt', label: 'تاريخ النشر', widget: 'datetime' }
+
+  # ---- 3. Translations (i18n) ----
+  - name: 'translations'
+    label: 'النصوص متعددة اللغات'
+    files:
+      - file: 'data/i18n.json'
+        label: 'ملف الترجمات'
+        name: 'i18n'
+        format: 'json'
+        fields:
+          - name: 'ar'
+            label: 'العربية'
+            widget: 'object'
+            fields:
+              - { name: 'subscribe_cta', label: 'زر الاشتراك', widget: 'string' }
+              - { name: 'locked_title', label: 'عنوان المحتوى المقفل', widget: 'string' }
+              - { name: 'locked_cta', label: 'دعوة الاشتراك من القفل', widget: 'string' }
+              - { name: 'subscribe_status_success', label: 'رسالة نجاح الدفع', widget: 'string' }
+              - { name: 'subscribe_status_failed', label: 'رسالة فشل الدفع', widget: 'string' }
+          - name: 'en'
+            label: 'English'
+            widget: 'object'
+            fields:
+              - { name: 'subscribe_cta', label: 'Subscribe CTA', widget: 'string' }
+              - { name: 'locked_title', label: 'Locked title', widget: 'string' }
+              - { name: 'locked_cta', label: 'Locked CTA', widget: 'string' }
+              - { name: 'subscribe_status_success', label: 'Payment success', widget: 'string' }
+              - { name: 'subscribe_status_failed', label: 'Payment failed', widget: 'string' }

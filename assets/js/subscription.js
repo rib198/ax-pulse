@@ -174,6 +174,31 @@
     if (global.console && console.debug) console.debug('[radar.event]', event, props || {});
   }
 
+  /* ----- Boot: load analytics providers if configured ----- */
+
+  async function _loadAnalyticsProviders() {
+    const cfg = await loadConfig();
+    const a = cfg.analytics || {};
+    if (a.plausible_domain && !global.plausible) {
+      const s = document.createElement('script');
+      s.defer = true;
+      s.setAttribute('data-domain', a.plausible_domain);
+      s.src = a.plausible_script || 'https://plausible.io/js/script.js';
+      document.head.appendChild(s);
+      // Stub immediately so events queued before script loads aren't lost.
+      global.plausible = global.plausible || function () { (global.plausible.q = global.plausible.q || []).push(arguments); };
+    }
+    if (a.posthog_key && !global.posthog) {
+      const host = a.posthog_host || 'https://app.posthog.com';
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = `${host.replace(/\/$/, '')}/static/array.js`;
+      document.head.appendChild(script);
+      global.posthog = global.posthog || { capture: function () { (global.posthog._q = global.posthog._q || []).push(['capture', arguments]); }, init: function (k, o) { setTimeout(() => global.posthog.__SV && global.posthog.init(k, o), 50); } };
+      try { global.posthog.init(a.posthog_key, { api_host: host }); } catch (e) {}
+    }
+  }
+
   /* ----- Boot: handle ?status=success on the success page automatically ----- */
 
   function _handleReturnFromCheckout() {
@@ -200,8 +225,12 @@
   };
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', _handleReturnFromCheckout);
+    document.addEventListener('DOMContentLoaded', () => {
+      _handleReturnFromCheckout();
+      _loadAnalyticsProviders();
+    });
   } else {
     _handleReturnFromCheckout();
+    _loadAnalyticsProviders();
   }
 })(typeof window !== 'undefined' ? window : this);

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/api/checkout/session",  "destination": "/api/checkout/session.js" },
+    { "source": "/api/checkout/webhook",  "destination": "/api/checkout/webhook.js" }
+  ],
+  "functions": {
+    "api/checkout/session.js": { "memory": 256, "maxDuration": 10 },
+    "api/checkout/webhook.js": { "memory": 256, "maxDuration": 10 }
+  }
+}

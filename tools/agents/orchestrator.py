@@ -32,6 +32,7 @@ from .base import (
     write_json,
 )
 from .access_tier import AccessTier
+from .auto_archive import AutoArchive
 from .companies_detector import CompaniesDetector
 from .evidence_guard import EvidenceGuard
 from .growth_social import GrowthSocial
@@ -68,6 +69,7 @@ class Orchestrator:
             OpportunityBuilder(),
             RadarEditor(),
             AccessTier(),  # tags free/premium AFTER opps/editor wrote, BEFORE social/QA read.
+            AutoArchive(), # archives stale items (status="archived"), never deletes.
             GrowthSocial(),
             UXProductionQA(),
             PerformanceAnalytics(),
