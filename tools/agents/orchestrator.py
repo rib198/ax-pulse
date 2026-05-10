@@ -34,8 +34,10 @@ from .base import (
 from .access_tier import AccessTier
 from .auto_archive import AutoArchive
 from .companies_detector import CompaniesDetector
+from .event_detector import SmartEventDetector
 from .evidence_guard import EvidenceGuard
 from .growth_social import GrowthSocial
+from .insight_generator import InsightGenerator
 from .market_radar import MarketRadar
 from .memory_learning import MemoryLearning
 from .models_pulse import ModelsPulse
@@ -65,6 +67,7 @@ class Orchestrator:
             PriorityRanker(),
             CompaniesDetector(),
             ModelsPulse(),
+            SmartEventDetector(),  # turns signal lists into discrete events
             MarketRadar(),
             OpportunityBuilder(),
             RadarEditor(),
@@ -73,6 +76,7 @@ class Orchestrator:
             GrowthSocial(),
             UXProductionQA(),
             PerformanceAnalytics(),
+            InsightGenerator(),    # one-paragraph "what changed" observation
             MemoryLearning(),          # writes new weights for next run
         ])
         return agents

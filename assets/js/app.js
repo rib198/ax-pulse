@@ -19,17 +19,21 @@ async function loadJSON(path) {
 }
 
 async function bootstrap() {
-  const [i18n, opps, clusters, cats, radarOpps, radarSignals, config] = await Promise.all([
+  const [i18n, opps, clusters, cats, radarOpps, radarSignals, config, events, insights] = await Promise.all([
     loadJSON('data/i18n.json'),
     loadJSON('data/opportunities.json'),
     loadJSON('data/clusters.json'),
     loadJSON('data/categories.json'),
     loadOptionalJSON('data/radar/opportunities.json'),
     loadOptionalJSON('data/radar/signals.json'),
-    loadOptionalJSON('data/config.json')
+    loadOptionalJSON('data/config.json'),
+    loadOptionalJSON('data/radar/agents/events.json'),
+    loadOptionalJSON('data/radar/agents/insights.json')
   ]);
   State.i18n = i18n;
   State.config = config || { subscription: { price_usd: 15, price_label_ar: '15 دولار', price_label_en: '$15' } };
+  State.events = (events && events.events) || [];
+  State.insight = (insights && insights.current) || null;
   // Preserve raw radar opportunities so we can read tier/is_new/is_featured set by the agent pipeline.
   State.opportunities = radarOpps && radarOpps.opportunities && radarOpps.opportunities.length
     ? radarOpps.opportunities.map((o, i) => Object.assign(normalizeRadarOpportunity(o, i), {
@@ -204,7 +208,7 @@ function renderRadarToday(root) {
     <div class="brief-hero">
       <div class="brief-meta">
         <span class="live-dot"></span>
-        <span>${escape(generated)}</span>
+        <span data-timestamp="${escape(State.radarGeneratedAt || '')}">${escape(generated)}</span>
         <span>·</span>
         <span>${escape(t('radar_verified'))}</span>
       </div>
@@ -212,12 +216,18 @@ function renderRadarToday(root) {
       <p class="brief-summary">${escape(t('radar_summary'))}</p>
     </div>
 
+    ${insightCard()}
+
     <div class="stats-grid">
       ${statTile(t('stat_signals'), State.radarSignals.length.toLocaleString(), null)}
       ${statTile(t('stat_sources'), sourceCount.toLocaleString(), null)}
       ${statTile(t('stat_top_opportunity'), topOppTitle, null)}
       ${statTile(t('stat_refresh'), generated, null)}
     </div>
+
+    ${eventsBlock()}
+
+    ${subscribeBanner()}
 
     <div class="section-head">
       <h2 class="section-title">${t('section_top_opps')}</h2>
@@ -240,6 +250,10 @@ function renderRadarToday(root) {
       <p class="watch-text">${escape(t('radar_watch'))}</p>
     </div>
   `;
+
+  if (window.RadarTelemetry && window.RadarTelemetry.refreshTimestamps) {
+    setTimeout(window.RadarTelemetry.refreshTimestamps, 50);
+  }
 }
 
 /* ---------- Trending ---------- */
@@ -1184,6 +1198,64 @@ function subscribeBanner() {
       <a class="subscribe-banner-cta" href="subscribe.html" data-event="subscribe_clicked" data-event-origin="banner">
         <span class="lock-icon"></span>${escape(cta)}
       </a>
+    </div>
+  `;
+}
+
+function insightCard() {
+  if (!State.insight) return '';
+  const ar = State.lang === 'ar';
+  const text = ar ? State.insight.insight_ar : (State.insight.insight_en || State.insight.insight_ar);
+  if (!text) return '';
+  const sourceTag = State.insight.source === 'openai' ? 'OpenAI' : 'rules';
+  return `
+    <div class="insight-card">
+      <div class="insight-eyebrow">
+        <span class="tel-dot"></span>
+        <span>${escape(t('insight_eyebrow'))}</span>
+        <span style="margin-inline-start:auto;color:var(--text-muted);font-weight:400;letter-spacing:0;">
+          <span data-timestamp="${escape(State.insight.generated_at || '')}">${escape(formatDateTime(State.insight.generated_at || new Date().toISOString()))}</span>
+          · ${sourceTag}
+        </span>
+      </div>
+      <div class="insight-text">${escape(text)}</div>
+    </div>
+  `;
+}
+
+function eventCard(e) {
+  const ar = State.lang === 'ar';
+  const label = ar ? e.label_ar : e.label_en;
+  return `
+    <div class="event-card ${e.is_new ? 'event-card-new' : ''}" data-event-type="${escape(e.type)}">
+      <div class="event-head">
+        <span class="event-icon">${escape(e.icon || '·')}</span>
+        <span class="event-label">${escape(label)}</span>
+        <span class="event-confidence">${Math.round((e.confidence || 0) * 100)}%</span>
+      </div>
+      <div class="event-subject">${escape(e.subject || '')}</div>
+      <div class="event-meta">
+        <span>${e.evidence_count || 0} ${escape(t('evidence'))}</span>
+        <span>·</span>
+        <span data-timestamp="${escape(e.last_updated || '')}">${escape(formatDateTime(e.last_updated || new Date().toISOString()))}</span>
+      </div>
+    </div>
+  `;
+}
+
+function eventsBlock() {
+  const evs = State.events || [];
+  if (!evs.length) return '';
+  return `
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">${escape(t('section_events'))}</h2>
+        <span class="section-subtitle">${escape(t('section_events_sub'))}</span>
+      </div>
+      <span class="cluster-meta">${evs.length}</span>
+    </div>
+    <div class="event-grid">
+      ${evs.slice(0, 6).map(eventCard).join('')}
     </div>
   `;
 }
