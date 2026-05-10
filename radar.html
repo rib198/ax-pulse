@@ -22,11 +22,19 @@
 
     <nav class="radar-nav" aria-label="Radar views">
       <button class="active" data-layer="radar">Radar</button>
+      <button data-layer="events">Events</button>
       <button data-layer="trending">Trending</button>
       <button data-layer="opportunities">Opportunities</button>
       <button data-layer="sources">Sources</button>
       <button data-layer="signals">Signals</button>
     </nav>
+
+    <div class="insight-banner" id="insight-banner" hidden>
+      <span class="ib-dot"></span>
+      <span class="ib-eyebrow"></span>
+      <span class="ib-text"></span>
+      <button class="ib-close" id="insight-close" aria-label="إخفاء">×</button>
+    </div>
 
     <div class="radar-lang" aria-label="Language toggle">
       <button data-lang="ar">ع</button>
@@ -105,8 +113,17 @@
 
     <div class="radar-footer">
       <a href="dashboard.html">Dashboard</a>
+      <a href="system.html">System</a>
       <span id="radar-updated">Loading data...</span>
     </div>
+
+    <a class="radar-subscribe-cta" id="radar-subscribe-cta" href="subscribe.html" hidden data-event="subscribe_clicked" data-event-origin="radar_floating">
+      <span class="rsc-lock"></span>
+      <span class="rsc-text">
+        <strong>افتح كل الفرص</strong>
+        <small>اشترك بـ 15 دولار/شهر</small>
+      </span>
+    </a>
 
     <aside class="detail-side" id="detail-modal" hidden role="complementary" aria-labelledby="detail-title">
       <header class="detail-head">

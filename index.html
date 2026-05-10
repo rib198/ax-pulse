@@ -94,6 +94,25 @@
     </footer>
   </main>
 
+  <script>
+    // Auto-route repeat visitors and active subscribers straight to Live Radar.
+    // First-time visitors see the marketing landing once; the flag is keyed on
+    // localStorage so it carries across reloads but not across browsers.
+    (function () {
+      try {
+        if (location.search.indexOf('stay=1') !== -1) return; // explicit landing
+        const seen = localStorage.getItem('radar_seen_landing');
+        const sub = (function () {
+          try { const s = JSON.parse(localStorage.getItem('radar_subscription_v1') || 'null'); return s && s.status === 'active'; } catch (e) { return false; }
+        })();
+        if (sub || seen) {
+          location.replace('radar.html');
+          return;
+        }
+        localStorage.setItem('radar_seen_landing', '1');
+      } catch (e) { /* fall through to landing */ }
+    })();
+  </script>
   <script src="assets/js/subscription.js"></script>
   <script src="assets/js/analytics.js"></script>
   <script src="assets/js/telemetry.js"></script>
