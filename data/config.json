@@ -1,0 +1,46 @@
+{
+  "$comment": "Single source of truth for product and subscription settings. Do NOT put real Stripe keys here. Override secrets via environment variables in your deploy target. The frontend reads only safe public values from this file.",
+  "product": {
+    "name_en": "Radar",
+    "name_ar": "الرادار",
+    "tagline_en": "AI signals turned into commercial opportunities, daily.",
+    "tagline_ar": "إشارات الذكاء الاصطناعي مُحوَّلة إلى فرص تجارية، يوميًا.",
+    "support_email": "support@example.com",
+    "primary_locale": "ar",
+    "supported_locales": ["ar", "en"]
+  },
+  "subscription": {
+    "enabled": true,
+    "price_usd": 15,
+    "price_label_en": "$15",
+    "price_label_ar": "15 دولار",
+    "billing_cycle": "monthly",
+    "billing_cycle_label_en": "/month",
+    "billing_cycle_label_ar": "/شهر",
+    "trial_days": 0,
+    "currency": "USD",
+    "free_preview_count": 3,
+    "free_preview_chars": 220
+  },
+  "stripe": {
+    "$comment": "These are placeholders. Replace at deploy time via env vars / build step. Never commit real keys.",
+    "publishable_key_env": "STRIPE_PUBLISHABLE_KEY",
+    "checkout_url_template": "https://checkout.stripe.com/c/pay/__SESSION_ID__",
+    "checkout_session_endpoint": "/api/checkout/session",
+    "webhook_endpoint": "/api/checkout/webhook",
+    "success_path": "/account.html?status=success",
+    "cancel_path": "/subscribe.html?status=cancelled"
+  },
+  "features": {
+    "show_locked_previews": true,
+    "show_new_badge_days": 3,
+    "enable_analytics": true,
+    "enable_arabic_first": true
+  },
+  "legal": {
+    "privacy_path": "/privacy.html",
+    "terms_path": "/terms.html",
+    "refund_policy_ar": "يحق لك إلغاء الاشتراك في أي وقت من صفحة حسابك. الاسترجاع متاح خلال أول 7 أيام إذا لم تستفد من المحتوى المدفوع. للاسترجاع راسلنا على بريد الدعم.",
+    "refund_policy_en": "You may cancel anytime from your account page. Refunds are available within the first 7 days if you have not consumed the paid content. To request a refund, contact support."
+  }
+}

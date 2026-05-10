@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>حسابك — الرادار</title>
+  <meta name="description" content="حالة اشتراكك في الرادار وإدارته." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;590;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body data-page="account">
+  <main class="account-shell">
+    <a href="index.html" style="color:var(--text-tertiary);font-size:13px;display:inline-block;margin-bottom:16px;">← الرئيسية</a>
+
+    <h1 style="font-size:24px;font-weight:700;margin-bottom:16px;" data-i18n="account_title">حسابك</h1>
+
+    <div class="account-card" id="account-card">
+      <div class="account-status inactive" id="account-status">
+        <span class="lock-icon"></span>
+        <span data-i18n="account_status_inactive">لا يوجد اشتراك فعّال</span>
+      </div>
+
+      <div class="account-meta" id="account-meta" style="display:none;">
+        <div class="account-meta-row">
+          <span class="account-meta-label" data-i18n="account_since">عضو منذ</span>
+          <span class="account-meta-value" id="meta-since">—</span>
+        </div>
+        <div class="account-meta-row">
+          <span class="account-meta-label" data-i18n="account_expires">التجديد القادم</span>
+          <span class="account-meta-value" id="meta-expires">—</span>
+        </div>
+      </div>
+
+      <div class="account-actions">
+        <a class="pricing-cta" href="subscribe.html" id="account-subscribe" data-i18n="subscribe_cta" style="text-decoration:none;display:inline-block;width:auto;padding:10px 18px;font-size:13px;">اشترك الآن</a>
+        <button class="state-action" id="account-signout" style="display:none;cursor:pointer;" data-i18n="account_signout">تسجيل الخروج</button>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;padding:20px;border:1px dashed var(--border-default);border-radius:var(--r-5);">
+      <div style="font-size:13px;color:var(--text-tertiary);line-height:1.8;">
+        <strong style="color:var(--text-primary);display:block;margin-bottom:8px;">ملاحظة مهمة</strong>
+        حالة الاشتراك تُحفظ محلياً في متصفحك حتى يتم ربط Stripe Webhook بخادم حقيقي. لمزيد من التفاصيل راجع
+        <code style="color:var(--accent);">SUBSCRIPTION.md</code> في المستودع.
+      </div>
+    </div>
+
+    <footer class="site-footer" style="margin-top:48px;">
+      <a href="privacy.html" data-i18n="footer_privacy">الخصوصية</a>
+      <a href="terms.html" data-i18n="footer_terms">الشروط</a>
+      <a href="index.html">الرئيسية</a>
+    </footer>
+  </main>
+
+  <script src="assets/js/subscription.js"></script>
+  <script src="assets/js/analytics.js"></script>
+  <script>
+    (function () {
+      if (window.RadarAnalytics) window.RadarAnalytics.accountViewed();
+
+      const i18n = { 'ar': null, 'en': null };
+      function applyLang() {
+        const lang = localStorage.getItem('axp_lang') || 'ar';
+        document.documentElement.setAttribute('lang', lang);
+        document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        // Static page — labels stay in Arabic by default; toggle could be added later.
+      }
+      applyLang();
+
+      const state = window.RadarSubscription.GetSubscriptionState();
+      const isActive = window.RadarSubscription.IsUserSubscribed();
+      const statusBox = document.getElementById('account-status');
+      const metaBox = document.getElementById('account-meta');
+      const subscribeBtn = document.getElementById('account-subscribe');
+      const signoutBtn = document.getElementById('account-signout');
+
+      if (isActive && state) {
+        statusBox.classList.remove('inactive');
+        statusBox.classList.add('active');
+        statusBox.querySelector('span:last-child').textContent = 'اشتراك فعّال';
+        statusBox.querySelector('.lock-icon').remove();
+        metaBox.style.display = 'grid';
+        const since = state.since ? new Date(state.since) : null;
+        const exp = state.expires_at ? new Date(state.expires_at) : null;
+        const fmt = (d) => d ? d.toLocaleDateString('ar-SA', { year: 'numeric', month: 'long', day: 'numeric' }) : '—';
+        document.getElementById('meta-since').textContent = fmt(since);
+        document.getElementById('meta-expires').textContent = fmt(exp);
+        subscribeBtn.style.display = 'none';
+        signoutBtn.style.display = 'inline-block';
+      }
+
+      signoutBtn.addEventListener('click', () => {
+        if (!confirm('هل تريد تسجيل الخروج وإلغاء الاشتراك المحلي؟')) return;
+        window.RadarSubscription.CancelLocalSubscription();
+        location.reload();
+      });
+    })();
+  </script>
+</body>
+</html>

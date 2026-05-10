@@ -19,17 +19,25 @@ async function loadJSON(path) {
 }
 
 async function bootstrap() {
-  const [i18n, opps, clusters, cats, radarOpps, radarSignals] = await Promise.all([
+  const [i18n, opps, clusters, cats, radarOpps, radarSignals, config] = await Promise.all([
     loadJSON('data/i18n.json'),
     loadJSON('data/opportunities.json'),
     loadJSON('data/clusters.json'),
     loadJSON('data/categories.json'),
     loadOptionalJSON('data/radar/opportunities.json'),
-    loadOptionalJSON('data/radar/signals.json')
+    loadOptionalJSON('data/radar/signals.json'),
+    loadOptionalJSON('data/config.json')
   ]);
   State.i18n = i18n;
+  State.config = config || { subscription: { price_usd: 15, price_label_ar: '15 دولار', price_label_en: '$15' } };
+  // Preserve raw radar opportunities so we can read tier/is_new/is_featured set by the agent pipeline.
   State.opportunities = radarOpps && radarOpps.opportunities && radarOpps.opportunities.length
-    ? radarOpps.opportunities.map(normalizeRadarOpportunity)
+    ? radarOpps.opportunities.map((o, i) => Object.assign(normalizeRadarOpportunity(o, i), {
+        tier: o.tier || 'free',
+        status: o.status || 'published',
+        is_new: !!o.is_new,
+        is_featured: !!o.is_featured
+      }))
     : opps.opportunities;
   State.clusters = clusters.clusters;
   State.categories = cats.categories;
@@ -249,9 +257,17 @@ function renderTrending() {
           <span class="section-subtitle">${sortedSignals.length} ${t('signals')} · ${t('section_live_signals_sub')}</span>
         </div>
       </div>
+      ${subscribeBanner()}
       <div class="signal-grid">
         ${sortedSignals.map(signalCard).join('')}
       </div>
+    `;
+    return;
+  }
+  if (!State.clusters || State.clusters.length === 0) {
+    root.innerHTML = `
+      <div class="section-head"><div><h2 class="section-title">${t('section_live_signals')}</h2></div></div>
+      ${emptyState('empty_signals_title', 'empty_signals_desc')}
     `;
     return;
   }
@@ -295,6 +311,8 @@ function renderTrending() {
 function renderOpportunities() {
   const root = document.getElementById('content');
   if (!root) return;
+  if (window.RadarAnalytics) window.RadarAnalytics.pricingViewed();
+  const opps = State.opportunities || [];
   root.innerHTML = `
     <div class="section-head">
       <div>
@@ -302,9 +320,12 @@ function renderOpportunities() {
         <span class="section-subtitle">${t('section_top_opps_sub')}</span>
       </div>
     </div>
-    <div class="opp-list">
-      ${State.opportunities.map(o => oppRow(o, o.rank, true)).join('')}
-    </div>
+    ${subscribeBanner()}
+    ${opps.length === 0 ? emptyState('empty_opps_title', 'empty_opps_desc') : `
+      <div class="opp-list">
+        ${opps.map(o => oppRow(o, o.rank, true)).join('')}
+      </div>
+    `}
   `;
 }
 
@@ -610,12 +631,35 @@ function oppRow(o, rank, expanded = false) {
   const catName = categoryName(o.category);
   const isTop = rank <= 3;
   const evidence = Array.isArray(o.evidence_items) ? o.evidence_items.slice(0, 3) : [];
+  const tier = o.tier || 'free';
+  const allowed = canAccess(o);
+  const badges = badgesFor(o);
+
+  if (!allowed) {
+    if (window.RadarAnalytics) window.RadarAnalytics.premiumAttempted(o.id || ('opp_' + rank));
+    const previewSnippet = (desc || '').slice(0, (State.config && State.config.subscription && State.config.subscription.free_preview_chars) || 200);
+    return `
+      <div class="opp-row opp-row-locked">
+        <div class="opp-rank ${isTop ? 'top' : ''}">${rank}</div>
+        <div class="opp-body">
+          <div class="opp-row-head">
+            <span class="cat" data-cat="${o.category}">${escape(catName)}</span>
+            ${badges}
+          </div>
+          ${lockedCard(title, previewSnippet, { origin: 'opportunity_row', short: false })}
+        </div>
+      </div>
+    `;
+  }
+
+  if (window.RadarAnalytics) window.RadarAnalytics.contentViewed(o.id || ('opp_' + rank), tier);
   return `
     <div class="opp-row">
       <div class="opp-rank ${isTop ? 'top' : ''}">${rank}</div>
       <div class="opp-body">
         <div class="opp-row-head">
           <span class="cat" data-cat="${o.category}">${escape(catName)}</span>
+          ${badges}
           <span class="cluster-meta">${o.evidence} ${t('evidence')}</span>
         </div>
         <div class="opp-title">${escape(title)}</div>
@@ -681,6 +725,27 @@ function translateUrl(text, targetLang) {
 }
 
 function signalCard(item) {
+  const tier = item.tier || 'free';
+  const allowed = canAccess(item);
+  if (!allowed) {
+    if (window.RadarAnalytics) window.RadarAnalytics.premiumAttempted(item.id || item.source_id || 'signal');
+    const previewChars = (State.config && State.config.subscription && State.config.subscription.free_preview_chars) || 180;
+    const titleAr = item.title_ar || '';
+    const useAr = State.lang === 'ar' && titleAr;
+    const lockedTitle = useAr ? titleAr : (item.title || '');
+    const lockedSnippet = (item.text || '').slice(0, previewChars);
+    const badges = badgesFor(item);
+    return `
+      <div class="signal-card-wrap signal-card-locked">
+        <div class="cluster-head" style="margin-bottom:8px;">
+          <span class="cat" data-cat="${radarCategory(item)}">${escape(item.source_name || sourceLabel(item.source_id))}</span>
+          ${badges}
+        </div>
+        ${lockedCard(lockedTitle, lockedSnippet, { origin: 'signal_card', short: true })}
+      </div>
+    `;
+  }
+  if (window.RadarAnalytics) window.RadarAnalytics.contentViewed(item.id || item.source_id || 'signal', tier);
   const score = Math.round((item.opportunity_score || 0) * 100);
   const posted = item.posted_at ? formatDateTime(item.posted_at) : '';
   const itemLang = detectLang(`${item.title} ${item.text || ''}`);
@@ -699,6 +764,7 @@ function signalCard(item) {
   const translateBtn = needsFallback
     ? `<a class="signal-translate" href="${translateUrl(`${item.title}\n\n${(item.text || '').slice(0, 800)}`, userLang)}" target="_blank" rel="noreferrer" title="ترجم عبر Google Translate">ترجم ↗</a>`
     : '';
+  const badges = badgesFor(item);
   return `
     <div class="signal-card-wrap">
       <a class="signal-card" href="${escape(item.source_url)}" target="_blank" rel="noreferrer">
@@ -709,6 +775,7 @@ function signalCard(item) {
             <span class="cluster-growth ${score >= 70 ? 'hot' : 'up'}">${score}%</span>
           </span>
         </div>
+        ${badges}
         <div class="cluster-topic">${escape(displayedTitle)}</div>
         ${originalLine}
         <div class="cluster-meta">${escape(item.signal_type || 'signal')} · ${escape(posted)}</div>
@@ -1034,5 +1101,102 @@ function escape(s) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 }
+
+/* ---------- Subscription / gating helpers ---------- */
+
+function isSubscribed() {
+  try { return !!(window.RadarSubscription && window.RadarSubscription.IsUserSubscribed()); }
+  catch (e) { return false; }
+}
+
+function canAccess(item) {
+  try {
+    if (window.RadarSubscription && window.RadarSubscription.CanAccessContent) {
+      return window.RadarSubscription.CanAccessContent(item);
+    }
+  } catch (e) {}
+  // Safe default: free if no tier info, otherwise gated.
+  const tier = item && item.tier;
+  return !tier || tier === 'free';
+}
+
+function priceLabel() {
+  const c = State.config && State.config.subscription;
+  if (!c) return State.lang === 'ar' ? '15 دولار' : '$15';
+  return State.lang === 'ar' ? (c.price_label_ar || '15 دولار') : (c.price_label_en || '$15');
+}
+
+function badgesFor(item) {
+  if (!item) return '';
+  const out = [];
+  if (item.is_featured) out.push(`<span class="badge badge--featured">${t('badge_featured')}</span>`);
+  if (item.is_new)      out.push(`<span class="badge badge--new">${t('badge_new')}</span>`);
+  if (item.tier === 'premium') {
+    out.push(`<span class="badge badge--premium"><span class="lock-icon"></span>${t('badge_premium')}</span>`);
+  } else if (item.tier === 'free') {
+    out.push(`<span class="badge badge--free">${t('badge_free')}</span>`);
+  }
+  return out.length ? `<div class="badge-row">${out.join('')}</div>` : '';
+}
+
+function lockedCard(title, snippet, opts) {
+  opts = opts || {};
+  const cta = opts.short ? t('locked_short_cta') : `${t('locked_cta')}`;
+  const desc = opts.desc || t('locked_desc');
+  return `
+    <div class="locked-card">
+      <div class="locked-preview">
+        <div class="locked-title">${escape(title || t('locked_title'))}</div>
+        <div class="locked-snippet">${escape(snippet || '')}</div>
+      </div>
+      <div class="locked-cta-row">
+        <div class="locked-cta-text">${escape(desc)}</div>
+        <a class="locked-cta-button" href="subscribe.html" data-event="subscribe_clicked" data-event-origin="${escape(opts.origin || 'locked_card')}">
+          <span class="lock-icon"></span>${escape(cta)}
+        </a>
+      </div>
+    </div>
+  `;
+}
+
+function subscribeBanner() {
+  if (isSubscribed()) return '';
+  const subText = State.lang === 'ar'
+    ? `افتح المحتوى الكامل بـ <strong>${priceLabel()}</strong>${State.config && State.config.subscription ? '/شهر' : ''}`
+    : `Unlock full content for <strong>${priceLabel()}</strong>${State.config && State.config.subscription ? '/month' : ''}`;
+  const small = State.lang === 'ar'
+    ? 'إلغاء في أي وقت · الدفع عبر Stripe'
+    : 'Cancel anytime · Payments via Stripe';
+  const cta = State.lang === 'ar' ? t('subscribe_cta') : 'Subscribe';
+  return `
+    <div class="subscribe-banner">
+      <div class="subscribe-banner-text">${subText}<small>${escape(small)}</small></div>
+      <a class="subscribe-banner-cta" href="subscribe.html" data-event="subscribe_clicked" data-event-origin="banner">
+        <span class="lock-icon"></span>${escape(cta)}
+      </a>
+    </div>
+  `;
+}
+
+function emptyState(titleKey, descKey) {
+  return `
+    <div class="state-card">
+      <div class="state-title">${escape(t(titleKey))}</div>
+      <div class="state-desc">${escape(t(descKey))}</div>
+    </div>
+  `;
+}
+
+// Wire data-event attributes to RadarAnalytics if loaded
+document.addEventListener('click', (e) => {
+  const a = e.target && (e.target.closest && e.target.closest('[data-event]'));
+  if (!a) return;
+  const event = a.dataset.event;
+  if (!event || !window.RadarAnalytics) return;
+  const origin = a.dataset.eventOrigin;
+  if (event === 'subscribe_clicked' && window.RadarAnalytics.subscribeClicked) {
+    window.RadarAnalytics.subscribeClicked(origin || 'unknown');
+  }
+});
 
 document.addEventListener('DOMContentLoaded', bootstrap);

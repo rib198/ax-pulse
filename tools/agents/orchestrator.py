@@ -31,6 +31,7 @@ from .base import (
     read_json,
     write_json,
 )
+from .access_tier import AccessTier
 from .companies_detector import CompaniesDetector
 from .evidence_guard import EvidenceGuard
 from .growth_social import GrowthSocial
@@ -66,6 +67,7 @@ class Orchestrator:
             MarketRadar(),
             OpportunityBuilder(),
             RadarEditor(),
+            AccessTier(),  # tags free/premium AFTER opps/editor wrote, BEFORE social/QA read.
             GrowthSocial(),
             UXProductionQA(),
             PerformanceAnalytics(),
