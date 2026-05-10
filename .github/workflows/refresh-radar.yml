@@ -54,35 +54,24 @@ jobs:
           restore-keys: |
             translations-
 
-      - name: Run radar MVP pipeline
+      - name: Run pulse_radar pipeline
         env:
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: |
           set -e
           X_LIMIT="${{ github.event.inputs.x_limit || '25' }}"
-          ORCH_ARGS=(
-            --run-collector
-            --run-evidence-guard
-            --run-radar-editor
-            --run-opportunity-builder
-            --run-focused-updates
-            --run-focused-discussions
-            --run-validation-layer
-            --run-review-queue
-            --pulse-arg=--include-browser-sources
-          )
           if [ -z "$X_BEARER_TOKEN" ]; then
             echo "::warning::X_BEARER_TOKEN غير مضبوط — سيتخطى الـ X collector ويعمل على RSS/Reddit/GitHub فقط"
-            ORCH_ARGS+=(--pulse-arg=--include-x-notice)
+            python3 tools/pulse_radar.py --include-x-notice
           else
             python3 tools/x_focus_accounts.py || echo "::warning::تعذر تحديث قائمة مراقبة X — سنستخدم آخر نسخة محفوظة"
-            ORCH_ARGS+=(--pulse-arg=--x-limit --pulse-arg="$X_LIMIT")
+            PULSE_ARGS=(--x-limit "$X_LIMIT")
             for LAYER in builders coding research creative business official; do
               QUERY="$(python3 tools/build_x_focus_query.py --layer "$LAYER" --top 8)"
-              ORCH_ARGS+=(--pulse-arg=--x-query --pulse-arg="$QUERY")
+              PULSE_ARGS+=(--x-query "$QUERY")
             done
+            python3 tools/pulse_radar.py "${PULSE_ARGS[@]}"
           fi
-          python3 tools/radar_orchestrator.py "${ORCH_ARGS[@]}"
 
       - name: Run fetch_ai_newsletters (RSS supplementary)
         run: |
@@ -92,11 +81,6 @@ jobs:
       - name: Translate new signals to Arabic
         run: |
           python3 tools/translate_signals.py || echo "::warning::translation step failed — continuing"
-
-      - name: Validate radar reliability output
-        run: |
-          python3 tools/audit_radar_reliability.py
-          python3 tools/validate_radar_cards.py
 
       - name: Commit & push data changes
         run: |
