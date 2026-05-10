@@ -101,6 +101,28 @@ function summarizeContext(ctx) {
   return lines.join('\n');
 }
 
+function summarizeView(view, locale) {
+  /* When the user opens the chat from a specific card, they're not asking
+   * an abstract question — they want to discuss what they're looking at.
+   * This block tells the model exactly what's on screen so its answer
+   * stays anchored to that item. */
+  if (!view || typeof view !== 'object') return '';
+  const lines = [];
+  if (view.layer) lines.push(`current_layer: ${view.layer}`);
+  const f = view.focused;
+  if (f && typeof f === 'object') {
+    lines.push(`focused_kind: ${f.kind || 'unknown'}`);
+    if (f.title)   lines.push(`focused_title: ${String(f.title).slice(0, 200)}`);
+    if (f.label)   lines.push(`focused_label: ${String(f.label).slice(0, 200)}`);
+    if (f.summary) lines.push(`focused_summary: ${String(f.summary).slice(0, 600)}`);
+    if (f.url)     lines.push(`focused_url: ${f.url}`);
+    lines.push(locale === 'en'
+      ? '\nThe user clicked an "Ask the assistant about this" affordance on this item. Treat your reply as a discussion of THIS item specifically. Reference its evidence and tie any suggestion back to it.'
+      : '\nالمستخدم ضغط زر «اسأل المساعد عن هذا» على العنصر أعلاه. اعتبر إجابتك مناقشة لهذا العنصر تحديدًا. اربط أي اقتراح بدليل من السياق.');
+  }
+  return lines.join('\n');
+}
+
 function sanitizeMessages(messages) {
   if (!Array.isArray(messages)) return [];
   return messages
@@ -136,6 +158,7 @@ module.exports = async function handler(req, res) {
   const isSub = !!payload.subscriber;
   const locale = payload.locale === 'en' ? 'en' : 'ar';
   const ctx = payload.context || {};
+  const view = payload.active_view || {};
 
   // IP-based daily rate limit (best-effort)
   const key = clientKey(req);
@@ -151,9 +174,19 @@ module.exports = async function handler(req, res) {
 
   const systemPrompt = locale === 'en' ? SYSTEM_PROMPT_EN : SYSTEM_PROMPT_AR;
   const contextBlock = summarizeContext(ctx);
+  const viewBlock = summarizeView(view, locale);
 
   const openaiMessages = [
-    { role: 'system', content: `${systemPrompt}\n\n=== RADAR CONTEXT (read-only) ===\n${contextBlock}\n=== END CONTEXT ===` },
+    {
+      role: 'system',
+      content: [
+        systemPrompt,
+        '\n=== RADAR CONTEXT (read-only) ===',
+        contextBlock,
+        viewBlock ? '\n=== USER IS CURRENTLY VIEWING ===\n' + viewBlock : '',
+        '\n=== END CONTEXT ===',
+      ].filter(Boolean).join('\n'),
+    },
     ...messages,
   ];
 

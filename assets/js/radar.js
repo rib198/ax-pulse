@@ -514,8 +514,9 @@ function renderCards(layer) {
   if (layer === 'events') {
     const events = (RadarState.events || []).slice(0, 6);
     const ar = RadarState.lang === 'ar';
-    const evCard = (e) => e ? `
-      <div class="event-mini${e.is_new ? ' event-mini-new' : ''}" data-event-type="${escapeAttr(e.type || '')}">
+    const askLabel = ar ? 'اسأل المساعد' : 'Ask the assistant';
+    const evCard = (e, slotIdx) => e ? `
+      <div class="event-mini${e.is_new ? ' event-mini-new' : ''}" data-event-type="${escapeAttr(e.type || '')}" data-event-idx="${slotIdx}">
         <div class="event-mini-head">
           <span class="event-mini-icon">${escapeHTML(e.icon || '·')}</span>
           <span class="event-mini-label">${escapeHTML(ar ? (e.label_ar || '') : (e.label_en || ''))}</span>
@@ -523,11 +524,31 @@ function renderCards(layer) {
         </div>
         <div class="event-mini-subject">${escapeHTML(e.subject || '')}</div>
         <div class="event-mini-meta">${e.evidence_count || 0} ${ar ? 'دليل' : 'evidence'}</div>
+        <button type="button" class="event-mini-ask" data-event-idx="${slotIdx}">${escapeHTML(askLabel)} ↗</button>
       </div>
     ` : `<div class="event-mini event-mini-empty">${ar ? 'لا أحداث جديدة' : 'no new events'}</div>`;
-    left.innerHTML = evCard(events[0]);
-    right.innerHTML = evCard(events[1]);
-    bottom.innerHTML = evCard(events[2]);
+    left.innerHTML = evCard(events[0], 0);
+    right.innerHTML = evCard(events[1], 1);
+    bottom.innerHTML = evCard(events[2], 2);
+
+    // Wire each "ask the assistant" button to open the chat drawer with the
+    // event pre-loaded as the focused item.
+    [left, right, bottom].forEach((slot, i) => {
+      const btn = slot && slot.querySelector('.event-mini-ask');
+      if (!btn || !events[i]) return;
+      btn.addEventListener('click', () => {
+        if (!window.RadarChat || !window.RadarChat.askAbout) return;
+        const e = events[i];
+        window.RadarChat.askAbout({
+          kind: 'event',
+          title: e.subject,
+          label: ar ? (e.label_ar || '') : (e.label_en || ''),
+          summary: `${e.evidence_count || 0} evidence, confidence ${Math.round((e.confidence || 0) * 100)}%`,
+          url: null,
+          raw: e,
+        });
+      });
+    });
     return;
   }
 
@@ -690,6 +711,7 @@ function openOpportunityDetail(item, idx = 0) {
   if (!item) return;
   const lang = RadarState.lang;
   const isAr = lang === 'ar';
+  setFocusedDetail('opportunity', item, idx);
 
   // Tier gating: locked items show a teaser + subscribe CTA instead of full content.
   const allowed = canAccessRadarItem(item);
@@ -795,6 +817,7 @@ function openTimelineDetail(item, idx = 0, auto = false) {
   if (!item) return;
   const isAr = RadarState.lang === 'ar';
   const L = (ar, en) => isAr ? ar : en;
+  setFocusedDetail('timeline', item, idx);
 
   document.getElementById('detail-source').textContent = `${timelineCategoryLabel(item.category)} · ${item.vendor || ''}`;
   document.getElementById('detail-title').textContent = localizedTimelineTitle(item);
@@ -880,6 +903,32 @@ function wireDetailModal() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !modal.hidden) closeDetail();
   });
+
+  // "Ask the assistant about this" — surfaces whatever the user is currently
+  // looking at into the chat drawer with a context-aware opening prompt.
+  const askBtn = document.getElementById('detail-ask');
+  if (askBtn) {
+    askBtn.addEventListener('click', () => {
+      if (!window.RadarChat || !window.RadarChat.askAbout) return;
+      const focused = RadarState.focusedDetail;
+      if (!focused) return;
+      window.RadarChat.askAbout(focused);
+    });
+  }
+}
+
+function setFocusedDetail(kind, item, idx) {
+  RadarState.focusedDetail = item ? {
+    kind,                         // 'opportunity' | 'timeline' | 'event' | 'signal'
+    layer: RadarState.layer,
+    idx: idx,
+    id: item.id || item.title || item.subject || null,
+    title: item.title || item.subject || '',
+    label: item.label_ar || item.category || item.type || '',
+    summary: item.thesis_ar || item.text || item.summary || item.why || '',
+    url: item.source_url || item.url || null,
+    raw: item,
+  } : null;
 }
 
 function renderSourceSpokes(layer) {

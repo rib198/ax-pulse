@@ -30,6 +30,7 @@
   if (!fab || !drawer || !form || !input) return;
 
   let busy = false;
+  let pendingFocus = null;  // item the user came from (when opened via askAbout)
 
   /* ---------- Helpers ---------- */
 
@@ -188,8 +189,26 @@
     };
   }
 
+  function activeView() {
+    /* Snapshot of "what is the user looking at right now" — passed to the
+     * assistant so it can ground its answer in the user's current view. */
+    const RS = window.RadarState || {};
+    return {
+      layer: RS.layer || null,
+      lang: localStorage.getItem('axp_lang') || 'ar',
+      focused: RS.focusedDetail ? {
+        kind: RS.focusedDetail.kind,
+        title: RS.focusedDetail.title,
+        label: RS.focusedDetail.label,
+        summary: (RS.focusedDetail.summary || '').slice(0, 600),
+        url: RS.focusedDetail.url,
+      } : null,
+    };
+  }
+
   async function callAssistant(messages) {
     const context = await fetchContext();
+    const view = activeView();
     let res;
     try {
       res = await fetch(ENDPOINT, {
@@ -198,15 +217,16 @@
         body: JSON.stringify({
           messages,
           context,
+          active_view: view,
           subscriber: isSubscriber(),
           locale: localStorage.getItem('axp_lang') || 'ar',
         }),
       });
     } catch (e) {
-      return { ok: false, error: 'network', text: localResponse(messages, context) };
+      return { ok: false, error: 'network', text: localResponse(messages, context, view) };
     }
     if (res.status === 404) {
-      return { ok: false, error: 'not_deployed', text: localResponse(messages, context) };
+      return { ok: false, error: 'not_deployed', text: localResponse(messages, context, view) };
     }
     if (res.status === 429) {
       const data = await res.json().catch(() => ({}));
@@ -219,24 +239,92 @@
     return { ok: true, text: data.reply || '—' };
   }
 
-  function localResponse(messages, context) {
+  function localResponse(messages, context, view) {
     /* Friendly placeholder used when the serverless function isn't deployed.
        Surfaces the radar's actual data so the drawer is useful even offline. */
-    const last = messages[messages.length - 1] || { content: '' };
-    const q = (last.content || '').toLowerCase();
     const lines = [];
-    lines.push('🛰 المساعد يعمل حاليًا في الوضع المحلي (الـ API لم يُنشر بعد). هذه نظرة سريعة من بيانات الرادار:');
-    if (context.latest_insight) lines.push(`\n• ملاحظة الرادار: ${context.latest_insight}`);
+    lines.push('🛰 المساعد يعمل في الوضع المحلي (الـ API لم يُنشر بعد). إليك ملخصًا من الرادار:');
+    if (view && view.focused) {
+      const f = view.focused;
+      lines.push(`\n• تنظر الآن إلى: ${f.label || f.kind} — "${f.title}"`);
+      if (f.summary) lines.push(`  ${f.summary.slice(0, 240)}`);
+      if (f.url) lines.push(`  المصدر: ${f.url}`);
+    }
+    if (context.latest_insight) lines.push(`\n• ملاحظة الرادار اليوم: ${context.latest_insight}`);
     if (context.top_events && context.top_events.length) {
-      lines.push('\n• أحدث الأحداث المرصودة:');
+      lines.push('\n• أحدث الأحداث:');
       context.top_events.slice(0, 3).forEach(e => lines.push(`  – ${e.label_ar || e.type} على ${e.subject} (${e.evidence} دليل، ثقة ${(e.confidence*100|0)}%)`));
     }
-    if (context.top_opportunities && context.top_opportunities.length) {
+    if (context.top_opportunities && context.top_opportunities.length && !(view && view.focused)) {
       lines.push('\n• أبرز الفرص:');
       context.top_opportunities.slice(0, 3).forEach(o => lines.push(`  – ${o.title} (ثقة ${(o.confidence*100|0)}%)`));
     }
-    lines.push('\nلتفعيل المساعد الذكي الكامل، انشر `api/chat.js` على Vercel وأضف `OPENAI_API_KEY` كـ env var (راجع SETUP.md).');
+    lines.push('\nلتفعيل المساعد الذكي الكامل، انشر `api/chat.js` على Vercel وأضف `OPENAI_API_KEY` (راجع SETUP.md).');
     return lines.join('\n');
+  }
+
+  /* ---------- Suggestion sets ---------- */
+
+  const DEFAULT_SUGGESTIONS = [
+    { prompt: 'ما أبرز ثلاث فرص اليوم وكيف أستفيد منها؟', label: 'أبرز ثلاث فرص اليوم' },
+    { prompt: 'ما أحدث الأحداث المرصودة وما أهميتها التجارية؟', label: 'أحدث الأحداث المرصودة' },
+    { prompt: 'اقترح علي منتج أبدأ ببنائه هذا الأسبوع بناءً على إشارات الرادار.', label: 'اقترح منتجًا للبناء هذا الأسبوع' },
+    { prompt: 'لخّص لي مزاج السوق العام للذكاء الاصطناعي اليوم.', label: 'لخّص مزاج السوق اليوم' },
+  ];
+
+  const FOLLOWUP_SUGGESTIONS = [
+    { prompt: 'اشرح أكثر، أعطِني تفاصيل إضافية.', label: 'اشرح أكثر' },
+    { prompt: 'ما الخطوة الأولى العملية للبدء؟', label: 'خطوة أولى عملية' },
+    { prompt: 'ما المخاطر أو التحديات المحتملة؟', label: 'المخاطر المحتملة' },
+    { prompt: 'هل توجد أمثلة مشابهة نجحت سابقًا؟', label: 'أمثلة مشابهة' },
+  ];
+
+  function focusedSuggestions(focused) {
+    if (!focused) return DEFAULT_SUGGESTIONS;
+    const subject = focused.title;
+    if (focused.kind === 'opportunity') {
+      return [
+        { prompt: `كيف أبدأ في تنفيذ هذه الفرصة: ${subject}؟`, label: 'كيف أبدأ؟' },
+        { prompt: `ما المخاطر المحتملة في فرصة "${subject}"؟`, label: 'المخاطر' },
+        { prompt: `ما حجم السوق المحتمل لـ "${subject}" في السعودية والخليج؟`, label: 'حجم السوق المحلي' },
+        { prompt: `اقترح خطة 7 أيام للبدء بـ "${subject}".`, label: 'خطة 7 أيام' },
+      ];
+    }
+    if (focused.kind === 'event') {
+      return [
+        { prompt: `ما الأهمية التجارية لهذا الحدث: ${subject}؟`, label: 'الأهمية التجارية' },
+        { prompt: `كيف يؤثر هذا على شركات الذكاء الاصطناعي الأخرى؟`, label: 'التأثير على المنافسين' },
+        { prompt: `هل توجد فرص ناتجة عن "${subject}"؟`, label: 'فرص محتملة' },
+        { prompt: `اشرح هذا الحدث بالتفصيل.`, label: 'اشرح بالتفصيل' },
+      ];
+    }
+    if (focused.kind === 'timeline' || focused.kind === 'signal') {
+      return [
+        { prompt: `لخّص لي هذه الإشارة: ${subject}.`, label: 'لخّص هذه الإشارة' },
+        { prompt: `ما العلاقة المحتملة بين هذه الإشارة وفرص الدخل؟`, label: 'العلاقة بفرص الدخل' },
+        { prompt: `ابحث عن إشارات مشابهة في الرادار.`, label: 'إشارات مشابهة' },
+        { prompt: `ما رأيك التحليلي في هذا الخبر؟`, label: 'الرأي التحليلي' },
+      ];
+    }
+    return DEFAULT_SUGGESTIONS;
+  }
+
+  function renderSuggestions(set) {
+    if (!sugBox) return;
+    sugBox.innerHTML = set.map(s => `<button class="chat-chip" data-prompt="${escape(s.prompt)}">${escape(s.label)}</button>`).join('');
+    sugBox.querySelectorAll('.chat-chip').forEach(btn => {
+      btn.addEventListener('click', () => send(btn.dataset.prompt || btn.textContent));
+    });
+    sugBox.style.display = '';
+  }
+
+  function renderFollowups() {
+    if (!sugBox) return;
+    sugBox.innerHTML = FOLLOWUP_SUGGESTIONS.map(s => `<button class="chat-chip chat-chip-follow" data-prompt="${escape(s.prompt)}">${escape(s.label)}</button>`).join('');
+    sugBox.querySelectorAll('.chat-chip').forEach(btn => {
+      btn.addEventListener('click', () => send(btn.dataset.prompt || btn.textContent));
+    });
+    sugBox.style.display = '';
   }
 
   /* ---------- Submit ---------- */
@@ -272,6 +360,10 @@
         writeQuota(q);
         refreshQuotaUI();
       }
+      // After every assistant reply, surface follow-up prompts. The user can
+      // either click one or type a new question — either way the conversation
+      // stays grounded in what was just discussed.
+      renderFollowups();
     } finally {
       busy = false;
       status.textContent = 'متصل';
@@ -281,12 +373,30 @@
 
   /* ---------- UI wiring ---------- */
 
-  function open() {
+  function open(opts) {
+    opts = opts || {};
     drawer.hidden = false;
     fab.setAttribute('aria-expanded', 'true');
     document.body.classList.add('has-chat-open');
     requestAnimationFrame(() => drawer.classList.add('chat-open'));
     if (window.RadarAnalytics) window.RadarAnalytics.contentViewed && window.RadarAnalytics.contentViewed('chat_open', 'free');
+
+    // Swap the suggestion set based on what (if anything) the user is
+    // currently focused on. If askAbout supplied a context, those chips
+    // are tightly tailored to the kind of item.
+    const focused = opts.focused || (window.RadarState && window.RadarState.focusedDetail) || null;
+    renderSuggestions(focusedSuggestions(focused));
+
+    // If askAbout passed a starter prompt, drop it into the input
+    // (the user reads it first, then sends). If they want auto-send,
+    // we expose `autoSend: true`.
+    if (opts.prompt) {
+      input.value = opts.prompt;
+      autoSizeTextarea();
+      if (opts.autoSend) {
+        setTimeout(() => send(opts.prompt), 100);
+      }
+    }
     setTimeout(() => input.focus(), 250);
   }
 
@@ -305,6 +415,38 @@
   fab.addEventListener('click', () => {
     if (drawer.hidden) open(); else close_();
   });
+
+  // Public API for the rest of the radar to summon the assistant
+  // pre-loaded with whatever the user is looking at.
+  window.RadarChat = {
+    open(opts) { open(opts || {}); },
+    close() { close_(); },
+    askAbout(item, customPrompt) {
+      if (!item) return;
+      const isAr = (localStorage.getItem('axp_lang') || 'ar') === 'ar';
+      const subject = item.title || item.subject || '';
+      let prompt = customPrompt;
+      if (!prompt) {
+        // Pre-fill a context-aware opener — the user can edit before sending.
+        if (item.kind === 'opportunity') {
+          prompt = isAr
+            ? `اشرح لي هذه الفرصة: "${subject}". كيف أبدأ، وما الخطوة الأولى العملية؟`
+            : `Explain this opportunity: "${subject}". How would I start, and what's the first practical step?`;
+        } else if (item.kind === 'event') {
+          prompt = isAr
+            ? `ما الأهمية التجارية لهذا الحدث: "${subject}"؟ وما الفرص المحتملة منه؟`
+            : `What's the commercial significance of this event: "${subject}"? What opportunities could come from it?`;
+        } else if (item.kind === 'timeline' || item.kind === 'signal') {
+          prompt = isAr
+            ? `لخّص هذه الإشارة: "${subject}"، وما رأيك التحليلي فيها؟`
+            : `Summarize this signal: "${subject}", and your analytical take.`;
+        } else {
+          prompt = isAr ? `ناقش معي: "${subject}"` : `Discuss with me: "${subject}"`;
+        }
+      }
+      open({ focused: item, prompt: prompt, autoSend: false });
+    },
+  };
   close.addEventListener('click', close_);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !drawer.hidden) close_();
