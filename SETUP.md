@@ -12,16 +12,18 @@ python3 tools/verify_setup.py --site https://radar.example.com --github-repo rib
 
 ---
 
-## الخطوة 1 — `OPENAI_API_KEY` كـ GitHub Secret (دقيقتان)
+## الخطوة 1 — مفتاح OpenAI كـ GitHub Secret (دقيقتان)
 
 **ليه:** الوكلاء 7/8/12 يستخدمون OpenAI لكتابة الفرص والنشرة العربية. بدون المفتاح يسقط النظام تلقائياً لقواعد محلية (يعمل لكن أقل ذكاءً).
+
+**اسم السكريت المقبول:** `AX_POST_AI` أو `OPENAI_API_KEY` — الـ workflow يقبل الاثنين (`secrets.AX_POST_AI || secrets.OPENAI_API_KEY`).
 
 ### الأسرع — عبر `gh` CLI
 
 ```bash
 brew install gh   # إن لم يكن مثبتاً
 gh auth login
-gh secret set OPENAI_API_KEY -R rib198/ax-pulse
+gh secret set AX_POST_AI -R rib198/ax-pulse
 # سيطلب منك لصق المفتاح، ثم Enter
 ```
 
@@ -29,7 +31,7 @@ gh secret set OPENAI_API_KEY -R rib198/ax-pulse
 
 1. <https://github.com/rib198/ax-pulse/settings/secrets/actions>
 2. **New repository secret**
-3. Name: `OPENAI_API_KEY`
+3. Name: `AX_POST_AI` (أو `OPENAI_API_KEY` — الاثنان يعملان)
 4. Secret: ألصق مفتاحك (يبدأ بـ `sk-...`)
 5. **Add secret**
 
@@ -265,7 +267,7 @@ python3 tools/verify_setup.py \
 
 | المتغير | أين | متى يلزم |
 |---|---|---|
-| `OPENAI_API_KEY` | GitHub Secrets | للوكلاء الذكية (Editor, Opportunity Builder, Growth Social) |
+| `AX_POST_AI` (أو `OPENAI_API_KEY`) | GitHub Secrets | للوكلاء الذكية (Editor, Opportunity Builder, Growth Social) |
 | `X_BEARER_TOKEN` | GitHub Secrets | اختياري — لجلب X بـ API الرسمي |
 | `STRIPE_SECRET_KEY` | Vercel env | إنشاء جلسات الدفع |
 | `STRIPE_PRICE_ID` | Vercel env | السعر $15/شهر من Stripe |

@@ -1,6 +1,6 @@
 name: Refresh Radar (agent pipeline)
 
-# Cron: every 2 hours. Runs the 14-agent pipeline end-to-end on free
+# Cron: every 2 hours. Runs the 15-agent pipeline end-to-end on free
 # GitHub Actions minutes (~2 min per run, ~720 min/month — well below
 # the 2,000 min/month free quota for public repos).
 on:
@@ -32,14 +32,19 @@ concurrency:
   group: refresh-radar
   cancel-in-progress: false   # never overlap two runs (X rate-limit safety)
 
+# Opt actions still on Node 20 onto Node 24 ahead of the June 2026 forced cutover.
+# Keeps the runner from emitting deprecation warnings on every run.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
           persist-credentials: true
@@ -49,10 +54,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install OpenAI SDK (only if key is set)
-        if: ${{ env.OPENAI_API_KEY != '' && github.event.inputs.use_openai != 'false' }}
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      # Always install the openai SDK. It's tiny (~few hundred KB), and the
+      # pipeline gracefully degrades to rule-based mode if no key is present.
+      # Doing it unconditionally avoids a fragile `if: env.X != ''` guard
+      # (step-level env isn't visible in step `if:` conditions).
+      - name: Install Python deps
         run: pip install --quiet openai
 
       - name: Cache translation memory
@@ -63,19 +69,24 @@ jobs:
           restore-keys: |
             translations-
 
-      # ----- Step 1: optional supplementary RSS fetch (Ben's Bites, TLDR AI, etc.) -----
+      # ----- Optional supplementary RSS fetch (Ben's Bites, TLDR AI, etc.) -----
       - name: Fetch supplementary AI newsletters
+        continue-on-error: true
         run: |
           DAYS="${{ github.event.inputs.days || '30' }}"
-          python3 tools/fetch_ai_newsletters.py --days "$DAYS" --max-per-source 40 || echo "::warning::RSS aggregator failed — continuing"
+          python3 tools/fetch_ai_newsletters.py --days "$DAYS" --max-per-source 40
 
-      # ----- Step 2: run the full 14-agent pipeline -----
+      # ----- Main 15-agent pipeline -----
+      # AX_POST_AI is the user-chosen secret name for the OpenAI key.
+      # We map it to OPENAI_API_KEY here so the Python code stays generic
+      # (the agents read OPENAI_API_KEY from env). Add a fallback to
+      # OPENAI_API_KEY in case the secret is renamed back later.
       - name: Run radar agent pipeline
         env:
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          FEEDLY_TOKEN: ${{ secrets.FEEDLY_TOKEN }}
-          FEEDLY_STREAM_ID: ${{ secrets.FEEDLY_STREAM_ID }}
+          X_BEARER_TOKEN:    ${{ secrets.X_BEARER_TOKEN }}
+          OPENAI_API_KEY:    ${{ secrets.AX_POST_AI || secrets.OPENAI_API_KEY }}
+          FEEDLY_TOKEN:      ${{ secrets.FEEDLY_TOKEN }}
+          FEEDLY_STREAM_ID:  ${{ secrets.FEEDLY_STREAM_ID }}
         run: |
           set -e
           X_LIMIT="${{ github.event.inputs.x_limit || '25' }}"
@@ -90,12 +101,18 @@ jobs:
           else
             echo "::notice::OpenAI key detected — agents 7/8/12 will use it"
           fi
-          python3 tools/run_radar_agents.py $ARGS
 
-      # ----- Step 3: translate any new signals into Arabic (free MyMemory API) -----
+          # Print diagnostic header so failures are easier to attribute.
+          python3 --version
+          python3 -c "import sys; print('cwd ok:', sys.path[0] or '.')"
+          echo "::group::pipeline run"
+          python3 tools/run_radar_agents.py $ARGS
+          echo "::endgroup::"
+
+      # ----- Translate new signals into Arabic (free MyMemory API) -----
       - name: Translate new signals to Arabic
-        run: |
-          python3 tools/translate_signals.py || echo "::warning::translation step failed — continuing"
+        continue-on-error: true
+        run: python3 tools/translate_signals.py
 
       - name: Commit & push data changes
         run: |
@@ -109,6 +126,14 @@ jobs:
 
           git add data/
           git commit -m "chore(radar): auto-refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          # Pull-rebase first so a parallel commit on main doesn't reject our push.
+          # If rebase fails, we drop our commit rather than fight the conflict —
+          # the next cron run regenerates everything anyway.
+          git pull --rebase origin "$GITHUB_REF_NAME" || {
+            echo "::warning::rebase failed; skipping push this run"
+            exit 0
+          }
           git push
 
       - name: Summary
