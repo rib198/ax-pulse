@@ -119,7 +119,7 @@ jobs:
 
             echo "::warning::push rejected on attempt ${attempt}; rebasing on latest ${BRANCH} and retrying"
             git fetch origin "$BRANCH"
-            git rebase "origin/$BRANCH"
+            git rebase -X theirs "origin/$BRANCH"
           done
 
           echo "::error::failed to push after rebasing on latest ${BRANCH}"
