@@ -125,6 +125,52 @@
       </span>
     </a>
 
+    <button class="chat-fab" id="chat-fab" aria-label="افتح مساعد الرادار" aria-controls="chat-drawer" aria-expanded="false">
+      <span class="chat-fab-icon" aria-hidden="true"></span>
+      <span class="chat-fab-label">مساعد الرادار</span>
+    </button>
+
+    <aside class="chat-drawer" id="chat-drawer" hidden aria-label="مساعد الرادار">
+      <header class="chat-head">
+        <div class="chat-head-title">
+          <span class="chat-head-dot"></span>
+          <span class="chat-head-name">مساعد الرادار</span>
+          <span class="chat-head-status" id="chat-status">متصل</span>
+        </div>
+        <button class="chat-close" id="chat-close" aria-label="إغلاق المساعد">×</button>
+      </header>
+
+      <div class="chat-quota" id="chat-quota" hidden>
+        <span id="chat-quota-text"></span>
+        <a href="subscribe.html" id="chat-quota-cta" data-event="subscribe_clicked" data-event-origin="chat_quota">اشترك للمزيد</a>
+      </div>
+
+      <div class="chat-body" id="chat-body" aria-live="polite"></div>
+
+      <div class="chat-suggestions" id="chat-suggestions">
+        <button class="chat-chip" data-prompt="ما أبرز ثلاث فرص اليوم وكيف أستفيد منها؟">أبرز ثلاث فرص اليوم</button>
+        <button class="chat-chip" data-prompt="ما أحدث الأحداث المرصودة وما أهميتها التجارية؟">أحدث الأحداث المرصودة</button>
+        <button class="chat-chip" data-prompt="اقترح علي منتج أبدأ ببنائه هذا الأسبوع بناءً على إشارات الرادار.">اقترح منتجًا للبناء هذا الأسبوع</button>
+        <button class="chat-chip" data-prompt="لخّص لي مزاج السوق العام للذكاء الاصطناعي اليوم.">لخّص مزاج السوق اليوم</button>
+      </div>
+
+      <form class="chat-form" id="chat-form" autocomplete="off">
+        <textarea
+          id="chat-input"
+          rows="1"
+          placeholder="اسأل المساعد عن إشارة، فرصة، أو حدث…"
+          maxlength="600"
+          aria-label="سؤالك للمساعد"></textarea>
+        <button type="submit" id="chat-send" aria-label="إرسال">
+          <span class="chat-send-arrow" aria-hidden="true">↑</span>
+        </button>
+      </form>
+
+      <div class="chat-foot">
+        <span>يستند إلى بيانات الرادار الحالية فقط · لا يحفظ المحادثات على الخادم</span>
+      </div>
+    </aside>
+
     <aside class="detail-side" id="detail-modal" hidden role="complementary" aria-labelledby="detail-title">
       <header class="detail-head">
         <span class="detail-source" id="detail-source">—</span>
@@ -144,5 +190,6 @@
   <script src="assets/js/analytics.js"></script>
   <script src="assets/js/telemetry.js"></script>
   <script src="assets/js/radar.js"></script>
+  <script src="assets/js/radar_chat.js"></script>
 </body>
 </html>

@@ -267,7 +267,7 @@ python3 tools/verify_setup.py \
 
 | المتغير | أين | متى يلزم |
 |---|---|---|
-| `AX_POST_AI` (أو `OPENAI_API_KEY`) | GitHub Secrets | للوكلاء الذكية (Editor, Opportunity Builder, Growth Social) |
+| `AX_POST_AI` (أو `OPENAI_API_KEY`) | GitHub Secrets + Vercel env | للوكلاء الذكية + مساعد الرادار `/api/chat` |
 | `X_BEARER_TOKEN` | GitHub Secrets | اختياري — لجلب X بـ API الرسمي |
 | `STRIPE_SECRET_KEY` | Vercel env | إنشاء جلسات الدفع |
 | `STRIPE_PRICE_ID` | Vercel env | السعر $15/شهر من Stripe |
