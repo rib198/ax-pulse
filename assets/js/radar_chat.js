@@ -241,19 +241,25 @@
       // as a soft-fail with a quiet note rather than a red error label.
       return { ok: true, soft: 'network', text: localResponse(messages, context, view), note: 'وضع محلي · لا اتصال بالإنترنت أو الخادم' };
     }
-    if (res.status === 404) {
-      // Soft failure — the function isn't deployed yet but we still have
-      // a usable local fallback to show. No red error label.
-      return { ok: true, soft: 'not_deployed', text: localResponse(messages, context, view), note: 'وضع محلي · انشر api/chat.js لتفعيل المساعد الذكي' };
-    }
+    // 429 → rate limit (we still have a friendly message to show)
     if (res.status === 429) {
       const data = await res.json().catch(() => ({}));
       return { ok: true, soft: 'rate_limit', text: data.message || 'تجاوزت الحد اليومي.', note: 'الحد اليومي' };
     }
-    if (!res.ok) {
-      // Hard failure — server-side problem the user can't act on.
-      return { ok: false, error: 'http_' + res.status, text: 'تعذّر الاتصال بالمساعد. حاول بعد دقيقة.' };
+
+    // 404 / 405 / 501 → backend isn't deployed (or method not allowed by a
+    // local static server). Always treat as soft fallback so the drawer
+    // still surfaces useful content.
+    if ([404, 405, 501].includes(res.status)) {
+      return { ok: true, soft: 'not_deployed', text: localResponse(messages, context, view), note: 'وضع محلي · انشر api/chat.js لتفعيل المساعد الذكي' };
     }
+
+    // Any other non-2xx → server-side hiccup. Still better to show local
+    // content with a transparent note than a dead-end red error.
+    if (!res.ok) {
+      return { ok: true, soft: 'upstream', text: localResponse(messages, context, view), note: `الخادم رجع ${res.status} · سنعرض ملخصًا محليًا حتى يستقر` };
+    }
+
     const data = await res.json().catch(() => ({}));
     return { ok: true, text: data.reply || '—' };
   }
