@@ -59,7 +59,7 @@ gh run list -R rib198/ax-pulse --workflow refresh-radar.yml --limit 1
 افتح هذا الرابط في المتصفح:
 
 ```
-https://vercel.com/new/clone?repository-url=https://github.com/rib198/ax-pulse&project-name=radar&env=STRIPE_SECRET_KEY,STRIPE_PRICE_ID,STRIPE_WEBHOOK_SECRET,SITE_URL,OPENAI_API_KEY&envDescription=Stripe%20keys%20from%20stripe.com/dashboard,%20SITE_URL%20is%20your%20final%20domain
+https://vercel.com/new/clone?repository-url=https://github.com/rib198/ax-pulse&project-name=radar&env=MOYASAR_SECRET_KEY,MOYASAR_PUBLISHABLE_KEY,MOYASAR_CALLBACK_URL,SITE_URL,OPENAI_API_KEY&envDescription=Moyasar%20keys%20from%20dashboard.moyasar.com,%20SITE_URL%20is%20your%20final%20domain,%20OPENAI%20powers%20the%20chat%20assistant
 ```
 
 سيفتح Vercel، يطلب منك تسجيل الدخول بـ GitHub، ثم يطلب env vars (الخطوة 3 توضح من أين).
