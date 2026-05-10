@@ -127,14 +127,28 @@ jobs:
           git add data/
           git commit -m "chore(radar): auto-refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
 
-          # Pull-rebase first so a parallel commit on main doesn't reject our push.
-          # If rebase fails, we drop our commit rather than fight the conflict —
-          # the next cron run regenerates everything anyway.
-          git pull --rebase origin "$GITHUB_REF_NAME" || {
-            echo "::warning::rebase failed; skipping push this run"
-            exit 0
-          }
-          git push
+          # Push with retry loop. A parallel cron commit on the same branch
+          # can land between our rebase and our push, so retry up to 3 times.
+          # If all attempts fail, drop our commit silently — the next run
+          # regenerates everything from current sources anyway, and exiting 0
+          # keeps the workflow run green.
+          BRANCH="${GITHUB_REF_NAME:-main}"
+          for attempt in 1 2 3; do
+            git fetch origin "$BRANCH"
+            if ! git rebase "origin/$BRANCH" ; then
+              git rebase --abort || true
+              echo "::warning::rebase conflict on attempt $attempt — skipping push"
+              exit 0
+            fi
+            if git push origin "HEAD:$BRANCH" ; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "::warning::push rejected on attempt $attempt — retrying"
+            sleep $(( attempt * 3 ))
+          done
+          echo "::warning::push failed after 3 attempts — dropping this run's commit"
+          exit 0
 
       - name: Summary
         if: always()
