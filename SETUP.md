@@ -86,7 +86,75 @@ curl -X POST https://radar.vercel.app/api/checkout/session
 
 ---
 
-## الخطوة 3 — مفاتيح Stripe (8–10 دقائق)
+## الخطوة 3 — مفاتيح Moyasar (الموصى به للسوق السعودي/الخليجي)
+
+**ليه:** Moyasar يدعم mada و Apple Pay و Visa و Mastercard، يقبل البطاقات المحلية بدون اضطراب، ولا تخزّن أنت بيانات البطاقة (PCI scope = صفر).
+
+### 3.1 إنشاء حساب + الحصول على المفاتيح
+
+1. <https://moyasar.com/register> — وقّع حسابًا.
+2. ابدأ بـ **وضع الاختبار (Test mode)** من dashboard.
+3. **Settings → API Keys** → انسخ:
+   - `pk_test_...` (Publishable key)
+   - `sk_test_...` (Secret key)
+
+### 3.2 إضافتها في Vercel
+
+#### الأسرع — `vercel` CLI
+
+```bash
+cd /Users/rawabialkhalaf/ax-pulse
+vercel env add MOYASAR_SECRET_KEY production
+# الصق sk_test_...
+vercel env add MOYASAR_PUBLISHABLE_KEY production
+# الصق pk_test_...
+vercel env add SITE_URL production
+# الصق https://radar.vercel.app
+vercel env add MOYASAR_CALLBACK_URL production
+# الصق https://radar.vercel.app/api/checkout/moyasar-callback
+vercel env add PRICE_AMOUNT production
+# 1500   (15.00 SAR — أو غيّره: 5625 لـ 56.25 ريال ≈ $15)
+vercel env add PRICE_CURRENCY production
+# SAR    (أو USD، AED، KWD، BHD، OMR، EUR، GBP)
+vercel --prod
+```
+
+#### البديل — واجهة Vercel
+
+Project → **Settings → Environment Variables** → أضف كل واحد على Production.
+
+### 3.3 إعداد الـ callback في Moyasar Dashboard
+
+1. <https://dashboard.moyasar.com/settings/webhook> أو **Settings → Webhooks**
+2. **Add Endpoint**:
+   - URL: `https://radar.vercel.app/api/checkout/moyasar-callback`
+   - Events: اختر «Invoice paid»، «Invoice failed»، «Payment paid»
+3. (اختياري) في **Settings → Callbacks** أضف نفس الـ URL لتأكيد المعاملات.
+
+### كيف تتحقق
+
+```bash
+curl -X POST https://radar.vercel.app/api/checkout/moyasar -H 'Content-Type: application/json' -d '{}'
+# يجب أن ترجع 200 + JSON يحوي "url": "https://api.moyasar.com/v1/invoice/inv_..."
+# افتح الـ url في المتصفح → ستظهر صفحة Moyasar للدفع التجريبي.
+# استخدم بطاقة test: 4111 1111 1111 1111، CVV أي 3 أرقام، تاريخ مستقبلي.
+```
+
+أو شغّل المُتحقق:
+
+```bash
+python3 tools/verify_setup.py --site https://radar.vercel.app --skip gh,admin
+```
+
+ستظهر `✓ Stripe Checkout session created` (الفاحص يعمل بشكل عام لأي provider يرجع `url`).
+
+### 3.4 تبديل المزوّد
+
+`data/config.json.payment_provider` افتراضيًا `"moyasar"`. لتجربة Stripe بدلًا عنه، غيّره إلى `"stripe"` وعد للخطوة الـ Stripe الأصلية (محفوظة أدناه).
+
+---
+
+## (اختياري) Stripe — في حال أردت تجربة المزوّد البديل (8–10 دقائق)
 
 **ليه:** الدفع الفعلي يحتاج 4 قيم من Stripe.
 

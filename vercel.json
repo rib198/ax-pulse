@@ -1,13 +1,17 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/api/checkout/session",  "destination": "/api/checkout/session.js" },
-    { "source": "/api/checkout/webhook",  "destination": "/api/checkout/webhook.js" },
-    { "source": "/api/chat",              "destination": "/api/chat.js" }
+    { "source": "/api/checkout/session",           "destination": "/api/checkout/session.js" },
+    { "source": "/api/checkout/webhook",           "destination": "/api/checkout/webhook.js" },
+    { "source": "/api/checkout/moyasar",           "destination": "/api/checkout/moyasar.js" },
+    { "source": "/api/checkout/moyasar-callback",  "destination": "/api/checkout/moyasar-callback.js" },
+    { "source": "/api/chat",                       "destination": "/api/chat.js" }
   ],
   "functions": {
-    "api/checkout/session.js": { "memory": 256, "maxDuration": 10 },
-    "api/checkout/webhook.js": { "memory": 256, "maxDuration": 10 },
-    "api/chat.js":             { "memory": 512, "maxDuration": 25 }
+    "api/checkout/session.js":           { "memory": 256, "maxDuration": 10 },
+    "api/checkout/webhook.js":           { "memory": 256, "maxDuration": 10 },
+    "api/checkout/moyasar.js":           { "memory": 256, "maxDuration": 10 },
+    "api/checkout/moyasar-callback.js":  { "memory": 256, "maxDuration": 10 },
+    "api/chat.js":                       { "memory": 512, "maxDuration": 25 }
   }
 }

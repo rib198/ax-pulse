@@ -22,8 +22,17 @@
     "free_preview_count": 3,
     "free_preview_chars": 220
   },
+  "payment_provider": "moyasar",
+  "moyasar": {
+    "$comment": "Saudi-friendly hosted checkout (mada, Apple Pay, Visa, MC). Real keys live in env vars on Vercel.",
+    "publishable_key_env": "MOYASAR_PUBLISHABLE_KEY",
+    "checkout_session_endpoint": "/api/checkout/moyasar",
+    "callback_endpoint": "/api/checkout/moyasar-callback",
+    "success_path": "/account.html?status=success&provider=moyasar",
+    "cancel_path": "/subscribe.html?status=cancelled&provider=moyasar"
+  },
   "stripe": {
-    "$comment": "These are placeholders. Replace at deploy time via env vars / build step. Never commit real keys.",
+    "$comment": "Stripe stubs kept for parity / future US/global tier. Switch payment_provider to 'stripe' to use them.",
     "publishable_key_env": "STRIPE_PUBLISHABLE_KEY",
     "checkout_url_template": "https://checkout.stripe.com/c/pay/__SESSION_ID__",
     "checkout_session_endpoint": "/api/checkout/session",

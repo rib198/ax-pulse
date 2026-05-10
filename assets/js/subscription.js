@@ -32,7 +32,9 @@
       cachedConfig = {
         product: { name_en: 'Radar', name_ar: 'الرادار' },
         subscription: { enabled: true, price_usd: 15, price_label_ar: '15 دولار', price_label_en: '$15', billing_cycle: 'monthly', free_preview_count: 3 },
-        stripe: { success_path: '/account.html?status=success', cancel_path: '/subscribe.html?status=cancelled' },
+        payment_provider: 'moyasar',
+        moyasar: { checkout_session_endpoint: '/api/checkout/moyasar', success_path: '/account.html?status=success&provider=moyasar', cancel_path: '/subscribe.html?status=cancelled&provider=moyasar' },
+        stripe:  { success_path: '/account.html?status=success', cancel_path: '/subscribe.html?status=cancelled' },
         features: { show_locked_previews: true, show_new_badge_days: 3 }
       };
     }
@@ -97,25 +99,33 @@
 
   /**
    * Public: kicks off the paid checkout flow.
-   * - If a server endpoint is configured, POST to it, then redirect.
-   * - Otherwise route to subscribe.html (the static fallback).
+   * Picks the endpoint based on cfg.payment_provider ("moyasar" | "stripe").
+   * Posts to the serverless function, expects { url } back, redirects.
+   * Falls back to subscribe.html if the function isn't reachable.
    */
   async function StartCheckout(meta) {
     const cfg = await loadConfig();
-    Analytics('checkout_started', meta || {});
-    const endpoint = cfg.stripe && cfg.stripe.checkout_session_endpoint;
+    Analytics('checkout_started', { provider: cfg.payment_provider, ...(meta || {}) });
+    const provider = (cfg.payment_provider || 'moyasar').toLowerCase();
+    const providerCfg = cfg[provider] || {};
+    const endpoint = providerCfg.checkout_session_endpoint;
+
     if (endpoint && endpoint.startsWith('/api/')) {
       try {
         const res = await fetch(endpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ price_usd: cfg.subscription.price_usd, ...meta })
+          body: JSON.stringify({
+            price_usd: cfg.subscription.price_usd,
+            origin: (meta && meta.origin) || 'unknown',
+            ...meta,
+          }),
         });
         if (res.ok) {
           const data = await res.json();
           if (data && data.url) {
             window.location.assign(data.url);
-            return { ok: true };
+            return { ok: true, provider: data.provider || provider };
           }
         }
       } catch (e) { /* fall through to static page */ }

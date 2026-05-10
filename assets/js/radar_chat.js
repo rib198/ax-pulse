@@ -103,8 +103,19 @@
     if (!hist.length) {
       body.innerHTML = `
         <div class="chat-welcome">
-          <div class="chat-welcome-title">مرحبًا 👋</div>
-          <div class="chat-welcome-text">أنا مساعد الرادار. أعرف الإشارات والفرص والأحداث المرصودة الآن. اسألني أو ابدأ من اقتراح أدناه.</div>
+          <div class="chat-welcome-title">مرحبًا 👋 أنا مساعدك الذكي للرادار</div>
+          <div class="chat-welcome-text">
+            خبيرك المرافق — أشرح الأخبار التقنية، أبسّط المحتوى، أساعدك في وضع خطط عمل وخطط تفكير،
+            أناقش الأفكار معك، وأكتب لك مسودات المحتوى. اختر دورًا من أدناه أو اسألني أيّ شيء.
+          </div>
+          <div class="chat-welcome-roles">
+            <span>🎓 شارح</span>
+            <span>🪞 مبسِّط</span>
+            <span>🧭 مخطّط</span>
+            <span>💡 شريك تفكير</span>
+            <span>🛠 صانع أدوات</span>
+            <span>✍️ كاتب مسودات</span>
+          </div>
         </div>
       `;
       return;
@@ -115,12 +126,15 @@
 
   function msgBubble(m) {
     const isAssistant = m.role === 'assistant';
+    const note = m.note ? `<div class="chat-bubble-note">${escape(m.note)}</div>` : '';
+    const err  = m.error ? '<div class="chat-bubble-err">تعذّر الاستجابة. حاول مرة أخرى.</div>' : '';
     return `
       <div class="chat-msg chat-msg-${isAssistant ? 'assistant' : 'user'}">
         ${isAssistant ? '<span class="chat-avatar"></span>' : ''}
         <div class="chat-bubble">
           ${linkify(m.content || '')}
-          ${m.error ? '<div class="chat-bubble-err">تعذّر الاستجابة. حاول مرة أخرى.</div>' : ''}
+          ${note}
+          ${err}
         </div>
       </div>
     `;
@@ -223,17 +237,22 @@
         }),
       });
     } catch (e) {
-      return { ok: false, error: 'network', text: localResponse(messages, context, view) };
+      // Pure network failure (no fetch at all) — show local fallback content
+      // as a soft-fail with a quiet note rather than a red error label.
+      return { ok: true, soft: 'network', text: localResponse(messages, context, view), note: 'وضع محلي · لا اتصال بالإنترنت أو الخادم' };
     }
     if (res.status === 404) {
-      return { ok: false, error: 'not_deployed', text: localResponse(messages, context, view) };
+      // Soft failure — the function isn't deployed yet but we still have
+      // a usable local fallback to show. No red error label.
+      return { ok: true, soft: 'not_deployed', text: localResponse(messages, context, view), note: 'وضع محلي · انشر api/chat.js لتفعيل المساعد الذكي' };
     }
     if (res.status === 429) {
       const data = await res.json().catch(() => ({}));
-      return { ok: false, error: 'rate_limit', text: data.message || 'تجاوزت الحد اليومي.' };
+      return { ok: true, soft: 'rate_limit', text: data.message || 'تجاوزت الحد اليومي.', note: 'الحد اليومي' };
     }
     if (!res.ok) {
-      return { ok: false, error: 'http_' + res.status, text: 'تعذّر الاتصال بالمساعد.' };
+      // Hard failure — server-side problem the user can't act on.
+      return { ok: false, error: 'http_' + res.status, text: 'تعذّر الاتصال بالمساعد. حاول بعد دقيقة.' };
     }
     const data = await res.json().catch(() => ({}));
     return { ok: true, text: data.reply || '—' };
@@ -266,10 +285,12 @@
   /* ---------- Suggestion sets ---------- */
 
   const DEFAULT_SUGGESTIONS = [
-    { prompt: 'ما أبرز ثلاث فرص اليوم وكيف أستفيد منها؟', label: 'أبرز ثلاث فرص اليوم' },
-    { prompt: 'ما أحدث الأحداث المرصودة وما أهميتها التجارية؟', label: 'أحدث الأحداث المرصودة' },
-    { prompt: 'اقترح علي منتج أبدأ ببنائه هذا الأسبوع بناءً على إشارات الرادار.', label: 'اقترح منتجًا للبناء هذا الأسبوع' },
-    { prompt: 'لخّص لي مزاج السوق العام للذكاء الاصطناعي اليوم.', label: 'لخّص مزاج السوق اليوم' },
+    { prompt: 'لخّص لي ما الجديد المهم في الرادار اليوم بلغة بسيطة، وما المغزى التجاري لكل عنصر.', label: '🪞 بسّط لي ما الجديد' },
+    { prompt: 'بناءً على إشارات الرادار وأحداثه، ضع لي خطة عمل 7 أيام أبدأ بها بفكرة قابلة للتنفيذ.', label: '🧭 خطة عمل 7 أيام' },
+    { prompt: 'فكّر معي بصوت عالٍ: ما الأنماط أو الفرص التي قد لا أراها بنفسي في هذه البيانات؟', label: '💡 فكّر معي' },
+    { prompt: 'اكتب لي مسودة منشور X عربي يلخّص أبرز إشارة اليوم بصوت ريادي مهني.', label: '✍️ اكتب مسودة منشور' },
+    { prompt: 'اقترح ثلاث فرص دخل قابلة للتنفيذ من الإشارات الحالية.', label: '🎯 ثلاث فرص للتنفيذ' },
+    { prompt: 'ما أحدث الأحداث المرصودة وما أهميتها التجارية؟', label: '📌 أحدث الأحداث' },
   ];
 
   const FOLLOWUP_SUGGESTIONS = [
@@ -353,8 +374,16 @@
       const messages = readHistory().map(({ role, content }) => ({ role, content }));
       const res = await callAssistant(messages);
       hideTyping();
-      appendMsg({ role: 'assistant', content: res.text, error: !res.ok, ts: Date.now() });
-      if (res.ok) {
+      appendMsg({
+        role: 'assistant',
+        content: res.text,
+        error: res.ok === false,
+        note: res.note || null,
+        ts: Date.now(),
+      });
+      // Only count against quota when we actually got a real LLM reply
+      // (not soft fallbacks like not_deployed / rate_limit / network).
+      if (res.ok && !res.soft) {
         const q = readQuota();
         q.used += 1;
         writeQuota(q);
