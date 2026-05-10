@@ -1974,3 +1974,340 @@ html[dir="rtl"] .pricing-eyebrow { font-family: var(--font-arabic); letter-spaci
   .skeleton { animation: none; }
   * { transition-duration: 0.01ms !important; }
 }
+
+/* ============================================================
+   Tactical layer — telemetry bar, heartbeat, ambient motion
+   ============================================================ */
+
+.telemetry {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--s-5);
+  background: rgba(8, 9, 10, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  overflow: hidden;
+}
+
+html[dir="rtl"] .telemetry { font-family: var(--font-arabic); letter-spacing: 0; font-size: 12px; }
+
+.tel-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-5);
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tel-row::-webkit-scrollbar { display: none; }
+
+.tel-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10.5px;
+}
+
+.tel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent-glow);
+  animation: tel-pulse 1.6s ease-in-out infinite;
+}
+
+.telemetry.tel-aging .tel-dot { background: var(--warn); box-shadow: 0 0 8px rgba(255,181,71,.4); }
+.telemetry.tel-stale .tel-dot { background: var(--hot);  box-shadow: 0 0 8px rgba(255,107,107,.4); animation-duration: 2.4s; }
+.telemetry.tel-aging .tel-status-label { color: var(--warn); }
+.telemetry.tel-stale .tel-status-label { color: var(--hot); }
+.telemetry.tel-live  .tel-status-label { color: var(--accent); }
+
+@keyframes tel-pulse {
+  0%, 100% { transform: scale(1);   opacity: 1; }
+  50%      { transform: scale(1.4); opacity: 0.55; }
+}
+
+.tel-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tel-stat-value {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum";
+  font-size: 12px;
+}
+
+html[dir="rtl"] .tel-stat-value { font-family: 'JetBrains Mono', var(--font-arabic); }
+
+.tel-stat-label { color: var(--text-muted); font-size: 10.5px; }
+
+.tel-time, .tel-time-future { font-feature-settings: "tnum"; }
+
+.tel-sources {
+  margin-inline-start: auto;
+  display: inline-flex;
+  gap: 10px;
+  padding-inline-start: var(--s-4);
+}
+
+.tel-src {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10.5px;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  transition: color 0.2s;
+}
+
+.tel-src-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.tel-src-on .tel-src-dot {
+  background: var(--accent);
+  box-shadow: 0 0 5px var(--accent-glow);
+  animation: tel-src-breathe 2.8s ease-in-out infinite;
+}
+
+.tel-src-on { color: var(--text-secondary); }
+
+@keyframes tel-src-breathe {
+  0%, 100% { opacity: 0.65; }
+  50%      { opacity: 1;    }
+}
+
+/* ---------- Heartbeat — 1px line under the telemetry bar ---------- */
+
+.heartbeat {
+  position: sticky;
+  top: 32px;
+  z-index: 49;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  background-size: 30% 100%;
+  background-repeat: no-repeat;
+  animation: heartbeat-sweep 6s linear infinite;
+}
+
+.heartbeat.tel-aging { background-image: linear-gradient(90deg, transparent, var(--warn), transparent); animation-duration: 8s; }
+.heartbeat.tel-stale { background-image: linear-gradient(90deg, transparent, var(--hot),  transparent); animation-duration: 12s; opacity: 0.6; }
+
+@keyframes heartbeat-sweep {
+  0%   { background-position: -50% 0; }
+  100% { background-position: 150% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tel-dot, .tel-src-on .tel-src-dot { animation: none; }
+  .heartbeat { animation: none; opacity: 0.4; background: var(--accent); }
+}
+
+/* ---------- Mobile telemetry collapse ---------- */
+@media (max-width: 720px) {
+  .telemetry { height: auto; padding: 6px 12px; }
+  .tel-row { flex-wrap: nowrap; }
+  .tel-sources { display: none; }
+  .tel-stat-label { display: none; }
+}
+
+/* ============================================================
+   Click radial wave + card stagger entrance
+   ============================================================ */
+
+.click-wave {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  pointer-events: none;
+  transform: scale(0);
+  animation: click-wave 500ms ease-out forwards;
+  z-index: 0;
+}
+
+@keyframes click-wave {
+  to { transform: scale(1); opacity: 0; }
+}
+
+/* Stagger on opp-list / signal-grid / cluster-grid children */
+.opp-list > *, .signal-grid > *, .cluster-grid > *, .pricing-includes > * {
+  animation: card-enter 380ms cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+
+.opp-list > *:nth-child(1) { animation-delay: 30ms; }
+.opp-list > *:nth-child(2) { animation-delay: 70ms; }
+.opp-list > *:nth-child(3) { animation-delay: 110ms; }
+.opp-list > *:nth-child(4) { animation-delay: 150ms; }
+.opp-list > *:nth-child(5) { animation-delay: 190ms; }
+.opp-list > *:nth-child(n+6) { animation-delay: 230ms; }
+
+.signal-grid > *:nth-child(1) { animation-delay: 20ms; }
+.signal-grid > *:nth-child(2) { animation-delay: 50ms; }
+.signal-grid > *:nth-child(3) { animation-delay: 80ms; }
+.signal-grid > *:nth-child(4) { animation-delay: 110ms; }
+.signal-grid > *:nth-child(5) { animation-delay: 140ms; }
+.signal-grid > *:nth-child(6) { animation-delay: 170ms; }
+.signal-grid > *:nth-child(n+7) { animation-delay: 200ms; }
+
+@keyframes card-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .opp-list > *, .signal-grid > *, .cluster-grid > *, .pricing-includes > * { animation: none; }
+  .click-wave { display: none; }
+}
+
+/* ============================================================
+   HIGH SIGNAL badge (high-confidence opportunities)
+   ============================================================ */
+
+.badge--high-signal {
+  background: rgba(255, 107, 107, 0.10);
+  color: var(--hot);
+  border: 1px solid rgba(255, 107, 107, 0.40);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.badge--high-signal::before {
+  content: '⊕';
+  margin-inline-end: 2px;
+  font-weight: 700;
+}
+
+.opp-row-high-signal {
+  position: relative;
+}
+
+.opp-row-high-signal::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: -4px;
+  top: 8%; bottom: 8%;
+  width: 2px;
+  background: var(--hot);
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(255, 107, 107, 0.4);
+  animation: signal-pulse 2s ease-in-out infinite;
+}
+
+@keyframes signal-pulse {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 1;    }
+}
+
+/* ============================================================
+   Locked card — hover scanline reveal
+   ============================================================ */
+
+.locked-card {
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.locked-card::after {
+  content: '';
+  position: absolute;
+  left: -10%; right: -10%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.locked-card:hover {
+  border-color: rgba(124, 255, 107, 0.3);
+  box-shadow: 0 0 0 1px rgba(124, 255, 107, 0.1), 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.locked-card:hover::after {
+  opacity: 1;
+  animation: scanline-sweep 1.4s linear;
+}
+
+@keyframes scanline-sweep {
+  0%   { top: -2%;  opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { top: 102%; opacity: 0; }
+}
+
+.locked-card .lock-icon { transition: transform 0.25s, color 0.25s; }
+.locked-card:hover .lock-icon { transform: rotate(-8deg) scale(1.05); color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  .locked-card::after { display: none; }
+  .opp-row-high-signal::before { animation: none; }
+}
+
+/* ============================================================
+   Tactical loading state — replaces spinner with "scanning sources"
+   ============================================================ */
+
+.tactical-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-10) var(--s-4);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.08em;
+}
+
+html[dir="rtl"] .tactical-loading { font-family: var(--font-arabic); letter-spacing: 0; font-size: 13px; }
+
+.tactical-loading .scan-bar {
+  width: 220px;
+  height: 2px;
+  background: var(--border-default);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tactical-loading .scan-bar::after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  animation: scan-bar-sweep 1.4s linear infinite;
+}
+
+@keyframes scan-bar-sweep {
+  0%   { left: -40%; }
+  100% { left: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tactical-loading .scan-bar::after { animation: none; background: var(--accent); width: 100%; }
+}

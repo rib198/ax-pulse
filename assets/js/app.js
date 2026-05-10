@@ -267,7 +267,7 @@ function renderTrending() {
   if (!State.clusters || State.clusters.length === 0) {
     root.innerHTML = `
       <div class="section-head"><div><h2 class="section-title">${t('section_live_signals')}</h2></div></div>
-      ${emptyState('empty_signals_title', 'empty_signals_desc')}
+      ${emptyState('tactical_no_signals_title', 'tactical_no_signals_desc')}
     `;
     return;
   }
@@ -321,7 +321,7 @@ function renderOpportunities() {
       </div>
     </div>
     ${subscribeBanner()}
-    ${opps.length === 0 ? emptyState('empty_opps_title', 'empty_opps_desc') : `
+    ${opps.length === 0 ? emptyState('tactical_no_opps_title', 'tactical_no_opps_desc') : `
       <div class="opp-list">
         ${opps.map(o => oppRow(o, o.rank, true)).join('')}
       </div>
@@ -653,8 +653,9 @@ function oppRow(o, rank, expanded = false) {
   }
 
   if (window.RadarAnalytics) window.RadarAnalytics.contentViewed(o.id || ('opp_' + rank), tier);
+  const highSignalClass = isHighSignal(o) ? ' opp-row-high-signal' : '';
   return `
-    <div class="opp-row">
+    <div class="opp-row${highSignalClass}">
       <div class="opp-rank ${isTop ? 'top' : ''}">${rank}</div>
       <div class="opp-body">
         <div class="opp-row-head">
@@ -747,7 +748,8 @@ function signalCard(item) {
   }
   if (window.RadarAnalytics) window.RadarAnalytics.contentViewed(item.id || item.source_id || 'signal', tier);
   const score = Math.round((item.opportunity_score || 0) * 100);
-  const posted = item.posted_at ? formatDateTime(item.posted_at) : '';
+  const postedISO = item.posted_at || item.collected_at || '';
+  const posted = postedISO ? formatDateTime(postedISO) : '';
   const itemLang = detectLang(`${item.title} ${item.text || ''}`);
   const userLang = State.lang;
   // Use Arabic translation if user is in Arabic mode AND item has been translated
@@ -778,7 +780,7 @@ function signalCard(item) {
         ${badges}
         <div class="cluster-topic">${escape(displayedTitle)}</div>
         ${originalLine}
-        <div class="cluster-meta">${escape(item.signal_type || 'signal')} · ${escape(posted)}</div>
+        <div class="cluster-meta">${escape(item.signal_type || 'signal')} · <span${timeAttr(postedISO)}>${escape(posted)}</span></div>
         <p class="signal-text">${escape((item.text || '').slice(0, 210))}${(item.text || '').length > 210 ? '...' : ''}</p>
         <div class="cluster-voices">${escape((item.matched_keywords || []).slice(0, 8).join(' · '))}</div>
       </a>
@@ -1129,6 +1131,10 @@ function priceLabel() {
 function badgesFor(item) {
   if (!item) return '';
   const out = [];
+  // High-signal badge (confidence ≥ 0.75) takes precedence visually
+  if ((item.confidence || 0) >= 0.75) {
+    out.push(`<span class="badge badge--high-signal">${t('tactical_high_signal')}</span>`);
+  }
   if (item.is_featured) out.push(`<span class="badge badge--featured">${t('badge_featured')}</span>`);
   if (item.is_new)      out.push(`<span class="badge badge--new">${t('badge_new')}</span>`);
   if (item.tier === 'premium') {
@@ -1137,6 +1143,10 @@ function badgesFor(item) {
     out.push(`<span class="badge badge--free">${t('badge_free')}</span>`);
   }
   return out.length ? `<div class="badge-row">${out.join('')}</div>` : '';
+}
+
+function isHighSignal(o) {
+  return (o && (o.confidence || 0) >= 0.75);
 }
 
 function lockedCard(title, snippet, opts) {
@@ -1185,6 +1195,21 @@ function emptyState(titleKey, descKey) {
       <div class="state-desc">${escape(t(descKey))}</div>
     </div>
   `;
+}
+
+function tacticalLoading() {
+  return `
+    <div class="tactical-loading">
+      <span>● ${escape(t('tactical_scanning'))}…</span>
+      <div class="scan-bar"></div>
+    </div>
+  `;
+}
+
+/* When the brief or signals carry posted timestamps, mark them so telemetry
+ * can refresh their relative display every 15s. */
+function timeAttr(iso) {
+  return iso ? ` data-timestamp="${escape(iso)}"` : '';
 }
 
 // Wire data-event attributes to RadarAnalytics if loaded
