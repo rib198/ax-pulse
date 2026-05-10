@@ -69,7 +69,6 @@ jobs:
       - name: Translate new signals to Arabic
         run: |
           python3 tools/translate_signals.py || echo "::warning::translation step failed — continuing"
-
       - name: Commit & push data changes
         run: |
           git config user.name  "ax-pulse-bot"
