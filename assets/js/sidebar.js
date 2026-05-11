@@ -6,7 +6,9 @@ function injectSidebar() {
   const slot = document.getElementById('sidebar-slot');
   if (!slot) return;
 
-  const isSubscribed = !!(window.RadarSubscription && window.RadarSubscription.IsUserSubscribed && window.RadarSubscription.IsUserSubscribed());
+  const sub = window.RadarSubscription || {};
+  const isComingSoon = !!(sub.IsComingSoon && sub.IsComingSoon());
+  const isSubscribed = !isComingSoon && !!(sub.IsUserSubscribed && sub.IsUserSubscribed());
 
   slot.innerHTML = `
     <aside class="sidebar">
@@ -70,7 +72,13 @@ function injectSidebar() {
 
       <div class="nav-spacer"></div>
 
-      ${isSubscribed ? `
+      ${isComingSoon ? `
+        <a class="upgrade-card" href="subscribe.html" style="text-decoration:none;" data-event="subscribe_clicked" data-event-origin="sidebar_coming_soon">
+          <h4>الاشتراك قريبًا</h4>
+          <p>كل المحتوى مجاني الآن — انضم لقائمة الانتظار للوصول المبكّر بسعر مؤسّسين.</p>
+          <span class="btn btn-primary" style="display:inline-block;text-align:center;">انضم لقائمة الانتظار</span>
+        </a>
+      ` : isSubscribed ? `
         <a class="upgrade-card upgrade-card-active" href="account.html" style="text-decoration:none;">
           <h4 data-i18n="account_status_active">اشتراك فعّال</h4>
           <p data-i18n="account_manage">إدارة الاشتراك</p>

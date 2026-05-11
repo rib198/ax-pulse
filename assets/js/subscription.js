@@ -67,8 +67,21 @@
     return Date.now() >= new Date(state.expires_at).getTime();
   }
 
+  /** Public: returns the subscription rollout mode. "coming_soon" hides
+   * all charge flows and opens content; "live" enables real subscription. */
+  function getMode() {
+    if (!cachedConfig) return 'coming_soon';
+    return ((cachedConfig.subscription && cachedConfig.subscription.mode) || 'coming_soon').toLowerCase();
+  }
+
+  function IsLive()       { return getMode() === 'live'; }
+  function IsComingSoon() { return getMode() === 'coming_soon'; }
+
   /** Public: returns true if the current browser holds an active subscription marker. */
   function IsUserSubscribed() {
+    // In coming_soon mode there is no "subscribed" yet — but we treat every
+    // visitor as subscribed for access purposes so all content is visible.
+    if (IsComingSoon()) return true;
     const s = readState();
     if (!s || s.status !== 'active') return false;
     if (isExpired(s)) return false;
@@ -86,10 +99,12 @@
    */
   function CanAccessContent(content) {
     if (!content) return false;
+    // Coming soon: everything is open (except drafts which are always hidden).
+    if (IsComingSoon()) {
+      return content.status !== 'draft';
+    }
     if (content.status && content.status !== 'published') {
-      // archived stays available to subscribers; drafts hidden from everyone
       if (content.status === 'draft') return false;
-      // archived → subscribers only
       return IsUserSubscribed();
     }
     const tier = content.tier || 'free';
@@ -105,6 +120,14 @@
    */
   async function StartCheckout(meta) {
     const cfg = await loadConfig();
+    // In coming_soon mode we never touch a payment provider — redirect to
+    // the waitlist page instead. The frontend (subscribe.html) handles
+    // the email capture form for this state.
+    if ((cfg.subscription && cfg.subscription.mode) === 'coming_soon') {
+      Analytics('waitlist_started', meta || {});
+      window.location.assign('subscribe.html');
+      return { ok: true, mode: 'coming_soon' };
+    }
     Analytics('checkout_started', { provider: cfg.payment_provider, ...(meta || {}) });
     const provider = (cfg.payment_provider || 'moyasar').toLowerCase();
     const providerCfg = cfg[provider] || {};
@@ -224,6 +247,9 @@
 
   global.RadarSubscription = {
     loadConfig,
+    getMode,
+    IsLive,
+    IsComingSoon,
     IsUserSubscribed,
     GetSubscriptionState,
     CanAccessContent,

@@ -267,11 +267,24 @@ function renderInsightBanner() {
 function renderSubscribeCTA() {
   const el = document.getElementById('radar-subscribe-cta');
   if (!el) return;
-  const isSub = !!(window.RadarSubscription && window.RadarSubscription.IsUserSubscribed && window.RadarSubscription.IsUserSubscribed());
+  const sub = window.RadarSubscription || {};
+  const isComingSoon = !!(sub.IsComingSoon && sub.IsComingSoon());
+  const isSub = !isComingSoon && !!(sub.IsUserSubscribed && sub.IsUserSubscribed());
+
+  // Subscribers never see the CTA. In live mode, non-subscribers see the
+  // standard "unlock" message. In coming_soon, everyone sees a softer
+  // "join the waitlist" pill — no charge implied.
   el.hidden = isSub;
-  if (!isSub && RadarState.lang === 'en') {
-    el.querySelector('strong').textContent = 'Unlock all opportunities';
-    el.querySelector('small').textContent = 'Subscribe for $15/month';
+  const strong = el.querySelector('strong');
+  const small  = el.querySelector('small');
+  if (!strong || !small) return;
+  if (isComingSoon) {
+    strong.textContent = RadarState.lang === 'ar' ? 'الإطلاق قريبًا' : 'Launching soon';
+    small.textContent  = RadarState.lang === 'ar' ? 'انضم لقائمة الانتظار' : 'Join the waitlist';
+    el.dataset.eventOrigin = 'radar_waitlist';
+  } else if (RadarState.lang === 'en') {
+    strong.textContent = 'Unlock all opportunities';
+    small.textContent  = 'Subscribe for $15/month';
   }
 }
 
@@ -281,6 +294,9 @@ function isSubscriberRadar() {
 
 function canAccessRadarItem(item) {
   if (!item) return false;
+  // During the coming_soon launch phase, everything is open (drafts always hidden).
+  const sub = window.RadarSubscription;
+  if (sub && sub.CanAccessContent) return sub.CanAccessContent(item);
   if (item.status === 'archived' || item.status === 'draft') return isSubscriberRadar();
   const tier = item.tier || 'free';
   return tier === 'free' || isSubscriberRadar();

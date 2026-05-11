@@ -10,6 +10,8 @@
     "supported_locales": ["ar", "en"]
   },
   "subscription": {
+    "$comment_mode": "Production switch: 'coming_soon' = waitlist phase (no gating, no charge). 'live' = real subscription with paid gating. Flip when payment provider is fully validated.",
+    "mode": "coming_soon",
     "enabled": true,
     "price_usd": 15,
     "price_label_en": "$15",
@@ -20,7 +22,14 @@
     "trial_days": 0,
     "currency": "USD",
     "free_preview_count": 3,
-    "free_preview_chars": 220
+    "free_preview_chars": 220,
+    "waitlist_form_action": "",
+    "coming_soon_headline_ar": "الاشتراك يُطلق قريبًا",
+    "coming_soon_headline_en": "Subscription launching soon",
+    "coming_soon_body_ar": "كل المحتوى متاح مجانًا الآن خلال مرحلة الإطلاق. انضم لقائمة الانتظار لتحصل على وصول مبكّر بسعر مؤسّسين عند تفعيل الاشتراك.",
+    "coming_soon_body_en": "All content is free during launch. Join the waitlist for early access at a founder-tier price when subscription goes live.",
+    "coming_soon_cta_ar": "انضم لقائمة الانتظار",
+    "coming_soon_cta_en": "Join the waitlist"
   },
   "payment_provider": "moyasar",
   "moyasar": {

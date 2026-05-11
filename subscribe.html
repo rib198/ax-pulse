@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>اشترك في الرادار — 15 دولار/شهر</title>
-  <meta name="description" content="اشترك في الرادار للوصول إلى الفرص المرتّبة والإشارات المباشرة والنشرة العربية اليومية." />
+  <title>اشترك في الرادار</title>
+  <meta name="description" content="الاشتراك في الرادار: استخبارات يومية لاتجاهات الذكاء الاصطناعي والفرص التجارية." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;590;700&family=JetBrains+Mono:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,38 +14,13 @@
 </head>
 <body data-page="subscribe">
   <main class="pricing-shell">
-    <a href="index.html" style="color:var(--text-tertiary);font-size:13px;display:inline-block;margin-bottom:16px;">← الرئيسية</a>
+    <a href="radar.html" style="color:var(--text-tertiary);font-size:13px;display:inline-block;margin-bottom:16px;">← الرادار</a>
 
-    <div class="pricing-card">
-      <div class="pricing-eyebrow" data-i18n="subscribe_page_eyebrow">الاشتراك</div>
-      <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;line-height:1.3;" data-i18n="subscribe_page_title">افتح الرادار بالكامل.</h1>
-      <p style="color:var(--text-secondary);font-size:15px;line-height:1.7;margin-bottom:24px;" data-i18n="subscribe_page_sub">اشتراك واحد يمنحك الوصول الكامل إلى الفرص والإشارات والنشرة العربية اليومية.</p>
-
-      <div class="pricing-amount">
-        <span id="price-amount" data-i18n="price_pro">15$</span>
-        <small data-i18n="subscribe_price_per">/شهر</small>
-      </div>
-
-      <div class="pricing-includes">
-        <div class="pricing-includes-title" data-i18n="subscribe_includes_title">ما الذي يشمله الاشتراك</div>
-        <div class="pricing-include-item" data-i18n="sub_inc_1">النشرة اليومية الكاملة بالعربية</div>
-        <div class="pricing-include-item" data-i18n="sub_inc_2">فرص مرتّبة مع روابط الأدلة</div>
-        <div class="pricing-include-item" data-i18n="sub_inc_3">إشارات مباشرة من مصادر رسمية ومجتمعات تقنية</div>
-        <div class="pricing-include-item" data-i18n="sub_inc_4">متابعة الشركات والنماذج والأسعار</div>
-        <div class="pricing-include-item" data-i18n="sub_inc_5">تركيز على السوق السعودي والخليجي</div>
-        <div class="pricing-include-item" data-i18n="sub_inc_6">إلغاء في أي وقت</div>
-      </div>
-
-      <button class="pricing-cta" id="checkout-btn" type="button" data-i18n="subscribe_cta">اشترك الآن</button>
-      <p class="pricing-secure" data-i18n="subscribe_secure_note">الدفع يتم عبر Stripe. لا نرى بيانات بطاقتك مطلقاً.</p>
-
-      <div class="pricing-status" id="status-success" data-i18n="subscribe_status_success">تم تفعيل اشتراكك بنجاح. يمكنك الآن الوصول إلى جميع المحتويات.</div>
-      <div class="pricing-status" id="status-cancelled" data-i18n="subscribe_status_cancelled">تم إلغاء الدفع. يمكنك الاشتراك متى أردت.</div>
-      <div class="pricing-status" id="status-error" data-i18n="subscribe_status_failed">لم يكتمل الدفع. حاول مرة أخرى أو تواصل مع الدعم.</div>
-    </div>
+    <!-- Renders into one of two modes from data/config.json#subscription.mode -->
+    <div id="subscribe-root"></div>
 
     <p style="text-align:center;color:var(--text-muted);font-size:12px;margin-top:24px;line-height:1.7;">
-      بالنقر على «اشترك الآن» أنت توافق على
+      بمتابعتك أنت توافق على
       <a href="terms.html" style="color:var(--text-tertiary);">الشروط</a>
       و
       <a href="privacy.html" style="color:var(--text-tertiary);">سياسة الخصوصية</a>.
@@ -54,65 +30,169 @@
   <script src="assets/js/subscription.js"></script>
   <script src="assets/js/analytics.js"></script>
   <script>
-    (async function () {
-      const cfg = await window.RadarSubscription.loadConfig();
-      const lang = (localStorage.getItem('axp_lang') || (cfg.product && cfg.product.primary_locale) || 'ar');
-      // Localize price amount + per-cycle suffix from config
-      const priceEl = document.getElementById('price-amount');
-      if (priceEl && cfg.subscription) {
-        priceEl.textContent = lang === 'ar'
-          ? (cfg.subscription.price_label_ar || '15 دولار')
-          : (cfg.subscription.price_label_en || '$15');
-      }
+  (async function () {
+    const cfg = await window.RadarSubscription.loadConfig();
+    const sub = cfg.subscription || {};
+    const mode = (sub.mode || 'coming_soon').toLowerCase();
+    const lang = (localStorage.getItem('axp_lang') || cfg.product?.primary_locale || 'ar');
+    const ar = lang === 'ar';
+    const root = document.getElementById('subscribe-root');
 
-      // Show return-from-checkout banners
-      const qs = new URLSearchParams(location.search);
-      const status = qs.get('status');
-      if (status === 'success') {
-        document.getElementById('status-success').classList.add('show', 'success');
-      } else if (status === 'cancelled') {
-        document.getElementById('status-cancelled').classList.add('show', 'error');
-      } else if (status === 'failed') {
-        document.getElementById('status-error').classList.add('show', 'error');
-      }
+    function escapeAttr(s){ return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;'); }
 
-      // If already subscribed, route to account
-      if (window.RadarSubscription.IsUserSubscribed() && status !== 'success') {
-        const note = document.createElement('div');
-        note.className = 'pricing-status show success';
-        note.textContent = 'لديك اشتراك فعّال بالفعل.';
-        const btn = document.getElementById('checkout-btn');
-        btn.textContent = 'اذهب إلى حسابي';
-        btn.addEventListener('click', () => location.assign('account.html'));
-        btn.parentNode.insertBefore(note, btn);
-        return;
-      }
+    /* ---------- Coming soon mode ---------- */
+    if (mode === 'coming_soon') {
+      const headline = ar ? sub.coming_soon_headline_ar : sub.coming_soon_headline_en;
+      const body     = ar ? sub.coming_soon_body_ar     : sub.coming_soon_body_en;
+      const cta      = ar ? sub.coming_soon_cta_ar      : sub.coming_soon_cta_en;
+      const benefits_ar = [
+        'سعر مؤسّسين أقل من السعر الرسمي',
+        'وصول مبكّر قبل الإطلاق العام بأسبوع',
+        'محتوى يومي عن إشارات الذكاء الاصطناعي والفرص',
+        'مساعد ذكي يجيب على أسئلتك بناءً على البيانات الحالية',
+        'تركيز خاص على السوق السعودي والخليجي',
+      ];
+      const benefits_en = [
+        'Founder-tier price below the public launch rate',
+        'Early access one week before public launch',
+        'Daily AI signal intelligence and opportunities',
+        'AI assistant that answers from live radar data',
+        'Special focus on Saudi/Gulf market',
+      ];
+      const benefits = ar ? benefits_ar : benefits_en;
 
-      // Handle checkout
-      const btn = document.getElementById('checkout-btn');
-      btn.addEventListener('click', async () => {
-        if (window.RadarAnalytics) window.RadarAnalytics.subscribeClicked('subscribe_page');
+      root.innerHTML = `
+        <div class="pricing-card">
+          <div class="pricing-eyebrow">${ar ? 'مرحلة الإطلاق' : 'LAUNCH PHASE'}</div>
+          <h1 style="font-size:28px;font-weight:700;margin-bottom:12px;line-height:1.3;">${escapeAttr(headline)}</h1>
+          <p style="color:var(--text-secondary);font-size:15px;line-height:1.85;margin-bottom:24px;">${escapeAttr(body)}</p>
+
+          <div class="pricing-includes">
+            <div class="pricing-includes-title">${ar ? 'ما يحصل عليه أعضاء قائمة الانتظار' : 'Waitlist member benefits'}</div>
+            ${benefits.map(b => `<div class="pricing-include-item">${escapeAttr(b)}</div>`).join('')}
+          </div>
+
+          <form class="waitlist-form" id="waitlist-form" autocomplete="off">
+            <label for="waitlist-email" style="display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-tertiary);margin-bottom:8px;font-family:'JetBrains Mono',monospace;">
+              ${ar ? 'البريد الإلكتروني' : 'Email address'}
+            </label>
+            <div style="display:flex;gap:8px;">
+              <input
+                id="waitlist-email"
+                type="email"
+                required
+                placeholder="${escapeAttr(ar ? 'your@email.com' : 'your@email.com')}"
+                style="flex:1;padding:12px 14px;border-radius:12px;border:1px solid var(--border-default);background:rgba(255,255,255,.04);color:var(--text-primary);font-size:14px;font-family:inherit;outline:none;" />
+              <button type="submit" class="pricing-cta" style="width:auto;padding:12px 22px;margin:0;font-size:14px;">${escapeAttr(cta)}</button>
+            </div>
+          </form>
+
+          <div class="pricing-status" id="waitlist-status"></div>
+
+          <p class="pricing-secure" style="margin-top:18px;">
+            ${ar ? 'لن نرسل لك سبامًا — فقط إشعار الإطلاق ورمز الخصم الخاص بقائمة الانتظار.' : 'No spam — only the launch notification and your waitlist discount code.'}
+          </p>
+        </div>
+
+        <div style="margin-top:22px;padding:14px 16px;border:1px dashed var(--border-default);border-radius:var(--r-4);font-size:12.5px;color:var(--text-tertiary);line-height:1.85;text-align:center;">
+          ${ar
+            ? 'كل محتوى الرادار <strong style="color:var(--text-primary);">متاح مجانًا الآن</strong> خلال مرحلة الإطلاق. <a href="radar.html" style="color:var(--accent);">عُد للرادار</a>.'
+            : 'All radar content is <strong style="color:var(--text-primary);">free during launch</strong>. <a href="radar.html" style="color:var(--accent);">Back to the radar</a>.'}
+        </div>
+      `;
+
+      const form = document.getElementById('waitlist-form');
+      const statusEl = document.getElementById('waitlist-status');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('waitlist-email').value.trim();
+        if (!email) return;
+        const btn = form.querySelector('button');
         btn.disabled = true;
         const original = btn.textContent;
-        btn.textContent = 'جارٍ التحويل…';
-        try {
-          const result = await window.RadarSubscription.StartCheckout({ origin: 'subscribe_page' });
-          if (result && result.fallback) {
-            // No backend yet — fallback path. We let the user know and stay on the page.
-            const errBox = document.getElementById('status-error');
-            errBox.textContent = 'الدفع الحقيقي غير مفعّل بعد. تواصل معنا لتفعيل اشتراكك يدوياً، أو راجع SUBSCRIPTION.md لربط Stripe.';
-            errBox.classList.add('show', 'error');
-            btn.disabled = false;
-            btn.textContent = original;
-          }
-        } catch (err) {
-          window.RadarSubscription.HandlePaymentFailure(String(err && err.message || err));
-          btn.disabled = false;
-          btn.textContent = original;
-          document.getElementById('status-error').classList.add('show', 'error');
+        btn.textContent = ar ? 'جارٍ التسجيل…' : 'Joining…';
+
+        const action = sub.waitlist_form_action;
+        let ok = false;
+        if (action) {
+          try {
+            const r = await fetch(action, { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }, body: JSON.stringify({ email, source: 'radar_waitlist' }) });
+            ok = r.ok;
+          } catch (e) { ok = false; }
         }
+        // Always store locally so the user has a record (and we have a fallback list).
+        try {
+          const list = JSON.parse(localStorage.getItem('radar_waitlist_v1') || '[]');
+          list.push({ email, ts: Date.now() });
+          localStorage.setItem('radar_waitlist_v1', JSON.stringify(list.slice(-100)));
+        } catch (e) {}
+
+        if (window.RadarAnalytics && window.RadarAnalytics.subscribeClicked) {
+          window.RadarAnalytics.subscribeClicked('waitlist');
+        }
+        if (window.RadarSubscription && window.RadarSubscription.Analytics) {
+          window.RadarSubscription.Analytics('waitlist_signup', { email_domain: email.split('@')[1] || 'unknown', remote_ok: ok });
+        }
+
+        statusEl.className = 'pricing-status show success';
+        statusEl.textContent = ar
+          ? '✓ سجّلت في قائمة الانتظار. سيصلك إشعار عند الإطلاق.'
+          : '✓ You\'re on the waitlist. We\'ll email you at launch.';
+        form.style.display = 'none';
       });
-    })();
+
+      return;
+    }
+
+    /* ---------- Live mode (payment provider active) ---------- */
+    const provider = (cfg.payment_provider || 'moyasar').toLowerCase();
+    const providerLabel = provider === 'stripe' ? 'Stripe' : 'Moyasar';
+    const priceLabel = ar ? (sub.price_label_ar || '15 ريال') : (sub.price_label_en || '$15');
+
+    root.innerHTML = `
+      <div class="pricing-card">
+        <div class="pricing-eyebrow">${ar ? 'الاشتراك' : 'SUBSCRIPTION'}</div>
+        <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;line-height:1.3;">${ar ? 'افتح الرادار بالكامل.' : 'Unlock the full Radar.'}</h1>
+        <p style="color:var(--text-secondary);font-size:15px;line-height:1.7;margin-bottom:24px;">${ar ? 'اشتراك واحد يمنحك الوصول الكامل للفرص والإشارات والنشرة اليومية.' : 'One subscription, full access to opportunities, signals, and the daily brief.'}</p>
+
+        <div class="pricing-amount">
+          <span>${priceLabel}</span>
+          <small>${ar ? '/شهر' : '/month'}</small>
+        </div>
+
+        <button class="pricing-cta" id="checkout-btn">${ar ? 'اشترك الآن' : 'Subscribe now'}</button>
+        <p class="pricing-secure">${ar ? `الدفع عبر ${providerLabel} — لا نرى بيانات بطاقتك مطلقًا.` : `Payment via ${providerLabel} — we never see your card.`}</p>
+
+        <div class="pricing-status" id="status-success">${ar ? 'تم تفعيل اشتراكك بنجاح.' : 'Subscription activated.'}</div>
+        <div class="pricing-status" id="status-cancelled">${ar ? 'تم إلغاء الدفع.' : 'Payment cancelled.'}</div>
+        <div class="pricing-status" id="status-error">${ar ? 'لم يكتمل الدفع.' : 'Payment did not complete.'}</div>
+      </div>
+    `;
+
+    const qs = new URLSearchParams(location.search);
+    const status = qs.get('status');
+    if (status === 'success')   document.getElementById('status-success').classList.add('show', 'success');
+    if (status === 'cancelled') document.getElementById('status-cancelled').classList.add('show', 'error');
+    if (status === 'failed')    document.getElementById('status-error').classList.add('show', 'error');
+
+    const btn = document.getElementById('checkout-btn');
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      const original = btn.textContent;
+      btn.textContent = ar ? 'جارٍ التحويل…' : 'Redirecting…';
+      try {
+        const r = await window.RadarSubscription.StartCheckout({ origin: 'subscribe_page' });
+        if (r && r.fallback) {
+          document.getElementById('status-error').classList.add('show', 'error');
+          document.getElementById('status-error').textContent = ar ? 'الدفع غير مفعّل بعد. تواصل معنا.' : 'Payment not active yet. Please contact us.';
+          btn.disabled = false; btn.textContent = original;
+        }
+      } catch (e) {
+        btn.disabled = false; btn.textContent = original;
+        document.getElementById('status-error').classList.add('show', 'error');
+      }
+    });
+  })();
   </script>
 </body>
 </html>
