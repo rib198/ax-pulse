@@ -84,8 +84,13 @@ def _engagement(metrics: dict) -> int:
 
 
 def _opportunity_score(post: dict) -> float:
-    """Combine the curator's pain score with raw engagement so quietly-
-    interesting posts can still surface alongside loud ones."""
+    """If x_smart_enrich.py has already scored this post on five axes,
+    trust its radar_score. Otherwise fall back to the simpler heuristic
+    (engagement + pain + tags + keywords)."""
+    radar = post.get("radar_score")
+    if isinstance(radar, (int, float)) and radar > 0:
+        return round(float(radar), 3)
+    # Legacy fallback for un-enriched posts
     pain = float(post.get("pain_signal_score") or 0)
     eng = _engagement(post.get("public_metrics") or {})
     eng_norm = min(0.35, eng / 1000)
@@ -103,6 +108,15 @@ def _normalize(post: dict, run_at: str) -> dict | None:
     if len(text) < MIN_TEXT_LEN:
         return None
     if (post.get("verification_status") or "").lower() == "rejected":
+        return None
+
+    # New: respect the enricher's verdict.
+    # - duplicates: drop entirely (the canonical post still flows)
+    # - spam: drop entirely
+    if post.get("is_duplicate_of"):
+        return None
+    enrichment = post.get("enrichment") or {}
+    if enrichment.get("is_spam"):
         return None
 
     posted_at = post.get("posted_at") or post.get("collected_at") or run_at
@@ -144,7 +158,8 @@ def _normalize(post: dict, run_at: str) -> dict | None:
         "posted_at":           posted_at,
         "collected_at":        post.get("collected_at") or run_at,
         "matched_keywords":    keywords,
-        "signal_type":         _signal_type(text, float(post.get("pain_signal_score") or 0)),
+        "signal_type":         (enrichment.get("signal_type") or post.get("signal_type")
+                                or _signal_type(text, float(post.get("pain_signal_score") or 0))),
         "opportunity_score":   score,
         "metrics":             metrics,
         "verification_status": post.get("verification_status") or "manual_curated",
