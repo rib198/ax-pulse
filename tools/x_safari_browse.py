@@ -58,6 +58,7 @@ EXTRACT_JS = ROOT / "tools" / "x_extract.js"
 POSTS_PATH = ROOT / "data" / "manual_x" / "posts.json"
 WATCHLIST_PATH = ROOT / "data" / "manual_x" / "watchlist.txt"
 STATE_PATH = ROOT / "data" / "manual_x" / "safari_state.json"
+TARGETS_PATH = ROOT / "data" / "manual_x" / "handle_targets.json"
 ENRICH_SCRIPT = ROOT / "tools" / "x_smart_enrich.py"
 RADAR_SCRIPT = ROOT / "tools" / "run_radar_agents.py"
 
@@ -176,6 +177,28 @@ def load_state() -> dict:
 def save_state(state: dict) -> None:
     STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def target_for_handle(handle: str) -> int:
+    """Per-handle tweet-collection target. Falls back to global default,
+    then the in-code CONTINUOUS default. Edited via:
+        python3 tools/x_manage.py set-target @handle N
+    """
+    if not TARGETS_PATH.exists():
+        return CONTINUOUS["target_tweets"]
+    try:
+        cfg = json.loads(TARGETS_PATH.read_text("utf-8"))
+    except Exception:
+        return CONTINUOUS["target_tweets"]
+    handles = cfg.get("handles") or {}
+    v = handles.get(handle.lower())
+    if v is None:
+        v = cfg.get("default", CONTINUOUS["target_tweets"])
+    try:
+        v = int(v)
+    except (ValueError, TypeError):
+        return CONTINUOUS["target_tweets"]
+    return max(5, min(1000, v))
 
 
 def in_cooldown(state: dict) -> tuple[bool, float]:
@@ -559,10 +582,20 @@ def continuous_loop(extract_js: str, run_pipeline: bool) -> int:
     visits_since_warmup = 0
     enrich_counter = 0
 
+    targets_cfg = {}
+    if TARGETS_PATH.exists():
+        try:
+            targets_cfg = json.loads(TARGETS_PATH.read_text("utf-8"))
+        except Exception:
+            targets_cfg = {}
+    default_target = targets_cfg.get("default", CONTINUOUS["target_tweets"])
+    overrides = targets_cfg.get("handles") or {}
+
     print(f"=== Continuous Safari session — started {_now_iso()} ===")
     print(f"  policy: 1 profile every "
           f"{CONTINUOUS['interval_min_seconds']//60}–{CONTINUOUS['interval_max_seconds']//60} min, "
-          f"target {CONTINUOUS['target_tweets']} tweets/profile")
+          f"default target {default_target} tweets/profile"
+          + (f" ({len(overrides)} per-handle overrides)" if overrides else ""))
     print(f"  daily safety caps: {CONTINUOUS['daily_handle_quota']} profiles + "
           f"{CONTINUOUS['daily_tweet_quota']} tweets")
     print("  Ctrl+C to stop. State persists between runs.")
@@ -628,10 +661,11 @@ def continuous_loop(extract_js: str, run_pipeline: bool) -> int:
             candidates = sorted(all_handles, key=lambda hs: history.get(hs[0].lower()) or "0")
         handle, section = random.choice(candidates[: min(40, len(candidates))])
 
-        # Visit deep
+        # Visit deep — per-handle target from handle_targets.json, fall back to global default
+        target = target_for_handle(handle)
         items = collect_deep_from_handle(
             handle, section, extract_js,
-            target=CONTINUOUS["target_tweets"],
+            target=target,
             max_scrolls=CONTINUOUS["max_scrolls"],
         )
 
