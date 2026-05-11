@@ -80,10 +80,10 @@ body {
 }
 
 .radar-nav {
-  /* T19: anchored to header zone so the same layout works at every viewport. */
+  /* Keep the nav on a simple Safari-safe vertical anchor. */
   position: absolute;
   inset-inline: 50% auto;
-  top: clamp(8px, calc((var(--zone-header-h) - 56px) / 2 + 8px), 28px);
+  top: clamp(10px, 2.2svh, 24px);
   transform: translateX(50%);
   z-index: var(--z-radar-nav);
   display: flex;
@@ -129,21 +129,19 @@ body {
 }
 
 .radar-copy {
-  /* T19: anchored to header zone, side gutter responsive. */
   position: absolute;
   z-index: var(--z-radar-copy);
   top: calc(var(--zone-header-h) + 8px);
   left: var(--rail-side-x);
   right: auto;
-  width: min(440px, calc(100vw - var(--rail-side-x) * 2 - 380px));
+  width: min(440px, calc(100vw - 420px));
   text-align: start;
   pointer-events: none;
   user-select: none;
 }
 @media (max-width: 1024px) {
   .radar-copy {
-    /* On tablet/mobile, copy spans full width below the nav. */
-    width: calc(100vw - var(--rail-side-x) * 2);
+    width: calc(100vw - 28px);
     max-width: 520px;
   }
 }
@@ -189,17 +187,16 @@ body {
 }
 
 .radar-world {
-  /* T19: world is centered inside the content zone (between header and
-     active panel zones). max-height prevents the aspect-ratio from
-     overflowing the stage on shorter screens. */
+  /* Safari-safe sizing: avoid CSS calc division/multiplication so the globe
+     never falls back to top:auto or a shrink-wrapped width. */
   position: absolute;
   z-index: 9;
   left: 50%;
-  top: calc(var(--zone-header-h) + (100svh - var(--zone-header-h) - var(--zone-active-h) - var(--zone-footer-h)) / 2);
-  width: min(72vw, 1080px);
-  max-width: calc(100svh - var(--zone-header-h) - var(--zone-active-h) - var(--zone-footer-h)) * 1.3;
+  top: clamp(300px, 40svh, 460px);
+  width: min(64vw, 82vh, 960px);
+  width: min(64vw, 82svh, 960px);
+  max-width: 960px;
   aspect-ratio: 1.42;
-  max-height: calc(100svh - var(--zone-header-h) - var(--zone-active-h) - var(--zone-footer-h) - 16px);
   transform: translate(-50%, -50%);
   display: grid;
   place-items: center;
@@ -897,7 +894,7 @@ body {
   /* T19: lang toggle anchored to header zone, side gutter responsive. */
   position: absolute;
   inset-inline-end: var(--rail-side-x);
-  top: clamp(8px, calc((var(--zone-header-h) - 56px) / 2 + 8px), 30px);
+  top: clamp(10px, 2.2svh, 24px);
   z-index: var(--z-radar-lang);
   display: inline-flex;
   gap: 4px;
@@ -936,7 +933,7 @@ body {
   z-index: var(--z-value-rail);
   top: calc(var(--zone-header-h) + 4px);
   right: var(--rail-side-x);
-  width: min(360px, calc(100vw - var(--rail-side-x) * 2 - 380px));
+  width: min(360px, calc(100vw - 420px));
   padding: 14px 16px;
   border: 1px solid rgba(126, 235, 255, 0.14);
   border-radius: 18px;
@@ -1210,7 +1207,7 @@ html[dir="rtl"] .radar-nav button {
   z-index: var(--z-detail-side);
   top: calc(var(--zone-header-h) + 4px);
   bottom: calc(var(--zone-active-h) + var(--zone-footer-h) - 4px);
-  width: min(380px, calc(100vw - var(--rail-side-x) * 2));
+  width: min(380px, calc(100vw - 40px));
   padding: 24px 26px;
   overflow-y: auto;
   border: 1px solid rgba(110, 239, 255, 0.22);
@@ -1708,13 +1705,13 @@ html[dir="rtl"] .detail-evidence-card b {
 }
 
 .data-panel {
-  /* T19: pinned to the bottom (just above footer zone), full width responsive. */
+  /* Pinned to the bottom with Safari-safe width math. */
   position: absolute;
   z-index: var(--z-data-panel);
   left: 50%;
   bottom: var(--zone-footer-h);
   transform: translateX(-50%);
-  width: min(1460px, calc(100vw - var(--rail-side-x) * 2));
+  width: min(1460px, calc(100vw - 144px));
   height: clamp(108px, 14vh, 168px);
   min-height: 0;
   max-height: 124px;
@@ -2103,7 +2100,7 @@ html[dir="rtl"] .detail-evidence-card b {
   z-index: var(--z-source-health);
   top: calc(var(--zone-header-h) + 24px);
   inset-inline-end: var(--rail-side-x);
-  width: min(460px, calc(100vw - var(--rail-side-x) * 2));
+  width: min(460px, calc(100vw - 40px));
   max-height: calc(100svh - var(--zone-header-h) - var(--zone-active-h) - var(--zone-footer-h) - 32px);
   overflow: hidden;
   padding: 16px;
