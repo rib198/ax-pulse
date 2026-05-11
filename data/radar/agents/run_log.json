@@ -1,0 +1,235 @@
+{
+  "run_at": "2026-05-11T09:51:23+00:00",
+  "openai_calls": 0,
+  "openai_budget": 40,
+  "agents": [
+    "source_collector",
+    "evidence_guard",
+    "load_learned_weights",
+    "priority_ranker",
+    "companies_detector",
+    "models_pulse",
+    "event_detector",
+    "market_radar",
+    "opportunity_builder",
+    "radar_editor",
+    "access_tier",
+    "auto_archive",
+    "growth_social",
+    "ux_production_qa",
+    "performance_analytics",
+    "insight_generator",
+    "memory_learning"
+  ],
+  "results": [
+    {
+      "agent": "source_collector",
+      "ok": false,
+      "duration_s": 5.312,
+      "written": [],
+      "notes": [],
+      "error": "ParseError: not well-formed (invalid token): line 1, column 26"
+    },
+    {
+      "agent": "evidence_guard",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/agents/evidence_report.json"
+      ],
+      "notes": [
+        "tagged 0 items"
+      ],
+      "error": null
+    },
+    {
+      "agent": "load_learned_weights",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [],
+      "notes": [
+        "no prior learnings — using defaults"
+      ],
+      "error": null
+    },
+    {
+      "agent": "priority_ranker",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/signals.json"
+      ],
+      "notes": [
+        "ranked 0 items, top priority=0.000"
+      ],
+      "error": null
+    },
+    {
+      "agent": "companies_detector",
+      "ok": true,
+      "duration_s": 0.001,
+      "written": [
+        "data/radar/agents/companies.json"
+      ],
+      "notes": [
+        "detected 0 companies, 0 products this run",
+        "store size: 0"
+      ],
+      "error": null
+    },
+    {
+      "agent": "models_pulse",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/model_timeline.json"
+      ],
+      "notes": [
+        "+0 new model events",
+        "0 total"
+      ],
+      "error": null
+    },
+    {
+      "agent": "event_detector",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/agents/events.json"
+      ],
+      "notes": [
+        "0 events (0 new)"
+      ],
+      "error": null
+    },
+    {
+      "agent": "market_radar",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/agents/market_focus.json"
+      ],
+      "notes": [
+        "0 arab-market items"
+      ],
+      "error": null
+    },
+    {
+      "agent": "opportunity_builder",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/opportunities.json"
+      ],
+      "notes": [
+        "rule fallback produced 0 opportunities"
+      ],
+      "error": null
+    },
+    {
+      "agent": "radar_editor",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/brief.ar.json",
+        "data/brief.en.json"
+      ],
+      "notes": [
+        "rule fallback brief"
+      ],
+      "error": null
+    },
+    {
+      "agent": "access_tier",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/opportunities.json",
+        "data/radar/signals.json"
+      ],
+      "notes": [],
+      "error": null
+    },
+    {
+      "agent": "auto_archive",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/opportunities.json",
+        "data/radar/signals.json"
+      ],
+      "notes": [],
+      "error": null
+    },
+    {
+      "agent": "growth_social",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/agents/social_posts.json"
+      ],
+      "notes": [
+        "rule fallback produced 0 posts"
+      ],
+      "error": null
+    },
+    {
+      "agent": "ux_production_qa",
+      "ok": true,
+      "duration_s": 0.001,
+      "written": [
+        "data/radar/agents/qa_report.json"
+      ],
+      "notes": [
+        "3 issues"
+      ],
+      "error": null
+    },
+    {
+      "agent": "performance_analytics",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/agents/performance.json"
+      ],
+      "notes": [
+        "items=0, opps=0, calls=0"
+      ],
+      "error": null
+    },
+    {
+      "agent": "insight_generator",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/agents/insights.json"
+      ],
+      "notes": [
+        "insight via rules: لم تُرصد أحداث مركّبة من الإشارات هذا التشغيل."
+      ],
+      "error": null
+    },
+    {
+      "agent": "memory_learning",
+      "ok": true,
+      "duration_s": 0.0,
+      "written": [
+        "data/radar/agents/learnings.json"
+      ],
+      "notes": [
+        "tracked 0 sources",
+        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
+      ],
+      "error": null
+    },
+    {
+      "agent": "orchestrator",
+      "ok": true,
+      "duration_s": 0,
+      "written": [],
+      "notes": [
+        "reused 225 items from disk"
+      ]
+    }
+  ]
+}

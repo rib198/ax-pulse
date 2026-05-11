@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-05-11T09:51:23+00:00",
+  "ok": false,
+  "issue_count": 3,
+  "issues": [
+    "brief.ar: only 0 stories (expect ≥3)",
+    "brief.en: only 0 stories (expect ≥3)",
+    "opportunities: empty list"
+  ],
+  "checks": [
+    {
+      "page": "index.html",
+      "ok": true,
+      "issues": [],
+      "data_deps": []
+    },
+    {
+      "page": "dashboard.html",
+      "ok": true,
+      "issues": [],
+      "data_deps": [
+        "data/brief.ar.json",
+        "data/brief.en.json",
+        "data/radar/opportunities.json",
+        "data/i18n.json"
+      ]
+    },
+    {
+      "page": "radar.html",
+      "ok": true,
+      "issues": [],
+      "data_deps": [
+        "data/radar/signals.json",
+        "data/radar/opportunities.json",
+        "data/i18n.json"
+      ]
+    },
+    {
+      "page": "trending.html",
+      "ok": true,
+      "issues": [],
+      "data_deps": [
+        "data/clusters.json",
+        "data/i18n.json"
+      ]
+    },
+    {
+      "page": "opportunities.html",
+      "ok": true,
+      "issues": [],
+      "data_deps": [
+        "data/radar/opportunities.json",
+        "data/i18n.json"
+      ]
+    },
+    {
+      "page": "categories.html",
+      "ok": true,
+      "issues": [],
+      "data_deps": [
+        "data/categories.json",
+        "data/i18n.json"
+      ]
+    },
+    {
+      "page": "subscribe.html",
+      "ok": true,
+      "issues": [],
+      "data_deps": []
+    }
+  ],
+  "note_ar": "تقرير صحة الواجهات والمحتوى. أي عنصر هنا يجب أن يفسّر قبل الإطلاق."
+}
