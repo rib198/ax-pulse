@@ -409,6 +409,11 @@ function scheduleTimelineAutoplay() {
 
   RadarState.timelineAutoTimer = window.setInterval(() => {
     if (RadarState.layer !== 'radar' || RadarState.autoTimelinePaused) return;
+    // Never let autoplay paint a detail card over an open conversation
+    // or a user-opened detail. The user's foreground takes priority.
+    if (document.body.classList.contains('has-chat-open')) return;
+    const dm = document.getElementById('detail-modal');
+    if (dm && !dm.hidden) return;
     const rows = timelineRows();
     if (!rows.length) return;
     RadarState.activeTimelineIndex = (RadarState.activeTimelineIndex + 1) % rows.length;
@@ -831,6 +836,9 @@ function formatSourceLinks(links) {
 
 function openTimelineDetail(item, idx = 0, auto = false) {
   if (!item) return;
+  // Auto-opens (driven by the 6.2s timeline interval) must yield to the
+  // chat drawer — otherwise they paint over the user's conversation.
+  if (auto && document.body.classList.contains('has-chat-open')) return;
   const isAr = RadarState.lang === 'ar';
   const L = (ar, en) => isAr ? ar : en;
   setFocusedDetail('timeline', item, idx);

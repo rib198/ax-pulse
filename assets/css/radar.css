@@ -2144,7 +2144,9 @@ body.has-chat-open .radar-subscribe-cta { opacity: 0; pointer-events: none; tran
   top: 0; bottom: 0;
   inset-inline-end: 0;
   width: min(420px, 100vw);
-  z-index: 60;
+  /* MUST stay above .detail-side (z-index: 100) so the timeline autoplay
+     never paints a detail card on top of an open conversation. */
+  z-index: 120;
   display: flex;
   flex-direction: column;
   background: rgba(8, 14, 22, 0.96);

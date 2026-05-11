@@ -410,6 +410,17 @@
 
   function open(opts) {
     opts = opts || {};
+
+    // Dismiss any open detail-modal so it never overlaps the conversation.
+    // Also pause the radar timeline autoplay (6.2s interval) to stop new
+    // auto-opens while the user is talking to the assistant.
+    const detailModal = document.getElementById('detail-modal');
+    if (detailModal && !detailModal.hidden) {
+      detailModal.hidden = true;
+      detailModal.classList.remove('detail-locked-mode');
+    }
+    if (window.RadarState) window.RadarState.autoTimelinePaused = true;
+
     drawer.hidden = false;
     fab.setAttribute('aria-expanded', 'true');
     document.body.classList.add('has-chat-open');
@@ -439,6 +450,8 @@
     drawer.classList.remove('chat-open');
     fab.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('has-chat-open');
+    // Restore the radar's natural rhythm when the user dismisses the chat.
+    if (window.RadarState) window.RadarState.autoTimelinePaused = false;
     setTimeout(() => { drawer.hidden = true; }, 220);
   }
 
