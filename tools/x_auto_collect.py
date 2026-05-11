@@ -310,8 +310,13 @@ def build_plan() -> list[tuple[str, str, int, str]]:
         except Exception:
             pass
 
+    # Auto-scale tweets-per-account based on list size so cron doesn't run
+    # for 15 minutes on a 200-account watchlist. Tunable via env.
+    per_account = int(os.environ.get("X_TWEETS_PER_ACCOUNT", "0"))
+    if per_account <= 0:
+        per_account = 10 if len(accounts) <= 30 else (7 if len(accounts) <= 60 else 5)
     for handle, section in accounts:
-        plan.append(("account", handle, 10, section))
+        plan.append(("account", handle, per_account, section))
 
     # Keyword searches (always read from search_queries.json)
     if QUERIES_PATH.exists():

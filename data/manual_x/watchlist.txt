@@ -1,25 +1,164 @@
 # Radar X Watchlist
 # ===================
 #
-# هذا الملف يحدّد الحسابات التي يجمع منها الرادار التغريدات تلقائيًا.
-# عدّله متى شئت — كل تغيير يأخذه x_auto_collect.py في التشغيل التالي.
+# الحسابات التي يجمع منها الرادار التغريدات تلقائيًا.
+# عدّله بحرية — كل تغيير يُلتقَط في التشغيل التالي.
 #
-# القواعد:
-#   • سطر يبدأ بـ #    → تعليق (يُتجاهل)
-#   • سطر يبدأ بـ ##   → اسم قسم (يُستخدم كـ tag للتغريدات من هذا القسم)
-#   • سطر فيه @handle  → حساب يُتابع
-#   • سطر فارغ          → يُتجاهل
+# الصيغة:
+#   • # تعليق                  → يُتجاهل
+#   • ## اسم_القسم            → عنوان قسم (يُستخدم كـ tag للتغريدات)
+#   • @handle                   → حساب يُتابع
+#   • فارغ                       → يُتجاهل
 #
-# الـ section tag يظهر مع كل تغريدة لتسهيل التصفية والترتيب في الرادار.
+# عدد التغريدات لكل حساب يضبط من x_auto_collect.py (افتراضي 5 للقوائم الكبيرة).
+
+# =============================================
+#  السعودية
+# =============================================
+
+## saudi_official
+# جهات رسمية، برامج تعليم، جمعيات
+@SDAIA_SA
+@HUMAIN
+@TareqAmin_
+@TuwaiqAcademy
+@GlobalAISummit
+@SCAI_AI
+@THAKAA_SA
+@aia_org_sa
+@SDAIA_KAUST_AI
+@KAUST_Academy
+@SdaAcademy
+@SSDS_ksu
+@ssai_ksu
+@KSU_AIO
+@ksuAIClub
+@Alwagait
+
+## saudi_companies
+# شركات AI سعودية
+@Mozn_ai
+@Quant_sa
+@NeuralBank_ai
+@Lucidya
+
+## saudi_research
+# أكاديميون وباحثون
+@twairesh
+@SOAH_
+@hend_alkhalifa
+@Dr_AliAlkh
+@Drtahani_muqbil
+@h_alhuzali
+@LatifaMKarim
+
+## saudi_builders
+# مبرمجون وصانعو محتوى تقني سعوديون
+@Abdulaziz_Hmadi
+@falsaif
+@AR_Kareem_
+@QarawiAl
+@SamirJunaid
+@Shaye_Alshaye
+@YousefRol
+@MansourAlobaid
+@nalhazmii
+@MohammadAlodadi
+@ma7dev
+@3koozy
+@mo7ammadal7asan
 
 ## arab_ai_builders
-# بناة AI عرب — حسابات تعليمية وتقنية بالعربية
+# صانعو محتوى AI بالعربية (قائمة الجولة الأولى)
 @dr2alshehri
 @alghali
 @cnemalek
 @mukhtasar_ai
 @NabrahAI
 @_TALEBM_
+
+# =============================================
+#  الإمارات + الخليج
+# =============================================
+
+## uae_ai
+# جهات رسمية وشركات AI في الإمارات
+@uaeai_2031
+@OmarSAlolama
+@mbzuai
+@TIIuae
+@Falcon_LLM_TII
+@ai71official
+@G42ai
+@Inception_AI
+@core42_ai
+@atrcuae
+@DubaiFuture
+
+## qatar_ai
+# قطر — أبحاث ومنتجات
+@QatarComputing
+@Ai_Fanar
+@qcrialt
+@NadirDurrani5
+@akelmagarmid
+@FirojAlam04
+
+## egypt_tech
+# مصر — جهات وتعليم تقني
+@MCITEgypt
+@ITIDA
+@EgyptInnovate
+@itimooca
+@SECC_EG
+@Osama_Elzero
+
+# =============================================
+#  محتوى عربي + Arabic NLP
+# =============================================
+
+## arab_content
+# نشرات وحسابات عربية تشرح AI
+@Arabic_ai
+@AIinArabic
+@BelarabiAi
+@AI_News_AR
+@KhaledElAhmad
+@GeneratePrompt
+@AI_journalism
+@ArabsDev
+@alarbtechcom
+
+## arabic_nlp
+# أبحاث ومجتمعات NLP العربية
+@CamelNlp
+@NYHabash
+@MonaDiab77
+@_ArabicNLP
+@mageed
+@balhafni
+@zaidalyafeai
+@arabicml2
+
+## arab_ai_products
+# منتجات AI عربية
+@UseSawt
+@XinaAIOfficial
+@kanari_ai
+@getlemonada
+@younesbag1
+
+## arab_other
+# باقي العالم العربي
+@hnasr
+@jo_osa
+@rolandanajem
+@AUB_SAIL
+@ouhtman
+
+# =============================================
+#  المختبرات والباحثين العالميين
+# =============================================
 
 ## global_labs
 # مختبرات AI الرسمية
@@ -39,8 +178,153 @@
 @emollick
 @jeremyphoward
 
+# =============================================
+#  بناة منتجات AI + شركات ناشئة
+# =============================================
+
+## product_builders
+# Founders, PMs, investors في فضاء AI
+@amasad
+@levie
+@garrytan
+@mattturck
+@danshipper
+@petergyang
+@kevinweil
+@joshwoodward
+@alexalbert__
+@mattshumer_
+@Suhail
+@rrhoover
+@andrewchen
+@lennysan
+@nabeelqu
+@ankrgyl
+@Raza_Habib
+@spolu
+@btaylor
+@antonosika
+
+# =============================================
+#  Coding Agents / LLMOps / Open Models
+# =============================================
+
+## coding_agents
+# AI coding tools، agents، LLM ops، open weights
+@paulgauthier
+@altryne
+@ScottWu46
+@zachlloydtweets
+@clattner_llvm
+@sh_reya
+@chipro
+@lilianweng
+@maximelabonne
+@_philschmid
+@abhi1thakur
+@natolambert
+@Teknium1
+@vikhyatk
+@tri_dao
+@Tim_Dettmers
+@OfirPress
+@mikeknoop
+@jackclarkSF
+@carlini
+
+# =============================================
+#  أخبار أدوات + إنتاجية
+# =============================================
+
+## tools_news
+# أدوات وتجارب يومية وثريدات عملية
+@minchoi
+@heyBarsee
+@heykahn
+@nonmayorpete
+@noahedelman02
+@nathanlands
+@itsandrewgao
+@AIHighlight
+@HBCoop_
+@Scobleizer
+@PeterDiamandis
+@waitin4agi_
+@DataChaz
+@Whats_AI
+@ykilcher
+@sirajraval
+@Sentdex
+@svpino
+@adamdangelo
+@mustafasuleyman
+
+# =============================================
+#  Creative AI — فيديو/صور/تصميم
+# =============================================
+
+## creative_ai
+# فن وفيديو وصور AI
+@icreatelife
+@refikanadol
+@sougwen
+@genekogan
+@nickfloats
+@javilopen
+@Ror_Fly
+@DonAllenIII
+@PaigePiskin
+@thedorbrothers
+@juliewdesign_
+@paultrillo
+@niceaunties
+@rainisto
+@fabianstelzer
+
+# =============================================
+#  أبحاث + تعليم + تفكير عميق
+# =============================================
+
+## research_education
+# أكاديميون وصحافة تحليلية وتعليم
+@lexfridman
+@geoffreyhinton
+@GaryMarcus
+@timnitGebru
+@katecrawford
+@erikbryn
+@DaphneKoller
+@etzioni
+@mrogati
+@miketamir
+@_KarenHao
+@math_rachel
+@quaesita
+@RichardSocher
+@seb_ruder
+@yoavgo
+@svlevine
+@chelseabfinn
+@AnimaAnandkumar
+@pmddomingos
+
+# =============================================
+#  أعمال + تسويق + مؤسسات
+# =============================================
+
+## business_marketing
+# AI في الأعمال والتسويق
+@paulroetzer
+@BernardMarr
+@pascal_bornet
+@YuHelenYu
+@Ronald_vanLoon
+
+# =============================================
+#  Dev Tools + Community (قائمة الجولة الأولى)
+# =============================================
+
 ## dev_tools
-# أدوات المطوّرين والـ AI engineers
 @cursor_ai
 @github
 @vercel
@@ -48,7 +332,6 @@
 @simonw
 
 ## community
-# مجتمعات وصنّاع محتوى
 @hardmaru
 @shl
 @swyx
