@@ -76,19 +76,17 @@ jobs:
           DAYS="${{ github.event.inputs.days || '30' }}"
           python3 tools/fetch_ai_newsletters.py --days "$DAYS" --max-per-source 40
 
-      # ----- Smart enrich the hand-captured X tweets BEFORE the agent pipeline.
-      # Re-scores each post on 5 axes (pain/launch/relevance/quality/arab),
-      # auto-extracts keywords + entities, detects duplicates and spam.
-      # The agent pipeline (manual_x_bridge) then consumes the enriched data
-      # and the cleaner radar_score flows all the way to the UI.
-      - name: Smart-enrich manual X tweets
+      # ----- Auto-collect new X tweets (X API + Nitter fallback) + enrich.
+      # Runs BEFORE the agent pipeline so freshly fetched tweets flow through
+      # manual_x_bridge and reach the UI in the same cron tick.
+      - name: Auto-collect X (with smart enrich)
         continue-on-error: true
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: |
-          if [ -f data/manual_x/posts.json ]; then
-            python3 tools/x_smart_enrich.py
-          else
-            echo "no data/manual_x/posts.json yet — skipping"
-          fi
+          python3 tools/x_auto_collect.py
+          # x_auto_collect.py runs x_smart_enrich.py internally, so no need
+          # to invoke it separately.
 
       # ----- Main 15-agent pipeline -----
       # AX_POST_AI is the user-chosen secret name for the OpenAI key.
