@@ -233,6 +233,8 @@ def is_weak_editorial_summary(text: str) -> bool:
         "تزايد الاهتمام بتعلّم بناء المنتجات",
         "إشارة حول تزايد الاهتمام",
         "محتوى مرتبط بأداة أو استخدام للذكاء",
+        "استخدمها كإلهام أولي فقط",
+        "احتفظ بها كفكرة مبكرة",
     ]
     return any(phrase in text for phrase in weak_phrases)
 

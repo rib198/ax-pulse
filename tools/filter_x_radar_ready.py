@@ -14,18 +14,24 @@ AI_TERMS = [
     "ai", "gpt", "gpt-5", "gpt-5.5", "claude", "chatgpt", "gemini", "llm",
     "agent", "agents", "automation", "n8n", "cursor", "codex", "sora", "veo",
     "midjourney", "runway", "hugging face", "voice cloning", "dubbing",
-    "ذكاء", "كلاود", "شات", "وكلاء", "أتمت", "بوتات", "نماذج"
+    "openai", "anthropic", "deepseek", "mcp", "devin", "lovable", "langchain",
+    "ذكاء", "كلاود", "شات", "وكلاء", "أتمت", "بوتات", "نماذج",
+    "人工智能", "智能体"
 ]
 
 PRODUCT_TERMS = [
     "income", "app ideas", "build", "tool", "tools", "startup", "mvp", "service",
     "workflow", "automate", "design", "slides", "cad", "website", "course",
-    "مصدر دخل", "دخل", "أدوات", "ابن", "أتمت", "موقع", "دورة", "أنظمة"
+    "api", "open source", "prompt", "prompts", "sdk",
+    "مصدر دخل", "دخل", "أدوات", "ابن", "أتمت", "موقع", "دورة", "أنظمة",
+    "工具", "产品", "应用", "模型", "提示词", "开源", "教程", "代码", "生意",
+    "赚钱", "收入", "创业", "工作流", "自动化"
 ]
 
 NEWS_TERMS = [
     "released", "launch", "breaking", "available", "free", "update", "model",
-    "إطلاق", "أطلقنا", "تحديث", "متاح", "مجاني"
+    "إطلاق", "أطلقنا", "تحديث", "متاح", "مجاني",
+    "发布", "上线", "新模型", "新工具", "完整指南", "保姆级教程"
 ]
 
 REJECT_TERMS = [

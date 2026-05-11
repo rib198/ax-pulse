@@ -32,7 +32,7 @@ AI_TERMS = [
     "langgraph", "crewai", "autogen",
     "ذكاء اصطناعي", "ذكاء صناعي", "كلود", "وكلاء", "وكيل", "شات جي بي تي",
     "أتمتة", "نماذج", "نموذج لغوي",
-    "人工知能", "生成ai", "aiエージェント", "인공지능", "智能体",
+    "人工知能", "人工智能", "生成ai", "aiエージェント", "인공지능", "智能体",
 ]
 PRODUCT_TERMS = [
     "tool", "tools", "launch", "launched", "released", "release", "ship",
@@ -41,6 +41,8 @@ PRODUCT_TERMS = [
     "design", "dashboard", "video", "voice", "dubbing", "api", "open source",
     "open-source", "تحديث", "إطلاق", "أداة", "أدوات", "دخل", "منتج", "خدمة",
     "مشروع", "تصميم", "فيديو", "صوت", "دبلجة", "اشتراك", "مجاني", "مدفوع",
+    "工具", "产品", "应用", "模型", "提示词", "开源", "发布", "上线", "教程",
+    "代码", "生意", "赚钱", "收入", "创业", "智能体", "工作流", "自动化",
 ]
 PAIN_TERMS = [
     "problem", "pain", "hard", "expensive", "slow", "broken", "bug", "need",
@@ -48,12 +50,14 @@ PAIN_TERMS = [
     "doesn't work", "doesnt work", "not working", "rate limit",
     "مشكلة", "صعب", "بطيء", "مكلف", "أحتاج", "احتاج", "أتمنى", "ناقص",
     "لا يعمل", "متعب", "مزعج", "تحدي", "محبط",
+    "问题", "太贵", "变笨", "封号", "风控", "降权", "不可用", "难用", "踩坑",
 ]
 HARD_KEEP = [
     "launching", "just launched", "just shipped", "we just released",
     "new model", "new tool", "open source", "we built", "i built",
     "available now", "public beta", "early access", "introducing",
     "أطلقنا", "أطلقت", "أطلق", "متاح الآن", "بنينا", "بنيت",
+    "开源", "发布", "上线", "新模型", "新工具", "完整指南", "保姆级教程",
 ]
 HARD_REJECT = [
     "subscribe to premium", "get verified", "sign up to like",
