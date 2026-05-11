@@ -781,11 +781,21 @@ function signalCard(item) {
     ? `<a class="signal-translate" href="${translateUrl(`${item.title}\n\n${(item.text || '').slice(0, 800)}`, userLang)}" target="_blank" rel="noreferrer" title="ترجم عبر Google Translate">ترجم ↗</a>`
     : '';
   const badges = badgesFor(item);
+  const isManualX = item.manual === true || item.source_id === 'manual_x';
+  const m = item.metrics || {};
+  const engagement = isManualX ? `
+    <div class="signal-x-metrics" aria-label="X engagement">
+      <span>♥ ${formatCompactNumber(m.likes)}</span>
+      <span>↻ ${formatCompactNumber(m.retweets)}</span>
+      ${m.replies ? `<span>💬 ${formatCompactNumber(m.replies)}</span>` : ''}
+    </div>` : '';
+  const handle = isManualX && item.author_handle ? `
+    <span class="signal-x-handle">𝕏 ${escape(item.author_handle)}</span>` : '';
   return `
-    <div class="signal-card-wrap">
-      <a class="signal-card" href="${escape(item.source_url)}" target="_blank" rel="noreferrer">
+    <div class="signal-card-wrap ${isManualX ? 'signal-card-wrap-x' : ''}">
+      <a class="signal-card ${isManualX ? 'signal-card-x' : ''}" href="${escape(item.source_url)}" target="_blank" rel="noreferrer">
         <div class="cluster-head">
-          <span class="cat" data-cat="${radarCategory(item)}">${escape(item.source_name || sourceLabel(item.source_id))}</span>
+          ${isManualX ? handle : `<span class="cat" data-cat="${radarCategory(item)}">${escape(item.source_name || sourceLabel(item.source_id))}</span>`}
           <span class="signal-meta-right">
             <span class="signal-lang signal-lang-${itemLang}">${langBadge(itemLang)}</span>
             <span class="cluster-growth ${score >= 70 ? 'hot' : 'up'}">${score}%</span>
@@ -796,11 +806,20 @@ function signalCard(item) {
         ${originalLine}
         <div class="cluster-meta">${escape(item.signal_type || 'signal')} · <span${timeAttr(postedISO)}>${escape(posted)}</span></div>
         <p class="signal-text">${escape((item.text || '').slice(0, 210))}${(item.text || '').length > 210 ? '...' : ''}</p>
+        ${engagement}
         <div class="cluster-voices">${escape((item.matched_keywords || []).slice(0, 8).join(' · '))}</div>
       </a>
       ${translateBtn}
     </div>
   `;
+}
+
+function formatCompactNumber(n) {
+  n = Number(n) || 0;
+  if (n < 1000) return String(n);
+  if (n < 10000) return (n / 1000).toFixed(1) + 'k';
+  if (n < 1000000) return Math.round(n / 1000) + 'k';
+  return (n / 1000000).toFixed(1) + 'M';
 }
 
 function normalizeRadarOpportunity(o, i) {

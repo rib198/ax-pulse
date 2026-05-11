@@ -39,6 +39,7 @@ SOURCE_OVERRIDES = {
     "hn_algolia": "community",
     "github_repos": "community",
     "x_recent_search": "social",
+    "manual_x":         "press",  # human-curated → treat as press, not raw social
 }
 
 
