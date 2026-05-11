@@ -1,0 +1,2143 @@
+{
+  "schema_version": "mvp-review-queue-summary-v1",
+  "generated_at": "2026-05-10T13:32:53+00:00",
+  "total_pending": 90,
+  "by_severity": {
+    "medium": 25,
+    "low": 7,
+    "high": 58
+  },
+  "by_action": {
+    "enrich_social_signal": 29,
+    "rewrite_card": 7,
+    "human_review": 35,
+    "translate_to_arabic": 19
+  },
+  "by_reason": {
+    "weak_social_context": 29,
+    "too_generic": 7,
+    "needs_review": 35,
+    "needs_arabic_translation": 19
+  },
+  "top_sources": {
+    "Reddit r/artificial": 22,
+    "Reddit r/singularity": 19,
+    "Reddit r/MachineLearning": 11,
+    "بحث X الحديث": 9,
+    "X Recent Search": 7,
+    "Reddit r/LocalLLaMA": 6,
+    "مستودعات GitHub": 5,
+    "حسابات X المختارة": 3,
+    "TechCrunch AI": 3,
+    "Hugging Face Daily Papers": 2
+  },
+  "acceptance_rules_ar": [
+    "لا تعود الإشارة من الطابور إلى الواجهة إلا بعد وجود مصدر ورابط واضح.",
+    "أي نص خام من X أو Reddit يجب تحويله إلى ملخص: ماذا حدث، لماذا يهمك، كيف تستفيد.",
+    "أي فرصة يجب أن تحتوي على جمهور مستهدف وزاوية دخل محددة.",
+    "أي عنوان عام يجب استبداله باسم أداة أو تحديث أو فرصة واضحة.",
+    "أي عنوان يخلط العربي والإنجليزي بشكل مكسور يعاد تحريره قبل العرض.",
+    "في النسخة العربية يجب ترجمة الجملة كاملة، مع إبقاء اسم المنتج فقط بلغته الأصلية عند الحاجة.",
+    "أي بطاقة بلا اسم أداة أو منتج أو موضوع محدد لا تظهر في الرئيسية."
+  ],
+  "high_priority_items": [
+    {
+      "id": "card_validation:signal:huggingface_daily_papers:2605.04330",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Hugging Face Daily Papers",
+      "source_label": "Hugging Face Daily Papers",
+      "source_url": "https://huggingface.co/papers/2605.04330",
+      "confidence_score": 100,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "The Scaling Properties of Implicit Deductive Reasoning in Transformers: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:google_ai_blog:https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Google AI Blog",
+      "source_label": "Google AI Blog",
+      "source_url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "confidence_score": 100,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "See what happens when creative legends use AI to make ads for small businesses: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:google_ai_blog:https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Google AI Blog",
+      "source_label": "Google AI Blog",
+      "source_url": "https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
+      "confidence_score": 100,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "8 Gemini tips for organizing your space (and life): تطور تقني يحتاج تحويله لاستخدام عملي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:huggingface_daily_papers:2605.06376",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Hugging Face Daily Papers",
+      "source_label": "Hugging Face Daily Papers",
+      "source_url": "https://huggingface.co/papers/2605.06376",
+      "confidence_score": 98,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Continuous-Time Distribution Matching for Few-Step Diffusion Distillation: تحديث عملي حول framework",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:techcrunch_ai:https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "TechCrunch AI",
+      "source_label": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/",
+      "confidence_score": 86,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Voi founders’ new AI startup Pit has become the latest rising star out of Stockholm: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:reddit_localllama:1t6b2x8",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/LocalLLaMA",
+      "source_label": "Reddit r/LocalLLaMA",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1t6b2x8/amd_intros_instinct_mi350p_accelerator_cdna_4/",
+      "confidence_score": 85,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "AMD Intros Instinct MI350P Accelerator: CDNA 4 Comes to PCIe Cards: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:reddit_artificial:1t6w7ll",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t6w7ll/tried_the_seedanceinpresentation_use_case_i/",
+      "confidence_score": 82,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Tried the Seedance-in-presentation use case I mentioned awhile ago — here's the actual workflow: طريقة جديدة لتشغيل وكلاء الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:techcrunch_ai:https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "TechCrunch AI",
+      "source_label": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
+      "confidence_score": 82,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "The fax machine is the bottleneck in U.S. healthcare, and VCs are starting to notice: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:techcrunch_ai:https://techcrunch.com/2026/05/07/elon-musks-lawsuit-is-putting-openais-safety-record-under-the-microscope/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "TechCrunch AI",
+      "source_label": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/2026/05/07/elon-musks-lawsuit-is-putting-openais-safety-record-under-the-microscope/",
+      "confidence_score": 82,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Elon Musk’s lawsuit is putting OpenAI’s safety record under the microscope: تحديث أمني مرتبط بالذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052494460966019137",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/AnthropicAI/status/2052494460966019137",
+      "confidence_score": 81,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "We’re donating Petri, our open-source alignment tool, to , so its development can continue independently: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:reddit_singularity:1t6bnqv",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t6bnqv/mapping_a_human_face_onto_a_small_robot_instead/",
+      "confidence_score": 78,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Mapping a human face onto a small robot (instead of giving it an uncanny humanoid face)?: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052110589682749869",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/gregisenberg/status/2052110589682749869",
+      "confidence_score": 77,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "how to use Google's NEW open source Design.md + AI Skills to make your startup look like a $100 million company in 1 hou: تحديث عملي حول…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052486085226184742",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/steipete/status/2052486085226184742",
+      "confidence_score": 77,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Had the honor of mentoring some of the folks in the ChatGPT Future Class of 2026 this year. Shoutout to: تكامل منتج داخل ChatGPT",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052480804971028879",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/OpenAI/status/2052480804971028879",
+      "confidence_score": 77,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "The Chrome extension expands what Codex can do for coding and work. From debugging browser flows to checking dashboards: تحديث عملي حول…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:editor:reddit_artificial:416d97421db6f8c2edc231241feb1d2a09a5a8f300efd642331c116352be5001",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t5zoq4/anthropic_researchers_detail_model_spec/",
+      "confidence_score": 74,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Anthropic researchers detail “model spec midtraining”, which adds a stage between pretraining and fine-tuning to…: تطور تقني يحتاج تحويله…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052622214357200938",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/AIHighlight/status/2052622214357200938",
+      "confidence_score": 70,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "The problem isn't the Claude percentage. It's that the other 10% should include some customers: تحديث عملي حول claude",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:editor:reddit_singularity:fc4630e0c9449d051a03a3667a1b46db62de9a3fbdcf944b0b52035831841b75",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t5hy2p/anthropic_partnered_with_spacex_to_use_colossus_1/",
+      "confidence_score": 70,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Anthropic partnered with SpaceX to use colossus 1 to increase their rate limits: تحديث عملي حول anthropic",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "43d8e1041c8c429ddb96d88375899af19a816a511ecb33316447d6910e325595",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6iax2/i_trained_a_ner_model_on_33000_indian_supreme/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "I trained a NER model on 33,000 Indian Supreme Court judgments (1950–2024) CASE_CITATION hits 97.76% F1, +17 points over the only prior baseline [P]: **TL;DR**: Released en\\_legal\\_ner\\_ind\\_trf v0.1 - InLegalBERT fine-tuned on \\~34,700 silver-annotated…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "efaae30f89c30eab18d9023b0f037da014c8caaaaebe67b2d09c1a74ab968c32",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6a2ri/transformer_math_explorer_p/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Transformer Math Explorer [P]: This is an interactive math reference for transformer models, presented via dataflow graphs, all the way down to elementary math. Covers models from GPT-2 to Qwen 3.6, with MLA, MoE, RoPE, MTP, hybrid attention, and other…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "09676e5ca2e910dc9ed8f881ee41373dfb250f64432513f502108b7b47b9869b",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6fbw0/heart_disease_classification_capstone_feedback_on/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Heart disease classification capstone: feedback on preprocessing, evaluation, and leakage [P]: I took a machine learning and Ai program not to long ago. My professor never really gave me a review what I did right or wrong. Can you guys take a look at my…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    }
+  ],
+  "items": [
+    {
+      "id": "9aeeec35e200498f51403af20ca71513ac65f91fc3a24bc6317ca60e22fa7c54",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_localllama",
+      "source_label": "Reddit r/LocalLLaMA",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1t2kpzn/paper_on_hummingbird_lowcost_fpgas_for_llm/",
+      "confidence_score": 81,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "[Paper on Hummingbird+: low-cost FPGAs for LLM inference] Qwen3-30B-A3B Q4 at 18 t/s token-gen, 24GB, expected $150 mass production cost: https://dl.acm.org/doi/pdf/10.1145/3748173.3779189",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "e5c788c058615de99018b278a07b971eace38d6db18ee9261519c4975f4161d4",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "low",
+      "source_id": "github_repos",
+      "source_label": "مستودعات GitHub",
+      "source_url": "https://github.com/milechy/MCA",
+      "confidence_score": 76,
+      "reason": "too_generic",
+      "reason_labels_ar": [
+        "صياغة عامة"
+      ],
+      "action_needed": "rewrite_card",
+      "review_instruction_ar": "حوّل العنوان والملخص من صياغة عامة إلى فكرة محددة.",
+      "display_summary_ar": "milechy/MCA: Mooore Coding Agent",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "9d594ad93f7c048ab20f7c9913aa993ed2b0db6dc2ba371f0622389445d5abba",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "low",
+      "source_id": "github_repos",
+      "source_label": "مستودعات GitHub",
+      "source_url": "https://github.com/noecmt/pace",
+      "confidence_score": 76,
+      "reason": "too_generic",
+      "reason_labels_ar": [
+        "صياغة عامة"
+      ],
+      "action_needed": "rewrite_card",
+      "review_instruction_ar": "حوّل العنوان والملخص من صياغة عامة إلى فكرة محددة.",
+      "display_summary_ar": "noecmt/pace: PACE - Personal AI Coach Engine",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "125f4e8708d76f71864b21c3a0c3ad77f3f5cdee51aae109da461f9147025672",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "x_user_timelines",
+      "source_label": "حسابات X المختارة",
+      "source_url": "https://x.com/gdb/status/2049971410479796521",
+      "confidence_score": 75,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "codex app becoming incredible: codex app becoming incredible",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "74f1e918ecf0c2c9da984385bff576e46d1373b620345421400448b18bf5870b",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "low",
+      "source_id": "reddit_localllama",
+      "source_label": "Reddit r/LocalLLaMA",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1t2gdi9/solidity/",
+      "confidence_score": 75,
+      "reason": "too_generic",
+      "reason_labels_ar": [
+        "صياغة عامة"
+      ],
+      "action_needed": "rewrite_card",
+      "review_instruction_ar": "حوّل العنوان والملخص من صياغة عامة إلى فكرة محددة.",
+      "display_summary_ar": "Solidity: Hey all! I have spent the last few evenings building a modern solidity LM with sota CoT/tool calling runs in the later stages. Question: what are you all using for solidity or smart contract development? I find the current SOTA models don’t have a…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "22f9189545cecd6eee6c8e8c67d7167cc8685c7b825f96e4456e2e029ad936fa",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t2g9cr/internet_is_getting_remade_for_ai_what_does_it/",
+      "confidence_score": 74,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Internet Is Getting Remade For AI. What Does It Mean For You?: from Times Of India newspaper",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "c0203db0f4951512c01569a3e6440e30c70633f073fa0f219a4a397cb02edb45",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t2626j/software_engineering_jobs_hit_their_highest/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Software engineering jobs hit their highest posting since november 2023: Somebody needs to prompt the models.",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "5ace4534ca31baf7769b1b40d8623bf31e3f803a8261dacb58cfb1caaf0ca532",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t2h6ea/everything_i_learned_training_frontier_small/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI: https://youtu.be/fLUtUkqYHnQ",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "8a05cdfce656ee2d9d08d032888ee3ecd49380645fddff1fce4ee4e86fd5e04b",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t1pten/sam_altman_has_changed_his_stance_on_the_claims/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Sam Altman has changed his stance on the claims that AI will replace humans.: https://www.reddit.com/gallery/1t1pten",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "e8bd766380510f92c22e4d1da39163967051b27bd500134a3380576a7a0718d7",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t2l96z/what_if_chatgpt_launched_in_1998/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "What if ChatGPT launched in 1998: https://i.redd.it/lyz7oz6eaxyg1.jpeg",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "478f5a6440f9b6798563fb108abfe8eaf3a1434bd2680a459405dbcb491cbfb4",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t378wg/got_this_svg_from_ab_test_window_inside_ai_studio/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Got this SVG from A/B test window inside AI Studio. Still can't believe this is an SVG. Most likely the new flash/pro model.: https://i.redd.it/71ppdsf2q1zg1.png",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "3491eb22bd103b19dd779bcb5d784e758fb3f9140647082aae55a155a76782d5",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t13vqr/figure_ais_ceo_shows_the_figure_03_humanoid/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Figure AI’s CEO shows the Figure 03 humanoid robot’s feet, designed to allow the robot to charge wirelessly: https://v.redd.it/9ar7i0gaykyg1",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "2734e434d146ced7f60db3713ec8aac392597587ddb875bf7340f8eb595fda1b",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t3bfb8/help_me_understand_ai_economy/",
+      "confidence_score": 67,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف",
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Help me understand AI economy: /r/economy/comments/1t30rz7/help_me_understand_ai_economy/",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "1b598d38d4166d9438d59f9b7cf3e4b905f1f84895bd59d1e20af0e5ad0f45e8",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t2tx2f/lowpower_differencing_feature_extracts/",
+      "confidence_score": 67,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف",
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Low-power differencing feature extracts spiking-band activities for high-performance intracortical brain-computer interfaces: https://www.nature.com/articles/s42003-026-10144-9",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "d0365d44aeddbc8939826f2304fcc2d6b2b6a83fc6645bb354c32fcb853ec913",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/is_my_idea_shit/status/2050882684310671632",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "@webadderall I created a marketing agency specializing in campaign creation and art direction for brands. My platform of: @webadderall I created a marketing agency specializing in campaign creation and art direction for brands. My platform offers an…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "459a221bef0de51baf981a0860f700923a7312285ade829dd461efb3fb914038",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/Juice_LabAKM/status/2050881973791711237",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Smart travel starts here. Plan, explore, and book everything in one seamless AI-powered platform. Discover hidden gems.: Smart travel starts here. Plan, explore, and book everything in one seamless AI-powered platform. Discover hidden gems. Experience more.…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "200182e34f39fe2e9f82491df93c1736b2dd7fe18a7621e67ea122edd365b9f2",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_user_timelines",
+      "source_label": "حسابات X المختارة",
+      "source_url": "https://x.com/AIHighlight/status/2049553914190569563",
+      "confidence_score": 64,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "The numbers on this AI tool are wild. ~20% more Google traffic within 30 days. Sites converting nearly 2x better than : The numbers on this AI tool are wild. ~20% more Google traffic within 30 days. Sites converting nearly 2x better than before. 46% of…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "2cf05f6874da3385b4f477eda8651e230ef780fd2ba4d49b0c3f475f190bd695",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_user_timelines",
+      "source_label": "حسابات X المختارة",
+      "source_url": "https://x.com/AIHighlight/status/2049553260160119158",
+      "confidence_score": 64,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "This AI scans a business's entire online presence in seconds. Website, Google profile, SEO, page speed, content, orderi: This AI scans a business's entire online presence in seconds. Website, Google profile, SEO, page speed, content, ordering setup. Then it…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "ac01af2b2915257d15514a8739c887f462e011116b07936e29c0ff8f225b807b",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_localllama",
+      "source_label": "Reddit r/LocalLLaMA",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1t6q58n/zaya174bpreview_scaling_pretraining_on_amd/",
+      "confidence_score": 81,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "ZAYA1-74B-Preview: Scaling Pretraining on AMD: https://www.zyphra.com/post/zaya1-74b-preview",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "32c0cadf9e566b7c5bf736faf64b2af192f956a32ecfb8b3495bb0beea16b0ae",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_localllama",
+      "source_label": "Reddit r/LocalLLaMA",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1t5nll0/zaya18b_frontier_intelligence_density_trained_on/",
+      "confidence_score": 81,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "ZAYA1-8B: Frontier intelligence density, trained on AMD: https://www.zyphra.com/post/zaya1-8b",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "6cd1d2a8fdbbc5052ac81eac2a5fc016a2ce0e93975d8bb8c92a7d47f2a35240",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_localllama",
+      "source_label": "Reddit r/LocalLLaMA",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1t4vb57/claude_code_opus_47_vs_opencode_qwen3627b_both/",
+      "confidence_score": 81,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Claude Code @ Opus 4.7 vs OpenCode @ qwen3.6:27b. Both shipped a playable cozy roguelite.: https://v.redd.it/h4awffniaazg1",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "cb42ffb16f2c6e05a15c5953f80a06d07e64656bdd2ddcb0c6a9868567272594",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5zdg5/meta_superintelligence_lab_presents_programbench/",
+      "confidence_score": 79,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "META Superintelligence Lab Presents: ProgramBench: Can SOTA AI Recreate Real Executable Programs(ffmpeg, SQLite, ripgrep) From Scratch Without The Internet?: https://www.reddit.com/gallery/1t5vnyq",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "8efc274862740d86a34b694ba1d760317eb275a53c25d78fd8d3d2d0e3547ce7",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t6f19i/robert_evans_on_ai_psychosis/",
+      "confidence_score": 77,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Robert Evans on AI psychosis: Surprised it took this long!",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "90622595bc051b76e84a6ebdc253f1567e732f066eb1cf977c2f17fde9234374",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t5xaix/leave_it_up_to_claude/",
+      "confidence_score": 77,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Leave it up to Claude: https://i.redd.it/77t7qffqjmzg1.jpeg",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "b447403436449a6e8f2dc1285a0dd605258b2166fcde31598ee15eca3beabc13",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "low",
+      "source_id": "github_repos",
+      "source_label": "مستودعات GitHub",
+      "source_url": "https://github.com/decko/raki",
+      "confidence_score": 76,
+      "reason": "too_generic",
+      "reason_labels_ar": [
+        "صياغة عامة"
+      ],
+      "action_needed": "rewrite_card",
+      "review_instruction_ar": "حوّل العنوان والملخص من صياغة عامة إلى فكرة محددة.",
+      "display_summary_ar": "decko/raki: Retrieval Assessment for Knowledge Impact — evaluate agentic RAG quality from session transcripts",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "c4b4ead8a92054b0d25acb22e046b546648db598f56b4bfdac4abf82665fa397",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "low",
+      "source_id": "github_repos",
+      "source_label": "مستودعات GitHub",
+      "source_url": "https://github.com/ROCm/aiter",
+      "confidence_score": 76,
+      "reason": "too_generic",
+      "reason_labels_ar": [
+        "صياغة عامة"
+      ],
+      "action_needed": "rewrite_card",
+      "review_instruction_ar": "حوّل العنوان والملخص من صياغة عامة إلى فكرة محددة.",
+      "display_summary_ar": "ROCm/aiter: AI Tensor Engine for ROCm",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "0ad09603f0abb0a3423f4d07106996f6af93b07406678122a5ad929f9a8cdd25",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "low",
+      "source_id": "github_repos",
+      "source_label": "مستودعات GitHub",
+      "source_url": "https://github.com/xmap/cora",
+      "confidence_score": 76,
+      "reason": "too_generic",
+      "reason_labels_ar": [
+        "صياغة عامة"
+      ],
+      "action_needed": "rewrite_card",
+      "review_instruction_ar": "حوّل العنوان والملخص من صياغة عامة إلى فكرة محددة.",
+      "display_summary_ar": "xmap/cora: AI-powered operations platform for scientific research facilities.",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "510a653113478e7512e544e68cb9756c105efd2e207459d7fdc63107ae216068",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t77n9a/amds_local_opensource_ai_can_now_easily_interact/",
+      "confidence_score": 74,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "AMD's local, open-source AI can now easily interact with your Gmail: https://www.phoronix.com/news/AMD-GAIA-Gmail-Integration",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "416d97421db6f8c2edc231241feb1d2a09a5a8f300efd642331c116352be5001",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t5zoq4/anthropic_researchers_detail_model_spec/",
+      "confidence_score": 74,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Anthropic researchers detail “model spec midtraining”, which adds a stage between pretraining and fine-tuning to improve generalization from alignment training: https://alignment.anthropic.com/2026/msm/",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "b70600b96ea30ed251fa199ebc018465204a1a74a25158ef8403c5ac299b53a1",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t4lo3s/qts_latest_ai_push_is_letting_ai_agents_deal_with/",
+      "confidence_score": 74,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Qt's latest AI push is letting AI agents deal with performance profiling: https://www.phoronix.com/news/Qt-QML-Profiler-AI-Agent",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "f0a131b076c9d9afee6e38e1d99a57217a70483156a12844878be544f9a86361",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/gdb/status/2050972114077843772",
+      "confidence_score": 73,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "codex for startup ideas https://t.co/2ppn9nfQ2g: codex for startup ideas https://t.co/2ppn9nfQ2g",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "45051e3b6bf6196e9998992d4c912df6d57567f88d568d1ad868bdfe6656b751",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "low",
+      "source_id": "bens_bites",
+      "source_label": "Ben's Bites",
+      "source_url": "https://www.bensbites.com/p/builders",
+      "confidence_score": 70,
+      "reason": "too_generic",
+      "reason_labels_ar": [
+        "صياغة عامة"
+      ],
+      "action_needed": "rewrite_card",
+      "review_instruction_ar": "حوّل العنوان والملخص من صياغة عامة إلى فكرة محددة.",
+      "display_summary_ar": "Builders: GPT-5.5 is a good model",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "0b2f4a01188083db14e3085254aa0d005c673250d7d1a74caad862918dad08af",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t6dve3/alphaevolve_how_our_geminipowered_coding_agent_is/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields: https://deepmind.google/blog/alphaevolve-impact/",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "1da0f09e7d6595c7ff95f5d8ebe969db277aa793c6ea71f5958a8a5c6ad10345",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t5q5jm/xai_will_be_dissolved_as_a_separate_entity/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "xAI will be dissolved as a separate entity.: https://i.redd.it/tzexewkj2lzg1.jpeg",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "f3fc984f558f6e6f849c97c7e1a84733028dc378b19a940c19a4850b6fd82aa3",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t6h2ph/translating_claudes_thoughts_into_language/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Translating Claude’s thoughts into language: https://www.youtube.com/watch?v=j2knrqAzYVY",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "fc4630e0c9449d051a03a3667a1b46db62de9a3fbdcf944b0b52035831841b75",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t5hy2p/anthropic_partnered_with_spacex_to_use_colossus_1/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Anthropic partnered with SpaceX to use colossus 1 to increase their rate limits: https://i.redd.it/9x97c08dnjzg1.jpeg",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "c89791023f68f60616aa1f15b30fa7fe05daa4926ed9597ede6964ef4506fce7",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t3z5ae/ai_parenting_has_a_lot_of_room_to_grow/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "AI parenting has a lot of room to grow: https://v.redd.it/bvfj39ixa7zg1",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "f6520e8e152de91c830928003237067a2aaa727946f450a2e4f07701a856d255",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "medium",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t3qbi6/andon_labs_blueprintbench_2_3d_spatial/",
+      "confidence_score": 70,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Andon Labs :Blueprint-Bench 2. 3D Spatial Intelligence in models: https://x.com/andonlabs/status/2051348274666504587?s=20",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "43d8e1041c8c429ddb96d88375899af19a816a511ecb33316447d6910e325595",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6iax2/i_trained_a_ner_model_on_33000_indian_supreme/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "I trained a NER model on 33,000 Indian Supreme Court judgments (1950–2024) CASE_CITATION hits 97.76% F1, +17 points over the only prior baseline [P]: **TL;DR**: Released en\\_legal\\_ner\\_ind\\_trf v0.1 - InLegalBERT fine-tuned on \\~34,700 silver-annotated…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "efaae30f89c30eab18d9023b0f037da014c8caaaaebe67b2d09c1a74ab968c32",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6a2ri/transformer_math_explorer_p/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Transformer Math Explorer [P]: This is an interactive math reference for transformer models, presented via dataflow graphs, all the way down to elementary math. Covers models from GPT-2 to Qwen 3.6, with MLA, MoE, RoPE, MTP, hybrid attention, and other…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "09676e5ca2e910dc9ed8f881ee41373dfb250f64432513f502108b7b47b9869b",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t6fbw0/heart_disease_classification_capstone_feedback_on/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Heart disease classification capstone: feedback on preprocessing, evaluation, and leakage [P]: I took a machine learning and Ai program not to long ago. My professor never really gave me a review what I did right or wrong. Can you guys take a look at my…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "c8196cf81f322517fea4f86dd971700926e1f6408aa4f71e379b3e50239b1e3b",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t7avgp/embedding_models_for_time_series_data_d/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Embedding models for time series data [D]: Does anyone know any open source embedding models that work on time series data? Ideally one that works on the frequency domain Fourier transforms so it can support variable length series",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "a06cb39f75527a68d6378eee1cebed60204375e710bf602e4ab31a0e68271f05",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t71y36/what_should_a_pytorch_training_endofrun/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "What should a PyTorch training end-of-run performance summary show? [D]: For most slow PyTorch runs the first question isn't *show me every trace event,* it is just: where do I even start? \\- where did step time go? \\- was the run input-bound, compute-bound,…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "e72c8464842d1976da0cffda9e12a4355e8315d78212733c3c18071653499ddb",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t5vnru/visual_perceptual_to_conceptual_firstorder_rule/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Visual Perceptual to Conceptual First-Order Rule Learning Networks [R]: I'm genuinely curious, because I've been seeing some papers come out recently from the ILP world, like referenced above as well as others \\[[1](https://arxiv.org/abs/2506.06739),…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "1a80f897705b00d85e1d93f03ded2309e6a36f0a460b0bd6573517d78341d50d",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4pe8c/question_about_plsda_hyperparameter_tuning_r/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Question about PLS-DA hyperparameter tuning [R]: Hi all! I am a bioinformatician and I am working on learning some ML tools for some disease/biomarker stuff. I am working with sparse PLS-DA at the moment. Before actually tuning the model, I run on overall…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "834d96aaaac336f7be52359af748c958e4339aba6b6fbfd6902d06a8f2f906ae",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4sjr7/competition_league_of_robot_runners_2026/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Competition - League of Robot Runners 2026: Multi-robot coordination under uncertainty [N]: Hello ML and RL community We are inviting participants to the League of Robot Runners (LoRR) 2026:…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "77570e534345682e252b2cad100152d0c115433dde1cc4d563d94fa779160b24",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t4kvb2/charting_the_ai_perception_gap_across_71/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Charting the AI Perception Gap: Across 71 scenarios, AI experts (N=119) and the public (N=1100) have differing views on the risks, benefits, and value of AI. More importantly, AI experts discount the influence of risks stronger than the public does when…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "41530e43a954df99d70906f98dcaa148b0807e894b1d6b2a87b6d2876bac4f0e",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_machinelearning",
+      "source_label": "Reddit r/MachineLearning",
+      "source_url": "https://www.reddit.com/r/MachineLearning/comments/1t45ggk/fixing_unsupervised_hyperbolic_contrastive_loss_d/",
+      "confidence_score": 68,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Fixing Unsupervised Hyperbolic Contrastive Loss [D]: Hello all, I am trying to implement Unsupervised Hyperbolic Contrastive Loss on the ImageNet-1k dataset. My results show that simple Euclidean unsupervised contrastive loss is much better than the…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "e9c5c81c49f078557df149d903acd0ac4870965fe3c834b6e4d22ea7d47d2241",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t772a5/3dmind_a_flexible_device_that_can_be_integrated/",
+      "confidence_score": 67,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "3D-MIND: A flexible device that can be integrated with living brain cells: https://techxplore.com/news/2026-05-3d-mind-flexible-device-brain.html",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "d5f9c95447e3a0272ffa04cf3dd6317c739a1b1ef00b701e7f2a3bb868ea1276",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t4kdix/three_inverse_laws_of_ai_and_robotics/",
+      "confidence_score": 67,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف",
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Three Inverse Laws of AI and Robotics: https://susam.net/inverse-laws-of-robotics.html",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "928a1cf758880390bb17f35a0e9ac6f2a52dc0e32d75ec1a353b8063065241c3",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t7au63/new_ai_model_spots_pancreatic_cancer_up_to_3/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "New AI model spots pancreatic cancer up to 3 years earlier than human doctors in test: https://www.livescience.com/health/cancer/new-ai-model-spots-pancreatic-cancer-up-to-3-years-earlier-than-human-doctors-in-test",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "69eb52f34b3b4332ed57f565407da0acfbda724003b9879cfe7d39de6a5e23d1",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t7aejp/inside_the_ai_sweatshops_powering_chatgpt/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Inside the AI Sweatshops Powering ChatGPT: There’s a hidden workforce powering the rise of ChatGPT, and nearly 1 in 5 of them have fallen into homelessness. We investigated America’s AI sweatshops, and found a new gig economy run by Big Tech.…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "06fb1cbd1decb4c38b21da66fa6977e89d986b3521553d51f8be533c711d3792",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t74v5n/google_enterprise_business_trial_just_started_and/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Google enterprise business trial, Just started and it's already stopped making images after 3?: So I just got the trial, wanted to finally test it out. I got the business enterprise trial and went to test out nano banana and after 3 images, it now seems to…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "20abea5496b5b3bd028f37aa6676385fb909c77a5d67aa3c65dd3d5fd8f5d665",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t73xq7/us_china_weigh_ai_crisis_controls_ahead_of_summit/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "U.S., China weigh AI crisis controls ahead of summit Trump and Xi could discuss AI risks at Beijing meeting:…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "7caed5a244fc506aa6d5359b51c18611525d60df374a5cdebaeb256ae2e41824",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t6lbj5/etps_site_plan_simple_leaderboard_what_youll/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "eTPS Site Plan – Simple Leaderboard + What You’ll Actually See: Building on the last post, here’s what the first version of effectiveTPS will look like. \\*\\*Core display (v1):\\*\\* \\- Clean table comparing popular local models \\- Raw TPS (the marketing number…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "17179f57dcc6e34618b0f14637484ce5a8d1809b99f8cf72281969c44d240b7b",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t6al9u/predeployment_ai_evaluations/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Pre-Deployment AI Evaluations: The US government signed agreements with Google DeepMind, Microsoft, and xAI to evaluate frontier AI models before public release. China's 2023 Generative AI rules already require pre-release security assessments and model…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "a109c6c2a2b7792fdecaa69b33fec5eef675a88ce09390df54e057a83767e2ba",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t669lb/roche_to_buy_pathai_for_up_to_105_billion_to/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Roche to buy PathAI for up to $1.05 billion to bolster AI diagnostics tools: The pharma giant has agreed to pay $750 million upfront, with up to $300 million in additional payments subject to targets.",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "e7d834f89e421a716c2af9073b2ec18d64c70a013aad99e17486aafc4762dfc7",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t4v4gl/check_out_am_i_free_documentary_on_ai/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Check out “AM I?” free documentary on AI consciousness: “AM I?” follows AI consciousness researcher Cameron Berg as he investigates one of the deepest scientific mysteries of our time: whether we have accidentally built a new kind of mind. Featuring leading…",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "372930d8e24aa939a44e0af7bf40773249b5ae3e116e33157e7e66f68700d969",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t4q7m8/a_youtube_video_you_all_might_enjoy/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "A YouTube video you all might enjoy: A Bioethicist just made a video about how the movie Interstellar reveals the real existential threat of AI [How Interstellar Shows the REAL Existential Risk of AI](https://youtu.be/pWZ5nY6fVvU?si=uvUpaemg0c7SiWYE)",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "4e1161a2b2b189474c4f562b0ad9d6975a03056b91ddc37dc0784bc3b531c6b5",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/AIHighlight/status/2052027718938566761",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "@coreyganim Most AI founders are thinking product first and wondering why they're losing to people with worse models and: @coreyganim Most AI founders are thinking product first and wondering why they're losing to people with worse models and better audiences.",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "8344525640144f5b5c1b5e9d140b70d31ded7a77a5a131227f5f0e925c33d8d5",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t4o34w/three_inverse_laws_of_ai/",
+      "confidence_score": 66,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Three Inverse Laws of AI: This article discusses the three Laws of AI, a set of rules that we need to keep in mind when evaluating AI safety and how AI will affect our day to day lives.",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "ab30755066f588f3348e0fd3551b3995e0b1186da7bc67c0de7c1e01b6eeedd3",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/svpino/status/2052340305454596239",
+      "confidence_score": 62,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "@kristoph If your agent needs to consume 3 services, would you want it to first build custom mechanisms to consume each : @kristoph If your agent needs to consume 3 services, would you want it to first build custom mechanisms to consume each service?",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "5e50ab1b8ab5097115fccd86232504ca3567f7008941fa6017a4b034017b3b9c",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/levelsio/status/2052745996556173721",
+      "confidence_score": 62,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "@Sattyam15 @loaibassam I think so too, my margins are 99.99% profit (except Photo AI and Interior AI because they have G: @Sattyam15 @loaibassam I think so too, my margins are 99.99% profit (except Photo AI and Interior AI because they have GPU costs)",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "f69f589dc14188b8a5fa1d3fb541c55f174a91e18fdf0b988e7a638b17d921b4",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t76r14/nanoleaf_bets_its_future_on_robots_red_light/",
+      "confidence_score": 62,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Nanoleaf bets its future on robots, red light therapy, and AI: https://www.theverge.com/tech/926342/nanoleaf-smart-lighting-ai-robotics-red-light-wellness",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "0a2fd0c08678ba12f7844a4a1f02935fa692fe6e5617dce6d872a7307c23f292",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t7322r/anthropic_eyes_50b_as_jd_vance_quietly_calls_musk/",
+      "confidence_score": 62,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Anthropic Eyes $50B as JD Vance Quietly Calls Musk and Altman on US Banks: https://blocknow.com/anthropic-1-trillion-valuation-jd-vance-ai-call/",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "0e880aaef5513e2b260f24307de3256a321f5103d6925625f52da00bbcc6416c",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t6gkes/south_korea_names_first_humanoid_robot_monk_as_it/",
+      "confidence_score": 62,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "South Korea names first humanoid robot monk as it accepted the faith's vows: http://the-express.com/tech/tech-news/206676/south-korea-first-robot-monk",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "ca4ae29a499e9c8ad70cd3b0d82bc457c7cfa1f64118853c12ba17c6362a00f4",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t4kdra/mark_and_mary_stevens_give_200m_for_ai_research/",
+      "confidence_score": 62,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "Mark and Mary Stevens give $200M for AI research across USC: https://today.usc.edu/mark-and-mary-stevens-give-200-million-to-power-ai-research-across-usc/",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "91f3f736578d6be002e47ed2402f78882d6e6957ee8cf048d1defdec21c686dc",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/bilawalsidhu/status/2052406662812545106",
+      "confidence_score": 58,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "@samurai_paulo Yes, much more easily because you can export the known camera poses from the 3d tool to train the splat: @samurai_paulo Yes, much more easily because you can export the known camera poses from the 3d tool to train the splat",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "66538b5bfb4d90041b09634112b5be502ceb90c6857fa47314db73ca9e75502a",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/Scobleizer/status/2052352098227143157",
+      "confidence_score": 58,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "@Joey10582 @James__Spalding I am most freaked out by the ability of hackers to attack our systems with AI.: @Joey10582 @James__Spalding I am most freaked out by the ability of hackers to attack our systems with AI.",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "19d8007961471364383bfd5dd7c675ddab03643a46fd96f169018018ee3961d3",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "x_recent_search",
+      "source_label": "بحث X الحديث",
+      "source_url": "https://x.com/garrytan/status/2051680599967256607",
+      "confidence_score": 58,
+      "reason": "needs_review",
+      "reason_labels_ar": [
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "human_review",
+      "review_instruction_ar": "راجعها يدويًا وحدد هل تتحول إلى بطاقة أم تُرفض.",
+      "display_summary_ar": "@glitchtruth Works great with openclaw for personal AI use cases: @glitchtruth Works great with openclaw for personal AI use cases",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "d7e2c12534e7df895ff6dd4a99caa1f840161d6922eccac770d6df62d7a21891",
+      "item_type": "raw_signal",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "reddit_singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t6ke8t/translating_claudes_thoughts_into_language/",
+      "confidence_score": 55,
+      "reason": "weak_social_context",
+      "reason_labels_ar": [
+        "سياق اجتماعي غير كاف",
+        "يحتاج مراجعة بشرية"
+      ],
+      "action_needed": "enrich_social_signal",
+      "review_instruction_ar": "اقرأ الإشارة الأصلية واستخرج اسم الأداة أو الفكرة والسياق العملي.",
+      "display_summary_ar": "Translating Claude’s thoughts into language: https://youtu.be/j2knrqAzYVY?si=fybH2qu0IuH2e1jB",
+      "created_at": "2026-05-10T13:32:52+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:reddit_artificial:1t6w7ll",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t6w7ll/tried_the_seedanceinpresentation_use_case_i/",
+      "confidence_score": 82,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Tried the Seedance-in-presentation use case I mentioned awhile ago — here's the actual workflow: طريقة جديدة لتشغيل وكلاء الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:huggingface_daily_papers:2605.04330",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Hugging Face Daily Papers",
+      "source_label": "Hugging Face Daily Papers",
+      "source_url": "https://huggingface.co/papers/2605.04330",
+      "confidence_score": 100,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "The Scaling Properties of Implicit Deductive Reasoning in Transformers: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052494460966019137",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/AnthropicAI/status/2052494460966019137",
+      "confidence_score": 81,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "We’re donating Petri, our open-source alignment tool, to , so its development can continue independently: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:techcrunch_ai:https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "TechCrunch AI",
+      "source_label": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/",
+      "confidence_score": 86,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Voi founders’ new AI startup Pit has become the latest rising star out of Stockholm: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:reddit_singularity:1t6bnqv",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t6bnqv/mapping_a_human_face_onto_a_small_robot_instead/",
+      "confidence_score": 78,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Mapping a human face onto a small robot (instead of giving it an uncanny humanoid face)?: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:reddit_localllama:1t6b2x8",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/LocalLLaMA",
+      "source_label": "Reddit r/LocalLLaMA",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1t6b2x8/amd_intros_instinct_mi350p_accelerator_cdna_4/",
+      "confidence_score": 85,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "AMD Intros Instinct MI350P Accelerator: CDNA 4 Comes to PCIe Cards: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:techcrunch_ai:https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "TechCrunch AI",
+      "source_label": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
+      "confidence_score": 82,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "The fax machine is the bottleneck in U.S. healthcare, and VCs are starting to notice: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052745996556173721",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/levelsio/status/2052745996556173721",
+      "confidence_score": 62,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية",
+        "ثقة غير كافية للرئيسية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "I think so too, my margins are 99.99% profit (except Photo AI and Interior AI because they have G: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052622214357200938",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/AIHighlight/status/2052622214357200938",
+      "confidence_score": 70,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "The problem isn't the Claude percentage. It's that the other 10% should include some customers: تحديث عملي حول claude",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052110589682749869",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/gregisenberg/status/2052110589682749869",
+      "confidence_score": 77,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "how to use Google's NEW open source Design.md + AI Skills to make your startup look like a $100 million company in 1 hou: تحديث عملي حول…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:google_ai_blog:https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Google AI Blog",
+      "source_label": "Google AI Blog",
+      "source_url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "confidence_score": 100,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "See what happens when creative legends use AI to make ads for small businesses: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:google_ai_blog:https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Google AI Blog",
+      "source_label": "Google AI Blog",
+      "source_url": "https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
+      "confidence_score": 100,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "8 Gemini tips for organizing your space (and life): تطور تقني يحتاج تحويله لاستخدام عملي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:techcrunch_ai:https://techcrunch.com/2026/05/07/elon-musks-lawsuit-is-putting-openais-safety-record-under-the-microscope/",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "TechCrunch AI",
+      "source_label": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/2026/05/07/elon-musks-lawsuit-is-putting-openais-safety-record-under-the-microscope/",
+      "confidence_score": 82,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Elon Musk’s lawsuit is putting OpenAI’s safety record under the microscope: تحديث أمني مرتبط بالذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052486085226184742",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/steipete/status/2052486085226184742",
+      "confidence_score": 77,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Had the honor of mentoring some of the folks in the ChatGPT Future Class of 2026 this year. Shoutout to: تكامل منتج داخل ChatGPT",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052480804971028879",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/OpenAI/status/2052480804971028879",
+      "confidence_score": 77,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "The Chrome extension expands what Codex can do for coding and work. From debugging browser flows to checking dashboards: تحديث عملي حول…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:huggingface_daily_papers:2605.06376",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Hugging Face Daily Papers",
+      "source_label": "Hugging Face Daily Papers",
+      "source_url": "https://huggingface.co/papers/2605.06376",
+      "confidence_score": 98,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Continuous-Time Distribution Matching for Few-Step Diffusion Distillation: تحديث عملي حول framework",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:x_recent_search:2052406662812545106",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "X Recent Search",
+      "source_label": "X Recent Search",
+      "source_url": "https://x.com/bilawalsidhu/status/2052406662812545106",
+      "confidence_score": 58,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية",
+        "ثقة غير كافية للرئيسية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Yes, much more easily because you can export the known camera poses from the 3d tool to train the splat: تحديث عملي حول الذكاء الاصطناعي",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:editor:reddit_artificial:416d97421db6f8c2edc231241feb1d2a09a5a8f300efd642331c116352be5001",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/artificial",
+      "source_label": "Reddit r/artificial",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1t5zoq4/anthropic_researchers_detail_model_spec/",
+      "confidence_score": 74,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Anthropic researchers detail “model spec midtraining”, which adds a stage between pretraining and fine-tuning to…: تطور تقني يحتاج تحويله…",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    },
+    {
+      "id": "card_validation:signal:editor:reddit_singularity:fc4630e0c9449d051a03a3667a1b46db62de9a3fbdcf944b0b52035831841b75",
+      "item_type": "card",
+      "status": "pending",
+      "severity": "high",
+      "source_id": "Reddit r/singularity",
+      "source_label": "Reddit r/singularity",
+      "source_url": "https://www.reddit.com/r/singularity/comments/1t5hy2p/anthropic_partnered_with_spacex_to_use_colossus_1/",
+      "confidence_score": 70,
+      "reason": "needs_arabic_translation",
+      "reason_labels_ar": [
+        "يحتاج ترجمة عربية"
+      ],
+      "action_needed": "translate_to_arabic",
+      "review_instruction_ar": "ترجم الجملة إلى العربية، واترك أسماء المنتجات فقط كما هي عند الحاجة.",
+      "display_summary_ar": "Anthropic partnered with SpaceX to use colossus 1 to increase their rate limits: تحديث عملي حول anthropic",
+      "created_at": "2026-05-10T13:32:53+00:00",
+      "reviewed_at": null
+    }
+  ]
+}

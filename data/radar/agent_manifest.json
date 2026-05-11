@@ -1,0 +1,216 @@
+{
+  "schema_version": "radar-agent-manifest-v1",
+  "generated_at": "2026-05-11T10:41:38+00:00",
+  "principle_ar": "كل وكيل له دور محدد. لا توجد بطاقة رئيسية بدون مصدر، ثقة، وصياغة مفهومة.",
+  "publishing_policy_ar": "وكيل التسويق يكتب مسودات فقط. لا يغرد تلقائيًا إلا عند تفعيل صريح لاحقًا.",
+  "agents": [
+    {
+      "id": "company_scout",
+      "name_ar": "وكيل كاشف الشركات",
+      "name_en": "Company Scout Agent",
+      "purpose_ar": "يرصد شركات ومنتجات AI ويستخرج المنتج، الجمهور، الاستخدامات، وفرص الاستفادة.",
+      "inputs": [
+        "source_registry",
+        "signals",
+        "x_focus_accounts",
+        "official_sources"
+      ],
+      "outputs": [
+        "company_product_signals",
+        "company_cards"
+      ],
+      "runs": "كل ساعتين وبعد أي تحديث يدوي",
+      "failure_policy_ar": "إذا لم يجد مصدرًا موثوقًا يرسل العنصر للمراجعة ولا يعرضه كرصد مؤكد."
+    },
+    {
+      "id": "model_pulse",
+      "name_ar": "وكيل نبض النماذج",
+      "name_en": "Model Pulse Agent",
+      "purpose_ar": "يراقب النماذج والميزات والأسعار وحدود الاستخدام ويحوّلها إلى تحديث مفهوم.",
+      "inputs": [
+        "official_blogs",
+        "model_timeline",
+        "signals"
+      ],
+      "outputs": [
+        "focused_updates",
+        "model_update_cards"
+      ],
+      "runs": "كل ساعتين + عند تشغيل الرادار يدويًا",
+      "failure_policy_ar": "يعرض آخر نسخة محفوظة مع توضيح أن المصدر لم يتحدث."
+    },
+    {
+      "id": "market_radar",
+      "name_ar": "وكيل رادار السوق",
+      "name_en": "Market Radar Agent",
+      "purpose_ar": "يرصد مشاريع ومنتجات AI عالمية ومحلية قابلة للاستلهام أو التعريب.",
+      "inputs": [
+        "news_sources",
+        "x_cards",
+        "github",
+        "reddit",
+        "product_signals"
+      ],
+      "outputs": [
+        "market_project_signals",
+        "localization_opportunities"
+      ],
+      "runs": "يوميًا أو مع تشغيل الرادار الكامل",
+      "failure_policy_ar": "لا يحول المشروع إلى فرصة سعودية إلا بوجود جمهور واضح أو مشكلة قابلة للنقل."
+    },
+    {
+      "id": "opportunity_builder",
+      "name_ar": "وكيل صانع الفرص",
+      "name_en": "Opportunity Builder Agent",
+      "purpose_ar": "يحوّل الإشارات إلى فرص دخل محددة وليست عناوين عامة.",
+      "inputs": [
+        "verified_signals",
+        "x_radar_cards",
+        "market_project_signals"
+      ],
+      "outputs": [
+        "focused_opportunities",
+        "opportunity_cards"
+      ],
+      "runs": "بعد التحقق والتحرير",
+      "failure_policy_ar": "إذا لا توجد مشكلة وجمهور وزاوية دخل، تبقى الإشارة خبرًا أو أرشيفًا."
+    },
+    {
+      "id": "evidence_guard",
+      "name_ar": "وكيل حارس المصادر",
+      "name_en": "Evidence Guard Agent",
+      "purpose_ar": "يتحقق من المصدر والثقة ويمنع الإشاعات والروابط الضعيفة من الواجهة الرئيسية.",
+      "inputs": [
+        "raw_signals",
+        "source_registry"
+      ],
+      "outputs": [
+        "verified_signals",
+        "review_queue"
+      ],
+      "runs": "بعد كل جمع",
+      "failure_policy_ar": "أي عنصر غير مؤكد يذهب للمراجعة ولا يظهر كحقيقة."
+    },
+    {
+      "id": "priority_ranker",
+      "name_ar": "وكيل ترتيب الأولويات",
+      "name_en": "Priority Ranker Agent",
+      "purpose_ar": "يرتب البطاقات حسب الثقة، الحداثة، الأثر، والقابلية للبناء.",
+      "inputs": [
+        "validated_cards",
+        "source_health",
+        "freshness_state"
+      ],
+      "outputs": [
+        "ranked_cards",
+        "featured_home_items"
+      ],
+      "runs": "بعد كل بناء للبطاقات",
+      "failure_policy_ar": "يستخدم ترتيبًا احتياطيًا: الثقة ثم الحداثة ثم الأثر."
+    },
+    {
+      "id": "radar_editor",
+      "name_ar": "وكيل محرر الرادار",
+      "name_en": "Radar Editor Agent",
+      "purpose_ar": "يصيغ البطاقة بالعربية: ماذا حدث، لماذا يهمك، كيف تستفيد، والدليل.",
+      "inputs": [
+        "verified_signals",
+        "opportunities",
+        "x_cards"
+      ],
+      "outputs": [
+        "display_cards",
+        "arabic_first_cards"
+      ],
+      "runs": "بعد بناء الفرص والتحديثات",
+      "failure_policy_ar": "يرفض النص الخام والعناوين العامة ويرسلها لطابور المراجعة."
+    },
+    {
+      "id": "radar_growth",
+      "name_ar": "وكيل نمو وتسويق الرادار",
+      "name_en": "Radar Growth Agent",
+      "purpose_ar": "يحوّل أفضل الفرص والتحديثات إلى منشورات X وLinkedIn ونشرة بريدية.",
+      "inputs": [
+        "top_opportunities",
+        "top_updates",
+        "top_discussions"
+      ],
+      "outputs": [
+        "growth_tweet_drafts",
+        "linkedin_drafts",
+        "newsletter_hooks"
+      ],
+      "runs": "بعد كل تحديث ناجح، لكن النشر يحتاج موافقة صريحة.",
+      "failure_policy_ar": "لا ينشر تلقائيًا. إذا فشل، يحفظ مسودات غير منشورة فقط."
+    },
+    {
+      "id": "performance_agent",
+      "name_ar": "وكيل تحليل الأداء",
+      "name_en": "Performance Agent",
+      "purpose_ar": "يقيس جودة المحتوى، تكرار الضعف، حالة المصادر، وفجوات العودة اليومية.",
+      "inputs": [
+        "agent_runs",
+        "card_validation_report",
+        "review_queue_summary",
+        "source_runs"
+      ],
+      "outputs": [
+        "performance_recommendations",
+        "quality_scores"
+      ],
+      "runs": "بعد كل تشغيل للرادار",
+      "failure_policy_ar": "يعطي تقريرًا ناقصًا مع ذكر الأدلة غير المتوفرة."
+    },
+    {
+      "id": "radar_orchestrator",
+      "name_ar": "وكيل منسق الرادار",
+      "name_en": "Radar Orchestrator Agent",
+      "purpose_ar": "يدير تسلسل الوكلاء ويضمن أن كل بطاقة مرت بالجمع والتحقق والتحرير والترتيب.",
+      "inputs": [
+        "agent_config",
+        "source_registry",
+        "run_status"
+      ],
+      "outputs": [
+        "orchestrator_status",
+        "agent_runs"
+      ],
+      "runs": "هو نقطة التشغيل الرئيسية",
+      "failure_policy_ar": "لا يخفي الفشل؛ يعلّم التشغيل partial أو failed حسب المرحلة."
+    },
+    {
+      "id": "agent_monitor",
+      "name_ar": "وكيل مراقبة أداء الوكلاء",
+      "name_en": "Agent Performance Monitor",
+      "purpose_ar": "يراقب الوكلاء أنفسهم: من فشل، من ينتج محتوى ضعيفًا، وأين تتوقف السلسلة.",
+      "inputs": [
+        "agent_runs",
+        "output_files",
+        "quality_rules"
+      ],
+      "outputs": [
+        "agent_performance_report",
+        "next_actions"
+      ],
+      "runs": "بعد كل تشغيل أو عند طلب المراجعة",
+      "failure_policy_ar": "يفصل بين فشل المصدر وفشل الصياغة حتى لا يضيع السبب الحقيقي."
+    },
+    {
+      "id": "tweet_publisher_guard",
+      "name_ar": "وكيل حارس النشر على X",
+      "name_en": "X Publishing Guard Agent",
+      "purpose_ar": "يراجع مسودات التسويق قبل التغريد ويتأكد أنها لا تبالغ ولا تنشر معلومة غير موثقة.",
+      "inputs": [
+        "growth_tweet_drafts",
+        "source_evidence",
+        "publishing_policy"
+      ],
+      "outputs": [
+        "approved_tweet_drafts",
+        "blocked_tweets"
+      ],
+      "runs": "بعد وكيل النمو وقبل أي نشر",
+      "failure_policy_ar": "الوضع الافتراضي مسودات فقط. النشر الفعلي يحتاج تفعيل وموافقة."
+    }
+  ]
+}

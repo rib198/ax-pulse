@@ -1,0 +1,153 @@
+{
+  "schema_version": "radar-agent-performance-v1",
+  "generated_at": "2026-05-11T10:41:38+00:00",
+  "overall_score": 53,
+  "verdict_ar": "جزئيًا جاهز: البنية تعمل، لكن ذكاء التحرير والتسويق يحتاجان تفعيلًا أقوى.",
+  "source_health": {
+    "run_status": "degraded",
+    "started_at": "2026-05-08T15:20:14+00:00",
+    "finished_at": "2026-05-08T15:21:50+00:00",
+    "sources_succeeded": 18,
+    "sources_failed": 3,
+    "skipped_sources": 1,
+    "source_runs_count": 314
+  },
+  "section_scores": {
+    "فرص الدخل": {
+      "count": 6,
+      "weak_count": 3,
+      "score": 62,
+      "note_ar": "يحتاج تنظيف: 3 بطاقة تحمل صياغة عامة."
+    },
+    "ما الجديد اليوم": {
+      "count": 0,
+      "weak_count": 0,
+      "score": 35,
+      "note_ar": "القسم فارغ أو لا يملك بطاقات مركزة."
+    },
+    "ماذا يتحدث الناس عنه": {
+      "count": 6,
+      "weak_count": 0,
+      "score": 100,
+      "note_ar": "مقبول"
+    },
+    "بطاقات X": {
+      "count": 379,
+      "weak_count": 340,
+      "score": 33,
+      "note_ar": "يحتاج تنظيف: 340 بطاقة تحمل صياغة عامة."
+    }
+  },
+  "validation": {
+    "total_cards": 160,
+    "valid_count": 141,
+    "rejected_count": 19,
+    "review_pending": 90
+  },
+  "openai_intelligence": {
+    "status": "skipped",
+    "card_count": 0,
+    "skipped_reason": "missing_openai_api_key"
+  },
+  "recent_agent_runs": [
+    {
+      "agent_name": "Radar Editor Agent",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 25,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Radar Editor Agent",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 0,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Opportunity Builder Agent",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 6,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Focused Updates Builder",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 0,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Focused Discussions Builder",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 6,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Validation Layer",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 141,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Validation Layer",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 141,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Review Queue",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 90,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Review Queue",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:53+00:00",
+      "output_count": 90,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Source Registry Validation",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:52+00:00",
+      "output_count": 25,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Data Contract File Check",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:52+00:00",
+      "output_count": 4,
+      "error_message": ""
+    },
+    {
+      "agent_name": "Evidence Guard Agent",
+      "status": "success",
+      "started_at": "2026-05-10T13:32:52+00:00",
+      "output_count": 1544,
+      "error_message": ""
+    }
+  ],
+  "issues_ar": [
+    "قسم ما الجديد اليوم فارغ من التحديثات المركزة.",
+    "بطاقات X فيها صياغات عامة كثيرة.",
+    "OpenAI Intelligence لم ينتج بطاقات بعد.",
+    "يوجد فشل/تقييد في بعض المصادر."
+  ],
+  "next_actions_ar": [
+    "تشغيل وكيل نبض النماذج/ما الجديد اليوم لأن القسم لا يملك تحديثات مركزة.",
+    "تشغيل طبقة OpenAI Intelligence بعد التأكد من وجود OPENAI_API_KEY.",
+    "إعادة تحرير بطاقات X العامة قبل عرضها في الواجهة الرئيسية.",
+    "مراجعة 90 عنصرًا في طابور المراجعة أو إبقاؤها خارج الرئيسية.",
+    "إظهار فشل المصادر للمستخدم ومتابعة آخر نسخة محفوظة بدون ادعاء أنها مباشرة."
+  ],
+  "failed_recent_runs": 0,
+  "partial_recent_runs": 0
+}
