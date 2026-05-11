@@ -1,87 +1,184 @@
 #!/usr/bin/env python3
-"""Drive Safari like a human, extract tweets, route them to the radar.
+"""Drive Safari to browse X like a human — anti-detection edition.
 
-This is the "manual browsing as an expert, automated" path. No API,
-no Nitter, no third-party scrapers. We use the Safari you're already
-logged into.
+This is the "manual browsing as an expert, automated" path. It uses your
+real, logged-in Safari window and behaves the way a careful person would,
+not a script:
 
-How it works:
-  1. Read X handles from data/manual_x/watchlist.txt (skips @bsky and
-     @user@instance entries — those go to Bluesky/Mastodon collectors).
-  2. For each handle:
-     a. Tell Safari to open https://x.com/<handle> in its front window.
-     b. Wait for the timeline to render.
-     c. Run tools/x_extract.js in the page (same DOM the bookmarklet uses).
-     d. Scroll a few times to load more tweets, extract each time.
-     e. Dedupe by tweet_id, merge into data/manual_x/posts.json.
-  3. After all handles: run x_smart_enrich.py.
-  4. Optional: --pipeline to run the full radar agent pipeline.
+  • Rotation: each session visits 12–22 randomly-picked handles out of
+    your watchlist, skipping anyone seen in the last 18 hours. The full
+    list of 217 handles is covered organically across ~5-10 sessions.
+  • Random everything: page-load wait (4-8.5s), scroll distance
+    (55-92% viewport), scroll passes (1-3), inter-handle pause (1-4s),
+    occasional reading pause (8-25s, ~15% of handles).
+  • Warmup: opens x.com/home, scrolls a bit, waits. Looks like a normal
+    person opening X before they navigate to a specific profile.
+  • Work hours: only runs between 8am and 11pm local time. Off otherwise.
+  • Cooldown: 3 consecutive login walls → 6 hours forced rest.
+  • State file: data/manual_x/safari_state.json tracks handle history,
+    last session, last block. Survives across runs.
 
-One-time macOS setup (required):
-  Safari → Settings → Advanced → check "Show Develop menu in menu bar"
+Schedule recipe (don't run hourly — that itself is a flag):
+  Have launchd or a manual cron fire this 2-4 times a day at jittered
+  hours (e.g. 9:23, 13:47, 17:12, 20:38). With 20 handles per session,
+  ~4 sessions/day, full watchlist refreshes in 3 days. That's slower
+  than the original design — that's the point.
+
+One-time macOS setup:
+  Safari → Settings → Advanced → check "Show Develop menu"
   Develop menu → "Allow JavaScript from Apple Events"
-  (On macOS Sequoia you may also be prompted the first time you run this
-   to allow Terminal to control Safari — accept it.)
+  First run will prompt: System Settings → Privacy & Security →
+  Automation → Terminal → toggle Safari ON.
 
 Run:
-  python3 tools/x_safari_browse.py                 # all X handles
-  python3 tools/x_safari_browse.py --only sama,karpathy   # subset
-  python3 tools/x_safari_browse.py --pipeline      # + run agents
-  python3 tools/x_safari_browse.py --max 30        # cap handles per run
+  python3 tools/x_safari_browse.py                  # one session, rotates
+  python3 tools/x_safari_browse.py --only sama,karpathy   # specific (bypasses rotation + work hours)
+  python3 tools/x_safari_browse.py --pipeline       # + run agents after
+  python3 tools/x_safari_browse.py --force          # skip work-hours gate
+  python3 tools/x_safari_browse.py --max 8          # smaller session
 
-Login-wall detection: if Safari returns is_login_wall=true for more than
-two handles in a row, we stop and remind you to log in (no fake data).
-
-This is the heaviest collector — expect ~5-10 seconds per handle. Run
-it on your machine, not in CI. The cron path still uses Nitter/Bluesky/
-Mastodon for unattended runs.
+When the cron path on Vercel/GitHub Actions runs, it uses x_auto_collect.py
+(Nitter + Bluesky + Mastodon) — no Safari needed there. This tool is for
+local sessions you run from your Mac when you want fresher first-party data.
 """
 from __future__ import annotations
 
 import argparse
 import json
 import os
-import re
+import random
 import subprocess
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXTRACT_JS = ROOT / "tools" / "x_extract.js"
 POSTS_PATH = ROOT / "data" / "manual_x" / "posts.json"
 WATCHLIST_PATH = ROOT / "data" / "manual_x" / "watchlist.txt"
+STATE_PATH = ROOT / "data" / "manual_x" / "safari_state.json"
 ENRICH_SCRIPT = ROOT / "tools" / "x_smart_enrich.py"
 RADAR_SCRIPT = ROOT / "tools" / "run_radar_agents.py"
 
-PAGE_LOAD_SECS = 6        # initial wait for X to render the timeline
-SCROLL_PASSES = 3         # number of scrolls per handle (each gets more tweets)
-SCROLL_WAIT = 2.5         # pause between scrolls
-HANDLE_PAUSE = 0.8        # gentle pacing between handles
+# ===== Anti-detection strategy =====
+# Goal: behave like a careful human, not a script. Every action has variance,
+# every session has a rotation, and the tool never sprints through the whole
+# watchlist in one go.
+STRATEGY = {
+    # Session size — how many handles per run
+    "session_handles_min":      12,
+    "session_handles_max":      22,
+
+    # Page load wait (after navigation)
+    "page_load_min":            4.0,
+    "page_load_max":            8.5,
+
+    # Per-handle scroll passes (after initial extract)
+    "scroll_passes_min":        1,
+    "scroll_passes_max":        3,
+
+    # Scroll pause between passes
+    "scroll_pause_min":         1.8,
+    "scroll_pause_max":         4.0,
+
+    # Scroll distance as fraction of viewport
+    "scroll_pct_min":           0.55,
+    "scroll_pct_max":           0.92,
+
+    # Inter-handle pause
+    "handle_pause_min":         0.9,
+    "handle_pause_max":         3.5,
+
+    # Occasional "reading" pause to break the cadence
+    "reading_pause_chance":     0.15,
+    "reading_pause_min":        8,
+    "reading_pause_max":        25,
+
+    # Rotation — don't revisit anyone seen in last N hours
+    "rotation_hours":           18,
+
+    # Block-response — after K consecutive login walls, stop and cool down
+    "blocks_to_stop":           3,
+    "cooldown_hours_after_block": 6,
+
+    # Work hours (local time)
+    "work_hours_start":         8,
+    "work_hours_end":           23,
+
+    # Warmup — open home timeline first, scroll a bit
+    "warmup_enabled":           True,
+    "warmup_scrolls":           (1, 3),       # range
+    "warmup_post_wait":         (3.0, 7.0),   # final settle before profiles
+}
+
 MAX_OSASCRIPT_TIMEOUT = 30
 
 
+# ---------- Time + randomness ----------
+
+def _now() -> datetime:
+    return datetime.now(timezone.utc)
+
+
 def _now_iso() -> str:
-    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+    return _now().isoformat(timespec="seconds")
+
+
+def random_delay(lo: float, hi: float) -> None:
+    time.sleep(random.uniform(lo, hi))
+
+
+def in_work_hours() -> bool:
+    h = datetime.now().hour
+    return STRATEGY["work_hours_start"] <= h < STRATEGY["work_hours_end"]
+
+
+# ---------- State persistence ----------
+
+def load_state() -> dict:
+    if not STATE_PATH.exists():
+        return {"version": 1, "handle_history": {}, "last_session": None, "last_block_at": None}
+    try:
+        return json.loads(STATE_PATH.read_text("utf-8"))
+    except Exception:
+        return {"version": 1, "handle_history": {}, "last_session": None, "last_block_at": None}
+
+
+def save_state(state: dict) -> None:
+    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def in_cooldown(state: dict) -> tuple[bool, float]:
+    """Returns (in_cd, hours_remaining)."""
+    blk = state.get("last_block_at")
+    if not blk:
+        return (False, 0.0)
+    try:
+        blk_dt = datetime.fromisoformat(blk.replace("Z", "+00:00"))
+    except Exception:
+        return (False, 0.0)
+    cd = timedelta(hours=STRATEGY["cooldown_hours_after_block"])
+    elapsed = _now() - blk_dt
+    if elapsed < cd:
+        return (True, (cd - elapsed).total_seconds() / 3600)
+    return (False, 0.0)
 
 
 # ---------- AppleScript driver ----------
 
 def _osascript(script: str, timeout: int = MAX_OSASCRIPT_TIMEOUT) -> str:
-    """Run an AppleScript via osascript and return stdout."""
     r = subprocess.run(
         ["/usr/bin/osascript", "-e", script],
         capture_output=True, text=True, timeout=timeout,
     )
     if r.returncode != 0:
-        msg = (r.stderr or "").strip()
-        raise RuntimeError(f"osascript failed: {msg}")
+        raise RuntimeError((r.stderr or "").strip() or "osascript failed")
     return r.stdout.strip()
 
 
 def safari_open_url(url: str) -> None:
-    """Tell Safari to navigate the front document to URL (creates one if none)."""
     script = f'''
 tell application "Safari"
     activate
@@ -96,30 +193,24 @@ end tell
 
 
 def safari_run_js(js: str) -> str:
-    """Run JS in the front Safari document, return its string result.
-    Requires Develop → Allow JavaScript from Apple Events."""
-    # Escape backslashes and double-quotes for AppleScript string literal.
     escaped = js.replace("\\", "\\\\").replace('"', '\\"')
     script = f'tell application "Safari" to return (do JavaScript "{escaped}" in front document)'
     return _osascript(script)
 
 
-def safari_scroll() -> None:
-    """Scroll the front Safari document down one viewport."""
-    js = "window.scrollBy(0, Math.max(400, Math.floor(window.innerHeight * 0.85)));"
-    safari_run_js(js)
+def safari_scroll_random() -> None:
+    pct = random.uniform(STRATEGY["scroll_pct_min"], STRATEGY["scroll_pct_max"])
+    safari_run_js(f"window.scrollBy(0, Math.floor(window.innerHeight * {pct}));")
 
 
-# ---------- Watchlist parsing (X-only subset) ----------
+# ---------- Watchlist parsing ----------
 
 def parse_x_handles(path: Path) -> list[tuple[str, str]]:
-    """Parse watchlist.txt and return [(handle, section)] for X handles only.
-    Skips Bluesky (*.bsky.social) and Mastodon (user@instance) entries."""
     if not path.exists():
         return []
     out: list[tuple[str, str]] = []
     section = "watchlist"
-    seen = set()
+    seen: set[str] = set()
     for raw in path.read_text("utf-8").splitlines():
         line = raw.strip()
         if not line:
@@ -132,7 +223,6 @@ def parse_x_handles(path: Path) -> list[tuple[str, str]]:
         handle = line.split()[0].lstrip("@")
         if not handle:
             continue
-        # Skip non-X handles
         if ".bsky.social" in handle or ".bsky.team" in handle or ".bsky." in handle:
             continue
         if "@" in handle:
@@ -144,46 +234,89 @@ def parse_x_handles(path: Path) -> list[tuple[str, str]]:
     return out
 
 
-# ---------- Per-handle browse loop ----------
+# ---------- Rotation ----------
 
-def collect_from_handle(handle: str, section: str, extract_js: str) -> list[dict]:
-    """Open profile, scroll, extract repeatedly, return deduped post dicts."""
+def rotate_handles(all_handles: list[tuple[str, str]], state: dict) -> list[tuple[str, str]]:
+    """Pick a randomized subset that hasn't been visited recently."""
+    history = state.get("handle_history") or {}
+    cutoff = _now() - timedelta(hours=STRATEGY["rotation_hours"])
+    candidates: list[tuple[str, str]] = []
+    for h, s in all_handles:
+        last_iso = history.get(h.lower())
+        if last_iso:
+            try:
+                last_dt = datetime.fromisoformat(last_iso.replace("Z", "+00:00"))
+                if last_dt > cutoff:
+                    continue   # too recent
+            except Exception:
+                pass
+        candidates.append((h, s))
+
+    random.shuffle(candidates)
+    size = random.randint(STRATEGY["session_handles_min"], STRATEGY["session_handles_max"])
+    chosen = candidates[:size]
+    if not chosen:
+        # Everything was visited recently — pick from least-recent instead
+        sorted_by_last = sorted(
+            all_handles,
+            key=lambda hs: history.get(hs[0].lower()) or "0",
+        )
+        chosen = sorted_by_last[:size]
+    return chosen
+
+
+# ---------- Warmup ----------
+
+def warmup() -> None:
+    if not STRATEGY["warmup_enabled"]:
+        return
+    print("→ warmup (home timeline)…")
+    try:
+        safari_open_url("https://x.com/home")
+        random_delay(*STRATEGY["warmup_post_wait"])
+        scrolls = random.randint(*STRATEGY["warmup_scrolls"])
+        for _ in range(scrolls):
+            safari_scroll_random()
+            random_delay(1.5, 3.5)
+        random_delay(*STRATEGY["warmup_post_wait"])
+    except Exception as e:
+        print(f"  warmup failed (continuing): {e}")
+
+
+# ---------- Per-handle ----------
+
+def collect_from_handle(handle: str, section: str, extract_js: str) -> list[dict] | None:
+    """Returns the list of extracted posts (possibly empty if profile had
+    nothing new). Returns None if a login wall was hit — caller treats that
+    as a block signal."""
     url = f"https://x.com/{handle}"
-    print(f"  → {handle} ({section}) …", end="", flush=True)
+    print(f"  → @{handle} ({section}) …", end="", flush=True)
     try:
         safari_open_url(url)
     except Exception as e:
         print(f"  open failed: {e}")
         return []
 
-    time.sleep(PAGE_LOAD_SECS)
+    random_delay(STRATEGY["page_load_min"], STRATEGY["page_load_max"])
 
     by_id: dict[str, dict] = {}
     login_wall = False
 
-    for pass_idx in range(SCROLL_PASSES + 1):  # initial + scrolls
+    def _extract_once() -> bool:
+        """Returns True if extraction was healthy, False if login wall."""
         try:
             raw = safari_run_js(extract_js)
-        except subprocess.TimeoutExpired:
-            print(f"  timeout on pass {pass_idx}")
-            break
-        except RuntimeError as e:
-            print(f"  js failed: {e}")
-            break
-
+        except (subprocess.TimeoutExpired, RuntimeError):
+            return True   # treat as transient, continue
         try:
             payload = json.loads(raw) if raw else {}
         except json.JSONDecodeError:
-            payload = {}
-
+            return True
         if payload.get("is_login_wall"):
-            login_wall = True
-            break
-
+            return False
         for p in payload.get("posts") or []:
             tid = p.get("tweet_id")
             if tid and tid not in by_id:
-                # Existing radar schema normalization
                 by_id[tid] = {
                     "tweet_id":         tid,
                     "author_handle":    p.get("author_handle") or handle,
@@ -204,21 +337,35 @@ def collect_from_handle(handle: str, section: str, extract_js: str) -> list[dict
                         "quotes":  0,
                         "views":   None,
                     },
-                    "pain_signal_score": 0,
-                    "opportunity_tags": [],
+                    "pain_signal_score":  0,
+                    "opportunity_tags":   [],
                     "verification_status": "safari_browse",
-                    "lang":             "",
+                    "lang":               "",
                 }
+        return True
 
-        if pass_idx < SCROLL_PASSES:
-            try: safari_scroll()
-            except Exception: break
-            time.sleep(SCROLL_WAIT)
+    # Initial extract
+    if not _extract_once():
+        login_wall = True
 
-    items = list(by_id.values())
-    status = "login wall" if login_wall else f"{len(items)} tweets"
-    print(f"  {status}")
-    return [] if login_wall else items
+    # Variable scroll passes
+    if not login_wall:
+        scrolls = random.randint(STRATEGY["scroll_passes_min"], STRATEGY["scroll_passes_max"])
+        for _ in range(scrolls):
+            try:
+                safari_scroll_random()
+            except Exception:
+                break
+            random_delay(STRATEGY["scroll_pause_min"], STRATEGY["scroll_pause_max"])
+            if not _extract_once():
+                login_wall = True
+                break
+
+    if login_wall:
+        print("  login wall")
+        return None
+    print(f"  {len(by_id)} tweets")
+    return list(by_id.values())
 
 
 # ---------- Store merge ----------
@@ -236,7 +383,6 @@ def merge_into_posts(new_items: list[dict]) -> dict:
     existing = doc.get("items") or []
     by_id = {p.get("tweet_id"): i for i, p in enumerate(existing) if p.get("tweet_id")}
     added = updated = 0
-
     for it in new_items:
         tid = it.get("tweet_id")
         if not tid:
@@ -264,35 +410,31 @@ def merge_into_posts(new_items: list[dict]) -> dict:
     return {"added": added, "updated": updated, "total": len(existing)}
 
 
-# ---------- Setup check ----------
+# ---------- Permission probes ----------
 
 def check_safari_access() -> bool:
-    """Try a no-op AppleScript to see if we have permission to drive Safari."""
     try:
         out = _osascript('tell application "Safari" to return name', timeout=8)
         return "Safari" in out
     except subprocess.TimeoutExpired:
         return False
     except RuntimeError as e:
-        msg = str(e)
-        if "not authorized" in msg.lower() or "1743" in msg:
-            print("\n⚠ Terminal is not authorized to control Safari.")
+        msg = str(e).lower()
+        if "not authorized" in msg or "1743" in msg:
+            print("\n⚠ Terminal not authorized to control Safari.")
             print("   System Settings → Privacy & Security → Automation → Terminal → toggle Safari.")
         return False
 
 
 def check_js_from_events() -> str | None:
-    """Returns None if JS-from-Apple-Events works, else an error message."""
     try:
         out = safari_run_js("'js_ok'")
-        if "js_ok" in out:
-            return None
-        return f"unexpected js output: {out[:60]}"
+        return None if "js_ok" in out else f"unexpected JS output: {out[:60]}"
     except RuntimeError as e:
         msg = str(e)
         if "JavaScript through" in msg or "Apple Events" in msg or "Allow" in msg:
             return ("Develop → Allow JavaScript from Apple Events is OFF.\n"
-                    "   Enable: Safari → Settings → Advanced → Show Develop menu.\n"
+                    "   Safari → Settings → Advanced → Show Develop menu.\n"
                     "   Then: Develop → Allow JavaScript from Apple Events.")
         return msg
 
@@ -300,61 +442,121 @@ def check_js_from_events() -> str | None:
 # ---------- Main ----------
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Drive Safari to browse X like a human.")
-    parser.add_argument("--only", help="Comma-separated handle subset (overrides watchlist filter)")
-    parser.add_argument("--max", type=int, default=0, help="Cap handles processed this run")
-    parser.add_argument("--pipeline", action="store_true", help="Run radar agent pipeline after enrich")
+    parser = argparse.ArgumentParser(description="Drive Safari to browse X like a human — anti-detection edition.")
+    parser.add_argument("--only", help="Comma-separated handle subset (bypasses rotation + work-hours gate)")
+    parser.add_argument("--max", type=int, default=0, help="Override session size (default randomized 12-22)")
+    parser.add_argument("--pipeline", action="store_true", help="Run radar agent pipeline after collection")
     parser.add_argument("--no-enrich", action="store_true", help="Skip x_smart_enrich after collection")
-    parser.add_argument("--skip-checks", action="store_true", help="Skip Safari/Apple Events probes (use at own risk)")
+    parser.add_argument("--force", action="store_true", help="Bypass work-hours + cooldown gates (use sparingly)")
+    parser.add_argument("--skip-checks", action="store_true", help="Skip Safari/Apple Events probes")
+    parser.add_argument("--status", action="store_true", help="Print session/cooldown/coverage status and exit")
     args = parser.parse_args()
 
     if sys.platform != "darwin":
-        print("This tool needs macOS Safari. On Linux/CI use x_auto_collect.py (Nitter/Bluesky/Mastodon).")
+        print("This tool needs macOS Safari. CI/cloud uses x_auto_collect.py instead.")
         return 1
 
+    state = load_state()
+    all_handles = parse_x_handles(WATCHLIST_PATH)
+
+    if args.status:
+        cd, hrs = in_cooldown(state)
+        history = state.get("handle_history") or {}
+        cutoff = _now() - timedelta(hours=STRATEGY["rotation_hours"])
+        fresh = sum(
+            1 for h, _ in all_handles
+            if (lambda last: last and datetime.fromisoformat(last.replace("Z", "+00:00")) > cutoff)
+               (history.get(h.lower()))
+        )
+        print("=== Safari browse status ===")
+        print(f"  watchlist size:     {len(all_handles)}")
+        print(f"  visited last 18h:   {fresh}  ({100*fresh//max(1,len(all_handles))}%)")
+        print(f"  available to visit: {len(all_handles) - fresh}")
+        print(f"  last session:       {state.get('last_session') or '—'}")
+        print(f"  in cooldown:        {'YES' if cd else 'no'}{f' ({hrs:.1f}h remaining)' if cd else ''}")
+        print(f"  work hours now:     {'yes' if in_work_hours() else 'no'} (local {datetime.now().strftime('%H:%M')})")
+        return 0
+
+    # Gate: work hours
+    if not args.force and not args.only and not in_work_hours():
+        h_now = datetime.now().strftime("%H:%M")
+        print(f"Outside work hours ({h_now} local). Window is "
+              f"{STRATEGY['work_hours_start']:02d}:00–{STRATEGY['work_hours_end']:02d}:00. "
+              "Use --force to override.")
+        return 0
+
+    # Gate: cooldown
+    if not args.force:
+        cd, hrs = in_cooldown(state)
+        if cd:
+            print(f"In cooldown after recent block. {hrs:.1f}h remaining. Use --force to override.")
+            return 0
+
+    # Permission preflight
     if not args.skip_checks:
         if not check_safari_access():
-            print("Cannot reach Safari via AppleScript. Open Safari once manually then re-run.")
+            print("Cannot reach Safari via AppleScript. Open Safari then re-run.")
             return 1
         err = check_js_from_events()
         if err:
             print(f"⚠ {err}")
             return 1
 
-    extract_js = EXTRACT_JS.read_text("utf-8")
-
-    handles = parse_x_handles(WATCHLIST_PATH)
+    # Pick handles
     if args.only:
         wanted = {h.strip().lstrip("@").lower() for h in args.only.split(",")}
-        handles = [(h, s) for (h, s) in handles if h.lower() in wanted]
+        chosen = [(h, s) for (h, s) in all_handles if h.lower() in wanted]
+    else:
+        chosen = rotate_handles(all_handles, state)
     if args.max and args.max > 0:
-        handles = handles[: args.max]
+        chosen = chosen[:args.max]
 
-    if not handles:
-        print("No X handles to browse. Check watchlist.txt or --only.")
+    if not chosen:
+        print("No handles to visit (rotation found nothing fresh? check watchlist or --only).")
         return 1
 
-    print(f"=== Safari browse — {_now_iso()} ===")
-    print(f"will visit {len(handles)} X handle(s), ~{PAGE_LOAD_SECS + SCROLL_PASSES * SCROLL_WAIT:.0f}s each")
+    extract_js = EXTRACT_JS.read_text("utf-8")
+    print(f"=== Safari session — {_now_iso()} ===")
+    print(f"will visit {len(chosen)} of {len(all_handles)} watchlist handles (rotated)")
+
+    # Warmup pass
+    if not args.only:
+        warmup()
 
     all_new: list[dict] = []
-    consecutive_login_walls = 0
-    for handle, section in handles:
-        before = len(all_new)
+    blocks_in_a_row = 0
+    visits_completed = 0
+
+    for handle, section in chosen:
+        # Occasional reading pause to break the cadence
+        if random.random() < STRATEGY["reading_pause_chance"]:
+            rp = random.uniform(STRATEGY["reading_pause_min"], STRATEGY["reading_pause_max"])
+            print(f"  (reading pause {rp:.0f}s)")
+            time.sleep(rp)
+
         items = collect_from_handle(handle, section, extract_js)
-        if not items:
-            consecutive_login_walls += 1
-            if consecutive_login_walls >= 3:
-                print("\n⚠ Three handles in a row returned no tweets / hit a login wall.")
-                print("   Log into x.com in Safari (the same window), then re-run.")
+        if items is None:
+            blocks_in_a_row += 1
+            if blocks_in_a_row >= STRATEGY["blocks_to_stop"]:
+                state["last_block_at"] = _now_iso()
+                save_state(state)
+                print(f"⚠ {blocks_in_a_row} consecutive blocks → entering "
+                      f"{STRATEGY['cooldown_hours_after_block']}h cooldown.")
                 break
         else:
-            consecutive_login_walls = 0
-        all_new.extend(items)
-        time.sleep(HANDLE_PAUSE)
+            blocks_in_a_row = 0
+            state.setdefault("handle_history", {})[handle.lower()] = _now_iso()
+            all_new.extend(items)
+            visits_completed += 1
+
+        random_delay(STRATEGY["handle_pause_min"], STRATEGY["handle_pause_max"])
+
+    state["last_session"] = _now_iso()
+    save_state(state)
 
     merge = merge_into_posts(all_new)
-    print(f"\nmerged: +{merge['added']} new, {merge['updated']} updated, {merge['total']} total in store")
+    print(f"\nmerged: +{merge['added']} new, {merge['updated']} updated, {merge['total']} total")
+    print(f"session: {visits_completed} successful visits of {len(chosen)} planned")
 
     if not args.no_enrich and ENRICH_SCRIPT.exists() and merge["added"] + merge["updated"] > 0:
         print("→ smart enrich…")
@@ -369,7 +571,8 @@ def main() -> int:
             agent_args.append("--no-openai")
         r = subprocess.run(agent_args, capture_output=True, text=True)
         for line in (r.stdout or "").splitlines()[-3:]:
-            if line.strip(): print("  " + line.strip())
+            if line.strip():
+                print("  " + line.strip())
 
     return 0
 
