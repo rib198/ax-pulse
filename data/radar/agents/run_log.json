@@ -1,9 +1,10 @@
 {
-  "run_at": "2026-05-11T12:42:21+00:00",
+  "run_at": "2026-05-11T16:35:07+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
     "source_collector",
+    "manual_x_bridge",
     "evidence_guard",
     "load_learned_weights",
     "priority_ranker",
@@ -25,20 +26,31 @@
     {
       "agent": "source_collector",
       "ok": false,
-      "duration_s": 4.883,
+      "duration_s": 4.709,
       "written": [],
       "notes": [],
       "error": "ParseError: not well-formed (invalid token): line 1, column 26"
     },
     {
+      "agent": "manual_x_bridge",
+      "ok": true,
+      "duration_s": 0.057,
+      "written": [],
+      "notes": [
+        "injected 658 manual X items (skipped 541 of 1199)"
+      ],
+      "error": null
+    },
+    {
       "agent": "evidence_guard",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 0 items"
+        "tagged 658 items",
+        "by tier: press=658"
       ],
       "error": null
     },
@@ -55,81 +67,82 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.026,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 0 items, top priority=0.000"
+        "ranked 658 items, top priority=0.435"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.001,
+      "duration_s": 0.01,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 0 companies, 0 products this run",
-        "store size: 0"
+        "detected 13 companies, 17 products this run",
+        "store size: 29"
       ],
       "error": null
     },
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.035,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
-        "0 total"
+        "+26 new model events",
+        "26 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.109,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "0 events (0 new)"
+        "2 events (2 new)",
+        "by type: pricing_change=1, model_release=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.014,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
       "notes": [
-        "0 arab-market items"
+        "40 arab-market items"
       ],
       "error": null
     },
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.014,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "rule fallback produced 0 opportunities"
+        "rule fallback produced 4 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.001,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -142,23 +155,29 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.01,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
-      "notes": [],
+      "notes": [
+        "opps: 3 free / 1 premium",
+        "signals: 6 free / 114 premium"
+      ],
       "error": null
     },
     {
       "agent": "auto_archive",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.003,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
-      "notes": [],
+      "notes": [
+        "opportunities: 0 archived (cutoff = 90d)",
+        "signals: 0 archived (cutoff = 90d)"
+      ],
       "error": null
     },
     {
@@ -169,67 +188,58 @@
         "data/radar/agents/social_posts.json"
       ],
       "notes": [
-        "rule fallback produced 0 posts"
+        "rule fallback produced 5 posts"
       ],
       "error": null
     },
     {
       "agent": "ux_production_qa",
       "ok": true,
-      "duration_s": 0.001,
+      "duration_s": 0.004,
       "written": [
         "data/radar/agents/qa_report.json"
       ],
       "notes": [
-        "3 issues"
+        "all UI/JSON checks passed"
       ],
       "error": null
     },
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.001,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=0, opps=0, calls=0"
+        "items=658, opps=4, calls=0"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.001,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: لم تُرصد أحداث مركّبة من الإشارات هذا التشغيل."
+        "insight via rules: رصد 2 حدثًا جديدًا أبرزها: تغيير سعر على anthropic بـ 2 إشارة. تدفّق الإشارات ا…"
       ],
       "error": null
     },
     {
       "agent": "memory_learning",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.001,
       "written": [
         "data/radar/agents/learnings.json"
       ],
       "notes": [
-        "tracked 0 sources",
-        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
+        "tracked 1 sources",
+        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
       ],
       "error": null
-    },
-    {
-      "agent": "orchestrator",
-      "ok": true,
-      "duration_s": 0,
-      "written": [],
-      "notes": [
-        "reused 225 items from disk"
-      ]
     }
   ]
 }
