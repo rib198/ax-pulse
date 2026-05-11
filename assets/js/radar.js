@@ -846,6 +846,31 @@ function dockItems(layer) {
   return RadarState.signals.slice(0, 6);
 }
 
+function isManualXSignal(item = {}) {
+  return item.manual === true || item.source_id === 'manual_x' || String(item.id || '').startsWith('manual_x:');
+}
+
+function manualXHandle(item = {}) {
+  const raw = String(item.author_handle || item.author || '').trim();
+  if (!raw) return 'X';
+  return raw.startsWith('@') ? raw : `@${raw}`;
+}
+
+function manualXEngagementHTML(item = {}) {
+  const metrics = item.metrics || item.public_metrics || {};
+  const likes = Number(metrics.likes || 0);
+  const reposts = Number(metrics.retweets || metrics.reposts || 0);
+  const replies = Number(metrics.replies || 0);
+  if (!likes && !reposts && !replies) return '';
+  return `
+    <small class="manual-x-engagement" aria-label="X engagement">
+      <b>♥ ${escapeHTML(formatNumber(likes))}</b>
+      <b>↻ ${escapeHTML(formatNumber(reposts))}</b>
+      <b>💬 ${escapeHTML(formatNumber(replies))}</b>
+    </small>
+  `;
+}
+
 function panelChip(item, layer, idx) {
   if (layer === 'opportunities') {
     const isX = item.kind === 'x_curated';
@@ -960,12 +985,15 @@ function panelChip(item, layer, idx) {
       </button>
     `;
   }
+  const manualX = isManualXSignal(item);
+  const sourceLabel = manualX ? `𝕏 ${manualXHandle(item)}` : sourceName(item.source_id);
   return `
-    <button type="button" class="signal-chip" data-signal-idx="${idx}">
-      <span><bdi>${escapeHTML(sourceName(item.source_id))}</bdi></span>
+    <button type="button" class="signal-chip ${manualX ? 'manual-x-chip' : ''}" data-signal-idx="${idx}">
+      <span class="${manualX ? 'manual-x-source' : ''}"><bdi>${escapeHTML(sourceLabel)}</bdi></span>
       ${freshnessBadgeHTML(cardFreshness(item, 'signal'))}
       <p>${escapeHTML(localizedTitle(item))}</p>
       ${layer === 'radar' ? `<small>${escapeHTML(signalCardPreview(item))}</small>` : ''}
+      ${manualXEngagementHTML(item)}
     </button>
   `;
 }

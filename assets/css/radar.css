@@ -1892,6 +1892,60 @@ html[dir="rtl"] .detail-evidence-card b {
   hyphens: none;
 }
 
+.manual-x-chip {
+  border-color: rgba(110, 239, 255, 0.26);
+  background:
+    linear-gradient(90deg, rgba(110, 239, 255, 0.13), rgba(110, 239, 255, 0.04) 42%, rgba(255, 255, 255, 0.025)),
+    rgba(255, 255, 255, 0.035);
+  box-shadow: inset 3px 0 0 rgba(110, 239, 255, 0.86), 0 0 22px rgba(110, 239, 255, 0.08);
+}
+
+html[dir="rtl"] .manual-x-chip {
+  box-shadow: inset -3px 0 0 rgba(110, 239, 255, 0.86), 0 0 22px rgba(110, 239, 255, 0.08);
+}
+
+.manual-x-chip:hover {
+  border-color: rgba(110, 239, 255, 0.46);
+  background:
+    linear-gradient(90deg, rgba(110, 239, 255, 0.18), rgba(110, 239, 255, 0.06) 46%, rgba(255, 255, 255, 0.035)),
+    rgba(255, 255, 255, 0.045);
+  box-shadow: inset 3px 0 0 rgba(110, 239, 255, 1), 0 0 30px rgba(110, 239, 255, 0.14);
+}
+
+html[dir="rtl"] .manual-x-chip:hover {
+  box-shadow: inset -3px 0 0 rgba(110, 239, 255, 1), 0 0 30px rgba(110, 239, 255, 0.14);
+}
+
+.manual-x-source {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 5px;
+  width: max-content;
+  max-width: 52%;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(110, 239, 255, 0.28);
+  background: rgba(110, 239, 255, 0.10);
+  color: rgba(158, 246, 255, 0.95) !important;
+  text-transform: none !important;
+}
+
+.manual-x-engagement {
+  position: absolute;
+  inset-inline-start: 14px;
+  bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(210, 238, 255, 0.70);
+  font: 700 11px/1 var(--font-mono);
+}
+
+.manual-x-engagement b {
+  font: inherit;
+  color: inherit;
+}
+
 .freshness-badge {
   position: absolute;
   top: 7px;
