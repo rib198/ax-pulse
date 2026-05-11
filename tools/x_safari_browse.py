@@ -112,6 +112,34 @@ STRATEGY = {
     "warmup_post_wait":         (3.0, 7.0),   # final settle before profiles
 }
 
+# Continuous mode strategy — for the "one handle every 4-7 minutes" loop.
+# Combines deep collection per profile with daily quotas + periodic breaks.
+CONTINUOUS = {
+    # Interval between profile visits (random per-iteration)
+    "interval_min_seconds":     4 * 60,
+    "interval_max_seconds":     7 * 60,
+
+    # Per-profile depth target — try to gather up to this many tweets
+    "target_tweets":            100,
+    "max_scrolls":              18,
+    "stop_after_dry_scrolls":   2,    # bottom-detector: 2 scrolls add nothing → done
+
+    # Warmup re-runs every N profiles (randomized range)
+    "warmup_every":             (8, 12),
+
+    # Occasional longer breaks to disrupt the cadence
+    "extra_break_chance":       0.06,        # 6% chance per profile
+    "extra_break_min":          15 * 60,
+    "extra_break_max":          30 * 60,
+
+    # Daily safety caps. Beyond these the loop sleeps until next day.
+    "daily_handle_quota":       180,
+    "daily_tweet_quota":        14000,
+
+    # Enrich after every N successful visits
+    "enrich_every_n":           5,
+}
+
 MAX_OSASCRIPT_TIMEOUT = 30
 
 
@@ -410,6 +438,254 @@ def merge_into_posts(new_items: list[dict]) -> dict:
     return {"added": added, "updated": updated, "total": len(existing)}
 
 
+# ---------- Deep collection (for continuous mode) ----------
+
+def collect_deep_from_handle(handle: str, section: str, extract_js: str, target: int, max_scrolls: int) -> list[dict] | None:
+    """Visit a profile and scroll until we have `target` tweets OR hit the
+    floor (two scrolls in a row produce nothing new) OR run out of scrolls.
+    Returns None if a login wall is hit at any point."""
+    url = f"https://x.com/{handle}"
+    print(f"  → @{handle} ({section})  target={target} …", end="", flush=True)
+    try:
+        safari_open_url(url)
+    except Exception as e:
+        print(f"  open failed: {e}")
+        return []
+
+    random_delay(STRATEGY["page_load_min"], STRATEGY["page_load_max"])
+
+    by_id: dict[str, dict] = {}
+
+    def _extract_once() -> tuple[bool, int]:
+        """Returns (login_wall, new_count_this_pass)."""
+        try:
+            raw = safari_run_js(extract_js)
+        except (subprocess.TimeoutExpired, RuntimeError):
+            return (False, 0)
+        try:
+            payload = json.loads(raw) if raw else {}
+        except json.JSONDecodeError:
+            return (False, 0)
+        if payload.get("is_login_wall"):
+            return (True, 0)
+        added = 0
+        for p in payload.get("posts") or []:
+            tid = p.get("tweet_id")
+            if tid and tid not in by_id:
+                by_id[tid] = {
+                    "tweet_id":         tid,
+                    "author_handle":    p.get("author_handle") or handle,
+                    "author_name":      "",
+                    "text":             p.get("text") or "",
+                    "url":              p.get("url") or url,
+                    "posted_at":        p.get("posted_at"),
+                    "collected_at":     p.get("collected_at") or _now_iso(),
+                    "source_type":      "safari_browse",
+                    "platform":         "x",
+                    "section":          section,
+                    "query":            f"profile:@{handle}",
+                    "matched_keywords": [],
+                    "public_metrics": {
+                        "likes":   p.get("likes") or 0,
+                        "reposts": p.get("retweets") or 0,
+                        "replies": p.get("replies") or 0,
+                        "quotes":  0,
+                        "views":   None,
+                    },
+                    "pain_signal_score":   0,
+                    "opportunity_tags":    [],
+                    "verification_status": "safari_browse",
+                    "lang":                "",
+                }
+                added += 1
+        return (False, added)
+
+    # Initial extract
+    login_wall, _ = _extract_once()
+    if login_wall:
+        print("  login wall")
+        return None
+
+    dry_in_a_row = 0
+    scrolls_done = 0
+    while len(by_id) < target and scrolls_done < max_scrolls and dry_in_a_row < CONTINUOUS["stop_after_dry_scrolls"]:
+        try:
+            safari_scroll_random()
+        except Exception:
+            break
+        random_delay(STRATEGY["scroll_pause_min"], STRATEGY["scroll_pause_max"])
+        login_wall, added = _extract_once()
+        if login_wall:
+            print(f"  login wall after {scrolls_done} scrolls ({len(by_id)} collected)")
+            return None
+        if added == 0:
+            dry_in_a_row += 1
+        else:
+            dry_in_a_row = 0
+        scrolls_done += 1
+
+    reason = "target" if len(by_id) >= target else ("floor" if dry_in_a_row >= CONTINUOUS["stop_after_dry_scrolls"] else "max-scrolls")
+    print(f"  {len(by_id)} tweets [{scrolls_done} scrolls, stop:{reason}]")
+    return list(by_id.values())
+
+
+# ---------- Daily counters ----------
+
+def _today_str() -> str:
+    return datetime.now().strftime("%Y-%m-%d")
+
+
+def reset_daily_if_needed(state: dict) -> dict:
+    dc = state.setdefault("daily_counters", {})
+    if dc.get("date") != _today_str():
+        dc["date"] = _today_str()
+        dc["handles_visited"] = 0
+        dc["tweets_collected"] = 0
+    return dc
+
+
+def seconds_until_tomorrow() -> int:
+    now = datetime.now()
+    tomorrow_8am = (now + timedelta(days=1)).replace(
+        hour=STRATEGY["work_hours_start"], minute=5, second=0, microsecond=0
+    )
+    return max(60, int((tomorrow_8am - now).total_seconds()))
+
+
+# ---------- Continuous loop ----------
+
+def continuous_loop(extract_js: str, run_pipeline: bool) -> int:
+    state = load_state()
+    visits_since_warmup = 0
+    enrich_counter = 0
+
+    print(f"=== Continuous Safari session — started {_now_iso()} ===")
+    print(f"  policy: 1 profile every "
+          f"{CONTINUOUS['interval_min_seconds']//60}–{CONTINUOUS['interval_max_seconds']//60} min, "
+          f"target {CONTINUOUS['target_tweets']} tweets/profile")
+    print(f"  daily safety caps: {CONTINUOUS['daily_handle_quota']} profiles + "
+          f"{CONTINUOUS['daily_tweet_quota']} tweets")
+    print("  Ctrl+C to stop. State persists between runs.")
+
+    while True:
+        all_handles = parse_x_handles(WATCHLIST_PATH)   # re-read every loop so edits stick
+        if not all_handles:
+            print("watchlist empty — sleeping 30 min")
+            time.sleep(30 * 60)
+            continue
+
+        dc = reset_daily_if_needed(state)
+
+        # Daily quota gates
+        if dc["handles_visited"] >= CONTINUOUS["daily_handle_quota"]:
+            wait = seconds_until_tomorrow()
+            print(f"daily handle quota ({CONTINUOUS['daily_handle_quota']}) reached. sleeping {wait//3600}h until tomorrow.")
+            save_state(state)
+            time.sleep(wait)
+            continue
+        if dc["tweets_collected"] >= CONTINUOUS["daily_tweet_quota"]:
+            wait = seconds_until_tomorrow()
+            print(f"daily tweet quota ({CONTINUOUS['daily_tweet_quota']}) reached. sleeping {wait//3600}h.")
+            save_state(state)
+            time.sleep(wait)
+            continue
+
+        # Work-hours gate (re-checked every iteration so we naturally pause overnight)
+        if not in_work_hours():
+            print(f"outside work hours ({datetime.now().strftime('%H:%M')}). sleeping 30 min.")
+            time.sleep(30 * 60)
+            continue
+
+        # Cooldown gate
+        cd, hrs = in_cooldown(state)
+        if cd:
+            print(f"in cooldown ({hrs:.1f}h remaining). sleeping 30 min.")
+            time.sleep(30 * 60)
+            continue
+
+        # Periodic warmup
+        warmup_thresh = random.randint(*CONTINUOUS["warmup_every"])
+        if visits_since_warmup >= warmup_thresh or visits_since_warmup == 0:
+            warmup()
+            visits_since_warmup = 0
+
+        # Pick ONE handle to visit (rotation-aware)
+        candidates = []
+        history = state.get("handle_history") or {}
+        cutoff = _now() - timedelta(hours=STRATEGY["rotation_hours"])
+        for h, s in all_handles:
+            last_iso = history.get(h.lower())
+            if last_iso:
+                try:
+                    last_dt = datetime.fromisoformat(last_iso.replace("Z", "+00:00"))
+                    if last_dt > cutoff:
+                        continue
+                except Exception:
+                    pass
+            candidates.append((h, s))
+        if not candidates:
+            # Rotation exhausted — fall back to least-recently-visited
+            candidates = sorted(all_handles, key=lambda hs: history.get(hs[0].lower()) or "0")
+        handle, section = random.choice(candidates[: min(40, len(candidates))])
+
+        # Visit deep
+        items = collect_deep_from_handle(
+            handle, section, extract_js,
+            target=CONTINUOUS["target_tweets"],
+            max_scrolls=CONTINUOUS["max_scrolls"],
+        )
+
+        if items is None:   # login wall
+            blocks = state.get("consecutive_blocks", 0) + 1
+            state["consecutive_blocks"] = blocks
+            if blocks >= STRATEGY["blocks_to_stop"]:
+                state["last_block_at"] = _now_iso()
+                state["consecutive_blocks"] = 0
+                save_state(state)
+                print(f"⚠ {blocks} consecutive blocks → cooldown {STRATEGY['cooldown_hours_after_block']}h.")
+                continue
+        else:
+            state["consecutive_blocks"] = 0
+            state.setdefault("handle_history", {})[handle.lower()] = _now_iso()
+            dc["handles_visited"] += 1
+            dc["tweets_collected"] += len(items)
+            visits_since_warmup += 1
+            merge = merge_into_posts(items)
+            print(f"     merged: +{merge['added']} new ({merge['total']} total in store)  "
+                  f"daily: {dc['handles_visited']} profiles / {dc['tweets_collected']} tweets")
+            enrich_counter += 1
+
+        state["last_session"] = _now_iso()
+        save_state(state)
+
+        # Periodic enrich
+        if enrich_counter >= CONTINUOUS["enrich_every_n"] and ENRICH_SCRIPT.exists():
+            print("→ smart enrich…")
+            r = subprocess.run([sys.executable, str(ENRICH_SCRIPT)], capture_output=True, text=True)
+            if r.stdout:
+                print("  " + r.stdout.strip().splitlines()[-1])
+            enrich_counter = 0
+            if run_pipeline and RADAR_SCRIPT.exists():
+                print("→ pipeline…")
+                agent_args = [sys.executable, str(RADAR_SCRIPT), "--skip-collect"]
+                if not os.environ.get("OPENAI_API_KEY"):
+                    agent_args.append("--no-openai")
+                rp = subprocess.run(agent_args, capture_output=True, text=True)
+                for line in (rp.stdout or "").splitlines()[-2:]:
+                    if line.strip(): print("  " + line.strip())
+
+        # Occasional longer break
+        if random.random() < CONTINUOUS["extra_break_chance"]:
+            br = random.uniform(CONTINUOUS["extra_break_min"], CONTINUOUS["extra_break_max"])
+            print(f"  ☕ extra break {br/60:.0f} min")
+            time.sleep(br)
+
+        # Interval before next profile
+        wait = random.uniform(CONTINUOUS["interval_min_seconds"], CONTINUOUS["interval_max_seconds"])
+        print(f"  next in {wait/60:.1f} min…")
+        time.sleep(wait)
+
+
 # ---------- Permission probes ----------
 
 def check_safari_access() -> bool:
@@ -450,6 +726,9 @@ def main() -> int:
     parser.add_argument("--force", action="store_true", help="Bypass work-hours + cooldown gates (use sparingly)")
     parser.add_argument("--skip-checks", action="store_true", help="Skip Safari/Apple Events probes")
     parser.add_argument("--status", action="store_true", help="Print session/cooldown/coverage status and exit")
+    parser.add_argument("--continuous", action="store_true",
+                        help="Run forever: one profile every 4-7 min, target 100 tweets each, "
+                             "honors all gates + daily quota. Ctrl+C to stop.")
     args = parser.parse_args()
 
     if sys.platform != "darwin":
@@ -458,6 +737,24 @@ def main() -> int:
 
     state = load_state()
     all_handles = parse_x_handles(WATCHLIST_PATH)
+
+    # Permission probes before any branch that touches Safari
+    if args.continuous and not args.skip_checks:
+        if not check_safari_access():
+            print("Cannot reach Safari via AppleScript. Open Safari then re-run.")
+            return 1
+        err = check_js_from_events()
+        if err:
+            print(f"⚠ {err}")
+            return 1
+
+    if args.continuous:
+        extract_js = EXTRACT_JS.read_text("utf-8")
+        try:
+            return continuous_loop(extract_js, run_pipeline=args.pipeline)
+        except KeyboardInterrupt:
+            print("\nstopped by user.")
+            return 0
 
     if args.status:
         cd, hrs = in_cooldown(state)
