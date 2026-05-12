@@ -495,7 +495,9 @@ def merge_into_posts(new_items: list[dict]) -> dict:
             added += 1
 
     existing.sort(key=lambda p: p.get("collected_at") or "", reverse=True)
-    existing = existing[:500]
+    # Cap sized for the tiered targets: ~100 active handles × 200 avg = 20k.
+    # Newest-first sort means trims drop the stalest tweets first.
+    existing = existing[:20000]
 
     doc["items"] = existing
     doc["collected_at"] = _now_iso()
