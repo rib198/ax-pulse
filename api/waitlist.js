@@ -1,20 +1,25 @@
 /* Waitlist signup — serverless POST endpoint.
  *
- * Forwards a new signup to the operator's inbox via Resend so emails actually
- * land somewhere (previously the form only wrote to the user's own localStorage).
+ * Persistent storage strategy: Resend Audiences. Each signup is added as a
+ * contact to the configured audience so you have a real exportable list and
+ * can later broadcast the launch announcement to everyone with one click in
+ * the Resend dashboard. We also send the operator a notification email per
+ * signup so you see new signups in real time.
  *
  * Required Vercel env vars:
- *   RESEND_API_KEY    — re_... from resend.com (free tier covers 3k/mo)
- *   WAITLIST_TO       — destination email address (defaults to support email below)
+ *   RESEND_API_KEY      — re_... from resend.com (free tier covers 3k/mo)
+ *   RESEND_AUDIENCE_ID  — uuid of the audience to add contacts into
+ *                         (create one at resend.com/audiences, copy the ID)
  *
  * Optional:
- *   DIGEST_FROM       — sender email (defaults to onboarding@resend.dev which
- *                       works without DNS setup; for production move to a
- *                       verified domain like "hello@yourdomain.com")
+ *   WAITLIST_TO         — destination for the operator notification email
+ *                         (defaults to rawabialkhalaf3@gmail.com)
+ *   DIGEST_FROM         — sender email (defaults to onboarding@resend.dev
+ *                         which works without DNS setup)
  *
- * Graceful degradation: if RESEND_API_KEY is missing, the signup is logged to
- * Vercel's runtime logs and a 200 is still returned (so the UX keeps working
- * while the operator finishes Resend setup).
+ * Graceful degradation: every missing piece returns 200 so the form UX keeps
+ * working. The "delivered" field in the response says what actually happened:
+ *   audience+email | audience_only | email_only | log_only
  */
 
 const DEFAULT_TO = "rawabialkhalaf3@gmail.com";
@@ -33,7 +38,6 @@ export default async function handler(req, res) {
     return;
   }
 
-  // Parse body (Vercel may give us a string or already-parsed object)
   let payload = req.body;
   if (typeof payload === "string") {
     try { payload = JSON.parse(payload); } catch { payload = {}; }
@@ -57,8 +61,6 @@ export default async function handler(req, res) {
     ip: (req.headers["x-forwarded-for"] || "").split(",")[0].trim().slice(0, 64),
   };
 
-  // Always log so signups are recoverable from Vercel's runtime logs even if
-  // email delivery fails (or RESEND_API_KEY isn't set yet).
   console.log("[waitlist]", JSON.stringify(entry));
 
   const key = process.env.RESEND_API_KEY;
@@ -67,16 +69,39 @@ export default async function handler(req, res) {
     return;
   }
 
+  // Parallel: add to audience (persistent list) + email operator (immediate ping).
+  // Either failing on its own doesn't break the other.
+  const audienceId = process.env.RESEND_AUDIENCE_ID;
   const to = process.env.WAITLIST_TO || DEFAULT_TO;
   const from = process.env.DIGEST_FROM || "الرادار <onboarding@resend.dev>";
 
-  try {
-    const r = await fetch("https://api.resend.com/emails", {
+  const tasks = [];
+
+  // Task 1 — add to Resend Audience (the persistent list)
+  if (audienceId) {
+    tasks.push(
+      fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ email, unsubscribed: false }),
+      }).then(async (r) => {
+        // 200/201 = created. 422 = already in audience (treat as success).
+        if (r.ok || r.status === 422) return { task: "audience", ok: true };
+        const body = await r.text();
+        console.error("[waitlist] audience_error", r.status, body.slice(0, 200));
+        return { task: "audience", ok: false, status: r.status };
+      }).catch((e) => {
+        console.error("[waitlist] audience_throw", e?.message || e);
+        return { task: "audience", ok: false, error: "network" };
+      })
+    );
+  }
+
+  // Task 2 — operator notification email
+  tasks.push(
+    fetch("https://api.resend.com/emails", {
       method: "POST",
-      headers: {
-        Authorization: `Bearer ${key}`,
-        "Content-Type": "application/json",
-      },
+      headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         from,
         to,
@@ -90,21 +115,35 @@ export default async function handler(req, res) {
           `Ref:    ${entry.ref}`,
           `IP:     ${entry.ip}`,
           `UA:     ${entry.ua}`,
+          "",
+          audienceId ? "↳ Also added to your Resend audience for broadcast later." : "↳ (No audience configured — set RESEND_AUDIENCE_ID for persistent storage.)",
         ].join("\n"),
         reply_to: email,
       }),
-    });
-
-    if (!r.ok) {
+    }).then(async (r) => {
+      if (r.ok) return { task: "email", ok: true };
       const body = await r.text();
-      console.error("[waitlist] resend_error", r.status, body.slice(0, 200));
-      res.status(200).json({ ok: true, delivered: "log_only", error: "resend_failed" });
-      return;
-    }
+      console.error("[waitlist] email_error", r.status, body.slice(0, 200));
+      return { task: "email", ok: false, status: r.status };
+    }).catch((e) => {
+      console.error("[waitlist] email_throw", e?.message || e);
+      return { task: "email", ok: false, error: "network" };
+    })
+  );
 
-    res.status(200).json({ ok: true, delivered: "email" });
-  } catch (e) {
-    console.error("[waitlist] error", e?.message || e);
-    res.status(200).json({ ok: true, delivered: "log_only", error: "network" });
-  }
+  const results = await Promise.all(tasks);
+  const audienceOk = results.find((r) => r.task === "audience")?.ok === true;
+  const emailOk    = results.find((r) => r.task === "email")?.ok === true;
+
+  let delivered;
+  if (audienceOk && emailOk) delivered = "audience+email";
+  else if (audienceOk)        delivered = "audience_only";
+  else if (emailOk)           delivered = "email_only";
+  else                        delivered = "log_only";
+
+  res.status(200).json({
+    ok: true,
+    delivered,
+    audience_configured: Boolean(audienceId),
+  });
 }
