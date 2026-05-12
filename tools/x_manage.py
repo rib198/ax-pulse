@@ -32,6 +32,7 @@ import argparse
 import csv
 import json
 import sys
+from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -392,10 +393,11 @@ def cmd_delete_tweet(args) -> int:
 # ---------- set-target / targets / reset-target ----------
 
 def cmd_set_target(args) -> int:
-    targets = _load_json(TARGETS_PATH, {"default": 100, "handles": {}})
+    targets = _load_json(TARGETS_PATH, {"default": 100, "handles": {}, "sources": {}})
     targets.setdefault("handles", {})
+    targets.setdefault("sources", {})
     h = args.handle.lstrip("@")
-    val = max(5, min(1000, int(args.value)))
+    val = max(5, min(2000, int(args.value)))
 
     if h.lower() == "default":
         old = targets.get("default", 100)
@@ -406,17 +408,24 @@ def cmd_set_target(args) -> int:
 
     old = targets["handles"].get(h.lower())
     targets["handles"][h.lower()] = val
+    targets["sources"][h.lower()] = "manual"   # protect from auto-target
     _save_json(TARGETS_PATH, targets)
-    print(f"@{h}: {old or 'default'} → {val}")
+    print(f"@{h}: {old or 'default'} → {val} (manual — auto-target will not overwrite)")
     return 0
 
 
 def cmd_reset_target(args) -> int:
-    targets = _load_json(TARGETS_PATH, {"default": 100, "handles": {}})
+    targets = _load_json(TARGETS_PATH, {"default": 100, "handles": {}, "sources": {}})
     raw = args.handle.lstrip("@")
     h = raw.lower()
-    if h in (targets.get("handles") or {}):
-        del targets["handles"][h]
+    handles = targets.get("handles") or {}
+    sources = targets.get("sources") or {}
+    if h in handles:
+        del handles[h]
+        if h in sources:
+            del sources[h]
+        targets["handles"] = handles
+        targets["sources"] = sources
         _save_json(TARGETS_PATH, targets)
         print(f"@{raw}: target removed (back to default {targets.get('default', 100)})")
         return 0
@@ -424,10 +433,134 @@ def cmd_reset_target(args) -> int:
     return 1
 
 
+# ---------- auto-target (raise targets for high-value handles) ----------
+
+# avg radar_score threshold → (target tweets, tier label)
+AUTO_TIERS = [
+    (0.60, 700, "premium"),
+    (0.45, 500, "elite"),
+    (0.35, 350, "high"),
+    (0.27, 200, "good"),
+]
+AUTO_MIN_SAMPLE = 5
+
+
+def _tier_for(avg: float) -> tuple[int | None, str | None]:
+    for thresh, val, label in AUTO_TIERS:
+        if avg >= thresh:
+            return (val, label)
+    return (None, None)
+
+
+def cmd_auto_target(args) -> int:
+    targets = _load_json(TARGETS_PATH, {"default": 100, "handles": {}, "sources": {}})
+    targets.setdefault("handles", {})
+    targets.setdefault("sources", {})
+
+    _, posts = load_posts()
+    by_h = posts_by_handle(posts)
+    review_doc = _load_review()
+    blocked = {
+        h for h, e in review_doc["handles"].items()
+        if e.get("status") in ("sidelined", "removed")
+    }
+
+    bumps = []           # (handle, old, new, tier, avg, n)
+    demotions = []       # (handle, old, default, avg, n)
+    no_change = 0
+    skipped_manual = 0
+    skipped_blocked = 0
+
+    default_target = targets.get("default", 100)
+
+    for handle, _section in parse_watchlist():
+        hlow = handle.lower()
+
+        if hlow in blocked:
+            skipped_blocked += 1
+            continue
+
+        if targets["sources"].get(hlow) == "manual":
+            skipped_manual += 1
+            continue
+
+        tweets = by_h.get(hlow, [])
+        if len(tweets) < AUTO_MIN_SAMPLE:
+            continue
+
+        scores = [t.get("radar_score", 0) for t in tweets]
+        if all(s == 0 for s in scores):
+            continue   # not yet enriched — can't judge
+
+        avg = sum(scores) / len(scores)
+        new_target, tier = _tier_for(avg)
+        old = targets["handles"].get(hlow, default_target)
+
+        if new_target is None:
+            # Below all tiers — drop any auto override
+            if targets["sources"].get(hlow) == "auto":
+                if not args.dry_run:
+                    targets["handles"].pop(hlow, None)
+                    targets["sources"].pop(hlow, None)
+                demotions.append((handle, old, default_target, avg, len(tweets)))
+            continue
+
+        if old == new_target and targets["sources"].get(hlow) == "auto":
+            no_change += 1
+            continue
+
+        if not args.dry_run:
+            targets["handles"][hlow] = new_target
+            targets["sources"][hlow] = "auto"
+        bumps.append((handle, old, new_target, tier, avg, len(tweets)))
+
+    if not args.dry_run:
+        _save_json(TARGETS_PATH, targets)
+
+    # ---- Report ----
+    print(f"=== auto-target pass @ {_now_iso()} ===")
+    print("  tiers: good 200 (avg≥0.27) · high 350 (≥0.35) · elite 500 (≥0.45) · premium 700 (≥0.60)")
+    print(f"  manual overrides preserved · sidelined skipped · min sample {AUTO_MIN_SAMPLE} tweets")
+    if args.dry_run:
+        print("  [DRY RUN — no changes written]")
+    print()
+
+    if bumps:
+        bumps.sort(key=lambda r: -r[4])
+        print(f"↑ tier set ({len(bumps)}):")
+        for h, old, new, tier, avg, n in bumps:
+            arrow = "→" if new > old else "↓"
+            print(f"    @{h:<26}  {old:>4} {arrow} {new:>4}  [{tier:<7}]  avg={avg:.2f}  n={n}")
+        print()
+    if demotions:
+        print(f"↓ demoted to default ({len(demotions)}):")
+        for h, old, new, avg, n in demotions:
+            print(f"    @{h:<26}  {old:>4} → {new:>4}  avg={avg:.2f}  n={n}")
+        print()
+    print(f"summary: {len(bumps)} bumped · {len(demotions)} demoted · {no_change} unchanged · "
+          f"{skipped_manual} manual · {skipped_blocked} sidelined")
+
+    # Distribution
+    handles_d = targets.get("handles", {})
+    if handles_d:
+        counts = defaultdict(int)
+        for v in handles_d.values():
+            counts[v] += 1
+        total_tweets_per_pass = sum(handles_d.values()) + (703 - len(handles_d)) * default_target
+        print()
+        print("current target distribution:")
+        for v in sorted(counts):
+            print(f"    {v:>4} tweets  ×{counts[v]:>4} handles")
+        print(f"    {default_target:>4} tweets  ×{703 - len(handles_d):>4} handles  (default)")
+        print(f"  → full watchlist pass collects up to ~{total_tweets_per_pass:,} tweets")
+    return 0
+
+
 def cmd_targets(args) -> int:
-    targets = _load_json(TARGETS_PATH, {"default": 100, "handles": {}})
+    targets = _load_json(TARGETS_PATH, {"default": 100, "handles": {}, "sources": {}})
     default = targets.get("default", 100)
     overrides = targets.get("handles") or {}
+    sources = targets.get("sources") or {}
     if args.json:
         print(json.dumps(targets, ensure_ascii=False, indent=2))
         return 0
@@ -436,11 +569,13 @@ def cmd_targets(args) -> int:
     if not overrides:
         print("no per-handle overrides set.")
         print("set one with:  python3 tools/x_manage.py set-target @handle N")
+        print("or auto-tier all of them: python3 tools/x_manage.py auto-target")
         return 0
-    print(f"{'handle':<28}  {'target':>7}")
-    print("─" * 40)
-    for h, v in sorted(overrides.items()):
-        print(f"@{h:<27}  {v:>7}")
+    print(f"{'handle':<28}  {'target':>7}  source")
+    print("─" * 50)
+    for h, v in sorted(overrides.items(), key=lambda kv: (-kv[1], kv[0])):
+        src = sources.get(h, "?")
+        print(f"@{h:<27}  {v:>7}  {src}")
     print(f"\n{len(overrides)} overrides set.")
     return 0
 
@@ -786,6 +921,11 @@ def main() -> int:
     a = sub.add_parser("targets", help="Show global default + all per-handle overrides")
     a.add_argument("--json", action="store_true")
     a.set_defaults(func=cmd_targets)
+
+    # auto-target — promote high-value handles to bigger tiers (200/350/500/700)
+    a = sub.add_parser("auto-target", help="Auto-set per-handle targets based on avg radar_score (tiered).")
+    a.add_argument("--dry-run", action="store_true")
+    a.set_defaults(func=cmd_auto_target)
 
     # review — sideline low-value handles, retire repeat offenders
     a = sub.add_parser("review", help="Analyze each handle's content. Sideline low-value ones; remove repeat offenders.")

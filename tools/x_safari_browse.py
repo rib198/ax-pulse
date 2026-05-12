@@ -217,6 +217,7 @@ def target_for_handle(handle: str) -> int:
     """Per-handle tweet-collection target. Falls back to global default,
     then the in-code CONTINUOUS default. Edited via:
         python3 tools/x_manage.py set-target @handle N
+        python3 tools/x_manage.py auto-target            # bulk auto-tier
     """
     if not TARGETS_PATH.exists():
         return CONTINUOUS["target_tweets"]
@@ -232,7 +233,14 @@ def target_for_handle(handle: str) -> int:
         v = int(v)
     except (ValueError, TypeError):
         return CONTINUOUS["target_tweets"]
-    return max(5, min(1000, v))
+    return max(5, min(2000, v))
+
+
+def scrolls_for_target(target: int) -> int:
+    """Scale max_scrolls with target — high-value visits need many more scrolls
+    to actually surface 500+ tweets. ~6 tweets per scroll observed; floor at the
+    configured CONTINUOUS minimum so small visits don't get shorter."""
+    return max(CONTINUOUS["max_scrolls"], min(target // 6, 120))
 
 
 def in_cooldown(state: dict) -> tuple[bool, float]:
@@ -703,12 +711,14 @@ def continuous_loop(extract_js: str, run_pipeline: bool) -> int:
             candidates = sorted(fallback, key=lambda hs: history.get(hs[0].lower()) or "0")
         handle, section = random.choice(candidates[: min(40, len(candidates))])
 
-        # Visit deep — per-handle target from handle_targets.json, fall back to global default
+        # Visit deep — per-handle target from handle_targets.json, fall back to global default.
+        # Scale max_scrolls with target so a 500-target visit actually keeps scrolling.
         target = target_for_handle(handle)
+        max_scrolls = scrolls_for_target(target)
         items = collect_deep_from_handle(
             handle, section, extract_js,
             target=target,
-            max_scrolls=CONTINUOUS["max_scrolls"],
+            max_scrolls=max_scrolls,
         )
 
         if items is None:   # login wall
