@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <title>إعداد Safari لرادار AX Pulse</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 760px; margin: 40px auto; padding: 0 24px;
+      background: #0b0d10; color: #f1f4f6; line-height: 1.7;
+    }
+    h1 { font-size: 24px; margin-bottom: 8px; }
+    p { color: #c9d1d9; }
+    code, pre {
+      direction: ltr; unicode-bidi: embed;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: #14171b; padding: 2px 6px; border-radius: 4px;
+      color: #6cf7c1;
+    }
+    .card {
+      background: #14171b; border: 1px solid #1f2933; border-radius: 12px;
+      padding: 20px 22px; margin: 20px 0;
+    }
+    .button {
+      display: inline-block; background: #6cf7c1; color: #062b1f;
+      padding: 10px 18px; border-radius: 8px; font-weight: 700;
+      text-decoration: none; margin: 8px 0;
+    }
+    ol li { margin: 6px 0; }
+    .danger { color: #ffb4a8; }
+    .small { color: #7a8895; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>إعداد Safari لرادار AX Pulse</h1>
+  <p>
+    خطوة واحدة: اسحبي الزر الأخضر إلى شريط المفضلة في Safari (Bookmarks Bar).
+    إذا كان الشريط مخفيًا، فعّليه من <code>View &gt; Show Favorites Bar</code>.
+  </p>
+
+  <div class="card">
+    <p><b>اسحبي هذا إلى شريط المفضلة:</b></p>
+    <p>
+      <a class="button" href="javascript:(function%20()%20{%0Aif%20(window.__axSafariRadar)%20{%0Awindow.__axSafariRadar.stop();%0Areturn;%0A}%0Avar%20TARGET_TWEETS%20=%20400;%0Avar%20MAX_SCROLL_TICKS%20=%20560;%0Avar%20SCROLL_INTERVAL_MS%20=%201700;%0Avar%20STRIP_LINES%20=%20[%0A'subscribe%20to%20premium',%20'terms%20of%20service',%20'privacy%20policy',%0A'cookie%20policy',%20'who%20to%20follow',%20'show%20more',%20'keyboard%20shortcuts',%0A'get%20verified',%20%22today's%20news%22,%20'today%E2%80%99s%20news',%20'trending%20now',%0A%22what's%20happening%22,%20'what%E2%80%99s%20happening',%20'get%20rid%20of%20ads',%0A'%D8%A5%D8%B9%D9%84%D8%A7%D9%86',%20'%D9%85%D8%AF%D9%81%D9%88%D8%B9'%0A];%0Avar%20seen%20=%20new%20Set();%0Avar%20collected%20=%20[];%0Avar%20ticks%20=%200;%0Avar%20stopped%20=%20false;%0Avar%20box%20=%20document.createElement('div');%0Abox.dir%20=%20'rtl';%0Abox.style.cssText%20=%20[%0A'position:fixed',%20'z-index:2147483647',%20'top:18px',%20'right:18px',%0A'background:%23070b0e',%20'color:%23eafff7',%20'border:1px%20solid%20%236cf7c1',%0A'border-radius:14px',%20'padding:14px%2016px',%20'min-width:280px',%0A'max-width:340px',%20'font:14px%20-apple-system,BlinkMacSystemFont,Segoe%20UI,sans-serif',%0A'box-shadow:0%2012px%2032px%20rgba(0,0,0,.55)',%20'line-height:1.55'%0A].join(';');%0Abox.innerHTML%20=%0A'<div%20style=%22font-weight:700;font-size:15px;margin-bottom:6px%22>'%0A+%20'AX%20Pulse%20%E2%80%94%20%D8%AC%D9%85%D8%B9%20X%20%D9%84%D9%84%D8%B1%D8%A7%D8%AF%D8%A7%D8%B1'%0A+%20'</div>'%0A+%20'<div%20id=%22ax-status%22%20style=%22color:%23cdeee0%22>%D9%8A%D9%87%D9%8A%D9%91%D8%A1%20%D8%A7%D9%84%D8%AC%D9%85%D8%B9...</div>'%0A+%20'<div%20id=%22ax-meta%22%20style=%22color:%237ea99b;font-size:12px;margin-top:4px%22>'%0A+%20'0%20%D8%AA%D8%BA%D8%B1%D9%8A%D8%AF%D8%A9%20%D9%85%D8%AD%D9%81%D9%88%D8%B8%D8%A9%20/%20%D8%A7%D9%84%D9%87%D8%AF%D9%81%20'%20+%20TARGET_TWEETS%0A+%20'</div>'%0A+%20'<div%20style=%22display:flex;gap:6px;margin-top:10px;flex-wrap:wrap%22>'%0A+%20'<button%20id=%22ax-stop%22%20'%0A+%20'style=%22background:%231f2933;color:%23eafff7;border:1px%20solid%20%2329404a;'%0A+%20'border-radius:8px;padding:7px%2010px;font-weight:600;cursor:pointer%22>'%0A+%20'%D8%A5%D9%8A%D9%82%D8%A7%D9%81'%0A+%20'</button>'%0A+%20'<button%20id=%22ax-save%22%20disabled%20'%0A+%20'style=%22background:%236cf7c1;color:%23072b1f;border:0;border-radius:8px;'%0A+%20'padding:7px%2012px;font-weight:700;flex:1;cursor:pointer;opacity:.5%22>'%0A+%20'%D8%A7%D8%AD%D9%81%D8%B8%D9%8A%20%D9%84%D9%84%D9%85%D9%84%D9%81%20%E2%86%93'%0A+%20'</button>'%0A+%20'<button%20id=%22ax-copy%22%20disabled%20'%0A+%20'style=%22background:%231f2933;color:%23eafff7;border:1px%20solid%20%2329404a;'%0A+%20'border-radius:8px;padding:7px%2010px;font-weight:600;flex:1;cursor:pointer;opacity:.5%22>'%0A+%20'%D9%86%D8%B3%D8%AE%20%D8%A8%D8%AF%D9%8A%D9%84'%0A+%20'</button>'%0A+%20'</div>'%0A+%20'<div%20style=%22margin-top:8px;color:%237ea99b;font-size:11px;line-height:1.5%22>'%0A+%20'<b>%D8%A7%D9%84%D9%85%D9%88%D8%B5%D9%89%20%D8%A8%D9%87:</b>%20%D8%A7%D8%B6%D8%BA%D8%B7%D9%8A%20%22%D8%A7%D8%AD%D9%81%D8%B8%D9%8A%20%D9%84%D9%84%D9%85%D9%84%D9%81%22%20%E2%86%93%20%D8%AB%D9%85%20%D9%81%D9%8A%20Terminal:<br>'%0A+%20'<code%20style=%22direction:ltr;color:%236cf7c1%22>./safari-radar.command</code>'%0A+%20'</div>';%0Adocument.body.appendChild(box);%0Avar%20statusEl%20=%20box.querySelector('%23ax-status');%0Avar%20metaEl%20=%20box.querySelector('%23ax-meta');%0Avar%20copyBtn%20=%20box.querySelector('%23ax-copy');%0Avar%20saveBtn%20=%20box.querySelector('%23ax-save');%0Avar%20stopBtn%20=%20box.querySelector('%23ax-stop');%0Afunction%20setStatus(text)%20{%20statusEl.textContent%20=%20text;%20}%0Afunction%20setMeta()%20{%0AmetaEl.textContent%20=%0Acollected.length%20+%20'%20%D8%AA%D8%BA%D8%B1%D9%8A%D8%AF%D8%A9%20%D9%85%D8%AD%D9%81%D9%88%D8%B8%D8%A9%20/%20%D8%A7%D9%84%D9%87%D8%AF%D9%81%20'%20+%20TARGET_TWEETS%0A+%20'%20%C2%B7%20%D8%AC%D9%88%D9%84%D8%A9%20'%20+%20ticks%20+%20'/'%20+%20MAX_SCROLL_TICKS;%0A}%0Afunction%20compactText(raw)%20{%0Avar%20lines%20=%20String(raw%20||%20'').split(/%5Cr?%5Cn/);%0Avar%20keep%20=%20[];%0Afor%20(var%20i%20=%200;%20i%20<%20lines.length;%20i++)%20{%0Avar%20line%20=%20lines[i].trim();%0Aif%20(!line)%20continue;%0Avar%20low%20=%20line.toLowerCase();%0Avar%20skip%20=%20false;%0Afor%20(var%20j%20=%200;%20j%20<%20STRIP_LINES.length;%20j++)%20{%0Aif%20(low.indexOf(STRIP_LINES[j])%20!==%20-1)%20{%20skip%20=%20true;%20break;%20}%0A}%0Aif%20(!skip)%20keep.push(line);%0A}%0Areturn%20keep.join('%5Cn').trim();%0A}%0Afunction%20scrapeArticles()%20{%0Avar%20articles%20=%20document.querySelectorAll('article[data-testid=%22tweet%22]');%0Avar%20batch%20=%20[];%0Afor%20(var%20i%20=%200;%20i%20<%20articles.length;%20i++)%20{%0Avar%20a%20=%20articles[i];%0Aif%20(a.querySelector('[data-testid=%22placementTracking%22],%20[data-testid=%22promotedIndicator%22]'))%20{%0Acontinue;%0A}%0Avar%20text%20=%20compactText(a.innerText%20||%20'');%0Aif%20(!text%20||%20text.length%20<%2040)%20continue;%0Avar%20statusLink%20=%20'';%0Avar%20anchors%20=%20a.querySelectorAll('a[href*=%22/status/%22]');%0Afor%20(var%20k%20=%200;%20k%20<%20anchors.length;%20k++)%20{%0Avar%20href%20=%20anchors[k].href%20||%20'';%0Aif%20(/%5C/status%5C/%5Cd+/.test(href))%20{%20statusLink%20=%20href;%20break;%20}%0A}%0Avar%20idMatch%20=%20statusLink.match(/%5C/status%5C/(%5Cd+)/);%0Avar%20handleMatch%20=%20statusLink.match(/(?:x|twitter)%5C.com%5C/([%5E/]+)%5C/status%5C//);%0Avar%20time%20=%20a.querySelector('time');%0Avar%20posted%20=%20time%20?%20time.getAttribute('datetime')%20:%20null;%0Avar%20tweetId%20=%20idMatch%20?%20idMatch[1]%20:%20'';%0Avar%20key%20=%20tweetId%20||%20('hash:'%20+%20text.slice(0,%2080));%0Aif%20(seen.has(key))%20continue;%0Aseen.add(key);%0Abatch.push({%0Atweet_id:%20tweetId,%0Aauthor_handle:%20handleMatch%20?%20handleMatch[1]%20:%20'',%0Atext:%20text,%0Aurl:%20statusLink,%0Aposted_at:%20posted,%0Apage_url:%20location.href,%0Asource_type:%20'safari_visible_x'%0A});%0A}%0Areturn%20batch;%0A}%0Afunction%20tick()%20{%0Aif%20(stopped)%20return;%0Avar%20batch%20=%20scrapeArticles();%0Afor%20(var%20i%20=%200;%20i%20<%20batch.length;%20i++)%20{%0Acollected.push(batch[i]);%0Aif%20(collected.length%20>=%20TARGET_TWEETS)%20break;%0A}%0AsetMeta();%0Aif%20(collected.length%20>=%20TARGET_TWEETS)%20{%0Afinish('%D8%A7%D9%83%D8%AA%D9%85%D9%84%20%D8%A7%D9%84%D9%87%D8%AF%D9%81.%20%D8%A7%D8%B6%D8%BA%D8%B7%D9%8A%20%22%D8%A7%D9%86%D8%B3%D8%AE%D9%8A%20%D9%84%D9%84%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%22.');%0Areturn;%0A}%0Aif%20(ticks%20>=%20MAX_SCROLL_TICKS)%20{%0Afinish('%D8%A7%D9%86%D8%AA%D9%87%D9%89%20%D8%B9%D8%AF%D8%AF%20%D8%A7%D9%84%D8%AC%D9%88%D9%84%D8%A7%D8%AA.%20%D8%A7%D8%B6%D8%BA%D8%B7%D9%8A%20%22%D8%A7%D9%86%D8%B3%D8%AE%D9%8A%20%D9%84%D9%84%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%22.');%0Areturn;%0A}%0AsetStatus('%D8%AC%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AA%D9%85%D8%B1%D9%8A%D8%B1%20%D9%88%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%AA%D8%BA%D8%B1%D9%8A%D8%AF%D8%A7%D8%AA...');%0Awindow.scrollBy(0,%20Math.floor(window.innerHeight%20*%200.92));%0Aticks++;%0AsetTimeout(tick,%20SCROLL_INTERVAL_MS);%0A}%0Afunction%20finish(message)%20{%0Astopped%20=%20true;%0AsetStatus(message);%0AcopyBtn.disabled%20=%20false;%0AcopyBtn.style.opacity%20=%20'1';%0AcopyBtn.style.cursor%20=%20'pointer';%0AsaveBtn.disabled%20=%20false;%0AsaveBtn.style.opacity%20=%20'1';%0AsaveBtn.style.cursor%20=%20'pointer';%0A}%0Afunction%20buildPayload()%20{%0Areturn%20{%0Aschema:%20'ax_pulse.safari_radar.v1',%0Apage_url:%20location.href,%0Apage_title:%20document.title,%0Acollected_at:%20new%20Date().toISOString(),%0Atarget:%20TARGET_TWEETS,%0Atotal_collected:%20collected.length,%0Aitems:%20collected%0A};%0A}%0AstopBtn.addEventListener('click',%20function%20()%20{%0Aif%20(!stopped)%20finish('%D8%AA%D9%85%20%D8%A7%D9%84%D8%A5%D9%8A%D9%82%D8%A7%D9%81%20%D9%8A%D8%AF%D9%88%D9%8A%D9%8B%D8%A7.%20%D8%A7%D8%B6%D8%BA%D8%B7%D9%8A%20%22%D8%A7%D9%86%D8%B3%D8%AE%D9%8A%20%D9%84%D9%84%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%22.');%0Aelse%20{%20box.remove();%20window.__axSafariRadar%20=%20null;%20}%0A});%0Afunction%20payloadText()%20{%0Areturn%20JSON.stringify(buildPayload(),%20null,%202);%0A}%0AsaveBtn.addEventListener('click',%20function%20()%20{%0Atry%20{%0Avar%20text%20=%20payloadText();%0Avar%20blob%20=%20new%20Blob([text],%20{%20type:%20'application/json'%20});%0Avar%20url%20=%20URL.createObjectURL(blob);%0Avar%20a%20=%20document.createElement('a');%0Aa.href%20=%20url;%0Aa.download%20=%20'ax-pulse-x-capture.json';%0Adocument.body.appendChild(a);%0Aa.click();%0Aa.remove();%0AsetTimeout(function%20()%20{%20URL.revokeObjectURL(url);%20},%205000);%0AsetStatus('%E2%9C%93%20%D9%86%D9%8F%D8%B2%D9%91%D9%84%20%D8%A7%D9%84%D9%85%D9%84%D9%81.%20%D8%B4%D8%BA%D9%91%D9%84%D9%8A%20./safari-radar.command%20%D8%A7%D9%84%D8%A2%D9%86.');%0AsaveBtn.textContent%20=%20'%D8%AA%D9%85%20%D8%A7%D9%84%D8%AD%D9%81%D8%B8%20%E2%9C%93';%0A}%20catch%20(e)%20{%0AsetStatus('%D8%AA%D8%B9%D8%B0%D8%B1%20%D8%AD%D9%81%D8%B8%20%D8%A7%D9%84%D9%85%D9%84%D9%81:%20'%20+%20(e%20&&%20e.message%20||%20e));%0A}%0A});%0AcopyBtn.addEventListener('click',%20function%20()%20{%0Avar%20text%20=%20payloadText();%0Afunction%20onSuccess()%20{%0AsetStatus('%E2%9C%93%20%D8%AA%D9%85%20%D9%86%D8%B3%D8%AE%20'%20+%20collected.length%20+%20'%20%D8%AA%D8%BA%D8%B1%D9%8A%D8%AF%D8%A9.%20%D8%B4%D8%BA%D9%91%D9%84%D9%8A%20./safari-radar.command%20%D8%A7%D9%84%D8%A2%D9%86.');%0AcopyBtn.textContent%20=%20'%D8%AA%D9%85%20%D8%A7%D9%84%D9%86%D8%B3%D8%AE%20%E2%9C%93';%0A}%0Afunction%20onFail(err)%20{%0Atry%20{%0Avar%20ta%20=%20document.createElement('textarea');%0Ata.value%20=%20text;%0Ata.setAttribute('readonly',%20'');%0Ata.style.position%20=%20'fixed';%0Ata.style.opacity%20=%20'0';%0Adocument.body.appendChild(ta);%0Ata.select();%0Avar%20ok%20=%20document.execCommand('copy');%0Ata.remove();%0Aif%20(ok)%20onSuccess();%0Aelse%20setStatus('%D8%AA%D8%B9%D8%B0%D8%B1%20%D8%A7%D9%84%D9%86%D8%B3%D8%AE.%20%D8%AC%D8%B1%D8%A8%D9%8A%20%D8%B2%D8%B1%20%22%D8%A7%D8%AD%D9%81%D8%B8%D9%8A%20%D9%84%D9%84%D9%85%D9%84%D9%81%20%E2%86%93%22.');%0A}%20catch%20(e)%20{%0AsetStatus('%D8%AA%D8%B9%D8%B0%D8%B1%20%D8%A7%D9%84%D9%86%D8%B3%D8%AE:%20%D8%AC%D8%B1%D8%A8%D9%8A%20%D8%B2%D8%B1%20%22%D8%A7%D8%AD%D9%81%D8%B8%D9%8A%20%D9%84%D9%84%D9%85%D9%84%D9%81%20%E2%86%93%22.');%0A}%0A}%0Aif%20(navigator.clipboard%20&&%20navigator.clipboard.writeText)%20{%0Anavigator.clipboard.writeText(text).then(onSuccess).catch(onFail);%0A}%20else%20{%0AonFail(new%20Error('Clipboard%20API%20unavailable'));%0A}%0A});%0Awindow.__axSafariRadar%20=%20{%0Astop:%20function%20()%20{%20finish('%D8%AA%D9%85%20%D8%A7%D9%84%D8%A5%D9%8A%D9%82%D8%A7%D9%81%20%D9%8A%D8%AF%D9%88%D9%8A%D9%8B%D8%A7.');%20}%0A};%0AsetStatus('%D8%B3%D8%A3%D8%A8%D8%AF%D8%A3%20%D8%A7%D9%84%D8%AA%D9%85%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A2%D9%86%20%E2%80%94%20%D9%84%D8%A7%20%D8%AA%D8%BA%D9%84%D9%82%D9%8A%20%D8%A7%D9%84%D8%AA%D8%A8%D9%88%D9%8A%D8%A8.');%0AsetTimeout(tick,%20600);%0A})();">اجمع X للرادار</a>
+    </p>
+    <p class="small">
+      لا تضغطيه من هنا — اسحبيه فقط. هذه الصفحة محلية وآمنة. الأمر يُجمع البيانات
+      من تبويب X الذي ستفتحينه لاحقًا.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>طريقة الاستخدام</h3>
+    <ol>
+      <li>افتحي <code>x.com</code> في Safari (مسجلة دخول كالعادة).</li>
+      <li>اذهبي للتايم لاين أو نتائج بحث AI.</li>
+      <li>اضغطي زر "اجمع X للرادار" من شريط المفضلة.</li>
+      <li>سيظهر مربع أخضر يتحرك ويجمع التغريدات (الهدف 400 تغريدة).</li>
+      <li>عند الانتهاء اضغطي "انسخي للحافظة".</li>
+      <li>افتحي Terminal، انتقلي للمشروع وشغّلي:
+        <pre>./safari-radar.command</pre>
+      </li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3>ملاحظات</h3>
+    <ul>
+      <li>لا يستخدم AppleScript — لا يطلب صلاحيات Automation ولا يعطي خطأ <code>-10004</code>.</li>
+      <li>لا يحتاج خادم محلي — البيانات تُنقل عبر الحافظة فقط.</li>
+      <li>لا يحذف بيانات قديمة — يضيف الجديد ويحذف المكرر.</li>
+      <li>إذا توقف Safari عن التمرير: اضغطي الزر مرة ثانية لإعادة البدء.</li>
+    </ul>
+  </div>
+</body>
+</html>
