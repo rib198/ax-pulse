@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-12T06:41:02+00:00",
+  "run_at": "2026-05-12T10:37:32+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": false,
-      "duration_s": 4.248,
+      "duration_s": 4.325,
       "written": [],
       "notes": [],
       "error": "ParseError: not well-formed (invalid token): line 1, column 26"
@@ -34,7 +34,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.06,
+      "duration_s": 0.059,
       "written": [],
       "notes": [
         "injected 651 manual X items (skipped 548 of 1199)"
@@ -67,7 +67,7 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.028,
+      "duration_s": 0.027,
       "written": [
         "data/radar/signals.json"
       ],
@@ -92,7 +92,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.038,
+      "duration_s": 0.037,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -105,7 +105,7 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.109,
+      "duration_s": 0.114,
       "written": [
         "data/radar/agents/events.json"
       ],
@@ -130,7 +130,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.014,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -155,7 +155,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.01,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
