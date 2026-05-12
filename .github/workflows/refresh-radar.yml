@@ -130,17 +130,29 @@ jobs:
         continue-on-error: true
         run: python3 tools/translate_signals.py
 
+      # ----- Rebuild the inline radar data blob -----
+      # radar.html loads assets/js/radar-inline-data.js BEFORE radar.js so the
+      # first paint shows real data immediately (no async fetch flash). If we
+      # update data/*.json without rebuilding this blob, the UI stays frozen
+      # on the previous cron's snapshot. Always run this AFTER all data files
+      # are finalized for the tick.
+      - name: Rebuild inline radar data
+        continue-on-error: true
+        run: python3 tools/build_inline_radar_data.py
+
       - name: Commit & push data changes
         run: |
           git config user.name  "rib198"
           git config user.email "147077350+rib198@users.noreply.github.com"
 
-          if git diff --quiet -- data/ ; then
+          # Include the inline-data blob in the change check + commit so it
+          # stays in lockstep with the JSON files it embeds.
+          if git diff --quiet -- data/ assets/js/radar-inline-data.js ; then
             echo "no data changes — nothing to commit"
             exit 0
           fi
 
-          git add data/
+          git add data/ assets/js/radar-inline-data.js
           git commit -m "chore(radar): auto-refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
 
           # Push with retry loop. A parallel cron commit on the same branch

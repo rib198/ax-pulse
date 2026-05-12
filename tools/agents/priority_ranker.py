@@ -6,6 +6,8 @@ over time via ctx.state["learned_weights"].
 """
 from __future__ import annotations
 
+from datetime import datetime, timezone
+
 from .base import (
     Agent,
     AgentContext,
@@ -15,12 +17,15 @@ from .base import (
     write_json,
 )
 
+# Recency weighted highest — surface NEW signals first. Pre-fix the recency
+# axis was inversely correlated with newness (rewarded `seen_count`), so old
+# repeated items dominated the feed. Now: weight 0.30 + time-decay scoring.
 DEFAULT_WEIGHTS = {
-    "recency": 0.18,
-    "trust": 0.22,
-    "impact": 0.22,
-    "buildability": 0.18,
-    "income": 0.20,
+    "recency": 0.30,
+    "trust": 0.20,
+    "impact": 0.20,
+    "buildability": 0.15,
+    "income": 0.15,
 }
 
 BUILDABLE_HINTS = ["api", "open source", "open-source", "github", "sdk", "template", "starter", "framework", "boilerplate", "tutorial", "guide", "playbook", "mcp", "tool", "أداة", "قالب", "إطار"]
@@ -33,13 +38,44 @@ def _hits(text: str, words: list[str]) -> int:
     return sum(1 for w in words if w in t)
 
 
+def _recency(item: dict) -> float:
+    """Time-decay score in [0.0, 1.0]. Newer = closer to 1.
+
+    Uses first_seen_at when available (when our pipeline first encountered the
+    signal), else falls back to posted_at, else collected_at. Unknown dates
+    score 0.45 — slightly below the 1-day mark so dateless items don't crowd
+    out properly-dated fresh signals."""
+    iso = (
+        item.get("first_seen_at")
+        or item.get("posted_at")
+        or item.get("collected_at")
+        or ""
+    )
+    if not iso:
+        return 0.45
+    try:
+        t = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    except (ValueError, AttributeError):
+        return 0.45
+    age_hours = (datetime.now(timezone.utc) - t).total_seconds() / 3600
+    if age_hours <= 6:     return 1.00   # last 6h — front-page priority
+    if age_hours <= 24:    return 0.85   # today
+    if age_hours <= 72:    return 0.65   # last 3 days
+    if age_hours <= 168:   return 0.40   # last week
+    if age_hours <= 336:   return 0.20   # last 2 weeks
+    if age_hours <= 720:   return 0.10   # last month
+    return 0.03                          # older — barely surfaces
+
+
 def _score_axes(item: dict) -> dict[str, float]:
     text = ((item.get("title") or "") + " " + (item.get("text") or "")).lower()
     metrics = item.get("metrics") or {}
     seen = item.get("seen_count") or 1
 
-    recency = min(1.0, 0.55 + 0.05 * (seen - 1))  # repeated → still timely
-    trust = float(item.get("trust_score") or 0.5)
+    recency = _recency(item)
+    # Small corroboration bonus folded into trust: signals seen multiple times
+    # across the corpus get a tiny credibility boost (caps at +0.15).
+    trust = min(1.0, float(item.get("trust_score") or 0.5) + min(0.15, 0.025 * (seen - 1)))
 
     impact_signals = [
         _hits(text, HIGH_IMPACT_HINTS) * 0.15,
