@@ -251,7 +251,9 @@ async function bootRadar() {
   RadarState.focusedDiscussions = focusedDiscussions.discussions || [];
   RadarState.focusedDiscussionsGeneratedAt = focusedDiscussions.generated_at || null;
   RadarState.openAIIntelligence = openAIIntelligence;
-  RadarState.timeline = sortTimeline(timeline.items || []);
+  // model_timeline.json's schema uses `events`, not `items`.
+  // Keep `items` fallback for older snapshots / safety.
+  RadarState.timeline = sortTimeline(timeline.events || timeline.items || []);
   RadarState.generatedAt = signals.generated_at;
   RadarState.opportunities = opportunities.opportunities || [];
   RadarState.productPlaybooks = productPlaybooks.playbooks || [];
@@ -346,7 +348,7 @@ async function refreshRadarData() {
   RadarState.focusedDiscussions = focusedDiscussions.discussions || RadarState.focusedDiscussions;
   RadarState.focusedDiscussionsGeneratedAt = focusedDiscussions.generated_at || RadarState.focusedDiscussionsGeneratedAt;
   RadarState.openAIIntelligence = openAIIntelligence || RadarState.openAIIntelligence;
-  RadarState.timeline = sortTimeline(timeline.items || RadarState.timeline);
+  RadarState.timeline = sortTimeline(timeline.events || timeline.items || RadarState.timeline);
   RadarState.generatedAt = nextGeneratedAt;
   RadarState.opportunities = opportunities.opportunities || RadarState.opportunities;
   RadarState.productPlaybooks = productPlaybooks.playbooks || RadarState.productPlaybooks;
