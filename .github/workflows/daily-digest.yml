@@ -41,7 +41,9 @@ jobs:
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           DIGEST_FROM: ${{ secrets.DIGEST_FROM }}
-          SITE_URL: 'https://rib198.github.io/ax-pulse'
+          # Use the Vercel deployment (not GitHub Pages) so the chat assistant
+          # and the /api/* endpoints work from the digest links.
+          SITE_URL: 'https://ax-pulse01.vercel.app'
           DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
           ALLOW_SEND_FAILURE: '1'
         run: python3 tools/build_digest.py
