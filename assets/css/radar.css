@@ -1708,7 +1708,10 @@ html[dir="rtl"] .detail-text {
   .radar-footer { font-size: 10px; left: 8px; bottom: 4px; }
 }
 
-@media (max-width: 760px) and (orientation: portrait) {
+/* Portrait guard — show across phones + tablets in portrait (covers iPad mini
+   768px portrait and bigger portrait surfaces that previously fell through
+   the gap and rendered the desktop radar layout broken). */
+@media (orientation: portrait) and (max-width: 1024px) {
   .radar-stage {
     display: none;
   }
@@ -1726,8 +1729,8 @@ html[dir="rtl"] .detail-text {
   }
 
   .guard-mark {
-    width: 54px;
-    height: 54px;
+    min-width: 88px;
+    padding: 12px 18px;
     display: grid;
     place-items: center;
     justify-self: center;
@@ -1736,6 +1739,7 @@ html[dir="rtl"] .detail-text {
     border: 1px solid rgba(118, 236, 255, 0.28);
     color: var(--radar-cyan);
     font-weight: 700;
+    font-size: 18px;
     box-shadow: 0 0 35px rgba(118, 236, 255, 0.22);
   }
 
@@ -1748,6 +1752,49 @@ html[dir="rtl"] .detail-text {
     color: rgba(230, 239, 255, 0.72);
     line-height: 1.8;
   }
+
+  .guard-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .guard-btn {
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(118, 236, 255, 0.35);
+    color: rgba(230, 239, 255, 0.92);
+    background: rgba(118, 236, 255, 0.08);
+    font-size: 13px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+  }
+  .guard-btn:active { transform: scale(0.97); }
+  .guard-btn.primary {
+    background: rgba(118, 236, 255, 0.22);
+    border-color: rgba(118, 236, 255, 0.55);
+    color: #fff;
+  }
+  .guard-note {
+    font-size: 11px;
+    opacity: 0.55;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* Very small landscape phones (iPhone SE / 8 / 8+ landscape ≤ 700px wide).
+   Hide the side cards entirely — they don't have room to coexist with the
+   globe. Users still get the globe + nav + bottom data panel. */
+@media (max-width: 700px) and (orientation: landscape) {
+  .card-left,
+  .card-right,
+  .card-bottom { display: none; }
+  .radar-world { width: 62vw; }
+  .data-panel { width: 98vw; bottom: 8px; padding: 8px; gap: 8px; }
+  .radar-copy { display: none; }
+  .floating-strip { display: none; }
 }
 
 /* ============================================================
