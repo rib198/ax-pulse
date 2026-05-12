@@ -1,27 +1,8 @@
-# Radar Watchlist — مصادر مجانية تمامًا (بدون X API)
-# ====================================================
-#
-# الحسابات التي يجمع منها الرادار. الأداة تكتشف المنصة تلقائيًا من شكل الـ handle:
-#
-#   @user                    → X (عبر Nitter — 12 instance بالتناوب)
-#   @user.bsky.social        → Bluesky (مجاني، AT Protocol)
-#   @user@instance.tld       → Mastodon (مجاني، Public API)
-#
-# الصيغة:
-#   • # تعليق                  → يُتجاهل
-#   • ## اسم_القسم            → عنوان قسم (يُستخدم كـ tag للتغريدات)
-#   • @handle                   → حساب يُتابع (المنصة تُكتشف تلقائيًا)
-#   • فارغ                       → يُتجاهل
-#
-# عدد التغريدات لكل حساب يضبط من x_auto_collect.py (افتراضي 5 للقوائم الكبيرة).
-# لتفعيل X API الرسمي اختياريًا: ضع RADAR_USE_X_API=1 + X_BEARER_TOKEN في env.
-
-# =============================================
-#  السعودية
-# =============================================
+# الرادار — X watchlist
+# Auto-regenerated 2026-05-12 from Excel + curated additions.
+# Edit by hand — re-running this builder will skip existing handles.
 
 ## saudi_official
-# جهات رسمية، برامج تعليم، جمعيات
 @SDAIA_SA
 @HUMAIN
 @TareqAmin_
@@ -40,14 +21,12 @@
 @Alwagait
 
 ## saudi_companies
-# شركات AI سعودية
 @Mozn_ai
 @Quant_sa
 @NeuralBank_ai
 @Lucidya
 
 ## saudi_research
-# أكاديميون وباحثون
 @twairesh
 @SOAH_
 @hend_alkhalifa
@@ -55,9 +34,9 @@
 @Drtahani_muqbil
 @h_alhuzali
 @LatifaMKarim
+@arai_ksaa
 
 ## saudi_builders
-# مبرمجون وصانعو محتوى تقني سعوديون
 @Abdulaziz_Hmadi
 @falsaif
 @AR_Kareem_
@@ -73,7 +52,6 @@
 @mo7ammadal7asan
 
 ## arab_ai_builders
-# صانعو محتوى AI بالعربية (قائمة الجولة الأولى)
 @dr2alshehri
 @alghali
 @cnemalek
@@ -81,12 +59,7 @@
 @NabrahAI
 @_TALEBM_
 
-# =============================================
-#  الإمارات + الخليج
-# =============================================
-
 ## uae_ai
-# جهات رسمية وشركات AI في الإمارات
 @uaeai_2031
 @OmarSAlolama
 @mbzuai
@@ -100,7 +73,6 @@
 @DubaiFuture
 
 ## qatar_ai
-# قطر — أبحاث ومنتجات
 @QatarComputing
 @Ai_Fanar
 @qcrialt
@@ -109,7 +81,6 @@
 @FirojAlam04
 
 ## egypt_tech
-# مصر — جهات وتعليم تقني
 @MCITEgypt
 @ITIDA
 @EgyptInnovate
@@ -117,12 +88,7 @@
 @SECC_EG
 @Osama_Elzero
 
-# =============================================
-#  محتوى عربي + Arabic NLP
-# =============================================
-
 ## arab_content
-# نشرات وحسابات عربية تشرح AI
 @Arabic_ai
 @AIinArabic
 @BelarabiAi
@@ -132,9 +98,9 @@
 @AI_journalism
 @ArabsDev
 @alarbtechcom
+@AI_Arabic1
 
 ## arabic_nlp
-# أبحاث ومجتمعات NLP العربية
 @CamelNlp
 @NYHabash
 @MonaDiab77
@@ -145,7 +111,6 @@
 @arabicml2
 
 ## arab_ai_products
-# منتجات AI عربية
 @UseSawt
 @XinaAIOfficial
 @kanari_ai
@@ -153,128 +118,408 @@
 @younesbag1
 
 ## arab_other
-# باقي العالم العربي
 @hnasr
 @jo_osa
 @rolandanajem
 @AUB_SAIL
 @ouhtman
+@qunaieer
+@Arab_AI1
+@Aiopenmindsa
+@IntelligenAr
 
-# =============================================
-#  المختبرات والباحثين العالميين
-# =============================================
+## global_researchers
+@ilyasut
+@natolambert
+@DrJimFan
+@jasonwei
+@_jasonwei
+@quocleix
+@ch402
+@AmandaAskell
+@RichardMCNgo
+@ESYudkowsky
+@robbensinger
+@mmitchell_ai
+@seb_ruder
+@gwern
+@orenetzioni
+@yoshua_bengio
+@sarahookr
+@joellepineau
+@percyliang
+@srush_nlp
+@Shakir_za
+@beenwrekt
+@NoamShazeer
+@matei_zaharia
+@emilymbender
+@sh_reya
+@lilianweng
+@tri_dao
+@Tim_Dettmers
+@OfirPress
+@carlini
+@katecrawford
+@etzioni
+@yoavgo
+@svlevine
+@chelseabfinn
+@AnimaAnandkumar
+@pmddomingos
+@deliprao
+@hardmaru
 
-## global_labs
-# مختبرات AI الرسمية
+## global_ai_persons
+@lexfridman
+@sama
+@ID_AA_Carmack
+@karpathy
+@2morrowknight
+@ylecun
+@Scobleizer
+@KirkDBorne
+@fchollet
+@rowancheung
+@antgrasso
+@demishassabis
+@Ronald_vanLoon
+@TamaraMcCleary
+@geoffreyhinton
+@goodfellow_ian
+@JeffDean
+@erikbryn
+@timnitGebru
+@OriolVinyalsML
+@soumithchintala
+@sallyeaves
+@bernardmarr
+@fabiomoioli
+@pascal_bornet
+@GaryMarcus
+@thatroblennon
+@randal_olson
+@Nicochan33
+@chrismessina
+@iainljbrown
+@HaroldSinnott
+@DataChaz
+@JeremyPhoward
+@emollick
+@simonw
+@swyx
+@dylan522p
+@alexalbert__
+@svpino
+@levelsio
+@leeerob
+@OfficialLoganK
+@vboykis
+@chipro
+@chrisalbon
+@math_rachel
+@elvis
+@BenedictEvans
+@om
+@benthompson
+@kevinweil
+@joshwoodward
+@PeterDiamandis
+@mrogati
+@miketamir
+@quaesita
+@YuHelenYu
+
+## global_ai_labs
 @OpenAI
 @AnthropicAI
 @GoogleDeepMind
-@huggingface
+@xai
+@MistralAI
+@GoogleAI
+@AIatMeta
+@cohere
+@allen_ai
+@Teknium1
 
-## researchers
-# باحثون مؤثرون
-@sama
-@karpathy
-@AndrewYNg
-@ylecun
-@gdb
-@ClementDelangue
-@emollick
-@jeremyphoward
+## global_research_orgs
+@DeepLearningAI
+@DataCamp
+@GoogleResearch
+@MSFTResearch
+@AmazonScience
+@IBMResearch
+@LinkedInLearning
+@duolingo
+@Quizlet
+@freeCodeCamp
+@Codecademy
+@coursera
+@edXOnline
+@khanacademy
+@udacity
+@pluralsight
+@OReillyMedia
+@PacktPublishing
+@MIT_CSAIL
+@StanfordHAI
+@Stanford
+@MIT
+@UCBerkeley
+@CarnegieMellon
+@MITMediaLab
+@Mila_Quebec
+@arxiv
+@paperswithcode
+@NeurIPSConf
+@icmlconf
+@StatQuest
+@TEDTalks
 
-# =============================================
-#  بناة منتجات AI + شركات ناشئة
-# =============================================
-
-## product_builders
-# Founders, PMs, investors في فضاء AI
+## global_founders_investors
+@mattshumer_
+@DarioAmodei
+@arthurmensch
+@aidangomez
+@clementdelangue
+@mustafasuleyman
+@satyanadella
+@elonmusk
+@alexandr_wang
+@richardsocher
+@bindureddy
+@MckayWrigley
+@NickADobos
+@gregisenberg
+@shl
+@rauchg
+@steipete
+@ammaar
+@DaphneKoller
+@andykonwinski
+@DavidSHolz
+@dhh
+@tobi
+@pmarca
+@paulg
+@naval
+@reidhoffman
+@BillGates
+@tim_cook
+@MarcBenioff
+@Benioff
+@bhorowitz
+@DavidSacks
+@Jason
+@chamath
+@friedberg
+@a16z
+@a16zInfra
+@sequoia
+@GreylockVC
+@firstround
+@IndexVentures
+@lightspeedvp
+@Accel
+@BessemerVP
+@NEA
+@FoundersFund
+@generalcatalyst
 @amasad
 @levie
 @garrytan
 @mattturck
 @danshipper
-@petergyang
-@kevinweil
-@joshwoodward
-@alexalbert__
-@mattshumer_
 @Suhail
 @rrhoover
 @andrewchen
-@lennysan
-@nabeelqu
 @ankrgyl
-@Raza_Habib
+@Raza_Habib496
 @spolu
 @btaylor
 @antonosika
-
-# =============================================
-#  Coding Agents / LLMOps / Open Models
-# =============================================
-
-## coding_agents
-# AI coding tools، agents، LLM ops، open weights
-@paulgauthier
-@altryne
 @ScottWu46
+@mikeknoop
+@adamdangelo
+@ekuyda
+@Davidjpark96
+@tessalau
+@jeggers
+@nigewillson
+@marek_rosa
+
+## global_ai_products_platforms
+@ChatGPTapp
+@perplexity_ai
+@StabilityAI
+@huggingface
+@NVIDIAAI
+@claudeai
+@GeminiApp
+@grok
+@Meta
+@Google
+@GoogleWorkspace
+@GoogleCloud
+@Microsoft
+@MicrosoftAI
+@MSFTCopilot
+@Azure
+@awscloud
+@AWSstartups
+@amazon
+@NVIDIA
+@IBM
+@IBMWatson
+@Salesforce
+@SalesforceAI
+@SlackHQ
+@Tableau
+@h2oai
+@C3_AI
+@UiPath
+@AutomationAnywh
+@PalantirTech
+@Scale_AI
+@SnowflakeDB
+@MongoDB
+@elastic
+@confluentinc
+@neo4j
+@GroqInc
+@NotionHQ
+@zapier
+@make_hq
+@IFTTT
+@airtable
+@MiroHQ
+@linear
+@ProductHunt
+@kubernetesio
+@Cloudflare
+@Twilio
+@stripe
+@Shopify
+@Roblox
+@Apple
+@AppStore
+@WhatsApp
+@instagram
+@facebook
+@X
+@LinkedIn
+@YouTubeCreators
+@TikTok_US
+@TikTokSupport
+@Uber
+@Airbnb
+@Pinterest
+@Snap
+@Snapchat
+@discord
+@Reddit
+@Dropbox
+@Box
+@Atlassian
+@Jira
+@Trello
+@Asana
+@mondaydotcom
+@Zoom
+@DeepLcom
+@WolframResearch
+@Wolfram_Alpha
+@anacondainc
+@DataIsBeautiful
+@ApacheSpark
+@ApacheArrow
+@Tesla
+
+## global_dev_tools
+@PyTorch
+@TensorFlow
+@cursor_ai
+@GitHub
+@googledevs
+@msdev
+@AzureDevOps
+@githubcopilot
+@awsdevelopers
+@LangChainAI
+@llama_index
+@ollama
+@replicate
+@weights_biases
+@wandb
+@replit
+@Vercel
+@lovable_dev
+@StackBlitz
+@bolt_new
+@windsurf_ai
+@codeiumdev
+@sourcegraph
+@JetBrains
+@Docker
+@Netlify
+@supabase
+@Firebase
+@ShopifyDevs
+@TwitterDev
+@LinkedInEng
+@NetflixEng
+@SpotifyEng
+@UberEng
+@AirbnbEng
+@PinterestEng
+@StackOverflow
+@GoogleColab
+@Jupyter
+@paulgauthier
 @zachlloydtweets
 @clattner_llvm
-@sh_reya
-@chipro
-@lilianweng
 @maximelabonne
 @_philschmid
 @abhi1thakur
-@natolambert
-@Teknium1
 @vikhyatk
-@tri_dao
-@Tim_Dettmers
-@OfirPress
-@mikeknoop
-@jackclarkSF
-@carlini
+@rileybrown
+@nick_saraev
+@MakadiaHarsh
+@frankdilo
+@shannholmberg
+@SimonHoiberg
+@corbin_braun
+@jeremyhoward
+@rasbt
 
-# =============================================
-#  أخبار أدوات + إنتاجية
-# =============================================
-
-## tools_news
-# أدوات وتجارب يومية وثريدات عملية
-@minchoi
-@heyBarsee
-@heykahn
-@nonmayorpete
-@noahedelman02
-@nathanlands
-@itsandrewgao
-@AIHighlight
+## global_creative_tools
+@runwayml
+@pika_labs
+@LumaLabsAI
+@krea_ai
+@ElevenLabs
+@suno
+@midjourney
+@NVIDIAOmniverse
+@HeyGen_Official
+@Canva
+@Adobe
+@AdobeFirefly
+@Figma
+@v0
+@Unity
+@UnrealEngine
+@NVIDIAStudio
+@Blender
+@MetaQuestVR
+@YouTube
+@Spotify
+@Grammarly
 @HBCoop_
-@Scobleizer
-@PeterDiamandis
-@waitin4agi_
-@DataChaz
-@Whats_AI
-@ykilcher
-@sirajraval
-@Sentdex
-@svpino
-@adamdangelo
-@mustafasuleyman
-
-# =============================================
-#  Creative AI — فيديو/صور/تصميم
-# =============================================
-
-## creative_ai
-# فن وفيديو وصور AI
 @icreatelife
 @refikanadol
 @sougwen
 @genekogan
-@nickfloats
-@javilopen
 @Ror_Fly
 @DonAllenIII
 @PaigePiskin
@@ -284,83 +529,280 @@
 @niceaunties
 @rainisto
 @fabianstelzer
+@skirano
 
-# =============================================
-#  أبحاث + تعليم + تفكير عميق
-# =============================================
-
-## research_education
-# أكاديميون وصحافة تحليلية وتعليم
-@lexfridman
-@geoffreyhinton
-@GaryMarcus
-@timnitGebru
-@katecrawford
-@erikbryn
-@DaphneKoller
-@etzioni
-@mrogati
-@miketamir
+## global_creators_media
+@_akhaliq
+@bentossell
+@minchoi
+@LinusEkenstam
+@NickFloats
+@matthewberman
+@caseynewton
+@kevinroose
+@reckless
+@karaswisher
+@MikeIsaac
+@alexeheath
+@alexhern
+@NateSilver538
+@hadleywickham
+@wesmckinn
+@TEDchris
+@petergyang
+@lennysan
+@nabeelqu
+@altryne
+@jackclarkSF
+@heyBarsee
+@heykahn
+@nonmayorpete
+@noahedelman02
+@nathanlands
+@itsandrewgao
+@Whats_AI
+@ykilcher
+@sirajraval
+@Sentdex
 @_KarenHao
-@math_rachel
-@quaesita
-@RichardSocher
-@seb_ruder
-@yoavgo
-@svlevine
-@chelseabfinn
-@AnimaAnandkumar
-@pmddomingos
-
-# =============================================
-#  أعمال + تسويق + مؤسسات
-# =============================================
-
-## business_marketing
-# AI في الأعمال والتسويق
 @paulroetzer
-@BernardMarr
-@pascal_bornet
-@YuHelenYu
-@Ronald_vanLoon
+@alliekmiller
 
-# =============================================
-#  Dev Tools + Community (قائمة الجولة الأولى)
-# =============================================
+## global_media_news
+@every
+@BigTechnology
+@Netflix
+@flowingdata
+@FiveThirtyEight
+@TechCrunch
+@verge
+@WIRED
+@MITTechReview
+@VentureBeat
+@theinformation
+@semafor
+@ArsTechnica
+@ZDNET
+@CNET
+@engadget
+@TheNextWeb
+@FastCompany
+@ForbesTech
+@newscientist
+@Nature
+@ScienceMagazine
+@QuantaMagazine
+@Futurism
+@Slashdot
+@newsycombinator
+@Techmeme
+@TheRundownAI
+@AIBreakfast
+@BensBitesDaily
+@AISolopreneur
 
-## dev_tools
-@cursor_ai
-@github
-@vercel
-@Replit
-@simonw
+## global_robotics_hardware
+@AMD
+@Intel
+@IntelAI
+@Qualcomm
+@Arm
+@Tesla_AI
+@Tesla_Optimus
+@waymo
+@Cruise
+@Zoox
+@Mobileye
+@BostonDynamics
+@Figure_robot
+@AndurilTech
 
-## community
-@hardmaru
-@shl
-@swyx
-@latentspacepod
+## global_other
+@kaggle
+@ycombinator
+@TheMathWorks
+@MATLAB
 
-# =============================================
-#  Bluesky — بديل مجاني، يجمع تلقائيًا بدون أي مفتاح
-# =============================================
-# AT Protocol عام، لا يحتاج حساب. أضف أي شخص ينشر على Bluesky.
-# الكثير من باحثي AI صار لهم وجود نشط هناك.
+## cn_ai_persons
+@kaifulee
+@AndrewYNg
+@drfeifei
+@HAOHONG_CFA
+@jiayq
 
-## bluesky_ai
-# مثال — أضف من تريد بصيغة @user.bsky.social
-# @karpathy.bsky.social
-# @simon.bsky.social
-# @paulg.bsky.social
+## cn_ai_labs
+@deepseek_ai
+@Alibaba_Qwen
 
-# =============================================
-#  Mastodon — بديل مجاني، Public API بدون auth
-# =============================================
-# صيغة: @user@instance.tld
-# نشط للباحثين الأكاديميين خصوصًا.
+## cn_founders_investors
+@sinovationvc
 
-## mastodon_ai
-# مثال — أضف من تريد بصيغة @user@instance.tld
-# @karpathy@hachyderm.io
-# @huggingface@huggingface.social
-# @yannlecun@mastodon.social
+## cn_ai_products_platforms
+@AlibabaGroup
+@AlibabaCloud
+@TencentGlobal
+@TencentCloud
+@Huawei
+@HuaweiCloud1
+@Baidu_Inc
+@Xiaomi
+@Lenovo
+@BYDCompany
+@TikTokComms
+
+## cn_creators_media
+@ruima
+
+## cn_media_news
+@SCMPNews
+@ChinaDaily
+@XHNews
+@PDChina
+@CGTNOfficial
+
+## cn_robotics_hardware
+@DJIGlobal
+@UnitreeRobotics
+
+## jp_ai_persons
+@yoheinakajima
+@SuguruKun_ai
+
+## jp_researchers
+@ProfMatsuoka
+@kanair
+@tetsuyaogata1
+
+## jp_ai_products_platforms
+@SoftBank
+@SoftBank_Group
+@Sony
+@SonyGroupGlobal
+@ToyotaMotorCorp
+@Honda
+@NissanMotor
+@Rakuten
+@RakutenGroup
+@NTT_DOCOMO
+@docomo
+@Panasonic
+@Fujitsu_Global
+@NEC_corporation
+@HitachiGlobal
+
+## jp_creators_media
+@masahirochaen
+@DL_Hacks
+@AI_sokuho
+
+## jp_media_news
+@NHKWORLD_News
+@NikkeiAsia
+@japantimes
+
+## kr_ai_products_platforms
+@Samsung
+@SKtelecom
+@SamsungMobile
+@LGGlobal
+@LGUS
+@Hyundai_Global
+@Kia
+@NAVERCorp
+@kakaocorp
+
+## kr_media_news
+@YonhapNews
+@TheKoreaHerald
+@KBSWorldTV
+@arirangtv
+
+## kr_robotics_hardware
+@SamsungDSGlobal
+
+## in_ai_persons
+@waitin4agi_
+@tanaypratap
+@hkirat
+@akshaymarch7
+
+## in_founders_investors
+@AravSrinivas
+@sundarpichai
+@balajis
+@sriramk
+@NandanNilekani
+@KunalShah
+@nikhilkamathcio
+@kunalb11
+@PeakXVPartners
+
+## in_ai_products_platforms
+@RelianceJio
+@Zoho
+@FreshworksInc
+@Razorpay
+@PhonePe
+@paytm
+
+## in_media_news
+@YourStoryCo
+@Inc42
+@medianama
+@TheKenWeb
+@livemint
+@EconomicTimes
+@ETtech
+
+## in_other
+@TCS
+@Infosys
+@Wipro
+@HCLTech
+@Tech_Mahindra
+@Flipkart
+@OlaElectric
+
+## es_ai_persons
+@DotCSV
+@midudev
+@MoureDev
+@JoseMaGarciaSua
+@seostratega
+@ordax
+
+## es_founders_investors
+@javilopen
+
+## es_ai_products_platforms
+@Telefonica
+@movistar_es
+
+## es_media_news
+@Xataka
+@Genbeta
+@Hipertextual
+@wwwhatsnew
+@FayerWayer
+@ComputerHoy
+@MuyComputer
+@el_pais
+@bbcmundo
+@EFEnoticias
+@rtve
+@LaVanguardia
+
+## es_other
+@BBVA
+@bancosantander
+
+## es_research_orgs
+@platzi
+@HubSpotEspanol
+@IEuniversity
+
+## in_policy_government
+@OfficialINDIAai
+@DigitalIndia
+@NITIAayog
+@MeitYIndia

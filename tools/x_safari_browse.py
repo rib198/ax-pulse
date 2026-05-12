@@ -116,9 +116,11 @@ STRATEGY = {
 # Continuous mode strategy — for the "one handle every 4-7 minutes" loop.
 # Combines deep collection per profile with daily quotas + periodic breaks.
 CONTINUOUS = {
-    # Interval between profile visits (random per-iteration)
-    "interval_min_seconds":     4 * 60,
-    "interval_max_seconds":     7 * 60,
+    # Interval between profile visits (random per-iteration).
+    # Tighter pacing (~3 min, mild jitter) — still random enough to look human
+    # but cycles the 703-handle watchlist faster.
+    "interval_min_seconds":     2 * 60 + 30,   # 2:30
+    "interval_max_seconds":     3 * 60 + 30,   # 3:30
 
     # Per-profile depth target — try to gather up to this many tweets
     "target_tweets":            100,
@@ -134,8 +136,10 @@ CONTINUOUS = {
     "extra_break_max":          30 * 60,
 
     # Daily safety caps. Beyond these the loop sleeps until next day.
-    "daily_handle_quota":       180,
-    "daily_tweet_quota":        14000,
+    # Sized for the ~3 min pacing × 15 work-hours (~300 theoretical visits/day),
+    # with margin for cooldowns + breaks.
+    "daily_handle_quota":       260,
+    "daily_tweet_quota":        22000,
 
     # Enrich after every N successful visits
     "enrich_every_n":           5,

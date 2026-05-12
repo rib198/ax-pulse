@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Continuous Safari browser — runs until you hit Ctrl+C or close the window.
-# One profile every 4-7 minutes. Up to 100 tweets per profile.
+# One profile every ~3 minutes (2:30–3:30 jittered). Up to 100 tweets per profile.
 # All anti-detection gates active (rotation, work-hours, cooldown, warmup).
 #
 # Stop politely: Ctrl+C in the terminal window.
