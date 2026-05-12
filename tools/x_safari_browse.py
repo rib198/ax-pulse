@@ -179,9 +179,19 @@ def load_state() -> dict:
         return {"version": 1, "handle_history": {}, "last_session": None, "last_block_at": None}
 
 
+def _atomic_write(path: Path, content: str) -> None:
+    """Write `content` to `path` atomically — tmp file + os.replace.
+    Prevents partial writes on SIGKILL / power loss / crash. If the process
+    dies mid-write, the original file stays intact and the .tmp is orphaned
+    (harmless, cleaned on next write)."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(content, encoding="utf-8")
+    os.replace(tmp, path)
+
+
 def save_state(state: dict) -> None:
-    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    _atomic_write(STATE_PATH, json.dumps(state, ensure_ascii=False, indent=2))
 
 
 def is_blocked_by_review(handle: str) -> tuple[bool, str]:
@@ -469,11 +479,17 @@ def merge_into_posts(new_items: list[dict]) -> dict:
     if POSTS_PATH.exists():
         try:
             doc = json.loads(POSTS_PATH.read_text("utf-8"))
-        except json.JSONDecodeError:
-            doc = {"items": []}
+        except json.JSONDecodeError as e:
+            # Critical: posts.json is unparseable. Refuse to overwrite it with a
+            # fresh empty document — the existing file is the only authority for
+            # the store and a silent reset would lose every collected tweet.
+            # Recovery: `git checkout HEAD -- data/manual_x/posts.json`
+            print(f"\n⚠ {POSTS_PATH} is unreadable ({e}). Refusing to overwrite.")
+            print(f"   Recover with: git checkout HEAD -- {POSTS_PATH.relative_to(ROOT)}")
+            print(f"   Or restore from .tmp if present (a tool was killed mid-write).")
+            sys.exit(2)
     else:
         doc = {"items": []}
-    POSTS_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     existing = doc.get("items") or []
     by_id = {p.get("tweet_id"): i for i, p in enumerate(existing) if p.get("tweet_id")}
@@ -503,7 +519,7 @@ def merge_into_posts(new_items: list[dict]) -> dict:
 
     doc["items"] = existing
     doc["collected_at"] = _now_iso()
-    POSTS_PATH.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    _atomic_write(POSTS_PATH, json.dumps(doc, ensure_ascii=False, indent=2))
     return {"added": added, "updated": updated, "total": len(existing)}
 
 

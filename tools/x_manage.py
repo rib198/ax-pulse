@@ -68,9 +68,17 @@ def _load_json(path: Path, default):
         return default
 
 
-def _save_json(path: Path, data) -> None:
+def _atomic_write(path: Path, content: str) -> None:
+    """Atomic write — tmp file + os.replace. Crash-safe."""
+    import os
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(content, encoding="utf-8")
+    os.replace(tmp, path)
+
+
+def _save_json(path: Path, data) -> None:
+    _atomic_write(path, json.dumps(data, ensure_ascii=False, indent=2))
 
 
 def _ago(iso: str | None) -> str:
@@ -146,14 +154,25 @@ def remove_from_watchlist(handle: str) -> bool:
             continue
         new_lines.append(line)
     if removed:
-        WATCHLIST_PATH.write_text("\n".join(new_lines) + "\n", encoding="utf-8")
+        _atomic_write(WATCHLIST_PATH, "\n".join(new_lines) + "\n")
     return removed
 
 
 # ---------- Tweet store helpers ----------
 
 def load_posts() -> tuple[dict, list[dict]]:
-    doc = _load_json(POSTS_PATH, {"items": []})
+    # Defense-in-depth: if posts.json exists but is unparseable, refuse to
+    # operate on it. Any save_posts call would otherwise overwrite the
+    # corrupted-but-recoverable file with empty contents.
+    if POSTS_PATH.exists():
+        try:
+            doc = json.loads(POSTS_PATH.read_text("utf-8"))
+        except json.JSONDecodeError as e:
+            print(f"⚠ {POSTS_PATH} is unreadable ({e}). Refusing to operate.")
+            print(f"   Recover with: git checkout HEAD -- {POSTS_PATH}")
+            sys.exit(2)
+    else:
+        doc = {"items": []}
     return doc, doc.get("items") or []
 
 
