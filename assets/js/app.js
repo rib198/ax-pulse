@@ -1,4 +1,4 @@
-/* AX Pulse — bilingual data-driven dashboard engine */
+/* الرادار / Radar — bilingual data-driven dashboard engine */
 
 const State = {
   lang: localStorage.getItem('axp_lang') || 'en',
