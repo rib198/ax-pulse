@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-12T03:43:23+00:00",
+  "run_at": "2026-05-12T06:41:02+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": false,
-      "duration_s": 4.952,
+      "duration_s": 4.248,
       "written": [],
       "notes": [],
       "error": "ParseError: not well-formed (invalid token): line 1, column 26"
@@ -37,7 +37,7 @@
       "duration_s": 0.06,
       "written": [],
       "notes": [
-        "injected 652 manual X items (skipped 547 of 1199)"
+        "injected 651 manual X items (skipped 548 of 1199)"
       ],
       "error": null
     },
@@ -49,8 +49,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 652 items",
-        "by tier: press=652"
+        "tagged 651 items",
+        "by tier: press=651"
       ],
       "error": null
     },
@@ -67,12 +67,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.027,
+      "duration_s": 0.028,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 652 items, top priority=0.412"
+        "ranked 651 items, top priority=0.412"
       ],
       "error": null
     },
@@ -92,7 +92,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.036,
+      "duration_s": 0.038,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -105,7 +105,7 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.108,
+      "duration_s": 0.109,
       "written": [
         "data/radar/agents/events.json"
       ],
@@ -130,7 +130,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.015,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -155,7 +155,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.011,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -212,7 +212,7 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=652, opps=4, calls=0"
+        "items=651, opps=4, calls=0"
       ],
       "error": null
     },
