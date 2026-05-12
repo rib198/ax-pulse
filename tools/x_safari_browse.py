@@ -185,8 +185,10 @@ def save_state(state: dict) -> None:
 
 
 def is_blocked_by_review(handle: str) -> tuple[bool, str]:
-    """True if x_manage.py has sidelined or marked-removed this handle and it's
-    still inside its sideline window. Returns (blocked, reason)."""
+    """True if x_manage.py has paused / sidelined / removed this handle.
+    'paused' is user-set and never auto-expires.
+    'sidelined' is auto-set with a cooldown window (re-tested after).
+    Returns (blocked, reason)."""
     if not REVIEW_PATH.exists():
         return (False, "")
     try:
@@ -197,8 +199,8 @@ def is_blocked_by_review(handle: str) -> tuple[bool, str]:
     if not e:
         return (False, "")
     status = e.get("status", "active")
-    if status == "removed":
-        return (True, "removed")
+    if status in ("removed", "paused"):
+        return (True, status)
     if status != "sidelined":
         return (False, "")
     nr = e.get("next_review_at")

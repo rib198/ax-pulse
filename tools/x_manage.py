@@ -793,10 +793,10 @@ def cmd_sidelined(args) -> int:
     doc = _load_review()
     rows = []
     for h, e in doc["handles"].items():
-        if e.get("status") in ("sidelined", "removed"):
+        if e.get("status") in ("sidelined", "removed", "paused"):
             rows.append((h, e))
     if not rows:
-        print("nothing sidelined.")
+        print("nothing sidelined, paused, or removed.")
         return 0
     rows.sort(key=lambda r: r[1].get("last_reviewed") or "", reverse=True)
     print(f"{'handle':<28}  {'status':<10}  {'verdict':<10}  {'avg':>5}  {'n':>3}  {'reviews':>7}  next-review")
@@ -828,6 +828,97 @@ def cmd_restore(args) -> int:
     doc["handles"][h] = e
     _save_review(doc)
     print(f"@{args.handle.lstrip('@')}: {was} → active. Will re-enter rotation.")
+    return 0
+
+
+# ---------- pause / unpause (user-set, never auto-expires) ----------
+
+def _pause_one(doc: dict, handle: str) -> bool:
+    h = handle.lstrip("@").lower()
+    e = doc["handles"].get(h) or {}
+    if e.get("status") == "paused":
+        return False
+    e["status"] = "paused"
+    e["last_verdict"] = "user_paused"
+    e["last_reviewed"] = _now_iso()
+    e["next_review_at"] = None
+    doc["handles"][h] = e
+    return True
+
+
+def cmd_pause(args) -> int:
+    doc = _load_review()
+    handles = []
+    for h in args.handles.replace(",", " ").split():
+        h = h.strip().lstrip("@")
+        if h:
+            handles.append(h)
+    if not handles:
+        print("no handles given.")
+        return 1
+    paused, already = 0, 0
+    for h in handles:
+        if _pause_one(doc, h):
+            paused += 1
+        else:
+            already += 1
+    _save_review(doc)
+    print(f"paused {paused} handles" + (f" ({already} were already paused)" if already else "") + ".")
+    return 0
+
+
+def cmd_pause_range(args) -> int:
+    """Pause every handle in watchlist position [from..to] (1-indexed, inclusive)."""
+    wl = parse_watchlist()
+    n = len(wl)
+    lo = max(1, args.from_pos)
+    hi = min(n, args.to_pos)
+    if lo > hi:
+        print(f"empty range ({lo}..{hi}) — watchlist has {n} handles.")
+        return 1
+    doc = _load_review()
+    handles = [wl[i - 1][0] for i in range(lo, hi + 1)]
+    paused, already = 0, 0
+    for h in handles:
+        if _pause_one(doc, h):
+            paused += 1
+        else:
+            already += 1
+    _save_review(doc)
+    print(f"paused {paused} handles in range #{lo}..#{hi}" + (f" ({already} were already paused)" if already else "") + ".")
+    print(f"  range covered: @{handles[0]} … @{handles[-1]}")
+    print(f"  rotation will now start from position #{hi + 1} onward (until you unpause).")
+    return 0
+
+
+def cmd_unpause(args) -> int:
+    doc = _load_review()
+    h = args.handle.lstrip("@").lower()
+    e = doc["handles"].get(h)
+    if not e or e.get("status") != "paused":
+        print(f"@{args.handle.lstrip('@')} is not paused.")
+        return 1
+    e["status"] = "active"
+    e["last_verdict"] = None
+    e["review_count"] = 0
+    e["next_review_at"] = None
+    doc["handles"][h] = e
+    _save_review(doc)
+    print(f"@{args.handle.lstrip('@')}: paused → active.")
+    return 0
+
+
+def cmd_unpause_all(args) -> int:
+    doc = _load_review()
+    n = 0
+    for h, e in list(doc["handles"].items()):
+        if e.get("status") == "paused":
+            e["status"] = "active"
+            e["last_verdict"] = None
+            e["review_count"] = 0
+            n += 1
+    _save_review(doc)
+    print(f"unpaused {n} handles.")
     return 0
 
 
@@ -941,6 +1032,24 @@ def main() -> int:
     a = sub.add_parser("restore", help="Un-sideline a handle (back into the rotation)")
     a.add_argument("handle")
     a.set_defaults(func=cmd_restore)
+
+    # pause — user-set indefinite skip (manual only, no auto-expiry)
+    a = sub.add_parser("pause", help="Pause handles (skip indefinitely until unpaused). Accepts comma- or space-separated list.")
+    a.add_argument("handles", help='e.g. "@sama,@karpathy"')
+    a.set_defaults(func=cmd_pause)
+
+    # pause-range — bulk-pause by watchlist position
+    a = sub.add_parser("pause-range", help="Pause every handle whose 1-indexed position in the watchlist falls in [from..to].")
+    a.add_argument("from_pos", type=int, metavar="FROM")
+    a.add_argument("to_pos", type=int, metavar="TO")
+    a.set_defaults(func=cmd_pause_range)
+
+    a = sub.add_parser("unpause", help="Lift the pause from one handle")
+    a.add_argument("handle")
+    a.set_defaults(func=cmd_unpause)
+
+    a = sub.add_parser("unpause-all", help="Lift pause from every paused handle")
+    a.set_defaults(func=cmd_unpause_all)
 
     # export
     a = sub.add_parser("export", help="Export tweets to JSON (default) or CSV")

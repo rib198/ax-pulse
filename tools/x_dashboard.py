@@ -177,7 +177,8 @@ def api_state() -> dict:
     wl = parse_watchlist()
     review_handles = review.get("handles") or {}
     sidelined = sum(1 for e in review_handles.values() if e.get("status") == "sidelined")
-    removed = sum(1 for e in review_handles.values() if e.get("status") == "removed")
+    paused    = sum(1 for e in review_handles.values() if e.get("status") == "paused")
+    removed   = sum(1 for e in review_handles.values() if e.get("status") == "removed")
 
     enriched = [p for p in posts if p.get("radar_score", 0) > 0]
     scores = [p["radar_score"] for p in enriched]
@@ -195,7 +196,7 @@ def api_state() -> dict:
         elif v >= 500: tiers["elite_500"] += 1
         elif v >= 350: tiers["high_350"] += 1
         elif v >= 200: tiers["good_200"] += 1
-    tiers["default"] = len(wl) - len(overrides) - sidelined - removed
+    tiers["default"] = len(wl) - len(overrides) - sidelined - paused - removed
 
     pid = find_safari_pid()
 
@@ -204,8 +205,9 @@ def api_state() -> dict:
         "pid":             pid,
         "now":             _now_iso(),
         "watchlist_total": len(wl),
-        "active":          len(wl) - sidelined - removed,
+        "active":          len(wl) - sidelined - paused - removed,
         "sidelined":       sidelined,
+        "paused":          paused,
         "removed":         removed,
         "store_total":     len(posts),
         "unique_authors":  len({(p.get("author_handle") or "").lower() for p in posts}),
@@ -410,6 +412,7 @@ HTML = r"""<!doctype html>
   }
   .badge.active   { background: #2bdc8e20; color: #2bdc8e; }
   .badge.sidelined { background: #ffb44a20; color: #ffb44a; }
+  .badge.paused    { background: #b785ff20; color: #c89dff; }
   .badge.removed   { background: #ff5f6d20; color: #ff8f99; }
   .badge.never     { background: rgba(255,255,255,.06); color: #8696b5; }
   .badge.data-only { background: #4cb5ff20; color: #4cb5ff; }
@@ -530,6 +533,13 @@ HTML = r"""<!doctype html>
 </div>
 
 <div class="panel active" id="panel-handles">
+  <div class="controls" style="background:rgba(180,90,255,.06); border:1px solid rgba(180,90,255,.15); padding:12px; border-radius:10px; margin-bottom:14px;">
+    <span class="muted small">⏸ إيقاف نطاق بحسب الترتيب (لا يحذف، يتخطّى من الدوران فقط):</span>
+    <input type="number" id="pr-from" placeholder="من #" style="min-width:90px;">
+    <input type="number" id="pr-to" placeholder="إلى #" style="min-width:90px;">
+    <button class="btn" id="btn-pause-range">⏸ إيقاف النطاق</button>
+    <button class="btn" id="btn-unpause-all">↻ استعادة كل الموقوفين</button>
+  </div>
   <div class="controls">
     <input type="text" id="h-search" placeholder="🔍 بحث (handle أو قسم)…">
     <select id="h-status">
@@ -537,7 +547,8 @@ HTML = r"""<!doctype html>
       <option value="active">نشطة</option>
       <option value="never">لم تُزَر</option>
       <option value="data-only">بيانات فقط</option>
-      <option value="sidelined">معزولة</option>
+      <option value="sidelined">معزولة تلقائياً</option>
+      <option value="paused">موقوفة يدوياً</option>
       <option value="removed">محذوفة</option>
       <option value="promoted">مرقّاة (target > default)</option>
     </select>
@@ -669,7 +680,8 @@ async function refreshState() {
     ['high 350',       t.high_350,   'high'],
     ['elite 500',      t.elite_500,  'elite'],
     ['premium 700',    t.premium_700,'premium'],
-    ['معزولة',          s.sidelined,  'sidelined'],
+    ['معزولة تلقائياً',  s.sidelined,  'sidelined'],
+    ['موقوفة يدوياً',   s.paused,     'paused'],
   ];
   tr.innerHTML = chips.map(([label, n, cls]) =>
     `<div class="tier-chip"><span class="badge ${cls}">${label}</span><b>${fmtNum(n)}</b></div>`
@@ -724,9 +736,11 @@ async function loadHandles() {
           <td><span class="badge ${r.status}">${r.status}${r.verdict?' / '+r.verdict:''}</span></td>
           <td class="small muted">${r.last_visit_ago}</td>
           <td>
-            ${r.status === 'sidelined' || r.status === 'removed'
-              ? `<button class="btn small" onclick="restoreHandle('${r.handle}')">↻</button>`
-              : ''}
+            ${r.status === 'paused'
+              ? `<button class="btn small" onclick="unpauseHandle('${r.handle}')">↻</button>`
+              : (r.status === 'sidelined' || r.status === 'removed'
+                  ? `<button class="btn small" onclick="restoreHandle('${r.handle}')">↻</button>`
+                  : `<button class="btn small" onclick="pauseHandle('${r.handle}')">⏸</button>`)}
             <button class="btn small" onclick="setTargetPrompt('${r.handle}')">🎯</button>
           </td>
         </tr>`;
@@ -821,6 +835,17 @@ window.restoreHandle = async function(h) {
   if (r?.ok) { loadHandles(); loadSidelined(); }
 };
 
+window.pauseHandle = async function(h) {
+  if (!confirm(`إيقاف @${h} (تخطّيه من الدوران)؟`)) return;
+  const r = await callAction('pause', {handle: h});
+  if (r?.ok) loadHandles();
+};
+
+window.unpauseHandle = async function(h) {
+  const r = await callAction('unpause', {handle: h});
+  if (r?.ok) { loadHandles(); loadSidelined(); }
+};
+
 window.setTargetPrompt = async function(h) {
   const v = prompt(`الهدف الجديد لـ @${h} (تغريدة لكل زيارة، 5-2000):`);
   if (!v) return;
@@ -872,6 +897,21 @@ $('#btn-auto-target').onclick = async () => {
 $('#btn-auto-target-dryrun').onclick = async () => {
   const r = await callAction('auto-target-dry');
   if (r) $('#review-output').textContent = r.stdout || '(فارغ)';
+};
+
+$('#btn-pause-range').onclick = async () => {
+  const lo = parseInt($('#pr-from').value);
+  const hi = parseInt($('#pr-to').value);
+  if (!lo || !hi || hi < lo) { toast('أدخل نطاقاً صحيحاً', 'err'); return; }
+  if (!confirm(`إيقاف الحسابات من #${lo} إلى #${hi}؟`)) return;
+  const r = await callAction('pause-range', {from: lo, to: hi});
+  if (r?.ok) loadHandles();
+};
+
+$('#btn-unpause-all').onclick = async () => {
+  if (!confirm('استعادة كل الحسابات الموقوفة يدوياً؟')) return;
+  const r = await callAction('unpause-all');
+  if (r?.ok) loadHandles();
 };
 
 $('#btn-refresh-handles').onclick = loadHandles;
@@ -1000,6 +1040,33 @@ class Handler(BaseHTTPRequestHandler):
             if not h or v is None:
                 return self._json({"ok": False, "message": "handle و value مطلوبان"})
             r = run_manage(["set-target", h, str(int(v))])
+            return self._json({"ok": r["ok"], "message": r["stdout"].strip()[:200]})
+
+        if cmd == "pause":
+            h = payload.get("handle")
+            if not h: return self._json({"ok": False, "message": "handle مطلوب"})
+            r = run_manage(["pause", h])
+            return self._json({"ok": r["ok"], "message": r["stdout"].strip()[:200]})
+
+        if cmd == "pause-range":
+            try:
+                lo = int(payload.get("from", 0))
+                hi = int(payload.get("to", 0))
+            except (ValueError, TypeError):
+                return self._json({"ok": False, "message": "from / to مطلوبان"})
+            if lo < 1 or hi < lo:
+                return self._json({"ok": False, "message": "نطاق غير صحيح"})
+            r = run_manage(["pause-range", str(lo), str(hi)])
+            return self._json({"ok": r["ok"], "message": r["stdout"].strip()[:300]})
+
+        if cmd == "unpause":
+            h = payload.get("handle")
+            if not h: return self._json({"ok": False, "message": "handle مطلوب"})
+            r = run_manage(["unpause", h])
+            return self._json({"ok": r["ok"], "message": r["stdout"].strip()[:200]})
+
+        if cmd == "unpause-all":
+            r = run_manage(["unpause-all"])
             return self._json({"ok": r["ok"], "message": r["stdout"].strip()[:200]})
 
         return self._json({"ok": False, "message": f"أمر غير معروف: {cmd}"})
