@@ -555,12 +555,20 @@ function qualityAcceptedCount() {
   );
 }
 
+// Dedup key for opportunityDisplayCount — lowercases, trims, collapses
+// whitespace. Inlined here because the previous reference to a free
+// `normalize()` helper threw ReferenceError and killed the entire render
+// chain (stats stuck at "—", data-panel never populated).
+function _opportunityKey(value) {
+  return String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
 function opportunityDisplayCount() {
   const titles = new Set();
   focusedOpportunityRows()
     .concat(manualXOpportunityRows(), candidateOpportunityRows(), opportunityRows())
     .forEach((item) => {
-      const key = normalize(item.title || item.product || item.id || '');
+      const key = _opportunityKey(item.title || item.product || item.id || '');
       if (key) titles.add(key);
     });
   return titles.size || RadarState.productPlaybooks.length || 0;
