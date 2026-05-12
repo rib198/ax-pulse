@@ -32,7 +32,7 @@ import argparse
 import csv
 import json
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,7 +40,16 @@ POSTS_PATH = ROOT / "data" / "manual_x" / "posts.json"
 WATCHLIST_PATH = ROOT / "data" / "manual_x" / "watchlist.txt"
 TARGETS_PATH = ROOT / "data" / "manual_x" / "handle_targets.json"
 STATE_PATH = ROOT / "data" / "manual_x" / "safari_state.json"
+REVIEW_PATH = ROOT / "data" / "manual_x" / "handle_review.json"
 REMOVED_LOG = ROOT / "data" / "manual_x" / "removed_handles.log"
+
+REVIEW_DEFAULTS = {
+    "min_avg_score":            0.18,   # avg radar_score floor
+    "min_tweets_for_judgment":  5,      # need this many tweets to judge low_score
+    "stale_age_days":           60,     # if newest tweet older than this → stale
+    "sideline_days":            7,      # how long to skip after sidelining
+    "max_failed_reviews":       2,      # nth failed review → remove permanently
+}
 
 
 # ---------- Helpers ----------
@@ -436,6 +445,257 @@ def cmd_targets(args) -> int:
     return 0
 
 
+# ---------- review (sideline low-value handles, retire repeat offenders) ----------
+
+def _load_review() -> dict:
+    doc = _load_json(REVIEW_PATH, {})
+    crit = dict(REVIEW_DEFAULTS)
+    crit.update(doc.get("criteria") or {})
+    doc["criteria"] = crit
+    doc.setdefault("handles", {})
+    return doc
+
+
+def _save_review(doc: dict) -> None:
+    _save_json(REVIEW_PATH, doc)
+
+
+def _newest_age_days(items: list[dict]) -> float | None:
+    """Days since the newest post in the list (None if no parseable dates)."""
+    newest = None
+    for it in items:
+        for k in ("posted_at", "collected_at"):
+            v = it.get(k)
+            if not v: continue
+            try:
+                t = datetime.fromisoformat(v.replace("Z", "+00:00"))
+            except Exception:
+                continue
+            if newest is None or t > newest:
+                newest = t
+            break
+    if newest is None:
+        return None
+    return max(0.0, (datetime.now(timezone.utc) - newest).total_seconds() / 86400)
+
+
+def _judge_handle(handle: str, tweets: list[dict], visited_at_iso: str | None, crit: dict) -> tuple[str | None, dict]:
+    """Returns (verdict, stats). verdict is None when handle is healthy.
+    Verdicts: 'dead' | 'low_score' | 'stale'.
+    """
+    stats = {"tweets": len(tweets), "avg_score": 0.0, "newest_age_days": None}
+
+    if not tweets:
+        # Dead only if we've visited at least 6h ago and got nothing (a recent
+        # visit could just be a transient extraction blip).
+        if visited_at_iso:
+            try:
+                visited_dt = datetime.fromisoformat(visited_at_iso.replace("Z", "+00:00"))
+                age_hours = (datetime.now(timezone.utc) - visited_dt).total_seconds() / 3600
+                if age_hours >= 6:
+                    return ("dead", stats)
+            except Exception:
+                pass
+        return (None, stats)
+
+    scores = [t.get("radar_score", 0) for t in tweets]
+    # Skip judgment if not yet enriched (all zero → enrich pending)
+    if all(s == 0 for s in scores):
+        return (None, stats)
+
+    avg = sum(scores) / len(scores)
+    stats["avg_score"] = round(avg, 4)
+
+    age = _newest_age_days(tweets)
+    stats["newest_age_days"] = round(age, 1) if age is not None else None
+
+    # Stale: hasn't posted in a long time
+    if age is not None and age > crit["stale_age_days"]:
+        return ("stale", stats)
+
+    # Low score: enough sample + below threshold
+    if len(tweets) >= crit["min_tweets_for_judgment"] and avg < crit["min_avg_score"]:
+        return ("low_score", stats)
+
+    return (None, stats)
+
+
+def cmd_review(args) -> int:
+    doc = _load_review()
+    crit = doc["criteria"]
+    handles_rev = doc["handles"]
+
+    _, posts = load_posts()
+    by_h = posts_by_handle(posts)
+    state = _load_json(STATE_PATH, {})
+    history = state.get("handle_history") or {}
+    watchlist = parse_watchlist()
+    targets_doc = _load_json(TARGETS_PATH, {"default": 100, "handles": {}})
+
+    now_iso = _now_iso()
+    sideline_until = (datetime.now(timezone.utc) + timedelta(days=crit["sideline_days"])).isoformat(timespec="seconds")
+
+    new_sidelined: list[tuple[str, str, dict]] = []
+    promoted_to_removed: list[tuple[str, str]] = []
+    acquitted: list[str] = []
+    still_sidelined: list[str] = []
+
+    for handle, _section in watchlist:
+        hlow = handle.lower()
+        tweets = by_h.get(hlow, [])
+        visited_at = history.get(hlow)
+        verdict, stats = _judge_handle(handle, tweets, visited_at, crit)
+
+        entry = handles_rev.get(hlow) or {"status": "active", "review_count": 0}
+        current_status = entry.get("status", "active")
+
+        # Apply force flags
+        if args.dry_run:
+            pass  # never write, just report
+
+        if verdict is None:
+            # healthy
+            if current_status in ("sidelined", "removed"):
+                # acquitted — back to active
+                entry["status"] = "active"
+                entry["review_count"] = 0
+                entry["last_verdict"] = None
+                entry["last_reviewed"] = now_iso
+                entry["next_review_at"] = None
+                entry["stats_at_review"] = stats
+                handles_rev[hlow] = entry
+                acquitted.append(handle)
+            else:
+                # already active — no change unless we want a "last seen healthy" record
+                if entry.get("review_count", 0) > 0:
+                    entry["last_reviewed"] = now_iso
+                    entry["stats_at_review"] = stats
+                    handles_rev[hlow] = entry
+            continue
+
+        # verdict raised
+        entry["review_count"] = (entry.get("review_count") or 0) + 1
+        entry["last_verdict"] = verdict
+        entry["last_reviewed"] = now_iso
+        entry["stats_at_review"] = stats
+
+        if entry["review_count"] >= crit["max_failed_reviews"]:
+            entry["status"] = "removed"
+            entry["next_review_at"] = None
+            handles_rev[hlow] = entry
+            promoted_to_removed.append((handle, verdict))
+        else:
+            entry["status"] = "sidelined"
+            entry["next_review_at"] = sideline_until
+            handles_rev[hlow] = entry
+            if current_status == "sidelined":
+                still_sidelined.append(handle)
+            else:
+                new_sidelined.append((handle, verdict, stats))
+
+    if not args.dry_run:
+        _save_review(doc)
+        # Apply removals — remove from watchlist + (optionally) prune posts.
+        if promoted_to_removed and not args.keep_removed:
+            REMOVED_LOG.parent.mkdir(parents=True, exist_ok=True)
+            with REMOVED_LOG.open("a", encoding="utf-8") as f:
+                for h, verdict in promoted_to_removed:
+                    f.write(f"{now_iso}  removed @{h}  verdict={verdict}  (auto-review)\n")
+                    remove_from_watchlist(h)
+                    # also drop their target override if any
+                    overrides = targets_doc.get("handles") or {}
+                    if h.lower() in overrides:
+                        del overrides[h.lower()]
+            _save_json(TARGETS_PATH, targets_doc)
+
+    # Report
+    print(f"=== review pass @ {now_iso} ===")
+    print(f"  criteria: avg_score<{crit['min_avg_score']}, ≥{crit['min_tweets_for_judgment']} tweets, "
+          f"stale>{crit['stale_age_days']}d, sideline {crit['sideline_days']}d, "
+          f"remove after {crit['max_failed_reviews']} fails")
+    if args.dry_run:
+        print("  [DRY RUN — no changes written]")
+    print()
+
+    if new_sidelined:
+        print(f"⊘ sidelined ({len(new_sidelined)}):")
+        for h, v, s in new_sidelined:
+            extra = ""
+            if v == "low_score": extra = f"avg={s['avg_score']:.2f} n={s['tweets']}"
+            elif v == "stale":   extra = f"newest {s['newest_age_days']}d old"
+            elif v == "dead":    extra = "visited but no tweets"
+            print(f"    @{h:<26}  {v:<10}  {extra}")
+        print()
+
+    if still_sidelined:
+        print(f"⊘ still sidelined / 2nd strike ({len(still_sidelined)}):  " + ", ".join("@"+h for h in still_sidelined[:20]))
+        print()
+
+    if promoted_to_removed:
+        action = "would remove" if args.dry_run or args.keep_removed else "REMOVED"
+        print(f"✗ {action} from watchlist ({len(promoted_to_removed)}):")
+        for h, v in promoted_to_removed:
+            print(f"    @{h:<26}  verdict={v}")
+        print()
+
+    if acquitted:
+        print(f"✓ acquitted ({len(acquitted)}):  " + ", ".join("@"+h for h in acquitted[:20]))
+        print()
+
+    # totals
+    by_status = {"active": 0, "sidelined": 0, "removed": 0}
+    for h, e in handles_rev.items():
+        by_status[e.get("status", "active")] = by_status.get(e.get("status", "active"), 0) + 1
+    total = len(parse_watchlist())
+    print(f"summary: {total} accounts in watchlist · "
+          f"{by_status['sidelined']} sidelined · {by_status['removed']} marked-removed")
+    if not promoted_to_removed and not new_sidelined and not still_sidelined and not acquitted:
+        print("no changes — all judged accounts are healthy 🎯")
+    return 0
+
+
+def cmd_sidelined(args) -> int:
+    doc = _load_review()
+    rows = []
+    for h, e in doc["handles"].items():
+        if e.get("status") in ("sidelined", "removed"):
+            rows.append((h, e))
+    if not rows:
+        print("nothing sidelined.")
+        return 0
+    rows.sort(key=lambda r: r[1].get("last_reviewed") or "", reverse=True)
+    print(f"{'handle':<28}  {'status':<10}  {'verdict':<10}  {'avg':>5}  {'n':>3}  {'reviews':>7}  next-review")
+    print("─" * 100)
+    for h, e in rows:
+        s = e.get("stats_at_review") or {}
+        nr = e.get("next_review_at") or "—"
+        print(f"@{h:<27}  {e.get('status',''):<10}  "
+              f"{(e.get('last_verdict') or '?'):<10}  "
+              f"{(s.get('avg_score') or 0):>5.2f}  "
+              f"{(s.get('tweets') or 0):>3}  "
+              f"{e.get('review_count', 0):>7}  {nr[:19]}")
+    print(f"\n{len(rows)} entries")
+    return 0
+
+
+def cmd_restore(args) -> int:
+    doc = _load_review()
+    h = args.handle.lstrip("@").lower()
+    e = doc["handles"].get(h)
+    if not e or e.get("status") == "active":
+        print(f"@{args.handle.lstrip('@')} is not sidelined.")
+        return 1
+    was = e.get("status")
+    e["status"] = "active"
+    e["review_count"] = 0
+    e["next_review_at"] = None
+    e["last_verdict"] = None
+    doc["handles"][h] = e
+    _save_review(doc)
+    print(f"@{args.handle.lstrip('@')}: {was} → active. Will re-enter rotation.")
+    return 0
+
+
 # ---------- export ----------
 
 def cmd_export(args) -> int:
@@ -526,6 +786,21 @@ def main() -> int:
     a = sub.add_parser("targets", help="Show global default + all per-handle overrides")
     a.add_argument("--json", action="store_true")
     a.set_defaults(func=cmd_targets)
+
+    # review — sideline low-value handles, retire repeat offenders
+    a = sub.add_parser("review", help="Analyze each handle's content. Sideline low-value ones; remove repeat offenders.")
+    a.add_argument("--dry-run", action="store_true", help="Print decisions without writing")
+    a.add_argument("--keep-removed", action="store_true", help="Mark as 'removed' in review state but don't actually delete from watchlist")
+    a.set_defaults(func=cmd_review)
+
+    # sidelined — list currently sidelined / removed
+    a = sub.add_parser("sidelined", help="Show currently sidelined and marked-removed handles")
+    a.set_defaults(func=cmd_sidelined)
+
+    # restore — manually return a sidelined handle to active rotation
+    a = sub.add_parser("restore", help="Un-sideline a handle (back into the rotation)")
+    a.add_argument("handle")
+    a.set_defaults(func=cmd_restore)
 
     # export
     a = sub.add_parser("export", help="Export tweets to JSON (default) or CSV")

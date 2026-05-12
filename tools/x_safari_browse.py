@@ -59,6 +59,7 @@ POSTS_PATH = ROOT / "data" / "manual_x" / "posts.json"
 WATCHLIST_PATH = ROOT / "data" / "manual_x" / "watchlist.txt"
 STATE_PATH = ROOT / "data" / "manual_x" / "safari_state.json"
 TARGETS_PATH = ROOT / "data" / "manual_x" / "handle_targets.json"
+REVIEW_PATH = ROOT / "data" / "manual_x" / "handle_review.json"
 ENRICH_SCRIPT = ROOT / "tools" / "x_smart_enrich.py"
 RADAR_SCRIPT = ROOT / "tools" / "run_radar_agents.py"
 
@@ -181,6 +182,35 @@ def load_state() -> dict:
 def save_state(state: dict) -> None:
     STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def is_blocked_by_review(handle: str) -> tuple[bool, str]:
+    """True if x_manage.py has sidelined or marked-removed this handle and it's
+    still inside its sideline window. Returns (blocked, reason)."""
+    if not REVIEW_PATH.exists():
+        return (False, "")
+    try:
+        doc = json.loads(REVIEW_PATH.read_text("utf-8"))
+    except Exception:
+        return (False, "")
+    e = (doc.get("handles") or {}).get(handle.lower())
+    if not e:
+        return (False, "")
+    status = e.get("status", "active")
+    if status == "removed":
+        return (True, "removed")
+    if status != "sidelined":
+        return (False, "")
+    nr = e.get("next_review_at")
+    if not nr:
+        return (True, "sidelined")
+    try:
+        nr_dt = datetime.fromisoformat(nr.replace("Z", "+00:00"))
+    except Exception:
+        return (True, "sidelined")
+    if _now() < nr_dt:
+        return (True, "sidelined")
+    return (False, "")   # cooldown elapsed → eligible for re-test
 
 
 def target_for_handle(handle: str) -> int:
@@ -646,11 +676,15 @@ def continuous_loop(extract_js: str, run_pipeline: bool) -> int:
             warmup()
             visits_since_warmup = 0
 
-        # Pick ONE handle to visit (rotation-aware)
+        # Pick ONE handle to visit (rotation-aware + sideline-aware)
         candidates = []
         history = state.get("handle_history") or {}
         cutoff = _now() - timedelta(hours=STRATEGY["rotation_hours"])
         for h, s in all_handles:
+            # Skip handles sidelined or removed by x_manage review
+            blocked, _why = is_blocked_by_review(h)
+            if blocked:
+                continue
             last_iso = history.get(h.lower())
             if last_iso:
                 try:
@@ -662,7 +696,11 @@ def continuous_loop(extract_js: str, run_pipeline: bool) -> int:
             candidates.append((h, s))
         if not candidates:
             # Rotation exhausted — fall back to least-recently-visited
-            candidates = sorted(all_handles, key=lambda hs: history.get(hs[0].lower()) or "0")
+            # (still respecting sideline)
+            fallback = [
+                (h, s) for h, s in all_handles if not is_blocked_by_review(h)[0]
+            ]
+            candidates = sorted(fallback, key=lambda hs: history.get(hs[0].lower()) or "0")
         handle, section = random.choice(candidates[: min(40, len(candidates))])
 
         # Visit deep — per-handle target from handle_targets.json, fall back to global default
