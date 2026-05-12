@@ -1,15 +1,22 @@
-/* AX Pulse — sidebar injector (shared across dashboard pages) */
+/* Radar — sidebar injector (shared across dashboard pages).
+ * Active subscription state suppresses the upgrade card.
+ */
 
 function injectSidebar() {
   const slot = document.getElementById('sidebar-slot');
   if (!slot) return;
+
+  const sub = window.RadarSubscription || {};
+  const isComingSoon = !!(sub.IsComingSoon && sub.IsComingSoon());
+  const isSubscribed = !isComingSoon && !!(sub.IsUserSubscribed && sub.IsUserSubscribed());
+
   slot.innerHTML = `
     <aside class="sidebar">
       <a class="brand" href="dashboard.html">
-        <div class="brand-mark" data-i18n="brand_mark">AX</div>
+        <div class="brand-mark" data-i18n="brand_mark"></div>
         <div class="brand-name">
-          <span data-i18n="brand">AX Pulse</span>
-          <small data-i18n="brand_sub">AI Trend Intelligence</small>
+          <span data-i18n="brand">الرادار</span>
+          <small data-i18n="brand_sub">استخبارات اتجاهات الذكاء الاصطناعي</small>
         </div>
       </a>
 
@@ -53,17 +60,39 @@ function injectSidebar() {
           </svg>
           <span data-i18n="nav_categories">Categories</span>
         </a>
+        <a class="nav-item" data-page="system" href="system.html">
+          <svg class="nav-item-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M8 2v3M8 11v3M2 8h3M11 8h3"/>
+            <circle cx="8" cy="8" r="2.4"/>
+            <circle cx="8" cy="8" r="6.4" stroke-dasharray="2 2"/>
+          </svg>
+          <span data-i18n="nav_system">System Pulse</span>
+        </a>
       </div>
 
       <div class="nav-spacer"></div>
 
-      <div class="upgrade-card">
-        <h4 data-i18n="upgrade_title">Unlock Pro</h4>
-        <p data-i18n="upgrade_desc">Custom alerts, Arabic mode, Notion export.</p>
-        <a class="btn btn-primary" href="index.html#pricing">
-          <span data-i18n="upgrade_btn">Upgrade $29/mo</span>
+      ${isComingSoon ? `
+        <a class="upgrade-card" href="subscribe.html" style="text-decoration:none;" data-event="subscribe_clicked" data-event-origin="sidebar_coming_soon">
+          <h4>الاشتراك قريبًا</h4>
+          <p>كل المحتوى مجاني الآن — انضم لقائمة الانتظار للوصول المبكّر بسعر مؤسّسين.</p>
+          <span class="btn btn-primary" style="display:inline-block;text-align:center;">انضم لقائمة الانتظار</span>
         </a>
-      </div>
+      ` : isSubscribed ? `
+        <a class="upgrade-card upgrade-card-active" href="account.html" style="text-decoration:none;">
+          <h4 data-i18n="account_status_active">اشتراك فعّال</h4>
+          <p data-i18n="account_manage">إدارة الاشتراك</p>
+          <span class="btn btn-ghost" data-i18n="footer_account">الحساب</span>
+        </a>
+      ` : `
+        <div class="upgrade-card">
+          <h4 data-i18n="locked_title">للمشتركين فقط</h4>
+          <p data-i18n="locked_desc">اشترك للوصول الكامل.</p>
+          <a class="btn btn-primary" href="subscribe.html" data-event="subscribe_clicked" data-event-origin="sidebar">
+            <span data-i18n="locked_cta">اشترك بـ 15 دولار/شهر</span>
+          </a>
+        </div>
+      `}
     </aside>
   `;
 }

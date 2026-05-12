@@ -1,20 +1,33 @@
-name: Refresh AI Radar
+name: Refresh Radar (agent pipeline)
 
-# Cron: every 2 hours (matches X API Basic rate-limit comfortably).
-# manual: workflow_dispatch lets you trigger from the Actions tab anytime.
+# Cron: every 2 hours. Runs the 15-agent pipeline end-to-end on free
+# GitHub Actions minutes (~2 min per run, ~720 min/month — well below
+# the 2,000 min/month free quota for public repos).
 on:
   schedule:
     - cron: '0 */2 * * *'
   workflow_dispatch:
     inputs:
       x_limit:
-        description: 'How many X posts to request (max 100)'
+        description: 'X posts per query (max 100)'
         required: false
         default: '25'
       days:
         description: 'RSS window in days'
         required: false
         default: '30'
+      limit:
+        description: 'Items per source'
+        required: false
+        default: '25'
+      use_openai:
+        description: 'Use OpenAI for editor + opportunities (set false for cheap rule-based run)'
+        required: false
+        default: 'true'
+      budget:
+        description: 'Max OpenAI calls per run'
+        required: false
+        default: '40'
 
 permissions:
   contents: write   # needed so the bot can commit data/* back
@@ -23,22 +36,34 @@ concurrency:
   group: refresh-radar
   cancel-in-progress: false   # never overlap two runs (X rate-limit safety)
 
+# Opt actions still on Node 20 onto Node 24 ahead of the June 2026 forced cutover.
+# Keeps the runner from emitting deprecation warnings on every run.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
-          persist-credentials: true   # so we can push using GITHUB_TOKEN
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      # Always install the openai SDK. It's tiny (~few hundred KB), and the
+      # pipeline gracefully degrades to rule-based mode if no key is present.
+      # Doing it unconditionally avoids a fragile `if: env.X != ''` guard
+      # (step-level env isn't visible in step `if:` conditions).
+      - name: Install Python deps
+        run: pip install --quiet openai
 
       - name: Cache translation memory
         uses: actions/cache@v4
@@ -48,38 +73,67 @@ jobs:
           restore-keys: |
             translations-
 
-      - name: Run pulse_radar pipeline
+      # ----- Optional supplementary RSS fetch (Ben's Bites, TLDR AI, etc.) -----
+      - name: Fetch supplementary AI newsletters
+        continue-on-error: true
+        run: |
+          DAYS="${{ github.event.inputs.days || '30' }}"
+          python3 tools/fetch_ai_newsletters.py --days "$DAYS" --max-per-source 40
+
+      # ----- Auto-collect new X tweets (X API + Nitter fallback) + enrich.
+      # Runs BEFORE the agent pipeline so freshly fetched tweets flow through
+      # manual_x_bridge and reach the UI in the same cron tick.
+      - name: Auto-collect X (with smart enrich)
+        continue-on-error: true
         env:
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: |
+          python3 tools/x_auto_collect.py
+          # x_auto_collect.py runs x_smart_enrich.py internally, so no need
+          # to invoke it separately.
+
+      # ----- Main 15-agent pipeline -----
+      # AX_POST_AI is the user-chosen secret name for the OpenAI key.
+      # We map it to OPENAI_API_KEY here so the Python code stays generic
+      # (the agents read OPENAI_API_KEY from env). Add a fallback to
+      # OPENAI_API_KEY in case the secret is renamed back later.
+      - name: Run radar agent pipeline
+        env:
+          X_BEARER_TOKEN:    ${{ secrets.X_BEARER_TOKEN }}
+          OPENAI_API_KEY:    ${{ secrets.AX_POST_AI || secrets.OPENAI_API_KEY }}
+          FEEDLY_TOKEN:      ${{ secrets.FEEDLY_TOKEN }}
+          FEEDLY_STREAM_ID:  ${{ secrets.FEEDLY_STREAM_ID }}
+        run: |
           set -e
           X_LIMIT="${{ github.event.inputs.x_limit || '25' }}"
-          if [ -z "$X_BEARER_TOKEN" ]; then
-            echo "::warning::X_BEARER_TOKEN غير مضبوط — سيتخطى الـ X collector ويعمل على RSS/Reddit/GitHub فقط"
-            python3 tools/pulse_radar.py --include-x-notice
+          LIMIT="${{ github.event.inputs.limit || '25' }}"
+          BUDGET="${{ github.event.inputs.budget || '40' }}"
+          USE_OPENAI="${{ github.event.inputs.use_openai || 'true' }}"
+
+          ARGS="--limit $LIMIT --x-limit $X_LIMIT --budget $BUDGET"
+          if [ "$USE_OPENAI" = "false" ] || [ -z "$OPENAI_API_KEY" ]; then
+            echo "::notice::running rule-based mode (no OpenAI calls)"
+            ARGS="$ARGS --no-openai"
           else
-            python3 tools/x_focus_accounts.py || echo "::warning::تعذر تحديث قائمة مراقبة X — سنستخدم آخر نسخة محفوظة"
-            PULSE_ARGS=(--x-limit "$X_LIMIT")
-            for LAYER in builders coding research creative business official; do
-              QUERY="$(python3 tools/build_x_focus_query.py --layer "$LAYER" --top 8)"
-              PULSE_ARGS+=(--x-query "$QUERY")
-            done
-            python3 tools/pulse_radar.py "${PULSE_ARGS[@]}"
+            echo "::notice::OpenAI key detected — agents 7/8/12 will use it"
           fi
 
-      - name: Run fetch_ai_newsletters (RSS supplementary)
-        run: |
-          DAYS="${{ github.event.inputs.days || '30' }}"
-          python3 tools/fetch_ai_newsletters.py --days "$DAYS" --max-per-source 40 || echo "::warning::RSS aggregator failed — continuing"
+          # Print diagnostic header so failures are easier to attribute.
+          python3 --version
+          python3 -c "import sys; print('cwd ok:', sys.path[0] or '.')"
+          echo "::group::pipeline run"
+          python3 tools/run_radar_agents.py $ARGS
+          echo "::endgroup::"
 
+      # ----- Translate new signals into Arabic (free MyMemory API) -----
       - name: Translate new signals to Arabic
-        run: |
-          python3 tools/translate_signals.py || echo "::warning::translation step failed — continuing"
+        continue-on-error: true
+        run: python3 tools/translate_signals.py
 
       - name: Commit & push data changes
         run: |
-          git config user.name  "ax-pulse-bot"
-          git config user.email "ax-pulse-bot@users.noreply.github.com"
+          git config user.name  "rib198"
+          git config user.email "147077350+rib198@users.noreply.github.com"
 
           if git diff --quiet -- data/ ; then
             echo "no data changes — nothing to commit"
@@ -89,27 +143,36 @@ jobs:
           git add data/
           git commit -m "chore(radar): auto-refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
 
+          # Push with retry loop. A parallel cron commit on the same branch
+          # can land between our rebase and our push, so retry up to 3 times.
+          # If all attempts fail, drop our commit silently — the next run
+          # regenerates everything from current sources anyway, and exiting 0
+          # keeps the workflow run green.
           BRANCH="${GITHUB_REF_NAME:-main}"
           for attempt in 1 2 3; do
-            if git push origin "HEAD:$BRANCH"; then
+            git fetch origin "$BRANCH"
+            if ! git rebase -X theirs "origin/$BRANCH" ; then
+              git rebase --abort || true
+              echo "::warning::rebase conflict on attempt $attempt — skipping push"
               exit 0
             fi
-
-            echo "::warning::push rejected on attempt ${attempt}; rebasing on latest ${BRANCH} and retrying"
-            git fetch origin "$BRANCH"
-            git rebase -X theirs "origin/$BRANCH"
+            if git push origin "HEAD:$BRANCH" ; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "::warning::push rejected on attempt $attempt — retrying"
+            sleep $(( attempt * 3 ))
           done
-
-          echo "::error::failed to push after rebasing on latest ${BRANCH}"
-          exit 1
+          echo "::warning::push failed after 3 attempts — dropping this run's commit"
+          exit 0
 
       - name: Summary
         if: always()
         run: |
-          echo "### AX Pulse — جولة تحديث" >> $GITHUB_STEP_SUMMARY
+          echo "### Radar — agent pipeline run" >> $GITHUB_STEP_SUMMARY
           if [ -f data/radar/signals.json ]; then
             count=$(python3 -c "import json; print(json.load(open('data/radar/signals.json')).get('count', 0))")
-            echo "- إشارات: $count" >> $GITHUB_STEP_SUMMARY
+            echo "- signals: $count" >> $GITHUB_STEP_SUMMARY
           fi
           if [ -f data/radar/run_status.json ]; then
             python3 - <<'PY' >> $GITHUB_STEP_SUMMARY
@@ -125,10 +188,16 @@ jobs:
           fi
           if [ -f data/radar/opportunities.json ]; then
             opps=$(python3 -c "import json; d=json.load(open('data/radar/opportunities.json')); print(len(d.get('opportunities', [])))")
-            echo "- فرص: $opps" >> $GITHUB_STEP_SUMMARY
+            free=$(python3 -c "import json; d=json.load(open('data/radar/opportunities.json')); print(sum(1 for o in d.get('opportunities', []) if o.get('tier')=='free'))")
+            premium=$(python3 -c "import json; d=json.load(open('data/radar/opportunities.json')); print(sum(1 for o in d.get('opportunities', []) if o.get('tier')=='premium'))")
+            echo "- opportunities: $opps (free: $free, premium: $premium)" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f data/radar/agents/run_log.json ]; then
+            calls=$(python3 -c "import json; print(json.load(open('data/radar/agents/run_log.json')).get('openai_calls', 0))")
+            echo "- openai calls: $calls" >> $GITHUB_STEP_SUMMARY
           fi
           if [ -f data/newsletters/items.json ]; then
             news=$(python3 -c "import json; print(json.load(open('data/newsletters/items.json')).get('total_items', 0))")
-            echo "- نشرات RSS: $news" >> $GITHUB_STEP_SUMMARY
+            echo "- RSS newsletter items: $news" >> $GITHUB_STEP_SUMMARY
           fi
-          echo "- وقت التشغيل: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "- run time: $(date -u)" >> $GITHUB_STEP_SUMMARY

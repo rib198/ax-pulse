@@ -141,6 +141,55 @@ RSS_SOURCES = [
         "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
         "kind": "news",
     },
+    # ----- Free additional sources (no API keys, no rate-limit hassle) -----
+    {
+        "id": "lobsters_ai",
+        "name": "Lobste.rs AI",
+        "url": "https://lobste.rs/t/ai.rss",
+        "kind": "community",
+    },
+    {
+        "id": "indiehackers",
+        "name": "Indie Hackers",
+        "url": "https://www.indiehackers.com/feed.xml",
+        "kind": "community",
+    },
+    {
+        "id": "producthunt_ai",
+        "name": "Product Hunt AI",
+        "url": "https://www.producthunt.com/feed?category=artificial-intelligence",
+        "kind": "community",
+    },
+    {
+        "id": "devto_ai",
+        "name": "Dev.to AI",
+        "url": "https://dev.to/feed/tag/ai",
+        "kind": "community",
+    },
+    {
+        "id": "github_blog_ai",
+        "name": "GitHub Blog (AI)",
+        "url": "https://github.blog/ai-and-ml/feed/",
+        "kind": "official",
+    },
+    {
+        "id": "anthropic_news",
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com/news/rss.xml",
+        "kind": "official",
+    },
+    {
+        "id": "mit_news_ai",
+        "name": "MIT News AI",
+        "url": "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml",
+        "kind": "official",
+    },
+    {
+        "id": "smol_ai",
+        "name": "smol.ai newsletter",
+        "url": "https://buttondown.email/ainews/rss",
+        "kind": "newsletter",
+    },
 ]
 
 ARXIV_QUERIES = [

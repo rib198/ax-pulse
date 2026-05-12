@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نبض النظام — الرادار</title>
+  <meta name="description" content="حالة وكلاء الرادار، موثوقية المصادر، أداء التشغيل." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body data-page="system">
+  <div class="shell">
+    <div id="sidebar-slot"></div>
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-title">نبض النظام</div>
+        <div class="topbar-controls">
+          <div class="lang-toggle">
+            <button data-lang="en">EN</button>
+            <button data-lang="ar" class="active">ع</button>
+          </div>
+        </div>
+      </div>
+      <div id="content"></div>
+    </main>
+  </div>
+
+  <script src="assets/js/subscription.js"></script>
+  <script src="assets/js/analytics.js"></script>
+  <script src="assets/js/telemetry.js"></script>
+  <script src="assets/js/mini_radar.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+  <script src="assets/js/system_pulse.js"></script>
+</body>
+</html>

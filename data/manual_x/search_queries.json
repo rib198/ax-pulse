@@ -1,0 +1,14 @@
+{
+  "$comment": "Search queries the auto-collector runs against X. Edit freely. Arabic + English mix. Use X search operators: -is:retweet, min_faves:N, lang:ar, etc.",
+  "queries": [
+    { "q": "(Claude Code OR Cursor OR Windsurf) -is:retweet min_faves:10", "section": "dev_tools" },
+    { "q": "(AI agent OR AI agents OR \"agent framework\") -is:retweet min_faves:20", "section": "agents" },
+    { "q": "(MCP OR \"model context protocol\") -is:retweet", "section": "mcp" },
+    { "q": "(OpenAI OR Anthropic OR DeepMind) (launches OR releases OR announces) -is:retweet min_faves:50", "section": "model_releases" },
+    { "q": "(\"saas\" OR \"micro saas\" OR startup) (AI OR LLM) lang:en -is:retweet min_faves:30", "section": "saas_builders" },
+    { "q": "(ذكاء اصطناعي OR وكلاء OR كلود OR شات جي بي تي) lang:ar -is:retweet min_faves:5", "section": "arab_ai" },
+    { "q": "(فرصة OR مشروع OR ريادة) (ذكاء اصطناعي OR AI) lang:ar -is:retweet min_faves:3", "section": "arab_opportunities" }
+  ],
+  "tweets_per_query": 15,
+  "max_total_per_run": 100
+}

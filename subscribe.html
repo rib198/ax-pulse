@@ -3,170 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>اشترك في رادار الذكاء الاصطناعي — نشرة يومية</title>
-  <meta name="description" content="نشرة يومية مجانية: 5 إشارات + فرصة منتج، من مصادر AI الموثوقة." />
+  <title>اشترك في الرادار</title>
+  <meta name="description" content="الاشتراك في الرادار: استخبارات يومية لاتجاهات الذكاء الاصطناعي والفرص التجارية." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;590;700&family=JetBrains+Mono:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
-  <style>
-    body { background: #0a0e16; min-height: 100vh; display: grid; place-items: center; padding: 32px; color: #eef7ff; }
-    .sub-shell { max-width: 480px; width: 100%; text-align: center; position: relative; }
-    .sub-shell::before {
-      content: ''; position: absolute; inset: -80px -40px;
-      background: radial-gradient(circle at 50% 0%, rgba(110, 239, 255, 0.18), transparent 60%);
-      pointer-events: none; z-index: -1;
-    }
-    .sub-mark {
-      display: inline-grid; place-items: center;
-      padding: 12px 22px; border-radius: 16px;
-      background: linear-gradient(180deg, #6eefff, #4cc8e0);
-      color: #001017; font-weight: 700; font-size: 17px;
-      box-shadow: 0 0 40px rgba(110, 239, 255, 0.4);
-      margin: 0 auto 24px;
-      font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
-      letter-spacing: 0.04em;
-    }
-    .sub-title { font-size: 32px; font-weight: 700; line-height: 1.3; margin: 0 0 12px; }
-    .sub-tag {
-      display: inline-block; padding: 5px 14px; border-radius: 999px;
-      background: rgba(110, 239, 255, 0.10); border: 1px solid rgba(110, 239, 255, 0.32);
-      color: #6eefff; font: 600 11px/1 'JetBrains Mono', monospace;
-      letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 24px;
-    }
-    .sub-desc {
-      color: rgba(238, 247, 255, 0.72); font-size: 16px; line-height: 1.85;
-      margin: 0 0 32px; font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
-    }
-    .sub-features {
-      display: grid; gap: 14px; text-align: start;
-      background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px; padding: 20px 22px; margin: 0 0 28px;
-    }
-    .sub-feature {
-      display: flex; gap: 10px; align-items: flex-start;
-      color: rgba(238, 247, 255, 0.84); font-size: 14px; line-height: 1.6;
-    }
-    .sub-feature::before {
-      content: '✓'; color: #61f18b; font-weight: 700; flex-shrink: 0;
-    }
-    .sub-form {
-      display: flex; gap: 8px; padding: 6px;
-      background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(110, 239, 255, 0.22);
-      border-radius: 14px;
-    }
-    .sub-form input {
-      flex: 1; background: transparent; border: 0; outline: 0;
-      padding: 14px 16px; color: #fff; font-size: 15px;
-      font-family: inherit; min-width: 0;
-    }
-    .sub-form input::placeholder { color: rgba(238, 247, 255, 0.4); }
-    .sub-form button {
-      padding: 14px 22px; border-radius: 10px; border: 0; cursor: pointer;
-      background: linear-gradient(180deg, #6eefff, #4cc8e0);
-      color: #001017; font-weight: 700; font-size: 14px;
-      font-family: inherit; transition: 180ms ease; white-space: nowrap;
-    }
-    .sub-form button:hover {
-      filter: brightness(1.1); transform: translateY(-1px);
-      box-shadow: 0 0 24px rgba(110, 239, 255, 0.4);
-    }
-    .sub-form button:disabled { opacity: 0.6; cursor: wait; }
-    .sub-meta {
-      color: rgba(238, 247, 255, 0.48); font-size: 12px; line-height: 1.7;
-      margin-top: 18px;
-    }
-    .sub-meta a { color: rgba(110, 239, 255, 0.78); text-decoration: none; }
-    .sub-success {
-      display: none; padding: 22px;
-      background: rgba(97, 241, 139, 0.10); border: 1px solid rgba(97, 241, 139, 0.42);
-      border-radius: 14px; color: #61f18b;
-      font-size: 15px; line-height: 1.7;
-    }
-    .sub-success.show { display: block; }
-    .sub-error {
-      display: none; padding: 14px 18px;
-      background: rgba(255, 107, 107, 0.10); border: 1px solid rgba(255, 107, 107, 0.32);
-      border-radius: 12px; color: #ff8d8d;
-      font-size: 13px; line-height: 1.6; margin-top: 14px;
-    }
-    .sub-error.show { display: block; }
-    .sub-back {
-      display: inline-block; margin-top: 26px;
-      color: rgba(238, 247, 255, 0.55); font-size: 13px; text-decoration: none;
-    }
-    .sub-back:hover { color: #6eefff; }
-  </style>
+  <link rel="stylesheet" href="assets/css/app.css" />
 </head>
-<body>
-  <main class="sub-shell">
-    <div class="sub-mark">رادار</div>
-    <span class="sub-tag">يومياً · 9:30 صباحاً</span>
-    <h1 class="sub-title">رادار الذكاء الاصطناعي<br/>في 5 دقائق</h1>
-    <p class="sub-desc">
-      نشرة يومية مجانية: أهم 5 إشارات + فرصة منتج مرتّبة من مصادر رسمية ومجتمعات تقنية.
-      بدون ضجيج، بدون إعادة نشر، بدون نقر على 30 رابط.
-    </p>
+<body data-page="subscribe">
+  <main class="pricing-shell">
+    <a href="radar.html" style="color:var(--text-tertiary);font-size:13px;display:inline-block;margin-bottom:16px;">← الرادار</a>
 
-    <div class="sub-features">
-      <div class="sub-feature">إشارات حقيقية مع رابط للتحقق</div>
-      <div class="sub-feature">فرصة منتج قابلة للتنفيذ كل يوم</div>
-      <div class="sub-feature">مصادر: OpenAI، Anthropic، DeepMind، X، Reddit، GitHub، arXiv</div>
-      <div class="sub-feature">باللغة العربية، يمكن إيقافه بنقرة واحدة</div>
-    </div>
+    <!-- Renders into one of two modes from data/config.json#subscription.mode -->
+    <div id="subscribe-root"></div>
 
-    <form class="sub-form" id="sub-form" action="https://formspree.io/f/mgodoqwd" method="POST">
-      <input type="email" name="email" placeholder="بريدك الإلكتروني" required autocomplete="email" />
-      <input type="hidden" name="_subject" value="مشترك جديد في رادار الذكاء الاصطناعي" />
-      <button type="submit">اشترك مجاناً</button>
-    </form>
-
-    <div class="sub-success" id="sub-success">
-      ✓ تم الاشتراك. ستصلك أول نشرة غداً صباحاً.
-    </div>
-
-    <div class="sub-error" id="sub-error"></div>
-
-    <p class="sub-meta">
-      مجاني تماماً، بدون بطاقة ائتمان. يمكنك إلغاء الاشتراك من أي إيميل.
-      <br/>
-      <a href="index.html">← الرئيسية</a> · <a href="radar.html">الرادار</a>
+    <p style="text-align:center;color:var(--text-muted);font-size:12px;margin-top:24px;line-height:1.7;">
+      بمتابعتك أنت توافق على
+      <a href="terms.html" style="color:var(--text-tertiary);">الشروط</a>
+      و
+      <a href="privacy.html" style="color:var(--text-tertiary);">سياسة الخصوصية</a>.
     </p>
   </main>
 
+  <script src="assets/js/subscription.js"></script>
+  <script src="assets/js/analytics.js"></script>
   <script>
-    const form = document.getElementById('sub-form');
-    const success = document.getElementById('sub-success');
-    const errorBox = document.getElementById('sub-error');
+  (async function () {
+    const cfg = await window.RadarSubscription.loadConfig();
+    const sub = cfg.subscription || {};
+    const mode = (sub.mode || 'coming_soon').toLowerCase();
+    const lang = (localStorage.getItem('axp_lang') || cfg.product?.primary_locale || 'ar');
+    const ar = lang === 'ar';
+    const root = document.getElementById('subscribe-root');
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button');
-      btn.disabled = true;
-      btn.textContent = 'جارٍ الإرسال…';
-      errorBox.classList.remove('show');
+    function escapeAttr(s){ return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;'); }
 
-      try {
-        const formData = new FormData(form);
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-          form.style.display = 'none';
-          success.classList.add('show');
-        } else {
-          const data = await res.json().catch(() => ({}));
-          throw new Error(data.error || 'حدث خطأ — حاول لاحقاً');
+    /* ---------- Coming soon mode ---------- */
+    if (mode === 'coming_soon') {
+      const headline = ar ? sub.coming_soon_headline_ar : sub.coming_soon_headline_en;
+      const body     = ar ? sub.coming_soon_body_ar     : sub.coming_soon_body_en;
+      const cta      = ar ? sub.coming_soon_cta_ar      : sub.coming_soon_cta_en;
+      const benefits_ar = [
+        'سعر مؤسّسين أقل من السعر الرسمي',
+        'وصول مبكّر قبل الإطلاق العام بأسبوع',
+        'محتوى يومي عن إشارات الذكاء الاصطناعي والفرص',
+        'مساعد ذكي يجيب على أسئلتك بناءً على البيانات الحالية',
+        'تركيز خاص على السوق السعودي والخليجي',
+      ];
+      const benefits_en = [
+        'Founder-tier price below the public launch rate',
+        'Early access one week before public launch',
+        'Daily AI signal intelligence and opportunities',
+        'AI assistant that answers from live radar data',
+        'Special focus on Saudi/Gulf market',
+      ];
+      const benefits = ar ? benefits_ar : benefits_en;
+
+      root.innerHTML = `
+        <div class="pricing-card">
+          <div class="pricing-eyebrow">${ar ? 'مرحلة الإطلاق' : 'LAUNCH PHASE'}</div>
+          <h1 style="font-size:28px;font-weight:700;margin-bottom:12px;line-height:1.3;">${escapeAttr(headline)}</h1>
+          <p style="color:var(--text-secondary);font-size:15px;line-height:1.85;margin-bottom:24px;">${escapeAttr(body)}</p>
+
+          <div class="pricing-includes">
+            <div class="pricing-includes-title">${ar ? 'ما يحصل عليه أعضاء قائمة الانتظار' : 'Waitlist member benefits'}</div>
+            ${benefits.map(b => `<div class="pricing-include-item">${escapeAttr(b)}</div>`).join('')}
+          </div>
+
+          <form class="waitlist-form" id="waitlist-form" autocomplete="off">
+            <label for="waitlist-email" style="display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-tertiary);margin-bottom:8px;font-family:'JetBrains Mono',monospace;">
+              ${ar ? 'البريد الإلكتروني' : 'Email address'}
+            </label>
+            <div style="display:flex;gap:8px;">
+              <input
+                id="waitlist-email"
+                type="email"
+                required
+                placeholder="${escapeAttr(ar ? 'your@email.com' : 'your@email.com')}"
+                style="flex:1;padding:12px 14px;border-radius:12px;border:1px solid var(--border-default);background:rgba(255,255,255,.04);color:var(--text-primary);font-size:14px;font-family:inherit;outline:none;" />
+              <button type="submit" class="pricing-cta" style="width:auto;padding:12px 22px;margin:0;font-size:14px;">${escapeAttr(cta)}</button>
+            </div>
+          </form>
+
+          <div class="pricing-status" id="waitlist-status"></div>
+
+          <p class="pricing-secure" style="margin-top:18px;">
+            ${ar ? 'لن نرسل لك سبامًا — فقط إشعار الإطلاق ورمز الخصم الخاص بقائمة الانتظار.' : 'No spam — only the launch notification and your waitlist discount code.'}
+          </p>
+        </div>
+
+        <div style="margin-top:22px;padding:14px 16px;border:1px dashed var(--border-default);border-radius:var(--r-4);font-size:12.5px;color:var(--text-tertiary);line-height:1.85;text-align:center;">
+          ${ar
+            ? 'كل محتوى الرادار <strong style="color:var(--text-primary);">متاح مجانًا الآن</strong> خلال مرحلة الإطلاق. <a href="radar.html" style="color:var(--accent);">عُد للرادار</a>.'
+            : 'All radar content is <strong style="color:var(--text-primary);">free during launch</strong>. <a href="radar.html" style="color:var(--accent);">Back to the radar</a>.'}
+        </div>
+      `;
+
+      const form = document.getElementById('waitlist-form');
+      const statusEl = document.getElementById('waitlist-status');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('waitlist-email').value.trim();
+        if (!email) return;
+        const btn = form.querySelector('button');
+        btn.disabled = true;
+        const original = btn.textContent;
+        btn.textContent = ar ? 'جارٍ التسجيل…' : 'Joining…';
+
+        const action = sub.waitlist_form_action;
+        let ok = false;
+        if (action) {
+          try {
+            const r = await fetch(action, { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }, body: JSON.stringify({ email, source: 'radar_waitlist' }) });
+            ok = r.ok;
+          } catch (e) { ok = false; }
         }
-      } catch (err) {
-        errorBox.textContent = err.message || 'تعذر الإرسال. تحقق من اتصالك.';
-        errorBox.classList.add('show');
-        btn.disabled = false;
-        btn.textContent = 'اشترك مجاناً';
+        // Always store locally so the user has a record (and we have a fallback list).
+        try {
+          const list = JSON.parse(localStorage.getItem('radar_waitlist_v1') || '[]');
+          list.push({ email, ts: Date.now() });
+          localStorage.setItem('radar_waitlist_v1', JSON.stringify(list.slice(-100)));
+        } catch (e) {}
+
+        if (window.RadarAnalytics && window.RadarAnalytics.subscribeClicked) {
+          window.RadarAnalytics.subscribeClicked('waitlist');
+        }
+        if (window.RadarSubscription && window.RadarSubscription.Analytics) {
+          window.RadarSubscription.Analytics('waitlist_signup', { email_domain: email.split('@')[1] || 'unknown', remote_ok: ok });
+        }
+
+        statusEl.className = 'pricing-status show success';
+        statusEl.textContent = ar
+          ? '✓ سجّلت في قائمة الانتظار. سيصلك إشعار عند الإطلاق.'
+          : '✓ You\'re on the waitlist. We\'ll email you at launch.';
+        form.style.display = 'none';
+      });
+
+      return;
+    }
+
+    /* ---------- Live mode (payment provider active) ---------- */
+    const provider = (cfg.payment_provider || 'moyasar').toLowerCase();
+    const providerLabel = provider === 'stripe' ? 'Stripe' : 'Moyasar';
+    const priceLabel = ar ? (sub.price_label_ar || '15 ريال') : (sub.price_label_en || '$15');
+
+    root.innerHTML = `
+      <div class="pricing-card">
+        <div class="pricing-eyebrow">${ar ? 'الاشتراك' : 'SUBSCRIPTION'}</div>
+        <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;line-height:1.3;">${ar ? 'افتح الرادار بالكامل.' : 'Unlock the full Radar.'}</h1>
+        <p style="color:var(--text-secondary);font-size:15px;line-height:1.7;margin-bottom:24px;">${ar ? 'اشتراك واحد يمنحك الوصول الكامل للفرص والإشارات والنشرة اليومية.' : 'One subscription, full access to opportunities, signals, and the daily brief.'}</p>
+
+        <div class="pricing-amount">
+          <span>${priceLabel}</span>
+          <small>${ar ? '/شهر' : '/month'}</small>
+        </div>
+
+        <button class="pricing-cta" id="checkout-btn">${ar ? 'اشترك الآن' : 'Subscribe now'}</button>
+        <p class="pricing-secure">${ar ? `الدفع عبر ${providerLabel} — لا نرى بيانات بطاقتك مطلقًا.` : `Payment via ${providerLabel} — we never see your card.`}</p>
+
+        <div class="pricing-status" id="status-success">${ar ? 'تم تفعيل اشتراكك بنجاح.' : 'Subscription activated.'}</div>
+        <div class="pricing-status" id="status-cancelled">${ar ? 'تم إلغاء الدفع.' : 'Payment cancelled.'}</div>
+        <div class="pricing-status" id="status-error">${ar ? 'لم يكتمل الدفع.' : 'Payment did not complete.'}</div>
+      </div>
+    `;
+
+    const qs = new URLSearchParams(location.search);
+    const status = qs.get('status');
+    if (status === 'success')   document.getElementById('status-success').classList.add('show', 'success');
+    if (status === 'cancelled') document.getElementById('status-cancelled').classList.add('show', 'error');
+    if (status === 'failed')    document.getElementById('status-error').classList.add('show', 'error');
+
+    const btn = document.getElementById('checkout-btn');
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      const original = btn.textContent;
+      btn.textContent = ar ? 'جارٍ التحويل…' : 'Redirecting…';
+      try {
+        const r = await window.RadarSubscription.StartCheckout({ origin: 'subscribe_page' });
+        if (r && r.fallback) {
+          document.getElementById('status-error').classList.add('show', 'error');
+          document.getElementById('status-error').textContent = ar ? 'الدفع غير مفعّل بعد. تواصل معنا.' : 'Payment not active yet. Please contact us.';
+          btn.disabled = false; btn.textContent = original;
+        }
+      } catch (e) {
+        btn.disabled = false; btn.textContent = original;
+        document.getElementById('status-error').classList.add('show', 'error');
       }
     });
+  })();
   </script>
 </body>
 </html>

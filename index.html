@@ -1,133 +1,138 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Radar — AI Trend Intelligence</title>
-  <meta name="description" content="The 5-minute brief that turns public AI signals into commercial alpha." />
+  <title>الرادار — استخبارات الذكاء الاصطناعي يومياً</title>
+  <meta name="description" content="نشرة 5 دقائق تحوّل إشارات الذكاء الاصطناعي إلى فرص تجارية قابلة للتنفيذ. اشتراك شهري بـ 15 دولار." />
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="الرادار" />
+  <meta property="og:locale" content="ar_SA" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="الرادار — استخبارات الذكاء الاصطناعي يومياً" />
+  <meta property="og:description" content="نشرة 5 دقائق تحوّل إشارات الذكاء الاصطناعي إلى فرص تجارية قابلة للتنفيذ. اشتراك شهري بـ 15 دولار." />
+  <meta property="og:url" content="https://ax-pulse01.vercel.app/" />
+  <meta property="og:image" content="https://ax-pulse01.vercel.app/assets/img/earth-radar.png" />
+  <meta property="og:image:alt" content="Earth radar visualization showing global AI signals" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="الرادار — استخبارات الذكاء الاصطناعي يومياً" />
+  <meta name="twitter:description" content="نشرة 5 دقائق تحوّل إشارات الذكاء الاصطناعي إلى فرص تجارية قابلة للتنفيذ." />
+  <meta name="twitter:image" content="https://ax-pulse01.vercel.app/assets/img/earth-radar.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/app.css" />
 </head>
 <body data-page="landing">
-  <div class="landing-shell">
+  <main class="landing-shell">
     <nav class="landing-nav">
       <div class="brand">
-        <div class="brand-mark" data-i18n="brand_mark">AX</div>
+        <div class="brand-mark" data-i18n="brand_mark">رادار</div>
         <div class="brand-name">
-          <span data-i18n="brand">AI Radar</span>
-          <small data-i18n="brand_sub">AI Trend Intelligence</small>
+          <span data-i18n="brand">الرادار</span>
+          <small data-i18n="brand_sub">استخبارات اتجاهات الذكاء الاصطناعي</small>
         </div>
       </div>
       <div class="landing-nav-links">
-        <a href="#features" data-i18n="nav_main">Intelligence</a>
-        <a href="#pricing">Pricing</a>
-        <a href="radar.html">Live Radar</a>
-        <a href="dashboard.html" data-i18n="cta_demo">See today's brief</a>
+        <a href="#features" data-i18n="nav_main">الذكاء</a>
+        <a href="#pricing" data-i18n="section_pricing_eyebrow">التسعير</a>
+        <a href="dashboard.html" data-i18n="cta_demo">شاهد نشرة اليوم</a>
+        <a href="account.html" data-i18n="footer_account">الحساب</a>
       </div>
       <div class="lang-toggle">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="ar">ع</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="ar" class="active">ع</button>
       </div>
     </nav>
 
     <section class="landing-hero">
       <div class="landing-tag">
         <span class="live-dot"></span>
-        <span data-i18n="landing_tag">BETA · LAUNCHING WEEK 1</span>
+        <span data-i18n="landing_tag">تجريبي · إطلاق الأسبوع الأول</span>
       </div>
       <h1 class="landing-headline">
-        <span data-i18n="landing_headline_1">The 5-minute brief that turns</span><br/>
-        <span class="accent" data-i18n="landing_headline_2">AI signals into commercial alpha.</span>
+        <span data-i18n="landing_headline_1">نشرة 5 دقائق تحوّل إشارات</span><br/>
+        <span class="accent" data-i18n="landing_headline_2">الذكاء الاصطناعي إلى فرص تجارية.</span>
       </h1>
       <p class="landing-sub" data-i18n="landing_sub">
-        AI Radar classifies, clusters, and scores public AI signals from official sources and social communities — then hands you a ranked list of opportunities to build, sell, or invest in this week.
+        الرادار يصنّف ويُجمّع ويُقيّم إشارات الذكاء الاصطناعي من المصادر الرسمية والمجتمعات التقنية، ثم يسلّمك قائمة فرص مرتّبة قابلة للبناء أو البيع هذا الأسبوع.
       </p>
       <div class="landing-cta">
-        <a class="btn btn-primary" href="radar.html">
-          <span>Open live radar</span>
-          <span>→</span>
-        </a>
         <a class="btn btn-primary" href="dashboard.html">
-          <span data-i18n="cta_demo">See today's brief</span>
-          <span>→</span>
+          <span data-i18n="cta_demo">شاهد نشرة اليوم</span>
+          <span>←</span>
         </a>
-        <a class="btn btn-ghost" href="subscribe.html" data-i18n="cta_join">Join waitlist</a>
+        <a class="btn btn-ghost" href="subscribe.html" data-event="subscribe_clicked" data-event-origin="landing_hero">
+          <span data-i18n="subscribe_cta">اشترك الآن</span>
+        </a>
       </div>
-      <a class="btn btn-primary" href="subscribe.html" style="display:inline-flex;padding:14px 28px;font-size:14px;text-decoration:none;" data-i18n="waitlist_btn">Get the brief →</a>
     </section>
 
     <section id="pricing" class="section">
-      <div class="section-eyebrow" data-i18n="section_pricing_eyebrow">PRICING</div>
-      <h2 class="section-h" data-i18n="section_pricing_h">From a 5-minute habit to enterprise intelligence.</h2>
-      <p class="section-d" data-i18n="section_pricing_d">Start free. Upgrade when the brief saves you a meeting.</p>
+      <div class="section-eyebrow">مرحلة الإطلاق</div>
+      <h2 class="section-h">كل المحتوى مجاني الآن. الاشتراك يُطلق قريبًا.</h2>
+      <p class="section-d">انضم لقائمة الانتظار لتحصل على وصول مبكّر بسعر مؤسّسين خاص عند تفعيل الاشتراك.</p>
 
-      <div class="pricing-grid">
-        <div class="price-card">
-          <div class="price-tier" data-i18n="tier_free">Free</div>
-          <div class="price-amount" data-i18n="price_free">$0</div>
-          <div class="price-desc" data-i18n="free_desc">Daily email brief. Top 3 trends, 24-hour delay.</div>
-          <ul class="price-features">
-            <li data-i18n="feat_free_1">Daily email digest</li>
-            <li data-i18n="feat_free_2">Top 3 trends only</li>
-            <li data-i18n="feat_free_3">24-hour delay</li>
-          </ul>
-          <button class="btn btn-ghost" data-i18n="cta_start_free">Start free</button>
-        </div>
-
-        <div class="price-card featured">
-          <span class="featured-badge" data-i18n="popular_badge">POPULAR</span>
-          <div class="price-tier" data-i18n="tier_pro">Pro</div>
-          <div class="price-amount">
-            <span data-i18n="price_pro">$29</span><small data-i18n="per_month">/month</small>
+      <div class="pricing-grid pricing-grid-single">
+        <div class="price-card featured" style="max-width:480px;margin:0 auto;">
+          <span class="featured-badge" style="background:rgba(110, 239, 255, 0.18);color:#6eefff;border-color:rgba(110, 239, 255, 0.4);">قائمة الانتظار</span>
+          <div class="price-tier">الإطلاق قريبًا</div>
+          <div class="price-amount" style="font-size:32px;">
+            <span style="color:#6eefff;">مجاني خلال الإطلاق</span>
           </div>
-          <div class="price-desc" data-i18n="pro_desc">Live dashboard, full opportunity scoring, Arabic mode.</div>
+          <div class="price-desc">كل ميزات الرادار متاحة الآن دون اشتراك. عند تفعيل الاشتراك سيكون 15 دولار/شهر، وأعضاء قائمة الانتظار يحصلون على سعر مؤسّسين.</div>
           <ul class="price-features">
-            <li data-i18n="feat_pro_1">Live dashboard, 4-hour cadence</li>
-            <li data-i18n="feat_pro_2">Full opportunity scoring</li>
-            <li data-i18n="feat_pro_3">Arabic mode + RTL UI</li>
-            <li data-i18n="feat_pro_4">Custom keyword alerts</li>
-            <li data-i18n="feat_pro_5">Notion / CSV export</li>
+            <li>الرادار اللحظي للإشارات والفرص</li>
+            <li>مساعد ذكي يجيب على أسئلتك من بيانات الرادار</li>
+            <li>أحداث مرصودة + ملاحظة يومية من الرادار</li>
+            <li>متابعة الشركات والنماذج والأسعار</li>
+            <li>تركيز على السوق السعودي والخليجي</li>
+            <li>إشعار بالإطلاق + رمز خصم مؤسّسين</li>
           </ul>
-          <button class="btn btn-primary" data-i18n="cta_start_pro">Start 14-day trial</button>
-        </div>
-
-        <div class="price-card">
-          <div class="price-tier" data-i18n="tier_team">Team</div>
-          <div class="price-amount">
-            <span data-i18n="price_team">$99</span><small data-i18n="per_month">/month</small>
-          </div>
-          <div class="price-desc" data-i18n="team_desc">5 seats, weekly PDF report, Slack delivery.</div>
-          <ul class="price-features">
-            <li data-i18n="feat_team_1">Everything in Pro</li>
-            <li data-i18n="feat_team_2">5 seats, shared workspace</li>
-            <li data-i18n="feat_team_3">Weekly PDF report</li>
-            <li data-i18n="feat_team_4">Slack delivery</li>
-          </ul>
-          <button class="btn btn-ghost" data-i18n="cta_start_team">Start trial</button>
-        </div>
-
-        <div class="price-card">
-          <div class="price-tier" data-i18n="tier_enterprise">Enterprise</div>
-          <div class="price-amount" data-i18n="price_ent">Custom</div>
-          <div class="price-desc" data-i18n="ent_desc">Saudi market vertical, white-label reports, API.</div>
-          <ul class="price-features">
-            <li data-i18n="feat_ent_1">Everything in Team</li>
-            <li data-i18n="feat_ent_2">Saudi market vertical</li>
-            <li data-i18n="feat_ent_3">White-label reports</li>
-            <li data-i18n="feat_ent_4">API access</li>
-            <li data-i18n="feat_ent_5">Dedicated analyst</li>
-          </ul>
-          <button class="btn btn-ghost" data-i18n="cta_book">Book a call</button>
+          <a class="btn btn-primary" href="subscribe.html" data-event="subscribe_clicked" data-event-origin="landing_waitlist" style="display:inline-flex;justify-content:center;width:100%;">
+            <span>انضم لقائمة الانتظار</span>
+          </a>
+          <p class="pricing-secure">بريد إلكتروني واحد، بدون إلزام، يمكن إلغاء التسجيل في أي وقت.</p>
         </div>
       </div>
     </section>
 
-    <footer class="footer" data-i18n="footer">AI Radar · Built in 12 hours · 2026</footer>
-  </div>
+    <footer class="site-footer">
+      <span data-i18n="footer">الرادار · 2026</span>
+      <span>·</span>
+      <a href="privacy.html" data-i18n="footer_privacy">الخصوصية</a>
+      <a href="terms.html" data-i18n="footer_terms">الشروط</a>
+      <a href="account.html" data-i18n="footer_account">الحساب</a>
+    </footer>
+  </main>
 
+  <script>
+    // Auto-route repeat visitors and active subscribers straight to Live Radar.
+    // First-time visitors see the marketing landing once; the flag is keyed on
+    // localStorage so it carries across reloads but not across browsers.
+    (function () {
+      try {
+        if (location.search.indexOf('stay=1') !== -1) return; // explicit landing
+        const seen = localStorage.getItem('radar_seen_landing');
+        const sub = (function () {
+          try { const s = JSON.parse(localStorage.getItem('radar_subscription_v1') || 'null'); return s && s.status === 'active'; } catch (e) { return false; }
+        })();
+        if (sub || seen) {
+          location.replace('radar.html');
+          return;
+        }
+        localStorage.setItem('radar_seen_landing', '1');
+      } catch (e) { /* fall through to landing */ }
+    })();
+  </script>
+  <script src="assets/js/subscription.js"></script>
+  <script src="assets/js/analytics.js"></script>
+  <script src="assets/js/telemetry.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -29,6 +29,13 @@ const LAYERS = {
       en: 'News + Updates: daily and live updates on AI models, releases, tools, features, pricing, limits, and official links.'
     }
   },
+  events: {
+    title: { ar: 'الأحداث المرصودة', en: 'Detected events' },
+    summary: {
+      ar: 'أحداث مركّبة استخرجها الرادار من إشارات متعددة: إصدارات نماذج، تغييرات أسعار، جولات تمويل، استحواذات، حركة كادر، إشارات تنظيمية.',
+      en: 'Composite events the radar pieced together from multi-source signals: model releases, pricing changes, funding rounds, acquisitions, personnel moves, policy signals.'
+    }
+  },
   trending: {
     title: { ar: 'الرائج في X عن الذكاء الاصطناعي', en: 'Trending AI conversations on X' },
     summary: {
@@ -125,6 +132,7 @@ const I18N = {
   signal_word: { ar: 'إشارة', en: 'signal' },
   // Layer button labels (also localized in dock pills)
   nav_radar: { ar: 'الرادار', en: 'Radar' },
+  nav_events: { ar: 'الأحداث', en: 'Events' },
   nav_trending: { ar: 'الرائج', en: 'Trending' },
   nav_opportunities: { ar: 'المنتجات والدخل', en: 'Products & income' },
   nav_sources: { ar: 'المصادر', en: 'Sources' },
@@ -186,7 +194,7 @@ async function loadJSON(path, fallback) {
 }
 
 async function loadRadarData() {
-  const [signals, corpus, timeline, opportunities, productPlaybooks, dynamicPlaybooks, researchOpportunities, accounts] = await Promise.all([
+  const [signals, corpus, timeline, opportunities, productPlaybooks, dynamicPlaybooks, researchOpportunities, accounts, events, insights] = await Promise.all([
     loadJSON('data/radar/signals.json', { items: [], count: 0 }),
     loadJSON('data/radar/signals_corpus.json', { items: [], count: 0 }),
     loadJSON('data/radar/model_timeline.json', { items: [] }),
@@ -194,14 +202,16 @@ async function loadRadarData() {
     loadJSON('data/radar/product_playbooks.json', { playbooks: [] }),
     loadJSON('data/radar/product_playbooks_dynamic.json', { playbooks: [] }),
     loadJSON('data/radar/research_opportunities.json', { opportunities: [] }),
-    loadJSON('data/radar/x_focus_accounts.json', { accounts: [] })
+    loadJSON('data/radar/x_focus_accounts.json', { accounts: [] }),
+    loadJSON('data/radar/agents/events.json', { events: [] }),
+    loadJSON('data/radar/agents/insights.json', { current: null })
   ]);
   const chosenPlaybooks = (dynamicPlaybooks.playbooks || []).length ? dynamicPlaybooks : productPlaybooks;
-  return { signals, corpus, timeline, opportunities, productPlaybooks: chosenPlaybooks, researchOpportunities, accounts };
+  return { signals, corpus, timeline, opportunities, productPlaybooks: chosenPlaybooks, researchOpportunities, accounts, events, insights };
 }
 
 async function bootRadar() {
-  const { signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts } = await loadRadarData();
+  const { signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts, events, insights } = await loadRadarData();
 
   RadarState.signals = signals.items || [];
   RadarState.corpusSignals = sortSignalsByFreshness(corpus.items || RadarState.signals);
@@ -211,15 +221,85 @@ async function bootRadar() {
   RadarState.productPlaybooks = productPlaybooks.playbooks || [];
   RadarState.researchOpportunities = researchOpportunities.opportunities || [];
   RadarState.accounts = accounts.accounts || [];
+  RadarState.events = events.events || [];
+  RadarState.insight = insights.current || null;
   RadarState.knownSignalIds = new Set(RadarState.signals.map(signalKey));
 
   applyLang();
   wireLayers();
   wireLangToggle();
   wireDetailModal();
+  renderInsightBanner();
+  renderSubscribeCTA();
   renderLayer('radar');
   setupParticles();
   startLiveRefresh();
+}
+
+function renderInsightBanner() {
+  const el = document.getElementById('insight-banner');
+  if (!el) return;
+  const insight = RadarState.insight;
+  if (!insight) { el.hidden = true; return; }
+  const ar = RadarState.lang === 'ar';
+  const text = ar ? insight.insight_ar : (insight.insight_en || insight.insight_ar);
+  if (!text) { el.hidden = true; return; }
+
+  // Respect dismissal — keyed by insight generated_at so a new insight reappears
+  const dismissedKey = 'radar_insight_dismissed';
+  const dismissed = localStorage.getItem(dismissedKey);
+  if (dismissed && dismissed === insight.generated_at) { el.hidden = true; return; }
+
+  el.querySelector('.ib-eyebrow').textContent = ar ? 'ملاحظة الرادار' : 'Radar observation';
+  el.querySelector('.ib-text').textContent = text;
+  el.hidden = false;
+
+  const close = document.getElementById('insight-close');
+  if (close) {
+    close.onclick = () => {
+      el.classList.add('ib-closing');
+      setTimeout(() => { el.hidden = true; el.classList.remove('ib-closing'); }, 220);
+      try { localStorage.setItem(dismissedKey, insight.generated_at || ''); } catch (e) {}
+    };
+  }
+}
+
+function renderSubscribeCTA() {
+  const el = document.getElementById('radar-subscribe-cta');
+  if (!el) return;
+  const sub = window.RadarSubscription || {};
+  const isComingSoon = !!(sub.IsComingSoon && sub.IsComingSoon());
+  const isSub = !isComingSoon && !!(sub.IsUserSubscribed && sub.IsUserSubscribed());
+
+  // Subscribers never see the CTA. In live mode, non-subscribers see the
+  // standard "unlock" message. In coming_soon, everyone sees a softer
+  // "join the waitlist" pill — no charge implied.
+  el.hidden = isSub;
+  const strong = el.querySelector('strong');
+  const small  = el.querySelector('small');
+  if (!strong || !small) return;
+  if (isComingSoon) {
+    strong.textContent = RadarState.lang === 'ar' ? 'الإطلاق قريبًا' : 'Launching soon';
+    small.textContent  = RadarState.lang === 'ar' ? 'انضم لقائمة الانتظار' : 'Join the waitlist';
+    el.dataset.eventOrigin = 'radar_waitlist';
+  } else if (RadarState.lang === 'en') {
+    strong.textContent = 'Unlock all opportunities';
+    small.textContent  = 'Subscribe for $15/month';
+  }
+}
+
+function isSubscriberRadar() {
+  return !!(window.RadarSubscription && window.RadarSubscription.IsUserSubscribed && window.RadarSubscription.IsUserSubscribed());
+}
+
+function canAccessRadarItem(item) {
+  if (!item) return false;
+  // During the coming_soon launch phase, everything is open (drafts always hidden).
+  const sub = window.RadarSubscription;
+  if (sub && sub.CanAccessContent) return sub.CanAccessContent(item);
+  if (item.status === 'archived' || item.status === 'draft') return isSubscriberRadar();
+  const tier = item.tier || 'free';
+  return tier === 'free' || isSubscriberRadar();
 }
 
 function startLiveRefresh() {
@@ -228,7 +308,7 @@ function startLiveRefresh() {
 }
 
 async function refreshRadarData() {
-  const { signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts } = await loadRadarData();
+  const { signals, corpus, timeline, opportunities, productPlaybooks, researchOpportunities, accounts, events, insights } = await loadRadarData();
   const nextSignals = signals.items || [];
   const nextGeneratedAt = signals.generated_at;
   const nextIds = new Set(nextSignals.map(signalKey));
@@ -245,11 +325,15 @@ async function refreshRadarData() {
   RadarState.productPlaybooks = productPlaybooks.playbooks || RadarState.productPlaybooks;
   RadarState.researchOpportunities = researchOpportunities.opportunities || RadarState.researchOpportunities;
   RadarState.accounts = accounts.accounts || RadarState.accounts;
+  RadarState.events = (events && events.events) || RadarState.events;
+  RadarState.insight = (insights && insights.current) || RadarState.insight;
   RadarState.knownSignalIds = nextIds;
   RadarState.lastLiveItems = newItems.length ? newItems : nextSignals.slice(0, 1);
 
   document.body.classList.add('has-live-arrival');
   window.setTimeout(() => document.body.classList.remove('has-live-arrival'), 1800);
+  renderInsightBanner();
+  renderSubscribeCTA();
   renderLayer(RadarState.layer);
   showLiveArrival(RadarState.lastLiveItems[0]);
 }
@@ -325,6 +409,11 @@ function scheduleTimelineAutoplay() {
 
   RadarState.timelineAutoTimer = window.setInterval(() => {
     if (RadarState.layer !== 'radar' || RadarState.autoTimelinePaused) return;
+    // Never let autoplay paint a detail card over an open conversation
+    // or a user-opened detail. The user's foreground takes priority.
+    if (document.body.classList.contains('has-chat-open')) return;
+    const dm = document.getElementById('detail-modal');
+    if (dm && !dm.hidden) return;
     const rows = timelineRows();
     if (!rows.length) return;
     RadarState.activeTimelineIndex = (RadarState.activeTimelineIndex + 1) % rows.length;
@@ -359,6 +448,11 @@ function renderRadarTags(layer) {
 }
 
 function tagsForLayer(layer) {
+  if (layer === 'events') {
+    const subjects = (RadarState.events || []).map(e => e.subject).filter(Boolean);
+    const uniq = [...new Set(subjects)];
+    return uniq.slice(0, 8);
+  }
   if (layer === 'sources') {
     const ids = Object.entries(countBy(RadarState.signals, 'source_id'))
       .sort((a, b) => b[1] - a[1])
@@ -435,6 +529,47 @@ function renderCards(layer) {
     left.innerHTML = opportunityCard(oppRows[0]);
     right.innerHTML = opportunityCard(oppRows[1]);
     bottom.innerHTML = opportunityCard(oppRows[2]);
+    return;
+  }
+
+  if (layer === 'events') {
+    const events = (RadarState.events || []).slice(0, 6);
+    const ar = RadarState.lang === 'ar';
+    const askLabel = ar ? 'اسأل المساعد' : 'Ask the assistant';
+    const evCard = (e, slotIdx) => e ? `
+      <div class="event-mini${e.is_new ? ' event-mini-new' : ''}" data-event-type="${escapeAttr(e.type || '')}" data-event-idx="${slotIdx}">
+        <div class="event-mini-head">
+          <span class="event-mini-icon">${escapeHTML(e.icon || '·')}</span>
+          <span class="event-mini-label">${escapeHTML(ar ? (e.label_ar || '') : (e.label_en || ''))}</span>
+          <span class="event-mini-conf">${Math.round((e.confidence || 0) * 100)}%</span>
+        </div>
+        <div class="event-mini-subject">${escapeHTML(e.subject || '')}</div>
+        <div class="event-mini-meta">${e.evidence_count || 0} ${ar ? 'دليل' : 'evidence'}</div>
+        <button type="button" class="event-mini-ask" data-event-idx="${slotIdx}">${escapeHTML(askLabel)} ↗</button>
+      </div>
+    ` : `<div class="event-mini event-mini-empty">${ar ? 'لا أحداث جديدة' : 'no new events'}</div>`;
+    left.innerHTML = evCard(events[0], 0);
+    right.innerHTML = evCard(events[1], 1);
+    bottom.innerHTML = evCard(events[2], 2);
+
+    // Wire each "ask the assistant" button to open the chat drawer with the
+    // event pre-loaded as the focused item.
+    [left, right, bottom].forEach((slot, i) => {
+      const btn = slot && slot.querySelector('.event-mini-ask');
+      if (!btn || !events[i]) return;
+      btn.addEventListener('click', () => {
+        if (!window.RadarChat || !window.RadarChat.askAbout) return;
+        const e = events[i];
+        window.RadarChat.askAbout({
+          kind: 'event',
+          title: e.subject,
+          label: ar ? (e.label_ar || '') : (e.label_en || ''),
+          summary: `${e.evidence_count || 0} evidence, confidence ${Math.round((e.confidence || 0) * 100)}%`,
+          url: null,
+          raw: e,
+        });
+      });
+    });
     return;
   }
 
@@ -557,6 +692,7 @@ function renderDock(layer) {
 
 function dockItems(layer) {
   if (layer === 'opportunities') return opportunityRows();
+  if (layer === 'events') return (RadarState.events || []).slice(0, RadarState.archiveExpanded ? 12 : 8);
   if (layer === 'radar' && RadarState.timeline.length) return timelineRows().slice(0, RadarState.archiveExpanded ? 12 : 6);
   if (['radar', 'signals'].includes(layer)) return visibleSignals().slice(0, RadarState.archiveExpanded ? 12 : 6);
   return RadarState.signals.slice(0, 6);
@@ -596,6 +732,36 @@ function openOpportunityDetail(item, idx = 0) {
   if (!item) return;
   const lang = RadarState.lang;
   const isAr = lang === 'ar';
+  setFocusedDetail('opportunity', item, idx);
+
+  // Tier gating: locked items show a teaser + subscribe CTA instead of full content.
+  const allowed = canAccessRadarItem(item);
+  if (!allowed) {
+    if (window.RadarAnalytics && window.RadarAnalytics.premiumAttempted) {
+      window.RadarAnalytics.premiumAttempted(item.id || item.title || 'opp');
+    }
+    document.getElementById('detail-source').textContent = isAr ? 'محتوى مدفوع' : 'Premium';
+    document.getElementById('detail-title').textContent = item.title || '';
+    document.getElementById('detail-original').hidden = true;
+    document.getElementById('detail-meta').innerHTML = `<span>${isAr ? 'متاح للمشتركين فقط' : 'Subscribers only'}</span>`;
+    document.getElementById('detail-text').innerHTML = `
+      <div class="detail-locked">
+        <p>${escapeHTML(isAr ? 'هذه فرصة مرتّبة بثقة عالية. النص الكامل متاح للمشتركين فقط — يشمل: الجمهور المستهدف، خطة 7 أيام، الأدوات المطلوبة، الأسعار المقترحة، ومصادر الإلهام.' : 'This high-confidence opportunity is full-content for subscribers only — including target buyer, 7-day playbook, tools, pricing, and inspiration sources.')}</p>
+        <a class="detail-locked-cta" href="subscribe.html" data-event="subscribe_clicked" data-event-origin="radar_detail_modal">
+          ${escapeHTML(isAr ? 'اشترك بـ 15 دولار/شهر لفتح المحتوى' : 'Subscribe for $15/month')}
+        </a>
+      </div>
+    `;
+    const link = document.getElementById('detail-link');
+    if (link) link.style.display = 'none';
+    const modal = document.getElementById('detail-modal');
+    modal.dataset.side = (idx % 2 === 0) ? 'right' : 'left';
+    modal.classList.add('detail-locked-mode');
+    modal.hidden = false;
+    return;
+  }
+  const modalEl = document.getElementById('detail-modal');
+  if (modalEl) modalEl.classList.remove('detail-locked-mode');
 
   document.getElementById('detail-source').textContent = item.category || (isAr ? 'فرصة' : 'Opportunity');
   document.getElementById('detail-title').textContent = item.title || '';
@@ -670,8 +836,12 @@ function formatSourceLinks(links) {
 
 function openTimelineDetail(item, idx = 0, auto = false) {
   if (!item) return;
+  // Auto-opens (driven by the 6.2s timeline interval) must yield to the
+  // chat drawer — otherwise they paint over the user's conversation.
+  if (auto && document.body.classList.contains('has-chat-open')) return;
   const isAr = RadarState.lang === 'ar';
   const L = (ar, en) => isAr ? ar : en;
+  setFocusedDetail('timeline', item, idx);
 
   document.getElementById('detail-source').textContent = `${timelineCategoryLabel(item.category)} · ${item.vendor || ''}`;
   document.getElementById('detail-title').textContent = localizedTimelineTitle(item);
@@ -757,6 +927,32 @@ function wireDetailModal() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !modal.hidden) closeDetail();
   });
+
+  // "Ask the assistant about this" — surfaces whatever the user is currently
+  // looking at into the chat drawer with a context-aware opening prompt.
+  const askBtn = document.getElementById('detail-ask');
+  if (askBtn) {
+    askBtn.addEventListener('click', () => {
+      if (!window.RadarChat || !window.RadarChat.askAbout) return;
+      const focused = RadarState.focusedDetail;
+      if (!focused) return;
+      window.RadarChat.askAbout(focused);
+    });
+  }
+}
+
+function setFocusedDetail(kind, item, idx) {
+  RadarState.focusedDetail = item ? {
+    kind,                         // 'opportunity' | 'timeline' | 'event' | 'signal'
+    layer: RadarState.layer,
+    idx: idx,
+    id: item.id || item.title || item.subject || null,
+    title: item.title || item.subject || '',
+    label: item.label_ar || item.category || item.type || '',
+    summary: item.thesis_ar || item.text || item.summary || item.why || '',
+    url: item.source_url || item.url || null,
+    raw: item,
+  } : null;
 }
 
 function renderSourceSpokes(layer) {
@@ -796,6 +992,24 @@ function renderFloatingStrip(layer) {
     };
     paint();
     RadarState.tickerTimer = window.setInterval(paint, 4000);
+    return;
+  }
+
+  if (layer === 'events') {
+    const events = (RadarState.events || []).slice(0, 6);
+    if (!events.length) {
+      root.textContent = RadarState.lang === 'ar' ? 'لا أحداث جديدة هذا التشغيل' : 'No new events this run';
+      return;
+    }
+    const ar = RadarState.lang === 'ar';
+    let i = 0;
+    const paint = () => {
+      const e = events[i % events.length];
+      root.innerHTML = `<div class="live-row"><span>${escapeHTML(ar ? (e.label_ar || '') : (e.label_en || ''))}</span><b>${escapeHTML(e.subject || '')}</b><small>${e.evidence_count || 0} ${ar ? 'دليل' : 'evidence'} · ${Math.round((e.confidence || 0) * 100)}%</small></div>`;
+      i += 1;
+    };
+    paint();
+    RadarState.tickerTimer = window.setInterval(paint, 4200);
     return;
   }
 

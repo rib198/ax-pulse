@@ -31,9 +31,14 @@ from .base import (
     read_json,
     write_json,
 )
+from .access_tier import AccessTier
+from .auto_archive import AutoArchive
 from .companies_detector import CompaniesDetector
+from .event_detector import SmartEventDetector
 from .evidence_guard import EvidenceGuard
 from .growth_social import GrowthSocial
+from .insight_generator import InsightGenerator
+from .manual_x_bridge import ManualXBridge
 from .market_radar import MarketRadar
 from .memory_learning import MemoryLearning
 from .models_pulse import ModelsPulse
@@ -58,17 +63,22 @@ class Orchestrator:
         if not self.skip_collect:
             agents.append(SourceCollector(limit=self.limit, x_limit=self.x_limit))
         agents.extend([
+            ManualXBridge(),   # injects hand-curated X posts before they hit EvidenceGuard
             EvidenceGuard(),
             _LoadLearnedWeights(),     # injects last-run weights before ranking
             PriorityRanker(),
             CompaniesDetector(),
             ModelsPulse(),
+            SmartEventDetector(),  # turns signal lists into discrete events
             MarketRadar(),
             OpportunityBuilder(),
             RadarEditor(),
+            AccessTier(),  # tags free/premium AFTER opps/editor wrote, BEFORE social/QA read.
+            AutoArchive(), # archives stale items (status="archived"), never deletes.
             GrowthSocial(),
             UXProductionQA(),
             PerformanceAnalytics(),
+            InsightGenerator(),    # one-paragraph "what changed" observation
             MemoryLearning(),          # writes new weights for next run
         ])
         return agents

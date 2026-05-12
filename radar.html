@@ -3,16 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>رادار الذكاء الاصطناعي</title>
+  <title>رادار الذكاء الاصطناعي — الرادار</title>
+  <meta name="description" content="رادار حيّ يرصد إشارات الذكاء الاصطناعي ويحوّلها إلى فرص تجارية قابلة للتنفيذ." />
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="الرادار" />
+  <meta property="og:locale" content="ar_SA" />
+  <meta property="og:title" content="رادار الذكاء الاصطناعي — الرادار" />
+  <meta property="og:description" content="رادار حيّ يرصد إشارات الذكاء الاصطناعي ويحوّلها إلى فرص تجارية قابلة للتنفيذ." />
+  <meta property="og:url" content="https://ax-pulse01.vercel.app/radar.html" />
+  <meta property="og:image" content="https://ax-pulse01.vercel.app/assets/img/earth-radar.png" />
+  <meta property="og:image:alt" content="Live AI radar showing real-time signals across model releases, papers, and discussions" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="رادار الذكاء الاصطناعي — الرادار" />
+  <meta name="twitter:description" content="رادار حيّ يرصد إشارات الذكاء الاصطناعي." />
+  <meta name="twitter:image" content="https://ax-pulse01.vercel.app/assets/img/earth-radar.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/radar.css" />
 </head>
 <body class="radar-body layer-radar">
   <div class="portrait-guard">
-    <div class="guard-mark">AX</div>
+    <div class="guard-mark">رادار</div>
     <h1>لفّي الهاتف</h1>
     <p>تجربة الرادار مصممة للعمل بالعرض حتى تبقى الأرض والبيانات واضحة.</p>
   </div>
@@ -22,11 +39,19 @@
 
     <nav class="radar-nav" aria-label="Radar views">
       <button class="active" data-layer="radar">Radar</button>
+      <button data-layer="events">Events</button>
       <button data-layer="trending">Trending</button>
       <button data-layer="opportunities">Opportunities</button>
       <button data-layer="sources">Sources</button>
       <button data-layer="signals">Signals</button>
     </nav>
+
+    <div class="insight-banner" id="insight-banner" hidden>
+      <span class="ib-dot"></span>
+      <span class="ib-eyebrow"></span>
+      <span class="ib-text"></span>
+      <button class="ib-close" id="insight-close" aria-label="إخفاء">×</button>
+    </div>
 
     <div class="radar-lang" aria-label="Language toggle">
       <button data-lang="ar">ع</button>
@@ -105,8 +130,58 @@
 
     <div class="radar-footer">
       <a href="dashboard.html">Dashboard</a>
+      <a href="system.html">System</a>
       <span id="radar-updated">Loading data...</span>
     </div>
+
+    <a class="radar-subscribe-cta" id="radar-subscribe-cta" href="subscribe.html" hidden data-event="subscribe_clicked" data-event-origin="radar_floating">
+      <span class="rsc-lock"></span>
+      <span class="rsc-text">
+        <strong>افتح كل الفرص</strong>
+        <small>اشترك بـ 15 دولار/شهر</small>
+      </span>
+    </a>
+
+    <button class="chat-fab" id="chat-fab" aria-label="افتح مساعد الرادار" aria-controls="chat-drawer" aria-expanded="false">
+      <span class="chat-fab-icon" aria-hidden="true"></span>
+      <span class="chat-fab-label">مساعد الرادار</span>
+    </button>
+
+    <aside class="chat-drawer" id="chat-drawer" hidden aria-label="مساعد الرادار">
+      <header class="chat-head">
+        <div class="chat-head-title">
+          <span class="chat-head-dot"></span>
+          <span class="chat-head-name">مساعد الرادار</span>
+          <span class="chat-head-status" id="chat-status">متصل</span>
+        </div>
+        <button class="chat-close" id="chat-close" aria-label="إغلاق المساعد">×</button>
+      </header>
+
+      <div class="chat-quota" id="chat-quota" hidden>
+        <span id="chat-quota-text"></span>
+        <a href="subscribe.html" id="chat-quota-cta" data-event="subscribe_clicked" data-event-origin="chat_quota">اشترك للمزيد</a>
+      </div>
+
+      <div class="chat-body" id="chat-body" aria-live="polite"></div>
+
+      <div class="chat-suggestions" id="chat-suggestions"></div>
+
+      <form class="chat-form" id="chat-form" autocomplete="off">
+        <textarea
+          id="chat-input"
+          rows="1"
+          placeholder="اسأل المساعد عن إشارة، فرصة، أو حدث…"
+          maxlength="600"
+          aria-label="سؤالك للمساعد"></textarea>
+        <button type="submit" id="chat-send" aria-label="إرسال">
+          <span class="chat-send-arrow" aria-hidden="true">↑</span>
+        </button>
+      </form>
+
+      <div class="chat-foot">
+        <span>يستند إلى بيانات الرادار الحالية فقط · لا يحفظ المحادثات على الخادم</span>
+      </div>
+    </aside>
 
     <aside class="detail-side" id="detail-modal" hidden role="complementary" aria-labelledby="detail-title">
       <header class="detail-head">
@@ -118,11 +193,19 @@
       <div class="detail-meta" id="detail-meta"></div>
       <p class="detail-text" id="detail-text"></p>
       <div class="detail-actions">
+        <button class="detail-ask" id="detail-ask" type="button" aria-label="اسأل المساعد عن هذا">
+          <span class="detail-ask-icon" aria-hidden="true"></span>
+          <span class="detail-ask-label">اسأل المساعد عن هذا</span>
+        </button>
         <a class="detail-link" id="detail-link" target="_blank" rel="noreferrer">—</a>
       </div>
     </aside>
   </main>
 
+  <script src="assets/js/subscription.js"></script>
+  <script src="assets/js/analytics.js"></script>
+  <script src="assets/js/telemetry.js"></script>
   <script src="assets/js/radar.js"></script>
+  <script src="assets/js/radar_chat.js"></script>
 </body>
 </html>
