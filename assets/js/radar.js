@@ -1403,6 +1403,25 @@ function resetDetailChat() {
 
 function openDetailChat() {
   if (!RadarState.activeDetail) return;
+
+  // On mobile-portrait, the inline chat input collides with the on-screen
+  // keyboard and the bottom-sheet — route to the main floating drawer
+  // instead, pre-loaded with the card as `focused`. The drawer is wider,
+  // handles keyboard properly, and shows the same context.
+  const isMobilePortrait = window.matchMedia &&
+    window.matchMedia('(orientation: portrait) and (max-width: 1024px)').matches;
+  if (isMobilePortrait && window.RadarChat && typeof window.RadarChat.askAbout === 'function') {
+    const d = RadarState.activeDetail;
+    window.RadarChat.askAbout({
+      title: d.title,
+      summary: d.text || d.summary || '',
+      kind: d.type || d.kind || 'card',
+      url: d.url || d.source_url || '',
+      subject: d.title,
+    });
+    return;
+  }
+
   const panel = document.getElementById('detail-chat-panel');
   const log = document.getElementById('detail-chat-log');
   if (!panel || !log) return;
@@ -1441,31 +1460,87 @@ async function submitDetailChat(event) {
   }
 }
 
+// Translate the in-detail card payload {lang, question, card} into the format
+// /api/chat expects: {locale, messages, active_view}. Returns a Response-like
+// object whose .json() yields {answer, error} so the existing caller works
+// without changes.
+function cardToChatPayload(payload) {
+  const card = payload.card || {};
+  const lang = payload.lang || 'ar';
+  const isAr = lang === 'ar';
+  // Build a compact context block the model can ground its reply in.
+  const parts = [
+    payload.question,
+    '',
+    isAr ? '— عن البطاقة —' : '— Card context —',
+    card.title && (isAr ? `العنوان: ${card.title}` : `Title: ${card.title}`),
+    card.what_happened && (isAr ? `ما حدث: ${card.what_happened}` : `What happened: ${card.what_happened}`),
+    card.why_it_matters && (isAr ? `لماذا يهم: ${card.why_it_matters}` : `Why it matters: ${card.why_it_matters}`),
+    card.how_to_use && (isAr ? `كيف تستفيد: ${card.how_to_use}` : `How to use: ${card.how_to_use}`),
+    card.opportunity && (isAr ? `الفرصة: ${card.opportunity}` : `Opportunity: ${card.opportunity}`),
+    card.target_user && (isAr ? `الفئة: ${card.target_user}` : `Target user: ${card.target_user}`),
+  ].filter(Boolean);
+  return {
+    locale: lang === 'en' ? 'en' : 'ar',
+    messages: [{ role: 'user', content: parts.join('\n') }],
+    active_view: {
+      layer: 'opportunities',
+      focused: {
+        kind: card.type || card.kind || 'card',
+        title: card.title || '',
+        label: card.label || '',
+        summary: card.what_happened || card.why_it_matters || '',
+        url: card.url || card.source_url || '',
+      },
+    },
+  };
+}
+
 async function postDetailChat(payload) {
-  // In production we route through the Vercel /api/chat endpoint (same one the
-  // floating assistant uses). Local 127.0.0.1 fallbacks only apply when the
-  // page is served from a dev workstation — they're skipped on any non-local
-  // host so production users never see a stalled "discuss with ChatGPT" call.
-  const body = JSON.stringify(payload);
+  // In production we route through the Vercel /api/chat endpoint. Local
+  // 127.0.0.1 runners only apply when the page is served from a dev
+  // workstation — and they speak the raw {lang, question, card} dialect,
+  // so we send the card payload to them as-is and only translate when
+  // falling back to /api/chat.
   const isLocal = ['localhost', '127.0.0.1', '::1', ''].includes(location.hostname);
-  const endpoints = isLocal
-    ? ['http://127.0.0.1:8801/chat-card', 'http://127.0.0.1:8799/chat-card', 'http://127.0.0.1:8800/chat-card', '/api/chat']
-    : ['/api/chat'];
-  let lastError = null;
-  for (const endpoint of endpoints) {
-    try {
-      const r = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body
-      });
-      if (r.ok || (r.status >= 400 && r.status < 500)) return r;
-      lastError = new Error('chat endpoint returned ' + r.status);
-    } catch (err) {
-      lastError = err;
+
+  // Try local card-runners first if we're on dev (they speak {lang, question, card} natively)
+  if (isLocal) {
+    const localEndpoints = [
+      'http://127.0.0.1:8801/chat-card',
+      'http://127.0.0.1:8799/chat-card',
+      'http://127.0.0.1:8800/chat-card',
+    ];
+    for (const endpoint of localEndpoints) {
+      try {
+        const r = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        if (r.ok) return r; // raw shape {answer: '...'}
+      } catch (_) {}
     }
   }
-  throw lastError || new Error('chat_runner_unavailable');
+
+  // /api/chat (production + dev-fallback): translate, send, then adapt the
+  // response so the caller sees the {answer} shape it expects.
+  const chatPayload = cardToChatPayload(payload);
+  let response;
+  try {
+    response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(chatPayload),
+    });
+  } catch (e) {
+    throw new Error('network');
+  }
+  const data = await response.json().catch(() => ({}));
+  const adapted = response.ok
+    ? { answer: data.reply || data.answer || data.message || '' }
+    : { answer: '', error: data.error || ('http_' + response.status), message: data.message || data.hint };
+  return { ok: response.ok, status: response.status, json: async () => adapted };
 }
 
 function appendChatMessage(role, text) {
@@ -1494,17 +1569,26 @@ function updateChatMessage(id, text) {
 function localChatFallback(question, card = {}, error = '') {
   const isAr = RadarState.lang === 'ar';
   const isLocal = ['localhost', '127.0.0.1', '::1', ''].includes(location.hostname);
-  if (error === 'missing_openai_api_key') {
+
+  // Friendly user-facing messages by error type — never expose technical
+  // jargon to end-users. Admin/config errors go to server logs, not the UI.
+
+  if (error === 'rate_limit') {
     return isAr
-      ? `الشات الذكي جاهز، لكنه يحتاج OPENAI_API_KEY حتى يرد من ChatGPT.\n\nإلى أن نفعّله: هذه البطاقة تتحدث عن "${card.title || 'فكرة'}". أهم نقطة: ${card.why_it_matters || card.what_happened || 'راجعي ملخص البطاقة والأدلة.'}\n\nسؤال ممتاز تطرحيه بعد التفعيل: "${question}"`
-      : `The smart chat is wired, but it needs OPENAI_API_KEY to answer through ChatGPT.\n\nFor now: this card is about "${card.title || 'an idea'}". Key point: ${card.why_it_matters || card.what_happened || 'review the card summary and evidence.'}`;
+      ? 'وصلت إلى الحد اليومي للأسئلة. عودي غدًا، أو فعّلي الاشتراك لتحصلي على عدد أكبر.'
+      : 'You hit the daily question limit. Come back tomorrow, or subscribe for a higher limit.';
   }
-  // Production fallback — never expose the dev-only "start-radar-runner.command"
-  // hint to public users. Point them to the main side-panel assistant instead.
+  if (error === 'server_misconfigured' || error === 'missing_openai_api_key') {
+    // Don't reveal "OPENAI_API_KEY not set" to public users.
+    return isAr
+      ? 'المساعد الذكي معطّل مؤقتًا. سنعود قريبًا — في غضون ذلك تستطيعين قراءة ملخص البطاقة والأدلة أدناه.'
+      : 'The assistant is temporarily offline. We will be back soon — in the meantime, the card summary and evidence below cover the essentials.';
+  }
+  // Production network/unknown error
   if (!isLocal) {
     return isAr
-      ? `ملخص هذه البطاقة: ${card.what_happened || card.title || 'إشارة من الرادار.'}\n\n${card.why_it_matters ? 'لماذا تهمّك: ' + card.why_it_matters + '\n\n' : ''}للنقاش العميق حول هذه الفكرة، افتحي المساعد الذكي من الزر الجانبي وانسخي السؤال هناك — يستطيع الردّ مع كل سياق الرادار.`
-      : `Card summary: ${card.what_happened || card.title || 'A radar signal.'}\n\n${card.why_it_matters ? 'Why it matters: ' + card.why_it_matters + '\n\n' : ''}For a deeper discussion, open the side-panel assistant and paste your question there — it has full radar context.`;
+      ? `تعذّر الاتصال بالمساعد الآن. جرّبي مرة أخرى بعد دقيقة.\n\nملخص هذه البطاقة: ${card.what_happened || card.title || 'إشارة من الرادار.'}${card.why_it_matters ? '\nلماذا تهمّك: ' + card.why_it_matters : ''}`
+      : `Couldn't reach the assistant right now. Try again in a moment.\n\nCard summary: ${card.what_happened || card.title || 'A radar signal.'}${card.why_it_matters ? '\nWhy it matters: ' + card.why_it_matters : ''}`;
   }
   // Local dev — show the dev-only hint
   return isAr
@@ -2865,7 +2949,9 @@ function panelMetric(layer, items) {
     return {
       label: RadarState.lang === 'ar' ? 'أفضل الفرص الآن' : 'Top opportunities now',
       value: String(items.length),
-      caption: RadarState.lang === 'ar' ? 'اضغط على أي فرصة لمعرفة المشكلة والدليل وسبب الاختيار' : 'Tap any opportunity to see the problem, evidence, and why it was picked'
+      caption: RadarState.lang === 'ar'
+        ? 'اسحب يمين/يسار لرؤية فرص أكثر · اضغط على أي فرصة لفتح الخطة والدليل'
+        : 'Swipe to see more opportunities · tap any card to open the plan and evidence'
     };
   }
   if (layer === 'sources') {
