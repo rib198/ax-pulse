@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-13T21:45:44+00:00",
+  "run_at": "2026-05-13T23:15:42+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 20.448,
+      "duration_s": 14.283,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 263 signals from 25 source families",
+        "collected 269 signals from 25 source families",
         "8 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.057,
+      "duration_s": 0.052,
       "written": [],
       "notes": [
         "injected 640 manual X items (skipped 559 of 1199, avg score 0.448)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 903 items",
-        "by tier: press=672, official=156, research=57, community=18"
+        "tagged 909 items",
+        "by tier: press=672, official=156, research=56, community=25"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 903 items, top priority=0.525"
+        "ranked 909 items, top priority=0.525"
       ],
       "error": null
     },
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.055,
+      "duration_s": 0.048,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.146,
+      "duration_s": 0.125,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "10 events (0 new)",
-        "by type: model_release=5, personnel_move=1, acquisition=1, policy_signal=2, pricing_change=1"
+        "8 events (0 new)",
+        "by type: model_release=4, acquisition=1, policy_signal=2, pricing_change=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.016,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -217,7 +217,7 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=903, opps=4, calls=0"
+        "items=909, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (10 حدث متابع)."
+        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (8 حدث متابع)."
       ],
       "error": null
     },
