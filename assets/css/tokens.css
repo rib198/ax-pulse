@@ -1,6 +1,26 @@
 /* الرادار / Radar — Design tokens (Linear-inspired, signature green accent) */
 
 :root {
+  /* Radar layout zones — referenced by radar.css but were never defined,
+     causing some absolutely-positioned elements to land in unexpected
+     spots on small viewports. Defaults are sized for desktop; portrait
+     media queries can override per zone. */
+  --zone-header-h: 76px;
+  --zone-active-h: 150px;
+  --zone-footer-h: 0px;
+  --rail-side-x: clamp(12px, 2vw, 28px);
+
+  /* Z-index scale for the radar stage. Stacked from background → modal. */
+  --z-particles: 1;
+  --z-radar-copy: 20;
+  --z-value-rail: 30;
+  --z-floating-strip: 40;
+  --z-data-panel: 60;
+  --z-radar-nav: 80;
+  --z-radar-lang: 90;
+  --z-source-health: 100;
+  --z-detail-side: 120;
+
   /* Surfaces */
   --bg-deep: #08090a;
   --bg-panel: #0f1011;

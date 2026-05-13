@@ -27,16 +27,10 @@
   <link rel="stylesheet" href="assets/css/radar.css?v=20260511-safari-layout" />
 </head>
 <body class="radar-body layer-opportunities">
-  <div class="portrait-guard">
-    <div class="guard-mark">رادار</div>
-    <h1>لفّي الهاتف</h1>
-    <p>تجربة الرادار التفاعلية مصمَّمة بالعرض. ارفع جهازك بالاتجاه الأفقي لتظهر الأرض وبياناتها بوضوح.</p>
-    <div class="guard-actions">
-      <a class="guard-btn primary" href="index.html">العودة للرئيسية</a>
-      <a class="guard-btn" href="subscribe.html">قائمة الانتظار</a>
-    </div>
-    <p class="guard-note">للأجهزة الكبيرة (تابلت/شاشات لمس) قد تحتاج تفعيل الوضع الأفقي من إعدادات الجهاز.</p>
-  </div>
+  <!-- portrait-guard removed: the responsive mobile layout now renders
+       the radar properly on phones in portrait, so we don't ask the user
+       to rotate. Kept as a comment for context. -->
+
 
   <main class="radar-stage" aria-label="AI Radar">
     <canvas id="radar-particles" class="radar-particles" aria-hidden="true"></canvas>

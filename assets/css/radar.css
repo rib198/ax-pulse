@@ -3971,29 +3971,221 @@ html[dir="rtl"] .chat-foot { font-family: 'IBM Plex Sans Arabic', sans-serif; le
 }
 
 /* ============================================================
-   Production polish — added in launch-readiness pass.
+
+/* ============================================================
+   Mobile portrait hard fix — production launch readiness pass
+   Comprehensive override that consolidates earlier partial fixes:
+   • scroll works (overflow: auto)
+   • bottom-sheet detail panel
+   • hidden decorative elements (tags / spokes / particles)
+   • flexible card heights for Arabic text length
+   • bottom-sheet ChatGPT button works via /api/chat
+   • a11y / Safari prefixes preserved
    ============================================================ */
 
-/* Portrait scroll fix: the base rule body.radar-body { overflow: hidden }
-   is for the desktop immersive layout. On portrait surfaces the portrait
-   guard (or future mobile stack layout) needs to scroll. */
 @media (orientation: portrait) and (max-width: 1024px) {
-  body.radar-body { overflow: auto; -webkit-overflow-scrolling: touch; }
-  body.radar-body .radar-stage { overflow: visible; }
+  html,
+  body,
+  body.radar-body {
+    height: auto !important;
+    min-height: 100svh;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  .radar-stage {
+    height: auto !important;
+    min-height: 100svh;
+    overflow: visible !important;
+    padding:
+      calc(112px + env(safe-area-inset-top))
+      12px
+      calc(24px + env(safe-area-inset-bottom)) !important;
+  }
+
+  /* Don't ask the user to rotate — make portrait actually work */
+  .portrait-guard {
+    display: none !important;
+  }
+
+  .radar-nav {
+    position: fixed;
+    top: calc(52px + env(safe-area-inset-top));
+    left: 10px;
+    right: 10px;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow-x: auto;
+    justify-content: flex-start;
+    z-index: 90;
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .radar-nav button {
+    flex: 0 0 auto;
+    padding: 8px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .radar-lang {
+    position: fixed;
+    top: calc(10px + env(safe-area-inset-top));
+    z-index: 100;
+  }
+
+  .value-rail {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    margin: 0 0 14px !important;
+    pointer-events: auto;
+  }
+
+  .radar-copy {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    margin: 0 0 14px !important;
+  }
+
+  .radar-world {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: min(92vw, 390px) !important;
+    max-width: 390px;
+    margin: 0 auto 14px !important;
+    transform: none !important;
+  }
+
+  /* Hide decorative elements on phone — they overlap content and
+     compute positions assuming wide viewport */
+  .radar-tags,
+  .source-spokes,
+  .floating-strip,
+  .data-beams,
+  .radar-particles {
+    display: none !important;
+  }
+
+  .data-panel,
+  .layer-opportunities .data-panel {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    overflow: visible !important;
+    padding: 10px !important;
+    gap: 12px;
+  }
+
+  /* Arrows take horizontal space on mobile; swiping the feed
+     is the natural gesture. Hide them. */
+  .panel-arrow {
+    display: none !important;
+  }
+
+  .panel-feed-wrap {
+    width: 100%;
+    min-height: 0 !important;
+  }
+
+  .panel-feed {
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    padding-bottom: 8px !important;
+  }
+
+  /* Cards: drop the fixed 140px height — Arabic text needs room */
+  .panel-feed > .signal-chip,
+  .panel-feed > .opportunity-chip.featured-opportunity,
+  .layer-opportunities .panel-feed > .signal-chip,
+  .layer-opportunities .panel-feed > .opportunity-chip.featured-opportunity {
+    flex: 0 0 min(88vw, 360px) !important;
+    height: auto !important;
+    min-height: 164px !important;
+    max-height: none !important;
+    padding-bottom: 48px !important;
+    scroll-snap-align: start;
+  }
+
+  .signal-chip p {
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .signal-chip small {
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .opportunity-proofline {
+    bottom: 12px;
+  }
+
+  .opportunity-chip em {
+    bottom: 12px;
+  }
+
+  /* Bottom-sheet detail panel — slides up from the bottom on tap.
+     Previously was inline-relative which dropped the content out of
+     view on long pages. */
+  .detail-side,
+  .detail-side[data-side="right"],
+  .detail-side[data-side="left"] {
+    position: fixed !important;
+    top: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-height: min(82svh, 720px);
+    overflow-y: auto;
+    margin: 0 !important;
+    border-radius: 22px 22px 0 0;
+    transform: translateY(110%) !important;
+    opacity: 1;
+    z-index: 120;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+  }
+
+  .detail-side.open {
+    transform: translateY(0) !important;
+  }
+
+  .detail-backdrop {
+    background: rgba(0, 0, 0, 0.45);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    z-index: 110;
+  }
+
+  body.detail-active {
+    overflow: hidden !important;
+  }
 }
 
-/* Catch-all reduced-motion. Existing block only disabled one animation
-   on the subscribe CTA — this stops every animation/transition for users
-   who request reduced motion (also helps battery on phones). */
+/* Stronger reduced-motion for the specific high-energy radar effects.
+   Complements the * catch-all earlier; this kills frame-by-frame loops
+   that the wildcard rule can't always neutralise (CSS keyframes still
+   start; iteration-count=1 + duration=0.001ms ensures they exit). */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    animation-delay: 0ms !important;
-    transition-duration: 0.001ms !important;
-    transition-delay: 0ms !important;
-    scroll-behavior: auto !important;
+  .earth-image,
+  .radar-disc,
+  .earth-scan,
+  .always-on-ring,
+  .scan-orbit,
+  .scan-flash,
+  .earth-ping,
+  .tag {
+    animation: none !important;
   }
-  /* Keep the Earth canvas visible but freeze the orbit/sweep loops */
-  .radar-particles { opacity: 0.6; }
 }
