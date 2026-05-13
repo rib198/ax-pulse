@@ -1,197 +1,69 @@
 {
-  "generated_at": "2026-05-12T08:23:39+00:00",
-  "source": "pulse_radar_v0",
-  "note_ar": "فرص مبنية على قاعدة تراكمية من إشارات منتجات/خدمات/أدوات تستخدم الذكاء الاصطناعي. التكرار عبر الوقت يرفع قوة الإشارة.",
-  "corpus_count": 4835,
+  "generated_at": "2026-05-13T11:59:43+00:00",
+  "source": "agent_pipeline_v1+openai",
+  "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
+  "corpus_count": 906,
   "opportunities": [
     {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "capital_ar": "بدون رأس مال",
-      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
-      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر ولا تملك فريق AI",
-      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
-      "tools_ar": "ChatGPT أو Claude، Notion/Docs، أداة تسليم للعميل",
-      "pricing_ar": "200-1000$ لكل باقة خدمة",
-      "examples_ar": "خدمة تلخيص، كتابة عروض، تحليل مستندات، إعداد تقارير",
-      "why_it_matters_ar": "الإشارات تكشف أن الناس يريدون نتيجة عملية أكثر من رغبتهم في تعلم الأدوات نفسها.",
-      "signal_count": 8,
-      "avg_score": 1.0,
-      "confidence": 0.85,
+      "id": "demand-response-energy",
+      "title_ar": "تطوير برامج استجابة الطلب للطاقة",
+      "thesis_ar": "تزايد تقلبات أسواق الكهرباء والظروف الجوية القاسية يخلق حاجة ملحة لبرامج استجابة الطلب. يمكن أن تساهم هذه البرامج في تخفيف المخاطر المالية على المستهلكين.",
+      "buyer_ar": "شركات الطاقة والمرافق العامة",
+      "sellable_product_ar": "نظام إدارة استجابة الطلب للطاقة",
+      "first_paid_test_ar": "تجربة نظام في منطقة سكنية محددة",
+      "tools_ar": "نظام إدارة البيانات، واجهة برمجة التطبيقات، أدوات تحليل البيانات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2605.12462v1",
+        "2605.12481v1",
+        "2605.12332v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
-          "url": "http://arxiv.org/abs/2605.04637v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "ReasonSTL: Bridging Natural Language and Signal Temporal Logic via Tool-Augmented Process-Rewarded Learning",
-          "url": "http://arxiv.org/abs/2605.06483v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_products"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Say the Mission, Execute the Swarm: Agent-Enhanced LLM Reasoning in the Web-of-Drones",
-          "url": "http://arxiv.org/abs/2605.03788v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_products"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Multi-Agent Systems for Root Cause Analysis in Microservices",
-          "url": "http://arxiv.org/abs/2605.03505v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_document_tools"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "From Assistance to Agency: Rethinking Autonomy and Control in CI/CD Pipelines",
-          "url": "http://arxiv.org/abs/2605.07062v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "On the Tradeoffs of On-Device Generative Models in Federated Predictive Maintenance Systems",
-          "url": "http://arxiv.org/abs/2605.07860v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_products"
-          }
+          "title": "Towards Affordable Energy: A Gymnasium Environment for Electric Utility Demand-Response Programs",
+          "url": "http://arxiv.org/abs/2605.12462v1",
+          "score": 0.543,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
-          "url": "https://huggingface.co/papers/2605.04637",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "upvotes": 2,
-            "authors": "Siddhant Saxena, Nilesh Trivedi, Vinayaka Jyothi"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Architectural Constraints Alignment in AI-assisted, Platform-based Service Development",
-          "url": "http://arxiv.org/abs/2605.04973v1",
-          "signal_type": "news",
-          "score": 0.98,
-          "metrics": {
-            "query_id": "arxiv_ai_products"
-          }
-        }
-      ]
-    },
-    {
-      "id": "ai_income_tools",
-      "title_ar": "منتجات وأدوات مدعومة بالذكاء الاصطناعي قابلة للبيع",
-      "capital_ar": "منخفض",
-      "sellable_product_ar": "أداة صغيرة أو قالب عمل يستخدم AI لحل مهمة محددة قابلة للتكرار",
-      "buyer_ar": "شركات ناشئة، صناع محتوى، وفرق تبحث عن اختصار عملي في سير العمل",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي بسيط + 5 مقابلات مع مشترين محتملين",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، Stripe أو Gumroad، صفحة هبوط",
-      "pricing_ar": "9-49$/شهر أو قالب مدفوع",
-      "examples_ar": "قالب مدفوع، إضافة صغيرة، أداة SaaS مركزة",
-      "why_it_matters_ar": "تكرار ذكر الأدوات والمنتجات يعني أن السوق يبحث عن حلول جاهزة لا عن خبر فقط.",
-      "signal_count": 8,
-      "avg_score": 0.39,
-      "confidence": 0.83,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "manual_x",
-          "title": "Noisy @noisyb0y1 · May 2 Billionaire Dan Martell with 1.7 million subscribers explained how to go from $0 to $1,000,000 using AI - and fit …",
-          "url": "https://x.com/noisyb0y1/status/2050568609949450477",
-          "score": 0.402,
-          "trust_tier": "press"
+          "title": "GLiNER-Relex: A Unified Framework for Joint Named Entity Recognition and Relation Extraction",
+          "url": "https://huggingface.co/papers/2605.10108",
+          "score": 0.516,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "PianoCoRe: Combined and Refined Piano MIDI Dataset",
-          "url": "https://huggingface.co/papers/2605.06627",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "upvotes": 4,
-            "authors": "Ilya Borovik"
-          }
+          "title": "TacoMAS: Test-Time Co-Evolution of Topology and Capability in LLM-based Multi-Agent Systems",
+          "url": "https://huggingface.co/papers/2605.09539",
+          "score": 0.51,
+          "trust_tier": "research"
         },
         {
-          "source_id": "manual_x",
-          "title": "**بحسب SADA Benchmark**    نبرة STT هي الأفضل والأدق كخدمة تحويل صوت إلى نص (التفريغ النصي) للهجة العامية.  لمختلف التطبيقات من ملخص اجتماع…",
-          "url": "https://x.com/NabrahAI/status/2049473058470002737?s=20",
-          "score": 0.379,
-          "trust_tier": "press"
+          "source_id": "huggingface_daily_papers",
+          "title": "WildRelight: A Real-World Benchmark and Physics-Guided Adaptation for Single-Image Relighting",
+          "url": "https://huggingface.co/papers/2605.11696",
+          "score": 0.51,
+          "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Collaborative Agent Reasoning Engineering (CARE): A Three-Party Design Methodology for Systematically Engineering AI Agents with Subject Matter Experts, Developers, and Helper Agents",
-          "url": "http://arxiv.org/abs/2604.28043v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
+          "title": "ToolCUA: Towards Optimal GUI-Tool Path Orchestration for Computer Use Agents",
+          "url": "http://arxiv.org/abs/2605.12481v1",
+          "score": 0.504,
+          "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "EdgeFM: Efficient Edge Inference for Vision-Language Models",
-          "url": "http://arxiv.org/abs/2604.27476v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "AI CFD Scientist: Toward Open-Ended Computational Fluid Dynamics Discovery with Physics-Aware AI Agents",
-          "url": "http://arxiv.org/abs/2605.06607v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Sparkle: Realizing Lively Instruction-Guided Video Background Replacement via Decoupled Guidance",
-          "url": "http://arxiv.org/abs/2605.06535v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_products"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "ReasonSTL: Bridging Natural Language and Signal Temporal Logic via Tool-Augmented Process-Rewarded Learning",
-          "url": "http://arxiv.org/abs/2605.06483v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_products"
-          }
+          "source_id": "huggingface_daily_papers",
+          "title": "Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents",
+          "url": "https://huggingface.co/papers/2605.10832",
+          "score": 0.498,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -199,299 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-12T10:37:32+00:00",
-      "updatedAt": "2026-05-12T10:37:32+00:00",
+      "publishedAt": "2026-05-13T11:59:43+00:00",
+      "updatedAt": "2026-05-13T11:59:43+00:00",
       "sortOrder": 0
     },
     {
-      "id": "ai_income_tools",
-      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
-      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.4,
-      "confidence": 0.83,
-      "source": "rules",
+      "id": "privacy-aware-agent",
+      "title_ar": "تطوير وكيل يتعاون مع السحابة مع مراعاة الخصوصية",
+      "thesis_ar": "تزايد القلق حول الخصوصية في البيانات يدفع الحاجة إلى وكلاء قادرين على العمل بين السحابة والأجهزة المحلية. هذه الحلول يمكن أن تعزز الأمان وتقليل المخاطر.",
+      "buyer_ar": "شركات البرمجيات والأمن السيبراني",
+      "sellable_product_ar": "نظام وكيل يتعاون مع السحابة",
+      "first_paid_test_ar": "تجربة النظام في بيئة تجريبية مع بيانات حساسة",
+      "tools_ar": "نموذج تعلم عميق، أدوات تشفير، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2605.08646",
+        "2605.11882",
+        "2605.07579"
+      ],
+      "confidence": 0.65,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "manual_x",
-          "title": "عاجل: مايكروسوفت تفاجئنا وتتيح أقوى نموذج ذكاء اصطناعي صوتي لها بشكل \"مجاني ومفتوح المصدر\"!  وفر مالك من الاشتراكات المدفوعة، النموذج الذي …",
-          "url": "https://x.com/alghali/status/2048174161189797980?s=20",
-          "score": 0.412,
-          "trust_tier": "press"
+          "source_id": "arxiv_papers",
+          "title": "Towards Affordable Energy: A Gymnasium Environment for Electric Utility Demand-Response Programs",
+          "url": "http://arxiv.org/abs/2605.12462v1",
+          "score": 0.543,
+          "trust_tier": "research"
         },
         {
-          "source_id": "manual_x",
-          "title": "Noisy @noisyb0y1 · May 2 Billionaire Dan Martell with 1.7 million subscribers explained how to go from $0 to $1,000,000 using AI - and fit …",
-          "url": "https://x.com/noisyb0y1/status/2050568609949450477",
-          "score": 0.402,
-          "trust_tier": "press"
+          "source_id": "huggingface_daily_papers",
+          "title": "GLiNER-Relex: A Unified Framework for Joint Named Entity Recognition and Relation Extraction",
+          "url": "https://huggingface.co/papers/2605.10108",
+          "score": 0.516,
+          "trust_tier": "research"
         },
         {
-          "source_id": "manual_x",
-          "title": "Akshay @akshay_pachaar · 3h The MCP vs CLI debate. For most of 2025, AI Engineers argued about it. The skeptics had real numbers: - Playwri…",
-          "url": "https://x.com/akshay_pachaar/status/2053380764805583212",
-          "score": 0.4,
-          "trust_tier": "press"
+          "source_id": "huggingface_daily_papers",
+          "title": "TacoMAS: Test-Time Co-Evolution of Topology and Capability in LLM-based Multi-Agent Systems",
+          "url": "https://huggingface.co/papers/2605.09539",
+          "score": 0.51,
+          "trust_tier": "research"
         },
         {
-          "source_id": "manual_x",
-          "title": "Akshay @akshay_pachaar · 17h Article MCP vs CLI was the wrong debate For most of 2025, AI engineers argued about how agents should call too…",
-          "url": "https://x.com/akshay_pachaar/status/2053166970166772052",
-          "score": 0.4,
-          "trust_tier": "press"
+          "source_id": "huggingface_daily_papers",
+          "title": "WildRelight: A Real-World Benchmark and Physics-Guided Adaptation for Single-Image Relighting",
+          "url": "https://huggingface.co/papers/2605.11696",
+          "score": 0.51,
+          "trust_tier": "research"
         },
         {
-          "source_id": "manual_x",
-          "title": "Noisy @noisyb0y1 · May 2 16-year-old American launched his own marketing agency and replaced a team of four with one Claude and two tools. …",
-          "url": "https://x.com/noisyb0y1/status/2050536584227729820",
-          "score": 0.4,
-          "trust_tier": "press"
+          "source_id": "arxiv_papers",
+          "title": "ToolCUA: Towards Optimal GUI-Tool Path Orchestration for Computer Use Agents",
+          "url": "http://arxiv.org/abs/2605.12481v1",
+          "score": 0.504,
+          "trust_tier": "research"
         },
         {
-          "source_id": "manual_x",
-          "title": "Peter Steinberger @steipete · May 4 Released RepoBar 0.4.0. This one makes the GitHub menu a lot smarter: persistent SQLite caching, fewer …",
-          "url": "https://x.com/steipete/status/2051088325100831046",
-          "score": 0.394,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Peter Steinberger @steipete · Apr 20 MCPorter  0.9.0 is out. Call MCPs from TypeScript or as CLI - per-server tool filtering - sturdier std…",
-          "url": "https://x.com/steipete/status/2046192869497622529",
-          "score": 0.394,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "**بحسب SADA Benchmark**    نبرة STT هي الأفضل والأدق كخدمة تحويل صوت إلى نص (التفريغ النصي) للهجة العامية.  لمختلف التطبيقات من ملخص اجتماع…",
-          "url": "https://x.com/NabrahAI/status/2049473058470002737?s=20",
-          "score": 0.379,
-          "trust_tier": "press"
+          "source_id": "huggingface_daily_papers",
+          "title": "Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents",
+          "url": "https://huggingface.co/papers/2605.10832",
+          "score": 0.498,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-12T10:37:32+00:00",
-      "updatedAt": "2026-05-12T10:37:32+00:00",
+      "publishedAt": "2026-05-13T11:59:43+00:00",
+      "updatedAt": "2026-05-13T11:59:43+00:00",
       "sortOrder": 1
     },
     {
-      "id": "ai_income_automation",
-      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
-      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
-      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
-      "tools_ar": "n8n أو Make، API، نموذج AI",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.39,
-      "confidence": 0.83,
-      "source": "rules",
+      "id": "multimodal-deep-search",
+      "title_ar": "تطوير وكيل بحث عميق متعدد الوسائط",
+      "thesis_ar": "تزايد الحاجة لحلول ذكية لحل المشكلات المعقدة يتطلب تطوير وكلاء بحث عميق متعدد الوسائط. هذه الأنظمة يمكن أن تحسن فعالية البحث في بيئات مفتوحة.",
+      "buyer_ar": "شركات التكنولوجيا والبحث",
+      "sellable_product_ar": "نظام بحث عميق متعدد الوسائط",
+      "first_paid_test_ar": "اختبار النظام في مجال معين مثل التجارة الإلكترونية",
+      "tools_ar": "نموذج تعلم عميق، واجهة برمجة التطبيقات، أدوات معالجة البيانات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2605.10832",
+        "2605.09539",
+        "2605.12090"
+      ],
+      "confidence": 0.6,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
-          "url": "http://arxiv.org/abs/2605.04637v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Collaborative Agent Reasoning Engineering (CARE): A Three-Party Design Methodology for Systematically Engineering AI Agents with Subject Matter Experts, Developers, and Helper Agents",
-          "url": "http://arxiv.org/abs/2604.28043v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Akshay @akshay_pachaar · 3h The MCP vs CLI debate. For most of 2025, AI Engineers argued about it. The skeptics had real numbers: - Playwri…",
-          "url": "https://x.com/akshay_pachaar/status/2053380764805583212",
-          "score": 0.4,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "AI CFD Scientist: Toward Open-Ended Computational Fluid Dynamics Discovery with Physics-Aware AI Agents",
-          "url": "http://arxiv.org/abs/2605.06607v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Constraint Decay: The Fragility of LLM Agents in Backend Code Generation",
-          "url": "http://arxiv.org/abs/2605.06445v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_products"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Data Language Models: A New Foundation Model Class for Tabular Data",
-          "url": "http://arxiv.org/abs/2605.06290v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_document_tools"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Addressing the Reality Gap: A Three-Tension Framework for Agentic AI Adoption",
-          "url": "http://arxiv.org/abs/2604.27245v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
+          "title": "Towards Affordable Energy: A Gymnasium Environment for Electric Utility Demand-Response Programs",
+          "url": "http://arxiv.org/abs/2605.12462v1",
+          "score": 0.543,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Step-level Optimization for Efficient Computer-use Agents",
-          "url": "https://huggingface.co/papers/2604.27151",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "upvotes": 14,
-            "authors": "Jinbiao Wei, Kangqi Ni, Yilun Zhao"
-          }
+          "title": "GLiNER-Relex: A Unified Framework for Joint Named Entity Recognition and Relation Extraction",
+          "url": "https://huggingface.co/papers/2605.10108",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TacoMAS: Test-Time Co-Evolution of Topology and Capability in LLM-based Multi-Agent Systems",
+          "url": "https://huggingface.co/papers/2605.09539",
+          "score": 0.51,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "WildRelight: A Real-World Benchmark and Physics-Guided Adaptation for Single-Image Relighting",
+          "url": "https://huggingface.co/papers/2605.11696",
+          "score": 0.51,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "ToolCUA: Towards Optimal GUI-Tool Path Orchestration for Computer Use Agents",
+          "url": "http://arxiv.org/abs/2605.12481v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents",
+          "url": "https://huggingface.co/papers/2605.10832",
+          "score": 0.498,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-12T10:37:32+00:00",
-      "updatedAt": "2026-05-12T10:37:32+00:00",
+      "publishedAt": "2026-05-13T11:59:43+00:00",
+      "updatedAt": "2026-05-13T11:59:43+00:00",
       "sortOrder": 2
-    },
-    {
-      "id": "ai_income_content",
-      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
-      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
-      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
-      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
-      "pricing_ar": "99-299$/شهر أو سعر لكل مخرج",
-      "examples_ar": "حزم إعلانات، مقاطع قصيرة، وصف منتجات، حملات بريد",
-      "why_it_matters_ar": "المحتوى أسرع مسار لاختبار الدفع لأنه لا يحتاج بنية تقنية كبيرة في البداية.",
-      "signal_count": 8,
-      "avg_score": 1.0,
-      "confidence": 0.85,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Sparkle: Realizing Lively Instruction-Guided Video Background Replacement via Decoupled Guidance",
-          "url": "https://huggingface.co/papers/2605.06535",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "upvotes": 1,
-            "authors": "Ziyun Zeng, Yiqi Lin, Guoqiang Liang"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Collaborative Agent Reasoning Engineering (CARE): A Three-Party Design Methodology for Systematically Engineering AI Agents with Subject Matter Experts, Developers, and Helper Agents",
-          "url": "http://arxiv.org/abs/2604.28043v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "EdgeFM: Efficient Edge Inference for Vision-Language Models",
-          "url": "http://arxiv.org/abs/2604.27476v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "AI CFD Scientist: Toward Open-Ended Computational Fluid Dynamics Discovery with Physics-Aware AI Agents",
-          "url": "http://arxiv.org/abs/2605.06607v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Sparkle: Realizing Lively Instruction-Guided Video Background Replacement via Decoupled Guidance",
-          "url": "http://arxiv.org/abs/2605.06535v1",
-          "signal_type": "news",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_products"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Data Language Models: A New Foundation Model Class for Tabular Data",
-          "url": "http://arxiv.org/abs/2605.06290v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_document_tools"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Addressing the Reality Gap: A Three-Tension Framework for Agentic AI Adoption",
-          "url": "http://arxiv.org/abs/2604.27245v1",
-          "signal_type": "pain",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "From Intent to Execution: Composing Agentic Workflows with Agent Recommendation",
-          "url": "http://arxiv.org/abs/2605.03986v1",
-          "signal_type": "launch",
-          "score": 1.0,
-          "metrics": {
-            "query_id": "arxiv_ai_agents"
-          }
-        }
-      ],
-      "tier": "premium",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-12T10:37:32+00:00",
-      "updatedAt": "2026-05-12T10:37:32+00:00",
-      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-05-12T10:37:32+00:00",
+  "tiered_at": "2026-05-13T11:59:43+00:00",
   "free_preview_count": 3
 }
