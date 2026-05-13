@@ -36,19 +36,37 @@ class SourceCollector(Agent):
         errors: list[dict] = []
         items: list[dict] = []
 
+        # Source isolation principle: every fetch is wrapped in try/except so
+        # one source raising (network blip, malformed payload, 429 rate-limit,
+        # unexpected DNS) NEVER kills the rest of the collection. Each loss
+        # is recorded in `errors` for run_status.json without affecting the
+        # rest of the radar.
+
         for source in pr.RSS_SOURCES:
-            got, err = pr.fetch_rss_source(source, limit=self.limit)
-            items.extend(got)
-            if err:
-                errors.append(err)
+            try:
+                got, err = pr.fetch_rss_source(source, limit=self.limit)
+                items.extend(got)
+                if err:
+                    errors.append(err)
+            except Exception as exc:
+                errors.append({"source": source.get("id", "rss_unknown"), "error": str(exc)})
             time.sleep(0.2)
 
+        # arXiv enforces an aggressive rate limit (HTTP 429). One backoff retry
+        # per query gives transient throttles a second chance; persistent
+        # failures still drop through cleanly.
         for source in pr.ARXIV_QUERIES:
-            try:
-                items.extend(pr.fetch_arxiv_query(source, limit=min(self.limit, 15)))
-            except Exception as exc:
-                errors.append({"source": source["id"], "error": str(exc)})
-            time.sleep(0.4)
+            for attempt in (0, 1):
+                try:
+                    items.extend(pr.fetch_arxiv_query(source, limit=min(self.limit, 15)))
+                    break
+                except Exception as exc:
+                    if attempt == 0 and "429" in str(exc):
+                        time.sleep(3.0)
+                        continue
+                    errors.append({"source": source["id"], "error": str(exc)})
+                    break
+            time.sleep(0.6)
 
         for fn, src in [
             (pr.fetch_huggingface_daily_papers, "huggingface_daily_papers"),
@@ -59,16 +77,22 @@ class SourceCollector(Agent):
             except Exception as exc:
                 errors.append({"source": src, "error": str(exc)})
 
-        got, err = pr.fetch_feedly(limit=self.limit)
-        items.extend(got)
-        if err:
-            errors.append(err)
-
-        for q in self.x_queries:
-            got, err = pr.fetch_x_recent_search(limit=self.x_limit, query=q)
+        try:
+            got, err = pr.fetch_feedly(limit=self.limit)
             items.extend(got)
             if err:
                 errors.append(err)
+        except Exception as exc:
+            errors.append({"source": "feedly", "error": str(exc)})
+
+        for q in self.x_queries:
+            try:
+                got, err = pr.fetch_x_recent_search(limit=self.x_limit, query=q)
+                items.extend(got)
+                if err:
+                    errors.append(err)
+            except Exception as exc:
+                errors.append({"source": "x_recent_search", "error": str(exc)})
             time.sleep(0.2)
 
         for source in pr.REDDIT_SOURCES:
