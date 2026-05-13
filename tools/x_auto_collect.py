@@ -484,6 +484,24 @@ def run_one_round() -> dict:
         print("nothing to collect — empty plan")
         return {"collected": 0}
 
+    # ---- Per-run sampling cap ----
+    # Watchlist grew to 700+ handles. With each Nitter fetch capped at the
+    # 10-second HTTP_TIMEOUT, a full sweep can take ~2 hours in the worst
+    # case — way beyond the 6-min GitHub Actions step budget. So each cron
+    # run takes a random sample (default 80) and the full list rotates
+    # across runs. Operators can override via RADAR_X_MAX_HANDLES.
+    try:
+        cap = int(os.environ.get("RADAR_X_MAX_HANDLES", "80"))
+    except ValueError:
+        cap = 80
+    if cap > 0 and len(plan) > cap:
+        import random
+        random.shuffle(plan)
+        original = len(plan)
+        plan = plan[:cap]
+        print(f"sampled {len(plan)} of {original} plan items "
+              f"(set RADAR_X_MAX_HANDLES to override; 0 = no cap)")
+
     counts = {"x_account": 0, "bluesky_account": 0, "mastodon_account": 0, "query": 0}
     for kind, *_ in plan:
         counts[kind] = counts.get(kind, 0) + 1

@@ -44,11 +44,14 @@ env:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    # 18 min covers: newsletters (3) + X (4 max) + radar pipeline (8) +
-    # translate (1) + inline rebuild (0.5) + commit (1) + slack. Bumped
-    # from 15 after we added per-step timeouts so step caps + job cap
-    # interlock instead of the job swallowing one hung step.
-    timeout-minutes: 18
+    # Job timeout = 30 min, raised after production observation that
+    # X auto-collect runs were eating the previous 15-min budget and
+    # GitHub was cancelling the whole job before the agent pipeline +
+    # commit step could run. With per-step caps in place below, the
+    # 30-min ceiling gives generous headroom for the radar pipeline
+    # (5-8 min real) + translation + commit, even if every external
+    # source step burns its full cap.
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
@@ -94,18 +97,26 @@ jobs:
       # manual_x_bridge and reach the UI in the same cron tick.
       #
       # CRITICAL: X auto-collect has historically hung on slow Nitter mirrors
-      # for the full job duration, consuming the 15-min budget and starving
-      # the agent pipeline + commit step. The 4-minute step timeout caps the
+      # for the full job duration, consuming the entire budget and starving
+      # the agent pipeline + commit step. The 6-minute step timeout caps the
       # damage — if X stalls, this step is killed, continue-on-error swallows
       # the kill, and the radar pipeline continues with whatever tweets we
-      # had before this run. The user-facing UI never goes empty as a result.
+      # had before this run. The user-facing UI never goes empty.
+      #
+      # 6 min (raised from 4) gives slow-but-functional Nitter mirrors enough
+      # time to finish naturally on a normal day, while still leaving 24 min
+      # of the 30-min job budget for the rest of the pipeline.
       - name: Auto-collect X (with smart enrich)
         continue-on-error: true
-        timeout-minutes: 4
+        timeout-minutes: 6
         env:
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: |
-          python3 tools/x_auto_collect.py
+          # Belt-and-braces: kill x_auto_collect.py at 330s even if the GitHub
+          # step-level timeout misses a stuck subprocess. Exit 0 either way
+          # so a hung mirror never marks the workflow as failed.
+          timeout --preserve-status 330 python3 tools/x_auto_collect.py || \
+            echo "::warning::x_auto_collect timed out or failed; radar pipeline will continue with prior tweets."
           # x_auto_collect.py runs x_smart_enrich.py internally, so no need
           # to invoke it separately.
 
