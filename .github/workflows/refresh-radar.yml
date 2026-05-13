@@ -44,7 +44,11 @@ env:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # 18 min covers: newsletters (3) + X (4 max) + radar pipeline (8) +
+    # translate (1) + inline rebuild (0.5) + commit (1) + slack. Bumped
+    # from 15 after we added per-step timeouts so step caps + job cap
+    # interlock instead of the job swallowing one hung step.
+    timeout-minutes: 18
 
     steps:
       - name: Checkout
@@ -74,8 +78,13 @@ jobs:
             translations-
 
       # ----- Optional supplementary RSS fetch (Ben's Bites, TLDR AI, etc.) -----
+      # Hard timeout: a hung newsletter feed must not eat into the radar
+      # pipeline's budget. `continue-on-error` alone doesn't help against
+      # slow hangs — it only catches *fast* failures. The step-level
+      # `timeout-minutes` kills the process if it overruns.
       - name: Fetch supplementary AI newsletters
         continue-on-error: true
+        timeout-minutes: 3
         run: |
           DAYS="${{ github.event.inputs.days || '30' }}"
           python3 tools/fetch_ai_newsletters.py --days "$DAYS" --max-per-source 40
@@ -83,8 +92,16 @@ jobs:
       # ----- Auto-collect new X tweets (X API + Nitter fallback) + enrich.
       # Runs BEFORE the agent pipeline so freshly fetched tweets flow through
       # manual_x_bridge and reach the UI in the same cron tick.
+      #
+      # CRITICAL: X auto-collect has historically hung on slow Nitter mirrors
+      # for the full job duration, consuming the 15-min budget and starving
+      # the agent pipeline + commit step. The 4-minute step timeout caps the
+      # damage — if X stalls, this step is killed, continue-on-error swallows
+      # the kill, and the radar pipeline continues with whatever tweets we
+      # had before this run. The user-facing UI never goes empty as a result.
       - name: Auto-collect X (with smart enrich)
         continue-on-error: true
+        timeout-minutes: 4
         env:
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: |
