@@ -1442,20 +1442,25 @@ async function submitDetailChat(event) {
 }
 
 async function postDetailChat(payload) {
+  // In production we route through the Vercel /api/chat endpoint (same one the
+  // floating assistant uses). Local 127.0.0.1 fallbacks only apply when the
+  // page is served from a dev workstation — they're skipped on any non-local
+  // host so production users never see a stalled "discuss with ChatGPT" call.
   const body = JSON.stringify(payload);
-  const endpoints = [
-    'http://127.0.0.1:8801/chat-card',
-    'http://127.0.0.1:8799/chat-card',
-    'http://127.0.0.1:8800/chat-card'
-  ];
+  const isLocal = ['localhost', '127.0.0.1', '::1', ''].includes(location.hostname);
+  const endpoints = isLocal
+    ? ['http://127.0.0.1:8801/chat-card', 'http://127.0.0.1:8799/chat-card', 'http://127.0.0.1:8800/chat-card', '/api/chat']
+    : ['/api/chat'];
   let lastError = null;
   for (const endpoint of endpoints) {
     try {
-      return await fetch(endpoint, {
+      const r = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body
       });
+      if (r.ok || (r.status >= 400 && r.status < 500)) return r;
+      lastError = new Error('chat endpoint returned ' + r.status);
     } catch (err) {
       lastError = err;
     }
@@ -1488,11 +1493,20 @@ function updateChatMessage(id, text) {
 
 function localChatFallback(question, card = {}, error = '') {
   const isAr = RadarState.lang === 'ar';
+  const isLocal = ['localhost', '127.0.0.1', '::1', ''].includes(location.hostname);
   if (error === 'missing_openai_api_key') {
     return isAr
       ? `الشات الذكي جاهز، لكنه يحتاج OPENAI_API_KEY حتى يرد من ChatGPT.\n\nإلى أن نفعّله: هذه البطاقة تتحدث عن "${card.title || 'فكرة'}". أهم نقطة: ${card.why_it_matters || card.what_happened || 'راجعي ملخص البطاقة والأدلة.'}\n\nسؤال ممتاز تطرحيه بعد التفعيل: "${question}"`
       : `The smart chat is wired, but it needs OPENAI_API_KEY to answer through ChatGPT.\n\nFor now: this card is about "${card.title || 'an idea'}". Key point: ${card.why_it_matters || card.what_happened || 'review the card summary and evidence.'}`;
   }
+  // Production fallback — never expose the dev-only "start-radar-runner.command"
+  // hint to public users. Point them to the main side-panel assistant instead.
+  if (!isLocal) {
+    return isAr
+      ? `ملخص هذه البطاقة: ${card.what_happened || card.title || 'إشارة من الرادار.'}\n\n${card.why_it_matters ? 'لماذا تهمّك: ' + card.why_it_matters + '\n\n' : ''}للنقاش العميق حول هذه الفكرة، افتحي المساعد الذكي من الزر الجانبي وانسخي السؤال هناك — يستطيع الردّ مع كل سياق الرادار.`
+      : `Card summary: ${card.what_happened || card.title || 'A radar signal.'}\n\n${card.why_it_matters ? 'Why it matters: ' + card.why_it_matters + '\n\n' : ''}For a deeper discussion, open the side-panel assistant and paste your question there — it has full radar context.`;
+  }
+  // Local dev — show the dev-only hint
   return isAr
     ? `لم أستطع الاتصال بخادم الشات المحلي الآن. شغّلي start-radar-runner.command ثم أعيدي السؤال.\n\nملخص سريع من البطاقة: ${card.what_happened || card.title || 'هذه إشارة من الرادار.'}\nزاوية الاستفادة: ${card.how_to_use || card.opportunity || 'افتحي التفاصيل وشاهدي الدليل.'}`
     : `I could not reach the local chat runner. Start start-radar-runner.command and ask again.\n\nQuick card summary: ${card.what_happened || card.title || 'This is a radar signal.'}\nUse angle: ${card.how_to_use || card.opportunity || 'open details and check the evidence.'}`;

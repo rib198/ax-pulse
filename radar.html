@@ -14,7 +14,7 @@
   <meta property="og:description" content="رادار حيّ يرصد إشارات الذكاء الاصطناعي ويحوّلها إلى فرص تجارية قابلة للتنفيذ." />
   <meta property="og:url" content="https://ax-pulse01.vercel.app/radar.html" />
   <meta property="og:image" content="https://ax-pulse01.vercel.app/assets/img/earth-radar.png" />
-  <meta property="og:image:alt" content="Live AI radar showing real-time signals across model releases, papers, and discussions" />
+  <meta property="og:image:alt" content="رادار حيّ لإشارات الذكاء الاصطناعي — Live AI radar surfacing model releases, papers, and discussions" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="رادار الذكاء الاصطناعي — الرادار" />
   <meta name="twitter:description" content="رادار حيّ يرصد إشارات الذكاء الاصطناعي." />
@@ -78,7 +78,7 @@
       <div class="orbit orbit-three"></div>
       <div class="orbit orbit-four"></div>
       <div class="orbit orbit-five"></div>
-      <img class="earth-image" src="assets/img/earth-radar.png" alt="Technical glowing Earth radar" />
+      <img class="earth-image" src="assets/img/earth-radar.png" alt="كوكب الأرض الرقمي — Technical glowing Earth radar" />
       <div class="earth-overlay-lines"></div>
       <div class="earth-scan"></div>
       <div class="always-on-ring" aria-hidden="true">
@@ -136,7 +136,7 @@
       <span id="radar-updated">Loading data...</span>
     </div>
 
-    <aside class="detail-side" id="detail-modal" hidden role="complementary" aria-labelledby="detail-title">
+    <aside class="detail-side" id="detail-modal" hidden role="dialog" aria-modal="true" aria-labelledby="detail-title">
       <header class="detail-head">
         <span class="detail-source" id="detail-source">—</span>
         <button class="detail-close" id="detail-close" data-close="1" aria-label="إغلاق">×</button>
@@ -161,7 +161,11 @@
   </main>
 
   <script>
-    const radarAssetVersion = `${Date.now()}`;
+    // Cache-busting at hour granularity instead of millisecond — same visitor
+    // within an hour reuses the cached JS/CSS, but stale code never lingers
+    // beyond ~1 hour (cron data refresh is every 2 hours anyway). Drastically
+    // cuts re-downloads vs Date.now() while preserving freshness.
+    const radarAssetVersion = (new Date()).toISOString().slice(0, 13).replace(/[-T]/g, '');
     document.write(`<script src="assets/js/radar-inline-data.js?v=${radarAssetVersion}"><\/script>`);
     document.write(`<script src="assets/js/radar.js?v=${radarAssetVersion}"><\/script>`);
   </script>
