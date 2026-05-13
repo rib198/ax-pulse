@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-13T14:09:19+00:00",
+  "run_at": "2026-05-13T18:00:42+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 14.407,
+      "duration_s": 53.951,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 269 signals from 25 source families",
+        "collected 261 signals from 25 source families",
         "8 source errors (non-fatal)"
       ],
       "error": null
@@ -39,10 +39,10 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.057,
+      "duration_s": 0.055,
       "written": [],
       "notes": [
-        "injected 645 manual X items (skipped 554 of 1199, avg score 0.448)"
+        "injected 641 manual X items (skipped 558 of 1199, avg score 0.448)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 914 items",
-        "by tier: press=676, official=156, research=57, community=25"
+        "tagged 902 items",
+        "by tier: press=672, official=156, research=57, community=17"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.033,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 914 items, top priority=0.543"
+        "ranked 902 items, top priority=0.524"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 16 companies, 19 products this run",
+        "detected 15 companies, 18 products this run",
         "store size: 35"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.054,
+      "duration_s": 0.052,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+1 new model events",
+        "+0 new model events",
         "43 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.149,
+      "duration_s": 0.145,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "10 events (1 new)",
-        "by type: model_release=5, personnel_move=1, acquisition=1, policy_signal=2, pricing_change=1"
+        "12 events (2 new)",
+        "by type: model_release=5, acquisition=3, personnel_move=1, policy_signal=2, pricing_change=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 12.303,
+      "duration_s": 11.108,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 14.054,
+      "duration_s": 12.712,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 10.715,
+      "duration_s": 12.537,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=914, opps=3, calls=3"
+        "items=902, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 4.097,
+      "duration_s": 3.471,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهد النشاط تركيزًا ملحوظًا على إصدارات النماذج الجديدة، حيث تم إصدار ثلاثة نماذ…"
+        "insight via openai: تظهر أنشطة الإصدارات نمطًا متزايدًا للابتكار من قبل Google وMistral، مما يشير إ…"
       ],
       "error": null
     },
