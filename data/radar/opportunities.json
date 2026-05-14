@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-13T23:03:25+00:00",
+  "generated_at": "2026-05-14T02:08:20+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 869,
+  "corpus_count": 864,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي مبتكر يعزز من تجربة المستخدم. نماذج تحويل النص إلى صورة تتيح إنشاء محتوى فريد وسهل الاستخدام.",
-      "buyer_ar": "شركات التسويق الرقمي، وكالات الإعلانات، مطورو الألعاب.",
-      "sellable_product_ar": "نماذج تحويل النص إلى صورة مخصصة أو خدمات تصميم محتوى مرئي.",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء صور بناءً على نصوص محددة لمشروع تجريبي.",
-      "tools_ar": "نموذج تحويل النص إلى صورة، منصة استضافة، أدوات تصميم.",
-      "capital_ar": "منخفض",
+      "id": "image-editing-benchmark",
+      "title_ar": "تطوير معيار لتحرير الصور",
+      "thesis_ar": "تقدم نماذج تحرير الصور بشكل ملحوظ، ولكن المعايير الحالية لا تعكس الحكم البشري بدقة. هناك فرصة لتطوير معيار موحد يساعد في تحسين جودة النماذج.",
+      "buyer_ar": "شركات تطوير البرمجيات في مجال الذكاء الاصطناعي",
+      "sellable_product_ar": "خدمة تطوير معيار موحد لتحرير الصور",
+      "first_paid_test_ar": "تقديم نموذج أولي لمعيار تحرير الصور لمجموعة مختارة من العملاء",
+      "tools_ar": "أدوات تحليل البيانات، أدوات تطوير البرمجيات، منصات اختبار",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:nphSi/Z-Image-Lora",
-        "huggingface_models:Jaytsh/WAN-Bs1",
-        "huggingface_models:Muapi/sauna"
+        "huggingface_daily_papers:2605.13062",
+        "huggingface_daily_papers:2605.11363",
+        "huggingface_daily_papers:2605.11733"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -24,107 +24,23 @@
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "nphSi/Z-Image-Lora — text-to-image",
-          "url": "https://huggingface.co/nphSi/Z-Image-Lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Jaytsh/WAN-Bs1 — text-to-image",
-          "url": "https://huggingface.co/Jaytsh/WAN-Bs1",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/sauna — text-to-image",
-          "url": "https://huggingface.co/Muapi/sauna",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-13T23:03:25+00:00",
-      "updatedAt": "2026-05-13T23:03:25+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "large-language-models",
-      "title_ar": "تخصيص نماذج اللغة الكبيرة",
-      "thesis_ar": "تخصيص نماذج اللغة الكبيرة لتلبية احتياجات محددة يمكن أن يحسن من دقة الأداء. هناك اهتمام متزايد في استخدام هذه النماذج في مجالات جديدة.",
-      "buyer_ar": "شركات البرمجيات، المؤسسات التعليمية، مقدمو خدمات الذكاء الاصطناعي.",
-      "sellable_product_ar": "خدمات تخصيص نماذج اللغة الكبيرة لمجالات محددة.",
-      "first_paid_test_ar": "تقديم نموذج مخصص لمهمة معينة مثل تحليل النصوص أو إنشاء محتوى.",
-      "tools_ar": "نموذج لغة كبير، أدوات تدريب، منصة استضافة.",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:LLM-OS-Models/gemma-4-E4B-Terminal-SFT-Native-Liquid-2Epoch",
-        "huggingface_models:LLM-OS-Models/gemma-4-E2B-Terminal-SFT-Native-Liquid-1Epoch"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "LLM-OS-Models/gemma-4-E4B-Terminal-SFT-Native-Liquid-2Epoch — text-generation",
-          "url": "https://huggingface.co/LLM-OS-Models/gemma-4-E4B-Terminal-SFT-Native-Liquid-2Epoch",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LLM-OS-Models/gemma-4-E2B-Terminal-SFT-Native-Liquid-1Epoch — text-generation",
-          "url": "https://huggingface.co/LLM-OS-Models/gemma-4-E2B-Terminal-SFT-Native-Liquid-1Epoch",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-13T23:03:25+00:00",
-      "updatedAt": "2026-05-13T23:03:25+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "multi-agent-systems",
-      "title_ar": "تطوير أنظمة متعددة الوكلاء",
-      "thesis_ar": "الأنظمة متعددة الوكلاء توفر حلاً فعالاً لمشاكل معقدة من خلال تحسين التواصل والقدرات. الطلب على هذه الأنظمة يتزايد في مجالات متعددة.",
-      "buyer_ar": "شركات التكنولوجيا، مؤسسات البحث العلمي، الشركات الناشئة في الذكاء الاصطناعي.",
-      "sellable_product_ar": "حلول برمجية مبنية على أنظمة متعددة الوكلاء لتحسين العمليات.",
-      "first_paid_test_ar": "تطوير نموذج أولي لنظام متعدد الوكلاء لحل مشكلة محددة في مجال معين.",
-      "tools_ar": "أدوات تطوير البرمجيات، منصات اختبار، خوارزميات الذكاء الاصطناعي.",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.12484",
-        "huggingface_daily_papers:2605.09539"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
           "source_id": "huggingface_daily_papers",
-          "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually",
-          "url": "https://huggingface.co/papers/2605.12484",
-          "score": 0.525,
+          "title": "Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling",
+          "url": "https://huggingface.co/papers/2605.13062",
+          "score": 0.495,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "TacoMAS: Test-Time Co-Evolution of Topology and Capability in LLM-based Multi-Agent Systems",
-          "url": "https://huggingface.co/papers/2605.09539",
+          "title": "PresentAgent-2: Towards Generalist Multimodal Presentation Agents",
+          "url": "https://huggingface.co/papers/2605.11363",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Position: LLM Inference Should Be Evaluated as Energy-to-Token Production",
+          "url": "https://huggingface.co/papers/2605.11733",
           "score": 0.484,
           "trust_tier": "research"
         }
@@ -134,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-13T23:03:25+00:00",
-      "updatedAt": "2026-05-13T23:03:25+00:00",
+      "publishedAt": "2026-05-14T02:08:20+00:00",
+      "updatedAt": "2026-05-14T02:08:20+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "multimodal-presentation-agents",
+      "title_ar": "تطوير وكلاء تقديم متعدد الوسائط",
+      "thesis_ar": "تتجه الحاجة إلى إنشاء عروض تقديمية ديناميكية وتفاعلية مما يفتح المجال لتطوير وكلاء تقديم متعددي الوسائط. هذا الوقت مثالي للاستثمار في هذه التكنولوجيا.",
+      "buyer_ar": "شركات التعليم والتدريب",
+      "sellable_product_ar": "نظام لإنشاء عروض تقديمية تفاعلية باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لوكيل تقديم لمؤسسة تعليمية",
+      "tools_ar": "أدوات تطوير البرمجيات، أدوات الذكاء الاصطناعي، منصات تقديم العروض",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.11363",
+        "huggingface_daily_papers:2605.13062",
+        "huggingface_daily_papers:2605.12484"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling",
+          "url": "https://huggingface.co/papers/2605.13062",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PresentAgent-2: Towards Generalist Multimodal Presentation Agents",
+          "url": "https://huggingface.co/papers/2605.11363",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually",
+          "url": "https://huggingface.co/papers/2605.12484",
+          "score": 0.489,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-14T02:08:20+00:00",
+      "updatedAt": "2026-05-14T02:08:20+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "adaptive-llms",
+      "title_ar": "تطوير نماذج لغوية كبيرة قابلة للتكيف",
+      "thesis_ar": "تتطلب نماذج اللغة الكبيرة تحديثات مستمرة لتكون فعالة، مما يفتح المجال لتطوير نماذج تتكيف مع المهام الجديدة دون فقدان المعلومات السابقة.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نموذج لغوي كبير يتكيف مع المهام المتغيرة",
+      "first_paid_test_ar": "تقديم اختبار تجريبي لنموذج لغوي لعميل في مجال التكنولوجيا",
+      "tools_ar": "أدوات تطوير النماذج، بيئات التدريب، أدوات تحليل البيانات",
+      "capital_ar": "مرتفع",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.12484",
+        "huggingface_daily_papers:2605.11733",
+        "huggingface_models:LLM-OS-Models/gemma-4-E4B-Terminal-SFT-Native-Liquid-2Epoch"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually",
+          "url": "https://huggingface.co/papers/2605.12484",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Position: LLM Inference Should Be Evaluated as Energy-to-Token Production",
+          "url": "https://huggingface.co/papers/2605.11733",
+          "score": 0.484,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "LLM-OS-Models/gemma-4-E4B-Terminal-SFT-Native-Liquid-2Epoch — text-generation",
+          "url": "https://huggingface.co/LLM-OS-Models/gemma-4-E4B-Terminal-SFT-Native-Liquid-2Epoch",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-14T02:08:20+00:00",
+      "updatedAt": "2026-05-14T02:08:20+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-13T23:03:25+00:00",
+  "tiered_at": "2026-05-14T02:08:20+00:00",
   "free_preview_count": 3
 }
