@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-14T10:30:42+00:00",
+  "run_at": "2026-05-14T14:34:11+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,23 +26,23 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 14.406,
+      "duration_s": 88.237,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 264 signals from 25 source families",
-        "8 source errors (non-fatal)"
+        "collected 228 signals from 25 source families",
+        "11 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.057,
+      "duration_s": 0.052,
       "written": [],
       "notes": [
-        "injected 638 manual X items (skipped 561 of 1199, avg score 0.447)"
+        "injected 631 manual X items (skipped 568 of 1199, avg score 0.447)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 902 items",
-        "by tier: press=671, official=155, research=59, community=17"
+        "tagged 859 items",
+        "by tier: press=665, official=154, community=22, research=18"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.035,
+      "duration_s": 0.03,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 902 items, top priority=0.525"
+        "ranked 859 items, top priority=0.526"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.012,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 19 products this run",
+        "detected 14 companies, 18 products this run",
         "store size: 34"
       ],
       "error": null
@@ -97,33 +97,33 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.055,
+      "duration_s": 0.042,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
-        "45 total"
+        "+3 new model events",
+        "48 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.157,
+      "duration_s": 0.111,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "8 events (3 new)",
-        "by type: model_release=5, personnel_move=1, pricing_change=2"
+        "7 events (1 new)",
+        "by type: model_release=3, personnel_move=1, acquisition=1, pricing_change=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.018,
+      "duration_s": 0.015,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.013,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.009,
+      "duration_s": 0.008,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -212,12 +212,12 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.001,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=902, opps=4, calls=0"
+        "items=859, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 3 حدثًا جديدًا أبرزها: حركة كادر على cohere بـ 1 إشارة. تدفّق الإشارات ارتف…"
+        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: استحواذ على google بـ 1 إشارة. تدفّق الإشارات انخفض …"
       ],
       "error": null
     },
