@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-14T18:05:05+00:00",
+  "run_at": "2026-05-14T20:03:29+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,20 +26,20 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 96.472,
+      "duration_s": 13.26,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 245 signals from 25 source families",
-        "10 source errors (non-fatal)"
+        "collected 274 signals from 25 source families",
+        "8 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.057,
+      "duration_s": 0.062,
       "written": [],
       "notes": [
         "injected 627 manual X items (skipped 572 of 1199, avg score 0.447)"
@@ -49,13 +49,13 @@
     {
       "agent": "evidence_guard",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.003,
       "written": [
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 872 items",
-        "by tier: press=661, official=156, research=33, community=22"
+        "tagged 901 items",
+        "by tier: press=662, official=156, research=60, community=23"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.036,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 872 items, top priority=0.516"
+        "ranked 901 items, top priority=0.516"
       ],
       "error": null
     },
@@ -97,33 +97,33 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.05,
+      "duration_s": 0.055,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+12 new model events",
-        "60 total"
+        "+3 new model events",
+        "63 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.134,
+      "duration_s": 0.148,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "6 events (0 new)",
-        "by type: model_release=3, personnel_move=1, pricing_change=2"
+        "7 events (2 new)",
+        "by type: model_release=4, personnel_move=1, pricing_change=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.017,
+      "duration_s": 0.018,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.014,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -217,7 +217,7 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=872, opps=4, calls=0"
+        "items=901, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (6 حدث متابع)."
+        "insight via rules: رصد 2 حدثًا جديدًا أبرزها: إصدار نموذج على claude بـ 1 إشارة. تدفّق الإشارات ار…"
       ],
       "error": null
     },
