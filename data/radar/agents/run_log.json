@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-15T04:04:04+00:00",
+  "run_at": "2026-05-15T07:37:24+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 110.236,
+      "duration_s": 88.7,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 229 signals from 25 source families",
+        "collected 232 signals from 25 source families",
         "11 source errors (non-fatal)"
       ],
       "error": null
@@ -42,7 +42,7 @@
       "duration_s": 0.055,
       "written": [],
       "notes": [
-        "injected 625 manual X items (skipped 574 of 1199, avg score 0.446)"
+        "injected 624 manual X items (skipped 575 of 1199, avg score 0.446)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 854 items",
-        "by tier: press=659, official=155, community=22, research=18"
+        "tagged 856 items",
+        "by tier: press=658, official=155, community=24, research=19"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 854 items, top priority=0.568"
+        "ranked 856 items, top priority=0.560"
       ],
       "error": null
     },
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.045,
+      "duration_s": 0.042,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+1 new model events",
+        "+0 new model events",
         "65 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.127,
+      "duration_s": 0.131,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "6 events (4 new)",
-        "by type: model_release=3, acquisition=1, pricing_change=2"
+        "6 events (1 new)",
+        "by type: model_release=2, acquisition=1, personnel_move=1, pricing_change=2"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.012,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -217,7 +217,7 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=854, opps=4, calls=0"
+        "items=856, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 4 حدثًا جديدًا أبرزها: إصدار نموذج على google بـ 2 إشارة. تدفّق الإشارات ان…"
+        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: حركة كادر على meta بـ 1 إشارة."
       ],
       "error": null
     },
