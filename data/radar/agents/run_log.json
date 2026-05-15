@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-15T10:36:50+00:00",
+  "run_at": "2026-05-15T14:28:05+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 18.45,
+      "duration_s": 39.786,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 265 signals from 25 source families",
+        "collected 266 signals from 25 source families",
         "8 source errors (non-fatal)"
       ],
       "error": null
@@ -39,10 +39,10 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.05,
+      "duration_s": 0.056,
       "written": [],
       "notes": [
-        "injected 620 manual X items (skipped 579 of 1199, avg score 0.446)"
+        "injected 618 manual X items (skipped 581 of 1199, avg score 0.446)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 885 items",
-        "by tier: press=654, official=155, research=57, community=19"
+        "tagged 884 items",
+        "by tier: press=652, official=155, research=56, community=21"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.034,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 885 items, top priority=0.532"
+        "ranked 884 items, top priority=0.534"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 19 products this run",
+        "detected 14 companies, 18 products this run",
         "store size: 35"
       ],
       "error": null
@@ -97,25 +97,25 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.047,
+      "duration_s": 0.052,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+1 new model events",
-        "66 total"
+        "+4 new model events",
+        "70 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.121,
+      "duration_s": 0.142,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "6 events (1 new)",
+        "6 events (0 new)",
         "by type: model_release=3, personnel_move=1, pricing_change=2"
       ],
       "error": null
@@ -123,7 +123,7 @@
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.018,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.014,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.007,
+      "duration_s": 0.008,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -200,7 +200,7 @@
     {
       "agent": "ux_production_qa",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.003,
       "written": [
         "data/radar/agents/qa_report.json"
       ],
@@ -212,12 +212,12 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.001,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=885, opps=4, calls=0"
+        "items=884, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: إصدار نموذج على gpt بـ 1 إشارة. تدفّق الإشارات ارتفع…"
+        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (6 حدث متابع)."
       ],
       "error": null
     },
