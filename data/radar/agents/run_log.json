@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-15T17:51:40+00:00",
+  "run_at": "2026-05-15T19:51:27+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 18.438,
+      "duration_s": 17.877,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 263 signals from 25 source families",
+        "collected 266 signals from 25 source families",
         "8 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.05,
+      "duration_s": 0.055,
       "written": [],
       "notes": [
         "injected 618 manual X items (skipped 581 of 1199, avg score 0.446)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 881 items",
-        "by tier: press=652, official=155, research=56, community=18"
+        "tagged 884 items",
+        "by tier: press=652, official=155, research=56, community=21"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.033,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 881 items, top priority=0.535"
+        "ranked 884 items, top priority=0.535"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.014,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 19 products this run",
+        "detected 14 companies, 18 products this run",
         "store size: 35"
       ],
       "error": null
@@ -97,33 +97,33 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.047,
+      "duration_s": 0.054,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
-        "70 total"
+        "+3 new model events",
+        "73 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.122,
+      "duration_s": 0.142,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
         "7 events (1 new)",
-        "by type: model_release=3, acquisition=1, personnel_move=1, pricing_change=2"
+        "by type: pricing_change=2, model_release=4, personnel_move=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.018,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.014,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -217,7 +217,7 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=881, opps=4, calls=0"
+        "items=884, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: استحواذ على google بـ 1 إشارة."
+        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: إصدار نموذج على qwen بـ 1 إشارة."
       ],
       "error": null
     },
