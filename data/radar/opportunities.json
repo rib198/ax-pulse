@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-05-16T07:53:17+00:00",
+  "generated_at": "2026-05-16T09:25:56+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 883,
+  "corpus_count": 891,
   "opportunities": [
     {
-      "id": "ai-toolkit-development",
-      "title_ar": "تطوير أدوات الذكاء الاصطناعي للمطورين",
-      "thesis_ar": "تزايد الحاجة لأدوات تسهل اختبار وتصحيح ميزات الذكاء الاصطناعي. مع تعقيد هذه الميزات، يمكن أن تكون أدوات مثل In-IDE Toolkit حلاً جذابًا للمطورين.",
-      "buyer_ar": "شركات تطوير البرمجيات",
-      "sellable_product_ar": "أداة تطوير الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع دعم فني محدود",
-      "tools_ar": "منصة تطوير، أدوات اختبار، واجهة مستخدم",
+      "id": "ai-toolkit-for-developers",
+      "title_ar": "أداة الذكاء الاصطناعي للمطورين",
+      "thesis_ar": "تزايد الطلب على أدوات تطوير الميزات المعتمدة على الذكاء الاصطناعي، خاصة بين المطورين الذين ليس لديهم خلفية في التعلم الآلي. توفر هذه الأداة حلاً لتحسين إنتاجية المطورين في بناء واختبار ميزات الذكاء الاصطناعي.",
+      "buyer_ar": "مطورون برمجيون وشركات تقنية",
+      "sellable_product_ar": "أداة تطوير برمجيات للذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نسخة تجريبية مدفوعة لفترة محدودة للمطورين",
+      "tools_ar": "أدوات تطوير البرمجيات، واجهات برمجة التطبيقات، بيئة اختبار",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2605.14612v1",
-        "arxiv_papers:2605.15040v1",
-        "arxiv_papers:2605.14932v1"
+        "2605.14612v1",
+        "2605.15040v1",
+        "2605.14932v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -31,6 +31,13 @@
           "trust_tier": "research"
         },
         {
+          "source_id": "huggingface_daily_papers",
+          "title": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
+          "url": "https://huggingface.co/papers/2605.13852",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "arxiv_papers",
           "title": "Orchard: An Open-Source Agentic Modeling Framework",
           "url": "http://arxiv.org/abs/2605.15040v1",
@@ -43,6 +50,20 @@
           "url": "http://arxiv.org/abs/2605.14932v1",
           "score": 0.489,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "tekkmaven/flint-1.2B — text-generation",
+          "url": "https://huggingface.co/tekkmaven/flint-1.2B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "SaveliiAge/Mystic-XXX-ZIT-V7 — text-to-image",
+          "url": "https://huggingface.co/SaveliiAge/Mystic-XXX-ZIT-V7",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,29 +71,36 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-16T07:53:17+00:00",
-      "updatedAt": "2026-05-16T07:53:17+00:00",
+      "publishedAt": "2026-05-16T09:25:56+00:00",
+      "updatedAt": "2026-05-16T09:25:56+00:00",
       "sortOrder": 0
     },
     {
-      "id": "3d-image-generation",
+      "id": "3d-photorealistic-image-generation",
       "title_ar": "توليد صور ثلاثية الأبعاد واقعية",
-      "thesis_ar": "تزايد الطلب على الصور ثلاثية الأبعاد الواقعية في مجالات مثل الألعاب والإعلانات. يمكن أن توفر تقنيات مثل Realiz3D حلاً فعالاً.",
-      "buyer_ar": "شركات الألعاب والتصميم",
+      "thesis_ar": "تزايد الاهتمام بتوليد الصور ثلاثية الأبعاد الواقعية يعكس الحاجة المتزايدة في الصناعات الإبداعية. يمكن الاستفادة من تقنيات التعلم المتقدم لتقديم حلول مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات التصميم والإنتاج السينمائي",
       "sellable_product_ar": "خدمة توليد صور ثلاثية الأبعاد",
-      "first_paid_test_ar": "تقديم نموذج أولي لعميل واحد",
-      "tools_ar": "نموذج توليد الصور، أدوات تصميم، خادم سحابي",
+      "first_paid_test_ar": "تقديم مشروع تجريبي لتوليد صورة ثلاثية الأبعاد لعميل محتمل",
+      "tools_ar": "نموذج توليد الصور، أدوات تصميم ثلاثية الأبعاد، بيئة تطوير",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2605.13852",
-        "huggingface_models:Zyphra/ZAYA1-VL-8B",
-        "huggingface_models:MingxuChai/PA-BDM"
+        "2605.13852",
+        "2605.15040v1",
+        "2605.14932v1"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "In-IDE Toolkit for Developers of AI-Based Features",
+          "url": "http://arxiv.org/abs/2605.14612v1",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
@@ -81,17 +109,31 @@
           "trust_tier": "research"
         },
         {
+          "source_id": "arxiv_papers",
+          "title": "Orchard: An Open-Source Agentic Modeling Framework",
+          "url": "http://arxiv.org/abs/2605.15040v1",
+          "score": 0.496,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Toward Securing AI Agents Like Operating Systems",
+          "url": "http://arxiv.org/abs/2605.14932v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "Zyphra/ZAYA1-VL-8B — image-text-to-text",
-          "url": "https://huggingface.co/Zyphra/ZAYA1-VL-8B",
-          "score": 0.466,
+          "title": "tekkmaven/flint-1.2B — text-generation",
+          "url": "https://huggingface.co/tekkmaven/flint-1.2B",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "MingxuChai/PA-BDM — image-text-to-text",
-          "url": "https://huggingface.co/MingxuChai/PA-BDM",
-          "score": 0.466,
+          "title": "SaveliiAge/Mystic-XXX-ZIT-V7 — text-to-image",
+          "url": "https://huggingface.co/SaveliiAge/Mystic-XXX-ZIT-V7",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -100,29 +142,43 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-16T07:53:17+00:00",
-      "updatedAt": "2026-05-16T07:53:17+00:00",
+      "publishedAt": "2026-05-16T09:25:56+00:00",
+      "updatedAt": "2026-05-16T09:25:56+00:00",
       "sortOrder": 1
     },
     {
-      "id": "autonomous-agents-security",
-      "title_ar": "تأمين الوكلاء المستقلين",
-      "thesis_ar": "مع تزايد استخدام الوكلاء المستقلين، تبرز الحاجة إلى حلول أمنية فعالة. يمكن أن توفر تقنيات جديدة مثل Orchard إطار عمل قوي.",
-      "buyer_ar": "شركات التكنولوجيا والأمن السيبراني",
-      "sellable_product_ar": "حلول أمان للوكالات المستقلة",
-      "first_paid_test_ar": "تقديم استشارة أمنية مجانية",
-      "tools_ar": "أدوات تحليل أمني، واجهة برمجة التطبيقات، خوادم سحابية",
+      "id": "autonomous-ai-agents",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي مستقلين",
+      "thesis_ar": "تطور الوكلاء المستقلين القادرين على أداء مهام معقدة يعكس تحولًا في كيفية استخدام الذكاء الاصطناعي. هذه التكنولوجيا تتيح فرصًا جديدة في مجالات متعددة.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نظام وكيل ذكاء اصطناعي مستقل",
+      "first_paid_test_ar": "تطوير نموذج أولي لوكيل ذكاء اصطناعي لمهمة محددة",
+      "tools_ar": "نموذج لغة كبير، أدوات تطوير الذكاء الاصطناعي، بيئة اختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2605.15040v1",
-        "arxiv_papers:2605.14932v1",
-        "huggingface_models:Incarnas/Qwen3.5-122B-A10B-NVFP4-GGUF"
+        "2605.15040v1",
+        "2605.14932v1",
+        "2605.14612v1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "In-IDE Toolkit for Developers of AI-Based Features",
+          "url": "http://arxiv.org/abs/2605.14612v1",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
+          "url": "https://huggingface.co/papers/2605.13852",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "Orchard: An Open-Source Agentic Modeling Framework",
@@ -139,9 +195,16 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "Incarnas/Qwen3.5-122B-A10B-NVFP4-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/Incarnas/Qwen3.5-122B-A10B-NVFP4-GGUF",
-          "score": 0.466,
+          "title": "tekkmaven/flint-1.2B — text-generation",
+          "url": "https://huggingface.co/tekkmaven/flint-1.2B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "SaveliiAge/Mystic-XXX-ZIT-V7 — text-to-image",
+          "url": "https://huggingface.co/SaveliiAge/Mystic-XXX-ZIT-V7",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-16T07:53:17+00:00",
-      "updatedAt": "2026-05-16T07:53:17+00:00",
+      "publishedAt": "2026-05-16T09:25:56+00:00",
+      "updatedAt": "2026-05-16T09:25:56+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-16T07:53:17+00:00",
+  "tiered_at": "2026-05-16T09:25:56+00:00",
   "free_preview_count": 3
 }
