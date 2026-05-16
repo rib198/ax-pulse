@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-16T14:52:36+00:00",
+  "run_at": "2026-05-16T16:49:40+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 18.195,
+      "duration_s": 17.008,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 268 signals from 25 source families",
+        "collected 267 signals from 25 source families",
         "8 source errors (non-fatal)"
       ],
       "error": null
@@ -39,10 +39,10 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.053,
+      "duration_s": 0.054,
       "written": [],
       "notes": [
-        "injected 610 manual X items (skipped 589 of 1199, avg score 0.445)"
+        "injected 608 manual X items (skipped 591 of 1199, avg score 0.445)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 878 items",
-        "by tier: press=644, official=155, research=56, community=23"
+        "tagged 875 items",
+        "by tier: press=643, official=155, research=56, community=21"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.033,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 878 items, top priority=0.497"
+        "ranked 875 items, top priority=0.501"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.049,
+      "duration_s": 0.053,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.142,
+      "duration_s": 0.139,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "7 events (1 new)",
+        "7 events (0 new)",
         "by type: model_release=3, personnel_move=2, pricing_change=2"
       ],
       "error": null
@@ -123,7 +123,7 @@
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.018,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 16.796,
+      "duration_s": 9.278,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 11.253,
+      "duration_s": 20.266,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 13.333,
+      "duration_s": 17.473,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.003,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=878, opps=3, calls=3"
+        "items=875, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 4.264,
+      "duration_s": 17.718,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في النشاط، حيث ارتفعت الإشارات بمعدل 44 إشارة …"
+        "insight via openai: تظهر الإشارات الجديدة تصاعدًا في تركيز الشركات التقنية الكبرى على تطوير نماذج ا…"
       ],
       "error": null
     },
