@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-16T03:43:56+00:00",
+  "run_at": "2026-05-16T06:32:17+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 19.877,
+      "duration_s": 16.956,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -39,10 +39,10 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.05,
+      "duration_s": 0.011,
       "written": [],
       "notes": [
-        "injected 616 manual X items (skipped 583 of 1199, avg score 0.446)"
+        "injected 456 manual X items (skipped 44 of 500, avg score 0.15)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 885 items",
-        "by tier: press=650, official=154, research=56, community=25"
+        "tagged 725 items",
+        "by tier: press=490, official=155, research=56, community=24"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.027,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 885 items, top priority=0.501"
+        "ranked 725 items, top priority=0.501"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.011,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 19 products this run",
+        "detected 14 companies, 15 products this run",
         "store size: 35"
       ],
       "error": null
@@ -97,33 +97,33 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.047,
+      "duration_s": 0.043,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+4 new model events",
-        "78 total"
+        "+5 new model events",
+        "83 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.122,
+      "duration_s": 0.117,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "8 events (3 new)",
-        "by type: model_release=4, personnel_move=2, pricing_change=2"
+        "10 events (5 new)",
+        "by type: pricing_change=2, model_release=3, personnel_move=2, acquisition=2, policy_signal=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.015,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.016,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 0.0,
+      "duration_s": 0.001,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.007,
+      "duration_s": 0.008,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -200,7 +200,7 @@
     {
       "agent": "ux_production_qa",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.003,
       "written": [
         "data/radar/agents/qa_report.json"
       ],
@@ -217,7 +217,7 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=885, opps=4, calls=0"
+        "items=725, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 3 حدثًا جديدًا أبرزها: إصدار نموذج على google بـ 2 إشارة."
+        "insight via rules: رصد 5 حدثًا جديدًا أبرزها: إصدار نموذج على anthropic بـ 2 إشارة. تدفّق الإشارات…"
       ],
       "error": null
     },
