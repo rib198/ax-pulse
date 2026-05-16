@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-16T13:49:33+00:00",
+  "run_at": "2026-05-16T15:07:30+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 22.661,
+      "duration_s": 29.322,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 267 signals from 25 source families",
+        "collected 264 signals from 25 source families",
         "8 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 723 items",
-        "by tier: press=490, official=155, research=56, community=22"
+        "tagged 720 items",
+        "by tier: press=490, official=155, research=56, community=19"
       ],
       "error": null
     },
@@ -77,14 +77,14 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 723 items, top priority=0.501"
+        "ranked 720 items, top priority=0.501"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.012,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.042,
+      "duration_s": 0.043,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,7 +110,7 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.113,
+      "duration_s": 0.114,
       "written": [
         "data/radar/agents/events.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.015,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -212,12 +212,12 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.003,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=723, opps=4, calls=0"
+        "items=720, opps=4, calls=0"
       ],
       "error": null
     },
