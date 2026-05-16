@@ -1,97 +1,47 @@
 {
-  "generated_at": "2026-05-16T10:59:40+00:00",
+  "generated_at": "2026-05-16T13:03:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 875,
+  "corpus_count": 834,
   "opportunities": [
     {
-      "id": "ai-toolkit-for-developers",
-      "title_ar": "تطوير أدوات الذكاء الاصطناعي للمطورين",
-      "thesis_ar": "تزايد الحاجة لأدوات تسهل على المطورين بناء ميزات الذكاء الاصطناعي. هذه الأدوات ستساعد في تسريع عملية التطوير وتقليل الأخطاء.",
-      "buyer_ar": "شركات البرمجيات والمطورون المستقلون",
-      "sellable_product_ar": "أداة تطوير ميزات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مدفوعة للمطورين لاختبار الأداة",
-      "tools_ar": "أدوات تطوير البرمجيات، واجهات برمجة التطبيقات للذكاء الاصطناعي، بيئات اختبار",
+      "id": "text-generation-tools",
+      "title_ar": "أدوات توليد النصوص المتقدمة",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في إنشاء المحتوى. النماذج الجديدة تقدم إمكانيات متقدمة في توليد النصوص، مما يسهل على الشركات إنشاء محتوى مخصص.",
+      "buyer_ar": "شركات المحتوى، المدونون، وكالات الإعلان",
+      "sellable_product_ar": "خدمة توليد نصوص مخصصة باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نصوص تجريبية لمدونة أو إعلان",
+      "tools_ar": "نماذج lirazAi، نماذج tekkmaven، أدوات تحليل النصوص",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2605.14612v1",
-        "arxiv_papers:2605.15040v1",
-        "arxiv_papers:2605.14932v1"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "In-IDE Toolkit for Developers of AI-Based Features",
-          "url": "http://arxiv.org/abs/2605.14612v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Orchard: An Open-Source Agentic Modeling Framework",
-          "url": "http://arxiv.org/abs/2605.15040v1",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Toward Securing AI Agents Like Operating Systems",
-          "url": "http://arxiv.org/abs/2605.14932v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-16T10:59:40+00:00",
-      "updatedAt": "2026-05-16T10:59:40+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "3d-image-generation",
-      "title_ar": "توليد صور ثلاثية الأبعاد واقعية",
-      "thesis_ar": "الطلب المتزايد على الصور ثلاثية الأبعاد في مجالات مثل الألعاب والواقع الافتراضي. استخدام تقنيات التعلم المتقدمة يمكن أن يحقق نتائج مذهلة.",
-      "buyer_ar": "شركات الألعاب، استوديوهات التصميم، شركات الواقع الافتراضي",
-      "sellable_product_ar": "خدمة توليد صور ثلاثية الأبعاد",
-      "first_paid_test_ar": "تقديم عينة مجانية من صورة ثلاثية الأبعاد مدفوعة",
-      "tools_ar": "نموذج تعلم عميق، بيئة تطوير، أدوات تصميم ثلاثية الأبعاد",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.13852",
-        "huggingface_models:mikkoph/mikkoani-anima",
-        "huggingface_models:SaveliiAge/RealisticSnapshot-Zimage-Turbo"
+        "huggingface_models:lirazAi/ember-agent-grpo-gemma4-2b-Q4_K_M",
+        "huggingface_models:tekkmaven/flint-1.2B",
+        "huggingface_models:CreitinGameplays/tesy-0.3"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
-          "url": "https://huggingface.co/papers/2605.13852",
-          "score": 0.5,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "mikkoph/mikkoani-anima — text-to-image",
-          "url": "https://huggingface.co/mikkoph/mikkoani-anima",
+          "title": "lirazAi/ember-agent-grpo-gemma4-2b-Q4_K_M — text-generation",
+          "url": "https://huggingface.co/lirazAi/ember-agent-grpo-gemma4-2b-Q4_K_M",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "SaveliiAge/RealisticSnapshot-Zimage-Turbo — text-to-image",
-          "url": "https://huggingface.co/SaveliiAge/RealisticSnapshot-Zimage-Turbo",
+          "title": "tekkmaven/flint-1.2B — text-generation",
+          "url": "https://huggingface.co/tekkmaven/flint-1.2B",
           "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CreitinGameplays/tesy-0.3 — text-generation",
+          "url": "https://huggingface.co/CreitinGameplays/tesy-0.3",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -100,48 +50,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-16T10:59:40+00:00",
-      "updatedAt": "2026-05-16T10:59:40+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-05-16T13:03:05+00:00",
+      "updatedAt": "2026-05-16T13:03:05+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "autonomous-ai-agents",
-      "title_ar": "تطوير وكلاء ذكاء اصطناعي مستقلين",
-      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي في حل المشكلات المعقدة. هذه التكنولوجيا قادرة على تحسين الكفاءة وتقليل التكاليف.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات الحكومية، الشركات الكبرى",
-      "sellable_product_ar": "نظام وكيل ذكاء اصطناعي مستقل",
-      "first_paid_test_ar": "تقديم نموذج أولي لوكيل ذكاء اصطناعي لحل مشكلة محددة",
-      "tools_ar": "نموذج لغة كبير، بيئة تطوير، أدوات اختبار",
-      "capital_ar": "متوسط",
+      "id": "image-text-conversion",
+      "title_ar": "تحويل النصوص إلى صور",
+      "thesis_ar": "تزايد الحاجة إلى المحتوى المرئي المخصص. تقنيات تحويل النصوص إلى صور تتيح إنشاء محتوى مبتكر وجذاب.",
+      "buyer_ar": "شركات التسويق، الناشرون، المبدعون",
+      "sellable_product_ar": "خدمة تحويل النصوص إلى صور باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم صورة واحدة تم إنشاؤها من نص معين",
+      "tools_ar": "نماذج gemma4، أدوات تحويل النصوص، أدوات التصميم",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2605.15040v1",
-        "arxiv_papers:2605.14932v1",
-        "huggingface_models:Jackrong/Qwopus3.5-9B-Coder"
+        "huggingface_models:alkalol/EmoVerse-LoRA",
+        "huggingface_models:DevQuasar/XiaomiMiMo.MiMo-V2.5-Pro-GGUF",
+        "huggingface_models:IsmailAI/finance_ai"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Orchard: An Open-Source Agentic Modeling Framework",
-          "url": "http://arxiv.org/abs/2605.15040v1",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Toward Securing AI Agents Like Operating Systems",
-          "url": "http://arxiv.org/abs/2605.14932v1",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "alkalol/EmoVerse-LoRA — text-generation",
+          "url": "https://huggingface.co/alkalol/EmoVerse-LoRA",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Jackrong/Qwopus3.5-9B-Coder — image-text-to-text",
-          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder",
-          "score": 0.488,
+          "title": "DevQuasar/XiaomiMiMo.MiMo-V2.5-Pro-GGUF — text-generation",
+          "url": "https://huggingface.co/DevQuasar/XiaomiMiMo.MiMo-V2.5-Pro-GGUF",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "IsmailAI/finance_ai — image-text-to-text",
+          "url": "https://huggingface.co/IsmailAI/finance_ai",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-16T10:59:40+00:00",
-      "updatedAt": "2026-05-16T10:59:40+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-05-16T13:03:05+00:00",
+      "updatedAt": "2026-05-16T13:03:05+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-16T10:59:40+00:00",
+  "tiered_at": "2026-05-16T13:03:05+00:00",
   "free_preview_count": 3
 }
