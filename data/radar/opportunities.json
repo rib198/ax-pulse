@@ -1,22 +1,72 @@
 {
-  "generated_at": "2026-05-17T13:00:28+00:00",
+  "generated_at": "2026-05-17T14:56:18+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 824,
+  "corpus_count": 825,
   "opportunities": [
     {
-      "id": "conversational-ai-models",
-      "title_ar": "تطوير نماذج ذكاء اصطناعي محادثة",
-      "thesis_ar": "تزايد الحاجة إلى نماذج ذكاء اصطناعي محادثة لتحسين تجربة العملاء. هذه النماذج يمكن أن تعزز التفاعل الشخصي مع العملاء.",
-      "buyer_ar": "شركات التجارة الإلكترونية ومراكز خدمة العملاء",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي محادثة مخصص",
-      "first_paid_test_ar": "تقديم نموذج محادثة مع عميل محتمل",
-      "tools_ar": "نموذج Qwen، أدوات تحليل البيانات، منصة تطوير التطبيقات",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-creation",
+      "title_ar": "إنشاء صور باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على المحتوى البصري المبتكر يعزز الحاجة إلى نماذج تحويل النص إلى صورة. التحديثات الأخيرة لنماذج Hugging Face تشير إلى إمكانية تحسين جودة الصور الناتجة.",
+      "buyer_ar": "شركات التسويق والإعلانات، المصممين المستقلين",
+      "sellable_product_ar": "خدمة إنشاء صور مخصصة بناءً على نصوص محددة",
+      "first_paid_test_ar": "إنشاء 10 صور مخصصة لنموذج نصي مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face API، أدوات التصميم الجرافيكي، منصة استضافة",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:ceselder/qwen3-8b-ao-v3-abl2b-layer22",
-        "huggingface_models:clear-blue-sky/evolai-tfm-001",
-        "huggingface_models:mihai-777/evolai-tfm-1p5b"
+        "huggingface_models:Fukrati/YUN_artstyle",
+        "huggingface_models:B4100/jump-doggy",
+        "huggingface_models:nphSi/Z-Image-Lora"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Fukrati/YUN_artstyle — text-to-image",
+          "url": "https://huggingface.co/Fukrati/YUN_artstyle",
+          "score": 0.497,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "B4100/jump-doggy — text-to-image",
+          "url": "https://huggingface.co/B4100/jump-doggy",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "nphSi/Z-Image-Lora — text-to-image",
+          "url": "https://huggingface.co/nphSi/Z-Image-Lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-17T14:56:18+00:00",
+      "updatedAt": "2026-05-17T14:56:18+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-generation-tools",
+      "title_ar": "أدوات توليد النصوص الذكية",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في إنشاء المحتوى النصي. توفر النماذج الجديدة إمكانيات متقدمة لتحسين جودة النصوص المنتجة.",
+      "buyer_ar": "شركات المحتوى، المدونين، وكالات التسويق",
+      "sellable_product_ar": "أداة توليد نصوص مخصصة بناءً على مدخلات المستخدم",
+      "first_paid_test_ar": "توليد 5 مقالات قصيرة مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face API، أدوات معالجة اللغة الطبيعية، منصة استضافة",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:psssd-cat/Halo0.8B-new-guard-v1",
+        "huggingface_models:aitf-its-tim3-dfk/qwen3.5-0.8B-ws3",
+        "huggingface_models:mihai-777/evolai-tfm-1p5b-05"
       ],
       "confidence": 0.75,
       "source": "openai",
@@ -25,72 +75,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "ceselder/qwen3-8b-ao-v3-abl2b-layer22 — text-generation",
-          "url": "https://huggingface.co/ceselder/qwen3-8b-ao-v3-abl2b-layer22",
+          "title": "psssd-cat/Halo0.8B-new-guard-v1 — text-generation",
+          "url": "https://huggingface.co/psssd-cat/Halo0.8B-new-guard-v1",
           "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "clear-blue-sky/evolai-tfm-001 — text-generation",
-          "url": "https://huggingface.co/clear-blue-sky/evolai-tfm-001",
+          "title": "aitf-its-tim3-dfk/qwen3.5-0.8B-ws3 — text-generation",
+          "url": "https://huggingface.co/aitf-its-tim3-dfk/qwen3.5-0.8B-ws3",
           "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mihai-777/evolai-tfm-1p5b — text-generation",
-          "url": "https://huggingface.co/mihai-777/evolai-tfm-1p5b",
-          "score": 0.447,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-17T13:00:28+00:00",
-      "updatedAt": "2026-05-17T13:00:28+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في الإعلانات والتسويق الرقمي. هذه النماذج توفر طرقًا جديدة لإنشاء محتوى بصري جذاب.",
-      "buyer_ar": "وكالات الإعلان والشركات الناشئة",
-      "sellable_product_ar": "نموذج مخصص لتحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم مجموعة من الصور الناتجة عن نصوص محددة",
-      "tools_ar": "نموذج LeFeujitif، أدوات معالجة الصور، منصة تسويق",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:LeFeujitif/sandbox",
-        "huggingface_models:TeddyVDobreva/corgy_dog_LoRA",
-        "huggingface_models:ceselder/qwen3-8b-ao-v3-abl2c-multilayer"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.46,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "LeFeujitif/sandbox — text-to-image",
-          "url": "https://huggingface.co/LeFeujitif/sandbox",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "TeddyVDobreva/corgy_dog_LoRA — text-to-image",
-          "url": "https://huggingface.co/TeddyVDobreva/corgy_dog_LoRA",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ceselder/qwen3-8b-ao-v3-abl2c-multilayer — text-generation",
-          "url": "https://huggingface.co/ceselder/qwen3-8b-ao-v3-abl2c-multilayer",
+          "title": "mihai-777/evolai-tfm-1p5b-05 — text-generation",
+          "url": "https://huggingface.co/mihai-777/evolai-tfm-1p5b-05",
           "score": 0.447,
           "trust_tier": "official"
         }
@@ -100,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-17T13:00:28+00:00",
-      "updatedAt": "2026-05-17T13:00:28+00:00",
+      "publishedAt": "2026-05-17T14:56:18+00:00",
+      "updatedAt": "2026-05-17T14:56:18+00:00",
       "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-17T13:00:28+00:00",
+  "tiered_at": "2026-05-17T14:56:18+00:00",
   "free_preview_count": 3
 }
