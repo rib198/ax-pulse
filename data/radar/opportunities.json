@@ -1,97 +1,47 @@
 {
-  "generated_at": "2026-05-17T18:58:07+00:00",
+  "generated_at": "2026-05-17T20:46:17+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 863,
+  "corpus_count": 821,
   "opportunities": [
     {
-      "id": "text-generation-for-conversational-ai",
-      "title_ar": "توليد نصوص للذكاء الاصطناعي المحادثاتي",
-      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في خدمة العملاء والمساعدات الرقمية. النماذج الجديدة توفر إمكانيات متقدمة لتوليد نصوص محادثات طبيعية.",
-      "buyer_ar": "شركات التكنولوجيا، مزودو خدمات العملاء",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتوليد نصوص محادثات",
-      "first_paid_test_ar": "تقديم نموذج محادثة تجريبية لعميل محتمل",
-      "tools_ar": "نموذج ذكاء اصطناعي، واجهة برمجة التطبيقات، بيئة تطوير",
+      "id": "text-to-image-generation-tools",
+      "title_ar": "أدوات توليد الصور من النصوص",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النصوص إلى صور يفتح آفاقًا جديدة في الإبداع الفني. هذه الأدوات يمكن أن تُستخدم في مجالات متعددة مثل التسويق والفن.",
+      "buyer_ar": "المصممين والفنانين",
+      "sellable_product_ar": "أداة لتحويل النصوص إلى صور",
+      "first_paid_test_ar": "تقديم تجربة مجانية لتحويل نص إلى صورة",
+      "tools_ar": "نموذج text-to-image, واجهة مستخدم, أدوات تعلم الآلة",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:lschaffer/qwen2.5-3b-weathersensorsmcp",
-        "huggingface_models:dogtooth/open-lm-3b-201305-midtrain",
-        "huggingface_models:HCY123902/llama-3-8b-dpo-tw31it-beta-5e-3-no-len-norm-aft"
+        "huggingface_models:farkasgabor/izagag",
+        "huggingface_models:nphSi/Z-Image-Lora",
+        "huggingface_models:Issabot/NAYLA"
       ],
-      "confidence": 0.9,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "lschaffer/qwen2.5-3b-weathersensorsmcp — text-generation",
-          "url": "https://huggingface.co/lschaffer/qwen2.5-3b-weathersensorsmcp",
-          "score": 0.509,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "dogtooth/open-lm-3b-201305-midtrain — text-generation",
-          "url": "https://huggingface.co/dogtooth/open-lm-3b-201305-midtrain",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "HCY123902/llama-3-8b-dpo-tw31it-beta-5e-3-no-len-norm-aft — text-generation",
-          "url": "https://huggingface.co/HCY123902/llama-3-8b-dpo-tw31it-beta-5e-3-no-len-norm-aft",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-17T18:58:07+00:00",
-      "updatedAt": "2026-05-17T18:58:07+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "image-text-to-text-conversion",
-      "title_ar": "تحويل الصور إلى نصوص",
-      "thesis_ar": "تزايد الحاجة لتحويل المحتوى البصري إلى نصوص قابلة للاستخدام في التطبيقات المختلفة. النماذج الجديدة تدعم هذا التحويل بدقة عالية.",
-      "buyer_ar": "شركات الإعلام، منصات التعليم الإلكتروني",
-      "sellable_product_ar": "خدمة تحويل الصور إلى نصوص",
-      "first_paid_test_ar": "تقديم نموذج تحويل صورة إلى نص لعميل محتمل",
-      "tools_ar": "نموذج تحويل الصور، واجهة برمجة التطبيقات، بيئة تطوير",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Numbus00X/roucoul-3000-gemma4-e2b",
-        "huggingface_models:jduartedj/MiniCPM-V-4.6-35B-Reasoning-Distilled",
-        "huggingface_models:evalengine/unbound-e2b"
-      ],
-      "confidence": 0.85,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Numbus00X/roucoul-3000-gemma4-e2b — image-text-to-text",
-          "url": "https://huggingface.co/Numbus00X/roucoul-3000-gemma4-e2b",
-          "score": 0.466,
+          "title": "farkasgabor/izagag — text-to-image",
+          "url": "https://huggingface.co/farkasgabor/izagag",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "jduartedj/MiniCPM-V-4.6-35B-Reasoning-Distilled — image-text-to-text",
-          "url": "https://huggingface.co/jduartedj/MiniCPM-V-4.6-35B-Reasoning-Distilled",
-          "score": 0.466,
+          "title": "nphSi/Z-Image-Lora — text-to-image",
+          "url": "https://huggingface.co/nphSi/Z-Image-Lora",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "evalengine/unbound-e2b — text-generation",
-          "url": "https://huggingface.co/evalengine/unbound-e2b",
-          "score": 0.466,
+          "title": "Issabot/NAYLA — text-to-image",
+          "url": "https://huggingface.co/Issabot/NAYLA",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -100,11 +50,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-17T18:58:07+00:00",
-      "updatedAt": "2026-05-17T18:58:07+00:00",
+      "publishedAt": "2026-05-17T20:46:17+00:00",
+      "updatedAt": "2026-05-17T20:46:17+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "conversational-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي المحادثاتي",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في تقديم الدعم والمساعدة عبر المحادثات يخلق فرصًا جديدة. هذه الحلول يمكن أن تحسن تجربة العملاء بشكل كبير.",
+      "buyer_ar": "شركات الخدمات والدعم الفني",
+      "sellable_product_ar": "نظام محادثة ذكي",
+      "first_paid_test_ar": "تقديم نموذج محادثة تجريبي مع عميل",
+      "tools_ar": "نموذج محادثة, واجهة مستخدم, أدوات تعلم الآلة",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:mihai-777/evolai-tfm-1p5b-v5",
+        "huggingface_models:clear-blue-sky/evolai-tfm-003",
+        "huggingface_models:clear-blue-sky/evolai-tfm-006"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "mihai-777/evolai-tfm-1p5b-v5 — text-generation",
+          "url": "https://huggingface.co/mihai-777/evolai-tfm-1p5b-v5",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "clear-blue-sky/evolai-tfm-003 — text-generation",
+          "url": "https://huggingface.co/clear-blue-sky/evolai-tfm-003",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "clear-blue-sky/evolai-tfm-006 — text-generation",
+          "url": "https://huggingface.co/clear-blue-sky/evolai-tfm-006",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-17T20:46:17+00:00",
+      "updatedAt": "2026-05-17T20:46:17+00:00",
       "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-17T18:58:07+00:00",
+  "tiered_at": "2026-05-17T20:46:17+00:00",
   "free_preview_count": 3
 }
