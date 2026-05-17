@@ -1,27 +1,77 @@
 {
-  "generated_at": "2026-05-17T11:04:19+00:00",
+  "generated_at": "2026-05-17T13:00:28+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 839,
+  "corpus_count": 824,
   "opportunities": [
     {
+      "id": "conversational-ai-models",
+      "title_ar": "تطوير نماذج ذكاء اصطناعي محادثة",
+      "thesis_ar": "تزايد الحاجة إلى نماذج ذكاء اصطناعي محادثة لتحسين تجربة العملاء. هذه النماذج يمكن أن تعزز التفاعل الشخصي مع العملاء.",
+      "buyer_ar": "شركات التجارة الإلكترونية ومراكز خدمة العملاء",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي محادثة مخصص",
+      "first_paid_test_ar": "تقديم نموذج محادثة مع عميل محتمل",
+      "tools_ar": "نموذج Qwen، أدوات تحليل البيانات، منصة تطوير التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:ceselder/qwen3-8b-ao-v3-abl2b-layer22",
+        "huggingface_models:clear-blue-sky/evolai-tfm-001",
+        "huggingface_models:mihai-777/evolai-tfm-1p5b"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "ceselder/qwen3-8b-ao-v3-abl2b-layer22 — text-generation",
+          "url": "https://huggingface.co/ceselder/qwen3-8b-ao-v3-abl2b-layer22",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "clear-blue-sky/evolai-tfm-001 — text-generation",
+          "url": "https://huggingface.co/clear-blue-sky/evolai-tfm-001",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mihai-777/evolai-tfm-1p5b — text-generation",
+          "url": "https://huggingface.co/mihai-777/evolai-tfm-1p5b",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-17T13:00:28+00:00",
+      "updatedAt": "2026-05-17T13:00:28+00:00",
+      "sortOrder": 0
+    },
+    {
       "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في الإعلانات والتسويق. هذه النماذج توفر وسيلة مبتكرة لإنشاء محتوى بصري مخصص.",
-      "buyer_ar": "وكالات التسويق، الشركات الناشئة",
-      "sellable_product_ar": "خدمة إنشاء محتوى بصري باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "إنشاء صورة إعلانية باستخدام نموذج تحويل نص إلى صورة",
-      "tools_ar": "نموذج diffusers، أدوات التعلم العميق، بيئة تطوير",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في الإعلانات والتسويق الرقمي. هذه النماذج توفر طرقًا جديدة لإنشاء محتوى بصري جذاب.",
+      "buyer_ar": "وكالات الإعلان والشركات الناشئة",
+      "sellable_product_ar": "نموذج مخصص لتحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم مجموعة من الصور الناتجة عن نصوص محددة",
+      "tools_ar": "نموذج LeFeujitif، أدوات معالجة الصور، منصة تسويق",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_models:LeFeujitif/sandbox",
         "huggingface_models:TeddyVDobreva/corgy_dog_LoRA",
-        "huggingface_models:BlueTriangles/SDXL_S7_Yumiko"
+        "huggingface_models:ceselder/qwen3-8b-ao-v3-abl2c-multilayer"
       ],
-      "confidence": 0.8,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.46,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
@@ -39,9 +89,9 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_S7_Yumiko — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_S7_Yumiko",
-          "score": 0.472,
+          "title": "ceselder/qwen3-8b-ao-v3-abl2c-multilayer — text-generation",
+          "url": "https://huggingface.co/ceselder/qwen3-8b-ao-v3-abl2c-multilayer",
+          "score": 0.447,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-17T11:04:19+00:00",
-      "updatedAt": "2026-05-17T11:04:19+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-05-17T13:00:28+00:00",
+      "updatedAt": "2026-05-17T13:00:28+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-17T11:04:19+00:00",
+  "tiered_at": "2026-05-17T13:00:28+00:00",
   "free_preview_count": 3
 }
