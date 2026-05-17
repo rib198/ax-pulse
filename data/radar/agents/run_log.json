@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-17T17:09:06+00:00",
+  "run_at": "2026-05-17T19:22:22+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 14.232,
+      "duration_s": 14.584,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.01,
       "written": [],
       "notes": [
         "injected 490 manual X items (skipped 10 of 500, avg score 0.15)"
@@ -55,7 +55,7 @@
       ],
       "notes": [
         "tagged 753 items",
-        "by tier: press=521, official=153, research=56, community=23"
+        "by tier: press=521, official=155, research=56, community=21"
       ],
       "error": null
     },
@@ -72,7 +72,7 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.028,
+      "duration_s": 0.026,
       "written": [
         "data/radar/signals.json"
       ],
@@ -84,7 +84,7 @@
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.011,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,33 +97,33 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.044,
+      "duration_s": 0.041,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
-        "105 total"
+        "+1 new model events",
+        "106 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.117,
+      "duration_s": 0.101,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "11 events (1 new)",
-        "by type: pricing_change=1, model_release=7, personnel_move=3"
+        "10 events (0 new)",
+        "by type: pricing_change=1, model_release=6, personnel_move=3"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.014,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.015,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 0.001,
+      "duration_s": 0.0,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.008,
+      "duration_s": 0.007,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: إصدار نموذج على qwen بـ 1 إشارة. تدفّق الإشارات ارتف…"
+        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (10 حدث متابع)."
       ],
       "error": null
     },
