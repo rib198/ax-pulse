@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-17T13:50:24+00:00",
+  "run_at": "2026-05-17T15:08:33+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 114.475,
+      "duration_s": 77.863,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 243 signals from 25 source families",
+        "collected 240 signals from 25 source families",
         "10 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 733 items",
-        "by tier: press=523, official=155, research=31, community=24"
+        "tagged 730 items",
+        "by tier: press=523, official=155, research=30, community=22"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.025,
+      "duration_s": 0.03,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 733 items, top priority=0.502"
+        "ranked 730 items, top priority=0.509"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.011,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 15 products this run",
+        "detected 13 companies, 16 products this run",
         "store size: 37"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.038,
+      "duration_s": 0.046,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.104,
+      "duration_s": 0.105,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "9 events (0 new)",
-        "by type: pricing_change=1, model_release=5, personnel_move=3"
+        "10 events (1 new)",
+        "by type: pricing_change=1, model_release=6, personnel_move=3"
       ],
       "error": null
     },
@@ -217,7 +217,7 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=733, opps=4, calls=0"
+        "items=730, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (9 حدث متابع)."
+        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: إصدار نموذج على gpt بـ 1 إشارة."
       ],
       "error": null
     },
