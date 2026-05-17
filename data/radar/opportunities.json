@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-17T16:50:00+00:00",
+  "generated_at": "2026-05-17T18:58:07+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 853,
+  "corpus_count": 863,
   "opportunities": [
     {
-      "id": "text-to-image-generation",
-      "title_ar": "توليد الصور من النصوص",
-      "thesis_ar": "تزايد الطلب على إنشاء محتوى مرئي فريد من نوعه باستخدام تقنيات الذكاء الاصطناعي. توفر نماذج مثل Fukrati/YUN_artstyle وB4100/jump-doggy أدوات قوية لتلبية هذا الطلب.",
-      "buyer_ar": "شركات التسويق، الوكالات الإبداعية، والمصممين المستقلين.",
-      "sellable_product_ar": "خدمة توليد صور مخصصة تعتمد على النصوص.",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء صورة واحدة بناءً على نص محدد.",
-      "tools_ar": "نموذج Hugging Face، واجهة برمجة التطبيقات، أدوات التصميم.",
+      "id": "text-generation-for-conversational-ai",
+      "title_ar": "توليد نصوص للذكاء الاصطناعي المحادثاتي",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في خدمة العملاء والمساعدات الرقمية. النماذج الجديدة توفر إمكانيات متقدمة لتوليد نصوص محادثات طبيعية.",
+      "buyer_ar": "شركات التكنولوجيا، مزودو خدمات العملاء",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتوليد نصوص محادثات",
+      "first_paid_test_ar": "تقديم نموذج محادثة تجريبية لعميل محتمل",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة برمجة التطبيقات، بيئة تطوير",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Fukrati/YUN_artstyle",
-        "huggingface_models:B4100/jump-doggy",
-        "huggingface_models:LeFeujitif/sandbox"
+        "huggingface_models:lschaffer/qwen2.5-3b-weathersensorsmcp",
+        "huggingface_models:dogtooth/open-lm-3b-201305-midtrain",
+        "huggingface_models:HCY123902/llama-3-8b-dpo-tw31it-beta-5e-3-no-len-norm-aft"
       ],
-      "confidence": 0.8,
+      "confidence": 0.9,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Fukrati/YUN_artstyle — text-to-image",
-          "url": "https://huggingface.co/Fukrati/YUN_artstyle",
-          "score": 0.497,
+          "title": "lschaffer/qwen2.5-3b-weathersensorsmcp — text-generation",
+          "url": "https://huggingface.co/lschaffer/qwen2.5-3b-weathersensorsmcp",
+          "score": 0.509,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "B4100/jump-doggy — text-to-image",
-          "url": "https://huggingface.co/B4100/jump-doggy",
-          "score": 0.472,
+          "title": "dogtooth/open-lm-3b-201305-midtrain — text-generation",
+          "url": "https://huggingface.co/dogtooth/open-lm-3b-201305-midtrain",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LeFeujitif/sandbox — text-to-image",
-          "url": "https://huggingface.co/LeFeujitif/sandbox",
-          "score": 0.472,
+          "title": "HCY123902/llama-3-8b-dpo-tw31it-beta-5e-3-no-len-norm-aft — text-generation",
+          "url": "https://huggingface.co/HCY123902/llama-3-8b-dpo-tw31it-beta-5e-3-no-len-norm-aft",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -50,99 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-17T16:50:00+00:00",
-      "updatedAt": "2026-05-17T16:50:00+00:00",
+      "publishedAt": "2026-05-17T18:58:07+00:00",
+      "updatedAt": "2026-05-17T18:58:07+00:00",
       "sortOrder": 0
     },
     {
-      "id": "3d-photorealistic-generation",
-      "title_ar": "توليد صور ثلاثية الأبعاد واقعية",
-      "thesis_ar": "تزايد الاهتمام في إنشاء محتوى ثلاثي الأبعاد واقعي، مما يفتح المجال لتطبيقات جديدة في مجالات مثل الألعاب والتصميم الداخلي. نموذج Realiz3D يتيح تحقيق هذا الهدف.",
-      "buyer_ar": "شركات الألعاب، شركات التصميم الداخلي، والمطورين.",
-      "sellable_product_ar": "خدمة توليد محتوى ثلاثي الأبعاد مخصص.",
-      "first_paid_test_ar": "تقديم نموذج أولي لصورة ثلاثية الأبعاد واحدة.",
-      "tools_ar": "نموذج Realiz3D، أدوات التصميم ثلاثي الأبعاد، واجهة برمجة التطبيقات.",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.13852",
-        "huggingface_models:Fukrati/YUN_artstyle",
-        "huggingface_models:LeFeujitif/sandbox"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Fukrati/YUN_artstyle — text-to-image",
-          "url": "https://huggingface.co/Fukrati/YUN_artstyle",
-          "score": 0.497,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
-          "url": "https://huggingface.co/papers/2605.13852",
-          "score": 0.488,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LeFeujitif/sandbox — text-to-image",
-          "url": "https://huggingface.co/LeFeujitif/sandbox",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-17T16:50:00+00:00",
-      "updatedAt": "2026-05-17T16:50:00+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "ai-toolkit-for-developers",
-      "title_ar": "أداة الذكاء الاصطناعي للمطورين",
-      "thesis_ar": "تواجه الشركات صعوبة في تطوير ميزات الذكاء الاصطناعي بسبب نقص الأدوات المناسبة. توفر مجموعة أدوات AI Toolkit حلاً فعالاً لهذه المشكلة.",
-      "buyer_ar": "شركات البرمجيات، المطورون، والفرق التقنية.",
-      "sellable_product_ar": "مجموعة أدوات تطوير ميزات الذكاء الاصطناعي.",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع ميزات محدودة.",
-      "tools_ar": "مجموعة أدوات AI Toolkit، واجهة برمجة التطبيقات، مستندات تعليمية.",
+      "id": "image-text-to-text-conversion",
+      "title_ar": "تحويل الصور إلى نصوص",
+      "thesis_ar": "تزايد الحاجة لتحويل المحتوى البصري إلى نصوص قابلة للاستخدام في التطبيقات المختلفة. النماذج الجديدة تدعم هذا التحويل بدقة عالية.",
+      "buyer_ar": "شركات الإعلام، منصات التعليم الإلكتروني",
+      "sellable_product_ar": "خدمة تحويل الصور إلى نصوص",
+      "first_paid_test_ar": "تقديم نموذج تحويل صورة إلى نص لعميل محتمل",
+      "tools_ar": "نموذج تحويل الصور، واجهة برمجة التطبيقات، بيئة تطوير",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2605.14612v1",
-        "arxiv_papers:2605.15040v1",
-        "huggingface_models:rk500/Born-9B-Qwen3.5-9B-Preview"
+        "huggingface_models:Numbus00X/roucoul-3000-gemma4-e2b",
+        "huggingface_models:jduartedj/MiniCPM-V-4.6-35B-Reasoning-Distilled",
+        "huggingface_models:evalengine/unbound-e2b"
       ],
-      "confidence": 0.7,
+      "confidence": 0.85,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.46,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "rk500/Born-9B-Qwen3.5-9B-Preview — text-generation",
-          "url": "https://huggingface.co/rk500/Born-9B-Qwen3.5-9B-Preview",
-          "score": 0.472,
+          "title": "Numbus00X/roucoul-3000-gemma4-e2b — image-text-to-text",
+          "url": "https://huggingface.co/Numbus00X/roucoul-3000-gemma4-e2b",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Orchard: An Open-Source Agentic Modeling Framework",
-          "url": "http://arxiv.org/abs/2605.15040v1",
-          "score": 0.46,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "jduartedj/MiniCPM-V-4.6-35B-Reasoning-Distilled — image-text-to-text",
+          "url": "https://huggingface.co/jduartedj/MiniCPM-V-4.6-35B-Reasoning-Distilled",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "In-IDE Toolkit for Developers of AI-Based Features",
-          "url": "http://arxiv.org/abs/2605.14612v1",
-          "score": 0.456,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "evalengine/unbound-e2b — text-generation",
+          "url": "https://huggingface.co/evalengine/unbound-e2b",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-17T16:50:00+00:00",
-      "updatedAt": "2026-05-17T16:50:00+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-05-17T18:58:07+00:00",
+      "updatedAt": "2026-05-17T18:58:07+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-17T16:50:00+00:00",
+  "tiered_at": "2026-05-17T18:58:07+00:00",
   "free_preview_count": 3
 }
