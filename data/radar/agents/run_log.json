@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-17T11:20:21+00:00",
+  "run_at": "2026-05-17T13:50:24+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 78.743,
+      "duration_s": 114.475,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 238 signals from 25 source families",
+        "collected 243 signals from 25 source families",
         "10 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 728 items",
-        "by tier: press=523, official=155, research=33, community=17"
+        "tagged 733 items",
+        "by tier: press=523, official=155, research=31, community=24"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 728 items, top priority=0.502"
+        "ranked 733 items, top priority=0.502"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 13 companies, 15 products this run",
+        "detected 14 companies, 15 products this run",
         "store size: 37"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.04,
+      "duration_s": 0.038,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+2 new model events",
+        "+0 new model events",
         "105 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.108,
+      "duration_s": 0.104,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "10 events (1 new)",
-        "by type: pricing_change=2, model_release=5, personnel_move=3"
+        "9 events (0 new)",
+        "by type: pricing_change=1, model_release=5, personnel_move=3"
       ],
       "error": null
     },
@@ -217,7 +217,7 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=728, opps=4, calls=0"
+        "items=733, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: تغيير سعر على google بـ 2 إشارة."
+        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (9 حدث متابع)."
       ],
       "error": null
     },
