@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-17T15:08:33+00:00",
+  "run_at": "2026-05-17T17:09:06+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,13 +26,13 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 77.863,
+      "duration_s": 14.232,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 240 signals from 25 source families",
-        "10 source errors (non-fatal)"
+        "collected 263 signals from 25 source families",
+        "8 source errors (non-fatal)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 730 items",
-        "by tier: press=523, official=155, research=30, community=22"
+        "tagged 753 items",
+        "by tier: press=521, official=153, research=56, community=23"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.03,
+      "duration_s": 0.028,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 730 items, top priority=0.509"
+        "ranked 753 items, top priority=0.509"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.012,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 13 companies, 16 products this run",
+        "detected 14 companies, 15 products this run",
         "store size: 37"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.046,
+      "duration_s": 0.044,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.105,
+      "duration_s": 0.117,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "10 events (1 new)",
-        "by type: pricing_change=1, model_release=6, personnel_move=3"
+        "11 events (1 new)",
+        "by type: pricing_change=1, model_release=7, personnel_move=3"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.015,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.016,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=730, opps=4, calls=0"
+        "items=753, opps=4, calls=0"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.001,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: إصدار نموذج على gpt بـ 1 إشارة."
+        "insight via rules: رصد 1 حدثًا جديدًا أبرزها: إصدار نموذج على qwen بـ 1 إشارة. تدفّق الإشارات ارتف…"
       ],
       "error": null
     },
