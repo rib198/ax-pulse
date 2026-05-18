@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-05-18T19:28:35+00:00",
+  "generated_at": "2026-05-18T21:07:18+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 857,
+  "corpus_count": 858,
   "opportunities": [
     {
-      "id": "long-cot-reasoning",
-      "title_ar": "تحسين نماذج الاستدلال الطويل",
-      "thesis_ar": "توجد حاجة ملحة لتقليل تكلفة الاستدلال في نماذج الاستدلال الطويلة. يمكن أن يؤدي تحسين هذه النماذج إلى تطبيقات عملية في مجالات متعددة.",
-      "buyer_ar": "شركات الذكاء الاصطناعي ومراكز البحث",
-      "sellable_product_ar": "خدمات استشارات لتحسين نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم استشارة لتحسين نموذج واحد",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، بيئات تطوير البرمجيات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يعكس الحاجة إلى محتوى مرئي مخصص. مع تحديثات النماذج المتكررة، هناك فرصة لتقديم خدمات تصميم مخصصة باستخدام هذه النماذج.",
+      "buyer_ar": "شركات التسويق والإعلانات، والمصممين المستقلين",
+      "sellable_product_ar": "خدمة تصميم محتوى مرئي باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تصميم عينة مجانية لمشروع صغير مقابل رسوم رمزية",
+      "tools_ar": "نموذج تحويل النص إلى صورة، منصة تسويق، أدوات تصميم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2605.02290",
-        "huggingface_daily_papers:2605.15961",
-        "huggingface_models:mihai-777/evolai-tfm-1p5b-alt"
+        "huggingface_models:nphSi/Z-Image-Lora",
+        "huggingface_models:liming518/enhanceFluUnV2",
+        "huggingface_models:yugn27/design_style_LoRA"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.5,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding",
-          "url": "https://huggingface.co/papers/2605.02290",
-          "score": 0.572,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Sparse Autoencoders enable Robust and Interpretable Fine-tuning of CLIP models",
-          "url": "https://huggingface.co/papers/2605.15961",
-          "score": 0.466,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "nphSi/Z-Image-Lora — text-to-image",
+          "url": "https://huggingface.co/nphSi/Z-Image-Lora",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mihai-777/evolai-tfm-1p5b-alt — text-generation",
-          "url": "https://huggingface.co/mihai-777/evolai-tfm-1p5b-alt",
-          "score": 0.466,
+          "title": "liming518/enhanceFluUnV2 — text-to-image",
+          "url": "https://huggingface.co/liming518/enhanceFluUnV2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yugn27/design_style_LoRA — text-to-image",
+          "url": "https://huggingface.co/yugn27/design_style_LoRA",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -50,75 +50,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-18T19:28:35+00:00",
-      "updatedAt": "2026-05-18T19:28:35+00:00",
+      "publishedAt": "2026-05-18T21:07:18+00:00",
+      "updatedAt": "2026-05-18T21:07:18+00:00",
       "sortOrder": 0
     },
     {
-      "id": "egocentric-data-infrastructure",
-      "title_ar": "تطوير بنية تحتية لبيانات egocentric",
-      "thesis_ar": "تزايد الطلب على مجموعات بيانات egocentric طويلة الأمد يتطلب بنية تحتية مفتوحة. هذا يمكن أن يفتح المجال لتطبيقات جديدة في الذكاء الاصطناعي.",
-      "buyer_ar": "شركات التكنولوجيا الناشئة ومراكز البحث",
-      "sellable_product_ar": "خدمات تطوير بنية تحتية للبيانات",
-      "first_paid_test_ar": "تطوير نموذج أولي لبيانات egocentric",
-      "tools_ar": "أدوات تطوير البرمجيات، خوادم البيانات، أدوات تحليل البيانات",
+      "id": "multilingual-information-retrieval",
+      "title_ar": "تطوير حلول استرجاع معلومات متعددة اللغات",
+      "thesis_ar": "مع تزايد استخدام اللغات المتعددة في البحث، هناك حاجة ملحة لحلول فعالة لاسترجاع المعلومات. يمكن أن تساعد هذه الحلول في تحسين تجربة المستخدم في البيئات متعددة اللغات.",
+      "buyer_ar": "شركات التكنولوجيا، ومزودي خدمات البحث",
+      "sellable_product_ar": "نظام استرجاع معلومات متعدد اللغات",
+      "first_paid_test_ar": "تقديم نموذج أولي لنظام استرجاع معلومات بلغة واحدة مقابل رسوم",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، منصة تطوير البرمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2605.05945",
-        "huggingface_models:persadian/CropSeek-LLM",
-        "huggingface_daily_papers:2605.07249"
+        "huggingface_daily_papers:2605.07249",
+        "huggingface_daily_papers:2605.14212",
+        "huggingface_daily_papers:2605.15961"
       ],
       "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "MobileEgo Anywhere: Open Infrastructure for long horizon egocentric data on commodity hardware",
-          "url": "https://huggingface.co/papers/2605.05945",
-          "score": 0.488,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "MLAIRE: Multilingual Language-Aware Information Retrieval Evaluation Protocal",
-          "url": "https://huggingface.co/papers/2605.07249",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "persadian/CropSeek-LLM — reinforcement-learning",
-          "url": "https://huggingface.co/persadian/CropSeek-LLM",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-18T19:28:35+00:00",
-      "updatedAt": "2026-05-18T19:28:35+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "multilingual-information-retrieval",
-      "title_ar": "تحسين استرجاع المعلومات متعددة اللغات",
-      "thesis_ar": "تزايد استخدام استرجاع المعلومات متعددة اللغات يوفر فرصة لتطوير حلول فعالة. يمكن أن تكون هذه الحلول مفيدة في العديد من التطبيقات التجارية.",
-      "buyer_ar": "شركات محركات البحث ومزودي خدمات البيانات",
-      "sellable_product_ar": "خدمات تطوير حلول استرجاع المعلومات",
-      "first_paid_test_ar": "تقديم نموذج أولي لاسترجاع المعلومات بلغة واحدة",
-      "tools_ar": "أدوات تحليل البيانات، نماذج التعلم الآلي، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.07249",
-        "huggingface_daily_papers:2605.15961",
-        "huggingface_models:ISTA-DASLab/Llama-3.1-70B-Instruct-2Bit-GSQ"
-      ],
-      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
@@ -132,17 +82,17 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Sparse Autoencoders enable Robust and Interpretable Fine-tuning of CLIP models",
-          "url": "https://huggingface.co/papers/2605.15961",
+          "title": "MetaAgent-X : Breaking the Ceiling of Automatic Multi-Agent Systems via End-to-End Reinforcement Learning",
+          "url": "https://huggingface.co/papers/2605.14212",
           "score": 0.466,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "ISTA-DASLab/Llama-3.1-70B-Instruct-2Bit-GSQ — text-generation",
-          "url": "https://huggingface.co/ISTA-DASLab/Llama-3.1-70B-Instruct-2Bit-GSQ",
+          "source_id": "huggingface_daily_papers",
+          "title": "Sparse Autoencoders enable Robust and Interpretable Fine-tuning of CLIP models",
+          "url": "https://huggingface.co/papers/2605.15961",
           "score": 0.466,
-          "trust_tier": "official"
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-18T19:28:35+00:00",
-      "updatedAt": "2026-05-18T19:28:35+00:00",
+      "publishedAt": "2026-05-18T21:07:18+00:00",
+      "updatedAt": "2026-05-18T21:07:18+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "automatic-multi-agent-systems",
+      "title_ar": "تطوير أنظمة متعددة الوكلاء تلقائيًا",
+      "thesis_ar": "تتجه الصناعة نحو أتمتة العمليات باستخدام أنظمة متعددة الوكلاء. مع التحسينات المستمرة، هناك فرصة لتقديم حلول مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات البرمجيات، ومقدمي خدمات الأتمتة",
+      "sellable_product_ar": "نظام متعدد الوكلاء لأتمتة العمليات",
+      "first_paid_test_ar": "تقديم نموذج أولي لنظام بسيط لأتمتة عملية معينة",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، بيئة اختبار",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.14212",
+        "huggingface_daily_papers:2605.15961",
+        "huggingface_daily_papers:2605.05945"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MobileEgo Anywhere: Open Infrastructure for long horizon egocentric data on commodity hardware",
+          "url": "https://huggingface.co/papers/2605.05945",
+          "score": 0.488,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MetaAgent-X : Breaking the Ceiling of Automatic Multi-Agent Systems via End-to-End Reinforcement Learning",
+          "url": "https://huggingface.co/papers/2605.14212",
+          "score": 0.466,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Sparse Autoencoders enable Robust and Interpretable Fine-tuning of CLIP models",
+          "url": "https://huggingface.co/papers/2605.15961",
+          "score": 0.466,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-18T21:07:18+00:00",
+      "updatedAt": "2026-05-18T21:07:18+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-18T19:28:35+00:00",
+  "tiered_at": "2026-05-18T21:07:18+00:00",
   "free_preview_count": 3
 }
