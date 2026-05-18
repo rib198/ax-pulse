@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-18T15:49:53+00:00",
+  "run_at": "2026-05-18T18:10:39+00:00",
   "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 18.104,
+      "duration_s": 18.812,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 261 signals from 25 source families",
+        "collected 263 signals from 25 source families",
         "8 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.012,
       "written": [],
       "notes": [
         "injected 490 manual X items (skipped 10 of 500, avg score 0.15)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 751 items",
-        "by tier: press=520, official=156, research=57, community=18"
+        "tagged 753 items",
+        "by tier: press=521, official=155, research=58, community=19"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.026,
+      "duration_s": 0.027,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 751 items, top priority=0.571"
+        "ranked 753 items, top priority=0.572"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 16 products this run",
+        "detected 14 companies, 15 products this run",
         "store size: 37"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.043,
+      "duration_s": 0.045,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+1 new model events",
+        "+0 new model events",
         "113 total"
       ],
       "error": null
@@ -115,15 +115,15 @@
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "9 events (2 new)",
-        "by type: pricing_change=2, model_release=6, personnel_move=1"
+        "8 events (0 new)",
+        "by type: pricing_change=1, model_release=6, personnel_move=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.015,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -212,12 +212,12 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.003,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=751, opps=4, calls=0"
+        "items=753, opps=4, calls=0"
       ],
       "error": null
     },
@@ -229,7 +229,7 @@
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via rules: رصد 2 حدثًا جديدًا أبرزها: إصدار نموذج على llama بـ 1 إشارة. تدفّق الإشارات ارت…"
+        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (8 حدث متابع)."
       ],
       "error": null
     },
