@@ -1,28 +1,49 @@
 {
-  "generated_at": "2026-05-18T21:07:18+00:00",
+  "generated_at": "2026-05-18T22:52:09+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 858,
+  "corpus_count": 852,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يعكس الحاجة إلى محتوى مرئي مخصص. مع تحديثات النماذج المتكررة، هناك فرصة لتقديم خدمات تصميم مخصصة باستخدام هذه النماذج.",
-      "buyer_ar": "شركات التسويق والإعلانات، والمصممين المستقلين",
-      "sellable_product_ar": "خدمة تصميم محتوى مرئي باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تصميم عينة مجانية لمشروع صغير مقابل رسوم رمزية",
-      "tools_ar": "نموذج تحويل النص إلى صورة، منصة تسويق، أدوات تصميم",
+      "id": "text-to-image-generation",
+      "title_ar": "خدمة توليد الصور من النصوص",
+      "thesis_ar": "تزايد الطلب على تحويل النصوص إلى صور في مجالات متعددة مثل الإعلانات والفنون. توفر النماذج الجديدة إمكانيات متقدمة لتحسين جودة الصور الناتجة.",
+      "buyer_ar": "وكالات الإعلان والفنانين",
+      "sellable_product_ar": "خدمة توليد صور مخصصة من نصوص",
+      "first_paid_test_ar": "توليد صورة واحدة من نص محدد",
+      "tools_ar": "نموذج توليد الصور، واجهة برمجة التطبيقات، منصة سحابية",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:nphSi/Z-Image-Lora",
-        "huggingface_models:liming518/enhanceFluUnV2",
-        "huggingface_models:yugn27/design_style_LoRA"
+        "draculala987/draculala_lora_storage_yard",
+        "nphSi/Z-Image-Lora",
+        "liming518/enhanceFluUnV2"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MobileEgo Anywhere: Open Infrastructure for long horizon egocentric data on commodity hardware",
+          "url": "https://huggingface.co/papers/2605.05945",
+          "score": 0.488,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "LLMWildling/gemma-4-125b-a12b-preview — text-generation",
+          "url": "https://huggingface.co/LLMWildling/gemma-4-125b-a12b-preview",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "draculala987/draculala_lora_storage_yard — text-to-image",
+          "url": "https://huggingface.co/draculala987/draculala_lora_storage_yard",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "nphSi/Z-Image-Lora — text-to-image",
@@ -39,8 +60,8 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "yugn27/design_style_LoRA — text-to-image",
-          "url": "https://huggingface.co/yugn27/design_style_LoRA",
+          "title": "liming518/skinodyflux — text-to-image",
+          "url": "https://huggingface.co/liming518/skinodyflux",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,78 +71,28 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-18T21:07:18+00:00",
-      "updatedAt": "2026-05-18T21:07:18+00:00",
+      "publishedAt": "2026-05-18T22:52:09+00:00",
+      "updatedAt": "2026-05-18T22:52:09+00:00",
       "sortOrder": 0
     },
     {
       "id": "multilingual-information-retrieval",
-      "title_ar": "تطوير حلول استرجاع معلومات متعددة اللغات",
-      "thesis_ar": "مع تزايد استخدام اللغات المتعددة في البحث، هناك حاجة ملحة لحلول فعالة لاسترجاع المعلومات. يمكن أن تساعد هذه الحلول في تحسين تجربة المستخدم في البيئات متعددة اللغات.",
-      "buyer_ar": "شركات التكنولوجيا، ومزودي خدمات البحث",
+      "title_ar": "تطوير نظام استرجاع معلومات متعدد اللغات",
+      "thesis_ar": "تزايد الحاجة إلى استرجاع المعلومات عبر لغات متعددة في الإعدادات الحقيقية. هذا يتطلب حلولاً مبتكرة لتحسين دقة استرجاع المعلومات في بيئات متعددة اللغات.",
+      "buyer_ar": "شركات تكنولوجيا المعلومات والبحث",
       "sellable_product_ar": "نظام استرجاع معلومات متعدد اللغات",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام استرجاع معلومات بلغة واحدة مقابل رسوم",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، منصة تطوير البرمجيات",
-      "capital_ar": "متوسط",
+      "first_paid_test_ar": "تطوير نموذج أولي لاسترجاع المعلومات بلغة واحدة",
+      "tools_ar": "نموذج ذكاء اصطناعي، بيانات متعددة اللغات، واجهة مستخدم",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2605.07249",
-        "huggingface_daily_papers:2605.14212",
-        "huggingface_daily_papers:2605.15961"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "MLAIRE: Multilingual Language-Aware Information Retrieval Evaluation Protocal",
-          "url": "https://huggingface.co/papers/2605.07249",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "MetaAgent-X : Breaking the Ceiling of Automatic Multi-Agent Systems via End-to-End Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2605.14212",
-          "score": 0.466,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Sparse Autoencoders enable Robust and Interpretable Fine-tuning of CLIP models",
-          "url": "https://huggingface.co/papers/2605.15961",
-          "score": 0.466,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-18T21:07:18+00:00",
-      "updatedAt": "2026-05-18T21:07:18+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "automatic-multi-agent-systems",
-      "title_ar": "تطوير أنظمة متعددة الوكلاء تلقائيًا",
-      "thesis_ar": "تتجه الصناعة نحو أتمتة العمليات باستخدام أنظمة متعددة الوكلاء. مع التحسينات المستمرة، هناك فرصة لتقديم حلول مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات البرمجيات، ومقدمي خدمات الأتمتة",
-      "sellable_product_ar": "نظام متعدد الوكلاء لأتمتة العمليات",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام بسيط لأتمتة عملية معينة",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، بيئة اختبار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.14212",
-        "huggingface_daily_papers:2605.15961",
-        "huggingface_daily_papers:2605.05945"
+        "2605.07249",
+        "2605.14212",
+        "2605.15961"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -131,18 +102,39 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "MetaAgent-X : Breaking the Ceiling of Automatic Multi-Agent Systems via End-to-End Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2605.14212",
-          "score": 0.466,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "LLMWildling/gemma-4-125b-a12b-preview — text-generation",
+          "url": "https://huggingface.co/LLMWildling/gemma-4-125b-a12b-preview",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Sparse Autoencoders enable Robust and Interpretable Fine-tuning of CLIP models",
-          "url": "https://huggingface.co/papers/2605.15961",
-          "score": 0.466,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "draculala987/draculala_lora_storage_yard — text-to-image",
+          "url": "https://huggingface.co/draculala987/draculala_lora_storage_yard",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "nphSi/Z-Image-Lora — text-to-image",
+          "url": "https://huggingface.co/nphSi/Z-Image-Lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "liming518/enhanceFluUnV2 — text-to-image",
+          "url": "https://huggingface.co/liming518/enhanceFluUnV2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "liming518/skinodyflux — text-to-image",
+          "url": "https://huggingface.co/liming518/skinodyflux",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +142,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-18T21:07:18+00:00",
-      "updatedAt": "2026-05-18T21:07:18+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-05-18T22:52:09+00:00",
+      "updatedAt": "2026-05-18T22:52:09+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-18T21:07:18+00:00",
+  "tiered_at": "2026-05-18T22:52:09+00:00",
   "free_preview_count": 3
 }
