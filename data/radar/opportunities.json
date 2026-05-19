@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-19T18:03:53+00:00",
+  "generated_at": "2026-05-19T19:49:46+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 1660,
+  "corpus_count": 1697,
   "opportunities": [
     {
-      "id": "healthcare-automation",
+      "id": "automated-healthcare-workflows",
       "title_ar": "أتمتة العمليات الصحية",
-      "thesis_ar": "تزايد الحاجة لأتمتة العمليات الصحية المعقدة في ظل التحول الرقمي في الرعاية الصحية. يمكن أن توفر الحلول التي تعتمد على الذكاء الاصطناعي كفاءة عالية وتكاليف أقل.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام أتمتة العمليات الصحية المدعوم بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق النظام في قسم واحد من المستشفى لمدة شهر",
-      "tools_ar": "الذكاء الاصطناعي، تحليل البيانات، البرمجة",
+      "thesis_ar": "تزايد الحاجة لأتمتة العمليات الصحية المعقدة يفتح المجال لتطوير حلول تعتمد على الذكاء الاصطناعي. يمكن أن تسهم هذه الحلول في تحسين الكفاءة وتقليل التكاليف في قطاع الرعاية الصحية.",
+      "buyer_ar": "المستشفيات والعيادات الخاصة",
+      "sellable_product_ar": "نظام أتمتة العمليات الصحية المعقدة",
+      "first_paid_test_ar": "تطبيق نظام أتمتة على مشروع تجريبي في مستشفى صغير",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2605.16679",
-        "huggingface_daily_papers:2605.18451",
-        "huggingface_daily_papers:2605.16909"
+        "huggingface_daily_papers:2605.18630",
+        "huggingface_models:McG-221/Qwen3.6-35B-A3B-NSC-ACE-SABER-mlx-8Bit"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -27,21 +27,21 @@
           "source_id": "huggingface_daily_papers",
           "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
           "url": "https://huggingface.co/papers/2605.16679",
-          "score": 0.527,
+          "score": 0.546,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
-          "url": "https://huggingface.co/papers/2605.18451",
-          "score": 0.505,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "McG-221/Qwen3.6-35B-A3B-NSC-ACE-SABER-mlx-8Bit — image-text-to-text",
+          "url": "https://huggingface.co/McG-221/Qwen3.6-35B-A3B-NSC-ACE-SABER-mlx-8Bit",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
-          "url": "https://huggingface.co/papers/2605.16909",
-          "score": 0.504,
+          "title": "SCICONVBENCH: Benchmarking LLMs on Multi-Turn Clarification for Task Formulation in Computational Science",
+          "url": "https://huggingface.co/papers/2605.18630",
+          "score": 0.482,
           "trust_tier": "research"
         }
       ],
@@ -50,49 +50,42 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T18:03:53+00:00",
-      "updatedAt": "2026-05-19T18:03:53+00:00",
+      "publishedAt": "2026-05-19T19:49:46+00:00",
+      "updatedAt": "2026-05-19T19:49:46+00:00",
       "sortOrder": 0
     },
     {
-      "id": "3d-design-automation",
-      "title_ar": "أتمتة تصميم الغرف ثلاثية الأبعاد",
-      "thesis_ar": "الطلب المتزايد على تصميم الغرف ثلاثية الأبعاد في مجالات مثل التصميم الداخلي والألعاب. يمكن أن توفر الحلول المدعومة بالذكاء الاصطناعي تصميمات دقيقة وسريعة.",
-      "buyer_ar": "شركات التصميم الداخلي وشركات الألعاب",
-      "sellable_product_ar": "أداة تصميم ثلاثية الأبعاد تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتصميم غرفة واحدة",
-      "tools_ar": "الذكاء الاصطناعي، البرمجة، التصميم الجرافيكي",
+      "id": "task-oriented-coding-agents",
+      "title_ar": "وكلاء البرمجة الموجهة بالمهام",
+      "thesis_ar": "تزايد استخدام وكلاء البرمجة الموجهة بالمهام في تطوير البرمجيات يتيح فرصًا جديدة في السوق. هذه التكنولوجيا يمكن أن تسهم في تسريع عملية تطوير التطبيقات.",
+      "buyer_ar": "شركات تطوير البرمجيات",
+      "sellable_product_ar": "أداة برمجة تعتمد على وكلاء ذكيين",
+      "first_paid_test_ar": "تطوير مشروع برمجي بسيط باستخدام الأداة",
+      "tools_ar": "أدوات البرمجة، نماذج الذكاء الاصطناعي، بيئات التطوير المتكاملة",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2605.18451",
-        "huggingface_daily_papers:2605.16909",
-        "huggingface_daily_papers:2605.18401"
+        "huggingface_daily_papers:2605.17526v1",
+        "huggingface_daily_papers:2605.18630",
+        "huggingface_models:rbelanec/train_record_42_1779207275"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
+      "signal_count": 2,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
-          "url": "https://huggingface.co/papers/2605.18451",
-          "score": 0.505,
+          "title": "SCICONVBENCH: Benchmarking LLMs on Multi-Turn Clarification for Task Formulation in Computational Science",
+          "url": "https://huggingface.co/papers/2605.18630",
+          "score": 0.482,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
-          "url": "https://huggingface.co/papers/2605.16909",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution",
-          "url": "https://huggingface.co/papers/2605.18401",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "rbelanec/train_record_42_1779207275 — text-generation",
+          "url": "https://huggingface.co/rbelanec/train_record_42_1779207275",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,49 +93,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T18:03:53+00:00",
-      "updatedAt": "2026-05-19T18:03:53+00:00",
+      "publishedAt": "2026-05-19T19:49:46+00:00",
+      "updatedAt": "2026-05-19T19:49:46+00:00",
       "sortOrder": 1
     },
     {
-      "id": "tool-using-agents",
-      "title_ar": "تطوير وكلاء يستخدمون الأدوات",
-      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي في بيئات العمل الحقيقية. يمكن أن تسهم هذه الوكلاء في تحسين الكفاءة وتقليل الأخطاء.",
-      "buyer_ar": "الشركات التي تعتمد على الأتمتة",
-      "sellable_product_ar": "نظام وكيل ذكي يستخدم الأدوات في بيئات العمل",
-      "first_paid_test_ar": "تطبيق الوكيل في مشروع صغير لمدة أسبوع",
-      "tools_ar": "الذكاء الاصطناعي، البرمجة، أدوات الأتمتة",
+      "id": "multimodal-tool-using-agents",
+      "title_ar": "وكلاء استخدام الأدوات متعددة الوسائط",
+      "thesis_ar": "تزايد الحاجة لوكلاء يستخدمون أدوات متعددة الوسائط في بيئات العمل المهنية يفتح المجال لتطوير حلول ذكية. هذه الحلول يمكن أن تعزز الإنتاجية وتقلل من الأخطاء.",
+      "buyer_ar": "الشركات في القطاعات المهنية المختلفة",
+      "sellable_product_ar": "نظام ذكاء اصطناعي متعدد الوسائط",
+      "first_paid_test_ar": "تطبيق النظام في مشروع تجريبي مع فريق عمل",
+      "tools_ar": "أدوات الذكاء الاصطناعي، واجهات برمجة التطبيقات، أدوات التنسيق",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2605.16909",
-        "huggingface_daily_papers:2605.18401",
-        "huggingface_daily_papers:2605.15565"
+        "huggingface_daily_papers:2605.18630",
+        "huggingface_models:cs-552-2026-databand/safety_model"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
           "url": "https://huggingface.co/papers/2605.16909",
-          "score": 0.504,
+          "score": 0.512,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution",
-          "url": "https://huggingface.co/papers/2605.18401",
-          "score": 0.489,
+          "title": "SCICONVBENCH: Benchmarking LLMs on Multi-Turn Clarification for Task Formulation in Computational Science",
+          "url": "https://huggingface.co/papers/2605.18630",
+          "score": 0.482,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AstraFlow: Dataflow-Oriented Reinforcement Learning for Agentic LLMs",
-          "url": "https://huggingface.co/papers/2605.15565",
-          "score": 0.452,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "cs-552-2026-databand/safety_model — text-generation",
+          "url": "https://huggingface.co/cs-552-2026-databand/safety_model",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T18:03:53+00:00",
-      "updatedAt": "2026-05-19T18:03:53+00:00",
+      "publishedAt": "2026-05-19T19:49:46+00:00",
+      "updatedAt": "2026-05-19T19:49:46+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-19T18:03:53+00:00",
+  "tiered_at": "2026-05-19T19:49:46+00:00",
   "free_preview_count": 3
 }
