@@ -1,33 +1,76 @@
 {
-  "generated_at": "2026-05-19T19:49:46+00:00",
+  "generated_at": "2026-05-19T21:16:50+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 1697,
   "opportunities": [
     {
-      "id": "automated-healthcare-workflows",
+      "id": "healthcare-automation",
       "title_ar": "أتمتة العمليات الصحية",
-      "thesis_ar": "تزايد الحاجة لأتمتة العمليات الصحية المعقدة يفتح المجال لتطوير حلول تعتمد على الذكاء الاصطناعي. يمكن أن تسهم هذه الحلول في تحسين الكفاءة وتقليل التكاليف في قطاع الرعاية الصحية.",
-      "buyer_ar": "المستشفيات والعيادات الخاصة",
-      "sellable_product_ar": "نظام أتمتة العمليات الصحية المعقدة",
-      "first_paid_test_ar": "تطبيق نظام أتمتة على مشروع تجريبي في مستشفى صغير",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
+      "thesis_ar": "تزايد الحاجة لأتمتة العمليات الصحية المعقدة في ظل الطلب المتزايد على خدمات الرعاية الصحية. يمكن أن تسهم تقنيات الذكاء الاصطناعي في تحسين الكفاءة وتقليل الأخطاء.",
+      "buyer_ar": "مؤسسات الرعاية الصحية، شركات التأمين",
+      "sellable_product_ar": "حلول أتمتة العمليات الصحية باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لأتمتة عملية معينة في مؤسسة صحية",
+      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، بيانات صحية، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2605.16679",
         "huggingface_daily_papers:2605.18630",
-        "huggingface_models:McG-221/Qwen3.6-35B-A3B-NSC-ACE-SABER-mlx-8Bit"
+        "huggingface_daily_papers:2605.17526v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 2,
       "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
           "url": "https://huggingface.co/papers/2605.16679",
-          "score": 0.546,
+          "score": 0.547,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SCICONVBENCH: Benchmarking LLMs on Multi-Turn Clarification for Task Formulation in Computational Science",
+          "url": "https://huggingface.co/papers/2605.18630",
+          "score": 0.482,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-19T21:16:50+00:00",
+      "updatedAt": "2026-05-19T21:16:50+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "multi-modal-tool-agents",
+      "title_ar": "تطوير وكلاء أدوات متعددة الأنماط",
+      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي في بيئات العمل المتعددة الأنماط. هذه التقنية يمكن أن تحسن التنسيق بين الأدوات المختلفة وتعزز الإنتاجية.",
+      "buyer_ar": "شركات التكنولوجيا، مؤسسات التعليم",
+      "sellable_product_ar": "نظام وكيل ذكي متعدد الأنماط لتسهيل العمليات اليومية",
+      "first_paid_test_ar": "تطبيق نموذج أولي في بيئة عمل حقيقية",
+      "tools_ar": "أدوات الذكاء الاصطناعي، بيانات متعددة الأنماط، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.16909",
+        "huggingface_daily_papers:2605.18630",
+        "huggingface_models:McG-221/Qwen3.6-35B-A3B-NSC-ACE-SABER-mlx-8Bit"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+          "url": "https://huggingface.co/papers/2605.16909",
+          "score": 0.512,
           "trust_tier": "research"
         },
         {
@@ -50,66 +93,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T19:49:46+00:00",
-      "updatedAt": "2026-05-19T19:49:46+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "task-oriented-coding-agents",
-      "title_ar": "وكلاء البرمجة الموجهة بالمهام",
-      "thesis_ar": "تزايد استخدام وكلاء البرمجة الموجهة بالمهام في تطوير البرمجيات يتيح فرصًا جديدة في السوق. هذه التكنولوجيا يمكن أن تسهم في تسريع عملية تطوير التطبيقات.",
-      "buyer_ar": "شركات تطوير البرمجيات",
-      "sellable_product_ar": "أداة برمجة تعتمد على وكلاء ذكيين",
-      "first_paid_test_ar": "تطوير مشروع برمجي بسيط باستخدام الأداة",
-      "tools_ar": "أدوات البرمجة، نماذج الذكاء الاصطناعي، بيئات التطوير المتكاملة",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.17526v1",
-        "huggingface_daily_papers:2605.18630",
-        "huggingface_models:rbelanec/train_record_42_1779207275"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SCICONVBENCH: Benchmarking LLMs on Multi-Turn Clarification for Task Formulation in Computational Science",
-          "url": "https://huggingface.co/papers/2605.18630",
-          "score": 0.482,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "rbelanec/train_record_42_1779207275 — text-generation",
-          "url": "https://huggingface.co/rbelanec/train_record_42_1779207275",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-19T19:49:46+00:00",
-      "updatedAt": "2026-05-19T19:49:46+00:00",
+      "publishedAt": "2026-05-19T21:16:50+00:00",
+      "updatedAt": "2026-05-19T21:16:50+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multimodal-tool-using-agents",
-      "title_ar": "وكلاء استخدام الأدوات متعددة الوسائط",
-      "thesis_ar": "تزايد الحاجة لوكلاء يستخدمون أدوات متعددة الوسائط في بيئات العمل المهنية يفتح المجال لتطوير حلول ذكية. هذه الحلول يمكن أن تعزز الإنتاجية وتقلل من الأخطاء.",
-      "buyer_ar": "الشركات في القطاعات المهنية المختلفة",
-      "sellable_product_ar": "نظام ذكاء اصطناعي متعدد الوسائط",
-      "first_paid_test_ar": "تطبيق النظام في مشروع تجريبي مع فريق عمل",
-      "tools_ar": "أدوات الذكاء الاصطناعي، واجهات برمجة التطبيقات، أدوات التنسيق",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-solutions",
+      "title_ar": "حلول تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص في مجالات متعددة مثل التسويق والفنون. يمكن لتقنيات تحويل النص إلى صورة أن تلبي هذا الطلب بشكل فعال.",
+      "buyer_ar": "وكالات التسويق، شركات الإنتاج الإعلامي",
+      "sellable_product_ar": "خدمات تحويل النصوص إلى صور مخصصة باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لعميل محتمل",
+      "tools_ar": "أدوات تحويل النص إلى صورة، بيانات تدريب، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2605.16909",
-        "huggingface_daily_papers:2605.18630",
-        "huggingface_models:cs-552-2026-databand/safety_model"
+        "huggingface_models:Muapi/galactic-dream",
+        "huggingface_models:Muapi/low-angle-flux",
+        "huggingface_models:Muapi/splash-portrait-flux"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -117,24 +117,24 @@
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
-          "url": "https://huggingface.co/papers/2605.16909",
-          "score": 0.512,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SCICONVBENCH: Benchmarking LLMs on Multi-Turn Clarification for Task Formulation in Computational Science",
-          "url": "https://huggingface.co/papers/2605.18630",
-          "score": 0.482,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Muapi/galactic-dream — text-to-image",
+          "url": "https://huggingface.co/Muapi/galactic-dream",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "cs-552-2026-databand/safety_model — text-generation",
-          "url": "https://huggingface.co/cs-552-2026-databand/safety_model",
-          "score": 0.466,
+          "title": "Muapi/low-angle-flux — text-to-image",
+          "url": "https://huggingface.co/Muapi/low-angle-flux",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/splash-portrait-flux — text-to-image",
+          "url": "https://huggingface.co/Muapi/splash-portrait-flux",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -143,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T19:49:46+00:00",
-      "updatedAt": "2026-05-19T19:49:46+00:00",
+      "publishedAt": "2026-05-19T21:16:50+00:00",
+      "updatedAt": "2026-05-19T21:16:50+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-19T19:49:46+00:00",
+  "tiered_at": "2026-05-19T21:16:50+00:00",
   "free_preview_count": 3
 }
