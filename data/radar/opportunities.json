@@ -1,47 +1,39 @@
 {
-  "generated_at": "2026-05-19T10:58:44+00:00",
+  "generated_at": "2026-05-19T14:38:49+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 1693,
+  "corpus_count": 1699,
   "opportunities": [
     {
-      "id": "3d-room-design",
-      "title_ar": "تصميم غرف ثلاثية الأبعاد باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على تصميم المساحات الداخلية في مجالات مثل التصميم الداخلي والألعاب. استخدام تقنيات الذكاء الاصطناعي لتوليد غرف ثلاثية الأبعاد يمكن أن يلبي هذا الطلب المتزايد.",
-      "buyer_ar": "شركات التصميم الداخلي وشركات الألعاب",
-      "sellable_product_ar": "خدمة تصميم غرف ثلاثية الأبعاد باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتصميم غرفة ثلاثية الأبعاد",
-      "tools_ar": "نموذج الذكاء الاصطناعي، أدوات التصميم، منصة عرض",
-      "capital_ar": "منخفض",
+      "id": "healthcare-automation",
+      "title_ar": "أتمتة العمليات الصحية",
+      "thesis_ar": "تزايد الحاجة لأتمتة العمليات الصحية المعقدة لتحسين الكفاءة وتقليل الأخطاء. الذكاء الاصطناعي يمكن أن يلعب دوراً محورياً في ذلك.",
+      "buyer_ar": "مستشفيات، عيادات، مزودي خدمات الرعاية الصحية",
+      "sellable_product_ar": "نظام أتمتة للعمليات الصحية باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطبيق النظام في قسم محدد بمستشفى لتقييم فعاليته",
+      "tools_ar": "نموذج Hugging Face، أدوات تحليل البيانات، برمجيات إدارة الرعاية الصحية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2605.18451",
         "huggingface_daily_papers:2605.16679",
-        "huggingface_models:LyliaEngine/Mirazhael"
+        "huggingface_daily_papers:2605.16909"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 2,
       "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
-          "url": "https://huggingface.co/papers/2605.18451",
-          "score": 0.527,
+          "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
+          "url": "https://huggingface.co/papers/2605.16679",
+          "score": 0.519,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/Mirazhael — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/Mirazhael",
-          "score": 0.521,
-          "trust_tier": "official"
-        },
-        {
           "source_id": "huggingface_daily_papers",
-          "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
-          "url": "https://huggingface.co/papers/2605.16679",
-          "score": 0.507,
+          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+          "url": "https://huggingface.co/papers/2605.16909",
+          "score": 0.512,
           "trust_tier": "research"
         }
       ],
@@ -50,132 +42,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T10:58:44+00:00",
-      "updatedAt": "2026-05-19T10:58:44+00:00",
+      "publishedAt": "2026-05-19T14:38:49+00:00",
+      "updatedAt": "2026-05-19T14:38:49+00:00",
       "sortOrder": 0
-    },
-    {
-      "id": "healthcare-automation",
-      "title_ar": "أتمتة العمليات الصحية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى تحسين كفاءة العمليات الصحية. يمكن للذكاء الاصطناعي أن يساعد في أتمتة العمليات المعقدة وتحسين اتخاذ القرارات.",
-      "buyer_ar": "المستشفيات ومراكز الرعاية الصحية",
-      "sellable_product_ar": "نظام أتمتة العمليات الصحية باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق نموذج أتمتة على عملية صحية محددة",
-      "tools_ar": "نموذج الذكاء الاصطناعي، قاعدة بيانات طبية، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.16679",
-        "huggingface_daily_papers:2605.18401",
-        "huggingface_daily_papers:2605.16909"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
-          "url": "https://huggingface.co/papers/2605.16909",
-          "score": 0.512,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
-          "url": "https://huggingface.co/papers/2605.16679",
-          "score": 0.507,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution",
-          "url": "https://huggingface.co/papers/2605.18401",
-          "score": 0.488,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-19T10:58:44+00:00",
-      "updatedAt": "2026-05-19T10:58:44+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "enterprise-ai-tools",
-      "title_ar": "تطوير أدوات الذكاء الاصطناعي للمؤسسات",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في المؤسسات يتطلب أدوات متقدمة لتحسين الكفاءة. يمكن تطوير أدوات جديدة لتلبية احتياجات المؤسسات المختلفة.",
-      "buyer_ar": "شركات التكنولوجيا والمؤسسات الكبيرة",
-      "sellable_product_ar": "أدوات ذكاء اصطناعي مخصصة للمؤسسات",
-      "first_paid_test_ar": "تقديم أداة تجريبية لمؤسسة معينة",
-      "tools_ar": "نموذج الذكاء الاصطناعي، أدوات تطوير البرمجيات، منصة اختبار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.18327",
-        "huggingface_daily_papers:2605.18261",
-        "huggingface_daily_papers:2605.17526"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
-          "url": "https://huggingface.co/papers/2605.18451",
-          "score": 0.527,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/Mirazhael — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/Mirazhael",
-          "score": 0.521,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
-          "url": "https://huggingface.co/papers/2605.16909",
-          "score": 0.512,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
-          "url": "https://huggingface.co/papers/2605.16679",
-          "score": 0.507,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "HaifaAlsalem/shamel-service-v2-Iam — image-text-to-text",
-          "url": "https://huggingface.co/HaifaAlsalem/shamel-service-v2-Iam",
-          "score": 0.494,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Non-Colliding Biometric Identities for Digital Entities: Geometry, Capacity, and Million-Scale Virtual Identity Provisioning",
-          "url": "http://arxiv.org/abs/2605.18238v1",
-          "score": 0.494,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-19T10:58:44+00:00",
-      "updatedAt": "2026-05-19T10:58:44+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-19T10:58:44+00:00",
+  "tiered_at": "2026-05-19T14:38:49+00:00",
   "free_preview_count": 3
 }
