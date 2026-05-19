@@ -283,24 +283,106 @@ def _osascript(script: str, timeout: int = MAX_OSASCRIPT_TIMEOUT) -> str:
     return r.stdout.strip()
 
 
-def safari_open_url(url: str) -> None:
-    script = f'''
+# ---------- Dedicated Safari window for the collector ----------
+# The collector creates and tracks its OWN Safari window. Every navigation,
+# scroll, and JS call targets that window only — so anything the user does
+# in other windows (or even other tabs of the same window, since we work on
+# the front document of OUR window) is left alone. Previously the collector
+# called `set URL of front document` which would overwrite whatever page the
+# user was currently reading in any Safari window. Now it can't.
+#
+# The window ID is stored in safari_state.json so it survives Python restarts
+# as long as Safari itself stays open. If the user closes the collector
+# window, the next operation transparently creates a fresh one.
+
+def _safari_running() -> bool:
+    try:
+        _osascript('tell application "System Events" to exists application process "Safari"', timeout=4)
+        out = _osascript('tell application "System Events" to (name of application processes) contains "Safari"', timeout=4)
+        return "true" in out.lower()
+    except Exception:
+        return False
+
+
+def _collector_window_id() -> int:
+    """Get or create the dedicated collector window's AppleScript ID.
+
+    Stores the ID in safari_state so it persists across Python restarts
+    within a single Safari session. If the window was closed by the user
+    (or Safari quit), a fresh window is created automatically."""
+    state = load_state()
+    wid = state.get("collector_window_id")
+    if wid:
+        try:
+            # Verify the window still exists; this returns the id on success
+            r = _osascript(
+                f'tell application "Safari" to return id of window id {wid}',
+                timeout=6,
+            )
+            if r.strip().isdigit() and int(r.strip()) == int(wid):
+                return int(wid)
+        except Exception:
+            # Stale ID — fall through to create a new one
+            pass
+    # Create a new dedicated window. `activate` is needed only on the first
+    # creation so Safari processes the AppleScript event; subsequent calls
+    # don't activate, keeping focus with the user.
+    out = _osascript('''
 tell application "Safari"
     activate
-    if (count of documents) = 0 then
-        make new document with properties {{URL:"{url}"}}
-    else
-        set URL of front document to "{url}"
-    end if
+    make new document with properties {URL:"about:blank"}
+    return id of front window
+end tell
+''', timeout=10)
+    try:
+        wid = int(out.strip().splitlines()[-1])
+    except (ValueError, IndexError):
+        raise RuntimeError(f"could not get collector window id (got: {out!r})")
+    state["collector_window_id"] = wid
+    save_state(state)
+    return wid
+
+
+def safari_open_url(url: str) -> None:
+    """Navigate the collector window's current tab to `url`. NEVER touches
+    other Safari windows."""
+    wid = _collector_window_id()
+    safe_url = url.replace('"', '%22')
+    script = f'''
+tell application "Safari"
+    set URL of current tab of window id {wid} to "{safe_url}"
 end tell
 '''
-    _osascript(script)
+    try:
+        _osascript(script)
+    except RuntimeError:
+        # Cached window ID is stale (user closed it). Drop + recreate + retry.
+        s = load_state(); s.pop("collector_window_id", None); save_state(s)
+        wid = _collector_window_id()
+        _osascript(f'''
+tell application "Safari"
+    set URL of current tab of window id {wid} to "{safe_url}"
+end tell
+''')
 
 
 def safari_run_js(js: str) -> str:
+    """Run JavaScript in the collector window's current tab only."""
+    wid = _collector_window_id()
     escaped = js.replace("\\", "\\\\").replace('"', '\\"')
-    script = f'tell application "Safari" to return (do JavaScript "{escaped}" in front document)'
-    return _osascript(script)
+    script = (
+        f'tell application "Safari" to return '
+        f'(do JavaScript "{escaped}" in current tab of window id {wid})'
+    )
+    try:
+        return _osascript(script)
+    except RuntimeError:
+        s = load_state(); s.pop("collector_window_id", None); save_state(s)
+        wid = _collector_window_id()
+        return _osascript(
+            f'tell application "Safari" to return '
+            f'(do JavaScript "{escaped}" in current tab of window id {wid})'
+        )
 
 
 def safari_scroll_random() -> None:
