@@ -1,39 +1,47 @@
 {
-  "generated_at": "2026-05-19T14:38:49+00:00",
+  "generated_at": "2026-05-19T18:03:53+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 1699,
+  "corpus_count": 1660,
   "opportunities": [
     {
       "id": "healthcare-automation",
       "title_ar": "أتمتة العمليات الصحية",
-      "thesis_ar": "تزايد الحاجة لأتمتة العمليات الصحية المعقدة لتحسين الكفاءة وتقليل الأخطاء. الذكاء الاصطناعي يمكن أن يلعب دوراً محورياً في ذلك.",
-      "buyer_ar": "مستشفيات، عيادات، مزودي خدمات الرعاية الصحية",
-      "sellable_product_ar": "نظام أتمتة للعمليات الصحية باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق النظام في قسم محدد بمستشفى لتقييم فعاليته",
-      "tools_ar": "نموذج Hugging Face، أدوات تحليل البيانات، برمجيات إدارة الرعاية الصحية",
+      "thesis_ar": "تزايد الحاجة لأتمتة العمليات الصحية المعقدة في ظل التحول الرقمي في الرعاية الصحية. يمكن أن توفر الحلول التي تعتمد على الذكاء الاصطناعي كفاءة عالية وتكاليف أقل.",
+      "buyer_ar": "المستشفيات والعيادات الطبية",
+      "sellable_product_ar": "نظام أتمتة العمليات الصحية المدعوم بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تطبيق النظام في قسم واحد من المستشفى لمدة شهر",
+      "tools_ar": "الذكاء الاصطناعي، تحليل البيانات، البرمجة",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2605.16679",
+        "huggingface_daily_papers:2605.18451",
         "huggingface_daily_papers:2605.16909"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.52,
+      "signal_count": 3,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?",
           "url": "https://huggingface.co/papers/2605.16679",
-          "score": 0.519,
+          "score": 0.527,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
+          "url": "https://huggingface.co/papers/2605.18451",
+          "score": 0.505,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
           "url": "https://huggingface.co/papers/2605.16909",
-          "score": 0.512,
+          "score": 0.504,
           "trust_tier": "research"
         }
       ],
@@ -42,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T14:38:49+00:00",
-      "updatedAt": "2026-05-19T14:38:49+00:00",
+      "publishedAt": "2026-05-19T18:03:53+00:00",
+      "updatedAt": "2026-05-19T18:03:53+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "3d-design-automation",
+      "title_ar": "أتمتة تصميم الغرف ثلاثية الأبعاد",
+      "thesis_ar": "الطلب المتزايد على تصميم الغرف ثلاثية الأبعاد في مجالات مثل التصميم الداخلي والألعاب. يمكن أن توفر الحلول المدعومة بالذكاء الاصطناعي تصميمات دقيقة وسريعة.",
+      "buyer_ar": "شركات التصميم الداخلي وشركات الألعاب",
+      "sellable_product_ar": "أداة تصميم ثلاثية الأبعاد تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتصميم غرفة واحدة",
+      "tools_ar": "الذكاء الاصطناعي، البرمجة، التصميم الجرافيكي",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.18451",
+        "huggingface_daily_papers:2605.16909",
+        "huggingface_daily_papers:2605.18401"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
+          "url": "https://huggingface.co/papers/2605.18451",
+          "score": 0.505,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+          "url": "https://huggingface.co/papers/2605.16909",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution",
+          "url": "https://huggingface.co/papers/2605.18401",
+          "score": 0.489,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-19T18:03:53+00:00",
+      "updatedAt": "2026-05-19T18:03:53+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "tool-using-agents",
+      "title_ar": "تطوير وكلاء يستخدمون الأدوات",
+      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي في بيئات العمل الحقيقية. يمكن أن تسهم هذه الوكلاء في تحسين الكفاءة وتقليل الأخطاء.",
+      "buyer_ar": "الشركات التي تعتمد على الأتمتة",
+      "sellable_product_ar": "نظام وكيل ذكي يستخدم الأدوات في بيئات العمل",
+      "first_paid_test_ar": "تطبيق الوكيل في مشروع صغير لمدة أسبوع",
+      "tools_ar": "الذكاء الاصطناعي، البرمجة، أدوات الأتمتة",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.16909",
+        "huggingface_daily_papers:2605.18401",
+        "huggingface_daily_papers:2605.15565"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+          "url": "https://huggingface.co/papers/2605.16909",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution",
+          "url": "https://huggingface.co/papers/2605.18401",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AstraFlow: Dataflow-Oriented Reinforcement Learning for Agentic LLMs",
+          "url": "https://huggingface.co/papers/2605.15565",
+          "score": 0.452,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-19T18:03:53+00:00",
+      "updatedAt": "2026-05-19T18:03:53+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-19T14:38:49+00:00",
+  "tiered_at": "2026-05-19T18:03:53+00:00",
   "free_preview_count": 3
 }
