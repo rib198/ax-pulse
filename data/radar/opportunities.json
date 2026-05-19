@@ -1,78 +1,48 @@
 {
-  "generated_at": "2026-05-19T06:40:35+00:00",
-  "source": "agent_pipeline_v1+rules",
+  "generated_at": "2026-05-19T07:41:29+00:00",
+  "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 1663,
+  "corpus_count": 1704,
   "opportunities": [
     {
-      "id": "ai_income_tools",
-      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
-      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.44,
-      "confidence": 0.84,
-      "source": "rules",
+      "id": "multimodal-modeling",
+      "title_ar": "تطوير نماذج متعددة الوسائط",
+      "thesis_ar": "تزايد الحاجة إلى نماذج قادرة على فهم وتوليد المحتوى المتنوع مثل النصوص والصور والفيديو. هذا يتماشى مع الاتجاهات الحالية في الذكاء الاصطناعي التي تدعم التفاعل المتعدد الوسائط.",
+      "buyer_ar": "شركات التقنية، شركات الإنتاج الإعلامي",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط للتطبيقات التجارية",
+      "first_paid_test_ar": "تطوير نموذج أولي لمهمة محددة مثل توليد محتوى مرئي",
+      "tools_ar": "أدوات تطوير البرمجيات، مكتبات الذكاء الاصطناعي، بيئات الحوسبة السحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.18678",
+        "huggingface_daily_papers:2605.18451",
+        "huggingface_daily_papers:2605.18739"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "ReasonSTL: Bridging Natural Language and Signal Temporal Logic via Tool-Augmented Process-Rewarded Learning",
-          "url": "http://arxiv.org/abs/2605.06483v1",
-          "score": 0.471,
+          "source_id": "huggingface_daily_papers",
+          "title": "Lance: Unified Multimodal Modeling by Multi-Task Synergy",
+          "url": "https://huggingface.co/papers/2605.18678",
+          "score": 0.512,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Excited to introduce Gemma 4 Multi-Token Prediction DraftersAccelerated inference right in your pockets  - Up to a 3x speedup  - Same quali…",
-          "url": "https://x.com/osanseviero/status/2051695861801820475",
-          "score": 0.46,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "we have updated our partnership with microsoft.  microsoft will remain our primary cloud partner, but we are now able to make our products …",
-          "url": "https://x.com/sama/status/2048755148361707946",
-          "score": 0.44,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "This guy literally built an ENTIRE operating system with Claude Code   now he is showing you exactly how.  Nate just dropped the ultimate A…",
-          "url": "https://x.com/DataChaz/status/2054210833044140393",
-          "score": 0.437,
-          "trust_tier": "press"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "GeoStack: A Framework for Quasi-Abelian Knowledge Composition in VLMs",
-          "url": "https://huggingface.co/papers/2605.06477",
-          "score": 0.435,
+          "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
+          "url": "https://huggingface.co/papers/2605.18451",
+          "score": 0.51,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
-          "url": "http://arxiv.org/abs/2605.04637v1",
-          "score": 0.434,
+          "source_id": "huggingface_daily_papers",
+          "title": "LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation",
+          "url": "https://huggingface.co/papers/2605.18739",
+          "score": 0.494,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "On the Security of Research Artifacts",
-          "url": "http://arxiv.org/abs/2605.06508v1",
-          "score": 0.433,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "We’re donating Petri, our open-source alignment tool, to  @meridianlabs_ai , so its development can continue independently.  Working with M…",
-          "url": "https://x.com/AnthropicAI/status/2052494460966019137",
-          "score": 0.427,
-          "trust_tier": "press"
         }
       ],
       "tier": "free",
@@ -80,79 +50,42 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T06:40:35+00:00",
-      "updatedAt": "2026-05-19T06:40:35+00:00",
+      "publishedAt": "2026-05-19T07:41:29+00:00",
+      "updatedAt": "2026-05-19T07:41:29+00:00",
       "sortOrder": 0
     },
     {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
-      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
-      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
-      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.41,
-      "confidence": 0.83,
-      "source": "rules",
+      "id": "3d-room-design",
+      "title_ar": "تطوير حلول تصميم ثلاثي الأبعاد",
+      "thesis_ar": "هناك طلب متزايد على تصميم الغرف ثلاثية الأبعاد في مجالات مثل التصميم الداخلي والألعاب. تقنيات الذكاء الاصطناعي يمكن أن تسهل هذه العملية بشكل كبير.",
+      "buyer_ar": "شركات التصميم الداخلي، شركات الألعاب",
+      "sellable_product_ar": "أداة تصميم ثلاثي الأبعاد تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتصميم غرفة ثلاثية الأبعاد",
+      "tools_ar": "أدوات تصميم ثلاثي الأبعاد، مكتبات الذكاء الاصطناعي، بيئات الحوسبة السحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.18451",
+        "huggingface_daily_papers:2605.18661",
+        "huggingface_daily_papers:2605.18238v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "ReasonSTL: Bridging Natural Language and Signal Temporal Logic via Tool-Augmented Process-Rewarded Learning",
-          "url": "http://arxiv.org/abs/2605.06483v1",
-          "score": 0.471,
+          "source_id": "huggingface_daily_papers",
+          "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
+          "url": "https://huggingface.co/papers/2605.18451",
+          "score": 0.51,
           "trust_tier": "research"
         },
         {
-          "source_id": "manual_x",
-          "title": "we have updated our partnership with microsoft.  microsoft will remain our primary cloud partner, but we are now able to make our products …",
-          "url": "https://x.com/sama/status/2048755148361707946",
-          "score": 0.44,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
-          "url": "http://arxiv.org/abs/2605.04637v1",
-          "score": 0.434,
+          "source_id": "huggingface_daily_papers",
+          "title": "AI for Auto-Research: Roadmap & User Guide",
+          "url": "https://huggingface.co/papers/2605.18661",
+          "score": 0.493,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Socialism as a Service: 99.999% downtime.",
-          "url": "https://x.com/pmddomingos/status/2055038515361218638",
-          "score": 0.402,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "openai_news",
-          "title": "Parloa builds service agents customers want to talk to",
-          "url": "https://openai.com/index/parloa",
-          "score": 0.38,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Reachy Mini ready to go! Audio on  Cleary I'll connect it to Local AI services and to my Hermes Agent really soon",
-          "url": "https://x.com/ivanfioravanti/status/2053845737562153132",
-          "score": 0.379,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "**بحسب SADA Benchmark**    نبرة STT هي الأفضل والأدق كخدمة تحويل صوت إلى نص (التفريغ النصي) للهجة العامية.  لمختلف التطبيقات من ملخص اجتماع…",
-          "url": "https://x.com/NabrahAI/status/2049473058470002737?s=20",
-          "score": 0.379,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Today we’re announcing an agreement with Amazon Web Services to bring tens of millions of AWS Graviton cores to our compute portfolio.  Thi…",
-          "url": "https://x.com/AIatMeta/status/2047647617681957207",
-          "score": 0.379,
-          "trust_tier": "press"
         }
       ],
       "tier": "free",
@@ -160,78 +93,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T06:40:35+00:00",
-      "updatedAt": "2026-05-19T06:40:35+00:00",
+      "publishedAt": "2026-05-19T07:41:29+00:00",
+      "updatedAt": "2026-05-19T07:41:29+00:00",
       "sortOrder": 1
     },
     {
-      "id": "ai_income_automation",
-      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
-      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
-      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
-      "tools_ar": "n8n أو Make، API، نموذج AI",
+      "id": "automated-research-tools",
+      "title_ar": "تطوير أدوات بحث آلية",
+      "thesis_ar": "تزايد الاعتماد على الأنظمة الآلية في البحث العلمي وتوليد الأوراق البحثية. هذا يتطلب أدوات فعالة وسهلة الاستخدام.",
+      "buyer_ar": "الجامعات، مراكز البحث",
+      "sellable_product_ar": "أداة بحث آلية لتوليد الأوراق البحثية",
+      "first_paid_test_ar": "تطوير نموذج أولي لأداة بحث آلية",
+      "tools_ar": "مكتبات الذكاء الاصطناعي، أدوات تحليل البيانات، بيئات الحوسبة السحابية",
       "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.41,
-      "confidence": 0.83,
-      "source": "rules",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.18661",
+        "huggingface_daily_papers:2605.18238v1",
+        "huggingface_daily_papers:2605.18643"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies",
-          "url": "http://arxiv.org/abs/2605.04637v1",
-          "score": 0.434,
+          "source_id": "huggingface_daily_papers",
+          "title": "AI for Auto-Research: Roadmap & User Guide",
+          "url": "https://huggingface.co/papers/2605.18661",
+          "score": 0.493,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "AI agents are already going wild, but today’s red-teaming tools for them are still like toys    After spending 20 months and $120K API cred…",
-          "url": "https://x.com/ZRChen_AISafety/status/2053172135305052534",
-          "score": 0.423,
-          "trust_tier": "press"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction",
-          "url": "https://huggingface.co/papers/2605.05242",
-          "score": 0.422,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Introducing our biggest upgrades to the Deep Research API yet... including Deep Research Max (our SOTA system), MCP support, Native charts …",
-          "url": "https://x.com/OfficialLoganK/status/2046628030777631000",
-          "score": 0.416,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Two weeks after release, Hy3 preview is #1 on  @OpenRouter 's weekly leaderboard with 3.66T tokens processed, up 298% week-over-week.  #1 i…",
-          "url": "https://x.com/TencentHunyuan/status/2051978552900538403",
-          "score": 0.406,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "BioTool: A Comprehensive Tool-Calling Dataset for Enhancing Biomedical Capabilities of Large Language Models",
-          "url": "https://huggingface.co/papers/2605.05758",
-          "score": 0.402,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "DecodingTrust-Agent Platform (DTap): A Controllable and Interactive Red-Teaming Platform for AI Agents",
-          "url": "http://arxiv.org/abs/2605.04808v1",
-          "score": 0.4,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "PrefixGuard: From LLM-Agent Traces to Online Failure-Warning Monitors",
-          "url": "http://arxiv.org/abs/2605.06455v1",
-          "score": 0.4,
+          "title": "Post-Trained MoE Can Skip Half Experts via Self-Distillation",
+          "url": "https://huggingface.co/papers/2605.18643",
+          "score": 0.485,
           "trust_tier": "research"
         }
       ],
@@ -240,91 +136,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-19T06:40:35+00:00",
-      "updatedAt": "2026-05-19T06:40:35+00:00",
+      "publishedAt": "2026-05-19T07:41:29+00:00",
+      "updatedAt": "2026-05-19T07:41:29+00:00",
       "sortOrder": 2
-    },
-    {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
-      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
-      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
-      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.4,
-      "confidence": 0.83,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "manual_x",
-          "title": "Last week, we made Gemini Embedding 2, our first natively multimodal embedding model, available to the general public. Since then, develope…",
-          "url": "https://x.com/GoogleAI/status/2049903687016063456",
-          "score": 0.406,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "BioTool: A Comprehensive Tool-Calling Dataset for Enhancing Biomedical Capabilities of Large Language Models",
-          "url": "https://huggingface.co/papers/2605.05758",
-          "score": 0.402,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Sparkle: Realizing Lively Instruction-Guided Video Background Replacement via Decoupled Guidance",
-          "url": "https://huggingface.co/papers/2605.06535",
-          "score": 0.401,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Sparkle: Realizing Lively Instruction-Guided Video Background Replacement via Decoupled Guidance",
-          "url": "http://arxiv.org/abs/2605.06535v1",
-          "score": 0.4,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction",
-          "url": "https://huggingface.co/papers/2605.06642",
-          "score": 0.396,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "IntroducingViolin — an Open-source Video Translation Skill.  Video is the dominant medium on the internet, yet most high-quality content (l…",
-          "url": "https://x.com/KevinQHLin/status/2055023321218154619",
-          "score": 0.396,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Keynote announcement:  @trq212  (Thariq Shihipar), Member of Technical Staff on Claude Code at  @AnthropicAI , is keynoting #CAIS2026.  Tha…",
-          "url": "https://x.com/CAISconf/status/2050228904304971941",
-          "score": 0.387,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "RemoteZero: Geospatial Reasoning with Zero Human Annotations",
-          "url": "https://huggingface.co/papers/2605.04451",
-          "score": 0.385,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "premium",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-19T06:40:35+00:00",
-      "updatedAt": "2026-05-19T06:40:35+00:00",
-      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-05-19T06:40:35+00:00",
+  "tiered_at": "2026-05-19T07:41:29+00:00",
   "free_preview_count": 3
 }
