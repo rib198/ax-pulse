@@ -1,9 +1,8 @@
 {
-  "run_at": "2026-05-19T02:14:04+00:00",
-  "openai_calls": 4,
+  "run_at": "2026-05-19T06:40:35+00:00",
+  "openai_calls": 0,
   "openai_budget": 40,
   "agents": [
-    "source_collector",
     "manual_x_bridge",
     "evidence_guard",
     "load_learned_weights",
@@ -24,38 +23,25 @@
   ],
   "results": [
     {
-      "agent": "source_collector",
-      "ok": true,
-      "duration_s": 69.197,
-      "written": [
-        "data/radar/raw_items.json"
-      ],
-      "notes": [
-        "collected 229 signals from 25 source families",
-        "11 source errors (non-fatal)"
-      ],
-      "error": null
-    },
-    {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.053,
+      "duration_s": 0.027,
       "written": [],
       "notes": [
-        "injected 588 manual X items (skipped 611 of 1199, avg score 0.443)"
+        "injected 1438 manual X items (skipped 1815 of 3253, avg score 0.169)"
       ],
       "error": null
     },
     {
       "agent": "evidence_guard",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.003,
       "written": [
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 817 items",
-        "by tier: press=618, official=155, community=26, research=18"
+        "tagged 1663 items",
+        "by tier: press=1460, official=133, research=59, community=11"
       ],
       "error": null
     },
@@ -72,58 +58,58 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.029,
+      "duration_s": 0.025,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 817 items, top priority=0.472"
+        "ranked 1663 items, top priority=0.471"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.01,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 18 products this run",
-        "store size: 38"
+        "detected 15 companies, 16 products this run",
+        "store size: 30"
       ],
       "error": null
     },
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.045,
+      "duration_s": 0.035,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
         "+0 new model events",
-        "80 total"
+        "32 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.121,
+      "duration_s": 0.099,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "5 events (2 new)",
-        "by type: model_release=2, acquisition=1, personnel_move=1, pricing_change=1"
+        "8 events (0 new)",
+        "by type: model_release=7, pricing_change=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.019,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,38 +121,38 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 11.08,
+      "duration_s": 0.016,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 2 opportunities"
+        "rule fallback produced 4 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.988,
+      "duration_s": 0.0,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
       ],
       "notes": [
-        "openai produced brief"
+        "rule fallback brief"
       ],
       "error": null
     },
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.007,
+      "duration_s": 0.004,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 2 free / 0 premium",
+        "opps: 3 free / 1 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -174,7 +160,7 @@
     {
       "agent": "auto_archive",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.001,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,19 +174,19 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 11.048,
+      "duration_s": 0.0,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
       "notes": [
-        "openai produced 5 posts"
+        "rule fallback produced 5 posts"
       ],
       "error": null
     },
     {
       "agent": "ux_production_qa",
       "ok": true,
-      "duration_s": 0.003,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/qa_report.json"
       ],
@@ -212,24 +198,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.004,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=817, opps=2, calls=3"
+        "items=1663, opps=4, calls=0"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.493,
+      "duration_s": 0.001,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: لوحظ تراجع في إجمالي الإشارات بمقدار 35 إشارة، مما يشير إلى انخفاض عام في النشا…"
+        "insight via rules: الأحداث المرصودة مستقرة هذا التشغيل (8 حدث متابع)."
       ],
       "error": null
     },
@@ -241,8 +227,8 @@
         "data/radar/agents/learnings.json"
       ],
       "notes": [
-        "tracked 16 sources",
-        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
+        "tracked 11 sources",
+        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
       ],
       "error": null
     }
