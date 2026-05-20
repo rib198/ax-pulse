@@ -206,6 +206,59 @@ jobs:
           echo "::warning::push failed after 3 attempts — dropping this run's commit"
           exit 0
 
+      # ---- Mirror to the deploy repo that Vercel watches (rib198/ax-pulse01) ----
+      # The cron writes the public-facing data into origin/main, but Vercel is
+      # connected to a *separate* repo (rib198/ax-pulse01) for deployment.
+      # Without this mirror step, every cron's output had to be hand-pushed
+      # to deploy/main, otherwise Vercel kept serving stale opportunities,
+      # signals, and inline-data.
+      #
+      # Requires GitHub secret DEPLOY_PUSH_TOKEN — a classic PAT with `repo`
+      # scope that grants push access to rib198/ax-pulse01. When missing, the
+      # step warns and exits 0 so the cron still completes; mirroring just
+      # falls back to whatever last hand-push happened.
+      - name: Mirror main to deploy repo (ax-pulse01) for Vercel
+        if: success()
+        env:
+          DEPLOY_PUSH_TOKEN: ${{ secrets.DEPLOY_PUSH_TOKEN }}
+        run: |
+          if [ -z "$DEPLOY_PUSH_TOKEN" ]; then
+            echo "::warning::DEPLOY_PUSH_TOKEN not set — skipping mirror to ax-pulse01."
+            echo "::warning::Vercel will keep serving stale data until you add the secret."
+            echo "::warning::See: Settings → Secrets and variables → Actions → New repository secret"
+            exit 0
+          fi
+
+          # Configure the deploy remote with the token baked in (URL is
+          # ephemeral — gone with the runner — so no persistent secret leak).
+          git remote remove deploy 2>/dev/null || true
+          git remote add deploy "https://x-access-token:${DEPLOY_PUSH_TOKEN}@github.com/rib198/ax-pulse01.git"
+
+          BRANCH="${GITHUB_REF_NAME:-main}"
+
+          # Try a fast-forward push first. If deploy has diverged (e.g. someone
+          # hand-pushed there), fetch + rebase ours on top (taking deploy's
+          # binary/orphan changes if any), then retry. Same 3-attempt loop as
+          # the origin push above for resilience.
+          for attempt in 1 2 3; do
+            if git push deploy "HEAD:$BRANCH" 2>&1; then
+              echo "mirrored to deploy/$BRANCH on attempt $attempt"
+              exit 0
+            fi
+            echo "::warning::deploy push rejected on attempt $attempt — fetching + rebasing"
+            git fetch deploy "$BRANCH" || { echo "::warning::deploy fetch failed"; exit 0; }
+            # Prefer our data (origin is the source of truth); -X theirs would
+            # discard our cron output, so use -X ours instead.
+            if ! git rebase -X ours "deploy/$BRANCH" ; then
+              git rebase --abort || true
+              echo "::warning::deploy rebase conflict — dropping mirror this tick"
+              exit 0
+            fi
+            sleep $(( attempt * 2 ))
+          done
+          echo "::warning::mirror failed after 3 attempts — Vercel will see this tick's data next run"
+          exit 0
+
       - name: Summary
         if: always()
         run: |
