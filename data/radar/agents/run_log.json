@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-20T14:38:11+00:00",
+  "run_at": "2026-05-20T18:15:22+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,13 +26,13 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 36.813,
+      "duration_s": 12.637,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 264 signals from 25 source families",
-        "9 source errors (non-fatal)"
+        "collected 270 signals from 25 source families",
+        "8 source errors (non-fatal)"
       ],
       "error": null
     },
@@ -42,7 +42,7 @@
       "duration_s": 0.068,
       "written": [],
       "notes": [
-        "injected 1428 manual X items (skipped 1825 of 3253, avg score 0.169)"
+        "injected 1414 manual X items (skipped 1839 of 3253, avg score 0.169)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 1692 items",
-        "by tier: press=1463, official=155, research=46, community=28"
+        "tagged 1684 items",
+        "by tier: press=1448, official=154, research=59, community=23"
       ],
       "error": null
     },
@@ -72,51 +72,51 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.047,
+      "duration_s": 0.048,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 1692 items, top priority=0.549"
+        "ranked 1684 items, top priority=0.559"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.017,
+      "duration_s": 0.018,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 15 products this run",
-        "store size: 32"
+        "detected 16 companies, 17 products this run",
+        "store size: 33"
       ],
       "error": null
     },
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.064,
+      "duration_s": 0.067,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+3 new model events",
-        "56 total"
+        "+1 new model events",
+        "57 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.191,
+      "duration_s": 0.192,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "7 events (1 new)",
-        "by type: model_release=5, pricing_change=1, personnel_move=1"
+        "6 events (1 new)",
+        "by type: model_release=4, personnel_move=1, pricing_change=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 15.566,
+      "duration_s": 11.399,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 10.87,
+      "duration_s": 15.133,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 8.534,
+      "duration_s": 16.819,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=1692, opps=3, calls=3"
+        "items=1684, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 4.113,
+      "duration_s": 27.058,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: يظهر نمط تصاعدي في نشاط الإصدارات من Google وDeepSeek وClaude، مما يشير إلى اهت…"
+        "insight via openai: شهدت الأنشطة الأخيرة زيادة في إصدار النماذج، مما يشير إلى تركيز متزايد من الشرك…"
       ],
       "error": null
     },
