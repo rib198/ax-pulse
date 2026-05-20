@@ -1,90 +1,47 @@
 {
-  "generated_at": "2026-05-20T07:40:34+00:00",
+  "generated_at": "2026-05-20T10:47:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 1697,
+  "corpus_count": 1699,
   "opportunities": [
     {
-      "id": "multimodal-evidence-seeking",
-      "title_ar": "أتمتة البحث عن الأدلة متعددة الوسائط",
-      "thesis_ar": "تزايد الاعتماد على أنظمة الذكاء الاصطناعي في اتخاذ القرارات السريرية. يمكن أن تسهم هذه الأنظمة في تحسين دقة القرارات الطبية.",
-      "buyer_ar": "المستشفيات ومراكز الرعاية الصحية",
-      "sellable_product_ar": "نظام دعم القرار السريري القائم على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق النظام في قسم واحد من مستشفى",
-      "tools_ar": "نموذج تعلم عميق، بيانات طبية، واجهة مستخدم",
+      "id": "multi-shot-audio-video-generation",
+      "title_ar": "توليد فيديوهات متعددة اللقطات مع الصوت",
+      "thesis_ar": "تتزايد الحاجة إلى نماذج توليد فيديوهات متعددة اللقطات لتلبية الطلبات الواقعية. هذا المجال لا يزال يواجه تحديات في التقييم، مما يفتح المجال لتطوير أدوات تقييم موثوقة.",
+      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق",
+      "sellable_product_ar": "أداة لتوليد وتقييم فيديوهات متعددة اللقطات",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد فيديو قصير متعدد اللقطات",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2605.20176v1",
-        "huggingface_daily_papers:2605.19769",
-        "arxiv_papers:2605.19899"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "OpenComputer: Verifiable Software Worlds for Computer-Use Agents",
-          "url": "https://huggingface.co/papers/2605.19769",
-          "score": 0.511,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning",
-          "url": "http://arxiv.org/abs/2605.20176v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-20T07:40:34+00:00",
-      "updatedAt": "2026-05-20T07:40:34+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "video-editing-tool",
-      "title_ar": "أداة تحرير فيديو موحدة باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على أدوات تحرير الفيديو الفعالة. يمكن أن توفر هذه الأداة حلاً مبتكرًا لتحرير الفيديو باستخدام الذكاء الاصطناعي.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والمحتوى",
-      "sellable_product_ar": "أداة تحرير فيديو تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لشركة إنتاج صغيرة",
-      "tools_ar": "نموذج تعلم عميق، واجهة مستخدم، مكتبات تحرير الفيديو",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.18827",
         "huggingface_daily_papers:2605.20183",
-        "huggingface_daily_papers:2605.19769"
+        "huggingface_daily_papers:2605.16403",
+        "huggingface_daily_papers:2605.19577"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.51,
+      "avg_score": 0.53,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "When Vision Speaks for Sound",
+          "url": "https://huggingface.co/papers/2605.16403",
+          "score": 0.533,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "MSAVBench: Towards Comprehensive and Reliable Evaluation of Multi-Shot Audio-Video Generation",
           "url": "https://huggingface.co/papers/2605.20183",
-          "score": 0.537,
+          "score": 0.531,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "OpenComputer: Verifiable Software Worlds for Computer-Use Agents",
-          "url": "https://huggingface.co/papers/2605.19769",
-          "score": 0.511,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Code-Guided Reasoning for Small Language Models: Evaluating Executable MCQA Scaffolds",
-          "url": "https://huggingface.co/papers/2605.18827",
-          "score": 0.483,
+          "title": "GoLongRL: Capability-Oriented Long Context Reinforcement Learning with Multitask Alignment",
+          "url": "https://huggingface.co/papers/2605.19577",
+          "score": 0.512,
           "trust_tier": "research"
         }
       ],
@@ -93,11 +50,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-20T07:40:34+00:00",
-      "updatedAt": "2026-05-20T07:40:34+00:00",
+      "publishedAt": "2026-05-20T10:47:05+00:00",
+      "updatedAt": "2026-05-20T10:47:05+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "cyber-threat-intelligence",
+      "title_ar": "تحليل التهديدات السيبرانية بشكل استباقي",
+      "thesis_ar": "تتزايد الحاجة إلى أدوات تحليل التهديدات السيبرانية في ظل التحول الرقمي المتسارع. يعتبر التحليل الاستباقي أمرًا حيويًا لحماية البيانات.",
+      "buyer_ar": "شركات الأمن السيبراني",
+      "sellable_product_ar": "أداة لتحليل التهديدات السيبرانية بشكل استباقي",
+      "first_paid_test_ar": "تقديم تقرير تحليل تهديد بسيط",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، منصات الأمن السيبراني",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2605.19899",
+        "huggingface_daily_papers:2605.20176",
+        "huggingface_daily_papers:2605.19604"
+      ],
+      "confidence": 0.55,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.53,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "When Vision Speaks for Sound",
+          "url": "https://huggingface.co/papers/2605.16403",
+          "score": 0.533,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MSAVBench: Towards Comprehensive and Reliable Evaluation of Multi-Shot Audio-Video Generation",
+          "url": "https://huggingface.co/papers/2605.20183",
+          "score": 0.531,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "EnvFactory: Scaling Tool-Use Agents via Executable Environments Synthesis and Robust RL",
+          "url": "https://huggingface.co/papers/2605.18703",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design",
+          "url": "http://arxiv.org/abs/2605.19717v1",
+          "score": 0.524,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "A Case for Agentic Tuning: From Documentation to Action in PostgreSQL",
+          "url": "http://arxiv.org/abs/2605.19988v1",
+          "score": 0.524,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "reconCTI: A Proactive Approach to Cyber-Threat Intelligence",
+          "url": "http://arxiv.org/abs/2605.19899v1",
+          "score": 0.52,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-20T10:47:05+00:00",
+      "updatedAt": "2026-05-20T10:47:05+00:00",
       "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-20T07:40:34+00:00",
+  "tiered_at": "2026-05-20T10:47:05+00:00",
   "free_preview_count": 3
 }
