@@ -63,7 +63,7 @@ const LAYERS = {
   sources: {
     title: { ar: 'هل البيانات محدثة؟', en: 'Is the data fresh?' },
     summary: {
-      ar: 'حالة كل مصدر بلغة بسيطة: نجح في آخر رصد، غير متصل، نعرض نسخة محفوظة، أو فشل آخر تحديث.',
+      ar: 'حالة كل مصدر بلغة بسيطة: نجح في آخر رصد، غير متصل، نعرض نسخة محفوظة، أو تعذّر تحديثه مؤقتًا.',
       en: 'Per-source freshness in plain language: succeeded last scan, disconnected, cached, or failed.'
     }
   },
@@ -564,14 +564,7 @@ function _opportunityKey(value) {
 }
 
 function opportunityDisplayCount() {
-  const titles = new Set();
-  focusedOpportunityRows()
-    .concat(manualXOpportunityRows(), candidateOpportunityRows(), opportunityRows())
-    .forEach((item) => {
-      const key = _opportunityKey(item.title || item.product || item.id || '');
-      if (key) titles.add(key);
-    });
-  return titles.size || RadarState.productPlaybooks.length || 0;
+  return allWorthyOpportunityRows().length;
 }
 
 function reviewPendingCount() {
@@ -842,10 +835,7 @@ function renderDock(layer) {
 
 function dockItems(layer) {
   if (layer === 'opportunities') {
-    const focused = focusedOpportunityRows();
-    const fromX = manualXOpportunityRows();
-    const fallback = candidateOpportunityRows().concat(opportunityRows());
-    return focused.concat(fromX, fallback).slice(0, RadarState.archiveExpanded ? 18 : 12);
+    return allWorthyOpportunityRows();
   }
   if (layer === 'sources') return sourceHealthRows();
   if (layer === 'trending') {
@@ -2061,7 +2051,7 @@ function sourceHealthRows() {
 }
 
 function sourceHealthDisplayRows(rows) {
-  const priority = { failed: 0, skipped: 1, stale: 2, active: 3 };
+  const priority = { active: 0, stale: 1, skipped: 2, failed: 3 };
   return [...rows].sort((a, b) => {
     const diff = (priority[a.status] ?? 9) - (priority[b.status] ?? 9);
     if (diff) return diff;
@@ -2109,12 +2099,12 @@ function sourceTrustExplanation(overview) {
   const status = RadarState.runStatus || {};
   if (status.status === 'offline_cached' || (status.network && status.network.status === 'offline_or_dns_blocked' && overview.active === 0 && overview.failed > 0)) {
     return RadarState.lang === 'ar'
-      ? 'الاتصال الحي غير متاح من بيئة التشغيل. الرادار لا يدعي أن البيانات مباشرة الآن؛ يعرض نسخة محفوظة ويضع المصادر المتأثرة كفشل آخر تحديث.'
+      ? 'الاتصال الحي غير متاح من بيئة التشغيل. الرادار لا يدعي أن البيانات مباشرة الآن؛ يعرض نسخة محفوظة ويعلّم المصادر المتأثرة بأنها غير متاحة مؤقتًا.'
       : 'Live network access is unavailable in the runtime. Radar is not claiming fresh data; it shows cached content and marks affected sources as failed last update.';
   }
   if (RadarState.lang === 'ar') {
     if (!overview.total) return 'لا توجد حالة مصادر بعد، لذلك لا يمكن تأكيد حداثة البيانات.';
-    if (overview.failed > 0) return `هناك ${overview.failed} مصدر فشل في آخر رصد. نعرض المحتوى الموثق فقط، ونعلّم المحتوى القديم كمحفوظ.`;
+    if (overview.failed > 0) return `هناك ${overview.failed} مصدر تعذّر تحديثه في آخر رصد. الرادار نفسه يعمل، ونعرض فقط المحتوى الذي بقي موثوقًا أو محفوظًا.`;
     if (overview.skipped > 0) return `المصادر الأساسية نجحت في آخر رصد، لكن ${overview.skipped} مصدر غير متصل الآن. المحتوى المرتبط به يظهر كنسخة محفوظة وليس كرصد مباشر.`;
     if (overview.stale > 0) return `معظم المصادر تعمل، وبعض المحتوى محفوظ من تشغيل سابق. الأولوية دائمًا للجديد الأعلى ثقة.`;
     return 'المصادر الرسمية والبحثية والاجتماعية تعمل، والبطاقات الحالية مبنية على إشارات اجتازت الفحص.';
@@ -2131,7 +2121,7 @@ function sourceBlockedCountLabel(overview) {
     if (overview.skipped && overview.stale) return `${overview.skipped} غير متصل / ${overview.stale} محفوظ`;
     if (overview.skipped) return `${overview.skipped} غير متصل`;
     if (overview.stale) return `${overview.stale} محفوظ`;
-    if (overview.failed) return `${overview.failed} فشل`;
+    if (overview.failed) return `${overview.failed} متعذر`;
     return '0';
   }
   if (overview.skipped && overview.stale) return `${overview.skipped} off / ${overview.stale} cached`;
@@ -2142,7 +2132,7 @@ function sourceBlockedCountLabel(overview) {
 }
 
 function sourceStatusLabel(status) {
-  const ar = { active: 'نجح آخر رصد', failed: 'فشل آخر تحديث', skipped: 'غير متصل الآن', stale: 'نعرض نسخة محفوظة' };
+  const ar = { active: 'نجح آخر رصد', failed: 'تعذّر التحديث الآن', skipped: 'غير متصل الآن', stale: 'نعرض نسخة محفوظة' };
   const en = { active: 'Succeeded last scan', failed: 'Last update failed', skipped: 'Disconnected now', stale: 'Showing cached copy' };
   return (RadarState.lang === 'ar' ? ar : en)[status] || status || '';
 }
@@ -2231,7 +2221,7 @@ function sourceUserMeaning(item = {}) {
   if (RadarState.lang === 'ar') {
     if (item.status === 'active') return 'هذا المصدر نجح في آخر دورة رصد. أي بطاقة مرتبطة به تُعامل كمحدثة من وقت آخر دورة، لا كرصد جارٍ في هذه اللحظة.';
     if (item.status === 'skipped') return 'هذا المصدر لم يتم تشغيله لأن الإعداد أو المفتاح غير متوفر. إذا ظهرت بيانات منه فهي محفوظة من قبل وليست مباشرة.';
-    if (item.status === 'failed') return 'الرادار حاول قراءة هذا المصدر وفشل. لا نعتمد عليه كدليل مباشر حتى ينجح تحديثه مرة أخرى.';
+    if (item.status === 'failed') return 'تعذّر الوصول إلى هذا المصدر في آخر محاولة. إذا وُجد له محتوى ظاهر فنحن نعامله كمحفوظ، لا كتحديث مباشر.';
     return 'هذا المصدر لم يضف بيانات جديدة مؤخرًا. نحتفظ بالمحتوى القديم كأرشيف، لكن لا نعرضه كمعلومة مباشرة.';
   }
   if (item.status === 'active') return 'This source succeeded in the latest scan. Cards connected to it are fresh from that scan, not necessarily live this second.';
@@ -2246,7 +2236,7 @@ function sourceTrustImpact(item = {}) {
     if (item.status === 'active' && item.source_class === 'research') return 'تأثيره جيد، لأنه مصدر بحثي ويضيف إشارات يمكن تحويلها لفرص بعد التحقق.';
     if (item.status === 'active' && item.source_class === 'social') return 'مفيد لفهم النقاشات، لكن لا نعامله كحقيقة وحده بدون مصدر داعم.';
     if (item.status === 'skipped') return 'لا يضعف كل الرادار، لكنه يعني أن هذا المسار غير مباشر حاليًا ويظهر كمحفوظ.';
-    if (item.status === 'failed') return 'يخفض الثقة في أي محتوى يعتمد عليه وحده، لذلك يجب دعمه بمصدر آخر أو إخفاؤه من الرئيسية.';
+    if (item.status === 'failed') return 'لا نعتمد عليه وحده في التحديث الحالي، لذلك يبقى دوره ثانويًا حتى يعود ويعمل من جديد.';
     return 'يُعامل كأرشيف. يمكن الاستفادة منه للتاريخ، لكن ليس كإشارة حديثة.';
   }
   if (item.status === 'active' && item.source_class === 'official') return 'Strong positive signal because it is an official source and currently working.';
@@ -3476,6 +3466,11 @@ function xReadyCategoryLabel(category) {
 }
 
 function opportunityRows() {
+  return allWorthyOpportunityRows();
+}
+
+function baseOpportunityRows() {
+  const fromFocused = focusedOpportunityRows();
   const fromManualX = manualXOpportunityRows();
   const fromPlaybooks = RadarState.productPlaybooks.slice(0, 12).map((item) => productPlaybookRow(item));
   const fromData = RadarState.opportunities.slice(0, 4).map((opp) => ({
@@ -3509,7 +3504,50 @@ function opportunityRows() {
     source: 'arXiv',
     url: opp.source_url
   }));
-  return fromManualX.concat(fromPlaybooks, interleaveRows(fromData, fromResearch)).slice(0, 16);
+  return dedupeOpportunityRows(
+    fromFocused.concat(fromManualX, fromPlaybooks, interleaveRows(fromData, fromResearch))
+  );
+}
+
+function dedupeOpportunityRows(rows) {
+  const seen = new Set();
+  const unique = [];
+  rows.forEach((item) => {
+    const key = _opportunityKey(item.id || item.title || item.product || '');
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    unique.push(item);
+  });
+  return unique;
+}
+
+function isWorthyOpportunity(item = {}) {
+  const kind = item.kind || '';
+  const confidence = Number(item.confidence || 0);
+  const evidenceCount = Number(item.evidenceCount || item.signalCount || 0);
+  const hasBuyer = Boolean(String(item.buyer || '').trim());
+  const hasProduct = Boolean(String(item.product || '').trim());
+  const hasWhy = Boolean(String(item.why || item.pain || '').trim());
+  const hasEvidence = Array.isArray(item.sourceLinks) && item.sourceLinks.length > 0;
+
+  if (kind === 'focused_opportunity') return true;
+  if (kind === 'x_curated') return hasProduct && hasBuyer && hasEvidence && (confidence >= 0.65 || evidenceCount >= 3);
+  if (kind === 'validated_opportunity') return hasProduct && hasWhy && hasEvidence && confidence >= 0.72;
+
+  // Keep research-backed or detected rows only when they read like a real offer,
+  // not a generic bucket or playbook placeholder.
+  if (item.source === 'arXiv') return hasProduct && hasBuyer && hasWhy;
+  if (kind === 'playbook') return false;
+  if (!kind) return false;
+  return hasProduct && hasBuyer && hasWhy && hasEvidence;
+}
+
+function allWorthyOpportunityRows() {
+  return dedupeOpportunityRows(
+    focusedOpportunityRows()
+      .concat(manualXOpportunityRows(), candidateOpportunityRows(), baseOpportunityRows())
+      .filter((item) => isWorthyOpportunity(item))
+  );
 }
 
 function manualXOpportunityRows() {

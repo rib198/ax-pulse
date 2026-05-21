@@ -155,11 +155,9 @@
   </main>
 
   <script>
-    // Cache-busting at hour granularity instead of millisecond — same visitor
-    // within an hour reuses the cached JS/CSS, but stale code never lingers
-    // beyond ~1 hour (cron data refresh is every 2 hours anyway). Drastically
-    // cuts re-downloads vs Date.now() while preserving freshness.
-    const radarAssetVersion = (new Date()).toISOString().slice(0, 13).replace(/[-T]/g, '');
+    // Keep the UI code fresh on every page load. The radar data changes often,
+    // and UI fixes during the same hour should appear immediately.
+    const radarAssetVersion = Date.now();
     document.write(`<script src="assets/js/radar-inline-data.js?v=${radarAssetVersion}"><\/script>`);
     document.write(`<script src="assets/js/radar.js?v=${radarAssetVersion}"><\/script>`);
   </script>
