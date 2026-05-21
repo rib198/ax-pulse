@@ -2037,7 +2037,7 @@ function sourceHealthRows() {
   const status = RadarState.runStatus || {};
   const rows = Array.isArray(status.source_health) ? status.source_health : [];
   if (!rows.length) {
-    return sourceRegistryRows().flatMap((group) => group.sources || []).slice(0, 8).map((source, index) => ({
+    return sourceHealthDisplayRows(sourceRegistryRows().flatMap((group) => group.sources || []).slice(0, 8).map((source, index) => ({
       kind: 'source_health',
       source_id: source.id || `source_${index}`,
       source_name: source.name || source.url || 'Source',
@@ -2045,9 +2045,9 @@ function sourceHealthRows() {
       last_error: RadarState.lang === 'ar' ? 'لا يوجد ملف حالة تشغيل بعد.' : 'No run status file yet.',
       items_collected: 0,
       freshness_age_minutes: null
-    }));
+    })));
   }
-  return rows.map((row) => ({ ...row, kind: 'source_health' }));
+  return sourceHealthDisplayRows(rows.map((row) => ({ ...row, kind: 'source_health' })));
 }
 
 function sourceHealthDisplayRows(rows) {
