@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-21T02:12:31+00:00",
+  "generated_at": "2026-05-21T07:46:21+00:00",
   "note_ar": "أحداث مستخرجة من الإشارات تلقائيًا. كل حدث مدعوم بـ ≥ 2 إشارة أو إشارة من مصدر رسمي.",
-  "count": 4,
+  "count": 7,
   "events": [
     {
       "id": "evt_anthropic_pricing_change_2026_05_21",
@@ -16,8 +16,8 @@
       "evidence_count": 3,
       "confidence": 0.85,
       "first_seen": "Thu, 21 May 2026 00:21:21 +0000",
-      "last_updated": "2026-05-21T02:12:31+00:00",
-      "is_new": true,
+      "last_updated": "2026-05-21T07:46:21+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -50,30 +50,58 @@
       ]
     },
     {
-      "id": "evt_google_model_release_gemini_2026_05_21",
+      "id": "evt_github_acquisition_2026_05_20",
+      "type": "acquisition",
+      "icon": "⊗",
+      "subject": "github",
+      "family": null,
+      "title_ar": "استحواذ: github",
+      "title_en": "Acquisition: github",
+      "label_ar": "استحواذ",
+      "label_en": "Acquisition",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-20T17:43:36Z",
+      "last_updated": "2026-05-21T07:46:21+00:00",
+      "is_new": true,
+      "tier": "premium",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2605.21453v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv AI agents",
+          "title": "Quality and Security Signals in AI-Generated Python Refactoring Pull Requests",
+          "url": "http://arxiv.org/abs/2605.21453v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-20T17:43:36Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_gpt_model_release_gpt_2026_05_20",
       "type": "model_release",
       "icon": "⊕",
-      "subject": "google",
-      "family": "gemini",
-      "title_ar": "إصدار نموذج: google",
-      "title_en": "Model release: google",
+      "subject": "gpt",
+      "family": "gpt",
+      "title_ar": "إصدار نموذج: gpt",
+      "title_en": "Model release: gpt",
       "label_ar": "إصدار نموذج",
       "label_en": "Model release",
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
-      "first_seen": "Tue, 19 May 2026 17:45:00 +0000",
-      "last_updated": "2026-05-21T02:12:31+00:00",
+      "first_seen": "2026-05-20T17:09:56Z",
+      "last_updated": "2026-05-21T07:46:21+00:00",
       "is_new": true,
       "tier": "free",
       "evidence": [
         {
-          "id": "google_ai_blog:https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-          "source_id": "google_ai_blog",
-          "source_name": "Google AI Blog",
-          "title": "Gemini 3.5: frontier intelligence with action",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-          "trust_tier": "official",
-          "posted_at": "Tue, 19 May 2026 17:45:00 +0000"
+          "id": "arxiv_papers:2605.21413v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv AI product research",
+          "title": "Teaching AI Through Benchmark Construction: QuestBench as a Course-Based Practice for Accountable Knowledge Work",
+          "url": "http://arxiv.org/abs/2605.21413v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-20T17:09:56Z"
         }
       ]
     },
@@ -90,8 +118,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "Tue, 19 May 2026 17:45:00 +0000",
-      "last_updated": "2026-05-21T02:12:31+00:00",
-      "is_new": true,
+      "last_updated": "2026-05-21T07:46:21+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -106,39 +134,104 @@
       ]
     },
     {
-      "id": "evt_claude_model_release_claude_2026_05_11",
+      "id": "evt_google_model_release_gemini_2026_05_21",
       "type": "model_release",
       "icon": "⊕",
-      "subject": "claude",
-      "family": "claude",
-      "title_ar": "إصدار نموذج: claude",
-      "title_en": "Model release: claude",
+      "subject": "google",
+      "family": "gemini",
+      "title_ar": "إصدار نموذج: google",
+      "title_en": "Model release: google",
       "label_ar": "إصدار نموذج",
       "label_en": "Model release",
-      "evidence_count": 2,
-      "confidence": 0.7,
-      "first_seen": "2026-05-11T20:50:53.000Z",
-      "last_updated": "2026-05-21T02:12:31+00:00",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "Tue, 19 May 2026 17:45:00 +0000",
+      "last_updated": "2026-05-21T07:46:21+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
         {
-          "id": "manual_x:2053973809510916205",
+          "id": "google_ai_blog:https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+          "source_id": "google_ai_blog",
+          "source_name": "Google AI Blog",
+          "title": "Gemini 3.5: frontier intelligence with action",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+          "trust_tier": "official",
+          "posted_at": "Tue, 19 May 2026 17:45:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "evt_github_pricing_change_2026_05_20",
+      "type": "pricing_change",
+      "icon": "$",
+      "subject": "github",
+      "family": null,
+      "title_ar": "تغيير سعر: github",
+      "title_en": "Pricing change: github",
+      "label_ar": "تغيير سعر",
+      "label_en": "Pricing change",
+      "evidence_count": 2,
+      "confidence": 0.7,
+      "first_seen": "2026-05-20T12:56:39.000Z",
+      "last_updated": "2026-05-21T07:46:21+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "manual_x:2057083080335302834",
           "source_id": "manual_x",
-          "source_name": "X · @simonw",
-          "title": "My Mac had less available memory than I expected, turned out the \"claude\" Claude Code processes on this machine (running in various termina…",
-          "url": "https://x.com/simonw/status/2053973809510916205",
+          "source_name": "X · @socialwithaayan",
+          "title": "Muhammad Ayan @socialwithaayan · 17h Holy sh*t... a company that raised $32M just open sourced their entire product for free. It's called c…",
+          "url": "https://x.com/socialwithaayan/status/2057083080335302834",
           "trust_tier": "press",
-          "posted_at": "2026-05-11T23:01:31.000Z"
+          "posted_at": "2026-05-20T12:56:39.000Z"
         },
         {
-          "id": "manual_x:2053940934736228454",
+          "id": "manual_x:2057013960151650410",
           "source_id": "manual_x",
-          "source_name": "X · @3koozy",
-          "title": "New in Claude Code: agent view.  One list of all your sessions, available today as a research preview.",
-          "url": "https://x.com/claudeai/status/2053940934736228454",
+          "source_name": "X · @TheAIWorld22",
+          "title": "Mayank Agarwal @TheAIWorld22 · 22h Here are 10 GitHub repos that quietly print money while you sleep. 1. Cal. com Open-source Calendly. For…",
+          "url": "https://x.com/TheAIWorld22/status/2057013960151650410",
           "trust_tier": "press",
-          "posted_at": "2026-05-11T20:50:53.000Z"
+          "posted_at": "2026-05-20T08:22:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_grok_model_release_grok_2026_05_21",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "grok",
+      "family": "grok",
+      "title_ar": "إصدار نموذج: grok",
+      "title_en": "Model release: grok",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 2,
+      "confidence": 0.7,
+      "first_seen": "2026-05-21T00:18:18.000Z",
+      "last_updated": "2026-05-21T07:46:21+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "smol_ai:https://buttondown.com/ainews/archive/ainews-grok-3-3-mini-now-api-available/",
+          "source_id": "smol_ai",
+          "source_name": "smol.ai newsletter",
+          "title": "[AINews] Grok 3 & 3-mini now API Available",
+          "url": "https://buttondown.com/ainews/archive/ainews-grok-3-3-mini-now-api-available/",
+          "trust_tier": "press",
+          "posted_at": "Sat, 19 Apr 2025 05:44:39 +0000"
+        },
+        {
+          "id": "manual_x:2057254622113517793",
+          "source_id": "manual_x",
+          "source_name": "X · @elonmusk",
+          "title": "Elon Musk @elonmusk · 5h Grok Build daily release notes Quote skcd @skcd42 · 6h Bug fixes shipping to Grok Build (release notes will be ava…",
+          "url": "https://x.com/elonmusk/status/2057254622113517793",
+          "trust_tier": "press",
+          "posted_at": "2026-05-21T00:18:18.000Z"
         }
       ]
     }
