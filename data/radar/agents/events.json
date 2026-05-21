@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-21T18:10:23+00:00",
+  "generated_at": "2026-05-21T19:48:00+00:00",
   "note_ar": "أحداث مستخرجة من الإشارات تلقائيًا. كل حدث مدعوم بـ ≥ 2 إشارة أو إشارة من مصدر رسمي.",
-  "count": 11,
+  "count": 16,
   "events": [
     {
       "id": "evt_anthropic_pricing_change_2026_05_21",
@@ -16,7 +16,7 @@
       "evidence_count": 3,
       "confidence": 0.85,
       "first_seen": "Thu, 21 May 2026 00:21:21 +0000",
-      "last_updated": "2026-05-21T18:10:23+00:00",
+      "last_updated": "2026-05-21T19:48:00+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -50,30 +50,39 @@
       ]
     },
     {
-      "id": "evt_mistral_acquisition_2026_05_21",
-      "type": "acquisition",
-      "icon": "⊗",
-      "subject": "mistral",
-      "family": null,
-      "title_ar": "استحواذ: mistral",
-      "title_en": "Acquisition: mistral",
-      "label_ar": "استحواذ",
-      "label_en": "Acquisition",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-05-21T17:06:03.000Z",
-      "last_updated": "2026-05-21T18:10:23+00:00",
+      "id": "evt_deepseek_model_release_deepseek_2026_05_19",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "deepseek",
+      "family": "deepseek",
+      "title_ar": "إصدار نموذج: deepseek",
+      "title_en": "Model release: deepseek",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 2,
+      "confidence": 0.85,
+      "first_seen": "2026-05-19T09:21:09Z",
+      "last_updated": "2026-05-21T19:48:00+00:00",
       "is_new": true,
-      "tier": "premium",
+      "tier": "free",
       "evidence": [
         {
-          "id": "huggingface_models:thestarfarer/Ministral-3-14B-writer-merged",
-          "source_id": "huggingface_models",
-          "source_name": "Hugging Face multimodal models",
-          "title": "thestarfarer/Ministral-3-14B-writer-merged — image-text-to-text",
-          "url": "https://huggingface.co/thestarfarer/Ministral-3-14B-writer-merged",
-          "trust_tier": "official",
-          "posted_at": "2026-05-21T17:06:03.000Z"
+          "id": "arxiv_papers:2605.19577v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "GoLongRL: Capability-Oriented Long Context Reinforcement Learning with Multitask Alignment",
+          "url": "http://arxiv.org/abs/2605.19577v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-19T09:21:09Z"
+        },
+        {
+          "id": "arxiv_papers:2605.19358v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "Taming the Thinker: Conditional Entropy Shaping for Adaptive LLM Reasoning",
+          "url": "http://arxiv.org/abs/2605.19358v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-19T04:41:51Z"
         }
       ]
     },
@@ -90,8 +99,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-05-20T17:43:36Z",
-      "last_updated": "2026-05-21T18:10:23+00:00",
-      "is_new": true,
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": false,
       "tier": "premium",
       "evidence": [
         {
@@ -118,8 +127,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-05-20T17:09:56Z",
-      "last_updated": "2026-05-21T18:10:23+00:00",
-      "is_new": true,
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -146,8 +155,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-05-19T21:54:12Z",
-      "last_updated": "2026-05-21T18:10:23+00:00",
-      "is_new": true,
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -174,8 +183,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-05-19T13:40:26Z",
-      "last_updated": "2026-05-21T18:10:23+00:00",
-      "is_new": true,
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -190,30 +199,58 @@
       ]
     },
     {
-      "id": "evt_google_pricing_change_2026_05_21",
-      "type": "pricing_change",
-      "icon": "$",
-      "subject": "google",
-      "family": null,
-      "title_ar": "تغيير سعر: google",
-      "title_en": "Pricing change: google",
-      "label_ar": "تغيير سعر",
-      "label_en": "Pricing change",
+      "id": "evt_microsoft_model_release_llama_2026_05_20",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "microsoft",
+      "family": "llama",
+      "title_ar": "إصدار نموذج: microsoft",
+      "title_en": "Model release: microsoft",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
-      "first_seen": "Tue, 19 May 2026 17:45:00 +0000",
-      "last_updated": "2026-05-21T18:10:23+00:00",
-      "is_new": false,
+      "first_seen": "2026-05-20T07:09:53Z",
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": true,
       "tier": "free",
       "evidence": [
         {
-          "id": "google_ai_blog:https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
-          "source_id": "google_ai_blog",
-          "source_name": "Google AI Blog",
-          "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
-          "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
-          "trust_tier": "official",
-          "posted_at": "Tue, 19 May 2026 17:45:00 +0000"
+          "id": "arxiv_papers:2605.20815v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv LLM Reasoning",
+          "title": "GraphRAG on Consumer Hardware: Benchmarking Local LLMs for Healthcare EHR Schema Retrieval",
+          "url": "http://arxiv.org/abs/2605.20815v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-20T07:09:53Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_microsoft_policy_signal_2026_05_20",
+      "type": "policy_signal",
+      "icon": "§",
+      "subject": "microsoft",
+      "family": null,
+      "title_ar": "إشارة تنظيمية: microsoft",
+      "title_en": "Policy signal: microsoft",
+      "label_ar": "إشارة تنظيمية",
+      "label_en": "Policy signal",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-20T07:09:53Z",
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2605.20815v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv LLM Reasoning",
+          "title": "GraphRAG on Consumer Hardware: Benchmarking Local LLMs for Healthcare EHR Schema Retrieval",
+          "url": "http://arxiv.org/abs/2605.20815v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-20T07:09:53Z"
         }
       ]
     },
@@ -230,7 +267,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-05-19T18:06:44.000Z",
-      "last_updated": "2026-05-21T18:10:23+00:00",
+      "last_updated": "2026-05-21T19:48:00+00:00",
       "is_new": false,
       "tier": "premium",
       "evidence": [
@@ -242,6 +279,62 @@
           "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
           "trust_tier": "official",
           "posted_at": "2026-05-19T18:06:44.000Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_meta_model_release_llama_2026_05_20",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "meta",
+      "family": "llama",
+      "title_ar": "إصدار نموذج: meta",
+      "title_en": "Model release: meta",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-20T16:45:59Z",
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2605.21391v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "Post-Hoc Understanding of Metaphor Processing in Decoder-Only Language Models via Conditional Scale Entropy",
+          "url": "http://arxiv.org/abs/2605.21391v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-20T16:45:59Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_llama_model_release_llama_2026_05_20",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "llama",
+      "family": "llama",
+      "title_ar": "إصدار نموذج: llama",
+      "title_en": "Model release: llama",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-20T11:47:40Z",
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2605.21063v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "APM: Evaluating Style Personalization in LLMs with Arbitrary Preference Mappings",
+          "url": "http://arxiv.org/abs/2605.21063v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-20T11:47:40Z"
         }
       ]
     },
@@ -258,7 +351,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "Tue, 19 May 2026 17:45:00 +0000",
-      "last_updated": "2026-05-21T18:10:23+00:00",
+      "last_updated": "2026-05-21T19:48:00+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -270,6 +363,62 @@
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
           "trust_tier": "official",
           "posted_at": "Tue, 19 May 2026 17:45:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "evt_google_pricing_change_2026_05_21",
+      "type": "pricing_change",
+      "icon": "$",
+      "subject": "google",
+      "family": null,
+      "title_ar": "تغيير سعر: google",
+      "title_en": "Pricing change: google",
+      "label_ar": "تغيير سعر",
+      "label_en": "Pricing change",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "Tue, 19 May 2026 17:45:00 +0000",
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": false,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "google_ai_blog:https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+          "source_id": "google_ai_blog",
+          "source_name": "Google AI Blog",
+          "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
+          "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+          "trust_tier": "official",
+          "posted_at": "Tue, 19 May 2026 17:45:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "evt_mistral_personnel_move_2026_05_18",
+      "type": "personnel_move",
+      "icon": "↪",
+      "subject": "mistral",
+      "family": null,
+      "title_ar": "حركة كادر: mistral",
+      "title_en": "Personnel move: mistral",
+      "label_ar": "حركة كادر",
+      "label_en": "Personnel move",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-18T22:55:21Z",
+      "last_updated": "2026-05-21T19:48:00+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2605.19173v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "Prompting language influences diagnostic reasoning and accuracy of large language models",
+          "url": "http://arxiv.org/abs/2605.19173v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-18T22:55:21Z"
         }
       ]
     },
@@ -286,7 +435,7 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "2026-05-21T00:18:18.000Z",
-      "last_updated": "2026-05-21T18:10:23+00:00",
+      "last_updated": "2026-05-21T19:48:00+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -323,7 +472,7 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "2026-05-20T12:56:39.000Z",
-      "last_updated": "2026-05-21T18:10:23+00:00",
+      "last_updated": "2026-05-21T19:48:00+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
