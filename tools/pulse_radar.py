@@ -149,9 +149,14 @@ RSS_SOURCES = [
         "kind": "community",
     },
     {
-        "id": "indiehackers",
-        "name": "Indie Hackers",
-        "url": "https://www.indiehackers.com/feed.xml",
+        # Was Indie Hackers — their /feed.xml started returning a 301 redirect to
+        # the homepage HTML in early 2026, breaking the parser. Indie Hackers no
+        # longer publishes a public RSS feed. Replaced with HackerNoon which has
+        # the same indie-maker / founder / developer audience and a healthy RSS.
+        # id renamed indiehackers → hackernoon so the source_id matches reality.
+        "id": "hackernoon",
+        "name": "HackerNoon",
+        "url": "https://hackernoon.com/feed",
         "kind": "community",
     },
     {
@@ -173,10 +178,17 @@ RSS_SOURCES = [
         "kind": "official",
     },
     {
+        # Anthropic stopped publishing /news/rss.xml in 2026 (now returns 404).
+        # All probed alternatives (/news/rss, /feed, /rss.xml, etc.) also 404.
+        # The sitemap.xml IS still maintained and lists every /news/ article
+        # with a <lastmod> timestamp. We use a custom sitemap-based parser
+        # (parser="anthropic_sitemap") that reads sitemap.xml, filters /news/
+        # entries, and synthesizes RSS-like items.
         "id": "anthropic_news",
         "name": "Anthropic",
-        "url": "https://www.anthropic.com/news/rss.xml",
+        "url": "https://www.anthropic.com/sitemap.xml",
         "kind": "official",
+        "parser": "anthropic_sitemap",
     },
     {
         "id": "mit_news_ai",
@@ -207,6 +219,36 @@ ARXIV_QUERIES = [
         "id": "arxiv_ai_document_tools",
         "name": "arXiv document and business AI",
         "query": '(all:"large language model" OR all:"vision language model") AND (all:document OR all:table OR all:workflow OR all:automation OR all:enterprise)',
+    },
+    {
+        "id": "arxiv_multimodal",
+        "name": "arXiv Multimodal AI",
+        "query": 'cat:cs.CV AND cat:cs.CL',
+    },
+    {
+        "id": "arxiv_reasoning",
+        "name": "arXiv LLM Reasoning",
+        "query": 'cat:cs.CL AND (all:"chain-of-thought" OR all:reasoning)',
+    },
+    {
+        "id": "arxiv_ai_safety",
+        "name": "arXiv AI Safety & Alignment",
+        "query": 'cat:cs.AI AND (all:alignment OR all:"AI safety" OR all:RLHF)',
+    },
+    {
+        "id": "arxiv_arabic_nlp",
+        "name": "arXiv Arabic NLP",
+        "query": 'cat:cs.CL AND all:Arabic',
+    },
+    {
+        "id": "arxiv_domain_applications",
+        "name": "arXiv AI Domain Applications",
+        "query": 'cat:cs.AI AND (all:medical OR all:education OR all:finance)',
+    },
+    {
+        "id": "arxiv_open_source_models",
+        "name": "arXiv Open Source LLMs",
+        "query": 'cat:cs.CL AND (all:Llama OR all:Mistral OR all:Qwen OR all:DeepSeek)',
     },
 ]
 
@@ -373,7 +415,50 @@ def normalize_item(source_id, source_name, source_kind, title, url, text="", ext
     }
 
 
+def _fetch_anthropic_sitemap_news(source, limit=20):
+    """Custom parser for Anthropic. Anthropic deprecated their /news/rss.xml
+    feed in 2026, but the sitemap.xml is still updated with every news article.
+    Parse it, take the most recent /news/<slug> entries, derive a title from
+    the slug, and emit RSS-like items."""
+    try:
+        xml = fetch_text(source["url"], timeout=30)
+    except Exception as exc:
+        return [], {"source": source["id"], "error": str(exc)}
+    try:
+        root = ET.fromstring(xml)
+    except ET.ParseError as exc:
+        return [], {"source": source["id"], "error": f"sitemap parse: {exc}"}
+
+    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    entries = []
+    for url_el in root.findall("sm:url", ns):
+        loc = (url_el.findtext("sm:loc", default="", namespaces=ns) or "").strip()
+        if not loc.startswith("https://www.anthropic.com/news/"):
+            continue
+        lastmod = (url_el.findtext("sm:lastmod", default="", namespaces=ns) or "").strip()
+        slug = loc.rsplit("/", 1)[-1]
+        # Derive a human-ish title from the slug: kebab-case → Title Case words
+        title = " ".join(w.capitalize() for w in slug.replace("-", " ").split())
+        entries.append((lastmod, title, loc))
+
+    entries.sort(key=lambda x: x[0], reverse=True)
+    items = []
+    for lastmod, title, loc in entries[:limit]:
+        # Anthropic news titles are always AI-relevant by domain; gate only on noise.
+        if not is_noise(title, ""):
+            items.append(normalize_item(
+                source["id"], source["name"], source["kind"],
+                title, loc, "", loc, lastmod,
+            ))
+    return items, None
+
+
 def fetch_rss_source(source, limit=20):
+    # Dispatch to custom parsers for sites that no longer publish standard RSS.
+    parser = source.get("parser")
+    if parser == "anthropic_sitemap":
+        return _fetch_anthropic_sitemap_news(source, limit=limit)
+
     try:
         xml = fetch_text(source["url"])
     except Exception as exc:
@@ -398,7 +483,24 @@ def fetch_arxiv_query(source, limit=15):
         "sortBy": "submittedDate",
         "sortOrder": "descending",
     })
-    xml = fetch_text("https://export.arxiv.org/api/query?" + params, timeout=25)
+    # arXiv often times out at 25s under load. Retry up to 3 times with
+    # exponential backoff so transient slowness no longer drops the whole
+    # query. 429 / "Too Many Requests" gets a longer 10s wait — arXiv's rate
+    # limit window is wider than a timeout retry deserves.
+    last_error = None
+    xml = None
+    for attempt in range(3):
+        try:
+            xml = fetch_text("https://export.arxiv.org/api/query?" + params, timeout=60)
+            break
+        except Exception as exc:
+            last_error = exc
+            if attempt < 2:
+                msg = str(exc)
+                wait = 10 if ("429" in msg or "Too Many Requests" in msg) else (2 ** attempt)
+                time.sleep(wait)
+    if xml is None:
+        raise last_error
     root = ET.fromstring(xml)
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     items = []
