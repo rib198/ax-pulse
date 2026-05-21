@@ -1,67 +1,46 @@
 {
-  "generated_at": "2026-05-20T23:09:25+00:00",
+  "generated_at": "2026-05-21T02:12:31+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 1662,
+  "corpus_count": 1613,
   "opportunities": [
     {
-      "id": "automated-clinical-reasoning",
-      "title_ar": "أتمتة التفكير السريري متعدد الوسائط",
-      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في دعم القرارات السريرية يفتح المجال لتطوير أنظمة أتمتة فعالة. الفرصة متاحة الآن بسبب الحاجة المتزايدة لتحسين جودة الرعاية الصحية وتقليل الأخطاء الطبية.",
-      "buyer_ar": "المستشفيات والعيادات",
-      "sellable_product_ar": "نظام دعم القرار السريري المعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام دعم القرار في مستشفى محلي",
-      "tools_ar": "نموذج لغة كبير، بيانات طبية، واجهة مستخدم",
-      "capital_ar": "متوسط",
+      "id": "ai-text-to-image-services",
+      "title_ar": "خدمات تحويل النص إلى صورة باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الاهتمام بتطبيقات تحويل النص إلى صورة في مجالات متعددة مثل الفن والتسويق. مع توفر نماذج متقدمة، يمكن تقديم خدمات مخصصة للشركات والمبدعين.",
+      "buyer_ar": "شركات الإعلان، الفنانين، ومطوري الألعاب",
+      "sellable_product_ar": "خدمة تحويل النصوص إلى صور مخصصة",
+      "first_paid_test_ar": "مشروع صغير لتحويل نصوص بسيطة إلى صور لتقييم الجودة",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، منصة تسويق",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2605.20176v1",
-        "2605.19899v1",
-        "2605.17734"
+        "huggingface_models:IEKOO/trained-flux-dev-dreambooth-lora",
+        "huggingface_models:Muapi/leaning-back-against",
+        "huggingface_models:Muapi/tactical-flux-test"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Active Learners as Efficient PRP Rerankers",
-          "url": "https://huggingface.co/papers/2605.14236",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design",
-          "url": "http://arxiv.org/abs/2605.19717v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "A Case for Agentic Tuning: From Documentation to Action in PostgreSQL",
-          "url": "http://arxiv.org/abs/2605.19988v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "reconCTI: A Proactive Approach to Cyber-Threat Intelligence",
-          "url": "http://arxiv.org/abs/2605.19899v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Formal Skill: Programmable Runtime Skills for Efficient and Accurate LLM Agents",
-          "url": "http://arxiv.org/abs/2605.19604v1",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "IEKOO/trained-flux-dev-dreambooth-lora — text-to-image",
+          "url": "https://huggingface.co/IEKOO/trained-flux-dev-dreambooth-lora",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "UCSC-VLAA/ClinSeek-35B-A3B — text-generation",
-          "url": "https://huggingface.co/UCSC-VLAA/ClinSeek-35B-A3B",
+          "title": "Muapi/leaning-back-against — text-to-image",
+          "url": "https://huggingface.co/Muapi/leaning-back-against",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/tactical-flux-test — text-to-image",
+          "url": "https://huggingface.co/Muapi/tactical-flux-test",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -71,69 +50,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-20T23:09:25+00:00",
-      "updatedAt": "2026-05-20T23:09:25+00:00",
+      "publishedAt": "2026-05-21T02:12:31+00:00",
+      "updatedAt": "2026-05-21T02:12:31+00:00",
       "sortOrder": 0
     },
     {
-      "id": "efficient-cad-design",
-      "title_ar": "تصميم هندسي مدعوم بالذكاء الاصطناعي",
-      "thesis_ar": "تطوير نماذج لغة كبيرة لتوليد تصميمات CAD يمكن أن يحسن من كفاءة التصميم الهندسي. هذه الفرصة تأتي في وقت يشهد فيه السوق زيادة في الطلب على حلول التصميم السريعة والدقيقة.",
-      "buyer_ar": "شركات الهندسة والتصميم",
-      "sellable_product_ar": "أداة تصميم CAD مدعومة بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتصميم CAD لمشروع صغير",
-      "tools_ar": "نموذج لغة كبير، بيئة تطوير CAD، بيانات تصميم",
-      "capital_ar": "متوسط",
+      "id": "ai-text-generation-for-business",
+      "title_ar": "خدمات توليد النصوص التجارية",
+      "thesis_ar": "تزايد الحاجة إلى محتوى مكتوب عالي الجودة في التسويق والمبيعات. نماذج توليد النصوص توفر حلولاً فعالة وسريعة.",
+      "buyer_ar": "شركات التسويق، المدونين، ومطوري المحتوى",
+      "sellable_product_ar": "خدمة توليد محتوى نصي مخصص",
+      "first_paid_test_ar": "كتابة مقالة قصيرة أو محتوى تسويقي كاختبار",
+      "tools_ar": "نموذج توليد النصوص، واجهة مستخدم، منصة تسويق",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2605.19717v1",
-        "2605.19604",
-        "2605.17734"
+        "huggingface_models:UCSC-VLAA/ClinSeek-35B-A3B",
+        "huggingface_models:TAUR-dev/rankalign-v6-gemma-2-2b-it-d0.15-e0-persona-v1-all-tcn-nv1-ng1-vlo-fsx-sm0.1",
+        "huggingface_models:clear-blue-sky/evolai-tfm-002"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Active Learners as Efficient PRP Rerankers",
-          "url": "https://huggingface.co/papers/2605.14236",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design",
-          "url": "http://arxiv.org/abs/2605.19717v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "A Case for Agentic Tuning: From Documentation to Action in PostgreSQL",
-          "url": "http://arxiv.org/abs/2605.19988v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "reconCTI: A Proactive Approach to Cyber-Threat Intelligence",
-          "url": "http://arxiv.org/abs/2605.19899v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Formal Skill: Programmable Runtime Skills for Efficient and Accurate LLM Agents",
-          "url": "http://arxiv.org/abs/2605.19604v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
         {
           "source_id": "huggingface_models",
           "title": "UCSC-VLAA/ClinSeek-35B-A3B — text-generation",
           "url": "https://huggingface.co/UCSC-VLAA/ClinSeek-35B-A3B",
           "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "TAUR-dev/rankalign-v6-gemma-2-2b-it-d0.15-e0-persona-v1-all-tcn-nv1-ng1-vlo-fsx-sm0.1 — text-generation",
+          "url": "https://huggingface.co/TAUR-dev/rankalign-v6-gemma-2-2b-it-d0.15-e0-persona-v1-all-tcn-nv1-ng1-vlo-fsx-sm0.1",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "clear-blue-sky/evolai-tfm-002 — text-generation",
+          "url": "https://huggingface.co/clear-blue-sky/evolai-tfm-002",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -142,82 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-20T23:09:25+00:00",
-      "updatedAt": "2026-05-20T23:09:25+00:00",
+      "publishedAt": "2026-05-21T02:12:31+00:00",
+      "updatedAt": "2026-05-21T02:12:31+00:00",
       "sortOrder": 1
-    },
-    {
-      "id": "cyber-threat-intelligence",
-      "title_ar": "ذكاء تهديدات سيبرانية استباقية",
-      "thesis_ar": "تزايد التهديدات السيبرانية يتطلب حلولًا مبتكرة لتحليل البيانات واستباق الهجمات. الفرصة متاحة الآن بسبب التحول الرقمي السريع وزيادة الاعتماد على الأنظمة الرقمية.",
-      "buyer_ar": "شركات الأمن السيبراني",
-      "sellable_product_ar": "نظام ذكاء تهديدات سيبرانية مدعوم بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل تهديدات سيبرانية لمؤسسة صغيرة",
-      "tools_ar": "نموذج لغة كبير، بيانات تهديدات، أدوات تحليل بيانات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "2605.19899v1",
-        "2605.17734",
-        "2605.19786"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Active Learners as Efficient PRP Rerankers",
-          "url": "https://huggingface.co/papers/2605.14236",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design",
-          "url": "http://arxiv.org/abs/2605.19717v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "A Case for Agentic Tuning: From Documentation to Action in PostgreSQL",
-          "url": "http://arxiv.org/abs/2605.19988v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "reconCTI: A Proactive Approach to Cyber-Threat Intelligence",
-          "url": "http://arxiv.org/abs/2605.19899v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Formal Skill: Programmable Runtime Skills for Efficient and Accurate LLM Agents",
-          "url": "http://arxiv.org/abs/2605.19604v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "UCSC-VLAA/ClinSeek-35B-A3B — text-generation",
-          "url": "https://huggingface.co/UCSC-VLAA/ClinSeek-35B-A3B",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-20T23:09:25+00:00",
-      "updatedAt": "2026-05-20T23:09:25+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-20T23:09:25+00:00",
+  "tiered_at": "2026-05-21T02:12:31+00:00",
   "free_preview_count": 3
 }
