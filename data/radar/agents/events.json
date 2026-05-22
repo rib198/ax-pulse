@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-21T23:20:14+00:00",
+  "generated_at": "2026-05-22T02:28:07+00:00",
   "note_ar": "أحداث مستخرجة من الإشارات تلقائيًا. كل حدث مدعوم بـ ≥ 2 إشارة أو إشارة من مصدر رسمي.",
-  "count": 6,
+  "count": 9,
   "events": [
     {
-      "id": "evt_anthropic_pricing_change_2026_05_21",
+      "id": "evt_anthropic_pricing_change_2026_05_22",
       "type": "pricing_change",
       "icon": "$",
       "subject": "anthropic",
@@ -16,8 +16,8 @@
       "evidence_count": 3,
       "confidence": 0.85,
       "first_seen": "Thu, 21 May 2026 00:21:21 +0000",
-      "last_updated": "2026-05-21T23:20:14+00:00",
-      "is_new": false,
+      "last_updated": "2026-05-22T02:28:07+00:00",
+      "is_new": true,
       "tier": "free",
       "evidence": [
         {
@@ -50,6 +50,118 @@
       ]
     },
     {
+      "id": "evt_meta_acquisition_2026_05_22",
+      "type": "acquisition",
+      "icon": "⊗",
+      "subject": "meta",
+      "family": null,
+      "title_ar": "استحواذ: meta",
+      "title_en": "Acquisition: meta",
+      "label_ar": "استحواذ",
+      "label_en": "Acquisition",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-22T02:02:14.000Z",
+      "last_updated": "2026-05-22T02:28:07+00:00",
+      "is_new": true,
+      "tier": "premium",
+      "evidence": [
+        {
+          "id": "huggingface_models:wvnvwn/Meta-Llama-3-8B-Instruct-flora-v0",
+          "source_id": "huggingface_models",
+          "source_name": "Hugging Face text generation models",
+          "title": "wvnvwn/Meta-Llama-3-8B-Instruct-flora-v0 — text-generation",
+          "url": "https://huggingface.co/wvnvwn/Meta-Llama-3-8B-Instruct-flora-v0",
+          "trust_tier": "official",
+          "posted_at": "2026-05-22T02:02:14.000Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_anthropic_model_release_deepseek_2026_05_21",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "anthropic",
+      "family": "deepseek",
+      "title_ar": "إصدار نموذج: anthropic",
+      "title_en": "Model release: anthropic",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-21T16:55:39Z",
+      "last_updated": "2026-05-22T02:28:07+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2605.22720v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv AI Safety & Alignment",
+          "title": "Can AI Make Conflicts Worse? An Alignment Failure in LLM Deployment Across Conflict Contexts",
+          "url": "http://arxiv.org/abs/2605.22720v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-21T16:55:39Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_meta_policy_signal_2026_05_21",
+      "type": "policy_signal",
+      "icon": "§",
+      "subject": "meta",
+      "family": null,
+      "title_ar": "إشارة تنظيمية: meta",
+      "title_en": "Policy signal: meta",
+      "label_ar": "إشارة تنظيمية",
+      "label_en": "Policy signal",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-21T07:21:33Z",
+      "last_updated": "2026-05-22T02:28:07+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2605.22081v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Arabic NLP",
+          "title": "ArabDiscrim: A Decade-Long Arabic Facebook Corpus on Racism and Discrimination",
+          "url": "http://arxiv.org/abs/2605.22081v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-21T07:21:33Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_replicate_model_release_llama_2026_05_21",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "replicate",
+      "family": "llama",
+      "title_ar": "إصدار نموذج: replicate",
+      "title_en": "Model release: replicate",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-05-21T16:14:33Z",
+      "last_updated": "2026-05-22T02:28:07+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2605.22672v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv AI Domain Applications",
+          "title": "Is Capability a Liability? More Capable Language Models Make Worse Forecasts When It Matters Most",
+          "url": "http://arxiv.org/abs/2605.22672v1",
+          "trust_tier": "research",
+          "posted_at": "2026-05-21T16:14:33Z"
+        }
+      ]
+    },
+    {
       "id": "evt_anthropic_acquisition_2026_05_19",
       "type": "acquisition",
       "icon": "⊗",
@@ -62,7 +174,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-05-19T18:06:44.000Z",
-      "last_updated": "2026-05-21T23:20:14+00:00",
+      "last_updated": "2026-05-22T02:28:07+00:00",
       "is_new": false,
       "tier": "premium",
       "evidence": [
@@ -78,7 +190,7 @@
       ]
     },
     {
-      "id": "evt_google_model_release_gemini_2026_05_21",
+      "id": "evt_google_model_release_gemini_2026_05_22",
       "type": "model_release",
       "icon": "⊕",
       "subject": "google",
@@ -90,8 +202,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "Tue, 19 May 2026 17:45:00 +0000",
-      "last_updated": "2026-05-21T23:20:14+00:00",
-      "is_new": false,
+      "last_updated": "2026-05-22T02:28:07+00:00",
+      "is_new": true,
       "tier": "free",
       "evidence": [
         {
@@ -106,7 +218,7 @@
       ]
     },
     {
-      "id": "evt_google_pricing_change_2026_05_21",
+      "id": "evt_google_pricing_change_2026_05_22",
       "type": "pricing_change",
       "icon": "$",
       "subject": "google",
@@ -118,8 +230,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "Tue, 19 May 2026 17:45:00 +0000",
-      "last_updated": "2026-05-21T23:20:14+00:00",
-      "is_new": false,
+      "last_updated": "2026-05-22T02:28:07+00:00",
+      "is_new": true,
       "tier": "free",
       "evidence": [
         {
@@ -130,43 +242,6 @@
           "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
           "trust_tier": "official",
           "posted_at": "Tue, 19 May 2026 17:45:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "evt_grok_model_release_grok_2026_05_21",
-      "type": "model_release",
-      "icon": "⊕",
-      "subject": "grok",
-      "family": "grok",
-      "title_ar": "إصدار نموذج: grok",
-      "title_en": "Model release: grok",
-      "label_ar": "إصدار نموذج",
-      "label_en": "Model release",
-      "evidence_count": 2,
-      "confidence": 0.7,
-      "first_seen": "2026-05-21T00:18:18.000Z",
-      "last_updated": "2026-05-21T23:20:14+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "smol_ai:https://buttondown.com/ainews/archive/ainews-grok-3-3-mini-now-api-available/",
-          "source_id": "smol_ai",
-          "source_name": "smol.ai newsletter",
-          "title": "[AINews] Grok 3 & 3-mini now API Available",
-          "url": "https://buttondown.com/ainews/archive/ainews-grok-3-3-mini-now-api-available/",
-          "trust_tier": "press",
-          "posted_at": "Sat, 19 Apr 2025 05:44:39 +0000"
-        },
-        {
-          "id": "manual_x:2057254622113517793",
-          "source_id": "manual_x",
-          "source_name": "X · @elonmusk",
-          "title": "Elon Musk @elonmusk · 5h Grok Build daily release notes Quote skcd @skcd42 · 6h Bug fixes shipping to Grok Build (release notes will be ava…",
-          "url": "https://x.com/elonmusk/status/2057254622113517793",
-          "trust_tier": "press",
-          "posted_at": "2026-05-21T00:18:18.000Z"
         }
       ]
     },
@@ -183,7 +258,7 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "2026-05-20T12:56:39.000Z",
-      "last_updated": "2026-05-21T23:20:14+00:00",
+      "last_updated": "2026-05-22T02:28:07+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
