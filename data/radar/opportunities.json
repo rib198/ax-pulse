@@ -1,66 +1,47 @@
 {
-  "generated_at": "2026-05-22T19:28:09+00:00",
+  "generated_at": "2026-05-22T21:08:23+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 535,
+  "corpus_count": 528,
   "opportunities": [
     {
-      "id": "job-arabi-data-analysis",
-      "title_ar": "تحليل بيانات سوق العمل العربي",
-      "thesis_ar": "تزايد الحاجة إلى فهم سوق العمل العربي من خلال بيانات دقيقة ومحدثة. توفر مجموعة بيانات JobArabi فرصة لتحليل الاتجاهات والفرص الوظيفية في السوق.",
-      "buyer_ar": "شركات التوظيف ومراكز الأبحاث",
-      "sellable_product_ar": "خدمات تحليل البيانات والتقارير السوقية",
-      "first_paid_test_ar": "تقديم تقرير أولي عن الاتجاهات الوظيفية في قطاع معين",
-      "tools_ar": "أدوات تحليل البيانات، Python، Tableau",
+      "id": "text-to-image-solutions",
+      "title_ar": "حلول تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الاعتماد على المحتوى البصري في التسويق الرقمي يفتح المجال لتطوير حلول تحويل النص إلى صورة. النماذج الحديثة توفر إمكانيات متقدمة في هذا المجال.",
+      "buyer_ar": "شركات التسويق، وكالات الإعلان",
+      "sellable_product_ar": "خدمات تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "إنشاء صورة واحدة بناءً على نص محدد",
+      "tools_ar": "Hugging Face، أدوات معالجة الصور، Python",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "jobArabi"
+        "huggingface_models:LyliaEngine/4x_foolhardy_Remacri",
+        "huggingface_models:LyliaEngine/RealESRGAN_x4plus_anime_6B",
+        "huggingface_models:ms2stationthis/Lawb"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.51,
+      "signal_count": 3,
+      "avg_score": 0.52,
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.529,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.521,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
         {
           "source_id": "huggingface_models",
           "title": "LyliaEngine/4x_foolhardy_Remacri — text-to-image",
           "url": "https://huggingface.co/LyliaEngine/4x_foolhardy_Remacri",
-          "score": 0.5,
+          "score": 0.521,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "LyliaEngine/RealESRGAN_x4plus_anime_6B — text-to-image",
           "url": "https://huggingface.co/LyliaEngine/RealESRGAN_x4plus_anime_6B",
-          "score": 0.5,
+          "score": 0.521,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "ms2stationthis/Lawb — text-to-image",
           "url": "https://huggingface.co/ms2stationthis/Lawb",
-          "score": 0.497,
+          "score": 0.509,
           "trust_tier": "official"
         }
       ],
@@ -69,149 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-22T19:28:09+00:00",
-      "updatedAt": "2026-05-22T19:28:09+00:00",
+      "publishedAt": "2026-05-22T21:08:23+00:00",
+      "updatedAt": "2026-05-22T21:08:23+00:00",
       "sortOrder": 0
-    },
-    {
-      "id": "transitlm-route-planning",
-      "title_ar": "تطوير حلول تخطيط النقل العام",
-      "thesis_ar": "تزايد الاعتماد على حلول النقل الذكية في المدن الكبرى. توفر مجموعة بيانات TransitLM فرصة لتطوير نماذج تخطيط النقل بدون الاعتماد على البنية التحتية التقليدية.",
-      "buyer_ar": "الهيئات الحكومية وشركات النقل",
-      "sellable_product_ar": "نظام تخطيط مسارات النقل الذكي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتخطيط مسار في مدينة محددة",
-      "tools_ar": "أدوات تعلم الآلة، Python، GIS",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "TransitLM"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.529,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.521,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/4x_foolhardy_Remacri — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/4x_foolhardy_Remacri",
-          "score": 0.5,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/RealESRGAN_x4plus_anime_6B — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/RealESRGAN_x4plus_anime_6B",
-          "score": 0.5,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ms2stationthis/Lawb — text-to-image",
-          "url": "https://huggingface.co/ms2stationthis/Lawb",
-          "score": 0.497,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-22T19:28:09+00:00",
-      "updatedAt": "2026-05-22T19:28:09+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "graphflow-workflow-management",
-      "title_ar": "إدارة سير العمل باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى تحسين كفاءة إدارة سير العمل في المؤسسات. تقدم GraphFlow نموذجًا لإدارة فعالة باستخدام نماذج اللغة الكبيرة.",
-      "buyer_ar": "الشركات الكبرى والمؤسسات",
-      "sellable_product_ar": "نظام إدارة سير العمل الذكي",
-      "first_paid_test_ar": "تقديم دراسة حالة عن تحسين سير عمل معين",
-      "tools_ar": "أدوات إدارة المشاريع، Python، أدوات الذكاء الاصطناعي",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "GraphFlow"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.529,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.521,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/4x_foolhardy_Remacri — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/4x_foolhardy_Remacri",
-          "score": 0.5,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/RealESRGAN_x4plus_anime_6B — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/RealESRGAN_x4plus_anime_6B",
-          "score": 0.5,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ms2stationthis/Lawb — text-to-image",
-          "url": "https://huggingface.co/ms2stationthis/Lawb",
-          "score": 0.497,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-22T19:28:09+00:00",
-      "updatedAt": "2026-05-22T19:28:09+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-22T19:28:09+00:00",
+  "tiered_at": "2026-05-22T21:08:23+00:00",
   "free_preview_count": 3
 }
