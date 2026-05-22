@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-22T11:00:49+00:00",
+  "run_at": "2026-05-22T14:18:35+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,13 +26,13 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 847.931,
+      "duration_s": 17.999,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 245 signals from 31 source families",
-        "15 source errors (non-fatal)"
+        "collected 360 signals from 31 source families",
+        "6 source errors (non-fatal)"
       ],
       "error": null
     },
@@ -49,13 +49,13 @@
     {
       "agent": "evidence_guard",
       "ok": true,
-      "duration_s": 0.001,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 422 items",
-        "by tier: press=212, official=167, community=24, research=19"
+        "tagged 537 items",
+        "by tier: press=212, official=168, research=130, community=27"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.021,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 422 items, top priority=0.549"
+        "ranked 537 items, top priority=0.549"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.006,
+      "duration_s": 0.009,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,45 +97,45 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.022,
+      "duration_s": 0.048,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
-        "78 total"
+        "+13 new model events",
+        "91 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.056,
+      "duration_s": 0.109,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "5 events (0 new)",
-        "by type: pricing_change=3, acquisition=1, model_release=1"
+        "22 events (17 new)",
+        "by type: pricing_change=5, model_release=12, acquisition=3, policy_signal=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.007,
+      "duration_s": 0.011,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
       "notes": [
-        "17 arab-market items"
+        "18 arab-market items"
       ],
       "error": null
     },
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 16.656,
+      "duration_s": 11.264,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 27.429,
+      "duration_s": 12.349,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.008,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 13.242,
+      "duration_s": 8.045,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=422, opps=3, calls=3"
+        "items=537, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.032,
+      "duration_s": 3.172,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد نشاط تغيير الأسعار من قبل شركات كبيرة مثل Anthropic وGoogle يدل على تحركا…"
+        "insight via openai: شهدت الأنشطة ارتفاعًا ملحوظًا في إشارات الذكاء الاصطناعي، حيث زادت بمعدل 115 إش…"
       ],
       "error": null
     },

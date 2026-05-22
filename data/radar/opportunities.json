@@ -1,26 +1,76 @@
 {
-  "generated_at": "2026-05-22T11:00:49+00:00",
+  "generated_at": "2026-05-22T14:18:35+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 422,
+  "corpus_count": 537,
   "opportunities": [
     {
-      "id": "automated-clinical-decision-support",
-      "title_ar": "دعم اتخاذ القرار السريري الآلي",
-      "thesis_ar": "تزايد الحاجة إلى تحسين دقة القرارات السريرية باستخدام نماذج الذكاء الاصطناعي. يمكن أن تسهم الأنظمة المعتمدة على الذكاء الاصطناعي في تسريع وتحسين نتائج المرضى.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام دعم اتخاذ القرار السريري المعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق النظام على مجموعة صغيرة من الحالات السريرية",
-      "tools_ar": "نموذج لغة كبير، بيانات سريرية، واجهة مستخدم",
-      "capital_ar": "متوسط",
+      "id": "automated-clinical-reasoning",
+      "title_ar": "أتمتة الدعم السريري باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في اتخاذ القرارات السريرية يفتح المجال لتطوير أدوات أتمتة تدعم الأطباء في اتخاذ القرارات. كما أن الحاجة إلى تحسين دقة وجودة الرعاية الصحية تعزز من أهمية هذه الفرصة.",
+      "buyer_ar": "مستشفيات وعيادات طبية",
+      "sellable_product_ar": "أداة دعم اتخاذ القرار السريري المعتمدة على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لأداة دعم اتخاذ القرار في عيادة صغيرة",
+      "tools_ar": "نماذج لغة كبيرة، بيانات طبية، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2605.20176",
-        "huggingface_daily_papers:2605.16928",
-        "huggingface_daily_papers:2605.21467"
+        "huggingface_daily_papers:2605.22012",
+        "huggingface_daily_papers:2605.22536"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning",
+          "url": "https://huggingface.co/papers/2605.20176",
+          "score": 0.508,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LatentOmni: Rethinking Omni-Modal Understanding via Unified Audio-Visual Latent Reasoning",
+          "url": "https://huggingface.co/papers/2605.22012",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SpaceDG: Benchmarking Spatial Intelligence under Visual Degradation",
+          "url": "https://huggingface.co/papers/2605.22536",
+          "score": 0.481,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-22T14:18:35+00:00",
+      "updatedAt": "2026-05-22T14:18:35+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "fashion-image-retrieval",
+      "title_ar": "تحسين استرجاع الصور في مجال الأزياء",
+      "thesis_ar": "تزايد التجارة الإلكترونية في مجال الأزياء يتطلب حلولاً مبتكرة لاسترجاع الصور. وجود إطار موحد يدعم تنسيقات استعلام متنوعة يعد فرصة كبيرة لتحسين تجربة المستخدم وزيادة المبيعات.",
+      "buyer_ar": "متاجر الأزياء الإلكترونية",
+      "sellable_product_ar": "نظام استرجاع صور يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لنظام استرجاع الصور لمتجر أزياء",
+      "tools_ar": "نماذج تعلم عميق، بيانات صور أزياء، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.22552",
+        "huggingface_daily_papers:2605.22087",
+        "huggingface_daily_papers:2605.20176"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
       "avg_score": 0.5,
       "evidence_items": [
         {
@@ -32,16 +82,9 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps",
-          "url": "https://huggingface.co/papers/2605.16928",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards",
-          "url": "https://huggingface.co/papers/2605.21467",
-          "score": 0.494,
+          "title": "FashionLens: Toward Versatile Fashion Image Retrieval via Task-Adaptive Learning",
+          "url": "https://huggingface.co/papers/2605.22552",
+          "score": 0.482,
           "trust_tier": "research"
         }
       ],
@@ -50,99 +93,42 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-22T11:00:49+00:00",
-      "updatedAt": "2026-05-22T11:00:49+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "3d-physical-simulation-assets",
-      "title_ar": "أصول محاكاة 3D جاهزة للاستخدام",
-      "thesis_ar": "تزايد الطلب على الأصول الفيزيائية ثلاثية الأبعاد في مجالات مثل الألعاب والواقع الافتراضي. يمكن أن توفر الأصول المحاكية الواقعية تجربة مستخدم محسنة.",
-      "buyer_ar": "شركات تطوير الألعاب والتطبيقات",
-      "sellable_product_ar": "مجموعة من الأصول الفيزيائية ثلاثية الأبعاد",
-      "first_paid_test_ar": "تقديم نموذج أولي لعدد محدود من الأصول",
-      "tools_ar": "أدوات تصميم ثلاثي الأبعاد، محرك محاكاة، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.21572",
-        "huggingface_daily_papers:2605.22012",
-        "huggingface_daily_papers:2605.22536"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects",
-          "url": "https://huggingface.co/papers/2605.21572",
-          "score": 0.497,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LatentOmni: Rethinking Omni-Modal Understanding via Unified Audio-Visual Latent Reasoning",
-          "url": "https://huggingface.co/papers/2605.22012",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SpaceDG: Benchmarking Spatial Intelligence under Visual Degradation",
-          "url": "https://huggingface.co/papers/2605.22536",
-          "score": 0.48,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-22T11:00:49+00:00",
-      "updatedAt": "2026-05-22T11:00:49+00:00",
+      "publishedAt": "2026-05-22T14:18:35+00:00",
+      "updatedAt": "2026-05-22T14:18:35+00:00",
       "sortOrder": 1
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في مجالات متعددة مثل الإعلانات والفنون. يمكن أن توفر حلولاً مبتكرة للشركات لتعزيز محتواها البصري.",
-      "buyer_ar": "شركات الإعلانات والتسويق",
-      "sellable_product_ar": "نموذج لتحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "نموذج تحويل النص إلى صورة، بيانات تدريب، واجهة مستخدم",
-      "capital_ar": "منخفض",
+      "id": "transit-route-generation",
+      "title_ar": "تطوير نماذج تخطيط طرق النقل العامة",
+      "thesis_ar": "مع تزايد الحاجة إلى تحسين وسائل النقل العامة، توفر نماذج توليد الطرق بدون الاعتماد على الخرائط فرصة لتطوير حلول مبتكرة. هذا سيساعد في تحسين كفاءة النقل وتقليل الازدحام.",
+      "buyer_ar": "هيئات النقل العامة والبلديات",
+      "sellable_product_ar": "نظام تخطيط مسارات النقل العامة المعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لنظام تخطيط مسارات في مدينة صغيرة",
+      "tools_ar": "بيانات النقل، نماذج تعلم عميق، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Egoistic-Lily/hxdlab-kurisu",
-        "huggingface_models:NO8D/ImagingControl",
-        "huggingface_models:nikombose/catdog"
+        "huggingface_daily_papers:2605.22355",
+        "arxiv_papers:2605.22645v1",
+        "huggingface_daily_papers:2605.22566"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
+      "signal_count": 2,
+      "avg_score": 0.52,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "Egoistic-Lily/hxdlab-kurisu — text-to-image",
-          "url": "https://huggingface.co/Egoistic-Lily/hxdlab-kurisu",
-          "score": 0.521,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.549,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "NO8D/ImagingControl — text-to-image",
-          "url": "https://huggingface.co/NO8D/ImagingControl",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nikombose/catdog — text-to-image",
-          "url": "https://huggingface.co/nikombose/catdog",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "AtelierEval: Agentic Evaluation of Humans & LLMs as Text-to-Image Prompters",
+          "url": "http://arxiv.org/abs/2605.22645v1",
+          "score": 0.494,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +136,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-22T11:00:49+00:00",
-      "updatedAt": "2026-05-22T11:00:49+00:00",
+      "publishedAt": "2026-05-22T14:18:35+00:00",
+      "updatedAt": "2026-05-22T14:18:35+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-22T11:00:49+00:00",
+  "tiered_at": "2026-05-22T14:18:35+00:00",
   "free_preview_count": 3
 }
