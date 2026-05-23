@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-05-23T17:08:37+00:00",
+  "generated_at": "2026-05-23T18:59:03+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 420,
+  "corpus_count": 529,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي يتطلب نماذج فعالة لتحويل النصوص إلى صور. هذه النماذج يمكن أن تفتح آفاقًا جديدة في مجالات التسويق والإعلان.",
-      "buyer_ar": "وكالات الإعلان والشركات الناشئة",
-      "sellable_product_ar": "نظام تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة واختباره مع عميل محتمل",
-      "tools_ar": "نماذج الذكاء الاصطناعي, واجهات برمجة التطبيقات, بيانات تدريب",
-      "capital_ar": "منخفض",
+      "id": "remote-authentication-security",
+      "title_ar": "تحسين أمان المصادقة في الخوادم البعيدة",
+      "thesis_ar": "تزايد استخدام بروتوكول السياق النموذجي (MCP) يعزز الحاجة لأمان المصادقة. مع تزايد الاعتماد على التطبيقات البعيدة، فإن تحسين الأمان يمكن أن يوفر فرصًا كبيرة.",
+      "buyer_ar": "شركات التكنولوجيا والخدمات السحابية",
+      "sellable_product_ar": "حلول أمان المصادقة المتقدمة",
+      "first_paid_test_ar": "تقديم اختبار أمان تجريبي لخدمة مصادقة واحدة",
+      "tools_ar": "أدوات تحليل الأمان، خوادم اختبار، برمجيات تطوير",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:1236574jack/v1",
-        "huggingface_models:LeFeujitif/sandbox",
-        "huggingface_models:LandonAbundre/BWSTits"
+        "2605.22333v1",
+        "2605.22087v1",
+        "2605.22566v1"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "1236574jack/v1 — text-to-image",
-          "url": "https://huggingface.co/1236574jack/v1",
-          "score": 0.509,
+          "title": "Papizo123/Caracal_GPT_Swahili_SFT — text-generation",
+          "url": "https://huggingface.co/Papizo123/Caracal_GPT_Swahili_SFT",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LeFeujitif/sandbox — text-to-image",
-          "url": "https://huggingface.co/LeFeujitif/sandbox",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LandonAbundre/BWSTits — text-to-image",
-          "url": "https://huggingface.co/LandonAbundre/BWSTits",
-          "score": 0.488,
+          "title": "bugrayildirim/story-to-music-lyricist — text-generation",
+          "url": "https://huggingface.co/bugrayildirim/story-to-music-lyricist",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,48 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-23T17:08:37+00:00",
-      "updatedAt": "2026-05-23T17:08:37+00:00",
+      "publishedAt": "2026-05-23T18:59:03+00:00",
+      "updatedAt": "2026-05-23T18:59:03+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-generation-models",
-      "title_ar": "نماذج توليد النصوص",
-      "thesis_ar": "تزايد الاعتماد على المحتوى المكتوب في مختلف المجالات يستدعي تطوير نماذج توليد نصوص فعالة. هذه النماذج يمكن أن تعزز من إنتاجية الكتاب والمحررين.",
-      "buyer_ar": "شركات المحتوى ووسائل الإعلام",
-      "sellable_product_ar": "نظام توليد نصوص مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد نصوص واختباره مع عميل محتمل",
-      "tools_ar": "نماذج الذكاء الاصطناعي, بيانات تدريب, واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "llm-workflow-management",
+      "title_ar": "إدارة سير العمل باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تظهر نماذج اللغة الكبيرة (LLMs) قدرات قوية في تنفيذ المهام المعقدة عند توجيهها بواسطة سير العمل. هناك حاجة متزايدة لأدوات تسهل هذا النوع من الإدارة.",
+      "buyer_ar": "شركات البرمجيات التي تقدم حلول الذكاء الاصطناعي",
+      "sellable_product_ar": "أداة لإدارة سير العمل مخصصة لنماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم تجربة مجانية لمدة شهر لأداة إدارة سير العمل",
+      "tools_ar": "أدوات تطوير البرمجيات، بيئات اختبار، نماذج لغة كبيرة",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:fpadovani/jpn-jpan-10mb-hu-baseline",
-        "huggingface_models:jvonrad/OLMo-2-7B-TED-grpo",
-        "huggingface_models:mrthor102/evolai-tfm-super-003"
+        "2605.22566v1",
+        "2605.22080v1",
+        "2605.19717v1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "jvonrad/OLMo-2-7B-TED-grpo — text-generation",
-          "url": "https://huggingface.co/jvonrad/OLMo-2-7B-TED-grpo",
-          "score": 0.466,
+          "title": "Papizo123/Caracal_GPT_Swahili_SFT — text-generation",
+          "url": "https://huggingface.co/Papizo123/Caracal_GPT_Swahili_SFT",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "fpadovani/jpn-jpan-10mb-hu-baseline — text-generation",
-          "url": "https://huggingface.co/fpadovani/jpn-jpan-10mb-hu-baseline",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mrthor102/evolai-tfm-super-003 — text-generation",
-          "url": "https://huggingface.co/mrthor102/evolai-tfm-super-003",
-          "score": 0.466,
+          "title": "bugrayildirim/story-to-music-lyricist — text-generation",
+          "url": "https://huggingface.co/bugrayildirim/story-to-music-lyricist",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -100,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-23T17:08:37+00:00",
-      "updatedAt": "2026-05-23T17:08:37+00:00",
+      "publishedAt": "2026-05-23T18:59:03+00:00",
+      "updatedAt": "2026-05-23T18:59:03+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "automated-repair-tee",
+      "title_ar": "إصلاح تلقائي لمشكلات تقسيم البيئة التنفيذية الموثوقة",
+      "thesis_ar": "تزايد استخدام البيئات التنفيذية الموثوقة (TEEs) يتطلب حلولًا فعالة لإصلاح المشكلات. يمكن أن يؤدي ذلك إلى تحسين أمان البيانات والتطبيقات.",
+      "buyer_ar": "شركات تطوير البرمجيات والأمن السيبراني",
+      "sellable_product_ar": "حلول إصلاح تلقائي لمشكلات TEEs",
+      "first_paid_test_ar": "تقديم خدمة إصلاح تلقائي لمشكلة واحدة في بيئة تنفيذية",
+      "tools_ar": "أدوات تطوير البرمجيات، بيئات اختبار، أدوات تحليل الأمان",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2605.22087v1",
+        "2605.22333v1",
+        "2605.22566v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Papizo123/Caracal_GPT_Swahili_SFT — text-generation",
+          "url": "https://huggingface.co/Papizo123/Caracal_GPT_Swahili_SFT",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bugrayildirim/story-to-music-lyricist — text-generation",
+          "url": "https://huggingface.co/bugrayildirim/story-to-music-lyricist",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-23T18:59:03+00:00",
+      "updatedAt": "2026-05-23T18:59:03+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-23T17:08:37+00:00",
+  "tiered_at": "2026-05-23T18:59:03+00:00",
   "free_preview_count": 3
 }
