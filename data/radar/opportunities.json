@@ -1,140 +1,48 @@
 {
-  "generated_at": "2026-05-22T22:55:12+00:00",
+  "generated_at": "2026-05-23T02:10:57+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 535,
+  "corpus_count": 503,
   "opportunities": [
     {
-      "id": "job-arabi-analysis",
-      "title_ar": "تحليل فرص العمل في السوق العربي",
-      "thesis_ar": "مع تزايد عدد إعلانات الوظائف باللغة العربية على وسائل التواصل الاجتماعي، هناك حاجة ملحة لتحليل هذه البيانات لتحديد الاتجاهات والفرص. توفر بيانات JobArabi قاعدة قوية لفهم سوق العمل العربي.",
-      "buyer_ar": "شركات التوظيف ومراكز التدريب",
-      "sellable_product_ar": "أداة تحليل بيانات الوظائف العربية",
-      "first_paid_test_ar": "تقديم تقرير أولي عن اتجاهات الوظائف في منطقة معينة",
-      "tools_ar": "أدوات تحليل البيانات، واجهة برمجة التطبيقات، نماذج تعلم الآلة",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "2605.20960v1",
-        "2605.22552",
-        "2605.21363"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.529,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.521,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/4x_foolhardy_Remacri — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/4x_foolhardy_Remacri",
-          "score": 0.5,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/RealESRGAN_x4plus_anime_6B — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/RealESRGAN_x4plus_anime_6B",
-          "score": 0.5,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
-          "url": "http://arxiv.org/abs/2605.22733v1",
-          "score": 0.494,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-22T22:55:12+00:00",
-      "updatedAt": "2026-05-22T22:55:12+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "transitlm-route-planning",
-      "title_ar": "تخطيط طرق النقل العامة بدون خرائط",
-      "thesis_ar": "تقدم TransitLM حلاً مبتكرًا لتخطيط طرق النقل العامة بدون الاعتماد على البنية التحتية المعقدة. هذا سيفتح المجال لتطوير تطبيقات جديدة في مجال النقل.",
-      "buyer_ar": "شركات النقل العام والبلديات",
-      "sellable_product_ar": "نظام تخطيط طرق النقل الذكي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتخطيط طريق نقل في مدينة معينة",
-      "tools_ar": "نموذج TransitLM، واجهة برمجة التطبيقات، أدوات تطوير البرمجيات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في مجالات متعددة يوفر فرصة كبيرة. يمكن استغلال تحديثات نماذج Hugging Face لتطوير تطبيقات مخصصة.",
+      "buyer_ar": "شركات الإعلانات، مصممي الجرافيك، مطوري الألعاب",
+      "sellable_product_ar": "تطبيق لتحويل النصوص إلى صور مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص محددة إلى صور",
+      "tools_ar": "نموذج Hugging Face، أدوات تطوير التطبيقات، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2605.22355",
-        "2605.22087",
-        "2605.22566"
+        "huggingface_models:Muapi/detailer",
+        "huggingface_models:Muapi/aidvn_townhouse_flux",
+        "huggingface_models:Muapi/gen-x-soft-club"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.51,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.529,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.521,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "LyliaEngine/4x_foolhardy_Remacri — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/4x_foolhardy_Remacri",
-          "score": 0.5,
+          "title": "Muapi/detailer — text-to-image",
+          "url": "https://huggingface.co/Muapi/detailer",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LyliaEngine/RealESRGAN_x4plus_anime_6B — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/RealESRGAN_x4plus_anime_6B",
-          "score": 0.5,
+          "title": "Muapi/aidvn_townhouse_flux — text-to-image",
+          "url": "https://huggingface.co/Muapi/aidvn_townhouse_flux",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
-          "url": "http://arxiv.org/abs/2605.22733v1",
-          "score": 0.494,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Muapi/gen-x-soft-club — text-to-image",
+          "url": "https://huggingface.co/Muapi/gen-x-soft-club",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,82 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-22T22:55:12+00:00",
-      "updatedAt": "2026-05-22T22:55:12+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "graphflow-workflow-management",
-      "title_ar": "إدارة سير العمل باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تظهر الأبحاث أن نماذج اللغة الكبيرة يمكن أن تعزز من كفاءة سير العمل. GraphFlow يوفر إطار عمل لإدارة سير العمل بشكل فعال.",
-      "buyer_ar": "شركات التكنولوجيا ومقدمو الخدمات",
-      "sellable_product_ar": "أداة إدارة سير العمل الذكية",
-      "first_paid_test_ar": "تقديم عرض توضيحي لكيفية تحسين سير العمل باستخدام النموذج",
-      "tools_ar": "GraphFlow، نماذج اللغة الكبيرة، أدوات تطوير البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "2605.22566",
-        "2605.22080",
-        "2605.21363"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.529,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.521,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/4x_foolhardy_Remacri — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/4x_foolhardy_Remacri",
-          "score": 0.5,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/RealESRGAN_x4plus_anime_6B — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/RealESRGAN_x4plus_anime_6B",
-          "score": 0.5,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
-          "url": "http://arxiv.org/abs/2605.22733v1",
-          "score": 0.494,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-22T22:55:12+00:00",
-      "updatedAt": "2026-05-22T22:55:12+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-05-23T02:10:57+00:00",
+      "updatedAt": "2026-05-23T02:10:57+00:00",
+      "sortOrder": 0
     }
   ],
-  "tiered_at": "2026-05-22T22:55:12+00:00",
+  "tiered_at": "2026-05-23T02:10:57+00:00",
   "free_preview_count": 3
 }
