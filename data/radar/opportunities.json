@@ -1,40 +1,69 @@
 {
-  "generated_at": "2026-05-23T08:10:32+00:00",
+  "generated_at": "2026-05-23T11:09:26+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 536,
+  "corpus_count": 533,
   "opportunities": [
     {
-      "id": "mcp-security-solutions",
-      "title_ar": "حلول أمنية للبروتوكولات المعتمدة على الذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد استخدام بروتوكولات مثل Model Context Protocol (MCP) في التطبيقات، هناك حاجة ملحة لحلول أمنية تضمن حماية البيانات. يمكن تطوير أدوات لتحليل الأمان وتقديم حلول فعالة لهذه البروتوكولات.",
-      "buyer_ar": "شركات التكنولوجيا التي تعتمد على الذكاء الاصطناعي",
-      "sellable_product_ar": "أدوات تحليل أمان البروتوكولات المعتمدة على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم استشارة أمنية مجانية مع تقديم تقرير عن الثغرات المحتملة",
-      "tools_ar": "أدوات تحليل الأمان، خوارزميات تعلم الآلة، بيئة اختبار",
+      "id": "secure-authentication-solutions",
+      "title_ar": "حلول مصادقة آمنة",
+      "thesis_ar": "مع تزايد استخدام نماذج اللغة الكبيرة في الخدمات الخارجية، تزداد الحاجة إلى أنظمة مصادقة آمنة. يمكن تطوير حلول مبتكرة تعتمد على بروتوكول السياق النموذجي لضمان أمان البيانات في التطبيقات عن بُعد.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نظام مصادقة متكامل يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لمصادقة آمنة على منصة محددة",
+      "tools_ar": "نموذج لغة كبير، أدوات تطوير البرمجيات، بيئة اختبار آمنة",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2605.22333v1",
-        "arxiv_papers:2605.22566v1"
+        "2605.22333v1",
+        "2605.22087v1",
+        "2605.22566v1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 6,
       "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
           "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.524,
+          "score": 0.529,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "GraphFlow: A Graph-Based Workflow Management for Efficient LLM-Agent Serving",
-          "url": "http://arxiv.org/abs/2605.22566v1",
-          "score": 0.479,
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.515,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hesleav/feliz9b — text-to-image",
+          "url": "https://huggingface.co/hesleav/feliz9b",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hesleav/extrem_AI_LORA — text-to-image",
+          "url": "https://huggingface.co/hesleav/extrem_AI_LORA",
+          "score": 0.472,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -42,11 +71,125 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-23T08:10:32+00:00",
-      "updatedAt": "2026-05-23T08:10:32+00:00",
+      "publishedAt": "2026-05-23T11:09:26+00:00",
+      "updatedAt": "2026-05-23T11:09:26+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "automated-repair-solutions",
+      "title_ar": "حلول إصلاح آلي لمشاكل التنفيذ",
+      "thesis_ar": "تتزايد الحاجة إلى إصلاحات آلية لمشاكل تقسيم بيئات التنفيذ الموثوقة. يمكن استخدام نماذج اللغة الكبيرة لتوجيه عمليات الإصلاح بشكل فعال.",
+      "buyer_ar": "شركات تطوير البرمجيات والأنظمة",
+      "sellable_product_ar": "أداة إصلاح آلية تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لإصلاح مشكلة محددة في بيئة موثوقة",
+      "tools_ar": "نموذج لغة كبير، أدوات تطوير البرمجيات، بيئة اختبار",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2605.22087v1",
+        "2605.22733v1",
+        "2605.22566v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hesleav/feliz9b — text-to-image",
+          "url": "https://huggingface.co/hesleav/feliz9b",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hesleav/extrem_AI_LORA — text-to-image",
+          "url": "https://huggingface.co/hesleav/extrem_AI_LORA",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-23T11:09:26+00:00",
+      "updatedAt": "2026-05-23T11:09:26+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "map-free-transit-routing",
+      "title_ar": "تخطيط طرق النقل بدون خرائط",
+      "thesis_ar": "تقديم حلول جديدة لتخطيط النقل العام بدون الاعتماد على البنية التحتية للخرائط التقليدية. يمكن أن يساهم ذلك في تحسين كفاءة النقل.",
+      "buyer_ar": "هيئات النقل العام والشركات اللوجستية",
+      "sellable_product_ar": "نظام تخطيط طرق نقل مبتكر",
+      "first_paid_test_ar": "تطوير نموذج تجريبي لتخطيط رحلة معينة",
+      "tools_ar": "نموذج بيانات كبير، أدوات تحليل البيانات، واجهة استخدام",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2605.22733v1",
+        "huggingface_daily_papers:2605.22355",
+        "huggingface_models:hesleav/feliz9b"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hesleav/feliz9b — text-to-image",
+          "url": "https://huggingface.co/hesleav/feliz9b",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-23T11:09:26+00:00",
+      "updatedAt": "2026-05-23T11:09:26+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-23T08:10:32+00:00",
+  "tiered_at": "2026-05-23T11:09:26+00:00",
   "free_preview_count": 3
 }
