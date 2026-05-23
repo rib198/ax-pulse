@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-05-23T02:10:57+00:00",
+  "generated_at": "2026-05-23T05:43:44+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 503,
+  "corpus_count": 522,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في مجالات متعددة يوفر فرصة كبيرة. يمكن استغلال تحديثات نماذج Hugging Face لتطوير تطبيقات مخصصة.",
-      "buyer_ar": "شركات الإعلانات، مصممي الجرافيك، مطوري الألعاب",
-      "sellable_product_ar": "تطبيق لتحويل النصوص إلى صور مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص محددة إلى صور",
-      "tools_ar": "نموذج Hugging Face، أدوات تطوير التطبيقات، واجهات برمجة التطبيقات",
+      "id": "remote-mcp-security",
+      "title_ar": "تحسين أمان المصادقة في الخوادم البعيدة",
+      "thesis_ar": "تزايد استخدام بروتوكول السياق للنماذج اللغوية الكبيرة يتطلب تحسين أمان المصادقة. مع تزايد الاعتماد على الخوادم البعيدة، تصبح الحلول الأمنية أكثر أهمية.",
+      "buyer_ar": "شركات التقنية التي تعتمد على الخوادم البعيدة",
+      "sellable_product_ar": "خدمة استشارية لتحسين أمان المصادقة وتطوير حلول أمان مخصصة",
+      "first_paid_test_ar": "تقديم استشارة مجانية لتقييم الأمان الحالي مقابل رسوم رمزية لتحسينات مقترحة",
+      "tools_ar": "أدوات تحليل الأمان، منصات اختبار الاختراق، برمجيات إدارة الهوية",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Muapi/detailer",
-        "huggingface_models:Muapi/aidvn_townhouse_flux",
-        "huggingface_models:Muapi/gen-x-soft-club"
+        "2605.22333v1",
+        "2605.22087v1",
+        "2605.22566v1"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "Muapi/detailer — text-to-image",
-          "url": "https://huggingface.co/Muapi/detailer",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "JobArabi: An Arabic Corpus and Analysis of Job Announcements from Social Media",
+          "url": "http://arxiv.org/abs/2605.20960v1",
+          "score": 0.472,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Muapi/aidvn_townhouse_flux — text-to-image",
-          "url": "https://huggingface.co/Muapi/aidvn_townhouse_flux",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/gen-x-soft-club — text-to-image",
-          "url": "https://huggingface.co/Muapi/gen-x-soft-club",
-          "score": 0.488,
+          "title": "AIcell/guava-05-22 — robotics",
+          "url": "https://huggingface.co/AIcell/guava-05-22",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-23T02:10:57+00:00",
-      "updatedAt": "2026-05-23T02:10:57+00:00",
+      "publishedAt": "2026-05-23T05:43:44+00:00",
+      "updatedAt": "2026-05-23T05:43:44+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "arabic-job-corpus",
+      "title_ar": "تحليل إعلانات الوظائف باللغة العربية",
+      "thesis_ar": "تزايد الحاجة لفهم سوق العمل العربي يتطلب بيانات دقيقة. توفر مجموعة بيانات JobArabi فرصة لتحليل الاتجاهات ومتطلبات السوق.",
+      "buyer_ar": "شركات التوظيف ومراكز الأبحاث",
+      "sellable_product_ar": "خدمة تحليل بيانات سوق العمل وتقديم تقارير مفصلة",
+      "first_paid_test_ar": "تقديم تقرير أولي مجاني عن اتجاهات سوق العمل مقابل رسوم رمزية لتقارير مفصلة",
+      "tools_ar": "أدوات تحليل البيانات، منصات ذكاء الأعمال، برمجيات تحليل النصوص",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2605.20960v1",
+        "2605.22087v1",
+        "2605.22566v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "JobArabi: An Arabic Corpus and Analysis of Job Announcements from Social Media",
+          "url": "http://arxiv.org/abs/2605.20960v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AIcell/guava-05-22 — robotics",
+          "url": "https://huggingface.co/AIcell/guava-05-22",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-23T05:43:44+00:00",
+      "updatedAt": "2026-05-23T05:43:44+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "streaming-api-framework",
+      "title_ar": "إطار عمل موحد لواجهات برمجة التطبيقات المتدفقة",
+      "thesis_ar": "تزايد استخدام واجهات برمجة التطبيقات المتدفقة يتطلب إطار عمل موحد. يساعد هذا في تسهيل التكامل بين الأدوات المختلفة.",
+      "buyer_ar": "شركات البرمجيات ومطوري التطبيقات",
+      "sellable_product_ar": "تطوير إطار عمل موحد لواجهات برمجة التطبيقات المتدفقة",
+      "first_paid_test_ar": "تقديم نموذج أولي لإطار العمل مع دعم فني مجاني لفترة محدودة",
+      "tools_ar": "أدوات تطوير البرمجيات، منصات اختبار البرمجيات، أدوات إدارة المشاريع",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2605.22733v1",
+        "2605.22087v1",
+        "2605.22566v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "JobArabi: An Arabic Corpus and Analysis of Job Announcements from Social Media",
+          "url": "http://arxiv.org/abs/2605.20960v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AIcell/guava-05-22 — robotics",
+          "url": "https://huggingface.co/AIcell/guava-05-22",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-23T05:43:44+00:00",
+      "updatedAt": "2026-05-23T05:43:44+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-23T02:10:57+00:00",
+  "tiered_at": "2026-05-23T05:43:44+00:00",
   "free_preview_count": 3
 }
