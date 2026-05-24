@@ -1,139 +1,66 @@
 {
-  "generated_at": "2026-05-24T15:01:18+00:00",
+  "generated_at": "2026-05-24T16:56:29+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 536,
   "opportunities": [
     {
-      "id": "streaming-api-integration",
-      "title_ar": "دمج واجهات برمجة التطبيقات المتدفقة",
-      "thesis_ar": "تزايد الحاجة إلى واجهات برمجة التطبيقات المتدفقة في التطبيقات الحديثة يجعل من الضروري تطوير حلول تسهل هذا التكامل. مع تزايد استخدام نماذج اللغة الكبيرة، يمكن أن تكون هذه الحلول محورية.",
-      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
-      "sellable_product_ar": "خدمة دمج واجهات برمجة التطبيقات المتدفقة",
-      "first_paid_test_ar": "تقديم نموذج أولي لدمج واجهة برمجة تطبيقات واحدة",
-      "tools_ar": "Python, HTTP, CI/CD",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "2605.22733v1",
-        "2605.22333v1",
-        "2605.22087v1"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
-          "url": "http://arxiv.org/abs/2605.22733v1",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.491,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.478,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Kukedlc/slopus-4.65-xhigh-schmidhuber-edition — text-generation",
-          "url": "https://huggingface.co/Kukedlc/slopus-4.65-xhigh-schmidhuber-edition",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "THARX/THAR.0X — text-generation",
-          "url": "https://huggingface.co/THARX/THAR.0X",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-24T15:01:18+00:00",
-      "updatedAt": "2026-05-24T15:01:18+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "automated-cad-design",
-      "title_ar": "تصميم هندسي آلي باستخدام نماذج اللغة",
-      "thesis_ar": "تزايد الحاجة إلى تصميمات هندسية دقيقة وسريعة في الصناعات المختلفة يفتح المجال لتطبيق نماذج اللغة في هذا المجال. استخدام نماذج مثل Physics-in-the-Loop يمكن أن يحسن من جودة التصميم.",
-      "buyer_ar": "شركات الهندسة والتصميم",
-      "sellable_product_ar": "أداة تصميم هندسي آلي",
-      "first_paid_test_ar": "تقديم نموذج تصميم أولي باستخدام النموذج",
-      "tools_ar": "LLM, CAD Software, Physics Simulation Tools",
+      "id": "automated-repair-tee",
+      "title_ar": "إصلاح تلقائي لمشاكل تقسيم TEE",
+      "thesis_ar": "تزايد الاعتماد على البيئات التنفيذية الموثوقة (TEEs) يتطلب حلولاً فعالة لإصلاح المشكلات. استخدام الذكاء الاصطناعي يمكن أن يوفر حلولاً سريعة وفعالة.",
+      "buyer_ar": "شركات البرمجيات التي تستخدم TEE",
+      "sellable_product_ar": "خدمة إصلاح تلقائي لمشاكل TEE",
+      "first_paid_test_ar": "تقديم خدمة إصلاح لمشكلة محددة في مشروع تجريبي",
+      "tools_ar": "أدوات الذكاء الاصطناعي، بيئة TEE، أدوات البرمجة",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2605.19717v1",
-        "2605.22333v1",
-        "2605.22087v1"
+        "arxiv_papers:2605.22087"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
-          "url": "http://arxiv.org/abs/2605.22733v1",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
           "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.491,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.478,
+          "score": 0.513,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
           "title": "Kukedlc/slopus-4.65-xhigh-schmidhuber-edition — text-generation",
           "url": "https://huggingface.co/Kukedlc/slopus-4.65-xhigh-schmidhuber-edition",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "THARX/THAR.0X — text-generation",
-          "url": "https://huggingface.co/THARX/THAR.0X",
-          "score": 0.472,
+          "title": "spanspek/SR2AM-v1.0-30B-Q8_0-GGUF — text-generation",
+          "url": "https://huggingface.co/spanspek/SR2AM-v1.0-30B-Q8_0-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "terrencesalim/qwen2-7b-instruct-finetuned-mcpflight — text-generation",
+          "url": "https://huggingface.co/terrencesalim/qwen2-7b-instruct-finetuned-mcpflight",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Kukedlc/slopus-3.5-4b-thinking — text-generation",
+          "url": "https://huggingface.co/Kukedlc/slopus-3.5-4b-thinking",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "spanspek/SR2AM-v1.0-30B-Q4_K_M-GGUF — text-generation",
+          "url": "https://huggingface.co/spanspek/SR2AM-v1.0-30B-Q4_K_M-GGUF",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -142,82 +69,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-24T15:01:18+00:00",
-      "updatedAt": "2026-05-24T15:01:18+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "public-transit-routing",
-      "title_ar": "توليد مسارات النقل العام بدون خرائط",
-      "thesis_ar": "تقديم حلول مبتكرة لتخطيط مسارات النقل العام يمكن أن يحل مشكلة الاعتماد على البنية التحتية المعقدة. توفر مجموعة بيانات TransitLM فرصة لتطوير نماذج جديدة.",
-      "buyer_ar": "هيئات النقل العام",
-      "sellable_product_ar": "أداة تخطيط مسارات النقل العام",
-      "first_paid_test_ar": "تقديم نموذج أولي لتخطيط مسار واحد",
-      "tools_ar": "TransitLM Dataset, Machine Learning Framework, API",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "2605.22355",
-        "2605.22087v1",
-        "2605.19717v1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
-          "url": "http://arxiv.org/abs/2605.22733v1",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.491,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
-          "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.478,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Kukedlc/slopus-4.65-xhigh-schmidhuber-edition — text-generation",
-          "url": "https://huggingface.co/Kukedlc/slopus-4.65-xhigh-schmidhuber-edition",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "THARX/THAR.0X — text-generation",
-          "url": "https://huggingface.co/THARX/THAR.0X",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-24T15:01:18+00:00",
-      "updatedAt": "2026-05-24T15:01:18+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-05-24T16:56:29+00:00",
+      "updatedAt": "2026-05-24T16:56:29+00:00",
+      "sortOrder": 0
     }
   ],
-  "tiered_at": "2026-05-24T15:01:18+00:00",
+  "tiered_at": "2026-05-24T16:56:29+00:00",
   "free_preview_count": 3
 }
