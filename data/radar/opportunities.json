@@ -1,90 +1,47 @@
 {
-  "generated_at": "2026-05-24T19:05:25+00:00",
+  "generated_at": "2026-05-24T20:47:28+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 533,
+  "corpus_count": 527,
   "opportunities": [
     {
-      "id": "mcp-authentication-security",
-      "title_ar": "تحسين أمان المصادقة في خوادم MCP",
-      "thesis_ar": "تزايد الاعتماد على بروتوكول السياق النموذجي (MCP) يتطلب تحسين أمان المصادقة. مع ازدياد استخدام النماذج اللغوية الكبيرة في التطبيقات، هناك حاجة ملحة لتأمين هذه الأنظمة.",
-      "buyer_ar": "شركات التكنولوجيا التي تستخدم نماذج لغوية كبيرة",
-      "sellable_product_ar": "خدمات استشارية لتأمين أنظمة MCP",
-      "first_paid_test_ar": "تقديم تحليل أمان أولي لخدمة MCP",
-      "tools_ar": "أدوات تحليل الأمان، برامج اختبار الاختراق، وثائق الأمان",
-      "capital_ar": "متوسط",
+      "id": "transit-route-generation",
+      "title_ar": "توليد مسارات النقل العامة بدون خرائط",
+      "thesis_ar": "تطوير نظام لتخطيط مسارات النقل العام بدون الاعتماد على بنية خرائط معقدة يعد فرصة كبيرة، خاصة في المدن ذات البنية التحتية المحدودة. يمكن استخدام مجموعة البيانات الجديدة لتدريب نماذج الذكاء الاصطناعي لتحسين كفاءة النقل.",
+      "buyer_ar": "هيئات النقل العام والشركات اللوجستية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتخطيط المسارات",
+      "first_paid_test_ar": "تقديم نموذج أولي لتخطيط مسار لمدينة صغيرة",
+      "tools_ar": "نماذج الذكاء الاصطناعي، بيانات النقل، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
+        "huggingface_daily_papers:2605.22355",
         "arxiv_papers:2605.22333v1",
-        "arxiv_papers:2605.22733v1",
-        "huggingface_daily_papers:2605.22668"
+        "huggingface_models:nikhil2/Qwen3-14B-ToolACE"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
-          "url": "http://arxiv.org/abs/2605.22333v1",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
-          "url": "http://arxiv.org/abs/2605.22733v1",
-          "score": 0.457,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SEGA: Spectral-Energy Guided Attention for Resolution Extrapolation in Diffusion Transformers",
-          "url": "https://huggingface.co/papers/2605.22668",
-          "score": 0.447,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-24T19:05:25+00:00",
-      "updatedAt": "2026-05-24T19:05:25+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "map-free-transit-routing",
-      "title_ar": "تطوير حلول تخطيط النقل بدون خرائط",
-      "thesis_ar": "تزايد الحاجة إلى حلول تخطيط النقل العامة التي لا تعتمد على البنية التحتية المعقدة للخرائط. يوفر نموذج TransitLM فرصة لتدريب نماذج جديدة تلبي هذه الحاجة.",
-      "buyer_ar": "هيئات النقل العامة والشركات اللوجستية",
-      "sellable_product_ar": "نظام تخطيط نقل ذكي يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لتخطيط مسار نقل لمدينة صغيرة",
-      "tools_ar": "أدوات تطوير البرمجيات، بيانات النقل، نماذج الذكاء الاصطناعي",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.22355",
-        "arxiv_papers:2605.19717",
-        "huggingface_daily_papers:2605.22668"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
           "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.491,
+          "score": 0.513,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "SEGA: Spectral-Energy Guided Attention for Resolution Extrapolation in Diffusion Transformers",
-          "url": "https://huggingface.co/papers/2605.22668",
-          "score": 0.447,
+          "source_id": "huggingface_models",
+          "title": "nikhil2/Qwen3-14B-ToolACE — text-generation",
+          "url": "https://huggingface.co/nikhil2/Qwen3-14B-ToolACE",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.479,
           "trust_tier": "research"
         }
       ],
@@ -93,23 +50,73 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-24T19:05:25+00:00",
-      "updatedAt": "2026-05-24T19:05:25+00:00",
+      "publishedAt": "2026-05-24T20:47:28+00:00",
+      "updatedAt": "2026-05-24T20:47:28+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-generation",
+      "title_ar": "توليد الصور من النصوص",
+      "thesis_ar": "تزايد الطلب على محتوى مرئي مبتكر يدعم التسويق الرقمي، مما يجعل تقنيات توليد الصور من النصوص فرصة جذابة. النماذج الجديدة توفر إمكانيات متقدمة في هذا المجال.",
+      "buyer_ar": "وكالات التسويق والمحتوى الرقمي",
+      "sellable_product_ar": "خدمة توليد صور مخصصة من النصوص",
+      "first_paid_test_ar": "تقديم مجموعة من الصور الناتجة عن نصوص محددة",
+      "tools_ar": "نماذج توليد الصور، واجهة برمجة التطبيقات، منصة تسويق",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:jarod2212/NeuroSpin_ZIT",
+        "huggingface_models:tinhohui/yychloegirl8-epoch",
+        "huggingface_models:tinhohui/yychloegirl9-epoch"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "jarod2212/NeuroSpin_ZIT — text-to-image",
+          "url": "https://huggingface.co/jarod2212/NeuroSpin_ZIT",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "tinhohui/yychloegirl8-epoch — text-to-image",
+          "url": "https://huggingface.co/tinhohui/yychloegirl8-epoch",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "tinhohui/yychloegirl9-epoch — text-to-image",
+          "url": "https://huggingface.co/tinhohui/yychloegirl9-epoch",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-24T20:47:28+00:00",
+      "updatedAt": "2026-05-24T20:47:28+00:00",
       "sortOrder": 1
     },
     {
-      "id": "automated-repair-for-tee",
-      "title_ar": "خدمات إصلاح تلقائية لمشاكل تقسيم TEE",
-      "thesis_ar": "تزايد استخدام البيئات التنفيذية الموثوقة (TEE) يتطلب حلولًا لإصلاح المشكلات بشكل تلقائي. هذا يوفر فرصة لتطوير أدوات تعتمد على الذكاء الاصطناعي.",
-      "buyer_ar": "شركات تطوير البرمجيات التي تستخدم TEE",
-      "sellable_product_ar": "أداة إصلاح تلقائية لمشاكل TEE",
-      "first_paid_test_ar": "تقديم خدمة إصلاح لمشكلة TEE محددة",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، بيئات الاختبار",
+      "id": "secure-authentication-solutions",
+      "title_ar": "حلول المصادقة الآمنة",
+      "thesis_ar": "مع تزايد الاعتماد على الخدمات السحابية، تزداد الحاجة إلى حلول مصادقة آمنة. الدراسات الحديثة تسلط الضوء على الثغرات في أنظمة المصادقة الحالية، مما يفتح المجال لتطوير حلول جديدة.",
+      "buyer_ar": "شركات التقنية والبرمجيات",
+      "sellable_product_ar": "نظام مصادقة آمنة يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لنظام مصادقة لمؤسسة صغيرة",
+      "tools_ar": "تقنيات الذكاء الاصطناعي، خوارزميات التشفير، واجهة برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
+        "arxiv_papers:2605.22333v1",
         "arxiv_papers:2605.22087v1",
-        "huggingface_models:THARX/THAR.0X",
-        "huggingface_models:OxiwisAI/OxiwisAI-196B"
+        "huggingface_models:alrobles/ecocoder-adapter"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -118,23 +125,23 @@
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.479,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
           "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
           "url": "http://arxiv.org/abs/2605.22087v1",
-          "score": 0.478,
+          "score": 0.466,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "THARX/THAR.0X — text-generation",
-          "url": "https://huggingface.co/THARX/THAR.0X",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "OxiwisAI/OxiwisAI-196B — text-generation",
-          "url": "https://huggingface.co/OxiwisAI/OxiwisAI-196B",
-          "score": 0.447,
+          "title": "alrobles/ecocoder-adapter — text-generation",
+          "url": "https://huggingface.co/alrobles/ecocoder-adapter",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -143,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-24T19:05:25+00:00",
-      "updatedAt": "2026-05-24T19:05:25+00:00",
+      "publishedAt": "2026-05-24T20:47:28+00:00",
+      "updatedAt": "2026-05-24T20:47:28+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-24T19:05:25+00:00",
+  "tiered_at": "2026-05-24T20:47:28+00:00",
   "free_preview_count": 3
 }
