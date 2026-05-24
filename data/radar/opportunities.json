@@ -1,24 +1,166 @@
 {
-  "generated_at": "2026-05-24T06:59:16+00:00",
+  "generated_at": "2026-05-24T09:53:02+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 528,
+  "corpus_count": 537,
   "opportunities": [
     {
-      "id": "authentication-security-mcp",
-      "title_ar": "تحسين أمان المصادقة في خوادم MCP",
-      "thesis_ar": "تزايد الاعتماد على بروتوكول السياق النموذجي (MCP) يعكس الحاجة المتزايدة لأمان المصادقة. مع تزايد استخدام النماذج اللغوية الكبيرة، فإن تحسين الأمان سيعزز الثقة في الحلول المعتمدة على الذكاء الاصطناعي.",
-      "buyer_ar": "شركات التقنية التي تعتمد على خوادم MCP",
-      "sellable_product_ar": "خدمة استشارية لتحسين أمان المصادقة",
-      "first_paid_test_ar": "تقديم تقييم أمني أولي لخادم MCP",
-      "tools_ar": "أدوات تحليل الأمان، تقنيات التعلم الآلي، أدوات اختبار الاختراق",
-      "capital_ar": "منخفض",
+      "id": "llm-workflow-management",
+      "title_ar": "إدارة سير العمل لنماذج اللغة الكبيرة",
+      "thesis_ar": "تتطلب نماذج اللغة الكبيرة إدارة فعالة لسير العمل لضمان الأداء الأمثل. تطوير أدوات لإدارة سير العمل يمكن أن يحسن الكفاءة.",
+      "buyer_ar": "شركات تطوير البرمجيات التي تستخدم LLMs",
+      "sellable_product_ar": "أداة لإدارة سير العمل مخصصة لنماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم نموذج أولي لإدارة سير العمل لنموذج لغة محدد",
+      "tools_ar": "أدوات تطوير البرمجيات، بيئة اختبار، أدوات تحليل البيانات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "2605.22333v1",
+        "2605.22566v1",
+        "2605.19717v1",
+        "2605.22733v1"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.478,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/sinmxch-realism-tattoos — text-to-image",
+          "url": "https://huggingface.co/Muapi/sinmxch-realism-tattoos",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-24T09:53:02+00:00",
+      "updatedAt": "2026-05-24T09:53:02+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "transit-route-generation",
+      "title_ar": "توليد مسارات النقل العامة بدون خرائط",
+      "thesis_ar": "تقديم حلول جديدة لتخطيط النقل العام بدون الاعتماد على البنية التحتية للخرائط يمكن أن يحسن من كفاءة النقل. هذا الابتكار يعد فرصة كبيرة في المدن الكبرى.",
+      "buyer_ar": "الهيئات الحكومية وشركات النقل",
+      "sellable_product_ar": "نظام لتوليد مسارات النقل العامة باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد مسار نقل في منطقة محددة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، بيئة اختبار",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2605.22355",
         "2605.22087v1",
         "2605.22566v1"
       ],
-      "confidence": 0.8,
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
+          "url": "http://arxiv.org/abs/2605.22333v1",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+          "url": "http://arxiv.org/abs/2605.22733v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
+          "url": "https://huggingface.co/papers/2605.22355",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+          "url": "http://arxiv.org/abs/2605.22087v1",
+          "score": 0.478,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/sinmxch-realism-tattoos — text-to-image",
+          "url": "https://huggingface.co/Muapi/sinmxch-realism-tattoos",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-24T09:53:02+00:00",
+      "updatedAt": "2026-05-24T09:53:02+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "secure-mcp-authentication",
+      "title_ar": "تحسين أمان المصادقة في خوادم MCP",
+      "thesis_ar": "تزايد استخدام بروتوكول السياق (MCP) يتطلب حلولاً أمنة للمصادقة. مع تزايد الاعتماد على النماذج اللغوية الكبيرة، فإن تحسين الأمان في هذه الأنظمة يعد فرصة هامة.",
+      "buyer_ar": "شركات التقنية التي تستخدم نماذج لغوية كبيرة",
+      "sellable_product_ar": "خدمة استشارية لتطوير حلول أمان المصادقة",
+      "first_paid_test_ar": "تقديم تحليل أمان أولي لنظام موجود",
+      "tools_ar": "أدوات تحليل الأمان، بيئة اختبار، أدوات تطوير البرمجيات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2605.22333v1",
+        "2605.22566v1",
+        "2605.22087v1"
+      ],
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 2,
       "avg_score": 0.51,
@@ -43,54 +185,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-24T06:59:16+00:00",
-      "updatedAt": "2026-05-24T06:59:16+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "transit-route-generation",
-      "title_ar": "توليد مسارات النقل بدون خرائط",
-      "thesis_ar": "الحاجة إلى تحسين تخطيط النقل العام بدون الاعتماد على البنية التحتية المعقدة تعكس فرصة كبيرة. تطوير نموذج يمكنه توليد مسارات فعالة يمكن أن يحدث ثورة في هذا المجال.",
-      "buyer_ar": "هيئات النقل العام والمطورون",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتوليد مسارات النقل",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد مسارات في منطقة محددة",
-      "tools_ar": "أدوات تحليل البيانات، تقنيات التعلم العميق، أدوات البرمجة",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "2605.22733v1",
-        "huggingface_daily_papers:2605.22355",
-        "huggingface_models:Muapi/minecraft-style"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation",
-          "url": "https://huggingface.co/papers/2605.22355",
-          "score": 0.491,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/minecraft-style — text-to-image",
-          "url": "https://huggingface.co/Muapi/minecraft-style",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-24T06:59:16+00:00",
-      "updatedAt": "2026-05-24T06:59:16+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-05-24T09:53:02+00:00",
+      "updatedAt": "2026-05-24T09:53:02+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-24T06:59:16+00:00",
+  "tiered_at": "2026-05-24T09:53:02+00:00",
   "free_preview_count": 3
 }
