@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-05-24T20:47:28+00:00",
+  "generated_at": "2026-05-24T22:51:26+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 527,
+  "corpus_count": 545,
   "opportunities": [
     {
-      "id": "transit-route-generation",
-      "title_ar": "توليد مسارات النقل العامة بدون خرائط",
-      "thesis_ar": "تطوير نظام لتخطيط مسارات النقل العام بدون الاعتماد على بنية خرائط معقدة يعد فرصة كبيرة، خاصة في المدن ذات البنية التحتية المحدودة. يمكن استخدام مجموعة البيانات الجديدة لتدريب نماذج الذكاء الاصطناعي لتحسين كفاءة النقل.",
-      "buyer_ar": "هيئات النقل العام والشركات اللوجستية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتخطيط المسارات",
-      "first_paid_test_ar": "تقديم نموذج أولي لتخطيط مسار لمدينة صغيرة",
-      "tools_ar": "نماذج الذكاء الاصطناعي، بيانات النقل، واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "transit-route-planning",
+      "title_ar": "تخطيط مسارات النقل العامة بدون خرائط",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في تخطيط النقل يعكس الحاجة إلى حلول مبتكرة. توفر بيانات TransitLM فرصة لتطوير نماذج جديدة تخدم المدن الكبرى.",
+      "buyer_ar": "الهيئات الحكومية و شركات النقل",
+      "sellable_product_ar": "نظام تخطيط مسارات النقل الذكي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتخطيط مسار في مدينة محددة",
+      "tools_ar": "نموذج TransitLM، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2605.22355",
-        "arxiv_papers:2605.22333v1",
-        "huggingface_models:nikhil2/Qwen3-14B-ToolACE"
+        "arxiv_papers:2605.22087",
+        "arxiv_papers:2605.22333v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 2,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -29,13 +29,6 @@
           "url": "https://huggingface.co/papers/2605.22355",
           "score": 0.513,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nikhil2/Qwen3-14B-ToolACE — text-generation",
-          "url": "https://huggingface.co/nikhil2/Qwen3-14B-ToolACE",
-          "score": 0.488,
-          "trust_tier": "official"
         },
         {
           "source_id": "arxiv_papers",
@@ -50,28 +43,28 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-24T20:47:28+00:00",
-      "updatedAt": "2026-05-24T20:47:28+00:00",
+      "publishedAt": "2026-05-24T22:51:26+00:00",
+      "updatedAt": "2026-05-24T22:51:26+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-generation",
-      "title_ar": "توليد الصور من النصوص",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي مبتكر يدعم التسويق الرقمي، مما يجعل تقنيات توليد الصور من النصوص فرصة جذابة. النماذج الجديدة توفر إمكانيات متقدمة في هذا المجال.",
-      "buyer_ar": "وكالات التسويق والمحتوى الرقمي",
-      "sellable_product_ar": "خدمة توليد صور مخصصة من النصوص",
-      "first_paid_test_ar": "تقديم مجموعة من الصور الناتجة عن نصوص محددة",
-      "tools_ar": "نماذج توليد الصور، واجهة برمجة التطبيقات، منصة تسويق",
+      "id": "text-to-image-technology",
+      "title_ar": "تكنولوجيا تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى البصري المخصص يعزز الحاجة لتقنيات تحويل النص إلى صورة. النماذج الجديدة توفر إمكانيات مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات التسويق والإعلانات",
+      "sellable_product_ar": "خدمة تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تطوير نموذج تجريبي لتحويل نصوص إعلانات إلى صور",
+      "tools_ar": "نموذج NeuroSpin_ZIT، أدوات تصميم جرافيكي، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_models:jarod2212/NeuroSpin_ZIT",
-        "huggingface_models:tinhohui/yychloegirl8-epoch",
-        "huggingface_models:tinhohui/yychloegirl9-epoch"
+        "huggingface_models:ayjays132/Phillnet-2",
+        "huggingface_models:FreedomAISVR/Qwen3.5-9B-Instruct-NVFP4-GGUF"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
@@ -82,16 +75,16 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "tinhohui/yychloegirl8-epoch — text-to-image",
-          "url": "https://huggingface.co/tinhohui/yychloegirl8-epoch",
-          "score": 0.488,
+          "title": "ayjays132/Phillnet-2 — text-generation",
+          "url": "https://huggingface.co/ayjays132/Phillnet-2",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "tinhohui/yychloegirl9-epoch — text-to-image",
-          "url": "https://huggingface.co/tinhohui/yychloegirl9-epoch",
-          "score": 0.488,
+          "title": "FreedomAISVR/Qwen3.5-9B-Instruct-NVFP4-GGUF — text-generation",
+          "url": "https://huggingface.co/FreedomAISVR/Qwen3.5-9B-Instruct-NVFP4-GGUF",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -100,29 +93,36 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-24T20:47:28+00:00",
-      "updatedAt": "2026-05-24T20:47:28+00:00",
+      "publishedAt": "2026-05-24T22:51:26+00:00",
+      "updatedAt": "2026-05-24T22:51:26+00:00",
       "sortOrder": 1
     },
     {
-      "id": "secure-authentication-solutions",
-      "title_ar": "حلول المصادقة الآمنة",
-      "thesis_ar": "مع تزايد الاعتماد على الخدمات السحابية، تزداد الحاجة إلى حلول مصادقة آمنة. الدراسات الحديثة تسلط الضوء على الثغرات في أنظمة المصادقة الحالية، مما يفتح المجال لتطوير حلول جديدة.",
-      "buyer_ar": "شركات التقنية والبرمجيات",
-      "sellable_product_ar": "نظام مصادقة آمنة يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام مصادقة لمؤسسة صغيرة",
-      "tools_ar": "تقنيات الذكاء الاصطناعي، خوارزميات التشفير، واجهة برمجة التطبيقات",
+      "id": "secure-remote-authentication",
+      "title_ar": "تحسين أمان المصادقة عن بُعد",
+      "thesis_ar": "مع تزايد استخدام الخدمات السحابية، يصبح أمان المصادقة ضرورة ملحة. الأبحاث الحالية تشير إلى وجود ثغرات يمكن معالجتها.",
+      "buyer_ar": "شركات التقنية ومزودي الخدمات السحابية",
+      "sellable_product_ar": "حلول أمان متقدمة للمصادقة عن بُعد",
+      "first_paid_test_ar": "تقديم استشارة أمنية لشركة صغيرة",
+      "tools_ar": "أدوات تحليل الأمان، نماذج LLM، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2605.22333v1",
         "arxiv_papers:2605.22087v1",
-        "huggingface_models:alrobles/ecocoder-adapter"
+        "huggingface_models:LLM-OS-Models/KoHRM-Text-1.4B"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "LLM-OS-Models/KoHRM-Text-1.4B — text-generation",
+          "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers",
@@ -136,13 +136,6 @@
           "url": "http://arxiv.org/abs/2605.22087v1",
           "score": 0.466,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "alrobles/ecocoder-adapter — text-generation",
-          "url": "https://huggingface.co/alrobles/ecocoder-adapter",
-          "score": 0.466,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-24T20:47:28+00:00",
-      "updatedAt": "2026-05-24T20:47:28+00:00",
+      "publishedAt": "2026-05-24T22:51:26+00:00",
+      "updatedAt": "2026-05-24T22:51:26+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-24T20:47:28+00:00",
+  "tiered_at": "2026-05-24T22:51:26+00:00",
   "free_preview_count": 3
 }
