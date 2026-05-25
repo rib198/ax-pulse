@@ -1,67 +1,46 @@
 {
-  "generated_at": "2026-05-25T02:33:35+00:00",
+  "generated_at": "2026-05-25T08:16:49+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 452,
+  "corpus_count": 530,
   "opportunities": [
     {
-      "id": "multimodal-reasoning-tools",
-      "title_ar": "أدوات لتحسين التفكير متعدد الوسائط",
-      "thesis_ar": "تتطور نماذج اللغة الكبيرة متعددة الوسائط، مما يفتح المجال لتطبيقات جديدة في التعليم والتدريب. الحاجة إلى أدوات تعزز من القدرة على التفكير باستخدام الصور والنصوص أصبحت ملحة.",
-      "buyer_ar": "مؤسسات التعليم والتدريب",
-      "sellable_product_ar": "أداة تعليمية تعتمد على الذكاء الاصطناعي لتحسين التفكير البصري والنصي",
-      "first_paid_test_ar": "تقديم ورشة عمل تجريبية لمدة يومين لمؤسسة تعليمية",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة تعليمية، أدوات تحليل بيانات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تتزايد الحاجة إلى نماذج تحويل النص إلى صورة ذات جودة عالية. الإشارات تشير إلى نماذج جديدة تحقق أداءً متفوقًا مع عدد أقل من المعلمات، مما يفتح المجال لتطبيقات جديدة في الفنون والتصميم.",
+      "buyer_ar": "المصممين، وكالات الإعلان، والشركات التقنية",
+      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لمشروع صغير لتحويل نصوص محددة إلى صور",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، بيئات تطوير البرمجيات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "2605.23897",
-        "2605.21573",
-        "2605.23888"
+        "huggingface_daily_papers:2605.21573",
+        "huggingface_models:jander87/jp",
+        "huggingface_models:NO8D/ExpressionControl"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "ETCHR: Editing To Clarify and Harness Reasoning",
-          "url": "https://huggingface.co/papers/2605.23897",
-          "score": 0.51,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion",
-          "url": "https://huggingface.co/papers/2605.23902",
-          "score": 0.488,
+          "title": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models",
+          "url": "https://huggingface.co/papers/2605.21573",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "michalsr/toolmerge-planner-grpo — video-text-to-text",
-          "url": "https://huggingface.co/michalsr/toolmerge-planner-grpo",
+          "title": "jander87/jp — text-to-image",
+          "url": "https://huggingface.co/jander87/jp",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "jeremyhola/LORAs — text-to-image",
-          "url": "https://huggingface.co/jeremyhola/LORAs",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Stottsteven/SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors — text-to-image",
-          "url": "https://huggingface.co/Stottsteven/SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Baraje/t_shirt_product_lora — text-to-image",
-          "url": "https://huggingface.co/Baraje/t_shirt_product_lora",
+          "title": "NO8D/ExpressionControl — text-to-image",
+          "url": "https://huggingface.co/NO8D/ExpressionControl",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -71,69 +50,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-25T02:33:35+00:00",
-      "updatedAt": "2026-05-25T02:33:35+00:00",
+      "publishedAt": "2026-05-25T08:16:49+00:00",
+      "updatedAt": "2026-05-25T08:16:49+00:00",
       "sortOrder": 0
     },
     {
-      "id": "high-resolution-image-generation",
-      "title_ar": "توليد صور عالية الدقة",
-      "thesis_ar": "تتزايد الحاجة إلى أنظمة توليد الصور عالية الدقة في مجالات مثل التسويق والإعلانات. التقنيات الجديدة تجعل من الممكن إنشاء صور بجودة عالية بسرعة وكفاءة.",
-      "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "خدمة توليد صور مخصصة عالية الدقة باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم 10 صور مجانية لشركة تسويق لتجربة الخدمة",
-      "tools_ar": "نموذج توليد صور، خادم سحابي، واجهة مستخدم",
+      "id": "multimodal-language-models",
+      "title_ar": "تطوير نماذج لغوية متعددة الوسائط",
+      "thesis_ar": "تتزايد الحاجة إلى نماذج لغوية قادرة على معالجة البيانات النصية والمرئية معًا. الإشارات تشير إلى تقدم كبير في هذا المجال مما يتيح فرصًا جديدة في التعليم والتسويق.",
+      "buyer_ar": "شركات التعليم، وكالات التسويق، المطورين",
+      "sellable_product_ar": "نموذج لغوي متعدد الوسائط مخصص",
+      "first_paid_test_ar": "تقديم نموذج أولي لمهمة بسيطة تتضمن نصوص وصور",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة اللغة الطبيعية، بيئات تطوير البرمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2605.23902",
-        "2605.23888",
-        "2605.21573"
+        "huggingface_daily_papers:2605.23897",
+        "huggingface_models:theschoolofai/LightningLM-0.1V-9B-MoE",
+        "huggingface_models:cs-552-2026-claude-bots/multilingual_model"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "ETCHR: Editing To Clarify and Harness Reasoning",
           "url": "https://huggingface.co/papers/2605.23897",
-          "score": 0.51,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion",
-          "url": "https://huggingface.co/papers/2605.23902",
           "score": 0.488,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "michalsr/toolmerge-planner-grpo — video-text-to-text",
-          "url": "https://huggingface.co/michalsr/toolmerge-planner-grpo",
-          "score": 0.488,
+          "title": "theschoolofai/LightningLM-0.1V-9B-MoE — text-generation",
+          "url": "https://huggingface.co/theschoolofai/LightningLM-0.1V-9B-MoE",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "jeremyhola/LORAs — text-to-image",
-          "url": "https://huggingface.co/jeremyhola/LORAs",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Stottsteven/SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors — text-to-image",
-          "url": "https://huggingface.co/Stottsteven/SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Baraje/t_shirt_product_lora — text-to-image",
-          "url": "https://huggingface.co/Baraje/t_shirt_product_lora",
-          "score": 0.488,
+          "title": "cs-552-2026-claude-bots/multilingual_model — text-generation",
+          "url": "https://huggingface.co/cs-552-2026-claude-bots/multilingual_model",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -142,69 +100,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-25T02:33:35+00:00",
-      "updatedAt": "2026-05-25T02:33:35+00:00",
+      "publishedAt": "2026-05-25T08:16:49+00:00",
+      "updatedAt": "2026-05-25T08:16:49+00:00",
       "sortOrder": 1
     },
     {
-      "id": "text-to-image-customization",
-      "title_ar": "تخصيص تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على تخصيص المحتوى البصري من نصوص، مما يتيح للشركات التعبير عن هويتها بشكل فريد. نماذج تحويل النص إلى صورة الجديدة توفر إمكانيات واسعة في هذا المجال.",
-      "buyer_ar": "شركات التصميم والإعلانات",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى صور مخصصة مع خيارات تخصيص متقدمة",
-      "first_paid_test_ar": "تقديم نموذج أولي مجاني مع خيارات تخصيص محدودة",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، أدوات تحليل السوق",
-      "capital_ar": "منخفض",
+      "id": "high-resolution-image-generation",
+      "title_ar": "تطوير أنظمة توليد صور عالية الدقة",
+      "thesis_ar": "تتزايد الحاجة إلى أنظمة توليد صور عالية الدقة في مختلف الصناعات. الإشارات تشير إلى تقنيات جديدة تتيح ذلك بشكل أسرع وأكثر كفاءة.",
+      "buyer_ar": "شركات الألعاب، شركات الإنتاج السينمائي، المصورين",
+      "sellable_product_ar": "خدمة توليد صور عالية الدقة باستخدام تقنيات حديثة",
+      "first_paid_test_ar": "تقديم نموذج أولي لصورة عالية الدقة لمشروع محدد",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، بيئات تطوير البرمجيات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "jeremyhola/LORAs",
-        "Baraje/t_shirt_product_lora",
-        "2605.23888"
+        "huggingface_daily_papers:2605.23902",
+        "huggingface_models:russc821/PixArt-XL-2-1024-MS",
+        "huggingface_models:theschoolofai/LightningLM-0.1V-2B"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ETCHR: Editing To Clarify and Harness Reasoning",
-          "url": "https://huggingface.co/papers/2605.23897",
-          "score": 0.51,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "russc821/PixArt-XL-2-1024-MS — text-to-image",
+          "url": "https://huggingface.co/russc821/PixArt-XL-2-1024-MS",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion",
           "url": "https://huggingface.co/papers/2605.23902",
-          "score": 0.488,
+          "score": 0.473,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "michalsr/toolmerge-planner-grpo — video-text-to-text",
-          "url": "https://huggingface.co/michalsr/toolmerge-planner-grpo",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "jeremyhola/LORAs — text-to-image",
-          "url": "https://huggingface.co/jeremyhola/LORAs",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Stottsteven/SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors — text-to-image",
-          "url": "https://huggingface.co/Stottsteven/SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Baraje/t_shirt_product_lora — text-to-image",
-          "url": "https://huggingface.co/Baraje/t_shirt_product_lora",
-          "score": 0.488,
+          "title": "theschoolofai/LightningLM-0.1V-2B — text-generation",
+          "url": "https://huggingface.co/theschoolofai/LightningLM-0.1V-2B",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -213,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-25T02:33:35+00:00",
-      "updatedAt": "2026-05-25T02:33:35+00:00",
+      "publishedAt": "2026-05-25T08:16:49+00:00",
+      "updatedAt": "2026-05-25T08:16:49+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-25T02:33:35+00:00",
+  "tiered_at": "2026-05-25T08:16:49+00:00",
   "free_preview_count": 3
 }
