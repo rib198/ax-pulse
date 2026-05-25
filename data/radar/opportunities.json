@@ -1,28 +1,35 @@
 {
-  "generated_at": "2026-05-25T08:16:49+00:00",
+  "generated_at": "2026-05-25T13:21:58+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 530,
+  "corpus_count": 463,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تتزايد الحاجة إلى نماذج تحويل النص إلى صورة ذات جودة عالية. الإشارات تشير إلى نماذج جديدة تحقق أداءً متفوقًا مع عدد أقل من المعلمات، مما يفتح المجال لتطبيقات جديدة في الفنون والتصميم.",
-      "buyer_ar": "المصممين، وكالات الإعلان، والشركات التقنية",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لمشروع صغير لتحويل نصوص محددة إلى صور",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، بيئات تطوير البرمجيات",
-      "capital_ar": "منخفض",
+      "id": "advanced-text-to-image-models",
+      "title_ar": "تطوير نماذج متقدمة لتحويل النص إلى صورة",
+      "thesis_ar": "تطور نماذج تحويل النص إلى صورة يتيح إنشاء محتوى بصري مخصص. هذه التقنية مطلوبة في مجالات الإعلانات والفنون والترفيه.",
+      "buyer_ar": "شركات الإعلانات، وكالات التصميم، مطورين الألعاب",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لحملة إعلانية",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات نماذج الذكاء الاصطناعي، بيئات تطوير البرمجيات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
+        "huggingface_models:FjikoAI/SAKURA_Illustrious_v0.8_Hybrid",
         "huggingface_daily_papers:2605.21573",
-        "huggingface_models:jander87/jp",
-        "huggingface_models:NO8D/ExpressionControl"
+        "huggingface_daily_papers:2605.23897"
       ],
-      "confidence": 0.8,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "FjikoAI/SAKURA_Illustrious_v0.8_Hybrid — text-to-image",
+          "url": "https://huggingface.co/FjikoAI/SAKURA_Illustrious_v0.8_Hybrid",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models",
@@ -31,18 +38,11 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "jander87/jp — text-to-image",
-          "url": "https://huggingface.co/jander87/jp",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "NO8D/ExpressionControl — text-to-image",
-          "url": "https://huggingface.co/NO8D/ExpressionControl",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "ETCHR: Editing To Clarify and Harness Reasoning",
+          "url": "https://huggingface.co/papers/2605.23897",
+          "score": 0.492,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -50,99 +50,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-25T08:16:49+00:00",
-      "updatedAt": "2026-05-25T08:16:49+00:00",
+      "publishedAt": "2026-05-25T13:21:58+00:00",
+      "updatedAt": "2026-05-25T13:21:58+00:00",
       "sortOrder": 0
     },
     {
-      "id": "multimodal-language-models",
-      "title_ar": "تطوير نماذج لغوية متعددة الوسائط",
-      "thesis_ar": "تتزايد الحاجة إلى نماذج لغوية قادرة على معالجة البيانات النصية والمرئية معًا. الإشارات تشير إلى تقدم كبير في هذا المجال مما يتيح فرصًا جديدة في التعليم والتسويق.",
-      "buyer_ar": "شركات التعليم، وكالات التسويق، المطورين",
-      "sellable_product_ar": "نموذج لغوي متعدد الوسائط مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لمهمة بسيطة تتضمن نصوص وصور",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة اللغة الطبيعية، بيئات تطوير البرمجيات",
+      "id": "unified-audio-language-modeling",
+      "title_ar": "نموذج موحد للغة الصوتية",
+      "thesis_ar": "تزايد الحاجة إلى نماذج تجمع بين الصوت واللغة لتطوير أنظمة تفاعلية. هذه النماذج توفر إمكانيات جديدة في مجال التعلم الآلي.",
+      "buyer_ar": "شركات التكنولوجيا، مطوري التطبيقات الصوتية",
+      "sellable_product_ar": "نموذج موحد للغة الصوتية",
+      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق صوتي تفاعلي",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصوت، بيئات تطوير البرمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2605.23897",
-        "huggingface_models:theschoolofai/LightningLM-0.1V-9B-MoE",
-        "huggingface_models:cs-552-2026-claude-bots/multilingual_model"
+        "huggingface_daily_papers:2605.23463",
+        "huggingface_daily_papers:2605.23903"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 2,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "ETCHR: Editing To Clarify and Harness Reasoning",
-          "url": "https://huggingface.co/papers/2605.23897",
-          "score": 0.488,
+          "title": "Geo-Align: Video Generation Alignment via Metric Geometry Reward",
+          "url": "https://huggingface.co/papers/2605.23903",
+          "score": 0.466,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "theschoolofai/LightningLM-0.1V-9B-MoE — text-generation",
-          "url": "https://huggingface.co/theschoolofai/LightningLM-0.1V-9B-MoE",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "cs-552-2026-claude-bots/multilingual_model — text-generation",
-          "url": "https://huggingface.co/cs-552-2026-claude-bots/multilingual_model",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-25T08:16:49+00:00",
-      "updatedAt": "2026-05-25T08:16:49+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "high-resolution-image-generation",
-      "title_ar": "تطوير أنظمة توليد صور عالية الدقة",
-      "thesis_ar": "تتزايد الحاجة إلى أنظمة توليد صور عالية الدقة في مختلف الصناعات. الإشارات تشير إلى تقنيات جديدة تتيح ذلك بشكل أسرع وأكثر كفاءة.",
-      "buyer_ar": "شركات الألعاب، شركات الإنتاج السينمائي، المصورين",
-      "sellable_product_ar": "خدمة توليد صور عالية الدقة باستخدام تقنيات حديثة",
-      "first_paid_test_ar": "تقديم نموذج أولي لصورة عالية الدقة لمشروع محدد",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، بيئات تطوير البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.23902",
-        "huggingface_models:russc821/PixArt-XL-2-1024-MS",
-        "huggingface_models:theschoolofai/LightningLM-0.1V-2B"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "russc821/PixArt-XL-2-1024-MS — text-to-image",
-          "url": "https://huggingface.co/russc821/PixArt-XL-2-1024-MS",
-          "score": 0.488,
-          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion",
-          "url": "https://huggingface.co/papers/2605.23902",
-          "score": 0.473,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "theschoolofai/LightningLM-0.1V-2B — text-generation",
-          "url": "https://huggingface.co/theschoolofai/LightningLM-0.1V-2B",
+          "title": "StepAudio 2.5 Technical Report",
+          "url": "https://huggingface.co/papers/2605.23463",
           "score": 0.466,
-          "trust_tier": "official"
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +92,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-25T08:16:49+00:00",
-      "updatedAt": "2026-05-25T08:16:49+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-05-25T13:21:58+00:00",
+      "updatedAt": "2026-05-25T13:21:58+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-25T08:16:49+00:00",
+  "tiered_at": "2026-05-25T13:21:58+00:00",
   "free_preview_count": 3
 }
