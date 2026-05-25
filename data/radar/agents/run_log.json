@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-25T13:21:58+00:00",
+  "run_at": "2026-05-25T16:32:06+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 1260.278,
+      "duration_s": 740.515,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 286 signals from 31 source families",
+        "collected 288 signals from 31 source families",
         "12 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.015,
       "written": [],
       "notes": [
         "injected 177 manual X items (skipped 120 of 297, avg score 0.467)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 463 items",
-        "by tier: press=209, official=169, research=55, community=30"
+        "tagged 465 items",
+        "by tier: press=207, official=169, research=59, community=30"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.017,
+      "duration_s": 0.018,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 463 items, top priority=0.531"
+        "ranked 465 items, top priority=0.512"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.007,
+      "duration_s": 0.008,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 18 products this run",
+        "detected 14 companies, 17 products this run",
         "store size: 38"
       ],
       "error": null
@@ -115,39 +115,39 @@
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "12 events (0 new)",
-        "by type: model_release=6, pricing_change=4, acquisition=1, policy_signal=1"
+        "8 events (3 new)",
+        "by type: model_release=4, acquisition=2, pricing_change=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.008,
+      "duration_s": 0.009,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
       "notes": [
-        "18 arab-market items"
+        "15 arab-market items"
       ],
       "error": null
     },
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 11.163,
+      "duration_s": 14.705,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 2 opportunities"
+        "openai produced 3 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 17.494,
+      "duration_s": 14.074,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -166,7 +166,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 2 free / 0 premium",
+        "opps: 3 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 13.472,
+      "duration_s": 12.966,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=463, opps=2, calls=3"
+        "items=465, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 4.089,
+      "duration_s": 3.772,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تظهر الإشارات انخفاضًا ملحوظًا بنسبة 12% مقارنة بالتشغيل السابق، مما يشير إلى ت…"
+        "insight via openai: يبدو أن هناك زيادة ملحوظة في نشاط الإصدارات الحديثة، حيث تم تسجيل 5 إصدارات جدي…"
       ],
       "error": null
     },
@@ -242,7 +242,7 @@
       ],
       "notes": [
         "tracked 17 sources",
-        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
+        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
       ],
       "error": null
     }
