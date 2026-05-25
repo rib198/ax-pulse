@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-25T21:02:28+00:00",
+  "run_at": "2026-05-25T22:56:24+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 39.053,
+      "duration_s": 22.368,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 358 signals from 31 source families",
+        "collected 351 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.014,
       "written": [],
       "notes": [
         "injected 177 manual X items (skipped 120 of 297, avg score 0.467)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 535 items",
-        "by tier: press=207, official=169, research=124, community=35"
+        "tagged 528 items",
+        "by tier: press=207, official=168, research=123, community=30"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.022,
+      "duration_s": 0.024,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 535 items, top priority=0.532"
+        "ranked 528 items, top priority=0.532"
       ],
       "error": null
     },
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.046,
+      "duration_s": 0.044,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.102,
+      "duration_s": 0.101,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "17 events (0 new)",
-        "by type: model_release=8, acquisition=3, policy_signal=2, pricing_change=4"
+        "18 events (1 new)",
+        "by type: model_release=8, acquisition=4, policy_signal=2, pricing_change=4"
       ],
       "error": null
     },
@@ -135,19 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 21.242,
+      "duration_s": 12.228,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 3 opportunities"
+        "openai produced 2 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 32.512,
+      "duration_s": 12.719,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -166,7 +166,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 0 premium",
+        "opps: 2 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 14.281,
+      "duration_s": 11.532,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=535, opps=3, calls=3"
+        "items=528, opps=2, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 5.196,
+      "duration_s": 3.669,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: لوحظ زيادة في النشاط الإبداعي مع إصدار نماذج جديدة مثل gpt وllama، مما يشير إلى…"
+        "insight via openai: لوحظ تراجع في النشاط العام، حيث انخفضت الإشارات بمعدل 7 إشارات مقارنة بالتشغيل …"
       ],
       "error": null
     },
@@ -242,7 +242,7 @@
       ],
       "notes": [
         "tracked 17 sources",
-        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
+        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
       ],
       "error": null
     }
