@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-25T22:56:24+00:00",
+  "run_at": "2026-05-26T07:41:06+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 22.368,
+      "duration_s": 24.534,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 351 signals from 31 source families",
+        "collected 341 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 528 items",
-        "by tier: press=207, official=168, research=123, community=30"
+        "tagged 518 items",
+        "by tier: press=207, official=169, research=113, community=29"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.024,
+      "duration_s": 0.02,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 528 items, top priority=0.532"
+        "ranked 518 items, top priority=0.542"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.008,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,45 +97,45 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.044,
+      "duration_s": 0.043,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
-        "101 total"
+        "+12 new model events",
+        "113 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.101,
+      "duration_s": 0.096,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "18 events (1 new)",
-        "by type: model_release=8, acquisition=4, policy_signal=2, pricing_change=4"
+        "25 events (19 new)",
+        "by type: model_release=8, personnel_move=3, policy_signal=4, acquisition=6, pricing_change=4"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.01,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
       "notes": [
-        "18 arab-market items"
+        "20 arab-market items"
       ],
       "error": null
     },
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 12.228,
+      "duration_s": 18.726,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 12.719,
+      "duration_s": 15.336,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.009,
+      "duration_s": 0.008,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 11.532,
+      "duration_s": 18.948,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=528, opps=2, calls=3"
+        "items=518, opps=2, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.669,
+      "duration_s": 7.882,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: لوحظ تراجع في النشاط العام، حيث انخفضت الإشارات بمعدل 7 إشارات مقارنة بالتشغيل …"
+        "insight via openai: تظهر زيادة في النشاط حول نماذج GPT وحركة كادر together، مما يشير إلى اهتمام متز…"
       ],
       "error": null
     },
