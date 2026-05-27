@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-05-27T21:50:40+00:00",
+  "generated_at": "2026-05-27T23:19:54+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 537,
+  "corpus_count": 528,
   "opportunities": [
     {
       "id": "data-centric-dialogue-mining",
-      "title_ar": "تعدين حوارات معقدة من وسائل الإعلام المتدفقة",
-      "thesis_ar": "توجد حاجة متزايدة لتطوير نماذج لغوية متخصصة في مجالات معينة، مما يفتح المجال لتعدين الحوارات المعقدة. يمكن أن تسهم هذه النماذج في تحسين تفاعل المستخدمين مع الأنظمة الذكية.",
-      "buyer_ar": "شركات التكنولوجيا، منصات التواصل الاجتماعي",
-      "sellable_product_ar": "أداة لتعدين الحوارات المعقدة وتحليل البيانات",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل حوارات من مصدر بيانات محدد",
-      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، واجهات برمجة التطبيقات",
+      "title_ar": "تعدين الحوار الموجه بالبيانات",
+      "thesis_ar": "تواجه نماذج اللغة الكبيرة تحديات في الحصول على حوارات معقدة وموجهة في مجالات محددة. يمكن تطوير حلول لتسهيل جمع البيانات المتخصصة من وسائل الإعلام المتدفقة.",
+      "buyer_ar": "شركات تطوير البرمجيات، مؤسسات التعليم العالي",
+      "sellable_product_ar": "أداة لجمع وتعدين البيانات الحوارية الموجهة",
+      "first_paid_test_ar": "تجربة جمع بيانات حوارية في مجال محدد",
+      "tools_ar": "أدوات تحليل البيانات، واجهات برمجة التطبيقات، نماذج تعلم الآلة",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2605.25162",
-        "huggingface_daily_papers:2605.23215",
-        "huggingface_daily_papers:2605.27030"
+        "huggingface_daily_papers:2605.22769",
+        "huggingface_daily_papers:2605.27209"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -32,9 +32,59 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "FastKernels: Benchmarking GPU Kernel Generation in Production",
-          "url": "https://huggingface.co/papers/2605.23215",
+          "title": "Understanding Data Temporality Impact on Large Language Models Pre-training",
+          "url": "https://huggingface.co/papers/2605.22769",
+          "score": 0.496,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Learning to Act under Noise: Enhancing Agent Robustness via Noisy Environments",
+          "url": "https://huggingface.co/papers/2605.27209",
           "score": 0.487,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-27T23:19:54+00:00",
+      "updatedAt": "2026-05-27T23:19:54+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "dynamic-safety-monitoring",
+      "title_ar": "مراقبة السلامة الديناميكية لنماذج اللغة",
+      "thesis_ar": "تتطلب نماذج اللغة الكبيرة الحديثة مراقبة سلامة متقدمة لضمان عدم إنتاج محتوى ضار. يمكن تطوير حلول لمراقبة السلامة بشكل ديناميكي.",
+      "buyer_ar": "شركات التكنولوجيا، المطورون المستقلون",
+      "sellable_product_ar": "نظام مراقبة سلامة ديناميكي لنماذج اللغة",
+      "first_paid_test_ar": "تجربة على نموذج لغة موجود مع مراقبة السلامة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.25893",
+        "huggingface_daily_papers:2605.27030",
+        "huggingface_daily_papers:2605.27209"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Learning to Act under Noise: Enhancing Agent Robustness via Noisy Environments",
+          "url": "https://huggingface.co/papers/2605.27209",
+          "score": 0.487,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "D^2-Monitor: Dynamic Safety Monitoring for Diffusion LLMs via Hesitation-Aware Routing",
+          "url": "https://huggingface.co/papers/2605.25893",
+          "score": 0.473,
           "trust_tier": "research"
         },
         {
@@ -50,34 +100,34 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-27T21:50:40+00:00",
-      "updatedAt": "2026-05-27T21:50:40+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-05-27T23:19:54+00:00",
+      "updatedAt": "2026-05-27T23:19:54+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "autonomous-ai-actuarial-control",
-      "title_ar": "إطار تحكم اكتواري للذكاء الاصطناعي المستقل",
-      "thesis_ar": "تزايد استخدام الوكلاء الذكيين المستقلين يتطلب آليات تحكم فعالة. يمكن أن يوفر إطار التحكم الاكتواري حلاً مبتكرًا لمراقبة تصرفات هذه الوكلاء.",
-      "buyer_ar": "شركات التأمين، المؤسسات المالية",
-      "sellable_product_ar": "نظام تحكم اكتواري للذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق نظام تحكم على مشروع تجريبي صغير",
-      "tools_ar": "نموذج ذكاء اصطناعي، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
+      "id": "enhanced-robustness-in-llms",
+      "title_ar": "تعزيز قوة نماذج اللغة الكبيرة",
+      "thesis_ar": "تتطلب نماذج اللغة الكبيرة تحسينات في قدرتها على التعامل مع الضوضاء. يمكن تطوير تقنيات جديدة لتعزيز قدرتها على العمل في بيئات غير مستقرة.",
+      "buyer_ar": "شركات تطوير البرمجيات، مؤسسات البحث العلمي",
+      "sellable_product_ar": "حلول لتعزيز قوة نماذج اللغة في البيئات الضوضائية",
+      "first_paid_test_ar": "تجربة على نموذج لغة في بيئة ضوضائية",
+      "tools_ar": "أدوات تعلم الآلة، بيئات محاكاة، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2605.25632v1",
-        "huggingface_daily_papers:2605.18879",
-        "huggingface_daily_papers:2605.27209"
+        "huggingface_daily_papers:2605.27068",
+        "huggingface_daily_papers:2605.27209",
+        "huggingface_daily_papers:2605.18879"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Insuring Every Action: An Authority Frontier Framework for Runtime Actuarial Control of Autonomous AI Agents",
-          "url": "http://arxiv.org/abs/2605.25632v1",
-          "score": 0.496,
+          "source_id": "huggingface_daily_papers",
+          "title": "QUACK: Questioning, Understanding, and Auditing Communicated Knowledge in Multimodal Social Deduction Agents",
+          "url": "https://huggingface.co/papers/2605.27068",
+          "score": 0.493,
           "trust_tier": "research"
         },
         {
@@ -100,54 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-27T21:50:40+00:00",
-      "updatedAt": "2026-05-27T21:50:40+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "enhanced-agent-robustness",
-      "title_ar": "تعزيز قوة الوكلاء الذكيين في بيئات ضوضائية",
-      "thesis_ar": "مع تزايد استخدام الوكلاء الذكيين، فإن تحسين قدرتهم على العمل في بيئات ضوضائية يعد ضرورة. هذا سيمكنهم من تقديم أداء أفضل في مواقف العالم الحقيقي.",
-      "buyer_ar": "شركات تطوير البرمجيات، شركات الروبوتات",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي معزز لمواجهة الضوضاء",
-      "first_paid_test_ar": "تجربة النموذج في بيئة ضوضائية محددة",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيئة اختبار، أدوات تحليل الأداء",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.27030",
-        "huggingface_daily_papers:2605.27209",
-        "huggingface_daily_papers:2605.25693v1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Learning to Act under Noise: Enhancing Agent Robustness via Noisy Environments",
-          "url": "https://huggingface.co/papers/2605.27209",
-          "score": 0.487,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Share More, Search Less: Collaborative Parallel Thinking for Efficient Test-Time Scaling",
-          "url": "https://huggingface.co/papers/2605.27030",
-          "score": 0.472,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-27T21:50:40+00:00",
-      "updatedAt": "2026-05-27T21:50:40+00:00",
+      "publishedAt": "2026-05-27T23:19:54+00:00",
+      "updatedAt": "2026-05-27T23:19:54+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-27T21:50:40+00:00",
+  "tiered_at": "2026-05-27T23:19:54+00:00",
   "free_preview_count": 3
 }
