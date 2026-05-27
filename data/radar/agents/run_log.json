@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-27T11:38:26+00:00",
+  "run_at": "2026-05-27T14:58:11+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 283.581,
+      "duration_s": 25.337,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 370 signals from 31 source families",
+        "collected 362 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 547 items",
-        "by tier: press=208, official=169, research=132, community=38"
+        "tagged 539 items",
+        "by tier: press=209, official=167, research=131, community=32"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.024,
+      "duration_s": 0.022,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 547 items, top priority=0.537"
+        "ranked 539 items, top priority=0.522"
       ],
       "error": null
     },
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.048,
+      "duration_s": 0.047,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+6 new model events",
+        "+0 new model events",
         "123 total"
       ],
       "error": null
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.107,
+      "duration_s": 0.106,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "22 events (15 new)",
+        "22 events (0 new)",
         "by type: acquisition=5, model_release=9, personnel_move=2, pricing_change=4, policy_signal=2"
       ],
       "error": null
@@ -123,7 +123,7 @@
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.011,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 19.915,
+      "duration_s": 12.641,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 14.823,
+      "duration_s": 34.688,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 8.238,
+      "duration_s": 42.183,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=547, opps=3, calls=3"
+        "items=539, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 5.09,
+      "duration_s": 3.149,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط الملحوظ في الإشارات يعكس اهتمامًا متزايدًا في تطوير نماذج الذكاء ا…"
+        "insight via openai: يظهر تركيز ملحوظ على نشاط GitHub مع تكرار عمليات الاستحواذ وإصدارات النماذج، مم…"
       ],
       "error": null
     },
