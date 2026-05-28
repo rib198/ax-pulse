@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-05-28T18:35:01+00:00",
+  "generated_at": "2026-05-28T21:55:23+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 550,
+  "corpus_count": 543,
   "opportunities": [
     {
-      "id": "ipo-analysis-toolkit",
-      "title_ar": "أداة تحليل مستندات الاكتتاب العام",
-      "thesis_ar": "تزايد الاهتمام بالاستثمار في الشركات العامة يتطلب أدوات تحليل متقدمة. توفر أدوات تحليل مستندات الاكتتاب العام فرصة لمساعدة المستثمرين في اتخاذ قرارات مستنيرة.",
-      "buyer_ar": "المستثمرون الأفراد والشركات الاستثمارية",
-      "sellable_product_ar": "أداة تحليل مستندات الاكتتاب العام تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل مجاني لمستند اكتتاب عام واحد مقابل رسوم رمزية",
-      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، قاعدة بيانات مستندات الاكتتاب",
+      "id": "ipo-structured-analysis-toolkit",
+      "title_ar": "أداة تحليل هيكلية لمستندات الطرح العام الأولي",
+      "thesis_ar": "تزايد الطلب على أدوات تحليل مستندات الطرح العام الأولي يساعد المستثمرين الأفراد. توفر هذه الأداة تحليلات دقيقة تسهل اتخاذ القرارات الاستثمارية.",
+      "buyer_ar": "المستثمرون الأفراد وشركات الوساطة المالية",
+      "sellable_product_ar": "أداة تحليل مستندات الطرح العام الأولي",
+      "first_paid_test_ar": "تقديم تحليل لمستند طرح عام أولي واحد مقابل رسوم رمزية",
+      "tools_ar": "أدوات تحليل البيانات، واجهات برمجة التطبيقات، نماذج التعلم الآلي",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "arxiv_papers:2605.28714v1",
         "arxiv_papers:2605.28359v1",
-        "huggingface_models:BlackwoodAI/LedgerGuard-27B"
+        "huggingface_models:zypchn/BehChat-llama-SFT-v1"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -31,18 +31,18 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "BlackwoodAI/LedgerGuard-27B — text-generation",
-          "url": "https://huggingface.co/BlackwoodAI/LedgerGuard-27B",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
           "source_id": "arxiv_papers",
           "title": "From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets",
           "url": "http://arxiv.org/abs/2605.28359v1",
           "score": 0.468,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "zypchn/BehChat-llama-SFT-v1 — text-generation",
+          "url": "https://huggingface.co/zypchn/BehChat-llama-SFT-v1",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,97 +50,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-28T18:35:01+00:00",
-      "updatedAt": "2026-05-28T18:35:01+00:00",
+      "publishedAt": "2026-05-28T21:55:23+00:00",
+      "updatedAt": "2026-05-28T21:55:23+00:00",
       "sortOrder": 0
     },
     {
-      "id": "automated-trading-agents",
-      "title_ar": "عملاء تداول آلي بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي في الأسواق المالية يوفر فرصة لتطوير عملاء تداول آلي. هذا يمكن أن يزيد من فعالية استراتيجيات التداول.",
-      "buyer_ar": "شركات التداول والمستثمرون الأفراد",
-      "sellable_product_ar": "نظام تداول آلي يعتمد على نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم فترة تجريبية مجانية مع إمكانية تحقيق أرباح صغيرة",
-      "tools_ar": "نموذج تداول آلي، واجهة مستخدم، بيانات السوق",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في مجالات الإبداع والتسويق. يمكن استغلال هذه النماذج لإنشاء محتوى مرئي مخصص.",
+      "buyer_ar": "الوكالات الإبداعية وشركات التسويق",
+      "sellable_product_ar": "خدمة إنشاء محتوى مرئي باستخدام نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "إنشاء صورة واحدة بناءً على نص محدد مقابل رسوم",
+      "tools_ar": "نماذج تحويل النص إلى صورة، واجهات برمجة التطبيقات، أدوات التصميم",
+      "capital_ar": "بدون رأس مال",
       "evidence_ids": [
-        "arxiv_papers:2605.28359v1",
-        "arxiv_papers:2605.28000v1",
-        "huggingface_models:dcostenco/prism-coder-32b"
+        "huggingface_models:threecrowco/public_loras",
+        "huggingface_models:Muapi/lino-cut-linoleum-cut-print-style-for-flux-by-ethanar",
+        "huggingface_models:Muapi/cel-shading-style-cgi-anime"
       ],
       "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Tool Forge: A Validation-Carrying Toolchain for Governed Agentic Execution",
-          "url": "http://arxiv.org/abs/2605.28000v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "dcostenco/prism-coder-32b — text-generation",
-          "url": "https://huggingface.co/dcostenco/prism-coder-32b",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets",
-          "url": "http://arxiv.org/abs/2605.28359v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-28T18:35:01+00:00",
-      "updatedAt": "2026-05-28T18:35:01+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-creation",
-      "title_ar": "إنشاء صور من النصوص باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يوفر فرصة لتطوير أدوات لإنشاء صور من النصوص. هذه التقنية يمكن أن تخدم مجالات متعددة مثل التسويق والفنون.",
-      "buyer_ar": "المسوقون، الفنانون، الشركات الإبداعية",
-      "sellable_product_ar": "أداة لإنشاء صور من النصوص باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم إنشاء صورة واحدة من نص مقابل رسوم رمزية",
-      "tools_ar": "نموذج توليد الصور، واجهة مستخدم، قاعدة بيانات الصور",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Muapi/icedit",
-        "huggingface_models:Muapi/prfphoto",
-        "huggingface_models:Muapi/style-of-lego-style-flux-246"
-      ],
-      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Muapi/icedit — text-to-image",
-          "url": "https://huggingface.co/Muapi/icedit",
+          "title": "threecrowco/public_loras — text-to-image",
+          "url": "https://huggingface.co/threecrowco/public_loras",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Muapi/style-of-lego-style-flux-246 — text-to-image",
-          "url": "https://huggingface.co/Muapi/style-of-lego-style-flux-246",
+          "title": "Muapi/lino-cut-linoleum-cut-print-style-for-flux-by-ethanar — text-to-image",
+          "url": "https://huggingface.co/Muapi/lino-cut-linoleum-cut-print-style-for-flux-by-ethanar",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Muapi/prfphoto — text-to-image",
-          "url": "https://huggingface.co/Muapi/prfphoto",
+          "title": "Muapi/cel-shading-style-cgi-anime — text-to-image",
+          "url": "https://huggingface.co/Muapi/cel-shading-style-cgi-anime",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-28T18:35:01+00:00",
-      "updatedAt": "2026-05-28T18:35:01+00:00",
+      "publishedAt": "2026-05-28T21:55:23+00:00",
+      "updatedAt": "2026-05-28T21:55:23+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "large-language-model-trading",
+      "title_ar": "نموذج تداول باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الاعتماد على نماذج الذكاء الاصطناعي في الأسواق المالية. يمكن تطوير نماذج تداول تعتمد على الذكاء الاصطناعي لتحقيق عوائد أفضل.",
+      "buyer_ar": "شركات الاستثمار والمستثمرون الأفراد",
+      "sellable_product_ar": "نموذج تداول يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تجربة تداول افتراضية باستخدام النموذج مقابل رسوم",
+      "tools_ar": "نماذج الذكاء الاصطناعي، بيانات السوق، أدوات التحليل",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2605.28359v1",
+        "huggingface_models:mrthor102/evolai-tfm-super-004",
+        "huggingface_models:mrthor102/evolai-tfm-super-002"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets",
+          "url": "http://arxiv.org/abs/2605.28359v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mrthor102/evolai-tfm-super-004 — text-generation",
+          "url": "https://huggingface.co/mrthor102/evolai-tfm-super-004",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mrthor102/evolai-tfm-super-002 — text-generation",
+          "url": "https://huggingface.co/mrthor102/evolai-tfm-super-002",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-28T21:55:23+00:00",
+      "updatedAt": "2026-05-28T21:55:23+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-28T18:35:01+00:00",
+  "tiered_at": "2026-05-28T21:55:23+00:00",
   "free_preview_count": 3
 }

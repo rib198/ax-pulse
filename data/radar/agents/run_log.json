@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-28T18:35:01+00:00",
+  "run_at": "2026-05-28T21:55:23+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 23.574,
+      "duration_s": 17.405,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 373 signals from 31 source families",
+        "collected 366 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 550 items",
-        "by tier: press=212, official=168, research=131, community=39"
+        "tagged 543 items",
+        "by tier: press=212, official=167, research=131, community=33"
       ],
       "error": null
     },
@@ -77,19 +77,19 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 550 items, top priority=0.501"
+        "ranked 543 items, top priority=0.501"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.009,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 16 companies, 19 products this run",
+        "detected 16 companies, 18 products this run",
         "store size: 39"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.05,
+      "duration_s": 0.048,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+4 new model events",
+        "+0 new model events",
         "140 total"
       ],
       "error": null
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.108,
+      "duration_s": 0.107,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "15 events (6 new)",
-        "by type: policy_signal=3, model_release=7, pricing_change=3, acquisition=2"
+        "17 events (2 new)",
+        "by type: policy_signal=3, personnel_move=1, model_release=7, pricing_change=4, acquisition=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.011,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 14.193,
+      "duration_s": 11.819,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 13.533,
+      "duration_s": 12.351,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.008,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 9.164,
+      "duration_s": 9.764,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -200,7 +200,7 @@
     {
       "agent": "ux_production_qa",
       "ok": true,
-      "duration_s": 0.003,
+      "duration_s": 0.004,
       "written": [
         "data/radar/agents/qa_report.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=550, opps=3, calls=3"
+        "items=543, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.098,
+      "duration_s": 2.047,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهد نشاط الإشارات زيادة ملحوظة بمقدار 99 إشارة، مما يدل على اهتمام متزايد في مج…"
+        "insight via openai: شهدت الفترة الحالية تزايداً في إشارات التنظيم والإصدارات الجديدة، مع تركيز خاص …"
       ],
       "error": null
     },
