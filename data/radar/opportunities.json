@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-28T15:49:09+00:00",
+  "generated_at": "2026-05-28T18:35:01+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 451,
+  "corpus_count": 550,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يعزز الحاجة لنماذج تحويل النص إلى صورة. الإشارات تشير إلى تحديثات مستمرة لنماذج متطورة في هذا المجال، مما يتيح فرصًا جديدة للإبداع.",
-      "buyer_ar": "شركات التسويق الرقمي، المطورون، الفنانون المستقلون",
-      "sellable_product_ar": "خدمات إنشاء محتوى مرئي مخصص باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء 5 صور بناءً على نصوص محددة",
-      "tools_ar": "نموذج تحويل النص إلى صورة، منصة استضافة، أدوات تصميم",
+      "id": "ipo-analysis-toolkit",
+      "title_ar": "أداة تحليل مستندات الاكتتاب العام",
+      "thesis_ar": "تزايد الاهتمام بالاستثمار في الشركات العامة يتطلب أدوات تحليل متقدمة. توفر أدوات تحليل مستندات الاكتتاب العام فرصة لمساعدة المستثمرين في اتخاذ قرارات مستنيرة.",
+      "buyer_ar": "المستثمرون الأفراد والشركات الاستثمارية",
+      "sellable_product_ar": "أداة تحليل مستندات الاكتتاب العام تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تحليل مجاني لمستند اكتتاب عام واحد مقابل رسوم رمزية",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، قاعدة بيانات مستندات الاكتتاب",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Muapi/aquamarine-pinup",
-        "huggingface_models:Muapi/sailor-moon-flux",
-        "huggingface_models:Muapi/lying-flat-on-side"
+        "arxiv_papers:2605.28714v1",
+        "arxiv_papers:2605.28359v1",
+        "huggingface_models:BlackwoodAI/LedgerGuard-27B"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -24,116 +24,23 @@
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "Muapi/aquamarine-pinup — text-to-image",
-          "url": "https://huggingface.co/Muapi/aquamarine-pinup",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/sailor-moon-flux — text-to-image",
-          "url": "https://huggingface.co/Muapi/sailor-moon-flux",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/lying-flat-on-side — text-to-image",
-          "url": "https://huggingface.co/Muapi/lying-flat-on-side",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-28T15:49:09+00:00",
-      "updatedAt": "2026-05-28T15:49:09+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-generation-models",
-      "title_ar": "تطوير نماذج توليد النصوص",
-      "thesis_ar": "تزايد الحاجة إلى محتوى نصي مخصص في مجالات متعددة مثل التسويق والمحتوى الرقمي. الإشارات توضح وجود نماذج جديدة ومتطورة في هذا المجال.",
-      "buyer_ar": "شركات المحتوى، المدونون، وكالات التسويق",
-      "sellable_product_ar": "خدمات توليد محتوى نصي باستخدام نماذج متقدمة",
-      "first_paid_test_ar": "تقديم 3 مقالات تجريبية بناءً على مواضيع محددة",
-      "tools_ar": "نموذج توليد النصوص، منصة استضافة، أدوات تحرير النصوص",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:ktruestory/minicpm5-1b-hermes-toolhv1",
-        "huggingface_models:Youmei295/deAize",
-        "huggingface_models:gplsi/Aitana-2B-S-base"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "ktruestory/minicpm5-1b-hermes-toolhv1 — text-generation",
-          "url": "https://huggingface.co/ktruestory/minicpm5-1b-hermes-toolhv1",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Youmei295/deAize — text-generation",
-          "url": "https://huggingface.co/Youmei295/deAize",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "gplsi/Aitana-2B-S-base — text-generation",
-          "url": "https://huggingface.co/gplsi/Aitana-2B-S-base",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-28T15:49:09+00:00",
-      "updatedAt": "2026-05-28T15:49:09+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "llm-trading-agents",
-      "title_ar": "تطوير وكلاء تداول باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد الاهتمام في استخدام الذكاء الاصطناعي في الأسواق المالية. الإشارات تشير إلى أبحاث حول أداء وكلاء التداول المدعومين بنماذج اللغة الكبيرة.",
-      "buyer_ar": "شركات الاستثمار، المتداولون الأفراد، منصات التداول",
-      "sellable_product_ar": "خدمات استشارية أو أدوات تداول تعتمد على نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تجربة تداول افتراضية باستخدام نموذج لغة كبير",
-      "tools_ar": "نموذج لغة كبير، منصة تداول، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.28359v1",
-        "huggingface_daily_papers:2605.27268",
-        "huggingface_daily_papers:2605.28421"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DenoiseRL: Bootstrapping Reasoning Models to Recover from Noisy Prefixes",
-          "url": "https://huggingface.co/papers/2605.28421",
-          "score": 0.502,
+          "source_id": "arxiv_papers",
+          "title": "IPO-Mine: A Toolkit and Dataset for Section-Structured Analysis of Long, Multimodal IPO Documents",
+          "url": "http://arxiv.org/abs/2605.28714v1",
+          "score": 0.501,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Lost in Sampling: Assessing Lexical Reachability in LLMs via the Word Coverage Score (WCS)",
-          "url": "https://huggingface.co/papers/2605.27268",
+          "source_id": "huggingface_models",
+          "title": "BlackwoodAI/LedgerGuard-27B — text-generation",
+          "url": "https://huggingface.co/BlackwoodAI/LedgerGuard-27B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets",
+          "url": "http://arxiv.org/abs/2605.28359v1",
           "score": 0.468,
           "trust_tier": "research"
         }
@@ -143,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-28T15:49:09+00:00",
-      "updatedAt": "2026-05-28T15:49:09+00:00",
+      "publishedAt": "2026-05-28T18:35:01+00:00",
+      "updatedAt": "2026-05-28T18:35:01+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "automated-trading-agents",
+      "title_ar": "عملاء تداول آلي بالذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي في الأسواق المالية يوفر فرصة لتطوير عملاء تداول آلي. هذا يمكن أن يزيد من فعالية استراتيجيات التداول.",
+      "buyer_ar": "شركات التداول والمستثمرون الأفراد",
+      "sellable_product_ar": "نظام تداول آلي يعتمد على نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم فترة تجريبية مجانية مع إمكانية تحقيق أرباح صغيرة",
+      "tools_ar": "نموذج تداول آلي، واجهة مستخدم، بيانات السوق",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2605.28359v1",
+        "arxiv_papers:2605.28000v1",
+        "huggingface_models:dcostenco/prism-coder-32b"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Tool Forge: A Validation-Carrying Toolchain for Governed Agentic Execution",
+          "url": "http://arxiv.org/abs/2605.28000v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "dcostenco/prism-coder-32b — text-generation",
+          "url": "https://huggingface.co/dcostenco/prism-coder-32b",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets",
+          "url": "http://arxiv.org/abs/2605.28359v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-28T18:35:01+00:00",
+      "updatedAt": "2026-05-28T18:35:01+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-creation",
+      "title_ar": "إنشاء صور من النصوص باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يوفر فرصة لتطوير أدوات لإنشاء صور من النصوص. هذه التقنية يمكن أن تخدم مجالات متعددة مثل التسويق والفنون.",
+      "buyer_ar": "المسوقون، الفنانون، الشركات الإبداعية",
+      "sellable_product_ar": "أداة لإنشاء صور من النصوص باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم إنشاء صورة واحدة من نص مقابل رسوم رمزية",
+      "tools_ar": "نموذج توليد الصور، واجهة مستخدم، قاعدة بيانات الصور",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Muapi/icedit",
+        "huggingface_models:Muapi/prfphoto",
+        "huggingface_models:Muapi/style-of-lego-style-flux-246"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/icedit — text-to-image",
+          "url": "https://huggingface.co/Muapi/icedit",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/style-of-lego-style-flux-246 — text-to-image",
+          "url": "https://huggingface.co/Muapi/style-of-lego-style-flux-246",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/prfphoto — text-to-image",
+          "url": "https://huggingface.co/Muapi/prfphoto",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-28T18:35:01+00:00",
+      "updatedAt": "2026-05-28T18:35:01+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-28T15:49:09+00:00",
+  "tiered_at": "2026-05-28T18:35:01+00:00",
   "free_preview_count": 3
 }
