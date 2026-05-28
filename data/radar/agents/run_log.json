@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-28T02:13:37+00:00",
+  "run_at": "2026-05-28T06:19:14+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,13 +26,13 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 834.168,
+      "duration_s": 774.387,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 274 signals from 31 source families",
-        "13 source errors (non-fatal)"
+        "collected 339 signals from 31 source families",
+        "8 source errors (non-fatal)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 451 items",
-        "by tier: press=210, official=164, research=47, community=30"
+        "tagged 516 items",
+        "by tier: press=210, official=165, research=112, community=29"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.017,
+      "duration_s": 0.025,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 451 items, top priority=0.545"
+        "ranked 516 items, top priority=0.540"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.007,
+      "duration_s": 0.009,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 16 companies, 18 products this run",
+        "detected 16 companies, 17 products this run",
         "store size: 38"
       ],
       "error": null
@@ -97,45 +97,45 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.046,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+3 new model events",
-        "128 total"
+        "+5 new model events",
+        "133 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.069,
+      "duration_s": 0.099,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "13 events (3 new)",
-        "by type: model_release=6, pricing_change=4, personnel_move=1, policy_signal=1, acquisition=1"
+        "13 events (9 new)",
+        "by type: model_release=7, pricing_change=3, acquisition=2, policy_signal=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.008,
+      "duration_s": 0.011,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
       "notes": [
-        "16 arab-market items"
+        "19 arab-market items"
       ],
       "error": null
     },
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 17.424,
+      "duration_s": 18.034,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 15.464,
+      "duration_s": 20.538,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 17.029,
+      "duration_s": 11.431,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=451, opps=3, calls=3"
+        "items=516, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.173,
+      "duration_s": 3.369,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الإشارات انخفاضًا ملحوظًا بمقدار 77 إشارة، مما يشير إلى تراجع في النشاط ال…"
+        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في عدد الإشارات، مما يشير إلى نشاط متزايد في م…"
       ],
       "error": null
     },
