@@ -1,48 +1,40 @@
 {
-  "generated_at": "2026-05-28T23:17:22+00:00",
+  "generated_at": "2026-05-29T02:22:20+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 533,
+  "corpus_count": 436,
   "opportunities": [
     {
-      "id": "ipo-document-analysis-tool",
-      "title_ar": "أداة تحليل مستندات الاكتتاب العام",
-      "thesis_ar": "تزايد الحاجة لتحليل مستندات الاكتتاب العام بشكل دقيق يمكن أن يوفر معلومات قيمة للمستثمرين. توفر أدوات تحليل البيانات والذكاء الاصطناعي القدرة على تسريع وتحسين هذه العملية.",
-      "buyer_ar": "المستثمرون الأفراد وشركات الاستثمار",
-      "sellable_product_ar": "أداة تحليل مستندات الاكتتاب العام باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل مجاني لمستند اكتتاب عام واحد مقابل رسوم رمزية",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "video-generation-narrative-control",
+      "title_ar": "توليد الفيديو مع التحكم في السرد",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي الجذاب يتطلب تحسين جودة السرد في الفيديوهات. التقنيات الجديدة في توليد الفيديو يمكن أن توفر محتوى مخصص وجذاب للمستخدمين.",
+      "buyer_ar": "شركات الإنتاج الإعلامي، منصات البث",
+      "sellable_product_ar": "خدمة توليد فيديوهات مخصصة مع تحكم في السرد",
+      "first_paid_test_ar": "إنشاء فيديو قصير مدته دقيقة واحدة باستخدام التقنية الجديدة",
+      "tools_ar": "نموذج توليد الفيديو، أدوات التحرير، خادم سحابي",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2605.28714v1",
-        "arxiv_papers:2605.28359v1",
-        "huggingface_models:koyelog/MediMind-411M"
+        "huggingface_daily_papers:2605.27891",
+        "huggingface_daily_papers:2605.13857"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 2,
       "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "IPO-Mine: A Toolkit and Dataset for Section-Structured Analysis of Long, Multimodal IPO Documents",
-          "url": "http://arxiv.org/abs/2605.28714v1",
-          "score": 0.501,
+          "source_id": "huggingface_daily_papers",
+          "title": "SmartDirector: Keyframe-Conditioned Cinematic Video Generation with Narrative Pacing Control",
+          "url": "https://huggingface.co/papers/2605.27891",
+          "score": 0.489,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets",
-          "url": "http://arxiv.org/abs/2605.28359v1",
-          "score": 0.468,
+          "source_id": "huggingface_daily_papers",
+          "title": "MoZoo:Unleashing Video Diffusion power in animal fur and muscle simulation",
+          "url": "https://huggingface.co/papers/2605.13857",
+          "score": 0.467,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "koyelog/MediMind-411M — text-generation",
-          "url": "https://huggingface.co/koyelog/MediMind-411M",
-          "score": 0.466,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,99 +42,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-28T23:17:22+00:00",
-      "updatedAt": "2026-05-28T23:17:22+00:00",
+      "publishedAt": "2026-05-29T02:22:20+00:00",
+      "updatedAt": "2026-05-29T02:22:20+00:00",
       "sortOrder": 0
     },
     {
-      "id": "large-language-models-for-trading",
-      "title_ar": "نماذج لغوية كبيرة لتداول الأسهم",
-      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي في الأسواق المالية يفتح المجال لتطوير أدوات تداول ذكية. يمكن لهذه النماذج أن تعزز من اتخاذ القرارات الاستثمارية.",
-      "buyer_ar": "شركات التداول والمستثمرون الأفراد",
-      "sellable_product_ar": "نظام تداول ذكي يعتمد على نماذج لغوية كبيرة",
-      "first_paid_test_ar": "تقديم تجربة تداول مجانية لمدة أسبوع مع نموذج تداول محدد",
-      "tools_ar": "نماذج لغوية كبيرة، بيانات السوق، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
+      "id": "data-contamination-detection",
+      "title_ar": "كشف تلوث البيانات في التعلم المعزز",
+      "thesis_ar": "تلوث البيانات يمكن أن يؤثر سلبًا على أداء نماذج التعلم المعزز. تطوير أدوات لكشف التلوث يمكن أن يحسن من جودة النماذج ويزيد من موثوقيتها.",
+      "buyer_ar": "شركات الذكاء الاصطناعي، مراكز الأبحاث",
+      "sellable_product_ar": "أداة لكشف تلوث البيانات في نماذج التعلم المعزز",
+      "first_paid_test_ar": "تطبيق الأداة على مجموعة بيانات صغيرة وتقديم تقرير",
+      "tools_ar": "نموذج التعلم المعزز، أدوات تحليل البيانات، واجهة مستخدم",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2605.28359v1",
-        "huggingface_models:overthelex/qwen2.5-14b-edrsr-legal-uk",
-        "huggingface_models:Jadzblaze99/Llama-3.2-3B-Instruct-uncensored-GGUF"
+        "huggingface_daily_papers:2605.29888",
+        "huggingface_daily_papers:2605.27995"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets",
-          "url": "http://arxiv.org/abs/2605.28359v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "overthelex/qwen2.5-14b-edrsr-legal-uk — text-generation",
-          "url": "https://huggingface.co/overthelex/qwen2.5-14b-edrsr-legal-uk",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Jadzblaze99/Llama-3.2-3B-Instruct-uncensored-GGUF — text-generation",
-          "url": "https://huggingface.co/Jadzblaze99/Llama-3.2-3B-Instruct-uncensored-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-28T23:17:22+00:00",
-      "updatedAt": "2026-05-28T23:17:22+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-models-for-marketing",
-      "title_ar": "نماذج تحويل النص إلى صورة للتسويق",
-      "thesis_ar": "تزايد الطلب على المحتوى البصري الفريد في التسويق الرقمي يتطلب أدوات مبتكرة. يمكن لنماذج تحويل النص إلى صورة أن توفر محتوى مخصص وجذاب.",
-      "buyer_ar": "وكالات التسويق والشركات",
-      "sellable_product_ar": "خدمة إنشاء محتوى بصري باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم تصميم صورة مخصص بناءً على نص مقابل رسوم رمزية",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات التصميم، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Zenni069/ALTc",
-        "huggingface_models:Muapi/hellraiser-pinhead-style-xl-f1d",
-        "huggingface_models:Muapi/cel-shading-style-cgi-anime"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
+      "signal_count": 2,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "Zenni069/ALTc — text-to-image",
-          "url": "https://huggingface.co/Zenni069/ALTc",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "LaRA: Layer-wise Representation Analysis for Detecting Data Contamination in RL Post-Training",
+          "url": "https://huggingface.co/papers/2605.29888",
+          "score": 0.493,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Muapi/hellraiser-pinhead-style-xl-f1d — text-to-image",
-          "url": "https://huggingface.co/Muapi/hellraiser-pinhead-style-xl-f1d",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/cel-shading-style-cgi-anime — text-to-image",
-          "url": "https://huggingface.co/Muapi/cel-shading-style-cgi-anime",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "AsyncTool: Evaluating the Asynchronous Function Calling Capability under Multi-Task Scenarios",
+          "url": "https://huggingface.co/papers/2605.27995",
+          "score": 0.489,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +84,53 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-28T23:17:22+00:00",
-      "updatedAt": "2026-05-28T23:17:22+00:00",
+      "publishedAt": "2026-05-29T02:22:20+00:00",
+      "updatedAt": "2026-05-29T02:22:20+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "asynchronous-tool-evaluation",
+      "title_ar": "تقييم أدوات الاستدعاء غير المتزامن",
+      "thesis_ar": "تزايد استخدام النماذج اللغوية الكبيرة يتطلب تقييمًا دقيقًا لقدرتها على استخدام الأدوات في سيناريوهات متعددة. تطوير أدوات تقييم يمكن أن يسهل تحسين الأداء.",
+      "buyer_ar": "شركات البرمجيات، مطورو النماذج اللغوية",
+      "sellable_product_ar": "أداة لتقييم الأداء في استخدام الأدوات غير المتزامنة",
+      "first_paid_test_ar": "تطبيق الأداة على سيناريو بسيط وتقديم تقرير عن الأداء",
+      "tools_ar": "نموذج لغوي، أدوات تحليل الأداء، واجهة مستخدم",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.27995",
+        "huggingface_daily_papers:2605.13857"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AsyncTool: Evaluating the Asynchronous Function Calling Capability under Multi-Task Scenarios",
+          "url": "https://huggingface.co/papers/2605.27995",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MoZoo:Unleashing Video Diffusion power in animal fur and muscle simulation",
+          "url": "https://huggingface.co/papers/2605.13857",
+          "score": 0.467,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-29T02:22:20+00:00",
+      "updatedAt": "2026-05-29T02:22:20+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-28T23:17:22+00:00",
+  "tiered_at": "2026-05-29T02:22:20+00:00",
   "free_preview_count": 3
 }
