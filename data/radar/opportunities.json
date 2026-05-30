@@ -1,28 +1,85 @@
 {
-  "generated_at": "2026-05-30T02:15:27+00:00",
+  "generated_at": "2026-05-30T05:49:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 465,
+  "corpus_count": 524,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تتزايد الحاجة إلى نماذج تحويل النص إلى صورة في مجالات متعددة مثل التسويق والإعلانات. هذه النماذج تقدم إمكانيات إبداعية جديدة.",
-      "buyer_ar": "وكالات الإعلان والتسويق، شركات التصميم",
-      "sellable_product_ar": "نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات نماذج الذكاء الاصطناعي، بيئات تطوير",
+      "id": "automatic-speech-recognition-hinglish",
+      "title_ar": "تطوير نماذج التعرف على الصوت بالهندية والإنجليزية",
+      "thesis_ar": "تزايد استخدام اللغات المختلطة في الهند يتطلب نماذج متقدمة للتعرف على الصوت. هذا المجال يشهد اهتمامًا متزايدًا من قبل المطورين.",
+      "buyer_ar": "شركات التكنولوجيا والاتصالات",
+      "sellable_product_ar": "نموذج التعرف على الصوت بالهندية والإنجليزية",
+      "first_paid_test_ar": "تقديم نموذج تجريبي للتعرف على الصوت في محادثات حقيقية",
+      "tools_ar": "مكتبات التعلم العميق، بيانات التدريب، أدوات تحليل الصوت",
       "capital_ar": "منخفض",
       "evidence_ids": [
+        "huggingface_models:Surajgameramp/qwen3-asr-0.6b-hinglish-openslr104-v2",
+        "huggingface_models:Surajgameramp/qwen3-asr-0.6b-hinglish-hiacc-v1",
+        "huggingface_models:Surajgameramp/qwen3-asr-0.6b-hinglish"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Surajgameramp/qwen3-asr-0.6b-hinglish-openslr104-v2 — automatic-speech-recognition",
+          "url": "https://huggingface.co/Surajgameramp/qwen3-asr-0.6b-hinglish-openslr104-v2",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Surajgameramp/qwen3-asr-0.6b-hinglish-hiacc-v1 — automatic-speech-recognition",
+          "url": "https://huggingface.co/Surajgameramp/qwen3-asr-0.6b-hinglish-hiacc-v1",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Surajgameramp/qwen3-asr-0.6b-hinglish — automatic-speech-recognition",
+          "url": "https://huggingface.co/Surajgameramp/qwen3-asr-0.6b-hinglish",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-30T05:49:05+00:00",
+      "updatedAt": "2026-05-30T05:49:05+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "إنشاء نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي المولد بالذكاء الاصطناعي يوفر فرصة كبيرة. نماذج تحويل النص إلى صورة تفتح آفاق جديدة في الإبداع.",
+      "buyer_ar": "شركات التسويق والإعلانات، منصات التواصل الاجتماعي",
+      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحويل نصوص محددة إلى صور",
+      "tools_ar": "مكتبات الذكاء الاصطناعي، بيانات التدريب، أدوات التصميم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:sonn11/ngocmilora",
         "huggingface_models:bookchin/MiraTensor",
-        "huggingface_models:Joannnnn/flux-smiling-slider",
         "huggingface_models:Muapi/shiny-pleated-mini-skirt-flux"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.46,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "sonn11/ngocmilora — text-to-image",
+          "url": "https://huggingface.co/sonn11/ngocmilora",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "bookchin/MiraTensor — text-to-image",
@@ -32,16 +89,9 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "Joannnnn/flux-smiling-slider — text-to-image",
-          "url": "https://huggingface.co/Joannnnn/flux-smiling-slider",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
           "title": "Muapi/shiny-pleated-mini-skirt-flux — text-to-image",
           "url": "https://huggingface.co/Muapi/shiny-pleated-mini-skirt-flux",
-          "score": 0.472,
+          "score": 0.449,
           "trust_tier": "official"
         }
       ],
@@ -50,54 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-30T02:15:27+00:00",
-      "updatedAt": "2026-05-30T02:15:27+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-generation-optimization",
-      "title_ar": "تحسين نماذج توليد النصوص",
-      "thesis_ar": "تتطور نماذج توليد النصوص بشكل سريع، مما يتيح فرصًا لتحسين الأداء والتخصيص. هذا يمكن أن يلبي احتياجات متنوعة في السوق.",
-      "buyer_ar": "شركات المحتوى الرقمي، منصات التعليم الإلكتروني",
-      "sellable_product_ar": "نماذج توليد نصوص مخصصة حسب احتياجات العميل",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد نصوص لموضوع محدد",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات نماذج الذكاء الاصطناعي، بيئات تطوير",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:DavidAU/LFM2-8B-A1B-Instruct-Quantum-IQ1C-Qwen3.6-35B-DISTILL2",
-        "huggingface_models:zenlm/zen-5-coder-gguf",
-        "huggingface_models:MrDhifallah/CAFF"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.45,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "zenlm/zen-5-coder-gguf — text-generation",
-          "url": "https://huggingface.co/zenlm/zen-5-coder-gguf",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "MrDhifallah/CAFF — text-generation",
-          "url": "https://huggingface.co/MrDhifallah/CAFF",
-          "score": 0.447,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-30T02:15:27+00:00",
-      "updatedAt": "2026-05-30T02:15:27+00:00",
+      "publishedAt": "2026-05-30T05:49:05+00:00",
+      "updatedAt": "2026-05-30T05:49:05+00:00",
       "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-05-30T02:15:27+00:00",
+  "tiered_at": "2026-05-30T05:49:05+00:00",
   "free_preview_count": 3
 }
