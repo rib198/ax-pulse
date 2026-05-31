@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-05-31T02:18:02+00:00",
+  "generated_at": "2026-05-31T07:43:15+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 524,
+  "corpus_count": 529,
   "opportunities": [
     {
-      "id": "gui-agents-error-recovery",
-      "title_ar": "تحسين استرداد الأخطاء لوكلاء واجهة المستخدم الرسومية",
-      "thesis_ar": "تفتقر وكلاء واجهة المستخدم الرسومية إلى القدرة على التعافي من الأخطاء، مما يعيق نشرها في العالم الحقيقي. هناك حاجة ملحة لتطوير نماذج أكثر قوة لتحسين الأداء في التطبيقات العملية.",
-      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
-      "sellable_product_ar": "حلول ذكاء اصطناعي لتحسين استرداد الأخطاء في واجهات المستخدم",
-      "first_paid_test_ar": "تقديم نموذج أولي لحل استرداد الأخطاء لاختبار فعاليته",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، بيئات اختبار",
+      "id": "healthcare-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي في الرعاية الصحية",
+      "thesis_ar": "تزايد الاهتمام بالنماذج المخصصة للرعاية الصحية يشير إلى فرصة لتقديم حلول مبتكرة. السوق بحاجة إلى أدوات تدعم اتخاذ القرار في الرعاية الصحية.",
+      "buyer_ar": "مستشفيات، عيادات، شركات التأمين الصحي",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي للإجابة على استفسارات المرضى",
+      "first_paid_test_ar": "تقديم نموذج FAQ تجريبي لمستشفى محلي",
+      "tools_ar": "Hugging Face، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2605.29447v1",
-        "huggingface_daily_papers:2605.26730",
-        "huggingface_daily_papers:2605.30161"
+        "huggingface_models:fenyo/MonEspaceSante-FAQ-Mistral-Small-24B-GGUF",
+        "huggingface_models:pallavi9aug/biogpt-large-medical-qlora",
+        "huggingface_models:AngelWarmSmile123/Dania-Cute-Whisper"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.46,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Recovering Policy-Induced Errors: Benchmarking and Trajectory Synthesis for Robust GUI Agents",
-          "url": "http://arxiv.org/abs/2605.29447v1",
-          "score": 0.494,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "AngelWarmSmile123/Dania-Cute-Whisper — text-generation",
+          "url": "https://huggingface.co/AngelWarmSmile123/Dania-Cute-Whisper",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PRISM: A Multi-Dimensional Benchmark for Evaluating LLM Peer Reviewers",
-          "url": "https://huggingface.co/papers/2605.26730",
-          "score": 0.449,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "fenyo/MonEspaceSante-FAQ-Mistral-Small-24B-GGUF — text-generation",
+          "url": "https://huggingface.co/fenyo/MonEspaceSante-FAQ-Mistral-Small-24B-GGUF",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
-          "url": "https://huggingface.co/papers/2605.30161",
-          "score": 0.448,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "pallavi9aug/biogpt-large-medical-qlora — text-generation",
+          "url": "https://huggingface.co/pallavi9aug/biogpt-large-medical-qlora",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,48 +50,98 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T02:18:02+00:00",
-      "updatedAt": "2026-05-31T02:18:02+00:00",
+      "publishedAt": "2026-05-31T07:43:15+00:00",
+      "updatedAt": "2026-05-31T07:43:15+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة في مجالات متعددة مثل التسويق والإعلان. يمكن استغلال هذه النماذج لتلبية احتياجات الإبداع الرقمي.",
-      "buyer_ar": "وكالات التسويق والإعلان، شركات التصميم",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص محددة إلى صور",
-      "tools_ar": "أدوات الذكاء الاصطناعي، منصات تطوير النماذج، بيئات اختبار",
+      "id": "conversational-ai-apps",
+      "title_ar": "تطبيقات الذكاء الاصطناعي المحادثة",
+      "thesis_ar": "تحديثات نماذج المحادثة تشير إلى إمكانية تطوير تطبيقات جديدة للتفاعل مع المستخدمين. الطلب على خدمات المحادثة الذكية يتزايد في السوق.",
+      "buyer_ar": "شركات التكنولوجيا، منصات التواصل الاجتماعي، خدمات العملاء",
+      "sellable_product_ar": "تطوير تطبيق محادثة ذكي مخصص",
+      "first_paid_test_ar": "تقديم نموذج محادثة تجريبي لعميل محتمل",
+      "tools_ar": "Hugging Face، أدوات تطوير التطبيقات، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:profpeng/blinksidemissionary",
-        "huggingface_models:BlueTriangles/SDXL_Linn_Minmei",
-        "huggingface_models:Tapashpaul029/Qwen-Image-Edit-Rapid-AIO"
+        "huggingface_models:XPDevs/Genesis-SPT-1.0",
+        "huggingface_models:AngelWarmSmile123/Angel-Embrace-Me-Warm-Smile",
+        "huggingface_models:beaglabs/lancero-1.7B"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.46,
+      "avg_score": 0.47,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "XPDevs/Genesis-SPT-1.0 — text-generation",
+          "url": "https://huggingface.co/XPDevs/Genesis-SPT-1.0",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AngelWarmSmile123/Angel-Embrace-Me-Warm-Smile — text-generation",
+          "url": "https://huggingface.co/AngelWarmSmile123/Angel-Embrace-Me-Warm-Smile",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "beaglabs/lancero-1.7B — text-generation",
+          "url": "https://huggingface.co/beaglabs/lancero-1.7B",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-31T07:43:15+00:00",
+      "updatedAt": "2026-05-31T07:43:15+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تحديثات النماذج الحالية تشير إلى اهتمام متزايد في تحويل النص إلى صورة، مما يفتح المجال لتطبيقات جديدة. السوق العربي بحاجة إلى حلول مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات الإعلانات، المطورون، الفنانون الرقميون",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص بسيط إلى صورة",
+      "tools_ar": "Hugging Face، أدوات التعلم العميق، مكتبات معالجة الصور",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:LeFeujitif/sandbox",
+        "huggingface_models:Rand000mGuy/sknipp",
+        "huggingface_models:profpeng/blinksidemissionary"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "LeFeujitif/sandbox — text-to-image",
+          "url": "https://huggingface.co/LeFeujitif/sandbox",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Rand000mGuy/sknipp — text-to-image",
+          "url": "https://huggingface.co/Rand000mGuy/sknipp",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "profpeng/blinksidemissionary — text-to-image",
           "url": "https://huggingface.co/profpeng/blinksidemissionary",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_Linn_Minmei — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_Linn_Minmei",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Tapashpaul029/Qwen-Image-Edit-Rapid-AIO — text-to-image",
-          "url": "https://huggingface.co/Tapashpaul029/Qwen-Image-Edit-Rapid-AIO",
-          "score": 0.449,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -100,54 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T02:18:02+00:00",
-      "updatedAt": "2026-05-31T02:18:02+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "automated-peer-review-systems",
-      "title_ar": "أنظمة مراجعة الأقران الآلية",
-      "thesis_ar": "تزايد عدد الأبحاث في مجال التعلم الآلي يتطلب حلولاً فعالة لمراجعة الأقران. أنظمة المراجعة الآلية يمكن أن تسهم في تسريع هذه العملية.",
-      "buyer_ar": "مؤسسات البحث العلمي، دور النشر الأكاديمية",
-      "sellable_product_ar": "نظام مراجعة أقران آلي يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لمراجعة مجموعة من الأوراق البحثية",
-      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات تحليل البيانات، منصات البحث",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2605.26730",
-        "huggingface_daily_papers:2605.30161",
-        "huggingface_daily_papers:2605.30161"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.45,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PRISM: A Multi-Dimensional Benchmark for Evaluating LLM Peer Reviewers",
-          "url": "https://huggingface.co/papers/2605.26730",
-          "score": 0.449,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
-          "url": "https://huggingface.co/papers/2605.30161",
-          "score": 0.448,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-31T02:18:02+00:00",
-      "updatedAt": "2026-05-31T02:18:02+00:00",
+      "publishedAt": "2026-05-31T07:43:15+00:00",
+      "updatedAt": "2026-05-31T07:43:15+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-31T02:18:02+00:00",
+  "tiered_at": "2026-05-31T07:43:15+00:00",
   "free_preview_count": 3
 }
