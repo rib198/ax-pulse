@@ -1,33 +1,83 @@
 {
-  "generated_at": "2026-05-30T22:51:23+00:00",
+  "generated_at": "2026-05-31T02:18:02+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 521,
+  "corpus_count": 524,
   "opportunities": [
+    {
+      "id": "gui-agents-error-recovery",
+      "title_ar": "تحسين استرداد الأخطاء لوكلاء واجهة المستخدم الرسومية",
+      "thesis_ar": "تفتقر وكلاء واجهة المستخدم الرسومية إلى القدرة على التعافي من الأخطاء، مما يعيق نشرها في العالم الحقيقي. هناك حاجة ملحة لتطوير نماذج أكثر قوة لتحسين الأداء في التطبيقات العملية.",
+      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
+      "sellable_product_ar": "حلول ذكاء اصطناعي لتحسين استرداد الأخطاء في واجهات المستخدم",
+      "first_paid_test_ar": "تقديم نموذج أولي لحل استرداد الأخطاء لاختبار فعاليته",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، بيئات اختبار",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2605.29447v1",
+        "huggingface_daily_papers:2605.26730",
+        "huggingface_daily_papers:2605.30161"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Recovering Policy-Induced Errors: Benchmarking and Trajectory Synthesis for Robust GUI Agents",
+          "url": "http://arxiv.org/abs/2605.29447v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PRISM: A Multi-Dimensional Benchmark for Evaluating LLM Peer Reviewers",
+          "url": "https://huggingface.co/papers/2605.26730",
+          "score": 0.449,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
+          "url": "https://huggingface.co/papers/2605.30161",
+          "score": 0.448,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-31T02:18:02+00:00",
+      "updatedAt": "2026-05-31T02:18:02+00:00",
+      "sortOrder": 0
+    },
     {
       "id": "text-to-image-models",
       "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة تعكس طلبًا متزايدًا على هذه التقنية في مجالات الإبداع والتسويق. يمكن استغلال هذه النماذج في إنشاء محتوى مرئي مبتكر.",
-      "buyer_ar": "وكالات التسويق والإعلانات، شركات التصميم",
-      "sellable_product_ar": "خدمات إنشاء محتوى مرئي باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج أولي لمحتوى مرئي لعميل واحد",
-      "tools_ar": "نموذج تحويل النص إلى صورة، برامج التصميم، أدوات تسويق المحتوى",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة في مجالات متعددة مثل التسويق والإعلان. يمكن استغلال هذه النماذج لتلبية احتياجات الإبداع الرقمي.",
+      "buyer_ar": "وكالات التسويق والإعلان، شركات التصميم",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص محددة إلى صور",
+      "tools_ar": "أدوات الذكاء الاصطناعي، منصات تطوير النماذج، بيئات اختبار",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:alley1384/nfacet1L",
+        "huggingface_models:profpeng/blinksidemissionary",
         "huggingface_models:BlueTriangles/SDXL_Linn_Minmei",
         "huggingface_models:Tapashpaul029/Qwen-Image-Edit-Rapid-AIO"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.46,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "alley1384/nfacet1L — text-to-image",
-          "url": "https://huggingface.co/alley1384/nfacet1L",
-          "score": 0.474,
+          "title": "profpeng/blinksidemissionary — text-to-image",
+          "url": "https://huggingface.co/profpeng/blinksidemissionary",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
@@ -41,7 +91,7 @@
           "source_id": "huggingface_models",
           "title": "Tapashpaul029/Qwen-Image-Edit-Rapid-AIO — text-to-image",
           "url": "https://huggingface.co/Tapashpaul029/Qwen-Image-Edit-Rapid-AIO",
-          "score": 0.472,
+          "score": 0.449,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +100,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-30T22:51:23+00:00",
-      "updatedAt": "2026-05-30T22:51:23+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-05-31T02:18:02+00:00",
+      "updatedAt": "2026-05-31T02:18:02+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "automated-peer-review-systems",
+      "title_ar": "أنظمة مراجعة الأقران الآلية",
+      "thesis_ar": "تزايد عدد الأبحاث في مجال التعلم الآلي يتطلب حلولاً فعالة لمراجعة الأقران. أنظمة المراجعة الآلية يمكن أن تسهم في تسريع هذه العملية.",
+      "buyer_ar": "مؤسسات البحث العلمي، دور النشر الأكاديمية",
+      "sellable_product_ar": "نظام مراجعة أقران آلي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لمراجعة مجموعة من الأوراق البحثية",
+      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات تحليل البيانات، منصات البحث",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.26730",
+        "huggingface_daily_papers:2605.30161",
+        "huggingface_daily_papers:2605.30161"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PRISM: A Multi-Dimensional Benchmark for Evaluating LLM Peer Reviewers",
+          "url": "https://huggingface.co/papers/2605.26730",
+          "score": 0.449,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
+          "url": "https://huggingface.co/papers/2605.30161",
+          "score": 0.448,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-05-31T02:18:02+00:00",
+      "updatedAt": "2026-05-31T02:18:02+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-30T22:51:23+00:00",
+  "tiered_at": "2026-05-31T02:18:02+00:00",
   "free_preview_count": 3
 }
