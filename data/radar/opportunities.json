@@ -1,32 +1,48 @@
 {
-  "generated_at": "2026-05-31T20:52:19+00:00",
+  "generated_at": "2026-05-31T22:52:45+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 523,
+  "corpus_count": 528,
   "opportunities": [
     {
       "id": "text-to-image-models",
       "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي مخصص يتطلب نماذج قوية لتحويل النص إلى صورة. توفر الإشارات نماذج حديثة يمكن استخدامها لتلبية هذا الطلب.",
-      "buyer_ar": "شركات التسويق والمحتوى الرقمي",
-      "sellable_product_ar": "خدمة إنشاء محتوى مرئي مخصص باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء 10 صور مخصصة بناءً على نصوص محددة",
-      "tools_ar": "Hugging Face, diffusers, safetensors",
+      "thesis_ar": "تزايد الطلب على محتوى مرئي مخصص يعزز من فرص استخدام نماذج تحويل النص إلى صورة. توفر الإشارات نماذج متعددة يمكن استخدامها لتلبية احتياجات السوق المحلي.",
+      "buyer_ar": "شركات الإعلام، وكالات الإعلان، والمصممين المستقلين.",
+      "sellable_product_ar": "خدمة تطوير نماذج مخصصة لتحويل النص إلى صورة.",
+      "first_paid_test_ar": "إنشاء نموذج بسيط لتحويل نصوص محددة إلى صور واختبارها مع مجموعة من العملاء المحتملين.",
+      "tools_ar": "Hugging Face، أدوات التعلم العميق، بيئة تطوير Python.",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "bigfat/jeven_loras",
-        "Jaytsh/FLUX-ArmUpD",
-        "Jaytsh/FLUX-Nfy"
+        "huggingface_models:Jaytsh/FLUX-Spy1",
+        "huggingface_models:jeremyhola/LORAs",
+        "huggingface_models:maksous/luna",
+        "huggingface_models:bigfat/jeven_loras",
+        "huggingface_models:Jaytsh/FLUX-ArmUpD"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
+      "signal_count": 5,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "EditorAI-Geode/editorai-7b-v3 — text-generation",
-          "url": "https://huggingface.co/EditorAI-Geode/editorai-7b-v3",
+          "title": "Jaytsh/FLUX-Spy1 — text-to-image",
+          "url": "https://huggingface.co/Jaytsh/FLUX-Spy1",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "jeremyhola/LORAs — text-to-image",
+          "url": "https://huggingface.co/jeremyhola/LORAs",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "maksous/luna — text-to-image",
+          "url": "https://huggingface.co/maksous/luna",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -43,27 +59,6 @@
           "url": "https://huggingface.co/Jaytsh/FLUX-ArmUpD",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Jaytsh/FLUX-Nfy — text-to-image",
-          "url": "https://huggingface.co/Jaytsh/FLUX-Nfy",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
-          "url": "https://huggingface.co/papers/2605.30161",
-          "score": 0.466,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Alelcv27/Qwen3-4B-INST-Code — text-generation",
-          "url": "https://huggingface.co/Alelcv27/Qwen3-4B-INST-Code",
-          "score": 0.466,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,68 +66,63 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T20:52:19+00:00",
-      "updatedAt": "2026-05-31T20:52:19+00:00",
+      "publishedAt": "2026-05-31T22:52:45+00:00",
+      "updatedAt": "2026-05-31T22:52:45+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-generation-for-conversational-ai",
-      "title_ar": "تطوير حلول ذكاء اصطناعي للمحادثات",
-      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في المحادثات يتطلب نماذج متقدمة لتحسين التجربة. الإشارات تشير إلى نماذج جديدة تدعم هذا الاتجاه.",
-      "buyer_ar": "شركات البرمجيات ومزودي خدمات الذكاء الاصطناعي",
-      "sellable_product_ar": "نظام محادثة ذكي يعتمد على نماذج الجيل النصي",
-      "first_paid_test_ar": "تقديم نموذج محادثة تجريبي مع 5 سيناريوهات مختلفة",
-      "tools_ar": "Hugging Face, transformers, safetensors",
-      "capital_ar": "متوسط",
+      "id": "text-generation-models",
+      "title_ar": "تقديم خدمات توليد النصوص",
+      "thesis_ar": "تتزايد الحاجة إلى محتوى نصي آلي في مجالات متعددة مثل التسويق والمحتوى الرقمي. توفر الإشارات نماذج قوية يمكن استخدامها لتوليد نصوص مخصصة.",
+      "buyer_ar": "شركات التسويق الرقمي، المدونين، والمحتوى الإلكتروني.",
+      "sellable_product_ar": "خدمة توليد نصوص مخصصة باستخدام نماذج الذكاء الاصطناعي.",
+      "first_paid_test_ar": "توليد نصوص قصيرة لعميل واختبار فعاليتها في جذب التفاعل.",
+      "tools_ar": "Hugging Face، أدوات التعلم العميق، بيئة تطوير Python.",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "Alelcv27/Qwen3-4B-INST-Code",
-        "PanocularAI/PanoLM_test",
-        "Thunderbolts123/UltraThinker-Coder-3B"
+        "huggingface_models:Alelcv27/Qwen3-4B-INST-Code-v2",
+        "huggingface_models:Lambent/Arsenic-Shahrazad-12B-v4.4.1-mtp",
+        "huggingface_models:yunjae-won/checkpoint-100",
+        "huggingface_models:yunjae-won/checkpoint-150",
+        "huggingface_models:yunjae-won/checkpoint-175"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
+      "signal_count": 5,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "EditorAI-Geode/editorai-7b-v3 — text-generation",
-          "url": "https://huggingface.co/EditorAI-Geode/editorai-7b-v3",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "bigfat/jeven_loras — text-to-image",
-          "url": "https://huggingface.co/bigfat/jeven_loras",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Jaytsh/FLUX-ArmUpD — text-to-image",
-          "url": "https://huggingface.co/Jaytsh/FLUX-ArmUpD",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Jaytsh/FLUX-Nfy — text-to-image",
-          "url": "https://huggingface.co/Jaytsh/FLUX-Nfy",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
-          "url": "https://huggingface.co/papers/2605.30161",
+          "title": "Alelcv27/Qwen3-4B-INST-Code-v2 — text-generation",
+          "url": "https://huggingface.co/Alelcv27/Qwen3-4B-INST-Code-v2",
           "score": 0.466,
-          "trust_tier": "research"
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Alelcv27/Qwen3-4B-INST-Code — text-generation",
-          "url": "https://huggingface.co/Alelcv27/Qwen3-4B-INST-Code",
+          "title": "Lambent/Arsenic-Shahrazad-12B-v4.4.1-mtp — text-generation",
+          "url": "https://huggingface.co/Lambent/Arsenic-Shahrazad-12B-v4.4.1-mtp",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yunjae-won/checkpoint-100 — text-generation",
+          "url": "https://huggingface.co/yunjae-won/checkpoint-100",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yunjae-won/checkpoint-150 — text-generation",
+          "url": "https://huggingface.co/yunjae-won/checkpoint-150",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yunjae-won/checkpoint-175 — text-generation",
+          "url": "https://huggingface.co/yunjae-won/checkpoint-175",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -142,82 +132,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T20:52:19+00:00",
-      "updatedAt": "2026-05-31T20:52:19+00:00",
+      "publishedAt": "2026-05-31T22:52:45+00:00",
+      "updatedAt": "2026-05-31T22:52:45+00:00",
       "sortOrder": 1
-    },
-    {
-      "id": "multilingual-asr-solutions",
-      "title_ar": "تطوير حلول التعرف على الصوت متعددة اللغات",
-      "thesis_ar": "تزايد الحاجة إلى دعم لغات متعددة في تقنيات التعرف على الصوت يفتح فرصًا جديدة. الإشارات تشير إلى نماذج حديثة تدعم هذا الاتجاه.",
-      "buyer_ar": "شركات التكنولوجيا ومزودي خدمات التعرف على الصوت",
-      "sellable_product_ar": "نظام التعرف على الصوت متعدد اللغات",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لدعم لغتين مختلفتين في التعرف على الصوت",
-      "tools_ar": "Hugging Face, transformers, safetensors",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "chrullis/qwen3-asr-radio-1.7b",
-        "KasuleTrevor/cdli-qwen3-asr-lg-typical-textpre-1p7b-v2-finetune",
-        "dman1011/recall-honcho-8b"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "EditorAI-Geode/editorai-7b-v3 — text-generation",
-          "url": "https://huggingface.co/EditorAI-Geode/editorai-7b-v3",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "bigfat/jeven_loras — text-to-image",
-          "url": "https://huggingface.co/bigfat/jeven_loras",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Jaytsh/FLUX-ArmUpD — text-to-image",
-          "url": "https://huggingface.co/Jaytsh/FLUX-ArmUpD",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Jaytsh/FLUX-Nfy — text-to-image",
-          "url": "https://huggingface.co/Jaytsh/FLUX-Nfy",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
-          "url": "https://huggingface.co/papers/2605.30161",
-          "score": 0.466,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Alelcv27/Qwen3-4B-INST-Code — text-generation",
-          "url": "https://huggingface.co/Alelcv27/Qwen3-4B-INST-Code",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-31T20:52:19+00:00",
-      "updatedAt": "2026-05-31T20:52:19+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-31T20:52:19+00:00",
+  "tiered_at": "2026-05-31T22:52:45+00:00",
   "free_preview_count": 3
 }
