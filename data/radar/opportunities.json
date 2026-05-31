@@ -1,78 +1,64 @@
 {
-  "generated_at": "2026-05-31T10:20:49+00:00",
+  "generated_at": "2026-05-31T13:16:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 502,
+  "corpus_count": 525,
   "opportunities": [
     {
-      "id": "ai_income_tools",
-      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
-      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يوفر فرصة كبيرة في السوق. التحديثات المستمرة للنماذج تشير إلى إمكانية تحسين الجودة وزيادة الاستخدام.",
+      "buyer_ar": "شركات التصميم والإعلانات، المطورون المستقلون، منصات المحتوى الرقمي.",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة.",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لمشروع تجريبي.",
+      "tools_ar": "Hugging Face، Python، TensorFlow",
       "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.46,
-      "confidence": 0.84,
-      "source": "rules",
+      "evidence_ids": [
+        "huggingface_models:JoseGomezFreelance/juggernaut-x-hyper-mlx-fp16",
+        "huggingface_models:nicam46234/shoujo_c",
+        "huggingface_models:AlexSolo95/evaas_full2000",
+        "huggingface_models:BlueTriangles/SDXL_S7_Shiori",
+        "huggingface_models:bigfat/jeven_loras"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 5,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "LLM-OS-Models/KoHRM-Text-1.4B — text-generation",
-          "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B",
+          "title": "JoseGomezFreelance/juggernaut-x-hyper-mlx-fp16 — text-to-image",
+          "url": "https://huggingface.co/JoseGomezFreelance/juggernaut-x-hyper-mlx-fp16",
+          "score": 0.494,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "nicam46234/shoujo_c — text-to-image",
+          "url": "https://huggingface.co/nicam46234/shoujo_c",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
-          "url": "https://huggingface.co/papers/2605.30161",
-          "score": 0.466,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "AlexSolo95/evaas_full2000 — text-to-image",
+          "url": "https://huggingface.co/AlexSolo95/evaas_full2000",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Geometry Matters: 3D Foundation Priors for Learning Semantic Correspondence",
-          "url": "https://huggingface.co/papers/2605.30093",
-          "score": 0.462,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "BlueTriangles/SDXL_S7_Shiori — text-to-image",
+          "url": "https://huggingface.co/BlueTriangles/SDXL_S7_Shiori",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PRISM: A Multi-Dimensional Benchmark for Evaluating LLM Peer Reviewers",
-          "url": "https://huggingface.co/papers/2605.26730",
-          "score": 0.457,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation",
-          "url": "https://huggingface.co/papers/2605.30350",
-          "score": 0.454,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "EarlyTom: Early Token Compression Completes Fast Video Understanding",
-          "url": "https://huggingface.co/papers/2605.30010",
-          "score": 0.453,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Thinking Before Constraining: A Unified Decoding Framework for Large Language Models",
-          "url": "https://huggingface.co/papers/2601.07525",
-          "score": 0.453,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CoHyDE: Iterative Co-Training of LLM Rewriter & Dense Encoder for Tool Retrieval",
-          "url": "https://huggingface.co/papers/2605.29271",
-          "score": 0.451,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "bigfat/jeven_loras — text-to-image",
+          "url": "https://huggingface.co/bigfat/jeven_loras",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -80,79 +66,65 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T10:20:49+00:00",
-      "updatedAt": "2026-05-31T10:20:49+00:00",
+      "publishedAt": "2026-05-31T13:16:05+00:00",
+      "updatedAt": "2026-05-31T13:16:05+00:00",
       "sortOrder": 0
     },
     {
-      "id": "ai_income_automation",
-      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
-      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
-      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
-      "tools_ar": "n8n أو Make، API، نموذج AI",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في التطبيقات التجارية يوفر فرصة كبيرة. النماذج الجديدة تقدم تحسينات ملحوظة في الأداء.",
+      "buyer_ar": "شركات المحتوى، وكالات التسويق، المطورون.",
+      "sellable_product_ar": "خدمات تطوير نماذج توليد نصوص مخصصة.",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد نصوص لمحتوى تسويقي.",
+      "tools_ar": "Hugging Face، PyTorch، TensorFlow",
       "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.44,
-      "confidence": 0.84,
-      "source": "rules",
+      "evidence_ids": [
+        "huggingface_models:reaperdoesntknow/Qemma-sft",
+        "huggingface_models:reaperdoesntknow/Qemma-redux",
+        "huggingface_models:reaperdoesntknow/Qemma-Q14B",
+        "huggingface_models:reaperdoesntknow/Qemma-Q1.7B",
+        "huggingface_models:reaperdoesntknow/MoA-400M"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 5,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "CoHyDE: Iterative Co-Training of LLM Rewriter & Dense Encoder for Tool Retrieval",
-          "url": "https://huggingface.co/papers/2605.29271",
-          "score": 0.451,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security",
-          "url": "http://arxiv.org/abs/2605.29801v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
-          "url": "http://arxiv.org/abs/2605.30345v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
-          "url": "http://arxiv.org/abs/2605.30326v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Learning to Choose: An Empowerment-Guided Multi-Agent System with semantic communication for Adaptive Method Selection",
-          "url": "http://arxiv.org/abs/2605.30042v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "github_blog_ai",
-          "title": "Agent pull requests are everywhere. Here’s how to review them.",
-          "url": "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/",
-          "score": 0.443,
+          "source_id": "huggingface_models",
+          "title": "reaperdoesntknow/Qemma-sft — text-generation",
+          "url": "https://huggingface.co/reaperdoesntknow/Qemma-sft",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Modularizing Educational LLM-Agency for Fostering Responsible Learning Assistance",
-          "url": "http://arxiv.org/abs/2605.30187v1",
-          "score": 0.431,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "reaperdoesntknow/Qemma-redux — text-generation",
+          "url": "https://huggingface.co/reaperdoesntknow/Qemma-redux",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PANDO: Efficient Multimodal AI Agents via Online Skill Distillation",
-          "url": "https://huggingface.co/papers/2605.24785",
-          "score": 0.43,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "reaperdoesntknow/Qemma-Q14B — text-generation",
+          "url": "https://huggingface.co/reaperdoesntknow/Qemma-Q14B",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "reaperdoesntknow/Qemma-Q1.7B — text-generation",
+          "url": "https://huggingface.co/reaperdoesntknow/Qemma-Q1.7B",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "reaperdoesntknow/MoA-400M — text-generation",
+          "url": "https://huggingface.co/reaperdoesntknow/MoA-400M",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -160,77 +132,39 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T10:20:49+00:00",
-      "updatedAt": "2026-05-31T10:20:49+00:00",
+      "publishedAt": "2026-05-31T13:16:05+00:00",
+      "updatedAt": "2026-05-31T13:16:05+00:00",
       "sortOrder": 1
     },
     {
-      "id": "ai_income_content",
-      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
-      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
-      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
-      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "تزايد استخدام نماذج تحويل الصورة إلى نص في التطبيقات التعليمية والتجارية يوفر فرصة كبيرة. التحسينات المستمرة تشير إلى إمكانية توسيع التطبيقات.",
+      "buyer_ar": "شركات التعليم، منصات المحتوى، المطورون.",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل الصورة إلى نص.",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل صورة إلى نص لمشروع تجريبي.",
+      "tools_ar": "Hugging Face، Python، TensorFlow",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:angguo17/narrow-pgd-gemma-3-12b-it-biology-sp0p15",
+        "huggingface_models:sshibinthomass/unsloth_finetune"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
       "avg_score": 0.47,
-      "confidence": 0.84,
-      "source": "rules",
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "letom06200/jenna_ortega_SDXL_V5 — text-to-image",
-          "url": "https://huggingface.co/letom06200/jenna_ortega_SDXL_V5",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
-          "url": "https://huggingface.co/papers/2605.30161",
-          "score": 0.466,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Locutusque/Esmeralda-Qwen3.6-35B-A3B — image-text-to-text",
-          "url": "https://huggingface.co/Locutusque/Esmeralda-Qwen3.6-35B-A3B",
+          "title": "angguo17/narrow-pgd-gemma-3-12b-it-biology-sp0p15 — image-text-to-text",
+          "url": "https://huggingface.co/angguo17/narrow-pgd-gemma-3-12b-it-biology-sp0p15",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Adicandra/Qwen3.5-4B-ImageCaptioning-LoRA — image-text-to-text",
-          "url": "https://huggingface.co/Adicandra/Qwen3.5-4B-ImageCaptioning-LoRA",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "tjarvis91/vfai-x-3.5-9b-options — image-text-to-text",
-          "url": "https://huggingface.co/tjarvis91/vfai-x-3.5-9b-options",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "tjarvis91/vfaix-vpa-options-trader — image-text-to-text",
-          "url": "https://huggingface.co/tjarvis91/vfaix-vpa-options-trader",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "prog-love/rostamiai — image-text-to-text",
-          "url": "https://huggingface.co/prog-love/rostamiai",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "AGViveiros/LanteRn-3B-Tetris — image-text-to-text",
-          "url": "https://huggingface.co/AGViveiros/LanteRn-3B-Tetris",
+          "title": "sshibinthomass/unsloth_finetune — image-text-to-text",
+          "url": "https://huggingface.co/sshibinthomass/unsloth_finetune",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -240,91 +174,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T10:20:49+00:00",
-      "updatedAt": "2026-05-31T10:20:49+00:00",
+      "publishedAt": "2026-05-31T13:16:05+00:00",
+      "updatedAt": "2026-05-31T13:16:05+00:00",
       "sortOrder": 2
-    },
-    {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
-      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
-      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
-      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.39,
-      "confidence": 0.83,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Modularizing Educational LLM-Agency for Fostering Responsible Learning Assistance",
-          "url": "http://arxiv.org/abs/2605.30187v1",
-          "score": 0.431,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "openai_news",
-          "title": "Introducing OpenAI for Singapore",
-          "url": "https://openai.com/index/introducing-openai-for-singapore",
-          "score": 0.428,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "How Reliable Are AI Attackers Against a Fixed Vulnerable Target? A 400-Run Empirical Study of LLM Penetration Testing Consistency",
-          "url": "http://arxiv.org/abs/2605.30096v1",
-          "score": 0.42,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "github_repos",
-          "title": "ParseOtter/parseotter",
-          "url": "https://github.com/ParseOtter/parseotter",
-          "score": 0.417,
-          "trust_tier": "community"
-        },
-        {
-          "source_id": "openai_news",
-          "title": "MUFG aims to become AI-native with OpenAI",
-          "url": "https://openai.com/index/mufg",
-          "score": 0.395,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Agyn: An Open-Source Platform for AI Agents with Scalable On-Demand Execution, Agent Definition as a Code, and Zero-Trust Access",
-          "url": "http://arxiv.org/abs/2605.27575v1",
-          "score": 0.375,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "devto_ai",
-          "title": "Anthropic Claude 4 API vs OpenAI GPT-4.1 API: DX, Pricing and Hidden Gotchas (2026)",
-          "url": "https://dev.to/ayinedjimi-consultants/anthropic-claude-4-api-vs-openai-gpt-41-api-dx-pricing-and-hidden-gotchas-2026-1hf7",
-          "score": 0.346,
-          "trust_tier": "community"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Evaluating Commercial AI Chatbots as News Intermediaries",
-          "url": "http://arxiv.org/abs/2605.22785v1",
-          "score": 0.339,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "premium",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-05-31T10:20:49+00:00",
-      "updatedAt": "2026-05-31T10:20:49+00:00",
-      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-05-31T10:20:49+00:00",
+  "tiered_at": "2026-05-31T13:16:05+00:00",
   "free_preview_count": 3
 }
