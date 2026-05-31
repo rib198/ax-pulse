@@ -1,68 +1,68 @@
 {
-  "generated_at": "2026-05-31T17:01:09+00:00",
+  "generated_at": "2026-05-31T19:06:27+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 522,
+  "corpus_count": 521,
   "opportunities": [
     {
-      "id": "ecommerce-customer-service-ai",
-      "title_ar": "تحسين خدمة العملاء في التجارة الإلكترونية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد الاعتماد على التجارة الإلكترونية، هناك حاجة ملحة لتحسين تجربة العملاء. نماذج الذكاء الاصطناعي الجديدة توفر حلولًا مبتكرة لتحسين خدمة العملاء وتقديم الدعم الفوري.",
-      "buyer_ar": "شركات التجارة الإلكترونية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لخدمة العملاء",
-      "first_paid_test_ar": "تقديم فترة تجريبية مجانية لمدة شهر لنظام خدمة العملاء",
-      "tools_ar": "نموذج الذكاء الاصطناعي، واجهة برمجة التطبيقات، نظام إدارة العملاء",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الطلب على نماذج توليد النصوص مثل MiniCPM5 وKoHRM يشير إلى فرصة كبيرة في السوق. يمكن استخدام هذه النماذج في مختلف التطبيقات مثل خدمة العملاء والمحتوى التلقائي.",
+      "buyer_ar": "شركات البرمجيات ومزودي الخدمات الرقمية",
+      "sellable_product_ar": "خدمات تطوير نماذج توليد النصوص وتخصيصها",
+      "first_paid_test_ar": "تطوير نموذج تجريبي لتوليد نصوص لموقع ويب",
+      "tools_ar": "Hugging Face, PyTorch, أدوات تطوير البرمجيات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "ronan7878/qwen3-4b-ecommerce-customer-service-finetune",
-        "sonasai/S1-lite",
-        "Ba2han/model-sft-q2"
+        "LLM-OS-Models/KoHRM-Text-1.4B",
+        "MiniCPM5-1B-SFT-litertlm",
+        "K0D3IN/MiniCPM5-1B-heretic"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.47,
+      "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "ronan7878/qwen3-4b-ecommerce-customer-service-finetune — text-generation",
-          "url": "https://huggingface.co/ronan7878/qwen3-4b-ecommerce-customer-service-finetune",
-          "score": 0.479,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "CKricky16/supergemma4-26b-uncensored-gguf-v2 — text-generation",
-          "url": "https://huggingface.co/CKricky16/supergemma4-26b-uncensored-gguf-v2",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
         {
           "source_id": "huggingface_models",
           "title": "LLM-OS-Models/KoHRM-Text-1.4B — text-generation",
           "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Nadiia1990/ZIB — text-to-image",
-          "url": "https://huggingface.co/Nadiia1990/ZIB",
-          "score": 0.472,
+          "title": "lyafence/MiniCPM5-1B-SFT-litertlm — text-generation",
+          "url": "https://huggingface.co/lyafence/MiniCPM5-1B-SFT-litertlm",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "BlackwoodAI/LedgerGuard-35B — text-generation",
+          "url": "https://huggingface.co/BlackwoodAI/LedgerGuard-35B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Jaytsh/FLUX-ArmUpD — text-to-image",
+          "url": "https://huggingface.co/Jaytsh/FLUX-ArmUpD",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bigfat/jeven_loras — text-to-image",
+          "url": "https://huggingface.co/bigfat/jeven_loras",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "Jaytsh/FLUX-Nfy — text-to-image",
           "url": "https://huggingface.co/Jaytsh/FLUX-Nfy",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "AlexSolo95/evaas_wave — text-to-image",
-          "url": "https://huggingface.co/AlexSolo95/evaas_wave",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -71,69 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T17:01:09+00:00",
-      "updatedAt": "2026-05-31T17:01:09+00:00",
+      "publishedAt": "2026-05-31T19:06:27+00:00",
+      "updatedAt": "2026-05-31T19:06:27+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-creation",
-      "title_ar": "تطوير خدمات تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي يجعل من الضروري توفير أدوات فعالة لتحويل النصوص إلى صور. النماذج الجديدة تقدم إمكانيات مبتكرة في هذا المجال.",
-      "buyer_ar": "المسوقون، صناع المحتوى، الشركات الإبداعية",
-      "sellable_product_ar": "أداة تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم خدمة تحويل نصوص بسيطة إلى صور مجانية لمدة أسبوع",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، منصة تسويق",
+      "id": "text-to-image-generation",
+      "title_ar": "تطوير خدمات توليد الصور من النصوص",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة مثل FLUX وjeven_loras يعكس الحاجة المتزايدة لتوليد المحتوى البصري. هذه التقنية يمكن أن تخدم مجالات الإعلانات والتصميم.",
+      "buyer_ar": "وكالات الإعلان وشركات التصميم",
+      "sellable_product_ar": "خدمات توليد الصور من النصوص باستخدام نماذج متقدمة",
+      "first_paid_test_ar": "تقديم خدمة توليد صورة بناءً على نص محدد كاختبار",
+      "tools_ar": "Hugging Face, أدوات التصميم الجرافيكي, مكتبات الذكاء الاصطناعي",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "Nadiia1990/ZIB",
-        "Jaytsh/FLUX-Nfy",
-        "AlexSolo95/evaas_wave"
+        "Jaytsh/FLUX-ArmUpD",
+        "bigfat/jeven_loras",
+        "Jaytsh/FLUX-Nfy"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.47,
+      "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "ronan7878/qwen3-4b-ecommerce-customer-service-finetune — text-generation",
-          "url": "https://huggingface.co/ronan7878/qwen3-4b-ecommerce-customer-service-finetune",
-          "score": 0.479,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "CKricky16/supergemma4-26b-uncensored-gguf-v2 — text-generation",
-          "url": "https://huggingface.co/CKricky16/supergemma4-26b-uncensored-gguf-v2",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
         {
           "source_id": "huggingface_models",
           "title": "LLM-OS-Models/KoHRM-Text-1.4B — text-generation",
           "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Nadiia1990/ZIB — text-to-image",
-          "url": "https://huggingface.co/Nadiia1990/ZIB",
-          "score": 0.472,
+          "title": "lyafence/MiniCPM5-1B-SFT-litertlm — text-generation",
+          "url": "https://huggingface.co/lyafence/MiniCPM5-1B-SFT-litertlm",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "BlackwoodAI/LedgerGuard-35B — text-generation",
+          "url": "https://huggingface.co/BlackwoodAI/LedgerGuard-35B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Jaytsh/FLUX-ArmUpD — text-to-image",
+          "url": "https://huggingface.co/Jaytsh/FLUX-ArmUpD",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bigfat/jeven_loras — text-to-image",
+          "url": "https://huggingface.co/bigfat/jeven_loras",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "Jaytsh/FLUX-Nfy — text-to-image",
           "url": "https://huggingface.co/Jaytsh/FLUX-Nfy",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "AlexSolo95/evaas_wave — text-to-image",
-          "url": "https://huggingface.co/AlexSolo95/evaas_wave",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -142,69 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T17:01:09+00:00",
-      "updatedAt": "2026-05-31T17:01:09+00:00",
+      "publishedAt": "2026-05-31T19:06:27+00:00",
+      "updatedAt": "2026-05-31T19:06:27+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "تطوير حلول الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "الاحتياج المتزايد للتفاعل بين النصوص والصور يدفع نحو تطوير نماذج ذكاء اصطناعي متعددة الوسائط. هذه الحلول يمكن أن تعزز من تجربة المستخدم بشكل كبير.",
-      "buyer_ar": "شركات التكنولوجيا، المطورون، المؤسسات التعليمية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط",
-      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني لمدة شهر",
-      "tools_ar": "نموذج متعدد الوسائط، واجهة برمجة التطبيقات، منصة تطوير",
+      "id": "security-vulnerability-analysis",
+      "title_ar": "تحليل الثغرات الأمنية باستخدام نماذج الذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد الهجمات السيبرانية، يعد استخدام نماذج مثل CVE-CWE لتحليل الثغرات فرصة هامة. يمكن للشركات تحسين أمان أنظمتها من خلال هذه الخدمات.",
+      "buyer_ar": "شركات التكنولوجيا ومزودي خدمات الأمن السيبراني",
+      "sellable_product_ar": "خدمات تحليل الثغرات الأمنية وتقديم تقارير شاملة",
+      "first_paid_test_ar": "تقديم تحليل ثغرة مجانية لنظام محدد",
+      "tools_ar": "Hugging Face, أدوات الأمن السيبراني, مكتبات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "C-a-Star-Official-1/StarO-AI-3.01-Super",
-        "olaverse/MIST-1-70B",
-        "olaverse/MIST-Mini-8B-Thinking"
+        "exploitintel/cve-cwe-qwen35-9b",
+        "melsmm/Spell-Corrector-RU-4B",
+        "K0D3IN/MiniCPM5-1B-heretic"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.47,
+      "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "ronan7878/qwen3-4b-ecommerce-customer-service-finetune — text-generation",
-          "url": "https://huggingface.co/ronan7878/qwen3-4b-ecommerce-customer-service-finetune",
-          "score": 0.479,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "CKricky16/supergemma4-26b-uncensored-gguf-v2 — text-generation",
-          "url": "https://huggingface.co/CKricky16/supergemma4-26b-uncensored-gguf-v2",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
         {
           "source_id": "huggingface_models",
           "title": "LLM-OS-Models/KoHRM-Text-1.4B — text-generation",
           "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Nadiia1990/ZIB — text-to-image",
-          "url": "https://huggingface.co/Nadiia1990/ZIB",
-          "score": 0.472,
+          "title": "lyafence/MiniCPM5-1B-SFT-litertlm — text-generation",
+          "url": "https://huggingface.co/lyafence/MiniCPM5-1B-SFT-litertlm",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "BlackwoodAI/LedgerGuard-35B — text-generation",
+          "url": "https://huggingface.co/BlackwoodAI/LedgerGuard-35B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Jaytsh/FLUX-ArmUpD — text-to-image",
+          "url": "https://huggingface.co/Jaytsh/FLUX-ArmUpD",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bigfat/jeven_loras — text-to-image",
+          "url": "https://huggingface.co/bigfat/jeven_loras",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "Jaytsh/FLUX-Nfy — text-to-image",
           "url": "https://huggingface.co/Jaytsh/FLUX-Nfy",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "AlexSolo95/evaas_wave — text-to-image",
-          "url": "https://huggingface.co/AlexSolo95/evaas_wave",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -213,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-05-31T17:01:09+00:00",
-      "updatedAt": "2026-05-31T17:01:09+00:00",
+      "publishedAt": "2026-05-31T19:06:27+00:00",
+      "updatedAt": "2026-05-31T19:06:27+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-05-31T17:01:09+00:00",
+  "tiered_at": "2026-05-31T19:06:27+00:00",
   "free_preview_count": 3
 }
