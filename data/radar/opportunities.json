@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-06-04T08:34:39+00:00",
+  "generated_at": "2026-06-04T12:42:47+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 768,
+  "corpus_count": 848,
   "opportunities": [
     {
-      "id": "text-to-image-content-creation",
-      "title_ar": "إنشاء محتوى مرئي باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي فريد وجذاب في السوق العربي. نماذج تحويل النص إلى صورة تقدم حلاً مبتكرًا لتلبية احتياجات الشركات في التسويق والإعلان.",
-      "buyer_ar": "شركات التسويق والإعلان، صناع المحتوى",
-      "sellable_product_ar": "خدمة إنشاء صور مخصصة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "إنشاء 5 صور مخصصة لمشروع تسويقي",
-      "tools_ar": "Hugging Face, أدوات تصميم الجرافيك, منصات تسويق رقمية",
+      "id": "ai-companion-safety",
+      "title_ar": "تطوير منصات أمان للذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد استخدام منصات الذكاء الاصطناعي، تزداد المخاوف بشأن التفاعلات غير الآمنة. تطوير أدوات تقييم أمان يمكن أن يلبي هذه الحاجة المتزايدة.",
+      "buyer_ar": "شركات تطوير البرمجيات ومنصات الذكاء الاصطناعي",
+      "sellable_product_ar": "أداة تقييم أمان الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار أمان لمنصة قائمة",
+      "tools_ar": "أدوات تقييم الأمان، نماذج الذكاء الاصطناعي، بيئة اختبار",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Muapi/nami-one-piece-movies-specials",
-        "huggingface_models:Muapi/skindentation-deep-skin-squishy-skin-illustrious",
-        "huggingface_models:Muapi/zenless-zone-zero-characters-style-illustrious-pony"
+        "2606.04867v1",
+        "2606.04903v1",
+        "2606.04911v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.52,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "AICompanionBench: Benchmarking LLMs-as-Judges for AI Companion Safety",
+          "url": "http://arxiv.org/abs/2606.04867v1",
+          "score": 0.524,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DetectZoo: A Unified Toolkit for AI-Generated Content Detection Across Text, Audio, and Image Modalities",
+          "url": "http://arxiv.org/abs/2606.04205v1",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Benchmarks are Not Enough: RAMP for Runtime Assessing of Agentic Models in Production Systems",
+          "url": "https://huggingface.co/papers/2605.27492",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_models",
           "title": "Muapi/nami-one-piece-movies-specials — text-to-image",
           "url": "https://huggingface.co/Muapi/nami-one-piece-movies-specials",
-          "score": 0.521,
+          "score": 0.5,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "Muapi/skindentation-deep-skin-squishy-skin-illustrious — text-to-image",
           "url": "https://huggingface.co/Muapi/skindentation-deep-skin-squishy-skin-illustrious",
-          "score": 0.521,
+          "score": 0.5,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "Muapi/zenless-zone-zero-characters-style-illustrious-pony — text-to-image",
           "url": "https://huggingface.co/Muapi/zenless-zone-zero-characters-style-illustrious-pony",
-          "score": 0.521,
+          "score": 0.5,
           "trust_tier": "official"
         }
       ],
@@ -50,42 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-04T08:34:39+00:00",
-      "updatedAt": "2026-06-04T08:34:39+00:00",
+      "publishedAt": "2026-06-04T12:42:47+00:00",
+      "updatedAt": "2026-06-04T12:42:47+00:00",
       "sortOrder": 0
     },
     {
-      "id": "multimodal-llm-applications",
-      "title_ar": "تطبيقات الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "تطور نماذج الذكاء الاصطناعي متعددة الوسائط يفتح آفاق جديدة في مجالات مثل التعليم والرعاية الصحية. يمكن استخدامها لتطوير تطبيقات ذكية تتفاعل مع المستخدمين بطرق جديدة.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، المستشفيات",
-      "sellable_product_ar": "تطبيقات ذكية تعتمد على نماذج الذكاء الاصطناعي متعددة الوسائط",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق تعليمي أو صحي",
-      "tools_ar": "Hugging Face, أدوات تطوير البرمجيات, منصات اختبار التطبيقات",
-      "capital_ar": "متوسط",
+      "id": "ai-content-detection",
+      "title_ar": "تطوير أدوات كشف المحتوى الناتج عن الذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد استخدام نماذج الذكاء الاصطناعي في إنشاء المحتوى، تزداد الحاجة إلى أدوات فعالة لكشف المحتوى الناتج عن الذكاء الاصطناعي.",
+      "buyer_ar": "شركات وسائل الإعلام والتسويق",
+      "sellable_product_ar": "أداة كشف المحتوى الناتج عن الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار كشف محتوى مجاني لعميل محتمل",
+      "tools_ar": "نماذج الذكاء الاصطناعي، بيانات تدريب، واجهة مستخدم",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.05008",
-        "huggingface_daily_papers:2606.03972",
-        "huggingface_daily_papers:2606.04890"
+        "2606.04205v1",
+        "2606.04975v1",
+        "2606.04967v1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "M^3Eval: Multi-Modal Memory Evaluation through Cognitively-Grounded Video Tasks",
-          "url": "https://huggingface.co/papers/2606.05008",
-          "score": 0.481,
+          "source_id": "arxiv_papers",
+          "title": "AICompanionBench: Benchmarking LLMs-as-Judges for AI Companion Safety",
+          "url": "http://arxiv.org/abs/2606.04867v1",
+          "score": 0.524,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DetectZoo: A Unified Toolkit for AI-Generated Content Detection Across Text, Audio, and Image Modalities",
+          "url": "http://arxiv.org/abs/2606.04205v1",
+          "score": 0.519,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "AAD-1: Asymmetric Adversarial Distillation for One-Step Autoregressive Video Generation",
-          "url": "https://huggingface.co/papers/2606.03972",
-          "score": 0.472,
+          "title": "Benchmarks are Not Enough: RAMP for Runtime Assessing of Agentic Models in Production Systems",
+          "url": "https://huggingface.co/papers/2605.27492",
+          "score": 0.511,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/nami-one-piece-movies-specials — text-to-image",
+          "url": "https://huggingface.co/Muapi/nami-one-piece-movies-specials",
+          "score": 0.5,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/skindentation-deep-skin-squishy-skin-illustrious — text-to-image",
+          "url": "https://huggingface.co/Muapi/skindentation-deep-skin-squishy-skin-illustrious",
+          "score": 0.5,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/zenless-zone-zero-characters-style-illustrious-pony — text-to-image",
+          "url": "https://huggingface.co/Muapi/zenless-zone-zero-characters-style-illustrious-pony",
+          "score": 0.5,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-04T08:34:39+00:00",
-      "updatedAt": "2026-06-04T08:34:39+00:00",
+      "publishedAt": "2026-06-04T12:42:47+00:00",
+      "updatedAt": "2026-06-04T12:42:47+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "autonomous-software-engineering",
+      "title_ar": "تطوير أنظمة هندسة برمجيات مستقلة",
+      "thesis_ar": "تتجه نماذج الذكاء الاصطناعي نحو أنظمة هندسة برمجيات مستقلة، مما يفتح المجال لتطوير أدوات جديدة تدعم هذه الأنظمة.",
+      "buyer_ar": "شركات تطوير البرمجيات",
+      "sellable_product_ar": "أداة دعم لتطوير البرمجيات المستقلة",
+      "first_paid_test_ar": "تقديم تجربة مجانية لأداة تطوير برمجيات",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، بنية تحتية سحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2606.04923",
+        "2606.04967v1",
+        "2606.04455v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "AICompanionBench: Benchmarking LLMs-as-Judges for AI Companion Safety",
+          "url": "http://arxiv.org/abs/2606.04867v1",
+          "score": 0.524,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DetectZoo: A Unified Toolkit for AI-Generated Content Detection Across Text, Audio, and Image Modalities",
+          "url": "http://arxiv.org/abs/2606.04205v1",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Benchmarks are Not Enough: RAMP for Runtime Assessing of Agentic Models in Production Systems",
+          "url": "https://huggingface.co/papers/2605.27492",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/nami-one-piece-movies-specials — text-to-image",
+          "url": "https://huggingface.co/Muapi/nami-one-piece-movies-specials",
+          "score": 0.5,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/skindentation-deep-skin-squishy-skin-illustrious — text-to-image",
+          "url": "https://huggingface.co/Muapi/skindentation-deep-skin-squishy-skin-illustrious",
+          "score": 0.5,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/zenless-zone-zero-characters-style-illustrious-pony — text-to-image",
+          "url": "https://huggingface.co/Muapi/zenless-zone-zero-characters-style-illustrious-pony",
+          "score": 0.5,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-04T12:42:47+00:00",
+      "updatedAt": "2026-06-04T12:42:47+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-04T08:34:39+00:00",
+  "tiered_at": "2026-06-04T12:42:47+00:00",
   "free_preview_count": 3
 }
