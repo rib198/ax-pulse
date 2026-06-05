@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-05T14:43:17+00:00",
+  "run_at": "2026-06-05T19:35:28+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,20 +26,20 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 944.743,
+      "duration_s": 25.983,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 306 signals from 31 source families",
-        "11 source errors (non-fatal)"
+        "collected 351 signals from 31 source families",
+        "6 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.011,
       "written": [],
       "notes": [
         "injected 487 manual X items (skipped 13 of 500, avg score 0.159)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 793 items",
-        "by tier: press=519, official=167, research=69, community=38"
+        "tagged 838 items",
+        "by tier: press=519, official=166, research=124, community=29"
       ],
       "error": null
     },
@@ -77,19 +77,19 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 793 items, top priority=0.495"
+        "ranked 838 items, top priority=0.481"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.012,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 17 companies, 17 products this run",
+        "detected 16 companies, 18 products this run",
         "store size: 42"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.053,
+      "duration_s": 0.065,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.127,
+      "duration_s": 0.151,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "15 events (0 new)",
-        "by type: pricing_change=3, model_release=7, acquisition=4, policy_signal=1"
+        "20 events (7 new)",
+        "by type: pricing_change=3, model_release=9, personnel_move=2, policy_signal=4, acquisition=2"
       ],
       "error": null
     },
@@ -135,19 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 9.766,
+      "duration_s": 12.195,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 1 opportunities"
+        "openai produced 3 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 11.978,
+      "duration_s": 9.707,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -166,7 +166,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 1 free / 0 premium",
+        "opps: 3 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.742,
+      "duration_s": 12.039,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=793, opps=1, calls=3"
+        "items=838, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.454,
+      "duration_s": 3.329,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الأيام الأخيرة تراجعاً ملحوظاً في عدد الإشارات والفرص، مما يشير إلى انخفاض…"
+        "insight via openai: لوحظ ارتفاع ملحوظ في النشاط، حيث زادت الإشارات بنسبة 5.7% مقارنة بالتشغيل الساب…"
       ],
       "error": null
     },
@@ -242,7 +242,7 @@
       ],
       "notes": [
         "tracked 18 sources",
-        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
+        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
       ],
       "error": null
     }
