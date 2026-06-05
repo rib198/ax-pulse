@@ -1,138 +1,46 @@
 {
-  "generated_at": "2026-06-05T11:32:10+00:00",
+  "generated_at": "2026-06-05T14:43:17+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 849,
+  "corpus_count": 793,
   "opportunities": [
     {
-      "id": "human-robot-collaboration",
-      "title_ar": "تطوير أنظمة التعاون بين الإنسان والروبوت",
-      "thesis_ar": "تزايد الاهتمام بأنظمة التعاون بين الإنسان والروبوت يوفر فرصة لتطوير حلول مبتكرة. مع تزايد استخدام الذكاء الاصطناعي في الروبوتات، يمكن تحسين الكفاءة والإنتاجية في مختلف الصناعات.",
-      "buyer_ar": "شركات التصنيع والتكنولوجيا",
-      "sellable_product_ar": "نظام متكامل للتعاون بين الإنسان والروبوت مع واجهة تفاعلية",
-      "first_paid_test_ar": "تقديم نموذج أولي يعمل في بيئة صناعية محددة",
-      "tools_ar": "ROS 2، نماذج اللغة، نماذج الرؤية",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-diffusion",
+      "title_ar": "تحويل النص إلى صورة باستخدام نماذج الانتشار",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في القطاعات الإبداعية. يمكن لهذه التقنية تعزيز الابتكار في تصميم المنتجات والتسويق.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "خدمة تحويل النصوص إلى صور مخصصة",
+      "first_paid_test_ar": "تقديم خدمة تحويل نص إلى صورة واحدة كاختبار",
+      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم جرافيكي، برمجيات تسويق",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.06061",
-        "2606.06140",
-        "2606.06399"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement",
-          "url": "http://arxiv.org/abs/2606.06468v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
-          "url": "http://arxiv.org/abs/2606.06139v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Dream.exe: Can Video Generation Models Dream Executable Robot Manipulation?",
-          "url": "https://huggingface.co/papers/2606.04811",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "metaresearch/PapersRAG-1.5B — text-generation",
-          "url": "https://huggingface.co/metaresearch/PapersRAG-1.5B",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ofcstudios/Z-Image-Turbo-NSFW — text-to-image",
-          "url": "https://huggingface.co/ofcstudios/Z-Image-Turbo-NSFW",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ofcstudios/Z-Image-GodPussy — text-to-image",
-          "url": "https://huggingface.co/ofcstudios/Z-Image-GodPussy",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-05T11:32:10+00:00",
-      "updatedAt": "2026-06-05T11:32:10+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "image-editing-safety",
-      "title_ar": "تحسين أمان تحرير الصور باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد استخدام أدوات تحرير الصور، تبرز الحاجة إلى أنظمة أمان أكثر فعالية. تطوير حلول تعتمد على الذكاء الاصطناعي يمكن أن يحسن من موثوقية هذه الأنظمة.",
-      "buyer_ar": "شركات وسائل التواصل الاجتماعي ومنصات المحتوى",
-      "sellable_product_ar": "نظام أمان متقدم لتحرير الصور يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تجربة النظام على مجموعة من الصور المعدلة",
-      "tools_ar": "نماذج التعلم العميق، أدوات تحرير الصور، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "2606.06140",
-        "2606.05172",
-        "2606.06242"
+        "huggingface_models:Praelatus/RikaSeto_D4DJ",
+        "huggingface_models:msalsas/alexa-lora",
+        "huggingface_models:LeFeujitif/sandbox"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement",
-          "url": "http://arxiv.org/abs/2606.06468v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
-          "url": "http://arxiv.org/abs/2606.06139v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Dream.exe: Can Video Generation Models Dream Executable Robot Manipulation?",
-          "url": "https://huggingface.co/papers/2606.04811",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "metaresearch/PapersRAG-1.5B — text-generation",
-          "url": "https://huggingface.co/metaresearch/PapersRAG-1.5B",
+          "title": "Praelatus/RikaSeto_D4DJ — text-to-image",
+          "url": "https://huggingface.co/Praelatus/RikaSeto_D4DJ",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ofcstudios/Z-Image-Turbo-NSFW — text-to-image",
-          "url": "https://huggingface.co/ofcstudios/Z-Image-Turbo-NSFW",
+          "title": "msalsas/alexa-lora — text-to-image",
+          "url": "https://huggingface.co/msalsas/alexa-lora",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ofcstudios/Z-Image-GodPussy — text-to-image",
-          "url": "https://huggingface.co/ofcstudios/Z-Image-GodPussy",
+          "title": "LeFeujitif/sandbox — text-to-image",
+          "url": "https://huggingface.co/LeFeujitif/sandbox",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -142,82 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-05T11:32:10+00:00",
-      "updatedAt": "2026-06-05T11:32:10+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "automated-theorem-proving",
-      "title_ar": "تطوير أدوات إثبات النظريات تلقائيًا",
-      "thesis_ar": "تزايد الحاجة إلى أدوات إثبات النظريات في مجالات مثل الرياضيات وعلوم الحاسوب يفتح المجال لتطوير حلول جديدة. هذه الأدوات يمكن أن تسهل العمل الأكاديمي والصناعي.",
-      "buyer_ar": "المؤسسات الأكاديمية وشركات البرمجيات",
-      "sellable_product_ar": "أداة إثبات نظريات تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لحل مسائل رياضية بسيطة",
-      "tools_ar": "Lean 4، نماذج الذكاء الاصطناعي، واجهات المستخدم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "2606.06468",
-        "2606.06061",
-        "2606.05608"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement",
-          "url": "http://arxiv.org/abs/2606.06468v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
-          "url": "http://arxiv.org/abs/2606.06139v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Dream.exe: Can Video Generation Models Dream Executable Robot Manipulation?",
-          "url": "https://huggingface.co/papers/2606.04811",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "metaresearch/PapersRAG-1.5B — text-generation",
-          "url": "https://huggingface.co/metaresearch/PapersRAG-1.5B",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ofcstudios/Z-Image-Turbo-NSFW — text-to-image",
-          "url": "https://huggingface.co/ofcstudios/Z-Image-Turbo-NSFW",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ofcstudios/Z-Image-GodPussy — text-to-image",
-          "url": "https://huggingface.co/ofcstudios/Z-Image-GodPussy",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-05T11:32:10+00:00",
-      "updatedAt": "2026-06-05T11:32:10+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-06-05T14:43:17+00:00",
+      "updatedAt": "2026-06-05T14:43:17+00:00",
+      "sortOrder": 0
     }
   ],
-  "tiered_at": "2026-06-05T11:32:10+00:00",
+  "tiered_at": "2026-06-05T14:43:17+00:00",
   "free_preview_count": 3
 }
