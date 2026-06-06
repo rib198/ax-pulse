@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-06T02:23:10+00:00",
+  "run_at": "2026-06-06T06:51:32+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,20 +26,20 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 995.142,
+      "duration_s": 22.667,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 260 signals from 31 source families",
-        "14 source errors (non-fatal)"
+        "collected 350 signals from 31 source families",
+        "6 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.011,
       "written": [],
       "notes": [
         "injected 487 manual X items (skipped 13 of 500, avg score 0.159)"
@@ -49,13 +49,13 @@
     {
       "agent": "evidence_guard",
       "ok": true,
-      "duration_s": 0.003,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 747 items",
-        "by tier: press=520, official=167, research=31, community=29"
+        "tagged 837 items",
+        "by tier: press=520, official=166, research=125, community=26"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.027,
+      "duration_s": 0.031,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 747 items, top priority=0.509"
+        "ranked 837 items, top priority=0.509"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.014,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 16 companies, 16 products this run",
+        "detected 16 companies, 17 products this run",
         "store size: 42"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.046,
+      "duration_s": 0.067,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.111,
+      "duration_s": 0.152,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "11 events (4 new)",
-        "by type: pricing_change=3, model_release=6, personnel_move=1, acquisition=1"
+        "20 events (9 new)",
+        "by type: pricing_change=3, model_release=9, personnel_move=2, policy_signal=4, acquisition=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.018,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 10.847,
+      "duration_s": 8.227,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 9.837,
+      "duration_s": 11.061,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.008,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.472,
+      "duration_s": 6.871,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=747, opps=3, calls=3"
+        "items=837, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.809,
+      "duration_s": 2.227,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهد النشاط في الإشارات انخفاضًا ملحوظًا، حيث تراجعت الإشارات بمقدار 92 إشارة مق…"
+        "insight via openai: لاحظنا زيادة ملحوظة في النشاط العام حيث ارتفعت الإشارات بمقدار 90 إشارة مقارنة …"
       ],
       "error": null
     },
