@@ -1,28 +1,37 @@
 {
-  "generated_at": "2026-06-06T23:01:57+00:00",
+  "generated_at": "2026-06-07T02:35:02+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 733,
+  "corpus_count": 835,
   "opportunities": [
     {
-      "id": "automated-network-configuration",
-      "title_ar": "أتمتة تكوين الشبكات باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على الشبكات الذكية يتطلب حلولاً لأتمتة تكوين الشبكات. استخدام نماذج اللغة الكبيرة يمكن أن يحسن من دقة وسرعة تكوين الشبكات.",
-      "buyer_ar": "شركات الاتصالات ومزودي خدمات الإنترنت",
-      "sellable_product_ar": "نظام أتمتة تكوين الشبكات",
-      "first_paid_test_ar": "تقديم نموذج أولي لأتمتة تكوين شبكة صغيرة",
-      "tools_ar": "نماذج اللغة الكبيرة، أدوات الشبكات، منصات الاختبار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "2606.06212v1",
-        "2606.06188v1",
-        "2606.06061v1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.45,
+      "id": "ai_income_tools",
+      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
+      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
+      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
+      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
+      "capital_ar": "منخفض",
+      "signal_count": 8,
+      "avg_score": 0.47,
+      "confidence": 0.84,
+      "source": "rules",
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
+          "url": "https://huggingface.co/papers/2606.06492",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "The Road Ahead in Autonomous Driving: The KITScenes Multimodal Dataset",
+          "url": "https://huggingface.co/papers/2606.02956",
+          "score": 0.474,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement",
@@ -38,6 +47,93 @@
           "trust_tier": "research"
         },
         {
+          "source_id": "huggingface_models",
+          "title": "Youssofal/Qwen3.5-9B-MTPLX-Optimized-Speed-FP16 — text-generation",
+          "url": "https://huggingface.co/Youssofal/Qwen3.5-9B-MTPLX-Optimized-Speed-FP16",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Youssofal/Qwen3.5-9B-MTPLX-Optimized-Speed — text-generation",
+          "url": "https://huggingface.co/Youssofal/Qwen3.5-9B-MTPLX-Optimized-Speed",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Dream.exe: Can Video Generation Models Dream Executable Robot Manipulation?",
+          "url": "https://huggingface.co/papers/2606.04811",
+          "score": 0.463,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "github_repos",
+          "title": "weizhiqiang1995/erp-pro",
+          "url": "https://github.com/weizhiqiang1995/erp-pro",
+          "score": 0.461,
+          "trust_tier": "community"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-07T02:35:02+00:00",
+      "updatedAt": "2026-06-07T02:35:02+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "ai_income_automation",
+      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
+      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
+      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
+      "tools_ar": "n8n أو Make، API، نموذج AI",
+      "capital_ar": "منخفض",
+      "signal_count": 8,
+      "avg_score": 0.45,
+      "confidence": 0.84,
+      "source": "rules",
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement",
+          "url": "http://arxiv.org/abs/2606.06468v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Benchmark Everything Everywhere All at Once",
+          "url": "https://huggingface.co/papers/2606.06462",
+          "score": 0.46,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Data Flow Control: Data Safety Policies for AI Agents",
+          "url": "http://arxiv.org/abs/2606.05679v1",
+          "score": 0.458,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AURA: Intent-Directed Probing for Implicit-Need Surfacing in Situated LLM Agents",
+          "url": "https://huggingface.co/papers/2606.05557",
+          "score": 0.447,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Entropy-Based Evaluation of AI Agents: A Lightweight Framework for Measuring Behavioral Patterns",
+          "url": "http://arxiv.org/abs/2606.05872v1",
+          "score": 0.446,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "arxiv_papers",
           "title": "RedEdit: Agentic Red-Teaming of Image Safety Classifiers via MCTS-Guided Photo-Editing",
           "url": "http://arxiv.org/abs/2606.06140v1",
@@ -46,22 +142,15 @@
         },
         {
           "source_id": "arxiv_papers",
-          "title": "A Conversational Framework for Human-Robot Collaborative Manipulation with Distributed Generative AI models",
-          "url": "http://arxiv.org/abs/2606.06061v1",
+          "title": "CollabSim: A CSCW-Grounded Methodology for Investigating Collaborative Competence of LLM Agents through Controlled Multi-Agent Experiments",
+          "url": "http://arxiv.org/abs/2606.06399v1",
           "score": 0.446,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Benchmarking Open-Source Layout Detection Models for Data Snapshot Extraction from Institutional Documents",
-          "url": "http://arxiv.org/abs/2606.06242v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "LongSpace: Exploring Long-Horizon Spatial Memory from Perception to Recall in Video",
-          "url": "http://arxiv.org/abs/2606.05677v1",
+          "title": "Towards Healthy Evolution: Exploring the Role and Mechanisms of Human-Agent Interaction in Self-Evolving Systems",
+          "url": "http://arxiv.org/abs/2606.06114v1",
           "score": 0.446,
           "trust_tier": "research"
         }
@@ -71,107 +160,24 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-06T23:01:57+00:00",
-      "updatedAt": "2026-06-06T23:01:57+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "data-extraction-from-documents",
-      "title_ar": "استخراج البيانات من الوثائق المؤسسية",
-      "thesis_ar": "تحتوي الوثائق المؤسسية على معلومات قيمة تتطلب تقنيات متقدمة لاستخراجها. تطوير نماذج قادرة على تحليل المحتوى المرئي يمكن أن يحسن من كفاءة العمل.",
-      "buyer_ar": "الهيئات الحكومية والشركات الكبرى",
-      "sellable_product_ar": "نظام استخراج البيانات من الوثائق",
-      "first_paid_test_ar": "تطوير نموذج لاستخراج البيانات من نوع محدد من الوثائق",
-      "tools_ar": "نماذج التعلم العميق، أدوات معالجة النصوص، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "2606.06242v1",
-        "2606.06089v1",
-        "2606.06114v1"
-      ],
-      "confidence": 0.65,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.45,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement",
-          "url": "http://arxiv.org/abs/2606.06468v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
-          "url": "http://arxiv.org/abs/2606.06139v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "RedEdit: Agentic Red-Teaming of Image Safety Classifiers via MCTS-Guided Photo-Editing",
-          "url": "http://arxiv.org/abs/2606.06140v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "A Conversational Framework for Human-Robot Collaborative Manipulation with Distributed Generative AI models",
-          "url": "http://arxiv.org/abs/2606.06061v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Benchmarking Open-Source Layout Detection Models for Data Snapshot Extraction from Institutional Documents",
-          "url": "http://arxiv.org/abs/2606.06242v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "LongSpace: Exploring Long-Horizon Spatial Memory from Perception to Recall in Video",
-          "url": "http://arxiv.org/abs/2606.05677v1",
-          "score": 0.446,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-06T23:01:57+00:00",
-      "updatedAt": "2026-06-06T23:01:57+00:00",
+      "publishedAt": "2026-06-07T02:35:02+00:00",
+      "updatedAt": "2026-06-07T02:35:02+00:00",
       "sortOrder": 1
     },
     {
-      "id": "generative-ai-in-education",
-      "title_ar": "استخدام الذكاء الاصطناعي التوليدي في التعليم",
-      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في التعليم يوفر فرصًا لتحسين تجربة التعلم. يمكن أن يساعد في توجيه الطلاب نحو أساليب تعلم أكثر فعالية.",
-      "buyer_ar": "المؤسسات التعليمية والجامعات",
-      "sellable_product_ar": "نظام تعليم ذكي مدعوم بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم ورشة عمل تجريبية للمعلمين حول استخدام النظام",
-      "tools_ar": "نماذج الذكاء الاصطناعي، منصات التعليم الإلكتروني، أدوات تحليل البيانات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "2606.05510v1",
-        "2606.06114v1",
-        "2606.06004v1"
-      ],
-      "confidence": 0.6,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.45,
+      "id": "ai_income_content",
+      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
+      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
+      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
+      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
+      "capital_ar": "بدون رأس مال",
+      "signal_count": 8,
+      "avg_score": 0.47,
+      "confidence": 0.84,
+      "source": "rules",
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement",
-          "url": "http://arxiv.org/abs/2606.06468v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
         {
           "source_id": "arxiv_papers",
           "title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
@@ -180,44 +186,145 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "RedEdit: Agentic Red-Teaming of Image Safety Classifiers via MCTS-Guided Photo-Editing",
-          "url": "http://arxiv.org/abs/2606.06140v1",
-          "score": 0.446,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED — text-generation",
+          "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "A Conversational Framework for Human-Robot Collaborative Manipulation with Distributed Generative AI models",
-          "url": "http://arxiv.org/abs/2606.06061v1",
-          "score": 0.446,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "knowledgator/retrico-lm-4b-grpo-v5-merged — text-generation",
+          "url": "https://huggingface.co/knowledgator/retrico-lm-4b-grpo-v5-merged",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Benchmarking Open-Source Layout Detection Models for Data Snapshot Extraction from Institutional Documents",
-          "url": "http://arxiv.org/abs/2606.06242v1",
-          "score": 0.446,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "aprotoss/gemma-4-12B — any-to-any",
+          "url": "https://huggingface.co/aprotoss/gemma-4-12B",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "LongSpace: Exploring Long-Horizon Spatial Memory from Perception to Recall in Video",
-          "url": "http://arxiv.org/abs/2606.05677v1",
-          "score": 0.446,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "SaketR1/uncertainty-sft — image-text-to-text",
+          "url": "https://huggingface.co/SaketR1/uncertainty-sft",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "senaro/atlas-trm10-gemma4-26b — image-text-to-text",
+          "url": "https://huggingface.co/senaro/atlas-trm10-gemma4-26b",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "forkjoin-ai/qwen2.5-vl-3b-instruct-gguf — image-text-to-text",
+          "url": "https://huggingface.co/forkjoin-ai/qwen2.5-vl-3b-instruct-gguf",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Nekochu/gemma-4-31B-it-qat-bnb-4bit — image-text-to-text",
+          "url": "https://huggingface.co/Nekochu/gemma-4-31B-it-qat-bnb-4bit",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-06T23:01:57+00:00",
-      "updatedAt": "2026-06-06T23:01:57+00:00",
+      "publishedAt": "2026-06-07T02:35:02+00:00",
+      "updatedAt": "2026-06-07T02:35:02+00:00",
       "sortOrder": 2
+    },
+    {
+      "id": "ai_income_services",
+      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
+      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
+      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
+      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
+      "capital_ar": "بدون رأس مال",
+      "signal_count": 8,
+      "avg_score": 0.4,
+      "confidence": 0.83,
+      "source": "rules",
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "The End of Software Engineering: How AI Agents Are Fundamentally Restructuring the Software Paradigm",
+          "url": "http://arxiv.org/abs/2606.05608v1",
+          "score": 0.436,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DAST: A VLM-LLM Framework for Cross-Interface Anomaly Detection in O-RAN",
+          "url": "http://arxiv.org/abs/2606.06261v1",
+          "score": 0.42,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals",
+          "url": "http://arxiv.org/abs/2606.06460v1",
+          "score": 0.398,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "OneReason Technical Report",
+          "url": "http://arxiv.org/abs/2606.06260v1",
+          "score": 0.398,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Human Adults and LLMs as Scientists: Who Benefits from Active Exploration?",
+          "url": "http://arxiv.org/abs/2606.06464v1",
+          "score": 0.398,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "github_repos",
+          "title": "gd1133/ai-sniper-bybit-v5-master",
+          "url": "https://github.com/gd1133/ai-sniper-bybit-v5-master",
+          "score": 0.395,
+          "trust_tier": "community"
+        },
+        {
+          "source_id": "openai_news",
+          "title": "MUFG aims to become AI-native with OpenAI",
+          "url": "https://openai.com/index/mufg",
+          "score": 0.395,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "github_repos",
+          "title": "mpgrowmiller-bit/serveus",
+          "url": "https://github.com/mpgrowmiller-bit/serveus",
+          "score": 0.395,
+          "trust_tier": "community"
+        }
+      ],
+      "tier": "premium",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-07T02:35:02+00:00",
+      "updatedAt": "2026-06-07T02:35:02+00:00",
+      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-06-06T23:01:57+00:00",
+  "tiered_at": "2026-06-07T02:35:02+00:00",
   "free_preview_count": 3
 }
