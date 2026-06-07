@@ -1,130 +1,46 @@
 {
-  "generated_at": "2026-06-07T17:09:28+00:00",
+  "generated_at": "2026-06-07T19:10:01+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 830,
+  "corpus_count": 837,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يعكس الحاجة المتزايدة للإبداع الرقمي. يمكن استغلال هذه الفرصة من خلال تطوير نماذج مخصصة تلبي احتياجات السوق المحلي.",
-      "buyer_ar": "المصممين، وكالات الإعلانات، والشركات الناشئة في مجال التكنولوجيا",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لمشروع تصميم صغير",
-      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الاهتمام بنماذج توليد النصوص يعكس الحاجة المتزايدة للأدوات الذكية في السوق. يمكن استغلال هذه النماذج لتلبية احتياجات الشركات في مجالات متعددة مثل التسويق والمحتوى.",
+      "buyer_ar": "شركات التكنولوجيا، وكالات التسويق، المؤسسات التعليمية",
+      "sellable_product_ar": "خدمات تطوير نماذج توليد النصوص المخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص تسويقية",
+      "tools_ar": "Hugging Face، PyTorch، TensorFlow",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Rand000mGuy/carol",
-        "huggingface_models:ijaaddd/qwen",
-        "huggingface_models:Rand000mGuy/helena-klein"
+        "huggingface_models:continker/Qwen3.5-27B-metro-v23",
+        "huggingface_models:dimitarpg13/semsimula-fock-attention",
+        "huggingface_models:khairi/Eshmun-0.3B-CPT"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Rand000mGuy/carol — text-to-image",
-          "url": "https://huggingface.co/Rand000mGuy/carol",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ijaaddd/qwen — text-to-image",
-          "url": "https://huggingface.co/ijaaddd/qwen",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Rand000mGuy/helena-klein — text-to-image",
-          "url": "https://huggingface.co/Rand000mGuy/helena-klein",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-07T17:09:28+00:00",
-      "updatedAt": "2026-06-07T17:09:28+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "autonomous-driving-dataset",
-      "title_ar": "تطوير مجموعة بيانات للقيادة الذاتية",
-      "thesis_ar": "تزايد الاستثمارات في تقنيات القيادة الذاتية يتطلب بيانات عالية الجودة. تطوير مجموعة بيانات محلية يمكن أن يلبي احتياجات الشركات الناشئة في هذا المجال.",
-      "buyer_ar": "شركات السيارات، ومراكز البحث والتطوير",
-      "sellable_product_ar": "مجموعة بيانات للقيادة الذاتية مع دقة عالية",
-      "first_paid_test_ar": "تقديم عينة من البيانات لمشروع بحثي",
-      "tools_ar": "أدوات جمع البيانات، خوادم تخزين البيانات، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.02956",
-        "huggingface_daily_papers:2606.06492"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
-          "url": "https://huggingface.co/papers/2606.06492",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Road Ahead in Autonomous Driving: The KITScenes Multimodal Dataset",
-          "url": "https://huggingface.co/papers/2606.02956",
-          "score": 0.474,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-07T17:09:28+00:00",
-      "updatedAt": "2026-06-07T17:09:28+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "formal-theorem-proving",
-      "title_ar": "تطوير أدوات لإثبات النظريات بشكل رسمي",
-      "thesis_ar": "تزايد الحاجة إلى أدوات تسهل إثبات النظريات في مجالات متعددة. يمكن تطوير أدوات تعتمد على الأبحاث الحديثة لتلبية هذه الحاجة.",
-      "buyer_ar": "الجامعات، مراكز البحث، والشركات التقنية",
-      "sellable_product_ar": "أداة لإثبات النظريات بشكل رسمي",
-      "first_paid_test_ar": "تقديم نموذج أولي لمشكلة بسيطة",
-      "tools_ar": "أدوات البرمجة، مكتبات رياضية، بيئات تطوير البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2606.06468v1",
-        "huggingface_models:ahmed-3m/qwen25-1.5b-gsm8k-sdpo-final"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement",
-          "url": "http://arxiv.org/abs/2606.06468v1",
-          "score": 0.468,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "continker/Qwen3.5-27B-metro-v23 — text-generation",
+          "url": "https://huggingface.co/continker/Qwen3.5-27B-metro-v23",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ahmed-3m/qwen25-1.5b-gsm8k-sdpo-final — text-generation",
-          "url": "https://huggingface.co/ahmed-3m/qwen25-1.5b-gsm8k-sdpo-final",
+          "title": "dimitarpg13/semsimula-fock-attention — text-generation",
+          "url": "https://huggingface.co/dimitarpg13/semsimula-fock-attention",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "khairi/Eshmun-0.3B-CPT — text-generation",
+          "url": "https://huggingface.co/khairi/Eshmun-0.3B-CPT",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -134,11 +50,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-07T17:09:28+00:00",
-      "updatedAt": "2026-06-07T17:09:28+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-06-07T19:10:01+00:00",
+      "updatedAt": "2026-06-07T19:10:01+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في الإعلانات والفنون الرقمية يشير إلى فرصة كبيرة. يمكن تقديم حلول مبتكرة في هذا المجال لتلبية احتياجات السوق.",
+      "buyer_ar": "شركات الإعلانات، الفنانين الرقميين، وكالات التصميم",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص إلى صور إبداعية",
+      "tools_ar": "Hugging Face، OpenAI، Diffusers",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Patrickorno/Ayla_1600",
+        "huggingface_models:Kimmekheu/NyraVoryn_epoch10",
+        "huggingface_models:DeverStyle/Ideogram-4.0-Loras"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Patrickorno/Ayla_1600 — text-to-image",
+          "url": "https://huggingface.co/Patrickorno/Ayla_1600",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Kimmekheu/NyraVoryn_epoch10 — text-to-image",
+          "url": "https://huggingface.co/Kimmekheu/NyraVoryn_epoch10",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "DeverStyle/Ideogram-4.0-Loras — text-to-image",
+          "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-07T19:10:01+00:00",
+      "updatedAt": "2026-06-07T19:10:01+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-06-07T17:09:28+00:00",
+  "tiered_at": "2026-06-07T19:10:01+00:00",
   "free_preview_count": 3
 }
