@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-07T02:35:02+00:00",
+  "run_at": "2026-06-07T07:51:45+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 61.633,
+      "duration_s": 19.596,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.012,
       "written": [],
       "notes": [
         "injected 487 manual X items (skipped 13 of 500, avg score 0.159)"
@@ -55,7 +55,7 @@
       ],
       "notes": [
         "tagged 835 items",
-        "by tier: press=516, official=166, research=125, community=28"
+        "by tier: press=516, official=167, research=125, community=27"
       ],
       "error": null
     },
@@ -84,12 +84,12 @@
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 16 companies, 18 products this run",
+        "detected 16 companies, 17 products this run",
         "store size: 42"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.066,
+      "duration_s": 0.067,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+2 new model events",
+        "+0 new model events",
         "264 total"
       ],
       "error": null
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.151,
+      "duration_s": 0.152,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "20 events (6 new)",
+        "20 events (0 new)",
         "by type: pricing_change=3, model_release=9, personnel_move=2, policy_signal=4, acquisition=2"
       ],
       "error": null
@@ -123,7 +123,7 @@
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.018,
+      "duration_s": 0.017,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,20 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 7.92,
+      "duration_s": 9.338,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 0 opportunities",
-        "rule fallback produced 4 opportunities"
+        "openai produced 3 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.573,
+      "duration_s": 9.176,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -161,13 +160,13 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 1 premium",
+        "opps: 3 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -189,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.748,
+      "duration_s": 9.361,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -218,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=835, opps=4, calls=3"
+        "items=835, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.699,
+      "duration_s": 2.391,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في نشاط الإصدارات، مع تركيز خاص على نماذج جديد…"
+        "insight via openai: تزايد النشاط في تغيير الأسعار يبرز أهمية المنافسة في السوق، مع التركيز على إعلا…"
       ],
       "error": null
     },
