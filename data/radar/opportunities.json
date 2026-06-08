@@ -1,78 +1,35 @@
 {
-  "generated_at": "2026-06-07T22:59:05+00:00",
+  "generated_at": "2026-06-08T02:39:00+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 831,
+  "corpus_count": 816,
   "opportunities": [
     {
-      "id": "code-language-models-adapters",
-      "title_ar": "تطوير محولات للغات البرمجة",
-      "thesis_ar": "تزايد الحاجة إلى نماذج لغات برمجة تتكيف مع سياقات المستودعات. هذه فرصة لتقديم حلول مبتكرة لتحسين أداء نماذج البرمجة الحالية.",
-      "buyer_ar": "شركات تطوير البرمجيات",
-      "sellable_product_ar": "محولات مخصصة لنماذج لغات البرمجة",
-      "first_paid_test_ar": "تقديم نموذج أولي لمحول يعمل على مشروع برمجي صغير",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج تعلم الآلة، بيئات اختبار البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.06492",
-        "huggingface_models:cds-jb/codi_qwen3-8b-answer_only",
-        "huggingface_models:Andrefty/qwen3-4b-vuln-sft-research"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
-          "url": "https://huggingface.co/papers/2606.06492",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "cds-jb/codi_qwen3-8b-answer_only — text-generation",
-          "url": "https://huggingface.co/cds-jb/codi_qwen3-8b-answer_only",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Andrefty/qwen3-4b-vuln-sft-research — text-generation",
-          "url": "https://huggingface.co/Andrefty/qwen3-4b-vuln-sft-research",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-07T22:59:05+00:00",
-      "updatedAt": "2026-06-07T22:59:05+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-generation",
-      "title_ar": "تطوير نماذج توليد الصور من النص",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النصوص إلى صور في مجالات متعددة مثل التسويق والفنون. هذه فرصة لتقديم حلول مبتكرة في هذا المجال.",
-      "buyer_ar": "وكالات التسويق والشركات الإبداعية",
-      "sellable_product_ar": "نموذج توليد صور مخصص من نصوص",
-      "first_paid_test_ar": "تقديم نموذج توليد صورة من نصوص محددة مقابل أجر",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات توليد الصور، بيئات اختبار",
+      "id": "text-to-image-generators",
+      "title_ar": "مولدات الصور من النصوص",
+      "thesis_ar": "تزايد الطلب على محتوى مرئي فريد من نوعه. يمكن لمولدات الصور من النصوص أن تلبي احتياجات التسويق والإعلانات بشكل فعال.",
+      "buyer_ar": "وكالات التسويق والإعلانات",
+      "sellable_product_ar": "خدمات توليد صور مخصصة من نصوص",
+      "first_paid_test_ar": "تقديم مجموعة من الصور المولدة بناءً على نصوص محددة",
+      "tools_ar": "نموذج توليد الصور، واجهة مستخدم، خادم استضافة",
       "capital_ar": "منخفض",
       "evidence_ids": [
+        "huggingface_models:zhezhejj/JasminBliss",
         "huggingface_models:jeremyhola/LORAs",
-        "huggingface_models:cdvine5248/donna-summer-model-tgif-1978",
-        "huggingface_models:DeverStyle/Ideogram-4.0-Loras"
+        "huggingface_models:cdvine5248/donna-summer-model-tgif-1978"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "zhezhejj/JasminBliss — text-to-image",
+          "url": "https://huggingface.co/zhezhejj/JasminBliss",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "jeremyhola/LORAs — text-to-image",
@@ -86,13 +43,6 @@
           "url": "https://huggingface.co/cdvine5248/donna-summer-model-tgif-1978",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "DeverStyle/Ideogram-4.0-Loras — text-to-image",
-          "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,23 +50,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-07T22:59:05+00:00",
-      "updatedAt": "2026-06-07T22:59:05+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-06-08T02:39:00+00:00",
+      "updatedAt": "2026-06-08T02:39:00+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "multilingual-text-generation",
-      "title_ar": "تطوير نماذج توليد نصوص متعددة اللغات",
-      "thesis_ar": "تزايد الحاجة إلى نماذج توليد نصوص تدعم لغات متعددة، مما يفتح المجال أمام فرص جديدة في السوق العربي.",
-      "buyer_ar": "شركات الترجمة ومزودي المحتوى",
-      "sellable_product_ar": "نموذج توليد نصوص متعدد اللغات",
-      "first_paid_test_ar": "تقديم نموذج توليد نصوص بلغة واحدة مقابل أجر",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة اللغة الطبيعية، بيئات اختبار",
-      "capital_ar": "منخفض",
+      "id": "multimodal-ai-solutions-for-solar-energy",
+      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط للطاقة الشمسية",
+      "thesis_ar": "تزايد الاهتمام بالطاقة المتجددة، وخاصة الطاقة الشمسية. يمكن للذكاء الاصطناعي تحسين كفاءة استخدام الطاقة الشمسية من خلال حلول متعددة الوسائط.",
+      "buyer_ar": "شركات الطاقة المتجددة",
+      "sellable_product_ar": "أنظمة ذكاء اصطناعي لتحليل بيانات الطاقة الشمسية",
+      "first_paid_test_ar": "تقديم تقرير تحليل بيانات طاقة شمسية باستخدام نموذج ذكاء اصطناعي",
+      "tools_ar": "نموذج ذكاء اصطناعي، بيانات الطاقة، واجهة مستخدم",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:alinawazmahar/mt5-sindhi-qa-sdquad",
-        "huggingface_models:dogukanvzr/Kumru-2B-Thinking-v2.0",
-        "huggingface_models:khairi/Eshmun-0.3B-CPT"
+        "huggingface_models:Truthseeker87/solarhive-e4b-cactus",
+        "huggingface_models:Truthseeker87/solarhive-e4b-gguf",
+        "huggingface_models:Truthseeker87/solarhive-e4b-lora"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -125,22 +75,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "dogukanvzr/Kumru-2B-Thinking-v2.0 — text-generation",
-          "url": "https://huggingface.co/dogukanvzr/Kumru-2B-Thinking-v2.0",
+          "title": "Truthseeker87/solarhive-e4b-cactus — image-text-to-text",
+          "url": "https://huggingface.co/Truthseeker87/solarhive-e4b-cactus",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "khairi/Eshmun-0.3B-CPT — text-generation",
-          "url": "https://huggingface.co/khairi/Eshmun-0.3B-CPT",
+          "title": "Truthseeker87/solarhive-e4b-gguf — image-text-to-text",
+          "url": "https://huggingface.co/Truthseeker87/solarhive-e4b-gguf",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "alinawazmahar/mt5-sindhi-qa-sdquad — text-generation",
-          "url": "https://huggingface.co/alinawazmahar/mt5-sindhi-qa-sdquad",
+          "title": "Truthseeker87/solarhive-e4b-lora — image-text-to-text",
+          "url": "https://huggingface.co/Truthseeker87/solarhive-e4b-lora",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-07T22:59:05+00:00",
-      "updatedAt": "2026-06-07T22:59:05+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-06-08T02:39:00+00:00",
+      "updatedAt": "2026-06-08T02:39:00+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-06-07T22:59:05+00:00",
+  "tiered_at": "2026-06-08T02:39:00+00:00",
   "free_preview_count": 3
 }
