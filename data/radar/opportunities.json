@@ -1,21 +1,121 @@
 {
-  "generated_at": "2026-06-08T21:56:21+00:00",
+  "generated_at": "2026-06-08T23:12:28+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 842,
   "opportunities": [
     {
-      "id": "genomic-models-evaluation",
-      "title_ar": "تطوير معايير تقييم نماذج الجينوم",
-      "thesis_ar": "توجد حاجة ملحة لتطوير معايير موحدة لتقييم نماذج الجينوم بسبب التحديات الحالية في المقارنة. هذا يوفر فرصة لتقديم حلول تقييم فعالة تساهم في تحسين الأبحاث في هذا المجال.",
-      "buyer_ar": "مراكز الأبحاث والمؤسسات الأكاديمية",
-      "sellable_product_ar": "أداة تقييم نماذج الجينوم",
-      "first_paid_test_ar": "تقديم اختبار تقييم لنموذج جينوم واحد مقابل رسوم",
-      "tools_ar": "أدوات تحليل البيانات، منصات التعلم الآلي، واجهات برمجة التطبيقات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يعكس حاجة السوق للابتكار في هذا المجال. التحديثات المستمرة على نماذج مثل Stable Diffusion تشير إلى فرص جديدة في التطبيقات الإبداعية.",
+      "buyer_ar": "شركات الإعلانات والتسويق، المطورون المستقلون",
+      "sellable_product_ar": "خدمات تصميم صور مخصصة باستخدام نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم تصميم صورة واحدة بناءً على نص محدد مقابل رسوم رمزية",
+      "tools_ar": "نماذج Hugging Face، أدوات تصميم جرافيكي، منصة تسويق",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Muapi/omg-is-duchaiten-lora-fixes-everything-sdxl",
+        "huggingface_models:Muapi/raiden-mei-sd1.5-xl-pony",
+        "huggingface_models:Muapi/blacklight-makeup-sdxl-lora"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/omg-is-duchaiten-lora-fixes-everything-sdxl — text-to-image",
+          "url": "https://huggingface.co/Muapi/omg-is-duchaiten-lora-fixes-everything-sdxl",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/raiden-mei-sd1.5-xl-pony — text-to-image",
+          "url": "https://huggingface.co/Muapi/raiden-mei-sd1.5-xl-pony",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Muapi/blacklight-makeup-sdxl-lora — text-to-image",
+          "url": "https://huggingface.co/Muapi/blacklight-makeup-sdxl-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-08T23:12:28+00:00",
+      "updatedAt": "2026-06-08T23:12:28+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "agricultural-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي للزراعة",
+      "thesis_ar": "تزايد الاهتمام بالزراعة الذكية يعكس حاجة السوق لحلول مبتكرة. نماذج مثل AgroguardAI تشير إلى إمكانية تحسين الإنتاجية الزراعية باستخدام الذكاء الاصطناعي.",
+      "buyer_ar": "المزارعون، الشركات الزراعية، الحكومات",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات الزراعية وتقديم توصيات",
+      "first_paid_test_ar": "تقديم تحليل بيانات زراعية لمزرعة واحدة مقابل رسوم",
+      "tools_ar": "نماذج Hugging Face، أدوات تحليل البيانات، منصة زراعية",
       "capital_ar": "متوسط",
       "evidence_ids": [
+        "huggingface_models:AgroguardAI/clm-agricultural-gpt2-lora",
         "huggingface_daily_papers:2606.04525",
+        "huggingface_daily_papers:2606.04291"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "GENEB: Why Genomic Models Are Hard to Compare",
+          "url": "https://huggingface.co/papers/2606.04525",
+          "score": 0.507,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "A Cookbook of 3D Vision: Data, Learning Paradigms, and Application",
+          "url": "https://huggingface.co/papers/2606.04291",
+          "score": 0.484,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AgroguardAI/clm-agricultural-gpt2-lora — text-generation",
+          "url": "https://huggingface.co/AgroguardAI/clm-agricultural-gpt2-lora",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-08T23:12:28+00:00",
+      "updatedAt": "2026-06-08T23:12:28+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "multimodal-evaluation-benchmarks",
+      "title_ar": "تطوير معايير تقييم متعددة الوسائط",
+      "thesis_ar": "الحاجة إلى معايير تقييم موثوقة لنماذج الرؤية واللغة تفتح المجال لتطوير أدوات جديدة. تقدم الأبحاث الحالية فرصًا لتقديم حلول تقييم فعالة.",
+      "buyer_ar": "مراكز البحث، الجامعات، الشركات التقنية",
+      "sellable_product_ar": "أدوات تقييم لنماذج الذكاء الاصطناعي متعددة الوسائط",
+      "first_paid_test_ar": "تقديم تقييم لنموذج واحد مقابل رسوم",
+      "tools_ar": "أدوات تحليل البيانات، نماذج Hugging Face، منصة بحث",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
         "huggingface_daily_papers:2606.05531",
+        "huggingface_daily_papers:2606.04525",
         "huggingface_daily_papers:2606.04291"
       ],
       "confidence": 0.7,
@@ -50,111 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-08T21:56:21+00:00",
-      "updatedAt": "2026-06-08T21:56:21+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multimodal-evaluation-benchmark",
-      "title_ar": "إنشاء معايير تقييم متعددة الوسائط",
-      "thesis_ar": "تفتقر نماذج الرؤية واللغة إلى معايير تقييم موثوقة، مما يعيق التقدم في هذا المجال. إنشاء معيار تقييم يمكن أن يعزز من فعالية هذه النماذج.",
-      "buyer_ar": "شركات التكنولوجيا والبحث العلمي",
-      "sellable_product_ar": "منصة تقييم متعددة الوسائط",
-      "first_paid_test_ar": "تقديم تقييم لنموذج واحد باستخدام المعايير الجديدة",
-      "tools_ar": "أدوات تحليل البيانات، منصات التعلم الآلي، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.05531",
-        "huggingface_daily_papers:2606.04291",
-        "huggingface_daily_papers:2606.04525"
-      ],
-      "confidence": 0.65,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "GENEB: Why Genomic Models Are Hard to Compare",
-          "url": "https://huggingface.co/papers/2606.04525",
-          "score": 0.507,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models",
-          "url": "https://huggingface.co/papers/2606.05531",
-          "score": 0.487,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "A Cookbook of 3D Vision: Data, Learning Paradigms, and Application",
-          "url": "https://huggingface.co/papers/2606.04291",
-          "score": 0.484,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-08T21:56:21+00:00",
-      "updatedAt": "2026-06-08T21:56:21+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-innovation",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة بسبب الاستخدام المتزايد في التسويق والإعلانات. هذا يوفر فرصة لتطوير نماذج جديدة تلبي احتياجات السوق.",
-      "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج تحويل نص إلى صورة لمشروع تجريبي",
-      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:liming518/FluxAnoTrex",
-        "huggingface_models:absolutize/flux.2-9b-lora",
-        "huggingface_models:GlurpRain/CatKitty212"
-      ],
-      "confidence": 0.6,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "liming518/FluxAnoTrex — text-to-image",
-          "url": "https://huggingface.co/liming518/FluxAnoTrex",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "absolutize/flux.2-9b-lora — text-to-image",
-          "url": "https://huggingface.co/absolutize/flux.2-9b-lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "GlurpRain/CatKitty212 — text-to-image",
-          "url": "https://huggingface.co/GlurpRain/CatKitty212",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-08T21:56:21+00:00",
-      "updatedAt": "2026-06-08T21:56:21+00:00",
+      "publishedAt": "2026-06-08T23:12:28+00:00",
+      "updatedAt": "2026-06-08T23:12:28+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-08T21:56:21+00:00",
+  "tiered_at": "2026-06-08T23:12:28+00:00",
   "free_preview_count": 3
 }
