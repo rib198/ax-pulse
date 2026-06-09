@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-09T14:27:47+00:00",
+  "run_at": "2026-06-09T17:57:38+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 25.017,
+      "duration_s": 20.176,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 366 signals from 31 source families",
+        "collected 359 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -42,7 +42,7 @@
       "duration_s": 0.011,
       "written": [],
       "notes": [
-        "injected 487 manual X items (skipped 13 of 500, avg score 0.159)"
+        "injected 486 manual X items (skipped 14 of 500, avg score 0.158)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 853 items",
-        "by tier: press=522, official=166, research=125, community=40"
+        "tagged 845 items",
+        "by tier: press=520, official=165, research=124, community=36"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.033,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 853 items, top priority=0.527"
+        "ranked 845 items, top priority=0.521"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 16 companies, 16 products this run",
+        "detected 16 companies, 17 products this run",
         "store size: 42"
       ],
       "error": null
@@ -102,21 +102,21 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
-        "287 total"
+        "+1 new model events",
+        "288 total"
       ],
       "error": null
     },
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.151,
+      "duration_s": 0.149,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "17 events (1 new)",
-        "by type: pricing_change=4, model_release=9, policy_signal=1, personnel_move=1, acquisition=2"
+        "18 events (1 new)",
+        "by type: pricing_change=4, model_release=10, personnel_move=1, acquisition=2, policy_signal=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 14.8,
+      "duration_s": 9.584,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 14.735,
+      "duration_s": 10.457,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 10.923,
+      "duration_s": 10.95,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=853, opps=3, calls=3"
+        "items=845, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.848,
+      "duration_s": 2.868,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: يظهر نشاط متزايد في إصدار النماذج هذا الأسبوع، مع تركيز على نماذج GPT وGemini، …"
+        "insight via openai: لوحظ تزايد في نشاط الإصدارات في مجال نماذج الذكاء الاصطناعي، حيث تم إصدار 5 نما…"
       ],
       "error": null
     },
