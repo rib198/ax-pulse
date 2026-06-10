@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-09T23:14:59+00:00",
+  "run_at": "2026-06-10T02:15:27+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 24.358,
+      "duration_s": 23.068,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 361 signals from 31 source families",
+        "collected 360 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -42,7 +42,7 @@
       "duration_s": 0.011,
       "written": [],
       "notes": [
-        "injected 486 manual X items (skipped 14 of 500, avg score 0.158)"
+        "injected 486 manual X items (skipped 14 of 500, avg score 0.135)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 847 items",
-        "by tier: press=518, official=168, research=124, community=37"
+        "tagged 846 items",
+        "by tier: press=518, official=170, research=123, community=35"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 847 items, top priority=0.509"
+        "ranked 846 items, top priority=0.510"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 17 companies, 16 products this run",
+        "detected 14 companies, 14 products this run",
         "store size: 42"
       ],
       "error": null
@@ -102,8 +102,8 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+1 new model events",
-        "290 total"
+        "+22 new model events",
+        "300 total"
       ],
       "error": null
     },
@@ -115,15 +115,15 @@
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "16 events (1 new)",
-        "by type: pricing_change=4, model_release=9, acquisition=2, policy_signal=1"
+        "26 events (18 new)",
+        "by type: model_release=15, pricing_change=3, acquisition=4, policy_signal=3, personnel_move=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.018,
+      "duration_s": 0.019,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 12.655,
+      "duration_s": 12.875,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 15.909,
+      "duration_s": 11.798,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.337,
+      "duration_s": 9.888,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.004,
+      "duration_s": 0.005,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=847, opps=3, calls=3"
+        "items=846, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.776,
+      "duration_s": 1.995,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط في الإصدارات يشير إلى تركيز ملحوظ على نماذج الذكاء الاصطناعي، حيث …"
+        "insight via openai: لاحظنا زيادة في نشاط الإصدارات مع تركيز ملحوظ على أنثروبيك، حيث تم إصدار نموذجي…"
       ],
       "error": null
     },
