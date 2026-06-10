@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-10T14:55:35+00:00",
+  "generated_at": "2026-06-10T18:29:09+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 833,
+  "corpus_count": 838,
   "opportunities": [
     {
-      "id": "long-video-understanding",
-      "title_ar": "تحسين فهم الفيديوهات الطويلة",
-      "thesis_ar": "تزايد استخدام الفيديوهات الطويلة في التعليم والترفيه. هناك حاجة ملحة لنماذج قادرة على معالجة هذه الفيديوهات بشكل فعال.",
-      "buyer_ar": "شركات إنتاج المحتوى، منصات التعليم الإلكتروني",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل الفيديوهات الطويلة",
-      "first_paid_test_ar": "تقديم تحليل فيديو طويل كمثال",
-      "tools_ar": "نموذج لغة كبير، أدوات معالجة الفيديو، واجهة برمجة التطبيقات",
+      "id": "video-understanding-solutions",
+      "title_ar": "حلول لفهم الفيديوهات الطويلة",
+      "thesis_ar": "تواجه نماذج الرؤية واللغة تحديات كبيرة في معالجة الفيديوهات الطويلة. يمكن تطوير حلول تعتمد على تقنيات جديدة مثل MemDreamer وKwai Keye-VL-2.0 لتحسين الفهم والتفاعل مع المحتوى المرئي.",
+      "buyer_ar": "شركات الإعلام والترفيه، منصات التعليم الإلكتروني",
+      "sellable_product_ar": "نظام لتحليل وفهم الفيديوهات الطويلة باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل مقطع فيديو طويل وتقديم تقرير حوله",
+      "tools_ar": "نموذج ذكاء اصطناعي، منصة تحليل بيانات، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2606.07512",
         "huggingface_daily_papers:2606.10651",
-        "arxiv_papers:2606.11070"
+        "huggingface_daily_papers:2606.05922"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -36,6 +36,13 @@
           "url": "https://huggingface.co/papers/2606.10651",
           "score": 0.492,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Retrospective Harness Optimization: Improving LLM Agents via Self-Preference over Trajectory Rollouts",
+          "url": "https://huggingface.co/papers/2606.05922",
+          "score": 0.489,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -43,11 +50,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-10T14:55:35+00:00",
-      "updatedAt": "2026-06-10T14:55:35+00:00",
+      "publishedAt": "2026-06-10T18:29:09+00:00",
+      "updatedAt": "2026-06-10T18:29:09+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "ai-writing-tutoring",
+      "title_ar": "توجيه الكتابة باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تقديم ملاحظات كتابية عالية الجودة للباحثين الجدد يعد أمرًا حيويًا. يمكن استخدام PaperMentor لتطوير نظام توجيه كتابي يعتمد على الذكاء الاصطناعي لتحسين جودة الأبحاث.",
+      "buyer_ar": "الجامعات، مراكز البحث، المنصات التعليمية",
+      "sellable_product_ar": "نظام توجيه كتابي ذكي لتحسين الأبحاث الأكاديمية",
+      "first_paid_test_ar": "تقديم خدمة توجيه كتابي لعدد محدود من الباحثين مقابل رسوم",
+      "tools_ar": "نموذج ذكاء اصطناعي، منصة توجيه، واجهة مستخدم",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.08857",
+        "huggingface_daily_papers:2606.09707",
+        "huggingface_daily_papers:2606.10651"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Kwai Keye-VL-2.0 Technical Report",
+          "url": "https://huggingface.co/papers/2606.10651",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "BrainSurgery: Reproducible and Reliable Declarative Weight Manipulations for Model Editing and Upcycling",
+          "url": "https://huggingface.co/papers/2606.09707",
+          "score": 0.476,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PaperMentor: A Human-Centered Multi-Agent Writing Tutor for AI Research Papers on Overleaf",
+          "url": "https://huggingface.co/papers/2606.08857",
+          "score": 0.474,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-10T18:29:09+00:00",
+      "updatedAt": "2026-06-10T18:29:09+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-06-10T14:55:35+00:00",
+  "tiered_at": "2026-06-10T18:29:09+00:00",
   "free_preview_count": 3
 }
