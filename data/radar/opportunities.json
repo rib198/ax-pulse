@@ -1,147 +1,40 @@
 {
-  "generated_at": "2026-06-10T08:04:50+00:00",
+  "generated_at": "2026-06-10T11:43:56+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 841,
   "opportunities": [
     {
-      "id": "data-journalist-agent",
-      "title_ar": "تحويل البيانات إلى قصص متعددة الوسائط",
-      "thesis_ar": "تزايد الحاجة إلى تقارير موثوقة وسريعة من البيانات. يمكن أن توفر أدوات الذكاء الاصطناعي حلاً فعالًا لتحويل البيانات إلى قصص مفهومة.",
-      "buyer_ar": "وسائل الإعلام، وكالات الأخبار، الشركات التي تعتمد على البيانات",
-      "sellable_product_ar": "أداة لتحليل البيانات وتحويلها إلى محتوى صحفي",
-      "first_paid_test_ar": "تقديم تقرير تجريبي يعتمد على بيانات حقيقية",
-      "tools_ar": "نموذج لغة كبير، أدوات تحليل البيانات، واجهة مستخدم بسيطة",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.11176",
-        "huggingface_daily_papers:2606.05922",
-        "huggingface_daily_papers:2606.09707"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
-          "url": "https://huggingface.co/papers/2606.11176",
-          "score": 0.507,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Retrospective Harness Optimization: Improving LLM Agents via Self-Preference over Trajectory Rollouts",
-          "url": "https://huggingface.co/papers/2606.05922",
-          "score": 0.485,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "BrainSurgery: Reproducible and Reliable Declarative Weight Manipulations for Model Editing and Upcycling",
-          "url": "https://huggingface.co/papers/2606.09707",
-          "score": 0.483,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-10T08:04:50+00:00",
-      "updatedAt": "2026-06-10T08:04:50+00:00",
-      "sortOrder": 0
-    },
-    {
       "id": "long-video-understanding",
-      "title_ar": "تحليل الفيديوهات الطويلة باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام الفيديوهات الطويلة في التعليم والترفيه يتطلب أدوات فعالة لفهمها. يمكن أن تساعد نماذج الذكاء الاصطناعي في معالجة هذه التحديات.",
-      "buyer_ar": "شركات الإنتاج، منصات التعليم، وكالات الإعلان",
-      "sellable_product_ar": "أداة لتحليل الفيديوهات الطويلة واستخراج المعلومات الرئيسية",
-      "first_paid_test_ar": "تحليل فيديو طويل وتقديم ملخص",
-      "tools_ar": "نموذج لغة كبير، أدوات تحليل الفيديو، واجهة مستخدم",
+      "title_ar": "تحسين فهم الفيديوهات الطويلة باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد المحتوى المرئي، هناك حاجة ملحة لفهم الفيديوهات الطويلة بشكل فعال. تقنيات جديدة مثل MemDreamer وKwai Keye-VL-2.0 تقدم حلولاً مبتكرة لهذه المشكلة.",
+      "buyer_ar": "شركات الإنتاج الإعلامي، منصات الفيديو، وكالات الإعلان",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لفهم وتحليل الفيديوهات الطويلة",
+      "first_paid_test_ar": "تقديم تحليل لفيديو طويل باستخدام النموذج المقترح",
+      "tools_ar": "نموذج ذكاء اصطناعي، أدوات معالجة الفيديو، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2606.07512",
-        "arxiv_papers:2606.11070v1",
-        "arxiv_papers:2606.10803v1"
+        "huggingface_daily_papers:2606.10651",
+        "arxiv_papers:2606.11070"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 2,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism",
           "url": "https://huggingface.co/papers/2606.07512",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains",
-          "url": "http://arxiv.org/abs/2606.11070v1",
-          "score": 0.482,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Beyond APIs: Probing the Limits of MLLMs in Physical Tool Use",
-          "url": "http://arxiv.org/abs/2606.10803v1",
-          "score": 0.482,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-10T08:04:50+00:00",
-      "updatedAt": "2026-06-10T08:04:50+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "reinforcement-learning-optimization",
-      "title_ar": "تحسين التعلم المعزز للذكاء الاصطناعي",
-      "thesis_ar": "تطوير نماذج ذكاء اصطناعي أكثر كفاءة يتطلب تحسين أساليب التعلم. يمكن أن توفر أدوات جديدة تحسينات كبيرة في الأداء.",
-      "buyer_ar": "شركات التكنولوجيا، مراكز البحث والتطوير",
-      "sellable_product_ar": "أداة لتحسين خوارزميات التعلم المعزز",
-      "first_paid_test_ar": "تجربة تحسين خوارزمية على نموذج موجود",
-      "tools_ar": "خوارزميات التعلم المعزز، أدوات تحليل الأداء، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2606.11119v1",
-        "arxiv_papers:2606.10989v1",
-        "huggingface_daily_papers:2606.09730"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Null-Space Constrained Low-Rank Adaptation for Response-Specified Large Language Model Unlearning",
-          "url": "http://arxiv.org/abs/2606.10989v1",
-          "score": 0.504,
+          "score": 0.518,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "SearchSwarm: Towards Delegation Intelligence in Agentic LLMs for Long-Horizon Deep Research",
-          "url": "https://huggingface.co/papers/2606.09730",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement Learning",
-          "url": "http://arxiv.org/abs/2606.11119v1",
-          "score": 0.494,
+          "title": "Kwai Keye-VL-2.0 Technical Report",
+          "url": "https://huggingface.co/papers/2606.10651",
+          "score": 0.516,
           "trust_tier": "research"
         }
       ],
@@ -150,11 +43,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-10T08:04:50+00:00",
-      "updatedAt": "2026-06-10T08:04:50+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-06-10T11:43:56+00:00",
+      "updatedAt": "2026-06-10T11:43:56+00:00",
+      "sortOrder": 0
     }
   ],
-  "tiered_at": "2026-06-10T08:04:50+00:00",
+  "tiered_at": "2026-06-10T11:43:56+00:00",
   "free_preview_count": 3
 }
