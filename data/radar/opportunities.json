@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-11T20:14:21+00:00",
+  "generated_at": "2026-06-11T23:19:23+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 833,
+  "corpus_count": 847,
   "opportunities": [
     {
       "id": "smart-city-cybersecurity",
-      "title_ar": "تحسين أمان المدن الذكية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على الأنظمة المتصلة في المدن الذكية يزيد من مخاطر الأمن السيبراني. يمكن استخدام الذكاء الاصطناعي لتوليد مجموعات بيانات اصطناعية لتحسين الأمان وتحليل المخاطر.",
-      "buyer_ar": "الجهات الحكومية والمطورون في مجال المدن الذكية",
-      "sellable_product_ar": "حلول ذكاء اصطناعي لتحليل البيانات الأمنية وتوليد بيانات اصطناعية",
-      "first_paid_test_ar": "تطوير نموذج أولي لتحليل بيانات الأمن السيبراني في مدينة ذكية معينة",
+      "title_ar": "تحسين الأمن السيبراني للمدن الذكية",
+      "thesis_ar": "تزايد الاعتماد على الأنظمة السيبرانية في المدن الذكية يبرز الحاجة إلى حلول أمنية متقدمة. استخدام الذكاء الاصطناعي لتوليد مجموعات بيانات اصطناعية يمكن أن يعزز من فعالية هذه الحلول.",
+      "buyer_ar": "الهيئات الحكومية والمطورون في مجال المدن الذكية",
+      "sellable_product_ar": "حلول أمن سيبراني تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل بيانات الأمن السيبراني",
       "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، منصات السحابة",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2606.12225v1",
-        "huggingface_daily_papers:2606.12385",
-        "huggingface_daily_papers:2606.11119"
+        "2606.12225v1",
+        "2606.12385",
+        "2606.11119"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -38,9 +38,30 @@
           "trust_tier": "research"
         },
         {
+          "source_id": "huggingface_daily_papers",
+          "title": "τ-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
+          "url": "https://huggingface.co/papers/2606.10156",
+          "score": 0.474,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
+          "url": "http://arxiv.org/abs/2606.11145v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "arxiv_papers",
           "title": "Bridging the Smart City Cybersecurity Data Gap Through AI-Driven Synthetic Dataset Generation",
           "url": "http://arxiv.org/abs/2606.12225v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
+          "url": "http://arxiv.org/abs/2606.12086v1",
           "score": 0.472,
           "trust_tier": "research"
         }
@@ -50,29 +71,36 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-11T20:14:21+00:00",
-      "updatedAt": "2026-06-11T20:14:21+00:00",
+      "publishedAt": "2026-06-11T23:19:23+00:00",
+      "updatedAt": "2026-06-11T23:19:23+00:00",
       "sortOrder": 0
     },
     {
-      "id": "agentic-reinforcement-learning",
-      "title_ar": "تطوير أنظمة تعلم معزز Agentic",
-      "thesis_ar": "تزايد الاهتمام بتطبيقات التعلم المعزز في نماذج اللغة الكبيرة يوفر فرصة لإنشاء أنظمة قادرة على التعلم الذاتي. هذا يمكن أن يحسن من أداء الأنظمة في مهام معقدة.",
-      "buyer_ar": "شركات التكنولوجيا والبحث العلمي",
-      "sellable_product_ar": "أنظمة تعلم معزز تعتمد على الذكاء الاصطناعي لتحسين الأداء في التطبيقات المختلفة",
-      "first_paid_test_ar": "تطوير نموذج أولي لاختبار فعالية نظام تعلم معزز في بيئة محددة",
-      "tools_ar": "أدوات البرمجة، مكتبات التعلم الآلي، منصات السحابة",
-      "capital_ar": "متوسط",
+      "id": "agentic-recommender-systems",
+      "title_ar": "تطوير أنظمة توصية تعتمد على الذكاء الاصطناعي",
+      "thesis_ar": "التحول نحو واجهات حوارية متعددة الأدوار يتطلب نماذج تقييم جديدة. تحسين أنظمة التوصية يمكن أن يحقق تجربة مستخدم أفضل.",
+      "buyer_ar": "شركات التجارة الإلكترونية وتطبيقات المحتوى",
+      "sellable_product_ar": "أنظمة توصية ذكية تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تجربة نظام توصية على مجموعة محدودة من المستخدمين",
+      "tools_ar": "نموذج ذكاء اصطناعي، بيانات المستخدمين، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.11119",
-        "huggingface_daily_papers:2606.03108",
-        "arxiv_papers:2606.11863v1"
+        "2606.10156",
+        "2606.11119",
+        "2606.11854"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Which Models Are Our Models Built On? Auditing Invisible Dependencies in Modern LLMs",
+          "url": "https://huggingface.co/papers/2606.12385",
+          "score": 0.503,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement Learning",
@@ -81,17 +109,31 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Enhancing LLM-Based Code Translation with Verified Multi-Semantic Representations",
-          "url": "http://arxiv.org/abs/2606.11863v1",
-          "score": 0.465,
+          "source_id": "huggingface_daily_papers",
+          "title": "τ-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
+          "url": "https://huggingface.co/papers/2606.10156",
+          "score": 0.474,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "EvoTrainer: Co-Evolving LLM Policies and Training Harnesses for Autonomous Agentic Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2606.03108",
-          "score": 0.453,
+          "source_id": "arxiv_papers",
+          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
+          "url": "http://arxiv.org/abs/2606.11145v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Bridging the Smart City Cybersecurity Data Gap Through AI-Driven Synthetic Dataset Generation",
+          "url": "http://arxiv.org/abs/2606.12225v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
+          "url": "http://arxiv.org/abs/2606.12086v1",
+          "score": 0.472,
           "trust_tier": "research"
         }
       ],
@@ -100,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-11T20:14:21+00:00",
-      "updatedAt": "2026-06-11T20:14:21+00:00",
+      "publishedAt": "2026-06-11T23:19:23+00:00",
+      "updatedAt": "2026-06-11T23:19:23+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "llm-code-translation",
+      "title_ar": "تحسين ترجمة الأكواد باستخدام نماذج الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة لترجمة الأكواد بشكل دقيق يعزز من أهمية نماذج الذكاء الاصطناعي. استخدام تمثيلات متعددة المعاني يمكن أن يحسن من جودة الترجمة.",
+      "buyer_ar": "شركات تطوير البرمجيات والمطورون المستقلون",
+      "sellable_product_ar": "أداة ترجمة أكواد تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لترجمة أكواد بلغة برمجة محددة",
+      "tools_ar": "نموذج ذكاء اصطناعي، مكتبات برمجية، بيانات تدريب",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2606.11863",
+        "2606.11119",
+        "2606.12385"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Which Models Are Our Models Built On? Auditing Invisible Dependencies in Modern LLMs",
+          "url": "https://huggingface.co/papers/2606.12385",
+          "score": 0.503,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement Learning",
+          "url": "https://huggingface.co/papers/2606.11119",
+          "score": 0.487,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "τ-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
+          "url": "https://huggingface.co/papers/2606.10156",
+          "score": 0.474,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
+          "url": "http://arxiv.org/abs/2606.11145v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Bridging the Smart City Cybersecurity Data Gap Through AI-Driven Synthetic Dataset Generation",
+          "url": "http://arxiv.org/abs/2606.12225v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
+          "url": "http://arxiv.org/abs/2606.12086v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-11T23:19:23+00:00",
+      "updatedAt": "2026-06-11T23:19:23+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-11T20:14:21+00:00",
+  "tiered_at": "2026-06-11T23:19:23+00:00",
   "free_preview_count": 3
 }
