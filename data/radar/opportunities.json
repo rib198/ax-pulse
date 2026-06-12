@@ -1,69 +1,69 @@
 {
-  "generated_at": "2026-06-12T12:53:59+00:00",
+  "generated_at": "2026-06-12T16:43:40+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 846,
+  "corpus_count": 842,
   "opportunities": [
     {
-      "id": "multi-agent-healthcare-reasoning",
-      "title_ar": "إطار عمل متعدد الوكلاء للتفكير الطبي متعدد الوسائط",
-      "thesis_ar": "تظهر النماذج متعددة الوسائط قدرات واعدة في التفكير، لكن أدائها محدود في المجالات المتخصصة مثل الرعاية الصحية. هناك حاجة ماسة لتطوير حلول مخصصة لتحسين هذه القدرات.",
-      "buyer_ar": "مستشفيات، عيادات، شركات تقنية في مجال الرعاية الصحية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات الطبية والتفاعل مع المرضى",
-      "first_paid_test_ar": "تطوير نموذج أولي لتحليل بيانات طبية محددة واختبار فعاليته",
-      "tools_ar": "نموذج لغوي متعدد الوسائط، أدوات تحليل البيانات، واجهات برمجة التطبيقات الصحية",
+      "id": "multimodal-medical-reasoning",
+      "title_ar": "إطار متعدد الوكلاء للتفكير الطبي متعدد الوسائط",
+      "thesis_ar": "تظهر نماذج اللغة متعددة الوسائط إمكانيات واعدة في مجالات متنوعة، لكن أدائها محدود في السياقات المتخصصة مثل الرعاية الصحية. مع تزايد الحاجة إلى حلول صحية متعددة اللغات، فإن تطوير هذا الإطار يمثل فرصة كبيرة.",
+      "buyer_ar": "مؤسسات الرعاية الصحية، شركات التكنولوجيا الصحية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات الطبية وتقديم الاستشارات",
+      "first_paid_test_ar": "تطبيق نموذج أولي لتحليل بيانات طبية حقيقية",
+      "tools_ar": "نماذج اللغة، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2606.13572v1",
-        "2606.13441v1",
-        "2606.13663v1"
+        "2606.13572",
+        "2606.07867",
+        "2606.13663"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.48,
+      "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+          "url": "https://huggingface.co/papers/2606.12451",
+          "score": 0.505,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
           "url": "http://arxiv.org/abs/2606.13608v1",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
-          "url": "http://arxiv.org/abs/2606.13411v1",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Why Sampling Is Not Choosing: Intentionality, Agency, and Moral Responsibility in Large Language Models",
-          "url": "http://arxiv.org/abs/2606.13441v1",
-          "score": 0.477,
+          "score": 0.504,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
           "url": "https://huggingface.co/papers/2606.12282",
-          "score": 0.474,
+          "score": 0.495,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "EvoBrowseComp: Benchmarking Search Agents on Evolving Knowledge",
-          "url": "https://huggingface.co/papers/2606.13120",
-          "score": 0.473,
+          "title": "MiniMax Sparse Attention",
+          "url": "https://huggingface.co/papers/2606.13392",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
-          "url": "http://arxiv.org/abs/2606.11145v1",
-          "score": 0.472,
+          "source_id": "huggingface_daily_papers",
+          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+          "url": "https://huggingface.co/papers/2606.11409",
+          "score": 0.488,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "usermma/Apodex-1.0-2B-SFT-MTP-mlx-8bit — text-generation",
+          "url": "https://huggingface.co/usermma/Apodex-1.0-2B-SFT-MTP-mlx-8bit",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,70 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-12T12:53:59+00:00",
-      "updatedAt": "2026-06-12T12:53:59+00:00",
+      "publishedAt": "2026-06-12T16:43:40+00:00",
+      "updatedAt": "2026-06-12T16:43:40+00:00",
       "sortOrder": 0
     },
     {
-      "id": "rumor-detection-algerian-dialect",
-      "title_ar": "نظام كشف الشائعات باللهجة الجزائرية",
-      "thesis_ar": "انتشار الشائعات عبر وسائل التواصل الاجتماعي يمثل تحديًا كبيرًا، خاصة في السياقات المحلية مثل اللهجة الجزائرية. تطوير نظام مخصص يمكن أن يساهم في تقليل هذه الظاهرة.",
-      "buyer_ar": "شركات الإعلام، الحكومات، منظمات المجتمع المدني",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لكشف الشائعات وتحليل المحتوى",
-      "first_paid_test_ar": "تطوير نموذج أولي لاختبار فعالية النظام على مجموعة بيانات محددة",
-      "tools_ar": "نموذج لغوي، أدوات معالجة اللغة الطبيعية، قاعدة بيانات للشائعات",
+      "id": "robustness-evaluation-llms",
+      "title_ar": "تقييم قوة نماذج اللغة الكبيرة",
+      "thesis_ar": "تقييم القوة ضد الهجمات يعد أمرًا حيويًا لتطوير نماذج أكثر أمانًا. مع تزايد استخدام نماذج اللغة الكبيرة، فإن تحسين قدرتها على مواجهة التحديات يمثل فرصة تجارية هامة.",
+      "buyer_ar": "شركات تطوير البرمجيات، مؤسسات الأبحاث",
+      "sellable_product_ar": "أدوات تقييم وتحليل قوة نماذج اللغة",
+      "first_paid_test_ar": "تقديم تقرير تقييم أولي لنموذج لغة محدد",
+      "tools_ar": "أدوات تحليل البيانات، نماذج اللغة، بيئات الاختبار",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.13411v1",
-        "2606.13663v1",
-        "2606.13598v1"
+        "2606.11409",
+        "2606.08063",
+        "2606.13598"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.48,
+      "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+          "url": "https://huggingface.co/papers/2606.12451",
+          "score": 0.505,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
           "url": "http://arxiv.org/abs/2606.13608v1",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
-          "url": "http://arxiv.org/abs/2606.13411v1",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Why Sampling Is Not Choosing: Intentionality, Agency, and Moral Responsibility in Large Language Models",
-          "url": "http://arxiv.org/abs/2606.13441v1",
-          "score": 0.477,
+          "score": 0.504,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
           "url": "https://huggingface.co/papers/2606.12282",
-          "score": 0.474,
+          "score": 0.495,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "EvoBrowseComp: Benchmarking Search Agents on Evolving Knowledge",
-          "url": "https://huggingface.co/papers/2606.13120",
-          "score": 0.473,
+          "title": "MiniMax Sparse Attention",
+          "url": "https://huggingface.co/papers/2606.13392",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
-          "url": "http://arxiv.org/abs/2606.11145v1",
-          "score": 0.472,
+          "source_id": "huggingface_daily_papers",
+          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+          "url": "https://huggingface.co/papers/2606.11409",
+          "score": 0.488,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "usermma/Apodex-1.0-2B-SFT-MTP-mlx-8bit — text-generation",
+          "url": "https://huggingface.co/usermma/Apodex-1.0-2B-SFT-MTP-mlx-8bit",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,70 +142,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-12T12:53:59+00:00",
-      "updatedAt": "2026-06-12T12:53:59+00:00",
+      "publishedAt": "2026-06-12T16:43:40+00:00",
+      "updatedAt": "2026-06-12T16:43:40+00:00",
       "sortOrder": 1
     },
     {
-      "id": "benchmarking-search-agents",
-      "title_ar": "تطوير معايير تقييم لوكلاء البحث",
-      "thesis_ar": "تزايد الحاجة إلى تقييم فعّال لوكلاء البحث المدعومين بالذكاء الاصطناعي، خاصة مع تطور النماذج الكبيرة. هناك فرصة لإنشاء معايير جديدة تواكب التغيرات السريعة.",
-      "buyer_ar": "شركات التكنولوجيا، مراكز البحث، الجامعات",
-      "sellable_product_ar": "أدوات تقييم وتحليل لوكلاء البحث",
-      "first_paid_test_ar": "تطوير معيار تقييم أولي واختباره على مجموعة من الوكلاء",
-      "tools_ar": "أدوات تحليل الأداء، نماذج لغوية، منصات اختبار",
+      "id": "tool-retrieval-optimization",
+      "title_ar": "تحسين استرجاع الأدوات في نماذج اللغة الكبيرة",
+      "thesis_ar": "تواجه نماذج اللغة الكبيرة تحديات في استرجاع الأدوات المتخصصة. تطوير حلول لتحسين هذه العملية يمكن أن يسهم في زيادة كفاءة الوكلاء الذكيين.",
+      "buyer_ar": "شركات التكنولوجيا، مطورون للذكاء الاصطناعي",
+      "sellable_product_ar": "نظام استرجاع أدوات محسّن لنماذج اللغة",
+      "first_paid_test_ar": "تطبيق نموذج استرجاع على مجموعة أدوات محددة",
+      "tools_ar": "نماذج اللغة، خوارزميات الاسترجاع، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2606.13120v1",
-        "2606.13572v1",
-        "2606.13681v1"
+        "2606.12451",
+        "2606.13608",
+        "2606.13572"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.48,
+      "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+          "url": "https://huggingface.co/papers/2606.12451",
+          "score": 0.505,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
           "url": "http://arxiv.org/abs/2606.13608v1",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
-          "url": "http://arxiv.org/abs/2606.13411v1",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Why Sampling Is Not Choosing: Intentionality, Agency, and Moral Responsibility in Large Language Models",
-          "url": "http://arxiv.org/abs/2606.13441v1",
-          "score": 0.477,
+          "score": 0.504,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
           "url": "https://huggingface.co/papers/2606.12282",
-          "score": 0.474,
+          "score": 0.495,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "EvoBrowseComp: Benchmarking Search Agents on Evolving Knowledge",
-          "url": "https://huggingface.co/papers/2606.13120",
-          "score": 0.473,
+          "title": "MiniMax Sparse Attention",
+          "url": "https://huggingface.co/papers/2606.13392",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
-          "url": "http://arxiv.org/abs/2606.11145v1",
-          "score": 0.472,
+          "source_id": "huggingface_daily_papers",
+          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+          "url": "https://huggingface.co/papers/2606.11409",
+          "score": 0.488,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "usermma/Apodex-1.0-2B-SFT-MTP-mlx-8bit — text-generation",
+          "url": "https://huggingface.co/usermma/Apodex-1.0-2B-SFT-MTP-mlx-8bit",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -213,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-12T12:53:59+00:00",
-      "updatedAt": "2026-06-12T12:53:59+00:00",
+      "publishedAt": "2026-06-12T16:43:40+00:00",
+      "updatedAt": "2026-06-12T16:43:40+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-12T12:53:59+00:00",
+  "tiered_at": "2026-06-12T16:43:40+00:00",
   "free_preview_count": 3
 }
