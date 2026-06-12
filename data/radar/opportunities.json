@@ -1,69 +1,41 @@
 {
-  "generated_at": "2026-06-11T23:19:23+00:00",
+  "generated_at": "2026-06-12T02:33:35+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 847,
+  "corpus_count": 846,
   "opportunities": [
     {
-      "id": "smart-city-cybersecurity",
-      "title_ar": "تحسين الأمن السيبراني للمدن الذكية",
-      "thesis_ar": "تزايد الاعتماد على الأنظمة السيبرانية في المدن الذكية يبرز الحاجة إلى حلول أمنية متقدمة. استخدام الذكاء الاصطناعي لتوليد مجموعات بيانات اصطناعية يمكن أن يعزز من فعالية هذه الحلول.",
-      "buyer_ar": "الهيئات الحكومية والمطورون في مجال المدن الذكية",
-      "sellable_product_ar": "حلول أمن سيبراني تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لتحليل بيانات الأمن السيبراني",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، منصات السحابة",
-      "capital_ar": "متوسط",
+      "id": "ai-cybersecurity-agents",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي للأمن السيبراني",
+      "thesis_ar": "تزايد الحاجة لحلول أمنية متقدمة بسبب تزايد التهديدات السيبرانية. يمكن لوكلاء الذكاء الاصطناعي مثل RavenX تحسين عمليات الاختبار والبحث عن الثغرات.",
+      "buyer_ar": "شركات الأمن السيبراني والمؤسسات الحكومية",
+      "sellable_product_ar": "نظام وكيل ذكاء اصطناعي لاكتشاف الثغرات الأمنية",
+      "first_paid_test_ar": "تقديم اختبار تجريبي للوكيل على نظام داخلي",
+      "tools_ar": "نموذج RavenX، أدوات اختبار الاختراق، بيئة اختبار آمنة",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.12225v1",
-        "2606.12385",
-        "2606.11119"
+        "huggingface_models:deadbydawn101/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-GGUF",
+        "huggingface_models:deadbydawn101/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-mlx",
+        "huggingface_daily_papers:2606.13608v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
+      "signal_count": 2,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Which Models Are Our Models Built On? Auditing Invisible Dependencies in Modern LLMs",
-          "url": "https://huggingface.co/papers/2606.12385",
-          "score": 0.503,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "deadbydawn101/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-GGUF — text-generation",
+          "url": "https://huggingface.co/deadbydawn101/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-GGUF",
+          "score": 0.509,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2606.11119",
-          "score": 0.487,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "τ-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
-          "url": "https://huggingface.co/papers/2606.10156",
-          "score": 0.474,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
-          "url": "http://arxiv.org/abs/2606.11145v1",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Bridging the Smart City Cybersecurity Data Gap Through AI-Driven Synthetic Dataset Generation",
-          "url": "http://arxiv.org/abs/2606.12225v1",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
-          "url": "http://arxiv.org/abs/2606.12086v1",
-          "score": 0.472,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "deadbydawn101/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-mlx — text-generation",
+          "url": "https://huggingface.co/deadbydawn101/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-mlx",
+          "score": 0.509,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,140 +43,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-11T23:19:23+00:00",
-      "updatedAt": "2026-06-11T23:19:23+00:00",
+      "publishedAt": "2026-06-12T02:33:35+00:00",
+      "updatedAt": "2026-06-12T02:33:35+00:00",
       "sortOrder": 0
     },
     {
-      "id": "agentic-recommender-systems",
-      "title_ar": "تطوير أنظمة توصية تعتمد على الذكاء الاصطناعي",
-      "thesis_ar": "التحول نحو واجهات حوارية متعددة الأدوار يتطلب نماذج تقييم جديدة. تحسين أنظمة التوصية يمكن أن يحقق تجربة مستخدم أفضل.",
-      "buyer_ar": "شركات التجارة الإلكترونية وتطبيقات المحتوى",
-      "sellable_product_ar": "أنظمة توصية ذكية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تجربة نظام توصية على مجموعة محدودة من المستخدمين",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيانات المستخدمين، واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "2606.10156",
-        "2606.11119",
-        "2606.11854"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Which Models Are Our Models Built On? Auditing Invisible Dependencies in Modern LLMs",
-          "url": "https://huggingface.co/papers/2606.12385",
-          "score": 0.503,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2606.11119",
-          "score": 0.487,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "τ-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
-          "url": "https://huggingface.co/papers/2606.10156",
-          "score": 0.474,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
-          "url": "http://arxiv.org/abs/2606.11145v1",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Bridging the Smart City Cybersecurity Data Gap Through AI-Driven Synthetic Dataset Generation",
-          "url": "http://arxiv.org/abs/2606.12225v1",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
-          "url": "http://arxiv.org/abs/2606.12086v1",
-          "score": 0.472,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-11T23:19:23+00:00",
-      "updatedAt": "2026-06-11T23:19:23+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "llm-code-translation",
-      "title_ar": "تحسين ترجمة الأكواد باستخدام نماذج الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة لترجمة الأكواد بشكل دقيق يعزز من أهمية نماذج الذكاء الاصطناعي. استخدام تمثيلات متعددة المعاني يمكن أن يحسن من جودة الترجمة.",
-      "buyer_ar": "شركات تطوير البرمجيات والمطورون المستقلون",
-      "sellable_product_ar": "أداة ترجمة أكواد تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لترجمة أكواد بلغة برمجة محددة",
-      "tools_ar": "نموذج ذكاء اصطناعي، مكتبات برمجية، بيانات تدريب",
+      "id": "rumor-detection-algorithm",
+      "title_ar": "تطوير خوارزمية للكشف عن الشائعات",
+      "thesis_ar": "انتشار الشائعات عبر وسائل التواصل الاجتماعي يتزايد، خاصة في اللهجات المحلية. تطوير خوارزمية للكشف عن الشائعات يمكن أن يحل هذه المشكلة.",
+      "buyer_ar": "شركات الإعلام ووسائل التواصل الاجتماعي",
+      "sellable_product_ar": "نظام كشف الشائعات يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل محتوى وسائل التواصل الاجتماعي",
+      "tools_ar": "نموذج كشف الشائعات، مجموعة بيانات محلية، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2606.11863",
-        "2606.11119",
-        "2606.12385"
+        "arxiv_papers:2606.13411v1",
+        "huggingface_daily_papers:2606.12385",
+        "huggingface_daily_papers:2606.13673"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
+          "url": "http://arxiv.org/abs/2606.13411v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Which Models Are Our Models Built On? Auditing Invisible Dependencies in Modern LLMs",
           "url": "https://huggingface.co/papers/2606.12385",
-          "score": 0.503,
+          "score": 0.492,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2606.11119",
-          "score": 0.487,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "τ-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
-          "url": "https://huggingface.co/papers/2606.10156",
-          "score": 0.474,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
-          "url": "http://arxiv.org/abs/2606.11145v1",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Bridging the Smart City Cybersecurity Data Gap Through AI-Driven Synthetic Dataset Generation",
-          "url": "http://arxiv.org/abs/2606.12225v1",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
-          "url": "http://arxiv.org/abs/2606.12086v1",
-          "score": 0.472,
+          "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
+          "url": "https://huggingface.co/papers/2606.13673",
+          "score": 0.489,
           "trust_tier": "research"
         }
       ],
@@ -213,11 +93,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-11T23:19:23+00:00",
-      "updatedAt": "2026-06-11T23:19:23+00:00",
+      "publishedAt": "2026-06-12T02:33:35+00:00",
+      "updatedAt": "2026-06-12T02:33:35+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "policy-optimization-tool",
+      "title_ar": "أداة لتحسين السياسات باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تحسين السياسات يحتاج إلى أدوات فعالة، والنماذج الحالية تواجه تحديات. تطوير أداة لتحسين السياسات يمكن أن يحقق نتائج أفضل.",
+      "buyer_ar": "شركات التكنولوجيا ومراكز البحث",
+      "sellable_product_ar": "أداة لتحسين السياسات تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار على مجموعة بيانات محددة",
+      "tools_ar": "نموذج N-GRPO، بيئة اختبار، أدوات تحليل البيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.10768",
+        "huggingface_daily_papers:2606.13673",
+        "huggingface_daily_papers:2606.13679"
+      ],
+      "confidence": 0.6,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "N-GRPO: Embedding-Level Neighbor Mixing for Enhanced Policy Optimization",
+          "url": "https://huggingface.co/papers/2606.10768",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
+          "url": "https://huggingface.co/papers/2606.13673",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
+          "url": "https://huggingface.co/papers/2606.13679",
+          "score": 0.489,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-12T02:33:35+00:00",
+      "updatedAt": "2026-06-12T02:33:35+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-11T23:19:23+00:00",
+  "tiered_at": "2026-06-12T02:33:35+00:00",
   "free_preview_count": 3
 }

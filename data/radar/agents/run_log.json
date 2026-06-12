@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-11T23:19:23+00:00",
+  "run_at": "2026-06-12T02:33:35+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 55.325,
+      "duration_s": 23.553,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 357 signals from 31 source families",
+        "collected 356 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -42,7 +42,7 @@
       "duration_s": 0.011,
       "written": [],
       "notes": [
-        "injected 490 manual X items (skipped 10 of 500, avg score 0.141)"
+        "injected 490 manual X items (skipped 10 of 500, avg score 0.143)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 847 items",
-        "by tier: press=519, official=170, research=119, community=39"
+        "tagged 846 items",
+        "by tier: press=518, official=169, research=128, community=31"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.033,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 847 items, top priority=0.503"
+        "ranked 846 items, top priority=0.584"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 14 products this run",
+        "detected 15 companies, 13 products this run",
         "store size: 44"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.066,
+      "duration_s": 0.071,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+5 new model events",
+        "+15 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.158,
+      "duration_s": 0.155,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "18 events (4 new)",
-        "by type: model_release=11, personnel_move=2, pricing_change=3, acquisition=2"
+        "18 events (12 new)",
+        "by type: model_release=13, pricing_change=2, acquisition=3"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 15.569,
+      "duration_s": 17.205,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 12.356,
+      "duration_s": 13.162,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.009,
+      "duration_s": 0.008,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 15.217,
+      "duration_s": 7.126,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=847, opps=3, calls=3"
+        "items=846, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.377,
+      "duration_s": 2.651,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تشير الزيادة في الإشارات إلى نشاط متزايد في تطوير النماذج، مع تركيز ملحوظ على إ…"
+        "insight via openai: لوحظ زيادة في النشاط حول الإصدارات الجديدة، حيث تم إصدار 5 نماذج جديدة في فترة …"
       ],
       "error": null
     },
