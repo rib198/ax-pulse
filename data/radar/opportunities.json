@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-12T21:28:51+00:00",
+  "generated_at": "2026-06-12T23:12:15+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 849,
+  "corpus_count": 848,
   "opportunities": [
     {
-      "id": "ai-tool-retrieval-audit",
-      "title_ar": "تطوير إطار تشخيصي لتدقيق المعرفة بالأدوات في نماذج اللغة الكبيرة",
-      "thesis_ar": "تواجه نماذج اللغة الكبيرة تحديات في استرجاع الأدوات المتخصصة. تطوير إطار تدقيق يمكن أن يحسن من فعالية استرجاع المعلومات ويعزز من أداء النماذج.",
-      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات الذكية",
-      "sellable_product_ar": "إطار تدقيق معرفي مخصص لتحسين استرجاع الأدوات",
-      "first_paid_test_ar": "تقديم نموذج أولي لإطار التدقيق مع مجموعة أدوات محددة",
-      "tools_ar": "أدوات تحليل البيانات، نماذج لغة كبيرة، بيئة تطوير برمجيات",
+      "id": "ai-medical-reasoning-framework",
+      "title_ar": "إطار عمل متعدد الوكلاء للتفكير الطبي باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة إلى حلول ذكية في القطاع الصحي، خاصة في السياقات متعددة اللغات. هذا الإطار يمكن أن يحسن من دقة التشخيصات الطبية ويعزز من الوصول إلى المعلومات الصحية.",
+      "buyer_ar": "المستشفيات والعيادات الطبية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات الطبية والتشخيص",
+      "first_paid_test_ar": "تقديم دراسة حالة لتحليل بيانات مرضى حقيقيين",
+      "tools_ar": "نموذج لغة متعدد الوسائط، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.12451",
-        "huggingface_daily_papers:2606.13572",
-        "huggingface_daily_papers:2606.07867"
+        "2606.13572",
+        "2606.11409",
+        "2606.07867"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
@@ -32,47 +32,11 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
-          "url": "https://huggingface.co/papers/2606.13572",
-          "score": 0.484,
+          "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
+          "url": "https://huggingface.co/papers/2606.12282",
+          "score": 0.495,
           "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Cold-Start Safety Gap in LLM Agents",
-          "url": "https://huggingface.co/papers/2606.07867",
-          "score": 0.483,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-12T21:28:51+00:00",
-      "updatedAt": "2026-06-12T21:28:51+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multimodal-medical-reasoning",
-      "title_ar": "إطار متعدد الوكلاء للتفكير الطبي متعدد الوسائط",
-      "thesis_ar": "تزايد الحاجة إلى حلول ذكاء اصطناعي في المجال الطبي، خاصة في البيئات متعددة اللغات. يمكن أن يساعد تطوير إطار مخصص في تحسين دقة التشخيصات.",
-      "buyer_ar": "المؤسسات الصحية والمستشفيات",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات الطبية متعددة الوسائط",
-      "first_paid_test_ar": "تجربة النظام على مجموعة بيانات طبية متعددة اللغات",
-      "tools_ar": "نموذج لغة كبير، أدوات تحليل البيانات، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.13572",
-        "huggingface_daily_papers:2606.11409",
-        "huggingface_daily_papers:2606.13608"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
-      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
@@ -81,11 +45,25 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
-          "url": "https://huggingface.co/papers/2606.13572",
-          "score": 0.484,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "AiAF/lightsource_PonyXL_lora — text-to-image",
+          "url": "https://huggingface.co/AiAF/lightsource_PonyXL_lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "DeverStyle/Ideogram-4.0-Loras — text-to-image",
+          "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "biali/sdv15_loras — text-to-image",
+          "url": "https://huggingface.co/biali/sdv15_loras",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,42 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-12T21:28:51+00:00",
-      "updatedAt": "2026-06-12T21:28:51+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-06-12T23:12:15+00:00",
+      "updatedAt": "2026-06-12T23:12:15+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "rumor-detection-framework",
-      "title_ar": "إطار للكشف عن الشائعات في اللهجات الجزائرية",
-      "thesis_ar": "تزايد الشائعات في وسائل التواصل الاجتماعي يتطلب حلولاً فعالة. تطوير إطار مخصص للكشف عن الشائعات باللهجات المحلية يمكن أن يقدم قيمة كبيرة.",
-      "buyer_ar": "شركات الإعلام ووسائل التواصل الاجتماعي",
-      "sellable_product_ar": "نظام للكشف عن الشائعات باللهجات الجزائرية",
-      "first_paid_test_ar": "تطبيق النظام على مجموعة بيانات من وسائل التواصل الاجتماعي",
-      "tools_ar": "نموذج لغة، أدوات تحليل نصوص، واجهة مستخدم",
+      "id": "text-to-image-diffusion-models",
+      "title_ar": "نماذج تحويل النص إلى صورة باستخدام تقنيات الانتشار",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي الفريد والمخصص في التسويق والإعلانات. يمكن أن توفر هذه النماذج حلولاً مبتكرة لإنشاء صور استنادًا إلى النصوص.",
+      "buyer_ar": "وكالات التسويق والإعلان",
+      "sellable_product_ar": "خدمة إنشاء صور مخصصة من نصوص باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لصورة مخصصة بناءً على نص محدد",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، أدوات التصميم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2606.13411",
-        "huggingface_daily_papers:2606.13572",
-        "huggingface_daily_papers:2606.07867"
+        "AiAF/lightsource_PonyXL_lora",
+        "DeverStyle/Ideogram-4.0-Loras",
+        "biali/sdv15_loras"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
-          "url": "https://huggingface.co/papers/2606.13572",
-          "score": 0.484,
+          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+          "url": "https://huggingface.co/papers/2606.12451",
+          "score": 0.505,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "The Cold-Start Safety Gap in LLM Agents",
-          "url": "https://huggingface.co/papers/2606.07867",
-          "score": 0.483,
+          "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
+          "url": "https://huggingface.co/papers/2606.12282",
+          "score": 0.495,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+          "url": "https://huggingface.co/papers/2606.11409",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AiAF/lightsource_PonyXL_lora — text-to-image",
+          "url": "https://huggingface.co/AiAF/lightsource_PonyXL_lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "DeverStyle/Ideogram-4.0-Loras — text-to-image",
+          "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "biali/sdv15_loras — text-to-image",
+          "url": "https://huggingface.co/biali/sdv15_loras",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -136,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-12T21:28:51+00:00",
-      "updatedAt": "2026-06-12T21:28:51+00:00",
+      "publishedAt": "2026-06-12T23:12:15+00:00",
+      "updatedAt": "2026-06-12T23:12:15+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "adversarial-robustness-evaluation",
+      "title_ar": "تقييم القوة ضد الهجمات في نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد التهديدات السيبرانية يتطلب نماذج لغوية أكثر أمانًا. يمكن أن يساعد هذا التقييم الشركات على تحسين أمان نماذجها.",
+      "buyer_ar": "شركات التكنولوجيا والأمن السيبراني",
+      "sellable_product_ar": "خدمة تقييم أمان نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تقرير تقييم أمان لنموذج لغة محدد",
+      "tools_ar": "أدوات تقييم الأمان، نماذج لغة كبيرة، أدوات تحليل البيانات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2606.11409",
+        "2606.07867",
+        "2606.13608"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+          "url": "https://huggingface.co/papers/2606.12451",
+          "score": 0.505,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
+          "url": "https://huggingface.co/papers/2606.12282",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+          "url": "https://huggingface.co/papers/2606.11409",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AiAF/lightsource_PonyXL_lora — text-to-image",
+          "url": "https://huggingface.co/AiAF/lightsource_PonyXL_lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "DeverStyle/Ideogram-4.0-Loras — text-to-image",
+          "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "biali/sdv15_loras — text-to-image",
+          "url": "https://huggingface.co/biali/sdv15_loras",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-12T23:12:15+00:00",
+      "updatedAt": "2026-06-12T23:12:15+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-12T21:28:51+00:00",
+  "tiered_at": "2026-06-12T23:12:15+00:00",
   "free_preview_count": 3
 }
