@@ -1,47 +1,97 @@
 {
-  "generated_at": "2026-06-13T10:26:08+00:00",
+  "generated_at": "2026-06-13T13:27:42+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 837,
+  "corpus_count": 840,
   "opportunities": [
     {
       "id": "text-to-image-models",
       "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يفتح المجال لإنشاء محتوى مرئي مبتكر. هذا الوقت مناسب للاستفادة من التحديثات الأخيرة في نماذج Hugging Face لتلبية احتياجات السوق المحلي.",
-      "buyer_ar": "شركات التسويق والإعلانات، والمصممين المستقلين",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لعميل محتمل",
-      "tools_ar": "Hugging Face, Python, TensorFlow",
-      "capital_ar": "متوسط",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يدفع الحاجة إلى نماذج تحويل النص إلى صورة. مع تحديثات مستمرة لنماذج مثل Llama وDiffusers، هناك فرصة كبيرة لتقديم خدمات تصميم مرئي مبتكرة.",
+      "buyer_ar": "شركات التسويق الرقمي والمصممين المستقلين",
+      "sellable_product_ar": "خدمات تصميم مرئي باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تصميم مرئي بسيط مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face, Diffusers, أدوات التصميم الجرافيكي",
+      "capital_ar": "بدون رأس مال",
       "evidence_ids": [
-        "huggingface_models:Rand000mGuy/gag",
-        "huggingface_models:Rand000mGuy/expressions",
-        "huggingface_models:Rand000mGuy/hannahseo"
+        "huggingface_models:Rand000mGuy/bittinglip",
+        "huggingface_models:suchenya/better-pony-diffusion-v6-for-sd-1-5-v5-75",
+        "huggingface_models:B4100/fluxplaytime"
       ],
       "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Rand000mGuy/bittinglip — text-to-image",
+          "url": "https://huggingface.co/Rand000mGuy/bittinglip",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "suchenya/better-pony-diffusion-v6-for-sd-1-5-v5-75 — text-to-image",
+          "url": "https://huggingface.co/suchenya/better-pony-diffusion-v6-for-sd-1-5-v5-75",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "B4100/fluxplaytime — text-to-image",
+          "url": "https://huggingface.co/B4100/fluxplaytime",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-13T13:27:42+00:00",
+      "updatedAt": "2026-06-13T13:27:42+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "arabic-language-processing",
+      "title_ar": "تطوير نماذج معالجة اللغة العربية",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في معالجة اللغة العربية يوفر فرصة لتطوير نماذج متخصصة. النمو السريع في المحتوى العربي على الإنترنت يتطلب أدوات فعالة لفهم وتحليل هذا المحتوى.",
+      "buyer_ar": "شركات التكنولوجيا التعليمية ووسائل الإعلام",
+      "sellable_product_ar": "نماذج معالجة اللغة العربية لتحليل النصوص",
+      "first_paid_test_ar": "تقديم نموذج تحليل نصوص بسيط باللغة العربية",
+      "tools_ar": "Hugging Face, نماذج معالجة اللغة, أدوات التحليل النصي",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:hayulalab/averroes-v2-instruct-v1.5-fused",
+        "huggingface_models:reaperdoesntknow/Symbiotic-1B",
+        "huggingface_models:reaperdoesntknow/Symbiotic-Beta"
+      ],
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Rand000mGuy/gag — text-to-image",
-          "url": "https://huggingface.co/Rand000mGuy/gag",
-          "score": 0.472,
+          "title": "hayulalab/averroes-v2-instruct-v1.5-fused — text-generation",
+          "url": "https://huggingface.co/hayulalab/averroes-v2-instruct-v1.5-fused",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Rand000mGuy/expressions — text-to-image",
-          "url": "https://huggingface.co/Rand000mGuy/expressions",
-          "score": 0.472,
+          "title": "reaperdoesntknow/Symbiotic-Beta — text-generation",
+          "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-Beta",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Rand000mGuy/hannahseo — text-to-image",
-          "url": "https://huggingface.co/Rand000mGuy/hannahseo",
-          "score": 0.472,
+          "title": "reaperdoesntknow/Symbiotic-1B — text-generation",
+          "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-1B",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -50,98 +100,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-13T10:26:08+00:00",
-      "updatedAt": "2026-06-13T10:26:08+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-06-13T13:27:42+00:00",
+      "updatedAt": "2026-06-13T13:27:42+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "rumor-detection-algorithm",
-      "title_ar": "تطوير خوارزمية للكشف عن الشائعات",
-      "thesis_ar": "مع تزايد الشائعات على وسائل التواصل الاجتماعي، هناك حاجة ملحة لتقنيات فعالة للكشف عنها. النمو في استخدام وسائل التواصل الاجتماعي في المنطقة يعزز من أهمية هذه الحلول.",
-      "buyer_ar": "شركات الإعلام، والجهات الحكومية، ومنصات التواصل الاجتماعي",
-      "sellable_product_ar": "خدمة تطوير خوارزمية للكشف عن الشائعات",
-      "first_paid_test_ar": "تقديم نموذج أولي للكشف عن الشائعات على منصة معينة",
-      "tools_ar": "Python, NLP, Scikit-learn",
+      "id": "rumor-detection-systems",
+      "title_ar": "تطوير أنظمة كشف الشائعات",
+      "thesis_ar": "مع تزايد الشائعات على وسائل التواصل الاجتماعي، هناك حاجة ملحة لتطوير أنظمة فعالة لكشف الشائعات. النموذج الهجين المقترح يمكن أن يقدم حلولًا مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات الإعلام ومراكز الأبحاث",
+      "sellable_product_ar": "أنظمة كشف الشائعات باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة كشف شائعة واحدة مقابل رسوم",
+      "tools_ar": "Hugging Face, أدوات تحليل البيانات, نماذج تعلم الآلة",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2606.13411v1",
-        "huggingface_daily_papers:2606.11409",
-        "huggingface_daily_papers:2606.12451"
+        "huggingface_models:reaperdoesntknow/Symbiotic-8B",
+        "huggingface_models:reaperdoesntknow/Symbiotic-14B"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.46,
+      "signal_count": 2,
+      "avg_score": 0.47,
       "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
-          "url": "https://huggingface.co/papers/2606.12451",
-          "score": 0.467,
-          "trust_tier": "research"
-        },
         {
           "source_id": "arxiv_papers",
           "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
           "url": "http://arxiv.org/abs/2606.13411v1",
-          "score": 0.465,
+          "score": 0.468,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
-          "url": "https://huggingface.co/papers/2606.11409",
-          "score": 0.448,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-13T10:26:08+00:00",
-      "updatedAt": "2026-06-13T10:26:08+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "custom-code-development",
-      "title_ar": "تطوير أكواد مخصصة باستخدام نماذج اللغة",
-      "thesis_ar": "تزايد الطلب على حلول برمجية مخصصة يعكس الحاجة إلى نماذج لغة متقدمة. تحديثات نماذج Hugging Face توفر فرصًا لتطوير أكواد تلبي احتياجات محددة.",
-      "buyer_ar": "شركات التكنولوجيا، والمطورين المستقلين",
-      "sellable_product_ar": "خدمة تطوير أكواد مخصصة باستخدام نماذج اللغة",
-      "first_paid_test_ar": "تطوير كود بسيط لحل مشكلة معينة لعميل محتمل",
-      "tools_ar": "Hugging Face, Python, Git",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:snnh/paddleocr_vl_code_ocr",
-        "huggingface_models:Tidecaller/BountyHunter-RedTeam",
-        "huggingface_models:Amhita/qwen3_8B_Darija_10k"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.45,
-      "evidence_items": [
-        {
           "source_id": "huggingface_models",
-          "title": "snnh/paddleocr_vl_code_ocr — image-text-to-text",
-          "url": "https://huggingface.co/snnh/paddleocr_vl_code_ocr",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Tidecaller/BountyHunter-RedTeam — text-generation",
-          "url": "https://huggingface.co/Tidecaller/BountyHunter-RedTeam",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Amhita/qwen3_8B_Darija_10k — text-generation",
-          "url": "https://huggingface.co/Amhita/qwen3_8B_Darija_10k",
-          "score": 0.447,
+          "title": "reaperdoesntknow/Symbiotic-8B — text-generation",
+          "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-8B",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-13T10:26:08+00:00",
-      "updatedAt": "2026-06-13T10:26:08+00:00",
+      "publishedAt": "2026-06-13T13:27:42+00:00",
+      "updatedAt": "2026-06-13T13:27:42+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-13T10:26:08+00:00",
+  "tiered_at": "2026-06-13T13:27:42+00:00",
   "free_preview_count": 3
 }
