@@ -1,68 +1,47 @@
 {
-  "generated_at": "2026-06-12T23:12:15+00:00",
+  "generated_at": "2026-06-13T02:14:36+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 848,
+  "corpus_count": 845,
   "opportunities": [
     {
-      "id": "ai-medical-reasoning-framework",
-      "title_ar": "إطار عمل متعدد الوكلاء للتفكير الطبي باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى حلول ذكية في القطاع الصحي، خاصة في السياقات متعددة اللغات. هذا الإطار يمكن أن يحسن من دقة التشخيصات الطبية ويعزز من الوصول إلى المعلومات الصحية.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات الطبية والتشخيص",
-      "first_paid_test_ar": "تقديم دراسة حالة لتحليل بيانات مرضى حقيقيين",
-      "tools_ar": "نموذج لغة متعدد الوسائط، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
+      "id": "text-generation-tools",
+      "title_ar": "تطوير أدوات لتوليد النصوص",
+      "thesis_ar": "تزايد الاعتماد على نماذج توليد النصوص يعكس الحاجة المتزايدة لأدوات فعالة. وجود نماذج متعددة مثل Qwen وLlama يوفر فرصًا لتطوير حلول مخصصة.",
+      "buyer_ar": "شركات التكنولوجيا والمحتوى الرقمي",
+      "sellable_product_ar": "أدوات توليد نصوص مخصصة تعتمد على نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لأداة توليد نصوص لمهمة معينة",
+      "tools_ar": "Hugging Face, PyTorch, Transformers",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.13572",
-        "2606.11409",
-        "2606.07867"
+        "huggingface_models:ishaanranjan/slm-agent-trace-localizer-qwen2-5-1-5b",
+        "huggingface_models:ishaanranjan/slm-agent-search-query-gen-qwen2-5-1-5b",
+        "huggingface_models:mlboydaisuke/Qwen3.6-35B-A3B-CoreAI"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
-          "url": "https://huggingface.co/papers/2606.12451",
-          "score": 0.505,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
-          "url": "https://huggingface.co/papers/2606.12282",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
-          "url": "https://huggingface.co/papers/2606.11409",
-          "score": 0.49,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "AiAF/lightsource_PonyXL_lora — text-to-image",
-          "url": "https://huggingface.co/AiAF/lightsource_PonyXL_lora",
+          "title": "ishaanranjan/slm-agent-trace-localizer-qwen2-5-1-5b — text-generation",
+          "url": "https://huggingface.co/ishaanranjan/slm-agent-trace-localizer-qwen2-5-1-5b",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "DeverStyle/Ideogram-4.0-Loras — text-to-image",
-          "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
+          "title": "ishaanranjan/slm-agent-search-query-gen-qwen2-5-1-5b — text-generation",
+          "url": "https://huggingface.co/ishaanranjan/slm-agent-search-query-gen-qwen2-5-1-5b",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "biali/sdv15_loras — text-to-image",
-          "url": "https://huggingface.co/biali/sdv15_loras",
-          "score": 0.488,
+          "title": "mlboydaisuke/Qwen3.6-35B-A3B-CoreAI — text-generation",
+          "url": "https://huggingface.co/mlboydaisuke/Qwen3.6-35B-A3B-CoreAI",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -71,68 +50,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-12T23:12:15+00:00",
-      "updatedAt": "2026-06-12T23:12:15+00:00",
+      "publishedAt": "2026-06-13T02:14:36+00:00",
+      "updatedAt": "2026-06-13T02:14:36+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-diffusion-models",
-      "title_ar": "نماذج تحويل النص إلى صورة باستخدام تقنيات الانتشار",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي الفريد والمخصص في التسويق والإعلانات. يمكن أن توفر هذه النماذج حلولاً مبتكرة لإنشاء صور استنادًا إلى النصوص.",
-      "buyer_ar": "وكالات التسويق والإعلان",
-      "sellable_product_ar": "خدمة إنشاء صور مخصصة من نصوص باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لصورة مخصصة بناءً على نص محدد",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، أدوات التصميم",
+      "id": "image-generation-services",
+      "title_ar": "خدمات توليد الصور بالذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي يعزز الحاجة لخدمات توليد الصور. النماذج المتاحة مثل SDXL توفر إمكانية تطوير حلول مبتكرة.",
+      "buyer_ar": "وكالات الإعلان والمصممين",
+      "sellable_product_ar": "خدمات توليد صور مخصصة باستخدام نماذج ذكاء اصطناعي",
+      "first_paid_test_ar": "تقديم خدمة توليد صورة لمشروع تجريبي",
+      "tools_ar": "Hugging Face, Diffusers, Lora",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "AiAF/lightsource_PonyXL_lora",
-        "DeverStyle/Ideogram-4.0-Loras",
-        "biali/sdv15_loras"
+        "huggingface_models:BlueTriangles/SDXL_Nasty_Yagyu",
+        "huggingface_models:BlueTriangles/SDXL_Miharu",
+        "huggingface_models:AiAF/lightsource_PonyXL_lora"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
-          "url": "https://huggingface.co/papers/2606.12451",
-          "score": 0.505,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "BlueTriangles/SDXL_Nasty_Yagyu — text-to-image",
+          "url": "https://huggingface.co/BlueTriangles/SDXL_Nasty_Yagyu",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
-          "url": "https://huggingface.co/papers/2606.12282",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
-          "url": "https://huggingface.co/papers/2606.11409",
-          "score": 0.49,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "BlueTriangles/SDXL_Miharu — text-to-image",
+          "url": "https://huggingface.co/BlueTriangles/SDXL_Miharu",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "AiAF/lightsource_PonyXL_lora — text-to-image",
           "url": "https://huggingface.co/AiAF/lightsource_PonyXL_lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "DeverStyle/Ideogram-4.0-Loras — text-to-image",
-          "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "biali/sdv15_loras — text-to-image",
-          "url": "https://huggingface.co/biali/sdv15_loras",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -142,69 +100,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-12T23:12:15+00:00",
-      "updatedAt": "2026-06-12T23:12:15+00:00",
+      "publishedAt": "2026-06-13T02:14:36+00:00",
+      "updatedAt": "2026-06-13T02:14:36+00:00",
       "sortOrder": 1
     },
     {
-      "id": "adversarial-robustness-evaluation",
-      "title_ar": "تقييم القوة ضد الهجمات في نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد التهديدات السيبرانية يتطلب نماذج لغوية أكثر أمانًا. يمكن أن يساعد هذا التقييم الشركات على تحسين أمان نماذجها.",
-      "buyer_ar": "شركات التكنولوجيا والأمن السيبراني",
-      "sellable_product_ar": "خدمة تقييم أمان نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تقرير تقييم أمان لنموذج لغة محدد",
-      "tools_ar": "أدوات تقييم الأمان، نماذج لغة كبيرة، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
+      "id": "rumor-detection-solutions",
+      "title_ar": "حلول كشف الشائعات عبر وسائل التواصل الاجتماعي",
+      "thesis_ar": "تزايد الشائعات على وسائل التواصل الاجتماعي يعكس الحاجة لحلول فعالة. النماذج المتاحة يمكن أن تساعد في تطوير أدوات للكشف عن الشائعات.",
+      "buyer_ar": "شركات الإعلام ووكالات الأنباء",
+      "sellable_product_ar": "أدوات كشف الشائعات باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لأداة كشف الشائعات لمحتوى معين",
+      "tools_ar": "Hugging Face, Transformers, PyTorch",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.11409",
-        "2606.07867",
-        "2606.13608"
+        "arxiv_papers:2606.13411v1",
+        "huggingface_daily_papers:2606.12451",
+        "huggingface_models:mlboydaisuke/Qwen3.6-35B-A3B-CoreAI"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
           "url": "https://huggingface.co/papers/2606.12451",
-          "score": 0.505,
+          "score": 0.47,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
-          "url": "https://huggingface.co/papers/2606.12282",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
-          "url": "https://huggingface.co/papers/2606.11409",
-          "score": 0.49,
+          "source_id": "arxiv_papers",
+          "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
+          "url": "http://arxiv.org/abs/2606.13411v1",
+          "score": 0.468,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "AiAF/lightsource_PonyXL_lora — text-to-image",
-          "url": "https://huggingface.co/AiAF/lightsource_PonyXL_lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "DeverStyle/Ideogram-4.0-Loras — text-to-image",
-          "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "biali/sdv15_loras — text-to-image",
-          "url": "https://huggingface.co/biali/sdv15_loras",
-          "score": 0.488,
+          "title": "mlboydaisuke/Qwen3.6-35B-A3B-CoreAI — text-generation",
+          "url": "https://huggingface.co/mlboydaisuke/Qwen3.6-35B-A3B-CoreAI",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -213,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-12T23:12:15+00:00",
-      "updatedAt": "2026-06-12T23:12:15+00:00",
+      "publishedAt": "2026-06-13T02:14:36+00:00",
+      "updatedAt": "2026-06-13T02:14:36+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-12T23:12:15+00:00",
+  "tiered_at": "2026-06-13T02:14:36+00:00",
   "free_preview_count": 3
 }
