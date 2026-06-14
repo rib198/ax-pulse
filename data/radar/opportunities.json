@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-06-13T22:58:34+00:00",
+  "generated_at": "2026-06-14T02:37:55+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 835,
+  "corpus_count": 833,
   "opportunities": [
     {
-      "id": "text-to-image-creation",
-      "title_ar": "إنشاء صور من نصوص",
-      "thesis_ar": "زيادة الطلب على المحتوى المرئي المخصص تعزز الحاجة إلى أدوات تحويل النصوص إلى صور. النماذج الحديثة توفر إمكانيات إبداعية جديدة.",
-      "buyer_ar": "وكالات التسويق والإعلانات",
-      "sellable_product_ar": "أداة لإنشاء صور مخصصة من النصوص",
-      "first_paid_test_ar": "تقديم مجموعة من الصور المولدة بناءً على نصوص محددة",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، مكتبة صور",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة تشير إلى زيادة الاهتمام في هذا المجال. يمكن استغلال هذه النماذج لإنشاء محتوى مرئي مخصص للعلامات التجارية.",
+      "buyer_ar": "شركات التسويق والإعلانات",
+      "sellable_product_ar": "خدمة إنشاء محتوى مرئي باستخدام نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "إنشاء صورة واحدة بناءً على نص محدد كاختبار",
+      "tools_ar": "نموذج تحويل النص إلى صورة، منصة لتوزيع المحتوى، أدوات تصميم جرافيكي",
       "capital_ar": "منخفض",
       "evidence_ids": [
+        "huggingface_models:protag0ras/FLUX.2-klein-base-4B_ElleFanningLoRA",
         "huggingface_models:Rand000mGuy/middle-finger",
-        "huggingface_models:Zorozx7/Qwen-Image-Edit-Rapid-AIO",
-        "huggingface_models:Mat021007/skswoman-realvisxl-lora"
+        "huggingface_models:Zorozx7/Qwen-Image-Edit-Rapid-AIO"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.46,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "protag0ras/FLUX.2-klein-base-4B_ElleFanningLoRA — text-to-image",
+          "url": "https://huggingface.co/protag0ras/FLUX.2-klein-base-4B_ElleFanningLoRA",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "Rand000mGuy/middle-finger — text-to-image",
           "url": "https://huggingface.co/Rand000mGuy/middle-finger",
-          "score": 0.488,
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "Zorozx7/Qwen-Image-Edit-Rapid-AIO — text-to-image",
           "url": "https://huggingface.co/Zorozx7/Qwen-Image-Edit-Rapid-AIO",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Mat021007/skswoman-realvisxl-lora — text-to-image",
-          "url": "https://huggingface.co/Mat021007/skswoman-realvisxl-lora",
-          "score": 0.488,
+          "score": 0.449,
           "trust_tier": "official"
         }
       ],
@@ -50,49 +50,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-13T22:58:34+00:00",
-      "updatedAt": "2026-06-13T22:58:34+00:00",
+      "publishedAt": "2026-06-14T02:37:55+00:00",
+      "updatedAt": "2026-06-14T02:37:55+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-generation-for-conversational-agents",
-      "title_ar": "توليد نصوص لمساعدات محادثة",
-      "thesis_ar": "تزايد استخدام المساعدات الافتراضية يتطلب نماذج ذكاء اصطناعي متقدمة لتوليد نصوص طبيعية. النماذج الحديثة توفر استجابات أكثر دقة وملاءمة.",
-      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
-      "sellable_product_ar": "نموذج لتوليد نصوص للمحادثات",
-      "first_paid_test_ar": "تقديم نموذج محادثة تجريبية مع استجابات حقيقية",
-      "tools_ar": "نموذج توليد النصوص، واجهة برمجة التطبيقات، قاعدة بيانات",
+      "id": "rumor-detection-in-algerian-dialect",
+      "title_ar": "تطوير نظام للكشف عن الشائعات باللهجة الجزائرية",
+      "thesis_ar": "تزايد الشائعات على وسائل التواصل الاجتماعي يتطلب حلولاً فعالة. النموذج المقترح يمكن أن يساعد في معالجة المحتوى باللهجات المحلية.",
+      "buyer_ar": "الهيئات الحكومية ووسائل الإعلام",
+      "sellable_product_ar": "نظام للكشف عن الشائعات وتحليل المحتوى الاجتماعي",
+      "first_paid_test_ar": "تطبيق النموذج على مجموعة من المنشورات الاجتماعية وتحليل النتائج",
+      "tools_ar": "نموذج تحليل لغوي، قاعدة بيانات للشائعات، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Ipm1221/Hermes-4.3-36B",
-        "huggingface_models:knowledgator/retrico-lm-9b-sft-dev",
-        "huggingface_models:LesterCerioli/LLM-GO"
+        "arxiv_papers:2606.13411v1",
+        "huggingface_daily_papers:2606.11409"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 2,
+      "avg_score": 0.46,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "Ipm1221/Hermes-4.3-36B — text-generation",
-          "url": "https://huggingface.co/Ipm1221/Hermes-4.3-36B",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
+          "url": "http://arxiv.org/abs/2606.13411v1",
+          "score": 0.465,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "knowledgator/retrico-lm-9b-sft-dev — text-generation",
-          "url": "https://huggingface.co/knowledgator/retrico-lm-9b-sft-dev",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LesterCerioli/LLM-GO — text-generation",
-          "url": "https://huggingface.co/LesterCerioli/LLM-GO",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+          "url": "https://huggingface.co/papers/2606.11409",
+          "score": 0.448,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -100,11 +92,53 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-13T22:58:34+00:00",
-      "updatedAt": "2026-06-13T22:58:34+00:00",
+      "publishedAt": "2026-06-14T02:37:55+00:00",
+      "updatedAt": "2026-06-14T02:37:55+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "adversarial-robustness-evaluation",
+      "title_ar": "تقديم خدمات تقييم قوة النماذج ضد الهجمات",
+      "thesis_ar": "تزايد الاهتمام بتقييم النماذج ضد الهجمات يشير إلى حاجة السوق لخدمات متخصصة في هذا المجال. يمكن تقديم تقييمات مخصصة للنماذج.",
+      "buyer_ar": "شركات التقنية ومراكز البحث",
+      "sellable_product_ar": "خدمة تقييم قوة النماذج ضد الهجمات",
+      "first_paid_test_ar": "تقييم نموذج واحد باستخدام مجموعة من الهجمات الشائعة",
+      "tools_ar": "نموذج تقييم، أدوات تحليل البيانات، منصة لإدارة النتائج",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.11409",
+        "arxiv_papers:2606.13608v1"
+      ],
+      "confidence": 0.6,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+          "url": "http://arxiv.org/abs/2606.13608v1",
+          "score": 0.465,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+          "url": "https://huggingface.co/papers/2606.11409",
+          "score": 0.448,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-14T02:37:55+00:00",
+      "updatedAt": "2026-06-14T02:37:55+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-13T22:58:34+00:00",
+  "tiered_at": "2026-06-14T02:37:55+00:00",
   "free_preview_count": 3
 }
