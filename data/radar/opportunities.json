@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-06-14T15:47:05+00:00",
+  "generated_at": "2026-06-14T17:12:41+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 836,
+  "corpus_count": 841,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي يعزز الحاجة لنماذج تحويل النص إلى صورة. يمكن استخدام هذه النماذج في التسويق والإعلانات لتوليد محتوى مخصص.",
+      "id": "text-to-image-generation",
+      "title_ar": "توليد الصور من النصوص",
+      "thesis_ar": "تحديثات نماذج توليد الصور من النصوص تشير إلى زيادة الاهتمام بهذه التقنية. يمكن استخدامها في مجالات مثل التسويق والإعلانات لتوليد محتوى بصري جذاب.",
       "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تطوير نموذج بسيط لتحويل نصوص محددة إلى صور",
-      "tools_ar": "Hugging Face, أدوات التعلم العميق, بيئة تطوير",
-      "capital_ar": "منخفض",
+      "sellable_product_ar": "خدمة توليد صور مخصصة من نصوص",
+      "first_paid_test_ar": "تقديم خدمة توليد صورة واحدة مقابل سعر رمزي",
+      "tools_ar": "نموذج توليد الصور، منصة تسويق، أداة لتحليل البيانات",
+      "capital_ar": "بدون رأس مال",
       "evidence_ids": [
-        "huggingface_models:Milamagalvaes/Mila",
-        "huggingface_models:projetAora/AoRa-DA-v1",
-        "huggingface_models:jarod2212/Rebel_Essence_Bikers"
+        "huggingface_models:biali/sdv15_loras",
+        "huggingface_models:AnimeOverlord/flux2-klein-4b-mc-v2",
+        "huggingface_models:Milamagalvaes/Mila"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -25,22 +25,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
+          "title": "biali/sdv15_loras — text-to-image",
+          "url": "https://huggingface.co/biali/sdv15_loras",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AnimeOverlord/flux2-klein-4b-mc-v2 — text-to-image",
+          "url": "https://huggingface.co/AnimeOverlord/flux2-klein-4b-mc-v2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
           "title": "Milamagalvaes/Mila — text-to-image",
           "url": "https://huggingface.co/Milamagalvaes/Mila",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "projetAora/AoRa-DA-v1 — text-to-image",
-          "url": "https://huggingface.co/projetAora/AoRa-DA-v1",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "jarod2212/Rebel_Essence_Bikers — text-to-image",
-          "url": "https://huggingface.co/jarod2212/Rebel_Essence_Bikers",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,23 +50,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-14T15:47:05+00:00",
-      "updatedAt": "2026-06-14T15:47:05+00:00",
+      "publishedAt": "2026-06-14T17:12:41+00:00",
+      "updatedAt": "2026-06-14T17:12:41+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-generation-creative-writing",
-      "title_ar": "تطوير أدوات الكتابة الإبداعية",
-      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في الكتابة الإبداعية يفتح آفاق جديدة للمؤلفين. يمكن تقديم أدوات تساعد الكتاب على تحسين إنتاجهم الأدبي.",
-      "buyer_ar": "الكتاب والمحررون",
-      "sellable_product_ar": "أداة كتابة إبداعية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع ميزات محدودة",
-      "tools_ar": "Hugging Face, نماذج النصوص, واجهة مستخدم",
+      "id": "text-generation-customization",
+      "title_ar": "تخصيص نماذج توليد النصوص",
+      "thesis_ar": "تحديثات متعددة لنماذج توليد النصوص تشير إلى إمكانية تخصيصها لتلبية احتياجات محددة. هذا يمكن أن يلبي احتياجات الشركات في مجالات مختلفة مثل خدمة العملاء والمحتوى.",
+      "buyer_ar": "شركات التكنولوجيا والمحتوى",
+      "sellable_product_ar": "خدمة تخصيص نماذج توليد النصوص",
+      "first_paid_test_ar": "تقديم نموذج مخصص لتوليد نصوص قصيرة مقابل سعر رمزي",
+      "tools_ar": "نموذج توليد النصوص، منصة تحليل البيانات، أداة تسويق",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:OccultAI/Adversary-8B-v1.22",
-        "huggingface_models:OccultAI/Adversary-8B-v1.21",
-        "huggingface_models:OccultAI/Adversary-8B-v1.1"
+        "huggingface_models:Mihirbarve/mistral-customer-support",
+        "huggingface_models:KissTheHabit/IDA_MoE",
+        "huggingface_models:User01110/TinyLM-5M"
       ],
       "confidence": 0.75,
       "source": "openai",
@@ -75,22 +75,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "OccultAI/Adversary-8B-v1.22 — text-generation",
-          "url": "https://huggingface.co/OccultAI/Adversary-8B-v1.22",
+          "title": "KissTheHabit/IDA_MoE — text-generation",
+          "url": "https://huggingface.co/KissTheHabit/IDA_MoE",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "OccultAI/Adversary-8B-v1.21 — text-generation",
-          "url": "https://huggingface.co/OccultAI/Adversary-8B-v1.21",
+          "title": "User01110/TinyLM-5M — text-generation",
+          "url": "https://huggingface.co/User01110/TinyLM-5M",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "OccultAI/Adversary-8B-v1.1 — text-generation",
-          "url": "https://huggingface.co/OccultAI/Adversary-8B-v1.1",
+          "title": "Mihirbarve/mistral-customer-support — text-generation",
+          "url": "https://huggingface.co/Mihirbarve/mistral-customer-support",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -100,41 +100,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-14T15:47:05+00:00",
-      "updatedAt": "2026-06-14T15:47:05+00:00",
+      "publishedAt": "2026-06-14T17:12:41+00:00",
+      "updatedAt": "2026-06-14T17:12:41+00:00",
       "sortOrder": 1
     },
     {
-      "id": "diagnostic-framework-for-llms",
-      "title_ar": "تطوير إطار تشخيصي لنماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة يتطلب أدوات لتقييم أدائها. يمكن تقديم حلول تساعد الشركات على تحسين استخدام هذه النماذج.",
-      "buyer_ar": "شركات التقنية والبحث",
-      "sellable_product_ar": "إطار عمل تشخيصي لنماذج اللغة",
-      "first_paid_test_ar": "تقديم تحليل مجاني لنموذج لغة محدد",
-      "tools_ar": "Hugging Face, أدوات تحليل البيانات, بيئة تطوير",
+      "id": "integrated-ai-solutions",
+      "title_ar": "حلول متكاملة للذكاء الاصطناعي",
+      "thesis_ar": "تزايد عدد نماذج الذكاء الاصطناعي يشير إلى فرصة لتقديم حلول متكاملة تجمع بين توليد النصوص والصور. يمكن أن تلبي هذه الحلول احتياجات متعددة في السوق.",
+      "buyer_ar": "شركات تطوير البرمجيات",
+      "sellable_product_ar": "منصة متكاملة للذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني مع خيار الاشتراك المدفوع",
+      "tools_ar": "نموذجان للذكاء الاصطناعي، منصة تطوير، أداة لتحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.12451",
-        "arxiv_papers:2606.13608v1"
+        "huggingface_models:paragon-of-brah/Nex-N2-Pro-397B-A17B-GGUF",
+        "huggingface_models:TalentPigs/Affine_deomespam_5DCpvAg6xFgfJB27cJXfpaCqMM2WENJFRCrk8RtqFsDrEkSz",
+        "huggingface_models:DZER-Studios/Vexion-LM"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
-          "url": "https://huggingface.co/papers/2606.12451",
-          "score": 0.47,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "TalentPigs/Affine_deomespam_5DCpvAg6xFgfJB27cJXfpaCqMM2WENJFRCrk8RtqFsDrEkSz — text-generation",
+          "url": "https://huggingface.co/TalentPigs/Affine_deomespam_5DCpvAg6xFgfJB27cJXfpaCqMM2WENJFRCrk8RtqFsDrEkSz",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
-          "url": "http://arxiv.org/abs/2606.13608v1",
-          "score": 0.468,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "DZER-Studios/Vexion-LM — text-generation",
+          "url": "https://huggingface.co/DZER-Studios/Vexion-LM",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "paragon-of-brah/Nex-N2-Pro-397B-A17B-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/paragon-of-brah/Nex-N2-Pro-397B-A17B-GGUF",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-14T15:47:05+00:00",
-      "updatedAt": "2026-06-14T15:47:05+00:00",
+      "publishedAt": "2026-06-14T17:12:41+00:00",
+      "updatedAt": "2026-06-14T17:12:41+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-14T15:47:05+00:00",
+  "tiered_at": "2026-06-14T17:12:41+00:00",
   "free_preview_count": 3
 }
