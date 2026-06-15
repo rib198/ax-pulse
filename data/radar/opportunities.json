@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-06-15T19:43:02+00:00",
+  "generated_at": "2026-06-15T22:15:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 843,
+  "corpus_count": 842,
   "opportunities": [
     {
-      "id": "text-generation-models",
-      "title_ar": "تطوير نماذج توليد النصوص",
-      "thesis_ar": "تحديثات نماذج توليد النصوص تشير إلى تزايد الطلب على حلول الذكاء الاصطناعي في مجالات متعددة. السوق يتجه نحو استخدام هذه النماذج في تطبيقات جديدة مثل المحادثات التفاعلية والمساعدة الذكية.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، ومقدمو خدمات العملاء",
-      "sellable_product_ar": "خدمات تطوير نماذج توليد النصوص المخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لمحادثة تفاعلية مع عميل محتمل",
-      "tools_ar": "Hugging Face، TensorFlow، PyTorch",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة تشير إلى زيادة الاهتمام في هذا المجال. يمكن استغلال هذه النماذج لإنشاء محتوى بصري مخصص للأعمال التجارية.",
+      "buyer_ar": "شركات التسويق والإعلانات، مصممي الجرافيك",
+      "sellable_product_ar": "خدمة إنشاء محتوى بصري باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لإنشاء صورة بناءً على نص محدد",
+      "tools_ar": "نموذج تحويل النص إلى صورة، منصة استضافة، أدوات تصميم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:yantri-tool/Qwen3-1.7B-FC-R2",
-        "huggingface_models:yantri-tool/Qwen3-0.6B-FC-R2",
-        "huggingface_models:ErMayureshKumar/ai-fashion-stylist-355m"
+        "huggingface_models:fairy322/run78-mix-llustrious-xl-v60-sdxl",
+        "huggingface_models:mhlng/mini_interior_replicate_v1_m91jalabe",
+        "huggingface_models:armand0e/Qwen3.6-27B-Fable-5-Distill"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -25,22 +25,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "yantri-tool/Qwen3-1.7B-FC-R2 — text-generation",
-          "url": "https://huggingface.co/yantri-tool/Qwen3-1.7B-FC-R2",
+          "title": "fairy322/run78-mix-llustrious-xl-v60-sdxl — text-to-image",
+          "url": "https://huggingface.co/fairy322/run78-mix-llustrious-xl-v60-sdxl",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mhlng/mini_interior_replicate_v1_m91jalabe — text-to-image",
+          "url": "https://huggingface.co/mhlng/mini_interior_replicate_v1_m91jalabe",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "yantri-tool/Qwen3-0.6B-FC-R2 — text-generation",
-          "url": "https://huggingface.co/yantri-tool/Qwen3-0.6B-FC-R2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ErMayureshKumar/ai-fashion-stylist-355m — text-generation",
-          "url": "https://huggingface.co/ErMayureshKumar/ai-fashion-stylist-355m",
+          "title": "armand0e/Qwen3.6-27B-Fable-5-Distill — image-text-to-text",
+          "url": "https://huggingface.co/armand0e/Qwen3.6-27B-Fable-5-Distill",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -50,49 +50,42 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-15T19:43:02+00:00",
-      "updatedAt": "2026-06-15T19:43:02+00:00",
+      "publishedAt": "2026-06-15T22:15:05+00:00",
+      "updatedAt": "2026-06-15T22:15:05+00:00",
       "sortOrder": 0
     },
     {
-      "id": "image-text-to-text-models",
-      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
-      "thesis_ar": "تزايد استخدام نماذج تحويل الصورة إلى نص في التطبيقات التجارية والإبداعية. هذه النماذج يمكن أن تعزز من تجربة المستخدم في مجالات مثل التسويق والمحتوى المرئي.",
-      "buyer_ar": "شركات التسويق، وكالات الإعلانات، ومطوري التطبيقات",
-      "sellable_product_ar": "خدمات تطوير نماذج تحويل الصورة إلى نص مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل محتوى مرئي إلى نصوص تسويقية",
-      "tools_ar": "Hugging Face، OpenCV، TensorFlow",
+      "id": "multi-agent-systems",
+      "title_ar": "تطوير أنظمة متعددة الوكلاء",
+      "thesis_ar": "تزايد استخدام الأنظمة التي تتضمن وكلاء لغويين في اتخاذ القرارات، مما يفتح المجال لابتكارات جديدة في هذا القطاع.",
+      "buyer_ar": "شركات التكنولوجيا، مراكز البحث والتطوير",
+      "sellable_product_ar": "نظام إدارة محادثات متعددة الوكلاء",
+      "first_paid_test_ar": "تقديم نموذج أولي لنظام محادثات متعددة الوكلاء",
+      "tools_ar": "نموذج لغوي، واجهة مستخدم، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:DevQuasar/moonshotai.Kimi-K2.7-Code-GGUF",
-        "huggingface_models:sori-forest/aether-brain-v1-merged",
-        "huggingface_models:sparkarena/Minimax-M3-v0-NVFP4-REAP50"
+        "huggingface_daily_papers:2606.10747",
+        "huggingface_daily_papers:2606.14517",
+        "huggingface_daily_papers:2606.08952"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 2,
+      "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "DevQuasar/moonshotai.Kimi-K2.7-Code-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/DevQuasar/moonshotai.Kimi-K2.7-Code-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "AlloSpatial: Agentic Harness Framework for Spatial Reasoning in Foundation Models",
+          "url": "https://huggingface.co/papers/2606.08952",
+          "score": 0.483,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "sori-forest/aether-brain-v1-merged — image-text-to-text",
-          "url": "https://huggingface.co/sori-forest/aether-brain-v1-merged",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "sparkarena/Minimax-M3-v0-NVFP4-REAP50 — image-text-to-text",
-          "url": "https://huggingface.co/sparkarena/Minimax-M3-v0-NVFP4-REAP50",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalignment",
+          "url": "https://huggingface.co/papers/2606.10747",
+          "score": 0.467,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -100,23 +93,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-15T19:43:02+00:00",
-      "updatedAt": "2026-06-15T19:43:02+00:00",
+      "publishedAt": "2026-06-15T22:15:05+00:00",
+      "updatedAt": "2026-06-15T22:15:05+00:00",
       "sortOrder": 1
     },
     {
-      "id": "drug-interaction-analysis",
-      "title_ar": "تحليل تفاعلات الأدوية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى أدوات تحليل تفاعلات الأدوية في القطاع الصحي. نماذج الذكاء الاصطناعي يمكن أن تسهم في تحسين سلامة المرضى وتقليل الأخطاء الطبية.",
-      "buyer_ar": "المستشفيات، شركات الأدوية، ومراكز الأبحاث",
-      "sellable_product_ar": "خدمات تحليل تفاعلات الأدوية باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل تفاعلات دوائية لعدد محدود من الأدوية",
-      "tools_ar": "Hugging Face، Python، مكتبات تحليل البيانات",
+      "id": "efficient-formal-proving",
+      "title_ar": "تحسين عمليات البرهنة الرسمية",
+      "thesis_ar": "البحوث تشير إلى الحاجة لتحسين كفاءة أدوات البرهنة الرسمية مما يفتح المجال لتطوير أدوات جديدة.",
+      "buyer_ar": "شركات البرمجيات، الجامعات، مراكز البحث",
+      "sellable_product_ar": "أداة برهنة رسمية محسنة تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار برهنة رسمية لمشكلة بسيطة",
+      "tools_ar": "نموذج برهنة، بيئة تطوير، أدوات تحليل",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:jjliquid/drug-interaction-lora-v1",
-        "huggingface_models:neelshah123098/criticleanGPT-Qwen3-8B-RL",
-        "huggingface_models:meridianal/FinAI"
+        "huggingface_daily_papers:2606.12594",
+        "huggingface_daily_papers:2606.13044",
+        "huggingface_daily_papers:2606.14346"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -124,25 +117,25 @@
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "meridianal/FinAI — text-generation",
-          "url": "https://huggingface.co/meridianal/FinAI",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Squeeze-Release: Iterative Pruning with Exact Structural Minimization",
+          "url": "https://huggingface.co/papers/2606.14346",
+          "score": 0.472,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "jjliquid/drug-interaction-lora-v1 — text-generation",
-          "url": "https://huggingface.co/jjliquid/drug-interaction-lora-v1",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "No Hidden Prompts Needed! You Can Game AI Peer Review with Presentation-Only Revisions",
+          "url": "https://huggingface.co/papers/2606.13044",
+          "score": 0.468,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "neelshah123098/criticleanGPT-Qwen3-8B-RL — text-generation",
-          "url": "https://huggingface.co/neelshah123098/criticleanGPT-Qwen3-8B-RL",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Pythagoras-Prover: Advancing Efficient Formal Proving via Augmented Lean Formalisation",
+          "url": "https://huggingface.co/papers/2606.12594",
+          "score": 0.468,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-15T19:43:02+00:00",
-      "updatedAt": "2026-06-15T19:43:02+00:00",
+      "publishedAt": "2026-06-15T22:15:05+00:00",
+      "updatedAt": "2026-06-15T22:15:05+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-15T19:43:02+00:00",
+  "tiered_at": "2026-06-15T22:15:05+00:00",
   "free_preview_count": 3
 }
