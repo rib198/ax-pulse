@@ -1,56 +1,48 @@
 {
-  "generated_at": "2026-06-14T23:03:58+00:00",
+  "generated_at": "2026-06-15T02:42:21+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 838,
+  "corpus_count": 826,
   "opportunities": [
     {
-      "id": "ai-driven-code-generation",
-      "title_ar": "توليد كود برمجي مدعوم بالذكاء الاصطناعي",
-      "thesis_ar": "تحديثات النماذج الخاصة بتوليد النصوص البرمجية تشير إلى زيادة الطلب على أدوات البرمجة الذكية. هذا الوقت مناسب لتطوير حلول تساعد المطورين في تسريع عملية البرمجة.",
-      "buyer_ar": "شركات تطوير البرمجيات والمطورون المستقلون",
-      "sellable_product_ar": "أداة توليد كود برمجي تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مدفوعة لتوليد كود بسيط لمشروع صغير",
-      "tools_ar": "نموذج توليد النصوص، منصة استضافة، واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "ai-safety-in-automotive",
+      "title_ar": "تطوير حلول أمان الذكاء الاصطناعي في السيارات",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة (LLMs) في التطبيقات الآلية يتطلب ضمان الأمان والسلامة. مع تزايد الاعتماد على الذكاء الاصطناعي في السيارات، هناك حاجة ملحة لتطوير حلول أمان متقدمة.",
+      "buyer_ar": "شركات تصنيع السيارات والموردين التكنولوجيين",
+      "sellable_product_ar": "حلول أمان للذكاء الاصطناعي في السيارات",
+      "first_paid_test_ar": "تطوير نموذج أولي لاختبار أمان LLMs في بيئة محاكاة",
+      "tools_ar": "أدوات المحاكاة، نماذج LLM، أدوات اختبار الأمان",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:seanpoyner/smolcode-coder-dotnet-1.5b-tools",
-        "huggingface_models:seanpoyner/smolcode-coder-git-1.5b-tools",
-        "huggingface_models:seanpoyner/smolcode-coder-py-1.5b-tools",
-        "huggingface_models:seanpoyner/smolcode-coder-js-1.5b-tools"
+        "arxiv_papers:2606.14327v1",
+        "arxiv_papers:2606.14517v1",
+        "huggingface_models:Kelsey98/Llama-3.1-8B-Instruct-TextTextText-4roles-toolcall-drip"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 4,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails",
+          "url": "http://arxiv.org/abs/2606.14517v1",
+          "score": 0.522,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "seanpoyner/smolcode-coder-dotnet-1.5b-tools — text-generation",
-          "url": "https://huggingface.co/seanpoyner/smolcode-coder-dotnet-1.5b-tools",
+          "title": "Kelsey98/Llama-3.1-8B-Instruct-TextTextText-4roles-toolcall-drip — text-generation",
+          "url": "https://huggingface.co/Kelsey98/Llama-3.1-8B-Instruct-TextTextText-4roles-toolcall-drip",
           "score": 0.472,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "seanpoyner/smolcode-coder-git-1.5b-tools — text-generation",
-          "url": "https://huggingface.co/seanpoyner/smolcode-coder-git-1.5b-tools",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "seanpoyner/smolcode-coder-py-1.5b-tools — text-generation",
-          "url": "https://huggingface.co/seanpoyner/smolcode-coder-py-1.5b-tools",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "seanpoyner/smolcode-coder-js-1.5b-tools — text-generation",
-          "url": "https://huggingface.co/seanpoyner/smolcode-coder-js-1.5b-tools",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "I'm Sorry Driver, I'm Afraid I Can't Do That: Appraising the Safety of LLMs within Automotive Contexts",
+          "url": "http://arxiv.org/abs/2606.14327v1",
+          "score": 0.462,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -58,64 +50,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-14T23:03:58+00:00",
-      "updatedAt": "2026-06-14T23:03:58+00:00",
+      "publishedAt": "2026-06-15T02:42:21+00:00",
+      "updatedAt": "2026-06-15T02:42:21+00:00",
       "sortOrder": 0
     },
     {
-      "id": "ai-image-generation-tools",
-      "title_ar": "أدوات توليد الصور المدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "تحديثات نماذج توليد الصور تشير إلى تزايد الاهتمام في السوق. يمكن استغلال هذه الأدوات في مجالات متعددة مثل التسويق والفنون.",
-      "buyer_ar": "وكالات التسويق، الفنانون، المصممون",
-      "sellable_product_ar": "أداة توليد صور فنية باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة توليد صورة فنية مخصصة مقابل رسوم",
-      "tools_ar": "نموذج توليد الصور، واجهة مستخدم، منصة استضافة",
+      "id": "medical-ml-models",
+      "title_ar": "تطوير نماذج ذكاء اصطناعي طبية موثوقة",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في المجال الطبي يتطلب تطوير نماذج موثوقة قادرة على تقليل الأخطاء. الحاجة إلى معايير جديدة لتقييم دقة هذه النماذج تفتح المجال لتطوير أدوات جديدة.",
+      "buyer_ar": "مستشفيات، شركات تكنولوجيا صحية، مطوري البرمجيات الطبية",
+      "sellable_product_ar": "أدوات تقييم وموثوقية نماذج الذكاء الاصطناعي الطبية",
+      "first_paid_test_ar": "تقديم نموذج أولي لتقييم دقة نموذج طبي في بيئة سريرية",
+      "tools_ar": "بيانات طبية، نماذج LLM، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Muapi/midas-magic-grimoire",
-        "huggingface_models:Muapi/lora-1.5-xl-dark-magician-girl-yu-gi-oh",
-        "huggingface_models:Muapi/satono-crown-umamusume-_xl-pony-ill",
-        "huggingface_models:Muapi/scibu-scifi-buildings",
-        "huggingface_models:Muapi/doctor-diffusion-s-vintage-line-art-xl-lora"
+        "arxiv_papers:2606.14697",
+        "huggingface_models:mradermacher/Liujgoj-Cantonese-Qwen3-8B-Base-GGUF",
+        "huggingface_models:DevQuasar/nex-agi.Nex-N2-Pro-GGUF"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 5,
-      "avg_score": 0.47,
+      "signal_count": 2,
+      "avg_score": 0.45,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Muapi/midas-magic-grimoire — text-to-image",
-          "url": "https://huggingface.co/Muapi/midas-magic-grimoire",
-          "score": 0.472,
+          "title": "DevQuasar/nex-agi.Nex-N2-Pro-GGUF — text-generation",
+          "url": "https://huggingface.co/DevQuasar/nex-agi.Nex-N2-Pro-GGUF",
+          "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Muapi/lora-1.5-xl-dark-magician-girl-yu-gi-oh — text-to-image",
-          "url": "https://huggingface.co/Muapi/lora-1.5-xl-dark-magician-girl-yu-gi-oh",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/satono-crown-umamusume-_xl-pony-ill — text-to-image",
-          "url": "https://huggingface.co/Muapi/satono-crown-umamusume-_xl-pony-ill",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/scibu-scifi-buildings — text-to-image",
-          "url": "https://huggingface.co/Muapi/scibu-scifi-buildings",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Muapi/doctor-diffusion-s-vintage-line-art-xl-lora — text-to-image",
-          "url": "https://huggingface.co/Muapi/doctor-diffusion-s-vintage-line-art-xl-lora",
-          "score": 0.472,
+          "title": "mradermacher/Liujgoj-Cantonese-Qwen3-8B-Base-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/Liujgoj-Cantonese-Qwen3-8B-Base-GGUF",
+          "score": 0.447,
           "trust_tier": "official"
         }
       ],
@@ -124,11 +93,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-14T23:03:58+00:00",
-      "updatedAt": "2026-06-14T23:03:58+00:00",
+      "publishedAt": "2026-06-15T02:42:21+00:00",
+      "updatedAt": "2026-06-15T02:42:21+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "skill-evolution-in-llms",
+      "title_ar": "تطوير أدوات لمراقبة تطور مهارات نماذج الذكاء الاصطناعي",
+      "thesis_ar": "مع تطور نماذج الذكاء الاصطناعي، تظهر الحاجة لمراقبة تطور المهارات وتحديثها. يمكن أن توفر أدوات جديدة حلاً لمواجهة التحديات الناتجة عن تغيرات في البيانات والبيئات.",
+      "buyer_ar": "شركات تطوير البرمجيات، مراكز الأبحاث، مؤسسات التعليم",
+      "sellable_product_ar": "أدوات مراقبة وتحديث مهارات نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة تجريبية لمراقبة مهارات نموذج LLM في بيئة حقيقية",
+      "tools_ar": "بيانات الأداء، نماذج LLM، أدوات تحليل البيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "arxiv_papers:2606.14239v1",
+        "huggingface_models:Kelsey98/Llama-3.1-8B-Instruct-TextTextText-4roles-toolcall-drip",
+        "huggingface_models:DevQuasar/nex-agi.Nex-N2-Pro-GGUF"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "SkillAudit: Ground-Truth-Free Skill Evolution via Paired Trajectory Auditing",
+          "url": "http://arxiv.org/abs/2606.14239v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Kelsey98/Llama-3.1-8B-Instruct-TextTextText-4roles-toolcall-drip — text-generation",
+          "url": "https://huggingface.co/Kelsey98/Llama-3.1-8B-Instruct-TextTextText-4roles-toolcall-drip",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "DevQuasar/nex-agi.Nex-N2-Pro-GGUF — text-generation",
+          "url": "https://huggingface.co/DevQuasar/nex-agi.Nex-N2-Pro-GGUF",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-15T02:42:21+00:00",
+      "updatedAt": "2026-06-15T02:42:21+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-14T23:03:58+00:00",
+  "tiered_at": "2026-06-15T02:42:21+00:00",
   "free_preview_count": 3
 }
