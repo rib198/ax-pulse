@@ -1,48 +1,69 @@
 {
-  "generated_at": "2026-06-15T22:15:05+00:00",
+  "generated_at": "2026-06-16T02:44:17+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 842,
+  "corpus_count": 835,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة تشير إلى زيادة الاهتمام في هذا المجال. يمكن استغلال هذه النماذج لإنشاء محتوى بصري مخصص للأعمال التجارية.",
-      "buyer_ar": "شركات التسويق والإعلانات، مصممي الجرافيك",
-      "sellable_product_ar": "خدمة إنشاء محتوى بصري باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لإنشاء صورة بناءً على نص محدد",
-      "tools_ar": "نموذج تحويل النص إلى صورة، منصة استضافة، أدوات تصميم",
+      "id": "lightweight-ai-agent-rare-disease",
+      "title_ar": "تطوير وكيل ذكاء اصطناعي خفيف لتشخيص الأمراض النادرة",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة ذكاء اصطناعي قادرة على تقديم تشخيصات دقيقة للأمراض النادرة. هذا النوع من الأنظمة يمكن أن يحسن من دقة التشخيص ويقلل من التكاليف الطبية.",
+      "buyer_ar": "المستشفيات والمراكز الطبية المتخصصة",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتشخيص الأمراض النادرة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتشخيص مرض نادر في مستشفى محلي",
+      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، واجهات برمجة التطبيقات الطبية",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:fairy322/run78-mix-llustrious-xl-v60-sdxl",
-        "huggingface_models:mhlng/mini_interior_replicate_v1_m91jalabe",
-        "huggingface_models:armand0e/Qwen3.6-27B-Fable-5-Distill"
+        "2606.16149v1",
+        "2606.16153v1",
+        "2606.16871v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "LiteOdyssey: A Lightweight Reasoning AI Agent for Interpretable Rare-Disease Diagnosis",
+          "url": "http://arxiv.org/abs/2606.16149v1",
+          "score": 0.537,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
+          "url": "http://arxiv.org/abs/2606.16827v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentFairBench: Do LLM Agents Discriminate When They Act?",
+          "url": "http://arxiv.org/abs/2606.16723v1",
+          "score": 0.51,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated jailbreak attack targeting multiple defense strategies",
+          "url": "http://arxiv.org/abs/2606.16751v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "A Comprehensive Survey of Medical Image Segmentation: Challenges, Benchmarks, and Beyond",
+          "url": "http://arxiv.org/abs/2606.16153v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_models",
           "title": "fairy322/run78-mix-llustrious-xl-v60-sdxl — text-to-image",
           "url": "https://huggingface.co/fairy322/run78-mix-llustrious-xl-v60-sdxl",
           "score": 0.499,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mhlng/mini_interior_replicate_v1_m91jalabe — text-to-image",
-          "url": "https://huggingface.co/mhlng/mini_interior_replicate_v1_m91jalabe",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "armand0e/Qwen3.6-27B-Fable-5-Distill — image-text-to-text",
-          "url": "https://huggingface.co/armand0e/Qwen3.6-27B-Fable-5-Distill",
-          "score": 0.466,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,42 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-15T22:15:05+00:00",
-      "updatedAt": "2026-06-15T22:15:05+00:00",
+      "publishedAt": "2026-06-16T02:44:17+00:00",
+      "updatedAt": "2026-06-16T02:44:17+00:00",
       "sortOrder": 0
     },
     {
-      "id": "multi-agent-systems",
-      "title_ar": "تطوير أنظمة متعددة الوكلاء",
-      "thesis_ar": "تزايد استخدام الأنظمة التي تتضمن وكلاء لغويين في اتخاذ القرارات، مما يفتح المجال لابتكارات جديدة في هذا القطاع.",
-      "buyer_ar": "شركات التكنولوجيا، مراكز البحث والتطوير",
-      "sellable_product_ar": "نظام إدارة محادثات متعددة الوكلاء",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام محادثات متعددة الوكلاء",
-      "tools_ar": "نموذج لغوي، واجهة مستخدم، أدوات تحليل البيانات",
+      "id": "ai-agents-fairness-evaluation",
+      "title_ar": "تطوير أدوات لتقييم عدالة وكيل الذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد استخدام وكلاء الذكاء الاصطناعي في اتخاذ القرارات، تبرز الحاجة لتقييم العدالة في قراراتهم. هذا يمكن أن يعزز الثقة في الأنظمة المعتمدة على الذكاء الاصطناعي.",
+      "buyer_ar": "الشركات التي تستخدم الذكاء الاصطناعي في التوظيف والتمويل",
+      "sellable_product_ar": "أداة تقييم عدالة وكيل الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطبيق الأداة على مجموعة بيانات حقيقية لتقييم العدالة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.10747",
-        "huggingface_daily_papers:2606.14517",
-        "huggingface_daily_papers:2606.08952"
+        "2606.16723v1",
+        "2606.16751v1",
+        "2606.16465v1"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AlloSpatial: Agentic Harness Framework for Spatial Reasoning in Foundation Models",
-          "url": "https://huggingface.co/papers/2606.08952",
-          "score": 0.483,
+          "source_id": "arxiv_papers",
+          "title": "LiteOdyssey: A Lightweight Reasoning AI Agent for Interpretable Rare-Disease Diagnosis",
+          "url": "http://arxiv.org/abs/2606.16149v1",
+          "score": 0.537,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalignment",
-          "url": "https://huggingface.co/papers/2606.10747",
-          "score": 0.467,
+          "source_id": "arxiv_papers",
+          "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
+          "url": "http://arxiv.org/abs/2606.16827v1",
+          "score": 0.515,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentFairBench: Do LLM Agents Discriminate When They Act?",
+          "url": "http://arxiv.org/abs/2606.16723v1",
+          "score": 0.51,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automated jailbreak attack targeting multiple defense strategies",
+          "url": "http://arxiv.org/abs/2606.16751v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "A Comprehensive Survey of Medical Image Segmentation: Challenges, Benchmarks, and Beyond",
+          "url": "http://arxiv.org/abs/2606.16153v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "fairy322/run78-mix-llustrious-xl-v60-sdxl — text-to-image",
+          "url": "https://huggingface.co/fairy322/run78-mix-llustrious-xl-v60-sdxl",
+          "score": 0.499,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,48 +142,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-15T22:15:05+00:00",
-      "updatedAt": "2026-06-15T22:15:05+00:00",
+      "publishedAt": "2026-06-16T02:44:17+00:00",
+      "updatedAt": "2026-06-16T02:44:17+00:00",
       "sortOrder": 1
     },
     {
-      "id": "efficient-formal-proving",
-      "title_ar": "تحسين عمليات البرهنة الرسمية",
-      "thesis_ar": "البحوث تشير إلى الحاجة لتحسين كفاءة أدوات البرهنة الرسمية مما يفتح المجال لتطوير أدوات جديدة.",
-      "buyer_ar": "شركات البرمجيات، الجامعات، مراكز البحث",
-      "sellable_product_ar": "أداة برهنة رسمية محسنة تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم اختبار برهنة رسمية لمشكلة بسيطة",
-      "tools_ar": "نموذج برهنة، بيئة تطوير، أدوات تحليل",
+      "id": "context-management-llm-agents",
+      "title_ar": "تطوير حلول لإدارة السياق لوكلاء LLM",
+      "thesis_ar": "تزايد استخدام وكلاء LLM في جلسات طويلة يتطلب تحسين إدارة السياق لتقليل التكاليف وزيادة الكفاءة. هذه الحلول يمكن أن تكون مطلوبة بشدة في السوق.",
+      "buyer_ar": "شركات البرمجيات ومطوري التطبيقات",
+      "sellable_product_ar": "حلول إدارة السياق لوكلاء LLM",
+      "first_paid_test_ar": "تطبيق الحل على مشروع برمجي حقيقي",
+      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، بيئات تطوير البرمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.12594",
-        "huggingface_daily_papers:2606.13044",
-        "huggingface_daily_papers:2606.14346"
+        "2606.17016",
+        "2606.16849v1",
+        "2606.16461v1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 2,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Squeeze-Release: Iterative Pruning with Exact Structural Minimization",
-          "url": "https://huggingface.co/papers/2606.14346",
-          "score": 0.472,
+          "source_id": "arxiv_papers",
+          "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
+          "url": "http://arxiv.org/abs/2606.16827v1",
+          "score": 0.515,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "No Hidden Prompts Needed! You Can Game AI Peer Review with Presentation-Only Revisions",
-          "url": "https://huggingface.co/papers/2606.13044",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Pythagoras-Prover: Advancing Efficient Formal Proving via Augmented Lean Formalisation",
-          "url": "https://huggingface.co/papers/2606.12594",
-          "score": 0.468,
+          "source_id": "arxiv_papers",
+          "title": "AgentFairBench: Do LLM Agents Discriminate When They Act?",
+          "url": "http://arxiv.org/abs/2606.16723v1",
+          "score": 0.51,
           "trust_tier": "research"
         }
       ],
@@ -143,11 +185,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-15T22:15:05+00:00",
-      "updatedAt": "2026-06-15T22:15:05+00:00",
+      "publishedAt": "2026-06-16T02:44:17+00:00",
+      "updatedAt": "2026-06-16T02:44:17+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-15T22:15:05+00:00",
+  "tiered_at": "2026-06-16T02:44:17+00:00",
   "free_preview_count": 3
 }
