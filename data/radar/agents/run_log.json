@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-17T02:42:25+00:00",
+  "run_at": "2026-06-17T08:58:41+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 19.045,
+      "duration_s": 23.294,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 342 signals from 31 source families",
+        "collected 343 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 833 items",
-        "by tier: press=518, official=167, research=122, community=26"
+        "tagged 834 items",
+        "by tier: press=518, official=167, research=121, community=28"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 833 items, top priority=0.522"
+        "ranked 834 items, top priority=0.534"
       ],
       "error": null
     },
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.061,
+      "duration_s": 0.063,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+10 new model events",
+        "+0 new model events",
         "300 total"
       ],
       "error": null
@@ -115,7 +115,7 @@
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "17 events (14 new)",
+        "17 events (0 new)",
         "by type: policy_signal=1, model_release=10, personnel_move=2, pricing_change=2, acquisition=2"
       ],
       "error": null
@@ -135,19 +135,20 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 8.891,
+      "duration_s": 12.23,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 3 opportunities"
+        "openai produced 0 opportunities",
+        "rule fallback produced 4 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 8.3,
+      "duration_s": 16.006,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -166,7 +167,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 0 premium",
+        "opps: 3 free / 1 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +189,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.851,
+      "duration_s": 11.392,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +218,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=833, opps=3, calls=3"
+        "items=834, opps=4, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.415,
+      "duration_s": 4.173,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في عدد الإشارات، مما يشير إلى نشاط متزايد في م…"
+        "insight via openai: تزايدت الأنشطة المتعلقة بإصدارات النماذج، مما يشير إلى اهتمام متزايد من Google …"
       ],
       "error": null
     },
