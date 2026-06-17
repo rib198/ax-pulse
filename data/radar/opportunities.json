@@ -1,78 +1,48 @@
 {
-  "generated_at": "2026-06-17T08:58:41+00:00",
+  "generated_at": "2026-06-17T13:41:15+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 843,
   "opportunities": [
     {
-      "id": "ai_income_tools",
-      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
-      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
+      "id": "text-to-image-diffusion-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على أدوات تحويل النص إلى صورة يعكس الحاجة المتزايدة للإبداع الرقمي. التحديثات الأخيرة في نماذج مثل Stable Diffusion تقدم فرصًا لتقديم خدمات جديدة في هذا المجال.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "أداة لتحويل النص إلى صورة باستخدام تقنيات حديثة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
+      "tools_ar": "Hugging Face, PyTorch, TensorFlow",
       "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.51,
-      "confidence": 0.85,
-      "source": "rules",
+      "evidence_ids": [
+        "huggingface_models:Muapi/hero-creation-tools-advanced-classes-collection-xl",
+        "huggingface_models:Muapi/xl-carnelian-artist-style",
+        "huggingface_models:Muapi/haute-couture-xl-by-edg"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Learning from the Self-future: On-policy Self-distillation for dLLMs",
-          "url": "https://huggingface.co/papers/2606.18195",
-          "score": 0.534,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Muapi/hero-creation-tools-advanced-classes-collection-xl — text-to-image",
+          "url": "https://huggingface.co/Muapi/hero-creation-tools-advanced-classes-collection-xl",
+          "score": 0.509,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling",
-          "url": "https://huggingface.co/papers/2606.18023",
-          "score": 0.516,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Muapi/xl-carnelian-artist-style — text-to-image",
+          "url": "https://huggingface.co/Muapi/xl-carnelian-artist-style",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Learning from the Self-future: On-policy Self-distillation for dLLMs",
-          "url": "http://arxiv.org/abs/2606.18195v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MathVis-Fine: Aligning Visual Supervision with Necessity via Progressive Dependency-Guided Training for Multimodal Mathematical Reasoning",
-          "url": "http://arxiv.org/abs/2606.17888v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SegDINO: Introducing Multi-Scale Structure into DINO for Efficient Medical Image Segmentation",
-          "url": "http://arxiv.org/abs/2606.17972v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation",
-          "url": "https://huggingface.co/papers/2606.17628",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "ProvenanceGuard: Source-Aware Factuality Verification for MCP-Based LLM Agents",
-          "url": "http://arxiv.org/abs/2606.18037v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "LiteOdyssey: A Lightweight Reasoning AI Agent for Interpretable Rare-Disease Diagnosis",
-          "url": "http://arxiv.org/abs/2606.16149v1",
-          "score": 0.501,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Muapi/haute-couture-xl-by-edg — text-to-image",
+          "url": "https://huggingface.co/Muapi/haute-couture-xl-by-edg",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -80,109 +50,34 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-17T08:58:41+00:00",
-      "updatedAt": "2026-06-17T08:58:41+00:00",
+      "publishedAt": "2026-06-17T13:41:15+00:00",
+      "updatedAt": "2026-06-17T13:41:15+00:00",
       "sortOrder": 0
     },
     {
-      "id": "ai_income_automation",
-      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
-      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
-      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
-      "tools_ar": "n8n أو Make، API، نموذج AI",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.49,
-      "confidence": 0.85,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling",
-          "url": "https://huggingface.co/papers/2606.18023",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation",
-          "url": "https://huggingface.co/papers/2606.17628",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "ProvenanceGuard: Source-Aware Factuality Verification for MCP-Based LLM Agents",
-          "url": "http://arxiv.org/abs/2606.18037v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "LiteOdyssey: A Lightweight Reasoning AI Agent for Interpretable Rare-Disease Diagnosis",
-          "url": "http://arxiv.org/abs/2606.16149v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "strykes/SteraQwen3-0.6B — text-generation",
-          "url": "https://huggingface.co/strykes/SteraQwen3-0.6B",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "selorahomes/Selora-AI — text-generation",
-          "url": "https://huggingface.co/selorahomes/Selora-AI",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?",
-          "url": "https://huggingface.co/papers/2606.17861",
-          "score": 0.487,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Your AI Travel Agent Would Book You a Bullfight: An Agentic Benchmark for Implicit Animal Welfare in Frontier AI Models",
-          "url": "http://arxiv.org/abs/2606.18142v1",
-          "score": 0.461,
-          "trust_tier": "research"
-        }
+      "id": "efficient-llm-training-methods",
+      "title_ar": "طرق فعالة لتدريب نماذج اللغة الكبيرة",
+      "thesis_ar": "تطوير نماذج اللغة الكبيرة يتطلب تقنيات تدريب جديدة لتقليل التكلفة والوقت. تقنيات مثل On-policy Self-distillation يمكن أن تقدم تحسينات كبيرة.",
+      "buyer_ar": "شركات البرمجيات ومراكز البحث",
+      "sellable_product_ar": "خدمة استشارية لتطوير نماذج لغة فعالة",
+      "first_paid_test_ar": "تقديم دراسة جدوى لتحسين نموذج لغة موجود",
+      "tools_ar": "Hugging Face, PyTorch, TensorFlow",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.18195",
+        "arxiv_papers:2606.18195v1",
+        "huggingface_daily_papers:2606.18023"
       ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-17T08:58:41+00:00",
-      "updatedAt": "2026-06-17T08:58:41+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "ai_income_content",
-      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
-      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
-      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
-      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.51,
-      "confidence": 0.85,
-      "source": "rules",
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Learning from the Self-future: On-policy Self-distillation for dLLMs",
           "url": "https://huggingface.co/papers/2606.18195",
-          "score": 0.534,
+          "score": 0.537,
           "trust_tier": "research"
         },
         {
@@ -198,41 +93,6 @@
           "url": "http://arxiv.org/abs/2606.18195v1",
           "score": 0.515,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MathVis-Fine: Aligning Visual Supervision with Necessity via Progressive Dependency-Guided Training for Multimodal Mathematical Reasoning",
-          "url": "http://arxiv.org/abs/2606.17888v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SegDINO: Introducing Multi-Scale Structure into DINO for Efficient Medical Image Segmentation",
-          "url": "http://arxiv.org/abs/2606.17972v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
-          "url": "https://huggingface.co/papers/2606.17200",
-          "score": 0.498,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "B4100/notherplug — text-to-image",
-          "url": "https://huggingface.co/B4100/notherplug",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "B4100/plug — text-to-image",
-          "url": "https://huggingface.co/B4100/plug",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -240,91 +100,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-17T08:58:41+00:00",
-      "updatedAt": "2026-06-17T08:58:41+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-06-17T13:41:15+00:00",
+      "updatedAt": "2026-06-17T13:41:15+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
-      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
-      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
-      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.43,
-      "confidence": 0.84,
-      "source": "rules",
+      "id": "medical-image-segmentation-innovation",
+      "title_ar": "ابتكار في تقنيات تقسيم الصور الطبية",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في القطاع الطبي يفتح المجال لتطوير أدوات جديدة. استخدام نماذج DINO في تقسيم الصور الطبية يمكن أن يحسن دقة التشخيص.",
+      "buyer_ar": "المستشفيات ومراكز البحث الطبي",
+      "sellable_product_ar": "أداة لتقسيم الصور الطبية باستخدام تقنيات DINO",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتقسيم صورة طبية بسيطة",
+      "tools_ar": "DINO, TensorFlow, PyTorch",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2606.17972",
+        "huggingface_daily_papers:2606.17628",
+        "huggingface_daily_papers:2606.18216"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "github_repos",
-          "title": "kvcache-ai/Mooncake",
-          "url": "https://github.com/kvcache-ai/Mooncake",
-          "score": 0.461,
-          "trust_tier": "community"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Mind Companion: An Embodied Conversational Agent for Process-Based Psychotherapy",
-          "url": "http://arxiv.org/abs/2606.17789v1",
-          "score": 0.456,
+          "source_id": "huggingface_daily_papers",
+          "title": "OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2606.17628",
+          "score": 0.504,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "TrustedARI: Towards Trust-Native Agentic Routing Infrastructure for Agentic AI",
-          "url": "http://arxiv.org/abs/2606.15822v1",
-          "score": 0.453,
+          "source_id": "huggingface_daily_papers",
+          "title": "Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients",
+          "url": "https://huggingface.co/papers/2606.18216",
+          "score": 0.481,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "github_repos",
-          "title": "tjwodud04/korean-admin-guide-agent",
-          "url": "https://github.com/tjwodud04/korean-admin-guide-agent",
-          "score": 0.438,
-          "trust_tier": "community"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "While closed source AI is in shambles, open source is having one of the best weeks of all time.    Z ai GLM 5.2  Minimax M3  Kimi 2.7 code …",
-          "url": "https://x.com/Sentdex/status/2066157250268237993#m",
-          "score": 0.437,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Embedded Machine Learning for Microcontroller-Class Edge Devices: Data, Feature, Evaluation, and Deployment Pipelines",
-          "url": "http://arxiv.org/abs/2606.18122v1",
-          "score": 0.434,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "This whole Fable export control situation is actually net positive to regulation discourse. It’s an early peek into what AI regulation woul…",
-          "url": "https://x.com/levie/status/2065842361834651996#m",
-          "score": 0.372,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Great collaboration with @songhan_mit’s lab on world models 🚀   Enze Xie (@xieenze_jr)    🚀 Exciting news! SANA is now officially integrate…",
-          "url": "https://x.com/jiayq/status/2030182667602575655#m",
-          "score": 0.371,
-          "trust_tier": "press"
         }
       ],
-      "tier": "premium",
+      "tier": "free",
       "status": "published",
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-17T08:58:41+00:00",
-      "updatedAt": "2026-06-17T08:58:41+00:00",
-      "sortOrder": 3
+      "publishedAt": "2026-06-17T13:41:15+00:00",
+      "updatedAt": "2026-06-17T13:41:15+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-17T08:58:41+00:00",
+  "tiered_at": "2026-06-17T13:41:15+00:00",
   "free_preview_count": 3
 }
