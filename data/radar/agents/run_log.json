@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-18T16:55:38+00:00",
+  "run_at": "2026-06-18T20:14:35+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,20 +26,20 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 25.025,
+      "duration_s": 25.163,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 264 signals from 31 source families",
-        "9 source errors (non-fatal)"
+        "collected 352 signals from 31 source families",
+        "6 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.011,
       "written": [],
       "notes": [
         "injected 491 manual X items (skipped 9 of 500, avg score 0.142)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 755 items",
-        "by tier: press=516, research=112, official=92, community=35"
+        "tagged 843 items",
+        "by tier: press=518, official=164, research=128, community=33"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 755 items, top priority=0.490"
+        "ranked 843 items, top priority=0.529"
       ],
       "error": null
     },
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.057,
+      "duration_s": 0.062,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
+        "+2 new model events",
         "300 total"
       ],
       "error": null
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.138,
+      "duration_s": 0.145,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "16 events (0 new)",
-        "by type: policy_signal=1, model_release=8, personnel_move=2, pricing_change=3, acquisition=2"
+        "18 events (3 new)",
+        "by type: policy_signal=1, model_release=9, personnel_move=3, pricing_change=3, acquisition=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.017,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,19 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 14.058,
+      "duration_s": 13.248,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 4 opportunities"
+        "openai produced 3 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 8.145,
+      "duration_s": 10.602,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,13 +160,13 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.008,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 1 premium",
+        "opps: 3 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 8.991,
+      "duration_s": 11.278,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -200,7 +200,7 @@
     {
       "agent": "ux_production_qa",
       "ok": true,
-      "duration_s": 0.004,
+      "duration_s": 0.003,
       "written": [
         "data/radar/agents/qa_report.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.003,
+      "duration_s": 0.004,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=755, opps=4, calls=3"
+        "items=843, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.53,
+      "duration_s": 1.906,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط في مجال النماذج الجديدة، حيث شهدنا ثلاثة إعلانات بارزة من Google و…"
+        "insight via openai: شهد النشاط تركيزًا ملحوظًا على إصدارات نماذج جديدة، حيث تصدرت Anthropic وGoogle…"
       ],
       "error": null
     },
