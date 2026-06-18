@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-17T23:21:24+00:00",
+  "run_at": "2026-06-18T02:39:36+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 20.608,
+      "duration_s": 21.316,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 341 signals from 31 source families",
+        "collected 349 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 832 items",
-        "by tier: press=515, official=165, research=123, community=29"
+        "tagged 840 items",
+        "by tier: press=515, official=164, research=130, community=31"
       ],
       "error": null
     },
@@ -77,14 +77,14 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 832 items, top priority=0.542"
+        "ranked 840 items, top priority=0.525"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -102,7 +102,7 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
+        "+6 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.145,
+      "duration_s": 0.149,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "18 events (0 new)",
-        "by type: policy_signal=1, model_release=10, personnel_move=2, pricing_change=3, acquisition=2"
+        "17 events (10 new)",
+        "by type: policy_signal=1, model_release=8, acquisition=3, personnel_move=2, pricing_change=3"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 20.592,
+      "duration_s": 9.1,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 8.788,
+      "duration_s": 7.561,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 8.34,
+      "duration_s": 7.7,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=832, opps=3, calls=3"
+        "items=840, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.865,
+      "duration_s": 3.132,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط في مجال الإصدارات، حيث سجلت Google وAnthropic أعلى مستويات الثقة ف…"
+        "insight via openai: لوحظ زيادة ملحوظة في النشاط التنظيمي والإصدارات الجديدة خلال الفترة الحالية، حي…"
       ],
       "error": null
     },
