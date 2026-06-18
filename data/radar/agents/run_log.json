@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-18T20:14:35+00:00",
+  "run_at": "2026-06-18T23:38:13+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,20 +26,20 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 25.163,
+      "duration_s": 300.411,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 352 signals from 31 source families",
-        "6 source errors (non-fatal)"
+        "collected 339 signals from 31 source families",
+        "7 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.013,
       "written": [],
       "notes": [
         "injected 491 manual X items (skipped 9 of 500, avg score 0.142)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 843 items",
-        "by tier: press=518, official=164, research=128, community=33"
+        "tagged 830 items",
+        "by tier: press=519, official=166, research=115, community=30"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.028,
+      "duration_s": 0.031,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 843 items, top priority=0.529"
+        "ranked 830 items, top priority=0.529"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 13 companies, 15 products this run",
+        "detected 14 companies, 15 products this run",
         "store size: 44"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.062,
+      "duration_s": 0.059,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+2 new model events",
+        "+0 new model events",
         "300 total"
       ],
       "error": null
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.145,
+      "duration_s": 0.141,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "18 events (3 new)",
+        "18 events (0 new)",
         "by type: policy_signal=1, model_release=9, personnel_move=3, pricing_change=3, acquisition=2"
       ],
       "error": null
@@ -123,7 +123,7 @@
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.017,
+      "duration_s": 0.018,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 13.248,
+      "duration_s": 12.097,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 10.602,
+      "duration_s": 11.082,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 11.278,
+      "duration_s": 9.438,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=843, opps=3, calls=3"
+        "items=830, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.906,
+      "duration_s": 2.27,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهد النشاط تركيزًا ملحوظًا على إصدارات نماذج جديدة، حيث تصدرت Anthropic وGoogle…"
+        "insight via openai: شهدت النشاطات تركّزًا ملحوظًا على الإصدارات الجديدة من نماذج الذكاء الاصطناعي، …"
       ],
       "error": null
     },
