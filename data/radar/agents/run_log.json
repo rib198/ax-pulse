@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-20T21:08:33+00:00",
+  "run_at": "2026-06-20T23:03:14+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 19.455,
+      "duration_s": 20.352,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 363 signals from 31 source families",
+        "collected 359 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 854 items",
-        "by tier: press=525, official=166, research=131, community=32"
+        "tagged 850 items",
+        "by tier: press=525, official=165, research=131, community=29"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.03,
+      "duration_s": 0.031,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 854 items, top priority=0.498"
+        "ranked 850 items, top priority=0.499"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -102,7 +102,7 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+0 new model events",
+        "+3 new model events",
         "300 total"
       ],
       "error": null
@@ -115,8 +115,8 @@
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "17 events (0 new)",
-        "by type: policy_signal=4, model_release=6, personnel_move=3, pricing_change=2, acquisition=2"
+        "18 events (1 new)",
+        "by type: policy_signal=4, model_release=7, pricing_change=2, personnel_move=3, acquisition=2"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 10.705,
+      "duration_s": 11.984,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.019,
+      "duration_s": 9.492,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.009,
+      "duration_s": 0.01,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.487,
+      "duration_s": 8.185,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=854, opps=3, calls=3"
+        "items=850, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.766,
+      "duration_s": 2.177,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في الإشارات التنظيمية، حيث تم تسجيل 5 إشارات م…"
+        "insight via openai: تزايد النشاط التنظيمي والإصدار من شركات مثل Anthropic وGoogle يشير إلى تركيز مت…"
       ],
       "error": null
     },
