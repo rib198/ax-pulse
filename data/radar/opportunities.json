@@ -1,47 +1,90 @@
 {
-  "generated_at": "2026-06-20T10:30:34+00:00",
+  "generated_at": "2026-06-20T13:30:02+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 852,
+  "corpus_count": 849,
   "opportunities": [
     {
-      "id": "ai-driven-legal-services",
-      "title_ar": "خدمات قانونية مدفوعة بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في تقديم المعلومات القانونية يفتح المجال لتطوير خدمات قانونية ذكية. هذا الوقت مناسب نظرًا للاحتياج المتزايد لتحسين الوصول إلى النصوص القانونية وتبسيط العمليات القانونية.",
-      "buyer_ar": "مكاتب المحاماة، المؤسسات القانونية، الأفراد",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتقديم استشارات قانونية آلية",
-      "first_paid_test_ar": "تقديم استشارة قانونية بسيطة عبر النظام مقابل رسوم رمزية",
-      "tools_ar": "نموذج لغة كبير، واجهة مستخدم، قاعدة بيانات قانونية",
+      "id": "ai-driven-text-to-image",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يفتح آفاقًا جديدة في الإبداع الفني والتسويق. السوق العربي بحاجة إلى أدوات محلية تلبي احتياجاته الثقافية والفنية.",
+      "buyer_ar": "شركات التسويق، الوكالات الإبداعية، المطورون المستقلون",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص للسوق العربي",
+      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني مع خيار التخصيص المدفوع",
+      "tools_ar": "Hugging Face، أدوات التعلم العميق، مكتبات معالجة الصور",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2606.19899v1",
-        "huggingface_daily_papers:2606.19334",
-        "huggingface_daily_papers:2606.20517"
+        "huggingface_models:microssroads/tarot_card_flux_v1",
+        "huggingface_models:Az2671/AZ",
+        "huggingface_models:ibyteohdear/Phr00t-Qwen-Image-Edit-Rapid-AIO-V4"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.45,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Measuring Biological Capabilities and Risks of AI Agents",
-          "url": "http://arxiv.org/abs/2606.19899v1",
-          "score": 0.465,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "microssroads/tarot_card_flux_v1 — text-to-image",
+          "url": "https://huggingface.co/microssroads/tarot_card_flux_v1",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
+          "source_id": "huggingface_models",
+          "title": "Az2671/AZ — text-to-image",
+          "url": "https://huggingface.co/Az2671/AZ",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ibyteohdear/Phr00t-Qwen-Image-Edit-Rapid-AIO-V4 — text-to-image",
+          "url": "https://huggingface.co/ibyteohdear/Phr00t-Qwen-Image-Edit-Rapid-AIO-V4",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-20T13:30:02+00:00",
+      "updatedAt": "2026-06-20T13:30:02+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "code-generation-llm",
+      "title_ar": "تطوير أدوات توليد الكود باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في توليد الكود يفتح المجال لتطوير أدوات تسهل البرمجة. السوق بحاجة إلى حلول تدعم لغات البرمجة الأقل استخدامًا.",
+      "buyer_ar": "شركات البرمجيات، المطورون، الجامعات",
+      "sellable_product_ar": "أداة توليد كود تعتمد على نماذج لغة كبيرة تدعم لغات متعددة",
+      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع ميزات محدودة",
+      "tools_ar": "Hugging Face، مكتبات البرمجة، أدوات تطوير البرمجيات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.16827",
+        "huggingface_daily_papers:2606.20517",
+        "huggingface_daily_papers:2606.20258v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
           "source_id": "huggingface_daily_papers",
-          "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
-          "url": "https://huggingface.co/papers/2606.19334",
-          "score": 0.449,
+          "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
+          "url": "https://huggingface.co/papers/2606.16827",
+          "score": 0.48,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages",
           "url": "https://huggingface.co/papers/2606.20517",
-          "score": 0.449,
+          "score": 0.474,
           "trust_tier": "research"
         }
       ],
@@ -50,94 +93,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-20T10:30:34+00:00",
-      "updatedAt": "2026-06-20T10:30:34+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "automated-code-review",
-      "title_ar": "مراجعة الشفرات البرمجية الآلية",
-      "thesis_ar": "تزايد الحاجة لمراجعة الشفرات البرمجية بشكل فعال يتطلب حلولاً تعتمد على الذكاء الاصطناعي. الوقت الحالي هو الأنسب لتقديم هذه الخدمة بسبب زيادة التعقيد في البرمجة.",
-      "buyer_ar": "شركات تطوير البرمجيات، الجامعات، المطورون المستقلون",
-      "sellable_product_ar": "أداة لمراجعة الشفرات البرمجية باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم مراجعة شيفرة برمجية واحدة مقابل رسوم",
-      "tools_ar": "نموذج لغة كبير، واجهة برمجة التطبيقات، بيئة تطوير متكاملة",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.18976v1",
-        "huggingface_daily_papers:2606.20529v1",
-        "huggingface_daily_papers:2606.20258v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "FlowBender: Feedback-Aware Training for Self-Correcting Conditional Flows",
-          "url": "https://huggingface.co/papers/2606.20404",
-          "score": 0.483,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Editorial Alignment: A Participatory Approach to Engaging Editorial Expertise in LLM-mediated Knowledge Dissemination",
-          "url": "http://arxiv.org/abs/2606.20258v1",
-          "score": 0.479,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Hapissss/Chatbot-Tim-Legal-Indonesia — text-generation",
-          "url": "https://huggingface.co/Hapissss/Chatbot-Tim-Legal-Indonesia",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "snnh/paddleocr_vl_code_ocr — image-text-to-text",
-          "url": "https://huggingface.co/snnh/paddleocr_vl_code_ocr",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Basilkoonjoli/llama-binaries — text-to-image",
-          "url": "https://huggingface.co/Basilkoonjoli/llama-binaries",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "monosome/Acolas — text-to-image",
-          "url": "https://huggingface.co/monosome/Acolas",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-20T10:30:34+00:00",
-      "updatedAt": "2026-06-20T10:30:34+00:00",
+      "publishedAt": "2026-06-20T13:30:02+00:00",
+      "updatedAt": "2026-06-20T13:30:02+00:00",
       "sortOrder": 1
     },
     {
-      "id": "3d-visualization-tools",
-      "title_ar": "أدوات التصور ثلاثي الأبعاد",
-      "thesis_ar": "تزايد الاهتمام بتقنيات التصور ثلاثي الأبعاد يتيح فرصة لتطوير أدوات جديدة. هذه الأدوات يمكن أن تلبي احتياجات صناعات متعددة مثل الألعاب، التعليم، والإعلانات.",
-      "buyer_ar": "شركات الألعاب، شركات الإعلان، المؤسسات التعليمية",
-      "sellable_product_ar": "أداة لإنشاء تصورات ثلاثية الأبعاد باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج ثلاثي الأبعاد بسيط مقابل رسوم",
-      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، محرك رسومات",
+      "id": "local-legal-ai",
+      "title_ar": "تطوير حلول الذكاء الاصطناعي للقطاع القانوني المحلي",
+      "thesis_ar": "تزايد الحاجة إلى الوصول إلى نصوص قانونية موثوقة يدعم تطوير حلول الذكاء الاصطناعي. هناك فرصة لتقديم خدمات قانونية مبتكرة تعتمد على الذكاء الاصطناعي.",
+      "buyer_ar": "مكاتب المحاماة، المؤسسات القانونية، الشركات",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل النصوص القانونية المحلية",
+      "first_paid_test_ar": "تقديم استشارة قانونية مجانية مع إمكانية استخدام النظام",
+      "tools_ar": "Hugging Face، أدوات معالجة اللغة الطبيعية، قواعد بيانات قانونية",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.20563",
-        "huggingface_daily_papers:2606.20404",
-        "huggingface_daily_papers:2606.16827"
+        "huggingface_daily_papers:2606.19334",
+        "arxiv_papers:2606.19899v1",
+        "huggingface_daily_papers:2606.20563"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -146,15 +118,15 @@
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "FlowBender: Feedback-Aware Training for Self-Correcting Conditional Flows",
-          "url": "https://huggingface.co/papers/2606.20404",
-          "score": 0.483,
+          "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
+          "url": "https://huggingface.co/papers/2606.19334",
+          "score": 0.473,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
-          "url": "https://huggingface.co/papers/2606.16827",
+          "source_id": "arxiv_papers",
+          "title": "Measuring Biological Capabilities and Risks of AI Agents",
+          "url": "http://arxiv.org/abs/2606.19899v1",
           "score": 0.468,
           "trust_tier": "research"
         },
@@ -162,7 +134,7 @@
           "source_id": "huggingface_daily_papers",
           "title": "JanusMesh: Fast and Zero-Shot 3D Visual Illusion Generation via Cross-Space Denoising",
           "url": "https://huggingface.co/papers/2606.20563",
-          "score": 0.456,
+          "score": 0.466,
           "trust_tier": "research"
         }
       ],
@@ -171,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-20T10:30:34+00:00",
-      "updatedAt": "2026-06-20T10:30:34+00:00",
+      "publishedAt": "2026-06-20T13:30:02+00:00",
+      "updatedAt": "2026-06-20T13:30:02+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-20T10:30:34+00:00",
+  "tiered_at": "2026-06-20T13:30:02+00:00",
   "free_preview_count": 3
 }
