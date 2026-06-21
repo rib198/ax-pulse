@@ -1,74 +1,24 @@
 {
-  "generated_at": "2026-06-21T02:39:55+00:00",
+  "generated_at": "2026-06-21T08:25:51+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 848,
   "opportunities": [
     {
-      "id": "text-to-image-diffusion-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يشير إلى فرصة كبيرة في السوق. التحديثات المستمرة على نماذج Hugging Face تعزز من إمكانية تطوير حلول مبتكرة.",
-      "buyer_ar": "شركات التكنولوجيا، وكالات الإعلان، ومطورو المحتوى",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص لتلبية احتياجات السوق المحلي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لعميل محدد",
-      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:realalexdev/PrysmisAI",
-        "huggingface_models:jeremyhola/LORAs",
-        "huggingface_models:Az2671/AZ"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "realalexdev/PrysmisAI — text-to-image",
-          "url": "https://huggingface.co/realalexdev/PrysmisAI",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "jeremyhola/LORAs — text-to-image",
-          "url": "https://huggingface.co/jeremyhola/LORAs",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Az2671/AZ — text-to-image",
-          "url": "https://huggingface.co/Az2671/AZ",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-21T02:39:55+00:00",
-      "updatedAt": "2026-06-21T02:39:55+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "code-generation-llms",
-      "title_ar": "تطوير حلول توليد الكود باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في توليد الكود يفتح آفاق جديدة للتطوير البرمجي. الحاجة إلى أدوات فعالة لتسهيل البرمجة في لغات بدون موارد كبيرة تزداد.",
-      "buyer_ar": "شركات البرمجيات، مطورو التطبيقات، المؤسسات التعليمية",
-      "sellable_product_ar": "أداة توليد كود تعتمد على نماذج لغة كبيرة تدعم لغات برمجة متعددة",
-      "first_paid_test_ar": "تقديم أداة توليد كود بسيطة لعميل لاختبار فعاليتها",
-      "tools_ar": "نماذج اللغة الكبيرة، بيئات تطوير البرمجيات، أدوات اختبار البرمجيات",
+      "id": "ai-driven-code-generation",
+      "title_ar": "توليد الأكواد باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تتزايد الحاجة إلى أدوات توليد الأكواد الآلية في البرمجة، مما يسهل على المطورين إنتاج أكواد معقدة بسرعة. مع تقدم نماذج اللغة الكبيرة، يمكن تحسين أداء توليد الأكواد بشكل كبير.",
+      "buyer_ar": "شركات تطوير البرمجيات والمطورون المستقلون",
+      "sellable_product_ar": "أداة توليد أكواد تعتمد على نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم تجربة مجانية لمدة شهر مع إمكانية توليد أكواد بسيطة",
+      "tools_ar": "نموذج لغة كبير، واجهة مستخدم، خادم سحابي",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2606.16827",
         "huggingface_daily_papers:2606.20517",
-        "huggingface_daily_papers:2606.24624"
+        "huggingface_daily_papers:2606.20258v1"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 2,
       "avg_score": 0.48,
@@ -84,7 +34,7 @@
           "source_id": "huggingface_daily_papers",
           "title": "Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages",
           "url": "https://huggingface.co/papers/2606.20517",
-          "score": 0.479,
+          "score": 0.48,
           "trust_tier": "research"
         }
       ],
@@ -93,42 +43,99 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-21T02:39:55+00:00",
-      "updatedAt": "2026-06-21T02:39:55+00:00",
+      "publishedAt": "2026-06-21T08:25:51+00:00",
+      "updatedAt": "2026-06-21T08:25:51+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-creation",
+      "title_ar": "إنشاء الصور من النصوص",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يوفر فرصًا جديدة في مجالات الإبداع والتسويق. يمكن أن تلبي هذه النماذج احتياجات متعددة مثل الإعلانات والتصميم.",
+      "buyer_ar": "وكالات الإعلان والشركات الناشئة",
+      "sellable_product_ar": "أداة لإنشاء صور مخصصة بناءً على نصوص مدخلة",
+      "first_paid_test_ar": "تقديم خدمة إنشاء صورة واحدة مجانية مع إمكانية شراء المزيد",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، خادم سحابي",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:B4100/dldct",
+        "huggingface_models:ProfKakeru/Jarvis",
+        "huggingface_models:jeremyhola/LORAs"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "B4100/dldct — text-to-image",
+          "url": "https://huggingface.co/B4100/dldct",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ProfKakeru/Jarvis — text-to-image",
+          "url": "https://huggingface.co/ProfKakeru/Jarvis",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "jeremyhola/LORAs — text-to-image",
+          "url": "https://huggingface.co/jeremyhola/LORAs",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-21T08:25:51+00:00",
+      "updatedAt": "2026-06-21T08:25:51+00:00",
       "sortOrder": 1
     },
     {
-      "id": "local-legal-ai-solutions",
-      "title_ar": "تطوير حلول ذكاء اصطناعي قانونية محلية",
-      "thesis_ar": "الحاجة المتزايدة للوصول إلى نصوص قانونية موثوقة تعزز من فرص تطوير حلول ذكاء اصطناعي قانونية. نقص البيانات القانونية المحلية يخلق فجوة يمكن استغلالها.",
-      "buyer_ar": "مكاتب المحاماة، المؤسسات القانونية، الجهات الحكومية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل النصوص القانونية المحلية",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل نص قانوني محلي لمكتب محاماة",
-      "tools_ar": "أدوات تحليل النصوص، نماذج الذكاء الاصطناعي، قواعد بيانات قانونية",
+      "id": "ai-in-mental-health",
+      "title_ar": "الذكاء الاصطناعي في الصحة النفسية",
+      "thesis_ar": "تزايد الحاجة إلى الدعم النفسي يفتح المجال لتطوير أدوات تعتمد على الذكاء الاصطناعي لتقديم استشارات ودعم نفسي فعال. هذه الأدوات يمكن أن تكون متاحة على مدار الساعة.",
+      "buyer_ar": "مراكز الصحة النفسية والعيادات",
+      "sellable_product_ar": "تطبيق يقدم استشارات نفسية مدعومة بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم استشارة مجانية واحدة مع خيارات اشتراك لاحقة",
+      "tools_ar": "نموذج لغة كبير، واجهة مستخدم، خادم سحابي",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.19334",
-        "huggingface_daily_papers:2606.20563",
-        "huggingface_daily_papers:2606.20258v1"
+        "huggingface_models:Verdugie/Opus-Therapy-9B",
+        "huggingface_models:KissTheHabit/IDA_MoE",
+        "huggingface_models:AdamACE9/DocGlasses-LLM-v0.1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
-          "url": "https://huggingface.co/papers/2606.19334",
-          "score": 0.476,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "KissTheHabit/IDA_MoE — text-generation",
+          "url": "https://huggingface.co/KissTheHabit/IDA_MoE",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "JanusMesh: Fast and Zero-Shot 3D Visual Illusion Generation via Cross-Space Denoising",
-          "url": "https://huggingface.co/papers/2606.20563",
+          "source_id": "huggingface_models",
+          "title": "Verdugie/Opus-Therapy-9B — text-generation",
+          "url": "https://huggingface.co/Verdugie/Opus-Therapy-9B",
           "score": 0.466,
-          "trust_tier": "research"
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AdamACE9/DocGlasses-LLM-v0.1 — text-generation",
+          "url": "https://huggingface.co/AdamACE9/DocGlasses-LLM-v0.1",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -136,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-21T02:39:55+00:00",
-      "updatedAt": "2026-06-21T02:39:55+00:00",
+      "publishedAt": "2026-06-21T08:25:51+00:00",
+      "updatedAt": "2026-06-21T08:25:51+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-21T02:39:55+00:00",
+  "tiered_at": "2026-06-21T08:25:51+00:00",
   "free_preview_count": 3
 }
