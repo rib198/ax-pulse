@@ -1,24 +1,74 @@
 {
-  "generated_at": "2026-06-20T23:03:14+00:00",
+  "generated_at": "2026-06-21T02:39:55+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 850,
+  "corpus_count": 834,
   "opportunities": [
     {
-      "id": "ai-code-generation-tools",
-      "title_ar": "أدوات توليد الأكواد باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في توليد الأكواد البرمجية يفتح المجال لإنشاء أدوات تسهل على المطورين العمل بشكل أسرع. مع تقدم نماذج مثل LLMs، يمكن تحسين إنتاجية البرمجة بشكل كبير.",
-      "buyer_ar": "شركات تطوير البرمجيات والمطورون المستقلون",
-      "sellable_product_ar": "أداة توليد أكواد برمجية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مدفوعة لمدة شهر مع ميزات محدودة",
-      "tools_ar": "نموذج لغة كبير، واجهة برمجة تطبيقات، منصة سحابية",
-      "capital_ar": "منخفض",
+      "id": "text-to-image-diffusion-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يشير إلى فرصة كبيرة في السوق. التحديثات المستمرة على نماذج Hugging Face تعزز من إمكانية تطوير حلول مبتكرة.",
+      "buyer_ar": "شركات التكنولوجيا، وكالات الإعلان، ومطورو المحتوى",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص لتلبية احتياجات السوق المحلي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لعميل محدد",
+      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:realalexdev/PrysmisAI",
+        "huggingface_models:jeremyhola/LORAs",
+        "huggingface_models:Az2671/AZ"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "realalexdev/PrysmisAI — text-to-image",
+          "url": "https://huggingface.co/realalexdev/PrysmisAI",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "jeremyhola/LORAs — text-to-image",
+          "url": "https://huggingface.co/jeremyhola/LORAs",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Az2671/AZ — text-to-image",
+          "url": "https://huggingface.co/Az2671/AZ",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-21T02:39:55+00:00",
+      "updatedAt": "2026-06-21T02:39:55+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "code-generation-llms",
+      "title_ar": "تطوير حلول توليد الكود باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في توليد الكود يفتح آفاق جديدة للتطوير البرمجي. الحاجة إلى أدوات فعالة لتسهيل البرمجة في لغات بدون موارد كبيرة تزداد.",
+      "buyer_ar": "شركات البرمجيات، مطورو التطبيقات، المؤسسات التعليمية",
+      "sellable_product_ar": "أداة توليد كود تعتمد على نماذج لغة كبيرة تدعم لغات برمجة متعددة",
+      "first_paid_test_ar": "تقديم أداة توليد كود بسيطة لعميل لاختبار فعاليتها",
+      "tools_ar": "نماذج اللغة الكبيرة، بيئات تطوير البرمجيات، أدوات اختبار البرمجيات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2606.16827",
         "huggingface_daily_papers:2606.20517",
-        "huggingface_daily_papers:2606.20258v1"
+        "huggingface_daily_papers:2606.24624"
       ],
-      "confidence": 0.8,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 2,
       "avg_score": 0.48,
@@ -27,14 +77,14 @@
           "source_id": "huggingface_daily_papers",
           "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
           "url": "https://huggingface.co/papers/2606.16827",
-          "score": 0.48,
+          "score": 0.481,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages",
           "url": "https://huggingface.co/papers/2606.20517",
-          "score": 0.478,
+          "score": 0.479,
           "trust_tier": "research"
         }
       ],
@@ -43,25 +93,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-20T23:03:14+00:00",
-      "updatedAt": "2026-06-20T23:03:14+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-06-21T02:39:55+00:00",
+      "updatedAt": "2026-06-21T02:39:55+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "legal-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي في المجال القانوني",
-      "thesis_ar": "تزايد الحاجة للوصول إلى نصوص قانونية موثوقة يعزز من فرص تطوير حلول ذكاء اصطناعي تخدم المؤسسات القانونية. يمكن لهذه الحلول أن تسهل البحث القانوني وتحليل البيانات.",
-      "buyer_ar": "مكاتب المحاماة والمؤسسات القانونية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل النصوص القانونية",
-      "first_paid_test_ar": "تقديم خدمة تحليل نص قانوني واحد مجانًا مع عرض مدفوع لاحقًا",
-      "tools_ar": "نموذج لغة كبير، قاعدة بيانات قانونية، واجهة مستخدم",
+      "id": "local-legal-ai-solutions",
+      "title_ar": "تطوير حلول ذكاء اصطناعي قانونية محلية",
+      "thesis_ar": "الحاجة المتزايدة للوصول إلى نصوص قانونية موثوقة تعزز من فرص تطوير حلول ذكاء اصطناعي قانونية. نقص البيانات القانونية المحلية يخلق فجوة يمكن استغلالها.",
+      "buyer_ar": "مكاتب المحاماة، المؤسسات القانونية، الجهات الحكومية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل النصوص القانونية المحلية",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل نص قانوني محلي لمكتب محاماة",
+      "tools_ar": "أدوات تحليل النصوص، نماذج الذكاء الاصطناعي، قواعد بيانات قانونية",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2606.19334",
-        "arxiv_papers:2606.19899v1",
+        "huggingface_daily_papers:2606.20563",
         "huggingface_daily_papers:2606.20258v1"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 2,
       "avg_score": 0.47,
@@ -71,56 +121,6 @@
           "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
           "url": "https://huggingface.co/papers/2606.19334",
           "score": 0.476,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Measuring Biological Capabilities and Risks of AI Agents",
-          "url": "http://arxiv.org/abs/2606.19899v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-20T23:03:14+00:00",
-      "updatedAt": "2026-06-20T23:03:14+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "3d-visualization-tools",
-      "title_ar": "أدوات التصور ثلاثي الأبعاد",
-      "thesis_ar": "تطور تقنيات الذكاء الاصطناعي في إنشاء التصورات ثلاثية الأبعاد يتيح فرصًا جديدة في مجالات مثل الألعاب، التعليم، والفنون. يمكن أن تكون هذه الأدوات مفيدة لمصممي الألعاب والفنانين.",
-      "buyer_ar": "شركات تطوير الألعاب والمصممين",
-      "sellable_product_ar": "أداة لإنشاء تصورات ثلاثية الأبعاد باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء مشهد ثلاثي الأبعاد بتكلفة منخفضة",
-      "tools_ar": "نموذج ذكاء اصطناعي، برنامج تصميم ثلاثي الأبعاد، واجهة مستخدم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.20563",
-        "huggingface_daily_papers:2606.20404",
-        "huggingface_daily_papers:2606.16827"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "FlowBender: Feedback-Aware Training for Self-Correcting Conditional Flows",
-          "url": "https://huggingface.co/papers/2606.20404",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
-          "url": "https://huggingface.co/papers/2606.16827",
-          "score": 0.48,
           "trust_tier": "research"
         },
         {
@@ -136,11 +136,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-20T23:03:14+00:00",
-      "updatedAt": "2026-06-20T23:03:14+00:00",
+      "publishedAt": "2026-06-21T02:39:55+00:00",
+      "updatedAt": "2026-06-21T02:39:55+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-20T23:03:14+00:00",
+  "tiered_at": "2026-06-21T02:39:55+00:00",
   "free_preview_count": 3
 }
