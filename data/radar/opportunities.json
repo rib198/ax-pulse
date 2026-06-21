@@ -1,75 +1,39 @@
 {
-  "generated_at": "2026-06-21T08:25:51+00:00",
+  "generated_at": "2026-06-21T12:10:23+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 848,
+  "corpus_count": 845,
   "opportunities": [
     {
-      "id": "ai-driven-code-generation",
-      "title_ar": "توليد الأكواد باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تتزايد الحاجة إلى أدوات توليد الأكواد الآلية في البرمجة، مما يسهل على المطورين إنتاج أكواد معقدة بسرعة. مع تقدم نماذج اللغة الكبيرة، يمكن تحسين أداء توليد الأكواد بشكل كبير.",
-      "buyer_ar": "شركات تطوير البرمجيات والمطورون المستقلون",
-      "sellable_product_ar": "أداة توليد أكواد تعتمد على نماذج اللغة الكبيرة",
-      "first_paid_test_ar": "تقديم تجربة مجانية لمدة شهر مع إمكانية توليد أكواد بسيطة",
-      "tools_ar": "نموذج لغة كبير، واجهة مستخدم، خادم سحابي",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يفتح آفاقًا جديدة في الإبداع الرقمي. مع تحديثات النماذج المتعددة، يمكن تقديم حلول مخصصة للمصممين والفنانين.",
+      "buyer_ar": "المصممين والفنانين الرقميين",
+      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لمشروع صغير",
+      "tools_ar": "Hugging Face, TensorFlow, PyTorch",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.16827",
-        "huggingface_daily_papers:2606.20517",
-        "huggingface_daily_papers:2606.20258v1"
+        "huggingface_models:sololo-xyz/ErikaMomotani",
+        "huggingface_models:deniscool25/anna-flux-lora-v1",
+        "huggingface_models:ProfKakeru/Jarvis"
       ],
       "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
-          "url": "https://huggingface.co/papers/2606.16827",
-          "score": 0.481,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages",
-          "url": "https://huggingface.co/papers/2606.20517",
-          "score": 0.48,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-21T08:25:51+00:00",
-      "updatedAt": "2026-06-21T08:25:51+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-creation",
-      "title_ar": "إنشاء الصور من النصوص",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يوفر فرصًا جديدة في مجالات الإبداع والتسويق. يمكن أن تلبي هذه النماذج احتياجات متعددة مثل الإعلانات والتصميم.",
-      "buyer_ar": "وكالات الإعلان والشركات الناشئة",
-      "sellable_product_ar": "أداة لإنشاء صور مخصصة بناءً على نصوص مدخلة",
-      "first_paid_test_ar": "تقديم خدمة إنشاء صورة واحدة مجانية مع إمكانية شراء المزيد",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، خادم سحابي",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:B4100/dldct",
-        "huggingface_models:ProfKakeru/Jarvis",
-        "huggingface_models:jeremyhola/LORAs"
-      ],
-      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "B4100/dldct — text-to-image",
-          "url": "https://huggingface.co/B4100/dldct",
+          "title": "sololo-xyz/ErikaMomotani — text-to-image",
+          "url": "https://huggingface.co/sololo-xyz/ErikaMomotani",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "deniscool25/anna-flux-lora-v1 — text-to-image",
+          "url": "https://huggingface.co/deniscool25/anna-flux-lora-v1",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -79,13 +43,6 @@
           "url": "https://huggingface.co/ProfKakeru/Jarvis",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "jeremyhola/LORAs — text-to-image",
-          "url": "https://huggingface.co/jeremyhola/LORAs",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,49 +50,99 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-21T08:25:51+00:00",
-      "updatedAt": "2026-06-21T08:25:51+00:00",
+      "publishedAt": "2026-06-21T12:10:23+00:00",
+      "updatedAt": "2026-06-21T12:10:23+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "code-generation-llms",
+      "title_ar": "تطوير أدوات توليد الكود باستخدام LLMs",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في توليد الكود يتيح فرصًا لتسريع عمليات التطوير البرمجي. يمكن تقديم حلول مبتكرة للغات برمجة متعددة.",
+      "buyer_ar": "شركات البرمجيات والمطورين المستقلين",
+      "sellable_product_ar": "أداة توليد كود مخصصة باستخدام LLMs",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد كود بلغة برمجة محددة",
+      "tools_ar": "Hugging Face, GitHub, Visual Studio Code",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.16827",
+        "huggingface_daily_papers:2606.20517",
+        "huggingface_daily_papers:2603.24624"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages",
+          "url": "https://huggingface.co/papers/2606.16827",
+          "score": 0.482,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ReSyn: A Generalized Recursive Regular Expression Synthesis Framework",
+          "url": "https://huggingface.co/papers/2603.24624",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages",
+          "url": "https://huggingface.co/papers/2606.20517",
+          "score": 0.481,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-21T12:10:23+00:00",
+      "updatedAt": "2026-06-21T12:10:23+00:00",
       "sortOrder": 1
     },
     {
-      "id": "ai-in-mental-health",
-      "title_ar": "الذكاء الاصطناعي في الصحة النفسية",
-      "thesis_ar": "تزايد الحاجة إلى الدعم النفسي يفتح المجال لتطوير أدوات تعتمد على الذكاء الاصطناعي لتقديم استشارات ودعم نفسي فعال. هذه الأدوات يمكن أن تكون متاحة على مدار الساعة.",
-      "buyer_ar": "مراكز الصحة النفسية والعيادات",
-      "sellable_product_ar": "تطبيق يقدم استشارات نفسية مدعومة بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم استشارة مجانية واحدة مع خيارات اشتراك لاحقة",
-      "tools_ar": "نموذج لغة كبير، واجهة مستخدم، خادم سحابي",
+      "id": "3d-visualization-tools",
+      "title_ar": "تطوير أدوات توليد التصورات ثلاثية الأبعاد",
+      "thesis_ar": "التطورات في تقنيات توليد التصورات ثلاثية الأبعاد توفر فرصًا جديدة في مجالات الفن والتصميم. يمكن تقديم حلول مبتكرة للشركات في هذا المجال.",
+      "buyer_ar": "استوديوهات التصميم والفنون البصرية",
+      "sellable_product_ar": "أداة توليد تصورات ثلاثية الأبعاد",
+      "first_paid_test_ar": "تقديم نموذج أولي لتصور ثلاثي الأبعاد لمشروع فني",
+      "tools_ar": "Unity, Blender, OpenGL",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Verdugie/Opus-Therapy-9B",
-        "huggingface_models:KissTheHabit/IDA_MoE",
-        "huggingface_models:AdamACE9/DocGlasses-LLM-v0.1"
+        "huggingface_daily_papers:2606.20563",
+        "huggingface_daily_papers:2606.20404",
+        "huggingface_daily_papers:2606.19334"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "KissTheHabit/IDA_MoE — text-generation",
-          "url": "https://huggingface.co/KissTheHabit/IDA_MoE",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "FlowBender: Feedback-Aware Training for Self-Correcting Conditional Flows",
+          "url": "https://huggingface.co/papers/2606.20404",
+          "score": 0.499,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Verdugie/Opus-Therapy-9B — text-generation",
-          "url": "https://huggingface.co/Verdugie/Opus-Therapy-9B",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
+          "url": "https://huggingface.co/papers/2606.19334",
+          "score": 0.476,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "AdamACE9/DocGlasses-LLM-v0.1 — text-generation",
-          "url": "https://huggingface.co/AdamACE9/DocGlasses-LLM-v0.1",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "JanusMesh: Fast and Zero-Shot 3D Visual Illusion Generation via Cross-Space Denoising",
+          "url": "https://huggingface.co/papers/2606.20563",
+          "score": 0.467,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -143,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-21T08:25:51+00:00",
-      "updatedAt": "2026-06-21T08:25:51+00:00",
+      "publishedAt": "2026-06-21T12:10:23+00:00",
+      "updatedAt": "2026-06-21T12:10:23+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-21T08:25:51+00:00",
+  "tiered_at": "2026-06-21T12:10:23+00:00",
   "free_preview_count": 3
 }
