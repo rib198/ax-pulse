@@ -1,89 +1,47 @@
 {
-  "generated_at": "2026-06-24T19:30:48+00:00",
+  "generated_at": "2026-06-24T21:21:40+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 849,
+  "corpus_count": 858,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تطور نماذج تحويل النص إلى صورة يتيح إنشاء محتوى بصري مبتكر. هذه النماذج يمكن أن تلبي احتياجات التسويق والإعلانات.",
-      "buyer_ar": "وكالات الإعلان، شركات التصميم",
-      "sellable_product_ar": "خدمات إنشاء صور مخصصة من نصوص",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء صورة من نص محدد",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم، بيئة تطوير",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:papitreasure/cute-girl",
-        "huggingface_models:busetolunay/bld5g-style-1",
-        "huggingface_models:richardyoung/Qwythos-9B-Claude-Mythos-5-1M-heretic"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "papitreasure/cute-girl — text-to-image",
-          "url": "https://huggingface.co/papitreasure/cute-girl",
-          "score": 0.509,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "busetolunay/bld5g-style-1 — text-to-image",
-          "url": "https://huggingface.co/busetolunay/bld5g-style-1",
-          "score": 0.509,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "richardyoung/Qwythos-9B-Claude-Mythos-5-1M-heretic — text-generation",
-          "url": "https://huggingface.co/richardyoung/Qwythos-9B-Claude-Mythos-5-1M-heretic",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-24T19:30:48+00:00",
-      "updatedAt": "2026-06-24T19:30:48+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "bias-detection-tools",
-      "title_ar": "أدوات كشف وتحليل التحيز في المحتوى",
-      "thesis_ar": "تزايد القلق بشأن التحيز في المحتوى المكتوب والذكاء الاصطناعي يستدعي تطوير أدوات فعالة للكشف والتحليل. هذه الأدوات يمكن أن تكون ضرورية في مجالات التعليم والإعلام.",
-      "buyer_ar": "المؤسسات التعليمية، وكالات الإعلام",
-      "sellable_product_ar": "أدوات للكشف عن التحيز وتحليله",
-      "first_paid_test_ar": "تقديم تحليل لمحتوى محدد للكشف عن التحيز",
-      "tools_ar": "نماذج تحليل النصوص، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
+      "id": "personalized-ai-agents",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي مخصصين",
+      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي في التطبيقات المختلفة يوفر فرصة لتطوير حلول مخصصة. هذه التكنولوجيا تعزز من كفاءة التفاعل وتساعد في إدارة المهام بشكل فعال.",
+      "buyer_ar": "شركات البرمجيات والتطبيقات",
+      "sellable_product_ar": "حلول برمجية لوكلاء ذكاء اصطناعي مخصصين",
+      "first_paid_test_ar": "تقديم نموذج أولي لوكيل ذكاء اصطناعي لمهمة محددة",
+      "tools_ar": "أدوات تطوير البرمجيات، مكتبات الذكاء الاصطناعي، بيئات الاختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2606.23412v1",
+        "huggingface_daily_papers:2606.23449",
+        "arxiv_papers:2606.24331v1",
         "huggingface_daily_papers:2606.24548"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
+          "source_id": "huggingface_daily_papers",
+          "title": "AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction",
+          "url": "https://huggingface.co/papers/2606.23449",
+          "score": 0.522,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "arxiv_papers",
-          "title": "UnBias-Plus: Detect, Explain, and Rewrite Bias",
-          "url": "http://arxiv.org/abs/2606.23412v1",
-          "score": 0.468,
+          "title": "Transformer-Based Language Models Across Domain Verticals: Architectures, Applications and Critical Assessment",
+          "url": "http://arxiv.org/abs/2606.24331v1",
+          "score": 0.475,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Are Text-to-Image Models Inductivist Turkeys? A Counterfactual Benchmark for Causal Reasoning",
           "url": "https://huggingface.co/papers/2606.24548",
-          "score": 0.466,
+          "score": 0.45,
           "trust_tier": "research"
         }
       ],
@@ -92,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-24T19:30:48+00:00",
-      "updatedAt": "2026-06-24T19:30:48+00:00",
+      "publishedAt": "2026-06-24T21:21:40+00:00",
+      "updatedAt": "2026-06-24T21:21:40+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "bias-detection-tools",
+      "title_ar": "تطوير أدوات الكشف عن التحيز",
+      "thesis_ar": "مع تزايد القلق بشأن التحيز في المحتوى، هناك حاجة ملحة لأدوات تكشف وتعدل التحيز في النصوص. هذه الأدوات يمكن أن تعزز من مصداقية المحتوى وتساعد في تحقيق العدالة.",
+      "buyer_ar": "وسائل الإعلام، المؤسسات التعليمية، الشركات",
+      "sellable_product_ar": "أدوات الكشف عن التحيز في النصوص",
+      "first_paid_test_ar": "تقديم تقرير تحليل تحيز لنصوص معينة",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات الذكاء الاصطناعي، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "arxiv_papers:2606.23412v1",
+        "huggingface_daily_papers:2606.24548",
+        "huggingface_daily_papers:2606.24428"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "UnBias-Plus: Detect, Explain, and Rewrite Bias",
+          "url": "http://arxiv.org/abs/2606.23412v1",
+          "score": 0.465,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Are Text-to-Image Models Inductivist Turkeys? A Counterfactual Benchmark for Causal Reasoning",
+          "url": "https://huggingface.co/papers/2606.24548",
+          "score": 0.45,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning",
+          "url": "https://huggingface.co/papers/2606.24428",
+          "score": 0.449,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-24T21:21:40+00:00",
+      "updatedAt": "2026-06-24T21:21:40+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-solutions",
+      "title_ar": "تطوير حلول تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة في مجالات متعددة، مما يوفر فرصة لإنشاء حلول مبتكرة. هذه النماذج يمكن أن تعزز من التجربة البصرية للمستخدمين.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "خدمات تحويل النص إلى صورة باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم مجموعة من الصور الناتجة عن نصوص محددة كاختبار",
+      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات التصميم، منصات تطوير التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:papitreasure/cute-girl",
+        "huggingface_models:faisalKSA/SAUDI-STABLE-TRADITION-COFFE-CUP-SDXL",
+        "huggingface_models:Rami234/Amrs"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "papitreasure/cute-girl — text-to-image",
+          "url": "https://huggingface.co/papitreasure/cute-girl",
+          "score": 0.497,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "faisalKSA/SAUDI-STABLE-TRADITION-COFFE-CUP-SDXL — text-to-image",
+          "url": "https://huggingface.co/faisalKSA/SAUDI-STABLE-TRADITION-COFFE-CUP-SDXL",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Rami234/Amrs — text-to-image",
+          "url": "https://huggingface.co/Rami234/Amrs",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-24T21:21:40+00:00",
+      "updatedAt": "2026-06-24T21:21:40+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-24T19:30:48+00:00",
+  "tiered_at": "2026-06-24T21:21:40+00:00",
   "free_preview_count": 3
 }
