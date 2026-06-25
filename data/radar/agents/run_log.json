@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-25T10:38:50+00:00",
+  "run_at": "2026-06-25T14:06:04+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 22.636,
+      "duration_s": 20.633,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 346 signals from 31 source families",
+        "collected 340 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.015,
       "written": [],
       "notes": [
         "injected 491 manual X items (skipped 9 of 500, avg score 0.142)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 837 items",
-        "by tier: press=523, official=164, research=121, community=29"
+        "tagged 831 items",
+        "by tier: press=524, official=160, research=121, community=26"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.029,
+      "duration_s": 0.031,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 837 items, top priority=0.521"
+        "ranked 831 items, top priority=0.504"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.063,
+      "duration_s": 0.064,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.149,
+      "duration_s": 0.16,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "21 events (0 new)",
-        "by type: policy_signal=1, model_release=13, acquisition=3, personnel_move=2, pricing_change=2"
+        "21 events (1 new)",
+        "by type: policy_signal=1, model_release=13, personnel_move=2, pricing_change=3, acquisition=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.016,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 12.113,
+      "duration_s": 12.109,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 10.079,
+      "duration_s": 8.568,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.009,
+      "duration_s": 0.01,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 6.104,
+      "duration_s": 8.283,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=837, opps=3, calls=3"
+        "items=831, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.228,
+      "duration_s": 3.115,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في الإشارات التنظيمية والإصدارات الجديدة، مما …"
+        "insight via openai: تظهر الإشارات تراجعًا ملحوظًا مقارنة بالتشغيل السابق، مما يشير إلى انخفاض في ال…"
       ],
       "error": null
     },
