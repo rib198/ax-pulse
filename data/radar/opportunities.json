@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-25T14:06:04+00:00",
+  "generated_at": "2026-06-25T16:38:13+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 831,
+  "corpus_count": 818,
   "opportunities": [
     {
       "id": "text-to-video-generation",
       "title_ar": "توليد الفيديو من النصوص",
-      "thesis_ar": "تزايد الاهتمام بتوليد الفيديو من النصوص يفتح آفاق جديدة للإبداع في المحتوى. يمكن استخدام هذه التقنية في مجالات مثل التعليم والتسويق والإعلانات.",
-      "buyer_ar": "شركات الإنتاج الإعلامي، وكالات التسويق، ومطوري الألعاب.",
-      "sellable_product_ar": "منصة لتوليد الفيديو من النصوص باستخدام الذكاء الاصطناعي.",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء فيديو قصير من نص محدد.",
-      "tools_ar": "نموذج توليد الفيديو، واجهة مستخدم، خادم سحابي.",
-      "capital_ar": "متوسط",
+      "thesis_ar": "تزايد الاهتمام بتوليد الفيديو من النصوص يفتح آفاقًا جديدة في المحتوى الإعلامي. هذه التقنية يمكن أن تعزز من تجربة المستخدمين في مجالات مثل التسويق والتعليم.",
+      "buyer_ar": "شركات الإنتاج الإعلامي، منصات التعليم الإلكتروني",
+      "sellable_product_ar": "خدمة توليد فيديوهات ترويجية وتعليمية من نصوص",
+      "first_paid_test_ar": "توليد فيديو قصير من نص نصي بسيط",
+      "tools_ar": "نموذج توليد الفيديو، واجهة برمجة التطبيقات، منصة استضافة",
+      "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2606.26058",
         "huggingface_daily_papers:2606.26092",
-        "huggingface_daily_papers:2606.25984"
+        "huggingface_models:tpls/gemma-4-12B-coder-fable5-composer2.5-v1-sft-v5"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
@@ -29,6 +29,13 @@
           "url": "https://huggingface.co/papers/2606.26058",
           "score": 0.494,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "tpls/gemma-4-12B-coder-fable5-composer2.5-v1-sft-v5 — text-generation",
+          "url": "https://huggingface.co/tpls/gemma-4-12B-coder-fable5-composer2.5-v1-sft-v5",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
@@ -43,49 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-25T14:06:04+00:00",
-      "updatedAt": "2026-06-25T14:06:04+00:00",
+      "publishedAt": "2026-06-25T16:38:13+00:00",
+      "updatedAt": "2026-06-25T16:38:13+00:00",
       "sortOrder": 0
     },
     {
-      "id": "large-language-model-safety",
-      "title_ar": "تحسين سلامة نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة يتطلب تحسين معايير السلامة. هناك حاجة ملحة لتطوير حلول تضمن استخدام هذه النماذج بشكل آمن.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، والهيئات الحكومية.",
-      "sellable_product_ar": "أداة لتقييم وتحسين سلامة نماذج اللغة الكبيرة.",
-      "first_paid_test_ar": "تقديم تقرير تقييم سلامة لنموذج لغة كبير موجود.",
-      "tools_ar": "نموذج لغة، أداة تقييم، خوارزمية لتحسين السلامة.",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-creation",
+      "title_ar": "إنشاء الصور من النصوص",
+      "thesis_ar": "تطور نماذج تحويل النص إلى صورة يوفر فرصًا جديدة للفنانين والمصممين. يمكن استخدام هذه التقنية في التسويق والإعلانات.",
+      "buyer_ar": "شركات الدعاية والإعلان، الفنانين المستقلين",
+      "sellable_product_ar": "خدمة إنشاء صور مخصصة بناءً على نصوص",
+      "first_paid_test_ar": "إنشاء صورة واحدة من نص قصير",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، منصة استضافة",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2606.25442v1",
-        "arxiv_papers:2606.24331v1",
-        "huggingface_daily_papers:2606.16316"
+        "huggingface_models:busetolunay/bld5g-style-lowdim_2",
+        "huggingface_models:editmilliionss/THEBESTFLUX",
+        "huggingface_models:ms2stationthis/animalcrossingflux-klein"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
-          "url": "http://arxiv.org/abs/2606.25442v1",
-          "score": 0.501,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "busetolunay/bld5g-style-lowdim_2 — text-to-image",
+          "url": "https://huggingface.co/busetolunay/bld5g-style-lowdim_2",
+          "score": 0.509,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Transformer-Based Language Models Across Domain Verticals: Architectures, Applications and Critical Assessment",
-          "url": "http://arxiv.org/abs/2606.24331v1",
-          "score": 0.486,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "editmilliionss/THEBESTFLUX — text-to-image",
+          "url": "https://huggingface.co/editmilliionss/THEBESTFLUX",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "RL-Index: Reinforcement Learning for Retrieval Index Reasoning",
-          "url": "https://huggingface.co/papers/2606.16316",
-          "score": 0.466,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "ms2stationthis/animalcrossingflux-klein — text-to-image",
+          "url": "https://huggingface.co/ms2stationthis/animalcrossingflux-klein",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,22 +100,22 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-25T14:06:04+00:00",
-      "updatedAt": "2026-06-25T14:06:04+00:00",
+      "publishedAt": "2026-06-25T16:38:13+00:00",
+      "updatedAt": "2026-06-25T16:38:13+00:00",
       "sortOrder": 1
     },
     {
-      "id": "memory-systems-for-llms",
-      "title_ar": "أنظمة الذاكرة لنماذج اللغة الكبيرة",
-      "thesis_ar": "تطور أنظمة الذاكرة لنماذج اللغة الكبيرة يوفر فرصًا لتحسين الأداء. يمكن أن تؤدي هذه الأنظمة إلى تحسينات كبيرة في كيفية معالجة المعلومات.",
-      "buyer_ar": "شركات البرمجيات، مطورو التطبيقات، ومراكز البحث.",
-      "sellable_product_ar": "حلول برمجية تعتمد على أنظمة الذاكرة لنماذج اللغة.",
-      "first_paid_test_ar": "تطوير نموذج أولي لاختبار أداء نظام ذاكرة مدمج.",
-      "tools_ar": "نموذج لغة، خادم سحابي، واجهة برمجة التطبيقات.",
+      "id": "memory-systems-for-ai",
+      "title_ar": "أنظمة الذاكرة للذكاء الاصطناعي",
+      "thesis_ar": "تطوير أنظمة الذاكرة للذكاء الاصطناعي يمكن أن يحسن من أداء النماذج ويزيد من كفاءتها. هذه الأنظمة ضرورية لتلبية متطلبات الأمان المتزايدة.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات البحثية",
+      "sellable_product_ar": "حلول لتطوير أنظمة الذاكرة للذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لنظام ذاكرة بسيط",
+      "tools_ar": "نموذج ذكاء اصطناعي، أدوات تطوير البرمجيات، منصة اختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2606.24775",
-        "huggingface_daily_papers:2606.26087",
+        "arxiv_papers:2606.25442v1",
         "arxiv_papers:2606.25836v1"
       ],
       "confidence": 0.7,
@@ -124,10 +131,10 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "MVTrack4Gen: Multi-View Point Tracking as Geometric Supervision for 4D Video Generation",
-          "url": "https://huggingface.co/papers/2606.26087",
-          "score": 0.487,
+          "source_id": "arxiv_papers",
+          "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
+          "url": "http://arxiv.org/abs/2606.25442v1",
+          "score": 0.501,
           "trust_tier": "research"
         },
         {
@@ -143,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-25T14:06:04+00:00",
-      "updatedAt": "2026-06-25T14:06:04+00:00",
+      "publishedAt": "2026-06-25T16:38:13+00:00",
+      "updatedAt": "2026-06-25T16:38:13+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-25T14:06:04+00:00",
+  "tiered_at": "2026-06-25T16:38:13+00:00",
   "free_preview_count": 3
 }
