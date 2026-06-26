@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-26T19:32:44+00:00",
+  "run_at": "2026-06-26T21:17:37+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 23.574,
+      "duration_s": 24.722,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.015,
       "written": [],
       "notes": [
         "injected 491 manual X items (skipped 9 of 500, avg score 0.142)"
@@ -55,7 +55,7 @@
       ],
       "notes": [
         "tagged 841 items",
-        "by tier: press=524, official=166, research=123, community=28"
+        "by tier: press=524, official=167, research=123, community=27"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.03,
+      "duration_s": 0.031,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 841 items, top priority=0.501"
+        "ranked 841 items, top priority=0.509"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 16 companies, 14 products this run",
+        "detected 15 companies, 14 products this run",
         "store size: 45"
       ],
       "error": null
@@ -102,7 +102,7 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+2 new model events",
+        "+0 new model events",
         "300 total"
       ],
       "error": null
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 13.777,
+      "duration_s": 11.493,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 10.203,
+      "duration_s": 7.262,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.511,
+      "duration_s": 7.82,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -224,12 +224,12 @@
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.918,
+      "duration_s": 3.359,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط التنظيمي من قبل شركات مثل Anthropic وMeta يشير إلى اهتمام متزايد ب…"
+        "insight via openai: يظهر نمط متزايد في النشاط التنظيمي، حيث تم تسجيل إشارتين تنظيميتين من شركات بار…"
       ],
       "error": null
     },

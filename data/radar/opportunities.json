@@ -1,67 +1,46 @@
 {
-  "generated_at": "2026-06-26T19:32:44+00:00",
+  "generated_at": "2026-06-26T21:17:37+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 841,
   "opportunities": [
     {
-      "id": "policy-align-safety-llms",
-      "title_ar": "تطوير حلول أمان للذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى أمان نماذج اللغة الكبيرة يفتح المجال لتطوير حلول مبتكرة. مع تزايد متطلبات الأمان، يمكن توفير خدمات استشارية أو أدوات لضمان التوافق مع هذه المتطلبات.",
-      "buyer_ar": "شركات تطوير البرمجيات، المؤسسات الحكومية",
-      "sellable_product_ar": "أدوات أمان للذكاء الاصطناعي، خدمات استشارية",
-      "first_paid_test_ar": "تقديم استشارة مجانية مع تحليل حالة أمان نموذج موجود",
-      "tools_ar": "أدوات تحليل الأمان، منصات تدريب الذكاء الاصطناعي، واجهات برمجة التطبيقات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة تظهر زيادة في الطلب على هذه التكنولوجيا. مع تزايد استخدام الذكاء الاصطناعي في الفنون والتصميم، هناك حاجة ملحة لتطوير نماذج جديدة تلبي احتياجات السوق.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.25442",
-        "2606.27090",
-        "2606.26875"
+        "huggingface_models:busetolunay/assets-bld5g-style-balanced",
+        "huggingface_models:ilkerzgi/krea-2-neon-spectrum-flow-lora",
+        "huggingface_models:ilkerzgi/krea-2-dreamy-lavender-bloom-lora"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Beyond Global Divergences: A Local-Mass Perspective on Bayesian Inference",
-          "url": "http://arxiv.org/abs/2606.27090v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
-          "url": "http://arxiv.org/abs/2606.25442v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution",
-          "url": "https://huggingface.co/papers/2606.27313",
-          "score": 0.498,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
-          "url": "http://arxiv.org/abs/2606.27027v1",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "busetolunay/assets-bld5g-style-balanced — text-to-image",
+          "url": "https://huggingface.co/busetolunay/assets-bld5g-style-balanced",
+          "score": 0.509,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "litert-community/FastContext-1.0-4B-SFT — text-generation",
-          "url": "https://huggingface.co/litert-community/FastContext-1.0-4B-SFT",
+          "title": "ilkerzgi/krea-2-neon-spectrum-flow-lora — text-to-image",
+          "url": "https://huggingface.co/ilkerzgi/krea-2-neon-spectrum-flow-lora",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "RefinedNeuro/VibeThinker-3B-Hermes — text-generation",
-          "url": "https://huggingface.co/RefinedNeuro/VibeThinker-3B-Hermes",
+          "title": "ilkerzgi/krea-2-dreamy-lavender-bloom-lora — text-to-image",
+          "url": "https://huggingface.co/ilkerzgi/krea-2-dreamy-lavender-bloom-lora",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -71,48 +50,34 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-26T19:32:44+00:00",
-      "updatedAt": "2026-06-26T19:32:44+00:00",
+      "publishedAt": "2026-06-26T21:17:37+00:00",
+      "updatedAt": "2026-06-26T21:17:37+00:00",
       "sortOrder": 0
     },
     {
-      "id": "kv-cache-compression-solutions",
-      "title_ar": "حلول ضغط ذاكرة التخزين المؤقت للنماذج الكبيرة",
-      "thesis_ar": "مع تزايد استخدام النماذج الكبيرة، تبرز الحاجة إلى تحسين إدارة الذاكرة. تطوير حلول ضغط فعالة يمكن أن يسهم في تحسين الأداء وتقليل التكاليف.",
-      "buyer_ar": "شركات تطوير البرمجيات، المؤسسات البحثية",
-      "sellable_product_ar": "أدوات ضغط الذاكرة، خدمات استشارية لتحسين الأداء",
-      "first_paid_test_ar": "تقديم دراسة حالة على نموذج موجود مع تحسينات مقترحة",
-      "tools_ar": "أدوات تحليل الأداء، مكتبات تعلم الآلة، منصات اختبار الأداء",
+      "id": "safety-alignment-llms",
+      "title_ar": "تطوير حلول لضمان سلامة نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة يتطلب حلولاً مبتكرة لضمان سلامتها. مع ظهور متطلبات جديدة للسلامة، هناك فرصة لتقديم خدمات استشارية أو أدوات تساعد في تحقيق ذلك.",
+      "buyer_ar": "شركات التقنية ومطوري البرمجيات",
+      "sellable_product_ar": "أدوات لضمان سلامة نماذج اللغة",
+      "first_paid_test_ar": "تقديم استشارة مجانية حول كيفية تحسين نماذجهم الحالية",
+      "tools_ar": "Python, Jupyter Notebook, أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2606.26875",
-        "2606.27027",
-        "2606.24551"
+        "arxiv_papers:2606.25442v1",
+        "arxiv_papers:2606.27027v1",
+        "arxiv_papers:2606.25836v1"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Beyond Global Divergences: A Local-Mass Perspective on Bayesian Inference",
-          "url": "http://arxiv.org/abs/2606.27090v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
         {
           "source_id": "arxiv_papers",
           "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
           "url": "http://arxiv.org/abs/2606.25442v1",
           "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution",
-          "url": "https://huggingface.co/papers/2606.27313",
-          "score": 0.498,
           "trust_tier": "research"
         },
         {
@@ -123,18 +88,11 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "litert-community/FastContext-1.0-4B-SFT — text-generation",
-          "url": "https://huggingface.co/litert-community/FastContext-1.0-4B-SFT",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "RefinedNeuro/VibeThinker-3B-Hermes — text-generation",
-          "url": "https://huggingface.co/RefinedNeuro/VibeThinker-3B-Hermes",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "AI Snitches Get Glitches: Towards Evading Agentic Surveillance",
+          "url": "http://arxiv.org/abs/2606.25836v1",
+          "score": 0.479,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -142,43 +100,29 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-26T19:32:44+00:00",
-      "updatedAt": "2026-06-26T19:32:44+00:00",
+      "publishedAt": "2026-06-26T21:17:37+00:00",
+      "updatedAt": "2026-06-26T21:17:37+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multimodal-modeling-solutions",
+      "id": "multimodal-models",
       "title_ar": "تطوير نماذج متعددة الوسائط",
-      "thesis_ar": "تزايد الاهتمام بالنماذج التي تجمع بين النص والصورة يشير إلى فرصة كبيرة في السوق. يمكن أن تؤدي هذه النماذج إلى تحسينات كبيرة في التطبيقات التجارية والإبداعية.",
-      "buyer_ar": "شركات الإعلان، المطورون في مجالات التعليم والترفيه",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط، خدمات تطوير محتوى",
-      "first_paid_test_ar": "تطوير نموذج أولي بسيط لمشروع تجريبي",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، منصات تطوير التطبيقات",
-      "capital_ar": "متوسط",
+      "thesis_ar": "زيادة الاهتمام بالنماذج التي تجمع بين النص والصورة تشير إلى فرصة كبيرة في السوق. مع تزايد الطلب على التطبيقات التي تستخدم هذه النماذج، يمكن تطوير حلول مبتكرة تلبي احتياجات المستخدمين.",
+      "buyer_ar": "شركات التكنولوجيا والإعلام",
+      "sellable_product_ar": "نماذج متعددة الوسائط لتحليل المحتوى",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لمشروع صغير يجمع بين النص والصورة",
+      "tools_ar": "Hugging Face, PyTorch, OpenAI API",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.27313",
-        "ilkerzgi/krea-2-neon-spectrum-flow-lora",
-        "ilkerzgi/krea-2-neon-haze-dreamglow-lora"
+        "huggingface_daily_papers:2606.27313",
+        "huggingface_models:vectionlabs/Salience-1-9B",
+        "huggingface_models:darkneighbor667/Qwen3.6-34B-80L-Fable-5-Heretic"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Beyond Global Divergences: A Local-Mass Perspective on Bayesian Inference",
-          "url": "http://arxiv.org/abs/2606.27090v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
-          "url": "http://arxiv.org/abs/2606.25442v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution",
@@ -187,23 +131,16 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
-          "url": "http://arxiv.org/abs/2606.27027v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "litert-community/FastContext-1.0-4B-SFT — text-generation",
-          "url": "https://huggingface.co/litert-community/FastContext-1.0-4B-SFT",
+          "title": "darkneighbor667/Qwen3.6-34B-80L-Fable-5-Heretic — image-text-to-text",
+          "url": "https://huggingface.co/darkneighbor667/Qwen3.6-34B-80L-Fable-5-Heretic",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "RefinedNeuro/VibeThinker-3B-Hermes — text-generation",
-          "url": "https://huggingface.co/RefinedNeuro/VibeThinker-3B-Hermes",
+          "title": "vectionlabs/Salience-1-9B — image-text-to-text",
+          "url": "https://huggingface.co/vectionlabs/Salience-1-9B",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -213,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-26T19:32:44+00:00",
-      "updatedAt": "2026-06-26T19:32:44+00:00",
+      "publishedAt": "2026-06-26T21:17:37+00:00",
+      "updatedAt": "2026-06-26T21:17:37+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-26T19:32:44+00:00",
+  "tiered_at": "2026-06-26T21:17:37+00:00",
   "free_preview_count": 3
 }
