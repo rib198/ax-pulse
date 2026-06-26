@@ -1,48 +1,69 @@
 {
-  "generated_at": "2026-06-25T23:12:09+00:00",
+  "generated_at": "2026-06-26T02:13:52+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 833,
+  "corpus_count": 836,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يوفر فرصة لتقديم خدمات مخصصة في مجالات مثل التسويق والفن الرقمي. مع تزايد استخدام هذه النماذج، يمكن استغلالها لإنشاء محتوى مرئي مبتكر.",
-      "buyer_ar": "شركات التسويق والإعلانات، الفنانين الرقميين",
-      "sellable_product_ar": "خدمات إنشاء محتوى مرئي باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء صورة بناءً على نص محدد مقابل رسوم رمزية",
-      "tools_ar": "Hugging Face، أدوات تصميم الجرافيك، منصات تسويق رقمية",
+      "id": "automated-resume-screening",
+      "title_ar": "تحسين أنظمة فرز السير الذاتية باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في فرز المتقدمين للوظائف يفتح المجال لتطوير أدوات تحسن دقة هذه الأنظمة. مع وجود مخاطر التلاعب، هناك حاجة ماسة لحلول تعزز الأمان والموثوقية.",
+      "buyer_ar": "شركات التوظيف ومراكز الموارد البشرية",
+      "sellable_product_ar": "نظام فرز سير ذاتية مدعوم بالذكاء الاصطناعي مع ميزات أمان متقدمة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل فعالية النظام في فرز السير الذاتية",
+      "tools_ar": "نموذج لغة كبير، واجهة برمجة التطبيقات، نظام إدارة البيانات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:busetolunay/bld5g-style-light2",
-        "huggingface_models:faisalKSA/JAPANDI-interior-exterior-Style-pro",
-        "huggingface_models:aimalias/b3thl1ly-krea"
+        "2606.27287v1",
+        "2606.27180v1",
+        "2606.25442v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "busetolunay/bld5g-style-light2 — text-to-image",
-          "url": "https://huggingface.co/busetolunay/bld5g-style-light2",
-          "score": 0.509,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Beyond Global Divergences: A Local-Mass Perspective on Bayesian Inference",
+          "url": "http://arxiv.org/abs/2606.27090v1",
+          "score": 0.537,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "faisalKSA/JAPANDI-interior-exterior-Style-pro — text-to-image",
-          "url": "https://huggingface.co/faisalKSA/JAPANDI-interior-exterior-Style-pro",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
+          "url": "http://arxiv.org/abs/2606.27027v1",
+          "score": 0.525,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "aimalias/b3thl1ly-krea — text-to-image",
-          "url": "https://huggingface.co/aimalias/b3thl1ly-krea",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings",
+          "url": "http://arxiv.org/abs/2606.27287v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
+          "url": "http://arxiv.org/abs/2606.27350v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
+          "url": "http://arxiv.org/abs/2606.27180v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
+          "url": "http://arxiv.org/abs/2606.25442v1",
+          "score": 0.501,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -50,49 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-25T23:12:09+00:00",
-      "updatedAt": "2026-06-25T23:12:09+00:00",
+      "publishedAt": "2026-06-26T02:13:52+00:00",
+      "updatedAt": "2026-06-26T02:13:52+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-generation-services",
-      "title_ar": "تقديم خدمات توليد النصوص",
-      "thesis_ar": "تزايد الاعتماد على نماذج توليد النصوص في مختلف الصناعات يفتح المجال لتقديم خدمات مخصصة. يمكن استغلال هذه النماذج في كتابة المحتوى، خدمة العملاء، وتوليد النصوص الإبداعية.",
-      "buyer_ar": "شركات المحتوى، وكالات التسويق، المؤسسات التعليمية",
-      "sellable_product_ar": "خدمات توليد نصوص مخصصة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نص مولد بناءً على طلب العميل مقابل رسوم رمزية",
-      "tools_ar": "Hugging Face، أدوات إدارة المحتوى، منصات تحليل البيانات",
-      "capital_ar": "منخفض",
+      "id": "synthetic-clinical-data",
+      "title_ar": "تطوير بيانات سريرية صناعية لتحسين أنظمة الذكاء الاصطناعي في الرعاية الصحية",
+      "thesis_ar": "استخدام البيانات الصناعية في تطوير أنظمة الذكاء الاصطناعي يتيح تحسين الأداء في مجالات حساسة مثل الرعاية الصحية. مع تزايد القيود على الوصول إلى البيانات الحقيقية، فإن هذه الحلول تصبح ضرورية.",
+      "buyer_ar": "مؤسسات الرعاية الصحية ومراكز البحث العلمي",
+      "sellable_product_ar": "نظام لتوليد بيانات سريرية صناعية باستخدام نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد بيانات سريرية صناعية وتحليل فعاليتها",
+      "tools_ar": "نموذج لغة كبير، منصة تحليل البيانات، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:cemig-nlp-releases/enregy-gpt-regulatorio-32B-v2",
-        "huggingface_models:KissTheHabit/IDA_AI",
-        "huggingface_models:qrk-labs/dabe-stage-b-gpt2-0_5b-instruct-sft"
+        "2606.26879v1",
+        "2606.27090v1",
+        "2606.27350v1"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "cemig-nlp-releases/enregy-gpt-regulatorio-32B-v2 — text-generation",
-          "url": "https://huggingface.co/cemig-nlp-releases/enregy-gpt-regulatorio-32B-v2",
-          "score": 0.499,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Beyond Global Divergences: A Local-Mass Perspective on Bayesian Inference",
+          "url": "http://arxiv.org/abs/2606.27090v1",
+          "score": 0.537,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "KissTheHabit/IDA_AI — text-generation",
-          "url": "https://huggingface.co/KissTheHabit/IDA_AI",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
+          "url": "http://arxiv.org/abs/2606.27027v1",
+          "score": 0.525,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "qrk-labs/dabe-stage-b-gpt2-0_5b-instruct-sft — text-generation",
-          "url": "https://huggingface.co/qrk-labs/dabe-stage-b-gpt2-0_5b-instruct-sft",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings",
+          "url": "http://arxiv.org/abs/2606.27287v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
+          "url": "http://arxiv.org/abs/2606.27350v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
+          "url": "http://arxiv.org/abs/2606.27180v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
+          "url": "http://arxiv.org/abs/2606.25442v1",
+          "score": 0.501,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -100,48 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-25T23:12:09+00:00",
-      "updatedAt": "2026-06-25T23:12:09+00:00",
+      "publishedAt": "2026-06-26T02:13:52+00:00",
+      "updatedAt": "2026-06-26T02:13:52+00:00",
       "sortOrder": 1
     },
     {
-      "id": "video-synthesis-technology",
-      "title_ar": "تطوير تقنيات توليد الفيديو",
-      "thesis_ar": "تزايد استخدام تقنيات توليد الفيديو الافتراضي يوفر فرصة لإنشاء محتوى مرئي مبتكر. يمكن استغلال هذه التقنيات في مجالات مثل الموضة والترفيه.",
-      "buyer_ar": "شركات الموضة، وكالات الإنتاج السينمائي",
-      "sellable_product_ar": "خدمات توليد فيديوهات افتراضية باستخدام تقنيات متقدمة",
-      "first_paid_test_ar": "إنشاء فيديو افتراضي قصير لعرض منتج أو خدمة مقابل رسوم",
-      "tools_ar": "Hugging Face، أدوات تحرير الفيديو، منصات تسويق رقمية",
+      "id": "multi-modal-web-agents",
+      "title_ar": "تطوير وكلاء ويب متعددين الوسائط لتحسين تجربة المستخدم",
+      "thesis_ar": "تزايد الحاجة لوكلاء ويب يمكنهم تنفيذ مهام معقدة بشكل فعال يعكس الطلب المتزايد على الأتمتة. هذه الوكلاء يمكن أن تسهم في تحسين الكفاءة وتقليل الجهد البشري.",
+      "buyer_ar": "شركات التكنولوجيا ومطورو البرمجيات",
+      "sellable_product_ar": "نظام وكيل ويب متعدد الوسائط مع ميزات تخطيط المهام",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لوكيل ويب لأداء مهام محددة",
+      "tools_ar": "نموذج لغة كبير، واجهة برمجة التطبيقات، بيئة تطوير البرمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.26092",
-        "huggingface_daily_papers:2606.16316",
-        "huggingface_daily_papers:2606.26087"
+        "2606.27330v1",
+        "2606.27347v1",
+        "2606.26875v1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "MVTrack4Gen: Multi-View Point Tracking as Geometric Supervision for 4D Video Generation",
-          "url": "https://huggingface.co/papers/2606.26087",
-          "score": 0.489,
+          "source_id": "arxiv_papers",
+          "title": "Beyond Global Divergences: A Local-Mass Perspective on Bayesian Inference",
+          "url": "http://arxiv.org/abs/2606.27090v1",
+          "score": 0.537,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "TryOnCrafter: Unleashing Camera Trajectories for Realistic Video Virtual Try-on via a Renderable 4D Try-on Proxy",
-          "url": "https://huggingface.co/papers/2606.26092",
-          "score": 0.467,
+          "source_id": "arxiv_papers",
+          "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
+          "url": "http://arxiv.org/abs/2606.27027v1",
+          "score": 0.525,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "RL-Index: Reinforcement Learning for Retrieval Index Reasoning",
-          "url": "https://huggingface.co/papers/2606.16316",
-          "score": 0.466,
+          "source_id": "arxiv_papers",
+          "title": "Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings",
+          "url": "http://arxiv.org/abs/2606.27287v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
+          "url": "http://arxiv.org/abs/2606.27350v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
+          "url": "http://arxiv.org/abs/2606.27180v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
+          "url": "http://arxiv.org/abs/2606.25442v1",
+          "score": 0.501,
           "trust_tier": "research"
         }
       ],
@@ -150,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-25T23:12:09+00:00",
-      "updatedAt": "2026-06-25T23:12:09+00:00",
+      "publishedAt": "2026-06-26T02:13:52+00:00",
+      "updatedAt": "2026-06-26T02:13:52+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-25T23:12:09+00:00",
+  "tiered_at": "2026-06-26T02:13:52+00:00",
   "free_preview_count": 3
 }
