@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-06-27T06:51:18+00:00",
+  "generated_at": "2026-06-27T10:01:08+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 838,
   "opportunities": [
     {
-      "id": "text-to-image-generation-tools",
-      "title_ar": "أدوات توليد الصور من النصوص",
-      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي في توليد الصور من النصوص، مما يفتح المجال لتطوير أدوات جديدة تلبي احتياجات السوق. هناك طلب متزايد على هذه التقنية في مجالات الإبداع والتسويق.",
-      "buyer_ar": "وكالات التسويق والمصممين",
-      "sellable_product_ar": "منصات توليد الصور من النصوص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد صورة بناءً على نص محدد",
-      "tools_ar": "نماذج توليد الصور، واجهات برمجة التطبيقات، أدوات التصميم",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يوفر فرصة كبيرة لتطوير تطبيقات جديدة. مع تحديثات النماذج المتكررة، يمكن تحسين جودة الصور الناتجة.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
+      "tools_ar": "Hugging Face, TensorFlow, PyTorch",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:busetolunay/assets-bld5g-dev-corrected",
-        "huggingface_models:ivanmayombo/zimage-turbo-v5",
-        "huggingface_models:snsnc/Qwopus3.5-9B-Coder-MLX-8bit"
+        "huggingface_models:busetolunay/bld5g-f1-modal",
+        "huggingface_models:ilkerzgi/krea-2-monochrome-stipple-grain-lora",
+        "huggingface_models:ivanmayombo/zimage-turbo-v5"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "busetolunay/assets-bld5g-dev-corrected — text-to-image",
-          "url": "https://huggingface.co/busetolunay/assets-bld5g-dev-corrected",
-          "score": 0.509,
+          "title": "busetolunay/bld5g-f1-modal — text-to-image",
+          "url": "https://huggingface.co/busetolunay/bld5g-f1-modal",
+          "score": 0.497,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "snsnc/Qwopus3.5-9B-Coder-MLX-8bit — text-generation",
-          "url": "https://huggingface.co/snsnc/Qwopus3.5-9B-Coder-MLX-8bit",
-          "score": 0.488,
+          "title": "ilkerzgi/krea-2-monochrome-stipple-grain-lora — text-to-image",
+          "url": "https://huggingface.co/ilkerzgi/krea-2-monochrome-stipple-grain-lora",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "ivanmayombo/zimage-turbo-v5 — text-to-image",
           "url": "https://huggingface.co/ivanmayombo/zimage-turbo-v5",
-          "score": 0.488,
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-27T06:51:18+00:00",
-      "updatedAt": "2026-06-27T06:51:18+00:00",
+      "publishedAt": "2026-06-27T10:01:08+00:00",
+      "updatedAt": "2026-06-27T10:01:08+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "ai-agent-surveillance",
+      "title_ar": "تطوير حلول لمواجهة مراقبة الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام وكلاء الذكاء الاصطناعي في مراقبة المستخدمين يفتح المجال لتطوير حلول تحمي الخصوصية. هذه الحاجة ملحة مع تزايد القلق حول الخصوصية.",
+      "buyer_ar": "شركات التكنولوجيا والأمن السيبراني",
+      "sellable_product_ar": "أداة لحماية الخصوصية من مراقبة الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم استشارة مجانية حول كيفية حماية البيانات",
+      "tools_ar": "تحليل البيانات, أدوات الذكاء الاصطناعي, تقنيات التشفير",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2606.25836v1",
+        "arxiv_papers:2606.27287v1",
+        "arxiv_papers:2606.27027v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
+          "url": "http://arxiv.org/abs/2606.27027v1",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AI Snitches Get Glitches: Towards Evading Agentic Surveillance",
+          "url": "http://arxiv.org/abs/2606.25836v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings",
+          "url": "http://arxiv.org/abs/2606.27287v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-27T10:01:08+00:00",
+      "updatedAt": "2026-06-27T10:01:08+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "automated-resume-screening",
+      "title_ar": "تطوير حلول لتفادي حقن الأوامر في فرز السير الذاتية",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في فرز السير الذاتية يخلق حاجة ملحة لحلول تمنع التلاعب. هذا يمكن أن يحسن من نزاهة عمليات التوظيف.",
+      "buyer_ar": "شركات التوظيف والموارد البشرية",
+      "sellable_product_ar": "نظام فرز سير ذاتية مقاوم للتلاعب",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لفرز السير الذاتية",
+      "tools_ar": "نموذج لغة كبير, أدوات تحليل البيانات, واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2606.27350v1",
+        "arxiv_papers:2606.27180v1",
+        "arxiv_papers:2606.27154v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
+          "url": "http://arxiv.org/abs/2606.27350v1",
+          "score": 0.465,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
+          "url": "http://arxiv.org/abs/2606.27180v1",
+          "score": 0.465,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
+          "url": "http://arxiv.org/abs/2606.27154v1",
+          "score": 0.447,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-27T10:01:08+00:00",
+      "updatedAt": "2026-06-27T10:01:08+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-27T06:51:18+00:00",
+  "tiered_at": "2026-06-27T10:01:08+00:00",
   "free_preview_count": 3
 }
