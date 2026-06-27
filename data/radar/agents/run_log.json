@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-27T10:01:08+00:00",
+  "run_at": "2026-06-27T11:24:22+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,20 +26,20 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 26.425,
+      "duration_s": 21.204,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 347 signals from 31 source families",
-        "6 source errors (non-fatal)"
+        "collected 339 signals from 31 source families",
+        "7 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.013,
       "written": [],
       "notes": [
         "injected 491 manual X items (skipped 9 of 500, avg score 0.142)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 838 items",
-        "by tier: press=524, official=165, research=124, community=25"
+        "tagged 830 items",
+        "by tier: press=524, official=167, research=124, community=15"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 838 items, top priority=0.497"
+        "ranked 830 items, top priority=0.509"
       ],
       "error": null
     },
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.147,
+      "duration_s": 0.145,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "14 events (0 new)",
-        "by type: policy_signal=2, model_release=9, pricing_change=1, acquisition=2"
+        "15 events (1 new)",
+        "by type: policy_signal=2, model_release=10, pricing_change=1, acquisition=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.016,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 20.13,
+      "duration_s": 14.972,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 15.371,
+      "duration_s": 8.99,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 15.397,
+      "duration_s": 7.537,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=838, opps=3, calls=3"
+        "items=830, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.937,
+      "duration_s": 2.881,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في نشاط الإصدارات، حيث أصدرت شركات مثل Google …"
+        "insight via openai: تظهر الإشارات الجديدة تزايدًا في النشاط من قبل الشركات الكبرى مثل Google وAnthr…"
       ],
       "error": null
     },
