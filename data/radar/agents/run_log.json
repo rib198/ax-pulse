@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-27T15:12:46+00:00",
+  "run_at": "2026-06-27T17:00:34+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 21.051,
+      "duration_s": 47.484,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.011,
       "written": [],
       "notes": [
         "injected 491 manual X items (skipped 9 of 500, avg score 0.142)"
@@ -55,7 +55,7 @@
       ],
       "notes": [
         "tagged 839 items",
-        "by tier: press=526, official=166, research=124, community=23"
+        "by tier: press=522, official=164, research=124, community=29"
       ],
       "error": null
     },
@@ -72,7 +72,7 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.03,
+      "duration_s": 0.029,
       "written": [
         "data/radar/signals.json"
       ],
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 14 products this run",
+        "detected 15 companies, 15 products this run",
         "store size: 45"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.06,
+      "duration_s": 0.061,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+3 new model events",
+        "+0 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.146,
+      "duration_s": 0.151,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
         "15 events (1 new)",
-        "by type: policy_signal=2, model_release=9, acquisition=3, pricing_change=1"
+        "by type: policy_signal=2, model_release=9, pricing_change=1, acquisition=2, personnel_move=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 13.05,
+      "duration_s": 14.272,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 12.732,
+      "duration_s": 13.056,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 10.547,
+      "duration_s": 10.437,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -224,12 +224,12 @@
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.911,
+      "duration_s": 4.463,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدنا زيادة ملحوظة في النشاط المرتبط بإصدارات نماذج الذكاء الاصطناعي، حيث تصدرت…"
+        "insight via openai: يظهر نمط متزايد في النشاط التنظيمي والإصدار من قبل الشركات الكبرى مثل Anthropic…"
       ],
       "error": null
     },
