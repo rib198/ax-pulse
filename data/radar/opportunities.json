@@ -1,83 +1,47 @@
 {
-  "generated_at": "2026-06-28T17:02:33+00:00",
+  "generated_at": "2026-06-28T19:06:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 848,
+  "corpus_count": 846,
   "opportunities": [
     {
-      "id": "ai-driven-hardware-software-design",
-      "title_ar": "تصميم البرمجيات/الأجهزة المدعوم بالذكاء الاصطناعي",
-      "thesis_ar": "تتزايد الحاجة إلى تحسين الابتكار في تصميم البرمجيات والأجهزة من خلال الذكاء الاصطناعي. تعتبر الأطر المفتوحة مثل CHIA فرصة لتسريع هذه العملية.",
-      "buyer_ar": "شركات التكنولوجيا والمصنعين",
-      "sellable_product_ar": "أدوات تصميم برمجيات وأجهزة مدعومة بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتصميم جهاز باستخدام الذكاء الاصطناعي",
-      "tools_ar": "أدوات تطوير البرمجيات، منصات الذكاء الاصطناعي، أدوات التصميم",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يعزز الحاجة إلى نماذج تحويل النص إلى صورة. التحديثات الأخيرة في نماذج Hugging Face تشير إلى إمكانيات جديدة لتحسين الجودة والتنوع.",
+      "buyer_ar": "شركات الإنتاج الإعلامي والمصممين المستقلين",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لمشروع صغير",
+      "tools_ar": "Hugging Face, أدوات التعلم العميق, بيئات تطوير البرمجيات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.27350v1",
-        "huggingface_models:UraionLabs/Uraion-Agent-Small",
+        "huggingface_models:sharadshailly/movie-orchestrator-loras",
+        "huggingface_models:FIIS/rihanna",
         "huggingface_models:empero-ai/Qwythos-9B-Claude-Mythos-5-1M"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "UraionLabs/Uraion-Agent-Small — text-generation",
-          "url": "https://huggingface.co/UraionLabs/Uraion-Agent-Small",
-          "score": 0.472,
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.509,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M — text-generation",
           "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-28T17:02:33+00:00",
-      "updatedAt": "2026-06-28T17:02:33+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "automated-resume-screening",
-      "title_ar": "نظام فرز السير الذاتية الآلي",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في فرز المتقدمين للوظائف يفتح المجال لتطوير أنظمة فرز أكثر كفاءة. يمكن أن يؤدي ذلك إلى تحسين عملية التوظيف.",
-      "buyer_ar": "شركات التوظيف والموارد البشرية",
-      "sellable_product_ar": "نظام فرز سير ذاتية مدعوم بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تجربة نظام فرز على مجموعة صغيرة من السير الذاتية",
-      "tools_ar": "نموذج لغة كبير، واجهة مستخدم، قاعدة بيانات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "2606.27287v1",
-        "huggingface_models:KissTheHabit/IDA_Edge",
-        "huggingface_models:Alicyabilqis/legalbot_grpo_final"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.45,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "KissTheHabit/IDA_Edge — text-generation",
-          "url": "https://huggingface.co/KissTheHabit/IDA_Edge",
-          "score": 0.447,
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Alicyabilqis/legalbot_grpo_final — text-generation",
-          "url": "https://huggingface.co/Alicyabilqis/legalbot_grpo_final",
-          "score": 0.447,
+          "title": "FIIS/rihanna — text-to-image",
+          "url": "https://huggingface.co/FIIS/rihanna",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -86,23 +50,73 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-28T17:02:33+00:00",
-      "updatedAt": "2026-06-28T17:02:33+00:00",
+      "publishedAt": "2026-06-28T19:06:05+00:00",
+      "updatedAt": "2026-06-28T19:06:05+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-generation-for-healthcare",
+      "title_ar": "توليد النصوص في مجال الرعاية الصحية",
+      "thesis_ar": "تزايد الحاجة إلى أدوات الذكاء الاصطناعي في الرعاية الصحية يفتح المجال لتوليد نصوص طبية دقيقة. النماذج الحديثة تشير إلى إمكانية تحسين الدعم السريري.",
+      "buyer_ar": "المستشفيات ومراكز الرعاية الصحية",
+      "sellable_product_ar": "أدوات توليد نصوص طبية لدعم اتخاذ القرار",
+      "first_paid_test_ar": "تقديم نموذج لتوليد نصوص طبية لمريض افتراضي",
+      "tools_ar": "Hugging Face, نماذج التعلم العميق, أدوات تحليل البيانات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:shariqazeem/psiddx-clinical-ddx-gemma-3-4b",
+        "huggingface_models:davidafrica/functional-wellbeing",
+        "huggingface_models:ubetu/commonsense-riemannion-seed42"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "ubetu/commonsense-riemannion-seed42 — text-generation",
+          "url": "https://huggingface.co/ubetu/commonsense-riemannion-seed42",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "davidafrica/functional-wellbeing — text-generation",
+          "url": "https://huggingface.co/davidafrica/functional-wellbeing",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "shariqazeem/psiddx-clinical-ddx-gemma-3-4b — text-generation",
+          "url": "https://huggingface.co/shariqazeem/psiddx-clinical-ddx-gemma-3-4b",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-28T19:06:05+00:00",
+      "updatedAt": "2026-06-28T19:06:05+00:00",
       "sortOrder": 1
     },
     {
-      "id": "text-to-image-generation",
-      "title_ar": "توليد الصور من النصوص",
-      "thesis_ar": "تزايد الاعتماد على نماذج تحويل النص إلى صورة يفتح المجال لتقديم حلول مبتكرة في مجالات متعددة مثل التسويق والفن.",
-      "buyer_ar": "وكالات التسويق، الفنانين، شركات الإنتاج",
-      "sellable_product_ar": "خدمة توليد صور مخصصة من نصوص",
-      "first_paid_test_ar": "إنشاء صورة واحدة بناءً على نص محدد كاختبار",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، خادم استضافة",
+      "id": "multimodal-models",
+      "title_ar": "تطوير نماذج متعددة الوسائط",
+      "thesis_ar": "زيادة الاهتمام بالنماذج التي تجمع بين النص والصورة تعزز الابتكار في التطبيقات التفاعلية. الأبحاث الأخيرة تشير إلى إمكانيات جديدة في هذا المجال.",
+      "buyer_ar": "شركات التقنية الناشئة والمطورين",
+      "sellable_product_ar": "منصات تطوير نماذج متعددة الوسائط",
+      "first_paid_test_ar": "تقديم نموذج أولي لمشروع يجمع بين النص والصورة",
+      "tools_ar": "Hugging Face, أدوات تطوير البرمجيات, بيئات التعلم العميق",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:ms2stationthis/cheeseworld1flux-klein",
-        "huggingface_models:Frogger40/mara",
-        "huggingface_models:PipsIsMacher/ellietlou"
+        "huggingface_daily_papers:2606.26025",
+        "huggingface_daily_papers:2606.27313",
+        "huggingface_models:vcruz305/Ornith-1.0-35B-AEON-Ultimate-Uncensored-GGUF"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -110,24 +124,24 @@
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "ms2stationthis/cheeseworld1flux-klein — text-to-image",
-          "url": "https://huggingface.co/ms2stationthis/cheeseworld1flux-klein",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "In-Context World Modeling for Robotic Control",
+          "url": "https://huggingface.co/papers/2606.26025",
+          "score": 0.478,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution",
+          "url": "https://huggingface.co/papers/2606.27313",
+          "score": 0.466,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Frogger40/mara — text-to-image",
-          "url": "https://huggingface.co/Frogger40/mara",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "PipsIsMacher/ellietlou — text-to-image",
-          "url": "https://huggingface.co/PipsIsMacher/ellietlou",
-          "score": 0.472,
+          "title": "vcruz305/Ornith-1.0-35B-AEON-Ultimate-Uncensored-GGUF — text-generation",
+          "url": "https://huggingface.co/vcruz305/Ornith-1.0-35B-AEON-Ultimate-Uncensored-GGUF",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -136,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-28T17:02:33+00:00",
-      "updatedAt": "2026-06-28T17:02:33+00:00",
+      "publishedAt": "2026-06-28T19:06:05+00:00",
+      "updatedAt": "2026-06-28T19:06:05+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-28T17:02:33+00:00",
+  "tiered_at": "2026-06-28T19:06:05+00:00",
   "free_preview_count": 3
 }
