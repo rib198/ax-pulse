@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-28T07:48:32+00:00",
+  "run_at": "2026-06-28T10:25:08+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 29.188,
+      "duration_s": 23.632,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 354 signals from 31 source families",
+        "collected 346 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.014,
       "written": [],
       "notes": [
         "injected 491 manual X items (skipped 9 of 500, avg score 0.142)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 845 items",
-        "by tier: press=526, official=164, research=124, community=31"
+        "tagged 837 items",
+        "by tier: press=526, official=162, research=124, community=25"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 845 items, top priority=0.509"
+        "ranked 837 items, top priority=0.494"
       ],
       "error": null
     },
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.061,
+      "duration_s": 0.06,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -135,19 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 9.567,
+      "duration_s": 14.58,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 2 opportunities"
+        "openai produced 3 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.958,
+      "duration_s": 9.18,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,13 +160,13 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.009,
+      "duration_s": 0.01,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 2 free / 0 premium",
+        "opps: 3 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 11.663,
+      "duration_s": 9.349,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=845, opps=2, calls=3"
+        "items=837, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.46,
+      "duration_s": 2.535,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدنا زيادة في الإشارات التنظيمية، مع التركيز على أنثروبيك، مما يشير إلى اهتمام…"
+        "insight via openai: تزايد نشاط الإشارات التنظيمية في الفترة الأخيرة، حيث سجلت 6 إشارات جديدة من مصا…"
       ],
       "error": null
     },
@@ -242,7 +242,7 @@
       ],
       "notes": [
         "tracked 19 sources",
-        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
+        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
       ],
       "error": null
     }
