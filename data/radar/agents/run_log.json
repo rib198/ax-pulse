@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-28T02:19:57+00:00",
+  "run_at": "2026-06-28T07:48:32+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 38.478,
+      "duration_s": 29.188,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 353 signals from 31 source families",
+        "collected 354 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 844 items",
-        "by tier: press=526, official=164, research=124, community=30"
+        "tagged 845 items",
+        "by tier: press=526, official=164, research=124, community=31"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.032,
+      "duration_s": 0.03,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 844 items, top priority=0.494"
+        "ranked 845 items, top priority=0.509"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.012,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -115,8 +115,8 @@
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "16 events (9 new)",
-        "by type: policy_signal=2, model_release=9, pricing_change=1, acquisition=3, personnel_move=1"
+        "15 events (0 new)",
+        "by type: policy_signal=2, model_release=9, pricing_change=1, acquisition=2, personnel_move=1"
       ],
       "error": null
     },
@@ -135,19 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 11.058,
+      "duration_s": 9.567,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 3 opportunities"
+        "openai produced 2 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 9.231,
+      "duration_s": 7.958,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,13 +160,13 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 0 premium",
+        "opps: 2 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 11.245,
+      "duration_s": 11.663,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.005,
+      "duration_s": 0.004,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=844, opps=3, calls=3"
+        "items=845, opps=2, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.83,
+      "duration_s": 2.46,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط في الإشارات التنظيمية يشير إلى اهتمام متزايد من قبل الجهات التنظيم…"
+        "insight via openai: شهدنا زيادة في الإشارات التنظيمية، مع التركيز على أنثروبيك، مما يشير إلى اهتمام…"
       ],
       "error": null
     },
@@ -242,7 +242,7 @@
       ],
       "notes": [
         "tracked 19 sources",
-        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
+        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
       ],
       "error": null
     }
