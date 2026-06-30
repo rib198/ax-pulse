@@ -1,33 +1,47 @@
 {
-  "generated_at": "2026-06-30T02:14:30+00:00",
+  "generated_at": "2026-06-30T07:46:56+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 850,
+  "corpus_count": 847,
   "opportunities": [
     {
-      "id": "mcp-standardized-interface",
+      "id": "mcp-standard-interface",
       "title_ar": "تطوير واجهة معيارية لتطبيقات الذكاء الاصطناعي",
-      "thesis_ar": "تقديم واجهة معيارية تربط نماذج اللغة الكبيرة بالأدوات والمصادر الخارجية يعد فرصة كبيرة لتسهيل تطوير التطبيقات. مع تزايد الاعتماد على الذكاء الاصطناعي، سيكون هناك طلب متزايد على هذه الحلول.",
+      "thesis_ar": "تقديم واجهة معيارية تربط نماذج اللغة الكبيرة بالأدوات والخدمات الخارجية يمثل فرصة كبيرة لتسهيل التكامل. مع تزايد الاعتماد على الذكاء الاصطناعي، يحتاج السوق إلى حلول سهلة الاستخدام.",
       "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
-      "sellable_product_ar": "حلول برمجية تعتمد على واجهة MCP",
-      "first_paid_test_ar": "تقديم نموذج أولي لتطبيق يستخدم واجهة MCP",
-      "tools_ar": "أدوات تطوير البرمجيات، بيئة اختبار، واجهات برمجة التطبيقات",
+      "sellable_product_ar": "منصة تطوير واجهة معيارية لتطبيقات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتكامل نموذج لغة مع أداة خارجية",
+      "tools_ar": "أدوات تطوير البرمجيات، خوادم، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "2606.30317v1",
-        "2606.30093v1",
-        "2606.30185v1"
+        "2606.30531v1",
+        "2606.30093v1"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.51,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "MCP Server Architecture Patterns for LLM-Integrated Applications",
           "url": "http://arxiv.org/abs/2606.30317v1",
           "score": 0.565,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing",
+          "url": "https://huggingface.co/papers/2606.26740",
+          "score": 0.533,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Entity Binding Failures in Tool-Augmented Agents",
+          "url": "http://arxiv.org/abs/2606.30531v1",
+          "score": 0.515,
           "trust_tier": "research"
         },
         {
@@ -39,31 +53,17 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "AsyncOPD: How Stale Can On-Policy Distillation Be?",
-          "url": "https://huggingface.co/papers/2606.24143",
-          "score": 0.497,
+          "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+          "url": "https://huggingface.co/papers/2606.28480",
+          "score": 0.496,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
-          "url": "http://arxiv.org/abs/2606.30093v1",
+          "title": "TRACE: Temporal Relationship-Aware Conversational Entrainment Detection in Dyadic Speech",
+          "url": "http://arxiv.org/abs/2606.30543v1",
           "score": 0.494,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "DEEPMED Search: An Open-Source Agentic Platform for Medical Deep Research with Introspective Verification",
-          "url": "http://arxiv.org/abs/2606.29746v1",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2 — text-generation",
-          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,34 +71,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-30T02:14:30+00:00",
-      "updatedAt": "2026-06-30T02:14:30+00:00",
+      "publishedAt": "2026-06-30T07:46:56+00:00",
+      "updatedAt": "2026-06-30T07:46:56+00:00",
       "sortOrder": 0
     },
     {
-      "id": "medical-data-navigation",
-      "title_ar": "منصة بحث طبية مفتوحة المصدر",
-      "thesis_ar": "تسهيل الوصول إلى البيانات الطبية المتنوعة يعد حلاً مهماً في مجال الطب المبني على الأدلة. مع تزايد البيانات الطبية، هناك حاجة ملحة لمنصات تسهل البحث والتحقق.",
-      "buyer_ar": "مؤسسات طبية وبحثية",
-      "sellable_product_ar": "منصة بحث طبية مفتوحة المصدر",
-      "first_paid_test_ar": "تقديم نسخة تجريبية للمنصة لمؤسسة طبية",
-      "tools_ar": "أدوات تطوير البرمجيات، قواعد بيانات طبية، واجهات برمجة التطبيقات",
+      "id": "real-time-video-editing",
+      "title_ar": "تطوير أدوات تحرير الفيديو في الوقت الحقيقي",
+      "thesis_ar": "تزايد الطلب على تحرير الفيديو المباشر يتطلب حلولاً مبتكرة. معالجة القضايا المتعلقة بالاستقرار والسرعة ستجذب الشركات الإعلامية.",
+      "buyer_ar": "استوديوهات الإنتاج الإعلامي وشركات التسويق",
+      "sellable_product_ar": "أداة تحرير فيديو تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نسخة تجريبية لأداة تحرير فيديو لمشروع صغير",
+      "tools_ar": "أدوات تحرير الفيديو، خوادم معالجة البيانات، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2606.29746v1",
-        "2606.30029v1",
-        "2606.29824v1"
+        "2606.26740",
+        "2606.30543",
+        "2606.30219"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.51,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "MCP Server Architecture Patterns for LLM-Integrated Applications",
           "url": "http://arxiv.org/abs/2606.30317v1",
           "score": 0.565,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing",
+          "url": "https://huggingface.co/papers/2606.26740",
+          "score": 0.533,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Entity Binding Failures in Tool-Augmented Agents",
+          "url": "http://arxiv.org/abs/2606.30531v1",
+          "score": 0.515,
           "trust_tier": "research"
         },
         {
@@ -110,31 +124,17 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "AsyncOPD: How Stale Can On-Policy Distillation Be?",
-          "url": "https://huggingface.co/papers/2606.24143",
-          "score": 0.497,
+          "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+          "url": "https://huggingface.co/papers/2606.28480",
+          "score": 0.496,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
-          "url": "http://arxiv.org/abs/2606.30093v1",
+          "title": "TRACE: Temporal Relationship-Aware Conversational Entrainment Detection in Dyadic Speech",
+          "url": "http://arxiv.org/abs/2606.30543v1",
           "score": 0.494,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "DEEPMED Search: An Open-Source Agentic Platform for Medical Deep Research with Introspective Verification",
-          "url": "http://arxiv.org/abs/2606.29746v1",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2 — text-generation",
-          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,34 +142,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-30T02:14:30+00:00",
-      "updatedAt": "2026-06-30T02:14:30+00:00",
+      "publishedAt": "2026-06-30T07:46:56+00:00",
+      "updatedAt": "2026-06-30T07:46:56+00:00",
       "sortOrder": 1
     },
     {
-      "id": "dynamic-agent-interaction",
-      "title_ar": "تطوير شبكة تفاعلية ديناميكية لوكلاء الذكاء الاصطناعي",
-      "thesis_ar": "تحسين تفاعل الوكلاء الذكيين من خلال شبكة تفاعلية ديناميكية يمكن أن يعزز من فعالية النماذج متعددة الوسائط. هذا سيوفر حلولاً أكثر كفاءة في معالجة البيانات المعقدة.",
-      "buyer_ar": "شركات الذكاء الاصطناعي والتكنولوجيا",
-      "sellable_product_ar": "نموذج تفاعلي ديناميكي لوكلاء الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لوكيل تفاعلي ديناميكي",
-      "tools_ar": "أدوات تطوير البرمجيات، بيئة اختبار، نماذج تعلم الآلة",
-      "capital_ar": "متوسط",
+      "id": "emotional-entrainment-analysis",
+      "title_ar": "تحليل التفاعل العاطفي في المحادثات",
+      "thesis_ar": "مع تزايد استخدام وكلاء الذكاء الاصطناعي في المحادثات، فإن فهم التفاعل العاطفي أصبح ضرورة. هذه الخدمة يمكن أن تعزز تجربة المستخدم.",
+      "buyer_ar": "شركات تطوير وكلاء الذكاء الاصطناعي",
+      "sellable_product_ar": "أداة لتحليل التفاعل العاطفي في المحادثات",
+      "first_paid_test_ar": "تقديم تحليل تجريبي لمحادثة باستخدام الأداة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج اللغة، خوادم معالجة البيانات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2606.30189v1",
-        "2606.30163v1",
-        "2606.30209v1"
+        "2606.30543v1",
+        "2606.30029v1",
+        "2606.30219v1"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.51,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "MCP Server Architecture Patterns for LLM-Integrated Applications",
           "url": "http://arxiv.org/abs/2606.30317v1",
           "score": 0.565,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing",
+          "url": "https://huggingface.co/papers/2606.26740",
+          "score": 0.533,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Entity Binding Failures in Tool-Augmented Agents",
+          "url": "http://arxiv.org/abs/2606.30531v1",
+          "score": 0.515,
           "trust_tier": "research"
         },
         {
@@ -181,31 +195,17 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "AsyncOPD: How Stale Can On-Policy Distillation Be?",
-          "url": "https://huggingface.co/papers/2606.24143",
-          "score": 0.497,
+          "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+          "url": "https://huggingface.co/papers/2606.28480",
+          "score": 0.496,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
-          "url": "http://arxiv.org/abs/2606.30093v1",
+          "title": "TRACE: Temporal Relationship-Aware Conversational Entrainment Detection in Dyadic Speech",
+          "url": "http://arxiv.org/abs/2606.30543v1",
           "score": 0.494,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "DEEPMED Search: An Open-Source Agentic Platform for Medical Deep Research with Introspective Verification",
-          "url": "http://arxiv.org/abs/2606.29746v1",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2 — text-generation",
-          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -213,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-30T02:14:30+00:00",
-      "updatedAt": "2026-06-30T02:14:30+00:00",
+      "publishedAt": "2026-06-30T07:46:56+00:00",
+      "updatedAt": "2026-06-30T07:46:56+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-30T02:14:30+00:00",
+  "tiered_at": "2026-06-30T07:46:56+00:00",
   "free_preview_count": 3
 }
