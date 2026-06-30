@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-30T19:35:26+00:00",
+  "run_at": "2026-06-30T21:27:46+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 25.235,
+      "duration_s": 27.269,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 360 signals from 31 source families",
+        "collected 365 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.015,
       "written": [],
       "notes": [
         "injected 489 manual X items (skipped 11 of 500, avg score 0.152)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 849 items",
-        "by tier: press=524, official=163, research=129, community=33"
+        "tagged 854 items",
+        "by tier: press=524, official=161, research=130, community=39"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.033,
+      "duration_s": 0.031,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 849 items, top priority=0.529"
+        "ranked 854 items, top priority=0.529"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -102,7 +102,7 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+6 new model events",
+        "+4 new model events",
         "300 total"
       ],
       "error": null
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.167,
+      "duration_s": 0.169,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "19 events (1 new)",
-        "by type: model_release=12, pricing_change=2, personnel_move=2, acquisition=2, policy_signal=1"
+        "18 events (0 new)",
+        "by type: model_release=12, pricing_change=2, personnel_move=2, acquisition=1, policy_signal=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.018,
+      "duration_s": 0.016,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 16.459,
+      "duration_s": 20.585,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 17.225,
+      "duration_s": 10.049,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 18.565,
+      "duration_s": 8.82,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=849, opps=3, calls=3"
+        "items=854, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.306,
+      "duration_s": 2.569,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة تركيزًا ملحوظًا على إصدارات النماذج، حيث تم إصدار ثلاثة نما…"
+        "insight via openai: يظهر نمط متزايد في نشاط الإصدارات، حيث تم إصدار نموذجين جديدين مع ثقة عالية هذا…"
       ],
       "error": null
     },
