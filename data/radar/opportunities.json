@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-30T16:20:46+00:00",
+  "generated_at": "2026-06-30T19:35:26+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 851,
+  "corpus_count": 849,
   "opportunities": [
     {
-      "id": "mcp-standardization",
-      "title_ar": "تطوير واجهات موحدة لتطبيقات الذكاء الاصطناعي",
-      "thesis_ar": "مع ظهور بروتوكول نموذج السياق (MCP) كمعيار لتوصيل نماذج اللغة الكبيرة بالأدوات الخارجية، هناك فرصة لتطوير تطبيقات تعتمد على هذا البروتوكول. هذا سيمكن المطورين من بناء تطبيقات أكثر تكاملًا وسهولة في الاستخدام.",
-      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
-      "sellable_product_ar": "منصة تطوير تطبيقات تعتمد على بروتوكول MCP",
-      "first_paid_test_ar": "تقديم نموذج أولي لتطبيق يستخدم بروتوكول MCP",
-      "tools_ar": "أدوات تطوير البرمجيات، خوادم سحابية، مكتبات الذكاء الاصطناعي",
-      "capital_ar": "متوسط",
+      "id": "mcp-llm-integration",
+      "title_ar": "تطوير واجهات موحدة لتكامل نماذج اللغة الكبيرة",
+      "thesis_ar": "مع ظهور بروتوكول نموذج السياق (MCP) كواجهة موحدة، هناك حاجة متزايدة لتطوير تطبيقات تربط نماذج اللغة الكبيرة بأدوات خارجية. هذا يفتح المجال لتطوير حلول مبتكرة تلبي احتياجات السوق.",
+      "buyer_ar": "شركات التقنية الناشئة والمؤسسات الكبيرة",
+      "sellable_product_ar": "منصة لتطوير تطبيقات LLM متكاملة",
+      "first_paid_test_ar": "تطوير نموذج أولي لتكامل LLM مع أداة خارجية",
+      "tools_ar": "أدوات تطوير البرمجيات، منصات السحابة، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
         "arxiv_papers:2606.30317v1",
-        "huggingface_daily_papers:2606.28733",
-        "arxiv_papers:2606.30531v1"
+        "huggingface_daily_papers:2606.30410",
+        "huggingface_daily_papers:2606.25621"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.52,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -32,59 +32,9 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Agentic Abstention: Do Agents Know When to Stop Instead of Act?",
-          "url": "https://huggingface.co/papers/2606.28733",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Entity Binding Failures in Tool-Augmented Agents",
-          "url": "http://arxiv.org/abs/2606.30531v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-06-30T16:20:46+00:00",
-      "updatedAt": "2026-06-30T16:20:46+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "universal-speech-enhancement",
-      "title_ar": "تطوير نموذج تحسين صوتي عالمي",
-      "thesis_ar": "مع الحاجة المتزايدة لتطبيقات الصوت في الزمن الحقيقي، يمكن تطوير نموذج تحسين صوتي واحد يناسب جميع التطبيقات. هذا سيوفر الوقت والموارد على المطورين.",
-      "buyer_ar": "شركات تطوير تطبيقات الصوت والتواصل",
-      "sellable_product_ar": "نموذج تحسين صوتي عالمي للتطبيقات",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحسين الصوت في تطبيق معين",
-      "tools_ar": "أدوات تطوير الصوت، خوادم سحابية، مكتبات الذكاء الاصطناعي",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.25621",
-        "huggingface_daily_papers:2606.30410",
-        "arxiv_papers:2606.30543v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
           "title": "Beyond IID: How General Are Tabular Foundation Models, Really?",
           "url": "https://huggingface.co/papers/2606.30410",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "TRACE: Temporal Relationship-Aware Conversational Entrainment Detection in Dyadic Speech",
-          "url": "http://arxiv.org/abs/2606.30543v1",
-          "score": 0.494,
+          "score": 0.5,
           "trust_tier": "research"
         },
         {
@@ -100,41 +50,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-30T16:20:46+00:00",
-      "updatedAt": "2026-06-30T16:20:46+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-06-30T19:35:26+00:00",
+      "updatedAt": "2026-06-30T19:35:26+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "tabular-foundation-models",
-      "title_ar": "تطوير نماذج أساسية لتحليل البيانات الجدولية",
-      "thesis_ar": "تزايد الاهتمام بالنماذج الأساسية لتحليل البيانات الجدولية يشير إلى فرصة كبيرة لتطوير أدوات تحليل بيانات متقدمة. هذا سيساعد الشركات في اتخاذ قرارات مستندة إلى البيانات بشكل أفضل.",
-      "buyer_ar": "شركات تحليل البيانات والأعمال",
-      "sellable_product_ar": "أداة لتحليل البيانات الجدولية باستخدام نماذج أساسية",
-      "first_paid_test_ar": "تقديم تحليل بيانات تجريبي باستخدام الأداة",
-      "tools_ar": "أدوات تحليل البيانات، مكتبات تعلم الآلة، خوادم سحابية",
+      "id": "multimodal-llm-enhancement",
+      "title_ar": "تحسين نماذج اللغة متعددة الوسائط",
+      "thesis_ar": "تتزايد أهمية تحسين نماذج اللغة متعددة الوسائط لتحسين الأداء في التطبيقات المختلفة. هذا يمثل فرصة لتطوير حلول جديدة تلبي احتياجات السوق المتنوعة.",
+      "buyer_ar": "شركات البرمجيات ومطوري التطبيقات",
+      "sellable_product_ar": "أداة لتحسين أداء نماذج اللغة متعددة الوسائط",
+      "first_paid_test_ar": "اختبار الأداء لنموذج مُحسّن في سيناريو محدد",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات البرمجة، منصات الاختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
+        "huggingface_daily_papers:2606.23885",
         "huggingface_daily_papers:2606.30410",
-        "huggingface_daily_papers:2606.28733",
-        "huggingface_daily_papers:2606.30531v1"
+        "huggingface_models:FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.51,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Agentic Abstention: Do Agents Know When to Stop Instead of Act?",
-          "url": "https://huggingface.co/papers/2606.28733",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Beyond IID: How General Are Tabular Foundation Models, Really?",
           "url": "https://huggingface.co/papers/2606.30410",
-          "score": 0.499,
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Mind the Heads: Topological Representation Alignment for Multimodal LLMs",
+          "url": "https://huggingface.co/papers/2606.23885",
+          "score": 0.472,
           "trust_tier": "research"
         }
       ],
@@ -143,11 +100,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-30T16:20:46+00:00",
-      "updatedAt": "2026-06-30T16:20:46+00:00",
+      "publishedAt": "2026-06-30T19:35:26+00:00",
+      "updatedAt": "2026-06-30T19:35:26+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "universal-speech-enhancement",
+      "title_ar": "تطوير نموذج تحسين الصوت الشامل",
+      "thesis_ar": "مع الحاجة المتزايدة لتطبيقات تحسين الصوت في الوقت الحقيقي، يمثل تطوير نموذج شامل فرصة كبيرة. هذا سيمكن من تلبية احتياجات متنوعة في السوق.",
+      "buyer_ar": "شركات الاتصالات وتكنولوجيا الصوت",
+      "sellable_product_ar": "نموذج تحسين صوت شامل للتطبيقات المختلفة",
+      "first_paid_test_ar": "تطوير نموذج أولي واختباره في تطبيق صوتي محدد",
+      "tools_ar": "أدوات تحليل الصوت، مكتبات تعلم الآلة، منصات الاختبار",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.25621",
+        "huggingface_daily_papers:2606.30410",
+        "huggingface_daily_papers:2606.29911"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Beyond IID: How General Are Tabular Foundation Models, Really?",
+          "url": "https://huggingface.co/papers/2606.30410",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "One Model, Many Latencies: Universal Speech Enhancement for Diverse Real-Time Applications",
+          "url": "https://huggingface.co/papers/2606.25621",
+          "score": 0.477,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-06-30T19:35:26+00:00",
+      "updatedAt": "2026-06-30T19:35:26+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-30T16:20:46+00:00",
+  "tiered_at": "2026-06-30T19:35:26+00:00",
   "free_preview_count": 3
 }
