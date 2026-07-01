@@ -1,48 +1,69 @@
 {
-  "generated_at": "2026-06-30T23:08:00+00:00",
+  "generated_at": "2026-07-01T02:19:02+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 850,
+  "corpus_count": 842,
   "opportunities": [
     {
-      "id": "mcp-server-architecture",
-      "title_ar": "تطوير تطبيقات متكاملة مع نماذج اللغة الكبيرة",
-      "thesis_ar": "مع ظهور بروتوكول نموذج السياق (MCP) كواجهة موحدة، هناك فرصة كبيرة لتطوير تطبيقات تستفيد من تكامل نماذج اللغة الكبيرة مع أدوات خارجية. هذا سيساعد الشركات على تحسين كفاءة العمليات وزيادة الإنتاجية.",
-      "buyer_ar": "شركات التكنولوجيا الناشئة والمطورين",
-      "sellable_product_ar": "تطبيقات متكاملة تعتمد على نماذج اللغة الكبيرة",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط يستخدم MCP",
-      "tools_ar": "أدوات البرمجة، بيئة تطوير، نماذج لغة كبيرة",
-      "capital_ar": "منخفض",
+      "id": "ai-security-framework",
+      "title_ar": "إطار عمل أمان للذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد استخدام بنى الذكاء الاصطناعي مفتوحة المصدر، هناك حاجة ملحة لتطوير أدوات أمان متقدمة. هذا هو الوقت المناسب لإنشاء حلول أمان متكاملة لحماية الأنظمة من التهديدات.",
+      "buyer_ar": "شركات التقنية والمؤسسات الحكومية",
+      "sellable_product_ar": "أداة أمان متكاملة للذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار أمان مجاني لنموذج ذكاء اصطناعي محدد",
+      "tools_ar": "أدوات تحليل الأمان، نماذج الذكاء الاصطناعي، بيئة اختبار",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2606.30317v1",
-        "huggingface_daily_papers:2606.28733",
-        "huggingface_daily_papers:2606.29308"
+        "2606.31227v1",
+        "2606.31966v1",
+        "2606.31742v1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.51,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "MCP Server Architecture Patterns for LLM-Integrated Applications",
-          "url": "http://arxiv.org/abs/2606.30317v1",
-          "score": 0.529,
+          "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
+          "url": "http://arxiv.org/abs/2606.31227v1",
+          "score": 0.58,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Agentic Abstention: Do Agents Know When to Stop Instead of Act?",
-          "url": "https://huggingface.co/papers/2606.28733",
-          "score": 0.516,
+          "source_id": "arxiv_papers",
+          "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+          "url": "http://arxiv.org/abs/2606.31966v1",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "MirrorPPR: Exemplar-Based Portrait Photo Retouching",
-          "url": "https://huggingface.co/papers/2606.29308",
-          "score": 0.483,
+          "source_id": "arxiv_papers",
+          "title": "FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning",
+          "url": "http://arxiv.org/abs/2606.31742v1",
+          "score": 0.489,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AdvancedDataIntelligence/adi-qwen3-8b-glm5.2-general-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen3-8b-glm5.2-general-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AdvancedDataIntelligence/adi-qwen2.5-14b-glm5.2-general-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen2.5-14b-glm5.2-general-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AdvancedDataIntelligence/adi-qwen2.5-coder-7b-kimi2.7-code-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen2.5-coder-7b-kimi2.7-code-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,104 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-30T23:08:00+00:00",
-      "updatedAt": "2026-06-30T23:08:00+00:00",
+      "publishedAt": "2026-07-01T02:19:02+00:00",
+      "updatedAt": "2026-07-01T02:19:02+00:00",
       "sortOrder": 0
     },
     {
-      "id": "universal-speech-enhancement",
-      "title_ar": "تطوير نموذج تحسين صوتي عالمي",
-      "thesis_ar": "تزايد الحاجة إلى تحسين الصوت في التطبيقات الحية يفتح المجال لتطوير نموذج واحد يلبي جميع الاحتياجات. هذا سيساعد الشركات على توفير الوقت والموارد.",
-      "buyer_ar": "شركات تطوير البرمجيات والوسائط المتعددة",
-      "sellable_product_ar": "نموذج تحسين صوتي عالمي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحسين جودة الصوت في تطبيق واحد",
-      "tools_ar": "أدوات التعلم العميق، بيانات صوتية، بيئة تطوير",
-      "capital_ar": "متوسط",
+      "id": "multimodal-agent-collaboration",
+      "title_ar": "تطوير وكلاء متعددين الوسائط",
+      "thesis_ar": "تعاون الوكلاء في بيئات متعددة الوسائط يمثل فرصة غير مستغلة. مع تقدم نماذج اللغة الكبيرة، يمكن تحسين التعاون بين الوكلاء بشكل كبير.",
+      "buyer_ar": "شركات البرمجيات ومطوري الألعاب",
+      "sellable_product_ar": "نظام تعاون لوكلاء متعددين الوسائط",
+      "first_paid_test_ar": "تطوير نموذج أولي لوكيل متعدد الوسائط في لعبة بسيطة",
+      "tools_ar": "نموذج لغة، بيئة تطوير، أدوات اختبار",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.25621",
-        "huggingface_daily_papers:2606.29911",
-        "huggingface_daily_papers:2606.23885"
+        "2606.31966v1",
+        "2606.31683v1",
+        "2606.31711v1"
       ],
-      "confidence": 0.65,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "One Model, Many Latencies: Universal Speech Enhancement for Diverse Real-Time Applications",
-          "url": "https://huggingface.co/papers/2606.25621",
-          "score": 0.478,
+          "source_id": "arxiv_papers",
+          "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
+          "url": "http://arxiv.org/abs/2606.31227v1",
+          "score": 0.58,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Mind the Heads: Topological Representation Alignment for Multimodal LLMs",
-          "url": "https://huggingface.co/papers/2606.23885",
-          "score": 0.473,
+          "source_id": "arxiv_papers",
+          "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+          "url": "http://arxiv.org/abs/2606.31966v1",
+          "score": 0.494,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning",
+          "url": "http://arxiv.org/abs/2606.31742v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AdvancedDataIntelligence/adi-qwen3-8b-glm5.2-general-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen3-8b-glm5.2-general-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AdvancedDataIntelligence/adi-qwen2.5-14b-glm5.2-general-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen2.5-14b-glm5.2-general-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AdvancedDataIntelligence/adi-qwen2.5-coder-7b-kimi2.7-code-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen2.5-coder-7b-kimi2.7-code-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-30T23:08:00+00:00",
-      "updatedAt": "2026-06-30T23:08:00+00:00",
+      "publishedAt": "2026-07-01T02:19:02+00:00",
+      "updatedAt": "2026-07-01T02:19:02+00:00",
       "sortOrder": 1
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "مع التحديثات المستمرة لنماذج تحويل النص إلى صورة، هناك فرصة لإنشاء حلول مبتكرة في مجالات مثل التسويق والإعلانات. هذا سيمكن الشركات من إنتاج محتوى بصري جذاب بسرعة.",
-      "buyer_ar": "وكالات التسويق والمصممين",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "أدوات التعلم العميق، مكتبات النمذجة، بيانات تدريب",
-      "capital_ar": "منخفض",
+      "id": "explainable-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي القابل للتفسير",
+      "thesis_ar": "تزايد الطلب على الذكاء الاصطناعي القابل للتفسير يعكس الحاجة لفهم قرارات النماذج. تطوير أدوات تفسر قرارات الذكاء الاصطناعي يمكن أن يكون له تأثير كبير.",
+      "buyer_ar": "شركات الرعاية الصحية والمالية",
+      "sellable_product_ar": "أداة تفسير قرارات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تقرير تفسير لقرار نموذج ذكاء اصطناعي حقيقي",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهات المستخدم",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:BlueTriangles/SDXL_PTD_Hiyo",
-        "huggingface_models:BlueTriangles/SDXL_PTD_Nanami",
-        "huggingface_models:BlueTriangles/SDXL_PTD_Reina"
+        "2606.31742v1",
+        "2606.31954v1",
+        "2606.32004v1"
       ],
-      "confidence": 0.6,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
+          "url": "http://arxiv.org/abs/2606.31227v1",
+          "score": 0.58,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+          "url": "http://arxiv.org/abs/2606.31966v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning",
+          "url": "http://arxiv.org/abs/2606.31742v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_PTD_Hiyo — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_PTD_Hiyo",
+          "title": "AdvancedDataIntelligence/adi-qwen3-8b-glm5.2-general-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen3-8b-glm5.2-general-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_PTD_Nanami — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_PTD_Nanami",
+          "title": "AdvancedDataIntelligence/adi-qwen2.5-14b-glm5.2-general-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen2.5-14b-glm5.2-general-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_PTD_Reina — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_PTD_Reina",
+          "title": "AdvancedDataIntelligence/adi-qwen2.5-coder-7b-kimi2.7-code-GGUF — text-generation",
+          "url": "https://huggingface.co/AdvancedDataIntelligence/adi-qwen2.5-coder-7b-kimi2.7-code-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-06-30T23:08:00+00:00",
-      "updatedAt": "2026-06-30T23:08:00+00:00",
+      "publishedAt": "2026-07-01T02:19:02+00:00",
+      "updatedAt": "2026-07-01T02:19:02+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-06-30T23:08:00+00:00",
+  "tiered_at": "2026-07-01T02:19:02+00:00",
   "free_preview_count": 3
 }

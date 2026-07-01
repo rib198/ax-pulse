@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-30T23:08:00+00:00",
+  "run_at": "2026-07-01T02:19:02+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 24.009,
+      "duration_s": 23.066,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 361 signals from 31 source families",
+        "collected 353 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.015,
       "written": [],
       "notes": [
         "injected 489 manual X items (skipped 11 of 500, avg score 0.152)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 850 items",
-        "by tier: press=523, official=164, research=130, community=33"
+        "tagged 842 items",
+        "by tier: press=522, official=164, research=121, community=35"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.03,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 850 items, top priority=0.529"
+        "ranked 842 items, top priority=0.580"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 12 products this run",
+        "detected 16 companies, 12 products this run",
         "store size: 45"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.074,
+      "duration_s": 0.062,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+8 new model events",
+        "+9 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.168,
+      "duration_s": 0.138,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "19 events (2 new)",
-        "by type: model_release=12, pricing_change=2, acquisition=2, personnel_move=2, policy_signal=1"
+        "20 events (15 new)",
+        "by type: model_release=12, pricing_change=2, personnel_move=3, policy_signal=2, acquisition=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 14.063,
+      "duration_s": 17.386,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 9.034,
+      "duration_s": 14.471,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.81,
+      "duration_s": 7.543,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.005,
+      "duration_s": 0.004,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=850, opps=3, calls=3"
+        "items=842, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.519,
+      "duration_s": 2.843,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة زيادة في نشاط الإصدارات، حيث تم رصد 5 إصدارات جديدة من نماذ…"
+        "insight via openai: شهدت الأنشطة الأخيرة تركيزًا ملحوظًا على إصدار نماذج جديدة، مع تصدر openai و ll…"
       ],
       "error": null
     },
