@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-01T08:07:17+00:00",
+  "run_at": "2026-07-01T12:32:18+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 22.298,
+      "duration_s": 26.401,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 344 signals from 31 source families",
+        "collected 351 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.017,
       "written": [],
       "notes": [
         "injected 489 manual X items (skipped 11 of 500, avg score 0.152)"
@@ -49,13 +49,13 @@
     {
       "agent": "evidence_guard",
       "ok": true,
-      "duration_s": 0.002,
+      "duration_s": 0.003,
       "written": [
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 833 items",
-        "by tier: press=522, official=161, research=119, community=31"
+        "tagged 840 items",
+        "by tier: press=522, official=164, research=120, community=34"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.032,
+      "duration_s": 0.034,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 833 items, top priority=0.544"
+        "ranked 840 items, top priority=0.544"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.014,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 16 companies, 12 products this run",
+        "detected 16 companies, 15 products this run",
         "store size: 45"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.067,
+      "duration_s": 0.069,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.157,
+      "duration_s": 0.16,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
         "19 events (0 new)",
-        "by type: pricing_change=2, model_release=12, personnel_move=3, policy_signal=2"
+        "by type: model_release=12, pricing_change=2, personnel_move=3, policy_signal=2"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 10.637,
+      "duration_s": 22.262,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 13.558,
+      "duration_s": 15.26,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.749,
+      "duration_s": 10.877,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.004,
+      "duration_s": 0.005,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=833, opps=3, calls=3"
+        "items=840, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.776,
+      "duration_s": 3.189,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تظهر زيادة ملحوظة في نشاط إصدار النماذج، حيث تم الإعلان عن أربعة نماذج جديدة في…"
+        "insight via openai: شهدت الإشارات زيادة ملحوظة اليوم، مع وجود تركيز على إصدارات جديدة من نماذج الذك…"
       ],
       "error": null
     },
