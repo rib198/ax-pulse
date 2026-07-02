@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-02T17:58:14+00:00",
+  "generated_at": "2026-07-02T19:12:43+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 842,
+  "corpus_count": 841,
   "opportunities": [
     {
-      "id": "ai-security-framework",
-      "title_ar": "تطوير إطار أمان للذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد استخدام البنى التحتية المفتوحة المصدر للذكاء الاصطناعي، هناك حاجة ملحة لتطوير أدوات أمان متكاملة. هذا المجال ينمو بسرعة، مما يتيح فرصًا كبيرة للمنافسة.",
-      "buyer_ar": "شركات تطوير البرمجيات ومزودو خدمات الذكاء الاصطناعي",
-      "sellable_product_ar": "أداة أمان متكاملة للذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لأداة أمان تستهدف نوع معين من نماذج الذكاء الاصطناعي",
-      "tools_ar": "أدوات تحليل الأمان، بيئة اختبار، نماذج ذكاء اصطناعي مفتوحة المصدر",
+      "id": "ai-security-solutions",
+      "title_ar": "حلول أمان الذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد استخدام البنية التحتية للذكاء الاصطناعي مفتوحة المصدر، تزداد الحاجة إلى أدوات أمان فعالة. يعتبر تطوير حلول أمان متكاملة للوكالات الذكية فرصة واعدة في السوق.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "أدوات أمان للذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار أمان لوكالة ذكاء اصطناعي مفتوحة المصدر",
+      "tools_ar": "أدوات تحليل الأمان، منصات اختبار الاختراق، مكتبات الذكاء الاصطناعي",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2606.31227v1",
-        "huggingface_daily_papers:2607.00115",
-        "huggingface_daily_papers:2607.00407"
+        "2606.31227v1",
+        "2607.00975v1",
+        "2607.00115"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -32,52 +32,9 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "PixelEyes: Decoupling Perception and Reasoning for Pinpoint Visual Evidence Seeking",
-          "url": "https://huggingface.co/papers/2607.00115",
-          "score": 0.484,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Personalization as Inverse Planning: Learning Latent Design Intents for Agentic Slide Generation via Structural Denoising",
-          "url": "https://huggingface.co/papers/2607.00407",
-          "score": 0.474,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-02T17:58:14+00:00",
-      "updatedAt": "2026-07-02T17:58:14+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multimodal-evaluation-framework",
-      "title_ar": "إطار تقييم متعدد الوسائط",
-      "thesis_ar": "توجد فجوة بين نتائج التقييم التقليدية والأداء الواقعي لنماذج الذكاء الاصطناعي. تطوير إطار تقييم جديد يمكن أن يحسن دقة النماذج ويجذب اهتمام المطورين.",
-      "buyer_ar": "مراكز البحث والتطوير والشركات التقنية",
-      "sellable_product_ar": "إطار تقييم متعدد الوسائط لنماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق الإطار على نموذج موجود وتقديم تقرير عن النتائج",
-      "tools_ar": "أدوات تحليل البيانات، نماذج ذكاء اصطناعي، بيئة اختبار",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.28322",
-        "huggingface_daily_papers:2607.00461",
-        "huggingface_daily_papers:2607.01191"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
           "title": "PerceptionRubrics: Calibrating Multimodal Evaluation to Human Perception",
           "url": "https://huggingface.co/papers/2606.28322",
-          "score": 0.516,
+          "score": 0.517,
           "trust_tier": "research"
         },
         {
@@ -88,11 +45,25 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Perceive-to-Reason: Decoupling Perception and Reasoning for Fine-Grained Visual Reasoning",
-          "url": "https://huggingface.co/papers/2607.01191",
-          "score": 0.473,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "RudySen/Krea2-realism-V2 — text-to-image",
+          "url": "https://huggingface.co/RudySen/Krea2-realism-V2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "uzumix/Hkrea2T_2250 — text-to-image",
+          "url": "https://huggingface.co/uzumix/Hkrea2T_2250",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,42 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-02T17:58:14+00:00",
-      "updatedAt": "2026-07-02T17:58:14+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-07-02T19:12:43+00:00",
+      "updatedAt": "2026-07-02T19:12:43+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "medical-imaging-ai",
-      "title_ar": "تطوير نماذج ذكاء اصطناعي لتشخيص الصور الطبية",
-      "thesis_ar": "تزايد الحاجة إلى تشخيص دقيق في الصور الطبية، خاصة مع البيانات غير المتوازنة. يمكن لنموذج ذكاء اصطناعي مخصص أن يحسن النتائج السريرية.",
-      "buyer_ar": "مستشفيات ومراكز طبية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتصنيف الصور الطبية",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل مجموعة بيانات محددة من الصور الطبية",
-      "tools_ar": "أدوات تعلم الآلة، بيانات طبية، بيئة اختبار",
-      "capital_ar": "متوسط",
+      "id": "multimodal-evaluation-framework",
+      "title_ar": "إطار تقييم متعدد الوسائط",
+      "thesis_ar": "تتزايد الحاجة إلى تقييم دقيق لنماذج الذكاء الاصطناعي متعددة الوسائط، مما يفتح المجال لتطوير أدوات تقييم جديدة. يمكن أن تسهم هذه الأدوات في تحسين أداء النماذج في التطبيقات الحقيقية.",
+      "buyer_ar": "مراكز الأبحاث وشركات تطوير الذكاء الاصطناعي",
+      "sellable_product_ar": "أدوات تقييم متعددة الوسائط",
+      "first_paid_test_ar": "تقديم دراسة حالة لتقييم نموذج متعدد الوسائط",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات الذكاء الاصطناعي، منصات اختبار النماذج",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2607.00975",
-        "huggingface_daily_papers:2607.00407",
-        "huggingface_daily_papers:2607.00115"
+        "2606.28322",
+        "2607.00461",
+        "2607.01191"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PixelEyes: Decoupling Perception and Reasoning for Pinpoint Visual Evidence Seeking",
-          "url": "https://huggingface.co/papers/2607.00115",
-          "score": 0.484,
+          "source_id": "arxiv_papers",
+          "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
+          "url": "http://arxiv.org/abs/2606.31227v1",
+          "score": 0.544,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Personalization as Inverse Planning: Learning Latent Design Intents for Agentic Slide Generation via Structural Denoising",
-          "url": "https://huggingface.co/papers/2607.00407",
-          "score": 0.474,
+          "title": "PerceptionRubrics: Calibrating Multimodal Evaluation to Human Perception",
+          "url": "https://huggingface.co/papers/2606.28322",
+          "score": 0.517,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Multimodal Continuous Reasoning via Asymmetric Mutual Variational Learning",
+          "url": "https://huggingface.co/papers/2607.00461",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "RudySen/Krea2-realism-V2 — text-to-image",
+          "url": "https://huggingface.co/RudySen/Krea2-realism-V2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "uzumix/Hkrea2T_2250 — text-to-image",
+          "url": "https://huggingface.co/uzumix/Hkrea2T_2250",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -143,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-02T17:58:14+00:00",
-      "updatedAt": "2026-07-02T17:58:14+00:00",
+      "publishedAt": "2026-07-02T19:12:43+00:00",
+      "updatedAt": "2026-07-02T19:12:43+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "personalized-design-tools",
+      "title_ar": "أدوات تصميم مخصصة",
+      "thesis_ar": "تتطلب أدوات التصميم الحالية تحسينات في التخصيص، مما يتيح فرصة لتطوير أدوات تصميم تعتمد على الذكاء الاصطناعي. هذه الأدوات يمكن أن تسهل عملية التصميم بشكل كبير.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "أدوات تصميم مخصصة تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج تصميم مخصص لعميل",
+      "tools_ar": "أدوات تصميم، مكتبات الذكاء الاصطناعي، منصات تحليل البيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2607.00115",
+        "2607.00407",
+        "2607.00975"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
+          "url": "http://arxiv.org/abs/2606.31227v1",
+          "score": 0.544,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PerceptionRubrics: Calibrating Multimodal Evaluation to Human Perception",
+          "url": "https://huggingface.co/papers/2606.28322",
+          "score": 0.517,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Multimodal Continuous Reasoning via Asymmetric Mutual Variational Learning",
+          "url": "https://huggingface.co/papers/2607.00461",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "RudySen/Krea2-realism-V2 — text-to-image",
+          "url": "https://huggingface.co/RudySen/Krea2-realism-V2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "uzumix/Hkrea2T_2250 — text-to-image",
+          "url": "https://huggingface.co/uzumix/Hkrea2T_2250",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-02T19:12:43+00:00",
+      "updatedAt": "2026-07-02T19:12:43+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-02T17:58:14+00:00",
+  "tiered_at": "2026-07-02T19:12:43+00:00",
   "free_preview_count": 3
 }
