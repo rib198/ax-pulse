@@ -1,69 +1,41 @@
 {
-  "generated_at": "2026-07-03T21:09:32+00:00",
+  "generated_at": "2026-07-03T22:59:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 784,
+  "corpus_count": 833,
   "opportunities": [
     {
-      "id": "evaluating-agentic-skills",
-      "title_ar": "تقييم مهارات الوكلاء الذكيين",
-      "thesis_ar": "هناك حاجة متزايدة لتقييم مهارات الوكلاء الذكيين بشكل موثوق. تطوير معايير تقييم قابلة للتكيف يمكن أن يلبي هذه الحاجة.",
-      "buyer_ar": "مراكز البحث والتطوير، الجامعات",
-      "sellable_product_ar": "نظام تقييم مهارات الوكلاء الذكيين",
-      "first_paid_test_ar": "تقديم خدمة تقييم تجريبية لوكيل واحد",
-      "tools_ar": "أدوات تحليل البيانات، منصات الذكاء الاصطناعي، بيئات الاختبار",
-      "capital_ar": "منخفض",
+      "id": "gpu-optimization-services",
+      "title_ar": "خدمات تحسين استخدام وحدات معالجة الرسوميات",
+      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب أحمال عمل نماذج اللغة الكبيرة يتطلب تحسينات فعالة. هناك حاجة ملحة لمطابقة نماذج اللغة مع وحدات معالجة الرسوميات الأكثر كفاءة.",
+      "buyer_ar": "شركات مراكز البيانات ومزودي خدمات السحابة",
+      "sellable_product_ar": "خدمات استشارية لتحسين استهلاك الطاقة وأداء وحدات معالجة الرسوميات",
+      "first_paid_test_ar": "تحليل استهلاك الطاقة لنموذج لغة محدد على مجموعة من وحدات معالجة الرسوميات",
+      "tools_ar": "أدوات تحليل الأداء، نماذج محاكاة الطاقة، أدوات قياس استهلاك الطاقة",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "2607.01874",
-        "2607.02032",
-        "2607.02440"
+        "arxiv_papers:2607.02391v1",
+        "huggingface_daily_papers:2607.02453v1",
+        "huggingface_daily_papers:2607.02032"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 2,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
-          "url": "https://huggingface.co/papers/2607.02255",
-          "score": 0.503,
+          "source_id": "arxiv_papers",
+          "title": "WattGPU: Predicting Inference Power and Latency on Unseen GPUs and LLMs",
+          "url": "http://arxiv.org/abs/2607.02391v1",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "WARP: Weight-Space Analysis for Recovering Training Data Portfolios",
-          "url": "https://huggingface.co/papers/2607.01686",
-          "score": 0.497,
+          "title": "PACE: A Proxy for Agentic Capability Evaluation",
+          "url": "https://huggingface.co/papers/2607.02032",
+          "score": 0.45,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
-          "url": "https://huggingface.co/papers/2607.01874",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Gariboldo/Cybergenetics_monolith_CB-404 — text-generation",
-          "url": "https://huggingface.co/Gariboldo/Cybergenetics_monolith_CB-404",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Rami234/Amrs — text-to-image",
-          "url": "https://huggingface.co/Rami234/Amrs",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ava2000/Akableak_Illustrious — text-to-image",
-          "url": "https://huggingface.co/Ava2000/Akableak_Illustrious",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,70 +43,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-03T21:09:32+00:00",
-      "updatedAt": "2026-07-03T21:09:32+00:00",
+      "publishedAt": "2026-07-03T22:59:05+00:00",
+      "updatedAt": "2026-07-03T22:59:05+00:00",
       "sortOrder": 0
     },
     {
-      "id": "image-generation-control",
-      "title_ar": "توليد الصور القابلة للتحكم",
-      "thesis_ar": "تزايد الطلب على تقنيات توليد الصور القابلة للتحكم في المجالات الإبداعية والتجارية. تطوير حلول مبتكرة يمكن أن يلبي هذا الطلب.",
-      "buyer_ar": "شركات التصميم والإعلانات",
-      "sellable_product_ar": "خدمة توليد صور مخصصة باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد صورة بناءً على طلب محدد",
-      "tools_ar": "أدوات توليد الصور، مكتبات الذكاء الاصطناعي، واجهات برمجة التطبيقات",
-      "capital_ar": "بدون رأس مال",
+      "id": "long-horizon-llm-agents",
+      "title_ar": "تطوير وكلاء LLM طويل الأمد",
+      "thesis_ar": "تزايد الحاجة لوكلاء LLM الذين يمكنهم اتخاذ قرارات طويلة الأمد في بيئات تفاعلية. هذا يتطلب تطوير نماذج ذكية قادرة على التعامل مع الذاكرة والتفكير الاستراتيجي.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نموذج LLM متقدم مع ذاكرة طويلة الأمد",
+      "first_paid_test_ar": "تطوير نموذج أولي لوكيل LLM مع ذاكرة محدودة واختباره في سيناريوهات بسيطة",
+      "tools_ar": "أدوات التعلم الآلي، بيئات تطوير البرمجيات، أدوات تحليل الأداء",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "2607.01283",
-        "2606.31924",
-        "2607.02440"
+        "huggingface_daily_papers:2607.02255",
+        "huggingface_daily_papers:2607.01874",
+        "huggingface_daily_papers:2607.01224"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
           "url": "https://huggingface.co/papers/2607.02255",
-          "score": 0.503,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "WARP: Weight-Space Analysis for Recovering Training Data Portfolios",
-          "url": "https://huggingface.co/papers/2607.01686",
-          "score": 0.497,
+          "score": 0.482,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
           "url": "https://huggingface.co/papers/2607.01874",
-          "score": 0.495,
+          "score": 0.481,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Gariboldo/Cybergenetics_monolith_CB-404 — text-generation",
-          "url": "https://huggingface.co/Gariboldo/Cybergenetics_monolith_CB-404",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Rami234/Amrs — text-to-image",
-          "url": "https://huggingface.co/Rami234/Amrs",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ava2000/Akableak_Illustrious — text-to-image",
-          "url": "https://huggingface.co/Ava2000/Akableak_Illustrious",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
+          "url": "https://huggingface.co/papers/2607.01224",
+          "score": 0.45,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -142,11 +93,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-03T21:09:32+00:00",
-      "updatedAt": "2026-07-03T21:09:32+00:00",
+      "publishedAt": "2026-07-03T22:59:05+00:00",
+      "updatedAt": "2026-07-03T22:59:05+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "medical-imaging-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي للتصوير الطبي",
+      "thesis_ar": "تزايد الحاجة لتحسين دقة تشخيص الصور الطبية، خاصة في ظل التوزيع الطويل للبيانات السريرية. يمكن أن تلعب نماذج الذكاء الاصطناعي دورًا حاسمًا في ذلك.",
+      "buyer_ar": "المستشفيات والمراكز الطبية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل الصور الطبية وتصنيفها",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل صورة أشعة سينية واختباره على مجموعة بيانات صغيرة",
+      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، بيانات طبية للتدريب",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2607.00975v1",
+        "arxiv_papers:2607.01595v1",
+        "huggingface_daily_papers:2607.02032"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Safe and Adaptive Cloud Healing: Verifying LLM-Generated Recovery Plans with a Neural-Symbolic World Model",
+          "url": "http://arxiv.org/abs/2607.01595v1",
+          "score": 0.469,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling",
+          "url": "http://arxiv.org/abs/2607.00975v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PACE: A Proxy for Agentic Capability Evaluation",
+          "url": "https://huggingface.co/papers/2607.02032",
+          "score": 0.45,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-03T22:59:05+00:00",
+      "updatedAt": "2026-07-03T22:59:05+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-03T21:09:32+00:00",
+  "tiered_at": "2026-07-03T22:59:05+00:00",
   "free_preview_count": 3
 }
