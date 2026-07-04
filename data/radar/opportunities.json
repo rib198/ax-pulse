@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-04T11:21:44+00:00",
+  "generated_at": "2026-07-04T13:07:51+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 833,
+  "corpus_count": 806,
   "opportunities": [
     {
-      "id": "energy-optimization-llm-gpu",
-      "title_ar": "تحسين استهلاك الطاقة في نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب نماذج اللغة الكبيرة يتطلب حلولاً فعالة. يمكن تطوير خدمات استشارية لمساعدة الشركات في اختيار أفضل وحدات معالجة الرسوميات لتقليل التكاليف.",
-      "buyer_ar": "شركات مراكز البيانات ومزودو خدمات السحابة",
-      "sellable_product_ar": "خدمات استشارية لتحسين استهلاك الطاقة",
-      "first_paid_test_ar": "تقديم استشارة مجانية لمشروع صغير لتحليل استهلاك الطاقة",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، برامج المحاكاة",
+      "id": "text-generation-ai-tools",
+      "title_ar": "أدوات الذكاء الاصطناعي لتوليد النصوص",
+      "thesis_ar": "تزايد الحاجة إلى أدوات توليد النصوص في مجالات متعددة مثل التعليم والتسويق. مع تحديثات النماذج الجديدة، يمكن تقديم حلول مبتكرة تلبي احتياجات السوق.",
+      "buyer_ar": "شركات التسويق، المؤسسات التعليمية، المطورون",
+      "sellable_product_ar": "أداة توليد نصوص تعتمد على نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تجربة مجانية لمدة شهر مع خيار الاشتراك المدفوع",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2607.02391v1",
-        "huggingface_models:LiamVisionary/swarm-sovereign-scout-12b",
-        "huggingface_models:JasonW2025/Qwen-AgentWorld-35B-A3B-HybridQuant-NVFP4"
+        "huggingface_models:SEBK4C/Ornith-1.0-397B-Featherweight",
+        "huggingface_models:cudo528/Darwin-31B-Opus-mlx-8bit",
+        "huggingface_models:LiamVisionary/swarm-sovereign-scout-12b-GGUF"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -24,23 +24,23 @@
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "WattGPU: Predicting Inference Power and Latency on Unseen GPUs and LLMs",
-          "url": "http://arxiv.org/abs/2607.02391v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "LiamVisionary/swarm-sovereign-scout-12b — text-generation",
-          "url": "https://huggingface.co/LiamVisionary/swarm-sovereign-scout-12b",
+          "title": "SEBK4C/Ornith-1.0-397B-Featherweight — text-generation",
+          "url": "https://huggingface.co/SEBK4C/Ornith-1.0-397B-Featherweight",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "JasonW2025/Qwen-AgentWorld-35B-A3B-HybridQuant-NVFP4 — image-text-to-text",
-          "url": "https://huggingface.co/JasonW2025/Qwen-AgentWorld-35B-A3B-HybridQuant-NVFP4",
+          "title": "cudo528/Darwin-31B-Opus-mlx-8bit — text-generation",
+          "url": "https://huggingface.co/cudo528/Darwin-31B-Opus-mlx-8bit",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "LiamVisionary/swarm-sovereign-scout-12b-GGUF — text-generation",
+          "url": "https://huggingface.co/LiamVisionary/swarm-sovereign-scout-12b-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,25 +50,75 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T11:21:44+00:00",
-      "updatedAt": "2026-07-04T11:21:44+00:00",
+      "publishedAt": "2026-07-04T13:07:51+00:00",
+      "updatedAt": "2026-07-04T13:07:51+00:00",
       "sortOrder": 0
     },
     {
-      "id": "medical-imaging-llm",
-      "title_ar": "تحسين تشخيص الأشعة السينية باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تحديات التصنيف في الأشعة السينية تتطلب حلولاً مبتكرة. استخدام نماذج اللغة الكبيرة يمكن أن يحسن دقة التشخيص ويقلل من الأخطاء.",
-      "buyer_ar": "مستشفيات ومراكز طبية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل الأشعة السينية",
-      "first_paid_test_ar": "تقديم تحليل مجاني لعدد من الأشعة السينية",
-      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات تحليل البيانات، برمجيات طبية",
+      "id": "image-generation-ai-tools",
+      "title_ar": "أدوات الذكاء الاصطناعي لتوليد الصور",
+      "thesis_ar": "تزايد الطلب على المحتوى البصري في التسويق والإعلانات. النماذج الجديدة توفر إمكانيات متقدمة لتوليد صور مخصصة.",
+      "buyer_ar": "وكالات الإعلان، مصممو الجرافيك، الشركات الناشئة",
+      "sellable_product_ar": "أداة توليد صور تعتمد على نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني مع خيارات شراء للصور المولدة",
+      "tools_ar": "Hugging Face, Python, PyTorch",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Maff3ew/ofmwoman-sdxl-lora",
+        "huggingface_models:wj109s5/raniadahl",
+        "huggingface_models:Keltezaa/AngourieRice"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Maff3ew/ofmwoman-sdxl-lora — text-to-image",
+          "url": "https://huggingface.co/Maff3ew/ofmwoman-sdxl-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "wj109s5/raniadahl — text-to-image",
+          "url": "https://huggingface.co/wj109s5/raniadahl",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Keltezaa/AngourieRice — text-to-image",
+          "url": "https://huggingface.co/Keltezaa/AngourieRice",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-04T13:07:51+00:00",
+      "updatedAt": "2026-07-04T13:07:51+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "medical-imaging-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي في التصوير الطبي",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في التشخيص الطبي. الحلول الجديدة تسهم في تحسين دقة التصنيف وتخفيف عبء البيانات.",
+      "buyer_ar": "المستشفيات، العيادات، شركات التكنولوجيا الطبية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتصنيف الصور الطبية",
+      "first_paid_test_ar": "تقديم دراسة حالة مجانية مع إمكانية الاشتراك في الخدمة",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2607.00975v1",
-        "arxiv_papers:2607.02453v1",
-        "huggingface_models:federico-anastasi/nicu-20m"
+        "huggingface_models:meridianal/FinAI",
+        "huggingface_models:ridaa4142/dpo-pythia-410m-beta-0_5"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
@@ -81,16 +131,16 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
-          "url": "http://arxiv.org/abs/2607.02453v1",
-          "score": 0.468,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "meridianal/FinAI — text-generation",
+          "url": "https://huggingface.co/meridianal/FinAI",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "federico-anastasi/nicu-20m — text-generation",
-          "url": "https://huggingface.co/federico-anastasi/nicu-20m",
+          "title": "ridaa4142/dpo-pythia-410m-beta-0_5 — text-generation",
+          "url": "https://huggingface.co/ridaa4142/dpo-pythia-410m-beta-0_5",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -100,61 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T11:21:44+00:00",
-      "updatedAt": "2026-07-04T11:21:44+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-solutions",
-      "title_ar": "تطوير حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي يتطلب حلولاً سريعة وفعالة. نماذج تحويل النص إلى صورة توفر فرصة لإنشاء محتوى مبتكر.",
-      "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "خدمات تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لمشروع تسويقي",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم، برمجيات تحرير الصور",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Keltezaa/Asha",
-        "huggingface_models:Keltezaa/Lilybeachblond",
-        "huggingface_models:Rami234/Amrs"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Keltezaa/Asha — text-to-image",
-          "url": "https://huggingface.co/Keltezaa/Asha",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Keltezaa/Lilybeachblond — text-to-image",
-          "url": "https://huggingface.co/Keltezaa/Lilybeachblond",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Rami234/Amrs — text-to-image",
-          "url": "https://huggingface.co/Rami234/Amrs",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T11:21:44+00:00",
-      "updatedAt": "2026-07-04T11:21:44+00:00",
+      "publishedAt": "2026-07-04T13:07:51+00:00",
+      "updatedAt": "2026-07-04T13:07:51+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-04T11:21:44+00:00",
+  "tiered_at": "2026-07-04T13:07:51+00:00",
   "free_preview_count": 3
 }
