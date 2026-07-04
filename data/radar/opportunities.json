@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-04T18:59:16+00:00",
+  "generated_at": "2026-07-04T20:48:10+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 836,
+  "corpus_count": 834,
   "opportunities": [
     {
       "id": "text-to-image-models",
       "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة تشير إلى زيادة الاهتمام في هذا المجال. يمكن استغلال هذه النماذج لتطوير تطبيقات جديدة في الإبداع والتسويق.",
-      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
-      "sellable_product_ar": "تطبيقات تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط وتحميله على منصة تجريبية",
-      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يوفر فرصة كبيرة. الإشارات تشير إلى تحديثات متعددة لنماذج جديدة تعزز من جودة الصور الناتجة.",
+      "buyer_ar": "شركات الإنتاج الفني والإعلانات",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لعميل محتمل",
+      "tools_ar": "Hugging Face, PyTorch, Diffusers",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_models:sharadshailly/movie-orchestrator-loras",
-        "huggingface_models:JugginsAI/om",
-        "huggingface_models:Rami234/Amrs"
+        "huggingface_models:igotrice/madison-krea2-v2",
+        "huggingface_models:JugginsAI/omy"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -32,15 +32,15 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "JugginsAI/om — text-to-image",
-          "url": "https://huggingface.co/JugginsAI/om",
+          "title": "igotrice/madison-krea2-v2 — text-to-image",
+          "url": "https://huggingface.co/igotrice/madison-krea2-v2",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Rami234/Amrs — text-to-image",
-          "url": "https://huggingface.co/Rami234/Amrs",
+          "title": "JugginsAI/omy — text-to-image",
+          "url": "https://huggingface.co/JugginsAI/omy",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,25 +50,75 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T18:59:16+00:00",
-      "updatedAt": "2026-07-04T18:59:16+00:00",
+      "publishedAt": "2026-07-04T20:48:10+00:00",
+      "updatedAt": "2026-07-04T20:48:10+00:00",
       "sortOrder": 0
     },
     {
-      "id": "optimization-for-llm-inference",
+      "id": "multimodal-ai-solutions",
+      "title_ar": "تطوير حلول ذكاء اصطناعي متعددة الوسائط",
+      "thesis_ar": "النماذج الجديدة التي تجمع بين النص والصورة تشير إلى توجه متزايد نحو الحلول متعددة الوسائط. هذا يوفر فرصة لتقديم خدمات مبتكرة في مجالات متنوعة.",
+      "buyer_ar": "شركات التكنولوجيا والإعلام",
+      "sellable_product_ar": "تطوير تطبيقات ذكاء اصطناعي متعددة الوسائط",
+      "first_paid_test_ar": "إنشاء نموذج أولي لتطبيق يجمع بين النص والصورة",
+      "tools_ar": "Hugging Face, أدوات تطوير التطبيقات, نماذج متعددة الوسائط",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF",
+        "huggingface_models:FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF",
+        "huggingface_models:FadedRedStar/LFM2.5-8B-A1B-heretic-GGUF"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/LFM2.5-8B-A1B-heretic-GGUF — text-generation",
+          "url": "https://huggingface.co/FadedRedStar/LFM2.5-8B-A1B-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-04T20:48:10+00:00",
+      "updatedAt": "2026-07-04T20:48:10+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "large-language-model-optimization",
       "title_ar": "تحسين استهلاك الطاقة لنماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات يجعل تحسين نشر نماذج اللغة الكبيرة ضرورة ملحة. يمكن تقديم حلول لتحسين كفاءة استخدام الطاقة.",
-      "buyer_ar": "مراكز البيانات والشركات التقنية",
-      "sellable_product_ar": "أدوات تحليل وتحسين استهلاك الطاقة",
-      "first_paid_test_ar": "تقديم استشارة مجانية لتحليل استهلاك الطاقة الحالي",
-      "tools_ar": "تحليل البيانات, أدوات البرمجة, نماذج الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب نماذج اللغة الكبيرة يستدعي حلولاً لتحسين الأداء. الإشارات تشير إلى الحاجة لتوافق نماذج معينة مع وحدات معالجة الرسوميات الأكثر كفاءة.",
+      "buyer_ar": "مراكز البيانات وشركات التقنية",
+      "sellable_product_ar": "استشارات لتحسين كفاءة استهلاك الطاقة في نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تحليل استهلاك الطاقة لنموذج لغة كبير في مركز بيانات",
+      "tools_ar": "WattGPU, أدوات تحليل الأداء, نماذج LLM",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2607.02391v1",
         "arxiv_papers:2607.02453v1",
-        "arxiv_papers:2607.02504v1"
+        "huggingface_models:Rumiii/Qwen2.5-0.5B-Med-Post-Trained-92k"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.48,
@@ -82,66 +132,16 @@
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
-          "url": "http://arxiv.org/abs/2607.02504v1",
-          "score": 0.479,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
           "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
           "url": "http://arxiv.org/abs/2607.02453v1",
           "score": 0.468,
           "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T18:59:16+00:00",
-      "updatedAt": "2026-07-04T18:59:16+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "multimodal-llm-applications",
-      "title_ar": "تطبيقات الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "تحديثات نماذج متعددة الوسائط تشير إلى إمكانية دمج النص والصورة والصوت في تطبيقات جديدة. هذا يمكن أن يفتح مجالات جديدة في التعليم والترفيه.",
-      "buyer_ar": "شركات التعليم والترفيه",
-      "sellable_product_ar": "تطبيقات تعليمية وترفيهية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق تعليمي يعتمد على الذكاء الاصطناعي",
-      "tools_ar": "Hugging Face, Python, أدوات تطوير التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
-        "huggingface_models:FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
-        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx — image-text-to-text",
-          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx",
-          "score": 0.488,
+          "title": "Rumiii/Qwen2.5-0.5B-Med-Post-Trained-92k — text-generation",
+          "url": "https://huggingface.co/Rumiii/Qwen2.5-0.5B-Med-Post-Trained-92k",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T18:59:16+00:00",
-      "updatedAt": "2026-07-04T18:59:16+00:00",
+      "publishedAt": "2026-07-04T20:48:10+00:00",
+      "updatedAt": "2026-07-04T20:48:10+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-04T18:59:16+00:00",
+  "tiered_at": "2026-07-04T20:48:10+00:00",
   "free_preview_count": 3
 }
