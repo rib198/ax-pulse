@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-03T22:59:05+00:00",
+  "run_at": "2026-07-04T01:54:41+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 19.229,
+      "duration_s": 24.586,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.012,
       "written": [],
       "notes": [
         "injected 489 manual X items (skipped 11 of 500, avg score 0.152)"
@@ -55,7 +55,7 @@
       ],
       "notes": [
         "tagged 833 items",
-        "by tier: press=520, official=160, research=124, community=29"
+        "by tier: press=516, official=159, research=124, community=34"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 833 items, top priority=0.494"
+        "ranked 833 items, top priority=0.501"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 13 companies, 10 products this run",
+        "detected 13 companies, 12 products this run",
         "store size: 45"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.07,
+      "duration_s": 0.071,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.16,
+      "duration_s": 0.163,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "19 events (1 new)",
+        "19 events (7 new)",
         "by type: model_release=12, pricing_change=2, personnel_move=3, policy_signal=2"
       ],
       "error": null
@@ -135,19 +135,20 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 13.979,
+      "duration_s": 9.209,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 3 opportunities"
+        "openai produced 0 opportunities",
+        "rule fallback produced 4 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 9.916,
+      "duration_s": 9.019,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,13 +161,13 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.009,
+      "duration_s": 0.01,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 0 premium",
+        "opps: 3 free / 1 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +189,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 10.481,
+      "duration_s": 7.545,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +213,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.004,
+      "duration_s": 0.005,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=833, opps=3, calls=3"
+        "items=833, opps=4, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.244,
+      "duration_s": 2.843,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهد النشاط زيادة ملحوظة في الإشارات، مع تركيز على إصدارات جديدة وتغييرات في الأ…"
+        "insight via openai: تظهر الأنشطة الجديدة تركيزًا متزايدًا على إصدارات نماذج الذكاء الاصطناعي، حيث ت…"
       ],
       "error": null
     },

@@ -1,41 +1,78 @@
 {
-  "generated_at": "2026-07-03T22:59:05+00:00",
+  "generated_at": "2026-07-04T01:54:41+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 833,
   "opportunities": [
     {
-      "id": "gpu-optimization-services",
-      "title_ar": "خدمات تحسين استخدام وحدات معالجة الرسوميات",
-      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب أحمال عمل نماذج اللغة الكبيرة يتطلب تحسينات فعالة. هناك حاجة ملحة لمطابقة نماذج اللغة مع وحدات معالجة الرسوميات الأكثر كفاءة.",
-      "buyer_ar": "شركات مراكز البيانات ومزودي خدمات السحابة",
-      "sellable_product_ar": "خدمات استشارية لتحسين استهلاك الطاقة وأداء وحدات معالجة الرسوميات",
-      "first_paid_test_ar": "تحليل استهلاك الطاقة لنموذج لغة محدد على مجموعة من وحدات معالجة الرسوميات",
-      "tools_ar": "أدوات تحليل الأداء، نماذج محاكاة الطاقة، أدوات قياس استهلاك الطاقة",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.02391v1",
-        "huggingface_daily_papers:2607.02453v1",
-        "huggingface_daily_papers:2607.02032"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "id": "ai_income_tools",
+      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
+      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
+      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
+      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
+      "capital_ar": "منخفض",
+      "signal_count": 8,
+      "avg_score": 0.49,
+      "confidence": 0.85,
+      "source": "rules",
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "WattGPU: Predicting Inference Power and Latency on Unseen GPUs and LLMs",
           "url": "http://arxiv.org/abs/2607.02391v1",
-          "score": 0.494,
+          "score": 0.501,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PACE: A Proxy for Agentic Capability Evaluation",
-          "url": "https://huggingface.co/papers/2607.02032",
-          "score": 0.45,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -43,49 +80,79 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-03T22:59:05+00:00",
-      "updatedAt": "2026-07-03T22:59:05+00:00",
+      "publishedAt": "2026-07-04T01:54:41+00:00",
+      "updatedAt": "2026-07-04T01:54:41+00:00",
       "sortOrder": 0
     },
     {
-      "id": "long-horizon-llm-agents",
-      "title_ar": "تطوير وكلاء LLM طويل الأمد",
-      "thesis_ar": "تزايد الحاجة لوكلاء LLM الذين يمكنهم اتخاذ قرارات طويلة الأمد في بيئات تفاعلية. هذا يتطلب تطوير نماذج ذكية قادرة على التعامل مع الذاكرة والتفكير الاستراتيجي.",
-      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
-      "sellable_product_ar": "نموذج LLM متقدم مع ذاكرة طويلة الأمد",
-      "first_paid_test_ar": "تطوير نموذج أولي لوكيل LLM مع ذاكرة محدودة واختباره في سيناريوهات بسيطة",
-      "tools_ar": "أدوات التعلم الآلي، بيئات تطوير البرمجيات، أدوات تحليل الأداء",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.02255",
-        "huggingface_daily_papers:2607.01874",
-        "huggingface_daily_papers:2607.01224"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "id": "ai_income_automation",
+      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
+      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
+      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
+      "tools_ar": "n8n أو Make، API، نموذج AI",
+      "capital_ar": "منخفض",
+      "signal_count": 8,
+      "avg_score": 0.49,
+      "confidence": 0.85,
+      "source": "rules",
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
-          "url": "https://huggingface.co/papers/2607.02255",
-          "score": 0.482,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
-          "url": "https://huggingface.co/papers/2607.01874",
-          "score": 0.481,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
-          "url": "https://huggingface.co/papers/2607.01224",
-          "score": 0.45,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,61 +160,171 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-03T22:59:05+00:00",
-      "updatedAt": "2026-07-03T22:59:05+00:00",
+      "publishedAt": "2026-07-04T01:54:41+00:00",
+      "updatedAt": "2026-07-04T01:54:41+00:00",
       "sortOrder": 1
     },
     {
-      "id": "medical-imaging-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي للتصوير الطبي",
-      "thesis_ar": "تزايد الحاجة لتحسين دقة تشخيص الصور الطبية، خاصة في ظل التوزيع الطويل للبيانات السريرية. يمكن أن تلعب نماذج الذكاء الاصطناعي دورًا حاسمًا في ذلك.",
-      "buyer_ar": "المستشفيات والمراكز الطبية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل الصور الطبية وتصنيفها",
-      "first_paid_test_ar": "تطوير نموذج أولي لتحليل صورة أشعة سينية واختباره على مجموعة بيانات صغيرة",
-      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، بيانات طبية للتدريب",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.00975v1",
-        "arxiv_papers:2607.01595v1",
-        "huggingface_daily_papers:2607.02032"
+      "id": "ai_income_content",
+      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
+      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
+      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
+      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
+      "capital_ar": "بدون رأس مال",
+      "signal_count": 8,
+      "avg_score": 0.49,
+      "confidence": 0.85,
+      "source": "rules",
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
       ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.46,
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-04T01:54:41+00:00",
+      "updatedAt": "2026-07-04T01:54:41+00:00",
+      "sortOrder": 2
+    },
+    {
+      "id": "ai_income_services",
+      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
+      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
+      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
+      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
+      "capital_ar": "بدون رأس مال",
+      "signal_count": 8,
+      "avg_score": 0.41,
+      "confidence": 0.83,
+      "source": "rules",
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "Safe and Adaptive Cloud Healing: Verifying LLM-Generated Recovery Plans with a Neural-Symbolic World Model",
           "url": "http://arxiv.org/abs/2607.01595v1",
-          "score": 0.469,
+          "score": 0.463,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling",
-          "url": "http://arxiv.org/abs/2607.00975v1",
-          "score": 0.468,
+          "title": "Distributed Attacks in Persistent-State AI Control",
+          "url": "http://arxiv.org/abs/2607.02514v1",
+          "score": 0.453,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PACE: A Proxy for Agentic Capability Evaluation",
-          "url": "https://huggingface.co/papers/2607.02032",
-          "score": 0.45,
+          "source_id": "manual_x",
+          "title": "While closed source AI is in shambles, open source is having one of the best weeks of all time.    Z ai GLM 5.2  Minimax M3  Kimi 2.7 code …",
+          "url": "https://x.com/Sentdex/status/2066157250268237993#m",
+          "score": 0.437,
+          "trust_tier": "press"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Criticality-Based Guard Rail Validation for AI Agent Decisions in Autonomous Telecom Networks",
+          "url": "http://arxiv.org/abs/2607.02210v1",
+          "score": 0.42,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "github_repos",
+          "title": "LMTMLatam/lmtm-os",
+          "url": "https://github.com/LMTMLatam/lmtm-os",
+          "score": 0.395,
+          "trust_tier": "community"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Delegation Rights: Property, Agency, and Investment Incentives in the Age of AI Agents",
+          "url": "http://arxiv.org/abs/2606.31935v1",
+          "score": 0.375,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "manual_x",
+          "title": "NEW: Mobileye today announced plans to expand its robotaxi activities beyond supplying self-driving technology and into full ownership of a…",
+          "url": "https://x.com/Mobileye/status/2066840494299091047#m",
+          "score": 0.372,
+          "trust_tier": "press"
+        },
+        {
+          "source_id": "manual_x",
+          "title": "Great collaboration with @songhan_mit’s lab on world models 🚀   Enze Xie (@xieenze_jr)    🚀 Exciting news! SANA is now officially integrate…",
+          "url": "https://x.com/jiayq/status/2030182667602575655#m",
+          "score": 0.371,
+          "trust_tier": "press"
         }
       ],
-      "tier": "free",
+      "tier": "premium",
       "status": "published",
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-03T22:59:05+00:00",
-      "updatedAt": "2026-07-03T22:59:05+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-07-04T01:54:41+00:00",
+      "updatedAt": "2026-07-04T01:54:41+00:00",
+      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-07-03T22:59:05+00:00",
+  "tiered_at": "2026-07-04T01:54:41+00:00",
   "free_preview_count": 3
 }
