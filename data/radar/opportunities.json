@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-04T05:41:55+00:00",
+  "generated_at": "2026-07-04T08:27:02+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 835,
+  "corpus_count": 833,
   "opportunities": [
     {
-      "id": "gpu-optimization",
-      "title_ar": "تحسين استهلاك الطاقة في مراكز البيانات",
-      "thesis_ar": "تتزايد أحمال استنتاج نماذج اللغة الكبيرة، مما يزيد من استهلاك الطاقة. هناك حاجة ملحة لتحسين كفاءة هذه النماذج من خلال مطابقتها مع وحدات معالجة الرسوميات الأكثر كفاءة.",
-      "buyer_ar": "مراكز البيانات وشركات التكنولوجيا",
-      "sellable_product_ar": "خدمات استشارية لتحسين الأداء وكفاءة الطاقة",
-      "first_paid_test_ar": "تقديم تحليل أولي لاستهلاك الطاقة لنموذج محدد",
-      "tools_ar": "أدوات تحليل البيانات، نماذج التعلم الآلي، أدوات محاكاة الطاقة",
-      "capital_ar": "متوسط",
+      "id": "ai-optimized-gpu-deployment",
+      "title_ar": "تحسين نشر نماذج الذكاء الاصطناعي على وحدات معالجة الرسوميات",
+      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب أحمال نماذج اللغة الكبيرة يتطلب تحسين نشرها. هناك حاجة ملحة لمطابقة نماذج الذكاء الاصطناعي مع وحدات معالجة الرسوميات الأكثر كفاءة.",
+      "buyer_ar": "شركات مراكز البيانات ومزودو خدمات السحابة",
+      "sellable_product_ar": "خدمة استشارية لتحسين نشر نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم دراسة حالة لتحليل كفاءة نشر نموذج واحد",
+      "tools_ar": "أدوات تحليل الأداء، برامج محاكاة، أدوات إدارة الطاقة",
+      "capital_ar": "منخفض",
       "evidence_ids": [
         "arxiv_papers:2607.02391v1",
-        "huggingface_models:SixVolts/GLM-5.2-ewaste-edition-GGUF",
-        "huggingface_models:DreamFoundries/Qwen-AgentWorld-35B-A3B-6bit"
+        "arxiv_papers:2607.02504v1",
+        "arxiv_papers:2607.00975v1"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -31,61 +31,11 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "SixVolts/GLM-5.2-ewaste-edition-GGUF — text-generation",
-          "url": "https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "DreamFoundries/Qwen-AgentWorld-35B-A3B-6bit — text-generation",
-          "url": "https://huggingface.co/DreamFoundries/Qwen-AgentWorld-35B-A3B-6bit",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T05:41:55+00:00",
-      "updatedAt": "2026-07-04T05:41:55+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "medical-imaging-innovation",
-      "title_ar": "ابتكارات في تشخيص الصور الطبية",
-      "thesis_ar": "تظهر الأبحاث الحاجة إلى تحسين تصنيف الأشعة السينية متعددة العلامات، مما يوفر فرصة لتطوير حلول تعتمد على الذكاء الاصطناعي لتحسين دقة التشخيص.",
-      "buyer_ar": "المستشفيات ومراكز التشخيص",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتشخيص الصور الطبية",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل مجموعة من الأشعة السينية",
-      "tools_ar": "أدوات تعلم الآلة، بيانات طبية، منصات تطوير البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.00975v1",
-        "huggingface_models:temdah/krea2-temia",
-        "huggingface_models:jarod2212/Colombia_Heritage_Couture_Cartagena"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "jarod2212/Colombia_Heritage_Couture_Cartagena — text-to-image",
-          "url": "https://huggingface.co/jarod2212/Colombia_Heritage_Couture_Cartagena",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "temdah/krea2-temia — text-to-image",
-          "url": "https://huggingface.co/temdah/krea2-temia",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+          "url": "http://arxiv.org/abs/2607.02504v1",
+          "score": 0.479,
+          "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
@@ -100,48 +50,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T05:41:55+00:00",
-      "updatedAt": "2026-07-04T05:41:55+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-07-04T08:27:02+00:00",
+      "updatedAt": "2026-07-04T08:27:02+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "text-to-image-technology",
-      "title_ar": "تكنولوجيا تحويل النص إلى صورة",
-      "thesis_ar": "تتطور نماذج تحويل النص إلى صورة بسرعة، مما يفتح المجال لتطبيقات جديدة في مجالات الإبداع والتسويق.",
-      "buyer_ar": "وكالات الإعلان والشركات الإبداعية",
-      "sellable_product_ar": "خدمات إنشاء صور مخصصة من النصوص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم، منصات سحابية",
+      "id": "text-to-image-models-for-creative-industries",
+      "title_ar": "نماذج تحويل النص إلى صورة للصناعات الإبداعية",
+      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة توفر فرصًا جديدة في الصناعات الإبداعية. الطلب على محتوى مرئي مبتكر يتزايد بشكل كبير.",
+      "buyer_ar": "وكالات الإعلان والتسويق، شركات الإنتاج الفني",
+      "sellable_product_ar": "نموذج مخصص لتحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لمشروع صغير",
+      "tools_ar": "نموذج تحويل النص إلى صورة، أدوات تصميم، أدوات تسويق",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Alebran/aleb",
-        "huggingface_models:temdah/krea2-temia",
-        "huggingface_models:marjacthrowaway2017/j0rd4ng-krea2"
+        "huggingface_models:HuggingVince/w3dg1e_krea2",
+        "huggingface_models:dilourencom/novomodelo",
+        "huggingface_models:rednote-hilab/dots.mocr"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Alebran/aleb — text-to-image",
-          "url": "https://huggingface.co/Alebran/aleb",
+          "title": "HuggingVince/w3dg1e_krea2 — text-to-image",
+          "url": "https://huggingface.co/HuggingVince/w3dg1e_krea2",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "temdah/krea2-temia — text-to-image",
-          "url": "https://huggingface.co/temdah/krea2-temia",
+          "title": "dilourencom/novomodelo — text-to-image",
+          "url": "https://huggingface.co/dilourencom/novomodelo",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "marjacthrowaway2017/j0rd4ng-krea2 — text-to-image",
-          "url": "https://huggingface.co/marjacthrowaway2017/j0rd4ng-krea2",
-          "score": 0.488,
+          "title": "rednote-hilab/dots.mocr — image-text-to-text",
+          "url": "https://huggingface.co/rednote-hilab/dots.mocr",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T05:41:55+00:00",
-      "updatedAt": "2026-07-04T05:41:55+00:00",
+      "publishedAt": "2026-07-04T08:27:02+00:00",
+      "updatedAt": "2026-07-04T08:27:02+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "medical-imaging-classification-system",
+      "title_ar": "نظام تصنيف الأشعة السينية باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة لتشخيص الأمراض النادرة باستخدام تقنيات التصوير الطبي. نماذج التصنيف المتعددة العلامات تعزز دقة التشخيص.",
+      "buyer_ar": "المستشفيات والعيادات الطبية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتصنيف الأشعة السينية",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل مجموعة بيانات صغيرة من الأشعة السينية",
+      "tools_ar": "أدوات تحليل البيانات، نماذج التعلم العميق، أدوات معالجة الصور",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2607.00975v1",
+        "arxiv_papers:2607.02453v1",
+        "huggingface_models:meridianal/FinAI"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling",
+          "url": "http://arxiv.org/abs/2607.00975v1",
+          "score": 0.479,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
+          "url": "http://arxiv.org/abs/2607.02453v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "meridianal/FinAI — text-generation",
+          "url": "https://huggingface.co/meridianal/FinAI",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-04T08:27:02+00:00",
+      "updatedAt": "2026-07-04T08:27:02+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-04T05:41:55+00:00",
+  "tiered_at": "2026-07-04T08:27:02+00:00",
   "free_preview_count": 3
 }
