@@ -1,24 +1,74 @@
 {
-  "generated_at": "2026-07-04T16:57:02+00:00",
+  "generated_at": "2026-07-04T18:59:16+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 838,
+  "corpus_count": 836,
   "opportunities": [
     {
-      "id": "gpu-optimization-for-llm",
-      "title_ar": "تحسين استهلاك الطاقة في مراكز البيانات للذكاء الاصطناعي",
-      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب أحمال الذكاء الاصطناعي يتطلب حلولًا فعالة. تحسين مطابقة نماذج اللغة الكبيرة مع وحدات معالجة الرسومات الأكثر كفاءة يمكن أن يقلل من التكاليف التشغيلية.",
-      "buyer_ar": "شركات مراكز البيانات ومزودي خدمات السحابة",
-      "sellable_product_ar": "خدمة استشارية لتحسين استهلاك الطاقة في مراكز البيانات",
-      "first_paid_test_ar": "تحليل استهلاك الطاقة لمركز بيانات واحد وتقديم تقرير تحسين",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، برامج محاكاة الطاقة",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة تشير إلى زيادة الاهتمام في هذا المجال. يمكن استغلال هذه النماذج لتطوير تطبيقات جديدة في الإبداع والتسويق.",
+      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
+      "sellable_product_ar": "تطبيقات تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط وتحميله على منصة تجريبية",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:sharadshailly/movie-orchestrator-loras",
+        "huggingface_models:JugginsAI/om",
+        "huggingface_models:Rami234/Amrs"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "JugginsAI/om — text-to-image",
+          "url": "https://huggingface.co/JugginsAI/om",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Rami234/Amrs — text-to-image",
+          "url": "https://huggingface.co/Rami234/Amrs",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-04T18:59:16+00:00",
+      "updatedAt": "2026-07-04T18:59:16+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "optimization-for-llm-inference",
+      "title_ar": "تحسين استهلاك الطاقة لنماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات يجعل تحسين نشر نماذج اللغة الكبيرة ضرورة ملحة. يمكن تقديم حلول لتحسين كفاءة استخدام الطاقة.",
+      "buyer_ar": "مراكز البيانات والشركات التقنية",
+      "sellable_product_ar": "أدوات تحليل وتحسين استهلاك الطاقة",
+      "first_paid_test_ar": "تقديم استشارة مجانية لتحليل استهلاك الطاقة الحالي",
+      "tools_ar": "تحليل البيانات, أدوات البرمجة, نماذج الذكاء الاصطناعي",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2607.02391v1",
         "arxiv_papers:2607.02453v1",
-        "huggingface_models:meridianal/FinAI"
+        "arxiv_papers:2607.02504v1"
       ],
-      "confidence": 0.8,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.48,
@@ -32,62 +82,12 @@
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
-          "url": "http://arxiv.org/abs/2607.02453v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "meridianal/FinAI — text-generation",
-          "url": "https://huggingface.co/meridianal/FinAI",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T16:57:02+00:00",
-      "updatedAt": "2026-07-04T16:57:02+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "long-horizon-llm-agents",
-      "title_ar": "تطوير وكلاء ذكاء اصطناعي طويل الأمد",
-      "thesis_ar": "تزايد الحاجة إلى وكلاء ذكاء اصطناعي قادرين على اتخاذ قرارات طويلة الأمد. تطوير نماذج ذات ذاكرة محدودة يمكن أن يحسن من فعالية هذه الوكلاء.",
-      "buyer_ar": "شركات البرمجيات، مطورو الذكاء الاصطناعي",
-      "sellable_product_ar": "أداة تطوير لوكلاء ذكاء اصطناعي طويل الأمد",
-      "first_paid_test_ar": "تطوير نموذج تجريبي لوكيل ذكاء اصطناعي واختباره في سيناريوهات محددة",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج ذكاء اصطناعي، بيئات اختبار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.02255",
-        "arxiv_papers:2607.02504v1",
-        "arxiv_papers:2607.02453v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
           "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
           "url": "http://arxiv.org/abs/2607.02504v1",
           "score": 0.479,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
-          "url": "https://huggingface.co/papers/2607.02255",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "arxiv_papers",
           "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
           "url": "http://arxiv.org/abs/2607.02453v1",
@@ -100,23 +100,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T16:57:02+00:00",
-      "updatedAt": "2026-07-04T16:57:02+00:00",
+      "publishedAt": "2026-07-04T18:59:16+00:00",
+      "updatedAt": "2026-07-04T18:59:16+00:00",
       "sortOrder": 1
     },
     {
-      "id": "text-to-image-models-for-content-creation",
-      "title_ar": "نماذج تحويل النص إلى صورة لخلق محتوى مبتكر",
-      "thesis_ar": "الطلب المتزايد على المحتوى المرئي يتطلب حلول مبتكرة. نماذج تحويل النص إلى صورة يمكن أن توفر وسيلة فعالة لإنشاء محتوى مرئي جذاب.",
-      "buyer_ar": "وكالات التسويق والإعلانات، صناع المحتوى",
-      "sellable_product_ar": "خدمة إنشاء محتوى مرئي باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "إنشاء مجموعة من الصور بناءً على نصوص محددة كاختبار",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم جرافيكي، منصات تسويق المحتوى",
-      "capital_ar": "منخفض",
+      "id": "multimodal-llm-applications",
+      "title_ar": "تطبيقات الذكاء الاصطناعي متعددة الوسائط",
+      "thesis_ar": "تحديثات نماذج متعددة الوسائط تشير إلى إمكانية دمج النص والصورة والصوت في تطبيقات جديدة. هذا يمكن أن يفتح مجالات جديدة في التعليم والترفيه.",
+      "buyer_ar": "شركات التعليم والترفيه",
+      "sellable_product_ar": "تطبيقات تعليمية وترفيهية تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق تعليمي يعتمد على الذكاء الاصطناعي",
+      "tools_ar": "Hugging Face, Python, أدوات تطوير التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Maff3ew/ofmwoman-sdxl-lora",
-        "huggingface_models:mramazan/flux-realistic-human-character-lora-2400step",
-        "huggingface_models:Keltezaa/Asha"
+        "huggingface_models:FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
+        "huggingface_models:FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
+        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -125,22 +125,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Maff3ew/ofmwoman-sdxl-lora — text-to-image",
-          "url": "https://huggingface.co/Maff3ew/ofmwoman-sdxl-lora",
+          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mramazan/flux-realistic-human-character-lora-2400step — text-to-image",
-          "url": "https://huggingface.co/mramazan/flux-realistic-human-character-lora-2400step",
+          "title": "FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Keltezaa/Asha — text-to-image",
-          "url": "https://huggingface.co/Keltezaa/Asha",
+          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx — image-text-to-text",
+          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T16:57:02+00:00",
-      "updatedAt": "2026-07-04T16:57:02+00:00",
+      "publishedAt": "2026-07-04T18:59:16+00:00",
+      "updatedAt": "2026-07-04T18:59:16+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-04T16:57:02+00:00",
+  "tiered_at": "2026-07-04T18:59:16+00:00",
   "free_preview_count": 3
 }
