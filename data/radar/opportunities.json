@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-04T15:03:16+00:00",
+  "generated_at": "2026-07-04T16:57:02+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 835,
+  "corpus_count": 838,
   "opportunities": [
     {
-      "id": "ai-optimized-gpu-deployment",
-      "title_ar": "تحسين نشر نماذج الذكاء الاصطناعي على وحدات معالجة الرسوميات",
-      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي يزيد من استهلاك الطاقة في مراكز البيانات. تحسين نشر هذه النماذج يتطلب مطابقة النماذج مع وحدات معالجة الرسوميات الأكثر كفاءة.",
-      "buyer_ar": "مراكز البيانات والشركات التقنية",
-      "sellable_product_ar": "خدمة استشارية لتحسين كفاءة استهلاك الطاقة في مراكز البيانات",
-      "first_paid_test_ar": "تحليل استهلاك الطاقة لنموذج واحد وتقديم تقرير تحسين",
-      "tools_ar": "أدوات تحليل الطاقة، نماذج الذكاء الاصطناعي، وحدات معالجة الرسوميات",
+      "id": "gpu-optimization-for-llm",
+      "title_ar": "تحسين استهلاك الطاقة في مراكز البيانات للذكاء الاصطناعي",
+      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب أحمال الذكاء الاصطناعي يتطلب حلولًا فعالة. تحسين مطابقة نماذج اللغة الكبيرة مع وحدات معالجة الرسومات الأكثر كفاءة يمكن أن يقلل من التكاليف التشغيلية.",
+      "buyer_ar": "شركات مراكز البيانات ومزودي خدمات السحابة",
+      "sellable_product_ar": "خدمة استشارية لتحسين استهلاك الطاقة في مراكز البيانات",
+      "first_paid_test_ar": "تحليل استهلاك الطاقة لمركز بيانات واحد وتقديم تقرير تحسين",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، برامج محاكاة الطاقة",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2607.02391v1",
-        "huggingface_models:opena2a/nanomind-security-analyst",
-        "huggingface_models:cudo528/Darwin-28B-Opus-mlx-4bit"
+        "arxiv_papers:2607.02453v1",
+        "huggingface_models:meridianal/FinAI"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -31,16 +31,16 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "opena2a/nanomind-security-analyst — text-generation",
-          "url": "https://huggingface.co/opena2a/nanomind-security-analyst",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
+          "url": "http://arxiv.org/abs/2607.02453v1",
+          "score": 0.468,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "cudo528/Darwin-28B-Opus-mlx-4bit — text-generation",
-          "url": "https://huggingface.co/cudo528/Darwin-28B-Opus-mlx-4bit",
+          "title": "meridianal/FinAI — text-generation",
+          "url": "https://huggingface.co/meridianal/FinAI",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -50,75 +50,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T15:03:16+00:00",
-      "updatedAt": "2026-07-04T15:03:16+00:00",
+      "publishedAt": "2026-07-04T16:57:02+00:00",
+      "updatedAt": "2026-07-04T16:57:02+00:00",
       "sortOrder": 0
     },
     {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يعكس الحاجة المتزايدة لحلول الذكاء الاصطناعي متعددة الوسائط. هذه الحلول يمكن أن تلبي احتياجات متنوعة في مجالات مثل التسويق والإبداع.",
-      "buyer_ar": "شركات التسويق والإعلانات، وكالات التصميم",
-      "sellable_product_ar": "منصة لتوليد محتوى بصري من النصوص",
-      "first_paid_test_ar": "تقديم نموذج أولي لمحتوى بصري لمشروع تسويقي",
-      "tools_ar": "نماذج تحويل النص إلى صورة، واجهات برمجة التطبيقات، أدوات التصميم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:TaimoorSiddiqui/HopCoder-Mini-35B-A3B-VL36",
-        "huggingface_models:mramazan/flux-human-character-lora-2400step",
-        "huggingface_models:Keltezaa/AngourieRice"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "TaimoorSiddiqui/HopCoder-Mini-35B-A3B-VL36 — image-text-to-text",
-          "url": "https://huggingface.co/TaimoorSiddiqui/HopCoder-Mini-35B-A3B-VL36",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mramazan/flux-human-character-lora-2400step — text-to-image",
-          "url": "https://huggingface.co/mramazan/flux-human-character-lora-2400step",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Keltezaa/AngourieRice — text-to-image",
-          "url": "https://huggingface.co/Keltezaa/AngourieRice",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T15:03:16+00:00",
-      "updatedAt": "2026-07-04T15:03:16+00:00",
-      "sortOrder": 1
-    },
-    {
       "id": "long-horizon-llm-agents",
-      "title_ar": "تطوير وكلاء الذكاء الاصطناعي لقرارات طويلة الأمد",
-      "thesis_ar": "تزايد الحاجة لوكلاء الذكاء الاصطناعي القادرين على اتخاذ قرارات معقدة على مدى زمني طويل. هذا يفتح المجال لتطبيقات جديدة في مجالات مثل التحليل المالي وإدارة المشاريع.",
-      "buyer_ar": "شركات التحليل المالي وإدارة المشاريع",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل البيانات واتخاذ القرارات",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل بيانات مشروع واحد",
-      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات التحليل، واجهات برمجة التطبيقات",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي طويل الأمد",
+      "thesis_ar": "تزايد الحاجة إلى وكلاء ذكاء اصطناعي قادرين على اتخاذ قرارات طويلة الأمد. تطوير نماذج ذات ذاكرة محدودة يمكن أن يحسن من فعالية هذه الوكلاء.",
+      "buyer_ar": "شركات البرمجيات، مطورو الذكاء الاصطناعي",
+      "sellable_product_ar": "أداة تطوير لوكلاء ذكاء اصطناعي طويل الأمد",
+      "first_paid_test_ar": "تطوير نموذج تجريبي لوكيل ذكاء اصطناعي واختباره في سيناريوهات محددة",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج ذكاء اصطناعي، بيئات اختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.02255",
         "arxiv_papers:2607.02504v1",
         "arxiv_papers:2607.02453v1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T15:03:16+00:00",
-      "updatedAt": "2026-07-04T15:03:16+00:00",
+      "publishedAt": "2026-07-04T16:57:02+00:00",
+      "updatedAt": "2026-07-04T16:57:02+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-models-for-content-creation",
+      "title_ar": "نماذج تحويل النص إلى صورة لخلق محتوى مبتكر",
+      "thesis_ar": "الطلب المتزايد على المحتوى المرئي يتطلب حلول مبتكرة. نماذج تحويل النص إلى صورة يمكن أن توفر وسيلة فعالة لإنشاء محتوى مرئي جذاب.",
+      "buyer_ar": "وكالات التسويق والإعلانات، صناع المحتوى",
+      "sellable_product_ar": "خدمة إنشاء محتوى مرئي باستخدام نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "إنشاء مجموعة من الصور بناءً على نصوص محددة كاختبار",
+      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم جرافيكي، منصات تسويق المحتوى",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Maff3ew/ofmwoman-sdxl-lora",
+        "huggingface_models:mramazan/flux-realistic-human-character-lora-2400step",
+        "huggingface_models:Keltezaa/Asha"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Maff3ew/ofmwoman-sdxl-lora — text-to-image",
+          "url": "https://huggingface.co/Maff3ew/ofmwoman-sdxl-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mramazan/flux-realistic-human-character-lora-2400step — text-to-image",
+          "url": "https://huggingface.co/mramazan/flux-realistic-human-character-lora-2400step",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Keltezaa/Asha — text-to-image",
+          "url": "https://huggingface.co/Keltezaa/Asha",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-04T16:57:02+00:00",
+      "updatedAt": "2026-07-04T16:57:02+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-04T15:03:16+00:00",
+  "tiered_at": "2026-07-04T16:57:02+00:00",
   "free_preview_count": 3
 }
