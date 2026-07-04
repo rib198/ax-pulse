@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-04T08:27:02+00:00",
+  "generated_at": "2026-07-04T11:21:44+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 833,
   "opportunities": [
     {
-      "id": "ai-optimized-gpu-deployment",
-      "title_ar": "تحسين نشر نماذج الذكاء الاصطناعي على وحدات معالجة الرسوميات",
-      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب أحمال نماذج اللغة الكبيرة يتطلب تحسين نشرها. هناك حاجة ملحة لمطابقة نماذج الذكاء الاصطناعي مع وحدات معالجة الرسوميات الأكثر كفاءة.",
+      "id": "energy-optimization-llm-gpu",
+      "title_ar": "تحسين استهلاك الطاقة في نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب نماذج اللغة الكبيرة يتطلب حلولاً فعالة. يمكن تطوير خدمات استشارية لمساعدة الشركات في اختيار أفضل وحدات معالجة الرسوميات لتقليل التكاليف.",
       "buyer_ar": "شركات مراكز البيانات ومزودو خدمات السحابة",
-      "sellable_product_ar": "خدمة استشارية لتحسين نشر نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم دراسة حالة لتحليل كفاءة نشر نموذج واحد",
-      "tools_ar": "أدوات تحليل الأداء، برامج محاكاة، أدوات إدارة الطاقة",
+      "sellable_product_ar": "خدمات استشارية لتحسين استهلاك الطاقة",
+      "first_paid_test_ar": "تقديم استشارة مجانية لمشروع صغير لتحليل استهلاك الطاقة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، برامج المحاكاة",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "arxiv_papers:2607.02391v1",
-        "arxiv_papers:2607.02504v1",
-        "arxiv_papers:2607.00975v1"
+        "huggingface_models:LiamVisionary/swarm-sovereign-scout-12b",
+        "huggingface_models:JasonW2025/Qwen-AgentWorld-35B-A3B-HybridQuant-NVFP4"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -31,18 +31,18 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
-          "url": "http://arxiv.org/abs/2607.02504v1",
-          "score": 0.479,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "LiamVisionary/swarm-sovereign-scout-12b — text-generation",
+          "url": "https://huggingface.co/LiamVisionary/swarm-sovereign-scout-12b",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling",
-          "url": "http://arxiv.org/abs/2607.00975v1",
-          "score": 0.479,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "JasonW2025/Qwen-AgentWorld-35B-A3B-HybridQuant-NVFP4 — image-text-to-text",
+          "url": "https://huggingface.co/JasonW2025/Qwen-AgentWorld-35B-A3B-HybridQuant-NVFP4",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,75 +50,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T08:27:02+00:00",
-      "updatedAt": "2026-07-04T08:27:02+00:00",
+      "publishedAt": "2026-07-04T11:21:44+00:00",
+      "updatedAt": "2026-07-04T11:21:44+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-models-for-creative-industries",
-      "title_ar": "نماذج تحويل النص إلى صورة للصناعات الإبداعية",
-      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة توفر فرصًا جديدة في الصناعات الإبداعية. الطلب على محتوى مرئي مبتكر يتزايد بشكل كبير.",
-      "buyer_ar": "وكالات الإعلان والتسويق، شركات الإنتاج الفني",
-      "sellable_product_ar": "نموذج مخصص لتحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لمشروع صغير",
-      "tools_ar": "نموذج تحويل النص إلى صورة، أدوات تصميم، أدوات تسويق",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:HuggingVince/w3dg1e_krea2",
-        "huggingface_models:dilourencom/novomodelo",
-        "huggingface_models:rednote-hilab/dots.mocr"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "HuggingVince/w3dg1e_krea2 — text-to-image",
-          "url": "https://huggingface.co/HuggingVince/w3dg1e_krea2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "dilourencom/novomodelo — text-to-image",
-          "url": "https://huggingface.co/dilourencom/novomodelo",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "rednote-hilab/dots.mocr — image-text-to-text",
-          "url": "https://huggingface.co/rednote-hilab/dots.mocr",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T08:27:02+00:00",
-      "updatedAt": "2026-07-04T08:27:02+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "medical-imaging-classification-system",
-      "title_ar": "نظام تصنيف الأشعة السينية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة لتشخيص الأمراض النادرة باستخدام تقنيات التصوير الطبي. نماذج التصنيف المتعددة العلامات تعزز دقة التشخيص.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتصنيف الأشعة السينية",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل مجموعة بيانات صغيرة من الأشعة السينية",
-      "tools_ar": "أدوات تحليل البيانات، نماذج التعلم العميق، أدوات معالجة الصور",
+      "id": "medical-imaging-llm",
+      "title_ar": "تحسين تشخيص الأشعة السينية باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تحديات التصنيف في الأشعة السينية تتطلب حلولاً مبتكرة. استخدام نماذج اللغة الكبيرة يمكن أن يحسن دقة التشخيص ويقلل من الأخطاء.",
+      "buyer_ar": "مستشفيات ومراكز طبية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل الأشعة السينية",
+      "first_paid_test_ar": "تقديم تحليل مجاني لعدد من الأشعة السينية",
+      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات تحليل البيانات، برمجيات طبية",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2607.00975v1",
         "arxiv_papers:2607.02453v1",
-        "huggingface_models:meridianal/FinAI"
+        "huggingface_models:federico-anastasi/nicu-20m"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
@@ -139,8 +89,8 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "meridianal/FinAI — text-generation",
-          "url": "https://huggingface.co/meridianal/FinAI",
+          "title": "federico-anastasi/nicu-20m — text-generation",
+          "url": "https://huggingface.co/federico-anastasi/nicu-20m",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T08:27:02+00:00",
-      "updatedAt": "2026-07-04T08:27:02+00:00",
+      "publishedAt": "2026-07-04T11:21:44+00:00",
+      "updatedAt": "2026-07-04T11:21:44+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-solutions",
+      "title_ar": "تطوير حلول تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي يتطلب حلولاً سريعة وفعالة. نماذج تحويل النص إلى صورة توفر فرصة لإنشاء محتوى مبتكر.",
+      "buyer_ar": "شركات التسويق والإعلانات",
+      "sellable_product_ar": "خدمات تحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لمشروع تسويقي",
+      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم، برمجيات تحرير الصور",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Keltezaa/Asha",
+        "huggingface_models:Keltezaa/Lilybeachblond",
+        "huggingface_models:Rami234/Amrs"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Keltezaa/Asha — text-to-image",
+          "url": "https://huggingface.co/Keltezaa/Asha",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Keltezaa/Lilybeachblond — text-to-image",
+          "url": "https://huggingface.co/Keltezaa/Lilybeachblond",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Rami234/Amrs — text-to-image",
+          "url": "https://huggingface.co/Rami234/Amrs",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-04T11:21:44+00:00",
+      "updatedAt": "2026-07-04T11:21:44+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-04T08:27:02+00:00",
+  "tiered_at": "2026-07-04T11:21:44+00:00",
   "free_preview_count": 3
 }
