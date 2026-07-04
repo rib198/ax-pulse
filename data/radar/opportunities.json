@@ -1,22 +1,27 @@
 {
-  "generated_at": "2026-07-04T01:54:41+00:00",
+  "generated_at": "2026-07-04T05:41:55+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 833,
+  "corpus_count": 835,
   "opportunities": [
     {
-      "id": "ai_income_tools",
-      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
-      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.49,
-      "confidence": 0.85,
-      "source": "rules",
+      "id": "gpu-optimization",
+      "title_ar": "تحسين استهلاك الطاقة في مراكز البيانات",
+      "thesis_ar": "تتزايد أحمال استنتاج نماذج اللغة الكبيرة، مما يزيد من استهلاك الطاقة. هناك حاجة ملحة لتحسين كفاءة هذه النماذج من خلال مطابقتها مع وحدات معالجة الرسوميات الأكثر كفاءة.",
+      "buyer_ar": "مراكز البيانات وشركات التكنولوجيا",
+      "sellable_product_ar": "خدمات استشارية لتحسين الأداء وكفاءة الطاقة",
+      "first_paid_test_ar": "تقديم تحليل أولي لاستهلاك الطاقة لنموذج محدد",
+      "tools_ar": "أدوات تحليل البيانات، نماذج التعلم الآلي، أدوات محاكاة الطاقة",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2607.02391v1",
+        "huggingface_models:SixVolts/GLM-5.2-ewaste-edition-GGUF",
+        "huggingface_models:DreamFoundries/Qwen-AgentWorld-35B-A3B-6bit"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -27,51 +32,16 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF",
-          "score": 0.488,
+          "title": "SixVolts/GLM-5.2-ewaste-edition-GGUF — text-generation",
+          "url": "https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF",
-          "score": 0.488,
+          "title": "DreamFoundries/Qwen-AgentWorld-35B-A3B-6bit — text-generation",
+          "url": "https://huggingface.co/DreamFoundries/Qwen-AgentWorld-35B-A3B-6bit",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -80,79 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T01:54:41+00:00",
-      "updatedAt": "2026-07-04T01:54:41+00:00",
+      "publishedAt": "2026-07-04T05:41:55+00:00",
+      "updatedAt": "2026-07-04T05:41:55+00:00",
       "sortOrder": 0
     },
     {
-      "id": "ai_income_automation",
-      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
-      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
-      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
-      "tools_ar": "n8n أو Make، API، نموذج AI",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.49,
-      "confidence": 0.85,
-      "source": "rules",
+      "id": "medical-imaging-innovation",
+      "title_ar": "ابتكارات في تشخيص الصور الطبية",
+      "thesis_ar": "تظهر الأبحاث الحاجة إلى تحسين تصنيف الأشعة السينية متعددة العلامات، مما يوفر فرصة لتطوير حلول تعتمد على الذكاء الاصطناعي لتحسين دقة التشخيص.",
+      "buyer_ar": "المستشفيات ومراكز التشخيص",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتشخيص الصور الطبية",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل مجموعة من الأشعة السينية",
+      "tools_ar": "أدوات تعلم الآلة، بيانات طبية، منصات تطوير البرمجيات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2607.00975v1",
+        "huggingface_models:temdah/krea2-temia",
+        "huggingface_models:jarod2212/Colombia_Heritage_Couture_Cartagena"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF",
+          "title": "jarod2212/Colombia_Heritage_Couture_Cartagena — text-to-image",
+          "url": "https://huggingface.co/jarod2212/Colombia_Heritage_Couture_Cartagena",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
+          "title": "temdah/krea2-temia — text-to-image",
+          "url": "https://huggingface.co/temdah/krea2-temia",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling",
+          "url": "http://arxiv.org/abs/2607.00975v1",
+          "score": 0.479,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -160,77 +100,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T01:54:41+00:00",
-      "updatedAt": "2026-07-04T01:54:41+00:00",
+      "publishedAt": "2026-07-04T05:41:55+00:00",
+      "updatedAt": "2026-07-04T05:41:55+00:00",
       "sortOrder": 1
     },
     {
-      "id": "ai_income_content",
-      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
-      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
-      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
-      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
+      "id": "text-to-image-technology",
+      "title_ar": "تكنولوجيا تحويل النص إلى صورة",
+      "thesis_ar": "تتطور نماذج تحويل النص إلى صورة بسرعة، مما يفتح المجال لتطبيقات جديدة في مجالات الإبداع والتسويق.",
+      "buyer_ar": "وكالات الإعلان والشركات الإبداعية",
+      "sellable_product_ar": "خدمات إنشاء صور مخصصة من النصوص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة",
+      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم، منصات سحابية",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Alebran/aleb",
+        "huggingface_models:temdah/krea2-temia",
+        "huggingface_models:marjacthrowaway2017/j0rd4ng-krea2"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
       "avg_score": 0.49,
-      "confidence": 0.85,
-      "source": "rules",
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF",
+          "title": "Alebran/aleb — text-to-image",
+          "url": "https://huggingface.co/Alebran/aleb",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
+          "title": "temdah/krea2-temia — text-to-image",
+          "url": "https://huggingface.co/temdah/krea2-temia",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/gemma-4-E2B-it-qat-q4_0-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-imatrix-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/QwenPaw-Flash-9B-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-imatrix-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-9B-heretic-imatrix-GGUF",
+          "title": "marjacthrowaway2017/j0rd4ng-krea2 — text-to-image",
+          "url": "https://huggingface.co/marjacthrowaway2017/j0rd4ng-krea2",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -240,91 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T01:54:41+00:00",
-      "updatedAt": "2026-07-04T01:54:41+00:00",
+      "publishedAt": "2026-07-04T05:41:55+00:00",
+      "updatedAt": "2026-07-04T05:41:55+00:00",
       "sortOrder": 2
-    },
-    {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
-      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
-      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
-      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.41,
-      "confidence": 0.83,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Safe and Adaptive Cloud Healing: Verifying LLM-Generated Recovery Plans with a Neural-Symbolic World Model",
-          "url": "http://arxiv.org/abs/2607.01595v1",
-          "score": 0.463,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Distributed Attacks in Persistent-State AI Control",
-          "url": "http://arxiv.org/abs/2607.02514v1",
-          "score": 0.453,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "While closed source AI is in shambles, open source is having one of the best weeks of all time.    Z ai GLM 5.2  Minimax M3  Kimi 2.7 code …",
-          "url": "https://x.com/Sentdex/status/2066157250268237993#m",
-          "score": 0.437,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Criticality-Based Guard Rail Validation for AI Agent Decisions in Autonomous Telecom Networks",
-          "url": "http://arxiv.org/abs/2607.02210v1",
-          "score": 0.42,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "github_repos",
-          "title": "LMTMLatam/lmtm-os",
-          "url": "https://github.com/LMTMLatam/lmtm-os",
-          "score": 0.395,
-          "trust_tier": "community"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Delegation Rights: Property, Agency, and Investment Incentives in the Age of AI Agents",
-          "url": "http://arxiv.org/abs/2606.31935v1",
-          "score": 0.375,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "NEW: Mobileye today announced plans to expand its robotaxi activities beyond supplying self-driving technology and into full ownership of a…",
-          "url": "https://x.com/Mobileye/status/2066840494299091047#m",
-          "score": 0.372,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Great collaboration with @songhan_mit’s lab on world models 🚀   Enze Xie (@xieenze_jr)    🚀 Exciting news! SANA is now officially integrate…",
-          "url": "https://x.com/jiayq/status/2030182667602575655#m",
-          "score": 0.371,
-          "trust_tier": "press"
-        }
-      ],
-      "tier": "premium",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T01:54:41+00:00",
-      "updatedAt": "2026-07-04T01:54:41+00:00",
-      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-07-04T01:54:41+00:00",
+  "tiered_at": "2026-07-04T05:41:55+00:00",
   "free_preview_count": 3
 }
