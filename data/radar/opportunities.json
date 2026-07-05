@@ -1,32 +1,132 @@
 {
-  "generated_at": "2026-07-05T19:05:01+00:00",
+  "generated_at": "2026-07-05T20:50:56+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 835,
+  "corpus_count": 832,
   "opportunities": [
     {
-      "id": "image-text-to-text-security-tools",
-      "title_ar": "تطوير أدوات تحليل الثغرات باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة لأدوات تحليل الثغرات في مجال الأمن السيبراني. يمكن استخدام نماذج تحويل النص إلى صورة لتحليل البيانات بشكل أكثر فعالية.",
-      "buyer_ar": "شركات الأمن السيبراني ومراكز البحث",
-      "sellable_product_ar": "أداة تحليل ثغرات تعتمد على نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل ثغرة بسيطة",
-      "tools_ar": "Hugging Face, أدوات تحليل الثغرات, نماذج الذكاء الاصطناعي",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يوفر فرصة لتطوير تطبيقات فنية وإبداعية. يمكن استخدام هذه النماذج في مجالات مثل التسويق والإعلانات.",
+      "buyer_ar": "شركات الإعلان والتسويق، الفنانين الرقميين",
+      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
+      "first_paid_test_ar": "تطوير نموذج بسيط وتحميله على منصة تجريبية لقياس الاهتمام",
+      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:sharadshailly/movie-orchestrator-loras",
+        "huggingface_models:Ava2000/Kujou_Kiyo_Illustrious",
+        "huggingface_models:Scolpeccar76/krea2_uwstyle_model_v1.0"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Ava2000/Kujou_Kiyo_Illustrious — text-to-image",
+          "url": "https://huggingface.co/Ava2000/Kujou_Kiyo_Illustrious",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Scolpeccar76/krea2_uwstyle_model_v1.0 — text-to-image",
+          "url": "https://huggingface.co/Scolpeccar76/krea2_uwstyle_model_v1.0",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-05T20:50:56+00:00",
+      "updatedAt": "2026-07-05T20:50:56+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "الطلب المتزايد على أدوات الأمان السيبراني يعزز الحاجة لنماذج تحويل الصورة إلى نص. هذه النماذج يمكن أن تسهم في تحسين البحث عن الثغرات.",
+      "buyer_ar": "شركات الأمن السيبراني، المؤسسات التعليمية",
+      "sellable_product_ar": "نموذج تحويل الصورة إلى نص مخصص للأمن السيبراني",
+      "first_paid_test_ar": "تطوير نموذج بسيط لتحويل صورة إلى نص واختباره مع مجموعة صغيرة من المستخدمين",
+      "tools_ar": "Hugging Face، أدوات تحليل البيانات، خوادم سحابية",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_models:Nemesispro/Mythoseek",
-        "huggingface_models:opena2a/nanomind-security-analyst",
-        "huggingface_models:ivanmayombo/pussy-zimage-v1_"
+        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-5bit-XL-mlx",
+        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx"
       ],
-      "confidence": 0.8,
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Nemesispro/Mythoseek — image-text-to-text",
+          "url": "https://huggingface.co/Nemesispro/Mythoseek",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-5bit-XL-mlx — image-text-to-text",
+          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-5bit-XL-mlx",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx — image-text-to-text",
+          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-05T20:50:56+00:00",
+      "updatedAt": "2026-07-05T20:50:56+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "multimodal-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط",
+      "thesis_ar": "تزايد استخدام نماذج متعددة الوسائط يوفر فرصة لتطوير حلول ذكية تجمع بين النص والصورة. هذه الحلول يمكن أن تعزز تجربة المستخدم في التطبيقات المختلفة.",
+      "buyer_ar": "شركات التكنولوجيا، مطوري التطبيقات",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط",
+      "first_paid_test_ar": "تطوير نموذج أولي واختباره في تطبيق تجريبي",
+      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx",
+        "huggingface_models:ivanmayombo/pussy-zimage-v1_",
+        "huggingface_models:hyperneuronAILabs/quipus-0.6-speechv1"
+      ],
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Nemesispro/Mythoseek — image-text-to-text",
-          "url": "https://huggingface.co/Nemesispro/Mythoseek",
+          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx — image-text-to-text",
+          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -39,8 +139,8 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "opena2a/nanomind-security-analyst — text-generation",
-          "url": "https://huggingface.co/opena2a/nanomind-security-analyst",
+          "title": "hyperneuronAILabs/quipus-0.6-speechv1 — text-to-speech",
+          "url": "https://huggingface.co/hyperneuronAILabs/quipus-0.6-speechv1",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -50,111 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-05T19:05:01+00:00",
-      "updatedAt": "2026-07-05T19:05:01+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-generation-legal-assistance",
-      "title_ar": "تقديم خدمات المساعدة القانونية باستخدام نماذج توليد النصوص",
-      "thesis_ar": "تزايد الحاجة للمساعدة القانونية السريعة والدقيقة. يمكن استخدام نماذج توليد النصوص لتقديم استشارات قانونية فعالة.",
-      "buyer_ar": "مكاتب المحاماة والشركات القانونية",
-      "sellable_product_ar": "خدمة استشارات قانونية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم استشارة قانونية بسيطة عبر نموذج أولي",
-      "tools_ar": "Hugging Face, أدوات قانونية, نماذج الذكاء الاصطناعي",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:RayNene/Trilex",
-        "huggingface_models:shade1301/pgabl-legal-rag-qwen25-1_5b-v1",
-        "huggingface_models:SamTheDev/ministral3-3B-oga"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "SamTheDev/ministral3-3B-oga — text-generation",
-          "url": "https://huggingface.co/SamTheDev/ministral3-3B-oga",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "shade1301/pgabl-legal-rag-qwen25-1_5b-v1 — text-generation",
-          "url": "https://huggingface.co/shade1301/pgabl-legal-rag-qwen25-1_5b-v1",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "RayNene/Trilex — text-generation",
-          "url": "https://huggingface.co/RayNene/Trilex",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-05T19:05:01+00:00",
-      "updatedAt": "2026-07-05T19:05:01+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-creative-content",
-      "title_ar": "إنشاء محتوى إبداعي باستخدام نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي الإبداعي في التسويق. يمكن استخدام نماذج تحويل النص إلى صورة لتوليد محتوى فريد.",
-      "buyer_ar": "وكالات التسويق والمصممين",
-      "sellable_product_ar": "خدمة إنشاء محتوى مرئي باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تصميم مرئي لمشروع تسويقي صغير",
-      "tools_ar": "Hugging Face, أدوات تصميم, نماذج الذكاء الاصطناعي",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:hiro2325/hirokun",
-        "huggingface_models:anastasiia2200/chloe",
-        "huggingface_models:DavidBaloches/Big_Boobs_Clothed"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "hiro2325/hirokun — text-to-image",
-          "url": "https://huggingface.co/hiro2325/hirokun",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "anastasiia2200/chloe — text-to-image",
-          "url": "https://huggingface.co/anastasiia2200/chloe",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "DavidBaloches/Big_Boobs_Clothed — text-to-image",
-          "url": "https://huggingface.co/DavidBaloches/Big_Boobs_Clothed",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-05T19:05:01+00:00",
-      "updatedAt": "2026-07-05T19:05:01+00:00",
+      "publishedAt": "2026-07-05T20:50:56+00:00",
+      "updatedAt": "2026-07-05T20:50:56+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-05T19:05:01+00:00",
+  "tiered_at": "2026-07-05T20:50:56+00:00",
   "free_preview_count": 3
 }
