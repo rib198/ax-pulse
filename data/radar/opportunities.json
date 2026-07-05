@@ -1,146 +1,46 @@
 {
-  "generated_at": "2026-07-04T22:51:11+00:00",
+  "generated_at": "2026-07-05T02:20:33+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 839,
+  "corpus_count": 738,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يعكس الحاجة المتزايدة للإبداع البصري. يمكن استغلال هذه الفرصة لتقديم حلول مبتكرة في مجالات الإعلانات والفنون.",
-      "buyer_ar": "شركات الإعلان، وكالات التصميم، مطورو الألعاب",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، مكتبات معالجة الصور",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الطلب على نماذج توليد النصوص يعكس الحاجة المتزايدة للأدوات الذكية في مختلف المجالات. يمكن استغلال هذه النماذج لتقديم حلول مبتكرة في مجالات مثل التعليم والتسويق.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، وكالات التسويق",
+      "sellable_product_ar": "خدمات تطوير نماذج ذكاء اصطناعي لتوليد النصوص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص تسويقية",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:sharadshailly/movie-orchestrator-loras",
-        "huggingface_models:JugginsAI/nsy",
-        "huggingface_models:avasquat/epoch7"
+        "huggingface_models:ProCreations/grug-9b-gguf",
+        "huggingface_models:thu-coai/SeTox-Qwen2.5-3B",
+        "huggingface_models:mayurisp279/capstone-module1-codellama7b-lora"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
-          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
-          "score": 0.509,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "JugginsAI/nsy — text-to-image",
-          "url": "https://huggingface.co/JugginsAI/nsy",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "avasquat/epoch7 — text-to-image",
-          "url": "https://huggingface.co/avasquat/epoch7",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T22:51:11+00:00",
-      "updatedAt": "2026-07-04T22:51:11+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multimodal-llm-applications",
-      "title_ar": "تطوير تطبيقات متعددة الوسائط باستخدام نماذج LLM",
-      "thesis_ar": "تزايد استخدام نماذج متعددة الوسائط يعكس الحاجة إلى تطبيقات متكاملة. يمكن استغلال هذه الفرصة لتطوير حلول جديدة في التعليم والترفيه.",
-      "buyer_ar": "شركات التعليم، مطورو الألعاب، منصات المحتوى",
-      "sellable_product_ar": "تطبيق يستخدم نموذج متعدد الوسائط",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط يجمع بين النص والصورة",
-      "tools_ar": "Hugging Face، أدوات تطوير التطبيقات، مكتبات التعلم العميق",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF",
-        "huggingface_models:TaimoorSiddiqui/HopCoder-Mini-35B-A3B-VL36-Q3_K_L-GGUF",
-        "arxiv_papers:2607.02504v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Ministral-3-8B-Reasoning-2512-heretic-GGUF",
+          "title": "ProCreations/grug-9b-gguf — text-generation",
+          "url": "https://huggingface.co/ProCreations/grug-9b-gguf",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "TaimoorSiddiqui/HopCoder-Mini-35B-A3B-VL36-Q3_K_L-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/TaimoorSiddiqui/HopCoder-Mini-35B-A3B-VL36-Q3_K_L-GGUF",
+          "title": "thu-coai/SeTox-Qwen2.5-3B — text-generation",
+          "url": "https://huggingface.co/thu-coai/SeTox-Qwen2.5-3B",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
-          "url": "http://arxiv.org/abs/2607.02504v1",
-          "score": 0.479,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-04T22:51:11+00:00",
-      "updatedAt": "2026-07-04T22:51:11+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "llm-optimization",
-      "title_ar": "تحسين استهلاك الطاقة لنماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات بسبب نماذج اللغة الكبيرة يفتح المجال لتطوير حلول فعالة. يمكن تقديم خدمات استشارية لتحسين الأداء وتقليل التكاليف.",
-      "buyer_ar": "مراكز البيانات، شركات التقنية الكبرى",
-      "sellable_product_ar": "استشارات لتحسين استهلاك الطاقة لنماذج LLM",
-      "first_paid_test_ar": "تقديم تحليل أولي لاستهلاك الطاقة لنموذج محدد",
-      "tools_ar": "أدوات تحليل الأداء، نماذج LLM، أدوات قياس الطاقة",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.02391v1",
-        "arxiv_papers:2607.02453v1",
-        "huggingface_models:wasnaga/atom-token-llm-v1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "WattGPU: Predicting Inference Power and Latency on Unseen GPUs and LLMs",
-          "url": "http://arxiv.org/abs/2607.02391v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
-          "url": "http://arxiv.org/abs/2607.02453v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "wasnaga/atom-token-llm-v1 — text-generation",
-          "url": "https://huggingface.co/wasnaga/atom-token-llm-v1",
+          "title": "mayurisp279/capstone-module1-codellama7b-lora — text-generation",
+          "url": "https://huggingface.co/mayurisp279/capstone-module1-codellama7b-lora",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-04T22:51:11+00:00",
-      "updatedAt": "2026-07-04T22:51:11+00:00",
+      "publishedAt": "2026-07-05T02:20:33+00:00",
+      "updatedAt": "2026-07-05T02:20:33+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "toxicity-detection-tools",
+      "title_ar": "تطوير أدوات كشف السمية في المحتوى",
+      "thesis_ar": "تزايد القلق بشأن المحتوى الضار على الإنترنت يدفع الحاجة لأدوات فعالة لكشف السمية. هذه الأدوات يمكن أن تحسن من بيئة التواصل الرقمي.",
+      "buyer_ar": "منصات التواصل الاجتماعي، الشركات التقنية، المؤسسات التعليمية",
+      "sellable_product_ar": "خدمات تطوير أدوات كشف السمية باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لكشف السمية في التعليقات",
+      "tools_ar": "Hugging Face, Python, Scikit-learn",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:thu-coai/SeTox-Qwen2.5-3B",
+        "huggingface_models:thu-coai/SeTox-Qwen2.5-7B",
+        "huggingface_models:mayurisp279/capstone-module1-codellama7b-lora"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "thu-coai/SeTox-Qwen2.5-3B — text-generation",
+          "url": "https://huggingface.co/thu-coai/SeTox-Qwen2.5-3B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "thu-coai/SeTox-Qwen2.5-7B — text-generation",
+          "url": "https://huggingface.co/thu-coai/SeTox-Qwen2.5-7B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mayurisp279/capstone-module1-codellama7b-lora — text-generation",
+          "url": "https://huggingface.co/mayurisp279/capstone-module1-codellama7b-lora",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-05T02:20:33+00:00",
+      "updatedAt": "2026-07-05T02:20:33+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يفتح المجال لإبداع محتوى مرئي مخصص. هذا الاتجاه يمكن أن يعزز من تجربة المستخدم في العديد من التطبيقات.",
+      "buyer_ar": "شركات الإعلام، وكالات الإعلانات، المطورين",
+      "sellable_product_ar": "خدمات تطوير نماذج ذكاء اصطناعي لتحويل النصوص إلى صور",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص إلى صور إعلانية",
+      "tools_ar": "Hugging Face, PyTorch, OpenAI",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Ava2000/Yukiwo_Illustrious",
+        "huggingface_models:hiro2325/aiito",
+        "huggingface_models:sharadshailly/movie-orchestrator-loras"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Ava2000/Yukiwo_Illustrious — text-to-image",
+          "url": "https://huggingface.co/Ava2000/Yukiwo_Illustrious",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hiro2325/aiito — text-to-image",
+          "url": "https://huggingface.co/hiro2325/aiito",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.482,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-05T02:20:33+00:00",
+      "updatedAt": "2026-07-05T02:20:33+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-04T22:51:11+00:00",
+  "tiered_at": "2026-07-05T02:20:33+00:00",
   "free_preview_count": 3
 }
