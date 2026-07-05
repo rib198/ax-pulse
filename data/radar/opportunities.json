@@ -1,98 +1,48 @@
 {
-  "generated_at": "2026-07-05T15:10:26+00:00",
+  "generated_at": "2026-07-05T16:58:57+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 840,
+  "corpus_count": 827,
   "opportunities": [
     {
-      "id": "gpu-optimization-for-llms",
-      "title_ar": "تحسين استهلاك الطاقة في نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد استهلاك الطاقة في مراكز البيانات يتطلب حلولًا فعالة لتقليل التكاليف. تحسين مطابقة نماذج اللغة الكبيرة مع وحدات معالجة الرسوميات الأكثر كفاءة يمكن أن يوفر موارد كبيرة.",
-      "buyer_ar": "مراكز البيانات والشركات التقنية",
-      "sellable_product_ar": "خدمات استشارية لتحسين استهلاك الطاقة في مراكز البيانات",
-      "first_paid_test_ar": "تحليل استهلاك الطاقة لنموذج لغة كبير واختبار تحسينات على وحدة معالجة الرسوميات",
-      "tools_ar": "أدوات تحليل البيانات، نماذج محاكاة الطاقة، أدوات إدارة مراكز البيانات",
-      "capital_ar": "متوسط",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "زيادة الطلب على نماذج الذكاء الاصطناعي لتوليد النصوص يفتح المجال لتطوير حلول مخصصة. مع تحديثات النماذج الأخيرة، يمكن تقديم خدمات متخصصة تلبي احتياجات السوق العربي.",
+      "buyer_ar": "شركات المحتوى الرقمي ووكالات التسويق",
+      "sellable_product_ar": "نماذج توليد نصوص مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص لمحتوى تسويقي",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2607.02391v1",
-        "huggingface_models:FadedRedStar/LFM2.5-VL-1.6B-heretic-GGUF",
-        "huggingface_models:FadedRedStar/Qwen3.5-4B-heretic-GGUF"
+        "huggingface_models:Nanthasit/sakthai-context-1.5b-tools",
+        "huggingface_models:HavocK1/Le-Chaton-Slim-23B-V0.2",
+        "huggingface_models:fanglinxun/marketingv2"
       ],
       "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "WattGPU: Predicting Inference Power and Latency on Unseen GPUs and LLMs",
-          "url": "http://arxiv.org/abs/2607.02391v1",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/LFM2.5-VL-1.6B-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/LFM2.5-VL-1.6B-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FadedRedStar/Qwen3.5-4B-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-4B-heretic-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-05T15:10:26+00:00",
-      "updatedAt": "2026-07-05T15:10:26+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "long-form-video-analysis",
-      "title_ar": "تحليل الفيديو الطويل باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تحديات فهم الفيديو الطويل تتطلب حلولاً جديدة. استخدام تقنيات التعرف على المتحدثين يمكن أن يحسن من دقة التحليل.",
-      "buyer_ar": "شركات الإنتاج التلفزيوني ومنصات البث",
-      "sellable_product_ar": "خدمة تحليل محتوى الفيديو باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق نموذج لتحليل حلقة واحدة من برنامج تلفزيوني",
-      "tools_ar": "أدوات تحليل الفيديو، نماذج التعلم العميق، أدوات التعرف على الصوت",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.02504v1",
-        "huggingface_models:FadedRedStar/Qwen3.5-2B-heretic-imatrix-GGUF",
-        "huggingface_models:FadedRedStar/Qwen3.5-4B-heretic-GGUF"
-      ],
-      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/Qwen3.5-4B-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-4B-heretic-GGUF",
+          "title": "Nanthasit/sakthai-context-1.5b-tools — text-generation",
+          "url": "https://huggingface.co/Nanthasit/sakthai-context-1.5b-tools",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/Qwen3.5-2B-heretic-imatrix-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-2B-heretic-imatrix-GGUF",
+          "title": "HavocK1/Le-Chaton-Slim-23B-V0.2 — text-generation",
+          "url": "https://huggingface.co/HavocK1/Le-Chaton-Slim-23B-V0.2",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
-          "url": "http://arxiv.org/abs/2607.02504v1",
-          "score": 0.479,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "fanglinxun/marketingv2 — text-generation",
+          "url": "https://huggingface.co/fanglinxun/marketingv2",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,47 +50,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-05T15:10:26+00:00",
-      "updatedAt": "2026-07-05T15:10:26+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-07-05T16:58:57+00:00",
+      "updatedAt": "2026-07-05T16:58:57+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "تطوير حلول ذكاء اصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد الطلب على نماذج الذكاء الاصطناعي التي تجمع بين النص والصورة يفتح آفاقًا جديدة. تقديم حلول مبتكرة يمكن أن يلبي احتياجات السوق المتزايدة.",
-      "buyer_ar": "شركات الإعلام والتسويق",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط لتوليد المحتوى",
-      "first_paid_test_ar": "تطوير نموذج تجريبي لتوليد محتوى نصي وصوري",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، بيئات تطوير البرمجيات",
+      "id": "image-text-models",
+      "title_ar": "تطوير نماذج تحويل النصوص إلى صور",
+      "thesis_ar": "تزايد الاهتمام بتطبيقات تحويل النصوص إلى صور يتيح فرصًا جديدة في التصميم الإبداعي. النماذج الحديثة تقدم إمكانيات متقدمة يمكن استغلالها في مجالات متعددة.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "خدمات تحويل النصوص إلى صور مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لحملة إعلانية",
+      "tools_ar": "Hugging Face, OpenAI, PyTorch",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:FadedRedStar/LFM2.5-VL-1.6B-heretic-GGUF",
-        "huggingface_models:FadedRedStar/Qwen3.5-4B-heretic-GGUF",
-        "huggingface_models:Garg5315/market-analysis-ai"
+        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx",
+        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-6bit-XL-mlx",
+        "huggingface_models:DavidBaloches/Big_Boobs_Clothed"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/LFM2.5-VL-1.6B-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/LFM2.5-VL-1.6B-heretic-GGUF",
+          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx — image-text-to-text",
+          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "FadedRedStar/Qwen3.5-4B-heretic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/FadedRedStar/Qwen3.5-4B-heretic-GGUF",
+          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-6bit-XL-mlx — image-text-to-text",
+          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-6bit-XL-mlx",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Garg5315/market-analysis-ai — text-to-image",
-          "url": "https://huggingface.co/Garg5315/market-analysis-ai",
+          "title": "DavidBaloches/Big_Boobs_Clothed — text-to-image",
+          "url": "https://huggingface.co/DavidBaloches/Big_Boobs_Clothed",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-05T15:10:26+00:00",
-      "updatedAt": "2026-07-05T15:10:26+00:00",
+      "publishedAt": "2026-07-05T16:58:57+00:00",
+      "updatedAt": "2026-07-05T16:58:57+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "market-analysis-ai",
+      "title_ar": "تحليل السوق باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة إلى أدوات تحليل السوق الذكية يفتح المجال لتقديم حلول مبتكرة. النماذج الحديثة توفر رؤى دقيقة يمكن أن تعزز من قرارات الأعمال.",
+      "buyer_ar": "شركات الأبحاث التسويقية",
+      "sellable_product_ar": "أدوات تحليل السوق المعتمدة على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تقرير تحليل سوق تجريبي",
+      "tools_ar": "Hugging Face, R, Python",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:Garg5315/market-analysis-ai",
+        "huggingface_models:nbeerbower/Gemma4-Gutenberg-12B",
+        "arxiv_papers:2607.02453v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Garg5315/market-analysis-ai — text-to-image",
+          "url": "https://huggingface.co/Garg5315/market-analysis-ai",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
+          "url": "http://arxiv.org/abs/2607.02453v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "nbeerbower/Gemma4-Gutenberg-12B — text-generation",
+          "url": "https://huggingface.co/nbeerbower/Gemma4-Gutenberg-12B",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-05T16:58:57+00:00",
+      "updatedAt": "2026-07-05T16:58:57+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-05T15:10:26+00:00",
+  "tiered_at": "2026-07-05T16:58:57+00:00",
   "free_preview_count": 3
 }
