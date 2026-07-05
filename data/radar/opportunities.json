@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T20:50:56+00:00",
+  "generated_at": "2026-07-05T22:55:35+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 832,
@@ -7,11 +7,11 @@
     {
       "id": "text-to-image-models",
       "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يوفر فرصة لتطوير تطبيقات فنية وإبداعية. يمكن استخدام هذه النماذج في مجالات مثل التسويق والإعلانات.",
-      "buyer_ar": "شركات الإعلان والتسويق، الفنانين الرقميين",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تطوير نموذج بسيط وتحميله على منصة تجريبية لقياس الاهتمام",
-      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يعزز الحاجة لنماذج تحويل النص إلى صورة. هذه النماذج توفر حلولاً مبتكرة في مجالات مثل التسويق والإعلانات.",
+      "buyer_ar": "شركات التسويق والإعلانات، منصات التواصل الاجتماعي",
+      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
+      "tools_ar": "Hugging Face, TensorFlow, PyTorch",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_models:sharadshailly/movie-orchestrator-loras",
@@ -50,29 +50,36 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-05T20:50:56+00:00",
-      "updatedAt": "2026-07-05T20:50:56+00:00",
+      "publishedAt": "2026-07-05T22:55:35+00:00",
+      "updatedAt": "2026-07-05T22:55:35+00:00",
       "sortOrder": 0
     },
     {
-      "id": "image-text-to-text-models",
-      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
-      "thesis_ar": "الطلب المتزايد على أدوات الأمان السيبراني يعزز الحاجة لنماذج تحويل الصورة إلى نص. هذه النماذج يمكن أن تسهم في تحسين البحث عن الثغرات.",
-      "buyer_ar": "شركات الأمن السيبراني، المؤسسات التعليمية",
-      "sellable_product_ar": "نموذج تحويل الصورة إلى نص مخصص للأمن السيبراني",
-      "first_paid_test_ar": "تطوير نموذج بسيط لتحويل صورة إلى نص واختباره مع مجموعة صغيرة من المستخدمين",
-      "tools_ar": "Hugging Face، أدوات تحليل البيانات، خوادم سحابية",
-      "capital_ar": "منخفض",
+      "id": "cybersecurity-tools",
+      "title_ar": "تطوير أدوات الأمن السيبراني",
+      "thesis_ar": "تزايد التهديدات السيبرانية يتطلب أدوات متطورة لتحليل الثغرات. النماذج الجديدة توفر حلولاً مبتكرة لتحليل البيانات الأمنية.",
+      "buyer_ar": "شركات الأمن السيبراني، المؤسسات الحكومية",
+      "sellable_product_ar": "أداة تحليل الثغرات السيبرانية باستخدام تقنيات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تحليل ثغرة بسيط لمؤسسة صغيرة",
+      "tools_ar": "Hugging Face, OpenAI, Python",
+      "capital_ar": "متوسط",
       "evidence_ids": [
+        "huggingface_models:squ11z1/Mythoseek",
         "huggingface_models:Nemesispro/Mythoseek",
-        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-5bit-XL-mlx",
-        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx"
+        "huggingface_models:meridianal/FinAI"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "squ11z1/Mythoseek — image-text-to-text",
+          "url": "https://huggingface.co/squ11z1/Mythoseek",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "Nemesispro/Mythoseek — image-text-to-text",
@@ -82,65 +89,8 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-5bit-XL-mlx — image-text-to-text",
-          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-task_arithmetic_v2-5bit-XL-mlx",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx — image-text-to-text",
-          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-5bit-XL-mlx",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-05T20:50:56+00:00",
-      "updatedAt": "2026-07-05T20:50:56+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد استخدام نماذج متعددة الوسائط يوفر فرصة لتطوير حلول ذكية تجمع بين النص والصورة. هذه الحلول يمكن أن تعزز تجربة المستخدم في التطبيقات المختلفة.",
-      "buyer_ar": "شركات التكنولوجيا، مطوري التطبيقات",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط",
-      "first_paid_test_ar": "تطوير نموذج أولي واختباره في تطبيق تجريبي",
-      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx",
-        "huggingface_models:ivanmayombo/pussy-zimage-v1_",
-        "huggingface_models:hyperneuronAILabs/quipus-0.6-speechv1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx — image-text-to-text",
-          "url": "https://huggingface.co/leonsarmiento/Ornith-Agents-A1-3.6-35B-A3B-dare_ties-6bit-XL-mlx",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ivanmayombo/pussy-zimage-v1_ — text-to-image",
-          "url": "https://huggingface.co/ivanmayombo/pussy-zimage-v1_",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "hyperneuronAILabs/quipus-0.6-speechv1 — text-to-speech",
-          "url": "https://huggingface.co/hyperneuronAILabs/quipus-0.6-speechv1",
+          "title": "meridianal/FinAI — text-generation",
+          "url": "https://huggingface.co/meridianal/FinAI",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-05T20:50:56+00:00",
-      "updatedAt": "2026-07-05T20:50:56+00:00",
+      "publishedAt": "2026-07-05T22:55:35+00:00",
+      "updatedAt": "2026-07-05T22:55:35+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "multimodal-ai-solutions",
+      "title_ar": "تطوير حلول الذكاء الاصطناعي متعددة الوسائط",
+      "thesis_ar": "تزايد الحاجة لتكامل النص والصورة في التطبيقات يعزز الطلب على الحلول متعددة الوسائط. هذه الحلول تدعم الابتكار في مجالات مثل التعليم والترفيه.",
+      "buyer_ar": "شركات التقنية، منصات التعليم الإلكتروني",
+      "sellable_product_ar": "حلول ذكاء اصطناعي متعددة الوسائط لتحسين تجربة المستخدم",
+      "first_paid_test_ar": "تقديم نموذج تجريبي يدمج النص والصورة في تطبيقات تعليمية",
+      "tools_ar": "Hugging Face, TensorFlow, OpenAI",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:litert-community/InternVL3_5-2B",
+        "huggingface_models:Yacinedh/translategemma-4b-khutbah",
+        "huggingface_models:Merlin-Research/Pluto"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "litert-community/InternVL3_5-2B — image-text-to-text",
+          "url": "https://huggingface.co/litert-community/InternVL3_5-2B",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Yacinedh/translategemma-4b-khutbah — image-text-to-text",
+          "url": "https://huggingface.co/Yacinedh/translategemma-4b-khutbah",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Merlin-Research/Pluto — image-text-to-text",
+          "url": "https://huggingface.co/Merlin-Research/Pluto",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-05T22:55:35+00:00",
+      "updatedAt": "2026-07-05T22:55:35+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-05T20:50:56+00:00",
+  "tiered_at": "2026-07-05T22:55:35+00:00",
   "free_preview_count": 3
 }
