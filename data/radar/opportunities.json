@@ -1,22 +1,27 @@
 {
-  "generated_at": "2026-07-06T21:25:23+00:00",
+  "generated_at": "2026-07-06T23:01:35+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 827,
   "opportunities": [
     {
-      "id": "ai_income_tools",
-      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
-      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.5,
-      "confidence": 0.85,
-      "source": "rules",
+      "id": "ai-security-framework",
+      "title_ar": "تطوير إطار أمان للذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد استخدام البنية التحتية للذكاء الاصطناعي مفتوحة المصدر، تبرز الحاجة إلى أدوات أمان متطورة. هذا الوقت مناسب لتطوير حلول أمان متكاملة لحماية الأنظمة من التهديدات المتزايدة.",
+      "buyer_ar": "شركات التكنولوجيا، مزودو خدمات الذكاء الاصطناعي",
+      "sellable_product_ar": "حلول أمان للذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم استشارة أمان مجانية لمشروع صغير",
+      "tools_ar": "أدوات تحليل الأمان، منصات اختبار الاختراق، نماذج الذكاء الاصطناعي",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.31227",
+        "huggingface_models:glyphsoftware/sentinal-r2",
+        "huggingface_daily_papers:2606.29526"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.53,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -25,6 +30,99 @@
           "score": 0.589,
           "trust_tier": "research"
         },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "The Mirage of Optimizing Training Policies: Monotonic Inference Policies as the Real Objective for LLM Reinforcement Learning",
+          "url": "https://huggingface.co/papers/2606.29526",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "glyphsoftware/sentinal-r2 — text-generation",
+          "url": "https://huggingface.co/glyphsoftware/sentinal-r2",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-06T23:01:35+00:00",
+      "updatedAt": "2026-07-06T23:01:35+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "image-editing-solutions",
+      "title_ar": "حلول تعديل الصور باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تتزايد الحاجة إلى أدوات تعديل الصور المتقدمة التي تستفيد من الذكاء الاصطناعي. السوق بحاجة إلى حلول توفر تحكمًا دقيقًا في تأثيرات الصور.",
+      "buyer_ar": "المصورون، شركات الإعلام، وكالات الإعلان",
+      "sellable_product_ar": "أدوات تعديل الصور بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم فترة تجريبية مجانية لأداة تعديل صور",
+      "tools_ar": "أدوات معالجة الصور، مكتبات الذكاء الاصطناعي، واجهات المستخدم",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.31959",
+        "huggingface_daily_papers:2607.01233",
+        "huggingface_models:Zh-12-7869/Qwen-Image-Edit-Rapid-AIO"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AnyBokeh: Physics-Guided Any-to-Any Bokeh Editing with Optical Fingerprint Transfer",
+          "url": "https://huggingface.co/papers/2606.31959",
+          "score": 0.506,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Zh-12-7869/Qwen-Image-Edit-Rapid-AIO — text-to-image",
+          "url": "https://huggingface.co/Zh-12-7869/Qwen-Image-Edit-Rapid-AIO",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Measuring the Gap Between Human and LLM Research Ideas",
+          "url": "https://huggingface.co/papers/2607.01233",
+          "score": 0.466,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-06T23:01:35+00:00",
+      "updatedAt": "2026-07-06T23:01:35+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "adaptive-inference-systems",
+      "title_ar": "أنظمة استدلال تكيفية للذكاء الاصطناعي",
+      "thesis_ar": "تتطلب نماذج الذكاء الاصطناعي الحديثة أنظمة استدلال أكثر مرونة لتقليل تكرار استدعاء السياسات. هذا يفتح مجالًا لتطوير حلول مبتكرة لتحسين الكفاءة.",
+      "buyer_ar": "شركات تطوير البرمجيات، المؤسسات البحثية",
+      "sellable_product_ar": "أنظمة استدلال ذكية",
+      "first_paid_test_ar": "تطوير نموذج تجريبي لنظام استدلال بسيط",
+      "tools_ar": "أدوات تطوير البرمجيات، مكتبات التعلم العميق، منصات اختبار الأداء",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.01804",
+        "huggingface_daily_papers:2606.29526",
+        "huggingface_daily_papers:2606.31959"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.51,
+      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "The Mirage of Optimizing Training Policies: Monotonic Inference Policies as the Real Objective for LLM Reinforcement Learning",
@@ -45,34 +143,6 @@
           "url": "https://huggingface.co/papers/2606.31959",
           "score": 0.506,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "MuXodious/Qwythos-9B-Claude-Mythos-5-1M-MTP — text-generation",
-          "url": "https://huggingface.co/MuXodious/Qwythos-9B-Claude-Mythos-5-1M-MTP",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mlx-community/FLUX.2-klein-4B-bf16 — text-to-image",
-          "url": "https://huggingface.co/mlx-community/FLUX.2-klein-4B-bf16",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "CappyAdams/Project-Ruman_anima-lora-pack — text-to-image",
-          "url": "https://huggingface.co/CappyAdams/Project-Ruman_anima-lora-pack",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Measuring the Gap Between Human and LLM Research Ideas",
-          "url": "https://huggingface.co/papers/2607.01233",
-          "score": 0.463,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -80,251 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-06T21:25:23+00:00",
-      "updatedAt": "2026-07-06T21:25:23+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "ai_income_content",
-      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
-      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
-      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
-      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.49,
-      "confidence": 0.85,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AnyBokeh: Physics-Guided Any-to-Any Bokeh Editing with Optical Fingerprint Transfer",
-          "url": "https://huggingface.co/papers/2606.31959",
-          "score": 0.506,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "MuXodious/Qwythos-9B-Claude-Mythos-5-1M-MTP — text-generation",
-          "url": "https://huggingface.co/MuXodious/Qwythos-9B-Claude-Mythos-5-1M-MTP",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "jarod2212/Colombia_Heritage_Couture_Barranquilla — text-to-image",
-          "url": "https://huggingface.co/jarod2212/Colombia_Heritage_Couture_Barranquilla",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "DeverStyle/Krea-2-Premium-Loras — text-to-image",
-          "url": "https://huggingface.co/DeverStyle/Krea-2-Premium-Loras",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "erne1234/lalo — text-to-image",
-          "url": "https://huggingface.co/erne1234/lalo",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Chunte/huggy-style-v6-lora — text-to-image",
-          "url": "https://huggingface.co/Chunte/huggy-style-v6-lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "hiro2325/hirokun2 — text-to-image",
-          "url": "https://huggingface.co/hiro2325/hirokun2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "negusnagga/mad-e04ae5-TENSA-321-Qwen — text-to-image",
-          "url": "https://huggingface.co/negusnagga/mad-e04ae5-TENSA-321-Qwen",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-06T21:25:23+00:00",
-      "updatedAt": "2026-07-06T21:25:23+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "ai_income_automation",
-      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
-      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
-      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
-      "tools_ar": "n8n أو Make، API، نموذج AI",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.46,
-      "confidence": 0.84,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
-          "url": "https://huggingface.co/papers/2606.31227",
-          "score": 0.589,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "RemDev-AI/medical-triage-agent-ai-poc-models — text-generation",
-          "url": "https://huggingface.co/RemDev-AI/medical-triage-agent-ai-poc-models",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "duxiaodan/teaching-an-agent-to-sketch-one-part-at-a-time — image-text-to-text",
-          "url": "https://huggingface.co/duxiaodan/teaching-an-agent-to-sketch-one-part-at-a-time",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Teaching LLMs to Recommend and Defer in Underrepresented Epilepsy Care",
-          "url": "https://huggingface.co/papers/2606.31036",
-          "score": 0.462,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "github_repos",
-          "title": "perminder-klair/subwave",
-          "url": "https://github.com/perminder-klair/subwave",
-          "score": 0.433,
-          "trust_tier": "community"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
-          "url": "http://arxiv.org/abs/2607.02453v1",
-          "score": 0.423,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "github_repos",
-          "title": "VikashLoomba/agentprism-workflows",
-          "url": "https://github.com/VikashLoomba/agentprism-workflows",
-          "score": 0.41,
-          "trust_tier": "community"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-06T21:25:23+00:00",
-      "updatedAt": "2026-07-06T21:25:23+00:00",
+      "publishedAt": "2026-07-06T23:01:35+00:00",
+      "updatedAt": "2026-07-06T23:01:35+00:00",
       "sortOrder": 2
-    },
-    {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
-      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
-      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
-      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.39,
-      "confidence": 0.83,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "manual_x",
-          "title": "While closed source AI is in shambles, open source is having one of the best weeks of all time.    Z ai GLM 5.2  Minimax M3  Kimi 2.7 code …",
-          "url": "https://x.com/Sentdex/status/2066157250268237993#m",
-          "score": 0.437,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Safe and Adaptive Cloud Healing: Verifying LLM-Generated Recovery Plans with a Neural-Symbolic World Model",
-          "url": "http://arxiv.org/abs/2607.01595v1",
-          "score": 0.418,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Distributed Attacks in Persistent-State AI Control",
-          "url": "http://arxiv.org/abs/2607.02514v1",
-          "score": 0.408,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Criticality-Based Guard Rail Validation for AI Agent Decisions in Autonomous Telecom Networks",
-          "url": "http://arxiv.org/abs/2607.02210v1",
-          "score": 0.375,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Delegation Rights: Property, Agency, and Investment Incentives in the Age of AI Agents",
-          "url": "http://arxiv.org/abs/2606.31935v1",
-          "score": 0.375,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "NEW: Mobileye today announced plans to expand its robotaxi activities beyond supplying self-driving technology and into full ownership of a…",
-          "url": "https://x.com/Mobileye/status/2066840494299091047#m",
-          "score": 0.372,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Great collaboration with @songhan_mit’s lab on world models 🚀   Enze Xie (@xieenze_jr)    🚀 Exciting news! SANA is now officially integrate…",
-          "url": "https://x.com/jiayq/status/2030182667602575655#m",
-          "score": 0.371,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "Just eight months after launching its commercial service, AI leaderboard provider Arena, which originated as a research project at UC Berke…",
-          "url": "https://x.com/TechCrunch/status/2071708000834760934#m",
-          "score": 0.367,
-          "trust_tier": "press"
-        }
-      ],
-      "tier": "premium",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-06T21:25:23+00:00",
-      "updatedAt": "2026-07-06T21:25:23+00:00",
-      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-07-06T21:25:23+00:00",
+  "tiered_at": "2026-07-06T23:01:35+00:00",
   "free_preview_count": 3
 }
