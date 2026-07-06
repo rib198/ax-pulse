@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-06T16:53:01+00:00",
+  "generated_at": "2026-07-06T19:43:57+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 829,
+  "corpus_count": 828,
   "opportunities": [
     {
       "id": "ai-security-framework",
       "title_ar": "تطوير إطار أمان للذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد استخدام البنية التحتية للذكاء الاصطناعي مفتوحة المصدر، تزداد الحاجة إلى أدوات أمان فعالة. يمكن أن يكون تطوير إطار موحد لاختبار أمان الوكلاء فرصة مثالية لتلبية هذا الطلب المتزايد.",
-      "buyer_ar": "شركات التقنية والبرمجيات",
+      "thesis_ar": "مع تزايد استخدام البنية التحتية المفتوحة المصدر للذكاء الاصطناعي، تزداد الحاجة إلى أدوات أمان متطورة. هذا الوقت مناسب لتطوير حلول أمان متكاملة للوكيل الذكي.",
+      "buyer_ar": "شركات التكنولوجيا والأمن السيبراني",
       "sellable_product_ar": "إطار أمان شامل للذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم اختبار أمان لوكيل ذكاء اصطناعي محدد",
-      "tools_ar": "أدوات اختبار الأمان، بيئة تطوير، أدوات تحليل البيانات",
+      "first_paid_test_ar": "تقديم استشارة أمان مجانية لمشروع صغير",
+      "tools_ar": "أدوات أمان البرمجيات، منصات الذكاء الاصطناعي، أدوات اختبار الاختراق",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2606.31227",
-        "huggingface_daily_papers:2606.29526",
-        "huggingface_daily_papers:2607.01804"
+        "huggingface_models:glyphsoftware/sentinal-r2",
+        "huggingface_models:fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.54,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -31,18 +31,18 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Mirage of Optimizing Training Policies: Monotonic Inference Policies as the Real Objective for LLM Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2606.29526",
-          "score": 0.516,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "glyphsoftware/sentinal-r2 — text-generation",
+          "url": "https://huggingface.co/glyphsoftware/sentinal-r2",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon",
-          "url": "https://huggingface.co/papers/2607.01804",
-          "score": 0.506,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym — text-generation",
+          "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,75 +50,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-06T16:53:01+00:00",
-      "updatedAt": "2026-07-06T16:53:01+00:00",
+      "publishedAt": "2026-07-06T19:43:57+00:00",
+      "updatedAt": "2026-07-06T19:43:57+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-image-editing-tool",
-      "title_ar": "أداة تحرير الصور بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على أدوات تحرير الصور باستخدام الذكاء الاصطناعي، خاصة في مجالات مثل التصوير الفوتوغرافي والتسويق. تطوير أداة لتحرير العمق والتأثيرات يمكن أن يجذب العديد من المستخدمين.",
-      "buyer_ar": "المصورون والمصممون",
-      "sellable_product_ar": "أداة تحرير الصور بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع ميزات محدودة",
-      "tools_ar": "أدوات تطوير البرمجيات، مكتبات معالجة الصور، واجهات المستخدم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.31959",
-        "huggingface_models:hiro2325/hirokun2",
-        "huggingface_models:negusnagga/mad-e04ae5-TENSA-321-Qwen"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AnyBokeh: Physics-Guided Any-to-Any Bokeh Editing with Optical Fingerprint Transfer",
-          "url": "https://huggingface.co/papers/2606.31959",
-          "score": 0.506,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "hiro2325/hirokun2 — text-to-image",
-          "url": "https://huggingface.co/hiro2325/hirokun2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "negusnagga/mad-e04ae5-TENSA-321-Qwen — text-to-image",
-          "url": "https://huggingface.co/negusnagga/mad-e04ae5-TENSA-321-Qwen",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-06T16:53:01+00:00",
-      "updatedAt": "2026-07-06T16:53:01+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "vla-action-horizon",
-      "title_ar": "تطوير نموذج VLA لتحسين الذكاء المجسد",
-      "thesis_ar": "تقدم نماذج VLA فرصًا جديدة في الذكاء الاصطناعي المجسد، مما يتيح تحسين التفاعل بين الرؤية واللغة والعمل. يمكن أن يكون تطوير نموذج مخصص لهذه التطبيقات فرصة كبيرة.",
-      "buyer_ar": "شركات الألعاب والتفاعل الافتراضي",
-      "sellable_product_ar": "نموذج VLA مخصص للتطبيقات التجارية",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتطبيق لعبة أو تجربة تفاعلية",
-      "tools_ar": "أدوات تطوير النموذج، بيئات محاكاة، أدوات تحليل الأداء",
+      "id": "vla-models-application",
+      "title_ar": "تطبيق نماذج الذكاء الاصطناعي متعددة الوسائط",
+      "thesis_ar": "تقدم نماذج الذكاء الاصطناعي متعددة الوسائط إمكانيات جديدة في الذكاء الاصطناعي. الوقت الحالي هو الأنسب لاستغلال هذه النماذج في التطبيقات التجارية.",
+      "buyer_ar": "شركات الإعلام والترفيه",
+      "sellable_product_ar": "تطبيقات تعتمد على نماذج VLA للذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط",
+      "tools_ar": "نموذج VLA، أدوات تطوير التطبيقات، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.01804",
-        "huggingface_models:LiamVisionary/swarm-sovereign-scout-12b-GGUF",
-        "huggingface_models:LiamVisionary/swarm-sovereign-scout-12b"
+        "huggingface_models:LiamVisionary/swarm-sovereign-scout-12b",
+        "huggingface_models:LiamVisionary/swarm-sovereign-scout-12b-GGUF"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-06T16:53:01+00:00",
-      "updatedAt": "2026-07-06T16:53:01+00:00",
+      "publishedAt": "2026-07-06T19:43:57+00:00",
+      "updatedAt": "2026-07-06T19:43:57+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "reinforcement-learning-optimization",
+      "title_ar": "تحسين سياسات التعلم المعزز للذكاء الاصطناعي",
+      "thesis_ar": "تواجه سياسات التعلم المعزز تحديات في الاستقرار، مما يتيح فرصة كبيرة لتحسين هذه السياسات. الوقت الحالي هو الأنسب لتطوير حلول فعالة.",
+      "buyer_ar": "شركات تطوير الذكاء الاصطناعي",
+      "sellable_product_ar": "أدوات لتحسين سياسات التعلم المعزز",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحسين سياسة واحدة",
+      "tools_ar": "بيانات تدريب، أدوات تحليل الأداء، مكتبات تعلم الآلة",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2606.29526",
+        "huggingface_models:Makaco/lmps-challenge-qwen3.5-9b-dpo",
+        "huggingface_models:WhirlwindAI/Arithmetic-SLM"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "The Mirage of Optimizing Training Policies: Monotonic Inference Policies as the Real Objective for LLM Reinforcement Learning",
+          "url": "https://huggingface.co/papers/2606.29526",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "WhirlwindAI/Arithmetic-SLM — text-generation",
+          "url": "https://huggingface.co/WhirlwindAI/Arithmetic-SLM",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Makaco/lmps-challenge-qwen3.5-9b-dpo — text-generation",
+          "url": "https://huggingface.co/Makaco/lmps-challenge-qwen3.5-9b-dpo",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-06T19:43:57+00:00",
+      "updatedAt": "2026-07-06T19:43:57+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-06T16:53:01+00:00",
+  "tiered_at": "2026-07-06T19:43:57+00:00",
   "free_preview_count": 3
 }
