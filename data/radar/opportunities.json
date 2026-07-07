@@ -1,40 +1,47 @@
 {
-  "generated_at": "2026-07-07T10:49:37+00:00",
+  "generated_at": "2026-07-07T14:09:23+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 838,
+  "corpus_count": 835,
   "opportunities": [
     {
-      "id": "cross-region-llm-serving",
-      "title_ar": "تحسين خدمات الذكاء الاصطناعي عبر الشبكات العالمية",
-      "thesis_ar": "تزايد استخدام خدمات LLM في تقديم الطلبات عبر الإنترنت يتطلب تحسين سياسات التوازن في الحمل. مع تزايد الاعتماد على هذه الخدمات، تصبح الحاجة إلى حلول فعالة أكثر إلحاحًا.",
+      "id": "online-tuning-llm-serving",
+      "title_ar": "تحسين تقديم خدمات LLM عبر الإنترنت",
+      "thesis_ar": "تزايد الطلب على خدمات LLM يتطلب تحسينات في توزيع الحمل عبر الشبكات العالمية. وجود حلول فعالة يمكن أن يعزز من كفاءة الأداء ويقلل من زمن الاستجابة.",
       "buyer_ar": "شركات التكنولوجيا التي تقدم خدمات الذكاء الاصطناعي",
-      "sellable_product_ar": "حلول توازن الحمل وتحسين الأداء لخدمات LLM",
-      "first_paid_test_ar": "تطبيق نموذج أولي لتحسين التوازن في بيئة اختبار محدودة",
-      "tools_ar": "أدوات تحليل البيانات، خوارزميات التوازن، واجهات برمجة التطبيقات",
+      "sellable_product_ar": "نظام لتحسين توزيع الحمل لخدمات LLM",
+      "first_paid_test_ar": "تقديم تجربة مجانية لمدة شهر مع قياس الأداء",
+      "tools_ar": "خوارزميات توزيع الحمل، واجهات برمجة التطبيقات، أدوات مراقبة الأداء",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2602.11688",
-        "huggingface_daily_papers:2607.05174",
-        "arxiv_papers:2607.04948v1"
+        "huggingface_daily_papers:2607.02646",
+        "arxiv_papers:2607.05174v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "GORGO: Online Tuning for Cross-Region Network-Aware LLM Serving",
           "url": "https://huggingface.co/papers/2602.11688",
-          "score": 0.536,
+          "score": 0.54,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "EVA-Client: A Unified Data Collection, Inference, and Deployment Framework for Embodied Policies on Real Robots",
+          "url": "https://huggingface.co/papers/2607.02646",
+          "score": 0.5,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Using Process Mining to Generate AI Agents from Software Engineering Process Records",
-          "url": "http://arxiv.org/abs/2607.04948v1",
-          "score": 0.47,
+          "title": "AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments",
+          "url": "http://arxiv.org/abs/2607.05174v1",
+          "score": 0.492,
           "trust_tier": "research"
         }
       ],
@@ -43,111 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-07T10:49:37+00:00",
-      "updatedAt": "2026-07-07T10:49:37+00:00",
+      "publishedAt": "2026-07-07T14:09:23+00:00",
+      "updatedAt": "2026-07-07T14:09:23+00:00",
       "sortOrder": 0
-    },
-    {
-      "id": "low-resource-language-llm",
-      "title_ar": "تطوير أدوات البرمجة للغات ذات الموارد المحدودة",
-      "thesis_ar": "تزايد الاعتماد على LLM في كتابة الأكواد يفتح آفاقًا جديدة، خاصة في اللغات ذات الموارد المحدودة. تطوير أدوات دعم لهذه اللغات يمكن أن يسد فجوة كبيرة في السوق.",
-      "buyer_ar": "شركات البرمجيات ومطورو التطبيقات",
-      "sellable_product_ar": "أدوات برمجة تعتمد على LLM لدعم اللغات ذات الموارد المحدودة",
-      "first_paid_test_ar": "تطوير نموذج أولي لأداة برمجة بلغة محدودة",
-      "tools_ar": "نموذج LLM، أدوات تطوير البرمجيات، واجهات المستخدم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "arxiv_papers:2607.04939v1",
-        "huggingface_daily_papers:2607.05352",
-        "huggingface_daily_papers:2607.00597"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Teaching LLMs a Low-Resource Language: Enhancing Code Completion in Pharo",
-          "url": "http://arxiv.org/abs/2607.04939v1",
-          "score": 0.498,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Multiplayer Interactive World Models with Representation Autoencoders",
-          "url": "https://huggingface.co/papers/2607.05352",
-          "score": 0.453,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
-          "url": "https://huggingface.co/papers/2607.00597",
-          "score": 0.45,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-07T10:49:37+00:00",
-      "updatedAt": "2026-07-07T10:49:37+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "personal-agent-framework",
-      "title_ar": "تطوير وكلاء شخصيين ذكيين",
-      "thesis_ar": "تزايد استخدام الوكلاء الشخصيين كوسيط بين المستخدمين والخدمات يتطلب تطوير أطر عمل فعالة. هذه الوكلاء يمكن أن تعزز من تجربة المستخدم وتتيح تحكمًا أكبر.",
-      "buyer_ar": "شركات التكنولوجيا التي تقدم خدمات شخصية",
-      "sellable_product_ar": "إطار عمل لتطوير وكلاء شخصيين",
-      "first_paid_test_ar": "تطبيق نموذج أولي لوكيل شخصي في بيئة محدودة",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.05363v1",
-        "arxiv_papers:2607.05120v1",
-        "arxiv_papers:2607.04948v1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints",
-          "url": "http://arxiv.org/abs/2607.05363v1",
-          "score": 0.477,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Agent Data Injection Attacks are Realistic Threats to AI Agents",
-          "url": "http://arxiv.org/abs/2607.05120v1",
-          "score": 0.473,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Using Process Mining to Generate AI Agents from Software Engineering Process Records",
-          "url": "http://arxiv.org/abs/2607.04948v1",
-          "score": 0.47,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-07T10:49:37+00:00",
-      "updatedAt": "2026-07-07T10:49:37+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-07T10:49:37+00:00",
+  "tiered_at": "2026-07-07T14:09:23+00:00",
   "free_preview_count": 3
 }
