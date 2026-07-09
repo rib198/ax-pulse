@@ -1,25 +1,26 @@
 {
-  "generated_at": "2026-07-09T19:25:34+00:00",
+  "generated_at": "2026-07-09T21:16:32+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 852,
+  "corpus_count": 854,
   "opportunities": [
     {
-      "id": "enhanced-code-completion",
-      "title_ar": "تحسين أدوات إكمال التعليمات البرمجية",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في كتابة التعليمات البرمجية يفتح آفاق جديدة في تحسين أدوات إكمال التعليمات البرمجية. دعم اللغات ذات الموارد المحدودة يمكن أن يوسع قاعدة المستخدمين.",
-      "buyer_ar": "مطورون وشركات برمجيات",
-      "sellable_product_ar": "أداة إكمال تعليمات برمجية تدعم لغات متعددة",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع ميزات محدودة",
-      "tools_ar": "نموذج لغة كبير، واجهة مستخدم، نظام تقييم",
+      "id": "low-resource-language-llm",
+      "title_ar": "تطوير نماذج لغوية للغات ذات موارد منخفضة",
+      "thesis_ar": "تزايد الحاجة لدعم اللغات ذات الموارد المنخفضة في أدوات كتابة الكود. هذا يفتح المجال لتطوير حلول جديدة تلبي احتياجات المطورين في هذه اللغات.",
+      "buyer_ar": "شركات البرمجيات والمطورون المستقلون",
+      "sellable_product_ar": "أداة كتابة كود تعتمد على نماذج لغوية تدعم لغات ذات موارد منخفضة",
+      "first_paid_test_ar": "تقديم نسخة تجريبية من الأداة لمجموعة مختارة من المطورين",
+      "tools_ar": "نموذج لغوي، منصة تطوير، واجهة مستخدم",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2607.04939",
-        "huggingface_daily_papers:2607.06624"
+        "huggingface_models:launch/MET-D-Gemma3-4B",
+        "huggingface_models:launch/MET-D-Gemma3-4B-en-only"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.51,
       "evidence_items": [
         {
@@ -30,11 +31,18 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
-          "url": "https://huggingface.co/papers/2607.06624",
-          "score": 0.507,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "launch/MET-D-Gemma3-4B-en-only — text-generation",
+          "url": "https://huggingface.co/launch/MET-D-Gemma3-4B-en-only",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "launch/MET-D-Gemma3-4B — text-generation",
+          "url": "https://huggingface.co/launch/MET-D-Gemma3-4B",
+          "score": 0.499,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -42,26 +50,27 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-09T19:25:34+00:00",
-      "updatedAt": "2026-07-09T19:25:34+00:00",
+      "publishedAt": "2026-07-09T21:16:32+00:00",
+      "updatedAt": "2026-07-09T21:16:32+00:00",
       "sortOrder": 0
     },
     {
       "id": "robotic-manipulation-evaluation",
       "title_ar": "تقييم أداء الروبوتات في المهام المعقدة",
-      "thesis_ar": "تقدم نماذج الرؤية واللغة في الروبوتات فرصًا لتقييم الأداء في المهام المعقدة. الحاجة لتقييم شامل يعزز تطوير الروبوتات العامة.",
-      "buyer_ar": "شركات الروبوتات ومراكز الأبحاث",
+      "thesis_ar": "تزايد استخدام الروبوتات في المهام المعقدة يتطلب أدوات تقييم فعالة. تطوير نظام تقييم شامل يمكن أن يحسن من أداء الروبوتات ويزيد من موثوقيتها.",
+      "buyer_ar": "شركات تصنيع الروبوتات ومراكز الأبحاث",
       "sellable_product_ar": "نظام تقييم شامل لأداء الروبوتات",
-      "first_paid_test_ar": "تقديم تقرير تقييم لروبوت واحد",
-      "tools_ar": "نموذج تقييم، بيئة محاكاة، بيانات أداء",
+      "first_paid_test_ar": "تقديم اختبار أداء لروبوتات محددة باستخدام النظام الجديد",
+      "tools_ar": "نموذج تقييم، بيانات أداء، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.07608",
-        "huggingface_daily_papers:2607.04434"
+        "huggingface_daily_papers:2607.04434",
+        "huggingface_daily_papers:2607.07534"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
@@ -71,42 +80,6 @@
           "score": 0.509,
           "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies",
-          "url": "https://huggingface.co/papers/2607.04434",
-          "score": 0.467,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-09T19:25:34+00:00",
-      "updatedAt": "2026-07-09T19:25:34+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "autonomous-ai-agents",
-      "title_ar": "تطوير مكتبة مهارات للذكاء الاصطناعي المستقل",
-      "thesis_ar": "تزايد استخدام الوكلاء الذكيين المستقلين في المهام المعقدة يتطلب مكتبة مهارات موثوقة. هذا سيمكن الوكلاء من أداء المهام بشكل صحيح وآمن.",
-      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
-      "sellable_product_ar": "مكتبة مهارات للذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم مجموعة مهارات محدودة لوكيل ذكي",
-      "tools_ar": "قاعدة بيانات المهارات، واجهة برمجة التطبيقات، نظام تقييم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.07676",
-        "huggingface_daily_papers:2607.07534",
-        "huggingface_daily_papers:2607.04434"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Infinite Worlds with Versatile Interactions",
@@ -127,11 +100,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-09T19:25:34+00:00",
-      "updatedAt": "2026-07-09T19:25:34+00:00",
+      "publishedAt": "2026-07-09T21:16:32+00:00",
+      "updatedAt": "2026-07-09T21:16:32+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "autonomous-ai-skill-library",
+      "title_ar": "إنشاء مكتبة مهارات للذكاء الاصطناعي المستقل",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي المستقل في تنفيذ المهام المعقدة يتطلب مكتبة مهارات موثوقة. هذه المكتبة يمكن أن تسهل تطوير تطبيقات ذكاء اصطناعي أكثر كفاءة.",
+      "buyer_ar": "شركات التكنولوجيا ومطورو الذكاء الاصطناعي",
+      "sellable_product_ar": "مكتبة مهارات للذكاء الاصطناعي المستقل",
+      "first_paid_test_ar": "تقديم مكتبة مهارات محدودة لمجموعة من المطورين لاختبار فعاليتها",
+      "tools_ar": "نموذج ذكاء اصطناعي، قاعدة بيانات للمهارات، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.07676",
+        "huggingface_daily_papers:2607.07534",
+        "huggingface_daily_papers:2607.07675"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Infinite Worlds with Versatile Interactions",
+          "url": "https://huggingface.co/papers/2607.07534",
+          "score": 0.484,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+          "url": "https://huggingface.co/papers/2607.07675",
+          "score": 0.47,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-09T21:16:32+00:00",
+      "updatedAt": "2026-07-09T21:16:32+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-09T19:25:34+00:00",
+  "tiered_at": "2026-07-09T21:16:32+00:00",
   "free_preview_count": 3
 }
