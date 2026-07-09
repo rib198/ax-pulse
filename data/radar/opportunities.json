@@ -1,48 +1,69 @@
 {
-  "generated_at": "2026-07-08T23:00:01+00:00",
+  "generated_at": "2026-07-09T01:54:53+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 849,
+  "corpus_count": 856,
   "opportunities": [
     {
-      "id": "text-to-image-creation",
-      "title_ar": "إنشاء الصور المعقدة باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على أدوات إنشاء الصور المعقدة يعكس الحاجة المتزايدة للإبداع الرقمي. يمكن استخدام نماذج الذكاء الاصطناعي لتوليد وتحرير الصور بشكل فعال.",
-      "buyer_ar": "الوكالات الإبداعية، المصورون، الشركات الناشئة في مجال التكنولوجيا",
-      "sellable_product_ar": "أداة لإنشاء وتحرير الصور باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تجربة مجانية مع خيار دفع لمشاريع محددة",
-      "tools_ar": "نموذج Krea-2 Turbo، أدوات تحرير الصور، واجهة مستخدم",
-      "capital_ar": "منخفض",
+      "id": "autonomous-ai-knowledge",
+      "title_ar": "تطوير مكتبة مهارات للذكاء الاصطناعي المستقل",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة ذكاء اصطناعي قادرة على تنفيذ مهام معقدة بشكل مستقل. يمكن أن توفر مكتبة شاملة للمهارات المعرفة التشغيلية اللازمة لضمان دقة وأمان النتائج.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "مكتبة مهارات للذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لمكتبة مهارات لمهمة محددة",
+      "tools_ar": "أدوات تطوير البرمجيات، بيئة اختبار، منصة ذكاء اصطناعي",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:ostris/krea2_turbo_style_reference",
-        "huggingface_models:aimalias/d4dd4r10",
-        "huggingface_daily_papers:2607.05465"
+        "2607.07676v1",
+        "2607.07321v1",
+        "2607.06963v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "ostris/krea2_turbo_style_reference — text-to-image",
-          "url": "https://huggingface.co/ostris/krea2_turbo_style_reference",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "aimalias/d4dd4r10 — text-to-image",
-          "url": "https://huggingface.co/aimalias/d4dd4r10",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CanvasAgent: Enabling Complex Image Creation and Editing via Visual Tool Orchestration",
-          "url": "https://huggingface.co/papers/2607.05465",
-          "score": 0.469,
+          "source_id": "arxiv_papers",
+          "title": "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
+          "url": "http://arxiv.org/abs/2607.07676v1",
+          "score": 0.495,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Memory Scarcity, Open Models, and the Restructuring of the AI Industry, 2026-2030 -- A quantitative scenario analysis of inference economics, training-cost divergence, and infrastructure solvency",
+          "url": "http://arxiv.org/abs/2607.07207v1",
+          "score": 0.477,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Large Language Models (LLMs) and Generative AI in Cybersecurity and Privacy: A Survey of Dual-Use Risks, AI-Generated Malware, Explainability, and Defensive Strategies",
+          "url": "http://arxiv.org/abs/2607.06963v1",
+          "score": 0.474,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "beyoru/seul — text-generation",
+          "url": "https://huggingface.co/beyoru/seul",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "QUAN116/Krea2-realism-V2 — text-to-image",
+          "url": "https://huggingface.co/QUAN116/Krea2-realism-V2",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Zach001/yutu-krea2-lora — text-to-image",
+          "url": "https://huggingface.co/Zach001/yutu-krea2-lora",
+          "score": 0.472,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,42 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-08T23:00:01+00:00",
-      "updatedAt": "2026-07-08T23:00:01+00:00",
+      "publishedAt": "2026-07-09T01:54:53+00:00",
+      "updatedAt": "2026-07-09T01:54:53+00:00",
       "sortOrder": 0
     },
     {
-      "id": "language-models-for-nlp",
-      "title_ar": "نماذج اللغة الكبيرة لمهام معالجة اللغة الطبيعية",
-      "thesis_ar": "تزايد الحاجة إلى نماذج لغة قوية لتحسين دقة مهام معالجة اللغة الطبيعية. توفر النماذج الجديدة أدوات فعالة لأتمتة وتحسين العمليات.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات الأكاديمية، مطورو البرمجيات",
-      "sellable_product_ar": "خدمة تطوير نماذج لغة مخصصة لمهام محددة",
-      "first_paid_test_ar": "تقديم نموذج أولي لمهمة معالجة لغة طبيعية محددة",
-      "tools_ar": "نموذج Gemma 4، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
+      "id": "ai-cybersecurity-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي للأمن السيبراني",
+      "thesis_ar": "مع تزايد استخدام نماذج اللغة الكبيرة في الأمن السيبراني، هناك فرصة لتطوير أدوات تعتمد على الذكاء الاصطناعي لمواجهة التهديدات المتزايدة.",
+      "buyer_ar": "شركات الأمن السيبراني",
+      "sellable_product_ar": "أداة تحليل تهديدات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار تجريبي لأداة تحليل تهديدات محددة",
+      "tools_ar": "نموذج لغة، أدوات تحليل البيانات، منصة اختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.01293",
-        "huggingface_daily_papers:2607.06482",
-        "huggingface_daily_papers:2607.05992"
+        "2607.06963v1",
+        "2607.07554v1",
+        "2607.07007v1"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 6,
       "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "RuleChef: Grounding LLM Task Knowledge in Human-Editable Rules",
-          "url": "https://huggingface.co/papers/2607.01293",
-          "score": 0.483,
+          "source_id": "arxiv_papers",
+          "title": "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
+          "url": "http://arxiv.org/abs/2607.07676v1",
+          "score": 0.495,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages",
-          "url": "https://huggingface.co/papers/2607.05992",
-          "score": 0.476,
+          "source_id": "arxiv_papers",
+          "title": "Memory Scarcity, Open Models, and the Restructuring of the AI Industry, 2026-2030 -- A quantitative scenario analysis of inference economics, training-cost divergence, and infrastructure solvency",
+          "url": "http://arxiv.org/abs/2607.07207v1",
+          "score": 0.477,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Large Language Models (LLMs) and Generative AI in Cybersecurity and Privacy: A Survey of Dual-Use Risks, AI-Generated Malware, Explainability, and Defensive Strategies",
+          "url": "http://arxiv.org/abs/2607.06963v1",
+          "score": 0.474,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "beyoru/seul — text-generation",
+          "url": "https://huggingface.co/beyoru/seul",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "QUAN116/Krea2-realism-V2 — text-to-image",
+          "url": "https://huggingface.co/QUAN116/Krea2-realism-V2",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Zach001/yutu-krea2-lora — text-to-image",
+          "url": "https://huggingface.co/Zach001/yutu-krea2-lora",
+          "score": 0.472,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,11 +142,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-08T23:00:01+00:00",
-      "updatedAt": "2026-07-08T23:00:01+00:00",
+      "publishedAt": "2026-07-09T01:54:53+00:00",
+      "updatedAt": "2026-07-09T01:54:53+00:00",
       "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-07-08T23:00:01+00:00",
+  "tiered_at": "2026-07-09T01:54:53+00:00",
   "free_preview_count": 3
 }
