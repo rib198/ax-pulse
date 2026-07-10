@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-10T21:04:11+00:00",
+  "generated_at": "2026-07-10T22:54:48+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 850,
+  "corpus_count": 846,
   "opportunities": [
     {
-      "id": "interactive-video-generation",
-      "title_ar": "توليد فيديو تفاعلي في الوقت الحقيقي",
-      "thesis_ar": "تزايد الاهتمام بتقنيات الفيديو التفاعلي يوفر فرصة كبيرة في السوق. يمكن استخدام نموذج Vidu S1 لتطوير تطبيقات ترفيهية وتعليمية مبتكرة.",
-      "buyer_ar": "شركات الإنتاج الإعلامي، المطورون، المؤسسات التعليمية.",
-      "sellable_product_ar": "تطبيقات توليد فيديو تفاعلي مدعومة بالذكاء الاصطناعي.",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط يتيح للمستخدمين التحكم في محتوى الفيديو عبر الأوامر الصوتية.",
-      "tools_ar": "نموذج Vidu S1، أدوات تطوير التطبيقات، واجهات برمجة التطبيقات الصوتية.",
-      "capital_ar": "منخفض",
+      "id": "real-time-interactive-video-generation",
+      "title_ar": "نموذج توليد الفيديو التفاعلي في الوقت الحقيقي",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في إنتاج المحتوى المرئي يفتح آفاقًا جديدة في السوق. يمكن للمستخدمين التحكم في محتوى الفيديو عبر التعليمات الصوتية، مما يعزز التفاعل.",
+      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق",
+      "sellable_product_ar": "نظام توليد فيديو تفاعلي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتوليد فيديو قصير تفاعلي",
+      "tools_ar": "نموذج Vidu S1، أدوات تطوير البرمجيات، خوادم سحابية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.03118",
         "huggingface_daily_papers:2607.08768",
-        "huggingface_models:LLMWildling/NVIDIA-Nemotron-3-Super-135B-A13B-Coder-NVFP4"
+        "huggingface_daily_papers:2603.29616"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -34,107 +34,57 @@
           "source_id": "huggingface_daily_papers",
           "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
           "url": "https://huggingface.co/papers/2607.08768",
-          "score": 0.505,
+          "score": 0.506,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LLMWildling/NVIDIA-Nemotron-3-Super-135B-A13B-Coder-NVFP4 — text-generation",
-          "url": "https://huggingface.co/LLMWildling/NVIDIA-Nemotron-3-Super-135B-A13B-Coder-NVFP4",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-10T21:04:11+00:00",
-      "updatedAt": "2026-07-10T21:04:11+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في مجالات متعددة يوفر فرصاً كبيرة. يمكن استخدام هذه النماذج في التسويق، التصميم، والإعلانات.",
-      "buyer_ar": "وكالات الإعلان، مصممو الجرافيك، الشركات الناشئة.",
-      "sellable_product_ar": "خدمات توليد صور مخصصة بناءً على نصوص معينة.",
-      "first_paid_test_ar": "تطوير خدمة تجريبية لتوليد صورة من نص محدد وتقديمها لعملاء محتملين.",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات التصميم، واجهات برمجة التطبيقات.",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:busetolunay/bc1k-background-klein-4b",
-        "huggingface_models:busetolunay/bc1k-background-klein-9b",
-        "huggingface_models:cirza/carol"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "busetolunay/bc1k-background-klein-4b — text-to-image",
-          "url": "https://huggingface.co/busetolunay/bc1k-background-klein-4b",
-          "score": 0.509,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "busetolunay/bc1k-background-klein-9b — text-to-image",
-          "url": "https://huggingface.co/busetolunay/bc1k-background-klein-9b",
-          "score": 0.509,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "cirza/carol — text-to-image",
-          "url": "https://huggingface.co/cirza/carol",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-10T21:04:11+00:00",
-      "updatedAt": "2026-07-10T21:04:11+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "drug-discovery-ai",
-      "title_ar": "نموذج ذكاء اصطناعي لاكتشاف الأدوية",
-      "thesis_ar": "تزايد الحاجة إلى أدوات فعالة في اكتشاف الأدوية يوفر فرصة كبيرة. نموذج DrugGen 2 يمكن أن يساعد في تحسين عمليات البحث عن الأدوية.",
-      "buyer_ar": "شركات الأدوية، مختبرات البحث العلمي، المؤسسات الصحية.",
-      "sellable_product_ar": "خدمات استشارية في اكتشاف الأدوية باستخدام الذكاء الاصطناعي.",
-      "first_paid_test_ar": "تقديم تحليل أولي لحالة دراسية لاكتشاف دواء معين باستخدام النموذج.",
-      "tools_ar": "نموذج DrugGen 2، أدوات تحليل البيانات، منصات البحث العلمي.",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.08404",
-        "huggingface_daily_papers:2603.29616",
-        "huggingface_models:s3nh/Tess-4-27B-abliterated"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "s3nh/Tess-4-27B-abliterated — image-text-to-text",
-          "url": "https://huggingface.co/s3nh/Tess-4-27B-abliterated",
-          "score": 0.488,
-          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Video-Oasis: Rethinking Evaluation of Video Understanding",
           "url": "https://huggingface.co/papers/2603.29616",
-          "score": 0.485,
+          "score": 0.486,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-10T22:54:48+00:00",
+      "updatedAt": "2026-07-10T22:54:48+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "disease-aware-language-model",
+      "title_ar": "نموذج لغوي واعٍ بالأمراض لتحسين اكتشاف الأدوية",
+      "thesis_ar": "تزايد الحاجة إلى نماذج لغوية تأخذ في الاعتبار سياق الأمراض يعزز فرص الابتكار في مجال الأدوية. يمكن أن يؤدي ذلك إلى تحسين فعالية الأدوية الجديدة.",
+      "buyer_ar": "شركات الأدوية ومراكز الأبحاث",
+      "sellable_product_ar": "نموذج لغوي لتحسين اكتشاف الأدوية",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل بيانات الأدوية",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، خوادم سحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.08404",
+        "huggingface_daily_papers:2603.29616",
+        "huggingface_daily_papers:2607.08768"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+          "url": "https://huggingface.co/papers/2607.08768",
+          "score": 0.506,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Video-Oasis: Rethinking Evaluation of Video Understanding",
+          "url": "https://huggingface.co/papers/2603.29616",
+          "score": 0.486,
           "trust_tier": "research"
         },
         {
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-10T21:04:11+00:00",
-      "updatedAt": "2026-07-10T21:04:11+00:00",
+      "publishedAt": "2026-07-10T22:54:48+00:00",
+      "updatedAt": "2026-07-10T22:54:48+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يوفر فرصًا كبيرة في مجالات الإبداع والتسويق. يمكن تخصيص هذه النماذج لتلبية احتياجات محددة في السوق.",
+      "buyer_ar": "وكالات الإعلان والشركات الإبداعية",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
+      "first_paid_test_ar": "تطوير نموذج بسيط لتحويل نصوص محددة إلى صور",
+      "tools_ar": "نماذج Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:lvbelc5baba/instapictest",
+        "huggingface_models:busetolunay/bc1k-background-klein-4b",
+        "huggingface_models:ofelixculpamea/ZEP20"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "lvbelc5baba/instapictest — text-to-image",
+          "url": "https://huggingface.co/lvbelc5baba/instapictest",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "busetolunay/bc1k-background-klein-4b — text-to-image",
+          "url": "https://huggingface.co/busetolunay/bc1k-background-klein-4b",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ofelixculpamea/ZEP20 — text-to-image",
+          "url": "https://huggingface.co/ofelixculpamea/ZEP20",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-10T22:54:48+00:00",
+      "updatedAt": "2026-07-10T22:54:48+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-10T21:04:11+00:00",
+  "tiered_at": "2026-07-10T22:54:48+00:00",
   "free_preview_count": 3
 }
