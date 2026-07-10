@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-10T01:53:06+00:00",
+  "run_at": "2026-07-10T05:58:17+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 17.444,
+      "duration_s": 20.792,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 351 signals from 31 source families",
+        "collected 359 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.015,
       "written": [],
       "notes": [
         "injected 489 manual X items (skipped 11 of 500, avg score 0.152)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 840 items",
-        "by tier: press=524, official=159, research=130, community=27"
+        "tagged 848 items",
+        "by tier: press=524, official=162, research=131, community=31"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.03,
+      "duration_s": 0.031,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 840 items, top priority=0.504"
+        "ranked 848 items, top priority=0.554"
       ],
       "error": null
     },
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.073,
+      "duration_s": 0.072,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+7 new model events",
+        "+2 new model events",
         "300 total"
       ],
       "error": null
@@ -115,8 +115,8 @@
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "22 events (12 new)",
-        "by type: model_release=12, pricing_change=4, acquisition=3, personnel_move=2, policy_signal=1"
+        "22 events (1 new)",
+        "by type: model_release=11, pricing_change=4, policy_signal=2, acquisition=3, personnel_move=2"
       ],
       "error": null
     },
@@ -135,19 +135,20 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 16.417,
+      "duration_s": 16.104,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 3 opportunities"
+        "openai produced 0 opportunities",
+        "rule fallback produced 4 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 8.585,
+      "duration_s": 11.482,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,13 +161,13 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.009,
+      "duration_s": 0.01,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 0 premium",
+        "opps: 3 free / 1 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +189,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 9.649,
+      "duration_s": 7.343,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +218,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=840, opps=3, calls=3"
+        "items=848, opps=4, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.608,
+      "duration_s": 2.425,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت فترة التشغيل الحالية تراجعًا في إجمالي الإشارات بمقدار 16 إشارة، مما يشير …"
+        "insight via openai: يظهر نمط متزايد في النشاط حول إصدارات النماذج، مع تركيز ملحوظ على OpenAI وClaud…"
       ],
       "error": null
     },
