@@ -1,39 +1,47 @@
 {
-  "generated_at": "2026-07-10T12:24:11+00:00",
+  "generated_at": "2026-07-10T16:18:49+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 852,
+  "corpus_count": 842,
   "opportunities": [
     {
-      "id": "proactive-ai-agents",
-      "title_ar": "وكلاء ذكاء اصطناعي استباقيين",
-      "thesis_ar": "تطور نماذج اللغة الكبيرة يتيح إنشاء وكلاء ذكاء اصطناعي يمكنهم التفاعل مع الأدوات اليومية. هذا يعزز من إمكانية تحسين الكفاءة في الأعمال.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية",
-      "sellable_product_ar": "نظام وكيل ذكاء اصطناعي مخصص للمهام اليومية",
-      "first_paid_test_ar": "تطبيق تجريبي لوكيل ذكاء اصطناعي في بيئة عمل محددة",
-      "tools_ar": "نموذج UniClawBench، واجهة برمجة التطبيقات، منصة اختبار",
-      "capital_ar": "متوسط",
+      "id": "real-time-interactive-video-generation",
+      "title_ar": "توليد فيديو تفاعلي في الوقت الحقيقي",
+      "thesis_ar": "تزايد الطلب على محتوى الفيديو التفاعلي يجعل هذه التقنية مثالية. يمكن استخدامها في التعليم والترفيه والتسويق.",
+      "buyer_ar": "شركات الإنتاج الإعلامي، المنصات التعليمية، وكالات التسويق",
+      "sellable_product_ar": "خدمة توليد فيديو تفاعلي باستخدام نموذج Vidu S1",
+      "first_paid_test_ar": "تقديم نموذج أولي لمقطع فيديو تفاعلي مدته دقيقة واحدة",
+      "tools_ar": "نموذج Vidu S1، واجهة برمجة التطبيقات للفيديو، أدوات تحرير الفيديو",
+      "capital_ar": "منخفض",
       "evidence_ids": [
+        "huggingface_daily_papers:2607.03118",
         "huggingface_daily_papers:2607.08768",
         "arxiv_papers:2607.08768v1"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
+          "title": "Vidu S1: A Real-Time Interactive Video Generation Model",
+          "url": "https://huggingface.co/papers/2607.03118",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
           "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
           "url": "https://huggingface.co/papers/2607.08768",
-          "score": 0.505,
+          "score": 0.49,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
           "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
           "url": "http://arxiv.org/abs/2607.08768v1",
-          "score": 0.482,
+          "score": 0.47,
           "trust_tier": "research"
         }
       ],
@@ -42,11 +50,97 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-10T12:24:11+00:00",
-      "updatedAt": "2026-07-10T12:24:11+00:00",
+      "publishedAt": "2026-07-10T16:18:49+00:00",
+      "updatedAt": "2026-07-10T16:18:49+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "disease-aware-drug-discovery",
+      "title_ar": "تطوير نماذج الذكاء الاصطناعي لاكتشاف الأدوية",
+      "thesis_ar": "تزايد الحاجة إلى حلول مبتكرة في صناعة الأدوية يجعل هذا المجال واعدًا. النماذج الواعية بالأمراض يمكن أن تسهم في تحسين نتائج الأبحاث.",
+      "buyer_ar": "شركات الأدوية، مختبرات الأبحاث، الجامعات",
+      "sellable_product_ar": "خدمة تطوير نماذج لاكتشاف الأدوية باستخدام نموذج DrugGen 2",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل بيانات دواء معين",
+      "tools_ar": "نموذج DrugGen 2، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.08404",
+        "huggingface_daily_papers:2607.07676v1",
+        "arxiv_papers:2607.07207v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DrugGen 2: A disease-aware language model for enhancing drug discovery",
+          "url": "https://huggingface.co/papers/2607.08404",
+          "score": 0.45,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Memory Scarcity, Open Models, and the Restructuring of the AI Industry, 2026-2030 -- A quantitative scenario analysis of inference economics, training-cost divergence, and infrastructure solvency",
+          "url": "http://arxiv.org/abs/2607.07207v1",
+          "score": 0.447,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-10T16:18:49+00:00",
+      "updatedAt": "2026-07-10T16:18:49+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "multimodal-large-language-models",
+      "title_ar": "تطوير نماذج لغوية متعددة الوسائط",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في التطبيقات اليومية يفتح آفاقًا جديدة. هذه النماذج يمكن أن تحسن من كفاءة الأعمال.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، الشركات الناشئة",
+      "sellable_product_ar": "خدمات تطوير نماذج لغوية متعددة الوسائط مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لمهمة معينة باستخدام نموذج لغة متعددة الوسائط",
+      "tools_ar": "نموذج UniClawBench، أدوات تطوير الذكاء الاصطناعي، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.08768",
+        "huggingface_daily_papers:2607.07676v1",
+        "arxiv_papers:2607.07207v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+          "url": "https://huggingface.co/papers/2607.08768",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Memory Scarcity, Open Models, and the Restructuring of the AI Industry, 2026-2030 -- A quantitative scenario analysis of inference economics, training-cost divergence, and infrastructure solvency",
+          "url": "http://arxiv.org/abs/2607.07207v1",
+          "score": 0.447,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-10T16:18:49+00:00",
+      "updatedAt": "2026-07-10T16:18:49+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-10T12:24:11+00:00",
+  "tiered_at": "2026-07-10T16:18:49+00:00",
   "free_preview_count": 3
 }
