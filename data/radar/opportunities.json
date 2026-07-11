@@ -1,166 +1,47 @@
 {
-  "generated_at": "2026-07-11T10:58:46+00:00",
+  "generated_at": "2026-07-11T12:57:15+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 847,
+  "corpus_count": 844,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يعكس الحاجة المتزايدة للإبداع الرقمي. يمكن استغلال هذه النماذج في مجالات متعددة مثل التسويق والفنون.",
-      "buyer_ar": "شركات التسويق والإعلانات، الفنانين الرقميين",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، بيئات تطوير البرمجيات",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-generation",
+      "title_ar": "توليد صور من نصوص",
+      "thesis_ar": "تزايد الاهتمام بتطبيقات الذكاء الاصطناعي في الفنون والإبداع يعزز الطلب على نماذج توليد الصور. يمكن أن تساهم هذه التقنية في تعزيز الإبداع لدى المصممين والفنانين.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "نموذج لتوليد الصور من النصوص باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج لتوليد صورة بناءً على نص محدد",
+      "tools_ar": "نموذج توليد الصور، أدوات التصميم، واجهة المستخدم",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:bodun777/dj",
-        "huggingface_models:Rand000mGuy/helenaKrea",
+        "huggingface_models:CNEFG/Graaaaaaaaaaaa",
         "huggingface_models:BlueTriangles/SDXL_Natsume_Reiko",
         "huggingface_models:BlueTriangles/SDXL_Taki_Tooru"
       ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 4,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "bodun777/dj — text-to-image",
-          "url": "https://huggingface.co/bodun777/dj",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Rand000mGuy/helenaKrea — text-to-image",
-          "url": "https://huggingface.co/Rand000mGuy/helenaKrea",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_Natsume_Reiko — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_Natsume_Reiko",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_Taki_Tooru — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_Taki_Tooru",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-11T10:58:46+00:00",
-      "updatedAt": "2026-07-11T10:58:46+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "interactive-video-generation",
-      "title_ar": "تطوير نماذج توليد الفيديو التفاعلي",
-      "thesis_ar": "تزايد الحاجة إلى محتوى الفيديو التفاعلي يعكس اتجاهات جديدة في الإعلام والترفيه. يمكن استخدام هذه التكنولوجيا في التعليم والتسويق.",
-      "buyer_ar": "شركات الإنتاج الإعلامي، منصات التعليم الإلكتروني",
-      "sellable_product_ar": "خدمة تطوير نماذج توليد فيديو تفاعلي مع دعم التحكم الصوتي",
-      "first_paid_test_ar": "تقديم نموذج فيديو تفاعلي بسيط مع خيارات تحكم صوتي",
-      "tools_ar": "Hugging Face، أدوات تطوير الفيديو، أدوات التعلم العميق",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.03118",
-        "huggingface_daily_papers:2607.08768"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.46,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Vidu S1: A Real-Time Interactive Video Generation Model",
-          "url": "https://huggingface.co/papers/2607.03118",
-          "score": 0.466,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
-          "url": "https://huggingface.co/papers/2607.08768",
-          "score": 0.464,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-11T10:58:46+00:00",
-      "updatedAt": "2026-07-11T10:58:46+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "autonomous-ai-agents",
-      "title_ar": "تطوير وكلاء ذكاء اصطناعي مستقلين",
-      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي في تنفيذ المهام المعقدة يعكس الطلب المتزايد على الأتمتة. يمكن استغلال هذه التقنية في مجالات متعددة.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات الحكومية",
-      "sellable_product_ar": "خدمة تطوير وكلاء ذكاء اصطناعي مستقلين",
-      "first_paid_test_ar": "تقديم نموذج لوكيل ذكاء اصطناعي يقوم بمهمة بسيطة",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، بيئات تطوير البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.07676"
-      ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "bodun777/dj — text-to-image",
-          "url": "https://huggingface.co/bodun777/dj",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Rand000mGuy/helenaKrea — text-to-image",
-          "url": "https://huggingface.co/Rand000mGuy/helenaKrea",
-          "score": 0.472,
+          "title": "CNEFG/Graaaaaaaaaaaa — text-to-image",
+          "url": "https://huggingface.co/CNEFG/Graaaaaaaaaaaa",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "BlueTriangles/SDXL_Natsume_Reiko — text-to-image",
           "url": "https://huggingface.co/BlueTriangles/SDXL_Natsume_Reiko",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "BlueTriangles/SDXL_Taki_Tooru — text-to-image",
           "url": "https://huggingface.co/BlueTriangles/SDXL_Taki_Tooru",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ofelixculpamea/Z14.5K — text-to-image",
-          "url": "https://huggingface.co/ofelixculpamea/Z14.5K",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "fengfengm/emma3 — text-to-image",
-          "url": "https://huggingface.co/fengfengm/emma3",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -169,11 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-11T10:58:46+00:00",
-      "updatedAt": "2026-07-11T10:58:46+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-07-11T12:57:15+00:00",
+      "updatedAt": "2026-07-11T12:57:15+00:00",
+      "sortOrder": 0
     }
   ],
-  "tiered_at": "2026-07-11T10:58:46+00:00",
+  "tiered_at": "2026-07-11T12:57:15+00:00",
   "free_preview_count": 3
 }
