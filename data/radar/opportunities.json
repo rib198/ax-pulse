@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-07-11T07:36:10+00:00",
+  "generated_at": "2026-07-11T09:21:03+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 848,
+  "corpus_count": 850,
   "opportunities": [
     {
       "id": "text-to-image-models",
       "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "النمو المتزايد في استخدام الصور المولدة من النصوص يفتح آفاق جديدة للإبداع. نماذج مثل Z14K وZ12K توفر إمكانيات متعددة لإنشاء صور مبتكرة.",
-      "buyer_ar": "المصممين والفنانين والشركات الإبداعية",
-      "sellable_product_ar": "خدمة توليد صور مخصصة بناءً على النصوص",
-      "first_paid_test_ar": "تقديم نموذج أولي لصورة مولدة من نص محدد",
-      "tools_ar": "نموذج Z14K، أدوات تصميم، واجهة برمجة التطبيقات",
+      "thesis_ar": "زيادة استخدام نماذج تحويل النص إلى صورة في الإعلانات والفنون الرقمية يوفر فرصة كبيرة. النماذج الجديدة مثل SDXL تقدم إمكانيات متقدمة.",
+      "buyer_ar": "وكالات الإعلان والفنانين الرقميين",
+      "sellable_product_ar": "خدمة إنشاء صور مخصصة بناءً على نصوص محددة",
+      "first_paid_test_ar": "إنشاء صورة واحدة بناءً على وصف نصي محدد",
+      "tools_ar": "نموذج SDXL، واجهة برمجة التطبيقات، منصة تصميم رسومي",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:ofelixculpamea/Z14K",
-        "huggingface_models:ofelixculpamea/Z12K",
-        "huggingface_models:ofelixculpamea/Z15K"
+        "huggingface_models:BlueTriangles/SDXL_Natsume_Reiko",
+        "huggingface_models:BlueTriangles/SDXL_Taki_Tooru",
+        "huggingface_models:ofelixculpamea/Z14.5K"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "ofelixculpamea/Z14K — text-to-image",
-          "url": "https://huggingface.co/ofelixculpamea/Z14K",
-          "score": 0.488,
+          "title": "BlueTriangles/SDXL_Natsume_Reiko — text-to-image",
+          "url": "https://huggingface.co/BlueTriangles/SDXL_Natsume_Reiko",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ofelixculpamea/Z12K — text-to-image",
-          "url": "https://huggingface.co/ofelixculpamea/Z12K",
-          "score": 0.488,
+          "title": "BlueTriangles/SDXL_Taki_Tooru — text-to-image",
+          "url": "https://huggingface.co/BlueTriangles/SDXL_Taki_Tooru",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ofelixculpamea/Z15K — text-to-image",
-          "url": "https://huggingface.co/ofelixculpamea/Z15K",
-          "score": 0.488,
+          "title": "ofelixculpamea/Z14.5K — text-to-image",
+          "url": "https://huggingface.co/ofelixculpamea/Z14.5K",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +50,80 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-11T07:36:10+00:00",
-      "updatedAt": "2026-07-11T07:36:10+00:00",
+      "publishedAt": "2026-07-11T09:21:03+00:00",
+      "updatedAt": "2026-07-11T09:21:03+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "autonomous-ai-agents",
+      "title_ar": "وكلاء الذكاء الاصطناعي المستقلين",
+      "thesis_ar": "تزايد الحاجة لوكلاء الذكاء الاصطناعي القادرين على تنفيذ مهام معقدة يعكس تحولًا في كيفية تنفيذ الأعمال. نموذج SkillCenter يوفر مكتبة مهارات كبيرة.",
+      "buyer_ar": "شركات التقنية والبرمجيات",
+      "sellable_product_ar": "خدمة تطوير وكلاء ذكاء اصطناعي مخصصين",
+      "first_paid_test_ar": "تطوير وكيل بسيط لتنفيذ مهمة محددة",
+      "tools_ar": "نموذج SkillCenter، أدوات تطوير البرمجيات، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2607.07676"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "beyoru/Nous-Preview — image-text-to-text",
+          "url": "https://huggingface.co/beyoru/Nous-Preview",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "BlueTriangles/SDXL_Natsume_Reiko — text-to-image",
+          "url": "https://huggingface.co/BlueTriangles/SDXL_Natsume_Reiko",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "BlueTriangles/SDXL_Taki_Tooru — text-to-image",
+          "url": "https://huggingface.co/BlueTriangles/SDXL_Taki_Tooru",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ofelixculpamea/Z14.5K — text-to-image",
+          "url": "https://huggingface.co/ofelixculpamea/Z14.5K",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "fengfengm/emma3 — text-to-image",
+          "url": "https://huggingface.co/fengfengm/emma3",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ofelixculpamea/Z14K — text-to-image",
+          "url": "https://huggingface.co/ofelixculpamea/Z14K",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-11T09:21:03+00:00",
+      "updatedAt": "2026-07-11T09:21:03+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-07-11T07:36:10+00:00",
+  "tiered_at": "2026-07-11T09:21:03+00:00",
   "free_preview_count": 3
 }
