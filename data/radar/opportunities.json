@@ -1,17 +1,117 @@
 {
-  "generated_at": "2026-07-11T12:57:15+00:00",
+  "generated_at": "2026-07-11T14:49:03+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 844,
+  "corpus_count": 840,
   "opportunities": [
     {
-      "id": "text-to-image-generation",
-      "title_ar": "توليد صور من نصوص",
-      "thesis_ar": "تزايد الاهتمام بتطبيقات الذكاء الاصطناعي في الفنون والإبداع يعزز الطلب على نماذج توليد الصور. يمكن أن تساهم هذه التقنية في تعزيز الإبداع لدى المصممين والفنانين.",
-      "buyer_ar": "شركات التصميم والإعلانات",
-      "sellable_product_ar": "نموذج لتوليد الصور من النصوص باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج لتوليد صورة بناءً على نص محدد",
-      "tools_ar": "نموذج توليد الصور، أدوات التصميم، واجهة المستخدم",
+      "id": "interactive-video-generation",
+      "title_ar": "توليد الفيديو التفاعلي في الوقت الحقيقي",
+      "thesis_ar": "تزايد الطلب على محتوى الفيديو التفاعلي يوفر فرصة كبيرة. النمو في استخدام الذكاء الاصطناعي في إنشاء المحتوى يعزز هذه الفرصة.",
+      "buyer_ar": "شركات الإنتاج الإعلامي، منصات التعليم الإلكتروني",
+      "sellable_product_ar": "نموذج توليد فيديو تفاعلي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لمشروع فيديو تفاعلي",
+      "tools_ar": "نموذج Vidu S1، أدوات تطوير الفيديو، أدوات الذكاء الاصطناعي",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.03118",
+        "huggingface_models:FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
+        "huggingface_models:FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Vidu S1: A Real-Time Interactive Video Generation Model",
+          "url": "https://huggingface.co/papers/2607.03118",
+          "score": 0.466,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-12B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/FadedRedStar/gemma-4-E4B-it-qat-q4_0-heretic-GGUF",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-11T14:49:03+00:00",
+      "updatedAt": "2026-07-11T14:49:03+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "agriculture-risk-assessment",
+      "title_ar": "تقييم مخاطر الزراعة باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الاعتماد على التكنولوجيا في الزراعة يفتح المجال لتطبيقات الذكاء الاصطناعي. الحاجة إلى تحسين الإنتاجية وتقليل المخاطر تعزز هذه الفرصة.",
+      "buyer_ar": "مزارعون، شركات زراعية، مؤسسات بحثية",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتقييم المخاطر الزراعية",
+      "first_paid_test_ar": "تطبيق النموذج على مزرعة صغيرة لتقييم المخاطر",
+      "tools_ar": "نموذج Pomona، أدوات تحليل البيانات، أدوات الذكاء الاصطناعي",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:Okyanus/pomona-tomato-risk-reasoner-v0.1.7-lora",
+        "huggingface_models:Okyanus/pomona-water-irrigation-risk-reasoner-v0.1.8-lora",
+        "huggingface_models:Okyanus/ai-pomona-agronomist-gemma4"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Okyanus/pomona-tomato-risk-reasoner-v0.1.7-lora — text-generation",
+          "url": "https://huggingface.co/Okyanus/pomona-tomato-risk-reasoner-v0.1.7-lora",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Okyanus/ai-pomona-agronomist-gemma4 — text-generation",
+          "url": "https://huggingface.co/Okyanus/ai-pomona-agronomist-gemma4",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Okyanus/pomona-water-irrigation-risk-reasoner-v0.1.8-lora — text-generation",
+          "url": "https://huggingface.co/Okyanus/pomona-water-irrigation-risk-reasoner-v0.1.8-lora",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-11T14:49:03+00:00",
+      "updatedAt": "2026-07-11T14:49:03+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-creation",
+      "title_ar": "إنشاء الصور من النصوص باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام المحتوى المرئي في التسويق والإعلان يعزز الحاجة إلى أدوات إنشاء الصور. توفر نماذج تحويل النص إلى صورة فرصًا جديدة في هذا المجال.",
+      "buyer_ar": "شركات التسويق، مصممي الجرافيك، وكالات الإعلان",
+      "sellable_product_ar": "نموذج تحويل النص إلى صورة يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء صورة من نص محدد",
+      "tools_ar": "نموذج Graaaaaaaaaaaa، أدوات التصميم، أدوات الذكاء الاصطناعي",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_models:CNEFG/Graaaaaaaaaaaa",
@@ -21,27 +121,27 @@
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
           "title": "CNEFG/Graaaaaaaaaaaa — text-to-image",
           "url": "https://huggingface.co/CNEFG/Graaaaaaaaaaaa",
-          "score": 0.488,
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "BlueTriangles/SDXL_Natsume_Reiko — text-to-image",
           "url": "https://huggingface.co/BlueTriangles/SDXL_Natsume_Reiko",
-          "score": 0.488,
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "BlueTriangles/SDXL_Taki_Tooru — text-to-image",
           "url": "https://huggingface.co/BlueTriangles/SDXL_Taki_Tooru",
-          "score": 0.488,
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-11T12:57:15+00:00",
-      "updatedAt": "2026-07-11T12:57:15+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-07-11T14:49:03+00:00",
+      "updatedAt": "2026-07-11T14:49:03+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-11T12:57:15+00:00",
+  "tiered_at": "2026-07-11T14:49:03+00:00",
   "free_preview_count": 3
 }
