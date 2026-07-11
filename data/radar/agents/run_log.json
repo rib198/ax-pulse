@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-11T01:32:16+00:00",
+  "run_at": "2026-07-11T04:57:56+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 20.594,
+      "duration_s": 21.277,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 847 items, top priority=0.509"
+        "ranked 847 items, top priority=0.491"
       ],
       "error": null
     },
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.073,
+      "duration_s": 0.071,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.167,
+      "duration_s": 0.166,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "21 events (9 new)",
+        "21 events (0 new)",
         "by type: model_release=11, pricing_change=4, acquisition=3, personnel_move=2, policy_signal=1"
       ],
       "error": null
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 10.204,
+      "duration_s": 11.626,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 9.303,
+      "duration_s": 8.563,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 9.553,
+      "duration_s": 8.408,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -224,12 +224,12 @@
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.326,
+      "duration_s": 2.063,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: لوحظ تزايد النشاط في إصدار النماذج، حيث شهدنا 5 إعلانات جديدة في فترة قصيرة، مم…"
+        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في نشاط الإصدارات، حيث تم إصدار نماذج جديدة من…"
       ],
       "error": null
     },
