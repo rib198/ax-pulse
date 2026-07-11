@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-07-11T04:57:56+00:00",
+  "generated_at": "2026-07-11T07:36:10+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 847,
+  "corpus_count": 848,
   "opportunities": [
     {
-      "id": "real-time-interactive-video-generation",
-      "title_ar": "توليد فيديو تفاعلي في الوقت الحقيقي",
-      "thesis_ar": "تزايد الطلب على المحتوى التفاعلي يعزز الحاجة لنماذج توليد الفيديو. Vidu S1 يمكن أن يغير طريقة تفاعل المستخدمين مع المحتوى الرقمي.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق الرقمي",
-      "sellable_product_ar": "نموذج توليد فيديو تفاعلي مع تحكم صوتي",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لمشروع تسويقي صغير",
-      "tools_ar": "نموذج Vidu S1، منصة تطوير، أدوات صوتية",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "نماذج تحويل النص إلى صورة",
+      "thesis_ar": "النمو المتزايد في استخدام الصور المولدة من النصوص يفتح آفاق جديدة للإبداع. نماذج مثل Z14K وZ12K توفر إمكانيات متعددة لإنشاء صور مبتكرة.",
+      "buyer_ar": "المصممين والفنانين والشركات الإبداعية",
+      "sellable_product_ar": "خدمة توليد صور مخصصة بناءً على النصوص",
+      "first_paid_test_ar": "تقديم نموذج أولي لصورة مولدة من نص محدد",
+      "tools_ar": "نموذج Z14K، أدوات تصميم، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.03118",
-        "huggingface_models:ofelixculpamea/Z9K",
-        "huggingface_models:ofelixculpamea/Z8K"
+        "huggingface_models:ofelixculpamea/Z14K",
+        "huggingface_models:ofelixculpamea/Z12K",
+        "huggingface_models:ofelixculpamea/Z15K"
       ],
-      "confidence": 0.8,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Vidu S1: A Real-Time Interactive Video Generation Model",
-          "url": "https://huggingface.co/papers/2607.03118",
-          "score": 0.491,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "ofelixculpamea/Z9K — text-to-image",
-          "url": "https://huggingface.co/ofelixculpamea/Z9K",
+          "title": "ofelixculpamea/Z14K — text-to-image",
+          "url": "https://huggingface.co/ofelixculpamea/Z14K",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ofelixculpamea/Z8K — text-to-image",
-          "url": "https://huggingface.co/ofelixculpamea/Z8K",
+          "title": "ofelixculpamea/Z12K — text-to-image",
+          "url": "https://huggingface.co/ofelixculpamea/Z12K",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ofelixculpamea/Z15K — text-to-image",
+          "url": "https://huggingface.co/ofelixculpamea/Z15K",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,104 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-11T04:57:56+00:00",
-      "updatedAt": "2026-07-11T04:57:56+00:00",
+      "publishedAt": "2026-07-11T07:36:10+00:00",
+      "updatedAt": "2026-07-11T07:36:10+00:00",
       "sortOrder": 0
-    },
-    {
-      "id": "proactive-agents-for-real-world-tasks",
-      "title_ar": "وكلاء استباقيين لمهام العالم الحقيقي",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة يفتح المجال لوكلاء ذكيين يمكنهم المساعدة في المهام اليومية. هذه التكنولوجيا تعزز الكفاءة وتقلل من الحاجة للتدخل البشري.",
-      "buyer_ar": "شركات التكنولوجيا والخدمات اللوجستية",
-      "sellable_product_ar": "نظام وكيل استباقي لمهام محددة",
-      "first_paid_test_ar": "تطبيق نموذج تجريبي في بيئة عمل محددة",
-      "tools_ar": "نموذج UniClawBench، أدوات تطوير، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.08768",
-        "arxiv_papers:2607.07676",
-        "huggingface_models:Quatfit/Quatfit-Mini-FP8"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
-          "url": "https://huggingface.co/papers/2607.08768",
-          "score": 0.471,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Quatfit/Quatfit-Mini-FP8 — image-text-to-text",
-          "url": "https://huggingface.co/Quatfit/Quatfit-Mini-FP8",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-11T04:57:56+00:00",
-      "updatedAt": "2026-07-11T04:57:56+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "medical-text-generation",
-      "title_ar": "توليد نصوص طبية ذكية",
-      "thesis_ar": "الحاجة المتزايدة للمعلومات الطبية الدقيقة تعزز الطلب على نماذج توليد النصوص. يمكن لهذه النماذج تحسين رعاية المرضى وتسهيل الوصول إلى المعلومات.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نموذج توليد نصوص طبية مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لمشروع توعوي صحي",
-      "tools_ar": "نموذج healthmate-mistral-7b، أدوات تطوير، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:yogvidwankhede/healthmate-mistral-7b-medical-lora",
-        "huggingface_models:RomilY/PCaPLMM_SFT",
-        "huggingface_models:razer23com/qwen2.5-legal-chatbot-dicoding"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "yogvidwankhede/healthmate-mistral-7b-medical-lora — text-generation",
-          "url": "https://huggingface.co/yogvidwankhede/healthmate-mistral-7b-medical-lora",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "razer23com/qwen2.5-legal-chatbot-dicoding — text-generation",
-          "url": "https://huggingface.co/razer23com/qwen2.5-legal-chatbot-dicoding",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "RomilY/PCaPLMM_SFT — text-generation",
-          "url": "https://huggingface.co/RomilY/PCaPLMM_SFT",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-11T04:57:56+00:00",
-      "updatedAt": "2026-07-11T04:57:56+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-11T04:57:56+00:00",
+  "tiered_at": "2026-07-11T07:36:10+00:00",
   "free_preview_count": 3
 }
