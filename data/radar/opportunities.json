@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-12T08:02:12+00:00",
+  "generated_at": "2026-07-12T09:49:35+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 838,
+  "corpus_count": 854,
   "opportunities": [
     {
       "id": "real-time-interactive-video-generation",
       "title_ar": "توليد فيديو تفاعلي في الوقت الحقيقي",
-      "thesis_ar": "تزايد الطلب على محتوى الفيديو التفاعلي يعزز الحاجة لنماذج توليد الفيديو. يمكن للمستخدمين التحكم في المحتوى عبر التعليمات الصوتية، مما يفتح آفاق جديدة للإبداع.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والمطورون",
-      "sellable_product_ar": "نموذج توليد فيديو تفاعلي يدعم التحكم الصوتي",
-      "first_paid_test_ar": "تطوير نموذج أولي لمشروع فيديو تفاعلي قصير",
-      "tools_ar": "أدوات تطوير البرمجيات، واجهات برمجة التطبيقات، بيئة اختبار",
-      "capital_ar": "متوسط",
+      "thesis_ar": "تزايد الحاجة لتوليد محتوى مرئي تفاعلي يعزز تجربة المستخدم. النمو في تقنيات الذكاء الاصطناعي يتيح إنشاء فيديوهات تفاعلية بسهولة.",
+      "buyer_ar": "شركات الإنتاج الإعلامي، المطورون، منصات التعليم الإلكتروني.",
+      "sellable_product_ar": "نظام توليد فيديو تفاعلي يعتمد على التحكم الصوتي.",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لمؤسسة تعليمية لتوليد فيديو تعليمي تفاعلي.",
+      "tools_ar": "نموذج Vidu S1، واجهة برمجة التطبيقات، خدمة استضافة سحابية.",
+      "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2607.03118",
-        "huggingface_models:Tommycar/Qwen-Image-Edit-Rapid-AIO",
-        "huggingface_models:levbrick/dm_v1.0"
+        "huggingface_models:ProCreations/grug-v2-9b",
+        "huggingface_models:ProCreations/grug-v2-9b-gguf"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -32,15 +32,15 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "Tommycar/Qwen-Image-Edit-Rapid-AIO — text-to-image",
-          "url": "https://huggingface.co/Tommycar/Qwen-Image-Edit-Rapid-AIO",
+          "title": "ProCreations/grug-v2-9b-gguf — text-generation",
+          "url": "https://huggingface.co/ProCreations/grug-v2-9b-gguf",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "levbrick/dm_v1.0 — text-to-image",
-          "url": "https://huggingface.co/levbrick/dm_v1.0",
+          "title": "ProCreations/grug-v2-9b — text-generation",
+          "url": "https://huggingface.co/ProCreations/grug-v2-9b",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,97 +50,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-12T08:02:12+00:00",
-      "updatedAt": "2026-07-12T08:02:12+00:00",
+      "publishedAt": "2026-07-12T09:49:35+00:00",
+      "updatedAt": "2026-07-12T09:49:35+00:00",
       "sortOrder": 0
     },
     {
       "id": "proactive-agents-for-real-world-tasks",
-      "title_ar": "وكلاء استباقيين للمهام الواقعية",
-      "thesis_ar": "تطور نماذج اللغة الكبيرة يعزز ظهور وكلاء استباقيين قادرين على التعامل مع الأدوات اليومية. هذا يفتح فرصاً جديدة لتطبيقات الذكاء الاصطناعي في الحياة اليومية.",
-      "buyer_ar": "شركات التقنية والمطورون",
-      "sellable_product_ar": "نموذج وكيل استباقي يمكن دمجه في التطبيقات اليومية",
-      "first_paid_test_ar": "تطوير نموذج تجريبي لوكيل استباقي لمهمة محددة",
-      "tools_ar": "أدوات تعلم الآلة، بيئات تطوير، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.08768",
-        "huggingface_models:indrapurnayasa/transaction-qwen3-1.7b-v1.1",
-        "huggingface_models:Ba2han/outputs"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
-          "url": "https://huggingface.co/papers/2607.08768",
-          "score": 0.475,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "indrapurnayasa/transaction-qwen3-1.7b-v1.1 — text-generation",
-          "url": "https://huggingface.co/indrapurnayasa/transaction-qwen3-1.7b-v1.1",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ba2han/outputs — text-generation",
-          "url": "https://huggingface.co/Ba2han/outputs",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-12T08:02:12+00:00",
-      "updatedAt": "2026-07-12T08:02:12+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-generation",
-      "title_ar": "توليد الصور من النصوص",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يتيح فرصاً جديدة في مجالات الإبداع والتصميم. يمكن استخدام هذه النماذج لإنشاء محتوى بصري مخصص.",
-      "buyer_ar": "المصممون والفنانون والشركات الإبداعية",
-      "sellable_product_ar": "نموذج توليد صور من نصوص",
-      "first_paid_test_ar": "تطوير نموذج أولي لتوليد صورة بناءً على نص محدد",
-      "tools_ar": "أدوات التعلم العميق، مكتبات البرمجة، بيئات الاختبار",
+      "title_ar": "وكلاء نشطون لمهام العالم الحقيقي",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة لخلق وكلاء يمكنهم التفاعل مع الأدوات اليومية. هذا يفتح المجال لتطبيقات جديدة في مجالات متعددة.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، الشركات الناشئة في مجال الذكاء الاصطناعي.",
+      "sellable_product_ar": "نظام وكيل نشط يمكنه مساعدة المستخدمين في المهام اليومية.",
+      "first_paid_test_ar": "تطوير نموذج أولي لوكيل نشط لمؤسسة تجريبية.",
+      "tools_ar": "نموذج UniClawBench، أدوات تطوير البرمجيات، واجهة برمجة التطبيقات.",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Tommycar/Qwen-Image-Edit-Rapid-AIO",
-        "huggingface_models:levbrick/dm_v1.0",
-        "huggingface_models:cyankiwi/ThinkingCap-Qwen3.6-27B-AWQ-INT4"
+        "huggingface_daily_papers:2607.08768",
+        "huggingface_models:mradermacher/Qwen35B-Agent-R2-Abliterated-i1-GGUF",
+        "huggingface_models:ahammad115566/smeft-qwen-7b"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Tommycar/Qwen-Image-Edit-Rapid-AIO — text-to-image",
-          "url": "https://huggingface.co/Tommycar/Qwen-Image-Edit-Rapid-AIO",
+          "title": "mradermacher/Qwen35B-Agent-R2-Abliterated-i1-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/Qwen35B-Agent-R2-Abliterated-i1-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "levbrick/dm_v1.0 — text-to-image",
-          "url": "https://huggingface.co/levbrick/dm_v1.0",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+          "url": "https://huggingface.co/papers/2607.08768",
+          "score": 0.476,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "cyankiwi/ThinkingCap-Qwen3.6-27B-AWQ-INT4 — image-text-to-text",
-          "url": "https://huggingface.co/cyankiwi/ThinkingCap-Qwen3.6-27B-AWQ-INT4",
+          "title": "ahammad115566/smeft-qwen-7b — text-generation",
+          "url": "https://huggingface.co/ahammad115566/smeft-qwen-7b",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-12T08:02:12+00:00",
-      "updatedAt": "2026-07-12T08:02:12+00:00",
+      "publishedAt": "2026-07-12T09:49:35+00:00",
+      "updatedAt": "2026-07-12T09:49:35+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-generation",
+      "title_ar": "توليد الصور من النصوص",
+      "thesis_ar": "تزايد الطلب على أدوات تحويل النصوص إلى صور في مجالات التسويق والإبداع. التقنيات الحديثة تجعل هذا ممكنًا بشكل أكثر كفاءة.",
+      "buyer_ar": "شركات التسويق، المصممون، وكالات الإعلان.",
+      "sellable_product_ar": "أداة تحويل نص إلى صورة تعتمد على نماذج متقدمة.",
+      "first_paid_test_ar": "تقديم خدمة توليد صورة بناءً على نص لمشروع تسويقي.",
+      "tools_ar": "نموذج Gimbor/cuth123، واجهة برمجة التطبيقات، خدمة استضافة سحابية.",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Gimbor/cuth123",
+        "huggingface_models:h1233211/AWPortrait-QW",
+        "huggingface_models:Tommycar/Qwen-Image-Edit-Rapid-AIO"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Gimbor/cuth123 — text-to-image",
+          "url": "https://huggingface.co/Gimbor/cuth123",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "h1233211/AWPortrait-QW — text-to-image",
+          "url": "https://huggingface.co/h1233211/AWPortrait-QW",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Tommycar/Qwen-Image-Edit-Rapid-AIO — text-to-image",
+          "url": "https://huggingface.co/Tommycar/Qwen-Image-Edit-Rapid-AIO",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-12T09:49:35+00:00",
+      "updatedAt": "2026-07-12T09:49:35+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-12T08:02:12+00:00",
+  "tiered_at": "2026-07-12T09:49:35+00:00",
   "free_preview_count": 3
 }
