@@ -1,147 +1,47 @@
 {
-  "generated_at": "2026-07-12T20:39:59+00:00",
+  "generated_at": "2026-07-12T22:42:32+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 849,
+  "corpus_count": 850,
   "opportunities": [
     {
-      "id": "ai-cybersecurity-tools",
-      "title_ar": "أدوات الذكاء الاصطناعي للأمن السيبراني",
-      "thesis_ar": "تزايد التهديدات السيبرانية يتطلب حلولًا مبتكرة. النماذج الجديدة في الذكاء الاصطناعي توفر أدوات فعالة لتحليل التهديدات وتحسين الأمان.",
-      "buyer_ar": "شركات الأمن السيبراني",
-      "sellable_product_ar": "أدوات تحليل التهديدات السيبرانية المعتمدة على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم اختبار تجريبي لتحليل تهديدات حقيقية",
-      "tools_ar": "نموذج الذكاء الاصطناعي، منصة تحليل البيانات، واجهة المستخدم",
+      "id": "text-to-image-generation",
+      "title_ar": "توليد الصور من النصوص",
+      "thesis_ar": "تزايد الطلب على المحتوى البصري المخصص يعزز الحاجة إلى نماذج تحويل النص إلى صورة. هذه النماذج يمكن أن تخدم مجالات متعددة مثل التسويق والإعلانات.",
+      "buyer_ar": "شركات التسويق، وكالات الإعلان",
+      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم خدمة توليد صورة بناءً على نص تسويقي محدد",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، منصة تطوير",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:glyphsoftware/sentinel-r2.1-gguf",
-        "huggingface_models:glyphsoftware/sentinel-r2.1",
-        "huggingface_models:hotdogs/Qwen35B-Agent-R2-Abliterated"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "glyphsoftware/sentinel-r2.1-gguf — text-generation",
-          "url": "https://huggingface.co/glyphsoftware/sentinel-r2.1-gguf",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "glyphsoftware/sentinel-r2.1 — text-generation",
-          "url": "https://huggingface.co/glyphsoftware/sentinel-r2.1",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "hotdogs/Qwen35B-Agent-R2-Abliterated — image-text-to-text",
-          "url": "https://huggingface.co/hotdogs/Qwen35B-Agent-R2-Abliterated",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-12T20:39:59+00:00",
-      "updatedAt": "2026-07-12T20:39:59+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "interactive-video-generation",
-      "title_ar": "توليد الفيديو التفاعلي بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على المحتوى التفاعلي يعزز الحاجة إلى نماذج توليد الفيديو. النموذج الجديد يتيح التحكم الصوتي، مما يسهل استخدامه.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق",
-      "sellable_product_ar": "نظام توليد فيديو تفاعلي يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم فيديو تفاعلي تجريبي لمستخدمين مختارين",
-      "tools_ar": "نموذج توليد الفيديو، واجهة المستخدم، أدوات التحكم الصوتي",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.03118",
-        "huggingface_models:hotdogs/Qwen35B-Agent-R2-Abliterated",
+        "huggingface_models:monsterlime/female-face",
+        "huggingface_models:Ava2000/Gravitydusty_Illustrious",
         "huggingface_models:jei7/jiascos-marin"
       ],
-      "confidence": 0.75,
+      "confidence": 0.65,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "hotdogs/Qwen35B-Agent-R2-Abliterated — image-text-to-text",
-          "url": "https://huggingface.co/hotdogs/Qwen35B-Agent-R2-Abliterated",
-          "score": 0.472,
+          "title": "monsterlime/female-face — text-to-image",
+          "url": "https://huggingface.co/monsterlime/female-face",
+          "score": 0.488,
           "trust_tier": "official"
         },
-        {
-          "source_id": "huggingface_models",
-          "title": "jei7/jiascos-marin — text-to-image",
-          "url": "https://huggingface.co/jei7/jiascos-marin",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Vidu S1: A Real-Time Interactive Video Generation Model",
-          "url": "https://huggingface.co/papers/2607.03118",
-          "score": 0.466,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-12T20:39:59+00:00",
-      "updatedAt": "2026-07-12T20:39:59+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-solutions",
-      "title_ar": "حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الحاجة لإنشاء محتوى بصري من النصوص. النماذج الحديثة توفر دقة وجودة عالية في تحويل النص إلى صور.",
-      "buyer_ar": "المصممين والمبدعين في المجالات الفنية",
-      "sellable_product_ar": "أداة تحويل النص إلى صورة تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم صورة تم إنشاؤها من نص مختار",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة المستخدم، مكتبة الصور",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Ava2000/Gravitydusty_Illustrious",
-        "huggingface_models:jei7/jiascos-marin",
-        "huggingface_models:ogog3/Sa2a"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
         {
           "source_id": "huggingface_models",
           "title": "Ava2000/Gravitydusty_Illustrious — text-to-image",
           "url": "https://huggingface.co/Ava2000/Gravitydusty_Illustrious",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "jei7/jiascos-marin — text-to-image",
           "url": "https://huggingface.co/jei7/jiascos-marin",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ogog3/Sa2a — text-to-image",
-          "url": "https://huggingface.co/ogog3/Sa2a",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-12T20:39:59+00:00",
-      "updatedAt": "2026-07-12T20:39:59+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-07-12T22:42:32+00:00",
+      "updatedAt": "2026-07-12T22:42:32+00:00",
+      "sortOrder": 0
     }
   ],
-  "tiered_at": "2026-07-12T20:39:59+00:00",
+  "tiered_at": "2026-07-12T22:42:32+00:00",
   "free_preview_count": 3
 }
