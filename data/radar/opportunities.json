@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-12T01:34:02+00:00",
+  "generated_at": "2026-07-12T05:20:36+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 848,
+  "corpus_count": 847,
   "opportunities": [
     {
       "id": "real-time-interactive-video-generation",
       "title_ar": "توليد فيديو تفاعلي في الوقت الحقيقي",
-      "thesis_ar": "الزيادة في استخدام الذكاء الاصطناعي في إنتاج المحتوى تتيح فرصًا جديدة لتوليد الفيديو التفاعلي. يمكن للمستخدمين التحكم في محتوى الفيديو عبر الأوامر الصوتية، مما يعزز تجربة المستخدم.",
+      "thesis_ar": "مع تزايد الاعتماد على المحتوى المرئي، يمكن أن يوفر نموذج Vidu S1 فرصة لتطوير تطبيقات جديدة تتيح للمستخدمين إنشاء محتوى مرئي تفاعلي باستخدام الأوامر الصوتية. هذا يتماشى مع الاتجاهات الحديثة في الذكاء الاصطناعي والتفاعل البشري.",
       "buyer_ar": "شركات الإنتاج الإعلامي، منصات التعليم الإلكتروني",
-      "sellable_product_ar": "نموذج توليد فيديو تفاعلي باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تجربة توليد فيديو قصير بناءً على سيناريو محدد من العميل",
-      "tools_ar": "نموذج Vidu S1، أدوات معالجة الصوت، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
+      "sellable_product_ar": "تطبيقات توليد الفيديو التفاعلي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط يستخدم Vidu S1 لإنشاء فيديو تفاعلي",
+      "tools_ar": "نموذج Vidu S1، أدوات تطوير التطبيقات، واجهات برمجة التطبيقات الصوتية",
+      "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2607.03118",
-        "huggingface_models:empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-        "huggingface_models:empero-ai/Qwythos-9B-v2"
+        "huggingface_models:mradermacher/Qwen35B-Agent-R2-Abliterated-i1-GGUF",
+        "huggingface_models:mradermacher/Qwen35B-Agent-R2-Abliterated-GGUF"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -32,16 +32,16 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M — text-generation",
-          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+          "title": "mradermacher/Qwen35B-Agent-R2-Abliterated-i1-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/Qwen35B-Agent-R2-Abliterated-i1-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "empero-ai/Qwythos-9B-v2 — text-generation",
-          "url": "https://huggingface.co/empero-ai/Qwythos-9B-v2",
-          "score": 0.466,
+          "title": "mradermacher/Qwen35B-Agent-R2-Abliterated-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/Qwen35B-Agent-R2-Abliterated-GGUF",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -50,75 +50,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-12T01:34:02+00:00",
-      "updatedAt": "2026-07-12T01:34:02+00:00",
+      "publishedAt": "2026-07-12T05:20:36+00:00",
+      "updatedAt": "2026-07-12T05:20:36+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-generation",
-      "title_ar": "تحويل النص إلى صورة باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يوفر فرصة كبيرة لتطوير نماذج تحويل النص إلى صورة. يمكن استخدام هذه النماذج في مجالات متعددة مثل التسويق والتصميم.",
-      "buyer_ar": "وكالات التسويق، شركات التصميم، منصات التواصل الاجتماعي",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة متقدم",
-      "first_paid_test_ar": "توليد صورة بناءً على وصف نصي محدد من العميل",
-      "tools_ar": "نموذج تحويل النص إلى صورة، أدوات معالجة الصور، واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:GangbangButtsluts/DpSceneChange",
-        "huggingface_models:levbrick/dm_v1.0",
-        "huggingface_models:BlueTriangles/SDXL_YM_Airi"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "GangbangButtsluts/DpSceneChange — text-to-image",
-          "url": "https://huggingface.co/GangbangButtsluts/DpSceneChange",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "levbrick/dm_v1.0 — text-to-image",
-          "url": "https://huggingface.co/levbrick/dm_v1.0",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_YM_Airi — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_YM_Airi",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-12T01:34:02+00:00",
-      "updatedAt": "2026-07-12T01:34:02+00:00",
-      "sortOrder": 1
-    },
-    {
       "id": "proactive-agents-for-real-world-tasks",
-      "title_ar": "تطوير وكلاء نشطين للمهام اليومية",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة يعزز الحاجة لوكلاء نشطين يمكنهم التعامل مع المهام اليومية. هذه التقنية يمكن أن تسهل حياة المستخدمين بشكل كبير.",
-      "buyer_ar": "شركات التكنولوجيا، مقدمو الخدمات الذكية",
-      "sellable_product_ar": "نموذج وكيل نشط لتنفيذ المهام اليومية",
-      "first_paid_test_ar": "تجربة نموذج وكيل لتنفيذ مهمة بسيطة مثل جدولة موعد",
-      "tools_ar": "نموذج UniClawBench، أدوات الذكاء الاصطناعي، واجهة برمجة التطبيقات",
+      "title_ar": "وكلاء استباقيين لمهام العالم الحقيقي",
+      "thesis_ar": "تطور نماذج اللغة الكبيرة يتيح إنشاء وكلاء استباقيين يمكنهم مساعدة المستخدمين في المهام اليومية. هذا يمثل فرصة لتطوير أدوات جديدة تعزز الإنتاجية الشخصية.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية",
+      "sellable_product_ar": "أدوات ذكاء اصطناعي لتحسين الإنتاجية",
+      "first_paid_test_ar": "تطوير نموذج أولي لوكيل استباقي لمهمة بسيطة مثل جدولة المواعيد",
+      "tools_ar": "نموذج لغوي، أدوات تطوير البرمجيات، واجهات المستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.08768",
-        "huggingface_models:42e/mathcompose-verifier-1.5b",
-        "huggingface_models:Verdugie/Therapy-27B"
+        "huggingface_models:KissTheHabit/IDA_Edge",
+        "huggingface_models:Vulcora/protora-mbd-challenge-1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
@@ -132,15 +82,15 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "42e/mathcompose-verifier-1.5b — text-generation",
-          "url": "https://huggingface.co/42e/mathcompose-verifier-1.5b",
+          "title": "KissTheHabit/IDA_Edge — text-generation",
+          "url": "https://huggingface.co/KissTheHabit/IDA_Edge",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Verdugie/Therapy-27B — text-generation",
-          "url": "https://huggingface.co/Verdugie/Therapy-27B",
+          "title": "Vulcora/protora-mbd-challenge-1 — text-generation",
+          "url": "https://huggingface.co/Vulcora/protora-mbd-challenge-1",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-12T01:34:02+00:00",
-      "updatedAt": "2026-07-12T01:34:02+00:00",
+      "publishedAt": "2026-07-12T05:20:36+00:00",
+      "updatedAt": "2026-07-12T05:20:36+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "image-text-to-text-conversion",
+      "title_ar": "تحويل الصور إلى نصوص",
+      "thesis_ar": "تزايد الطلب على أدوات تحويل الصور إلى نصوص يمكن أن يفتح آفاقًا جديدة في مجالات مثل التعليم والتسويق. نماذج مثل Qwen3.6 توفر إمكانية دمج هذه التقنية بشكل فعال.",
+      "buyer_ar": "شركات التسويق، المؤسسات التعليمية",
+      "sellable_product_ar": "أدوات تحويل الصور إلى نصوص",
+      "first_paid_test_ar": "تطوير تطبيق بسيط لتحويل صورة إلى نصوص باستخدام نموذج Qwen3.6",
+      "tools_ar": "نموذج Qwen3.6، أدوات تطوير التطبيقات، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-qx86-hi-mlx",
+        "huggingface_models:ashuaria/ashuaria",
+        "huggingface_models:AlexHung29629/ebft_gemma4_26b_axolotl_merged"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-qx86-hi-mlx — image-text-to-text",
+          "url": "https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-qx86-hi-mlx",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ashuaria/ashuaria — image-text-to-text",
+          "url": "https://huggingface.co/ashuaria/ashuaria",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AlexHung29629/ebft_gemma4_26b_axolotl_merged — image-text-to-text",
+          "url": "https://huggingface.co/AlexHung29629/ebft_gemma4_26b_axolotl_merged",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-12T05:20:36+00:00",
+      "updatedAt": "2026-07-12T05:20:36+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-12T01:34:02+00:00",
+  "tiered_at": "2026-07-12T05:20:36+00:00",
   "free_preview_count": 3
 }
