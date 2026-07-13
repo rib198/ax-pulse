@@ -1,47 +1,97 @@
 {
-  "generated_at": "2026-07-12T22:42:32+00:00",
+  "generated_at": "2026-07-13T01:35:25+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 850,
+  "corpus_count": 841,
   "opportunities": [
     {
-      "id": "text-to-image-generation",
-      "title_ar": "توليد الصور من النصوص",
-      "thesis_ar": "تزايد الطلب على المحتوى البصري المخصص يعزز الحاجة إلى نماذج تحويل النص إلى صورة. هذه النماذج يمكن أن تخدم مجالات متعددة مثل التسويق والإعلانات.",
-      "buyer_ar": "شركات التسويق، وكالات الإعلان",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم خدمة توليد صورة بناءً على نص تسويقي محدد",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، منصة تطوير",
+      "id": "ai-powered-sign-language-translation",
+      "title_ar": "ترجمة لغة الإشارة باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على حلول الترجمة الفورية للغات الإشارة يعكس الحاجة المتزايدة للتواصل الشامل. هذا الوقت هو الأنسب لتطوير نماذج تعتمد على الذكاء الاصطناعي لتلبية هذا الطلب.",
+      "buyer_ar": "مؤسسات التعليم، خدمات الترجمة، شركات التكنولوجيا",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لترجمة لغة الإشارة إلى نصوص",
+      "first_paid_test_ar": "تقديم خدمة ترجمة مجانية لمدة شهر واحد لمؤسسة تعليمية",
+      "tools_ar": "نموذج LLM، واجهة برمجة التطبيقات، منصة تعليمية",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:monsterlime/female-face",
-        "huggingface_models:Ava2000/Gravitydusty_Illustrious",
-        "huggingface_models:jei7/jiascos-marin"
+        "arxiv_papers:2607.09126v1",
+        "arxiv_papers:2607.09330v1",
+        "huggingface_models:yasu-oh/gemma-4-31B-it-qat-NVFP4"
       ],
-      "confidence": 0.65,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "monsterlime/female-face — text-to-image",
-          "url": "https://huggingface.co/monsterlime/female-face",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Communication-Efficient Digital-Twin Coordination for Heterogeneous LLM Embodied Agents over Computing Power Networks",
+          "url": "http://arxiv.org/abs/2607.09330v1",
+          "score": 0.472,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Ava2000/Gravitydusty_Illustrious — text-to-image",
-          "url": "https://huggingface.co/Ava2000/Gravitydusty_Illustrious",
-          "score": 0.488,
+          "title": "yasu-oh/gemma-4-31B-it-qat-NVFP4 — image-text-to-text",
+          "url": "https://huggingface.co/yasu-oh/gemma-4-31B-it-qat-NVFP4",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
+          "source_id": "arxiv_papers",
+          "title": "VTaMo: Video-Text Alignment Model for Sign Language Translation",
+          "url": "http://arxiv.org/abs/2607.09126v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-13T01:35:25+00:00",
+      "updatedAt": "2026-07-13T01:35:25+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "enhanced-llm-agent-reasoning",
+      "title_ar": "تحسين تفكير الوكلاء المعتمدين على LLM",
+      "thesis_ar": "تتطلب التطبيقات الحديثة لوكلاء الذكاء الاصطناعي تحسينات في قدرتهم على التفكير والتنسيق. هذه فرصة لتطوير حلول مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات البرمجيات، مزودي خدمات الذكاء الاصطناعي",
+      "sellable_product_ar": "نموذج LLM مع تحسينات في التفكير والتنسيق",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لمؤسسة برمجيات لتحسين عملياتها",
+      "tools_ar": "نموذج LLM، أدوات تطوير برمجيات، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2607.09600v1",
+        "arxiv_papers:2607.09493v1",
+        "huggingface_models:KissTheHabit/IDA_AI"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Agora: Enhancing LLM Agent Reasoning Via Auction-Based Task Allocation",
+          "url": "http://arxiv.org/abs/2607.09600v1",
+          "score": 0.465,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Shared Selective Persistent Memory for Agentic LLM Systems",
+          "url": "http://arxiv.org/abs/2607.09493v1",
+          "score": 0.465,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "jei7/jiascos-marin — text-to-image",
-          "url": "https://huggingface.co/jei7/jiascos-marin",
-          "score": 0.488,
+          "title": "KissTheHabit/IDA_AI — text-generation",
+          "url": "https://huggingface.co/KissTheHabit/IDA_AI",
+          "score": 0.447,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-12T22:42:32+00:00",
-      "updatedAt": "2026-07-12T22:42:32+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-07-13T01:35:25+00:00",
+      "updatedAt": "2026-07-13T01:35:25+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "music-creation-tools",
+      "title_ar": "أدوات إنشاء الموسيقى باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الاهتمام بالموسيقى الرقمية يفتح المجال لتطوير أدوات جديدة تعتمد على الذكاء الاصطناعي. هذه فرصة لتلبية احتياجات الفنانين والموسيقيين.",
+      "buyer_ar": "فنانون، شركات إنتاج موسيقي، منصات موسيقية",
+      "sellable_product_ar": "أداة ذكاء اصطناعي لإنشاء الموسيقى",
+      "first_paid_test_ar": "تقديم نسخة مجانية لفنانين لمدة شهر",
+      "tools_ar": "نموذج LLM، أدوات إنتاج موسيقي، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:mcp-tool-shop/jam-ft-v1-qwen25",
+        "huggingface_models:audiuphile/blazing-audio-slm-v7-4-dev",
+        "huggingface_models:darkc0de/XORTRON-NXTXPRTXXL"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "mcp-tool-shop/jam-ft-v1-qwen25 — text-generation",
+          "url": "https://huggingface.co/mcp-tool-shop/jam-ft-v1-qwen25",
+          "score": 0.497,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "audiuphile/blazing-audio-slm-v7-4-dev — text-generation",
+          "url": "https://huggingface.co/audiuphile/blazing-audio-slm-v7-4-dev",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "darkc0de/XORTRON-NXTXPRTXXL — text-generation",
+          "url": "https://huggingface.co/darkc0de/XORTRON-NXTXPRTXXL",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-13T01:35:25+00:00",
+      "updatedAt": "2026-07-13T01:35:25+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-12T22:42:32+00:00",
+  "tiered_at": "2026-07-13T01:35:25+00:00",
   "free_preview_count": 3
 }
