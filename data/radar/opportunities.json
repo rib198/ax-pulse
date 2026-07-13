@@ -1,67 +1,46 @@
 {
-  "generated_at": "2026-07-13T05:29:44+00:00",
+  "generated_at": "2026-07-13T08:50:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 838,
   "opportunities": [
     {
-      "id": "long-context-llm-solutions",
-      "title_ar": "حلول معالجة السياقات الطويلة للذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى معالجة البيانات ذات السياقات الطويلة في نماذج اللغة الكبيرة. يمكن أن توفر حلول مبتكرة في هذا المجال قيمة كبيرة للمستخدمين.",
-      "buyer_ar": "شركات تطوير البرمجيات، مؤسسات التعليم العالي",
-      "sellable_product_ar": "أدوات لتحسين أداء نماذج اللغة في معالجة السياقات الطويلة",
-      "first_paid_test_ar": "تقديم نموذج أولي لمعالجة نصوص طويلة مع قياس دقة النتائج",
-      "tools_ar": "نموذج لغة كبير، خوارزميات تحسين، واجهة مستخدم",
-      "capital_ar": "متوسط",
+      "id": "cybersecurity-pentest-tools",
+      "title_ar": "أدوات اختبار الاختراق الذكية",
+      "thesis_ar": "تزايد الحاجة لأدوات اختبار الاختراق الذكية في ظل تزايد التهديدات السيبرانية. تطوير أدوات تعتمد على نماذج الذكاء الاصطناعي يمكن أن يوفر حلولًا فعالة وسريعة.",
+      "buyer_ar": "شركات الأمن السيبراني، المؤسسات الحكومية",
+      "sellable_product_ar": "أداة اختبار اختراق تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار تجريبي لأداة اختبار اختراق لمؤسسة صغيرة",
+      "tools_ar": "نموذج الذكاء الاصطناعي، بيئة تطوير، أدوات اختبار",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2607.09415",
-        "2607.08964",
-        "2607.09330"
+        "huggingface_models:wazimondo/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-GGUF",
+        "huggingface_models:bhriguverma/toolbind-indic-fp-qwen35-2b",
+        "huggingface_models:suraj10620/UnchaosLM"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PanoWorld: Real-World Panoramic Generation",
-          "url": "https://huggingface.co/papers/2607.09661",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "KronQ: LLM Quantization via Kronecker-Factored Hessian",
-          "url": "https://huggingface.co/papers/2607.07964",
-          "score": 0.493,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Trust Region Policy Distillation",
-          "url": "https://huggingface.co/papers/2607.04751",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Self-Guided Test-Time Training for Long-Context LLMs",
-          "url": "https://huggingface.co/papers/2607.09415",
-          "score": 0.49,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "A Sovereign, Open-Source Foundation Model for German and English",
-          "url": "https://huggingface.co/papers/2607.09424",
-          "score": 0.488,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "wazimondo/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-GGUF — text-generation",
+          "url": "https://huggingface.co/wazimondo/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-GGUF",
+          "score": 0.509,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "tawkeed-sa/tawkeed-mustashar-35b-a3b-nvfp4 — image-text-to-text",
-          "url": "https://huggingface.co/tawkeed-sa/tawkeed-mustashar-35b-a3b-nvfp4",
+          "title": "bhriguverma/toolbind-indic-fp-qwen35-2b — text-generation",
+          "url": "https://huggingface.co/bhriguverma/toolbind-indic-fp-qwen35-2b",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "suraj10620/UnchaosLM — text-generation",
+          "url": "https://huggingface.co/suraj10620/UnchaosLM",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -71,70 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-13T05:29:44+00:00",
-      "updatedAt": "2026-07-13T05:29:44+00:00",
+      "publishedAt": "2026-07-13T08:50:05+00:00",
+      "updatedAt": "2026-07-13T08:50:05+00:00",
       "sortOrder": 0
     },
     {
-      "id": "video-text-sign-language-translation",
-      "title_ar": "ترجمة لغة الإشارة باستخدام نماذج الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على ترجمة لغة الإشارة إلى نصوص مكتوبة. يمكن أن تسهم الحلول التكنولوجية في تحسين التواصل بين المجتمعات.",
-      "buyer_ar": "مؤسسات تعليمية، شركات تكنولوجيا المعلومات",
-      "sellable_product_ar": "نظام ترجمة لغة إشارة باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لترجمة مقاطع فيديو قصيرة بلغة الإشارة",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيانات تدريب، واجهة مستخدم",
+      "id": "digital-museum-experiences",
+      "title_ar": "تجارب المتاحف الرقمية التفاعلية",
+      "thesis_ar": "تزايد الاهتمام بالثقافة والتراث يعزز الحاجة لتجارب متاحف رقمية. استخدام نماذج الذكاء الاصطناعي يمكن أن يحسن من تفاعل الزوار مع المعروضات.",
+      "buyer_ar": "المتاحف، المؤسسات الثقافية",
+      "sellable_product_ar": "منصة متحف رقمي تفاعلي",
+      "first_paid_test_ar": "تجربة تفاعلية في متحف محلي",
+      "tools_ar": "نموذج رؤية-لغة، أدوات تطوير الويب، قاعدة بيانات للمعروضات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2607.09126",
-        "2607.09657",
-        "2607.09493"
+        "huggingface_daily_papers:2607.06374",
+        "huggingface_daily_papers:2607.08964",
+        "huggingface_daily_papers:2607.09661"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery",
+          "url": "https://huggingface.co/papers/2607.06374",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "PanoWorld: Real-World Panoramic Generation",
           "url": "https://huggingface.co/papers/2607.09661",
-          "score": 0.504,
+          "score": 0.479,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "KronQ: LLM Quantization via Kronecker-Factored Hessian",
-          "url": "https://huggingface.co/papers/2607.07964",
-          "score": 0.493,
+          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+          "url": "https://huggingface.co/papers/2607.08964",
+          "score": 0.472,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Trust Region Policy Distillation",
-          "url": "https://huggingface.co/papers/2607.04751",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Self-Guided Test-Time Training for Long-Context LLMs",
-          "url": "https://huggingface.co/papers/2607.09415",
-          "score": 0.49,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "A Sovereign, Open-Source Foundation Model for German and English",
-          "url": "https://huggingface.co/papers/2607.09424",
-          "score": 0.488,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "tawkeed-sa/tawkeed-mustashar-35b-a3b-nvfp4 — image-text-to-text",
-          "url": "https://huggingface.co/tawkeed-sa/tawkeed-mustashar-35b-a3b-nvfp4",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,82 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-13T05:29:44+00:00",
-      "updatedAt": "2026-07-13T05:29:44+00:00",
+      "publishedAt": "2026-07-13T08:50:05+00:00",
+      "updatedAt": "2026-07-13T08:50:05+00:00",
       "sortOrder": 1
-    },
-    {
-      "id": "digital-twin-coordination-systems",
-      "title_ar": "أنظمة تنسيق التوأم الرقمي للذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام التوائم الرقمية في المصانع الذكية. يمكن أن توفر حلول التنسيق الفعالة قيمة مضافة كبيرة.",
-      "buyer_ar": "شركات التصنيع، الشركات اللوجستية",
-      "sellable_product_ar": "نظام تنسيق للتوائم الرقمية باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام تنسيق في بيئة مصنع",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيانات تشغيل، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "2607.09330",
-        "2607.09600",
-        "2607.09657"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PanoWorld: Real-World Panoramic Generation",
-          "url": "https://huggingface.co/papers/2607.09661",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "KronQ: LLM Quantization via Kronecker-Factored Hessian",
-          "url": "https://huggingface.co/papers/2607.07964",
-          "score": 0.493,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Trust Region Policy Distillation",
-          "url": "https://huggingface.co/papers/2607.04751",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Self-Guided Test-Time Training for Long-Context LLMs",
-          "url": "https://huggingface.co/papers/2607.09415",
-          "score": 0.49,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "A Sovereign, Open-Source Foundation Model for German and English",
-          "url": "https://huggingface.co/papers/2607.09424",
-          "score": 0.488,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "tawkeed-sa/tawkeed-mustashar-35b-a3b-nvfp4 — image-text-to-text",
-          "url": "https://huggingface.co/tawkeed-sa/tawkeed-mustashar-35b-a3b-nvfp4",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-13T05:29:44+00:00",
-      "updatedAt": "2026-07-13T05:29:44+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-13T05:29:44+00:00",
+  "tiered_at": "2026-07-13T08:50:05+00:00",
   "free_preview_count": 3
 }
