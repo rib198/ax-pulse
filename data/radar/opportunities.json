@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-15T17:09:03+00:00",
+  "generated_at": "2026-07-15T18:58:39+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 840,
   "opportunities": [
     {
       "id": "text-to-image-generation",
       "title_ar": "توليد الصور من النصوص",
-      "thesis_ar": "تزايد الاهتمام بتقنيات تحويل النصوص إلى صور، مما يفتح المجال لتطبيقات جديدة في الفن والتصميم. تكنولوجيا مثل SpectraReward وProCreations تقدم نماذج متقدمة يمكن استخدامها في هذا المجال.",
-      "buyer_ar": "شركات التصميم والإعلانات، المطورون المستقلون",
-      "sellable_product_ar": "خدمات توليد الصور من النصوص باستخدام نماذج متقدمة",
-      "first_paid_test_ar": "تقديم خدمة توليد صورة واحدة من نص مقابل رسوم بسيطة",
-      "tools_ar": "نموذج Hugging Face، واجهة برمجة التطبيقات، أدوات التصميم",
+      "thesis_ar": "تزايد الطلب على أدوات تحويل النصوص إلى صور يفتح مجالًا واسعًا لتطبيقات جديدة. النماذج المتاحة حاليًا تقدم إمكانيات متقدمة يمكن استغلالها في مجالات متعددة.",
+      "buyer_ar": "شركات الإعلانات، استوديوهات التصميم، منصات التواصل الاجتماعي",
+      "sellable_product_ar": "خدمة توليد صور مخصصة من نصوص باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة توليد صورة واحدة مقابل رسوم رمزية",
+      "tools_ar": "نموذج توليد الصور، واجهة برمجة التطبيقات، منصة تسويق",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.11886",
-        "huggingface_models:ProCreations/grug-v2-9b",
-        "huggingface_models:Amador1989/HipSwayWAN"
+        "huggingface_models:bsflash/zIT_Arthouse_Cinema",
+        "huggingface_models:guillekenzo/aros-f93e7c33-Filho",
+        "huggingface_models:Tesleum/0xAgent"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -24,23 +24,23 @@
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation",
-          "url": "https://huggingface.co/papers/2607.11886",
-          "score": 0.502,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "ProCreations/grug-v2-9b — text-generation",
-          "url": "https://huggingface.co/ProCreations/grug-v2-9b",
+          "title": "bsflash/zIT_Arthouse_Cinema — text-to-image",
+          "url": "https://huggingface.co/bsflash/zIT_Arthouse_Cinema",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Amador1989/HipSwayWAN — text-to-image",
-          "url": "https://huggingface.co/Amador1989/HipSwayWAN",
+          "title": "guillekenzo/aros-f93e7c33-Filho — text-to-image",
+          "url": "https://huggingface.co/guillekenzo/aros-f93e7c33-Filho",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Tesleum/0xAgent — text-to-image",
+          "url": "https://huggingface.co/Tesleum/0xAgent",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,104 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-15T17:09:03+00:00",
-      "updatedAt": "2026-07-15T17:09:03+00:00",
+      "publishedAt": "2026-07-15T18:58:39+00:00",
+      "updatedAt": "2026-07-15T18:58:39+00:00",
       "sortOrder": 0
-    },
-    {
-      "id": "career-trajectory-analysis",
-      "title_ar": "تحليل مسارات العمل",
-      "thesis_ar": "تزايد الحاجة إلى فهم مسارات العمل في سوق العمل، مما يساعد الشركات على التخطيط للقوى العاملة. توفر بيانات JobHop v2 فرصة لتحليل الاتجاهات في التوظيف.",
-      "buyer_ar": "شركات التوظيف، المؤسسات التعليمية، وكالات الاستشارات",
-      "sellable_product_ar": "خدمات تحليل البيانات لتقديم رؤى حول مسارات العمل",
-      "first_paid_test_ar": "تقديم تقرير قصير عن مسار عمل واحد مقابل رسوم",
-      "tools_ar": "أدوات تحليل البيانات، برامج الإحصاء، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.11715",
-        "huggingface_daily_papers:2607.10400",
-        "huggingface_daily_papers:2607.08168"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "MuScriptor: An Open Model for Multi-Instrument Music Transcription",
-          "url": "https://huggingface.co/papers/2607.08168",
-          "score": 0.476,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding",
-          "url": "https://huggingface.co/papers/2607.10400",
-          "score": 0.474,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-15T17:09:03+00:00",
-      "updatedAt": "2026-07-15T17:09:03+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "mobile-ai-agents",
-      "title_ar": "وكلاء الذكاء الاصطناعي على الهواتف المحمولة",
-      "thesis_ar": "تطور وكلاء الذكاء الاصطناعي إلى أنظمة قادرة على تنفيذ مهام متعددة، مما يفتح المجال لتطبيقات جديدة على الهواتف المحمولة. PalmClaw يمثل خطوة مهمة في هذا الاتجاه.",
-      "buyer_ar": "شركات تطوير التطبيقات، شركات الهواتف الذكية",
-      "sellable_product_ar": "تطبيقات تعتمد على وكلاء الذكاء الاصطناعي لتنفيذ مهام متعددة",
-      "first_paid_test_ar": "تقديم نسخة تجريبية من التطبيق مقابل رسوم بسيطة",
-      "tools_ar": "نموذج PalmClaw، أدوات تطوير التطبيقات، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.13027v1",
-        "arxiv_papers:2607.12982v1",
-        "huggingface_models:EZCon/FastVLM-1.5B-mlx"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
-          "url": "http://arxiv.org/abs/2607.13027v1",
-          "score": 0.471,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation",
-          "url": "http://arxiv.org/abs/2607.12982v1",
-          "score": 0.471,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "EZCon/FastVLM-1.5B-mlx — image-text-to-text",
-          "url": "https://huggingface.co/EZCon/FastVLM-1.5B-mlx",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-15T17:09:03+00:00",
-      "updatedAt": "2026-07-15T17:09:03+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-15T17:09:03+00:00",
+  "tiered_at": "2026-07-15T18:58:39+00:00",
   "free_preview_count": 3
 }
