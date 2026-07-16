@@ -1,47 +1,97 @@
 {
-  "generated_at": "2026-07-16T20:49:48+00:00",
+  "generated_at": "2026-07-16T22:52:22+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 846,
   "opportunities": [
     {
-      "id": "multimodal-understanding-generation",
-      "title_ar": "تطوير نماذج فهم وتوليد متعددة الوسائط",
-      "thesis_ar": "تزايد الحاجة إلى نماذج مفتوحة المصدر لفهم وتوليد المحتوى المتعدد الوسائط. توفر هذه النماذج فرصًا للابتكار في التطبيقات التعليمية والترفيهية.",
-      "buyer_ar": "شركات تطوير البرمجيات والمحتوى",
-      "sellable_product_ar": "نموذج مفتوح المصدر لفهم وتوليد المحتوى المتعدد الوسائط",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لمؤسسة تعليمية أو ترفيهية",
-      "tools_ar": "أدوات البرمجة، منصات التعلم الآلي، بيئات الاختبار",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "زيادة الطلب على محتوى بصري مخصص يتطلب نماذج متقدمة لتحويل النص إلى صورة. التحديثات الأخيرة لنماذج Hugging Face توفر أساسًا قويًا لتطوير حلول مبتكرة.",
+      "buyer_ar": "شركات التسويق الرقمي، وكالات الإعلانات، والمصممين المستقلين",
+      "sellable_product_ar": "خدمة تطوير نماذج مخصصة لتحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.13125",
-        "huggingface_daily_papers:2607.06701",
-        "huggingface_daily_papers:2607.12000"
+        "huggingface_models:andracon/s.clash",
+        "huggingface_models:testernew-247/bpiledrv",
+        "huggingface_models:Rajendraagiri/Kavya_ai_influencer"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.5,
+      "avg_score": 0.52,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "andracon/s.clash — text-to-image",
+          "url": "https://huggingface.co/andracon/s.clash",
+          "score": 0.538,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "testernew-247/bpiledrv — text-to-image",
+          "url": "https://huggingface.co/testernew-247/bpiledrv",
+          "score": 0.508,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Rajendraagiri/Kavya_ai_influencer — text-to-image",
+          "url": "https://huggingface.co/Rajendraagiri/Kavya_ai_influencer",
+          "score": 0.508,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-16T22:52:22+00:00",
+      "updatedAt": "2026-07-16T22:52:22+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "multimodal-understanding-models",
+      "title_ar": "تطوير نماذج فهم متعدد الوسائط",
+      "thesis_ar": "تزايد الحاجة إلى نماذج قادرة على معالجة وفهم البيانات من مصادر متعددة. النماذج الجديدة مثل Boogu-Image-0.1 تقدم إمكانيات كبيرة في هذا المجال.",
+      "buyer_ar": "شركات التكنولوجيا، ومراكز الأبحاث، والجامعات",
+      "sellable_product_ar": "نموذج فهم متعدد الوسائط مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لفهم البيانات متعددة الوسائط لعميل محتمل",
+      "tools_ar": "Hugging Face, PyTorch, OpenAI",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.13125",
+        "huggingface_daily_papers:2607.12752",
+        "huggingface_daily_papers:2607.13960"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
           "url": "https://huggingface.co/papers/2607.13125",
-          "score": 0.516,
+          "score": 0.525,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "SPEAR: A Simulator for Photorealistic Embodied AI Research",
-          "url": "https://huggingface.co/papers/2607.06701",
+          "title": "Hallo4D: Multi-Modal Hallucination Mitigation for Consistent Spatio-Temporal Generation",
+          "url": "https://huggingface.co/papers/2607.12752",
+          "score": 0.507,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "GigaWorld-Policy-0.5: A Faster and Stronger WAM Empowered by AutoResearch",
+          "url": "https://huggingface.co/papers/2607.13960",
           "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "MetaView: Monocular Novel View Synthesis with Scale-Aware Implicit Geometry Priors",
-          "url": "https://huggingface.co/papers/2607.12000",
-          "score": 0.485,
           "trust_tier": "research"
         }
       ],
@@ -50,104 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-16T20:49:48+00:00",
-      "updatedAt": "2026-07-16T20:49:48+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-07-16T22:52:22+00:00",
+      "updatedAt": "2026-07-16T22:52:22+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "autonomous-agent-evaluation",
-      "title_ar": "تطوير بنية تحتية موحدة لتقييم الوكلاء المستقلين",
-      "thesis_ar": "مع تطور نماذج اللغة الكبيرة إلى وكلاء مستقلين، تزداد الحاجة إلى بنية تحتية موحدة لتقييم قدراتهم. هذه البنية يمكن أن تحسن من فعالية التطبيقات التجارية.",
-      "buyer_ar": "شركات التكنولوجيا والذكاء الاصطناعي",
+      "id": "agent-capabilities-evaluation",
+      "title_ar": "تطوير بنية تحتية لتقييم قدرات الوكلاء",
+      "thesis_ar": "مع تطور الوكلاء الذكيين، تزداد الحاجة إلى تقييم فعال لقدراتهم. البحوث الحالية تشير إلى نقص في البنية التحتية الموحدة.",
+      "buyer_ar": "شركات الذكاء الاصطناعي، ومراكز الأبحاث، والجامعات",
       "sellable_product_ar": "نظام تقييم موحد لوكلاء الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تقييم تجريبي لوكيل ذكاء اصطناعي لشركة تكنولوجيا",
-      "tools_ar": "أدوات تحليل البيانات، منصات الذكاء الاصطناعي، بيئات الاختبار",
+      "first_paid_test_ar": "تقديم خدمة تقييم تجريبية لوكيل ذكي مقابل رسوم",
+      "tools_ar": "Hugging Face, Python, Scikit-learn",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.13705",
         "huggingface_daily_papers:2607.13027",
-        "huggingface_daily_papers:2607.13820"
+        "huggingface_daily_papers:2607.13104"
       ],
-      "confidence": 0.65,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 3,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
           "url": "https://huggingface.co/papers/2607.13705",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
-          "url": "https://huggingface.co/papers/2607.13027",
-          "score": 0.477,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-16T20:49:48+00:00",
-      "updatedAt": "2026-07-16T20:49:48+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "photorealistic-simulation",
-      "title_ar": "تطوير محاكيات فوتوغرافية واقعية",
-      "thesis_ar": "تزايد الطلب على محاكيات واقعية لتدريب الوكلاء المستقلين. هذه المحاكيات يمكن أن تعزز من فعالية التدريب وتوليد البيانات البصرية.",
-      "buyer_ar": "شركات الألعاب والتدريب العسكري",
-      "sellable_product_ar": "محاكي فوتوغرافي واقعي للتدريب",
-      "first_paid_test_ar": "تقديم نسخة تجريبية لمحاكي لجهة تدريب عسكرية",
-      "tools_ar": "أدوات البرمجة، محركات الألعاب، بيئات المحاكاة",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.06701",
-        "huggingface_daily_papers:2607.13960",
-        "huggingface_daily_papers:2607.13104"
-      ],
-      "confidence": 0.6,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SPEAR: A Simulator for Photorealistic Embodied AI Research",
-          "url": "https://huggingface.co/papers/2607.06701",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "GigaWorld-Policy-0.5: A Faster and Stronger WAM Empowered by AutoResearch",
-          "url": "https://huggingface.co/papers/2607.13960",
-          "score": 0.484,
+          "score": 0.505,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Self-Improvements in Modern Agentic Systems: A Survey",
           "url": "https://huggingface.co/papers/2607.13104",
-          "score": 0.483,
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
+          "url": "https://huggingface.co/papers/2607.13027",
+          "score": 0.494,
           "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-16T20:49:48+00:00",
-      "updatedAt": "2026-07-16T20:49:48+00:00",
+      "publishedAt": "2026-07-16T22:52:22+00:00",
+      "updatedAt": "2026-07-16T22:52:22+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-16T20:49:48+00:00",
+  "tiered_at": "2026-07-16T22:52:22+00:00",
   "free_preview_count": 3
 }
