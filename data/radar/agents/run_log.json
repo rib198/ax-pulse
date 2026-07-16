@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-16T07:59:49+00:00",
+  "run_at": "2026-07-16T10:00:35+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,20 +26,20 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 88.922,
+      "duration_s": 33.49,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 258 signals from 31 source families",
-        "9 source errors (non-fatal)"
+        "collected 350 signals from 31 source families",
+        "7 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.014,
       "written": [],
       "notes": [
         "injected 489 manual X items (skipped 11 of 500, avg score 0.152)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 747 items",
-        "by tier: press=522, research=107, official=92, community=26"
+        "tagged 839 items",
+        "by tier: press=522, official=164, research=127, community=26"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.028,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 747 items, top priority=0.515"
+        "ranked 839 items, top priority=0.559"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 10 products this run",
+        "detected 14 companies, 11 products this run",
         "store size: 46"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.061,
+      "duration_s": 0.068,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,7 +110,7 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.149,
+      "duration_s": 0.163,
       "written": [
         "data/radar/agents/events.json"
       ],
@@ -123,7 +123,7 @@
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.017,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,19 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 14.722,
+      "duration_s": 11.604,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 5 opportunities"
+        "openai produced 3 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 10.668,
+      "duration_s": 10.404,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -166,7 +166,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 2 premium",
+        "opps: 3 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.835,
+      "duration_s": 10.566,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=747, opps=5, calls=3"
+        "items=839, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.408,
+      "duration_s": 2.189,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تظهر الإشارات انخفاضًا ملحوظًا بمقدار 87 إشارة مقارنة بالتشغيل السابق، مما يشير…"
+        "insight via openai: شهدت الإشارات زيادة ملحوظة بمقدار 92 إشارة، مما يشير إلى نشاط متزايد في السوق. …"
       ],
       "error": null
     },
