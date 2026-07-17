@@ -1,47 +1,97 @@
 {
-  "generated_at": "2026-07-16T22:52:22+00:00",
+  "generated_at": "2026-07-17T01:33:56+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 846,
+  "corpus_count": 852,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "زيادة الطلب على محتوى بصري مخصص يتطلب نماذج متقدمة لتحويل النص إلى صورة. التحديثات الأخيرة لنماذج Hugging Face توفر أساسًا قويًا لتطوير حلول مبتكرة.",
-      "buyer_ar": "شركات التسويق الرقمي، وكالات الإعلانات، والمصممين المستقلين",
-      "sellable_product_ar": "خدمة تطوير نماذج مخصصة لتحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور مقابل رسوم رمزية",
-      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "id": "ai-driven-human-robot-interaction",
+      "title_ar": "تفاعل الإنسان مع الروبوتات المدعوم بالذكاء الاصطناعي",
+      "thesis_ar": "تتزايد الحاجة لتفاعل أكثر سلاسة بين الإنسان والروبوتات، مما يفتح المجال لتطوير حلول مبتكرة. مع تقدم نماذج الذكاء الاصطناعي، يمكن تحسين هذه التفاعلات بشكل كبير.",
+      "buyer_ar": "شركات الروبوتات ومصنعي الأنظمة الذكية",
+      "sellable_product_ar": "حلول تفاعل إنساني-روبوت تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتفاعل بسيط بين إنسان وآلة",
+      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات تطوير البرمجيات، منصات اختبار",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:andracon/s.clash",
-        "huggingface_models:testernew-247/bpiledrv",
+        "arxiv_papers:2607.14919v1",
+        "arxiv_papers:2607.13998v1",
         "huggingface_models:Rajendraagiri/Kavya_ai_influencer"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.52,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "andracon/s.clash — text-to-image",
-          "url": "https://huggingface.co/andracon/s.clash",
-          "score": 0.538,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "testernew-247/bpiledrv — text-to-image",
-          "url": "https://huggingface.co/testernew-247/bpiledrv",
-          "score": 0.508,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Human-Robot Interaction in GenAI Architectures via the Agent-Client Protocol",
+          "url": "http://arxiv.org/abs/2607.14919v1",
+          "score": 0.489,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
           "title": "Rajendraagiri/Kavya_ai_influencer — text-to-image",
           "url": "https://huggingface.co/Rajendraagiri/Kavya_ai_influencer",
-          "score": 0.508,
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce",
+          "url": "http://arxiv.org/abs/2607.13998v1",
+          "score": 0.479,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-17T01:33:56+00:00",
+      "updatedAt": "2026-07-17T01:33:56+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "multimodal-ai-models",
+      "title_ar": "نماذج الذكاء الاصطناعي متعددة الأنماط",
+      "thesis_ar": "تتزايد الحاجة لنماذج قادرة على معالجة البيانات من أنماط متعددة، مما يسهل فهم المعلومات المعقدة. هذه النماذج تقدم فرصاً جديدة في مجالات متعددة.",
+      "buyer_ar": "شركات التكنولوجيا والبحث العلمي",
+      "sellable_product_ar": "نماذج ذكاء اصطناعي متعددة الأنماط",
+      "first_paid_test_ar": "تطوير نموذج أولي لنموذج متعدد الأنماط لمهمة معينة",
+      "tools_ar": "أدوات تطوير النماذج، بيانات تدريب متعددة الأنماط، منصات حوسبة سحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.13125",
+        "huggingface_models:Cactus-Compute/gemma-4-E2B-it",
+        "huggingface_models:AMFORGE/cofos_general_600m"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Cactus-Compute/gemma-4-E2B-it — image-text-to-text",
+          "url": "https://huggingface.co/Cactus-Compute/gemma-4-E2B-it",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
+          "url": "https://huggingface.co/papers/2607.13125",
+          "score": 0.48,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AMFORGE/cofos_general_600m — text-generation",
+          "url": "https://huggingface.co/AMFORGE/cofos_general_600m",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -50,98 +100,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-16T22:52:22+00:00",
-      "updatedAt": "2026-07-16T22:52:22+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multimodal-understanding-models",
-      "title_ar": "تطوير نماذج فهم متعدد الوسائط",
-      "thesis_ar": "تزايد الحاجة إلى نماذج قادرة على معالجة وفهم البيانات من مصادر متعددة. النماذج الجديدة مثل Boogu-Image-0.1 تقدم إمكانيات كبيرة في هذا المجال.",
-      "buyer_ar": "شركات التكنولوجيا، ومراكز الأبحاث، والجامعات",
-      "sellable_product_ar": "نموذج فهم متعدد الوسائط مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لفهم البيانات متعددة الوسائط لعميل محتمل",
-      "tools_ar": "Hugging Face, PyTorch, OpenAI",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.13125",
-        "huggingface_daily_papers:2607.12752",
-        "huggingface_daily_papers:2607.13960"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
-          "url": "https://huggingface.co/papers/2607.13125",
-          "score": 0.525,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Hallo4D: Multi-Modal Hallucination Mitigation for Consistent Spatio-Temporal Generation",
-          "url": "https://huggingface.co/papers/2607.12752",
-          "score": 0.507,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "GigaWorld-Policy-0.5: A Faster and Stronger WAM Empowered by AutoResearch",
-          "url": "https://huggingface.co/papers/2607.13960",
-          "score": 0.496,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-16T22:52:22+00:00",
-      "updatedAt": "2026-07-16T22:52:22+00:00",
+      "publishedAt": "2026-07-17T01:33:56+00:00",
+      "updatedAt": "2026-07-17T01:33:56+00:00",
       "sortOrder": 1
     },
     {
-      "id": "agent-capabilities-evaluation",
-      "title_ar": "تطوير بنية تحتية لتقييم قدرات الوكلاء",
-      "thesis_ar": "مع تطور الوكلاء الذكيين، تزداد الحاجة إلى تقييم فعال لقدراتهم. البحوث الحالية تشير إلى نقص في البنية التحتية الموحدة.",
-      "buyer_ar": "شركات الذكاء الاصطناعي، ومراكز الأبحاث، والجامعات",
-      "sellable_product_ar": "نظام تقييم موحد لوكلاء الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة تقييم تجريبية لوكيل ذكي مقابل رسوم",
-      "tools_ar": "Hugging Face, Python, Scikit-learn",
-      "capital_ar": "متوسط",
+      "id": "firmware-rehosting-solutions",
+      "title_ar": "حلول إعادة استضافة البرمجيات الثابتة",
+      "thesis_ar": "تزايد استخدام إنترنت الأشياء يتطلب حلولاً فعالة لتحليل البرمجيات الثابتة. إعادة استضافة البرمجيات توفر طريقة مبتكرة لتحليل الأجهزة بشكل ديناميكي.",
+      "buyer_ar": "شركات تطوير البرمجيات وأمن المعلومات",
+      "sellable_product_ar": "خدمات إعادة استضافة البرمجيات الثابتة",
+      "first_paid_test_ar": "تقديم خدمة إعادة استضافة لعدد محدود من الأجهزة",
+      "tools_ar": "أدوات تحليل البرمجيات، بيئات محاكاة، أدوات الأمن السيبراني",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.13705",
-        "huggingface_daily_papers:2607.13027",
-        "huggingface_daily_papers:2607.13104"
+        "arxiv_papers:2607.14903v1",
+        "arxiv_papers:2607.14798v1",
+        "arxiv_papers:2607.14512v1"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.5,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
-          "url": "https://huggingface.co/papers/2607.13705",
-          "score": 0.505,
+          "source_id": "arxiv_papers",
+          "title": "FirmPilot: Evidence-Guided Multi-Agent Environment Recovery for IoT Firmware Rehosting",
+          "url": "http://arxiv.org/abs/2607.14903v1",
+          "score": 0.504,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Self-Improvements in Modern Agentic Systems: A Survey",
-          "url": "https://huggingface.co/papers/2607.13104",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
-          "url": "https://huggingface.co/papers/2607.13027",
+          "source_id": "arxiv_papers",
+          "title": "RetroAgent: Harnessing LLMs to Search Over Structured Memory for Agentic Retrosynthesis Planning",
+          "url": "http://arxiv.org/abs/2607.14512v1",
           "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Ground-Side Mission Plan Compilation with Policy-as-Code Guardrails for Cloud-Native Satellite Platforms",
+          "url": "http://arxiv.org/abs/2607.14798v1",
+          "score": 0.482,
           "trust_tier": "research"
         }
       ],
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-16T22:52:22+00:00",
-      "updatedAt": "2026-07-16T22:52:22+00:00",
+      "publishedAt": "2026-07-17T01:33:56+00:00",
+      "updatedAt": "2026-07-17T01:33:56+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-16T22:52:22+00:00",
+  "tiered_at": "2026-07-17T01:33:56+00:00",
   "free_preview_count": 3
 }
