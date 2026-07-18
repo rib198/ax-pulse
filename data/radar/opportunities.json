@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-18T04:42:59+00:00",
+  "generated_at": "2026-07-18T07:30:39+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 847,
+  "corpus_count": 850,
   "opportunities": [
     {
       "id": "video-understanding-solutions",
-      "title_ar": "حلول لفهم الفيديو باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تقدم النماذج الحديثة في فهم الفيديو إمكانيات كبيرة لتطبيقات العالم الحقيقي. مع تقدم تقنيات الذكاء الاصطناعي، هناك حاجة ملحة لتطوير حلول مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق",
-      "sellable_product_ar": "منصات لتحليل وفهم محتوى الفيديو",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل فيديو قصير",
-      "tools_ar": "نموذج Hugging Face، أدوات تحليل الفيديو، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "title_ar": "حلول لفهم الفيديو المتقدم",
+      "thesis_ar": "تقدم نماذج الذكاء الاصطناعي في فهم الفيديو يفتح آفاقًا جديدة لتطبيقات العالم الحقيقي. الحاجة إلى نماذج مفتوحة المصدر أكثر كفاءة تعزز من فرص الابتكار في هذا المجال.",
+      "buyer_ar": "شركات الإعلام والترفيه، منصات التعليم الإلكتروني",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لفهم الفيديو وتحليل المحتوى",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل مقطع فيديو قصير",
+      "tools_ar": "أدوات تعلم الآلة، بيئات تطوير البرمجيات، موارد حوسبة سحابية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.14935",
         "arxiv_papers:2607.14202",
-        "huggingface_models:Frosty40/Treebeard-Qwen3.6-35B-A3B-GGUF"
+        "arxiv_papers:2607.13998v1"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -31,9 +31,59 @@
           "trust_tier": "research"
         },
         {
+          "source_id": "arxiv_papers",
+          "title": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce",
+          "url": "http://arxiv.org/abs/2607.13998v1",
+          "score": 0.479,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-18T07:30:39+00:00",
+      "updatedAt": "2026-07-18T07:30:39+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-generators",
+      "title_ar": "مولدات الصور من النصوص",
+      "thesis_ar": "تزايد الطلب على تحويل النصوص إلى صور يعكس الحاجة المتزايدة للإبداع الرقمي. النماذج المتاحة حاليًا توفر فرصًا لتطوير أدوات جديدة في هذا المجال.",
+      "buyer_ar": "المصممين، شركات الإعلانات، منصات التواصل الاجتماعي",
+      "sellable_product_ar": "خدمة تحويل النصوص إلى صور باستخدام نماذج ذكاء اصطناعي",
+      "first_paid_test_ar": "تقديم نموذج لتحويل نصوص قصيرة إلى صور",
+      "tools_ar": "أدوات تعلم الآلة، واجهات برمجة التطبيقات، بيئات تطوير البرمجيات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:onamissiononamission/Forced_BJ",
+        "huggingface_models:neonforestmist/qwen-image-2512-monet-lora",
+        "huggingface_models:Kimchiai/M87"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
           "source_id": "huggingface_models",
-          "title": "Frosty40/Treebeard-Qwen3.6-35B-A3B-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/Frosty40/Treebeard-Qwen3.6-35B-A3B-GGUF",
+          "title": "onamissiononamission/Forced_BJ — text-to-image",
+          "url": "https://huggingface.co/onamissiononamission/Forced_BJ",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "neonforestmist/qwen-image-2512-monet-lora — text-to-image",
+          "url": "https://huggingface.co/neonforestmist/qwen-image-2512-monet-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Kimchiai/M87 — text-to-image",
+          "url": "https://huggingface.co/Kimchiai/M87",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -43,25 +93,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-18T04:42:59+00:00",
-      "updatedAt": "2026-07-18T04:42:59+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-07-18T07:30:39+00:00",
+      "updatedAt": "2026-07-18T07:30:39+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "dynamic-verifiable-ai-agents",
-      "title_ar": "تطوير وكلاء ذكاء اصطناعي ديناميكيين",
-      "thesis_ar": "تتطور نماذج الذكاء الاصطناعي لتصبح وكلاء مستقلين، مما يغير قواعد ولاء العملاء. هذه فرصة لتطوير حلول جديدة تعتمد على هذه التطورات.",
-      "buyer_ar": "شركات التجارة الإلكترونية",
-      "sellable_product_ar": "نظام ولاء قائم على وكلاء ذكاء اصطناعي",
-      "first_paid_test_ar": "تجربة نظام ولاء بسيط مع مجموعة مختارة من العملاء",
-      "tools_ar": "نموذج Hugging Face، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
+      "id": "multi-agent-ai-systems",
+      "title_ar": "أنظمة الذكاء الاصطناعي متعددة الوكلاء",
+      "thesis_ar": "تطور الذكاء الاصطناعي الوكلي يغير قواعد اللعبة في مجالات التجارة والولاء للعلامات التجارية. هذه الأنظمة تقدم فرصًا جديدة لتحسين تجربة العملاء.",
+      "buyer_ar": "شركات التجارة الإلكترونية، شركات التسويق",
+      "sellable_product_ar": "نظام ذكاء اصطناعي متعدد الوكلاء لتحسين ولاء العملاء",
+      "first_paid_test_ar": "تقديم تجربة مجانية لنظام ولاء يعتمد على الذكاء الاصطناعي",
+      "tools_ar": "أدوات تعلم الآلة، منصات تحليل البيانات، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2607.13998v1",
-        "huggingface_models:KissTheHabit/IDA_AI",
-        "github_repos:948491206"
+        "huggingface_daily_papers:2607.14202",
+        "huggingface_models:heydinith/market-intel-phi3-v2"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
@@ -74,16 +124,16 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "github_repos",
-          "title": "decocms/studio",
-          "url": "https://github.com/decocms/studio",
-          "score": 0.468,
-          "trust_tier": "community"
+          "source_id": "huggingface_daily_papers",
+          "title": "KeyFrame-Compass: Towards Comprehensive Evaluation of Keyframe-Conditioned Video Generation",
+          "url": "https://huggingface.co/papers/2607.14202",
+          "score": 0.479,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "KissTheHabit/IDA_AI — text-generation",
-          "url": "https://huggingface.co/KissTheHabit/IDA_AI",
+          "title": "heydinith/market-intel-phi3-v2 — text-generation",
+          "url": "https://huggingface.co/heydinith/market-intel-phi3-v2",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -93,61 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-18T04:42:59+00:00",
-      "updatedAt": "2026-07-18T04:42:59+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-generators",
-      "title_ar": "مولدات الصور من النصوص باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تتزايد الحاجة إلى تحويل النصوص إلى صور في مجالات متعددة مثل التسويق والإبداع. هذه التكنولوجيا تفتح آفاق جديدة للإبداع.",
-      "buyer_ar": "وكالات الإعلان والمصممين",
-      "sellable_product_ar": "منصات تحويل النصوص إلى صور",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة",
-      "tools_ar": "نموذج Hugging Face، أدوات التصميم، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Nothankyou88/Loratime",
-        "huggingface_models:tarn59/bernini_r_anime_style_transfer_lora",
-        "huggingface_models:guillekenzo/aros-c2efa888-FrostedZenith"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Nothankyou88/Loratime — text-to-image",
-          "url": "https://huggingface.co/Nothankyou88/Loratime",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "tarn59/bernini_r_anime_style_transfer_lora — text-to-image",
-          "url": "https://huggingface.co/tarn59/bernini_r_anime_style_transfer_lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-c2efa888-FrostedZenith — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-c2efa888-FrostedZenith",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-18T04:42:59+00:00",
-      "updatedAt": "2026-07-18T04:42:59+00:00",
+      "publishedAt": "2026-07-18T07:30:39+00:00",
+      "updatedAt": "2026-07-18T07:30:39+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-18T04:42:59+00:00",
+  "tiered_at": "2026-07-18T07:30:39+00:00",
   "free_preview_count": 3
 }
