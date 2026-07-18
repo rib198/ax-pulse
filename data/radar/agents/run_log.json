@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-18T20:42:10+00:00",
+  "run_at": "2026-07-18T22:42:51+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 21.594,
+      "duration_s": 19.081,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 358 signals from 31 source families",
+        "collected 357 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 847 items",
-        "by tier: press=522, official=167, research=128, community=30"
+        "tagged 846 items",
+        "by tier: press=522, official=168, research=128, community=28"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 847 items, top priority=0.491"
+        "ranked 846 items, top priority=0.513"
       ],
       "error": null
     },
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.161,
+      "duration_s": 0.162,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
         "24 events (0 new)",
-        "by type: pricing_change=3, policy_signal=3, personnel_move=6, acquisition=3, model_release=9"
+        "by type: pricing_change=3, policy_signal=3, personnel_move=6, model_release=9, acquisition=3"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 11.407,
+      "duration_s": 10.058,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 6.85,
+      "duration_s": 6.413,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 6.67,
+      "duration_s": 6.137,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=847, opps=3, calls=3"
+        "items=846, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.533,
+      "duration_s": 1.416,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تظهر زيادة ملحوظة في إشارات النشاط هذا الأسبوع، مما يشير إلى اهتمام متزايد في ا…"
+        "insight via openai: شهدت الإشارات الجديدة تركيزًا على تغييرات الأسعار والإشارات التنظيمية، مما يشير…"
       ],
       "error": null
     },
