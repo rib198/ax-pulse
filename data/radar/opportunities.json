@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-18T12:52:17+00:00",
+  "generated_at": "2026-07-18T14:48:51+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 845,
+  "corpus_count": 847,
   "opportunities": [
     {
-      "id": "video-understanding-application",
-      "title_ar": "تطبيقات فهم الفيديو المتقدم",
-      "thesis_ar": "تقدم نماذج فهم الفيديو المفتوحة يفتح المجال لتطبيقات جديدة في مجالات متعددة مثل التعليم والترفيه. مع تزايد الحاجة إلى تفاعل الفيديو المباشر، فإن هناك فرصة لتطوير حلول مبتكرة.",
-      "buyer_ar": "شركات التعليم والترفيه",
-      "sellable_product_ar": "حلول برمجية لفهم وتحليل الفيديو",
-      "first_paid_test_ar": "تطوير نموذج أولي لتحليل فيديو قصير",
-      "tools_ar": "أدوات تحليل الفيديو، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "video-understanding-solutions",
+      "title_ar": "حلول لفهم الفيديو",
+      "thesis_ar": "تقدم الأبحاث الحديثة في فهم الفيديو إمكانيات كبيرة لتطبيقات العالم الحقيقي. مع تقدم نماذج مفتوحة المصدر، هناك حاجة ملحة لتطوير حلول فعالة في هذا المجال.",
+      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق الرقمي",
+      "sellable_product_ar": "نظام لفهم وتحليل الفيديوهات باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل مقطع فيديو قصير",
+      "tools_ar": "أدوات تحليل الفيديو، نماذج تعلم الآلة، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.14935",
         "huggingface_daily_papers:2607.14202",
@@ -50,23 +50,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-18T12:52:17+00:00",
-      "updatedAt": "2026-07-18T12:52:17+00:00",
+      "publishedAt": "2026-07-18T14:48:51+00:00",
+      "updatedAt": "2026-07-18T14:48:51+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "الزيادة في نماذج تحويل النص إلى صورة تشير إلى طلب متزايد على هذه التقنية في مجالات مثل التسويق والفنون. يمكن استغلال هذه النماذج لتقديم خدمات إبداعية مخصصة.",
-      "buyer_ar": "وكالات التسويق والفنانين",
-      "sellable_product_ar": "خدمات تحويل النص إلى صورة مخصصة",
+      "id": "multimodal-ai-tools",
+      "title_ar": "أدوات الذكاء الاصطناعي متعددة الوسائط",
+      "thesis_ar": "تزايد الطلب على أدوات الذكاء الاصطناعي التي تدعم النصوص والصور معًا. هذا يفتح المجال لتطوير تطبيقات جديدة تخدم مجالات متعددة.",
+      "buyer_ar": "شركات التكنولوجيا والإبداع",
+      "sellable_product_ar": "أداة لتحويل النصوص إلى صور والعكس باستخدام الذكاء الاصطناعي",
       "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم، واجهات برمجة التطبيقات",
+      "tools_ar": "نموذج تعلم الآلة، واجهة مستخدم، مكتبات معالجة الصور",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:dmmn/krea2-gyaru",
-        "huggingface_models:DeverStyle/Krea-2-Premium-Loras",
-        "huggingface_models:onamissiononamission/Forced_BJ"
+        "huggingface_models:Guilherme34/Firefly-v5-alpha-testing",
+        "huggingface_models:el4/Xenon-26B-A4B",
+        "huggingface_models:DeverStyle/Krea-2-Premium-Loras"
       ],
       "confidence": 0.75,
       "source": "openai",
@@ -75,8 +75,15 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "dmmn/krea2-gyaru — text-to-image",
-          "url": "https://huggingface.co/dmmn/krea2-gyaru",
+          "title": "Guilherme34/Firefly-v5-alpha-testing — text-generation",
+          "url": "https://huggingface.co/Guilherme34/Firefly-v5-alpha-testing",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "el4/Xenon-26B-A4B — image-text-to-text",
+          "url": "https://huggingface.co/el4/Xenon-26B-A4B",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -86,13 +93,6 @@
           "url": "https://huggingface.co/DeverStyle/Krea-2-Premium-Loras",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "onamissiononamission/Forced_BJ — text-to-image",
-          "url": "https://huggingface.co/onamissiononamission/Forced_BJ",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,29 +100,36 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-18T12:52:17+00:00",
-      "updatedAt": "2026-07-18T12:52:17+00:00",
+      "publishedAt": "2026-07-18T14:48:51+00:00",
+      "updatedAt": "2026-07-18T14:48:51+00:00",
       "sortOrder": 1
     },
     {
-      "id": "ai-driven-customer-loyalty",
-      "title_ar": "نموذج ولاء العملاء المعتمد على الذكاء الاصطناعي",
-      "thesis_ar": "تطور الذكاء الاصطناعي في مجال التجارة يعيد تشكيل نماذج ولاء العملاء التقليدية. يمكن تطوير حلول جديدة تعزز من تفاعل العملاء مع العلامات التجارية.",
+      "id": "ai-customer-loyalty",
+      "title_ar": "نموذج ولاء العملاء المدعوم بالذكاء الاصطناعي",
+      "thesis_ar": "تغيرت paradigms ولاء العملاء مع تطور الذكاء الاصطناعي. هناك فرصة لتطوير نماذج جديدة تعزز من تفاعل العملاء.",
       "buyer_ar": "شركات التجارة الإلكترونية",
-      "sellable_product_ar": "نظام ولاء عملاء معتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام ولاء بسيط",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
+      "sellable_product_ar": "نظام ولاء عملاء يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تجربة أولية لنموذج ولاء بسيط",
+      "tools_ar": "نموذج تعلم الآلة، قاعدة بيانات العملاء، واجهة برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2607.13998v1",
-        "huggingface_daily_papers:2607.14903v1",
-        "huggingface_daily_papers:2607.14202"
+        "huggingface_daily_papers:2607.14202",
+        "huggingface_daily_papers:2607.14935"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding",
+          "url": "https://huggingface.co/papers/2607.14935",
+          "score": 0.513,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "KeyFrame-Compass: Towards Comprehensive Evaluation of Keyframe-Conditioned Video Generation",
@@ -143,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-18T12:52:17+00:00",
-      "updatedAt": "2026-07-18T12:52:17+00:00",
+      "publishedAt": "2026-07-18T14:48:51+00:00",
+      "updatedAt": "2026-07-18T14:48:51+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-18T12:52:17+00:00",
+  "tiered_at": "2026-07-18T14:48:51+00:00",
   "free_preview_count": 3
 }
