@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-07-20T19:28:35+00:00",
+  "generated_at": "2026-07-20T21:05:00+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 842,
+  "corpus_count": 838,
   "opportunities": [
     {
-      "id": "text-to-image-design",
-      "title_ar": "تطوير خدمات تصميم الصور باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في مجالات متعددة مثل التصميم الجرافيكي والإعلانات. يمكن أن توفر هذه الخدمات حلولاً مبتكرة وسريعة.",
-      "buyer_ar": "شركات التصميم والإعلانات",
-      "sellable_product_ar": "خدمات تصميم صور مخصصة باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تصميم صورة مخصص بناءً على نص",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات التصميم، منصات تسويق",
-      "capital_ar": "منخفض",
+      "id": "healthcare-agent-model",
+      "title_ar": "تطوير نموذج ذكاء اصطناعي متخصص في الرعاية الصحية",
+      "thesis_ar": "تزايد الحاجة إلى نماذج ذكاء اصطناعي متخصصة في الرعاية الصحية لتقديم استشارات طبية دقيقة. هذا الوقت مناسب لتلبية الطلب المتزايد على حلول الذكاء الاصطناعي في القطاع الصحي.",
+      "buyer_ar": "مستشفيات، عيادات، شركات التأمين الصحي",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي يقدم استشارات طبية وتحليل بيانات المرضى",
+      "first_paid_test_ar": "تقديم استشارة طبية واحدة باستخدام النموذج",
+      "tools_ar": "بيانات طبية، نموذج ذكاء اصطناعي، واجهة مستخدم",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Nothankyou88/Loratime",
-        "huggingface_models:artificialguybr/tshirtdesignredmond-2-1v-t-shirt-design-lora-for-freedomredmond-sd-2-1",
-        "huggingface_models:artificialguybr/selfiephotographyredmond-selfie-photography-lora-for-sdxl"
+        "2607.15314",
+        "2607.09082",
+        "2607.11683"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources",
+          "url": "https://huggingface.co/papers/2606.29538",
+          "score": 0.514,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "badtheorylabs/BTL-3-Compact — text-generation",
+          "url": "https://huggingface.co/badtheorylabs/BTL-3-Compact",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "aimalias/br13 — text-to-image",
+          "url": "https://huggingface.co/aimalias/br13",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "aimalias/j4n4 — text-to-image",
+          "url": "https://huggingface.co/aimalias/j4n4",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "Nothankyou88/Loratime — text-to-image",
           "url": "https://huggingface.co/Nothankyou88/Loratime",
-          "score": 0.488,
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "artificialguybr/tshirtdesignredmond-2-1v-t-shirt-design-lora-for-freedomredmond-sd-2-1 — text-to-image",
-          "url": "https://huggingface.co/artificialguybr/tshirtdesignredmond-2-1v-t-shirt-design-lora-for-freedomredmond-sd-2-1",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "artificialguybr/selfiephotographyredmond-selfie-photography-lora-for-sdxl — text-to-image",
-          "url": "https://huggingface.co/artificialguybr/selfiephotographyredmond-selfie-photography-lora-for-sdxl",
-          "score": 0.488,
+          "title": "uzumix/SonyDIGICAM_flux1d — text-to-image",
+          "url": "https://huggingface.co/uzumix/SonyDIGICAM_flux1d",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +71,125 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-20T19:28:35+00:00",
-      "updatedAt": "2026-07-20T19:28:35+00:00",
+      "publishedAt": "2026-07-20T21:05:00+00:00",
+      "updatedAt": "2026-07-20T21:05:00+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-design-tool",
+      "title_ar": "أداة تصميم تعتمد على تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على أدوات التصميم السهلة الاستخدام التي تعتمد على الذكاء الاصطناعي. يمكن أن تلبي هذه الأداة احتياجات المصممين والمبدعين بشكل فعال.",
+      "buyer_ar": "مصممو جرافيك، شركات تسويق، مؤسسات تعليمية",
+      "sellable_product_ar": "أداة تصميم تعتمد على تحويل النص إلى صورة باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تصميم واحد باستخدام الأداة",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، بيانات تدريب",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "aimalias/br13",
+        "aimalias/j4n4",
+        "artificialguybr/tshirtdesignredmond-2-1v-t-shirt-design-lora-for-freedomredmond-sd-2-1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources",
+          "url": "https://huggingface.co/papers/2606.29538",
+          "score": 0.514,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "badtheorylabs/BTL-3-Compact — text-generation",
+          "url": "https://huggingface.co/badtheorylabs/BTL-3-Compact",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "aimalias/br13 — text-to-image",
+          "url": "https://huggingface.co/aimalias/br13",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "aimalias/j4n4 — text-to-image",
+          "url": "https://huggingface.co/aimalias/j4n4",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Nothankyou88/Loratime — text-to-image",
+          "url": "https://huggingface.co/Nothankyou88/Loratime",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "uzumix/SonyDIGICAM_flux1d — text-to-image",
+          "url": "https://huggingface.co/uzumix/SonyDIGICAM_flux1d",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-20T21:05:00+00:00",
+      "updatedAt": "2026-07-20T21:05:00+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "cybersecurity-penetration-testing-tool",
+      "title_ar": "أداة اختبار اختراق تعتمد على الذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد التهديدات السيبرانية، هناك حاجة متزايدة لأدوات اختبار الاختراق. يمكن أن توفر هذه الأداة حلولاً فعالة للمؤسسات لحماية بياناتها.",
+      "buyer_ar": "شركات تكنولوجيا المعلومات، مؤسسات أمن المعلومات",
+      "sellable_product_ar": "أداة اختبار اختراق تعتمد على الذكاء الاصطناعي لتحليل الثغرات",
+      "first_paid_test_ar": "تنفيذ اختبار اختراق واحد على نظام محدد",
+      "tools_ar": "نموذج ذكاء اصطناعي، بيانات اختبار، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "nagarhimanshu37/HackerNet-Model",
+        "huggingface_models:badtheorylabs/BTL-3-Compact",
+        "huggingface_models:kmseong/llama2_7b-chat-gsm8k-safelora-thr0.35-r16-lr1e-4"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "badtheorylabs/BTL-3-Compact — text-generation",
+          "url": "https://huggingface.co/badtheorylabs/BTL-3-Compact",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "kmseong/llama2_7b-chat-gsm8k-safelora-thr0.35-r16-lr1e-4 — text-generation",
+          "url": "https://huggingface.co/kmseong/llama2_7b-chat-gsm8k-safelora-thr0.35-r16-lr1e-4",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-20T21:05:00+00:00",
+      "updatedAt": "2026-07-20T21:05:00+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-20T19:28:35+00:00",
+  "tiered_at": "2026-07-20T21:05:00+00:00",
   "free_preview_count": 3
 }
