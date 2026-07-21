@@ -1,78 +1,42 @@
 {
-  "generated_at": "2026-07-21T13:18:56+00:00",
+  "generated_at": "2026-07-21T15:33:28+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 824,
+  "corpus_count": 821,
   "opportunities": [
     {
-      "id": "human-object-video-personalization",
-      "title_ar": "تخصيص الفيديوهات الموجهة للإنسان والشيء",
-      "thesis_ar": "تزايد الطلب على محتوى الفيديو المخصص يعزز الحاجة إلى تقنيات متقدمة في تخصيص الفيديو. يمكن استخدام الذكاء الاصطناعي لتحسين تجربة المستخدم من خلال تخصيص المحتوى بشكل فعال.",
-      "buyer_ar": "شركات إنتاج المحتوى الرقمي ومنصات الفيديو",
-      "sellable_product_ar": "أداة تخصيص الفيديو المدعومة بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتخصيص فيديو قصير لمجموعة مختارة من المستخدمين",
-      "tools_ar": "نموذج تعلم عميق، واجهة مستخدم، قاعدة بيانات للمستخدمين",
-      "capital_ar": "منخفض",
+      "id": "deep-search-agents",
+      "title_ar": "تطوير وكلاء بحث ذكي",
+      "thesis_ar": "تزايد الحاجة إلى وكلاء بحث ذاتي التعلم في بيئات قابلة للتحقق. هذا يمكن أن يحسن من تجربة المستخدم ويعزز من فعالية البحث.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "أداة تدريب لوكلاء البحث الذكي",
+      "first_paid_test_ar": "تطوير نموذج أولي لوكيل بحث يعمل على مجموعة بيانات محددة",
+      "tools_ar": "أدوات تعلم الآلة، بيئات محاكاة، مكتبات برمجية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.18217",
-        "huggingface_daily_papers:2607.16401",
-        "huggingface_daily_papers:2607.18144"
+        "2607.07820",
+        "2607.14183",
+        "2607.18138"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.52,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+          "url": "https://huggingface.co/papers/2607.07820",
+          "score": 0.559,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement",
           "url": "https://huggingface.co/papers/2607.18217",
-          "score": 0.538,
+          "score": 0.542,
           "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Apple-π: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence",
-          "url": "https://huggingface.co/papers/2607.16401",
-          "score": 0.475,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Do Language Models Dream of Binding Molecules? Benchmarking LLMs under Spatial Constraints",
-          "url": "https://huggingface.co/papers/2607.18144",
-          "score": 0.47,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-21T13:18:56+00:00",
-      "updatedAt": "2026-07-21T13:18:56+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multimodal-llm-for-medical-imaging",
-      "title_ar": "نموذج لغة متعدد الوسائط للتصوير الطبي",
-      "thesis_ar": "تزايد استخدام التصوير الطبي يتطلب أدوات ذكاء اصطناعي لتحليل الصور بشكل فعال. يمكن لنماذج اللغة الكبيرة أن تعزز دقة التشخيص.",
-      "buyer_ar": "المستشفيات والمراكز الطبية",
-      "sellable_product_ar": "أداة تحليل الصور الطبية المدعومة بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل لعدد محدود من الصور الطبية",
-      "tools_ar": "نموذج تعلم عميق، مجموعة بيانات طبية، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.16609",
-        "huggingface_daily_papers:2607.14183",
-        "huggingface_daily_papers:2607.17250"
-      ],
-      "confidence": 0.65,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World",
@@ -82,79 +46,178 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied Learning",
-          "url": "https://huggingface.co/papers/2607.14183",
-          "score": 0.474,
+          "title": "GigaChat Audio: Time-aware Large Audio Language Model",
+          "url": "https://huggingface.co/papers/2607.10387",
+          "score": 0.501,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Can Multimodal Large Language Models Understand OCT?",
-          "url": "https://huggingface.co/papers/2607.16609",
-          "score": 0.473,
+          "title": "GigaAM Multilingual: Foundation Model for Underrepresented Languages",
+          "url": "https://huggingface.co/papers/2607.10371",
+          "score": 0.499,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yasu-oh/gemma-4-12B-it-qat-NVFP4 — image-text-to-text",
+          "url": "https://huggingface.co/yasu-oh/gemma-4-12B-it-qat-NVFP4",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-21T13:18:56+00:00",
-      "updatedAt": "2026-07-21T13:18:56+00:00",
+      "publishedAt": "2026-07-21T15:33:28+00:00",
+      "updatedAt": "2026-07-21T15:33:28+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "video-personalization",
+      "title_ar": "شخصنة الفيديو باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تخصيص الفيديوهات بناءً على تفاعل المستخدم مع العناصر يعد فرصة كبيرة في السوق. يمكن أن يعزز من تجربة المستخدم ويزيد من التفاعل.",
+      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق",
+      "sellable_product_ar": "نظام تخصيص فيديو ذكي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتخصيص فيديو لمستخدمين محددين",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات تعلم الآلة، منصات تطوير الفيديو",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2607.18217",
+        "2607.16401",
+        "2607.16609"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.52,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+          "url": "https://huggingface.co/papers/2607.07820",
+          "score": 0.559,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement",
+          "url": "https://huggingface.co/papers/2607.18217",
+          "score": 0.542,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World",
+          "url": "https://huggingface.co/papers/2607.17250",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "GigaChat Audio: Time-aware Large Audio Language Model",
+          "url": "https://huggingface.co/papers/2607.10387",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "GigaAM Multilingual: Foundation Model for Underrepresented Languages",
+          "url": "https://huggingface.co/papers/2607.10371",
+          "score": 0.499,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yasu-oh/gemma-4-12B-it-qat-NVFP4 — image-text-to-text",
+          "url": "https://huggingface.co/yasu-oh/gemma-4-12B-it-qat-NVFP4",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-21T15:33:28+00:00",
+      "updatedAt": "2026-07-21T15:33:28+00:00",
       "sortOrder": 1
     },
     {
-      "id": "customer-service-llm-optimization",
-      "title_ar": "تحسين نماذج اللغة الكبيرة لخدمة العملاء",
-      "thesis_ar": "تزايد الاعتماد على روبوتات خدمة العملاء يتطلب تحسين جودة الإجابات. يمكن استخدام نماذج اللغة الكبيرة لتحسين التفاعل مع العملاء.",
-      "buyer_ar": "شركات تقديم خدمات العملاء والدعم الفني",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحسين جودة خدمة العملاء",
-      "first_paid_test_ar": "تطبيق نموذج على مجموعة صغيرة من استفسارات العملاء",
-      "tools_ar": "نموذج لغة، واجهة برمجة تطبيقات، نظام إدارة العملاء",
-      "capital_ar": "منخفض",
+      "id": "multimodal-llm",
+      "title_ar": "نماذج لغوية متعددة الوسائط",
+      "thesis_ar": "تزايد الطلب على نماذج لغوية تتعامل مع بيانات متعددة الوسائط. هذه النماذج يمكن أن تحسن من دقة الفهم والتفاعل.",
+      "buyer_ar": "شركات التكنولوجيا الصحية والتسويق",
+      "sellable_product_ar": "نموذج لغوي متعدد الوسائط للتطبيقات الطبية",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل بيانات طبية متعددة الوسائط",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، منصات تطوير التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2607.18039v1",
-        "huggingface_daily_papers:2607.14183",
-        "huggingface_daily_papers:2607.16609"
+        "2607.16609",
+        "2607.17250",
+        "2607.18144"
       ],
-      "confidence": 0.6,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.52,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Evidence-in-the-Loop: Trace-Driven Optimization for Customer-Service LLM Agents",
-          "url": "http://arxiv.org/abs/2607.18039v1",
-          "score": 0.489,
+          "source_id": "huggingface_daily_papers",
+          "title": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+          "url": "https://huggingface.co/papers/2607.07820",
+          "score": 0.559,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied Learning",
-          "url": "https://huggingface.co/papers/2607.14183",
-          "score": 0.474,
+          "title": "HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement",
+          "url": "https://huggingface.co/papers/2607.18217",
+          "score": 0.542,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Can Multimodal Large Language Models Understand OCT?",
-          "url": "https://huggingface.co/papers/2607.16609",
-          "score": 0.473,
+          "title": "EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World",
+          "url": "https://huggingface.co/papers/2607.17250",
+          "score": 0.516,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "GigaChat Audio: Time-aware Large Audio Language Model",
+          "url": "https://huggingface.co/papers/2607.10387",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "GigaAM Multilingual: Foundation Model for Underrepresented Languages",
+          "url": "https://huggingface.co/papers/2607.10371",
+          "score": 0.499,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yasu-oh/gemma-4-12B-it-qat-NVFP4 — image-text-to-text",
+          "url": "https://huggingface.co/yasu-oh/gemma-4-12B-it-qat-NVFP4",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-21T13:18:56+00:00",
-      "updatedAt": "2026-07-21T13:18:56+00:00",
+      "publishedAt": "2026-07-21T15:33:28+00:00",
+      "updatedAt": "2026-07-21T15:33:28+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-21T13:18:56+00:00",
+  "tiered_at": "2026-07-21T15:33:28+00:00",
   "free_preview_count": 3
 }
