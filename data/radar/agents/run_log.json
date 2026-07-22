@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-22T05:07:38+00:00",
+  "run_at": "2026-07-22T08:11:54+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,13 +26,13 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 333.957,
+      "duration_s": 21.256,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 328 signals from 31 source families",
-        "7 source errors (non-fatal)"
+        "collected 337 signals from 31 source families",
+        "6 source errors (non-fatal)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 810 items",
-        "by tier: press=508, official=169, research=103, community=30"
+        "tagged 819 items",
+        "by tier: press=507, official=169, research=118, community=25"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.03,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 810 items, top priority=0.542"
+        "ranked 819 items, top priority=0.529"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.064,
+      "duration_s": 0.067,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+10 new model events",
+        "+8 new model events",
         "300 total"
       ],
       "error": null
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.155,
+      "duration_s": 0.163,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "27 events (3 new)",
-        "by type: pricing_change=4, model_release=16, policy_signal=3, personnel_move=2, acquisition=2"
+        "26 events (0 new)",
+        "by type: pricing_change=4, model_release=15, policy_signal=3, personnel_move=2, acquisition=2"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.017,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,19 +135,20 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 9.395,
+      "duration_s": 9.582,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 3 opportunities"
+        "openai produced 0 opportunities",
+        "rule fallback produced 4 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 6.258,
+      "duration_s": 7.362,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -166,7 +167,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 3 free / 0 premium",
+        "opps: 3 free / 1 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +189,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.625,
+      "duration_s": 5.53,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +218,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=810, opps=3, calls=3"
+        "items=819, opps=4, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.613,
+      "duration_s": 1.376,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: لوحظ انخفاض في إجمالي الإشارات بمقدار 11 إشارة، مما يشير إلى تراجع في النشاط ال…"
+        "insight via openai: تزايدت إشارات النشاط بشكل ملحوظ، حيث شهدنا زيادة في عدد الإشارات اليومية بمعدل …"
       ],
       "error": null
     },

@@ -1,90 +1,63 @@
 {
-  "generated_at": "2026-07-22T05:07:38+00:00",
+  "generated_at": "2026-07-22T08:11:54+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 810,
+  "corpus_count": 819,
   "opportunities": [
     {
-      "id": "geo-localization-tech",
-      "title_ar": "تكنولوجيا تحديد المواقع الجغرافية المتقدمة",
-      "thesis_ar": "تزايد الحاجة إلى تقنيات تحديد المواقع الجغرافية الدقيقة في التطبيقات التجارية. يمكن استخدام الأساليب الحديثة لمطابقة الملاحظات الأرضية مع الصور الفضائية لتعزيز الدقة.",
-      "buyer_ar": "شركات التكنولوجيا، شركات النقل، المؤسسات الحكومية",
-      "sellable_product_ar": "خدمة تحديد المواقع الجغرافية باستخدام تقنيات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تجربة مجانية لمطابقة موقع واحد مع صور فضائية",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيانات فضائية، واجهة برمجة التطبيقات",
+      "id": "ai_income_tools",
+      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
+      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
+      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
+      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
       "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.15491",
-        "huggingface_daily_papers:2607.18091",
-        "huggingface_daily_papers:2607.16617"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.54,
+      "signal_count": 8,
+      "avg_score": 0.5,
+      "confidence": 0.85,
+      "source": "rules",
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers",
+          "url": "https://huggingface.co/papers/2607.19139",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Trajectory-aware Cross-view Geo-localization with Sequential Observations",
           "url": "https://huggingface.co/papers/2607.15491",
-          "score": 0.542,
+          "score": 0.516,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "SciForma: Structure-Faithful Generation of Scientific Diagrams",
           "url": "https://huggingface.co/papers/2607.18091",
-          "score": 0.537,
+          "score": 0.516,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
-          "url": "https://huggingface.co/papers/2607.16617",
-          "score": 0.527,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-22T05:07:38+00:00",
-      "updatedAt": "2026-07-22T05:07:38+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "workflow-automation-ai",
-      "title_ar": "أتمتة سير العمل باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة لأتمتة سير العمل. وجود حاجة ملحة لتطوير منصات قابلة للتعديل لتحسين الكفاءة.",
-      "buyer_ar": "شركات البرمجيات، المؤسسات الكبيرة، الشركات الناشئة",
-      "sellable_product_ar": "منصة أتمتة سير العمل القابلة للتعديل",
-      "first_paid_test_ar": "تقديم نموذج أولي لمنصة أتمتة بسيطة",
-      "tools_ar": "نموذج لغة، واجهة مستخدم، بنية تحتية سحابية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.16617",
-        "huggingface_daily_papers:2607.19322",
-        "arxiv_papers:2607.19297v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
-          "url": "https://huggingface.co/papers/2607.16617",
-          "score": 0.527,
+          "title": "AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents",
+          "url": "https://huggingface.co/papers/2607.18754",
+          "score": 0.502,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Two-Level Meta-Rubrics for Evaluating Open-Ended Generation: GAMUT, a Benchmark for Factual Completeness",
           "url": "https://huggingface.co/papers/2607.19322",
-          "score": 0.524,
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Agents in the Wild: Where Research Meets Deployment",
+          "url": "http://arxiv.org/abs/2607.19336v1",
+          "score": 0.492,
           "trust_tier": "research"
         },
         {
@@ -93,6 +66,13 @@
           "url": "http://arxiv.org/abs/2607.19297v1",
           "score": 0.492,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
+          "url": "http://arxiv.org/abs/2607.19190v1",
+          "score": 0.482,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -100,36 +80,184 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-22T05:07:38+00:00",
-      "updatedAt": "2026-07-22T05:07:38+00:00",
+      "publishedAt": "2026-07-22T08:11:54+00:00",
+      "updatedAt": "2026-07-22T08:11:54+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "ai_income_automation",
+      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
+      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
+      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
+      "tools_ar": "n8n أو Make، API، نموذج AI",
+      "capital_ar": "منخفض",
+      "signal_count": 8,
+      "avg_score": 0.49,
+      "confidence": 0.85,
+      "source": "rules",
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
+          "url": "https://huggingface.co/papers/2607.16617",
+          "score": 0.529,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents",
+          "url": "https://huggingface.co/papers/2607.18754",
+          "score": 0.502,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Agents in the Wild: Where Research Meets Deployment",
+          "url": "http://arxiv.org/abs/2607.19336v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Graph-Based Agentic AI with LangGraph: Workflow Pathways for Long-Running Stateful Business Processes",
+          "url": "http://arxiv.org/abs/2607.19297v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
+          "url": "http://arxiv.org/abs/2607.19190v1",
+          "score": 0.482,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
+          "url": "https://huggingface.co/papers/2607.19191",
+          "score": 0.467,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
+          "url": "http://arxiv.org/abs/2607.19191v1",
+          "score": 0.461,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-22T08:11:54+00:00",
+      "updatedAt": "2026-07-22T08:11:54+00:00",
       "sortOrder": 1
     },
     {
-      "id": "personal-ai-services",
-      "title_ar": "خدمات الذكاء الاصطناعي الشخصي",
-      "thesis_ar": "التحول نحو الذكاء الاصطناعي الشخصي يتطلب خدمات مستمرة تتجاوز المحادثات. هناك فرصة لتطوير أنظمة ذكاء اصطناعي تتذكر وتتعلم من تفاعلات المستخدم.",
-      "buyer_ar": "شركات التكنولوجيا، مطورو التطبيقات، مقدمو الخدمات الصحية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي شخصي متكامل",
-      "first_paid_test_ar": "تقديم تجربة مجانية لنظام ذكاء اصطناعي يتفاعل مع المستخدم",
-      "tools_ar": "نموذج ذكاء اصطناعي، قاعدة بيانات، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.18975v1",
-        "arxiv_papers:2607.19201v1",
-        "huggingface_daily_papers:2607.19139"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "id": "ai_income_content",
+      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
+      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
+      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
+      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
+      "capital_ar": "بدون رأس مال",
+      "signal_count": 8,
+      "avg_score": 0.5,
+      "confidence": 0.85,
+      "source": "rules",
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers",
           "url": "https://huggingface.co/papers/2607.19139",
-          "score": 0.514,
+          "score": 0.529,
           "trust_tier": "research"
         },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Trajectory-aware Cross-view Geo-localization with Sequential Observations",
+          "url": "https://huggingface.co/papers/2607.15491",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Two-Level Meta-Rubrics for Evaluating Open-Ended Generation: GAMUT, a Benchmark for Factual Completeness",
+          "url": "https://huggingface.co/papers/2607.19322",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Agents in the Wild: Where Research Meets Deployment",
+          "url": "http://arxiv.org/abs/2607.19336v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Generative World Renderer at the Speed of Play",
+          "url": "https://huggingface.co/papers/2607.18703",
+          "score": 0.488,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "abcdsystems/Qwen3.5-9B-Abliterated-GDN-Hybrid-EXL3-6bpw — text-generation",
+          "url": "https://huggingface.co/abcdsystems/Qwen3.5-9B-Abliterated-GDN-Hybrid-EXL3-6bpw",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bean980310/aria-princess-fate-dit-anima-v1 — text-to-image",
+          "url": "https://huggingface.co/bean980310/aria-princess-fate-dit-anima-v1",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "zizhuow/mary-tachibana — text-to-image",
+          "url": "https://huggingface.co/zizhuow/mary-tachibana",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-22T08:11:54+00:00",
+      "updatedAt": "2026-07-22T08:11:54+00:00",
+      "sortOrder": 2
+    },
+    {
+      "id": "ai_income_services",
+      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
+      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
+      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
+      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
+      "capital_ar": "بدون رأس مال",
+      "signal_count": 8,
+      "avg_score": 0.43,
+      "confidence": 0.84,
+      "source": "rules",
+      "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "Mi-Memory: A Lifecycle Memory Framework for Personal AI",
@@ -139,22 +267,64 @@
         },
         {
           "source_id": "arxiv_papers",
-          "title": "MIRA-Ev:A Benchmark for Granular Evidence Detection and Relational Reasoning in Clinical Exams",
-          "url": "http://arxiv.org/abs/2607.19201v1",
-          "score": 0.472,
+          "title": "HACO: Hedged Agent Computing for Reliable LLM Systems",
+          "url": "http://arxiv.org/abs/2607.19215v1",
+          "score": 0.456,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Token Communications (TokCom): A Unified AI-Native Communication Framework",
+          "url": "http://arxiv.org/abs/2607.17628v1",
+          "score": 0.453,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AI Agent Communications in AI-Native 6G Network: Status, Challenges and Opportunities",
+          "url": "http://arxiv.org/abs/2607.18138v1",
+          "score": 0.441,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Competitive and Complementary Tools",
+          "url": "http://arxiv.org/abs/2607.18460v1",
+          "score": 0.42,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "openai_news",
+          "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+          "url": "https://openai.com/index/deutsche-telekom",
+          "score": 0.395,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "openai_news",
+          "title": "MUFG aims to become AI-native with OpenAI",
+          "url": "https://openai.com/index/mufg",
+          "score": 0.395,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "google_ai_blog",
+          "title": "Connect more of your apps to Search",
+          "url": "https://blog.google/products-and-platforms/products/search/connected-apps/",
+          "score": 0.395,
+          "trust_tier": "official"
         }
       ],
-      "tier": "free",
+      "tier": "premium",
       "status": "published",
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-22T05:07:38+00:00",
-      "updatedAt": "2026-07-22T05:07:38+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-07-22T08:11:54+00:00",
+      "updatedAt": "2026-07-22T08:11:54+00:00",
+      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-07-22T05:07:38+00:00",
+  "tiered_at": "2026-07-22T08:11:54+00:00",
   "free_preview_count": 3
 }
