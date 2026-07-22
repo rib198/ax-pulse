@@ -1,28 +1,35 @@
 {
-  "generated_at": "2026-07-22T15:30:50+00:00",
+  "generated_at": "2026-07-22T17:11:57+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 822,
+  "corpus_count": 829,
   "opportunities": [
     {
-      "id": "data-processing-automation",
-      "title_ar": "أتمتة معالجة البيانات باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في أتمتة سير العمل يجعلها فرصة مثالية لتحسين الكفاءة. يمكن تطوير منصة تفاعلية تسمح بإنشاء تدفقات بيانات قابلة للتعديل.",
-      "buyer_ar": "شركات تكنولوجيا المعلومات والبيانات",
-      "sellable_product_ar": "منصة أتمتة معالجة البيانات",
-      "first_paid_test_ar": "تقديم نموذج أولي لمنصة لأحد العملاء لاختبار فعالية الأتمتة",
-      "tools_ar": "نماذج لغة كبيرة، أدوات تطوير البرمجيات، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-diffusion",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "زيادة الاعتماد على نماذج تحويل النص إلى صورة يفتح آفاقًا جديدة في الإبداع الرقمي. مع تحسينات مستمرة في دقة وجودة الصور، يمكن استغلال هذه التكنولوجيا في مجالات متعددة.",
+      "buyer_ar": "شركات التصميم والإعلانات",
+      "sellable_product_ar": "خدمة إنشاء صور مخصصة باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لصورة مخصصة لشركة تصميم",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، خادم سحابي",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.16617",
-        "huggingface_daily_papers:2607.19191",
-        "arxiv_papers:2607.19297v1"
+        "2607.19139",
+        "2607.18091",
+        "2607.18703"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.52,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers",
+          "url": "https://huggingface.co/papers/2607.19139",
+          "score": 0.537,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
@@ -32,47 +39,11 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
-          "url": "https://huggingface.co/papers/2607.19191",
-          "score": 0.516,
+          "title": "SciForma: Structure-Faithful Generation of Scientific Diagrams",
+          "url": "https://huggingface.co/papers/2607.18091",
+          "score": 0.52,
           "trust_tier": "research"
         },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Graph-Based Agentic AI with LangGraph: Workflow Pathways for Long-Running Stateful Business Processes",
-          "url": "http://arxiv.org/abs/2607.19297v1",
-          "score": 0.492,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-22T15:30:50+00:00",
-      "updatedAt": "2026-07-22T15:30:50+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "geo-localization-solutions",
-      "title_ar": "حلول تحديد المواقع الجغرافية المتقدمة",
-      "thesis_ar": "تزايد الحاجة لتحديد المواقع الجغرافية بدقة من خلال دمج البيانات من مصادر متعددة. يمكن تطوير تطبيقات تستخدم تقنيات التعلم العميق لتحسين دقة تحديد المواقع.",
-      "buyer_ar": "شركات النقل والتوصيل، شركات الخرائط",
-      "sellable_product_ar": "تطبيق تحديد المواقع الجغرافية",
-      "first_paid_test_ar": "اختبار التطبيق في منطقة محددة مع بيانات حقيقية",
-      "tools_ar": "نماذج التعلم العميق، بيانات الأقمار الصناعية، تقنيات معالجة الصور",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.15491",
-        "huggingface_daily_papers:2607.19191",
-        "arxiv_papers:2607.19201v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Trajectory-aware Cross-view Geo-localization with Sequential Observations",
@@ -88,10 +59,10 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "MIRA-Ev:A Benchmark for Granular Evidence Detection and Relational Reasoning in Clinical Exams",
-          "url": "http://arxiv.org/abs/2607.19201v1",
-          "score": 0.472,
+          "source_id": "huggingface_daily_papers",
+          "title": "AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents",
+          "url": "https://huggingface.co/papers/2607.18754",
+          "score": 0.51,
           "trust_tier": "research"
         }
       ],
@@ -100,29 +71,57 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-22T15:30:50+00:00",
-      "updatedAt": "2026-07-22T15:30:50+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-07-22T17:11:57+00:00",
+      "updatedAt": "2026-07-22T17:11:57+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "interactive-world-models",
-      "title_ar": "نماذج العالم التفاعلي للألعاب",
-      "thesis_ar": "تزايد الطلب على تجارب الألعاب التفاعلية يعزز الحاجة إلى نماذج عالمية متقدمة. يمكن تطوير نماذج تفاعلية تدعم بيئات الألعاب المعقدة.",
-      "buyer_ar": "استوديوهات تطوير الألعاب",
-      "sellable_product_ar": "نموذج عالم تفاعلي للألعاب",
-      "first_paid_test_ar": "تقديم نموذج تفاعلي لأحد الاستوديوهات لاختبار فعاليته",
-      "tools_ar": "محركات الألعاب، نماذج التعلم العميق، أدوات تطوير البرمجيات",
+      "id": "large-language-models-automation",
+      "title_ar": "أتمتة تدفقات البيانات باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في أتمتة العمليات يتيح تحسين الكفاءة وتقليل الأخطاء. هذا الوقت المثالي للاستثمار في تطوير أدوات تسهل هذه الأتمتة.",
+      "buyer_ar": "شركات تكنولوجيا المعلومات والبيانات",
+      "sellable_product_ar": "أداة أتمتة تدفقات البيانات باستخدام نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم نموذج أولي لأداة أتمتة بسيطة لمشروع صغير",
+      "tools_ar": "نموذج لغة كبير، واجهة برمجة التطبيقات، خادم سحابي",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.19191",
-        "huggingface_daily_papers:2607.18754",
-        "arxiv_papers:2607.19201v1"
+        "2607.16617",
+        "2607.18754",
+        "2607.19191"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
+      "signal_count": 6,
+      "avg_score": 0.52,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers",
+          "url": "https://huggingface.co/papers/2607.19139",
+          "score": 0.537,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
+          "url": "https://huggingface.co/papers/2607.16617",
+          "score": 0.537,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SciForma: Structure-Faithful Generation of Scientific Diagrams",
+          "url": "https://huggingface.co/papers/2607.18091",
+          "score": 0.52,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Trajectory-aware Cross-view Geo-localization with Sequential Observations",
+          "url": "https://huggingface.co/papers/2607.15491",
+          "score": 0.517,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
@@ -134,14 +133,7 @@
           "source_id": "huggingface_daily_papers",
           "title": "AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents",
           "url": "https://huggingface.co/papers/2607.18754",
-          "score": 0.508,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MIRA-Ev:A Benchmark for Granular Evidence Detection and Relational Reasoning in Clinical Exams",
-          "url": "http://arxiv.org/abs/2607.19201v1",
-          "score": 0.472,
+          "score": 0.51,
           "trust_tier": "research"
         }
       ],
@@ -150,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-22T15:30:50+00:00",
-      "updatedAt": "2026-07-22T15:30:50+00:00",
+      "publishedAt": "2026-07-22T17:11:57+00:00",
+      "updatedAt": "2026-07-22T17:11:57+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "interactive-world-models",
+      "title_ar": "تطوير نماذج عالمية تفاعلية",
+      "thesis_ar": "زيادة الطلب على تجارب تفاعلية في الألعاب والتطبيقات يوفر فرصة كبيرة. نماذج العالم التفاعلي يمكن أن تعزز من تفاعل المستخدمين وتجعل التجارب أكثر ثراءً.",
+      "buyer_ar": "شركات تطوير الألعاب والتطبيقات",
+      "sellable_product_ar": "نموذج عالمي تفاعلي قابل للتخصيص",
+      "first_paid_test_ar": "تقديم تجربة تفاعلية بسيطة لمستخدمين مختارين",
+      "tools_ar": "محرك ألعاب، نموذج عالمي، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2607.19191",
+        "2607.18703",
+        "2607.18722"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.52,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers",
+          "url": "https://huggingface.co/papers/2607.19139",
+          "score": 0.537,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
+          "url": "https://huggingface.co/papers/2607.16617",
+          "score": 0.537,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SciForma: Structure-Faithful Generation of Scientific Diagrams",
+          "url": "https://huggingface.co/papers/2607.18091",
+          "score": 0.52,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Trajectory-aware Cross-view Geo-localization with Sequential Observations",
+          "url": "https://huggingface.co/papers/2607.15491",
+          "score": 0.517,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
+          "url": "https://huggingface.co/papers/2607.19191",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents",
+          "url": "https://huggingface.co/papers/2607.18754",
+          "score": 0.51,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-22T17:11:57+00:00",
+      "updatedAt": "2026-07-22T17:11:57+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-22T15:30:50+00:00",
+  "tiered_at": "2026-07-22T17:11:57+00:00",
   "free_preview_count": 3
 }
