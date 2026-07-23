@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-23T13:27:11+00:00",
+  "run_at": "2026-07-23T15:52:25+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 30.895,
+      "duration_s": 30.664,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 343 signals from 31 source families",
+        "collected 338 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.011,
       "written": [],
       "notes": [
         "injected 482 manual X items (skipped 18 of 500, avg score 0.146)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 825 items",
-        "by tier: press=508, official=165, research=121, community=31"
+        "tagged 820 items",
+        "by tier: press=508, official=165, research=121, community=26"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.032,
+      "duration_s": 0.031,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 825 items, top priority=0.553"
+        "ranked 820 items, top priority=0.554"
       ],
       "error": null
     },
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.07,
+      "duration_s": 0.062,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+8 new model events",
+        "+9 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.167,
+      "duration_s": 0.14,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "28 events (1 new)",
-        "by type: pricing_change=4, model_release=16, personnel_move=2, acquisition=4, policy_signal=2"
+        "27 events (0 new)",
+        "by type: pricing_change=4, model_release=15, personnel_move=2, acquisition=4, policy_signal=2"
       ],
       "error": null
     },
@@ -135,19 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 7.895,
+      "duration_s": 12.458,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 1 opportunities"
+        "openai produced 3 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.818,
+      "duration_s": 7.858,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -166,7 +166,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 1 free / 0 premium",
+        "opps: 3 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.865,
+      "duration_s": 6.167,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=825, opps=1, calls=3"
+        "items=820, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.822,
+      "duration_s": 1.715,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدنا زيادة في النشاط المتعلق بالإصدارات والتغييرات السعرية، مما يشير إلى اهتما…"
+        "insight via openai: يبدو أن نشاط تغيير الأسعار قد زاد بشكل ملحوظ، حيث تم رصد ثلاث تغييرات سعرية جدي…"
       ],
       "error": null
     },
@@ -242,7 +242,7 @@
       ],
       "notes": [
         "tracked 19 sources",
-        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
+        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
       ],
       "error": null
     }
