@@ -1,69 +1,40 @@
 {
-  "generated_at": "2026-07-23T01:54:21+00:00",
+  "generated_at": "2026-07-23T05:19:58+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 813,
+  "corpus_count": 817,
   "opportunities": [
     {
       "id": "game-based-data-generation",
-      "title_ar": "توليد بيانات معتمدة على الألعاب",
-      "thesis_ar": "تقدم G-MAD إطار عمل مفتوح المصدر لتوليد بيانات متعددة الرؤى لتحسين الكشف عن الأجسام الجوية. هذه التقنية تعالج قيود بناء مجموعات البيانات الحقيقية، مما يجعلها فرصة مثالية لتطوير حلول جديدة.",
-      "buyer_ar": "شركات الطيران، شركات الأمن، ومراكز البحث العلمي",
-      "sellable_product_ar": "إطار عمل لتوليد بيانات متعددة الرؤى للأغراض البحثية والتجارية",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد بيانات لمهمة معينة",
-      "tools_ar": "G-MAD، Arma3، أدوات تحليل البيانات",
+      "title_ar": "إطار توليد بيانات قائم على الألعاب",
+      "thesis_ar": "تقدم G-MAD حلاً مبتكرًا لتوليد بيانات متعددة المناظر للكشف عن الأجسام الجوية، مما يحل قيود بناء مجموعات البيانات الحقيقية. هذا الوقت هو الأنسب للاستثمار في تطوير حلول تعتمد على البيانات التي يمكن أن تعزز تقنيات الكشف.",
+      "buyer_ar": "شركات الطيران والمراقبة الجوية",
+      "sellable_product_ar": "خدمات توليد بيانات مخصصة للكشف عن الأجسام الجوية",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد بيانات لكشف الأجسام في بيئة محاكاة",
+      "tools_ar": "Arma3، أدوات تحليل البيانات، بيئة تطوير برمجيات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "2607.19942v1",
-        "2607.20145v1",
-        "2607.19895v1"
+        "huggingface_daily_papers:2607.19942",
+        "arxiv_papers:2607.19942v1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.51,
+      "signal_count": 2,
+      "avg_score": 0.58,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "G-MAD: A Game-Based Data Generation Framework for Multi-View RGB-T Aerial Object Detection",
+          "url": "https://huggingface.co/papers/2607.19942",
+          "score": 0.597,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "G-MAD: A Game-Based Data Generation Framework for Multi-View RGB-T Aerial Object Detection",
           "url": "http://arxiv.org/abs/2607.19942v1",
           "score": 0.57,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MOF-Sleuth: Tool-Grounded Reward Alignment for Explainable Fine-Grained MOF CIF Auditing",
-          "url": "http://arxiv.org/abs/2607.19935v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers",
-          "url": "https://huggingface.co/papers/2607.19139",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
-          "url": "https://huggingface.co/papers/2607.16617",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "The Ethics of Autonomous AI Agents for Offensive Security",
-          "url": "http://arxiv.org/abs/2607.20255v1",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "singelette/krearealism — text-to-image",
-          "url": "https://huggingface.co/singelette/krearealism",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,70 +42,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-23T01:54:21+00:00",
-      "updatedAt": "2026-07-23T01:54:21+00:00",
+      "publishedAt": "2026-07-23T05:19:58+00:00",
+      "updatedAt": "2026-07-23T05:19:58+00:00",
       "sortOrder": 0
     },
     {
-      "id": "editable-llm-data-pipelines",
-      "title_ar": "منصة بيانات قابلة للتحرير لنماذج اللغة الكبيرة",
-      "thesis_ar": "تتزايد الحاجة إلى أتمتة تدفقات معالجة البيانات باستخدام نماذج اللغة الكبيرة. توفر DataFlow-Harness منصة لبناء تدفقات بيانات قابلة للتحرير، مما يسهل الاستخدام العملي.",
-      "buyer_ar": "شركات التقنية، فرق تطوير البرمجيات، ومراكز البيانات",
-      "sellable_product_ar": "منصة لإنشاء تدفقات بيانات قابلة للتحرير",
-      "first_paid_test_ar": "تقديم مشروع تجريبي لتدفق بيانات بسيط",
-      "tools_ar": "DataFlow-Harness، أدوات البرمجة، نماذج اللغة الكبيرة",
+      "id": "language-guided-robotic-grasping",
+      "title_ar": "تقنية الإمساك المدعومة باللغة للروبوتات",
+      "thesis_ar": "تتطلب الروبوتات الحديثة القدرة على الإمساك بالأشياء في مشاهد معقدة، مما يجعل استخدام نماذج اللغة المرئية ضرورة. الفرصة الآن كبيرة بسبب الطلب المتزايد على الروبوتات الذكية في مختلف الصناعات.",
+      "buyer_ar": "شركات الروبوتات والصناعات التحويلية",
+      "sellable_product_ar": "نظام روبوتي متكامل للإمساك بالأشياء باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لإمساك الأشياء في سيناريوهات محددة",
+      "tools_ar": "نموذج لغة مرئية، أدوات برمجة الروبوتات، بيئة اختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2607.16617",
-        "2607.19935",
-        "2607.19895v1"
+        "huggingface_daily_papers:2607.20207",
+        "huggingface_daily_papers:2607.19790"
       ],
       "confidence": 0.65,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 2,
       "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "G-MAD: A Game-Based Data Generation Framework for Multi-View RGB-T Aerial Object Detection",
-          "url": "http://arxiv.org/abs/2607.19942v1",
-          "score": 0.57,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MOF-Sleuth: Tool-Grounded Reward Alignment for Explainable Fine-Grained MOF CIF Auditing",
-          "url": "http://arxiv.org/abs/2607.19935v1",
-          "score": 0.504,
+          "source_id": "huggingface_daily_papers",
+          "title": "Trace: A Taxonomy-Guided Environment for Multidomain Visual Reasoning",
+          "url": "https://huggingface.co/papers/2607.19790",
+          "score": 0.51,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers",
-          "url": "https://huggingface.co/papers/2607.19139",
-          "score": 0.501,
+          "title": "SeededGrasp: Language-Guided Grasping in Complex Scenes with Multiple Embodiments",
+          "url": "https://huggingface.co/papers/2607.20207",
+          "score": 0.509,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
-          "url": "https://huggingface.co/papers/2607.16617",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "The Ethics of Autonomous AI Agents for Offensive Security",
-          "url": "http://arxiv.org/abs/2607.20255v1",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "singelette/krearealism — text-to-image",
-          "url": "https://huggingface.co/singelette/krearealism",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,29 +84,35 @@
       "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-23T01:54:21+00:00",
-      "updatedAt": "2026-07-23T01:54:21+00:00",
+      "publishedAt": "2026-07-23T05:19:58+00:00",
+      "updatedAt": "2026-07-23T05:19:58+00:00",
       "sortOrder": 1
     },
     {
-      "id": "video-editing-with-diffusion-models",
-      "title_ar": "تحرير الفيديو باستخدام نماذج الانتشار",
-      "thesis_ar": "تقدم OSVE إطار عمل لتحرير الفيديو بشكل أسرع باستخدام نماذج الانتشار. هذه التقنية تعالج بطء عمليات التحرير التقليدية، مما يفتح المجال لتطبيقات جديدة.",
-      "buyer_ar": "استوديوهات الإنتاج، شركات الإعلام، ومطورو الألعاب",
-      "sellable_product_ar": "أداة لتحرير الفيديو باستخدام نماذج الانتشار",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحرير مقطع فيديو قصير",
-      "tools_ar": "OSVE، أدوات تحرير الفيديو، نماذج الانتشار",
-      "capital_ar": "منخفض",
+      "id": "autonomous-ai-security-agents",
+      "title_ar": "أدوات أمان ذاتية القيادة مدعومة بالذكاء الاصطناعي",
+      "thesis_ar": "تغير أدوات الأمان التقليدية مع ظهور الوكلاء الذاتيين المدعومين بالذكاء الاصطناعي، مما يوفر حلول أمان أكثر فعالية. هذا التوجه يتطلب استثمارًا في تطوير أدوات جديدة تواكب هذه التغيرات.",
+      "buyer_ar": "شركات الأمن السيبراني",
+      "sellable_product_ar": "أدوات أمان ذاتية تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة اختبار اختراق باستخدام وكيل ذاتي",
+      "tools_ar": "نموذج ذكاء اصطناعي، أدوات اختبار اختراق، بيئة تطوير",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "2607.19895v1",
-        "2607.19139",
-        "2607.20145v1"
+        "arxiv_papers:2607.20005",
+        "arxiv_papers:2607.19895"
       ],
       "confidence": 0.6,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.51,
+      "avg_score": 0.54,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "G-MAD: A Game-Based Data Generation Framework for Multi-View RGB-T Aerial Object Detection",
+          "url": "https://huggingface.co/papers/2607.19942",
+          "score": 0.597,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "G-MAD: A Game-Based Data Generation Framework for Multi-View RGB-T Aerial Object Detection",
@@ -173,39 +121,32 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "MOF-Sleuth: Tool-Grounded Reward Alignment for Explainable Fine-Grained MOF CIF Auditing",
-          "url": "http://arxiv.org/abs/2607.19935v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_daily_papers",
-          "title": "Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers",
-          "url": "https://huggingface.co/papers/2607.19139",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines",
-          "url": "https://huggingface.co/papers/2607.16617",
-          "score": 0.501,
+          "title": "SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD",
+          "url": "https://huggingface.co/papers/2607.20145",
+          "score": 0.54,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "The Ethics of Autonomous AI Agents for Offensive Security",
-          "url": "http://arxiv.org/abs/2607.20255v1",
-          "score": 0.499,
+          "title": "ChainWatch: A Kill Chain-Aligned Sequential Detection Framework for Multi-Step Attacks in MCP-Based AI Agent Systems",
+          "url": "http://arxiv.org/abs/2607.19432v1",
+          "score": 0.517,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "singelette/krearealism — text-to-image",
-          "url": "https://huggingface.co/singelette/krearealism",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Trace: A Taxonomy-Guided Environment for Multidomain Visual Reasoning",
+          "url": "https://huggingface.co/papers/2607.19790",
+          "score": 0.51,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SeededGrasp: Language-Guided Grasping in Complex Scenes with Multiple Embodiments",
+          "url": "https://huggingface.co/papers/2607.20207",
+          "score": 0.509,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -213,11 +154,11 @@
       "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-23T01:54:21+00:00",
-      "updatedAt": "2026-07-23T01:54:21+00:00",
+      "publishedAt": "2026-07-23T05:19:58+00:00",
+      "updatedAt": "2026-07-23T05:19:58+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-23T01:54:21+00:00",
+  "tiered_at": "2026-07-23T05:19:58+00:00",
   "free_preview_count": 3
 }
