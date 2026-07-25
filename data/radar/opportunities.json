@@ -1,330 +1,139 @@
 {
-  "generated_at": "2026-07-25T09:32:35+00:00",
-  "source": "agent_pipeline_v1+rules",
+  "generated_at": "2026-07-25T11:07:15+00:00",
+  "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 815,
+  "corpus_count": 819,
   "opportunities": [
     {
-      "id": "ai_income_tools",
-      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
-      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.48,
-      "confidence": 0.85,
-      "source": "rules",
+      "id": "deep-research-agent",
+      "title_ar": "تطوير وكيل بحث ذاتي التحسين",
+      "thesis_ar": "تزايد الحاجة لوكلاء قادرين على إيجاد حلول تلبي قيود متعددة في البحث العميق. هذا الاتجاه يتطلب أدوات أكثر كفاءة وموثوقية في معالجة البيانات.",
+      "buyer_ar": "مراكز البحث الأكاديمية والشركات التقنية",
+      "sellable_product_ar": "أداة بحث تعتمد على الذكاء الاصطناعي لتحسين كفاءة البحث",
+      "first_paid_test_ar": "تقديم نموذج أولي لوكيل بحث يحل مشكلة محددة في مجال معين",
+      "tools_ar": "أدوات تطوير البرمجيات، بيانات تدريب، خوارزميات الذكاء الاصطناعي",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.21461",
+        "arxiv_papers:2607.21412",
+        "huggingface_daily_papers:2607.20911"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
           "url": "https://huggingface.co/papers/2607.21461",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
-          "url": "http://arxiv.org/abs/2607.21482v1",
-          "score": 0.497,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Euclid-MCP: A Model Context Protocol Server for Deterministic Logical Reasoning via Prolog",
-          "url": "http://arxiv.org/abs/2607.21412v1",
-          "score": 0.497,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents",
-          "url": "https://huggingface.co/papers/2607.20709",
-          "score": 0.48,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Toward Continuous Assurance for the Democratization of AI Agent Creation in Industry",
-          "url": "http://arxiv.org/abs/2607.21495v1",
-          "score": 0.469,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "The Ethics of Autonomous AI Agents for Offensive Security",
-          "url": "http://arxiv.org/abs/2607.20255v1",
-          "score": 0.469,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
-          "url": "http://arxiv.org/abs/2607.21461v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents",
-          "url": "http://arxiv.org/abs/2607.20709v1",
-          "score": 0.462,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-25T09:32:35+00:00",
-      "updatedAt": "2026-07-25T09:32:35+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "ai_income_automation",
-      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
-      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
-      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
-      "tools_ar": "n8n أو Make، API، نموذج AI",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.48,
-      "confidence": 0.85,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
-          "url": "https://huggingface.co/papers/2607.21461",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
-          "url": "http://arxiv.org/abs/2607.21482v1",
-          "score": 0.497,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Euclid-MCP: A Model Context Protocol Server for Deterministic Logical Reasoning via Prolog",
-          "url": "http://arxiv.org/abs/2607.21412v1",
-          "score": 0.497,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents",
-          "url": "https://huggingface.co/papers/2607.20709",
-          "score": 0.48,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Toward Continuous Assurance for the Democratization of AI Agent Creation in Industry",
-          "url": "http://arxiv.org/abs/2607.21495v1",
-          "score": 0.469,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "The Ethics of Autonomous AI Agents for Offensive Security",
-          "url": "http://arxiv.org/abs/2607.20255v1",
-          "score": 0.469,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
-          "url": "http://arxiv.org/abs/2607.21461v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents",
-          "url": "http://arxiv.org/abs/2607.20709v1",
-          "score": 0.462,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-25T09:32:35+00:00",
-      "updatedAt": "2026-07-25T09:32:35+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
-      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
-      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
-      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.45,
-      "confidence": 0.84,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
-          "url": "http://arxiv.org/abs/2607.21482v1",
-          "score": 0.497,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Euclid-MCP: A Model Context Protocol Server for Deterministic Logical Reasoning via Prolog",
-          "url": "http://arxiv.org/abs/2607.21412v1",
-          "score": 0.497,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Toward Continuous Assurance for the Democratization of AI Agent Creation in Industry",
-          "url": "http://arxiv.org/abs/2607.21495v1",
-          "score": 0.469,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "The Ethics of Autonomous AI Agents for Offensive Security",
-          "url": "http://arxiv.org/abs/2607.20255v1",
-          "score": 0.469,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "The Boundaries of Automation: A Theory of Persistent Human Participation",
-          "url": "http://arxiv.org/abs/2607.21547v1",
-          "score": 0.447,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Regulating autonomous and agentic AI",
-          "url": "http://arxiv.org/abs/2607.21345v1",
-          "score": 0.418,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization",
-          "url": "http://arxiv.org/abs/2607.20382v1",
-          "score": 0.418,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "openai_news",
-          "title": "How Deutsche Telekom is rewiring telecommunications with AI",
-          "url": "https://openai.com/index/deutsche-telekom",
-          "score": 0.396,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-25T09:32:35+00:00",
-      "updatedAt": "2026-07-25T09:32:35+00:00",
-      "sortOrder": 2
-    },
-    {
-      "id": "ai_income_content",
-      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
-      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
-      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
-      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.46,
-      "confidence": 0.84,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents",
-          "url": "https://huggingface.co/papers/2607.20709",
-          "score": 0.48,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-8c57bb7c-Marianne — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-8c57bb7c-Marianne",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "The Ethics of Autonomous AI Agents for Offensive Security",
-          "url": "http://arxiv.org/abs/2607.20255v1",
-          "score": 0.469,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents",
-          "url": "http://arxiv.org/abs/2607.20709v1",
-          "score": 0.462,
+          "score": 0.534,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
           "url": "https://huggingface.co/papers/2607.20911",
-          "score": 0.461,
+          "score": 0.478,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Kwaipilot/KAT-Coder-V2.5-Dev — text-generation",
-          "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "the-fall-of-man/MiniMax-M3-uncensored — text-generation",
-          "url": "https://huggingface.co/the-fall-of-man/MiniMax-M3-uncensored",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
-          "score": 0.447,
-          "trust_tier": "official"
         }
       ],
-      "tier": "premium",
+      "tier": "free",
       "status": "published",
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-25T09:32:35+00:00",
-      "updatedAt": "2026-07-25T09:32:35+00:00",
-      "sortOrder": 3
+      "publishedAt": "2026-07-25T11:07:15+00:00",
+      "updatedAt": "2026-07-25T11:07:15+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "coding-agent-benchmark",
+      "title_ar": "إنشاء معيار لوكلاء البرمجة",
+      "thesis_ar": "تزايد استخدام وكلاء البرمجة في تطوير البرمجيات يتطلب معايير موحدة لتقييم أدائهم. هذا يفتح المجال لتطوير أدوات جديدة لتحسين الكفاءة.",
+      "buyer_ar": "شركات تطوير البرمجيات ومراكز البحث",
+      "sellable_product_ar": "منصة تقييم لوكلاء البرمجة متعددة المجالات",
+      "first_paid_test_ar": "تقديم اختبار تجريبي لوكيل برمجة في مجال محدد",
+      "tools_ar": "أدوات تطوير البرمجيات، بيانات اختبار، خوارزميات الذكاء الاصطناعي",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2607.20911",
+        "huggingface_daily_papers:2607.20709",
+        "huggingface_daily_papers:2607.21482v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+          "url": "https://huggingface.co/papers/2607.20911",
+          "score": 0.478,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents",
+          "url": "https://huggingface.co/papers/2607.20709",
+          "score": 0.477,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-25T11:07:15+00:00",
+      "updatedAt": "2026-07-25T11:07:15+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "educational-llm-benchmark",
+      "title_ar": "تطوير نماذج تعليمية تعتمد على الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في التعليم يتطلب أدوات تقيم فعالية هذه النماذج في تقديم المحتوى التعليمي. هناك فرصة لتطوير حلول تعليمية مبتكرة.",
+      "buyer_ar": "مدارس، جامعات، منصات تعليمية",
+      "sellable_product_ar": "نموذج تعليمي يعتمد على الذكاء الاصطناعي لتحسين تجربة التعلم",
+      "first_paid_test_ar": "تقديم نموذج تعليمي تجريبي لمادة معينة",
+      "tools_ar": "أدوات تطوير البرمجيات، بيانات تعليمية، خوارزميات الذكاء الاصطناعي",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2605.09635",
+        "huggingface_daily_papers:2607.21412",
+        "huggingface_daily_papers:2607.21461"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+          "url": "https://huggingface.co/papers/2607.21461",
+          "score": 0.534,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
+          "url": "https://huggingface.co/papers/2605.09635",
+          "score": 0.473,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-25T11:07:15+00:00",
+      "updatedAt": "2026-07-25T11:07:15+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-25T09:32:35+00:00",
+  "tiered_at": "2026-07-25T11:07:15+00:00",
   "free_preview_count": 3
 }
