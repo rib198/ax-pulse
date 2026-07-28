@@ -1,47 +1,81 @@
 {
-  "generated_at": "2026-07-27T22:55:06+00:00",
+  "generated_at": "2026-07-28T01:30:02+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 829,
+  "corpus_count": 820,
   "opportunities": [
     {
-      "id": "data-preparation-benchmarking",
-      "title_ar": "تطوير أداة تقييم جودة بيانات التدريب للذكاء الاصطناعي",
-      "thesis_ar": "تحديد جودة بيانات التدريب يعد أمرًا حاسمًا لنجاح نماذج الذكاء الاصطناعي. لا يوجد معيار موحد حاليًا، مما يتيح فرصة لإنشاء أداة تقييم فعالة.",
-      "buyer_ar": "شركات تطوير البرمجيات ومراكز الأبحاث",
+      "id": "multi-step-tool-use-agents",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي متعدد الخطوات",
+      "thesis_ar": "تزايد استخدام وكلاء الذكاء الاصطناعي في بيئات معقدة يتطلب أدوات فعالة. هناك فرصة لتطوير حلول تساعد في تحسين أداء هذه الوكلاء.",
+      "buyer_ar": "شركات التكنولوجيا المتقدمة",
+      "sellable_product_ar": "حلول برمجية لتحسين أداء الوكلاء",
+      "first_paid_test_ar": "تقديم نموذج أولي لوكيل يعمل في سيناريو محدد",
+      "tools_ar": "نموذج LLM، أدوات تطوير البرمجيات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2607.23722v1",
+        "arxiv_papers:2607.23733v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "AI Strategy: How to Choose What AI Product to Implement",
+          "url": "http://arxiv.org/abs/2607.23733v1",
+          "score": 0.469,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios",
+          "url": "http://arxiv.org/abs/2607.23722v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-28T01:30:02+00:00",
+      "updatedAt": "2026-07-28T01:30:02+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "benchmarking-llms-training-data",
+      "title_ar": "تطوير معيار لتقييم جودة بيانات التدريب للذكاء الاصطناعي",
+      "thesis_ar": "تحديد جودة بيانات التدريب يعد أمرًا حيويًا لنجاح نماذج الذكاء الاصطناعي. مع عدم وجود معيار موحد، هناك فرصة لإنشاء أداة تقييم تسهل على الشركات تحسين بياناتها.",
+      "buyer_ar": "شركات تطوير الذكاء الاصطناعي",
       "sellable_product_ar": "أداة تقييم جودة بيانات التدريب",
-      "first_paid_test_ar": "تقديم اختبار مجاني لتقييم بيانات تدريب نموذج محدد",
-      "tools_ar": "أدوات تحليل البيانات، بيئة تطوير برمجيات، مكتبات تعلم الآلة",
+      "first_paid_test_ar": "تقديم تقرير تقييم مجاني لبيانات تدريب واحدة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج LLMs",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2607.20465",
-        "huggingface_daily_papers:2607.18142",
-        "huggingface_daily_papers:2607.22042"
+        "arxiv_papers:2607.23326v1"
       ],
-      "confidence": 0.8,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
+      "signal_count": 2,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "DataPrep-Bench: Benchmarking LLMs as Training Data Preparators",
           "url": "https://huggingface.co/papers/2607.20465",
-          "score": 0.535,
+          "score": 0.502,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "LAMAR: An Open Language-Aware Multilingual Alignment Reranker",
-          "url": "https://huggingface.co/papers/2607.22042",
-          "score": 0.481,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
-          "url": "https://huggingface.co/papers/2607.18142",
-          "score": 0.469,
+          "source_id": "arxiv_papers",
+          "title": "ESF-Bench: Benchmarking Challenging Slot-Filling Scenarios for Real-World Enterprise Applications",
+          "url": "http://arxiv.org/abs/2607.23326v1",
+          "score": 0.479,
           "trust_tier": "research"
         }
       ],
@@ -50,111 +84,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-27T22:55:06+00:00",
-      "updatedAt": "2026-07-27T22:55:06+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "industrial-video-anomaly-detection",
-      "title_ar": "تطوير نظام للكشف عن الشذوذ في الفيديوهات الصناعية",
-      "thesis_ar": "تزايد الاعتماد على الفيديوهات في مراقبة العمليات الصناعية يفتح المجال لتطوير أنظمة متقدمة للكشف عن الشذوذ، مما يعزز من جودة الإنتاج.",
-      "buyer_ar": "شركات التصنيع والمصانع",
-      "sellable_product_ar": "نظام كشف الشذوذ في الفيديوهات",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لنظام الكشف في مصنع محدد",
-      "tools_ar": "أدوات تحليل الفيديو، مكتبات تعلم الآلة، بيئة تطوير برمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.18142",
-        "huggingface_daily_papers:2607.21653",
-        "huggingface_daily_papers:2607.22042"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2607.21653",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LAMAR: An Open Language-Aware Multilingual Alignment Reranker",
-          "url": "https://huggingface.co/papers/2607.22042",
-          "score": 0.481,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
-          "url": "https://huggingface.co/papers/2607.18142",
-          "score": 0.469,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-27T22:55:06+00:00",
-      "updatedAt": "2026-07-27T22:55:06+00:00",
+      "publishedAt": "2026-07-28T01:30:02+00:00",
+      "updatedAt": "2026-07-28T01:30:02+00:00",
       "sortOrder": 1
-    },
-    {
-      "id": "interactive-training-tools",
-      "title_ar": "تطوير أدوات تدريب تفاعلية لنماذج الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى أدوات تفاعلية للتحكم في تدريب النماذج يتيح فرصة لإنشاء حلول مبتكرة تسهل عملية التدريب وتزيد من كفاءة النماذج.",
-      "buyer_ar": "شركات تطوير البرمجيات ومراكز الأبحاث",
-      "sellable_product_ar": "أداة تدريب تفاعلية مفتوحة المصدر",
-      "first_paid_test_ar": "تقديم ورشة عمل مجانية حول استخدام الأداة في مشروع تدريبي",
-      "tools_ar": "أدوات تطوير البرمجيات، مكتبات تعلم الآلة، بيئة تطوير برمجيات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.18314",
-        "huggingface_daily_papers:2607.21653",
-        "huggingface_daily_papers:2607.22042"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Interactive Training 2: Auditable Control Plane for Live Model Training",
-          "url": "https://huggingface.co/papers/2607.18314",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2607.21653",
-          "score": 0.495,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LAMAR: An Open Language-Aware Multilingual Alignment Reranker",
-          "url": "https://huggingface.co/papers/2607.22042",
-          "score": 0.481,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-27T22:55:06+00:00",
-      "updatedAt": "2026-07-27T22:55:06+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-27T22:55:06+00:00",
+  "tiered_at": "2026-07-28T01:30:02+00:00",
   "free_preview_count": 3
 }
