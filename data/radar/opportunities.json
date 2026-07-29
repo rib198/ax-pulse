@@ -1,26 +1,24 @@
 {
-  "generated_at": "2026-07-29T15:49:35+00:00",
+  "generated_at": "2026-07-29T17:08:21+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 830,
+  "corpus_count": 826,
   "opportunities": [
     {
-      "id": "ai-design-recovery",
-      "title_ar": "استعادة تصميمات قابلة للتحرير من الصور",
-      "thesis_ar": "تعتبر استعادة الملفات القابلة للتحرير من الصور النقطية عائقًا مكلفًا في سير العمل التصميمي الحديث. مع تطور تقنيات الذكاء الاصطناعي، يمكن تقديم حلول فعالة لهذه المشكلة.",
-      "buyer_ar": "شركات التصميم والإبداع",
-      "sellable_product_ar": "أداة ذكاء اصطناعي لاستعادة التصميمات من الصور",
-      "first_paid_test_ar": "تقديم نموذج أولي لاستعادة تصميم بسيط من صورة",
-      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، واجهات برمجة التطبيقات",
+      "id": "llm-native-advertising",
+      "title_ar": "الإعلانات المدمجة في نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في التطبيقات التجارية يفتح المجال لتطوير حلول إعلانات مدمجة. هذه الطريقة يمكن أن تعزز العائدات من خلال دمج المحتوى المدعوم بشكل طبيعي.",
+      "buyer_ar": "شركات الإعلان والتسويق الرقمي",
+      "sellable_product_ar": "حلول إعلانات مدمجة في نماذج اللغة",
+      "first_paid_test_ar": "تطوير حملة إعلانية تجريبية باستخدام نموذج لغة",
+      "tools_ar": "نموذج لغة، منصة إعلانات، أدوات تحليلات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.25565",
-        "huggingface_models:Nanthasit/sakthai-coder-1.5b",
-        "huggingface_models:Nanthasit/sakthai-context-7b-128k"
+        "arxiv_papers:2607.25590"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.5,
       "evidence_items": [
         {
@@ -31,16 +29,37 @@
           "trust_tier": "research"
         },
         {
+          "source_id": "huggingface_daily_papers",
+          "title": "A New Role for Relevance: Guiding Corpus Interaction in Agentic Search",
+          "url": "https://huggingface.co/papers/2607.24223",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "Nanthasit/sakthai-coder-1.5b — text-generation",
-          "url": "https://huggingface.co/Nanthasit/sakthai-coder-1.5b",
+          "title": "Nanthasit/sakthai-context-1.5b-tools-v2 — text-generation",
+          "url": "https://huggingface.co/Nanthasit/sakthai-context-1.5b-tools-v2",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Nanthasit/sakthai-context-7b-128k — text-generation",
-          "url": "https://huggingface.co/Nanthasit/sakthai-context-7b-128k",
+          "title": "GRRNMAKE/SYNAXIM — text-generation",
+          "url": "https://huggingface.co/GRRNMAKE/SYNAXIM",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "spkc83/retail-bank-agent-9b — text-generation",
+          "url": "https://huggingface.co/spkc83/retail-bank-agent-9b",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mpribadi/Docling-RapidOcr — image-text-to-text",
+          "url": "https://huggingface.co/mpribadi/Docling-RapidOcr",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,49 +69,68 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-29T15:49:35+00:00",
-      "updatedAt": "2026-07-29T15:49:35+00:00",
+      "publishedAt": "2026-07-29T17:08:21+00:00",
+      "updatedAt": "2026-07-29T17:08:21+00:00",
       "sortOrder": 0
     },
     {
-      "id": "llm-native-advertising",
-      "title_ar": "الإعلانات المدمجة في نماذج اللغة الكبيرة",
-      "thesis_ar": "تتزايد الحاجة إلى دمج المحتوى المدعوم بشكل طبيعي في ردود نماذج اللغة الكبيرة، مما يفتح آفاق جديدة للإعلانات الرقمية.",
-      "buyer_ar": "شركات الإعلان والتسويق",
-      "sellable_product_ar": "حلول إعلانات مدمجة في نماذج اللغة",
-      "first_paid_test_ar": "تطوير نموذج تجريبي لدمج إعلان في رد نموذج لغة",
-      "tools_ar": "نموذج لغة كبير، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
+      "id": "automated-option-pricing",
+      "title_ar": "إطار عمل آلي لتسعير الخيارات",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في التمويل الكمي يجعل من الضروري تطوير أدوات تسعير خيارات آلية. هذه الحلول يمكن أن تسهل عمليات اتخاذ القرار وتزيد من الكفاءة.",
+      "buyer_ar": "شركات التمويل والاستثمار",
+      "sellable_product_ar": "أداة تسعير خيارات آلية",
+      "first_paid_test_ar": "تقديم نموذج أولي لتسعير خيار بسيط",
+      "tools_ar": "نموذج ذكاء اصطناعي، بيانات سوقية، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2607.25590v1",
-        "huggingface_models:Nanthasit/sakthai-context-7b-merged",
-        "huggingface_models:Nanthasit/sakthai-context-1.5b-merged"
+        "arxiv_papers:2607.25199"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "Nanthasit/sakthai-context-7b-merged — text-generation",
-          "url": "https://huggingface.co/Nanthasit/sakthai-context-7b-merged",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Nanthasit/sakthai-context-1.5b-merged — text-generation",
-          "url": "https://huggingface.co/Nanthasit/sakthai-context-1.5b-merged",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "PILA: Plug-and-Play Insertion for LLM-native Advertising",
-          "url": "http://arxiv.org/abs/2607.25590v1",
-          "score": 0.476,
+          "source_id": "huggingface_daily_papers",
+          "title": "ReDesign: Recovering Editable Design Structures from Images via Agentic Decomposition",
+          "url": "https://huggingface.co/papers/2607.25565",
+          "score": 0.537,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "A New Role for Relevance: Guiding Corpus Interaction in Agentic Search",
+          "url": "https://huggingface.co/papers/2607.24223",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Nanthasit/sakthai-context-1.5b-tools-v2 — text-generation",
+          "url": "https://huggingface.co/Nanthasit/sakthai-context-1.5b-tools-v2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "GRRNMAKE/SYNAXIM — text-generation",
+          "url": "https://huggingface.co/GRRNMAKE/SYNAXIM",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "spkc83/retail-bank-agent-9b — text-generation",
+          "url": "https://huggingface.co/spkc83/retail-bank-agent-9b",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mpribadi/Docling-RapidOcr — image-text-to-text",
+          "url": "https://huggingface.co/mpribadi/Docling-RapidOcr",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,61 +138,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-29T15:49:35+00:00",
-      "updatedAt": "2026-07-29T15:49:35+00:00",
+      "publishedAt": "2026-07-29T17:08:21+00:00",
+      "updatedAt": "2026-07-29T17:08:21+00:00",
       "sortOrder": 1
-    },
-    {
-      "id": "automated-gui-evaluation",
-      "title_ar": "تقييم واجهات المستخدم الرسومية تلقائيًا",
-      "thesis_ar": "تقييم واجهات المستخدم الرسومية أصبح أمرًا حيويًا مع تزايد استخدام الذكاء الاصطناعي. يمكن أن توفر حلول تقييم تلقائية فعالية أكبر.",
-      "buyer_ar": "شركات تطوير البرمجيات",
-      "sellable_product_ar": "أداة لتقييم واجهات المستخدم الرسومية",
-      "first_paid_test_ar": "تقديم نموذج أولي لتقييم واجهة مستخدم بسيطة",
-      "tools_ar": "أدوات الذكاء الاصطناعي، مكتبات واجهات المستخدم، أدوات اختبار البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.25904v1",
-        "huggingface_models:Nanthasit/sakthai-context-7b-tools",
-        "huggingface_models:Nanthasit/sakthai-context-1.5b-tools"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Nanthasit/sakthai-context-7b-tools — text-generation",
-          "url": "https://huggingface.co/Nanthasit/sakthai-context-7b-tools",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Nanthasit/sakthai-context-1.5b-tools — text-generation",
-          "url": "https://huggingface.co/Nanthasit/sakthai-context-1.5b-tools",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification",
-          "url": "http://arxiv.org/abs/2607.25904v1",
-          "score": 0.482,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-29T15:49:35+00:00",
-      "updatedAt": "2026-07-29T15:49:35+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-29T15:49:35+00:00",
+  "tiered_at": "2026-07-29T17:08:21+00:00",
   "free_preview_count": 3
 }
