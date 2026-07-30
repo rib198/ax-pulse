@@ -1,91 +1,69 @@
 {
-  "generated_at": "2026-07-30T04:51:23+00:00",
+  "generated_at": "2026-07-30T08:10:34+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 825,
+  "corpus_count": 833,
   "opportunities": [
     {
       "id": "ai-agents-human-oversight",
       "title_ar": "تطوير واجهات لمراقبة وتوجيه الوكلاء الذكيين",
-      "thesis_ar": "مع تزايد قدرات الوكلاء الذكيين، هناك حاجة ملحة لتطوير واجهات تفاعلية تسهل المراقبة البشرية. هذه الفرصة تتماشى مع الاتجاهات الحالية في الذكاء الاصطناعي والتفاعل البشري.",
-      "buyer_ar": "شركات تطوير البرمجيات والأنظمة الذكية",
+      "thesis_ar": "تزايد استخدام الوكلاء الذكيين في المهام المعقدة يتطلب تطوير واجهات بشرية فعالة. مع تزايد القدرات الذاتية، فإن الحاجة لمراقبة بشرية تتزايد.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
       "sellable_product_ar": "واجهة مستخدم لمراقبة الوكلاء الذكيين",
       "first_paid_test_ar": "تقديم نموذج أولي للواجهة لمجموعة مختارة من المستخدمين",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، أدوات اختبار المستخدم",
+      "tools_ar": "أدوات تطوير البرمجيات، أدوات تصميم واجهات المستخدم، أدوات اختبار المستخدم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2607.26300v1",
-        "huggingface_daily_papers:2607.27180",
-        "huggingface_daily_papers:2607.27205"
+        "2607.26300v1",
+        "2607.27180",
+        "2607.26977"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.51,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
           "url": "http://arxiv.org/abs/2607.26300v1",
-          "score": 0.522,
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
+          "url": "http://arxiv.org/abs/2607.26769v1",
+          "score": 0.495,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "HumanCLAW: Can Vision-Language Models Act Through a Body?",
           "url": "https://huggingface.co/papers/2607.27180",
-          "score": 0.507,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
-          "url": "https://huggingface.co/papers/2607.27205",
-          "score": 0.507,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-07-30T04:51:23+00:00",
-      "updatedAt": "2026-07-30T04:51:23+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "ai-driven-travel-planning",
-      "title_ar": "تطوير أدوات تخطيط السفر باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تخطيط السفر يمثل تحديًا كبيرًا، مما يجعل استخدام الذكاء الاصطناعي لتحسين هذه العملية فرصة مثيرة. الطلب على أدوات تخطيط السفر الذكية في تزايد.",
-      "buyer_ar": "شركات السياحة والسفر",
-      "sellable_product_ar": "أداة تخطيط سفر ذكية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي للأداة لمجموعة من المسافرين",
-      "tools_ar": "نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات للسفر، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.26977v1",
-        "huggingface_daily_papers:2607.27205",
-        "arxiv_papers:2607.26621v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
-          "url": "https://huggingface.co/papers/2607.27205",
-          "score": 0.507,
+          "score": 0.492,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "WhisperRec: Latent Reasoning for Efficient Foundation Recommendation Models",
-          "url": "http://arxiv.org/abs/2607.26621v1",
-          "score": 0.482,
+          "title": "Anatomy Contextualized Adaption of CT Foundation Models",
+          "url": "http://arxiv.org/abs/2607.27154v1",
+          "score": 0.473,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "RIDGE: An Autonomous Framework for Validation and Method Discovery in LLM-Generated Option Pricing",
+          "url": "http://arxiv.org/abs/2607.25199v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hizrianraz/DeepSeek-V4-Flash-REAP25-Spark-Agentic — text-generation",
+          "url": "https://huggingface.co/hizrianraz/DeepSeek-V4-Flash-REAP25-Spark-Agentic",
+          "score": 0.472,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-07-30T04:51:23+00:00",
-      "updatedAt": "2026-07-30T04:51:23+00:00",
+      "publishedAt": "2026-07-30T08:10:34+00:00",
+      "updatedAt": "2026-07-30T08:10:34+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "automated-option-pricing",
+      "title_ar": "تطوير إطار عمل لتسعير الخيارات بشكل تلقائي",
+      "thesis_ar": "تزايد الاعتماد على النماذج اللغوية الكبيرة في التمويل يتطلب أدوات لتوليد تسعير الخيارات. هذا يمكن أن يحسن الكفاءة ويقلل من الأخطاء.",
+      "buyer_ar": "شركات التمويل والبنوك",
+      "sellable_product_ar": "إطار عمل لتوليد تسعير الخيارات",
+      "first_paid_test_ar": "تقديم نموذج أولي لتسعير خيار واحد",
+      "tools_ar": "أدوات البرمجة، مكتبات التحليل المالي، أدوات اختبار البرمجيات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2607.25199",
+        "2607.26621",
+        "2607.27182"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+          "url": "http://arxiv.org/abs/2607.26300v1",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
+          "url": "http://arxiv.org/abs/2607.26769v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "HumanCLAW: Can Vision-Language Models Act Through a Body?",
+          "url": "https://huggingface.co/papers/2607.27180",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Anatomy Contextualized Adaption of CT Foundation Models",
+          "url": "http://arxiv.org/abs/2607.27154v1",
+          "score": 0.473,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "RIDGE: An Autonomous Framework for Validation and Method Discovery in LLM-Generated Option Pricing",
+          "url": "http://arxiv.org/abs/2607.25199v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hizrianraz/DeepSeek-V4-Flash-REAP25-Spark-Agentic — text-generation",
+          "url": "https://huggingface.co/hizrianraz/DeepSeek-V4-Flash-REAP25-Spark-Agentic",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-30T08:10:34+00:00",
+      "updatedAt": "2026-07-30T08:10:34+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "multimodal-visual-reasoning",
+      "title_ar": "تطوير نماذج متعددة الوسائط لتحسين التفكير البصري",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة متعددة الوسائط يتطلب فهم كيفية استخدامها للصور. هذا يفتح المجال لتطوير أدوات جديدة لتحسين الأداء.",
+      "buyer_ar": "شركات الذكاء الاصطناعي ومراكز البحث",
+      "sellable_product_ar": "أداة لتحليل نماذج التفكير البصري",
+      "first_paid_test_ar": "تقديم تحليل لنموذج موجود مع تحسينات مقترحة",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات تعلم الآلة، أدوات اختبار الأداء",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2607.26769",
+        "2607.27154",
+        "2607.26652"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+          "url": "http://arxiv.org/abs/2607.26300v1",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
+          "url": "http://arxiv.org/abs/2607.26769v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "HumanCLAW: Can Vision-Language Models Act Through a Body?",
+          "url": "https://huggingface.co/papers/2607.27180",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Anatomy Contextualized Adaption of CT Foundation Models",
+          "url": "http://arxiv.org/abs/2607.27154v1",
+          "score": 0.473,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "RIDGE: An Autonomous Framework for Validation and Method Discovery in LLM-Generated Option Pricing",
+          "url": "http://arxiv.org/abs/2607.25199v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hizrianraz/DeepSeek-V4-Flash-REAP25-Spark-Agentic — text-generation",
+          "url": "https://huggingface.co/hizrianraz/DeepSeek-V4-Flash-REAP25-Spark-Agentic",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-07-30T08:10:34+00:00",
+      "updatedAt": "2026-07-30T08:10:34+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-07-30T04:51:23+00:00",
+  "tiered_at": "2026-07-30T08:10:34+00:00",
   "free_preview_count": 3
 }
