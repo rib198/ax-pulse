@@ -1,47 +1,97 @@
 {
-  "generated_at": "2026-08-01T18:57:35+00:00",
+  "generated_at": "2026-08-01T20:44:38+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 822,
+  "corpus_count": 819,
   "opportunities": [
     {
-      "id": "text-to-image-solutions",
-      "title_ar": "تقديم حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يشير إلى فرصة كبيرة في السوق. يمكن أن تقدم هذه الحلول تطبيقات في مجالات التسويق والإعلانات.",
-      "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "خدمات تحويل النص إلى صورة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم مشروع تجريبي لتحويل نصوص إعلانات إلى صور",
-      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات التصميم، واجهات المستخدم",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الاعتماد على نماذج توليد النصوص في مجالات متعددة يجعلها فرصة مثيرة. يمكن استخدام هذه النماذج في تحسين تجربة المستخدم وتقديم محتوى مخصص.",
+      "buyer_ar": "شركات التكنولوجيا والمحتوى الرقمي",
+      "sellable_product_ar": "خدمات تطوير نماذج توليد النصوص المخصصة",
+      "first_paid_test_ar": "تقديم نموذج نصي تجريبي لمهمة محددة",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:B0rghese/Demira",
-        "huggingface_models:Omnico/Krea2_turbo_diff_loras",
-        "huggingface_models:rickrock-art/bodies"
+        "huggingface_models:Blackfrost-Research/KIMI-K3-DERISKED-MXFP4-GGUF",
+        "huggingface_models:Blackfrost-Research/KIMI-K3-DERISKED-GGUF",
+        "huggingface_models:willfalco/GLM-5.2-EXL3-TR3-3.36bpw"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "B0rghese/Demira — text-to-image",
-          "url": "https://huggingface.co/B0rghese/Demira",
-          "score": 0.472,
+          "title": "Blackfrost-Research/KIMI-K3-DERISKED-MXFP4-GGUF — text-generation",
+          "url": "https://huggingface.co/Blackfrost-Research/KIMI-K3-DERISKED-MXFP4-GGUF",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Blackfrost-Research/KIMI-K3-DERISKED-GGUF — text-generation",
+          "url": "https://huggingface.co/Blackfrost-Research/KIMI-K3-DERISKED-GGUF",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "willfalco/GLM-5.2-EXL3-TR3-3.36bpw — text-generation",
+          "url": "https://huggingface.co/willfalco/GLM-5.2-EXL3-TR3-3.36bpw",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-01T20:44:38+00:00",
+      "updatedAt": "2026-08-01T20:44:38+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي يفتح المجال لتطوير نماذج تحويل النص إلى صورة. هذه النماذج يمكن أن تعزز من الإبداع في التسويق والإعلانات.",
+      "buyer_ar": "وكالات الإعلان والتسويق",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم نموذج تحويل نص إلى صورة لمشروع تسويقي",
+      "tools_ar": "Hugging Face, Python, PyTorch",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:DiSS0245/uvubabefresh",
+        "huggingface_models:dtecho/live2d-model-maker",
+        "huggingface_models:Omnico/Krea2_turbo_diff_loras"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "DiSS0245/uvubabefresh — text-to-image",
+          "url": "https://huggingface.co/DiSS0245/uvubabefresh",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "dtecho/live2d-model-maker — text-to-image",
+          "url": "https://huggingface.co/dtecho/live2d-model-maker",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "Omnico/Krea2_turbo_diff_loras — text-to-image",
           "url": "https://huggingface.co/Omnico/Krea2_turbo_diff_loras",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "rickrock-art/bodies — text-to-image",
-          "url": "https://huggingface.co/rickrock-art/bodies",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -50,42 +100,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-01T18:57:35+00:00",
-      "updatedAt": "2026-08-01T18:57:35+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-08-01T20:44:38+00:00",
+      "updatedAt": "2026-08-01T20:44:38+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "multimodal-ai-visuals",
-      "title_ar": "تطوير نماذج ذكاء اصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي متعددة الوسائط للرسوم التوضيحية والوسائط البصرية في عمليات التفكير. هذا يشير إلى حاجة متزايدة لتطوير أدوات تدعم هذه النماذج بشكل أفضل.",
-      "buyer_ar": "شركات التكنولوجيا والبحث العلمي",
-      "sellable_product_ar": "أدوات تطوير نماذج ذكاء اصطناعي متعددة الوسائط",
-      "first_paid_test_ar": "تقديم نموذج أولي لمشروع بحثي باستخدام أدوات بصرية",
-      "tools_ar": "أدوات تطوير البرمجيات، مكتبات التعلم العميق، واجهات المستخدم",
+      "id": "multimodal-models-research",
+      "title_ar": "البحث في نماذج متعددة الوسائط",
+      "thesis_ar": "زيادة استخدام نماذج متعددة الوسائط في التطبيقات الذكية يفتح المجال لفرص جديدة في البحث والتطوير. هذه النماذج يمكن أن تعزز من قدرة الأنظمة على معالجة المعلومات بشكل أكثر فعالية.",
+      "buyer_ar": "مراكز البحث والجامعات",
+      "sellable_product_ar": "خدمات استشارية في تطوير نماذج متعددة الوسائط",
+      "first_paid_test_ar": "تقديم دراسة حالة حول تطبيق نموذج متعدد الوسائط",
+      "tools_ar": "Python, TensorFlow, PyTorch",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2607.26769",
-        "arxiv_papers:2607.27677",
-        "huggingface_models:rickrock-art/bodies"
+        "arxiv_papers:2607.27677v1",
+        "arxiv_papers:2607.26300v1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
           "url": "https://huggingface.co/papers/2607.26769",
-          "score": 0.486,
+          "score": 0.492,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "rickrock-art/bodies — text-to-image",
-          "url": "https://huggingface.co/rickrock-art/bodies",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Stop Shipping AI Agents on Faith: Capability Is Not Production Readiness",
+          "url": "http://arxiv.org/abs/2607.27677v1",
+          "score": 0.479,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+          "url": "http://arxiv.org/abs/2607.26300v1",
+          "score": 0.477,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -93,61 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-01T18:57:35+00:00",
-      "updatedAt": "2026-08-01T18:57:35+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "ai-agent-oversight-tools",
-      "title_ar": "تطوير أدوات لمراقبة الوكلاء الذكيين",
-      "thesis_ar": "مع تزايد استخدام الوكلاء الذكيين في المهام المعقدة، هناك حاجة ملحة لأدوات تسهل المراقبة البشرية. هذا يوفر فرصة لتطوير حلول تكنولوجية تسد الفجوة بين القدرات الآلية والإشراف البشري.",
-      "buyer_ar": "شركات البرمجيات والهيئات الحكومية",
-      "sellable_product_ar": "أدوات مراقبة وتحكم في الوكلاء الذكيين",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لأداة مراقبة لوكيل ذكي في بيئة عمل محددة",
-      "tools_ar": "أدوات تطوير البرمجيات، واجهات المستخدم، خوارزميات التعلم الآلي",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2607.26300v1",
-        "arxiv_papers:2607.27677v1",
-        "huggingface_models:deepnevro/experts"
-      ],
-      "confidence": 0.6,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
-          "url": "http://arxiv.org/abs/2607.26300v1",
-          "score": 0.481,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Stop Shipping AI Agents on Faith: Capability Is Not Production Readiness",
-          "url": "http://arxiv.org/abs/2607.27677v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "deepnevro/experts — text-generation",
-          "url": "https://huggingface.co/deepnevro/experts",
-          "score": 0.447,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-01T18:57:35+00:00",
-      "updatedAt": "2026-08-01T18:57:35+00:00",
+      "publishedAt": "2026-08-01T20:44:38+00:00",
+      "updatedAt": "2026-08-01T20:44:38+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-01T18:57:35+00:00",
+  "tiered_at": "2026-08-01T20:44:38+00:00",
   "free_preview_count": 3
 }
