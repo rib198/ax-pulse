@@ -1,22 +1,72 @@
 {
-  "generated_at": "2026-08-02T11:15:47+00:00",
+  "generated_at": "2026-08-02T13:00:30+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 823,
+  "corpus_count": 814,
   "opportunities": [
     {
-      "id": "code-review-ai-tools",
-      "title_ar": "تطوير أدوات مراجعة الكود باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في مراجعة الكود يفتح المجال لتطوير أدوات مبتكرة. هذه الأدوات يمكن أن تسهل عملية المراجعة وتحسن جودة البرمجيات.",
-      "buyer_ar": "شركات البرمجيات والمطورين المستقلين",
-      "sellable_product_ar": "أداة مراجعة كود تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم أداة مراجعة كود مجانية لفترة محدودة مع خيارات مدفوعة لاحقًا",
-      "tools_ar": "نموذج مراجعة الكود، واجهة مستخدم، خوادم استضافة",
-      "capital_ar": "منخفض",
+      "id": "multimodal-ai-visual-reasoning",
+      "title_ar": "تطوير نماذج ذكاء اصطناعي متعددة الوسائط",
+      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي متعددة الوسائط في معالجة الصور والنصوص، مما يفتح المجال لتطوير تطبيقات جديدة تعتمد على هذه التكنولوجيا. الحاجة إلى تحسين الفهم البصري في هذه النماذج تجعلها فرصة مثيرة الآن.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل الصور والنصوص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل مجموعة محددة من الصور والنصوص",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات تحليل الصور، بيئات تطوير البرمجيات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:aw12is/qwen2.5-coder-7b-code-reviewer",
-        "huggingface_models:AmberYifan/capsd-cfeedback-marin-8b-base-code_ppl_b1000_s0",
-        "huggingface_models:AmberYifan/capsd-cfeedback-marin-8b-base-code_cap_b1000_s0"
+        "huggingface_daily_papers:2607.26769",
+        "arxiv_papers:2607.26300v1",
+        "huggingface_models:Nullvoidxx/Qwen-Image-Edit-Rapid-AIO"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
+          "url": "https://huggingface.co/papers/2607.26769",
+          "score": 0.486,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+          "url": "http://arxiv.org/abs/2607.26300v1",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Nullvoidxx/Qwen-Image-Edit-Rapid-AIO — text-to-image",
+          "url": "https://huggingface.co/Nullvoidxx/Qwen-Image-Edit-Rapid-AIO",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-02T13:00:30+00:00",
+      "updatedAt": "2026-08-02T13:00:30+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يفتح المجال لتطبيقات جديدة في مجالات الإبداع والتسويق. الطلب المتزايد على المحتوى المرئي يعزز من أهمية هذه التقنية.",
+      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
+      "sellable_product_ar": "نموذج لتحويل النص إلى صورة بجودة عالية",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص محددة إلى صور",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، بيئات تطوير البرمجيات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:Burroughs352/CS",
+        "huggingface_models:jakohist/taeri-e2",
+        "huggingface_models:AmericanoLatte/Lorin_Krea_Lora"
       ],
       "confidence": 0.75,
       "source": "openai",
@@ -25,23 +75,23 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "aw12is/qwen2.5-coder-7b-code-reviewer — text-generation",
-          "url": "https://huggingface.co/aw12is/qwen2.5-coder-7b-code-reviewer",
-          "score": 0.466,
+          "title": "Burroughs352/CS — text-to-image",
+          "url": "https://huggingface.co/Burroughs352/CS",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "AmberYifan/capsd-cfeedback-marin-8b-base-code_ppl_b1000_s0 — text-generation",
-          "url": "https://huggingface.co/AmberYifan/capsd-cfeedback-marin-8b-base-code_ppl_b1000_s0",
-          "score": 0.466,
+          "title": "jakohist/taeri-e2 — text-to-image",
+          "url": "https://huggingface.co/jakohist/taeri-e2",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "AmberYifan/capsd-cfeedback-marin-8b-base-code_cap_b1000_s0 — text-generation",
-          "url": "https://huggingface.co/AmberYifan/capsd-cfeedback-marin-8b-base-code_cap_b1000_s0",
-          "score": 0.466,
+          "title": "AmericanoLatte/Lorin_Krea_Lora — text-to-image",
+          "url": "https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,41 +100,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-02T11:15:47+00:00",
-      "updatedAt": "2026-08-02T11:15:47+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-08-02T13:00:30+00:00",
+      "updatedAt": "2026-08-02T13:00:30+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "multimodal-reasoning-tools",
-      "title_ar": "تطوير أدوات تفكير متعددة الوسائط",
-      "thesis_ar": "تزايد استخدام النماذج متعددة الوسائط في التفكير يتطلب أدوات جديدة لتحسين الأداء. الفرصة متاحة لتطوير أدوات تعتمد على الرسومات والتعليقات لتحسين دقة النماذج.",
-      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات الذكية",
-      "sellable_product_ar": "أداة لتحليل وتوليد الرسومات والتعليقات للنماذج متعددة الوسائط",
-      "first_paid_test_ar": "تقديم نموذج أولي لأداة تحليلية لمجموعة مختارة من العملاء",
-      "tools_ar": "أدوات تطوير البرمجيات، مكتبات تعلم الآلة، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "ai-agents-human-oversight",
+      "title_ar": "تطوير واجهات لمراقبة الوكلاء الذكيين",
+      "thesis_ar": "تزايد استخدام الوكلاء الذكيين في المهام الطويلة والمعقدة يتطلب تطوير واجهات تفاعلية لتحسين الإشراف البشري. هذه الحاجة تمثل فرصة لتقديم حلول مبتكرة في السوق.",
+      "buyer_ar": "شركات تطوير البرمجيات والحلول الذكية",
+      "sellable_product_ar": "واجهة مستخدم لمراقبة وتوجيه الوكلاء الذكيين",
+      "first_paid_test_ar": "تطوير نموذج أولي للواجهة مع عميل تجريبي",
+      "tools_ar": "أدوات تطوير البرمجيات، واجهات المستخدم، تقنيات الذكاء الاصطناعي",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.26769",
-        "arxiv_papers:2607.26300",
-        "huggingface_models:jpanasuk/tabby-tavern-stack"
+        "arxiv_papers:2607.26300v1",
+        "huggingface_models:ahammad115566/qwen-smeft",
+        "huggingface_models:nightmedia/Qwen3.6-27B-Miraculix"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.46,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
-          "url": "https://huggingface.co/papers/2607.26769",
-          "score": 0.492,
+          "source_id": "arxiv_papers",
+          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+          "url": "http://arxiv.org/abs/2607.26300v1",
+          "score": 0.481,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "jpanasuk/tabby-tavern-stack — text-generation",
-          "url": "https://huggingface.co/jpanasuk/tabby-tavern-stack",
-          "score": 0.488,
+          "title": "ahammad115566/qwen-smeft — text-generation",
+          "url": "https://huggingface.co/ahammad115566/qwen-smeft",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "nightmedia/Qwen3.6-27B-Miraculix — image-text-to-text",
+          "url": "https://huggingface.co/nightmedia/Qwen3.6-27B-Miraculix",
+          "score": 0.447,
           "trust_tier": "official"
         }
       ],
@@ -93,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-02T11:15:47+00:00",
-      "updatedAt": "2026-08-02T11:15:47+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-08-02T13:00:30+00:00",
+      "updatedAt": "2026-08-02T13:00:30+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-02T11:15:47+00:00",
+  "tiered_at": "2026-08-02T13:00:30+00:00",
   "free_preview_count": 3
 }
