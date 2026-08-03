@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-08-03T12:53:37+00:00",
+  "generated_at": "2026-08-03T16:19:01+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 817,
+  "corpus_count": 822,
   "opportunities": [
     {
-      "id": "ai-image-manipulation-detection",
-      "title_ar": "تطوير أدوات كشف التلاعب بالصور",
-      "thesis_ar": "مع تزايد استخدام الذكاء الاصطناعي في إنشاء وتعديل الصور، تزداد الحاجة إلى أدوات فعالة لكشف التلاعب. هذه فرصة لتلبية الطلب المتزايد على الأمان والمصداقية في المحتوى المرئي.",
-      "buyer_ar": "شركات الإعلام، وكالات الإعلان، ومطوري البرمجيات",
-      "sellable_product_ar": "أداة كشف التلاعب بالصور باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية من الأداة لمؤسسة إعلامية كبيرة",
-      "tools_ar": "نموذج ForgeryVCR، أدوات تحليل البيانات، واجهة المستخدم",
+      "id": "ai-agents-human-oversight",
+      "title_ar": "تطوير واجهات لمراقبة الوكلاء الذكيين",
+      "thesis_ar": "مع تزايد قدرات الوكلاء الذكيين، هناك حاجة ملحة لتطوير واجهات تفاعلية تتيح للإنسان مراقبة وتوجيه هذه الأنظمة. هذا يمكن أن يحسن من فعالية استخدام الذكاء الاصطناعي في المهام المعقدة.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "واجهة مستخدم لمراقبة الوكلاء الذكيين",
+      "first_paid_test_ar": "تقديم نموذج أولي للواجهة لمجموعة مختارة من المستخدمين",
+      "tools_ar": "أدوات تطوير البرمجيات، واجهات برمجة التطبيقات، أدوات تصميم واجهات المستخدم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:ForgeryVCR-Team/ForgeryVCR",
-        "huggingface_models:jakohist/j33s4m",
-        "huggingface_models:guillekenzo/aros-e4e46930-LunarLynx"
+        "2607.26300v1",
+        "2607.15820",
+        "2607.27201"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.48,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+          "url": "http://arxiv.org/abs/2607.26300v1",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Structured AI Demonstrations and Student LLM Use in Engineering Mechanics: Study Design and Preliminary Results",
+          "url": "http://arxiv.org/abs/2607.28710v1",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "ForgeryVCR-Team/ForgeryVCR — image-text-to-text",
-          "url": "https://huggingface.co/ForgeryVCR-Team/ForgeryVCR",
-          "score": 0.488,
+          "title": "Congo-digital-service/Llama-3.1-8B-Instruct-Lingala-QLoRA-merged-v2 — text-generation",
+          "url": "https://huggingface.co/Congo-digital-service/Llama-3.1-8B-Instruct-Lingala-QLoRA-merged-v2",
+          "score": 0.479,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "jakohist/j33s4m — text-to-image",
-          "url": "https://huggingface.co/jakohist/j33s4m",
-          "score": 0.488,
+          "title": "SurgeFF/AriaV9.2 — image-text-to-text",
+          "url": "https://huggingface.co/SurgeFF/AriaV9.2",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-e4e46930-LunarLynx — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-e4e46930-LunarLynx",
-          "score": 0.488,
+          "title": "DragonBophades/Elster-Qwen3.6-27B — image-text-to-text",
+          "url": "https://huggingface.co/DragonBophades/Elster-Qwen3.6-27B",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Dekonstruktio/krea-2-golden-era-monochrome-lora — text-to-image",
+          "url": "https://huggingface.co/Dekonstruktio/krea-2-golden-era-monochrome-lora",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,48 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-03T12:53:37+00:00",
-      "updatedAt": "2026-08-03T12:53:37+00:00",
+      "publishedAt": "2026-08-03T16:19:01+00:00",
+      "updatedAt": "2026-08-03T16:19:01+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-generation",
-      "title_ar": "تطوير حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي الفريد يُبرز الحاجة إلى أدوات تحويل النص إلى صورة. يمكن استغلال هذه التقنية في مجالات متعددة مثل التسويق والإبداع.",
-      "buyer_ar": "شركات التسويق، وكالات التصميم، والمطورين",
-      "sellable_product_ar": "خدمة تحويل النص إلى صورة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم مشروع تجريبي لتحويل نصوص إبداعية إلى صور لعميل محتمل",
-      "tools_ar": "نموذج text-to-image، واجهة برمجة التطبيقات، أدوات التصميم",
-      "capital_ar": "منخفض",
+      "id": "autonomous-driving-testing",
+      "title_ar": "تطوير أنظمة اختبار للقيادة الذاتية",
+      "thesis_ar": "تزايد استخدام أنظمة القيادة الذاتية يتطلب حلولاً فعالة لاختبار هذه الأنظمة لضمان السلامة والفعالية. هناك فرصة لتطوير أدوات اختبار مبتكرة.",
+      "buyer_ar": "شركات السيارات والتكنولوجيا",
+      "sellable_product_ar": "أداة اختبار للأنظمة الذاتية",
+      "first_paid_test_ar": "تقديم اختبار تجريبي لنظام قيادة ذاتي في بيئة محاكاة",
+      "tools_ar": "أدوات محاكاة، برمجيات تحليل البيانات، أجهزة استشعار",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:jakohist/j33s4m",
-        "huggingface_models:guillekenzo/aros-e4e46930-LunarLynx",
-        "huggingface_models:Ava2000/Mikoyan_Illustrious"
+        "2607.15820",
+        "2607.29684",
+        "2607.27951"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.48,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+          "url": "http://arxiv.org/abs/2607.26300v1",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Structured AI Demonstrations and Student LLM Use in Engineering Mechanics: Study Design and Preliminary Results",
+          "url": "http://arxiv.org/abs/2607.28710v1",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "jakohist/j33s4m — text-to-image",
-          "url": "https://huggingface.co/jakohist/j33s4m",
-          "score": 0.488,
+          "title": "Congo-digital-service/Llama-3.1-8B-Instruct-Lingala-QLoRA-merged-v2 — text-generation",
+          "url": "https://huggingface.co/Congo-digital-service/Llama-3.1-8B-Instruct-Lingala-QLoRA-merged-v2",
+          "score": 0.479,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-e4e46930-LunarLynx — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-e4e46930-LunarLynx",
-          "score": 0.488,
+          "title": "SurgeFF/AriaV9.2 — image-text-to-text",
+          "url": "https://huggingface.co/SurgeFF/AriaV9.2",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Ava2000/Mikoyan_Illustrious — text-to-image",
-          "url": "https://huggingface.co/Ava2000/Mikoyan_Illustrious",
-          "score": 0.488,
+          "title": "DragonBophades/Elster-Qwen3.6-27B — image-text-to-text",
+          "url": "https://huggingface.co/DragonBophades/Elster-Qwen3.6-27B",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Dekonstruktio/krea-2-golden-era-monochrome-lora — text-to-image",
+          "url": "https://huggingface.co/Dekonstruktio/krea-2-golden-era-monochrome-lora",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -100,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-03T12:53:37+00:00",
-      "updatedAt": "2026-08-03T12:53:37+00:00",
+      "publishedAt": "2026-08-03T16:19:01+00:00",
+      "updatedAt": "2026-08-03T16:19:01+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "education-llm-integration",
+      "title_ar": "دمج نماذج اللغة الكبيرة في التعليم الهندسي",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في التعليم الجامعي يفتح المجال لتحسين طرق التعليم والتعلم. هناك حاجة لتطوير محتوى تعليمي مخصص يناسب احتياجات الطلاب.",
+      "buyer_ar": "الجامعات والمعاهد التعليمية",
+      "sellable_product_ar": "منصة تعليمية تعتمد على نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم دورة تجريبية مجانية للطلاب مع خيار الاشتراك المدفوع",
+      "tools_ar": "منصات التعليم الإلكتروني، نماذج اللغة الكبيرة، أدوات تحليل البيانات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2607.28710v1",
+        "2607.15820",
+        "2607.27951"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+          "url": "http://arxiv.org/abs/2607.26300v1",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Structured AI Demonstrations and Student LLM Use in Engineering Mechanics: Study Design and Preliminary Results",
+          "url": "http://arxiv.org/abs/2607.28710v1",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Congo-digital-service/Llama-3.1-8B-Instruct-Lingala-QLoRA-merged-v2 — text-generation",
+          "url": "https://huggingface.co/Congo-digital-service/Llama-3.1-8B-Instruct-Lingala-QLoRA-merged-v2",
+          "score": 0.479,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "SurgeFF/AriaV9.2 — image-text-to-text",
+          "url": "https://huggingface.co/SurgeFF/AriaV9.2",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "DragonBophades/Elster-Qwen3.6-27B — image-text-to-text",
+          "url": "https://huggingface.co/DragonBophades/Elster-Qwen3.6-27B",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Dekonstruktio/krea-2-golden-era-monochrome-lora — text-to-image",
+          "url": "https://huggingface.co/Dekonstruktio/krea-2-golden-era-monochrome-lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-03T16:19:01+00:00",
+      "updatedAt": "2026-08-03T16:19:01+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-03T12:53:37+00:00",
+  "tiered_at": "2026-08-03T16:19:01+00:00",
   "free_preview_count": 3
 }
