@@ -1,91 +1,48 @@
 {
-  "generated_at": "2026-08-03T22:56:07+00:00",
+  "generated_at": "2026-08-04T01:26:24+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 825,
+  "corpus_count": 815,
   "opportunities": [
     {
-      "id": "autonomous-driving-testing",
-      "title_ar": "اختبار أنظمة القيادة الذاتية",
-      "thesis_ar": "تتزايد الحاجة لاختبار أنظمة القيادة الذاتية لضمان سلامتها وكفاءتها. مع تقدم هذه الأنظمة، هناك فرصة لتقديم خدمات اختبار متخصصة.",
-      "buyer_ar": "شركات السيارات، شركات التكنولوجيا",
-      "sellable_product_ar": "خدمات اختبار وتحليل أنظمة القيادة الذاتية",
-      "first_paid_test_ar": "اختبار نظام قيادة ذاتي على مسار مغلق",
-      "tools_ar": "أجهزة استشعار، برامج تحليل البيانات، محاكيات",
+      "id": "automated-algorithm-design",
+      "title_ar": "تصميم خوارزميات آلي",
+      "thesis_ar": "تطور نماذج اللغة الكبيرة يتيح تصميم خوارزميات آلي لحل مشاكل تحسين معقدة. هذا الوقت مناسب للاستثمار في تطوير أدوات تستخدم هذه النماذج لتحسين الكفاءة في مختلف الصناعات.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "أداة تصميم خوارزميات آلي تعتمد على نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم نموذج أولي لحل مشكلة تحسين بسيطة",
+      "tools_ar": "نماذج لغة كبيرة، أدوات برمجة، بيئة اختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2607.15820",
-        "huggingface_daily_papers:2607.27201",
-        "huggingface_daily_papers:2607.25388"
+        "arxiv_papers:2608.00700v1",
+        "huggingface_models:AAAAnsah/qwen_subtract_v1_src-ssctl_tgt-rfa_mode-sub_strength-s0p1",
+        "huggingface_models:AAAAnsah/qwen_subtract_v1_src-ssctl_tgt-bma_mode-sub_strength-s0p1"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Mental World Modeling",
-          "url": "https://huggingface.co/papers/2607.27201",
-          "score": 0.483,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SGTP: Sampling-based Game-Theoretic Planning for Real-Time Multi-Vehicle Autonomous Racing",
-          "url": "https://huggingface.co/papers/2607.25388",
-          "score": 0.482,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "In the Driver's Seat: A Multi-Company Study on the Reality of Autonomous Driving System Testing",
-          "url": "https://huggingface.co/papers/2607.15820",
-          "score": 0.472,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-03T22:56:07+00:00",
-      "updatedAt": "2026-08-03T22:56:07+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "ai-education-tools",
-      "title_ar": "أدوات تعليمية تعتمد على الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في التعليم العالي يفتح المجال لتطوير أدوات تعليمية جديدة. هذه الأدوات يمكن أن تعزز من تجربة التعلم للطلاب.",
-      "buyer_ar": "الجامعات، المعلمون، الطلاب",
-      "sellable_product_ar": "أدوات تعليمية تعتمد على الذكاء الاصطناعي لتحسين التعلم",
-      "first_paid_test_ar": "تقديم أداة تعليمية تجريبية لصف دراسي",
-      "tools_ar": "نماذج لغة، واجهات برمجة التطبيقات، منصات تعليمية",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.28710",
-        "huggingface_daily_papers:2607.27951",
-        "huggingface_daily_papers:2607.15820"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Safeguards Based on Copyable Context Cannot Provide Reliable Safety for LLMs",
-          "url": "https://huggingface.co/papers/2607.27951",
-          "score": 0.473,
+          "source_id": "arxiv_papers",
+          "title": "DGA$_2$D: Directed Graph-Guided Automated Algorithm Design with Large Language Models",
+          "url": "http://arxiv.org/abs/2608.00700v1",
+          "score": 0.489,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "In the Driver's Seat: A Multi-Company Study on the Reality of Autonomous Driving System Testing",
-          "url": "https://huggingface.co/papers/2607.15820",
-          "score": 0.472,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "AAAAnsah/qwen_subtract_v1_src-ssctl_tgt-rfa_mode-sub_strength-s0p1 — text-generation",
+          "url": "https://huggingface.co/AAAAnsah/qwen_subtract_v1_src-ssctl_tgt-rfa_mode-sub_strength-s0p1",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AAAAnsah/qwen_subtract_v1_src-ssctl_tgt-bma_mode-sub_strength-s0p1 — text-generation",
+          "url": "https://huggingface.co/AAAAnsah/qwen_subtract_v1_src-ssctl_tgt-bma_mode-sub_strength-s0p1",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,22 +50,72 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-03T22:56:07+00:00",
-      "updatedAt": "2026-08-03T22:56:07+00:00",
+      "publishedAt": "2026-08-04T01:26:24+00:00",
+      "updatedAt": "2026-08-04T01:26:24+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "healthcare-ai-analytics",
+      "title_ar": "تحليلات الذكاء الاصطناعي في الرعاية الصحية",
+      "thesis_ar": "النمو السريع في بيانات التعبير الجيني الفردي يفتح المجال لتطوير نماذج ذكاء اصطناعي لتحليل البيانات. هذا الاتجاه يتطلب أدوات تحليل متقدمة لتحسين نتائج الرعاية الصحية.",
+      "buyer_ar": "مستشفيات ومراكز أبحاث",
+      "sellable_product_ar": "نظام تحليلات ذكاء اصطناعي لتحليل بيانات التعبير الجيني",
+      "first_paid_test_ar": "تقديم تحليل بيانات تجريبي لمجموعة صغيرة من المرضى",
+      "tools_ar": "نماذج ذكاء اصطناعي، بيانات طبية، أدوات تحليل البيانات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2608.00985v1",
+        "huggingface_models:clairesull/onc_clintrial_RAG",
+        "huggingface_models:jzkarlovich/gglm"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Beyond Gene Reconstruction: Learning Cell Representations through Complementary Transcriptomic Views",
+          "url": "http://arxiv.org/abs/2608.00985v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "clairesull/onc_clintrial_RAG — text-generation",
+          "url": "https://huggingface.co/clairesull/onc_clintrial_RAG",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "jzkarlovich/gglm — text-generation",
+          "url": "https://huggingface.co/jzkarlovich/gglm",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-04T01:26:24+00:00",
+      "updatedAt": "2026-08-04T01:26:24+00:00",
       "sortOrder": 1
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يمكن استخدامها في مجالات متعددة مثل التسويق والإعلانات. مع تحديثات جديدة لنماذج Hugging Face، هناك فرصة لتقديم حلول مخصصة للسوق العربي.",
-      "buyer_ar": "شركات التسويق والإعلانات، المطورون المستقلون",
-      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لمشروع تسويقي",
-      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "id": "text-to-image-solutions",
+      "title_ar": "حلول تحويل النص إلى صورة",
+      "thesis_ar": "زيادة الطلب على أدوات تحويل النص إلى صورة تعزز من الإبداع في مجالات متعددة. الاستثمار في تطوير نماذج متقدمة سيلبي احتياجات السوق المتزايدة.",
+      "buyer_ar": "وكالات الإعلانات، شركات تصميم الجرافيك",
+      "sellable_product_ar": "أداة تحويل نص إلى صورة تعتمد على نماذج متقدمة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
+      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات تصميم، بيئة اختبار",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:guillekenzo/aros-3189a698-SilentOracle",
-        "huggingface_models:guillekenzo/aros-e5dc26b3-LunarEcho",
+        "huggingface_models:Dekonstruktio/krea-2-emerald-noir-oil-lora",
+        "huggingface_models:guillekenzo/aros-2e358040-LunarNova",
         "huggingface_models:kaddzie/MyStarsJenna"
       ],
       "confidence": 0.7,
@@ -118,15 +125,15 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-3189a698-SilentOracle — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-3189a698-SilentOracle",
+          "title": "Dekonstruktio/krea-2-emerald-noir-oil-lora — text-to-image",
+          "url": "https://huggingface.co/Dekonstruktio/krea-2-emerald-noir-oil-lora",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-e5dc26b3-LunarEcho — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-e5dc26b3-LunarEcho",
+          "title": "guillekenzo/aros-2e358040-LunarNova — text-to-image",
+          "url": "https://huggingface.co/guillekenzo/aros-2e358040-LunarNova",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -143,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-03T22:56:07+00:00",
-      "updatedAt": "2026-08-03T22:56:07+00:00",
+      "publishedAt": "2026-08-04T01:26:24+00:00",
+      "updatedAt": "2026-08-04T01:26:24+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-03T22:56:07+00:00",
+  "tiered_at": "2026-08-04T01:26:24+00:00",
   "free_preview_count": 3
 }
