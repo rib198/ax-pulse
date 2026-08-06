@@ -1,67 +1,46 @@
 {
-  "generated_at": "2026-08-06T13:45:40+00:00",
+  "generated_at": "2026-08-06T23:53:36+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 836,
+  "corpus_count": 826,
   "opportunities": [
     {
-      "id": "long-horizon-reasoning-llms",
-      "title_ar": "تطوير نماذج لغة طويلة الأمد",
-      "thesis_ar": "تزايد الحاجة إلى نماذج لغة قادرة على التعامل مع مهام معقدة تتطلب التفكير الطويل الأمد. هذا يفتح المجال لتطوير نماذج جديدة تتجاوز القيود الحالية في معالجة المعلومات.",
-      "buyer_ar": "شركات البرمجيات والذكاء الاصطناعي",
-      "sellable_product_ar": "نموذج لغة مخصص للتفكير الطويل الأمد",
-      "first_paid_test_ar": "تقديم نموذج أولي لمهمة محددة مثل التخطيط الزمني",
-      "tools_ar": "أدوات تطوير نماذج الذكاء الاصطناعي، بيئات اختبار، بيانات تدريب",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تحديثات مستمرة لنماذج تحويل النص إلى صورة تشير إلى زيادة الطلب على هذه التقنية. يمكن استغلال هذه النماذج في مجالات متعددة مثل التسويق والإعلانات.",
+      "buyer_ar": "شركات التسويق والإعلانات، المطورون المستقلون",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
+      "tools_ar": "Hugging Face، PyTorch، TensorFlow",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.05139",
-        "2608.05102",
-        "2608.03632"
+        "huggingface_models:kenkum250103/maryreduxlora",
+        "huggingface_models:PattiSimcox/pntdrop-v1-qwen",
+        "huggingface_models:SEEDRAAI/SEEDRAAI"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
-          "url": "https://huggingface.co/papers/2608.05139",
-          "score": 0.503,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation",
-          "url": "https://huggingface.co/papers/2608.03632",
-          "score": 0.502,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads",
-          "url": "https://huggingface.co/papers/2608.04570",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AVE-Compass: Towards Holistic Evaluation for Audio-Video Editing Abilities",
-          "url": "https://huggingface.co/papers/2607.24821",
-          "score": 0.499,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "kenkum250103/maryreduxlora — text-to-image",
+          "url": "https://huggingface.co/kenkum250103/maryreduxlora",
+          "score": 0.521,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "badtheorylabs/BTL-4-Compact — text-generation",
-          "url": "https://huggingface.co/badtheorylabs/BTL-4-Compact",
+          "title": "PattiSimcox/pntdrop-v1-qwen — text-to-image",
+          "url": "https://huggingface.co/PattiSimcox/pntdrop-v1-qwen",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Dekonstruktio/krea-2-amber-motion-streak-lora — text-to-image",
-          "url": "https://huggingface.co/Dekonstruktio/krea-2-amber-motion-streak-lora",
+          "title": "SEEDRAAI/SEEDRAAI — text-to-image",
+          "url": "https://huggingface.co/SEEDRAAI/SEEDRAAI",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -71,70 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-06T13:45:40+00:00",
-      "updatedAt": "2026-08-06T13:45:40+00:00",
+      "publishedAt": "2026-08-06T23:53:36+00:00",
+      "updatedAt": "2026-08-06T23:53:36+00:00",
       "sortOrder": 0
     },
     {
-      "id": "personalization-in-llms",
-      "title_ar": "تحسين نماذج اللغة الشخصية",
-      "thesis_ar": "توجد حاجة ملحة لفهم كيفية بناء نماذج شخصية دقيقة تعكس خصائص المستخدمين الحقيقية. هذا يمكن أن يؤدي إلى تحسينات كبيرة في تجربة المستخدم.",
-      "buyer_ar": "شركات التكنولوجيا والتسويق",
-      "sellable_product_ar": "خدمة تحسين نماذج اللغة الشخصية",
-      "first_paid_test_ar": "تجربة تحسين نموذج مع مجموعة محدودة من المستخدمين",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهات المستخدم",
-      "capital_ar": "منخفض",
+      "id": "financial-research-automation",
+      "title_ar": "أتمتة البحث المالي العميق",
+      "thesis_ar": "تزايد الاعتماد على الأنظمة الآلية في البحث المالي يعكس الحاجة إلى تحسين الكفاءة. يمكن تقديم حلول متخصصة تلبي احتياجات السوق.",
+      "buyer_ar": "شركات الاستثمار، المؤسسات المالية",
+      "sellable_product_ar": "نظام أتمتة البحث المالي العميق",
+      "first_paid_test_ar": "تقديم تقرير بحثي آلي عن سوق معين",
+      "tools_ar": "Python، Pandas، Hugging Face",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "2608.04570",
-        "2608.03836",
-        "2608.04926"
+        "huggingface_daily_papers:2607.27853",
+        "huggingface_daily_papers:2608.03836",
+        "huggingface_daily_papers:2608.04964"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
-          "url": "https://huggingface.co/papers/2608.05139",
-          "score": 0.503,
+          "title": "Resume Means Resume: A Machine-Checked Conformance Contract for Checkpoint, Interrupt, and Resume Semantics in Workflow Persistence Layers",
+          "url": "https://huggingface.co/papers/2608.03836",
+          "score": 0.483,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation",
-          "url": "https://huggingface.co/papers/2608.03632",
-          "score": 0.502,
+          "title": "FinanceHarness: Autonomous Financial Deep Research Framework",
+          "url": "https://huggingface.co/papers/2607.27853",
+          "score": 0.474,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads",
-          "url": "https://huggingface.co/papers/2608.04570",
-          "score": 0.499,
+          "title": "WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models",
+          "url": "https://huggingface.co/papers/2608.04964",
+          "score": 0.469,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AVE-Compass: Towards Holistic Evaluation for Audio-Video Editing Abilities",
-          "url": "https://huggingface.co/papers/2607.24821",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "badtheorylabs/BTL-4-Compact — text-generation",
-          "url": "https://huggingface.co/badtheorylabs/BTL-4-Compact",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Dekonstruktio/krea-2-amber-motion-streak-lora — text-to-image",
-          "url": "https://huggingface.co/Dekonstruktio/krea-2-amber-motion-streak-lora",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,50 +100,29 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-06T13:45:40+00:00",
-      "updatedAt": "2026-08-06T13:45:40+00:00",
+      "publishedAt": "2026-08-06T23:53:36+00:00",
+      "updatedAt": "2026-08-06T23:53:36+00:00",
       "sortOrder": 1
     },
     {
-      "id": "audio-video-editing-ai",
-      "title_ar": "تطوير أدوات تحرير الفيديو والصوت بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على أدوات تحرير الفيديو التي تتعامل مع الصوت والصورة بشكل متكامل. هذا يتيح فرصًا جديدة في مجال إنتاج المحتوى.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والمحتوى",
-      "sellable_product_ar": "أداة تحرير فيديو وصوت مدعومة بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية للمنتج لمجموعة من صناع المحتوى",
-      "tools_ar": "برامج تحرير الفيديو، نماذج الذكاء الاصطناعي، بيانات تدريب",
+      "id": "audio-video-editing-tools",
+      "title_ar": "تطوير أدوات تحرير الفيديو والصوت",
+      "thesis_ar": "زيادة الاعتماد على تحرير الفيديو والصوت بشكل متزامن يفتح المجال لتطوير أدوات جديدة. يمكن أن تسهم هذه الأدوات في تحسين الإنتاجية والإبداع.",
+      "buyer_ar": "استوديوهات الإنتاج الإعلامي، المبدعون المستقلون",
+      "sellable_product_ar": "أدوات تحرير فيديو وصوت متكاملة",
+      "first_paid_test_ar": "تقديم نسخة تجريبية من الأداة لتحرير مقاطع فيديو بسيطة",
+      "tools_ar": "FFmpeg، OpenCV، PyTorch",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2607.24821",
-        "2608.04964",
-        "2608.05102"
+        "huggingface_daily_papers:2607.24821",
+        "huggingface_daily_papers:2608.04926",
+        "huggingface_daily_papers:2608.05102"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
-          "url": "https://huggingface.co/papers/2608.05139",
-          "score": 0.503,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation",
-          "url": "https://huggingface.co/papers/2608.03632",
-          "score": 0.502,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads",
-          "url": "https://huggingface.co/papers/2608.04570",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "AVE-Compass: Towards Holistic Evaluation for Audio-Video Editing Abilities",
@@ -194,18 +131,18 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "badtheorylabs/BTL-4-Compact — text-generation",
-          "url": "https://huggingface.co/badtheorylabs/BTL-4-Compact",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment",
+          "url": "https://huggingface.co/papers/2608.05102",
+          "score": 0.483,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Dekonstruktio/krea-2-amber-motion-streak-lora — text-to-image",
-          "url": "https://huggingface.co/Dekonstruktio/krea-2-amber-motion-streak-lora",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Consistency-Driven Co-Evolution for Self-Supervised Cross-Representation Learning",
+          "url": "https://huggingface.co/papers/2608.04926",
+          "score": 0.477,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -213,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-06T13:45:40+00:00",
-      "updatedAt": "2026-08-06T13:45:40+00:00",
+      "publishedAt": "2026-08-06T23:53:36+00:00",
+      "updatedAt": "2026-08-06T23:53:36+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-06T13:45:40+00:00",
+  "tiered_at": "2026-08-06T23:53:36+00:00",
   "free_preview_count": 3
 }
