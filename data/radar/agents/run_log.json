@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-08T06:37:55+00:00",
+  "run_at": "2026-08-08T08:32:56+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,13 +26,13 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 18.326,
+      "duration_s": 20.075,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 313 signals from 31 source families",
-        "8 source errors (non-fatal)"
+        "collected 343 signals from 31 source families",
+        "6 source errors (non-fatal)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 795 items",
-        "by tier: press=515, official=135, research=122, community=23"
+        "tagged 825 items",
+        "by tier: press=515, official=160, research=122, community=28"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 795 items, top priority=0.488"
+        "ranked 825 items, top priority=0.488"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 16 products this run",
+        "detected 15 companies, 16 products this run",
         "store size: 46"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.066,
+      "duration_s": 0.068,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.161,
+      "duration_s": 0.167,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "14 events (0 new)",
-        "by type: pricing_change=2, model_release=7, acquisition=3, personnel_move=1, policy_signal=1"
+        "15 events (1 new)",
+        "by type: pricing_change=2, model_release=8, acquisition=3, personnel_move=1, policy_signal=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 11.363,
+      "duration_s": 9.522,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 5.848,
+      "duration_s": 8.84,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 4.561,
+      "duration_s": 9.122,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=795, opps=3, calls=3"
+        "items=825, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.463,
+      "duration_s": 2.206,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد نشاط إصدار النماذج من gpt يعكس اهتمامًا متزايدًا في تطوير الذكاء الاصطناع…"
+        "insight via openai: شهد النشاط زيادة ملحوظة في عدد الإشارات اليوم، مما يشير إلى اهتمام متزايد في تط…"
       ],
       "error": null
     },
