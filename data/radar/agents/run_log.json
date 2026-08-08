@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-07T22:29:17+00:00",
+  "run_at": "2026-08-08T00:51:14+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 21.31,
+      "duration_s": 22.525,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 344 signals from 31 source families",
+        "collected 345 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.012,
       "written": [],
       "notes": [
         "injected 482 manual X items (skipped 18 of 500, avg score 0.146)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 826 items",
-        "by tier: press=514, official=160, research=122, community=30"
+        "tagged 827 items",
+        "by tier: press=515, official=162, research=122, community=28"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 826 items, top priority=0.516"
+        "ranked 827 items, top priority=0.488"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 16 products this run",
+        "detected 14 companies, 16 products this run",
         "store size: 46"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.067,
+      "duration_s": 0.068,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.161,
+      "duration_s": 0.164,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "15 events (0 new)",
+        "15 events (9 new)",
         "by type: pricing_change=2, model_release=8, acquisition=3, personnel_move=1, policy_signal=1"
       ],
       "error": null
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 8.595,
+      "duration_s": 10.537,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.251,
+      "duration_s": 6.602,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.149,
+      "duration_s": 6.464,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=826, opps=3, calls=3"
+        "items=827, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.729,
+      "duration_s": 1.735,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط في إصدار النماذج يشير إلى اهتمام متزايد في تطوير تقنيات الذكاء الا…"
+        "insight via openai: تزايد تركيز النشاط على الإصدارات الجديدة، حيث شهدنا إصدار نماذج جديدة من عدة مص…"
       ],
       "error": null
     },
