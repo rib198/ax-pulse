@@ -1,47 +1,89 @@
 {
-  "generated_at": "2026-08-09T14:28:50+00:00",
+  "generated_at": "2026-08-09T16:26:04+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 820,
   "opportunities": [
     {
-      "id": "text-to-image-diffusion-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على إنشاء الصور من النصوص يعكس فرصة كبيرة في السوق. يمكن أن تلبي هذه النماذج احتياجات الإبداع في مجالات متعددة.",
-      "buyer_ar": "شركات التصميم والإعلانات",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل نص إلى صورة لمشروع تجريبي",
-      "tools_ar": "نموذج تعلم عميق، بيانات تدريب، واجهة مستخدم رسومية",
+      "id": "multilingual-text-embedding",
+      "title_ar": "تطوير نماذج تضمين نصوص متعددة اللغات",
+      "thesis_ar": "تزايد الحاجة لنماذج تضمين نصوص تتكيف مع مهام متعددة، مما يفتح المجال لتطوير حلول مخصصة. يمكن أن يؤدي تحسين استراتيجيات التدريب إلى تحسين الأداء عبر مختلف التطبيقات.",
+      "buyer_ar": "شركات التكنولوجيا ومراكز البحث",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتضمين النصوص متعددة اللغات",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لمهمة محددة مع قياس الأداء",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة اللغة الطبيعية، بيئات اختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Omnico/Krea2_turbo_diff_loras",
-        "huggingface_models:bghira/anima-anyflow-e621-wip",
-        "huggingface_models:bytefid/ChattyBytex"
+        "huggingface_daily_papers:2608.05785",
+        "huggingface_daily_papers:2607.28609"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 2,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Task-Conditional Flow Matching for Balanced Multilingual Text Embedding Adaptation",
+          "url": "https://huggingface.co/papers/2608.05785",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+          "url": "https://huggingface.co/papers/2607.28609",
+          "score": 0.48,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-09T16:26:04+00:00",
+      "updatedAt": "2026-08-09T16:26:04+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في التطبيقات الإبداعية والتجارية. يمكن أن تلبي هذه النماذج احتياجات السوق المتزايدة للصور المخصصة.",
+      "buyer_ar": "وكالات الإعلانات والشركات الإبداعية",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحويل النصوص إلى صور",
+      "first_paid_test_ar": "تقديم نموذج لتحويل نص إلى صورة لمشروع تجريبي",
+      "tools_ar": "أدوات الذكاء الاصطناعي، مكتبات معالجة الصور، بيئات تطوير",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:SEEDRAAI/SEEDRAAI",
+        "huggingface_models:Omnico/Krea2_turbo_diff_loras",
+        "huggingface_models:bghira/anima-anyflow-e621-wip"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "SEEDRAAI/SEEDRAAI — text-to-image",
+          "url": "https://huggingface.co/SEEDRAAI/SEEDRAAI",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "Omnico/Krea2_turbo_diff_loras — text-to-image",
           "url": "https://huggingface.co/Omnico/Krea2_turbo_diff_loras",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "bghira/anima-anyflow-e621-wip — text-to-image",
           "url": "https://huggingface.co/bghira/anima-anyflow-e621-wip",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "bytefid/ChattyBytex — text-to-image",
-          "url": "https://huggingface.co/bytefid/ChattyBytex",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -50,98 +92,40 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-09T14:28:50+00:00",
-      "updatedAt": "2026-08-09T14:28:50+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "customer-support-llm",
-      "title_ar": "نموذج دعم العملاء باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في دعم العملاء يفتح آفاقًا جديدة. يمكن لنموذج مخصص أن يحسن تجربة العملاء بشكل ملحوظ.",
-      "buyer_ar": "شركات التجارة الإلكترونية ومقدمي الخدمات",
-      "sellable_product_ar": "نموذج دعم عملاء ذكي",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لدعم العملاء في سيناريو محدد",
-      "tools_ar": "نموذج تعلم عميق، بيانات محادثات العملاء، واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:AmmarNasir/llama-3-8b-customer-support-qlora",
-        "huggingface_models:Akanyz/Cyber42",
-        "huggingface_models:pihu21057w/nee"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.45,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Akanyz/Cyber42 — text-generation",
-          "url": "https://huggingface.co/Akanyz/Cyber42",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "AmmarNasir/llama-3-8b-customer-support-qlora — text-generation",
-          "url": "https://huggingface.co/AmmarNasir/llama-3-8b-customer-support-qlora",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "pihu21057w/nee — text-generation",
-          "url": "https://huggingface.co/pihu21057w/nee",
-          "score": 0.447,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-09T14:28:50+00:00",
-      "updatedAt": "2026-08-09T14:28:50+00:00",
+      "publishedAt": "2026-08-09T16:26:04+00:00",
+      "updatedAt": "2026-08-09T16:26:04+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multilingual-text-embedding-adaptation",
-      "title_ar": "تكييف نماذج النصوص متعددة اللغات",
-      "thesis_ar": "تتزايد الحاجة إلى نماذج نصوص متعددة اللغات تتكيف مع مهام متنوعة. هذا الوقت هو الأنسب لتطوير حلول تكنولوجية تلبي احتياجات السوق المتزايدة.",
-      "buyer_ar": "شركات البرمجيات ومزودي الخدمات اللغوية",
-      "sellable_product_ar": "نموذج تكييف نصوص متعدد اللغات",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لمهمة واحدة مع تقييم الأداء",
-      "tools_ar": "أدوات تعلم الآلة، بيانات تدريب متعددة اللغات، واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "code-repair-and-generation",
+      "title_ar": "تطوير نماذج إصلاح وتوليد الشيفرات البرمجية",
+      "thesis_ar": "تزايد الحاجة لأدوات تساعد المطورين في تحسين الشيفرات وإصلاح الأخطاء. هذه الأدوات يمكن أن تسهل عمليات التطوير بشكل كبير.",
+      "buyer_ar": "شركات البرمجة والتكنولوجيا",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لإصلاح وتوليد الشيفرات",
+      "first_paid_test_ar": "تقديم نموذج لإصلاح شيفرة برمجية محددة",
+      "tools_ar": "أدوات البرمجة، مكتبات تعلم الآلة، بيئات تطوير البرمجيات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.05785",
-        "huggingface_daily_papers:2608.06197",
-        "huggingface_models:Scrappy-Doo/GLM-5.2"
+        "huggingface_models:alirezaaminzadeh/minizinc-repair-coder",
+        "huggingface_models:alirezaaminzadeh/minizinc-codegen-coder"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 2,
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Task-Conditional Flow Matching for Balanced Multilingual Text Embedding Adaptation",
-          "url": "https://huggingface.co/papers/2608.05785",
-          "score": 0.477,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2608.06197",
-          "score": 0.477,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "alirezaaminzadeh/minizinc-repair-coder — text-generation",
+          "url": "https://huggingface.co/alirezaaminzadeh/minizinc-repair-coder",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Scrappy-Doo/GLM-5.2 — text-generation",
-          "url": "https://huggingface.co/Scrappy-Doo/GLM-5.2",
-          "score": 0.447,
+          "title": "alirezaaminzadeh/minizinc-codegen-coder — text-generation",
+          "url": "https://huggingface.co/alirezaaminzadeh/minizinc-codegen-coder",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +134,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-09T14:28:50+00:00",
-      "updatedAt": "2026-08-09T14:28:50+00:00",
+      "publishedAt": "2026-08-09T16:26:04+00:00",
+      "updatedAt": "2026-08-09T16:26:04+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-09T14:28:50+00:00",
+  "tiered_at": "2026-08-09T16:26:04+00:00",
   "free_preview_count": 3
 }
