@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-09T00:54:37+00:00",
+  "run_at": "2026-08-09T03:29:00+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 19.454,
+      "duration_s": 17.43,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -55,7 +55,7 @@
       ],
       "notes": [
         "tagged 823 items",
-        "by tier: press=515, official=161, research=122, community=25"
+        "by tier: press=515, official=162, research=122, community=24"
       ],
       "error": null
     },
@@ -72,7 +72,7 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.162,
+      "duration_s": 0.163,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "15 events (9 new)",
+        "15 events (0 new)",
         "by type: pricing_change=2, model_release=8, acquisition=3, personnel_move=1, policy_signal=1"
       ],
       "error": null
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 8.037,
+      "duration_s": 7.701,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 6.945,
+      "duration_s": 5.771,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 4.637,
+      "duration_s": 5.152,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -224,12 +224,12 @@
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.855,
+      "duration_s": 1.697,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد نشاط الإصدارات في مجال الذكاء الاصطناعي يشير إلى اهتمام متزايد من الشركات…"
+        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في الأنشطة المتعلقة بإصدارات النماذج، حيث تم ر…"
       ],
       "error": null
     },
