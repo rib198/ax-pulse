@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-09T04:59:31+00:00",
+  "run_at": "2026-08-09T06:41:28+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 17.075,
+      "duration_s": 18.23,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 337 signals from 31 source families",
+        "collected 340 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.012,
       "written": [],
       "notes": [
         "injected 482 manual X items (skipped 18 of 500, avg score 0.146)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 819 items",
-        "by tier: press=515, official=162, research=122, community=20"
+        "tagged 822 items",
+        "by tier: press=515, official=162, research=122, community=23"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.032,
+      "duration_s": 0.033,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 819 items, top priority=0.494"
+        "ranked 822 items, top priority=0.488"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.014,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 17 products this run",
+        "detected 14 companies, 16 products this run",
         "store size: 46"
       ],
       "error": null
@@ -102,7 +102,7 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+13 new model events",
+        "+12 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.162,
+      "duration_s": 0.163,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "16 events (1 new)",
-        "by type: pricing_change=2, model_release=9, acquisition=3, personnel_move=1, policy_signal=1"
+        "15 events (0 new)",
+        "by type: pricing_change=2, model_release=8, acquisition=3, personnel_move=1, policy_signal=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 7.706,
+      "duration_s": 7.039,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 5.939,
+      "duration_s": 5.488,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.364,
+      "duration_s": 5.823,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=819, opps=3, calls=3"
+        "items=822, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.608,
+      "duration_s": 1.501,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في نشاط الإصدارات، حيث تم الإعلان عن ثلاثة نما…"
+        "insight via openai: شهدنا زيادة ملحوظة في النشاط حول تغييرات الأسعار وإصدارات النماذج، مما يدل على …"
       ],
       "error": null
     },
