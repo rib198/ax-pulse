@@ -1,68 +1,47 @@
 {
-  "generated_at": "2026-08-09T12:30:38+00:00",
+  "generated_at": "2026-08-09T14:28:50+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 823,
+  "corpus_count": 820,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي المبتكر يعزز الحاجة إلى نماذج تحويل النص إلى صورة. هذه النماذج يمكن أن توفر حلولًا مبتكرة في مجالات مثل التسويق والإعلانات.",
-      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
+      "id": "text-to-image-diffusion-models",
+      "title_ar": "نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على إنشاء الصور من النصوص يعكس فرصة كبيرة في السوق. يمكن أن تلبي هذه النماذج احتياجات الإبداع في مجالات متعددة.",
+      "buyer_ar": "شركات التصميم والإعلانات",
       "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لمشروع إعلاني صغير",
-      "tools_ar": "Hugging Face, Python, أدوات التعلم العميق",
-      "capital_ar": "منخفض",
+      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل نص إلى صورة لمشروع تجريبي",
+      "tools_ar": "نموذج تعلم عميق، بيانات تدريب، واجهة مستخدم رسومية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models/ceciliyazi/Terminal-Vision-LoRa",
-        "huggingface_models/bghira/anima-anyflow-e621-wip",
-        "huggingface_models/ASuka41/LengChun"
+        "huggingface_models:Omnico/Krea2_turbo_diff_loras",
+        "huggingface_models:bghira/anima-anyflow-e621-wip",
+        "huggingface_models:bytefid/ChattyBytex"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Mergeability/zoo-language-beetle-monolingual-fineweb-100m-deu__beetle-monolingual-fineweb-100m-kor__qmd_guide — text-generation",
-          "url": "https://huggingface.co/Mergeability/zoo-language-beetle-monolingual-fineweb-100m-deu__beetle-monolingual-fineweb-100m-kor__qmd_guide",
-          "score": 0.488,
+          "title": "Omnico/Krea2_turbo_diff_loras — text-to-image",
+          "url": "https://huggingface.co/Omnico/Krea2_turbo_diff_loras",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LockOnN/qwen35_27b_openvistool_42k — image-text-to-text",
-          "url": "https://huggingface.co/LockOnN/qwen35_27b_openvistool_42k",
-          "score": 0.488,
+          "title": "bghira/anima-anyflow-e621-wip — text-to-image",
+          "url": "https://huggingface.co/bghira/anima-anyflow-e621-wip",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LockOnN/qwen35_9b_openvistool_42k — image-text-to-text",
-          "url": "https://huggingface.co/LockOnN/qwen35_9b_openvistool_42k",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LockOnN/qwen3vl_8b_openvistool_42k — image-text-to-text",
-          "url": "https://huggingface.co/LockOnN/qwen3vl_8b_openvistool_42k",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LockOnN/qwen35_4b_openvistool_42k — image-text-to-text",
-          "url": "https://huggingface.co/LockOnN/qwen35_4b_openvistool_42k",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ceciliyazi/Terminal-Vision-LoRa — text-to-image",
-          "url": "https://huggingface.co/ceciliyazi/Terminal-Vision-LoRa",
-          "score": 0.488,
+          "title": "bytefid/ChattyBytex — text-to-image",
+          "url": "https://huggingface.co/bytefid/ChattyBytex",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -71,69 +50,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-09T12:30:38+00:00",
-      "updatedAt": "2026-08-09T12:30:38+00:00",
+      "publishedAt": "2026-08-09T14:28:50+00:00",
+      "updatedAt": "2026-08-09T14:28:50+00:00",
       "sortOrder": 0
     },
     {
-      "id": "multimodal-agents",
-      "title_ar": "تطوير وكلاء متعددين الوسائط",
-      "thesis_ar": "تزايد استخدام الوكلاء الذكيين في التطبيقات المتعددة الوسائط يعكس الحاجة إلى حلول متكاملة. هذه الوكلاء يمكن أن تسهم في تحسين تجربة المستخدم في العديد من المجالات.",
-      "buyer_ar": "شركات التقنية والتطبيقات الذكية",
-      "sellable_product_ar": "نموذج وكيل متعدد الوسائط",
-      "first_paid_test_ar": "تطوير نموذج تجريبي لوكيل لمهمة محددة",
-      "tools_ar": "Hugging Face, أدوات الذكاء الاصطناعي, Python",
-      "capital_ar": "متوسط",
+      "id": "customer-support-llm",
+      "title_ar": "نموذج دعم العملاء باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في دعم العملاء يفتح آفاقًا جديدة. يمكن لنموذج مخصص أن يحسن تجربة العملاء بشكل ملحوظ.",
+      "buyer_ar": "شركات التجارة الإلكترونية ومقدمي الخدمات",
+      "sellable_product_ar": "نموذج دعم عملاء ذكي",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لدعم العملاء في سيناريو محدد",
+      "tools_ar": "نموذج تعلم عميق، بيانات محادثات العملاء، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models/LockOnN/qwen35_27b_openvistool_42k",
-        "huggingface_models/LockOnN/qwen35_9b_openvistool_42k",
-        "huggingface_models/LockOnN/qwen3vl_8b_openvistool_42k"
+        "huggingface_models:AmmarNasir/llama-3-8b-customer-support-qlora",
+        "huggingface_models:Akanyz/Cyber42",
+        "huggingface_models:pihu21057w/nee"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.45,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Mergeability/zoo-language-beetle-monolingual-fineweb-100m-deu__beetle-monolingual-fineweb-100m-kor__qmd_guide — text-generation",
-          "url": "https://huggingface.co/Mergeability/zoo-language-beetle-monolingual-fineweb-100m-deu__beetle-monolingual-fineweb-100m-kor__qmd_guide",
-          "score": 0.488,
+          "title": "Akanyz/Cyber42 — text-generation",
+          "url": "https://huggingface.co/Akanyz/Cyber42",
+          "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LockOnN/qwen35_27b_openvistool_42k — image-text-to-text",
-          "url": "https://huggingface.co/LockOnN/qwen35_27b_openvistool_42k",
-          "score": 0.488,
+          "title": "AmmarNasir/llama-3-8b-customer-support-qlora — text-generation",
+          "url": "https://huggingface.co/AmmarNasir/llama-3-8b-customer-support-qlora",
+          "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LockOnN/qwen35_9b_openvistool_42k — image-text-to-text",
-          "url": "https://huggingface.co/LockOnN/qwen35_9b_openvistool_42k",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LockOnN/qwen3vl_8b_openvistool_42k — image-text-to-text",
-          "url": "https://huggingface.co/LockOnN/qwen3vl_8b_openvistool_42k",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LockOnN/qwen35_4b_openvistool_42k — image-text-to-text",
-          "url": "https://huggingface.co/LockOnN/qwen35_4b_openvistool_42k",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ceciliyazi/Terminal-Vision-LoRa — text-to-image",
-          "url": "https://huggingface.co/ceciliyazi/Terminal-Vision-LoRa",
-          "score": 0.488,
+          "title": "pihu21057w/nee — text-generation",
+          "url": "https://huggingface.co/pihu21057w/nee",
+          "score": 0.447,
           "trust_tier": "official"
         }
       ],
@@ -142,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-09T12:30:38+00:00",
-      "updatedAt": "2026-08-09T12:30:38+00:00",
+      "publishedAt": "2026-08-09T14:28:50+00:00",
+      "updatedAt": "2026-08-09T14:28:50+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "multilingual-text-embedding-adaptation",
+      "title_ar": "تكييف نماذج النصوص متعددة اللغات",
+      "thesis_ar": "تتزايد الحاجة إلى نماذج نصوص متعددة اللغات تتكيف مع مهام متنوعة. هذا الوقت هو الأنسب لتطوير حلول تكنولوجية تلبي احتياجات السوق المتزايدة.",
+      "buyer_ar": "شركات البرمجيات ومزودي الخدمات اللغوية",
+      "sellable_product_ar": "نموذج تكييف نصوص متعدد اللغات",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لمهمة واحدة مع تقييم الأداء",
+      "tools_ar": "أدوات تعلم الآلة، بيانات تدريب متعددة اللغات، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2608.05785",
+        "huggingface_daily_papers:2608.06197",
+        "huggingface_models:Scrappy-Doo/GLM-5.2"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Task-Conditional Flow Matching for Balanced Multilingual Text Embedding Adaptation",
+          "url": "https://huggingface.co/papers/2608.05785",
+          "score": 0.477,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
+          "url": "https://huggingface.co/papers/2608.06197",
+          "score": 0.477,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Scrappy-Doo/GLM-5.2 — text-generation",
+          "url": "https://huggingface.co/Scrappy-Doo/GLM-5.2",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-09T14:28:50+00:00",
+      "updatedAt": "2026-08-09T14:28:50+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-09T12:30:38+00:00",
+  "tiered_at": "2026-08-09T14:28:50+00:00",
   "free_preview_count": 3
 }
