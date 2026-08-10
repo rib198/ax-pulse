@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-10T18:46:08+00:00",
+  "generated_at": "2026-08-10T20:35:33+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 819,
+  "corpus_count": 821,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي الفريد يعزز الحاجة إلى نماذج تحويل النص إلى صورة. مع تحديثات مستمرة على نماذج مثل WAN-25Real وFLUX-Enhance3، هناك فرصة لإنشاء تطبيقات تسهل على المستخدمين إنشاء صور مخصصة.",
-      "buyer_ar": "شركات المحتوى الرقمي والمصممين المستقلين",
-      "sellable_product_ar": "منصة لإنشاء وتخصيص الصور باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تجربة مجانية مع خيار الدفع لإنتاج عدد محدد من الصور",
-      "tools_ar": "نماذج الذكاء الاصطناعي، واجهة مستخدم، خادم سحابي",
-      "capital_ar": "متوسط",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في مختلف التطبيقات يعكس الحاجة المتزايدة لهذه التكنولوجيا. التحديثات المستمرة على نماذج مثل awakening وgemma تشير إلى فرص تطوير جديدة.",
+      "buyer_ar": "شركات التكنولوجيا الناشئة والمؤسسات التعليمية",
+      "sellable_product_ar": "نموذج توليد نصوص مخصص أو خدمة استشارية في الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص لمهمة محددة",
+      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "CH522/WAN-25Real",
-        "CH522/FLUX-Enhance3",
-        "ench100/bodyandface"
+        "juihuichung/awakening-rl-replay100",
+        "juihuichung/awakening-sft-replay100",
+        "ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -25,43 +25,43 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF — text-generation",
-          "url": "https://huggingface.co/shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF",
+          "title": "juihuichung/awakening-rl-replay100 — text-generation",
+          "url": "https://huggingface.co/juihuichung/awakening-rl-replay100",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "beyoru/Orbit — text-generation",
-          "url": "https://huggingface.co/beyoru/Orbit",
+          "title": "juihuichung/awakening-sft-replay100 — text-generation",
+          "url": "https://huggingface.co/juihuichung/awakening-sft-replay100",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "CH522/WAN-25Real — text-to-image",
-          "url": "https://huggingface.co/CH522/WAN-25Real",
+          "title": "juihuichung/awakening-goedel-v2-32b-rl — text-generation",
+          "url": "https://huggingface.co/juihuichung/awakening-goedel-v2-32b-rl",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "CH522/WAN-Chate — text-to-image",
-          "url": "https://huggingface.co/CH522/WAN-Chate",
+          "title": "juihuichung/awakening-goedel-v2-32b-sft — text-generation",
+          "url": "https://huggingface.co/juihuichung/awakening-goedel-v2-32b-sft",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ench100/bodyandface — text-to-image",
-          "url": "https://huggingface.co/ench100/bodyandface",
+          "title": "ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2 — text-generation",
+          "url": "https://huggingface.co/ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "bghira/anima-anyflow-e621-dmd-wip — text-to-image",
-          "url": "https://huggingface.co/bghira/anima-anyflow-e621-dmd-wip",
+          "title": "Abiray/Muse-Glimmer-30B-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/Abiray/Muse-Glimmer-30B-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -71,23 +71,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-10T18:46:08+00:00",
-      "updatedAt": "2026-08-10T18:46:08+00:00",
+      "publishedAt": "2026-08-10T20:35:33+00:00",
+      "updatedAt": "2026-08-10T20:35:33+00:00",
       "sortOrder": 0
     },
     {
-      "id": "coding-assistant-tools",
-      "title_ar": "تطوير أدوات مساعدة للبرمجة",
-      "thesis_ar": "مع تزايد استخدام نماذج الذكاء الاصطناعي في البرمجة، هناك فرصة لإنشاء أدوات تسهل على المطورين كتابة الأكواد. نماذج مثل webcoder-pro وGLM-5.2 تقدم إمكانيات قوية لهذا الغرض.",
-      "buyer_ar": "المطورون والشركات التقنية",
-      "sellable_product_ar": "أداة مساعدة للبرمجة تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم اشتراك شهري مع فترة تجريبية مجانية",
-      "tools_ar": "نماذج الذكاء الاصطناعي، واجهة برمجة التطبيقات، بيئة تطوير متكاملة",
-      "capital_ar": "منخفض",
+      "id": "image-text-integration",
+      "title_ar": "دمج النصوص والصور باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "النماذج الجديدة مثل Muse-Glimmer وAnima تشير إلى اتجاه متزايد في دمج النصوص والصور. هذا المجال يوفر فرصاً كبيرة في التسويق والإعلانات.",
+      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
+      "sellable_product_ar": "أداة لتحويل النصوص إلى محتوى بصري أو خدمة تصميم محتوى",
+      "first_paid_test_ar": "تقديم نموذج لتحويل نص إلى صورة لحملة إعلانية",
+      "tools_ar": "Hugging Face, OpenAI API, Adobe Creative Cloud",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "caikybaldo999/webcoder-pro",
-        "Scrappy-Doo/GLM-5.2",
-        "KissTheHabit/IDA_AI"
+        "Abiray/Muse-Glimmer-30B-GGUF",
+        "bghira/anima-anyflow-e621-dmd-v1",
+        "ench100/bodyandface"
       ],
       "confidence": 0.75,
       "source": "openai",
@@ -96,43 +96,43 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF — text-generation",
-          "url": "https://huggingface.co/shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF",
+          "title": "juihuichung/awakening-rl-replay100 — text-generation",
+          "url": "https://huggingface.co/juihuichung/awakening-rl-replay100",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "beyoru/Orbit — text-generation",
-          "url": "https://huggingface.co/beyoru/Orbit",
+          "title": "juihuichung/awakening-sft-replay100 — text-generation",
+          "url": "https://huggingface.co/juihuichung/awakening-sft-replay100",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "CH522/WAN-25Real — text-to-image",
-          "url": "https://huggingface.co/CH522/WAN-25Real",
+          "title": "juihuichung/awakening-goedel-v2-32b-rl — text-generation",
+          "url": "https://huggingface.co/juihuichung/awakening-goedel-v2-32b-rl",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "CH522/WAN-Chate — text-to-image",
-          "url": "https://huggingface.co/CH522/WAN-Chate",
+          "title": "juihuichung/awakening-goedel-v2-32b-sft — text-generation",
+          "url": "https://huggingface.co/juihuichung/awakening-goedel-v2-32b-sft",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ench100/bodyandface — text-to-image",
-          "url": "https://huggingface.co/ench100/bodyandface",
+          "title": "ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2 — text-generation",
+          "url": "https://huggingface.co/ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "bghira/anima-anyflow-e621-dmd-wip — text-to-image",
-          "url": "https://huggingface.co/bghira/anima-anyflow-e621-dmd-wip",
+          "title": "Abiray/Muse-Glimmer-30B-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/Abiray/Muse-Glimmer-30B-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -142,23 +142,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-10T18:46:08+00:00",
-      "updatedAt": "2026-08-10T18:46:08+00:00",
+      "publishedAt": "2026-08-10T20:35:33+00:00",
+      "updatedAt": "2026-08-10T20:35:33+00:00",
       "sortOrder": 1
     },
     {
       "id": "privacy-auditing-tools",
-      "title_ar": "تطوير أدوات تدقيق الخصوصية للذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد استخدام الوكلاء المعتمدين على الذكاء الاصطناعي، تبرز الحاجة إلى أدوات تدقيق الخصوصية لضمان حماية البيانات. الدراسات تشير إلى وجود ثغرات في كيفية تعامل هذه الوكلاء مع المعلومات الحساسة.",
-      "buyer_ar": "الشركات التي تستخدم الذكاء الاصطناعي في خدماتها",
+      "title_ar": "أدوات تدقيق الخصوصية للذكاء الاصطناعي",
+      "thesis_ar": "تزايد القلق بشأن الخصوصية في استخدام نماذج الذكاء الاصطناعي يتطلب تطوير أدوات تدقيق فعالة. الأبحاث تشير إلى الحاجة إلى حلول مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات التكنولوجيا والحكومات",
       "sellable_product_ar": "أداة تدقيق الخصوصية للذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل مجاني مع خيار الدفع لتدقيق شامل",
-      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات تحليل البيانات، واجهة مستخدم",
+      "first_paid_test_ar": "تقديم تحليل خصوصية لنموذج ذكاء اصطناعي محدد",
+      "tools_ar": "Python, Data Privacy Tools, Hugging Face",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2606.00152",
-        "huggingface_daily_papers:2608.06113",
-        "huggingface_daily_papers:2608.02831"
+        "huggingface_daily_papers:2608.04205",
+        "huggingface_daily_papers:2608.06113"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -174,16 +174,16 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "DCAS: Decoupling CLI Agent Scaffolding to Internalize Planning across Scaffolds",
-          "url": "https://huggingface.co/papers/2608.06113",
-          "score": 0.474,
+          "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+          "url": "https://huggingface.co/papers/2608.04205",
+          "score": 0.48,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Reinforcement Learning with Evolving Rubrics as Rewards for Audio Reasoning",
-          "url": "https://huggingface.co/papers/2608.02831",
-          "score": 0.47,
+          "title": "DCAS: Decoupling CLI Agent Scaffolding to Internalize Planning across Scaffolds",
+          "url": "https://huggingface.co/papers/2608.06113",
+          "score": 0.474,
           "trust_tier": "research"
         }
       ],
@@ -192,11 +192,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-10T18:46:08+00:00",
-      "updatedAt": "2026-08-10T18:46:08+00:00",
+      "publishedAt": "2026-08-10T20:35:33+00:00",
+      "updatedAt": "2026-08-10T20:35:33+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-10T18:46:08+00:00",
+  "tiered_at": "2026-08-10T20:35:33+00:00",
   "free_preview_count": 3
 }
