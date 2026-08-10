@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-10T11:01:33+00:00",
+  "generated_at": "2026-08-10T12:46:34+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 821,
+  "corpus_count": 823,
   "opportunities": [
     {
       "id": "ai-risk-mitigation-tools",
-      "title_ar": "أدوات التخفيف من مخاطر الذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد استخدام نماذج اللغة الكبيرة في المؤسسات، تزداد المخاطر التشغيلية والأمنية. هناك حاجة ملحة لتطوير أدوات مفتوحة المصدر لتخفيف هذه المخاطر.",
-      "buyer_ar": "المؤسسات والشركات التقنية",
-      "sellable_product_ar": "أداة مفتوحة المصدر لتخفيف المخاطر في الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع خيار الترقية المدفوعة",
-      "tools_ar": "أدوات تطوير البرمجيات، مكتبات الذكاء الاصطناعي، بيئة اختبار",
-      "capital_ar": "منخفض",
+      "title_ar": "تطوير أدوات تخفيف مخاطر الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في المؤسسات يخلق حاجة ملحة لأدوات تخفيف المخاطر. مع انتقال تطبيقات الذكاء الاصطناعي إلى الإنتاج، تتزايد المخاطر التشغيلية والأمنية، مما يجعل هذه الأدوات ضرورية.",
+      "buyer_ar": "شركات التكنولوجيا والمؤسسات الكبيرة",
+      "sellable_product_ar": "أدوات تخفيف المخاطر التشغيلية والأمنية للذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم استشارة مجانية لتقييم المخاطر الحالية ثم عرض أداة تجريبية",
+      "tools_ar": "أدوات تحليل البيانات، منصات تطوير البرمجيات، أدوات الأمان السيبراني",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2608.07446v1",
-        "huggingface_daily_papers:2606.00152",
-        "huggingface_daily_papers:2608.06714"
+        "2608.07446v1",
+        "2606.00152",
+        "2608.02831"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -31,18 +31,39 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say",
-          "url": "https://huggingface.co/papers/2606.00152",
-          "score": 0.484,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "shafire/OpenZero-Gemma4-E2B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Gemma4-E2B-Agentic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows",
-          "url": "https://huggingface.co/papers/2608.06714",
-          "score": 0.474,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "shafire/OpenZero-Qwen3-1.7B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Qwen3-1.7B-Agentic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "beyoru/Clawd-Agent — text-generation",
+          "url": "https://huggingface.co/beyoru/Clawd-Agent",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bghira/anima-anyflow-e621-wip — text-to-image",
+          "url": "https://huggingface.co/bghira/anima-anyflow-e621-wip",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,47 +71,68 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-10T11:01:33+00:00",
-      "updatedAt": "2026-08-10T11:01:33+00:00",
+      "publishedAt": "2026-08-10T12:46:34+00:00",
+      "updatedAt": "2026-08-10T12:46:34+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-solutions",
-      "title_ar": "حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يوفر فرصة كبيرة لتطوير تطبيقات مبتكرة. يمكن استخدام هذه النماذج في مجالات متعددة مثل التسويق والإعلانات.",
-      "buyer_ar": "وكالات التسويق والإعلانات، الشركات التقنية",
-      "sellable_product_ar": "تطبيق لتحويل النص إلى صورة باستخدام نماذج متقدمة",
-      "first_paid_test_ar": "تقديم خدمة تحويل نصوص بسيطة إلى صور كاختبار مدفوع",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، منصة تطوير",
+      "id": "medical-reasoning-ai-tools",
+      "title_ar": "تطوير أدوات الذكاء الاصطناعي لفهم الأسباب الطبية",
+      "thesis_ar": "تزايد الحاجة لفهم الأسباب الطبية يعزز الطلب على أدوات الذكاء الاصطناعي. هذه الأدوات يمكن أن تساعد في تحسين دقة التشخيصات الطبية.",
+      "buyer_ar": "المستشفيات والعيادات الطبية",
+      "sellable_product_ar": "أدوات ذكاء اصطناعي لتحليل البيانات الطبية وتقديم التوصيات",
+      "first_paid_test_ar": "تقديم دراسة حالة مجانية لتحليل بيانات طبية حقيقية",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، قواعد بيانات طبية",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:PeterD69/b",
-        "huggingface_models:LeFeujitif/sandbox",
-        "huggingface_models:bytefid/ChattyBytex"
+        "Kerassy/Granite-4.1-3B-Medical_Reasoning",
+        "mradermacher/strawberry-1-GGUF",
+        "minkyungpark/mistral-7b-arc-stage2"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "Taxonomy-Driven Analysis of Open-Source AI Risk Mitigation Tools",
+          "url": "http://arxiv.org/abs/2608.07446v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "PeterD69/b — text-to-image",
-          "url": "https://huggingface.co/PeterD69/b",
+          "title": "shafire/OpenZero-Gemma4-E2B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Gemma4-E2B-Agentic-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LeFeujitif/sandbox — text-to-image",
-          "url": "https://huggingface.co/LeFeujitif/sandbox",
+          "title": "shafire/OpenZero-Qwen3-1.7B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Qwen3-1.7B-Agentic-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "bytefid/ChattyBytex — text-to-image",
-          "url": "https://huggingface.co/bytefid/ChattyBytex",
+          "title": "shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "beyoru/Clawd-Agent — text-generation",
+          "url": "https://huggingface.co/beyoru/Clawd-Agent",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bghira/anima-anyflow-e621-wip — text-to-image",
+          "url": "https://huggingface.co/bghira/anima-anyflow-e621-wip",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -100,49 +142,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-10T11:01:33+00:00",
-      "updatedAt": "2026-08-10T11:01:33+00:00",
+      "publishedAt": "2026-08-10T12:46:34+00:00",
+      "updatedAt": "2026-08-10T12:46:34+00:00",
       "sortOrder": 1
     },
     {
-      "id": "privacy-auditing-tools",
-      "title_ar": "أدوات تدقيق الخصوصية للذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام الوكلاء المعتمدين على نماذج اللغة الكبيرة يتطلب أدوات تدقيق لضمان حماية البيانات. هذه فرصة لتطوير حلول تدقيق فعالة.",
-      "buyer_ar": "الشركات التي تستخدم الذكاء الاصطناعي في خدماتها",
-      "sellable_product_ar": "أداة تدقيق الخصوصية للأنظمة المعتمدة على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تدقيق مجاني لعدد محدود من المستخدمين مع خيار الاشتراك المدفوع",
-      "tools_ar": "أدوات تحليل البيانات، مكتبات الذكاء الاصطناعي، واجهة برمجة التطبيقات",
+      "id": "local-ai-coding-assistants",
+      "title_ar": "تطوير مساعدات البرمجة المحلية بالذكاء الاصطناعي",
+      "thesis_ar": "تحديثات نماذج الذكاء الاصطناعي تشير إلى تزايد الطلب على أدوات المساعدة في البرمجة. هذه الأدوات يمكن أن تعزز الإنتاجية وتساعد المطورين في إنجاز المهام بشكل أسرع.",
+      "buyer_ar": "المطورون والشركات التقنية",
+      "sellable_product_ar": "مساعدات برمجة تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع ميزات محدودة لمدة شهر",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2606.00152",
-        "huggingface_daily_papers:2608.06714",
-        "huggingface_daily_papers:2608.05703"
+        "shafire/OpenZero-Gemma4-E2B-Agentic-GGUF",
+        "shafire/OpenZero-Qwen3-1.7B-Agentic-GGUF",
+        "shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say",
-          "url": "https://huggingface.co/papers/2606.00152",
-          "score": 0.484,
+          "source_id": "arxiv_papers",
+          "title": "Taxonomy-Driven Analysis of Open-Source AI Risk Mitigation Tools",
+          "url": "http://arxiv.org/abs/2608.07446v1",
+          "score": 0.489,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows",
-          "url": "https://huggingface.co/papers/2608.06714",
-          "score": 0.474,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "shafire/OpenZero-Gemma4-E2B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Gemma4-E2B-Agentic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding",
-          "url": "https://huggingface.co/papers/2608.05703",
-          "score": 0.474,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "shafire/OpenZero-Qwen3-1.7B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Qwen3-1.7B-Agentic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF — text-generation",
+          "url": "https://huggingface.co/shafire/OpenZero-Fusion-Qwen3-4B-Agentic-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "beyoru/Clawd-Agent — text-generation",
+          "url": "https://huggingface.co/beyoru/Clawd-Agent",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bghira/anima-anyflow-e621-wip — text-to-image",
+          "url": "https://huggingface.co/bghira/anima-anyflow-e621-wip",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-10T11:01:33+00:00",
-      "updatedAt": "2026-08-10T11:01:33+00:00",
+      "publishedAt": "2026-08-10T12:46:34+00:00",
+      "updatedAt": "2026-08-10T12:46:34+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-10T11:01:33+00:00",
+  "tiered_at": "2026-08-10T12:46:34+00:00",
   "free_preview_count": 3
 }
