@@ -1,182 +1,40 @@
 {
-  "generated_at": "2026-08-10T20:35:33+00:00",
+  "generated_at": "2026-08-10T22:30:43+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 821,
+  "corpus_count": 818,
   "opportunities": [
     {
-      "id": "text-generation-models",
-      "title_ar": "تطوير نماذج توليد النصوص",
-      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في مختلف التطبيقات يعكس الحاجة المتزايدة لهذه التكنولوجيا. التحديثات المستمرة على نماذج مثل awakening وgemma تشير إلى فرص تطوير جديدة.",
-      "buyer_ar": "شركات التكنولوجيا الناشئة والمؤسسات التعليمية",
-      "sellable_product_ar": "نموذج توليد نصوص مخصص أو خدمة استشارية في الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص لمهمة محددة",
-      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "id": "video-description-evaluation",
+      "title_ar": "تقييم أوصاف الفيديو على مستوى الفقرات",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة قادرة على إنشاء أوصاف دقيقة وطويلة الأمد للفيديو. هذا يعكس فرصة لتطوير أدوات تقييم جديدة تستند إلى الذكاء الاصطناعي.",
+      "buyer_ar": "شركات إنتاج الفيديو ووسائل الإعلام",
+      "sellable_product_ar": "أداة تقييم أوصاف الفيديو باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار مجاني لتقييم دقة الأوصاف التي تنتجها الأداة",
+      "tools_ar": "نموذج CLIP-CC, واجهة برمجة التطبيقات, خوارزميات الذكاء الاصطناعي",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "juihuichung/awakening-rl-replay100",
-        "juihuichung/awakening-sft-replay100",
-        "ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2"
+        "huggingface_daily_papers:2608.04302",
+        "huggingface_daily_papers:2608.06113",
+        "huggingface_daily_papers:2608.04205"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "juihuichung/awakening-rl-replay100 — text-generation",
-          "url": "https://huggingface.co/juihuichung/awakening-rl-replay100",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "juihuichung/awakening-sft-replay100 — text-generation",
-          "url": "https://huggingface.co/juihuichung/awakening-sft-replay100",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "juihuichung/awakening-goedel-v2-32b-rl — text-generation",
-          "url": "https://huggingface.co/juihuichung/awakening-goedel-v2-32b-rl",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "juihuichung/awakening-goedel-v2-32b-sft — text-generation",
-          "url": "https://huggingface.co/juihuichung/awakening-goedel-v2-32b-sft",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2 — text-generation",
-          "url": "https://huggingface.co/ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Abiray/Muse-Glimmer-30B-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/Abiray/Muse-Glimmer-30B-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-10T20:35:33+00:00",
-      "updatedAt": "2026-08-10T20:35:33+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "image-text-integration",
-      "title_ar": "دمج النصوص والصور باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "النماذج الجديدة مثل Muse-Glimmer وAnima تشير إلى اتجاه متزايد في دمج النصوص والصور. هذا المجال يوفر فرصاً كبيرة في التسويق والإعلانات.",
-      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى محتوى بصري أو خدمة تصميم محتوى",
-      "first_paid_test_ar": "تقديم نموذج لتحويل نص إلى صورة لحملة إعلانية",
-      "tools_ar": "Hugging Face, OpenAI API, Adobe Creative Cloud",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "Abiray/Muse-Glimmer-30B-GGUF",
-        "bghira/anima-anyflow-e621-dmd-v1",
-        "ench100/bodyandface"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "juihuichung/awakening-rl-replay100 — text-generation",
-          "url": "https://huggingface.co/juihuichung/awakening-rl-replay100",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "juihuichung/awakening-sft-replay100 — text-generation",
-          "url": "https://huggingface.co/juihuichung/awakening-sft-replay100",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "juihuichung/awakening-goedel-v2-32b-rl — text-generation",
-          "url": "https://huggingface.co/juihuichung/awakening-goedel-v2-32b-rl",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "juihuichung/awakening-goedel-v2-32b-sft — text-generation",
-          "url": "https://huggingface.co/juihuichung/awakening-goedel-v2-32b-sft",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2 — text-generation",
-          "url": "https://huggingface.co/ludx/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Abiray/Muse-Glimmer-30B-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/Abiray/Muse-Glimmer-30B-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-10T20:35:33+00:00",
-      "updatedAt": "2026-08-10T20:35:33+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "privacy-auditing-tools",
-      "title_ar": "أدوات تدقيق الخصوصية للذكاء الاصطناعي",
-      "thesis_ar": "تزايد القلق بشأن الخصوصية في استخدام نماذج الذكاء الاصطناعي يتطلب تطوير أدوات تدقيق فعالة. الأبحاث تشير إلى الحاجة إلى حلول مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات التكنولوجيا والحكومات",
-      "sellable_product_ar": "أداة تدقيق الخصوصية للذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل خصوصية لنموذج ذكاء اصطناعي محدد",
-      "tools_ar": "Python, Data Privacy Tools, Hugging Face",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2606.00152",
-        "huggingface_daily_papers:2608.04205",
-        "huggingface_daily_papers:2608.06113"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say",
-          "url": "https://huggingface.co/papers/2606.00152",
-          "score": 0.484,
+          "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
+          "url": "https://huggingface.co/papers/2608.04302",
+          "score": 0.537,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
           "url": "https://huggingface.co/papers/2608.04205",
-          "score": 0.48,
+          "score": 0.484,
           "trust_tier": "research"
         },
         {
@@ -192,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-10T20:35:33+00:00",
-      "updatedAt": "2026-08-10T20:35:33+00:00",
+      "publishedAt": "2026-08-10T22:30:43+00:00",
+      "updatedAt": "2026-08-10T22:30:43+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة، مما يتيح فرصًا جديدة في الإبداع الفني والتسويق. يمكن استخدام هذه النماذج في مجالات متعددة مثل الإعلانات والألعاب.",
+      "buyer_ar": "وكالات التسويق والشركات الناشئة في مجال التكنولوجيا",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص محددة إلى صور",
+      "tools_ar": "نموذج Clybius/chroma-loras, نموذج bghira/anima-anyflow-e621-dmd-v1, نموذج ench100/bodyandface",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Clybius/chroma-loras",
+        "huggingface_models:bghira/anima-anyflow-e621-dmd-v1",
+        "huggingface_models:ench100/bodyandface"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Clybius/chroma-loras — text-to-image",
+          "url": "https://huggingface.co/Clybius/chroma-loras",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bghira/anima-anyflow-e621-dmd-v1 — text-to-image",
+          "url": "https://huggingface.co/bghira/anima-anyflow-e621-dmd-v1",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ench100/bodyandface — text-to-image",
+          "url": "https://huggingface.co/ench100/bodyandface",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-10T22:30:43+00:00",
+      "updatedAt": "2026-08-10T22:30:43+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-generation-tools",
+      "title_ar": "تطوير أدوات توليد النصوص",
+      "thesis_ar": "تزايد الحاجة إلى أدوات توليد النصوص في مجالات متعددة مثل التسويق والمحتوى الرقمي. هذه الأدوات يمكن أن تسهم في تحسين الإنتاجية وتقليل التكاليف.",
+      "buyer_ar": "شركات المحتوى الرقمي ووكالات التسويق",
+      "sellable_product_ar": "أداة توليد نصوص تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تجربة مجانية لتوليد نصوص تسويقية",
+      "tools_ar": "نموذج stage-babylm/llama-256-4L, نموذج fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455, نموذج KissTheHabit/IDA_AI",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:stage-babylm/llama-256-4L",
+        "huggingface_models:fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455",
+        "huggingface_models:KissTheHabit/IDA_AI"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "stage-babylm/llama-256-4L — text-generation",
+          "url": "https://huggingface.co/stage-babylm/llama-256-4L",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455 — text-generation",
+          "url": "https://huggingface.co/fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "KissTheHabit/IDA_AI — text-generation",
+          "url": "https://huggingface.co/KissTheHabit/IDA_AI",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-10T22:30:43+00:00",
+      "updatedAt": "2026-08-10T22:30:43+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-10T20:35:33+00:00",
+  "tiered_at": "2026-08-10T22:30:43+00:00",
   "free_preview_count": 3
 }
