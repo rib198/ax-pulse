@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-08-11T00:56:49+00:00",
+  "generated_at": "2026-08-11T03:30:49+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 792,
+  "corpus_count": 819,
   "opportunities": [
     {
-      "id": "text-generation-innovation",
-      "title_ar": "ابتكارات في توليد النصوص",
-      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في مجالات متعددة مثل الكتابة الإبداعية والدعم الفني. يمكن استغلال هذه النماذج لتقديم حلول مبتكرة.",
-      "buyer_ar": "شركات النشر، منصات الدعم الفني",
-      "sellable_product_ar": "خدمة توليد محتوى نصي مخصص",
-      "first_paid_test_ar": "تطوير نص قصير باستخدام نموذج توليد نصوص وتجربته مع عميل محتمل",
-      "tools_ar": "نماذج توليد النصوص، أدوات التعلم العميق، منصة Hugging Face",
+      "id": "image-editing-precision",
+      "title_ar": "تحسين دقة تحرير الصور باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "توجد فجوة في دقة تحرير الصور على مستوى البكسل، مما يتيح فرصة لتطوير أدوات تحرير صور متقدمة. مع تزايد الطلب على المحتوى المرئي، يمكن أن تكون هذه الأدوات ذات قيمة كبيرة.",
+      "buyer_ar": "مصممي الجرافيك، شركات الإنتاج الإعلامي",
+      "sellable_product_ar": "أداة تحرير صور تعتمد على الذكاء الاصطناعي تحقق دقة بكسل عالية",
+      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع ميزات محدودة",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج الذكاء الاصطناعي، واجهات المستخدم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:KissTheHabit/IDA_AI",
-        "huggingface_models:Scrappy-Doo/GLM-5.2",
-        "huggingface_models:YTan2000/Muse-Glimmer-30B-TQ3_4S"
+        "2608.09097v1",
+        "2608.09921v1",
+        "2608.09096"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "KissTheHabit/IDA_AI — text-generation",
-          "url": "https://huggingface.co/KissTheHabit/IDA_AI",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "SI-Edit: Toward Sketch-Instruction Guided Local Image Editing with Pixel-Level Precision",
+          "url": "http://arxiv.org/abs/2608.09097v1",
+          "score": 0.524,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Evo-Bench: Can Language Models Improve Agent Harness?",
+          "url": "https://huggingface.co/papers/2608.09096",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+          "url": "https://huggingface.co/papers/2608.09802",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+          "url": "http://arxiv.org/abs/2608.09921v1",
+          "score": 0.498,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "SuperLocalMemory 4.0: The Governed Memory Operating System for AI Agents",
+          "url": "http://arxiv.org/abs/2608.08253v1",
+          "score": 0.497,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Scrappy-Doo/GLM-5.2 — text-generation",
-          "url": "https://huggingface.co/Scrappy-Doo/GLM-5.2",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "YTan2000/Muse-Glimmer-30B-TQ3_4S — text-generation",
-          "url": "https://huggingface.co/YTan2000/Muse-Glimmer-30B-TQ3_4S",
-          "score": 0.466,
+          "title": "DDhaven/lyra-vex — text-to-image",
+          "url": "https://huggingface.co/DDhaven/lyra-vex",
+          "score": 0.497,
           "trust_tier": "official"
         }
       ],
@@ -50,48 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-11T00:56:49+00:00",
-      "updatedAt": "2026-08-11T00:56:49+00:00",
+      "publishedAt": "2026-08-11T03:30:49+00:00",
+      "updatedAt": "2026-08-11T03:30:49+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على إنشاء محتوى بصري فريد من نوعه باستخدام الذكاء الاصطناعي. يمكن استغلال هذه النماذج في مجالات التسويق والإعلانات.",
-      "buyer_ar": "وكالات التسويق، شركات التصميم",
-      "sellable_product_ar": "خدمة توليد صور مخصصة من نصوص",
-      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل نص إلى صورة لعميل محتمل",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات التعلم العميق، منصة Hugging Face",
-      "capital_ar": "منخفض",
+      "id": "autonomous-agents-evaluation",
+      "title_ar": "تقييم فعالية الوكلاء المستقلين باستخدام نماذج لغوية",
+      "thesis_ar": "تتزايد الحاجة إلى تقييم فعالية الوكلاء المستقلين، مما يفتح المجال لتطوير أدوات تقييم جديدة. يمكن أن يؤدي تحسين هذه النماذج إلى تحسين أداء الوكلاء في المهام المعقدة.",
+      "buyer_ar": "شركات تطوير البرمجيات، المؤسسات التعليمية",
+      "sellable_product_ar": "أداة تقييم فعالة للوكلاء المستقلين تعتمد على نماذج لغوية",
+      "first_paid_test_ar": "تقديم دراسة حالة مجانية مع تحليل أداء الوكلاء",
+      "tools_ar": "نماذج لغوية، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:FIIS/vittoriadivine",
-        "huggingface_models:dekes1/cindycfr8",
-        "huggingface_models:Clybius/chroma-loras"
+        "2608.09096",
+        "2608.09802",
+        "2608.09524v1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "FIIS/vittoriadivine — text-to-image",
-          "url": "https://huggingface.co/FIIS/vittoriadivine",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "SI-Edit: Toward Sketch-Instruction Guided Local Image Editing with Pixel-Level Precision",
+          "url": "http://arxiv.org/abs/2608.09097v1",
+          "score": 0.524,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Evo-Bench: Can Language Models Improve Agent Harness?",
+          "url": "https://huggingface.co/papers/2608.09096",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+          "url": "https://huggingface.co/papers/2608.09802",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+          "url": "http://arxiv.org/abs/2608.09921v1",
+          "score": 0.498,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "SuperLocalMemory 4.0: The Governed Memory Operating System for AI Agents",
+          "url": "http://arxiv.org/abs/2608.08253v1",
+          "score": 0.497,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "dekes1/cindycfr8 — text-to-image",
-          "url": "https://huggingface.co/dekes1/cindycfr8",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Clybius/chroma-loras — text-to-image",
-          "url": "https://huggingface.co/Clybius/chroma-loras",
-          "score": 0.488,
+          "title": "DDhaven/lyra-vex — text-to-image",
+          "url": "https://huggingface.co/DDhaven/lyra-vex",
+          "score": 0.497,
           "trust_tier": "official"
         }
       ],
@@ -100,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-11T00:56:49+00:00",
-      "updatedAt": "2026-08-11T00:56:49+00:00",
+      "publishedAt": "2026-08-11T03:30:49+00:00",
+      "updatedAt": "2026-08-11T03:30:49+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "automated-incident-response",
+      "title_ar": "تطوير نظام استجابة تلقائية للحوادث السيبرانية",
+      "thesis_ar": "تتطلب استجابة الحوادث السيبرانية حلولًا مبتكرة لتحسين الكفاءة وتقليل الاعتماد على الإجراءات الثابتة. النظام الجديد يمكن أن يوفر استجابة سريعة وفعالة.",
+      "buyer_ar": "شركات الأمن السيبراني، المؤسسات الحكومية",
+      "sellable_product_ar": "نظام استجابة تلقائية للحوادث السيبرانية",
+      "first_paid_test_ar": "تقديم اختبار استجابة لحادث وهمي",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهات المستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2608.09524v1",
+        "2608.09873",
+        "2608.09153v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "SI-Edit: Toward Sketch-Instruction Guided Local Image Editing with Pixel-Level Precision",
+          "url": "http://arxiv.org/abs/2608.09097v1",
+          "score": 0.524,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Evo-Bench: Can Language Models Improve Agent Harness?",
+          "url": "https://huggingface.co/papers/2608.09096",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+          "url": "https://huggingface.co/papers/2608.09802",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+          "url": "http://arxiv.org/abs/2608.09921v1",
+          "score": 0.498,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "SuperLocalMemory 4.0: The Governed Memory Operating System for AI Agents",
+          "url": "http://arxiv.org/abs/2608.08253v1",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "DDhaven/lyra-vex — text-to-image",
+          "url": "https://huggingface.co/DDhaven/lyra-vex",
+          "score": 0.497,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-11T03:30:49+00:00",
+      "updatedAt": "2026-08-11T03:30:49+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-11T00:56:49+00:00",
+  "tiered_at": "2026-08-11T03:30:49+00:00",
   "free_preview_count": 3
 }
