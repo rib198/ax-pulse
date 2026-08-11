@@ -1,146 +1,46 @@
 {
-  "generated_at": "2026-08-10T22:30:43+00:00",
+  "generated_at": "2026-08-11T00:56:49+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 818,
+  "corpus_count": 792,
   "opportunities": [
     {
-      "id": "video-description-evaluation",
-      "title_ar": "تقييم أوصاف الفيديو على مستوى الفقرات",
-      "thesis_ar": "تزايد الحاجة إلى أنظمة قادرة على إنشاء أوصاف دقيقة وطويلة الأمد للفيديو. هذا يعكس فرصة لتطوير أدوات تقييم جديدة تستند إلى الذكاء الاصطناعي.",
-      "buyer_ar": "شركات إنتاج الفيديو ووسائل الإعلام",
-      "sellable_product_ar": "أداة تقييم أوصاف الفيديو باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم اختبار مجاني لتقييم دقة الأوصاف التي تنتجها الأداة",
-      "tools_ar": "نموذج CLIP-CC, واجهة برمجة التطبيقات, خوارزميات الذكاء الاصطناعي",
+      "id": "text-generation-innovation",
+      "title_ar": "ابتكارات في توليد النصوص",
+      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في مجالات متعددة مثل الكتابة الإبداعية والدعم الفني. يمكن استغلال هذه النماذج لتقديم حلول مبتكرة.",
+      "buyer_ar": "شركات النشر، منصات الدعم الفني",
+      "sellable_product_ar": "خدمة توليد محتوى نصي مخصص",
+      "first_paid_test_ar": "تطوير نص قصير باستخدام نموذج توليد نصوص وتجربته مع عميل محتمل",
+      "tools_ar": "نماذج توليد النصوص، أدوات التعلم العميق، منصة Hugging Face",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.04302",
-        "huggingface_daily_papers:2608.06113",
-        "huggingface_daily_papers:2608.04205"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
-          "url": "https://huggingface.co/papers/2608.04302",
-          "score": 0.537,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
-          "url": "https://huggingface.co/papers/2608.04205",
-          "score": 0.484,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DCAS: Decoupling CLI Agent Scaffolding to Internalize Planning across Scaffolds",
-          "url": "https://huggingface.co/papers/2608.06113",
-          "score": 0.474,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-10T22:30:43+00:00",
-      "updatedAt": "2026-08-10T22:30:43+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة، مما يتيح فرصًا جديدة في الإبداع الفني والتسويق. يمكن استخدام هذه النماذج في مجالات متعددة مثل الإعلانات والألعاب.",
-      "buyer_ar": "وكالات التسويق والشركات الناشئة في مجال التكنولوجيا",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص محددة إلى صور",
-      "tools_ar": "نموذج Clybius/chroma-loras, نموذج bghira/anima-anyflow-e621-dmd-v1, نموذج ench100/bodyandface",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Clybius/chroma-loras",
-        "huggingface_models:bghira/anima-anyflow-e621-dmd-v1",
-        "huggingface_models:ench100/bodyandface"
+        "huggingface_models:KissTheHabit/IDA_AI",
+        "huggingface_models:Scrappy-Doo/GLM-5.2",
+        "huggingface_models:YTan2000/Muse-Glimmer-30B-TQ3_4S"
       ],
       "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Clybius/chroma-loras — text-to-image",
-          "url": "https://huggingface.co/Clybius/chroma-loras",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "bghira/anima-anyflow-e621-dmd-v1 — text-to-image",
-          "url": "https://huggingface.co/bghira/anima-anyflow-e621-dmd-v1",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ench100/bodyandface — text-to-image",
-          "url": "https://huggingface.co/ench100/bodyandface",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-10T22:30:43+00:00",
-      "updatedAt": "2026-08-10T22:30:43+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-generation-tools",
-      "title_ar": "تطوير أدوات توليد النصوص",
-      "thesis_ar": "تزايد الحاجة إلى أدوات توليد النصوص في مجالات متعددة مثل التسويق والمحتوى الرقمي. هذه الأدوات يمكن أن تسهم في تحسين الإنتاجية وتقليل التكاليف.",
-      "buyer_ar": "شركات المحتوى الرقمي ووكالات التسويق",
-      "sellable_product_ar": "أداة توليد نصوص تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تجربة مجانية لتوليد نصوص تسويقية",
-      "tools_ar": "نموذج stage-babylm/llama-256-4L, نموذج fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455, نموذج KissTheHabit/IDA_AI",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:stage-babylm/llama-256-4L",
-        "huggingface_models:fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455",
-        "huggingface_models:KissTheHabit/IDA_AI"
-      ],
-      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "stage-babylm/llama-256-4L — text-generation",
-          "url": "https://huggingface.co/stage-babylm/llama-256-4L",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455 — text-generation",
-          "url": "https://huggingface.co/fpadovani/swa-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
           "title": "KissTheHabit/IDA_AI — text-generation",
           "url": "https://huggingface.co/KissTheHabit/IDA_AI",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Scrappy-Doo/GLM-5.2 — text-generation",
+          "url": "https://huggingface.co/Scrappy-Doo/GLM-5.2",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "YTan2000/Muse-Glimmer-30B-TQ3_4S — text-generation",
+          "url": "https://huggingface.co/YTan2000/Muse-Glimmer-30B-TQ3_4S",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +50,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-10T22:30:43+00:00",
-      "updatedAt": "2026-08-10T22:30:43+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-08-11T00:56:49+00:00",
+      "updatedAt": "2026-08-11T00:56:49+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على إنشاء محتوى بصري فريد من نوعه باستخدام الذكاء الاصطناعي. يمكن استغلال هذه النماذج في مجالات التسويق والإعلانات.",
+      "buyer_ar": "وكالات التسويق، شركات التصميم",
+      "sellable_product_ar": "خدمة توليد صور مخصصة من نصوص",
+      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل نص إلى صورة لعميل محتمل",
+      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات التعلم العميق، منصة Hugging Face",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:FIIS/vittoriadivine",
+        "huggingface_models:dekes1/cindycfr8",
+        "huggingface_models:Clybius/chroma-loras"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "FIIS/vittoriadivine — text-to-image",
+          "url": "https://huggingface.co/FIIS/vittoriadivine",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "dekes1/cindycfr8 — text-to-image",
+          "url": "https://huggingface.co/dekes1/cindycfr8",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Clybius/chroma-loras — text-to-image",
+          "url": "https://huggingface.co/Clybius/chroma-loras",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-11T00:56:49+00:00",
+      "updatedAt": "2026-08-11T00:56:49+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-08-10T22:30:43+00:00",
+  "tiered_at": "2026-08-11T00:56:49+00:00",
   "free_preview_count": 3
 }
