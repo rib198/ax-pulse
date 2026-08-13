@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-13T04:12:52+00:00",
+  "run_at": "2026-08-13T05:42:21+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 579.634,
+      "duration_s": 19.715,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 356 signals from 31 source families",
+        "collected 341 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 838 items",
-        "by tier: press=512, official=160, research=131, community=35"
+        "tagged 823 items",
+        "by tier: press=512, official=158, research=131, community=22"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.035,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 838 items, top priority=0.506"
+        "ranked 823 items, top priority=0.543"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.013,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.072,
+      "duration_s": 0.071,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+23 new model events",
+        "+24 new model events",
         "300 total"
       ],
       "error": null
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.168,
+      "duration_s": 0.169,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "20 events (15 new)",
-        "by type: model_release=13, pricing_change=3, personnel_move=2, policy_signal=1, acquisition=1"
+        "22 events (2 new)",
+        "by type: model_release=14, pricing_change=4, personnel_move=2, policy_signal=1, acquisition=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.019,
+      "duration_s": 0.017,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 13.561,
+      "duration_s": 15.15,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 11.773,
+      "duration_s": 9.04,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.009,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 9.182,
+      "duration_s": 6.09,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.005,
+      "duration_s": 0.004,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=838, opps=3, calls=3"
+        "items=823, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.071,
+      "duration_s": 2.273,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدنا زيادة ملحوظة في إشارات الإصدارات الجديدة، مما يشير إلى نشاط متزايد في تطو…"
+        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في التوجه نحو إصدارات النماذج، حيث تم إصدار أر…"
       ],
       "error": null
     },
