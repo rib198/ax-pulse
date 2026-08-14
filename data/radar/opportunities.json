@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T05:28:45+00:00",
+  "generated_at": "2026-08-14T07:11:24+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 821,
@@ -7,48 +7,27 @@
     {
       "id": "multi-agent-clinical-ai",
       "title_ar": "إطار عمل متعدد الوكلاء للذكاء الاصطناعي السريري",
-      "thesis_ar": "تزايد الحاجة إلى تحسين التنسيق في الرعاية الصحية يجعل هذا الإطار فرصة مثالية. يمكن أن يسهم في تحسين دقة القرارات السريرية وتقليل الأخطاء.",
-      "buyer_ar": "مستشفيات ومراكز طبية",
-      "sellable_product_ar": "خدمة تطوير وتطبيق إطار عمل MARC للذكاء الاصطناعي السريري",
-      "first_paid_test_ar": "تطبيق اختبار تجريبي في مستشفى محلي لتحسين دقة التشخيص",
-      "tools_ar": "إطار MARC, أدوات الذكاء الاصطناعي, بيانات سريرية",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في الرعاية الصحية يوفر فرصة لتطوير حلول مبتكرة. استخدام إطار عمل MARC يمكن أن يسهل التنسيق بين الوكلاء في بيئات طبية معقدة.",
+      "buyer_ar": "مستشفيات، مراكز أبحاث طبية",
+      "sellable_product_ar": "حلول ذكاء اصطناعي سريرية تعتمد على إطار MARC",
+      "first_paid_test_ar": "تطبيق تجريبي في مستشفى محلي لتحسين كفاءة العمليات",
+      "tools_ar": "إطار MARC، أدوات تحليل البيانات، واجهات برمجة التطبيقات الطبية",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "2608.13476v1",
-        "2608.06867",
-        "2608.13560"
+        "2608.12654v1",
+        "2608.13560v1"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.53,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
           "url": "http://arxiv.org/abs/2608.13476v1",
           "score": 0.558,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
-          "url": "https://huggingface.co/papers/2608.06867",
-          "score": 0.54,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
-          "url": "https://huggingface.co/papers/2608.13560",
-          "score": 0.532,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence",
-          "url": "https://huggingface.co/papers/2608.12743",
-          "score": 0.521,
           "trust_tier": "research"
         },
         {
@@ -60,9 +39,30 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "DarwinX: Evolving Agent Harnesses Through Natural Selection",
-          "url": "https://huggingface.co/papers/2608.07545",
-          "score": 0.513,
+          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+          "url": "https://huggingface.co/papers/2608.06867",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+          "url": "https://huggingface.co/papers/2608.13560",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FlagRelease/Moonlight-16B-A3B-mthreads-FlagOS — text-generation",
+          "url": "https://huggingface.co/FlagRelease/Moonlight-16B-A3B-mthreads-FlagOS",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence",
+          "url": "https://huggingface.co/papers/2608.12743",
+          "score": 0.497,
           "trust_tier": "research"
         }
       ],
@@ -71,55 +71,34 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-14T05:28:45+00:00",
-      "updatedAt": "2026-08-14T05:28:45+00:00",
+      "publishedAt": "2026-08-14T07:11:24+00:00",
+      "updatedAt": "2026-08-14T07:11:24+00:00",
       "sortOrder": 0
     },
     {
-      "id": "traffic-video-reasoning",
-      "title_ar": "تحليل الفيديو المروري باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى تحسين أنظمة النقل الذكية يجعل هذا التحليل فرصة واعدة. يمكن استخدامه للكشف عن الحوادث والتجاوزات المرورية.",
-      "buyer_ar": "هيئات النقل والمرور",
-      "sellable_product_ar": "نظام تحليل الفيديو المروري الذكي",
-      "first_paid_test_ar": "تجربة النظام في منطقة حضرية لتقييم فعاليته في الكشف عن الحوادث",
-      "tools_ar": "نظام تحليل الفيديو, خوارزميات التعلم العميق, بيانات مرورية",
+      "id": "traffic-video-analysis",
+      "title_ar": "تحليل الفيديوهات المرورية باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "زيادة الحاجة إلى تحسين أنظمة النقل الذكية تجعل من تحليل الفيديوهات المرورية فرصة مهمة. استخدام تقنيات مثل UniTraffic-Agent يمكن أن يحسن من سلامة الطرق.",
+      "buyer_ar": "هيئات النقل، شركات التأمين",
+      "sellable_product_ar": "نظام تحليل فيديو مروري ذكي",
+      "first_paid_test_ar": "تجربة تحليل فيديو لحادث مروري في منطقة معينة",
+      "tools_ar": "نظام UniTraffic-Agent، أدوات معالجة الفيديو، واجهات برمجة التطبيقات للبيانات المرورية",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "2608.13031v1",
         "2608.13517v1",
-        "2608.13558"
+        "2608.13492v1"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.53,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
           "url": "http://arxiv.org/abs/2608.13476v1",
           "score": 0.558,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
-          "url": "https://huggingface.co/papers/2608.06867",
-          "score": 0.54,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
-          "url": "https://huggingface.co/papers/2608.13560",
-          "score": 0.532,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence",
-          "url": "https://huggingface.co/papers/2608.12743",
-          "score": 0.521,
           "trust_tier": "research"
         },
         {
@@ -131,9 +110,30 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "DarwinX: Evolving Agent Harnesses Through Natural Selection",
-          "url": "https://huggingface.co/papers/2608.07545",
-          "score": 0.513,
+          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+          "url": "https://huggingface.co/papers/2608.06867",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+          "url": "https://huggingface.co/papers/2608.13560",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FlagRelease/Moonlight-16B-A3B-mthreads-FlagOS — text-generation",
+          "url": "https://huggingface.co/FlagRelease/Moonlight-16B-A3B-mthreads-FlagOS",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence",
+          "url": "https://huggingface.co/papers/2608.12743",
+          "score": 0.497,
           "trust_tier": "research"
         }
       ],
@@ -142,55 +142,34 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-14T05:28:45+00:00",
-      "updatedAt": "2026-08-14T05:28:45+00:00",
+      "publishedAt": "2026-08-14T07:11:24+00:00",
+      "updatedAt": "2026-08-14T07:11:24+00:00",
       "sortOrder": 1
     },
     {
-      "id": "scientific-agentic-model",
-      "title_ar": "نموذج وكيل علمي للبحث",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في الأبحاث العلمية يعزز الحاجة إلى نماذج قادرة على التعامل مع بيانات متعددة. هذا النموذج يمكن أن يسهل عمليات البحث والتطوير.",
-      "buyer_ar": "مؤسسات البحث العلمي والجامعات",
-      "sellable_product_ar": "نموذج وكيل علمي متكامل",
-      "first_paid_test_ar": "تطبيق النموذج في مشروع بحثي لتقييم فعاليته",
-      "tools_ar": "نموذج وكيل علمي, أدوات تحليل البيانات, بيئة بحثية",
+      "id": "spatial-intelligence-agents",
+      "title_ar": "تطوير وكلاء ذكيين ذوي ذكاء مكاني",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في الروبوتات والمساعدات متعددة الوسائط يفتح المجال لتطوير وكلاء ذكيين. تقنيات مثل Spatial Memory Agent تعزز من قدرات التفكير المكاني.",
+      "buyer_ar": "شركات تصنيع الروبوتات، مطوري التطبيقات الذكية",
+      "sellable_product_ar": "وكلاء ذكاء مكاني متقدم",
+      "first_paid_test_ar": "تجربة استخدام وكيل ذكاء مكاني في سيناريو روبوتي",
+      "tools_ar": "نموذج Spatial Memory Agent، أدوات الذكاء الاصطناعي، منصات تطوير البرمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2608.13505",
-        "2608.13492v1",
-        "2608.12743"
+        "2608.12743v1",
+        "2608.07545v1",
+        "2608.13144v1"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.53,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
           "url": "http://arxiv.org/abs/2608.13476v1",
           "score": 0.558,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
-          "url": "https://huggingface.co/papers/2608.06867",
-          "score": 0.54,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
-          "url": "https://huggingface.co/papers/2608.13560",
-          "score": 0.532,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence",
-          "url": "https://huggingface.co/papers/2608.12743",
-          "score": 0.521,
           "trust_tier": "research"
         },
         {
@@ -202,9 +181,30 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "DarwinX: Evolving Agent Harnesses Through Natural Selection",
-          "url": "https://huggingface.co/papers/2608.07545",
-          "score": 0.513,
+          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+          "url": "https://huggingface.co/papers/2608.06867",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+          "url": "https://huggingface.co/papers/2608.13560",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "FlagRelease/Moonlight-16B-A3B-mthreads-FlagOS — text-generation",
+          "url": "https://huggingface.co/FlagRelease/Moonlight-16B-A3B-mthreads-FlagOS",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence",
+          "url": "https://huggingface.co/papers/2608.12743",
+          "score": 0.497,
           "trust_tier": "research"
         }
       ],
@@ -213,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-14T05:28:45+00:00",
-      "updatedAt": "2026-08-14T05:28:45+00:00",
+      "publishedAt": "2026-08-14T07:11:24+00:00",
+      "updatedAt": "2026-08-14T07:11:24+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-14T05:28:45+00:00",
+  "tiered_at": "2026-08-14T07:11:24+00:00",
   "free_preview_count": 3
 }
