@@ -1,97 +1,68 @@
 {
-  "generated_at": "2026-08-15T20:14:49+00:00",
+  "generated_at": "2026-08-15T22:14:41+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 825,
+  "corpus_count": 814,
   "opportunities": [
     {
       "id": "multi-agent-clinical-ai",
-      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي السريري",
-      "thesis_ar": "تزايد الحاجة إلى حلول ذكاء اصطناعي متقدمة في المجال الطبي. يوفر إطار MARC إمكانية تنسيق متعدد الوكلاء لتحسين دقة القرارات السريرية.",
-      "buyer_ar": "المستشفيات والمراكز الطبية",
-      "sellable_product_ar": "خدمة تطوير وتخصيص إطار MARC للذكاء الاصطناعي السريري",
-      "first_paid_test_ar": "تقديم استشارة مجانية لتقييم احتياجات العميل",
-      "tools_ar": "أدوات تطوير البرمجيات، خوادم سحابية، مكتبات الذكاء الاصطناعي",
+      "title_ar": "إطار عمل متعدد الوكلاء للذكاء الاصطناعي في المجال الطبي",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في المجال الطبي يتطلب حلولًا مبتكرة. يوفر إطار MARC فرصة لتطوير أدوات جديدة لتحسين التنسيق والتفكير السريري.",
+      "buyer_ar": "المستشفيات والعيادات الطبية",
+      "sellable_product_ar": "أداة ذكاء اصطناعي لتحسين اتخاذ القرار السريري",
+      "first_paid_test_ar": "تطبيق تجريبي في مستشفى محلي لتحليل بيانات المرضى",
+      "tools_ar": "إطار MARC، نماذج تعلم الآلة، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2608.13476v1",
-        "huggingface_models:jump123/nsomob",
-        "arxiv_papers:2608.12654v1"
+        "2608.13476v1",
+        "2608.06867",
+        "2608.13144v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.52,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
-          "url": "http://arxiv.org/abs/2608.13476v1",
-          "score": 0.522,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "jump123/nsomob — text-to-image",
-          "url": "https://huggingface.co/jump123/nsomob",
-          "score": 0.521,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
-          "url": "http://arxiv.org/abs/2608.12654v1",
-          "score": 0.519,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-15T20:14:49+00:00",
-      "updatedAt": "2026-08-15T20:14:49+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "llm-router-infrastructure",
-      "title_ar": "بنية تحتية موحدة لتوجيه نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة يتطلب حلول توجيه فعالة. توفر بنية LLMRouter إمكانية تحسين التكاليف والأداء.",
-      "buyer_ar": "شركات التقنية ومزودي الخدمات السحابية",
-      "sellable_product_ar": "خدمة تطوير بنية LLMRouter لتوجيه نماذج اللغة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتوجيه نموذج لغة محدد",
-      "tools_ar": "أدوات تطوير البرمجيات، خوادم سحابية، مكتبات الذكاء الاصطناعي",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2608.06867",
-        "arxiv_papers:2608.13476v1",
-        "huggingface_models:FRPO/qwen3-4b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n4"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
           "url": "http://arxiv.org/abs/2608.13476v1",
-          "score": 0.522,
+          "score": 0.519,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
-          "url": "https://huggingface.co/papers/2608.06867",
-          "score": 0.48,
+          "source_id": "arxiv_papers",
+          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+          "url": "http://arxiv.org/abs/2608.12654v1",
+          "score": 0.504,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "FRPO/qwen3-4b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n4 — text-generation",
-          "url": "https://huggingface.co/FRPO/qwen3-4b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n4",
-          "score": 0.466,
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.497,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "exeterminal/Exe-Core-Dynamic-V1-GGUF — text-generation",
+          "url": "https://huggingface.co/exeterminal/Exe-Core-Dynamic-V1-GGUF",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "livebylord/Qweblethos-v1-GGUF — text-generation",
+          "url": "https://huggingface.co/livebylord/Qweblethos-v1-GGUF",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Mike0095/kleo01 — text-to-image",
+          "url": "https://huggingface.co/Mike0095/kleo01",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -100,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T20:14:49+00:00",
-      "updatedAt": "2026-08-15T20:14:49+00:00",
+      "publishedAt": "2026-08-15T22:14:41+00:00",
+      "updatedAt": "2026-08-15T22:14:41+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يفتح آفاقًا جديدة. نماذج تحويل النص إلى صورة توفر حلولًا مبتكرة لإنشاء محتوى فريد.",
+      "buyer_ar": "وكالات التسويق والمصممين",
+      "sellable_product_ar": "خدمة تحويل النصوص إلى صور مخصصة",
+      "first_paid_test_ar": "مشروع تجريبي لإنشاء صور لمحتوى تسويقي",
+      "tools_ar": "نماذج تحويل النص إلى صورة، واجهات برمجة التطبيقات، أدوات تصميم",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "sharadshailly/movie-orchestrator-loras",
+        "Mike0095/kleo01",
+        "PeachesAvicii/Slap-Wan"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+          "url": "http://arxiv.org/abs/2608.13476v1",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+          "url": "http://arxiv.org/abs/2608.12654v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.497,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "exeterminal/Exe-Core-Dynamic-V1-GGUF — text-generation",
+          "url": "https://huggingface.co/exeterminal/Exe-Core-Dynamic-V1-GGUF",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "livebylord/Qweblethos-v1-GGUF — text-generation",
+          "url": "https://huggingface.co/livebylord/Qweblethos-v1-GGUF",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Mike0095/kleo01 — text-to-image",
+          "url": "https://huggingface.co/Mike0095/kleo01",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-15T22:14:41+00:00",
+      "updatedAt": "2026-08-15T22:14:41+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "llm-router-infrastructure",
+      "title_ar": "بنية تحتية لتوجيه نماذج اللغة الكبيرة",
+      "thesis_ar": "توجيه نماذج اللغة الكبيرة يعد أمرًا حيويًا لتحقيق الكفاءة في التكاليف والأداء. تطوير بنية تحتية فعالة يمكن أن يلبي احتياجات السوق المتزايدة.",
+      "buyer_ar": "شركات تطوير البرمجيات ومزودي الخدمات السحابية",
+      "sellable_product_ar": "خدمة توجيه نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تجربة توجيه نموذج لغة كبير في مشروع صغير",
+      "tools_ar": "أدوات توجيه النماذج، نماذج تعلم الآلة، بنية تحتية سحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2608.06867",
+        "2608.13391",
+        "2608.13476v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+          "url": "http://arxiv.org/abs/2608.13476v1",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+          "url": "http://arxiv.org/abs/2608.12654v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "sharadshailly/movie-orchestrator-loras — text-to-image",
+          "url": "https://huggingface.co/sharadshailly/movie-orchestrator-loras",
+          "score": 0.497,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "exeterminal/Exe-Core-Dynamic-V1-GGUF — text-generation",
+          "url": "https://huggingface.co/exeterminal/Exe-Core-Dynamic-V1-GGUF",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "livebylord/Qweblethos-v1-GGUF — text-generation",
+          "url": "https://huggingface.co/livebylord/Qweblethos-v1-GGUF",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Mike0095/kleo01 — text-to-image",
+          "url": "https://huggingface.co/Mike0095/kleo01",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-15T22:14:41+00:00",
+      "updatedAt": "2026-08-15T22:14:41+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-15T20:14:49+00:00",
+  "tiered_at": "2026-08-15T22:14:41+00:00",
   "free_preview_count": 3
 }
