@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-15T08:19:27+00:00",
+  "generated_at": "2026-08-15T10:16:59+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 815,
+  "corpus_count": 814,
   "opportunities": [
     {
       "id": "multi-agent-clinical-ai",
       "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي السريري",
-      "thesis_ar": "تزايد الحاجة إلى أنظمة ذكاء اصطناعي قادرة على التنسيق بين عدة وكلاء لتحسين الرعاية الصحية. الإطار الجديد MARC يقدم حلاً مبتكرًا لتحسين عملية اتخاذ القرار في المجال الطبي.",
-      "buyer_ar": "مستشفيات، مراكز طبية، شركات تكنولوجيا الصحة",
-      "sellable_product_ar": "نظام ذكاء اصطناعي متكامل لتحسين القرارات السريرية",
-      "first_paid_test_ar": "تطبيق النظام في قسم طوارئ واحد لقياس فعاليته",
-      "tools_ar": "أدوات تطوير البرمجيات، بيئة اختبار، خوادم سحابية",
+      "thesis_ar": "تزايد الحاجة إلى تحسين التنسيق في الرعاية الصحية يجعل هذا الإطار فرصة مثالية. يمكن استخدامه لتطوير حلول مبتكرة في مجال الذكاء الاصطناعي السريري.",
+      "buyer_ar": "مؤسسات الرعاية الصحية والمستشفيات",
+      "sellable_product_ar": "حلول ذكاء اصطناعي لتحسين التنسيق السريري",
+      "first_paid_test_ar": "تطبيق نموذج تجريبي في مستشفى محلي",
+      "tools_ar": "إطار MARC, أدوات تطوير البرمجيات, خوادم سحابية",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2608.13476v1",
-        "huggingface_models:Alibaba-NLP/UEmbed-4B",
-        "huggingface_models:Alibaba-NLP/UEmbed-9B"
+        "2608.13476v1",
+        "2608.12654v1",
+        "2608.06867"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -31,48 +31,12 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Alibaba-NLP/UEmbed-4B — feature-extraction",
-          "url": "https://huggingface.co/Alibaba-NLP/UEmbed-4B",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+          "url": "http://arxiv.org/abs/2608.12654v1",
+          "score": 0.519,
+          "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_models",
-          "title": "Alibaba-NLP/UEmbed-9B — feature-extraction",
-          "url": "https://huggingface.co/Alibaba-NLP/UEmbed-9B",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-15T08:19:27+00:00",
-      "updatedAt": "2026-08-15T08:19:27+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي جذاب يتطلب نماذج فعالة لتحويل النصوص إلى صور. النماذج الجديدة تقدم إمكانيات مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات تسويق، وكالات إعلانات، مطورين في مجال الألعاب",
-      "sellable_product_ar": "خدمة تحويل النصوص إلى صور باستخدام نماذج ذكاء اصطناعي",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة سحابية، واجهة مستخدم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:fyhf/Hu_Tao",
-        "huggingface_models:LiberationLabs/image-toolbench",
-        "huggingface_models:Vip5200/Flux2Klein_4B_diff_loras"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
         {
           "source_id": "huggingface_models",
           "title": "fyhf/Hu_Tao — text-to-image",
@@ -82,15 +46,22 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "LiberationLabs/image-toolbench — text-to-image",
-          "url": "https://huggingface.co/LiberationLabs/image-toolbench",
+          "title": "SEEDRAAI/SEEDRAAI — text-to-image",
+          "url": "https://huggingface.co/SEEDRAAI/SEEDRAAI",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Vip5200/Flux2Klein_4B_diff_loras — text-to-image",
-          "url": "https://huggingface.co/Vip5200/Flux2Klein_4B_diff_loras",
+          "title": "kvanrum/Chroma1-HD — text-to-image",
+          "url": "https://huggingface.co/kvanrum/Chroma1-HD",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "LiberationLabs/image-toolbench — text-to-image",
+          "url": "https://huggingface.co/LiberationLabs/image-toolbench",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -100,29 +71,36 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T08:19:27+00:00",
-      "updatedAt": "2026-08-15T08:19:27+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-08-15T10:16:59+00:00",
+      "updatedAt": "2026-08-15T10:16:59+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "agent-steering-benchmark",
-      "title_ar": "معيار لتوجيه الوكلاء في الذكاء الاصطناعي",
-      "thesis_ar": "توجيه الوكلاء في الذكاء الاصطناعي يعد من التحديات الرئيسية، خاصة في التطبيقات التي تتطلب قرارات سريعة. تطوير معيار SteerBench يمكن أن يسهل تحسين أداء الوكلاء.",
-      "buyer_ar": "شركات تطوير البرمجيات، مراكز أبحاث، مؤسسات تعليمية",
-      "sellable_product_ar": "أداة قياس وتحسين أداء الوكلاء الذكيين",
-      "first_paid_test_ar": "تطبيق المعيار على مجموعة من الوكلاء الحاليين وتحليل النتائج",
-      "tools_ar": "أدوات تطوير البرمجيات، بيئة اختبار، بيانات تجريبية",
-      "capital_ar": "منخفض",
+      "id": "llm-router-infrastructure",
+      "title_ar": "بنية تحتية لتوجيه نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة يتطلب بنية تحتية فعالة للتوجيه. هذه البنية يمكن أن تخفض التكاليف وتزيد من الكفاءة.",
+      "buyer_ar": "شركات التكنولوجيا ومزودي الخدمات السحابية",
+      "sellable_product_ar": "خدمات تطوير بنية تحتية لتوجيه نماذج اللغة",
+      "first_paid_test_ar": "تطبيق نموذج توجيه في مشروع صغير",
+      "tools_ar": "أدوات تطوير البرمجيات, خوادم سحابية, نماذج LLM",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2608.12654v1",
-        "huggingface_models:Alibaba-NLP/UEmbed-2B",
-        "huggingface_models:Alibaba-NLP/UEmbed-9B"
+        "2608.06867",
+        "logic65/Qwen3.8-p44w75-16.8B-unrepaired",
+        "dbrasdasilva/Qwen3.8-27B-Text-NVFP4-MTP"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+          "url": "http://arxiv.org/abs/2608.13476v1",
+          "score": 0.522,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
@@ -132,16 +110,30 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "Alibaba-NLP/UEmbed-9B — feature-extraction",
-          "url": "https://huggingface.co/Alibaba-NLP/UEmbed-9B",
-          "score": 0.466,
+          "title": "fyhf/Hu_Tao — text-to-image",
+          "url": "https://huggingface.co/fyhf/Hu_Tao",
+          "score": 0.509,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Alibaba-NLP/UEmbed-2B — feature-extraction",
-          "url": "https://huggingface.co/Alibaba-NLP/UEmbed-2B",
-          "score": 0.466,
+          "title": "SEEDRAAI/SEEDRAAI — text-to-image",
+          "url": "https://huggingface.co/SEEDRAAI/SEEDRAAI",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "kvanrum/Chroma1-HD — text-to-image",
+          "url": "https://huggingface.co/kvanrum/Chroma1-HD",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "LiberationLabs/image-toolbench — text-to-image",
+          "url": "https://huggingface.co/LiberationLabs/image-toolbench",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T08:19:27+00:00",
-      "updatedAt": "2026-08-15T08:19:27+00:00",
+      "publishedAt": "2026-08-15T10:16:59+00:00",
+      "updatedAt": "2026-08-15T10:16:59+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "نماذج تحويل النص إلى صورة",
+      "thesis_ar": "الطلب المتزايد على المحتوى المرئي يجعل هذه النماذج فرصة رائعة. يمكن استخدامها في مجالات مثل التسويق والإعلانات.",
+      "buyer_ar": "شركات التسويق والإعلانات",
+      "sellable_product_ar": "خدمات إنشاء محتوى مرئي باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "مشروع تجريبي لإنشاء صور لحملة إعلانية",
+      "tools_ar": "نموذج Hugging Face, أدوات التصميم, خوادم سحابية",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "fyhf/Hu_Tao",
+        "SEEDRAAI/SEEDRAAI",
+        "LiberationLabs/image-toolbench"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+          "url": "http://arxiv.org/abs/2608.13476v1",
+          "score": 0.522,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+          "url": "http://arxiv.org/abs/2608.12654v1",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "fyhf/Hu_Tao — text-to-image",
+          "url": "https://huggingface.co/fyhf/Hu_Tao",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "SEEDRAAI/SEEDRAAI — text-to-image",
+          "url": "https://huggingface.co/SEEDRAAI/SEEDRAAI",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "kvanrum/Chroma1-HD — text-to-image",
+          "url": "https://huggingface.co/kvanrum/Chroma1-HD",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "LiberationLabs/image-toolbench — text-to-image",
+          "url": "https://huggingface.co/LiberationLabs/image-toolbench",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-15T10:16:59+00:00",
+      "updatedAt": "2026-08-15T10:16:59+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-15T08:19:27+00:00",
+  "tiered_at": "2026-08-15T10:16:59+00:00",
   "free_preview_count": 3
 }
