@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-15T12:20:55+00:00",
+  "generated_at": "2026-08-15T14:17:06+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 820,
+  "corpus_count": 818,
   "opportunities": [
     {
       "id": "multi-agent-clinical-ai",
-      "title_ar": "إطار عمل متعدد الوكلاء للذكاء الاصطناعي السريري",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في القطاع الصحي يتطلب حلولاً فعالة. إطار MARC يوفر طريقة جديدة للتنسيق بين الوكلاء في التطبيقات السريرية.",
-      "buyer_ar": "المستشفيات ومراكز الرعاية الصحية",
-      "sellable_product_ar": "خدمات تطوير وتخصيص إطار MARC للذكاء الاصطناعي السريري",
-      "first_paid_test_ar": "تطبيق نموذج أولي لإطار MARC في قسم واحد من المستشفى",
-      "tools_ar": "أدوات البرمجة، بيئة تطوير، بيانات سريرية",
+      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي في المجال الطبي",
+      "thesis_ar": "تزايد الحاجة لتنسيق الذكاء الاصطناعي في الرعاية الصحية يفتح المجال لتطوير حلول تعتمد على MARC. هذا الإطار يمكن أن يحسن من دقة وفعالية القرارات الطبية.",
+      "buyer_ar": "المستشفيات والعيادات الطبية",
+      "sellable_product_ar": "خدمات استشارية لتطبيق MARC في المؤسسات الصحية",
+      "first_paid_test_ar": "تقديم استشارة مجانية لمؤسسة صحية لتطبيق نموذج MARC",
+      "tools_ar": "إطار MARC، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.13476v1",
-        "2608.12654v1",
-        "2608.06867"
+        "arxiv_papers:2608.13476v1",
+        "huggingface_models:SEEDRAAI/SEEDRAAI",
+        "huggingface_daily_papers:2608.06867"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.5,
       "evidence_items": [
         {
@@ -31,39 +31,18 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
-          "url": "http://arxiv.org/abs/2608.12654v1",
-          "score": 0.519,
+          "source_id": "huggingface_models",
+          "title": "SEEDRAAI/SEEDRAAI — text-to-image",
+          "url": "https://huggingface.co/SEEDRAAI/SEEDRAAI",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+          "url": "https://huggingface.co/papers/2608.06867",
+          "score": 0.48,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_S-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_S-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q8_0-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q8_0-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q2_K-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q2_K-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-d64208fe-Sana — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-d64208fe-Sana",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,68 +50,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T12:20:55+00:00",
-      "updatedAt": "2026-08-15T12:20:55+00:00",
+      "publishedAt": "2026-08-15T14:17:06+00:00",
+      "updatedAt": "2026-08-15T14:17:06+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-generators",
-      "title_ar": "مولدات الصور من النصوص",
-      "thesis_ar": "تزايد الطلب على المحتوى البصري المخصص يعزز الحاجة لمولدات الصور. النماذج الجديدة توفر إمكانيات متقدمة في تحويل النصوص إلى صور.",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي من النصوص يفتح فرصًا كبيرة لتطوير نماذج تحويل النص إلى صورة. النماذج المتاحة يمكن أن تلبي احتياجات متنوعة في التسويق والإعلانات.",
       "buyer_ar": "وكالات التسويق والإعلانات",
-      "sellable_product_ar": "خدمات إنشاء محتوى بصري باستخدام مولدات الصور",
-      "first_paid_test_ar": "توليد مجموعة من الصور بناءً على نصوص محددة لعميل واحد",
-      "tools_ar": "نموذج مولد الصور، منصة تطوير، بيانات تدريب",
+      "sellable_product_ar": "خدمات تطوير محتوى مرئي باستخدام نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "إنشاء صورة واحدة بناءً على نص محدد كاختبار مدفوع",
+      "tools_ar": "نموذج تحويل النص إلى صورة، أدوات تصميم، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "guillekenzo/aros-d64208fe-Sana",
-        "SEEDRAAI/SEEDRAAI",
-        "LiberationLabs/image-toolbench"
+        "huggingface_models:SynStrokes/luma-chelsea",
+        "huggingface_models:mju75/marketa-lora-krea-2",
+        "huggingface_models:ench100/bodyandface"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
-          "url": "http://arxiv.org/abs/2608.13476v1",
-          "score": 0.522,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
-          "url": "http://arxiv.org/abs/2608.12654v1",
-          "score": 0.519,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_S-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_S-GGUF",
+          "title": "SynStrokes/luma-chelsea — text-to-image",
+          "url": "https://huggingface.co/SynStrokes/luma-chelsea",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q8_0-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q8_0-GGUF",
+          "title": "mju75/marketa-lora-krea-2 — text-to-image",
+          "url": "https://huggingface.co/mju75/marketa-lora-krea-2",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q2_K-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q2_K-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-d64208fe-Sana — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-d64208fe-Sana",
+          "title": "ench100/bodyandface — text-to-image",
+          "url": "https://huggingface.co/ench100/bodyandface",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -142,28 +100,28 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T12:20:55+00:00",
-      "updatedAt": "2026-08-15T12:20:55+00:00",
+      "publishedAt": "2026-08-15T14:17:06+00:00",
+      "updatedAt": "2026-08-15T14:17:06+00:00",
       "sortOrder": 1
     },
     {
-      "id": "llm-routing-solutions",
-      "title_ar": "حلول توجيه نماذج اللغة الكبيرة",
-      "thesis_ar": "تعدد نماذج اللغة الكبيرة يتطلب حلولاً فعالة لتوجيهها. تطوير بنية تحتية لتوجيه نماذج اللغة يمكن أن يحسن الكفاءة ويقلل التكاليف.",
-      "buyer_ar": "شركات التقنية ومراكز الأبحاث",
-      "sellable_product_ar": "خدمات تطوير بنية تحتية لتوجيه نماذج اللغة",
-      "first_paid_test_ar": "تطبيق نموذج توجيه على مجموعة صغيرة من الاستفسارات",
-      "tools_ar": "نموذج توجيه، بيئة تطوير، بيانات اختبار",
+      "id": "llm-router-infrastructure",
+      "title_ar": "بنية تحتية لتوجيه نماذج اللغة الكبيرة",
+      "thesis_ar": "توجيه نماذج اللغة الكبيرة يمكن أن يحسن من كفاءة التكلفة ويزيد من فعالية الأداء في التطبيقات المختلفة. هذا الوقت هو الأنسب لتطوير حلول مخصصة.",
+      "buyer_ar": "شركات التكنولوجيا ومزودي الخدمات السحابية",
+      "sellable_product_ar": "خدمات تطوير بنية تحتية لتوجيه نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم استشارة حول تحسين نموذج لغة موجود",
+      "tools_ar": "أدوات تحليل البيانات، خوارزميات توجيه النماذج، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2608.06867",
-        "yusasufhin/Jarvis_Experts",
-        "mradermacher/Qwen3.6-27B-Seven-i1-GGUF"
+        "huggingface_daily_papers:2608.06867",
+        "arxiv_papers:2608.13476v1",
+        "huggingface_models:evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -173,38 +131,17 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
-          "url": "http://arxiv.org/abs/2608.12654v1",
-          "score": 0.519,
+          "source_id": "huggingface_daily_papers",
+          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+          "url": "https://huggingface.co/papers/2608.06867",
+          "score": 0.48,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_S-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_S-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q8_0-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q8_0-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nubich2026/claude-toolcall-slm-2B-safetensors-Q2_K-GGUF — text-generation",
-          "url": "https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-Q2_K-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-d64208fe-Sana — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-d64208fe-Sana",
-          "score": 0.488,
+          "title": "evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp — text-generation",
+          "url": "https://huggingface.co/evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -213,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T12:20:55+00:00",
-      "updatedAt": "2026-08-15T12:20:55+00:00",
+      "publishedAt": "2026-08-15T14:17:06+00:00",
+      "updatedAt": "2026-08-15T14:17:06+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-15T12:20:55+00:00",
+  "tiered_at": "2026-08-15T14:17:06+00:00",
   "free_preview_count": 3
 }
