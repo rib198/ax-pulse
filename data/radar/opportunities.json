@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-15T18:17:47+00:00",
+  "generated_at": "2026-08-15T20:14:49+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 824,
+  "corpus_count": 825,
   "opportunities": [
     {
-      "id": "clinical-ai-reasoning",
-      "title_ar": "تطوير إطار عمل ذكاء اصطناعي سريري",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في المجال الطبي يتطلب حلولًا مبتكرة. إطار عمل MARC يتيح تنسيقًا فعالًا بين الوكلاء، مما يعزز من دقة القرارات السريرية.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "إطار عمل مفتوح المصدر لتحليل البيانات السريرية",
-      "first_paid_test_ar": "تطبيق الإطار على مجموعة بيانات طبية صغيرة",
-      "tools_ar": "أدوات تحليل البيانات، بيئة تطوير برمجيات، خوادم سحابية",
+      "id": "multi-agent-clinical-ai",
+      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي السريري",
+      "thesis_ar": "تزايد الحاجة إلى حلول ذكاء اصطناعي متقدمة في المجال الطبي. يوفر إطار MARC إمكانية تنسيق متعدد الوكلاء لتحسين دقة القرارات السريرية.",
+      "buyer_ar": "المستشفيات والمراكز الطبية",
+      "sellable_product_ar": "خدمة تطوير وتخصيص إطار MARC للذكاء الاصطناعي السريري",
+      "first_paid_test_ar": "تقديم استشارة مجانية لتقييم احتياجات العميل",
+      "tools_ar": "أدوات تطوير البرمجيات، خوادم سحابية، مكتبات الذكاء الاصطناعي",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2608.13476v1",
-        "huggingface_models:longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2",
-        "huggingface_models:longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2"
+        "huggingface_models:jump123/nsomob",
+        "arxiv_papers:2608.12654v1"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.52,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -32,67 +32,17 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2 — text-generation",
-          "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2 — text-generation",
-          "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-15T18:17:47+00:00",
-      "updatedAt": "2026-08-15T18:17:47+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-solutions",
-      "title_ar": "تطوير حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي مخصص يتطلب أدوات فعالة لتحويل النص إلى صورة. النماذج المتاحة على Hugging Face تقدم إمكانيات جديدة في هذا المجال.",
-      "buyer_ar": "وكالات التسويق والمصممين",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى صور مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص قصيرة إلى صور",
-      "tools_ar": "نموذج تحويل نص إلى صورة، واجهة مستخدم، خوادم سحابية",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:jump123/nsomob",
-        "huggingface_models:Clublou/gemma",
-        "huggingface_models:bghira/minimax-music-suno-reggae-rank128"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
           "title": "jump123/nsomob — text-to-image",
           "url": "https://huggingface.co/jump123/nsomob",
           "score": 0.521,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Clublou/gemma — text-to-image",
-          "url": "https://huggingface.co/Clublou/gemma",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "bghira/minimax-music-suno-reggae-rank128 — text-to-image",
-          "url": "https://huggingface.co/bghira/minimax-music-suno-reggae-rank128",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+          "url": "http://arxiv.org/abs/2608.12654v1",
+          "score": 0.519,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -100,40 +50,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T18:17:47+00:00",
-      "updatedAt": "2026-08-15T18:17:47+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-08-15T20:14:49+00:00",
+      "updatedAt": "2026-08-15T20:14:49+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "agent-steering-technology",
-      "title_ar": "تطوير تقنيات توجيه الوكلاء",
-      "thesis_ar": "توجيه الوكلاء في بيئات العمل الديناميكية يمثل تحديًا كبيرًا. تقنيات مثل SteerBench توفر إطار عمل لتقييم وتطوير هذه الحلول.",
-      "buyer_ar": "شركات البرمجيات والتكنولوجيا",
-      "sellable_product_ar": "أداة لتوجيه الوكلاء في التطبيقات المختلفة",
-      "first_paid_test_ar": "تطبيق اختبار توجيه على سيناريو محدد",
-      "tools_ar": "أدوات تطوير برمجيات، خوارزميات توجيه، بيانات تجريبية",
+      "id": "llm-router-infrastructure",
+      "title_ar": "بنية تحتية موحدة لتوجيه نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة يتطلب حلول توجيه فعالة. توفر بنية LLMRouter إمكانية تحسين التكاليف والأداء.",
+      "buyer_ar": "شركات التقنية ومزودي الخدمات السحابية",
+      "sellable_product_ar": "خدمة تطوير بنية LLMRouter لتوجيه نماذج اللغة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوجيه نموذج لغة محدد",
+      "tools_ar": "أدوات تطوير البرمجيات، خوادم سحابية، مكتبات الذكاء الاصطناعي",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2608.12654v1",
-        "huggingface_models:longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2",
-        "huggingface_models:longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2"
+        "huggingface_daily_papers:2608.06867",
+        "arxiv_papers:2608.13476v1",
+        "huggingface_models:FRPO/qwen3-4b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n4"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
-          "url": "http://arxiv.org/abs/2608.12654v1",
-          "score": 0.519,
+          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+          "url": "http://arxiv.org/abs/2608.13476v1",
+          "score": 0.522,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+          "url": "https://huggingface.co/papers/2608.06867",
+          "score": 0.48,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2 — text-generation",
-          "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2",
+          "title": "FRPO/qwen3-4b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n4 — text-generation",
+          "url": "https://huggingface.co/FRPO/qwen3-4b-a1_base-k1-cNone-clip0.2-mb4-eta100-bs256x5-n4",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -143,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T18:17:47+00:00",
-      "updatedAt": "2026-08-15T18:17:47+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-08-15T20:14:49+00:00",
+      "updatedAt": "2026-08-15T20:14:49+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-08-15T18:17:47+00:00",
+  "tiered_at": "2026-08-15T20:14:49+00:00",
   "free_preview_count": 3
 }
