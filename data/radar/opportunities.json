@@ -1,26 +1,27 @@
 {
-  "generated_at": "2026-08-15T16:16:47+00:00",
+  "generated_at": "2026-08-15T18:17:47+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 826,
+  "corpus_count": 824,
   "opportunities": [
     {
-      "id": "multi-agent-clinical-ai",
-      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي السريري",
-      "thesis_ar": "تزايد الحاجة إلى حلول ذكاء اصطناعي متعددة الوكلاء في المجال الطبي. الإطار الجديد يقدم طريقة فعالة لتحسين التنسيق والقرارات السريرية.",
+      "id": "clinical-ai-reasoning",
+      "title_ar": "تطوير إطار عمل ذكاء اصطناعي سريري",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في المجال الطبي يتطلب حلولًا مبتكرة. إطار عمل MARC يتيح تنسيقًا فعالًا بين الوكلاء، مما يعزز من دقة القرارات السريرية.",
       "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام إدارة ذكاء اصطناعي سريري يعتمد على إطار MARC",
-      "first_paid_test_ar": "تطبيق النظام في عيادة صغيرة لتقييم فعاليته",
-      "tools_ar": "إطار MARC، خوادم سحابية، أدوات تحليل البيانات",
+      "sellable_product_ar": "إطار عمل مفتوح المصدر لتحليل البيانات السريرية",
+      "first_paid_test_ar": "تطبيق الإطار على مجموعة بيانات طبية صغيرة",
+      "tools_ar": "أدوات تحليل البيانات، بيئة تطوير برمجيات، خوادم سحابية",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2608.13476v1",
-        "2608.06867"
+        "arxiv_papers:2608.13476v1",
+        "huggingface_models:longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2",
+        "huggingface_models:longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -30,38 +31,17 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
-          "url": "http://arxiv.org/abs/2608.12654v1",
-          "score": 0.519,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent — text-generation",
-          "url": "https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
-          "score": 0.488,
+          "title": "longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2 — text-generation",
+          "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX — image-text-to-text",
-          "url": "https://huggingface.co/rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "bann/impressionist-k9_2 — text-to-image",
-          "url": "https://huggingface.co/bann/impressionist-k9_2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mju75/marketa-lora-krea-2 — text-to-image",
-          "url": "https://huggingface.co/mju75/marketa-lora-krea-2",
-          "score": 0.488,
+          "title": "longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2 — text-generation",
+          "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -70,67 +50,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T16:16:47+00:00",
-      "updatedAt": "2026-08-15T16:16:47+00:00",
+      "publishedAt": "2026-08-15T18:17:47+00:00",
+      "updatedAt": "2026-08-15T18:17:47+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي الفريد يتطلب نماذج فعالة لتحويل النصوص إلى صور. يمكن استخدام هذه النماذج في التسويق والإعلانات.",
-      "buyer_ar": "وكالات الإعلان والتسويق",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تطوير صورة دعائية باستخدام النموذج",
-      "tools_ar": "نموذج تحويل النص إلى صورة، أدوات تصميم، منصات تسويق",
+      "id": "text-to-image-solutions",
+      "title_ar": "تطوير حلول تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على محتوى مرئي مخصص يتطلب أدوات فعالة لتحويل النص إلى صورة. النماذج المتاحة على Hugging Face تقدم إمكانيات جديدة في هذا المجال.",
+      "buyer_ar": "وكالات التسويق والمصممين",
+      "sellable_product_ar": "أداة لتحويل النصوص إلى صور مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص قصيرة إلى صور",
+      "tools_ar": "نموذج تحويل نص إلى صورة، واجهة مستخدم، خوادم سحابية",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
-        "bghira/minimax-music-suno-reggae-rank128"
+        "huggingface_models:jump123/nsomob",
+        "huggingface_models:Clublou/gemma",
+        "huggingface_models:bghira/minimax-music-suno-reggae-rank128"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
-          "url": "http://arxiv.org/abs/2608.13476v1",
-          "score": 0.522,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
-          "url": "http://arxiv.org/abs/2608.12654v1",
-          "score": 0.519,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "jump123/nsomob — text-to-image",
+          "url": "https://huggingface.co/jump123/nsomob",
+          "score": 0.521,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent — text-generation",
-          "url": "https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
+          "title": "Clublou/gemma — text-to-image",
+          "url": "https://huggingface.co/Clublou/gemma",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX — image-text-to-text",
-          "url": "https://huggingface.co/rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "bann/impressionist-k9_2 — text-to-image",
-          "url": "https://huggingface.co/bann/impressionist-k9_2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mju75/marketa-lora-krea-2 — text-to-image",
-          "url": "https://huggingface.co/mju75/marketa-lora-krea-2",
+          "title": "bghira/minimax-music-suno-reggae-rank128 — text-to-image",
+          "url": "https://huggingface.co/bghira/minimax-music-suno-reggae-rank128",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -140,35 +100,29 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T16:16:47+00:00",
-      "updatedAt": "2026-08-15T16:16:47+00:00",
+      "publishedAt": "2026-08-15T18:17:47+00:00",
+      "updatedAt": "2026-08-15T18:17:47+00:00",
       "sortOrder": 1
     },
     {
-      "id": "agent-steering-benchmark",
-      "title_ar": "تطوير نماذج توجيه الوكلاء",
-      "thesis_ar": "تزايد استخدام الوكلاء الذكيين في التطبيقات التجارية يتطلب أدوات فعالة لتوجيههم. تطوير معيار جديد يمكن أن يحسن من أداء هذه الوكلاء.",
-      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
-      "sellable_product_ar": "أداة توجيه وكيل ذكي تعتمد على SteerBench-Work",
-      "first_paid_test_ar": "تجربة الأداة مع وكيل ذكي في مشروع تجريبي",
-      "tools_ar": "SteerBench-Work، أدوات تطوير البرمجيات، بيئات اختبار",
-      "capital_ar": "منخفض",
+      "id": "agent-steering-technology",
+      "title_ar": "تطوير تقنيات توجيه الوكلاء",
+      "thesis_ar": "توجيه الوكلاء في بيئات العمل الديناميكية يمثل تحديًا كبيرًا. تقنيات مثل SteerBench توفر إطار عمل لتقييم وتطوير هذه الحلول.",
+      "buyer_ar": "شركات البرمجيات والتكنولوجيا",
+      "sellable_product_ar": "أداة لتوجيه الوكلاء في التطبيقات المختلفة",
+      "first_paid_test_ar": "تطبيق اختبار توجيه على سيناريو محدد",
+      "tools_ar": "أدوات تطوير برمجيات، خوارزميات توجيه، بيانات تجريبية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "2608.12654v1",
-        "2608.06867"
+        "arxiv_papers:2608.12654v1",
+        "huggingface_models:longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2",
+        "huggingface_models:longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 2,
+      "avg_score": 0.49,
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
-          "url": "http://arxiv.org/abs/2608.13476v1",
-          "score": 0.522,
-          "trust_tier": "research"
-        },
         {
           "source_id": "arxiv_papers",
           "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
@@ -178,30 +132,9 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent — text-generation",
-          "url": "https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX — image-text-to-text",
-          "url": "https://huggingface.co/rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "bann/impressionist-k9_2 — text-to-image",
-          "url": "https://huggingface.co/bann/impressionist-k9_2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mju75/marketa-lora-krea-2 — text-to-image",
-          "url": "https://huggingface.co/mju75/marketa-lora-krea-2",
-          "score": 0.488,
+          "title": "longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2 — text-generation",
+          "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -210,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-15T16:16:47+00:00",
-      "updatedAt": "2026-08-15T16:16:47+00:00",
+      "publishedAt": "2026-08-15T18:17:47+00:00",
+      "updatedAt": "2026-08-15T18:17:47+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-15T16:16:47+00:00",
+  "tiered_at": "2026-08-15T18:17:47+00:00",
   "free_preview_count": 3
 }
