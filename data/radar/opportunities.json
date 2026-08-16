@@ -1,74 +1,24 @@
 {
-  "generated_at": "2026-08-16T20:14:41+00:00",
+  "generated_at": "2026-08-16T22:14:56+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 828,
   "opportunities": [
     {
-      "id": "ai-text-generation-assistant",
-      "title_ar": "مساعد توليد النصوص باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة لمساعدات توليد النصوص في مجالات متعددة، بما في ذلك الكتابة الإبداعية والمحتوى التسويقي. يمكن أن توفر نماذج مثل AyoubChLin وandreasmartin حلولاً فعالة وسريعة.",
-      "buyer_ar": "شركات التسويق، وكالات المحتوى، الكتاب المستقلون",
-      "sellable_product_ar": "خدمة توليد نصوص مخصصة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نصوص تجريبية مدفوعة لتقييم جودة الخدمة",
-      "tools_ar": "نموذج Hugging Face، واجهة برمجة التطبيقات، منصة تحليل البيانات",
-      "capital_ar": "بدون رأس مال",
-      "evidence_ids": [
-        "huggingface_models:AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
-        "huggingface_models:andreasmartin/apertus-v1.5-8b-text-Q8_0-GGUF",
-        "huggingface_models:andreasmartin/apertus-v1.5-8b-text-mlx-fp16"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent — text-generation",
-          "url": "https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "andreasmartin/apertus-v1.5-8b-text-Q8_0-GGUF — text-generation",
-          "url": "https://huggingface.co/andreasmartin/apertus-v1.5-8b-text-Q8_0-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "andreasmartin/apertus-v1.5-8b-text-mlx-fp16 — text-generation",
-          "url": "https://huggingface.co/andreasmartin/apertus-v1.5-8b-text-mlx-fp16",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-16T20:14:41+00:00",
-      "updatedAt": "2026-08-16T20:14:41+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "ai-image-generation-service",
-      "title_ar": "خدمة توليد الصور باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على المحتوى البصري المخصص في التسويق والتصميم. توفر نماذج مثل Matt444455 وguillekenzo حلولاً مبتكرة لتوليد الصور.",
-      "buyer_ar": "شركات التصميم، وكالات الإعلان، المدونون",
-      "sellable_product_ar": "خدمة توليد صور مخصصة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم مجموعة من الصور التجريبية مدفوعة لتقييم الخدمة",
-      "tools_ar": "نموذج Hugging Face، أدوات التصميم، واجهة برمجة التطبيقات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي يعزز الحاجة لنماذج تحويل النص إلى صورة. يمكن استغلال التحديثات الأخيرة في النماذج لتقديم خدمات مخصصة في السوق.",
+      "buyer_ar": "شركات التسويق الرقمي ومطورو الألعاب",
+      "sellable_product_ar": "خدمة إنشاء صور مخصصة بناءً على النصوص",
+      "first_paid_test_ar": "مشروع صغير لإنشاء 10 صور مخصصة",
+      "tools_ar": "نموذج تحويل النص إلى صورة، منصة تطوير، أدوات تسويق",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_models:Matt444455/anka123",
         "huggingface_models:guillekenzo/aros-779e6dad-MidnightOnyx",
         "huggingface_models:polokotoqied/timsan_lora"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
@@ -100,61 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-16T20:14:41+00:00",
-      "updatedAt": "2026-08-16T20:14:41+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "cybersecurity-vulnerability-detection",
-      "title_ar": "خدمة اكتشاف الثغرات الأمنية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد التهديدات السيبرانية، هناك حاجة ملحة لحلول فعالة لاكتشاف الثغرات. نموذج elsiddik يقدم حلاً مبتكرًا في هذا المجال.",
-      "buyer_ar": "شركات التقنية، المؤسسات الحكومية، مزودي الخدمات الأمنية",
-      "sellable_product_ar": "خدمة اكتشاف الثغرات الأمنية باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تقرير عن ثغرات محتملة في نظام معين كاختبار مدفوع",
-      "tools_ar": "نموذج Hugging Face، أدوات تحليل الأمان، منصة اختبار الثغرات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:elsiddik/finsec_detector",
-        "huggingface_models:kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF",
-        "huggingface_models:adrianmurray/Qwen3.8-27B-MLX-6bit"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "elsiddik/finsec_detector — text-generation",
-          "url": "https://huggingface.co/elsiddik/finsec_detector",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF — text-generation",
-          "url": "https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "adrianmurray/Qwen3.8-27B-MLX-6bit — text-generation",
-          "url": "https://huggingface.co/adrianmurray/Qwen3.8-27B-MLX-6bit",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-16T20:14:41+00:00",
-      "updatedAt": "2026-08-16T20:14:41+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-08-16T22:14:56+00:00",
+      "updatedAt": "2026-08-16T22:14:56+00:00",
+      "sortOrder": 0
     }
   ],
-  "tiered_at": "2026-08-16T20:14:41+00:00",
+  "tiered_at": "2026-08-16T22:14:56+00:00",
   "free_preview_count": 3
 }
