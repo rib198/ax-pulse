@@ -1,47 +1,97 @@
 {
-  "generated_at": "2026-08-16T16:16:39+00:00",
+  "generated_at": "2026-08-16T18:18:11+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 825,
   "opportunities": [
     {
-      "id": "text-to-image-diffusers",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يعزز الحاجة إلى نماذج تحويل النص إلى صورة. هذه النماذج توفر حلولًا مبتكرة للمصممين والمبدعين.",
-      "buyer_ar": "المصممين، وكالات التسويق، والشركات الناشئة",
-      "sellable_product_ar": "نماذج تحويل النص إلى صورة مثل Zster/othercide-v2",
-      "first_paid_test_ar": "تقديم نموذج لتحويل نصوص محددة إلى صور كجزء من حملة تسويقية",
-      "tools_ar": "نموذج Hugging Face, أدوات التصميم, خوادم سحابية",
+      "id": "multi-agent-clinical-ai",
+      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي السريري",
+      "thesis_ar": "مع تزايد الاعتماد على الذكاء الاصطناعي في الرعاية الصحية، يوفر إطار MARC فرصة لتطوير حلول مبتكرة لتحسين التنسيق والقرارات السريرية. هذا الوقت مثالي للاستثمار في أدوات الذكاء الاصطناعي التي تدعم الأطباء في اتخاذ قرارات أفضل.",
+      "buyer_ar": "مستشفيات، عيادات، شركات تكنولوجيا الصحة",
+      "sellable_product_ar": "حلول ذكاء اصطناعي سريرية تعتمد على إطار MARC",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل بيانات مرضى حقيقيين",
+      "tools_ar": "MARC framework, أدوات تحليل البيانات, واجهات برمجة التطبيقات الصحية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2608.13476v1",
+        "huggingface_daily_papers:2608.06867",
+        "huggingface_daily_papers:2607.29211"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+          "url": "http://arxiv.org/abs/2608.13476v1",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+          "url": "https://huggingface.co/papers/2608.06867",
+          "score": 0.462,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Knowing When to Quit: Diagnosing and Training LLMs to Abort Futile Reasoning",
+          "url": "https://huggingface.co/papers/2607.29211",
+          "score": 0.447,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-16T18:18:11+00:00",
+      "updatedAt": "2026-08-16T18:18:11+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-generation-models",
+      "title_ar": "نماذج توليد النصوص المتقدمة",
+      "thesis_ar": "تزايد الطلب على محتوى مخصص وفريد يجعل نماذج توليد النصوص مثل Ozan وGemma فرصة مثالية. يمكن استخدامها في مجالات متعددة مثل التسويق والمحتوى الرقمي.",
+      "buyer_ar": "شركات تسويق، وكالات محتوى، منصات تعليمية",
+      "sellable_product_ar": "خدمات توليد محتوى مخصص باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج محتوى تجريبي لعميل محتمل",
+      "tools_ar": "Hugging Face models, أدوات تحليل البيانات, واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Zster/othercide-v2",
-        "huggingface_models:Matt444455/ank123",
-        "huggingface_models:Praelatus/Yuka_D4DJ"
+        "huggingface_models:rambrogi/lyrics-room-final-refiner-ozan-v1-GGUF",
+        "huggingface_models:rambrogi/lyrics-room-suno-director-v4-GGUF",
+        "huggingface_models:rambrogi/lyrics-room-topline-gemma4-12b-v9-GGUF"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Zster/othercide-v2 — text-to-image",
-          "url": "https://huggingface.co/Zster/othercide-v2",
-          "score": 0.488,
+          "title": "rambrogi/lyrics-room-final-refiner-ozan-v1-GGUF — text-generation",
+          "url": "https://huggingface.co/rambrogi/lyrics-room-final-refiner-ozan-v1-GGUF",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Matt444455/ank123 — text-to-image",
-          "url": "https://huggingface.co/Matt444455/ank123",
-          "score": 0.488,
+          "title": "rambrogi/lyrics-room-suno-director-v4-GGUF — text-generation",
+          "url": "https://huggingface.co/rambrogi/lyrics-room-suno-director-v4-GGUF",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Praelatus/Yuka_D4DJ — text-to-image",
-          "url": "https://huggingface.co/Praelatus/Yuka_D4DJ",
-          "score": 0.488,
+          "title": "rambrogi/lyrics-room-topline-gemma4-12b-v9-GGUF — text-generation",
+          "url": "https://huggingface.co/rambrogi/lyrics-room-topline-gemma4-12b-v9-GGUF",
+          "score": 0.472,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +100,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-16T16:16:39+00:00",
-      "updatedAt": "2026-08-16T16:16:39+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-08-16T18:18:11+00:00",
+      "updatedAt": "2026-08-16T18:18:11+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "نماذج تحويل النص إلى صورة",
+      "thesis_ar": "مع تزايد الطلب على المحتوى المرئي، توفر نماذج تحويل النص إلى صورة مثل Krea فرصة لإنشاء محتوى بصري مبتكر. يمكن استخدامها في الإعلانات، التصميم، والفنون.",
+      "buyer_ar": "شركات إعلانات، استوديوهات تصميم، فنانين",
+      "sellable_product_ar": "خدمات تصميم محتوى بصري باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "إنشاء صورة تجريبية بناءً على نص محدد لعميل محتمل",
+      "tools_ar": "Hugging Face models, برامج التصميم, أدوات تحليل البيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:zehen8716/kashish-lora",
+        "huggingface_models:zehen8716/ritika-lora",
+        "huggingface_models:ghaxalll/ghaxal-face"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "zehen8716/kashish-lora — text-to-image",
+          "url": "https://huggingface.co/zehen8716/kashish-lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "zehen8716/ritika-lora — text-to-image",
+          "url": "https://huggingface.co/zehen8716/ritika-lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-16T18:18:11+00:00",
+      "updatedAt": "2026-08-16T18:18:11+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-16T16:16:39+00:00",
+  "tiered_at": "2026-08-16T18:18:11+00:00",
   "free_preview_count": 3
 }
