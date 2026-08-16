@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-16T12:21:26+00:00",
+  "generated_at": "2026-08-16T14:17:42+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 827,
+  "corpus_count": 830,
   "opportunities": [
     {
       "id": "multi-agent-clinical-ai",
-      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي السريري",
-      "thesis_ar": "تزايد الحاجة إلى حلول ذكاء اصطناعي متكاملة في القطاع الصحي، مما يجعل MARC فرصة مثالية. يمكن أن يسهم في تحسين التنسيق بين الوكلاء في بيئات الرعاية الصحية.",
-      "buyer_ar": "مؤسسات الرعاية الصحية والمستشفيات",
-      "sellable_product_ar": "خدمات استشارية لتطبيق MARC في نظم الرعاية الصحية",
-      "first_paid_test_ar": "تقديم استشارة مدفوعة لتقييم احتياجات المؤسسة الصحية",
-      "tools_ar": "إطار MARC، أدوات تحليل البيانات، منصات تطوير البرمجيات",
-      "capital_ar": "منخفض",
+      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي في المجال الطبي",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في القطاع الصحي يعزز الحاجة لإطارات عمل أكثر كفاءة. يوفر إطار MARC تنسيقًا متعدد الوكلاء لتحسين اتخاذ القرارات السريرية.",
+      "buyer_ar": "مستشفيات ومراكز طبية",
+      "sellable_product_ar": "خدمة تطوير وتخصيص إطار MARC للذكاء الاصطناعي في الرعاية الصحية",
+      "first_paid_test_ar": "تقديم نموذج أولي لإطار MARC لمستشفى محلي",
+      "tools_ar": "إطار MARC، أدوات تطوير البرمجيات، بيئة اختبار سريرية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2608.13476v1",
         "huggingface_daily_papers:2608.06867",
@@ -50,29 +50,86 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-16T12:21:26+00:00",
-      "updatedAt": "2026-08-16T12:21:26+00:00",
+      "publishedAt": "2026-08-16T14:17:42+00:00",
+      "updatedAt": "2026-08-16T14:17:42+00:00",
       "sortOrder": 0
     },
     {
-      "id": "video-generation-automation",
-      "title_ar": "أتمتة توليد الفيديو التفاعلي",
-      "thesis_ar": "تزايد الطلب على محتوى الفيديو التفاعلي يتطلب حلولاً مبتكرة. يمكن أن توفر تقنية distillation في توليد الفيديو فرصًا جديدة في السوق.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق",
-      "sellable_product_ar": "أداة لتوليد الفيديو التفاعلي باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لتوليد فيديو قصير",
-      "tools_ar": "أدوات الذكاء الاصطناعي، منصات تطوير الفيديو، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
+      "id": "image-text-interaction-tools",
+      "title_ar": "أدوات تفاعل النص والصورة باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام الصور والنصوص في التطبيقات الرقمية يستدعي أدوات فعالة لتحسين التفاعل. النماذج الجديدة مثل Qwen3.8 تقدم إمكانيات متقدمة في هذا المجال.",
+      "buyer_ar": "شركات تطوير التطبيقات والمحتوى الرقمي",
+      "sellable_product_ar": "تطوير أدوات تفاعل النص والصورة باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لأداة تفاعل نص وصورة لموقع إلكتروني",
+      "tools_ar": "نماذج Qwen3.8، أدوات تطوير البرمجيات، بيئة اختبار",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.13391",
-        "huggingface_daily_papers:2608.12654v1",
-        "huggingface_daily_papers:2608.06867"
+        "huggingface_models:maglun/Qwen3.8-27B-MLX-Mixed-4.95bpw",
+        "huggingface_models:maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw",
+        "huggingface_models:BlackRiverAI/QwiVer3.6-35B-A3B-GGUF"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "BlackRiverAI/QwiVer3.6-35B-A3B-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/BlackRiverAI/QwiVer3.6-35B-A3B-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "maglun/Qwen3.8-27B-MLX-Mixed-4.95bpw — image-text-to-text",
+          "url": "https://huggingface.co/maglun/Qwen3.8-27B-MLX-Mixed-4.95bpw",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw — image-text-to-text",
+          "url": "https://huggingface.co/maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-16T14:17:42+00:00",
+      "updatedAt": "2026-08-16T14:17:42+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "ai-tool-rate-check",
+      "title_ar": "أداة مراجعة أسعار أدوات الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام أدوات الذكاء الاصطناعي من قبل المستقلين يتطلب آلية لتقييم الأسعار. أداة مراجعة الأسعار توفر إطار عمل لتحديد الفرص المتاحة.",
+      "buyer_ar": "مستقلون وشركات صغيرة",
+      "sellable_product_ar": "تقديم أداة مراجعة أسعار أدوات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع خيارات مدفوعة لاحقاً",
+      "tools_ar": "أداة مراجعة الأسعار، واجهة مستخدم، قاعدة بيانات",
+      "capital_ar": "بدون رأس مال",
+      "evidence_ids": [
+        "github_repos:1311339393",
+        "huggingface_daily_papers:2608.06867",
+        "huggingface_daily_papers:2608.13391"
+      ],
+      "confidence": 0.6,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "github_repos",
+          "title": "calebadamsjznh8283/ai-tool-rate-check-2026",
+          "url": "https://github.com/calebadamsjznh8283/ai-tool-rate-check-2026",
+          "score": 0.494,
+          "trust_tier": "community"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
@@ -90,64 +147,14 @@
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-16T12:21:26+00:00",
-      "updatedAt": "2026-08-16T12:21:26+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-innovation",
-      "title_ar": "ابتكار في تحويل النص إلى صورة",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يفتح آفاقًا جديدة في الإبداع الرقمي. يمكن أن توفر هذه النماذج أدوات قوية للمصممين والفنانين.",
-      "buyer_ar": "المصممين والفنانين الرقميين",
-      "sellable_product_ar": "منصة لتحويل النصوص إلى صور باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تجربة مجانية مع خيار دفع لتوليد صور مخصصة",
-      "tools_ar": "نماذج تحويل النص إلى صورة، أدوات التصميم، منصات تطوير البرمجيات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:ench100/bodyandface",
-        "huggingface_models:filulilu/aprilgirl",
-        "huggingface_models:asd44633/ren1.0"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "ench100/bodyandface — text-to-image",
-          "url": "https://huggingface.co/ench100/bodyandface",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "asd44633/ren1.0 — text-to-image",
-          "url": "https://huggingface.co/asd44633/ren1.0",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "filulilu/aprilgirl — text-to-image",
-          "url": "https://huggingface.co/filulilu/aprilgirl",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-16T12:21:26+00:00",
-      "updatedAt": "2026-08-16T12:21:26+00:00",
+      "publishedAt": "2026-08-16T14:17:42+00:00",
+      "updatedAt": "2026-08-16T14:17:42+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-16T12:21:26+00:00",
+  "tiered_at": "2026-08-16T14:17:42+00:00",
   "free_preview_count": 3
 }
