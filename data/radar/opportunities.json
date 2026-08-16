@@ -1,96 +1,46 @@
 {
-  "generated_at": "2026-08-16T14:17:42+00:00",
+  "generated_at": "2026-08-16T16:16:39+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 830,
+  "corpus_count": 825,
   "opportunities": [
     {
-      "id": "multi-agent-clinical-ai",
-      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي في المجال الطبي",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في القطاع الصحي يعزز الحاجة لإطارات عمل أكثر كفاءة. يوفر إطار MARC تنسيقًا متعدد الوكلاء لتحسين اتخاذ القرارات السريرية.",
-      "buyer_ar": "مستشفيات ومراكز طبية",
-      "sellable_product_ar": "خدمة تطوير وتخصيص إطار MARC للذكاء الاصطناعي في الرعاية الصحية",
-      "first_paid_test_ar": "تقديم نموذج أولي لإطار MARC لمستشفى محلي",
-      "tools_ar": "إطار MARC، أدوات تطوير البرمجيات، بيئة اختبار سريرية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2608.13476v1",
-        "huggingface_daily_papers:2608.06867",
-        "huggingface_daily_papers:2608.13391"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
-          "url": "http://arxiv.org/abs/2608.13476v1",
-          "score": 0.522,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
-          "url": "https://huggingface.co/papers/2608.06867",
-          "score": 0.48,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Context-Matched Distillation: Teacher Causality for Autoregressive Video Distillation",
-          "url": "https://huggingface.co/papers/2608.13391",
-          "score": 0.468,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-16T14:17:42+00:00",
-      "updatedAt": "2026-08-16T14:17:42+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "image-text-interaction-tools",
-      "title_ar": "أدوات تفاعل النص والصورة باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام الصور والنصوص في التطبيقات الرقمية يستدعي أدوات فعالة لتحسين التفاعل. النماذج الجديدة مثل Qwen3.8 تقدم إمكانيات متقدمة في هذا المجال.",
-      "buyer_ar": "شركات تطوير التطبيقات والمحتوى الرقمي",
-      "sellable_product_ar": "تطوير أدوات تفاعل النص والصورة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لأداة تفاعل نص وصورة لموقع إلكتروني",
-      "tools_ar": "نماذج Qwen3.8، أدوات تطوير البرمجيات، بيئة اختبار",
+      "id": "text-to-image-diffusers",
+      "title_ar": "نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يعزز الحاجة إلى نماذج تحويل النص إلى صورة. هذه النماذج توفر حلولًا مبتكرة للمصممين والمبدعين.",
+      "buyer_ar": "المصممين، وكالات التسويق، والشركات الناشئة",
+      "sellable_product_ar": "نماذج تحويل النص إلى صورة مثل Zster/othercide-v2",
+      "first_paid_test_ar": "تقديم نموذج لتحويل نصوص محددة إلى صور كجزء من حملة تسويقية",
+      "tools_ar": "نموذج Hugging Face, أدوات التصميم, خوادم سحابية",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:maglun/Qwen3.8-27B-MLX-Mixed-4.95bpw",
-        "huggingface_models:maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw",
-        "huggingface_models:BlackRiverAI/QwiVer3.6-35B-A3B-GGUF"
+        "huggingface_models:Zster/othercide-v2",
+        "huggingface_models:Matt444455/ank123",
+        "huggingface_models:Praelatus/Yuka_D4DJ"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "BlackRiverAI/QwiVer3.6-35B-A3B-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/BlackRiverAI/QwiVer3.6-35B-A3B-GGUF",
+          "title": "Zster/othercide-v2 — text-to-image",
+          "url": "https://huggingface.co/Zster/othercide-v2",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "maglun/Qwen3.8-27B-MLX-Mixed-4.95bpw — image-text-to-text",
-          "url": "https://huggingface.co/maglun/Qwen3.8-27B-MLX-Mixed-4.95bpw",
+          "title": "Matt444455/ank123 — text-to-image",
+          "url": "https://huggingface.co/Matt444455/ank123",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw — image-text-to-text",
-          "url": "https://huggingface.co/maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw",
+          "title": "Praelatus/Yuka_D4DJ — text-to-image",
+          "url": "https://huggingface.co/Praelatus/Yuka_D4DJ",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -100,61 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-16T14:17:42+00:00",
-      "updatedAt": "2026-08-16T14:17:42+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "ai-tool-rate-check",
-      "title_ar": "أداة مراجعة أسعار أدوات الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام أدوات الذكاء الاصطناعي من قبل المستقلين يتطلب آلية لتقييم الأسعار. أداة مراجعة الأسعار توفر إطار عمل لتحديد الفرص المتاحة.",
-      "buyer_ar": "مستقلون وشركات صغيرة",
-      "sellable_product_ar": "تقديم أداة مراجعة أسعار أدوات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع خيارات مدفوعة لاحقاً",
-      "tools_ar": "أداة مراجعة الأسعار، واجهة مستخدم، قاعدة بيانات",
-      "capital_ar": "بدون رأس مال",
-      "evidence_ids": [
-        "github_repos:1311339393",
-        "huggingface_daily_papers:2608.06867",
-        "huggingface_daily_papers:2608.13391"
-      ],
-      "confidence": 0.6,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "github_repos",
-          "title": "calebadamsjznh8283/ai-tool-rate-check-2026",
-          "url": "https://github.com/calebadamsjznh8283/ai-tool-rate-check-2026",
-          "score": 0.494,
-          "trust_tier": "community"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
-          "url": "https://huggingface.co/papers/2608.06867",
-          "score": 0.48,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Context-Matched Distillation: Teacher Causality for Autoregressive Video Distillation",
-          "url": "https://huggingface.co/papers/2608.13391",
-          "score": 0.468,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-16T14:17:42+00:00",
-      "updatedAt": "2026-08-16T14:17:42+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-08-16T16:16:39+00:00",
+      "updatedAt": "2026-08-16T16:16:39+00:00",
+      "sortOrder": 0
     }
   ],
-  "tiered_at": "2026-08-16T14:17:42+00:00",
+  "tiered_at": "2026-08-16T16:16:39+00:00",
   "free_preview_count": 3
 }
