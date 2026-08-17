@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-08-17T00:39:58+00:00",
+  "generated_at": "2026-08-17T02:56:42+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 824,
+  "corpus_count": 825,
   "opportunities": [
     {
-      "id": "multi-agent-clinical-ai",
-      "title_ar": "إطار عمل مفتوح المصدر للذكاء الاصطناعي السريري",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في القطاع الصحي يتطلب حلولاً مبتكرة. إطار MARC يمكن أن يحسن التنسيق في الرعاية الصحية من خلال توظيف وكالات متعددة.",
-      "buyer_ar": "المستشفيات والعيادات",
-      "sellable_product_ar": "خدمات استشارية لتطبيق MARC في المؤسسات الصحية",
-      "first_paid_test_ar": "تقديم ورشة عمل تجريبية للمستشفيات حول استخدام MARC",
-      "tools_ar": "منصة تطوير البرمجيات، أدوات التدريب على الذكاء الاصطناعي، موارد تعليمية",
-      "capital_ar": "منخفض",
+      "id": "ai-video-misinformation-defense",
+      "title_ar": "تطوير حلول للدفاع ضد المعلومات المضللة في الفيديوهات",
+      "thesis_ar": "تزايد استخدام مولدات الفيديو في خلق محتوى مضلل يمثل تهديدًا كبيرًا. هناك حاجة ملحة لتطوير أدوات فعالة للكشف عن هذه الفيديوهات المزيفة.",
+      "buyer_ar": "الجهات الحكومية، المنظمات غير الحكومية، شركات الإعلام",
+      "sellable_product_ar": "أداة للكشف عن الفيديوهات المزيفة",
+      "first_paid_test_ar": "تقديم نموذج أولي لاختبار فعالية الأداة ضد مجموعة من الفيديوهات",
+      "tools_ar": "تقنيات الذكاء الاصطناعي، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2608.13476v1",
-        "arxiv_papers:2608.12654v1",
-        "huggingface_models:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF"
+        "2608.14391",
+        "2608.11612",
+        "2608.14138"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.46,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
-          "url": "http://arxiv.org/abs/2608.13476v1",
-          "score": 0.481,
+          "source_id": "huggingface_daily_papers",
+          "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+          "url": "https://huggingface.co/papers/2608.14391",
+          "score": 0.492,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
-          "url": "http://arxiv.org/abs/2608.12654v1",
-          "score": 0.466,
+          "source_id": "huggingface_daily_papers",
+          "title": "Dion3: Full-Stack Orthogonal Updates",
+          "url": "https://huggingface.co/papers/2608.11612",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation",
+          "url": "https://huggingface.co/papers/2608.14138",
+          "score": 0.488,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF — text-generation",
-          "url": "https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
-          "score": 0.447,
+          "title": "my0919175/Sovythos-APEP-550M — text-generation",
+          "url": "https://huggingface.co/my0919175/Sovythos-APEP-550M",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF — text-generation",
+          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit — text-generation",
+          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -50,41 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-17T00:39:58+00:00",
-      "updatedAt": "2026-08-17T00:39:58+00:00",
+      "publishedAt": "2026-08-17T02:56:42+00:00",
+      "updatedAt": "2026-08-17T02:56:42+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى البصري المخصص يعزز الحاجة إلى نماذج تحويل النص إلى صورة. يمكن استخدام نماذج Hugging Face لتوليد محتوى مرئي مبتكر.",
-      "buyer_ar": "وكالات التسويق والمصممين",
-      "sellable_product_ar": "خدمات تصميم محتوى مرئي باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم خدمة تصميم صورة واحدة بناءً على نص محدد",
-      "tools_ar": "نموذج Hugging Face، أدوات التصميم الجرافيكي، منصة تسويق رقمية",
-      "capital_ar": "منخفض",
+      "id": "multimodal-ai-solutions",
+      "title_ar": "تطوير حلول ذكاء اصطناعي متعددة الوسائط",
+      "thesis_ar": "تزايد الطلب على حلول الذكاء الاصطناعي التي تجمع بين النص والصورة. السوق بحاجة إلى أدوات تدعم الفهم المتعدد الوسائط.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، شركات الإعلام",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل المحتوى المتعدد الوسائط",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل مجموعة من المحتويات المتعددة الوسائط",
+      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF",
-        "huggingface_models:Matt444455/anka123",
-        "huggingface_models:ghaxalll/ghaxal-face"
+        "2608.14290",
+        "kerasformers/internvl3-2b",
+        "TOTORONG/Bethesda_John5"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "huggingface_daily_papers",
+          "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+          "url": "https://huggingface.co/papers/2608.14391",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Dion3: Full-Stack Orthogonal Updates",
+          "url": "https://huggingface.co/papers/2608.11612",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation",
+          "url": "https://huggingface.co/papers/2608.14138",
+          "score": 0.488,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF",
-          "score": 0.472,
+          "title": "my0919175/Sovythos-APEP-550M — text-generation",
+          "url": "https://huggingface.co/my0919175/Sovythos-APEP-550M",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Matt444455/anka123 — text-to-image",
-          "url": "https://huggingface.co/Matt444455/anka123",
-          "score": 0.472,
+          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF — text-generation",
+          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit — text-generation",
+          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -93,48 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-17T00:39:58+00:00",
-      "updatedAt": "2026-08-17T00:39:58+00:00",
+      "publishedAt": "2026-08-17T02:56:42+00:00",
+      "updatedAt": "2026-08-17T02:56:42+00:00",
       "sortOrder": 1
     },
     {
-      "id": "arabic-text-generation",
-      "title_ar": "توليد نصوص باللغة العربية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى المحتوى العربي الرقمي يوفر فرصة لتطوير نماذج توليد نصوص باللغة العربية. يمكن استخدام نماذج Hugging Face لتلبية هذا الطلب.",
-      "buyer_ar": "المدونين والشركات الناشئة",
-      "sellable_product_ar": "خدمات كتابة محتوى باللغة العربية باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم مقال تجريبي مجاني مع خيار مدفوع لاحقًا",
-      "tools_ar": "نموذج Hugging Face، أدوات تحرير النصوص، منصة نشر",
+      "id": "text-generation-optimization",
+      "title_ar": "تحسين نماذج توليد النصوص",
+      "thesis_ar": "توجد نماذج جديدة لتحسين أداء توليد النصوص، مما يفتح المجال لتحسين الكفاءة وتقليل التكاليف. السوق يتطلب نماذج أكثر فعالية.",
+      "buyer_ar": "شركات البرمجيات، وكالات التسويق، المؤسسات التعليمية",
+      "sellable_product_ar": "نموذج محسّن لتوليد النصوص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحسين أداء نموذج موجود",
+      "tools_ar": "أدوات التعلم الآلي، بيئات تطوير البرمجيات، مكتبات الذكاء الاصطناعي",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:fpadovani/urd-arab-100mb-100mb_seed10",
-        "huggingface_models:trfrasdf/reality-1.1",
-        "huggingface_models:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF"
+        "my0919175/Sovythos-APEP-550M",
+        "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF",
+        "kyleliu789/qwen3-14b-svamp14-orpo-qlora-checkpoint-150"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.45,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "huggingface_daily_papers",
+          "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+          "url": "https://huggingface.co/papers/2608.14391",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Dion3: Full-Stack Orthogonal Updates",
+          "url": "https://huggingface.co/papers/2608.11612",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation",
+          "url": "https://huggingface.co/papers/2608.14138",
+          "score": 0.488,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "trfrasdf/reality-1.1 — text-generation",
-          "url": "https://huggingface.co/trfrasdf/reality-1.1",
-          "score": 0.447,
+          "title": "my0919175/Sovythos-APEP-550M — text-generation",
+          "url": "https://huggingface.co/my0919175/Sovythos-APEP-550M",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "fpadovani/urd-arab-100mb-100mb_seed10 — text-generation",
-          "url": "https://huggingface.co/fpadovani/urd-arab-100mb-100mb_seed10",
-          "score": 0.447,
+          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF — text-generation",
+          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF — text-generation",
-          "url": "https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
-          "score": 0.447,
+          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit — text-generation",
+          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -143,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-17T00:39:58+00:00",
-      "updatedAt": "2026-08-17T00:39:58+00:00",
+      "publishedAt": "2026-08-17T02:56:42+00:00",
+      "updatedAt": "2026-08-17T02:56:42+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-17T00:39:58+00:00",
+  "tiered_at": "2026-08-17T02:56:42+00:00",
   "free_preview_count": 3
 }
