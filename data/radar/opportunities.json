@@ -1,40 +1,41 @@
 {
-  "generated_at": "2026-08-17T06:36:17+00:00",
+  "generated_at": "2026-08-17T08:35:32+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 827,
+  "corpus_count": 828,
   "opportunities": [
     {
-      "id": "text-to-image-generators",
-      "title_ar": "إنشاء خدمات توليد الصور من النصوص",
-      "thesis_ar": "تزايد الطلب على أدوات تحويل النصوص إلى صور يعكس حاجة السوق الإبداعية. يمكن تقديم خدمات مخصصة للشركات والمصممين.",
-      "buyer_ar": "المصممين، وكالات التسويق، الشركات الإبداعية",
-      "sellable_product_ar": "خدمة توليد صور من نصوص",
-      "first_paid_test_ar": "تقديم عدد محدود من الصور المجانية مقابل نصوص مختارة",
-      "tools_ar": "نموذج توليد الصور، واجهة مستخدم، خوادم سحابية",
-      "capital_ar": "منخفض",
+      "id": "ai-generated-video-misinformation",
+      "title_ar": "حماية من هجمات الفيديو المولدة بالذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام الفيديوهات المولدة بالذكاء الاصطناعي لخلق معلومات مضللة يمثل تهديدًا كبيرًا. الحاجة إلى أدوات فعالة للكشف عن هذه الفيديوهات تزداد بشكل ملحوظ.",
+      "buyer_ar": "الهيئات الحكومية، وسائل الإعلام، شركات التكنولوجيا",
+      "sellable_product_ar": "أداة للكشف عن الفيديوهات المولدة بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لمدة شهر مع خيارات مدفوعة لاحقًا",
+      "tools_ar": "أدوات تحليل البيانات، نماذج التعلم العميق، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:tianfeng521/Qwen-Image-Edit-Rapid-AIO",
-        "huggingface_models:vcruz305/Muse-Glimmer-30B-Hermes-Agentic"
+        "huggingface_daily_papers:2608.14391",
+        "huggingface_daily_papers:2608.13606",
+        "huggingface_daily_papers:2608.14405v1"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 2,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic — image-text-to-text",
-          "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+          "url": "https://huggingface.co/papers/2608.14391",
+          "score": 0.492,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "tianfeng521/Qwen-Image-Edit-Rapid-AIO — text-to-image",
-          "url": "https://huggingface.co/tianfeng521/Qwen-Image-Edit-Rapid-AIO",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "MobileMem: Learning from a Year of Mobile Experiences",
+          "url": "https://huggingface.co/papers/2608.13606",
+          "score": 0.461,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -42,11 +43,104 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-17T06:36:17+00:00",
-      "updatedAt": "2026-08-17T06:36:17+00:00",
+      "publishedAt": "2026-08-17T08:35:32+00:00",
+      "updatedAt": "2026-08-17T08:35:32+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "robot-process-assessment-toolkit",
+      "title_ar": "أداة تقييم عمليات الروبوتات",
+      "thesis_ar": "تزايد الاعتماد على الروبوتات في العمليات التجارية يتطلب أدوات تقييم دقيقة. وجود أداة مثل PRM-as-a-Judge يمكن أن يحسن من الأداء ويقلل من الأخطاء.",
+      "buyer_ar": "شركات التصنيع، شركات الخدمات اللوجستية",
+      "sellable_product_ar": "أداة تقييم عمليات الروبوتات",
+      "first_paid_test_ar": "تقديم اختبار تقييم مجاني لعملية واحدة",
+      "tools_ar": "برمجيات تحليل البيانات، نماذج التعلم الآلي، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2608.14284",
+        "huggingface_daily_papers:2608.13545",
+        "huggingface_daily_papers:2608.14144"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+          "url": "https://huggingface.co/papers/2608.14284",
+          "score": 0.479,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+          "url": "https://huggingface.co/papers/2608.13545",
+          "score": 0.475,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Self-Supervised Visual On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2608.14144",
+          "score": 0.459,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-17T08:35:32+00:00",
+      "updatedAt": "2026-08-17T08:35:32+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "personal-ai-assistants",
+      "title_ar": "مساعدات شخصية ذكية",
+      "thesis_ar": "توجه السوق نحو مساعدات شخصية ذكية تتعلم من تجارب المستخدمين يفتح فرصًا جديدة. الطلب على تقنيات التعلم المستمر في الذكاء الاصطناعي يتزايد.",
+      "buyer_ar": "الأفراد، الشركات الصغيرة والمتوسطة",
+      "sellable_product_ar": "مساعد ذكي شخصي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اشتراك شهري مخفض لمدة 3 أشهر",
+      "tools_ar": "نماذج التعلم العميق، واجهات برمجة التطبيقات، أدوات تحليل البيانات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2608.13606",
+        "huggingface_daily_papers:2608.14405v1",
+        "huggingface_daily_papers:2608.14144"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MobileMem: Learning from a Year of Mobile Experiences",
+          "url": "https://huggingface.co/papers/2608.13606",
+          "score": 0.461,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Self-Supervised Visual On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2608.14144",
+          "score": 0.459,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-17T08:35:32+00:00",
+      "updatedAt": "2026-08-17T08:35:32+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-17T06:36:17+00:00",
+  "tiered_at": "2026-08-17T08:35:32+00:00",
   "free_preview_count": 3
 }
