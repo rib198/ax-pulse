@@ -1,27 +1,35 @@
 {
-  "generated_at": "2026-08-17T10:25:50+00:00",
+  "generated_at": "2026-08-17T12:24:53+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 829,
+  "corpus_count": 819,
   "opportunities": [
     {
       "id": "ai-video-misinformation-defense",
-      "title_ar": "تطوير أدوات للدفاع ضد هجمات الفيديو المدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام الفيديوهات المزيفة في الأزمات يتطلب حلولًا فعالة لمكافحة المعلومات المضللة. هذه فرصة لتطوير أدوات كشف وتحليل الفيديوهات المزيفة.",
-      "buyer_ar": "المنظمات الحكومية، وسائل الإعلام، شركات التكنولوجيا",
-      "sellable_product_ar": "أداة تحليل فيديو تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل مجموعة من الفيديوهات المشبوهة",
-      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، واجهات برمجة التطبيقات",
+      "title_ar": "تطوير أدوات الدفاع ضد المعلومات المضللة في الفيديو",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في إنتاج الفيديوهات المضللة يتطلب حلولًا فعالة. وجود أدوات تقييم فعالة يمكن أن يساهم في تقليل المخاطر المرتبطة بالمعلومات الخاطئة.",
+      "buyer_ar": "الهيئات الحكومية، المنظمات غير الحكومية، الشركات الإعلامية",
+      "sellable_product_ar": "أداة للكشف عن الفيديوهات المضللة وتحليلها",
+      "first_paid_test_ar": "تقديم تجربة مجانية لمدة شهر مع إمكانية الوصول إلى مجموعة بيانات محدودة",
+      "tools_ar": "أدوات تحليل الفيديو، نماذج الذكاء الاصطناعي، واجهة برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.14391",
-        "huggingface_daily_papers:2608.13606"
+        "2608.14391",
+        "2608.13606",
+        "2608.09928"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.5,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Self-Supervised Visual On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2608.14144",
+          "score": 0.527,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
@@ -31,86 +39,16 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "MobileMem: Learning from a Year of Mobile Experiences",
-          "url": "https://huggingface.co/papers/2608.13606",
-          "score": 0.48,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-17T10:25:50+00:00",
-      "updatedAt": "2026-08-17T10:25:50+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "personal-assistant-ai",
-      "title_ar": "تطوير مساعد شخصي ذكي",
-      "thesis_ar": "زيادة الاعتماد على المساعدين الشخصيين الذكيين يفتح مجالًا لتطوير حلول مخصصة تتعلم من تجارب المستخدمين. هذه فرصة لتقديم خدمات جديدة في السوق.",
-      "buyer_ar": "الأفراد، الشركات، المؤسسات التعليمية",
-      "sellable_product_ar": "مساعد شخصي يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع خيارات مدفوعة لاحقًا",
-      "tools_ar": "أدوات التعلم العميق، واجهات برمجة التطبيقات، بنى البيانات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2608.13606",
-        "huggingface_daily_papers:2608.14144"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Self-Supervised Visual On-Policy Distillation",
-          "url": "https://huggingface.co/papers/2608.14144",
-          "score": 0.515,
+          "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+          "url": "https://huggingface.co/papers/2608.14284",
+          "score": 0.502,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "MobileMem: Learning from a Year of Mobile Experiences",
-          "url": "https://huggingface.co/papers/2608.13606",
-          "score": 0.48,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-17T10:25:50+00:00",
-      "updatedAt": "2026-08-17T10:25:50+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "robot-process-assessment-tool",
-      "title_ar": "أداة لتقييم العمليات الروبوتية",
-      "thesis_ar": "مع تزايد استخدام الروبوتات في العمليات التجارية، هناك حاجة لتقييم دقيق لأدائها. هذه فرصة لتطوير أداة تقييم مخصصة.",
-      "buyer_ar": "شركات التصنيع، شركات الخدمات اللوجستية",
-      "sellable_product_ar": "أداة تقييم أداء الروبوتات",
-      "first_paid_test_ar": "تقديم تحليل أداء لروبوت واحد في بيئة عمل حقيقية",
-      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، أجهزة استشعار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2608.14284",
-        "huggingface_daily_papers:2608.13545"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
-          "url": "https://huggingface.co/papers/2608.14284",
-          "score": 0.5,
+          "title": "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data",
+          "url": "https://huggingface.co/papers/2608.13517",
+          "score": 0.501,
           "trust_tier": "research"
         },
         {
@@ -119,6 +57,13 @@
           "url": "https://huggingface.co/papers/2608.13545",
           "score": 0.497,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "occamy-ai/occamy-1.0 — text-generation",
+          "url": "https://huggingface.co/occamy-ai/occamy-1.0",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -126,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-17T10:25:50+00:00",
-      "updatedAt": "2026-08-17T10:25:50+00:00",
+      "publishedAt": "2026-08-17T12:24:53+00:00",
+      "updatedAt": "2026-08-17T12:24:53+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "robot-process-assessment-toolkit",
+      "title_ar": "تطوير مجموعة أدوات لتقييم العمليات الروبوتية",
+      "thesis_ar": "مع تزايد استخدام الروبوتات، هناك حاجة ملحة لتقييم أدائها بشكل دقيق. توفر هذه الأدوات فرصة لتحسين كفاءة العمليات وزيادة الاعتمادية.",
+      "buyer_ar": "شركات التصنيع، مؤسسات البحث والتطوير، شركات الروبوتات",
+      "sellable_product_ar": "مجموعة أدوات لتقييم أداء الروبوتات",
+      "first_paid_test_ar": "تقديم اختبار تجريبي مجاني لمدة أسبوعين مع عدد محدود من الروبوتات",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهة المستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2608.14284",
+        "2608.13517",
+        "2608.13545"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Self-Supervised Visual On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2608.14144",
+          "score": 0.527,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+          "url": "https://huggingface.co/papers/2608.14391",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+          "url": "https://huggingface.co/papers/2608.14284",
+          "score": 0.502,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data",
+          "url": "https://huggingface.co/papers/2608.13517",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+          "url": "https://huggingface.co/papers/2608.13545",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "occamy-ai/occamy-1.0 — text-generation",
+          "url": "https://huggingface.co/occamy-ai/occamy-1.0",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-17T12:24:53+00:00",
+      "updatedAt": "2026-08-17T12:24:53+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "open-source-ethical-ml-models",
+      "title_ar": "تطوير نماذج تعلم آلي مفتوحة المصدر وأخلاقية",
+      "thesis_ar": "تزايد الطلب على نماذج تعلم آلي تعتمد على بيانات مصرح بها. هذه النماذج يمكن أن تفتح آفاق جديدة للبحث والتطوير في السوق.",
+      "buyer_ar": "مراكز البحث، الجامعات، الشركات الناشئة في مجال الذكاء الاصطناعي",
+      "sellable_product_ar": "نماذج تعلم آلي مفتوحة المصدر تعتمد على بيانات مصرح بها",
+      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني مع إمكانية الوصول إلى مجموعة بيانات صغيرة",
+      "tools_ar": "أدوات تطوير البرمجيات، مكتبات البرمجة، منصات البيانات",
+      "capital_ar": "بدون رأس مال",
+      "evidence_ids": [
+        "2608.13517",
+        "2608.13545",
+        "2608.09928"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Self-Supervised Visual On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2608.14144",
+          "score": 0.527,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+          "url": "https://huggingface.co/papers/2608.14391",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+          "url": "https://huggingface.co/papers/2608.14284",
+          "score": 0.502,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data",
+          "url": "https://huggingface.co/papers/2608.13517",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+          "url": "https://huggingface.co/papers/2608.13545",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "occamy-ai/occamy-1.0 — text-generation",
+          "url": "https://huggingface.co/occamy-ai/occamy-1.0",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-17T12:24:53+00:00",
+      "updatedAt": "2026-08-17T12:24:53+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-17T10:25:50+00:00",
+  "tiered_at": "2026-08-17T12:24:53+00:00",
   "free_preview_count": 3
 }
