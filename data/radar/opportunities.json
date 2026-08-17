@@ -1,33 +1,59 @@
 {
-  "generated_at": "2026-08-17T02:56:42+00:00",
+  "generated_at": "2026-08-17T04:36:03+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 825,
+  "corpus_count": 824,
   "opportunities": [
     {
       "id": "ai-video-misinformation-defense",
-      "title_ar": "تطوير حلول للدفاع ضد المعلومات المضللة في الفيديوهات",
-      "thesis_ar": "تزايد استخدام مولدات الفيديو في خلق محتوى مضلل يمثل تهديدًا كبيرًا. هناك حاجة ملحة لتطوير أدوات فعالة للكشف عن هذه الفيديوهات المزيفة.",
-      "buyer_ar": "الجهات الحكومية، المنظمات غير الحكومية، شركات الإعلام",
-      "sellable_product_ar": "أداة للكشف عن الفيديوهات المزيفة",
-      "first_paid_test_ar": "تقديم نموذج أولي لاختبار فعالية الأداة ضد مجموعة من الفيديوهات",
-      "tools_ar": "تقنيات الذكاء الاصطناعي، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
+      "title_ar": "تطوير أدوات الدفاع ضد المعلومات المضللة في الفيديوهات",
+      "thesis_ar": "تزايد استخدام الفيديوهات المولدة بالذكاء الاصطناعي في نشر المعلومات المضللة يمثل تهديدًا كبيرًا. تطوير أدوات فعالة للكشف عن هذه الفيديوهات يمكن أن يكون له تأثير كبير في الأمان المعلوماتي.",
+      "buyer_ar": "الجهات الحكومية ووسائل الإعلام",
+      "sellable_product_ar": "أداة للكشف عن الفيديوهات المضللة",
+      "first_paid_test_ar": "تقديم اختبار تجريبي لأداة الكشف على مجموعة من الفيديوهات",
+      "tools_ar": "أدوات تحليل البيانات، نماذج التعلم الآلي، واجهة مستخدم",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.14391",
-        "2608.11612",
-        "2608.14138"
+        "2608.14391"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.49,
+      "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+          "url": "https://huggingface.co/papers/2608.14284",
+          "score": 0.523,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
           "url": "https://huggingface.co/papers/2608.14391",
-          "score": 0.492,
+          "score": 0.507,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MobileMem: Learning from a Year of Mobile Experiences",
+          "url": "https://huggingface.co/papers/2608.13606",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Multimodal Model Diffing for Feature Discovery and Control",
+          "url": "https://huggingface.co/papers/2608.09928",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+          "url": "https://huggingface.co/papers/2608.14290",
+          "score": 0.489,
           "trust_tier": "research"
         },
         {
@@ -36,34 +62,6 @@
           "url": "https://huggingface.co/papers/2608.11612",
           "score": 0.489,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation",
-          "url": "https://huggingface.co/papers/2608.14138",
-          "score": 0.488,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "my0919175/Sovythos-APEP-550M — text-generation",
-          "url": "https://huggingface.co/my0919175/Sovythos-APEP-550M",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF — text-generation",
-          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit — text-generation",
-          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,105 +69,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-17T02:56:42+00:00",
-      "updatedAt": "2026-08-17T02:56:42+00:00",
+      "publishedAt": "2026-08-17T04:36:03+00:00",
+      "updatedAt": "2026-08-17T04:36:03+00:00",
       "sortOrder": 0
     },
     {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "تطوير حلول ذكاء اصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد الطلب على حلول الذكاء الاصطناعي التي تجمع بين النص والصورة. السوق بحاجة إلى أدوات تدعم الفهم المتعدد الوسائط.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، شركات الإعلام",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل المحتوى المتعدد الوسائط",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل مجموعة من المحتويات المتعددة الوسائط",
-      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، واجهات برمجة التطبيقات",
+      "id": "personal-assistant-technology",
+      "title_ar": "تطوير مساعد شخصي ذكي",
+      "thesis_ar": "التحول نحو مساعدات شخصية قادرة على التعلم المستمر من تجارب المستخدمين يمثل فرصة كبيرة. هذا النوع من التكنولوجيا يمكن أن يحسن من تجربة المستخدم بشكل ملحوظ.",
+      "buyer_ar": "الأفراد والشركات",
+      "sellable_product_ar": "تطبيق مساعد شخصي متطور",
+      "first_paid_test_ar": "إصدار نسخة تجريبية محدودة للمستخدمين",
+      "tools_ar": "نموذج تعلم آلي، واجهة مستخدم، قاعدة بيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2608.14290",
-        "kerasformers/internvl3-2b",
-        "TOTORONG/Bethesda_John5"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
-          "url": "https://huggingface.co/papers/2608.14391",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Dion3: Full-Stack Orthogonal Updates",
-          "url": "https://huggingface.co/papers/2608.11612",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation",
-          "url": "https://huggingface.co/papers/2608.14138",
-          "score": 0.488,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "my0919175/Sovythos-APEP-550M — text-generation",
-          "url": "https://huggingface.co/my0919175/Sovythos-APEP-550M",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF — text-generation",
-          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit — text-generation",
-          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-17T02:56:42+00:00",
-      "updatedAt": "2026-08-17T02:56:42+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-generation-optimization",
-      "title_ar": "تحسين نماذج توليد النصوص",
-      "thesis_ar": "توجد نماذج جديدة لتحسين أداء توليد النصوص، مما يفتح المجال لتحسين الكفاءة وتقليل التكاليف. السوق يتطلب نماذج أكثر فعالية.",
-      "buyer_ar": "شركات البرمجيات، وكالات التسويق، المؤسسات التعليمية",
-      "sellable_product_ar": "نموذج محسّن لتوليد النصوص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحسين أداء نموذج موجود",
-      "tools_ar": "أدوات التعلم الآلي، بيئات تطوير البرمجيات، مكتبات الذكاء الاصطناعي",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "my0919175/Sovythos-APEP-550M",
-        "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF",
-        "kyleliu789/qwen3-14b-svamp14-orpo-qlora-checkpoint-150"
+        "2608.13606",
+        "2608.14290"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.49,
+      "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+          "url": "https://huggingface.co/papers/2608.14284",
+          "score": 0.523,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
           "url": "https://huggingface.co/papers/2608.14391",
-          "score": 0.492,
+          "score": 0.507,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MobileMem: Learning from a Year of Mobile Experiences",
+          "url": "https://huggingface.co/papers/2608.13606",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Multimodal Model Diffing for Feature Discovery and Control",
+          "url": "https://huggingface.co/papers/2608.09928",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+          "url": "https://huggingface.co/papers/2608.14290",
+          "score": 0.489,
           "trust_tier": "research"
         },
         {
@@ -178,34 +132,6 @@
           "url": "https://huggingface.co/papers/2608.11612",
           "score": 0.489,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation",
-          "url": "https://huggingface.co/papers/2608.14138",
-          "score": 0.488,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "my0919175/Sovythos-APEP-550M — text-generation",
-          "url": "https://huggingface.co/my0919175/Sovythos-APEP-550M",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF — text-generation",
-          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit — text-generation",
-          "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -213,11 +139,80 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-17T02:56:42+00:00",
-      "updatedAt": "2026-08-17T02:56:42+00:00",
+      "publishedAt": "2026-08-17T04:36:03+00:00",
+      "updatedAt": "2026-08-17T04:36:03+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "robot-process-assessment-toolkit",
+      "title_ar": "أداة تقييم عمليات الروبوتات",
+      "thesis_ar": "تقييم أداء الروبوتات بشكل دقيق يمكن أن يساعد الشركات في تحسين عملياتها. هذه الأداة تلبي حاجة ملحة لفهم أداء الروبوتات بشكل أفضل.",
+      "buyer_ar": "شركات التصنيع والتكنولوجيا",
+      "sellable_product_ar": "أداة تقييم أداء الروبوتات",
+      "first_paid_test_ar": "تقديم تجربة مجانية للشركات لتقييم أداء الروبوتات",
+      "tools_ar": "أدوات تحليل البيانات، واجهة مستخدم، نماذج تقييم",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2608.14284"
+      ],
+      "confidence": 0.6,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+          "url": "https://huggingface.co/papers/2608.14284",
+          "score": 0.523,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+          "url": "https://huggingface.co/papers/2608.14391",
+          "score": 0.507,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MobileMem: Learning from a Year of Mobile Experiences",
+          "url": "https://huggingface.co/papers/2608.13606",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Multimodal Model Diffing for Feature Discovery and Control",
+          "url": "https://huggingface.co/papers/2608.09928",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+          "url": "https://huggingface.co/papers/2608.14290",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Dion3: Full-Stack Orthogonal Updates",
+          "url": "https://huggingface.co/papers/2608.11612",
+          "score": 0.489,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-17T04:36:03+00:00",
+      "updatedAt": "2026-08-17T04:36:03+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-17T02:56:42+00:00",
+  "tiered_at": "2026-08-17T04:36:03+00:00",
   "free_preview_count": 3
 }
