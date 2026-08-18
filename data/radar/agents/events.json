@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-18T14:27:10+00:00",
+  "generated_at": "2026-08-18T16:33:18+00:00",
   "note_ar": "أحداث مستخرجة من الإشارات تلقائيًا. كل حدث مدعوم بـ ≥ 2 إشارة أو إشارة من مصدر رسمي.",
-  "count": 21,
+  "count": 20,
   "events": [
     {
       "id": "evt_anthropic_pricing_change_2026_08_18",
@@ -16,7 +16,7 @@
       "evidence_count": 5,
       "confidence": 1.0,
       "first_seen": "Mon, 20 Jul 2026 16:05:16 GMT",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -68,6 +68,52 @@
       ]
     },
     {
+      "id": "evt_openai_model_release_gpt_2026_08_18",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "openai",
+      "family": "gpt",
+      "title_ar": "إصدار نموذج: openai",
+      "title_en": "Model release: openai",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 3,
+      "confidence": 1.0,
+      "first_seen": "Thu, 13 Aug 2026 10:00:00 GMT",
+      "last_updated": "2026-08-18T16:33:18+00:00",
+      "is_new": false,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "devto_ai:https://dev.to/onsen/gpt-56-sol-openais-50-price-cut-explained-jme",
+          "source_id": "devto_ai",
+          "source_name": "Dev.to AI",
+          "title": "GPT-5.6 Sol: OpenAI's 50% Price Cut Explained",
+          "url": "https://dev.to/onsen/gpt-56-sol-openais-50-price-cut-explained-jme",
+          "trust_tier": "community",
+          "posted_at": "Tue, 18 Aug 2026 16:10:29 +0000"
+        },
+        {
+          "id": "openai_news:https://openai.com/index/previewing-ultrafast",
+          "source_id": "openai_news",
+          "source_name": "OpenAI News",
+          "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+          "url": "https://openai.com/index/previewing-ultrafast",
+          "trust_tier": "official",
+          "posted_at": "Thu, 13 Aug 2026 10:00:00 GMT"
+        },
+        {
+          "id": "openai_news:https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+          "source_id": "openai_news",
+          "source_name": "OpenAI News",
+          "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+          "trust_tier": "official",
+          "posted_at": "Mon, 10 Aug 2026 10:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "evt_gemini_model_release_gemini_2026_08_18",
       "type": "model_release",
       "icon": "⊕",
@@ -80,7 +126,7 @@
       "evidence_count": 3,
       "confidence": 1.0,
       "first_seen": "Tue, 07 Jul 2026 08:54:00 +0000",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -126,7 +172,7 @@
       "evidence_count": 3,
       "confidence": 1.0,
       "first_seen": "Thu, 06 Aug 2026 10:00:00 GMT",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -172,7 +218,7 @@
       "evidence_count": 3,
       "confidence": 0.85,
       "first_seen": "Thu, 21 May 2026 15:15:13 GMT",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -206,80 +252,6 @@
       ]
     },
     {
-      "id": "evt_meta_policy_signal_2026_08_17",
-      "type": "policy_signal",
-      "icon": "§",
-      "subject": "meta",
-      "family": null,
-      "title_ar": "إشارة تنظيمية: meta",
-      "title_en": "Policy signal: meta",
-      "label_ar": "إشارة تنظيمية",
-      "label_en": "Policy signal",
-      "evidence_count": 2,
-      "confidence": 0.85,
-      "first_seen": "2026-08-17T16:10:05Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.16763v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv AI product research",
-          "title": "LAVA: Logic-Aware Validation and Augmentation Framework for Large-Scale Financial Document Auditing",
-          "url": "http://arxiv.org/abs/2608.16763v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-17T16:10:05Z"
-        },
-        {
-          "id": "arxiv_papers:2608.16394v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv document and business AI",
-          "title": "Think Inside the Chunk: RegulaRAG for Regulation-Compliant Scenario Generation using LLMs: A Case Study of UN Regulation No. 152",
-          "url": "http://arxiv.org/abs/2608.16394v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-17T10:46:33Z"
-        }
-      ]
-    },
-    {
-      "id": "evt_openai_model_release_gpt_2026_08_18",
-      "type": "model_release",
-      "icon": "⊕",
-      "subject": "openai",
-      "family": "gpt",
-      "title_ar": "إصدار نموذج: openai",
-      "title_en": "Model release: openai",
-      "label_ar": "إصدار نموذج",
-      "label_en": "Model release",
-      "evidence_count": 2,
-      "confidence": 0.85,
-      "first_seen": "Thu, 13 Aug 2026 10:00:00 GMT",
-      "last_updated": "2026-08-18T14:27:10+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "openai_news:https://openai.com/index/previewing-ultrafast",
-          "source_id": "openai_news",
-          "source_name": "OpenAI News",
-          "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-          "url": "https://openai.com/index/previewing-ultrafast",
-          "trust_tier": "official",
-          "posted_at": "Thu, 13 Aug 2026 10:00:00 GMT"
-        },
-        {
-          "id": "openai_news:https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-          "source_id": "openai_news",
-          "source_name": "OpenAI News",
-          "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
-          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-          "trust_tier": "official",
-          "posted_at": "Mon, 10 Aug 2026 10:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "evt_together_model_release_llama_2026_08_17",
       "type": "model_release",
       "icon": "⊕",
@@ -292,7 +264,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-17T13:24:41Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -304,6 +276,34 @@
           "url": "http://arxiv.org/abs/2608.16554v1",
           "trust_tier": "research",
           "posted_at": "2026-08-17T13:24:41Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_mistral_policy_signal_2026_08_18",
+      "type": "policy_signal",
+      "icon": "§",
+      "subject": "mistral",
+      "family": null,
+      "title_ar": "إشارة تنظيمية: mistral",
+      "title_en": "Policy signal: mistral",
+      "label_ar": "إشارة تنظيمية",
+      "label_en": "Policy signal",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-18T16:02:52.000Z",
+      "last_updated": "2026-08-18T16:33:18+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "huggingface_models:exo-jhop/ministral3-gdpr-lora",
+          "source_id": "huggingface_models",
+          "source_name": "Hugging Face multimodal models",
+          "title": "exo-jhop/ministral3-gdpr-lora — image-text-to-text",
+          "url": "https://huggingface.co/exo-jhop/ministral3-gdpr-lora",
+          "trust_tier": "official",
+          "posted_at": "2026-08-18T16:02:52.000Z"
         }
       ]
     },
@@ -320,7 +320,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-13T17:37:53Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -348,7 +348,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-16T13:53:30Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -376,7 +376,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-13T17:59:57Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -404,7 +404,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "Fri, 14 Aug 2026 16:00:00 +0000",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -416,34 +416,6 @@
           "url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/",
           "trust_tier": "official",
           "posted_at": "Fri, 14 Aug 2026 16:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "evt_replicate_model_release_gpt_2026_08_13",
-      "type": "model_release",
-      "icon": "⊕",
-      "subject": "replicate",
-      "family": "gpt",
-      "title_ar": "إصدار نموذج: replicate",
-      "title_en": "Model release: replicate",
-      "label_ar": "إصدار نموذج",
-      "label_en": "Model release",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-13T14:59:27Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.13331v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv AI agents",
-          "title": "Training AI Scientists to Replicate Research",
-          "url": "http://arxiv.org/abs/2608.13331v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-13T14:59:27Z"
         }
       ]
     },
@@ -460,7 +432,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-14T11:08:01Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -488,7 +460,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-14T11:08:01Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -516,7 +488,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-16T21:20:27Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -544,7 +516,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-14T00:56:41Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -572,7 +544,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-14T00:56:41Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -600,7 +572,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-10T02:51:04Z",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -628,7 +600,7 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Thu, 11 Jun 2026 21:37:59 GMT",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -665,7 +637,7 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Tue, 21 Jul 2026 04:09:20 GMT",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "premium",
       "evidence": [
@@ -702,7 +674,7 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Sun, 19 Jul 2026 10:25:06 GMT",
-      "last_updated": "2026-08-18T14:27:10+00:00",
+      "last_updated": "2026-08-18T16:33:18+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
