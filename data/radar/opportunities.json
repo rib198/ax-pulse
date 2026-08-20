@@ -1,147 +1,68 @@
 {
-  "generated_at": "2026-08-20T04:30:39+00:00",
+  "generated_at": "2026-08-20T06:30:25+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 827,
+  "corpus_count": 816,
   "opportunities": [
     {
-      "id": "ai-scientist-automation",
-      "title_ar": "أتمتة عمليات البحث العلمي باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تقدم نماذج الذكاء الاصطناعي الحديثة إمكانية أتمتة عمليات البحث العلمي بشكل كامل، مما يزيد من كفاءة الباحثين. هذا الوقت هو الأنسب للاستثمار في أدوات تساعد الباحثين على تسريع عملياتهم البحثية.",
-      "buyer_ar": "مراكز البحث العلمي والجامعات",
-      "sellable_product_ar": "أدوات أتمتة البحث العلمي مثل البرمجيات التي تدعم توليد الفرضيات وإعداد المخطوطات",
-      "first_paid_test_ar": "تقديم نموذج أولي لأداة أتمتة بسيطة لمركز بحثي",
-      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، خادم سحابي",
+      "id": "medical-question-answering-system",
+      "title_ar": "نظام إجابة على الأسئلة الطبية",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة دقيقة وموثوقة للإجابة على الأسئلة الطبية، خاصة في الحالات المعقدة. التكنولوجيا الحالية لا تلبي جميع الاحتياجات، مما يفتح المجال لتطوير حلول مبتكرة.",
+      "buyer_ar": "المستشفيات، العيادات، شركات التأمين الصحي",
+      "sellable_product_ar": "نظام ذكاء اصطناعي للإجابة على الأسئلة الطبية",
+      "first_paid_test_ar": "تقديم نموذج أولي لإجابة على مجموعة من الأسئلة الطبية الشائعة",
+      "tools_ar": "نموذج لغة، منصة تطوير، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.13558",
-        "huggingface_daily_papers:2608.19197",
-        "arxiv_papers:2608.19029v1"
+        "2608.19029v1",
+        "2608.18733v1",
+        "2608.18937v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.52,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
+          "url": "http://arxiv.org/abs/2608.19029v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Ask, Condition or Abstain: Reinforcement Learning for Missing-Premise Reasoning",
+          "url": "http://arxiv.org/abs/2608.16554v1",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_daily_papers",
-          "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
-          "url": "https://huggingface.co/papers/2608.13558",
-          "score": 0.524,
+          "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+          "url": "https://huggingface.co/papers/2608.17253",
+          "score": 0.511,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
           "url": "https://huggingface.co/papers/2608.19197",
-          "score": 0.519,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
-          "url": "http://arxiv.org/abs/2608.19029v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-20T04:30:39+00:00",
-      "updatedAt": "2026-08-20T04:30:39+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "medical-qa-systems",
-      "title_ar": "أنظمة الإجابة على الأسئلة الطبية المعتمدة على الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى أنظمة دقيقة للإجابة على الأسئلة الطبية يتيح فرصًا كبيرة في السوق. مع تطور نماذج الذكاء الاصطناعي، يمكن تحسين دقة الإجابات وتقديم استجابات أكثر موثوقية.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي للإجابة على الأسئلة الطبية",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لنظام QA في مستشفى",
-      "tools_ar": "نموذج ذكاء اصطناعي، قاعدة بيانات طبية، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2608.19029v1",
-        "arxiv_papers:2608.18933v1",
-        "arxiv_papers:2608.18878v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
-          "url": "http://arxiv.org/abs/2608.19029v1",
-          "score": 0.515,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution",
-          "url": "http://arxiv.org/abs/2608.18933v1",
-          "score": 0.482,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "DentAgent: Evidence-Centric Multi-Agent Coordination for Multimodal Dental Reasoning",
-          "url": "http://arxiv.org/abs/2608.18878v1",
-          "score": 0.482,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-20T04:30:39+00:00",
-      "updatedAt": "2026-08-20T04:30:39+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "financial-ai-systems",
-      "title_ar": "أنظمة الذكاء الاصطناعي في القطاع المالي",
-      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي في العمليات المالية يعكس الحاجة إلى تحسين الأداء والدقة. الاستثمار في هذه الأنظمة يمكن أن يحقق عوائد كبيرة.",
-      "buyer_ar": "البنوك والشركات المالية",
-      "sellable_product_ar": "أنظمة ذكاء اصطناعي لتحليل البيانات المالية والتنبؤ",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل بيانات مالية حقيقية",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيانات مالية، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2608.18534v1",
-        "arxiv_papers:2608.19011v1",
-        "huggingface_daily_papers:2608.18701"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "From Threat Intelligence to Detection: Knowledge-driven Enrichment and Template-based Rule Grounding for Automated Sigma Rule Generation",
-          "url": "http://arxiv.org/abs/2608.19011v1",
-          "score": 0.492,
+          "score": 0.511,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation",
-          "url": "https://huggingface.co/papers/2608.18701",
-          "score": 0.475,
+          "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+          "url": "https://huggingface.co/papers/2608.13558",
+          "score": 0.508,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "FinRCA-Bench: Benchmarking Evidence Retrieval and Reasoning for Financial AI Systems",
-          "url": "http://arxiv.org/abs/2608.18534v1",
-          "score": 0.472,
+          "title": "Flama: a Python framework for development and deployment of production-ready APIs, machine learning, and LLM services",
+          "url": "http://arxiv.org/abs/2608.18733v1",
+          "score": 0.499,
           "trust_tier": "research"
         }
       ],
@@ -150,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-20T04:30:39+00:00",
-      "updatedAt": "2026-08-20T04:30:39+00:00",
+      "publishedAt": "2026-08-20T06:30:25+00:00",
+      "updatedAt": "2026-08-20T06:30:25+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "automated-cyber-threat-detection",
+      "title_ar": "كشف التهديدات السيبرانية بشكل آلي",
+      "thesis_ar": "تزايد التهديدات السيبرانية يتطلب حلولاً فعالة لتحويل المعلومات إلى إجراءات قابلة للتنفيذ. هناك حاجة ملحة لتطوير أنظمة قادرة على التكيف مع التهديدات المتطورة.",
+      "buyer_ar": "الشركات، المؤسسات الحكومية، مزودي خدمات الأمن السيبراني",
+      "sellable_product_ar": "نظام كشف تلقائي للتهديدات السيبرانية",
+      "first_paid_test_ar": "تقديم نموذج أولي لاختبار النظام على مجموعة من التهديدات المعروفة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2608.19011v1",
+        "2608.16590v1",
+        "2608.18565v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
+          "url": "http://arxiv.org/abs/2608.19029v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Ask, Condition or Abstain: Reinforcement Learning for Missing-Premise Reasoning",
+          "url": "http://arxiv.org/abs/2608.16554v1",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+          "url": "https://huggingface.co/papers/2608.17253",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+          "url": "https://huggingface.co/papers/2608.19197",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+          "url": "https://huggingface.co/papers/2608.13558",
+          "score": 0.508,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Flama: a Python framework for development and deployment of production-ready APIs, machine learning, and LLM services",
+          "url": "http://arxiv.org/abs/2608.18733v1",
+          "score": 0.499,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-20T06:30:25+00:00",
+      "updatedAt": "2026-08-20T06:30:25+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "language-models-for-software-issue-resolution",
+      "title_ar": "نماذج لغوية لحل مشكلات البرمجيات",
+      "thesis_ar": "تزايد استخدام نماذج اللغة في حل مشكلات البرمجيات يشير إلى إمكانية تحسين الكفاءة. هناك حاجة لتطوير نماذج متخصصة تتعامل مع مشكلات محددة في مشاريع معينة.",
+      "buyer_ar": "شركات تطوير البرمجيات، فرق تكنولوجيا المعلومات",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لحل مشكلات البرمجيات",
+      "first_paid_test_ar": "تقديم نموذج أولي لحل مشكلات في مشروع برمجي محدد",
+      "tools_ar": "نموذج لغة، أدوات تحليل البيانات، بيئة تطوير",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2608.18933v1",
+        "2608.16554v1",
+        "2608.18524v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
+          "url": "http://arxiv.org/abs/2608.19029v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Ask, Condition or Abstain: Reinforcement Learning for Missing-Premise Reasoning",
+          "url": "http://arxiv.org/abs/2608.16554v1",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+          "url": "https://huggingface.co/papers/2608.17253",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+          "url": "https://huggingface.co/papers/2608.19197",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+          "url": "https://huggingface.co/papers/2608.13558",
+          "score": 0.508,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Flama: a Python framework for development and deployment of production-ready APIs, machine learning, and LLM services",
+          "url": "http://arxiv.org/abs/2608.18733v1",
+          "score": 0.499,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-20T06:30:25+00:00",
+      "updatedAt": "2026-08-20T06:30:25+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-20T04:30:39+00:00",
+  "tiered_at": "2026-08-20T06:30:25+00:00",
   "free_preview_count": 3
 }
