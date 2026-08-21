@@ -1,128 +1,35 @@
 {
-  "generated_at": "2026-08-21T08:32:39+00:00",
+  "generated_at": "2026-08-21T10:23:28+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 718,
+  "corpus_count": 829,
   "opportunities": [
     {
-      "id": "ai-driven-scientific-software",
-      "title_ar": "تطوير برمجيات علمية مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد الاعتماد على البرمجيات في الأبحاث العلمية، فإن تطوير برمجيات قادرة على تقليل الأخطاء وتحسين النتائج يعد فرصة كبيرة. يمكن أن تسهم هذه البرمجيات في تعزيز مصداقية الأبحاث العلمية.",
-      "buyer_ar": "مراكز الأبحاث والجامعات",
-      "sellable_product_ar": "برمجيات لتحسين جودة البرمجة العلمية",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لمشروع بحثي",
-      "tools_ar": "أدوات تطوير البرمجيات، خوارزميات الذكاء الاصطناعي، منصات اختبار البرمجيات",
-      "capital_ar": "متوسط",
+      "id": "ai-driven-healthcare-chatbots",
+      "title_ar": "تطوير روبوتات محادثة ذكية للرعاية الصحية",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في تقديم الرعاية الصحية يجعل تطوير روبوتات محادثة قادرة على فهم استفسارات المرضى وتحليلها أمرًا حيويًا. هذه الروبوتات يمكن أن تحسن من تجربة المرضى وتزيد من كفاءة الخدمات الصحية.",
+      "buyer_ar": "مستشفيات وعيادات صحية",
+      "sellable_product_ar": "روبوت محادثة ذكي مخصص للرعاية الصحية",
+      "first_paid_test_ar": "تقديم نموذج أولي لروبوت محادثة لمجموعة صغيرة من المرضى",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، منصة تحليل بيانات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.19799",
-        "huggingface_daily_papers:2608.18580",
-        "huggingface_daily_papers:2608.20202"
+        "2608.19875v1",
+        "2608.19029v1",
+        "2608.19880"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
           "url": "https://huggingface.co/papers/2608.19799",
-          "score": 0.517,
+          "score": 0.532,
           "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
-          "url": "https://huggingface.co/papers/2608.20202",
-          "score": 0.487,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis",
-          "url": "https://huggingface.co/papers/2608.18580",
-          "score": 0.483,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-21T08:32:39+00:00",
-      "updatedAt": "2026-08-21T08:32:39+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-solutions",
-      "title_ar": "حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى البصري المدعوم بالذكاء الاصطناعي يفتح مجالًا واسعًا لتطوير حلول تحويل النص إلى صورة. هذه الحلول يمكن أن تلبي احتياجات التسويق والإعلانات.",
-      "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى صور",
-      "first_paid_test_ar": "تقديم خدمة تحويل نصوص محددة إلى صور مجانية",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، أدوات تصميم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:jojoim/l1n",
-        "huggingface_models:Omnico/Krea2_turbo_diff_loras",
-        "huggingface_models:mej023/t1ffany"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "jojoim/l1n — text-to-image",
-          "url": "https://huggingface.co/jojoim/l1n",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Omnico/Krea2_turbo_diff_loras — text-to-image",
-          "url": "https://huggingface.co/Omnico/Krea2_turbo_diff_loras",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mej023/t1ffany — text-to-image",
-          "url": "https://huggingface.co/mej023/t1ffany",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-21T08:32:39+00:00",
-      "updatedAt": "2026-08-21T08:32:39+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "llm-environment-learning",
-      "title_ar": "تطوير بيئات تعلم للذكاء الاصطناعي",
-      "thesis_ar": "تطوير بيئات ديناميكية للتعلم يمكن أن يعزز من فعالية نماذج التعلم العميق. هذا سيمكن الوكلاء من التعلم بشكل أسرع وأكثر كفاءة.",
-      "buyer_ar": "شركات التكنولوجيا والبحث",
-      "sellable_product_ar": "منصة لتطوير بيئات تعلم ديناميكية",
-      "first_paid_test_ar": "تقديم نموذج أولي لبيئة تعلم مجانية",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج التعلم العميق، منصات اختبار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2608.19880",
-        "huggingface_daily_papers:2608.20202",
-        "huggingface_daily_papers:2608.14022"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
@@ -131,18 +38,32 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
-          "url": "https://huggingface.co/papers/2608.20202",
-          "score": 0.487,
+          "source_id": "arxiv_papers",
+          "title": "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models",
+          "url": "http://arxiv.org/abs/2608.20055v1",
+          "score": 0.492,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models",
-          "url": "https://huggingface.co/papers/2608.14022",
-          "score": 0.474,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "spinozans/emender-e97-1.3b-cli-agent — text-generation",
+          "url": "https://huggingface.co/spinozans/emender-e97-1.3b-cli-agent",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith — text-generation",
+          "url": "https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "lynaNSFW/mysticxxx_MM_H3 — text-to-image",
+          "url": "https://huggingface.co/lynaNSFW/mysticxxx_MM_H3",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-21T08:32:39+00:00",
-      "updatedAt": "2026-08-21T08:32:39+00:00",
+      "publishedAt": "2026-08-21T10:23:28+00:00",
+      "updatedAt": "2026-08-21T10:23:28+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "ai-environment-generation",
+      "title_ar": "تطوير بيئات تعلم ديناميكية لوكلاء الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة إلى بيئات تعلم ديناميكية لوكلاء الذكاء الاصطناعي يعكس أهمية تحسين قدراتهم على التعلم من التفاعلات. هذه البيئات ستساعد في تعزيز فعالية التعلم وتطوير المهارات.",
+      "buyer_ar": "شركات تطوير البرمجيات والتكنولوجيا",
+      "sellable_product_ar": "أداة لتوليد بيئات تعلم ديناميكية",
+      "first_paid_test_ar": "تقديم نموذج أولي لبيئة تعلم لوكيل ذكاء اصطناعي",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج ذكاء اصطناعي، منصة اختبار",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2608.19880",
+        "2608.19799",
+        "2608.20202"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+          "url": "https://huggingface.co/papers/2608.19799",
+          "score": 0.532,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+          "url": "https://huggingface.co/papers/2608.19880",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models",
+          "url": "http://arxiv.org/abs/2608.20055v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "spinozans/emender-e97-1.3b-cli-agent — text-generation",
+          "url": "https://huggingface.co/spinozans/emender-e97-1.3b-cli-agent",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith — text-generation",
+          "url": "https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "lynaNSFW/mysticxxx_MM_H3 — text-to-image",
+          "url": "https://huggingface.co/lynaNSFW/mysticxxx_MM_H3",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-21T10:23:28+00:00",
+      "updatedAt": "2026-08-21T10:23:28+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في مجالات متعددة مثل الإعلانات والفنون الرقمية يفتح فرصًا جديدة. هذه النماذج يمكن أن تعزز من الإبداع وتوفر حلولًا مبتكرة.",
+      "buyer_ar": "وكالات إعلانات وفنانين رقميين",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لمشروع إعلاني",
+      "tools_ar": "نموذج ذكاء اصطناعي، منصة تصميم، أدوات تحليل بيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2608.14022",
+        "2608.20202",
+        "2608.19880"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+          "url": "https://huggingface.co/papers/2608.19799",
+          "score": 0.532,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+          "url": "https://huggingface.co/papers/2608.19880",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models",
+          "url": "http://arxiv.org/abs/2608.20055v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "spinozans/emender-e97-1.3b-cli-agent — text-generation",
+          "url": "https://huggingface.co/spinozans/emender-e97-1.3b-cli-agent",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith — text-generation",
+          "url": "https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "lynaNSFW/mysticxxx_MM_H3 — text-to-image",
+          "url": "https://huggingface.co/lynaNSFW/mysticxxx_MM_H3",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-21T10:23:28+00:00",
+      "updatedAt": "2026-08-21T10:23:28+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-21T08:32:39+00:00",
+  "tiered_at": "2026-08-21T10:23:28+00:00",
   "free_preview_count": 3
 }
