@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-21T14:28:35+00:00",
+  "run_at": "2026-08-21T16:24:15+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 16.729,
+      "duration_s": 18.129,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 331 signals from 31 source families",
+        "collected 343 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 813 items",
-        "by tier: press=514, official=157, research=116, community=26"
+        "tagged 825 items",
+        "by tier: press=513, official=161, research=115, community=36"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.032,
+      "duration_s": 0.033,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 813 items, top priority=0.534"
+        "ranked 825 items, top priority=0.537"
       ],
       "error": null
     },
@@ -102,7 +102,7 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+16 new model events",
+        "+15 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.167,
+      "duration_s": 0.164,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "22 events (2 new)",
-        "by type: pricing_change=4, model_release=12, acquisition=3, personnel_move=3"
+        "21 events (0 new)",
+        "by type: pricing_change=4, model_release=11, acquisition=3, personnel_move=3"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 7.957,
+      "duration_s": 11.553,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 12.604,
+      "duration_s": 10.711,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.052,
+      "duration_s": 0.07,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 8.882,
+      "duration_s": 11.949,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=813, opps=3, calls=3"
+        "items=825, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.094,
+      "duration_s": 1.846,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تظهر إشارات جديدة مرتبطة بإصدار نماذج وأسعار، مما يشير إلى زيادة في النشاط في ق…"
+        "insight via openai: شهدت الفترة الأخيرة زيادة ملحوظة في النشاط المتعلق بتغيير الأسعار وإصدارات النم…"
       ],
       "error": null
     },
