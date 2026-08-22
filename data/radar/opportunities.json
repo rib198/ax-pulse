@@ -1,39 +1,82 @@
 {
-  "generated_at": "2026-08-22T20:16:09+00:00",
+  "generated_at": "2026-08-22T22:15:40+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 813,
+  "corpus_count": 812,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي يعزز الحاجة إلى نماذج تحويل النص إلى صورة. يمكن استخدام هذه النماذج في مجالات مثل التسويق والإعلانات.",
-      "buyer_ar": "شركات التسويق والإعلانات، والمصممين المستقلين.",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة.",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل النص إلى صورة لعميل محتمل.",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، بيئة تطوير البرمجيات.",
+      "id": "ai-based-scientific-code-assessment",
+      "title_ar": "تقييم الكود العلمي باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الاعتماد على البرمجيات في الأبحاث العلمية يتطلب أدوات لتقييم الكود وضمان دقته. يمكن للذكاء الاصطناعي أن يساعد في اكتشاف الأخطاء وتحسين جودة الكود العلمي.",
+      "buyer_ar": "مراكز البحث العلمي والجامعات",
+      "sellable_product_ar": "أداة تقييم كود علمي تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة تقييم كود لبحث علمي واحد",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، خادم سحابي",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:AllwaysFurious/vntrbrs",
-        "huggingface_models:tmtmtm45/geeLokr",
-        "huggingface_models:anshuldudeja/maya_v1"
+        "huggingface_daily_papers:2608.19799",
+        "huggingface_daily_papers:2607.21596",
+        "huggingface_daily_papers:2608.08466"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+          "url": "https://huggingface.co/papers/2608.19799",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+          "url": "https://huggingface.co/papers/2607.21596",
+          "score": 0.481,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses",
+          "url": "https://huggingface.co/papers/2608.08466",
+          "score": 0.479,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-22T22:15:40+00:00",
+      "updatedAt": "2026-08-22T22:15:40+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-customization-service",
+      "title_ar": "خدمة تخصيص تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يتيح فرصًا لتقديم خدمات مخصصة للشركات. يمكن تخصيص النماذج لتلبية احتياجات العلامات التجارية المختلفة.",
+      "buyer_ar": "شركات التسويق والإعلان",
+      "sellable_product_ar": "خدمة تخصيص نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم نموذج مخصص لعميل واحد",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة API، منصة تسويق",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:mej023/j3sy",
+        "huggingface_models:anshuldudeja/maya_v1",
+        "huggingface_models:AllwaysFurious/vntrbrs"
+      ],
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "AllwaysFurious/vntrbrs — text-to-image",
-          "url": "https://huggingface.co/AllwaysFurious/vntrbrs",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "tmtmtm45/geeLokr — text-to-image",
-          "url": "https://huggingface.co/tmtmtm45/geeLokr",
+          "title": "mej023/j3sy — text-to-image",
+          "url": "https://huggingface.co/mej023/j3sy",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -43,6 +86,13 @@
           "url": "https://huggingface.co/anshuldudeja/maya_v1",
           "score": 0.488,
           "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AllwaysFurious/vntrbrs — text-to-image",
+          "url": "https://huggingface.co/AllwaysFurious/vntrbrs",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,78 +100,28 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-22T20:16:09+00:00",
-      "updatedAt": "2026-08-22T20:16:09+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "cybersecurity-llm",
-      "title_ar": "تطوير نماذج لغة متخصصة في الأمن السيبراني",
-      "thesis_ar": "تزايد التهديدات السيبرانية يعزز الحاجة إلى نماذج لغة متخصصة في الأمن السيبراني. هذه النماذج يمكن أن تساعد المؤسسات في تحسين استجابتها للتهديدات.",
-      "buyer_ar": "شركات الأمن السيبراني، المؤسسات المالية.",
-      "sellable_product_ar": "خدمة تطوير نماذج لغة متخصصة في الأمن السيبراني.",
-      "first_paid_test_ar": "تقديم استشارة أولية حول نموذج لغة للأمن السيبراني.",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، بيئة تطوير البرمجيات.",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF",
-        "huggingface_models:meridianal/FinAI",
-        "huggingface_models:Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1"
-      ],
-      "confidence": 0.65,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF — text-generation",
-          "url": "https://huggingface.co/IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "meridianal/FinAI — text-generation",
-          "url": "https://huggingface.co/meridianal/FinAI",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1 — text-generation",
-          "url": "https://huggingface.co/Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-22T20:16:09+00:00",
-      "updatedAt": "2026-08-22T20:16:09+00:00",
+      "publishedAt": "2026-08-22T22:15:40+00:00",
+      "updatedAt": "2026-08-22T22:15:40+00:00",
       "sortOrder": 1
     },
     {
-      "id": "text-to-video-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى فيديو",
-      "thesis_ar": "زيادة الاهتمام بالمحتوى المرئي الديناميكي يفتح المجال لتطوير نماذج تحويل النص إلى فيديو. هذه النماذج يمكن أن تعزز من تجربة المستخدم في التعليم والترفيه.",
-      "buyer_ar": "شركات الإنتاج الإعلامي، منصات التعليم الإلكتروني.",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى فيديو مخصصة.",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى فيديو لعميل محتمل.",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، بيئة تطوير البرمجيات.",
+      "id": "text-to-video-content-creation",
+      "title_ar": "إنشاء محتوى فيديو باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على محتوى الفيديو يتطلب أدوات مبتكرة. يمكن لنماذج تحويل النص إلى فيديو أن تسهل إنشاء محتوى جذاب بسرعة وكفاءة.",
+      "buyer_ar": "شركات الإنتاج الإعلامي ووسائل التواصل الاجتماعي",
+      "sellable_product_ar": "أداة لإنشاء محتوى فيديو من نصوص",
+      "first_paid_test_ar": "تقديم فيديو قصير مدفوع لعميل",
+      "tools_ar": "نموذج تحويل النص إلى فيديو، واجهة مستخدم، خادم سحابي",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_models:zulense/Z1_V0.1.0",
         "huggingface_models:quynguyen3490/z-image-turbo-mengleng-character-on-x",
-        "huggingface_models:guillekenzo/aros-d5e0315f-Mafercastam"
+        "huggingface_models:RedHatAI/GLM-5.2-MXFP4xFP8_BLOCK"
       ],
-      "confidence": 0.6,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
@@ -139,22 +139,22 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-d5e0315f-Mafercastam — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-d5e0315f-Mafercastam",
-          "score": 0.488,
+          "title": "RedHatAI/GLM-5.2-MXFP4xFP8_BLOCK — text-generation",
+          "url": "https://huggingface.co/RedHatAI/GLM-5.2-MXFP4xFP8_BLOCK",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-22T20:16:09+00:00",
-      "updatedAt": "2026-08-22T20:16:09+00:00",
+      "publishedAt": "2026-08-22T22:15:40+00:00",
+      "updatedAt": "2026-08-22T22:15:40+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-22T20:16:09+00:00",
+  "tiered_at": "2026-08-22T22:15:40+00:00",
   "free_preview_count": 3
 }
