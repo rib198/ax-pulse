@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-23T00:42:21+00:00",
+  "generated_at": "2026-08-23T02:58:47+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 795,
+  "corpus_count": 814,
   "opportunities": [
     {
-      "id": "ai-driven-scientific-code-validation",
-      "title_ar": "تحسين جودة الكود العلمي باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد الاعتماد على البرمجيات في الأبحاث العلمية، هناك حاجة ملحة لضمان جودة الكود. يمكن أن يؤدي تحسين الكود إلى تعزيز موثوقية النتائج العلمية.",
-      "buyer_ar": "المؤسسات البحثية والجامعات",
-      "sellable_product_ar": "أداة لتحليل وتصحيح الكود العلمي",
-      "first_paid_test_ar": "تقديم خدمة تحليل كود مجاني لمشروع بحثي",
-      "tools_ar": "أدوات تحليل الكود، نماذج ذكاء اصطناعي، واجهة مستخدم",
-      "capital_ar": "منخفض",
+      "id": "adaptive-llm-agents",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي قابلة للتكيف",
+      "thesis_ar": "تزايد الحاجة إلى وكلاء ذكاء اصطناعي يمكنهم التكيف مع المهام المعقدة من خلال إنشاء سير عمل في وقت الاستدلال. هذا يتطلب تطوير مكتبات مهارات قابلة لإعادة الاستخدام لتحسين الأداء.",
+      "buyer_ar": "شركات التكنولوجيا والبحث العلمي",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي قابل للتكيف مع مهام محددة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لوكيل ذكاء اصطناعي لمهمة محددة",
+      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، مكتبات التعلم العميق، بيئات الاختبار",
+      "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2608.19799",
         "huggingface_daily_papers:2607.21596",
@@ -50,29 +50,36 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-23T00:42:21+00:00",
-      "updatedAt": "2026-08-23T00:42:21+00:00",
+      "publishedAt": "2026-08-23T02:58:47+00:00",
+      "updatedAt": "2026-08-23T02:58:47+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-creation-service",
-      "title_ar": "خدمة إنشاء الصور من النصوص باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي فريد يتطلب أدوات فعالة لتحويل النصوص إلى صور. يمكن أن تلبي هذه الخدمة احتياجات المبدعين والمصممين.",
-      "buyer_ar": "المصممين، وكالات التسويق، المدونين",
-      "sellable_product_ar": "منصة لتحويل النصوص إلى صور",
-      "first_paid_test_ar": "تقديم تجربة مجانية لتحويل نص إلى صورة",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، خوادم سحابية",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة في مجالات الإبداع والتسويق. يمكن استغلال هذه النماذج لتقديم خدمات تصميم مبتكرة.",
+      "buyer_ar": "وكالات التسويق، شركات التصميم، المبدعين",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج لتحويل نص إلى صورة لمشروع تجريبي",
+      "tools_ar": "أدوات تطوير نماذج الذكاء الاصطناعي، مكتبات معالجة الصور، بيئات الاختبار",
+      "capital_ar": "منخفض",
       "evidence_ids": [
+        "huggingface_models:Shooter57/jm1krea2v1",
         "huggingface_models:Shooter57/ap1krea2v1",
-        "huggingface_models:ozanhs/motif_lora_test",
-        "huggingface_models:mej023/m3lissa"
+        "huggingface_models:ozanhs/motif_lora_test"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Shooter57/jm1krea2v1 — text-to-image",
+          "url": "https://huggingface.co/Shooter57/jm1krea2v1",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "Shooter57/ap1krea2v1 — text-to-image",
@@ -86,13 +93,6 @@
           "url": "https://huggingface.co/ozanhs/motif_lora_test",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mej023/m3lissa — text-to-image",
-          "url": "https://huggingface.co/mej023/m3lissa",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,23 +100,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-23T00:42:21+00:00",
-      "updatedAt": "2026-08-23T00:42:21+00:00",
+      "publishedAt": "2026-08-23T02:58:47+00:00",
+      "updatedAt": "2026-08-23T02:58:47+00:00",
       "sortOrder": 1
     },
     {
-      "id": "custom-ai-model-development",
-      "title_ar": "تطوير نماذج ذكاء اصطناعي مخصصة",
-      "thesis_ar": "تزايد الحاجة إلى نماذج ذكاء اصطناعي مخصصة تلبي احتياجات محددة في مجالات متنوعة مثل التعليم والرعاية الصحية. يمكن أن توفر هذه النماذج حلولًا مبتكرة.",
-      "buyer_ar": "الشركات الناشئة، المؤسسات التعليمية، المستشفيات",
-      "sellable_product_ar": "خدمة تطوير نماذج ذكاء اصطناعي مخصصة",
-      "first_paid_test_ar": "تقديم استشارة مجانية لتحديد احتياجات العميل",
-      "tools_ar": "أدوات تطوير نماذج الذكاء الاصطناعي، بيانات تدريب، خوادم سحابية",
+      "id": "financial-ai-solutions",
+      "title_ar": "حلول ذكاء اصطناعي لتحليل البيانات المالية",
+      "thesis_ar": "تزايد الحاجة إلى أدوات تحليل البيانات المالية باستخدام الذكاء الاصطناعي لتحسين اتخاذ القرارات. يمكن تطوير نماذج متخصصة لتحليل البيانات المالية.",
+      "buyer_ar": "البنوك، شركات الاستثمار، المؤسسات المالية",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل البيانات المالية",
+      "first_paid_test_ar": "تقديم نموذج لتحليل بيانات مالية حقيقية",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات التعلم الآلي، بيئات الاختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-        "huggingface_models:troysaved/claimtrace-qwen3-1.7b",
-        "huggingface_models:Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF"
+        "huggingface_models:Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-QLoRA",
+        "huggingface_models:Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-LoRA",
+        "huggingface_models:pinkelephantlimited/pinkelephant-llm-48b-s-gguf"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -125,22 +125,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED — text-generation",
-          "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+          "title": "pinkelephantlimited/pinkelephant-llm-48b-s-gguf — text-generation",
+          "url": "https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s-gguf",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "troysaved/claimtrace-qwen3-1.7b — text-generation",
-          "url": "https://huggingface.co/troysaved/claimtrace-qwen3-1.7b",
+          "title": "Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-QLoRA — text-generation",
+          "url": "https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-QLoRA",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF — text-generation",
-          "url": "https://huggingface.co/Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF",
+          "title": "Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-LoRA — text-generation",
+          "url": "https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-LoRA",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-23T00:42:21+00:00",
-      "updatedAt": "2026-08-23T00:42:21+00:00",
+      "publishedAt": "2026-08-23T02:58:47+00:00",
+      "updatedAt": "2026-08-23T02:58:47+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-23T00:42:21+00:00",
+  "tiered_at": "2026-08-23T02:58:47+00:00",
   "free_preview_count": 3
 }
