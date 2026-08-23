@@ -1,119 +1,35 @@
 {
-  "generated_at": "2026-08-23T20:15:23+00:00",
+  "generated_at": "2026-08-23T22:15:53+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 815,
+  "corpus_count": 806,
   "opportunities": [
     {
-      "id": "text-to-image-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي لتحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على أدوات تحويل النص إلى صورة في مجالات الإبداع والتسويق. التحديثات المستمرة لنماذج Hugging Face تعزز من إمكانية تقديم خدمات مبتكرة.",
-      "buyer_ar": "شركات الإعلانات والتسويق، المطورون، الفنانون الرقميون",
-      "sellable_product_ar": "خدمات تحويل النص إلى صورة مخصصة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص بسيط إلى صورة",
-      "tools_ar": "Hugging Face API، أدوات التصميم، بيئة تطوير برمجيات",
+      "id": "ai-driven-scientific-code-validation",
+      "title_ar": "تحسين كود البرمجة العلمية باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الاعتماد على البرمجيات في الأبحاث العلمية يتطلب ضمان الجودة. يمكن للذكاء الاصطناعي تحسين دقة الكود وتقليل الأخطاء التي تؤثر على النتائج العلمية.",
+      "buyer_ar": "مراكز البحث العلمي والجامعات",
+      "sellable_product_ar": "أداة ذكاء اصطناعي لتحليل وتصحيح كود البرمجة العلمية",
+      "first_paid_test_ar": "تقديم خدمة تحليل كود لمشروع بحثي صغير",
+      "tools_ar": "الذكاء الاصطناعي، أدوات تحليل الكود، بيئات تطوير البرمجيات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:nokolora/ffxiv-krile",
-        "huggingface_models:jeyapalc/asina-bob-krea2",
-        "huggingface_models:dekes1/cindycfr17"
+        "huggingface_daily_papers:2608.19799",
+        "huggingface_daily_papers:2607.21596",
+        "huggingface_daily_papers:2608.08466"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.5,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "nokolora/ffxiv-krile — text-to-image",
-          "url": "https://huggingface.co/nokolora/ffxiv-krile",
-          "score": 0.521,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+          "url": "https://huggingface.co/papers/2608.19799",
+          "score": 0.501,
+          "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_models",
-          "title": "dekes1/cindycfr17 — text-to-image",
-          "url": "https://huggingface.co/dekes1/cindycfr17",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "jeyapalc/asina-bob-krea2 — text-to-image",
-          "url": "https://huggingface.co/jeyapalc/asina-bob-krea2",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-23T20:15:23+00:00",
-      "updatedAt": "2026-08-23T20:15:23+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "arabic-diacritization-tools",
-      "title_ar": "أدوات التشكيل باللغة العربية",
-      "thesis_ar": "تزايد الحاجة لتشكيل النصوص العربية في التعليم والنشر. توفر نماذج Hugging Face الجديدة حلولًا فعالة لهذه المشكلة.",
-      "buyer_ar": "دور النشر، المدارس، المكتبات، المطورون",
-      "sellable_product_ar": "أداة تشكيل نصوص عربية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة تشكيل نصوص قصيرة مقابل رسوم بسيطة",
-      "tools_ar": "Hugging Face API، مكتبات البرمجة، واجهات المستخدم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Psycodem/qwen3.5-4b-lora-diacritization",
-        "huggingface_models:Psycodem/gemma-4-e4b-lora-diacritization"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Psycodem/qwen3.5-4b-lora-diacritization — text-generation",
-          "url": "https://huggingface.co/Psycodem/qwen3.5-4b-lora-diacritization",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Psycodem/gemma-4-e4b-lora-diacritization — text-generation",
-          "url": "https://huggingface.co/Psycodem/gemma-4-e4b-lora-diacritization",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-23T20:15:23+00:00",
-      "updatedAt": "2026-08-23T20:15:23+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "self-evolving-ai-agents",
-      "title_ar": "عملاء ذكاء اصطناعي ذاتية التطور",
-      "thesis_ar": "تتجه الأبحاث نحو تطوير وكلاء ذكاء اصطناعي يمكنهم تحسين أدائهم بمرور الوقت. هذه التقنية يمكن أن تحدث ثورة في العديد من الصناعات.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات البحثية، الشركات الناشئة",
-      "sellable_product_ar": "نظام ذكاء اصطناعي ذاتي التطور لتحسين العمليات",
-      "first_paid_test_ar": "تطوير نموذج تجريبي لوكيل ذكاء اصطناعي لأداء مهمة محددة",
-      "tools_ar": "Hugging Face API، أدوات التعلم الآلي، بيئات التطوير",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2607.21596",
-        "huggingface_daily_papers:2608.08466"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
@@ -134,11 +50,104 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-23T20:15:23+00:00",
-      "updatedAt": "2026-08-23T20:15:23+00:00",
+      "publishedAt": "2026-08-23T22:15:53+00:00",
+      "updatedAt": "2026-08-23T22:15:53+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-creation-tools",
+      "title_ar": "أدوات تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي يتطلب أدوات مبتكرة. نماذج تحويل النص إلى صورة توفر فرصًا جديدة للإبداع في التسويق والفنون.",
+      "buyer_ar": "وكالات التسويق والمصممين والفنانين",
+      "sellable_product_ar": "منصة لتحويل النصوص إلى صور باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة تحويل نص إلى صورة واحدة لمستخدمين مختارين",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، خوادم معالجة الصور",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:nokolora/ffxiv-krile",
+        "huggingface_models:dekes1/cindycfr30",
+        "huggingface_models:Burroughs352/Isla"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "nokolora/ffxiv-krile — text-to-image",
+          "url": "https://huggingface.co/nokolora/ffxiv-krile",
+          "score": 0.494,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "dekes1/cindycfr30 — text-to-image",
+          "url": "https://huggingface.co/dekes1/cindycfr30",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Burroughs352/Isla — text-to-image",
+          "url": "https://huggingface.co/Burroughs352/Isla",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-23T22:15:53+00:00",
+      "updatedAt": "2026-08-23T22:15:53+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "financial-advice-using-llm",
+      "title_ar": "تقديم نصائح مالية باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد الاهتمام في الاستشارات المالية الرقمية يدعم الحاجة إلى أدوات ذكية. نماذج اللغة الكبيرة يمكن أن توفر نصائح مالية مخصصة.",
+      "buyer_ar": "الأفراد والشركات الصغيرة",
+      "sellable_product_ar": "خدمة استشارة مالية مدعومة بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم استشارة مالية مجانية لمجموعة صغيرة من المستخدمين",
+      "tools_ar": "نموذج لغة كبير، واجهة دردشة، قاعدة بيانات مالية",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5",
+        "huggingface_models:localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed5",
+        "huggingface_models:meridianal/FinAI"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed5 — text-generation",
+          "url": "https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed5",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "meridianal/FinAI — text-generation",
+          "url": "https://huggingface.co/meridianal/FinAI",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-23T22:15:53+00:00",
+      "updatedAt": "2026-08-23T22:15:53+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-23T20:15:23+00:00",
+  "tiered_at": "2026-08-23T22:15:53+00:00",
   "free_preview_count": 3
 }
