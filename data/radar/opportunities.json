@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-23T04:31:44+00:00",
+  "generated_at": "2026-08-23T06:26:45+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 811,
+  "corpus_count": 802,
   "opportunities": [
     {
-      "id": "ai-driven-scientific-code-validation",
-      "title_ar": "تحقق من صحة الشيفرة العلمية المدفوعة بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على البرمجيات في الأدوات العلمية يتطلب ضمان دقة الشيفرات. يمكن أن يؤدي فشل الشيفرة إلى نتائج علمية مضللة، مما يفتح المجال لحلول تحقق من الصحة.",
-      "buyer_ar": "المؤسسات البحثية والجامعات",
-      "sellable_product_ar": "خدمة تحقق من صحة الشيفرات العلمية باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "اختبار تحقق من صحة شيفرة علمية واحدة",
-      "tools_ar": "أدوات تحليل الشيفرة، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة في مختلف الصناعات، مما يتيح فرصًا جديدة في الإبداع الرقمي. التحديثات المستمرة للنماذج تشير إلى إمكانية تحسين الجودة وزيادة الاستخدام.",
+      "buyer_ar": "شركات الإعلانات، وكالات التصميم، والمطورين المستقلين",
+      "sellable_product_ar": "خدمات تصميم رسومات باستخدام نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "تطوير نموذج أولي لإنشاء صورة بناءً على نص محدد",
+      "tools_ar": "نموذج Hugging Face، أدوات التصميم الجرافيكي، منصة استضافة",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.19799",
-        "huggingface_daily_papers:2608.08466",
-        "huggingface_daily_papers:2607.21596"
+        "huggingface_models:Shooter57/ms1krea2v1test",
+        "huggingface_models:ozanhs/motif_lora_test",
+        "huggingface_models:nicam46234/PanDB"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -24,66 +24,9 @@
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
-          "url": "https://huggingface.co/papers/2608.19799",
-          "score": 0.501,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
-          "url": "https://huggingface.co/papers/2607.21596",
-          "score": 0.481,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses",
-          "url": "https://huggingface.co/papers/2608.08466",
-          "score": 0.479,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-23T04:31:44+00:00",
-      "updatedAt": "2026-08-23T04:31:44+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-creation-for-marketing",
-      "title_ar": "إنشاء صور من نصوص للتسويق",
-      "thesis_ar": "تزايد استخدام الصور الجذابة في الحملات التسويقية يعزز الحاجة إلى أدوات تحويل النصوص إلى صور. يمكن أن توفر هذه الخدمة قيمة كبيرة للشركات.",
-      "buyer_ar": "وكالات التسويق والشركات الصغيرة",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى صور باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "إنشاء صورة واحدة من نص تسويقي",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، منصة تسويق",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:nicam46234/PanDB",
-        "huggingface_models:Shooter57/kb1krea2v1test",
-        "huggingface_models:ozanhs/motif_lora_test"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
           "source_id": "huggingface_models",
-          "title": "nicam46234/PanDB — text-to-image",
-          "url": "https://huggingface.co/nicam46234/PanDB",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Shooter57/kb1krea2v1test — text-to-image",
-          "url": "https://huggingface.co/Shooter57/kb1krea2v1test",
+          "title": "Shooter57/ms1krea2v1test — text-to-image",
+          "url": "https://huggingface.co/Shooter57/ms1krea2v1test",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -93,6 +36,13 @@
           "url": "https://huggingface.co/ozanhs/motif_lora_test",
           "score": 0.488,
           "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "nicam46234/PanDB — text-to-image",
+          "url": "https://huggingface.co/nicam46234/PanDB",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,25 +50,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-23T04:31:44+00:00",
-      "updatedAt": "2026-08-23T04:31:44+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-08-23T06:26:45+00:00",
+      "updatedAt": "2026-08-23T06:26:45+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "adaptive-llm-workflow-development",
-      "title_ar": "تطوير تدفقات عمل قابلة للتكيف باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد الحاجة إلى نماذج لغة قادرة على التكيف مع المهام المعقدة يفتح المجال لتطوير أدوات تدفق العمل. هذه الأدوات يمكن أن تعزز الكفاءة في العديد من المجالات.",
-      "buyer_ar": "الشركات التقنية ومراكز البحث",
-      "sellable_product_ar": "أداة لتطوير تدفقات عمل قابلة للتكيف باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير تدفق عمل بسيط لمهمة محددة",
-      "tools_ar": "نماذج لغة كبيرة، أدوات تطوير البرمجيات، واجهات برمجة التطبيقات",
+      "id": "self-evolving-agents",
+      "title_ar": "تطوير وكلاء ذاتيين التطور",
+      "thesis_ar": "تزايد الحاجة لوكلاء ذكاء اصطناعي قادرين على التكيف مع المهام المعقدة، مما يفتح المجال لتطوير حلول مبتكرة. الأبحاث تشير إلى إمكانية تحسين الأداء من خلال التعلم الذاتي.",
+      "buyer_ar": "شركات التقنية، مؤسسات البحث العلمي، الشركات الناشئة",
+      "sellable_product_ar": "نظام ذكاء اصطناعي ذاتي التطور لحل المشكلات",
+      "first_paid_test_ar": "تطوير نموذج أولي لوكيل ذكاء اصطناعي لحل مهمة محددة",
+      "tools_ar": "أدوات تطوير البرمجيات، مكتبات الذكاء الاصطناعي، بيئات الاختبار",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2608.19799",
         "huggingface_daily_papers:2607.21596",
         "huggingface_daily_papers:2608.08466"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-23T04:31:44+00:00",
-      "updatedAt": "2026-08-23T04:31:44+00:00",
+      "publishedAt": "2026-08-23T06:26:45+00:00",
+      "updatedAt": "2026-08-23T06:26:45+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-generation-optimization",
+      "title_ar": "تحسين نماذج توليد النصوص",
+      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في مجالات متعددة، مما يتيح فرصًا لتحسين الأداء والموثوقية. الأبحاث تشير إلى إمكانية تحسين النماذج من خلال التعديلات المستمرة.",
+      "buyer_ar": "شركات المحتوى، وكالات التسويق، المطورين",
+      "sellable_product_ar": "خدمات تحسين نماذج توليد النصوص",
+      "first_paid_test_ar": "تقديم نموذج محسّن لتوليد نصوص لمحتوى معين",
+      "tools_ar": "نموذج Hugging Face، أدوات معالجة اللغة الطبيعية، بيئات الاختبار",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:ornith-ai/Ornith-1.5-9B",
+        "huggingface_models:NamKAI/lab21-qwen35-triage-vi",
+        "huggingface_models:tsfrm/the-unanswerer"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "NamKAI/lab21-qwen35-triage-vi — text-generation",
+          "url": "https://huggingface.co/NamKAI/lab21-qwen35-triage-vi",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "tsfrm/the-unanswerer — text-generation",
+          "url": "https://huggingface.co/tsfrm/the-unanswerer",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ornith-ai/Ornith-1.5-9B — text-generation",
+          "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-23T06:26:45+00:00",
+      "updatedAt": "2026-08-23T06:26:45+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-23T04:31:44+00:00",
+  "tiered_at": "2026-08-23T06:26:45+00:00",
   "free_preview_count": 3
 }
