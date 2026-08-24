@@ -1,46 +1,67 @@
 {
-  "generated_at": "2026-08-24T00:40:58+00:00",
+  "generated_at": "2026-08-24T02:59:36+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 811,
+  "corpus_count": 816,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي يعزز الحاجة إلى نماذج تحويل النص إلى صورة. التحديثات المستمرة في نماذج Hugging Face تشير إلى فرص لتطوير تطبيقات جديدة.",
-      "buyer_ar": "شركات الإعلام والتسويق",
-      "sellable_product_ar": "خدمة تحويل النصوص إلى صور مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص محددة إلى صور",
-      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "id": "document-processing-automation",
+      "title_ar": "أتمتة معالجة الوثائق",
+      "thesis_ar": "تحديثات نماذج استخراج المعلومات من الصور تعزز من دقة وكفاءة معالجة الوثائق. السوق العربي بحاجة إلى حلول أتمتة لتحسين العمليات الإدارية وتقليل الأخطاء.",
+      "buyer_ar": "شركات الخدمات اللوجستية والمكاتب الحكومية",
+      "sellable_product_ar": "نظام أتمتة معالجة الوثائق باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم مشروع تجريبي لمعالجة مجموعة من الوثائق",
+      "tools_ar": "نموذج SmolDo، أدوات OCR، واجهة برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:nokolora/ffxiv-krile",
-        "huggingface_models:dekes1/cindycfr30",
-        "huggingface_models:Burroughs352/Isla"
+        "2608.20868v1",
+        "2608.21107v1",
+        "2608.21036v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "nokolora/ffxiv-krile — text-to-image",
-          "url": "https://huggingface.co/nokolora/ffxiv-krile",
-          "score": 0.494,
+          "title": "Jackrong/Qwen-Tool-Calling-Template-Fix — text-generation",
+          "url": "https://huggingface.co/Jackrong/Qwen-Tool-Calling-Template-Fix",
+          "score": 0.509,
           "trust_tier": "official"
         },
         {
+          "source_id": "arxiv_papers",
+          "title": "Identify, Locate, Link: End-to-End Key-Value Extraction from Document Images",
+          "url": "http://arxiv.org/abs/2608.20868v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "dekes1/cindycfr30 — text-to-image",
-          "url": "https://huggingface.co/dekes1/cindycfr30",
+          "title": "yadavkapil7155/Apex — text-generation",
+          "url": "https://huggingface.co/yadavkapil7155/Apex",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Burroughs352/Isla — text-to-image",
-          "url": "https://huggingface.co/Burroughs352/Isla",
+          "title": "Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX — image-text-to-text",
+          "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Jiunsong/SuperQwen3.8-27b-abliterated — image-text-to-text",
+          "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "kai-os/Carnice-V3-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/kai-os/Carnice-V3-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,48 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-24T00:40:58+00:00",
-      "updatedAt": "2026-08-24T00:40:58+00:00",
+      "publishedAt": "2026-08-24T02:59:36+00:00",
+      "updatedAt": "2026-08-24T02:59:36+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-generation-adapters",
-      "title_ar": "تطوير محولات لتوليد النصوص",
-      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في التطبيقات التجارية. التحديثات على نماذج Hugging Face تشير إلى إمكانية تحسين الأداء وزيادة الدقة.",
-      "buyer_ar": "شركات البرمجيات والتكنولوجيا",
-      "sellable_product_ar": "خدمة تطوير محولات توليد نصوص مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد نصوص لمجالات محددة",
-      "tools_ar": "Hugging Face, PyTorch, Transformers",
-      "capital_ar": "منخفض",
+      "id": "multimodal-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي متعددة الأنماط",
+      "thesis_ar": "تحديثات النماذج متعددة الأنماط تشير إلى توجه متزايد نحو دمج النص والصورة. هذا يفتح المجال لتطبيقات جديدة في التسويق والإعلان.",
+      "buyer_ar": "شركات التسويق والإعلان",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتوليد محتوى إبداعي يجمع بين النص والصورة",
+      "first_paid_test_ar": "تطوير حملة إعلانية تجريبية باستخدام النموذج",
+      "tools_ar": "نماذج Qwen، أدوات توليد المحتوى، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:fairleap-ai/fairleap-v1-clm-qwen3.5-4b-adapter",
-        "huggingface_models:localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3",
-        "huggingface_models:KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-1e-1k-sp0.5-s0-lr5e-4-impinit_20260823_210105"
+        "Jiunsong/SuperQwen3.8",
+        "Kai-os/Carnice-V3",
+        "Huggingface_models:TaoLiveAIGC"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "fairleap-ai/fairleap-v1-clm-qwen3.5-4b-adapter — text-generation",
-          "url": "https://huggingface.co/fairleap-ai/fairleap-v1-clm-qwen3.5-4b-adapter",
+          "title": "Jackrong/Qwen-Tool-Calling-Template-Fix — text-generation",
+          "url": "https://huggingface.co/Jackrong/Qwen-Tool-Calling-Template-Fix",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Identify, Locate, Link: End-to-End Key-Value Extraction from Document Images",
+          "url": "http://arxiv.org/abs/2608.20868v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yadavkapil7155/Apex — text-generation",
+          "url": "https://huggingface.co/yadavkapil7155/Apex",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3 — text-generation",
-          "url": "https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3",
-          "score": 0.466,
+          "title": "Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX — image-text-to-text",
+          "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-1e-1k-sp0.5-s0-lr5e-4-impinit_20260823_210105 — text-generation",
-          "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-1e-1k-sp0.5-s0-lr5e-4-impinit_20260823_210105",
-          "score": 0.466,
+          "title": "Jiunsong/SuperQwen3.8-27b-abliterated — image-text-to-text",
+          "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "kai-os/Carnice-V3-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/kai-os/Carnice-V3-GGUF",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -100,40 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-24T00:40:58+00:00",
-      "updatedAt": "2026-08-24T00:40:58+00:00",
+      "publishedAt": "2026-08-24T02:59:36+00:00",
+      "updatedAt": "2026-08-24T02:59:36+00:00",
       "sortOrder": 1
     },
     {
-      "id": "image-text-to-text-models",
-      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
-      "thesis_ar": "زيادة الاعتماد على معالجة الصور والنصوص يعزز الحاجة إلى نماذج متطورة. التحديثات تشير إلى إمكانية تحسين الأداء في هذا المجال.",
-      "buyer_ar": "شركات التكنولوجيا والذكاء الاصطناعي",
-      "sellable_product_ar": "خدمة تحويل الصور إلى نصوص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل مجموعة من الصور إلى نصوص",
-      "tools_ar": "Hugging Face, TensorFlow, Python",
-      "capital_ar": "متوسط",
+      "id": "language-models-for-business-intelligence",
+      "title_ar": "نماذج اللغة لتحليل الأعمال",
+      "thesis_ar": "توجهات جديدة في نماذج اللغة تشير إلى إمكانية استخدامها في تحليل البيانات التجارية. الشركات تحتاج إلى أدوات ذكاء أعمال متقدمة لتحسين القرارات.",
+      "buyer_ar": "شركات التحليل وإدارة البيانات",
+      "sellable_product_ar": "أداة ذكاء أعمال تعتمد على نماذج اللغة لتحليل البيانات",
+      "first_paid_test_ar": "تقديم تحليل بيانات تجريبي باستخدام النموذج",
+      "tools_ar": "نموذج RWKV، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:crazyhorse2026/albedo-qwen3.6-35b-v1",
-        "huggingface_models:caslca/Qwen3.6-27B-Opus-Distill-OptiQ-4bit"
+        "2608.21107v1",
+        "2608.21036v1",
+        "HermiHg/Qwen3.8"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "crazyhorse2026/albedo-qwen3.6-35b-v1 — image-text-to-text",
-          "url": "https://huggingface.co/crazyhorse2026/albedo-qwen3.6-35b-v1",
-          "score": 0.466,
+          "title": "Jackrong/Qwen-Tool-Calling-Template-Fix — text-generation",
+          "url": "https://huggingface.co/Jackrong/Qwen-Tool-Calling-Template-Fix",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Identify, Locate, Link: End-to-End Key-Value Extraction from Document Images",
+          "url": "http://arxiv.org/abs/2608.20868v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "yadavkapil7155/Apex — text-generation",
+          "url": "https://huggingface.co/yadavkapil7155/Apex",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "caslca/Qwen3.6-27B-Opus-Distill-OptiQ-4bit — image-text-to-text",
-          "url": "https://huggingface.co/caslca/Qwen3.6-27B-Opus-Distill-OptiQ-4bit",
-          "score": 0.466,
+          "title": "Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX — image-text-to-text",
+          "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Jiunsong/SuperQwen3.8-27b-abliterated — image-text-to-text",
+          "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "kai-os/Carnice-V3-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/kai-os/Carnice-V3-GGUF",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -142,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-24T00:40:58+00:00",
-      "updatedAt": "2026-08-24T00:40:58+00:00",
+      "publishedAt": "2026-08-24T02:59:36+00:00",
+      "updatedAt": "2026-08-24T02:59:36+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-24T00:40:58+00:00",
+  "tiered_at": "2026-08-24T02:59:36+00:00",
   "free_preview_count": 3
 }
