@@ -1,148 +1,48 @@
 {
-  "generated_at": "2026-08-25T12:31:39+00:00",
+  "generated_at": "2026-08-25T14:39:35+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 723,
+  "corpus_count": 832,
   "opportunities": [
     {
       "id": "text-to-3d-generation",
-      "title_ar": "توليد ثلاثي الأبعاد من النصوص",
-      "thesis_ar": "تقدم تقنيات توليد الصور ثلاثية الأبعاد من النصوص بشكل سريع، مما يفتح المجال لتطبيقات جديدة في التصميم والإعلانات. مع استمرار البحث في تحسين دقة الأشكال وتقليل تكاليف الاستدلال، هناك فرصة كبيرة لتطوير حلول مخصصة للسوق.",
-      "buyer_ar": "شركات التصميم والإعلانات",
-      "sellable_product_ar": "أداة لتوليد نماذج ثلاثية الأبعاد من النصوص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد نموذج ثلاثي الأبعاد بناءً على نص محدد",
-      "tools_ar": "نموذج الذكاء الاصطناعي، واجهة المستخدم، خادم سحابي",
+      "title_ar": "توليد نماذج ثلاثية الأبعاد من النصوص",
+      "thesis_ar": "تتطور تقنيات تحويل النصوص إلى نماذج ثلاثية الأبعاد بسرعة، مما يفتح المجال لتطبيقات جديدة في مجالات مثل الألعاب والتصميم. مع وجود تحديات في تحقيق دقة هندسية عالية بتكلفة منخفضة، هناك حاجة لحلول مبتكرة.",
+      "buyer_ar": "شركات الألعاب والتصميم المعماري",
+      "sellable_product_ar": "أداة لتحويل النصوص إلى نماذج ثلاثية الأبعاد بدقة عالية",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى نموذج ثلاثي الأبعاد",
+      "tools_ar": "نموذج تعلم آلي، واجهة برمجة التطبيقات، بيئة تطوير",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2608.19567",
-        "huggingface_models:Nooie/MaraVoss-v5",
-        "huggingface_models:OliviaRossi/Qwopus-KAT-Coder-35B-Merged"
+        "huggingface_daily_papers:2608.22817",
+        "huggingface_daily_papers:2608.23035"
       ],
-      "confidence": 0.8,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Block3D: Efficient Text-to-3D Generation via Block-Wise Diffusion",
           "url": "https://huggingface.co/papers/2608.19567",
-          "score": 0.518,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "OliviaRossi/Qwopus-KAT-Coder-35B-Merged — text-generation",
-          "url": "https://huggingface.co/OliviaRossi/Qwopus-KAT-Coder-35B-Merged",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Nooie/MaraVoss-v5 — text-to-image",
-          "url": "https://huggingface.co/Nooie/MaraVoss-v5",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-25T12:31:39+00:00",
-      "updatedAt": "2026-08-25T12:31:39+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "industrial-instruction-tuning",
-      "title_ar": "تحسين التعليمات الصناعية",
-      "thesis_ar": "تحتوي التقارير الفنية الصناعية على معرفة قيمة لكن هيكلها يجعل من الصعب الوصول إليها. تطوير أداة لتحسين التعليمات من هذه التقارير يمكن أن يحسن من كفاءة الصيانة والتصنيع.",
-      "buyer_ar": "شركات التصنيع والصيانة",
-      "sellable_product_ar": "نظام لتحسين التعليمات الفنية من التقارير",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحسين تعليمات صيانة بناءً على تقرير فني",
-      "tools_ar": "نموذج معالجة اللغة الطبيعية، قاعدة بيانات، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2608.22817",
-        "huggingface_daily_papers:2608.19741",
-        "huggingface_daily_papers:2608.22872"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
-          "url": "https://huggingface.co/papers/2608.19741",
-          "score": 0.502,
+          "score": 0.531,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Industrial-Instruction: An End-to-End Framework for Building Instruction-Tuning and Benchmark Datasets from Industrial Technical Reports",
           "url": "https://huggingface.co/papers/2608.22817",
-          "score": 0.474,
+          "score": 0.496,
           "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Better Retrieval, Worse Robustness:How Multi-hop RAG Amplifies Upstream ASR Errors",
-          "url": "https://huggingface.co/papers/2608.22872",
-          "score": 0.448,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-25T12:31:39+00:00",
-      "updatedAt": "2026-08-25T12:31:39+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "mobile-planner-agents",
-      "title_ar": "وكلاء تخطيط على الهواتف المحمولة",
-      "thesis_ar": "تتطور وكلاء الذكاء الاصطناعي على الهواتف المحمولة لتصبح مساعدين شخصيين، مما يفتح المجال لتطبيقات جديدة في الحياة اليومية. هناك حاجة لتقييم دقيق لقدرات هذه الوكلاء.",
-      "buyer_ar": "شركات تطوير التطبيقات",
-      "sellable_product_ar": "أداة لتقييم أداء وكلاء التخطيط على الهواتف المحمولة",
-      "first_paid_test_ar": "تقديم اختبار أداء لوكيل تخطيط على هاتف محمول",
-      "tools_ar": "نموذج الذكاء الاصطناعي، منصة اختبار، واجهة مستخدم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2608.23035",
-        "huggingface_models:nikitastheo/v2-babylm-eng-ell-sequential_interleaved",
-        "huggingface_models:Quantech/spin-80k"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.45,
-      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
           "url": "https://huggingface.co/papers/2608.23035",
-          "score": 0.472,
+          "score": 0.485,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Quantech/spin-80k — text-generation",
-          "url": "https://huggingface.co/Quantech/spin-80k",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nikitastheo/v2-babylm-eng-ell-sequential_interleaved — text-generation",
-          "url": "https://huggingface.co/nikitastheo/v2-babylm-eng-ell-sequential_interleaved",
-          "score": 0.447,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-25T12:31:39+00:00",
-      "updatedAt": "2026-08-25T12:31:39+00:00",
+      "publishedAt": "2026-08-25T14:39:35+00:00",
+      "updatedAt": "2026-08-25T14:39:35+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "video-reasoning-agents",
+      "title_ar": "تطوير وكلاء فيديو ذكيين",
+      "thesis_ar": "تتزايد الحاجة لفهم الفيديوهات بشكل أعمق، مما يتيح تطبيقات في مجالات مثل التعليم والترفيه. يمكن لوكلاء الفيديو الذكيين تقديم حلول مبتكرة لتحليل المحتوى والفهم السياقي.",
+      "buyer_ar": "شركات الإنتاج الإعلامي والتعليمي",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لفهم الفيديو وتحليله",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل فيديو قصير",
+      "tools_ar": "نماذج تعلم عميق، واجهة مستخدم، قاعدة بيانات فيديو",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2608.23329v1",
+        "huggingface_daily_papers:2608.23035",
+        "huggingface_daily_papers:2608.19741"
+      ],
+      "confidence": 0.65,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
+          "url": "http://arxiv.org/abs/2608.23329v1",
+          "score": 0.525,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
+          "url": "https://huggingface.co/papers/2608.19741",
+          "score": 0.513,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+          "url": "https://huggingface.co/papers/2608.23035",
+          "score": 0.485,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-25T14:39:35+00:00",
+      "updatedAt": "2026-08-25T14:39:35+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "clinical-decision-support",
+      "title_ar": "نظام دعم اتخاذ القرار السريري",
+      "thesis_ar": "تتطلب القرارات السريرية معلومات دقيقة وسريعة، مما يجعل تطوير نماذج ذكاء اصطناعي قادرة على تحسين هذه العمليات أمرًا حيويًا. هذا يمكن أن يحسن من نتائج المرضى بشكل كبير.",
+      "buyer_ar": "المستشفيات والعيادات الطبية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات السريرية",
+      "first_paid_test_ar": "تقديم نموذج لتحليل بيانات مرضى حقيقيين",
+      "tools_ar": "نموذج تعلم آلي، بيانات طبية، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2608.22622v1",
+        "huggingface_daily_papers:2608.19741",
+        "arxiv_papers:2608.23329v1"
+      ],
+      "confidence": 0.6,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
+          "url": "http://arxiv.org/abs/2608.23329v1",
+          "score": 0.525,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
+          "url": "https://huggingface.co/papers/2608.19741",
+          "score": 0.513,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Teaching LLMs How ICU Physicians Approach Clinical Reasoning Through OMOP-Aligned Retrieval Improves Reasoning Across Clinical Domains",
+          "url": "http://arxiv.org/abs/2608.22622v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-25T14:39:35+00:00",
+      "updatedAt": "2026-08-25T14:39:35+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-25T12:31:39+00:00",
+  "tiered_at": "2026-08-25T14:39:35+00:00",
   "free_preview_count": 3
 }
