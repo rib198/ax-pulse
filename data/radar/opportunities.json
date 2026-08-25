@@ -1,84 +1,41 @@
 {
-  "generated_at": "2026-08-24T22:19:34+00:00",
+  "generated_at": "2026-08-25T00:42:21+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 822,
+  "corpus_count": 824,
   "opportunities": [
     {
-      "id": "ai-environment-synthesis",
-      "title_ar": "توليد بيئات تدريب للذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة لتدريب نماذج الذكاء الاصطناعي في بيئات متنوعة وقابلة للتحقق. يمكن أن توفر حلول توليد البيئات التدريبية فرصًا جديدة للشركات لتطوير نماذج أكثر كفاءة.",
-      "buyer_ar": "شركات تطوير البرمجيات ونماذج الذكاء الاصطناعي",
-      "sellable_product_ar": "خدمة توليد بيئات تدريب مخصصة للذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لبيئة تدريب لنموذج ذكاء اصطناعي محدد",
-      "tools_ar": "أدوات تطوير البرمجيات، منصات الذكاء الاصطناعي، خوادم سحابية",
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "تزايد الاعتماد على نماذج تحويل الصورة إلى نص يوفر فرصة كبيرة في السوق. هذه النماذج يمكن استخدامها في مجالات متعددة مثل التعليم والتسويق.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، وكالات التسويق",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل الصورة إلى نص مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل صورة إلى نص مع استخدامات محددة",
+      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، بيئات الاختبار، منصات نشر النماذج",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.20634",
-        "huggingface_daily_papers:2608.18184",
-        "huggingface_daily_papers:2608.20574"
+        "OsaurusAI/Qwen3.8-27B-MXFP8",
+        "OsaurusAI/Qwen3.8-27B-JANG_6D",
+        "OsaurusAI/Qwen3.8-27B-JANG_4D"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgentMercury: Your Agent Can Synthesize Verifiable Environments for Business Scenarios at scale",
-          "url": "https://huggingface.co/papers/2608.20634",
-          "score": 0.517,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "ariacompute/qwen3-0.6b_q326_channel — text-generation",
+          "url": "https://huggingface.co/ariacompute/qwen3-0.6b_q326_channel",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "FlavourBench: Ranking Frontier Language Models with Executable Culinary Ground Truth",
-          "url": "https://huggingface.co/papers/2608.20574",
-          "score": 0.474,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Human-Centric Intelligence in the Era of Foundation Models: A Survey",
-          "url": "https://huggingface.co/papers/2608.18184",
-          "score": 0.471,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-24T22:19:34+00:00",
-      "updatedAt": "2026-08-24T22:19:34+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "real-time-video-assistants",
-      "title_ar": "مساعدات الفيديو في الوقت الحقيقي",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في التطبيقات التفاعلية مثل مساعدات الفيديو. يمكن أن توفر هذه التكنولوجيا حلولاً مبتكرة لمساعدة المستخدمين في تحقيق أهدافهم بشكل أكثر كفاءة.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق",
-      "sellable_product_ar": "تطبيق مساعد فيديو تفاعلي يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لمساعد فيديو لحدث مباشر",
-      "tools_ar": "نموذج لغة كبير، أدوات معالجة الفيديو، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2608.21360",
-        "huggingface_models:OsaurusAI/Qwen3.8-27B-MXFP8",
-        "huggingface_models:BlueTriangles/SDXL_Kinomoto_Sakura_Cheerio"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "OmniAssistBench: Assistant-style Interaction Benchmark for Omni-LLMs",
-          "url": "https://huggingface.co/papers/2608.21360",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "mradermacher/SuperQwen3.8-27b-abliterated-i1-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/mradermacher/SuperQwen3.8-27b-abliterated-i1-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
@@ -89,8 +46,22 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_Kinomoto_Sakura_Cheerio — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_Kinomoto_Sakura_Cheerio",
+          "title": "OsaurusAI/Qwen3.8-27B-JANG_6D — image-text-to-text",
+          "url": "https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_6D",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OsaurusAI/Qwen3.8-27B-JANG_4D — image-text-to-text",
+          "url": "https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_4D",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OsaurusAI/Qwen3.8-27B-JANG_2D — image-text-to-text",
+          "url": "https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_2D",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -100,48 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-24T22:19:34+00:00",
-      "updatedAt": "2026-08-24T22:19:34+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-08-25T00:42:21+00:00",
+      "updatedAt": "2026-08-25T00:42:21+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "culinary-language-models",
-      "title_ar": "نماذج لغة متخصصة في الطهي",
-      "thesis_ar": "تزايد الطلب على نماذج اللغة التي يمكنها تقديم معلومات دقيقة حول الطهي. يمكن أن تساعد هذه النماذج في تطوير تطبيقات جديدة في مجال الطهي والمطاعم.",
-      "buyer_ar": "شركات الطعام والمطاعم",
-      "sellable_product_ar": "تطبيق طهي ذكي يعتمد على نموذج لغة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتطبيق طهي يقدم وصفات مخصصة",
-      "tools_ar": "نموذج لغة، واجهات برمجة التطبيقات، أدوات تطوير التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الحاجة إلى نماذج توليد النصوص في مجالات متعددة مثل خدمة العملاء والمحتوى الرقمي. هذه النماذج يمكن أن تحسن الكفاءة وتقليل التكاليف.",
+      "buyer_ar": "شركات المحتوى، وكالات الإعلان، المؤسسات التعليمية",
+      "sellable_product_ar": "خدمات تطوير نماذج توليد نصوص مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص في مجال معين",
+      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، منصات نشر النماذج، بيئات الاختبار",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.20574",
-        "huggingface_daily_papers:2608.18184",
-        "huggingface_models:localized-ft/OLMo-3-7B-german-city-names-v2-kld-seed3"
+        "ariacompute/qwen3-0.6b_q326_channel",
+        "localized-ft/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed3",
+        "localized-ft/Qwen3-8B-german-city-names-v2-kld-seed4"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "FlavourBench: Ranking Frontier Language Models with Executable Culinary Ground Truth",
-          "url": "https://huggingface.co/papers/2608.20574",
-          "score": 0.474,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Human-Centric Intelligence in the Era of Foundation Models: A Survey",
-          "url": "https://huggingface.co/papers/2608.18184",
-          "score": 0.471,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "ariacompute/qwen3-0.6b_q326_channel — text-generation",
+          "url": "https://huggingface.co/ariacompute/qwen3-0.6b_q326_channel",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "localized-ft/OLMo-3-7B-german-city-names-v2-kld-seed3 — text-generation",
-          "url": "https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-v2-kld-seed3",
-          "score": 0.466,
+          "title": "mradermacher/SuperQwen3.8-27b-abliterated-i1-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/mradermacher/SuperQwen3.8-27b-abliterated-i1-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OsaurusAI/Qwen3.8-27B-MXFP8 — image-text-to-text",
+          "url": "https://huggingface.co/OsaurusAI/Qwen3.8-27B-MXFP8",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OsaurusAI/Qwen3.8-27B-JANG_6D — image-text-to-text",
+          "url": "https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_6D",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OsaurusAI/Qwen3.8-27B-JANG_4D — image-text-to-text",
+          "url": "https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_4D",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OsaurusAI/Qwen3.8-27B-JANG_2D — image-text-to-text",
+          "url": "https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_2D",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +142,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-24T22:19:34+00:00",
-      "updatedAt": "2026-08-24T22:19:34+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-08-25T00:42:21+00:00",
+      "updatedAt": "2026-08-25T00:42:21+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-08-24T22:19:34+00:00",
+  "tiered_at": "2026-08-25T00:42:21+00:00",
   "free_preview_count": 3
 }
