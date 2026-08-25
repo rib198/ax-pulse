@@ -1,90 +1,40 @@
 {
-  "generated_at": "2026-08-25T18:29:31+00:00",
+  "generated_at": "2026-08-25T20:21:01+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 728,
+  "corpus_count": 837,
   "opportunities": [
     {
-      "id": "text-to-3d-generation",
-      "title_ar": "توليد نماذج ثلاثية الأبعاد من النصوص",
-      "thesis_ar": "تقدم تقنيات توليد النماذج ثلاثية الأبعاد من النصوص فرصة كبيرة في تحسين التصميمات الهندسية. مع استمرار التطور في هذه التقنية، يمكن تحقيق دقة هندسية عالية بتكاليف منخفضة.",
-      "buyer_ar": "شركات التصميم والهندسة المعمارية",
-      "sellable_product_ar": "خدمة توليد نماذج ثلاثية الأبعاد مخصصة",
-      "first_paid_test_ar": "توليد نموذج ثلاثي الأبعاد بسيط بناءً على نص محدد",
-      "tools_ar": "نموذج Hugging Face، أدوات تصميم ثلاثي الأبعاد، واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2608.19567",
-        "huggingface_models:LyliaEngine/riMixIllustriousAnima_riMixV2",
-        "huggingface_daily_papers:2608.22817"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.52,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Block3D: Efficient Text-to-3D Generation via Block-Wise Diffusion",
-          "url": "https://huggingface.co/papers/2608.19567",
-          "score": 0.531,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "LyliaEngine/riMixIllustriousAnima_riMixV2 — text-to-image",
-          "url": "https://huggingface.co/LyliaEngine/riMixIllustriousAnima_riMixV2",
-          "score": 0.521,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Industrial-Instruction: An End-to-End Framework for Building Instruction-Tuning and Benchmark Datasets from Industrial Technical Reports",
-          "url": "https://huggingface.co/papers/2608.22817",
-          "score": 0.497,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-25T18:29:31+00:00",
-      "updatedAt": "2026-08-25T18:29:31+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "mobile-planner-agents",
-      "title_ar": "تطوير وكلاء تخطيط متنقلين",
-      "thesis_ar": "تطور وكلاء التخطيط على الأجهزة المحمولة يتيح فرصًا جديدة لتقديم خدمات شخصية. مع تزايد الاعتماد على الهواتف الذكية، يصبح من الضروري تطوير أدوات فعالة لتقييم القدرات.",
-      "buyer_ar": "شركات تطوير التطبيقات",
-      "sellable_product_ar": "خدمة تطوير وكلاء تخطيط متنقلين",
-      "first_paid_test_ar": "تطوير نموذج أولي لوكيل تخطيط بسيط",
-      "tools_ar": "نموذج Hugging Face، أدوات تطوير التطبيقات، واجهة برمجة التطبيقات",
+      "id": "clinical-decision-support",
+      "title_ar": "دعم اتخاذ القرار السريري",
+      "thesis_ar": "تتزايد الحاجة إلى تحسين اتخاذ القرارات السريرية في وحدات العناية المركزة، مما يوفر فرصة لتطوير أدوات تعتمد على الذكاء الاصطناعي. هذه الأدوات يمكن أن تساعد الأطباء في الوصول إلى معلومات دقيقة وسريعة.",
+      "buyer_ar": "المستشفيات، العيادات، مقدمو الرعاية الصحية",
+      "sellable_product_ar": "أداة دعم اتخاذ القرار السريري المعتمدة على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تجربة مجانية للأطباء مع نموذج أولي للأداة",
+      "tools_ar": "نموذج ذكاء اصطناعي، قاعدة بيانات طبية، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.23035",
-        "huggingface_daily_papers:2608.22872",
-        "huggingface_daily_papers:2608.19567"
+        "arxiv_papers:2608.22622v1",
+        "huggingface_daily_papers:2608.19741",
+        "huggingface_daily_papers:2608.22872"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Block3D: Efficient Text-to-3D Generation via Block-Wise Diffusion",
-          "url": "https://huggingface.co/papers/2608.19567",
-          "score": 0.531,
+          "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
+          "url": "https://huggingface.co/papers/2608.19741",
+          "score": 0.514,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
-          "url": "https://huggingface.co/papers/2608.23035",
-          "score": 0.485,
+          "source_id": "arxiv_papers",
+          "title": "Teaching LLMs How ICU Physicians Approach Clinical Reasoning Through OMOP-Aligned Retrieval Improves Reasoning Across Clinical Domains",
+          "url": "http://arxiv.org/abs/2608.22622v1",
+          "score": 0.489,
           "trust_tier": "research"
         },
         {
@@ -100,25 +50,25 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-25T18:29:31+00:00",
-      "updatedAt": "2026-08-25T18:29:31+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-08-25T20:21:01+00:00",
+      "updatedAt": "2026-08-25T20:21:01+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "industrial-technical-report-optimization",
-      "title_ar": "تحسين تقارير التقنية الصناعية",
-      "thesis_ar": "تحتوي التقارير التقنية الصناعية على معلومات قيمة، لكن هيكلها المعقد يجعل الوصول إليها صعبًا. تطوير أدوات لتحسين الوصول إلى هذه المعلومات يمكن أن يلبي حاجة كبيرة في السوق.",
-      "buyer_ar": "شركات الصيانة والهندسة",
-      "sellable_product_ar": "أداة لتحليل وتحسين الوصول إلى التقارير التقنية",
-      "first_paid_test_ar": "تحليل تقرير تقني واحد وتقديم تحسينات مقترحة",
-      "tools_ar": "نموذج Hugging Face، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
+      "id": "cybersecurity-llm",
+      "title_ar": "تحسين قدرات الأمن السيبراني باستخدام نماذج اللغة",
+      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في مجال الأمن السيبراني يوفر فرصة لتطوير حلول جديدة. مع تزايد التهديدات السيبرانية، فإن الابتكار في هذا المجال يعد أمرًا حيويًا.",
+      "buyer_ar": "شركات الأمن السيبراني، المؤسسات المالية",
+      "sellable_product_ar": "حلول أمن سيبراني تعتمد على نماذج اللغة",
+      "first_paid_test_ar": "تقديم اختبار أمان مجاني باستخدام نموذج لغة",
+      "tools_ar": "نموذج لغة، أدوات تحليل أمان، واجهة برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2608.22817",
+        "arxiv_papers:2608.23181v1",
         "huggingface_daily_papers:2608.19741",
-        "huggingface_daily_papers:2608.23035"
+        "huggingface_daily_papers:2608.22817"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.5,
@@ -127,14 +77,64 @@
           "source_id": "huggingface_daily_papers",
           "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
           "url": "https://huggingface.co/papers/2608.19741",
-          "score": 0.513,
+          "score": 0.514,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Industrial-Instruction: An End-to-End Framework for Building Instruction-Tuning and Benchmark Datasets from Industrial Technical Reports",
           "url": "https://huggingface.co/papers/2608.22817",
-          "score": 0.497,
+          "score": 0.498,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "CyberFactory: Scaling Cyber Security Capabilities with Instances from the Wild",
+          "url": "http://arxiv.org/abs/2608.23181v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-25T20:21:01+00:00",
+      "updatedAt": "2026-08-25T20:21:01+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-3d-generation",
+      "title_ar": "توليد ثلاثي الأبعاد من النصوص",
+      "thesis_ar": "تقدم تقنيات توليد الصور ثلاثية الأبعاد من النصوص فرصًا كبيرة في مجالات التصميم والإنتاج. مع تزايد الطلب على نماذج ثلاثية الأبعاد عالية الجودة، فإن تحسين التكلفة والكفاءة يعد أمرًا حيويًا.",
+      "buyer_ar": "شركات التصميم والإنتاج، استوديوهات الألعاب",
+      "sellable_product_ar": "خدمة توليد نماذج ثلاثية الأبعاد من النصوص",
+      "first_paid_test_ar": "تقديم نموذج أولي لنموذج ثلاثي الأبعاد بناءً على نص محدد",
+      "tools_ar": "نموذج توليد ثلاثي الأبعاد، واجهة برمجة التطبيقات، أدوات التصميم",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2608.19567",
+        "huggingface_daily_papers:2608.22817",
+        "huggingface_daily_papers:2608.23035"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Block3D: Efficient Text-to-3D Generation via Block-Wise Diffusion",
+          "url": "https://huggingface.co/papers/2608.19567",
+          "score": 0.532,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Industrial-Instruction: An End-to-End Framework for Building Instruction-Tuning and Benchmark Datasets from Industrial Technical Reports",
+          "url": "https://huggingface.co/papers/2608.22817",
+          "score": 0.498,
           "trust_tier": "research"
         },
         {
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-25T18:29:31+00:00",
-      "updatedAt": "2026-08-25T18:29:31+00:00",
+      "publishedAt": "2026-08-25T20:21:01+00:00",
+      "updatedAt": "2026-08-25T20:21:01+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-25T18:29:31+00:00",
+  "tiered_at": "2026-08-25T20:21:01+00:00",
   "free_preview_count": 3
 }
