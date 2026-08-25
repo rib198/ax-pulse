@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-25T14:39:35+00:00",
+  "generated_at": "2026-08-25T16:35:44+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 832,
   "opportunities": [
     {
       "id": "text-to-3d-generation",
-      "title_ar": "توليد نماذج ثلاثية الأبعاد من النصوص",
-      "thesis_ar": "تتطور تقنيات تحويل النصوص إلى نماذج ثلاثية الأبعاد بسرعة، مما يفتح المجال لتطبيقات جديدة في مجالات مثل الألعاب والتصميم. مع وجود تحديات في تحقيق دقة هندسية عالية بتكلفة منخفضة، هناك حاجة لحلول مبتكرة.",
-      "buyer_ar": "شركات الألعاب والتصميم المعماري",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى نماذج ثلاثية الأبعاد بدقة عالية",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى نموذج ثلاثي الأبعاد",
-      "tools_ar": "نموذج تعلم آلي، واجهة برمجة التطبيقات، بيئة تطوير",
+      "title_ar": "توليد ثلاثي الأبعاد من النصوص",
+      "thesis_ar": "تكنولوجيا توليد الصور ثلاثية الأبعاد من النصوص تتطور بسرعة، مما يتيح فرصًا جديدة في مجالات التصميم والإنتاج. القدرة على تحقيق دقة هندسية عالية بتكلفة منخفضة تجعل هذه التقنية جذابة بشكل خاص.",
+      "buyer_ar": "شركات التصميم والإنتاج، مطورو الألعاب",
+      "sellable_product_ar": "خدمة توليد نماذج ثلاثية الأبعاد من نصوص وصفية",
+      "first_paid_test_ar": "توليد نموذج ثلاثي الأبعاد بسيط من نصوص وصفية قصيرة",
+      "tools_ar": "نموذج Hugging Face، بيئة تطوير، أدوات تصميم ثلاثي الأبعاد",
       "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2608.19567",
-        "huggingface_daily_papers:2608.22817",
-        "huggingface_daily_papers:2608.23035"
+        "huggingface_models:LyliaEngine/riMixIllustriousAnima_riMixV2",
+        "huggingface_models:Titanfrm/Qwen-Image-Edit-Rapid-AIO"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.5,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -31,10 +31,60 @@
           "trust_tier": "research"
         },
         {
+          "source_id": "huggingface_models",
+          "title": "LyliaEngine/riMixIllustriousAnima_riMixV2 — text-to-image",
+          "url": "https://huggingface.co/LyliaEngine/riMixIllustriousAnima_riMixV2",
+          "score": 0.521,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Titanfrm/Qwen-Image-Edit-Rapid-AIO — text-to-image",
+          "url": "https://huggingface.co/Titanfrm/Qwen-Image-Edit-Rapid-AIO",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-08-25T16:35:44+00:00",
+      "updatedAt": "2026-08-25T16:35:44+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "industrial-instruction-tuning",
+      "title_ar": "تحسين التعليمات الصناعية",
+      "thesis_ar": "تطوير إطار عمل شامل لبناء مجموعات بيانات تعليمية من التقارير الفنية الصناعية يمكن أن يحسن من كفاءة الصيانة والهندسة. الحاجة إلى تنظيم المعلومات المعقدة تجعل هذا المجال واعدًا.",
+      "buyer_ar": "شركات التصنيع والصيانة، مراكز البحث والتطوير",
+      "sellable_product_ar": "أداة لتحليل وتنظيم التقارير الفنية الصناعية",
+      "first_paid_test_ar": "تقديم تحليل لتقرير فني واحد كاختبار مدفوع",
+      "tools_ar": "نموذج تحليل البيانات، أدوات معالجة النصوص، قاعدة بيانات تقارير فنية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2608.22817",
+        "huggingface_daily_papers:2608.23035",
+        "huggingface_daily_papers:2608.19741"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
+          "url": "https://huggingface.co/papers/2608.19741",
+          "score": 0.513,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_daily_papers",
           "title": "Industrial-Instruction: An End-to-End Framework for Building Instruction-Tuning and Benchmark Datasets from Industrial Technical Reports",
           "url": "https://huggingface.co/papers/2608.22817",
-          "score": 0.496,
+          "score": 0.497,
           "trust_tier": "research"
         },
         {
@@ -50,111 +100,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-25T14:39:35+00:00",
-      "updatedAt": "2026-08-25T14:39:35+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-08-25T16:35:44+00:00",
+      "updatedAt": "2026-08-25T16:35:44+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "video-reasoning-agents",
-      "title_ar": "تطوير وكلاء فيديو ذكيين",
-      "thesis_ar": "تتزايد الحاجة لفهم الفيديوهات بشكل أعمق، مما يتيح تطبيقات في مجالات مثل التعليم والترفيه. يمكن لوكلاء الفيديو الذكيين تقديم حلول مبتكرة لتحليل المحتوى والفهم السياقي.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والتعليمي",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لفهم الفيديو وتحليله",
-      "first_paid_test_ar": "تطوير نموذج أولي لتحليل فيديو قصير",
-      "tools_ar": "نماذج تعلم عميق، واجهة مستخدم، قاعدة بيانات فيديو",
+      "id": "cybersecurity-llm",
+      "title_ar": "تعزيز الأمن السيبراني باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في تعزيز قدرات الأمن السيبراني يفتح آفاقًا جديدة لمواجهة التهديدات. هذا الاتجاه يتطلب حلولًا مبتكرة لمواجهة التحديات الأمنية المتزايدة.",
+      "buyer_ar": "شركات الأمن السيبراني، المؤسسات الحكومية",
+      "sellable_product_ar": "أداة لتحليل التهديدات السيبرانية باستخدام نماذج اللغة",
+      "first_paid_test_ar": "تقديم تحليل تهديد بسيط باستخدام نموذج لغة كبير",
+      "tools_ar": "نموذج لغة، أدوات تحليل البيانات، منصة أمنية",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2608.23329v1",
-        "huggingface_daily_papers:2608.23035",
-        "huggingface_daily_papers:2608.19741"
+        "arxiv_papers:2608.23181",
+        "huggingface_daily_papers:2608.22872",
+        "huggingface_daily_papers:2608.23035"
       ],
-      "confidence": 0.65,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.51,
+      "signal_count": 2,
+      "avg_score": 0.48,
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
-          "url": "http://arxiv.org/abs/2608.23329v1",
-          "score": 0.525,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
-          "url": "https://huggingface.co/papers/2608.19741",
-          "score": 0.513,
-          "trust_tier": "research"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
           "url": "https://huggingface.co/papers/2608.23035",
           "score": 0.485,
           "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-08-25T14:39:35+00:00",
-      "updatedAt": "2026-08-25T14:39:35+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "clinical-decision-support",
-      "title_ar": "نظام دعم اتخاذ القرار السريري",
-      "thesis_ar": "تتطلب القرارات السريرية معلومات دقيقة وسريعة، مما يجعل تطوير نماذج ذكاء اصطناعي قادرة على تحسين هذه العمليات أمرًا حيويًا. هذا يمكن أن يحسن من نتائج المرضى بشكل كبير.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات السريرية",
-      "first_paid_test_ar": "تقديم نموذج لتحليل بيانات مرضى حقيقيين",
-      "tools_ar": "نموذج تعلم آلي، بيانات طبية، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2608.22622v1",
-        "huggingface_daily_papers:2608.19741",
-        "arxiv_papers:2608.23329v1"
-      ],
-      "confidence": 0.6,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.51,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
-          "url": "http://arxiv.org/abs/2608.23329v1",
-          "score": 0.525,
-          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
-          "url": "https://huggingface.co/papers/2608.19741",
-          "score": 0.513,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Teaching LLMs How ICU Physicians Approach Clinical Reasoning Through OMOP-Aligned Retrieval Improves Reasoning Across Clinical Domains",
-          "url": "http://arxiv.org/abs/2608.22622v1",
-          "score": 0.489,
+          "title": "Better Retrieval, Worse Robustness:How Multi-hop RAG Amplifies Upstream ASR Errors",
+          "url": "https://huggingface.co/papers/2608.22872",
+          "score": 0.466,
           "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-25T14:39:35+00:00",
-      "updatedAt": "2026-08-25T14:39:35+00:00",
+      "publishedAt": "2026-08-25T16:35:44+00:00",
+      "updatedAt": "2026-08-25T16:35:44+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-25T14:39:35+00:00",
+  "tiered_at": "2026-08-25T16:35:44+00:00",
   "free_preview_count": 3
 }
