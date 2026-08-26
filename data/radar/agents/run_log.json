@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-26T14:38:17+00:00",
+  "run_at": "2026-08-26T16:46:00+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 17.291,
+      "duration_s": 21.27,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 356 signals from 31 source families",
+        "collected 344 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.011,
       "written": [],
       "notes": [
         "injected 482 manual X items (skipped 18 of 500, avg score 0.146)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 838 items",
-        "by tier: press=511, official=161, research=127, community=39"
+        "tagged 826 items",
+        "by tier: press=511, official=162, research=126, community=27"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.034,
+      "duration_s": 0.033,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 838 items, top priority=0.553"
+        "ranked 826 items, top priority=0.555"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.014,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 18 products this run",
+        "detected 15 companies, 17 products this run",
         "store size: 48"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.071,
+      "duration_s": 0.069,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+28 new model events",
+        "+26 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.167,
+      "duration_s": 0.165,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "27 events (0 new)",
-        "by type: pricing_change=4, model_release=16, personnel_move=5, acquisition=2"
+        "27 events (1 new)",
+        "by type: pricing_change=4, model_release=15, acquisition=3, personnel_move=5"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 11.604,
+      "duration_s": 12.837,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 8.632,
+      "duration_s": 8.224,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.399,
+      "duration_s": 7.207,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.068,
+      "duration_s": 0.077,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=838, opps=3, calls=3"
+        "items=826, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.933,
+      "duration_s": 2.925,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط حول إصدار النماذج يعكس اهتمامًا متزايدًا في السوق، حيث تم رصد 6 إش…"
+        "insight via openai: شهدنا تزايدًا في نشاط إصدار النماذج هذا الأسبوع، حيث تم الإعلان عن 4 نماذج جديد…"
       ],
       "error": null
     },
