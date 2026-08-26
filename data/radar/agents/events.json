@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-26T00:41:39+00:00",
+  "generated_at": "2026-08-26T03:00:26+00:00",
   "note_ar": "أحداث مستخرجة من الإشارات تلقائيًا. كل حدث مدعوم بـ ≥ 2 إشارة أو إشارة من مصدر رسمي.",
-  "count": 24,
+  "count": 27,
   "events": [
     {
       "id": "evt_anthropic_pricing_change_2026_08_26",
@@ -16,8 +16,8 @@
       "evidence_count": 4,
       "confidence": 1.0,
       "first_seen": "Mon, 20 Jul 2026 16:05:16 GMT",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -59,6 +59,52 @@
       ]
     },
     {
+      "id": "evt_qwen_model_release_qwen_2026_08_26",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "qwen",
+      "family": "qwen",
+      "title_ar": "إصدار نموذج: qwen",
+      "title_en": "Model release: qwen",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 3,
+      "confidence": 1.0,
+      "first_seen": "2026-08-26T02:57:28.000Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "huggingface_models:Zyrabit-IA/zyra-marketing-Q5_K_M",
+          "source_id": "huggingface_models",
+          "source_name": "Hugging Face text generation models",
+          "title": "Zyrabit-IA/zyra-marketing-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-marketing-Q5_K_M",
+          "trust_tier": "official",
+          "posted_at": "2026-08-26T02:57:28.000Z"
+        },
+        {
+          "id": "huggingface_models:Zyrabit-IA/zyra-arch-Q5_K_M",
+          "source_id": "huggingface_models",
+          "source_name": "Hugging Face text generation models",
+          "title": "Zyrabit-IA/zyra-arch-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-arch-Q5_K_M",
+          "trust_tier": "official",
+          "posted_at": "2026-08-26T02:57:22.000Z"
+        },
+        {
+          "id": "huggingface_models:Zyrabit-IA/zyra-developer-Q5_K_M",
+          "source_id": "huggingface_models",
+          "source_name": "Hugging Face text generation models",
+          "title": "Zyrabit-IA/zyra-developer-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-developer-Q5_K_M",
+          "trust_tier": "official",
+          "posted_at": "2026-08-26T02:57:14.000Z"
+        }
+      ]
+    },
+    {
       "id": "evt_gemini_model_release_gemini_2026_08_26",
       "type": "model_release",
       "icon": "⊕",
@@ -71,8 +117,8 @@
       "evidence_count": 3,
       "confidence": 1.0,
       "first_seen": "Tue, 07 Jul 2026 08:54:00 +0000",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -117,8 +163,8 @@
       "evidence_count": 3,
       "confidence": 0.85,
       "first_seen": "Thu, 21 May 2026 15:15:13 GMT",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -151,30 +197,356 @@
       ]
     },
     {
-      "id": "evt_together_personnel_move_2026_08_25",
-      "type": "personnel_move",
-      "icon": "↪",
-      "subject": "together",
+      "id": "evt_gpt_model_release_gpt_2026_08_25",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "gpt",
+      "family": "gpt",
+      "title_ar": "إصدار نموذج: gpt",
+      "title_en": "Model release: gpt",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 2,
+      "confidence": 0.85,
+      "first_seen": "2026-08-25T16:17:27Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2608.24777v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv AI product research",
+          "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+          "url": "http://arxiv.org/abs/2608.24777v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T16:17:27Z"
+        },
+        {
+          "id": "arxiv_papers:2608.24145v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv LLM Reasoning",
+          "title": "TrustDABench: Benchmarking Reliability and Robustness of LLMs for Structured Data Analysis",
+          "url": "http://arxiv.org/abs/2608.24145v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T07:09:01Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_openai_pricing_change_2026_08_26",
+      "type": "pricing_change",
+      "icon": "$",
+      "subject": "openai",
       "family": null,
-      "title_ar": "حركة كادر: together",
-      "title_en": "Personnel move: together",
-      "label_ar": "حركة كادر",
-      "label_en": "Personnel move",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-25T00:00:00.000Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
+      "title_ar": "تغيير سعر: openai",
+      "title_en": "Pricing change: openai",
+      "label_ar": "تغيير سعر",
+      "label_en": "Pricing change",
+      "evidence_count": 2,
+      "confidence": 0.85,
+      "first_seen": "Tue, 18 Aug 2026 07:00:00 GMT",
+      "last_updated": "2026-08-26T03:00:26+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
         {
-          "id": "huggingface_daily_papers:2608.23311",
+          "id": "devto_ai:https://dev.to/tokenpapa/use-deepseek-with-vercel-ai-sdk-in-5-minutes-5g3c",
+          "source_id": "devto_ai",
+          "source_name": "Dev.to AI",
+          "title": "Use DeepSeek with Vercel AI SDK in 5 Minutes",
+          "url": "https://dev.to/tokenpapa/use-deepseek-with-vercel-ai-sdk-in-5-minutes-5g3c",
+          "trust_tier": "community",
+          "posted_at": "Wed, 26 Aug 2026 02:38:02 +0000"
+        },
+        {
+          "id": "openai_news:https://openai.com/index/asana",
+          "source_id": "openai_news",
+          "source_name": "OpenAI News",
+          "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+          "url": "https://openai.com/index/asana",
+          "trust_tier": "official",
+          "posted_at": "Tue, 18 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "evt_claude_model_release_claude_2026_08_25",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "claude",
+      "family": "claude",
+      "title_ar": "إصدار نموذج: claude",
+      "title_en": "Model release: claude",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-25T09:19:00Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2608.24291v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv AI agents",
+          "title": "ReproAgent: Contract-Guided Paper-to-Code Reproduction",
+          "url": "http://arxiv.org/abs/2608.24291v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T09:19:00Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_meta_model_release_gpt_2026_08_26",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "meta",
+      "family": "gpt",
+      "title_ar": "إصدار نموذج: meta",
+      "title_en": "Model release: meta",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-26T00:00:00.000Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "huggingface_daily_papers:2608.24876",
           "source_id": "huggingface_daily_papers",
           "source_name": "Hugging Face Daily Papers",
-          "title": "Beyond the Stability-Exploration Dilemma: Environmental Regularization for LLM Policy Optimization",
-          "url": "https://huggingface.co/papers/2608.23311",
+          "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+          "url": "https://huggingface.co/papers/2608.24876",
           "trust_tier": "research",
-          "posted_at": "2026-08-25T00:00:00.000Z"
+          "posted_at": "2026-08-26T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_llama_model_release_llama_2026_08_26",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "llama",
+      "family": "llama",
+      "title_ar": "إصدار نموذج: llama",
+      "title_en": "Model release: llama",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-26T00:00:00.000Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "huggingface_daily_papers:2608.22274",
+          "source_id": "huggingface_daily_papers",
+          "source_name": "Hugging Face Daily Papers",
+          "title": "Length-Adaptive Decoding for Masked Diffusion Machine Translation",
+          "url": "https://huggingface.co/papers/2608.22274",
+          "trust_tier": "research",
+          "posted_at": "2026-08-26T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_llama_personnel_move_2026_08_26",
+      "type": "personnel_move",
+      "icon": "↪",
+      "subject": "llama",
+      "family": null,
+      "title_ar": "حركة كادر: llama",
+      "title_en": "Personnel move: llama",
+      "label_ar": "حركة كادر",
+      "label_en": "Personnel move",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-26T00:00:00.000Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "huggingface_daily_papers:2608.22274",
+          "source_id": "huggingface_daily_papers",
+          "source_name": "Hugging Face Daily Papers",
+          "title": "Length-Adaptive Decoding for Masked Diffusion Machine Translation",
+          "url": "https://huggingface.co/papers/2608.22274",
+          "trust_tier": "research",
+          "posted_at": "2026-08-26T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_gpt_personnel_move_2026_08_25",
+      "type": "personnel_move",
+      "icon": "↪",
+      "subject": "gpt",
+      "family": null,
+      "title_ar": "حركة كادر: gpt",
+      "title_en": "Personnel move: gpt",
+      "label_ar": "حركة كادر",
+      "label_en": "Personnel move",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-25T16:17:27Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2608.24777v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv AI product research",
+          "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+          "url": "http://arxiv.org/abs/2608.24777v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T16:17:27Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_deepseek_model_release_deepseek_2026_08_25",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "deepseek",
+      "family": "deepseek",
+      "title_ar": "إصدار نموذج: deepseek",
+      "title_en": "Model release: deepseek",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-25T15:02:54Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2608.24658v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv AI product research",
+          "title": "Parason: Revealing Subtask and Trial Parallelism in LLM Reasoning",
+          "url": "http://arxiv.org/abs/2608.24658v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T15:02:54Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_together_acquisition_2026_08_25",
+      "type": "acquisition",
+      "icon": "⊗",
+      "subject": "together",
+      "family": null,
+      "title_ar": "استحواذ: together",
+      "title_en": "Acquisition: together",
+      "label_ar": "استحواذ",
+      "label_en": "Acquisition",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-25T09:27:47Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "premium",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2608.24302v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv document and business AI",
+          "title": "VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models",
+          "url": "http://arxiv.org/abs/2608.24302v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T09:27:47Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_anthropic_model_release_gpt_2026_08_25",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "anthropic",
+      "family": "gpt",
+      "title_ar": "إصدار نموذج: anthropic",
+      "title_en": "Model release: anthropic",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-25T15:00:44Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2608.24654v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "Expectation, Backlash, Recovery, and Excitement: How Model Releases Shape Reddit Perceptions of Conversational AI Systems",
+          "url": "http://arxiv.org/abs/2608.24654v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T15:00:44Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_qwen_model_release_qwen_2026_08_25",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "qwen",
+      "family": "qwen",
+      "title_ar": "إصدار نموذج: qwen",
+      "title_en": "Model release: qwen",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-25T10:00:29Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2608.24335v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "SteerCheck: Attribution Specificity and Alignment Leakage in Activation-Steering Audits",
+          "url": "http://arxiv.org/abs/2608.24335v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T10:00:29Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_qwen_pricing_change_2026_08_25",
+      "type": "pricing_change",
+      "icon": "$",
+      "subject": "qwen",
+      "family": null,
+      "title_ar": "تغيير سعر: qwen",
+      "title_en": "Pricing change: qwen",
+      "label_ar": "تغيير سعر",
+      "label_en": "Pricing change",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-08-25T10:00:29Z",
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": true,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2608.24335v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "SteerCheck: Attribution Specificity and Alignment Leakage in Activation-Steering Audits",
+          "url": "http://arxiv.org/abs/2608.24335v1",
+          "trust_tier": "research",
+          "posted_at": "2026-08-25T10:00:29Z"
         }
       ]
     },
@@ -191,8 +563,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "Thu, 13 Aug 2026 10:00:00 GMT",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -203,90 +575,6 @@
           "url": "https://openai.com/index/previewing-ultrafast",
           "trust_tier": "official",
           "posted_at": "Thu, 13 Aug 2026 10:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "evt_cohere_personnel_move_2026_08_24",
-      "type": "personnel_move",
-      "icon": "↪",
-      "subject": "cohere",
-      "family": null,
-      "title_ar": "حركة كادر: cohere",
-      "title_en": "Personnel move: cohere",
-      "label_ar": "حركة كادر",
-      "label_en": "Personnel move",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-24T11:49:23Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.23143v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv document and business AI",
-          "title": "An end-to-end-trained vision-language model for native-language prostate pathology report generation",
-          "url": "http://arxiv.org/abs/2608.23143v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-24T11:49:23Z"
-        }
-      ]
-    },
-    {
-      "id": "evt_qwen_model_release_qwen_2026_08_24",
-      "type": "model_release",
-      "icon": "⊕",
-      "subject": "qwen",
-      "family": "qwen",
-      "title_ar": "إصدار نموذج: qwen",
-      "title_en": "Model release: qwen",
-      "label_ar": "إصدار نموذج",
-      "label_en": "Model release",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-24T15:45:26Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.23397v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv AI product research",
-          "title": "MediSkill-Evo: Process-Constrained Self-Evolution for Evidence-Grounded Clinical Interaction",
-          "url": "http://arxiv.org/abs/2608.23397v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-24T15:45:26Z"
-        }
-      ]
-    },
-    {
-      "id": "evt_together_personnel_move_2026_08_24",
-      "type": "personnel_move",
-      "icon": "↪",
-      "subject": "together",
-      "family": null,
-      "title_ar": "حركة كادر: together",
-      "title_en": "Personnel move: together",
-      "label_ar": "حركة كادر",
-      "label_en": "Personnel move",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-24T14:30:59Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.23311v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv LLM Reasoning",
-          "title": "Beyond the Stability-Exploration Dilemma: Environmental Regularization for LLM Policy Optimization",
-          "url": "http://arxiv.org/abs/2608.23311v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-24T14:30:59Z"
         }
       ]
     },
@@ -303,14 +591,14 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-24T07:24:04Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
+      "last_updated": "2026-08-26T03:00:26+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
         {
           "id": "arxiv_papers:2608.22894v1",
           "source_id": "arxiv_papers",
-          "source_name": "arXiv AI Safety & Alignment",
+          "source_name": "arXiv Arabic NLP",
           "title": "AraDetox: A Multi-Dialect Arabic Detoxification Dataset",
           "url": "http://arxiv.org/abs/2608.22894v1",
           "trust_tier": "research",
@@ -331,7 +619,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-24T03:27:30Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
+      "last_updated": "2026-08-26T03:00:26+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -359,7 +647,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-23T08:04:56Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
+      "last_updated": "2026-08-26T03:00:26+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -387,7 +675,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-23T08:04:56Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
+      "last_updated": "2026-08-26T03:00:26+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -399,34 +687,6 @@
           "url": "http://arxiv.org/abs/2608.22274v1",
           "trust_tier": "research",
           "posted_at": "2026-08-23T08:04:56Z"
-        }
-      ]
-    },
-    {
-      "id": "evt_meta_personnel_move_2026_08_24",
-      "type": "personnel_move",
-      "icon": "↪",
-      "subject": "meta",
-      "family": null,
-      "title_ar": "حركة كادر: meta",
-      "title_en": "Personnel move: meta",
-      "label_ar": "حركة كادر",
-      "label_en": "Personnel move",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-24T13:51:39Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.23263v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv document and business AI",
-          "title": "Automated Construction of FAIR Digital Object Knowledge Graphs from Flat Cultural Heritage Records",
-          "url": "http://arxiv.org/abs/2608.23263v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-24T13:51:39Z"
         }
       ]
     },
@@ -443,8 +703,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "Fri, 14 Aug 2026 16:00:00 +0000",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -455,146 +715,6 @@
           "url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/",
           "trust_tier": "official",
           "posted_at": "Fri, 14 Aug 2026 16:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "evt_openai_pricing_change_2026_08_26",
-      "type": "pricing_change",
-      "icon": "$",
-      "subject": "openai",
-      "family": null,
-      "title_ar": "تغيير سعر: openai",
-      "title_en": "Pricing change: openai",
-      "label_ar": "تغيير سعر",
-      "label_en": "Pricing change",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "Tue, 18 Aug 2026 07:00:00 GMT",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "openai_news:https://openai.com/index/asana",
-          "source_id": "openai_news",
-          "source_name": "OpenAI News",
-          "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
-          "url": "https://openai.com/index/asana",
-          "trust_tier": "official",
-          "posted_at": "Tue, 18 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "evt_llama_model_release_llama_2026_08_21",
-      "type": "model_release",
-      "icon": "⊕",
-      "subject": "llama",
-      "family": "llama",
-      "title_ar": "إصدار نموذج: llama",
-      "title_en": "Model release: llama",
-      "label_ar": "إصدار نموذج",
-      "label_en": "Model release",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-21T20:19:22Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.21606v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv Open Source LLMs",
-          "title": "Can LLMs Truly Forget? Revealing Unlearning Gaps Through Adversarial Evaluation",
-          "url": "http://arxiv.org/abs/2608.21606v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-21T20:19:22Z"
-        }
-      ]
-    },
-    {
-      "id": "evt_llama_pricing_change_2026_08_21",
-      "type": "pricing_change",
-      "icon": "$",
-      "subject": "llama",
-      "family": null,
-      "title_ar": "تغيير سعر: llama",
-      "title_en": "Pricing change: llama",
-      "label_ar": "تغيير سعر",
-      "label_en": "Pricing change",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-21T20:19:22Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.21606v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv Open Source LLMs",
-          "title": "Can LLMs Truly Forget? Revealing Unlearning Gaps Through Adversarial Evaluation",
-          "url": "http://arxiv.org/abs/2608.21606v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-21T20:19:22Z"
-        }
-      ]
-    },
-    {
-      "id": "evt_llama_personnel_move_2026_08_21",
-      "type": "personnel_move",
-      "icon": "↪",
-      "subject": "llama",
-      "family": null,
-      "title_ar": "حركة كادر: llama",
-      "title_en": "Personnel move: llama",
-      "label_ar": "حركة كادر",
-      "label_en": "Personnel move",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-21T20:19:22Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.21606v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv Open Source LLMs",
-          "title": "Can LLMs Truly Forget? Revealing Unlearning Gaps Through Adversarial Evaluation",
-          "url": "http://arxiv.org/abs/2608.21606v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-21T20:19:22Z"
-        }
-      ]
-    },
-    {
-      "id": "evt_anthropic_model_release_claude_2026_08_20",
-      "type": "model_release",
-      "icon": "⊕",
-      "subject": "anthropic",
-      "family": "claude",
-      "title_ar": "إصدار نموذج: anthropic",
-      "title_en": "Model release: anthropic",
-      "label_ar": "إصدار نموذج",
-      "label_en": "Model release",
-      "evidence_count": 1,
-      "confidence": 0.7000000000000001,
-      "first_seen": "2026-08-20T14:37:22Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": false,
-      "tier": "free",
-      "evidence": [
-        {
-          "id": "arxiv_papers:2608.20106v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv Open Source LLMs",
-          "title": "OenoBench: A Wine-Domain Benchmark for Knowledge-Grounded Evaluation of Large Language Models",
-          "url": "http://arxiv.org/abs/2608.20106v1",
-          "trust_tier": "research",
-          "posted_at": "2026-08-20T14:37:22Z"
         }
       ]
     },
@@ -611,7 +731,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-10T02:51:04Z",
-      "last_updated": "2026-08-26T00:41:39+00:00",
+      "last_updated": "2026-08-26T03:00:26+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -639,8 +759,8 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Sun, 19 Jul 2026 09:20:20 GMT",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -676,8 +796,8 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Thu, 11 Jun 2026 21:37:59 GMT",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -713,8 +833,8 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Tue, 21 Jul 2026 04:09:20 GMT",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "premium",
       "evidence": [
         {
@@ -750,8 +870,8 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Sun, 19 Jul 2026 10:25:06 GMT",
-      "last_updated": "2026-08-26T00:41:39+00:00",
-      "is_new": true,
+      "last_updated": "2026-08-26T03:00:26+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {

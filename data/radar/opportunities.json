@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-08-26T00:41:39+00:00",
+  "generated_at": "2026-08-26T03:00:26+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 822,
+  "corpus_count": 829,
   "opportunities": [
     {
-      "id": "text-to-image-generation",
-      "title_ar": "توليد الصور من النصوص",
-      "thesis_ar": "تزايد الطلب على أدوات توليد الصور من النصوص يعكس اهتمام السوق بالتكنولوجيا الحديثة. مع تقدم نماذج مثل SDXL وLora، يمكن تقديم خدمات مبتكرة في مجالات الإعلانات والفنون الرقمية.",
-      "buyer_ar": "شركات الإعلانات، الفنانين الرقميين، منصات التواصل الاجتماعي",
-      "sellable_product_ar": "أداة توليد صور مخصصة تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد صورة بناءً على نص محدد مقابل رسوم بسيطة",
-      "tools_ar": "نموذج توليد الصور، واجهة مستخدم، خادم سحابي",
+      "id": "ai-code-reproduction",
+      "title_ar": "تحويل الأبحاث إلى شيفرات قابلة للتنفيذ",
+      "thesis_ar": "تزايد الحاجة لتحويل الأوراق البحثية إلى شيفرات عملية يعكس فرصة كبيرة في السوق. يمكن أن تسهم هذه الخدمة في تسريع الابتكار في مجالات متعددة.",
+      "buyer_ar": "المؤسسات البحثية والشركات الناشئة في مجال التكنولوجيا",
+      "sellable_product_ar": "خدمة تحويل الأبحاث إلى شيفرات قابلة للتنفيذ",
+      "first_paid_test_ar": "مشروع تجريبي لتحويل ورقة بحثية واحدة إلى شيفرة عملية",
+      "tools_ar": "أدوات البرمجة، بيئات التطوير، أنظمة إدارة المشاريع",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:BlueTriangles/SDXL_Ideal_Magic_Miyu",
-        "huggingface_models:Dekonstruktio/28",
-        "huggingface_models:Shero448/daimon_naoko"
+        "2608.24291v1",
+        "2608.24082v1",
+        "2608.24571v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "ReproAgent: Contract-Guided Paper-to-Code Reproduction",
+          "url": "http://arxiv.org/abs/2608.24291v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+          "url": "https://huggingface.co/papers/2608.24794",
+          "score": 0.51,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems",
+          "url": "http://arxiv.org/abs/2608.24650v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+          "url": "https://huggingface.co/papers/2608.24876",
+          "score": 0.503,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "BlueTriangles/SDXL_Ideal_Magic_Miyu — text-to-image",
-          "url": "https://huggingface.co/BlueTriangles/SDXL_Ideal_Magic_Miyu",
-          "score": 0.488,
+          "title": "Zyrabit-IA/zyra-marketing-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-marketing-Q5_K_M",
+          "score": 0.499,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Dekonstruktio/28 — text-to-image",
-          "url": "https://huggingface.co/Dekonstruktio/28",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Shero448/daimon_naoko — text-to-image",
-          "url": "https://huggingface.co/Shero448/daimon_naoko",
-          "score": 0.488,
+          "title": "Zyrabit-IA/zyra-arch-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-arch-Q5_K_M",
+          "score": 0.499,
           "trust_tier": "official"
         }
       ],
@@ -50,42 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-26T00:41:39+00:00",
-      "updatedAt": "2026-08-26T00:41:39+00:00",
+      "publishedAt": "2026-08-26T03:00:26+00:00",
+      "updatedAt": "2026-08-26T03:00:26+00:00",
       "sortOrder": 0
     },
     {
-      "id": "clinical-decision-support",
-      "title_ar": "دعم اتخاذ القرار السريري",
-      "thesis_ar": "تزايد الحاجة إلى تحسين اتخاذ القرار في وحدات العناية المركزة يفتح المجال لتطوير أدوات تعتمد على الذكاء الاصطناعي. استخدام نماذج مثل OMOP لتحسين استرجاع المعلومات يمكن أن يحدث فرقًا كبيرًا.",
-      "buyer_ar": "المستشفيات، العيادات، شركات البرمجيات الصحية",
-      "sellable_product_ar": "نظام دعم اتخاذ القرار السريري يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم استشارة مجانية لتحليل حالة سريرية باستخدام النظام",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيانات طبية، واجهة مستخدم",
+      "id": "llm-cybersecurity",
+      "title_ar": "تحسين قدرات الأمن السيبراني باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "زيادة الاعتماد على الذكاء الاصطناعي في الأمن السيبراني يفتح آفاق جديدة لحماية البيانات. يمكن استخدام نماذج الذكاء الاصطناعي لتحليل التهديدات بشكل أسرع وأكثر دقة.",
+      "buyer_ar": "شركات الأمن السيبراني، المؤسسات الحكومية",
+      "sellable_product_ar": "حلول ذكاء اصطناعي لتحليل التهديدات الأمنية",
+      "first_paid_test_ar": "تقديم تحليل تهديدات بسيط باستخدام نموذج ذكاء اصطناعي",
+      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات تحليل البيانات، أنظمة مراقبة الشبكات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2608.22622v1",
-        "arxiv_papers:2608.19741",
-        "arxiv_papers:2608.23417v1"
+        "2608.24082v1",
+        "2608.24748v1",
+        "2608.24804v1"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "Teaching LLMs How ICU Physicians Approach Clinical Reasoning Through OMOP-Aligned Retrieval Improves Reasoning Across Clinical Domains",
-          "url": "http://arxiv.org/abs/2608.22622v1",
-          "score": 0.489,
+          "title": "ReproAgent: Contract-Guided Paper-to-Code Reproduction",
+          "url": "http://arxiv.org/abs/2608.24291v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+          "url": "https://huggingface.co/papers/2608.24794",
+          "score": 0.51,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "SkillAlchemy: Open-World Agent Skill Creation",
-          "url": "http://arxiv.org/abs/2608.23417v1",
-          "score": 0.468,
+          "title": "Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems",
+          "url": "http://arxiv.org/abs/2608.24650v1",
+          "score": 0.504,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+          "url": "https://huggingface.co/papers/2608.24876",
+          "score": 0.503,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Zyrabit-IA/zyra-marketing-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-marketing-Q5_K_M",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Zyrabit-IA/zyra-arch-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-arch-Q5_K_M",
+          "score": 0.499,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,48 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-26T00:41:39+00:00",
-      "updatedAt": "2026-08-26T00:41:39+00:00",
+      "publishedAt": "2026-08-26T03:00:26+00:00",
+      "updatedAt": "2026-08-26T03:00:26+00:00",
       "sortOrder": 1
     },
     {
-      "id": "cybersecurity-enhancements",
-      "title_ar": "تعزيز الأمن السيبراني",
-      "thesis_ar": "مع تزايد التهديدات السيبرانية، هناك حاجة ملحة لتطوير أدوات جديدة تعتمد على الذكاء الاصطناعي. استخدام نماذج مثل Mythos يمكن أن يوفر حلولاً متقدمة لمواجهة هذه التهديدات.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات المالية، الهيئات الحكومية",
-      "sellable_product_ar": "أداة لتحليل التهديدات السيبرانية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل مجاني لثغرة أمنية باستخدام الأداة",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيانات تهديدات، واجهة مستخدم",
-      "capital_ar": "متوسط",
+      "id": "long-horizon-optimization",
+      "title_ar": "تحسين أداء نماذج الذكاء الاصطناعي في المهام الطويلة",
+      "thesis_ar": "تحديات المهام الطويلة تعني أن هناك حاجة ملحة لتحسين أداء نماذج الذكاء الاصطناعي. تطوير أدوات لتحسين الأداء يمكن أن يكون له تأثير كبير.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات البحثية",
+      "sellable_product_ar": "أدوات لتحسين أداء نماذج الذكاء الاصطناعي في المهام الطويلة",
+      "first_paid_test_ar": "تقديم تحسين بسيط لنموذج ذكاء اصطناعي في مهمة طويلة",
+      "tools_ar": "أدوات البرمجة، نماذج الذكاء الاصطناعي، بيئات الاختبار",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2608.23181v1",
-        "huggingface_models:skyuu72/Llama-Quantara-Sentinel-8B",
-        "huggingface_models:vaghawan/gemma-4-31b-it-dft-lora-best"
+        "2608.24876",
+        "2608.24492v1",
+        "2608.24794"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "CyberFactory: Scaling Cyber Security Capabilities with Instances from the Wild",
-          "url": "http://arxiv.org/abs/2608.23181v1",
-          "score": 0.489,
+          "title": "ReproAgent: Contract-Guided Paper-to-Code Reproduction",
+          "url": "http://arxiv.org/abs/2608.24291v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+          "url": "https://huggingface.co/papers/2608.24794",
+          "score": 0.51,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems",
+          "url": "http://arxiv.org/abs/2608.24650v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+          "url": "https://huggingface.co/papers/2608.24876",
+          "score": 0.503,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "vaghawan/gemma-4-31b-it-dft-lora-best — text-generation",
-          "url": "https://huggingface.co/vaghawan/gemma-4-31b-it-dft-lora-best",
-          "score": 0.466,
+          "title": "Zyrabit-IA/zyra-marketing-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-marketing-Q5_K_M",
+          "score": 0.499,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "skyuu72/Llama-Quantara-Sentinel-8B — text-generation",
-          "url": "https://huggingface.co/skyuu72/Llama-Quantara-Sentinel-8B",
-          "score": 0.466,
+          "title": "Zyrabit-IA/zyra-arch-Q5_K_M — text-generation",
+          "url": "https://huggingface.co/Zyrabit-IA/zyra-arch-Q5_K_M",
+          "score": 0.499,
           "trust_tier": "official"
         }
       ],
@@ -143,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-26T00:41:39+00:00",
-      "updatedAt": "2026-08-26T00:41:39+00:00",
+      "publishedAt": "2026-08-26T03:00:26+00:00",
+      "updatedAt": "2026-08-26T03:00:26+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-26T00:41:39+00:00",
+  "tiered_at": "2026-08-26T03:00:26+00:00",
   "free_preview_count": 3
 }
