@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-26T08:34:29+00:00",
+  "run_at": "2026-08-26T10:28:28+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 19.588,
+      "duration_s": 20.532,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -55,7 +55,7 @@
       ],
       "notes": [
         "tagged 829 items",
-        "by tier: press=510, official=162, research=129, community=28"
+        "by tier: press=510, official=161, research=129, community=29"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.031,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 829 items, top priority=0.521"
+        "ranked 829 items, top priority=0.547"
       ],
       "error": null
     },
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.07,
+      "duration_s": 0.071,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,7 +110,7 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.167,
+      "duration_s": 0.168,
       "written": [
         "data/radar/agents/events.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 10.147,
+      "duration_s": 10.024,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.812,
+      "duration_s": 10.135,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 10.562,
+      "duration_s": 6.106,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,7 +212,7 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.044,
+      "duration_s": 0.047,
       "written": [
         "data/radar/agents/performance.json"
       ],
@@ -224,12 +224,12 @@
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.878,
+      "duration_s": 6.547,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الساحة نشاطًا ملحوظًا في الإصدارات المتعلقة بالنماذج، حيث تم إصدار نموذجين…"
+        "insight via openai: شهد النشاط في مجال الذكاء الاصطناعي تركيزًا ملحوظًا على تغييرات الأسعار والإصدا…"
       ],
       "error": null
     },
