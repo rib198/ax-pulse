@@ -1,69 +1,48 @@
 {
-  "generated_at": "2026-08-28T23:21:39+00:00",
+  "generated_at": "2026-08-29T04:44:00+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 827,
+  "corpus_count": 826,
   "opportunities": [
     {
-      "id": "ai-powered-digital-avatars",
-      "title_ar": "تطوير شخصيات رقمية مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى تفاعل فوري وذكي مع الجمهور يتطلب تطوير شخصيات رقمية قادرة على الإجابة على الأسئلة وتنفيذ استراتيجيات تسويقية. هذا الوقت هو الأنسب لتلبية هذه الحاجة المتزايدة.",
-      "buyer_ar": "شركات التسويق والإعلانات، منصات البث المباشر",
-      "sellable_product_ar": "شخصيات رقمية تفاعلية مدعومة بالذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لشخصية رقمية تفاعلية واختبارها مع مجموعة صغيرة من المستخدمين",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة بث مباشر، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على إنشاء محتوى بصري من النصوص يشير إلى فرصة كبيرة في السوق. يمكن استخدام نماذج مثل My-Stars-Phoebe وKasumi-V1-Krea2 لتلبية هذا الطلب.",
+      "buyer_ar": "شركات التسويق والمحتوى الرقمي",
+      "sellable_product_ar": "خدمة تحويل النصوص إلى صور مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
+      "tools_ar": "Hugging Face, Python, مكتبات الذكاء الاصطناعي",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.15763",
-        "2608.27455",
-        "2608.27454"
+        "huggingface_models:kaddzie/My-Stars-Phoebe",
+        "huggingface_models:Raxephion/Kasumi-V1-Krea2",
+        "huggingface_models:nnndite/krea2peins"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification",
-          "url": "http://arxiv.org/abs/2608.27311v1",
-          "score": 0.501,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "kaddzie/My-Stars-Phoebe — text-to-image",
+          "url": "https://huggingface.co/kaddzie/My-Stars-Phoebe",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-          "url": "https://huggingface.co/papers/2608.27455",
-          "score": 0.498,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Raxephion/Kasumi-V1-Krea2 — text-to-image",
+          "url": "https://huggingface.co/Raxephion/Kasumi-V1-Krea2",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
-          "url": "https://huggingface.co/papers/2608.15763",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
-          "url": "https://huggingface.co/papers/2608.27345",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
-          "url": "https://huggingface.co/papers/2608.27454",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
-          "url": "https://huggingface.co/papers/2608.27456",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "nnndite/krea2peins — text-to-image",
+          "url": "https://huggingface.co/nnndite/krea2peins",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -71,70 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-28T23:21:39+00:00",
-      "updatedAt": "2026-08-28T23:21:39+00:00",
+      "publishedAt": "2026-08-29T04:44:00+00:00",
+      "updatedAt": "2026-08-29T04:44:00+00:00",
       "sortOrder": 0
     },
     {
-      "id": "agent-skill-evolution",
-      "title_ar": "تطوير مهارات الوكلاء الذكية",
-      "thesis_ar": "تزايد الاعتماد على الوكلاء الذكيين يتطلب تطوير مهارات جديدة تتيح لهم التكيف والتطور. هذا الوقت هو الأنسب للاستثمار في تقنيات تحسين المهارات.",
-      "buyer_ar": "شركات التكنولوجيا، مطورو البرمجيات",
-      "sellable_product_ar": "نظام لتطوير مهارات الوكلاء الذكيين",
-      "first_paid_test_ar": "إنشاء نموذج أولي لنظام تطوير المهارات واختباره مع مجموعة مختارة من الوكلاء",
-      "tools_ar": "أدوات تعلم الآلة، منصة تطوير برمجيات، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
+      "id": "text-generation-for-arabic-content",
+      "title_ar": "تطوير أدوات توليد المحتوى باللغة العربية",
+      "thesis_ar": "مع تزايد الحاجة إلى محتوى عربي مخصص، يمكن استخدام نماذج مثل Fikr-7B-Reasoning لتوليد نصوص عالية الجودة. هذا يتماشى مع الاتجاهات الحالية في الذكاء الاصطناعي.",
+      "buyer_ar": "المدونون، الكتّاب، والشركات الإعلامية",
+      "sellable_product_ar": "أداة توليد محتوى نصي باللغة العربية",
+      "first_paid_test_ar": "تقديم تجربة مجانية لتوليد نصوص قصيرة",
+      "tools_ar": "Hugging Face, Python, مكتبات الذكاء الاصطناعي",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.27454",
-        "2608.27345",
-        "2608.27448"
+        "huggingface_models:Hatim2221/Fikr-7B-Reasoning",
+        "huggingface_models:Beetle-FineWeb2-24B/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-spa-eng",
+        "huggingface_models:FIIS/katiemorgan"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification",
-          "url": "http://arxiv.org/abs/2608.27311v1",
-          "score": 0.501,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "FIIS/katiemorgan — text-to-image",
+          "url": "https://huggingface.co/FIIS/katiemorgan",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-          "url": "https://huggingface.co/papers/2608.27455",
-          "score": 0.498,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Hatim2221/Fikr-7B-Reasoning — text-generation",
+          "url": "https://huggingface.co/Hatim2221/Fikr-7B-Reasoning",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
-          "url": "https://huggingface.co/papers/2608.15763",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
-          "url": "https://huggingface.co/papers/2608.27345",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
-          "url": "https://huggingface.co/papers/2608.27454",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
-          "url": "https://huggingface.co/papers/2608.27456",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Beetle-FineWeb2-24B/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-spa-eng — text-generation",
+          "url": "https://huggingface.co/Beetle-FineWeb2-24B/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-spa-eng",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,70 +100,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-28T23:21:39+00:00",
-      "updatedAt": "2026-08-28T23:21:39+00:00",
+      "publishedAt": "2026-08-29T04:44:00+00:00",
+      "updatedAt": "2026-08-29T04:44:00+00:00",
       "sortOrder": 1
     },
     {
-      "id": "world-modeling-in-ai",
-      "title_ar": "تطوير نماذج عالمية مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى نماذج عالمية قادرة على محاكاة الأحداث بشكل دقيق يتطلب استثمارات في تقنيات جديدة. هذا هو الوقت المناسب لتطوير حلول مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات الألعاب، شركات تطوير البرمجيات",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لمحاكاة العالم",
-      "first_paid_test_ar": "تطوير نموذج أولي واختباره في سيناريوهات محددة",
-      "tools_ar": "أدوات تعلم الآلة، محركات الألعاب، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصور إلى نصوص",
+      "thesis_ar": "زيادة استخدام الصور في المحتوى الرقمي يفتح المجال لتطوير نماذج لتحويل الصور إلى نصوص. نماذج مثل Ornith-1.5-35B-A3B وAvifenesh/Qwen3.8-Flash-Next-NVFP4 تدعم هذا الاتجاه.",
+      "buyer_ar": "شركات التكنولوجيا، ومطوري التطبيقات",
+      "sellable_product_ar": "خدمة تحويل الصور إلى نصوص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل صورة إلى نص",
+      "tools_ar": "Hugging Face, Python, مكتبات الذكاء الاصطناعي",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.27345",
-        "2608.27456",
-        "2608.27448"
+        "huggingface_models:ornith-ai/Ornith-1.5-397B-NVFP4",
+        "huggingface_models:greenfield0810/affine-ark-eea763855c44",
+        "huggingface_models:Avifenesh/Qwen3.8-Flash-Next-NVFP4"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification",
-          "url": "http://arxiv.org/abs/2608.27311v1",
-          "score": 0.501,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "ornith-ai/Ornith-1.5-397B-NVFP4 — text-generation",
+          "url": "https://huggingface.co/ornith-ai/Ornith-1.5-397B-NVFP4",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-          "url": "https://huggingface.co/papers/2608.27455",
-          "score": 0.498,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "greenfield0810/affine-ark-eea763855c44 — image-text-to-text",
+          "url": "https://huggingface.co/greenfield0810/affine-ark-eea763855c44",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
-          "url": "https://huggingface.co/papers/2608.15763",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
-          "url": "https://huggingface.co/papers/2608.27345",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
-          "url": "https://huggingface.co/papers/2608.27454",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
-          "url": "https://huggingface.co/papers/2608.27456",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Avifenesh/Qwen3.8-Flash-Next-NVFP4 — image-text-to-text",
+          "url": "https://huggingface.co/Avifenesh/Qwen3.8-Flash-Next-NVFP4",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -213,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-28T23:21:39+00:00",
-      "updatedAt": "2026-08-28T23:21:39+00:00",
+      "publishedAt": "2026-08-29T04:44:00+00:00",
+      "updatedAt": "2026-08-29T04:44:00+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-28T23:21:39+00:00",
+  "tiered_at": "2026-08-29T04:44:00+00:00",
   "free_preview_count": 3
 }
