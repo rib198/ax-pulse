@@ -1,69 +1,48 @@
 {
-  "generated_at": "2026-08-29T16:00:09+00:00",
+  "generated_at": "2026-08-29T19:03:31+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 717,
+  "corpus_count": 823,
   "opportunities": [
     {
-      "id": "digital-avatar-streamers",
-      "title_ar": "تطوير وكلاء رقمية للبث المباشر",
-      "thesis_ar": "تزايد الطلب على وكلاء رقمية تفاعلية في البث المباشر يمكن أن يعزز تجربة المشاهدين. هذه الوكلاء تحتاج إلى استراتيجيات تسويقية فعالة وتفاعل فوري مع الجمهور.",
-      "buyer_ar": "شركات البث المباشر ووكالات التسويق",
-      "sellable_product_ar": "تطوير وكلاء رقمية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لوكيل رقمي في بث مباشر تجريبي",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة بث مباشر، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل الصورة إلى نص في التطبيقات المختلفة. التطورات الحديثة في هذا المجال تفتح آفاق جديدة لتقديم خدمات مبتكرة.",
+      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
+      "sellable_product_ar": "نموذج تحويل الصورة إلى نص مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل صورة إلى نص مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face, TensorFlow, PyTorch",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.15763",
-        "2608.27454",
-        "2608.27455"
+        "huggingface_models:JianhuiWei/qwen35_4b_sft_VE_GRPO_RL",
+        "huggingface_models:inferencerlabs/Qwen3.8-Flash-Next-MLX",
+        "huggingface_models:orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "wangzhang/Qwen3.6-27B-abliterated — image-text-to-text",
-          "url": "https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated",
-          "score": 0.475,
+          "title": "JianhuiWei/qwen35_4b_sft_VE_GRPO_RL — image-text-to-text",
+          "url": "https://huggingface.co/JianhuiWei/qwen35_4b_sft_VE_GRPO_RL",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "wangzhang/Qwen3.6-27B-abliterated-v1 — image-text-to-text",
-          "url": "https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated-v1",
-          "score": 0.475,
+          "title": "inferencerlabs/Qwen3.8-Flash-Next-MLX — image-text-to-text",
+          "url": "https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mju75/tereza-lora-weights — text-to-image",
-          "url": "https://huggingface.co/mju75/tereza-lora-weights",
-          "score": 0.472,
+          "title": "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+          "score": 0.466,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-598c3321-RadiantSable — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-598c3321-RadiantSable",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet — text-to-image",
-          "url": "https://huggingface.co/Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
-          "url": "https://huggingface.co/papers/2608.15763",
-          "score": 0.452,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -71,70 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-29T16:00:09+00:00",
-      "updatedAt": "2026-08-29T16:00:09+00:00",
+      "publishedAt": "2026-08-29T19:03:31+00:00",
+      "updatedAt": "2026-08-29T19:03:31+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "زيادة الاهتمام في نماذج تحويل النص إلى صورة تتيح إنشاء محتوى بصري مبتكر. هذه النماذج يمكن أن تلبي احتياجات السوق الإبداعي.",
-      "buyer_ar": "شركات الإنتاج الإعلامي ووكالات الإعلان",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لمشروع إبداعي",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة تطوير، أدوات تصميم",
+      "id": "text-generation-solutions",
+      "title_ar": "تقديم حلول توليد النصوص",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في توليد المحتوى النصي. نماذج جديدة تظهر بشكل مستمر مما يعزز فرص الابتكار.",
+      "buyer_ar": "شركات الإعلام والتسويق",
+      "sellable_product_ar": "نموذج توليد نصوص مخصص حسب احتياجات العميل",
+      "first_paid_test_ar": "تقديم نموذج توليد نصوص لمقال قصير مقابل رسوم",
+      "tools_ar": "Hugging Face, OpenAI, Google Cloud",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "wangzhang/Qwen3.6-27B-abliterated",
-        "wangzhang/Qwen3.6-27B-abliterated-v1",
-        "Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet"
+        "huggingface_models:CrashOverrideX/Quillan-Ronin",
+        "huggingface_models:SZLHOLDINGS/chaski",
+        "huggingface_models:just1nseo/qwen3-4b-grpo-gptoss120b-t4"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "wangzhang/Qwen3.6-27B-abliterated — image-text-to-text",
-          "url": "https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated",
-          "score": 0.475,
+          "title": "CrashOverrideX/Quillan-Ronin — text-generation",
+          "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "wangzhang/Qwen3.6-27B-abliterated-v1 — image-text-to-text",
-          "url": "https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated-v1",
-          "score": 0.475,
+          "title": "just1nseo/qwen3-4b-grpo-gptoss120b-t4 — text-generation",
+          "url": "https://huggingface.co/just1nseo/qwen3-4b-grpo-gptoss120b-t4",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mju75/tereza-lora-weights — text-to-image",
-          "url": "https://huggingface.co/mju75/tereza-lora-weights",
-          "score": 0.472,
+          "title": "SZLHOLDINGS/chaski — text-generation",
+          "url": "https://huggingface.co/SZLHOLDINGS/chaski",
+          "score": 0.466,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-598c3321-RadiantSable — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-598c3321-RadiantSable",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet — text-to-image",
-          "url": "https://huggingface.co/Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
-          "url": "https://huggingface.co/papers/2608.15763",
-          "score": 0.452,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -142,82 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-29T16:00:09+00:00",
-      "updatedAt": "2026-08-29T16:00:09+00:00",
+      "publishedAt": "2026-08-29T19:03:31+00:00",
+      "updatedAt": "2026-08-29T19:03:31+00:00",
       "sortOrder": 1
     },
     {
-      "id": "arabic-story-generation",
-      "title_ar": "تطوير نماذج لتوليد القصص باللغة العربية",
-      "thesis_ar": "تزايد الطلب على المحتوى العربي المبتكر يتطلب نماذج قادرة على توليد قصص مميزة. هذه النماذج يمكن أن تلبي احتياجات الكتاب والمبدعين العرب.",
-      "buyer_ar": "دور النشر والشركات الإعلامية",
-      "sellable_product_ar": "نموذج توليد قصص باللغة العربية",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد قصة قصيرة باللغة العربية",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة تطوير، أدوات تحليل النصوص",
-      "capital_ar": "منخفض",
+      "id": "feature-extraction-tools",
+      "title_ar": "تطوير أدوات استخراج الميزات",
+      "thesis_ar": "الحاجة المتزايدة لاستخراج الميزات من البيانات الكبيرة تفتح المجال لتطوير أدوات جديدة. التقدم في نماذج التعلم الآلي يعزز من هذه الفرصة.",
+      "buyer_ar": "شركات تحليل البيانات",
+      "sellable_product_ar": "أداة استخراج ميزات مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لاستخراج الميزات من مجموعة بيانات صغيرة",
+      "tools_ar": "Hugging Face, Scikit-learn, Pandas",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "Ruqiya/ruqlm",
-        "Evanroubert/Armenian-SmolLlama-116M-Instruct",
-        "wangzhang/Qwen3.8-27B-abliteratex"
+        "huggingface_models:Anbeeld/Kimi-K2.5-DFlash-GGUF",
+        "huggingface_models:azampatti/Qwen3.5-122B-A7B-Int4",
+        "huggingface_models:musatur/Alpona-1.0-9B-v3"
       ],
-      "confidence": 0.6,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "wangzhang/Qwen3.6-27B-abliterated — image-text-to-text",
-          "url": "https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated",
-          "score": 0.475,
+          "title": "Anbeeld/Kimi-K2.5-DFlash-GGUF — feature-extraction",
+          "url": "https://huggingface.co/Anbeeld/Kimi-K2.5-DFlash-GGUF",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "wangzhang/Qwen3.6-27B-abliterated-v1 — image-text-to-text",
-          "url": "https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated-v1",
-          "score": 0.475,
+          "title": "azampatti/Qwen3.5-122B-A7B-Int4 — text-generation",
+          "url": "https://huggingface.co/azampatti/Qwen3.5-122B-A7B-Int4",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mju75/tereza-lora-weights — text-to-image",
-          "url": "https://huggingface.co/mju75/tereza-lora-weights",
-          "score": 0.472,
+          "title": "musatur/Alpona-1.0-9B-v3 — text-generation",
+          "url": "https://huggingface.co/musatur/Alpona-1.0-9B-v3",
+          "score": 0.466,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-598c3321-RadiantSable — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-598c3321-RadiantSable",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet — text-to-image",
-          "url": "https://huggingface.co/Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
-          "url": "https://huggingface.co/papers/2608.15763",
-          "score": 0.452,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-29T16:00:09+00:00",
-      "updatedAt": "2026-08-29T16:00:09+00:00",
+      "publishedAt": "2026-08-29T19:03:31+00:00",
+      "updatedAt": "2026-08-29T19:03:31+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-29T16:00:09+00:00",
+  "tiered_at": "2026-08-29T19:03:31+00:00",
   "free_preview_count": 3
 }
