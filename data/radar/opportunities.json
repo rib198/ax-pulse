@@ -1,39 +1,59 @@
 {
-  "generated_at": "2026-08-30T18:59:09+00:00",
+  "generated_at": "2026-08-30T22:18:06+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 827,
   "opportunities": [
     {
-      "id": "text-generation-financial-ai",
-      "title_ar": "تطوير نماذج ذكاء اصطناعي مالية",
-      "thesis_ar": "تزايد الاعتماد على نماذج الذكاء الاصطناعي في القطاع المالي يوفر فرصة كبيرة لتطوير حلول مخصصة. يمكن استخدام النماذج المتاحة لتحسين دقة التنبؤات المالية وتحليل البيانات.",
-      "buyer_ar": "البنوك والشركات المالية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل البيانات المالية والتنبؤ",
-      "first_paid_test_ar": "تقديم تحليل بيانات مالية لشركة صغيرة مقابل رسوم",
+      "id": "ai-security-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي للأمن السيبراني",
+      "thesis_ar": "تزايد الحاجة إلى حماية الأنظمة من التهديدات السيبرانية يجعل من الضروري تطوير نماذج ذكاء اصطناعي متخصصة في الأمن. التحديثات الأخيرة في نماذج مثل mastyf-guard وpenclaw تشير إلى إمكانيات كبيرة في هذا المجال.",
+      "buyer_ar": "شركات الأمن السيبراني والهيئات الحكومية",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل التهديدات وتقديم حلول أمنية",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل بيانات الأمن السيبراني لشركة صغيرة",
       "tools_ar": "Hugging Face, Python, أدوات تحليل البيانات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
-        "meridianal/FinAI",
-        "mhd-rahman/ArmanNN-Base"
+        "Rudraneel93/mastyf-guard-1.5b",
+        "audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored — text-generation",
-          "url": "https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
+          "title": "Rudraneel93/mastyf-guard-1.5b — text-generation",
+          "url": "https://huggingface.co/Rudraneel93/mastyf-guard-1.5b",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "PrinceAlhassanNasamu/tekyerema-1-native-tool — text-generation",
+          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-native-tool",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "chenyumo/moziAI-27B-MTP — text-generation",
-          "url": "https://huggingface.co/chenyumo/moziAI-27B-MTP",
+          "title": "PrinceAlhassanNasamu/tekyerema-1-tool — text-generation",
+          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-tool",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF — text-generation",
+          "url": "https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "PollardWeights/Carnice-V3-27b-Pollard — image-text-to-text",
+          "url": "https://huggingface.co/PollardWeights/Carnice-V3-27b-Pollard",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -43,27 +63,6 @@
           "url": "https://huggingface.co/skdudtj/yh3krea2",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ling277/FaceComposer — text-to-image",
-          "url": "https://huggingface.co/Ling277/FaceComposer",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "paulsizemore/lido-e14-lamp — text-to-image",
-          "url": "https://huggingface.co/paulsizemore/lido-e14-lamp",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-          "url": "https://huggingface.co/papers/2608.27455",
-          "score": 0.466,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -71,40 +70,60 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-30T18:59:09+00:00",
-      "updatedAt": "2026-08-30T18:59:09+00:00",
+      "publishedAt": "2026-08-30T22:18:06+00:00",
+      "updatedAt": "2026-08-30T22:18:06+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-creative-tools",
-      "title_ar": "أدوات تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي يفتح المجال لتطوير أدوات تحويل النص إلى صورة. يمكن استخدام النماذج المتاحة لإنشاء محتوى إبداعي مخصص.",
-      "buyer_ar": "المسوقون والمصممون",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى صور إبداعية",
-      "first_paid_test_ar": "تقديم خدمة تحويل نص إلى صورة لمشروع تسويقي",
-      "tools_ar": "Hugging Face, أدوات التصميم الجرافيكي, Python",
-      "capital_ar": "منخفض",
+      "id": "finance-ai-tools",
+      "title_ar": "أدوات الذكاء الاصطناعي في المالية",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في القطاع المالي يفتح المجال لتطوير أدوات جديدة. النماذج مثل DragonCode-Finance وFinAI تقدم فرصًا لتحسين الكفاءة في التحليل المالي.",
+      "buyer_ar": "شركات الخدمات المالية والبنوك",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل البيانات المالية وتقديم التوصيات",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل محفظة استثمارية لشركة مالية",
+      "tools_ar": "Hugging Face, Python, أدوات تحليل البيانات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "skdudtj/yh3krea2",
-        "Ling277/FaceComposer",
-        "paulsizemore/lido-e14-lamp"
+        "dragonlimited/DragonCode-Finance-14B",
+        "meridianal/FinAI"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored — text-generation",
-          "url": "https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
+          "title": "Rudraneel93/mastyf-guard-1.5b — text-generation",
+          "url": "https://huggingface.co/Rudraneel93/mastyf-guard-1.5b",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "PrinceAlhassanNasamu/tekyerema-1-native-tool — text-generation",
+          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-native-tool",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "chenyumo/moziAI-27B-MTP — text-generation",
-          "url": "https://huggingface.co/chenyumo/moziAI-27B-MTP",
+          "title": "PrinceAlhassanNasamu/tekyerema-1-tool — text-generation",
+          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-tool",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF — text-generation",
+          "url": "https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "PollardWeights/Carnice-V3-27b-Pollard — image-text-to-text",
+          "url": "https://huggingface.co/PollardWeights/Carnice-V3-27b-Pollard",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -114,27 +133,6 @@
           "url": "https://huggingface.co/skdudtj/yh3krea2",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ling277/FaceComposer — text-to-image",
-          "url": "https://huggingface.co/Ling277/FaceComposer",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "paulsizemore/lido-e14-lamp — text-to-image",
-          "url": "https://huggingface.co/paulsizemore/lido-e14-lamp",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-          "url": "https://huggingface.co/papers/2608.27455",
-          "score": 0.466,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -142,40 +140,60 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-30T18:59:09+00:00",
-      "updatedAt": "2026-08-30T18:59:09+00:00",
+      "publishedAt": "2026-08-30T22:18:06+00:00",
+      "updatedAt": "2026-08-30T22:18:06+00:00",
       "sortOrder": 1
     },
     {
       "id": "image-text-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي للنصوص والصور",
-      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في معالجة النصوص والصور يوفر فرصة لتطوير حلول مبتكرة. يمكن دمج النماذج المتاحة لإنشاء تطبيقات جديدة.",
-      "buyer_ar": "الشركات التقنية والمبدعون",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي يجمع بين النص والصورة",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق يجمع بين النص والصورة",
-      "tools_ar": "Hugging Face, أدوات تطوير التطبيقات, Python",
-      "capital_ar": "متوسط",
+      "title_ar": "حلول الذكاء الاصطناعي لتحويل الصور إلى نصوص",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في معالجة الصور والنصوص يوفر فرصًا جديدة. النماذج مثل Carnice-V3 وpaligemma تشير إلى إمكانية تطوير تطبيقات مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحويل الصور إلى نصوص وتحليل المحتوى",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل مجموعة من الصور إلى نصوص لشركة ناشئة",
+      "tools_ar": "Hugging Face, Python, أدوات معالجة الصور",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
-        "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF",
-        "peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF"
+        "PollardWeights/Carnice-V3-27b-Pollard",
+        "lamao-ab/paligemma-blind-assist-lora-merged-v1"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored — text-generation",
-          "url": "https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
+          "title": "Rudraneel93/mastyf-guard-1.5b — text-generation",
+          "url": "https://huggingface.co/Rudraneel93/mastyf-guard-1.5b",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "PrinceAlhassanNasamu/tekyerema-1-native-tool — text-generation",
+          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-native-tool",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "chenyumo/moziAI-27B-MTP — text-generation",
-          "url": "https://huggingface.co/chenyumo/moziAI-27B-MTP",
+          "title": "PrinceAlhassanNasamu/tekyerema-1-tool — text-generation",
+          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-tool",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF — text-generation",
+          "url": "https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "PollardWeights/Carnice-V3-27b-Pollard — image-text-to-text",
+          "url": "https://huggingface.co/PollardWeights/Carnice-V3-27b-Pollard",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -185,27 +203,6 @@
           "url": "https://huggingface.co/skdudtj/yh3krea2",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Ling277/FaceComposer — text-to-image",
-          "url": "https://huggingface.co/Ling277/FaceComposer",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "paulsizemore/lido-e14-lamp — text-to-image",
-          "url": "https://huggingface.co/paulsizemore/lido-e14-lamp",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-          "url": "https://huggingface.co/papers/2608.27455",
-          "score": 0.466,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -213,11 +210,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-30T18:59:09+00:00",
-      "updatedAt": "2026-08-30T18:59:09+00:00",
+      "publishedAt": "2026-08-30T22:18:06+00:00",
+      "updatedAt": "2026-08-30T22:18:06+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-30T18:59:09+00:00",
+  "tiered_at": "2026-08-30T22:18:06+00:00",
   "free_preview_count": 3
 }
