@@ -1,69 +1,48 @@
 {
-  "generated_at": "2026-08-31T02:28:58+00:00",
+  "generated_at": "2026-08-31T10:18:57+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 759,
+  "corpus_count": 826,
   "opportunities": [
     {
-      "id": "context-management-llm",
-      "title_ar": "إدارة السياق باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد الحاجة لإدارة السياق بشكل استباقي في التفاعلات متعددة الأدوار. يمكن أن توفر نماذج اللغة الكبيرة حلولاً مبتكرة لتحسين تجربة المستخدم.",
-      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
-      "sellable_product_ar": "أداة لإدارة السياق في التطبيقات الذكية",
-      "first_paid_test_ar": "تطوير نموذج أولي بسيط لإدارة السياق في تطبيق محادثة",
-      "tools_ar": "نماذج اللغة الكبيرة، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "multi-turn-tool-calling-agents",
+      "title_ar": "تطوير وكلاء ذكيين متعددين الأدوار",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في بناء وكلاء ذكيين يتطلب تحسين قدرات استدعاء الأدوات. هذه فرصة لتطوير حلول مبتكرة في هذا المجال، خاصة مع تقدم الأبحاث في هذا الاتجاه.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نظام وكيل ذكي متعدد الأدوار",
+      "first_paid_test_ar": "تقديم نموذج أولي لوكيل ذكي في بيئة تجريبية",
+      "tools_ar": "أدوات الذكاء الاصطناعي، بيئة تطوير، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "2608.28476",
-        "2608.27549",
-        "2608.28478"
+        "huggingface_daily_papers:2608.18524",
+        "huggingface_daily_papers:2608.28122",
+        "huggingface_daily_papers:2608.24804"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
-          "url": "https://huggingface.co/papers/2608.28476",
-          "score": 0.514,
+          "title": "DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents",
+          "url": "https://huggingface.co/papers/2608.18524",
+          "score": 0.552,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "LMSM: LLM Security Framework Inspired by Linux Security Modules",
-          "url": "https://huggingface.co/papers/2608.25697",
-          "score": 0.489,
+          "title": "Agentic Artifact Creation: Systems, Evaluation, Principles, and Opportunities",
+          "url": "https://huggingface.co/papers/2608.28122",
+          "score": 0.484,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF — text-generation",
-          "url": "https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "shreyansh12183/olmo2-7b-silicon-rtl-eda — text-generation",
-          "url": "https://huggingface.co/shreyansh12183/olmo2-7b-silicon-rtl-eda",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "PrinceAlhassanNasamu/tekyerema-1-native-tool — text-generation",
-          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-native-tool",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "PrinceAlhassanNasamu/tekyerema-1-tool — text-generation",
-          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-tool",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "StarHarness: Evolving Harnesses with Stratified Search for Enterprise Environments",
+          "url": "https://huggingface.co/papers/2608.24804",
+          "score": 0.474,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -71,70 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-31T02:28:58+00:00",
-      "updatedAt": "2026-08-31T02:28:58+00:00",
+      "publishedAt": "2026-08-31T10:18:57+00:00",
+      "updatedAt": "2026-08-31T10:18:57+00:00",
       "sortOrder": 0
     },
     {
-      "id": "security-framework-llm",
-      "title_ar": "إطار أمان لنماذج اللغة الكبيرة",
-      "thesis_ar": "مع تزايد استخدام نماذج اللغة الكبيرة، تزداد الحاجة إلى أطر أمان فعالة. يمكن أن توفر هذه الحلول حماية ضد الهجمات الضارة.",
-      "buyer_ar": "شركات التكنولوجيا والأمن السيبراني",
-      "sellable_product_ar": "إطار أمان مخصص لنماذج اللغة الكبيرة",
-      "first_paid_test_ar": "تطوير نموذج أولي لاختبار أمان نموذج لغة محدد",
-      "tools_ar": "أدوات تحليل الأمان، نماذج اللغة الكبيرة، تقنيات التعلم الآلي",
-      "capital_ar": "متوسط",
+      "id": "image-text-to-text-solutions",
+      "title_ar": "حلول تحويل النصوص والصور",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النصوص والصور يفتح آفاقًا جديدة لتطوير تطبيقات مبتكرة. يمكن استغلال هذه التكنولوجيا في مجالات متعددة مثل التعليم والتسويق.",
+      "buyer_ar": "شركات التعليم والتسويق",
+      "sellable_product_ar": "تطبيق تحويل النصوص إلى صور والعكس",
+      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط",
+      "tools_ar": "نماذج تحويل، أدوات تطوير، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.25697",
-        "2608.27549",
-        "2608.28478"
+        "huggingface_models:KartiOS/Karti-Small-VL-4B-NVFP4",
+        "huggingface_models:KartiOS/Karti-Small-VL-4B",
+        "huggingface_daily_papers:2608.28122"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "huggingface_models",
+          "title": "KartiOS/Karti-Small-VL-4B-NVFP4 — image-text-to-text",
+          "url": "https://huggingface.co/KartiOS/Karti-Small-VL-4B-NVFP4",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "KartiOS/Karti-Small-VL-4B — image-text-to-text",
+          "url": "https://huggingface.co/KartiOS/Karti-Small-VL-4B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
           "source_id": "huggingface_daily_papers",
-          "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
-          "url": "https://huggingface.co/papers/2608.28476",
-          "score": 0.514,
+          "title": "Agentic Artifact Creation: Systems, Evaluation, Principles, and Opportunities",
+          "url": "https://huggingface.co/papers/2608.28122",
+          "score": 0.484,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LMSM: LLM Security Framework Inspired by Linux Security Modules",
-          "url": "https://huggingface.co/papers/2608.25697",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF — text-generation",
-          "url": "https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "shreyansh12183/olmo2-7b-silicon-rtl-eda — text-generation",
-          "url": "https://huggingface.co/shreyansh12183/olmo2-7b-silicon-rtl-eda",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "PrinceAlhassanNasamu/tekyerema-1-native-tool — text-generation",
-          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-native-tool",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "PrinceAlhassanNasamu/tekyerema-1-tool — text-generation",
-          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-tool",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,70 +100,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-31T02:28:58+00:00",
-      "updatedAt": "2026-08-31T02:28:58+00:00",
+      "publishedAt": "2026-08-31T10:18:57+00:00",
+      "updatedAt": "2026-08-31T10:18:57+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multimodal-llm-applications",
-      "title_ar": "تطبيقات متعددة الوسائط باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد الاهتمام في دمج النصوص والصور لتحسين التفاعل. يمكن أن تفتح هذه التطبيقات آفاق جديدة في مجالات متعددة.",
-      "buyer_ar": "شركات الإعلام والتسويق",
-      "sellable_product_ar": "تطبيقات تفاعلية متعددة الوسائط",
-      "first_paid_test_ar": "إنشاء نموذج أولي لتطبيق تفاعلي يجمع بين النص والصورة",
-      "tools_ar": "نماذج اللغة الكبيرة، أدوات التصميم، تقنيات التعلم العميق",
+      "id": "text-to-image-generative-models",
+      "title_ar": "نماذج توليد الصور من النصوص",
+      "thesis_ar": "تزايد الاعتماد على نماذج تحويل النصوص إلى صور يعكس الطلب المتزايد على المحتوى المرئي. يمكن تقديم خدمات جديدة في مجالات الفن والتصميم.",
+      "buyer_ar": "شركات التصميم والفنون",
+      "sellable_product_ar": "نظام توليد صور من نصوص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد صورة من نص محدد",
+      "tools_ar": "نماذج توليد، أدوات تطوير، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "2608.27549",
-        "2608.28476",
-        "2608.28478"
+        "huggingface_models:lynaNSFW/DaSiWa_MiniMax_H3",
+        "huggingface_models:Kinimoro/Wat.E",
+        "huggingface_daily_papers:2608.28122"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "huggingface_models",
+          "title": "lynaNSFW/DaSiWa_MiniMax_H3 — text-to-image",
+          "url": "https://huggingface.co/lynaNSFW/DaSiWa_MiniMax_H3",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Kinimoro/Wat.E — text-to-image",
+          "url": "https://huggingface.co/Kinimoro/Wat.E",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
           "source_id": "huggingface_daily_papers",
-          "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
-          "url": "https://huggingface.co/papers/2608.28476",
-          "score": 0.514,
+          "title": "Agentic Artifact Creation: Systems, Evaluation, Principles, and Opportunities",
+          "url": "https://huggingface.co/papers/2608.28122",
+          "score": 0.484,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LMSM: LLM Security Framework Inspired by Linux Security Modules",
-          "url": "https://huggingface.co/papers/2608.25697",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF — text-generation",
-          "url": "https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "shreyansh12183/olmo2-7b-silicon-rtl-eda — text-generation",
-          "url": "https://huggingface.co/shreyansh12183/olmo2-7b-silicon-rtl-eda",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "PrinceAlhassanNasamu/tekyerema-1-native-tool — text-generation",
-          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-native-tool",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "PrinceAlhassanNasamu/tekyerema-1-tool — text-generation",
-          "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-1-tool",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -213,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-08-31T02:28:58+00:00",
-      "updatedAt": "2026-08-31T02:28:58+00:00",
+      "publishedAt": "2026-08-31T10:18:57+00:00",
+      "updatedAt": "2026-08-31T10:18:57+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-08-31T02:28:58+00:00",
+  "tiered_at": "2026-08-31T10:18:57+00:00",
   "free_preview_count": 3
 }
