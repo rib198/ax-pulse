@@ -1,56 +1,67 @@
 {
-  "generated_at": "2026-09-01T22:15:24+00:00",
+  "generated_at": "2026-09-02T01:54:09+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 824,
+  "corpus_count": 823,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "مع تزايد الطلب على المحتوى البصري، يمكن استخدام نماذج تحويل النص إلى صورة لتلبية احتياجات السوق. التحديثات المستمرة لهذه النماذج تشير إلى تحسينات كبيرة في الجودة والأداء.",
-      "buyer_ar": "وكالات التسويق، شركات الإنتاج الإعلامي",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، مكتبات معالجة الصور",
-      "capital_ar": "منخفض",
+      "id": "automated-pathology-diagnosis",
+      "title_ar": "تشخيص آلي للأمراض باستخدام نماذج الرؤية واللغة",
+      "thesis_ar": "تقدم نماذج الرؤية واللغة إمكانيات كبيرة في تحسين دقة تشخيص الأمراض. مع تزايد الحاجة إلى تحسين كفاءة قطاع الصحة، فإن هذا الحل يمكن أن يوفر وقتًا وجهدًا كبيرين.",
+      "buyer_ar": "المستشفيات ومراكز التشخيص",
+      "sellable_product_ar": "نظام تشخيص آلي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطبيق النظام على مجموعة بيانات صغيرة من الصور الطبية",
+      "tools_ar": "نماذج تعلم الآلة، أدوات تحليل البيانات، برمجيات معالجة الصور",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Hoho76/Me1",
-        "huggingface_models:cyberval/art1",
-        "huggingface_models:ericzayya/maynankhaung-krea2",
-        "huggingface_daily_papers:2608.29847"
+        "arxiv_papers:2609.00866"
       ],
-      "confidence": 0.7,
+      "confidence": 0.6,
       "source": "openai",
-      "signal_count": 4,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "Hoho76/Me1 — text-to-image",
-          "url": "https://huggingface.co/Hoho76/Me1",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "cyberval/art1 — text-to-image",
-          "url": "https://huggingface.co/cyberval/art1",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ericzayya/maynankhaung-krea2 — text-to-image",
-          "url": "https://huggingface.co/ericzayya/maynankhaung-krea2",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "VERA: Authority-Preserving Edge Revocation for Federated AI-Agent Workflows",
+          "url": "http://arxiv.org/abs/2608.30091v1",
+          "score": 0.497,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "ContextBias: Controlled Evaluation of Bias Persistence Under Context Shift in Text-to-Image Models",
-          "url": "https://huggingface.co/papers/2608.29847",
-          "score": 0.487,
+          "title": "The Mechanics of Democratic Dominance: A System Dynamics Paradigm for Dynamic Consent Engineering",
+          "url": "https://huggingface.co/papers/2608.27509",
+          "score": 0.495,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Reliable LLM-Generated Programs for High-Energy Physics Experiments through Graph-Grounded Software Knowledge",
+          "url": "http://arxiv.org/abs/2609.01095v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "WiseSpec: Requirements-Driven Agents for Code Generation",
+          "url": "http://arxiv.org/abs/2609.00568v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Space Generative AI with Solar Energy Harvesting",
+          "url": "http://arxiv.org/abs/2609.01062v1",
+          "score": 0.477,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Plana-Chan/one-obsession-nswf-v10nswf-sdxl — text-to-image",
+          "url": "https://huggingface.co/Plana-Chan/one-obsession-nswf-v10nswf-sdxl",
+          "score": 0.475,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -58,49 +69,68 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-01T22:15:24+00:00",
-      "updatedAt": "2026-09-01T22:15:24+00:00",
+      "publishedAt": "2026-09-02T01:54:09+00:00",
+      "updatedAt": "2026-09-02T01:54:09+00:00",
       "sortOrder": 0
     },
     {
-      "id": "federated-ai-agent-workflows",
-      "title_ar": "تطوير حلول للذكاء الاصطناعي الفيدرالي",
-      "thesis_ar": "تزايد الحاجة إلى أنظمة ذكاء اصطناعي يمكنها العمل بشكل مستقل مع الحفاظ على الخصوصية. توفر الأبحاث الحالية فرصًا لتطوير حلول مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات التقنية، المؤسسات الحكومية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي فيدرالي مخصص",
-      "first_paid_test_ar": "تطوير نموذج أولي لنظام بسيط مع واجهة مستخدم",
-      "tools_ar": "أدوات تطوير البرمجيات، مكتبات الذكاء الاصطناعي، بيئات الاختبار",
-      "capital_ar": "متوسط",
+      "id": "code-generation-agents",
+      "title_ar": "تطوير وكلاء لتوليد الأكواد بناءً على المتطلبات",
+      "thesis_ar": "مع تزايد الحاجة إلى أتمتة تطوير البرمجيات، فإن إنشاء وكلاء قادرين على توليد الأكواد يمكن أن يوفر الوقت والجهد للمطورين. هذا الحل يواكب الاتجاهات الحالية في الذكاء الاصطناعي.",
+      "buyer_ar": "شركات تطوير البرمجيات والمطورون المستقلون",
+      "sellable_product_ar": "أداة لتوليد الأكواد تلقائيًا",
+      "first_paid_test_ar": "تطوير نموذج أولي لتوليد أكواد بسيطة",
+      "tools_ar": "أدوات البرمجة، مكتبات الذكاء الاصطناعي، بيئات تطوير متكاملة",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2608.30091v1",
-        "huggingface_daily_papers:2608.29310",
-        "huggingface_daily_papers:2608.29464"
+        "arxiv_papers:2609.00568"
       ],
       "confidence": 0.6,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "VERA: Authority-Preserving Edge Revocation for Federated AI-Agent Workflows",
           "url": "http://arxiv.org/abs/2608.30091v1",
-          "score": 0.496,
+          "score": 0.497,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Super Library Agent: Joint Generation and Maintenance of Multiple Applications Beyond the Single Codebase",
-          "url": "https://huggingface.co/papers/2608.29310",
-          "score": 0.486,
+          "title": "The Mechanics of Democratic Dominance: A System Dynamics Paradigm for Dynamic Consent Engineering",
+          "url": "https://huggingface.co/papers/2608.27509",
+          "score": 0.495,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Chain-of-Thought Faithfulness of Reasoning Models Varies with Where and How Preference Cues Are Delivered",
-          "url": "https://huggingface.co/papers/2608.29464",
-          "score": 0.47,
+          "source_id": "arxiv_papers",
+          "title": "Reliable LLM-Generated Programs for High-Energy Physics Experiments through Graph-Grounded Software Knowledge",
+          "url": "http://arxiv.org/abs/2609.01095v1",
+          "score": 0.492,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "WiseSpec: Requirements-Driven Agents for Code Generation",
+          "url": "http://arxiv.org/abs/2609.00568v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Space Generative AI with Solar Energy Harvesting",
+          "url": "http://arxiv.org/abs/2609.01062v1",
+          "score": 0.477,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Plana-Chan/one-obsession-nswf-v10nswf-sdxl — text-to-image",
+          "url": "https://huggingface.co/Plana-Chan/one-obsession-nswf-v10nswf-sdxl",
+          "score": 0.475,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -108,11 +138,80 @@
       "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-01T22:15:24+00:00",
-      "updatedAt": "2026-09-01T22:15:24+00:00",
+      "publishedAt": "2026-09-02T01:54:09+00:00",
+      "updatedAt": "2026-09-02T01:54:09+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "federated-ai-agent-workflows",
+      "title_ar": "تطوير واجهات برمجة تطبيقات لإلغاء تفويض الوكلاء في الذكاء الاصطناعي الفيدرالي",
+      "thesis_ar": "مع تزايد استخدام الوكلاء الذكيين، فإن الحاجة إلى أنظمة موثوقة لإدارة التفويضات وإلغائها أصبحت ملحة. هذا الحل يمكن أن يحسن من أمان وكفاءة الأنظمة.",
+      "buyer_ar": "شركات التكنولوجيا والمطورون",
+      "sellable_product_ar": "نظام لإدارة التفويضات في الوكلاء الذكيين",
+      "first_paid_test_ar": "تطبيق النظام على مشروع تجريبي",
+      "tools_ar": "أدوات تطوير البرمجيات، مكتبات الذكاء الاصطناعي، أدوات اختبار البرمجيات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "arxiv_papers:2608.30091"
+      ],
+      "confidence": 0.5,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "VERA: Authority-Preserving Edge Revocation for Federated AI-Agent Workflows",
+          "url": "http://arxiv.org/abs/2608.30091v1",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "The Mechanics of Democratic Dominance: A System Dynamics Paradigm for Dynamic Consent Engineering",
+          "url": "https://huggingface.co/papers/2608.27509",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Reliable LLM-Generated Programs for High-Energy Physics Experiments through Graph-Grounded Software Knowledge",
+          "url": "http://arxiv.org/abs/2609.01095v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "WiseSpec: Requirements-Driven Agents for Code Generation",
+          "url": "http://arxiv.org/abs/2609.00568v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Space Generative AI with Solar Energy Harvesting",
+          "url": "http://arxiv.org/abs/2609.01062v1",
+          "score": 0.477,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Plana-Chan/one-obsession-nswf-v10nswf-sdxl — text-to-image",
+          "url": "https://huggingface.co/Plana-Chan/one-obsession-nswf-v10nswf-sdxl",
+          "score": 0.475,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-02T01:54:09+00:00",
+      "updatedAt": "2026-09-02T01:54:09+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-01T22:15:24+00:00",
+  "tiered_at": "2026-09-02T01:54:09+00:00",
   "free_preview_count": 3
 }
