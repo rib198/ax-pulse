@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-02T06:38:25+00:00",
+  "generated_at": "2026-09-02T12:27:13+00:00",
   "note_ar": "أحداث مستخرجة من الإشارات تلقائيًا. كل حدث مدعوم بـ ≥ 2 إشارة أو إشارة من مصدر رسمي.",
-  "count": 15,
+  "count": 17,
   "events": [
     {
       "id": "evt_anthropic_pricing_change_2026_09_02",
@@ -16,7 +16,7 @@
       "evidence_count": 4,
       "confidence": 1.0,
       "first_seen": "Mon, 20 Jul 2026 16:05:16 GMT",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -71,7 +71,7 @@
       "evidence_count": 3,
       "confidence": 1.0,
       "first_seen": "Sun, 19 Jul 2026 09:20:20 GMT",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -117,7 +117,7 @@
       "evidence_count": 3,
       "confidence": 1.0,
       "first_seen": "Tue, 07 Jul 2026 08:54:00 +0000",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -163,7 +163,7 @@
       "evidence_count": 3,
       "confidence": 1.0,
       "first_seen": "Fri, 28 Aug 2026 06:00:00 GMT",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "premium",
       "evidence": [
@@ -209,7 +209,7 @@
       "evidence_count": 3,
       "confidence": 0.85,
       "first_seen": "Thu, 21 May 2026 15:15:13 GMT",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -255,8 +255,8 @@
       "evidence_count": 2,
       "confidence": 0.85,
       "first_seen": "2026-09-01T16:17:18Z",
-      "last_updated": "2026-09-02T06:38:25+00:00",
-      "is_new": true,
+      "last_updated": "2026-09-02T12:27:13+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -292,8 +292,8 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-09-01T14:27:24Z",
-      "last_updated": "2026-09-02T06:38:25+00:00",
-      "is_new": true,
+      "last_updated": "2026-09-02T12:27:13+00:00",
+      "is_new": false,
       "tier": "free",
       "evidence": [
         {
@@ -308,30 +308,58 @@
       ]
     },
     {
-      "id": "evt_claude_model_release_claude_2026_09_01",
-      "type": "model_release",
-      "icon": "⊕",
-      "subject": "claude",
-      "family": "claude",
-      "title_ar": "إصدار نموذج: claude",
-      "title_en": "Model release: claude",
-      "label_ar": "إصدار نموذج",
-      "label_en": "Model release",
+      "id": "evt_mistral_acquisition_2026_09_02",
+      "type": "acquisition",
+      "icon": "⊗",
+      "subject": "mistral",
+      "family": null,
+      "title_ar": "استحواذ: mistral",
+      "title_en": "Acquisition: mistral",
+      "label_ar": "استحواذ",
+      "label_en": "Acquisition",
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
-      "first_seen": "2026-09-01T08:01:27Z",
-      "last_updated": "2026-09-02T06:38:25+00:00",
-      "is_new": false,
+      "first_seen": "2026-09-02T10:14:36.000Z",
+      "last_updated": "2026-09-02T12:27:13+00:00",
+      "is_new": true,
+      "tier": "premium",
+      "evidence": [
+        {
+          "id": "huggingface_models:exo-jhop/ministral3-eu-compliance-merged",
+          "source_id": "huggingface_models",
+          "source_name": "Hugging Face multimodal models",
+          "title": "exo-jhop/ministral3-eu-compliance-merged — image-text-to-text",
+          "url": "https://huggingface.co/exo-jhop/ministral3-eu-compliance-merged",
+          "trust_tier": "official",
+          "posted_at": "2026-09-02T10:14:36.000Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_mistral_policy_signal_2026_09_02",
+      "type": "policy_signal",
+      "icon": "§",
+      "subject": "mistral",
+      "family": null,
+      "title_ar": "إشارة تنظيمية: mistral",
+      "title_en": "Policy signal: mistral",
+      "label_ar": "إشارة تنظيمية",
+      "label_en": "Policy signal",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-09-02T10:14:36.000Z",
+      "last_updated": "2026-09-02T12:27:13+00:00",
+      "is_new": true,
       "tier": "free",
       "evidence": [
         {
-          "id": "arxiv_papers:2609.00865v1",
-          "source_id": "arxiv_papers",
-          "source_name": "arXiv Open Source LLMs",
-          "title": "MemoryWalker: Stop Training Agents on Contexts They Never Saw",
-          "url": "http://arxiv.org/abs/2609.00865v1",
-          "trust_tier": "research",
-          "posted_at": "2026-09-01T08:01:27Z"
+          "id": "huggingface_models:exo-jhop/ministral3-eu-compliance-merged",
+          "source_id": "huggingface_models",
+          "source_name": "Hugging Face multimodal models",
+          "title": "exo-jhop/ministral3-eu-compliance-merged — image-text-to-text",
+          "url": "https://huggingface.co/exo-jhop/ministral3-eu-compliance-merged",
+          "trust_tier": "official",
+          "posted_at": "2026-09-02T10:14:36.000Z"
         }
       ]
     },
@@ -348,7 +376,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-31T10:47:29Z",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -376,7 +404,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-30T19:31:35Z",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -404,7 +432,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-30T19:31:35Z",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -416,6 +444,34 @@
           "url": "http://arxiv.org/abs/2608.29990v1",
           "trust_tier": "research",
           "posted_at": "2026-08-30T19:31:35Z"
+        }
+      ]
+    },
+    {
+      "id": "evt_claude_model_release_claude_2026_09_01",
+      "type": "model_release",
+      "icon": "⊕",
+      "subject": "claude",
+      "family": "claude",
+      "title_ar": "إصدار نموذج: claude",
+      "title_en": "Model release: claude",
+      "label_ar": "إصدار نموذج",
+      "label_en": "Model release",
+      "evidence_count": 1,
+      "confidence": 0.7000000000000001,
+      "first_seen": "2026-09-01T08:01:27Z",
+      "last_updated": "2026-09-02T12:27:13+00:00",
+      "is_new": false,
+      "tier": "free",
+      "evidence": [
+        {
+          "id": "arxiv_papers:2609.00865v1",
+          "source_id": "arxiv_papers",
+          "source_name": "arXiv Open Source LLMs",
+          "title": "MemoryWalker: Stop Training Agents on Contexts They Never Saw",
+          "url": "http://arxiv.org/abs/2609.00865v1",
+          "trust_tier": "research",
+          "posted_at": "2026-09-01T08:01:27Z"
         }
       ]
     },
@@ -432,7 +488,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "Fri, 14 Aug 2026 16:00:00 +0000",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -460,7 +516,7 @@
       "evidence_count": 1,
       "confidence": 0.7000000000000001,
       "first_seen": "2026-08-24T07:24:04Z",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -488,7 +544,7 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Thu, 11 Jun 2026 21:37:59 GMT",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
@@ -525,7 +581,7 @@
       "evidence_count": 2,
       "confidence": 0.7,
       "first_seen": "Sun, 19 Jul 2026 10:25:06 GMT",
-      "last_updated": "2026-09-02T06:38:25+00:00",
+      "last_updated": "2026-09-02T12:27:13+00:00",
       "is_new": false,
       "tier": "free",
       "evidence": [
