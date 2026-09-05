@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-05T21:51:30+00:00",
+  "generated_at": "2026-09-05T23:31:50+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 841,
+  "corpus_count": 833,
   "opportunities": [
     {
-      "id": "ai-agents-standardization",
-      "title_ar": "توحيد بروتوكولات تفاعل الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام وكلاء الذكاء الاصطناعي يتطلب بروتوكولات موحدة لتحسين التفاعل بين الأنظمة المختلفة. هذا الوقت مناسب لتطوير حلول تضمن تكامل هذه الأنظمة بشكل فعال.",
-      "buyer_ar": "الشركات التي تستخدم الذكاء الاصطناعي",
-      "sellable_product_ar": "خدمات استشارية لتطوير بروتوكولات تفاعل موحدة",
-      "first_paid_test_ar": "تقديم استشارة مجانية لمشروع تجريبي",
-      "tools_ar": "أدوات تحليل البيانات، برمجيات تطوير البرمجيات، منصات اختبار",
+      "id": "text-to-image-solutions",
+      "title_ar": "حلول تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يعكس الحاجة المتزايدة للإبداع الرقمي. يمكن استغلال ذلك من خلال تقديم خدمات تصميم مخصصة.",
+      "buyer_ar": "المصممون، وكالات التسويق، الشركات الإبداعية",
+      "sellable_product_ar": "خدمات تحويل النص إلى صورة باستخدام نماذج متقدمة",
+      "first_paid_test_ar": "تقديم مشروع تجريبي لتحويل نص إلى صورة",
+      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات التصميم، منصات تطوير التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2609.04135v1",
-        "huggingface_daily_papers:2609.03874v1",
-        "huggingface_daily_papers:2608.26730"
+        "RandomFrontlines/Orenis-3B-Light-Max",
+        "cirza/ria",
+        "Keltezaa/Copax"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
@@ -31,41 +31,12 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Knowing When Not to Reuse: Conditional Experience Transfer in Autonomous LLM Post-Training",
-          "url": "https://huggingface.co/papers/2608.26730",
-          "score": 0.48,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-05T21:51:30+00:00",
-      "updatedAt": "2026-09-05T21:51:30+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى البصري المدعوم بالذكاء الاصطناعي يفتح المجال لتطوير نماذج تحويل النص إلى صورة. هذه فرصة لتلبية احتياجات السوق المتزايدة في هذا المجال.",
-      "buyer_ar": "الوكالات الإبداعية، الشركات الإعلامية",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني لمشروع صغير",
-      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، مكتبات التعلم العميق، منصات الحوسبة السحابية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:cirza/ria",
-        "huggingface_models:Keltezaa/Copax",
-        "huggingface_models:cirza/rand"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
+          "source_id": "huggingface_models",
+          "title": "RandomFrontlines/Orenis-3B-Light-Max — text-generation",
+          "url": "https://huggingface.co/RandomFrontlines/Orenis-3B-Light-Max",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "cirza/ria — text-to-image",
@@ -86,48 +57,12 @@
           "url": "https://huggingface.co/cirza/rand",
           "score": 0.488,
           "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-05T21:51:30+00:00",
-      "updatedAt": "2026-09-05T21:51:30+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "multimodal-3d-models",
-      "title_ar": "تطوير نماذج متعددة الوسائط لفهم العالم ثلاثي الأبعاد",
-      "thesis_ar": "تزايد الحاجة لفهم العالم ثلاثي الأبعاد يتطلب نماذج قادرة على دمج البيانات المكانية. هذا الوقت مناسب لتطوير حلول مبتكرة تلبي هذه الحاجة.",
-      "buyer_ar": "شركات الألعاب، شركات الواقع الافتراضي",
-      "sellable_product_ar": "نموذج ثلاثي الأبعاد لفهم البيانات المكانية",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لمشروع صغير",
-      "tools_ar": "أدوات النمذجة ثلاثية الأبعاد، مكتبات التعلم العميق، منصات الحوسبة السحابية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2609.04196",
-        "huggingface_daily_papers:2609.04201",
-        "huggingface_daily_papers:2609.03892v1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
-          "url": "https://huggingface.co/papers/2609.04196",
-          "score": 0.48,
-          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
-          "url": "https://huggingface.co/papers/2609.04201",
-          "score": 0.474,
+          "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+          "url": "https://huggingface.co/papers/2609.04199",
+          "score": 0.486,
           "trust_tier": "research"
         }
       ],
@@ -136,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-05T21:51:30+00:00",
-      "updatedAt": "2026-09-05T21:51:30+00:00",
+      "publishedAt": "2026-09-05T23:31:50+00:00",
+      "updatedAt": "2026-09-05T23:31:50+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "streaming-video-understanding",
+      "title_ar": "تحليل الفيديو المباشر باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام الفيديو المباشر في مختلف المجالات يتطلب حلولًا لفهم المحتوى بشكل أفضل. هذه فرصة لتطوير نماذج قادرة على تحليل الفيديو في الوقت الفعلي.",
+      "buyer_ar": "شركات الإعلام والترفيه، منصات البث",
+      "sellable_product_ar": "خدمات تحليل الفيديو المباشر باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تحليل فيديو تجريبي لعميل محتمل",
+      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات معالجة الفيديو، بيئات التطوير",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2609.04131",
+        "2609.04201",
+        "2608.29253"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "The Natural Language Interaction Protocol and Standard for AI Agents",
+          "url": "http://arxiv.org/abs/2609.04135v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "RandomFrontlines/Orenis-3B-Light-Max — text-generation",
+          "url": "https://huggingface.co/RandomFrontlines/Orenis-3B-Light-Max",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "cirza/ria — text-to-image",
+          "url": "https://huggingface.co/cirza/ria",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Keltezaa/Copax — text-to-image",
+          "url": "https://huggingface.co/Keltezaa/Copax",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "cirza/rand — text-to-image",
+          "url": "https://huggingface.co/cirza/rand",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+          "url": "https://huggingface.co/papers/2609.04199",
+          "score": 0.486,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-05T23:31:50+00:00",
+      "updatedAt": "2026-09-05T23:31:50+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "ai-agents-standardization",
+      "title_ar": "توحيد بروتوكولات الذكاء الاصطناعي",
+      "thesis_ar": "تزايد استخدام الوكلاء الذكيين يتطلب بروتوكولات موحدة لتسهيل التكامل بين الأنظمة المختلفة. هذه فرصة لتطوير حلول تساعد المؤسسات على تبني هذه المعايير بشكل أسرع.",
+      "buyer_ar": "شركات التكنولوجيا والمطورون",
+      "sellable_product_ar": "خدمات استشارية لتطوير بروتوكولات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم ورشة عمل مدفوعة لتقييم احتياجات العميل",
+      "tools_ar": "أدوات تطوير البرمجيات، منصات الذكاء الاصطناعي، أدوات إدارة المشاريع",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2609.04135v1",
+        "2609.04199",
+        "2608.26730"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "The Natural Language Interaction Protocol and Standard for AI Agents",
+          "url": "http://arxiv.org/abs/2609.04135v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "RandomFrontlines/Orenis-3B-Light-Max — text-generation",
+          "url": "https://huggingface.co/RandomFrontlines/Orenis-3B-Light-Max",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "cirza/ria — text-to-image",
+          "url": "https://huggingface.co/cirza/ria",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Keltezaa/Copax — text-to-image",
+          "url": "https://huggingface.co/Keltezaa/Copax",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "cirza/rand — text-to-image",
+          "url": "https://huggingface.co/cirza/rand",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+          "url": "https://huggingface.co/papers/2609.04199",
+          "score": 0.486,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-05T23:31:50+00:00",
+      "updatedAt": "2026-09-05T23:31:50+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-05T21:51:30+00:00",
+  "tiered_at": "2026-09-05T23:31:50+00:00",
   "free_preview_count": 3
 }
