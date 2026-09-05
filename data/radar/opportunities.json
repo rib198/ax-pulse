@@ -1,27 +1,77 @@
 {
-  "generated_at": "2026-09-05T01:54:13+00:00",
+  "generated_at": "2026-09-05T06:32:44+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 831,
+  "corpus_count": 841,
   "opportunities": [
     {
-      "id": "ai-agents-standardization",
-      "title_ar": "تطوير بروتوكولات موحدة لوكلاء الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام وكلاء الذكاء الاصطناعي يتطلب بروتوكولات موحدة لتحسين التكامل والكفاءة. هذه فرصة لتطوير حلول تسهل التفاعل بين الأنظمة المختلفة.",
-      "buyer_ar": "شركات تطوير البرمجيات والمؤسسات الحكومية",
-      "sellable_product_ar": "حلول برمجية لتوحيد بروتوكولات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لحل برمجي لمؤسسة محلية",
-      "tools_ar": "أدوات تطوير البرمجيات، منصات اختبار، بيئات تطوير",
-      "capital_ar": "منخفض",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يوفر فرصة كبيرة للمطورين. مع تحديثات النماذج الحالية، يمكن إنشاء محتوى مرئي مخصص يلبي احتياجات السوق.",
+      "buyer_ar": "شركات التسويق والإعلانات، منصات التواصل الاجتماعي",
+      "sellable_product_ar": "نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل نص إلى صورة مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face، أدوات تطوير الذكاء الاصطناعي، واجهات برمجة التطبيقات",
+      "capital_ar": "بدون رأس مال",
       "evidence_ids": [
-        "arxiv_papers:2609.04135v1",
-        "huggingface_daily_papers:2609.04199",
-        "huggingface_daily_papers:2608.26730"
+        "huggingface_models:ling0322/libwaifu-wai-illustrious-v17",
+        "huggingface_models:SkillFi24/karina-real-skillfi24",
+        "huggingface_models:venetialiu/sdxl-lora-venetia"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "ling0322/libwaifu-wai-illustrious-v17 — text-to-image",
+          "url": "https://huggingface.co/ling0322/libwaifu-wai-illustrious-v17",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "SkillFi24/karina-real-skillfi24 — text-to-image",
+          "url": "https://huggingface.co/SkillFi24/karina-real-skillfi24",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "venetialiu/sdxl-lora-venetia — text-to-image",
+          "url": "https://huggingface.co/venetialiu/sdxl-lora-venetia",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-05T06:32:44+00:00",
+      "updatedAt": "2026-09-05T06:32:44+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "ai-agents-development",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي متكاملين",
+      "thesis_ar": "تزايد استخدام وكلاء الذكاء الاصطناعي في المؤسسات يفتح المجال لتطوير حلول متكاملة. يمكن أن تساعد المعايير الجديدة في تحسين كفاءة هذه الوكلاء.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات الحكومية",
+      "sellable_product_ar": "إطار عمل لتطوير وكلاء ذكاء اصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لوكيل ذكاء اصطناعي بسيط لمؤسسة صغيرة",
+      "tools_ar": "أطر تطوير الذكاء الاصطناعي، أدوات البرمجة، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2609.04135v1",
+        "github_repos:1266212515",
+        "huggingface_daily_papers:2609.04199"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
@@ -38,11 +88,11 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Knowing When Not to Reuse: Conditional Experience Transfer in Autonomous LLM Post-Training",
-          "url": "https://huggingface.co/papers/2608.26730",
-          "score": 0.48,
-          "trust_tier": "research"
+          "source_id": "github_repos",
+          "title": "omnigent-ai/omnigent",
+          "url": "https://github.com/omnigent-ai/omnigent",
+          "score": 0.476,
+          "trust_tier": "community"
         }
       ],
       "tier": "free",
@@ -50,78 +100,28 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-05T01:54:13+00:00",
-      "updatedAt": "2026-09-05T01:54:13+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-solutions",
-      "title_ar": "تطوير حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يفتح المجال لتطوير تطبيقات جديدة في مجالات الإعلانات والفنون. هذه فرصة لتلبية احتياجات السوق المتزايدة.",
-      "buyer_ar": "وكالات الإعلان، شركات التصميم، المطورون المستقلون",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "نموذج تحويل النص إلى صورة، أدوات تصميم، بيئات تطوير",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:dumptruckdaddy/lena-flux-lora",
-        "huggingface_models:multibonded/sambobo",
-        "huggingface_models:lloydchristmas1231/deniaya-claude-35"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "dumptruckdaddy/lena-flux-lora — text-to-image",
-          "url": "https://huggingface.co/dumptruckdaddy/lena-flux-lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "multibonded/sambobo — text-to-image",
-          "url": "https://huggingface.co/multibonded/sambobo",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "lloydchristmas1231/deniaya-claude-35 — text-to-image",
-          "url": "https://huggingface.co/lloydchristmas1231/deniaya-claude-35",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-05T01:54:13+00:00",
-      "updatedAt": "2026-09-05T01:54:13+00:00",
+      "publishedAt": "2026-09-05T06:32:44+00:00",
+      "updatedAt": "2026-09-05T06:32:44+00:00",
       "sortOrder": 1
     },
     {
       "id": "3d-reconstruction-models",
       "title_ar": "تطوير نماذج إعادة بناء ثلاثية الأبعاد",
-      "thesis_ar": "تزايد الحاجة لفهم الفضاءات ثلاثية الأبعاد في التطبيقات المتنوعة يخلق فرصة لتطوير نماذج جديدة. هذه النماذج يمكن أن تحسن من دقة الفهم المكاني.",
-      "buyer_ar": "شركات الألعاب، شركات التصميم المعماري، مؤسسات التعليم",
+      "thesis_ar": "تزايد الحاجة إلى نماذج إعادة بناء ثلاثية الأبعاد في التطبيقات المختلفة يعزز من فرص تطوير حلول مبتكرة. يمكن أن تسهم النماذج الجديدة في تحسين الأداء.",
+      "buyer_ar": "شركات الألعاب، شركات التصميم الهندسي",
       "sellable_product_ar": "نموذج إعادة بناء ثلاثي الأبعاد مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لإعادة بناء مشهد ثلاثي الأبعاد",
-      "tools_ar": "أدوات نمذجة ثلاثية الأبعاد، منصات تطوير، أدوات تحليل البيانات",
+      "first_paid_test_ar": "تقديم نموذج أولي لإعادة بناء ثلاثية الأبعاد لمشروع صغير",
+      "tools_ar": "أدوات النمذجة ثلاثية الأبعاد، مكتبات الذكاء الاصطناعي، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.04196",
         "huggingface_daily_papers:2609.04201",
-        "huggingface_daily_papers:2609.03892v1"
+        "huggingface_daily_papers:2609.04196",
+        "huggingface_daily_papers:2609.04131"
       ],
-      "confidence": 0.7,
+      "confidence": 0.6,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
@@ -132,22 +132,29 @@
         },
         {
           "source_id": "huggingface_daily_papers",
+          "title": "Beyond Retrieval: Progressive Latent Memory Evolution for Streaming Video Understanding",
+          "url": "https://huggingface.co/papers/2609.04131",
+          "score": 0.478,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
           "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
           "url": "https://huggingface.co/papers/2609.04201",
-          "score": 0.466,
+          "score": 0.472,
           "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-05T01:54:13+00:00",
-      "updatedAt": "2026-09-05T01:54:13+00:00",
+      "publishedAt": "2026-09-05T06:32:44+00:00",
+      "updatedAt": "2026-09-05T06:32:44+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-05T01:54:13+00:00",
+  "tiered_at": "2026-09-05T06:32:44+00:00",
   "free_preview_count": 3
 }
