@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
-  <link rel="stylesheet" href="assets/css/radar.css?v=20260511-safari-layout" />
+  <link rel="stylesheet" href="assets/css/radar.css?v=20260906-readable-phone" />
 </head>
 <body class="radar-body layer-opportunities">
   <!-- portrait-guard removed: the responsive mobile layout now renders
@@ -47,6 +47,8 @@
       <button data-lang="ar">ع</button>
       <button data-lang="en">EN</button>
     </div>
+
+    <div class="reading-controls"><button id="reader-font" type="button" aria-pressed="false">تكبير النص</button></div>
 
     <section class="value-rail" aria-label="Radar value summary">
       <p id="value-statement">ابدأ بأفضل فرصة الآن، ثم شاهد الخبر والنقاش والدليل خلفها.</p>
@@ -99,8 +101,8 @@
         <span class="earth-ping ping-e"></span>
       </div>
       <div class="always-on-badge" aria-hidden="true">
-        <b>24/7</b>
-        <small>AI SCAN</small>
+        <b>٤ ساعات</b>
+        <small>دورة التحديث</small>
       </div>
       <div class="radar-node node-a" data-node="0"></div>
       <div class="radar-node node-b" data-node="1"></div>
@@ -127,6 +129,7 @@
 
     <div class="radar-footer">
       <a href="dashboard.html">Dashboard</a>
+      <a href="https://ax-pulse01.vercel.app/radar-previous.html">النسخة السابقة</a>
       <span id="radar-updated">Loading data...</span>
     </div>
 

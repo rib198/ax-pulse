@@ -7,6 +7,11 @@ const RadarState = {
   cardCandidatesGeneratedAt: null,
   validationReport: null,
   reviewQueueSummary: null,
+  grokUpdates: [],
+  grokDiscussions: [],
+  grokOpportunities: [],
+  grokWindow: {},
+  grokStatus: {},
   focusedOpportunities: [],
   focusedOpportunitiesGeneratedAt: null,
   focusedUpdates: [],
@@ -42,28 +47,28 @@ const LAYERS = {
   radar: {
     title: { ar: 'ما الجديد اليوم؟', en: 'What is new today?' },
     summary: {
-      ar: 'تحديثات النماذج والأدوات والأسعار، مكتوبة كملخص عملي: ماذا حدث، لماذا يهم، وكيف يمكن الاستفادة منه.',
+      ar: 'من آخر ٤٨ ساعة: ما تغيّر، وما فائدته في حياتك وعملك.',
       en: 'Model, tool, and pricing updates explained as: what happened, why it matters, and how to use it.'
     }
   },
   trending: {
     title: { ar: 'ماذا يتحدث الناس عنه؟', en: 'What are people talking about?' },
     summary: {
-      ar: 'نقاشات عالية الاهتمام من X ومصادر اجتماعية، نقرأها ونلخص لماذا قد تكون مهمة لا نعرضها كنص خام.',
+      ar: 'آراء وتجارب حديثة، ومن قالها، وما الذي يفيدك منها.',
       en: 'High-engagement public conversations about AI, used to detect attention, objections, and market curiosity.'
     }
   },
   opportunities: {
-    title: { ar: 'أفضل الفرص الآن', en: 'Top opportunities now' },
+    title: { ar: 'أفكار دخل قابلة للتجربة', en: 'Top opportunities now' },
     summary: {
-      ar: 'فرص لكسب المال مستخرجة من إشارات حديثة: المشكلة، لمن، لماذا الآن، كيف تستفيد، والثقة.',
+      ar: 'أفكار خدمات مستوحاة من منشورات حديثة. جرّب الفكرة قبل أن تعرضها للبيع.',
       en: 'Buildable opportunities from recent signals: problem, target user, why now, value angle, and confidence.'
     }
   },
   sources: {
     title: { ar: 'هل البيانات محدثة؟', en: 'Is the data fresh?' },
     summary: {
-      ar: 'حالة كل مصدر بلغة بسيطة: نجح في آخر رصد، غير متصل، نعرض نسخة محفوظة، أو تعذّر تحديثه مؤقتًا.',
+      ar: 'متى جُمعت المنشورات، وهل نجح التحديث الأخير؟',
       en: 'Per-source freshness in plain language: succeeded last scan, disconnected, cached, or failed.'
     }
   },
@@ -160,12 +165,12 @@ const I18N = {
     en: 'Start with the top opportunity, then see the news, discussion, and evidence behind it. The full radar works best in landscape.'
   },
   value_statement: {
-    ar: 'ابدأ بأفضل فرصة الآن، ثم شاهد الخبر والنقاش والدليل خلفها.',
+    ar: 'فكرة دخل، خبر مفيد، ورأي يستحق القراءة. اختر ما يناسبك.',
     en: 'Start with the top opportunity, then see the news, discussion, and evidence behind it.'
   },
-  signals_detected: { ar: 'إشارة مرصودة', en: 'signals tracked' },
-  ideas_available: { ar: 'فكرة ملهمة', en: 'ideas' },
-  updated_short: { ar: 'حالة المصادر', en: 'source health' },
+  signals_detected: { ar: 'خبر ونقاش حديث', en: 'signals tracked' },
+  ideas_available: { ar: 'فكرة دخل', en: 'ideas' },
+  updated_short: { ar: 'آخر جمع بتوقيت الرياض', en: 'source health' },
   tap_hint: { ar: 'اضغط على نقطة أو وسم لاستكشاف الإشارة', en: 'Tap a point or tag to explore the signal' },
   save: { ar: 'حفظ', en: 'Save' },
   saved: { ar: 'تم الحفظ', en: 'Saved' },
@@ -209,13 +214,15 @@ async function loadJSON(path, fallback) {
 }
 
 async function loadRadarData() {
-  const [signals, corpus, cardCandidates, validationReport, reviewQueueSummary, focusedOpportunities, focusedUpdates, focusedDiscussions, openAIIntelligence, timeline, opportunities, productPlaybooks, dynamicPlaybooks, researchOpportunities, globalSources, runStatus, manualXCurated, manualXBrief, manualXReady, accounts] = await Promise.all([
+  const [signals, corpus, cardCandidates, validationReport, reviewQueueSummary, focusedOpportunities, grokOpportunities, grokStatus, focusedUpdates, focusedDiscussions, openAIIntelligence, timeline, opportunities, productPlaybooks, dynamicPlaybooks, researchOpportunities, globalSources, runStatus, manualXCurated, manualXBrief, manualXReady, accounts] = await Promise.all([
     loadJSON('data/radar/signals.json', { items: [], count: 0 }),
     loadJSON('data/radar/signals_corpus.json', { items: [], count: 0 }),
     loadJSON('data/radar/radar_card_candidates.json', { items: [], count: 0 }),
     loadJSON('data/radar/card_validation_report.json', null),
     loadJSON('data/radar/review_queue_summary.json', null),
     loadJSON('data/radar/focused_opportunities.json', { opportunities: [], total_opportunities: 0 }),
+    loadJSON('data/radar/grok_opportunities.json', { cards: [] }),
+    loadJSON('data/grok/status.json', {}),
     loadJSON('data/radar/focused_updates.json', { updates: [], total_updates: 0 }),
     loadJSON('data/radar/focused_discussions.json', { discussions: [], total_discussions: 0 }),
     loadJSON('data/radar/openai_intelligence_cards.json', { cards: [], card_count: 0, status: 'missing' }),
@@ -232,11 +239,11 @@ async function loadRadarData() {
     loadJSON('data/radar/x_focus_accounts.json', { accounts: [] })
   ]);
   const chosenPlaybooks = (dynamicPlaybooks.playbooks || []).length ? dynamicPlaybooks : productPlaybooks;
-  return { signals, corpus, cardCandidates, validationReport, reviewQueueSummary, focusedOpportunities, focusedUpdates, focusedDiscussions, openAIIntelligence, timeline, opportunities, productPlaybooks: chosenPlaybooks, researchOpportunities, globalSources, runStatus, manualXBrief: manualXCurated || manualXBrief, manualXReady, accounts };
+  return { signals, corpus, cardCandidates, validationReport, reviewQueueSummary, focusedOpportunities, grokOpportunities, grokStatus, focusedUpdates, focusedDiscussions, openAIIntelligence, timeline, opportunities, productPlaybooks: chosenPlaybooks, researchOpportunities, globalSources, runStatus, manualXBrief: manualXCurated || manualXBrief, manualXReady, accounts };
 }
 
 async function bootRadar() {
-  const { signals, corpus, cardCandidates, validationReport, reviewQueueSummary, focusedOpportunities, focusedUpdates, focusedDiscussions, openAIIntelligence, timeline, opportunities, productPlaybooks, researchOpportunities, globalSources, runStatus, manualXBrief, manualXReady, accounts } = await loadRadarData();
+  const { signals, corpus, cardCandidates, validationReport, reviewQueueSummary, focusedOpportunities, grokOpportunities, grokStatus, focusedUpdates, focusedDiscussions, openAIIntelligence, timeline, opportunities, productPlaybooks, researchOpportunities, globalSources, runStatus, manualXBrief, manualXReady, accounts } = await loadRadarData();
 
   RadarState.signals = signals.items || [];
   RadarState.corpusSignals = sortSignalsByFreshness(corpus.items || RadarState.signals);
@@ -244,6 +251,11 @@ async function bootRadar() {
   RadarState.cardCandidatesGeneratedAt = cardCandidates.generated_at || null;
   RadarState.validationReport = validationReport;
   RadarState.reviewQueueSummary = reviewQueueSummary;
+  RadarState.grokStatus = grokStatus || {};
+  RadarState.grokUpdates = Array.isArray(grokOpportunities.updates) ? grokOpportunities.updates : [];
+  RadarState.grokDiscussions = Array.isArray(grokOpportunities.discussions) ? grokOpportunities.discussions : [];
+  RadarState.grokWindow = { start: grokOpportunities.window_start, end: grokOpportunities.window_end };
+  RadarState.grokOpportunities = Array.isArray(grokOpportunities.cards) ? grokOpportunities.cards : [];
   RadarState.focusedOpportunities = focusedOpportunities.opportunities || [];
   RadarState.focusedOpportunitiesGeneratedAt = focusedOpportunities.generated_at || null;
   RadarState.focusedUpdates = focusedUpdates.updates || [];
@@ -268,6 +280,7 @@ async function bootRadar() {
   applyLang();
   wireLayers();
   wireLangToggle();
+  wireReaderFont();
   wireResponsiveLabels();
   wireDetailModal();
   wireRadarSurface();
@@ -326,45 +339,25 @@ function startVisualHeartbeat() {
 }
 
 async function refreshRadarData() {
-  const { signals, corpus, cardCandidates, validationReport, reviewQueueSummary, focusedOpportunities, focusedUpdates, focusedDiscussions, openAIIntelligence, timeline, opportunities, productPlaybooks, researchOpportunities, globalSources, runStatus, manualXBrief, manualXReady, accounts } = await loadRadarData();
-  const nextSignals = signals.items || [];
-  const nextGeneratedAt = signals.generated_at;
-  const nextIds = new Set(nextSignals.map(signalKey));
-  const newItems = nextSignals.filter((item) => !RadarState.knownSignalIds.has(signalKey(item))).slice(0, 4);
-  const changed = nextGeneratedAt && nextGeneratedAt !== RadarState.generatedAt;
-
-  if (!changed && !newItems.length) return;
-
-  RadarState.signals = nextSignals;
-  RadarState.corpusSignals = sortSignalsByFreshness(corpus.items || nextSignals);
-  RadarState.cardCandidates = cardCandidates.items || RadarState.cardCandidates;
-  RadarState.cardCandidatesGeneratedAt = cardCandidates.generated_at || RadarState.cardCandidatesGeneratedAt;
-  RadarState.validationReport = validationReport || RadarState.validationReport;
-  RadarState.reviewQueueSummary = reviewQueueSummary || RadarState.reviewQueueSummary;
-  RadarState.focusedOpportunities = focusedOpportunities.opportunities || RadarState.focusedOpportunities;
-  RadarState.focusedOpportunitiesGeneratedAt = focusedOpportunities.generated_at || RadarState.focusedOpportunitiesGeneratedAt;
-  RadarState.focusedUpdates = focusedUpdates.updates || RadarState.focusedUpdates;
-  RadarState.focusedUpdatesGeneratedAt = focusedUpdates.generated_at || RadarState.focusedUpdatesGeneratedAt;
-  RadarState.focusedDiscussions = focusedDiscussions.discussions || RadarState.focusedDiscussions;
-  RadarState.focusedDiscussionsGeneratedAt = focusedDiscussions.generated_at || RadarState.focusedDiscussionsGeneratedAt;
-  RadarState.openAIIntelligence = openAIIntelligence || RadarState.openAIIntelligence;
-  RadarState.timeline = sortTimeline(timeline.events || timeline.items || RadarState.timeline);
-  RadarState.generatedAt = nextGeneratedAt;
-  RadarState.opportunities = opportunities.opportunities || RadarState.opportunities;
-  RadarState.productPlaybooks = productPlaybooks.playbooks || RadarState.productPlaybooks;
-  RadarState.researchOpportunities = researchOpportunities.opportunities || RadarState.researchOpportunities;
-  RadarState.globalSources = globalSources.groups || RadarState.globalSources;
-  RadarState.runStatus = runStatus || RadarState.runStatus;
-  RadarState.manualXBrief = manualXBrief || RadarState.manualXBrief;
-  RadarState.manualXReady = manualXReady || RadarState.manualXReady;
-  RadarState.accounts = accounts.accounts || RadarState.accounts;
-  RadarState.knownSignalIds = nextIds;
-  RadarState.lastLiveItems = newItems.length ? newItems : nextSignals.slice(0, 1);
-
-  document.body.classList.add('has-live-arrival');
-  window.setTimeout(() => document.body.classList.remove('has-live-arrival'), 1800);
-  renderLayer(RadarState.layer);
-  showLiveArrival(RadarState.lastLiveItems[0]);
+  const [data, status] = await Promise.all([
+    loadJSON('data/radar/grok_opportunities.json', null),
+    loadJSON('data/grok/status.json', null)
+  ]);
+  if (data) {
+    RadarState.grokOpportunities = data.cards || [];
+    RadarState.grokUpdates = data.updates || [];
+    RadarState.grokDiscussions = data.discussions || [];
+    RadarState.grokWindow = {start:data.window_start,end:data.window_end};
+  }
+  if (status) RadarState.grokStatus = status;
+  // Reconcile expiry even without new data; leave the user's detail/chat open.
+  const nextKey = JSON.stringify([RadarState.layer, RadarState.lang, dockItems(RadarState.layer), RadarState.layer === 'sources' ? RadarState.grokStatus : null]);
+  if (nextKey !== RadarState.presentationKey || RadarState.layer === 'sources') {
+    renderDock(RadarState.layer);
+    renderRadarTags(RadarState.layer);
+  }
+  updateValueStats();
+  document.getElementById('radar-updated').textContent = sourceFooterLabel();
 }
 
 function applyLang() {
@@ -408,9 +401,7 @@ function applyLang() {
   updateSaveButton();
 }
 
-function compactNavLabels() {
-  return Boolean(window.matchMedia && window.matchMedia('(max-width: 760px) and (orientation: portrait)').matches);
-}
+function compactNavLabels() { return false; }
 
 function wireResponsiveLabels() {
   let compact = compactNavLabels();
@@ -466,82 +457,16 @@ function renderLayer(layer) {
 }
 
 function updateValueStats() {
-  const signals = document.getElementById('stat-signals');
-  const ideas = document.getElementById('stat-ideas');
-  const updated = document.getElementById('stat-updated');
-  if (signals) signals.textContent = formatNumber(qualityAcceptedCount() || candidateNewsRows().length || 0);
-  if (ideas) ideas.textContent = formatNumber(opportunityDisplayCount());
-  if (updated) updated.textContent = sourceHealthSummary();
+  document.getElementById('stat-signals').textContent = grokSignalRows('updates').length + grokSignalRows('discussions').length;
+  document.getElementById('stat-ideas').textContent = allWorthyOpportunityRows().length;
+  const end = RadarState.grokWindow.end;
+  document.getElementById('stat-updated').textContent = end ? new Date(end).toLocaleString('ar-SA-u-ca-gregory', {timeZone:'Asia/Riyadh',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '—';
   renderSinceLastSeen();
 }
 
-// Counts cards that have appeared/refreshed since the user's previous visit and
-// surfaces them as a thin banner above the layer copy. Uses localStorage to
-// remember when the user last saw the radar (per-browser).
 function renderSinceLastSeen() {
-  const valueRail = document.querySelector('.value-rail');
-  if (!valueRail) return;
-  const isAr = RadarState.lang === 'ar';
-  const STORAGE_KEY = 'axp_last_seen_at';
-  const previous = localStorage.getItem(STORAGE_KEY);
-  const previousMs = previous ? Date.parse(previous) : 0;
-
-  const cards = []
-    .concat(RadarState.focusedUpdates || [])
-    .concat(RadarState.focusedDiscussions || [])
-    .concat((RadarState.manualXReady && RadarState.manualXReady.cards) || []);
-
-  let newSinceVisit = 0;
-  let breaking = 0;
-  cards.forEach((c) => {
-    const ts = c.last_refreshed_at || c.first_appeared_at || c.detected_at;
-    const ms = ts ? Date.parse(ts) : 0;
-    if (ms && ms > previousMs) newSinceVisit += 1;
-    if (c.freshness === 'breaking') breaking += 1;
-  });
-
-  let banner = document.getElementById('ax-since-banner');
-  if (!banner) {
-    banner = document.createElement('div');
-    banner.id = 'ax-since-banner';
-    banner.className = 'since-last-seen-banner';
-    valueRail.parentNode.insertBefore(banner, valueRail);
-  }
-
-  if (!previous) {
-    // First visit — set baseline silently and skip the banner.
-    localStorage.setItem(STORAGE_KEY, new Date().toISOString());
-    banner.hidden = true;
-    return;
-  }
-
-  if (newSinceVisit === 0 && breaking === 0) {
-    banner.hidden = true;
-    return;
-  }
-
-  const parts = [];
-  if (newSinceVisit > 0) {
-    parts.push(isAr
-      ? `وصلت ${formatNumber(newSinceVisit)} إشارة منذ زيارتك الأخيرة`
-      : `${formatNumber(newSinceVisit)} new signals since your last visit`);
-  }
-  if (breaking > 0) {
-    parts.push(isAr ? `🔥 ${breaking} الآن` : `🔥 ${breaking} breaking`);
-  }
-  banner.hidden = false;
-  banner.innerHTML = `
-    <span class="since-banner-dot" aria-hidden="true"></span>
-    <span class="since-banner-text">${escapeHTML(parts.join(' · '))}</span>
-    <button type="button" class="since-banner-mark" aria-label="${escapeAttr(isAr ? 'وضع علامة كقُرئت' : 'Mark as seen')}">${escapeHTML(isAr ? 'تم' : 'Mark seen')}</button>
-  `;
-  const markBtn = banner.querySelector('.since-banner-mark');
-  if (markBtn) {
-    markBtn.addEventListener('click', () => {
-      localStorage.setItem(STORAGE_KEY, new Date().toISOString());
-      banner.hidden = true;
-    });
-  }
+  const banner = document.getElementById('ax-since-banner');
+  if (banner) banner.hidden = true;
 }
 
 function qualityAcceptedCount() {
@@ -629,21 +554,6 @@ function compactUpdateLabel() {
 function scheduleTimelineAutoplay() {
   if (RadarState.timelineAutoTimer) window.clearInterval(RadarState.timelineAutoTimer);
   RadarState.timelineAutoTimer = null;
-  if (RadarState.layer !== 'radar' || !RadarState.timeline.length) return;
-
-  RadarState.timelineAutoTimer = window.setInterval(() => {
-    if (RadarState.layer !== 'radar' || RadarState.autoTimelinePaused) return;
-    // Never let autoplay paint a detail card over an open conversation
-    // or a user-opened detail. The user's foreground takes priority.
-    if (document.body.classList.contains('has-chat-open')) return;
-    const dm = document.getElementById('detail-modal');
-    if (dm && !dm.hidden) return;
-    const rows = timelineRows();
-    if (!rows.length) return;
-    RadarState.activeTimelineIndex = (RadarState.activeTimelineIndex + 1) % rows.length;
-    openTimelineDetail(rows[RadarState.activeTimelineIndex], RadarState.activeTimelineIndex, true);
-    highlightTimelineChip(RadarState.activeTimelineIndex);
-  }, 6200);
 }
 
 function pauseTimelineAutoplay() {
@@ -663,12 +573,8 @@ function highlightTimelineChip(idx) {
 function renderRadarTags(layer) {
   const root = document.getElementById('radar-tags');
   if (!root) return;
-  const tags = tagsForLayer(layer).slice(0, 8);
-  root.innerHTML = tags.map((tag, index) => {
-    const klass = layer === 'opportunities' ? 'opportunity' : (layer === 'trending' ? 'hot' : '');
-    const count = tagSignalCount(tag, index);
-    return `<span class="tag tag-pos-${index} ${klass}" role="button" tabindex="0" data-radar-idx="${index}">#${escapeHTML(tag)}<em>${escapeHTML(count)}</em></span>`;
-  }).join('');
+  root.innerHTML = dockItems(layer).slice(0,4).map((item,index) =>
+    `<span class="tag tag-pos-${index}" role="button" tabindex="0" data-radar-idx="${index}">${escapeHTML(item.title_ar || item.title || '')}</span>`).join('');
 }
 
 function tagsForLayer(layer) {
@@ -737,10 +643,15 @@ function cleanTag(tag) {
 function renderDock(layer) {
   const panel = document.getElementById('data-panel');
   const items = dockItems(layer);
+  RadarState.displayedItems = items;
+  RadarState.presentationKey = JSON.stringify([layer, RadarState.lang, items, layer === 'sources' ? RadarState.grokStatus : null]);
+  document.querySelectorAll('.radar-node').forEach((node,index) => {
+    node.hidden = !items[index];
+    node.setAttribute('aria-label', items[index]?.title_ar || items[index]?.title || '');
+  });
+  if (layer === 'sources') { renderPlainStatus(panel); return; }
   const metric = panelMetric(layer, items);
-  const archiveAvailable = layer === 'radar'
-    ? RadarState.timeline.length > 6
-    : (layer === 'signals' && archiveSignals().length > RadarState.signals.length);
+  const archiveAvailable = false;
   const showArrows = items.length > 3;
 
   panel.innerHTML = `
@@ -753,7 +664,7 @@ function renderDock(layer) {
     <div class="panel-feed-wrap">
       ${showArrows ? `<button type="button" class="panel-arrow panel-arrow-prev" aria-label="${escapeAttr(RadarState.lang === 'ar' ? 'السابق' : 'Previous')}" data-dir="-1">‹</button>` : ''}
       <div class="panel-feed" id="panel-feed-scroll">
-        ${items.map((item, idx) => panelChip(item, layer, idx)).join('')}
+        ${items.length ? items.map((item, idx) => panelChip(item, layer, idx)).join('') : '<p class="signal-chip">لا توجد مادة حديثة مناسبة في هذا القسم. سنعرض الجديد بعد جمعه ومراجعته.</p>'}
       </div>
       ${showArrows ? `<button type="button" class="panel-arrow panel-arrow-next" aria-label="${escapeAttr(RadarState.lang === 'ar' ? 'التالي' : 'Next')}" data-dir="1">›</button>` : ''}
     </div>
@@ -791,6 +702,7 @@ function renderDock(layer) {
   panel.querySelectorAll('[data-signal-idx]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const idx = Number(btn.dataset.signalIdx);
+      pauseTimelineAutoplay();
       openSignalDetail(items[idx], idx);
     });
   });
@@ -834,31 +746,11 @@ function renderDock(layer) {
 }
 
 function dockItems(layer) {
-  if (layer === 'opportunities') {
-    return allWorthyOpportunityRows();
-  }
-  if (layer === 'sources') return sourceHealthRows();
-  if (layer === 'trending') {
-    const discussions = focusedDiscussionRows();
-    if (discussions.length) return discussions.slice(0, 10);
-    return candidateSocialRows().concat(manualXReadyRows('trending'), manualXReadyRows('product_ideas')).slice(0, 10);
-  }
-  if (layer === 'radar' && focusedUpdateRows().length) {
-    return focusedUpdateRows().slice(0, RadarState.archiveExpanded ? 12 : 8);
-  }
-  if (layer === 'radar' && candidateNewsRows().length) {
-    return candidateNewsRows().slice(0, RadarState.archiveExpanded ? 12 : 6);
-  }
-  if (layer === 'radar' && RadarState.timeline.length) {
-    return manualXReadyRows('radar_updates').slice(0, 3).concat(timelineRows()).slice(0, RadarState.archiveExpanded ? 12 : 6);
-  }
-  if (layer === 'signals') {
-    const evidence = evidenceRows();
-    if (evidence.length) return evidence.slice(0, RadarState.archiveExpanded ? 18 : 8);
-    return candidateNewsRows().concat(manualXReadyRows(), visibleSignals()).slice(0, RadarState.archiveExpanded ? 18 : 8);
-  }
-  if (layer === 'radar') return manualXReadyRows('radar_updates').concat(visibleSignals()).slice(0, RadarState.archiveExpanded ? 12 : 6);
-  return RadarState.signals.slice(0, 6);
+  if (layer === 'opportunities') return allWorthyOpportunityRows();
+  if (layer === 'trending') return grokSignalRows('discussions');
+  if (layer === 'radar') return grokSignalRows('updates');
+  if (layer === 'signals') return grokEvidenceRows();
+  return [];
 }
 
 function isManualXSignal(item = {}) {
@@ -887,6 +779,14 @@ function manualXEngagementHTML(item = {}) {
 }
 
 function panelChip(item, layer, idx) {
+  if (item.editorial && layer !== 'opportunities') {
+    return `<button type="button" class="signal-chip" data-signal-idx="${idx}">
+      <span>${escapeHTML(item.source_name)}</span>
+      ${freshnessBadgeHTML(cardFreshness(item))}
+      <p>${escapeHTML(localizedTitle(item))}</p>
+      <small>${escapeHTML(item.summary_ar)}</small>
+    </button>`;
+  }
   if (layer === 'opportunities') {
     const isX = item.kind === 'x_curated';
     const confidence = item.confidence ? Math.round(item.confidence * 100) : null;
@@ -1035,7 +935,7 @@ function openOpportunityDetail(item, idx = 0) {
   parts.push(cardFreshness(item, 'opportunity').label);
   meta.innerHTML = parts.map((p) => `<span>${escapeHTML(p)}</span>`).join('');
 
-  const sections = [
+  const sections = item.kind === 'grok_opportunity' ? grokOpportunitySections(item.editorial, L) : [
     detailSectionHTML(L('المشكلة', 'Problem'), item.pain || item.why || item.inspiration || L('هناك اهتمام أو ألم متكرر حول هذه المساحة، ويحتاج إلى تجربة أصغر لإثبات الطلب.', 'There is repeated interest or pain here; it needs a small test to prove demand.')),
     detailSectionHTML(L('لمن؟', 'For whom?'), item.buyer || L('مستخدمون أو فرق لديهم احتياج واضح يمكن خدمته بعرض صغير.', 'Users or teams with a clear need that can be served with a small offer.')),
     detailSectionHTML(L('لماذا الآن؟', 'Why now?'), item.why || item.inspiration || (item.signalCount ? L(`ظهرت ${item.signalCount} إشارات مرتبطة بهذه الفكرة.`, `${item.signalCount} related signals appeared.`) : '')),
@@ -1064,14 +964,16 @@ function openOpportunityDetail(item, idx = 0) {
 
   const modal = document.getElementById('detail-modal');
   const backdrop = document.getElementById('detail-backdrop');
+  if (modal.hidden) RadarState.detailReturnFocus = document.activeElement;
   document.body.classList.add('detail-active');
   // Alternate side: even idx → right of globe, odd idx → left of globe
   const side = (idx % 2 === 0) ? 'right' : 'left';
   modal.dataset.side = side;
+  clearTimeout(RadarState.detailCloseTimer);
   modal.hidden = false;
   if (backdrop) backdrop.hidden = false;
   // double-rAF to allow transition from initial hidden state
-  requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('open')));
+  requestAnimationFrame(() => requestAnimationFrame(() => { modal.classList.add('open'); document.getElementById('detail-close').focus({preventScroll:true}); }));
 }
 
 function formatPlaybook(items) {
@@ -1200,12 +1102,14 @@ function openTimelineDetail(item, idx = 0, auto = false) {
 
   const modal = document.getElementById('detail-modal');
   const backdrop = document.getElementById('detail-backdrop');
+  if (modal.hidden) RadarState.detailReturnFocus = document.activeElement;
   document.body.classList.add('detail-active');
   modal.dataset.side = (idx % 2 === 0) ? 'right' : 'left';
   modal.dataset.kind = 'timeline';
+  clearTimeout(RadarState.detailCloseTimer);
   modal.hidden = false;
   if (backdrop) backdrop.hidden = false;
-  requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('open')));
+  requestAnimationFrame(() => requestAnimationFrame(() => { modal.classList.add('open'); document.getElementById('detail-close').focus({preventScroll:true}); }));
 }
 
 function timelineImpact(item) {
@@ -1245,15 +1149,19 @@ function closeDetail() {
   modal.classList.remove('open');
   resetDetailChat();
   if (backdrop) backdrop.hidden = true;
-  setTimeout(() => {
+  clearTimeout(RadarState.detailCloseTimer);
+  RadarState.detailCloseTimer = setTimeout(() => {
     modal.hidden = true;
     document.body.classList.remove('detail-active');
     RadarState.activeDetail = null;
     updateSaveButton();
+    const target = RadarState.detailReturnFocus;
+    if (target && target.isConnected) target.focus({preventScroll:true});
   }, 320);
 }
 
 function resetDetailState() {
+  clearTimeout(RadarState.detailCloseTimer);
   const modal = document.getElementById('detail-modal');
   const backdrop = document.getElementById('detail-backdrop');
   if (!modal) return;
@@ -1284,6 +1192,12 @@ function wireDetailModal() {
   if (chatForm) chatForm.addEventListener('submit', submitDetailChat);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !modal.hidden) closeDetail();
+    if (e.key === 'Tab' && !modal.hidden && !document.body.classList.contains('has-chat-open')) {
+      const controls = Array.from(modal.querySelectorAll('button, a[href], input, summary, [tabindex="0"]')).filter(el => !el.disabled && el.getClientRects().length);
+      const first = controls[0], last = controls[controls.length - 1];
+      if (e.shiftKey && (document.activeElement === first || !modal.contains(document.activeElement))) { e.preventDefault(); last?.focus(); }
+      else if (!e.shiftKey && (document.activeElement === last || !modal.contains(document.activeElement))) { e.preventDefault(); first?.focus(); }
+    }
   });
 }
 
@@ -1304,6 +1218,19 @@ function detailIdentity(type, item, idx = 0) {
 function detailChatContext(type, item = {}) {
   const isAr = RadarState.lang === 'ar';
   const L = (ar, en) => isAr ? ar : en;
+  if (item.editorial && item.kind.startsWith('grok_')) {
+    const card = item.editorial;
+    return {
+      type: 'grok_editorial_proposal', title: card.title_ar, source: 'Grok / X',
+      url: card.source_urls[0], source_urls: card.source_urls,
+      what_happened: card.what_happened_ar, why_it_matters: card.why_it_matters_ar,
+      how_to_use: card.first_steps_ar.join('\n'), opportunity: card.opportunity_ar,
+      target_user: card.audience_ar, caveat: card.caveat_ar,
+      verification_status: card.verification_status,
+      evidence_note: 'Grok-generated summary; original claims need verification. Proposed use is not proven demand or promised income.',
+      collection_window: grokCollectionWindow(card),
+    };
+  }
   if (type === 'opportunity') {
     return {
       type: L('فرصة لكسب المال', 'Money opportunity'),
@@ -1469,6 +1396,11 @@ function cardToChatPayload(payload) {
     card.how_to_use && (isAr ? `كيف تستفيد: ${card.how_to_use}` : `How to use: ${card.how_to_use}`),
     card.opportunity && (isAr ? `الفرصة: ${card.opportunity}` : `Opportunity: ${card.opportunity}`),
     card.target_user && (isAr ? `الفئة: ${card.target_user}` : `Target user: ${card.target_user}`),
+    card.caveat && `Limitations / ما يحتاج تحققًا: ${card.caveat}`,
+    card.verification_status && `Verification: ${card.verification_status}`,
+    card.evidence_note && `Evidence note: ${card.evidence_note}`,
+    card.collection_window && `Collection window: ${card.collection_window}`,
+    card.source_urls && `Original sources: ${card.source_urls.join('\n')}`,
   ].filter(Boolean);
   return {
     locale: lang === 'en' ? 'en' : 'ar',
@@ -1643,7 +1575,7 @@ function wireRadarSurface() {
 }
 
 function openLayerDetailByIndex(index) {
-  const items = dockItems(RadarState.layer);
+  const items = RadarState.displayedItems || [];
   if (!items.length) return;
   const idx = Number.isFinite(index) ? index % items.length : 0;
   const item = items[idx];
@@ -1666,7 +1598,7 @@ function openSignalDetail(item, idx = 0) {
   resetDetailChat();
   const isAr = RadarState.lang === 'ar';
   const L = (ar, en) => isAr ? ar : en;
-  document.getElementById('detail-source').textContent = sourceName(item.source_id) || L('إشارة', 'Signal');
+  document.getElementById('detail-source').textContent = item.source_name || sourceName(item.source_id) || L('إشارة', 'Signal');
   document.getElementById('detail-title').textContent = localizedTitle(item);
   document.getElementById('detail-original').hidden = true;
   RadarState.activeDetail = detailIdentity('signal', item, idx);
@@ -1681,7 +1613,9 @@ function openSignalDetail(item, idx = 0) {
   if (item.display_status) parts.push(cardFreshness(item, item.kind === 'x_ready' ? 'x' : 'signal').label);
   meta.innerHTML = parts.map((p) => `<span>${escapeHTML(p)}</span>`).join('');
 
-  if (item.kind === 'x_ready') {
+  if (item.editorial && item.kind.startsWith('grok_')) {
+    document.getElementById('detail-text').innerHTML = grokOpportunitySections(item.editorial, L).filter(Boolean).join('');
+  } else if (item.kind === 'x_ready') {
     document.getElementById('detail-text').textContent = [
       `${L('ماذا يقول الناس؟', 'What are people saying?')}\n${isAr ? (item.text_ar || item.text) : item.text}`,
       `${L('لماذا يهمك؟', 'Why it matters to you')}\n${humanizeForUser(item.whyMeaning || item.shortReason || '')}`,
@@ -1752,89 +1686,24 @@ function openSignalDetail(item, idx = 0) {
 
   const modal = document.getElementById('detail-modal');
   const backdrop = document.getElementById('detail-backdrop');
+  if (modal.hidden) RadarState.detailReturnFocus = document.activeElement;
   document.body.classList.add('detail-active');
   modal.dataset.side = (idx % 2 === 0) ? 'right' : 'left';
   modal.dataset.kind = 'signal';
+  clearTimeout(RadarState.detailCloseTimer);
   modal.hidden = false;
   if (backdrop) backdrop.hidden = false;
-  requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('open')));
+  requestAnimationFrame(() => requestAnimationFrame(() => { modal.classList.add('open'); document.getElementById('detail-close').focus({preventScroll:true}); }));
 }
 
-function renderSourceSpokes(layer) {
+function renderSourceSpokes() {
   const root = document.getElementById('source-spokes');
-  if (!root) return;
-  if (layer !== 'sources') {
-    root.innerHTML = '';
-    return;
-  }
-  const lines = [
-    ['-162deg', '28vw'],
-    ['-104deg', '22vw'],
-    ['-28deg', '27vw'],
-    ['18deg', '24vw'],
-    ['78deg', '21vw'],
-    ['142deg', '25vw']
-  ];
-  root.innerHTML = lines.map(([r, w], index) => `<span class="source-line" style="--r:${r};--w:${w};animation-delay:-${index * 0.35}s"></span>`).join('');
+  if (root) root.innerHTML = '';
 }
 
-function renderSourceHealthPanel(layer) {
+function renderSourceHealthPanel() {
   const root = document.getElementById('source-health-panel');
-  if (!root) return;
-  if (layer !== 'sources') {
-    root.hidden = true;
-    root.innerHTML = '';
-    return;
-  }
-  const rows = sourceHealthRows();
-  const status = RadarState.runStatus || {};
-  const overview = sourceHealthOverview(rows, status);
-  const statusLabel = sourceTrustLabel(overview);
-  root.hidden = false;
-  root.innerHTML = `
-    <header>
-      <span>${escapeHTML(RadarState.lang === 'ar' ? 'هل البيانات محدثة؟' : 'Is the data fresh?')}</span>
-      <b>${escapeHTML(statusLabel)}</b>
-    </header>
-    <p>${escapeHTML(sourceRunCaption(status))}</p>
-    <div class="source-health-summary" aria-label="${escapeAttr(RadarState.lang === 'ar' ? 'ملخص حالة المصادر' : 'Source health summary')}">
-      <span>
-        <b>${escapeHTML(String(overview.active))}</b>
-        <small>${escapeHTML(RadarState.lang === 'ar' ? 'نجح في آخر رصد' : 'succeeded last scan')}</small>
-      </span>
-      <span>
-        <b>${escapeHTML(sourceBlockedCountLabel(overview))}</b>
-        <small>${escapeHTML(RadarState.lang === 'ar' ? 'غير مباشر الآن' : 'not live now')}</small>
-      </span>
-      <span>
-        <b>${escapeHTML(String(overview.accepted))}</b>
-        <small>${escapeHTML(RadarState.lang === 'ar' ? 'إشارة مقبولة' : 'accepted signals')}</small>
-      </span>
-      <span>
-        <b>${escapeHTML(String(qualityAcceptedCount()))}</b>
-        <small>${escapeHTML(RadarState.lang === 'ar' ? 'بطاقة مجازة للعرض' : 'approved cards')}</small>
-      </span>
-    </div>
-    <div class="source-health-note source-quality-note">${escapeHTML(qualityStatusLine())}</div>
-    <div class="source-health-note">${escapeHTML(sourceTrustExplanation(overview))}</div>
-    <div class="source-health-list">
-      ${sourceHealthDisplayRows(rows).slice(0, 10).map((row) => `
-        <button type="button" class="source-health-row source-${escapeAttr(row.status)}" data-source-panel-idx="${escapeAttr(row.source_id)}">
-          <i></i>
-          <span>${escapeHTML(sourceDisplayName(row))}</span>
-          <b>${escapeHTML(sourceStatusLabel(row.status))}</b>
-          <small>${escapeHTML(sourceHealthCaption(row))}</small>
-          <em>${escapeHTML(sourceTypeLine(row))}</em>
-        </button>
-      `).join('')}
-    </div>
-  `;
-  root.querySelectorAll('[data-source-panel-idx]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const row = rows.find((item) => item.source_id === btn.dataset.sourcePanelIdx);
-      openSourceHealthDetail(row, rows.indexOf(row));
-    });
-  });
+  if (root) { root.hidden = true; root.innerHTML = ''; }
 }
 
 function sourceRunCaption(status) {
@@ -1894,62 +1763,19 @@ function openSourceHealthDetail(item, idx = 0) {
   link.style.display = 'none';
   const modal = document.getElementById('detail-modal');
   const backdrop = document.getElementById('detail-backdrop');
+  if (modal.hidden) RadarState.detailReturnFocus = document.activeElement;
   document.body.classList.add('detail-active');
   modal.dataset.side = (idx % 2 === 0) ? 'right' : 'left';
   modal.dataset.kind = 'source';
+  clearTimeout(RadarState.detailCloseTimer);
   modal.hidden = false;
   if (backdrop) backdrop.hidden = false;
-  requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('open')));
+  requestAnimationFrame(() => requestAnimationFrame(() => { modal.classList.add('open'); document.getElementById('detail-close').focus({preventScroll:true}); }));
 }
 
-function renderFloatingStrip(layer) {
+function renderFloatingStrip() {
   const root = document.getElementById('floating-strip');
-  if (!root) return;
-  root.innerHTML = '';
-
-  if (RadarState.lastLiveItems.length && layer === 'radar') {
-    showLiveArrival(RadarState.lastLiveItems[0]);
-    return;
-  }
-
-  if (layer === 'opportunities') {
-    const topOpp = opportunityRows()[0];
-    const topNews = (timelineRows()[0] && localizedTimelineTitle(timelineRows()[0])) || localizedTitle(RadarState.signals[0] || {});
-    const topTrend = trendRows()[0];
-    const health = sourceHealthSummary();
-    root.innerHTML = `
-      <div class="value-now-row">
-        <span><b>${escapeHTML(RadarState.lang === 'ar' ? 'أهم فرصة' : 'Top idea')}</b>${escapeHTML(topOpp ? opportunitySpecificTitle(topOpp) : (RadarState.lang === 'ar' ? 'لا توجد فرصة مؤكدة بعد' : 'No confirmed idea yet'))}</span>
-        <span><b>${escapeHTML(RadarState.lang === 'ar' ? 'أهم خبر' : 'Top update')}</b>${escapeHTML(topNews || '—')}</span>
-        <span><b>${escapeHTML(RadarState.lang === 'ar' ? 'نقاش صاعد' : 'Rising talk')}</b>${escapeHTML(topTrend || '—')}</span>
-        <span><b>${escapeHTML(RadarState.lang === 'ar' ? 'المصادر' : 'Sources')}</b>${escapeHTML(health)}</span>
-      </div>
-    `;
-    return;
-  }
-
-  if (layer === 'trending') {
-    const items = trendRows().slice(0, 5);
-    let index = 0;
-    const paint = () => {
-      root.textContent = items[index % items.length];
-      index += 1;
-    };
-    paint();
-    RadarState.tickerTimer = window.setInterval(paint, 4000);
-    return;
-  }
-
-  if (layer === 'signals') {
-    const stream = signalRows();
-    let index = 0;
-    const paint = () => {
-      root.innerHTML = `<div class="live-row">${escapeHTML(stream[index % stream.length])}</div>`;
-      index += 1;
-    };
-    paint();
-    RadarState.tickerTimer = window.setInterval(paint, 3600);
-  }
+  if (root) root.innerHTML = '';
 }
 
 function showLiveArrival(item) {
@@ -2617,6 +2443,77 @@ function candidateOpportunityRows() {
   return candidateCards('opportunity').map((card) => radarCardToOpportunity(card));
 }
 
+
+// Editorial ideas from Grok X Search. No confidence/revenue score is inferred.
+
+function grokSignalRows(section) {
+  const items = section === 'updates' ? RadarState.grokUpdates : RadarState.grokDiscussions;
+  const isAr = RadarState.lang === 'ar';
+  return items.filter(isGeneralReaderCard).filter((c) => c && c.title_ar && Array.isArray(c.first_steps_ar)
+    && Array.isArray(c.source_urls) && c.source_urls.length
+    && c.source_urls.every((url) => /^https:\/\/x\.com\/[A-Za-z0-9_]+\/status\/\d+$/.test(url)))
+    .map((c) => ({
+      id: c.id, kind: section === 'updates' ? 'grok_update' : 'grok_discussion',
+      source_id: 'grok_x_search',
+      source_name: isAr ? (section === 'updates' ? 'جديد اليوم · قروك / X' : 'نقاش الناس · قروك / X') : 'Grok / X (Arabic)',
+      title_ar: c.title_ar, title: c.title_ar, summary_ar: c.what_happened_ar,
+      text: c.what_happened_ar, why_it_matters_ar: c.why_it_matters_ar,
+      source_url: c.source_urls[0], url: c.source_urls[0],
+      posted_at: c.source_posted_at,
+      sourceLinks: c.source_urls.map((url) => ({url, source:'X',label:'@'+url.split('/')[3]})),
+      editorial: c,
+    }));
+}
+
+function grokOpportunityRows() {
+  const isAr = RadarState.lang === 'ar';
+  return RadarState.grokOpportunities
+    .filter(isGeneralReaderCard)
+    .filter((card) => card && card.title_ar && card.opportunity_ar && card.audience_ar
+      && Array.isArray(card.first_steps_ar) && Array.isArray(card.source_urls)
+      && card.source_urls.length && card.source_urls.every((url) => /^https:\/\/x\.com\/[A-Za-z0-9_]+\/status\/\d+$/.test(url)))
+    .map((card) => ({
+      id: card.id, kind: 'grok_opportunity', title: card.title_ar,
+      category: isAr ? 'من X · صياغة قروك' : 'From X · Grok (Arabic)',
+      buyer: card.audience_ar, product: card.opportunity_ar,
+      why: card.why_it_matters_ar, pain: card.what_happened_ar,
+      firstTest: card.first_steps_ar.join('\n'), examples: card.example_ar,
+      source: 'Grok / X', detected_at: card.source_posted_at,
+      sourceLinks: card.source_urls.map((url) => ({
+        url, source: 'X', label: '@' + url.split('/')[3],
+        title: isAr ? 'افتح المنشور وراجع ملخصه' : 'Read the original post',
+      })),
+      editorial: card,
+    }));
+}
+
+function grokCollectionWindow(card = {}) {
+  const isAr = RadarState.lang === 'ar';
+  const start = card.collection_window_start || RadarState.grokWindow.start;
+  const end = card.collection_window_end || RadarState.grokWindow.end;
+  if (!start || !end || !Number.isFinite(Date.parse(start)) || !Number.isFinite(Date.parse(end))) {
+    return isAr ? 'لقطة محفوظة؛ فترة الرصد غير محددة.' : 'Saved snapshot; collection window unspecified.';
+  }
+  const format = (value) => new Date(value).toLocaleString(isAr ? 'ar-SA-u-ca-gregory' : 'en-GB', {
+    timeZone: 'Asia/Riyadh', dateStyle: 'medium', timeStyle: 'medium',
+  });
+  return `${format(start)} — ${format(end)} · ${isAr ? 'بتوقيت الرياض. لقطة محفوظة وليست بثًا مباشرًا.' : 'Riyadh time. Saved snapshot, not a live feed.'}`;
+}
+
+function grokOpportunitySections(card, L) {
+  const income = card.section === 'opportunities';
+  return [
+    detailSectionHTML(L(card.section === 'discussions' ? 'ما الرأي؟' : 'ما الجديد؟', 'What happened?'), card.what_happened_ar),
+    detailSectionHTML(L('لماذا يهمك؟', 'Why it matters'), card.why_it_matters_ar),
+    detailSectionHTML(L(income ? 'الفكرة ومن يحتاجها' : 'كيف تستفيد؟', 'Practical use'), (income ? card.audience_ar + ' — ' : '') + card.opportunity_ar),
+    detailSectionHTML(L('مثال للتجربة', 'Example'), card.example_ar),
+    `<details class="detail-section"><summary>${escapeHTML(L('خطوات التجربة', 'Try it'))}</summary><ol>${card.first_steps_ar.map(step => `<li>${escapeHTML(step)}</li>`).join('')}</ol></details>`,
+    detailSectionHTML(L('انتبه', 'Keep in mind'), card.caveat_ar),
+    detailSectionHTML(L('المصدر', 'Source'), L('ملخص قروك يحتاج مراجعة المنشور. الاستخدام المقترح استنتاج، وليس وعدًا بالنتيجة أو الدخل.', 'Grok summary; verify the post. Suggested uses are not promised outcomes.')),
+    detailEvidenceGridHTML(card.source_urls.map(url => ({url,source:'X',label:'@'+url.split('/')[3]})), L('المنشور الأصلي', 'Original post')),
+  ];
+}
+
 function focusedOpportunityRows() {
   return (RadarState.focusedOpportunities || [])
     .slice()
@@ -2837,6 +2734,8 @@ function sourceHealthSummary() {
 function cardFreshness(item, kind = 'signal') {
   const isAr = RadarState.lang === 'ar';
 
+  if (item && item.kind && item.kind.startsWith('grok_')) return { key: 'uncertain', label: isAr ? 'راجع المصدر' : 'Idea to verify' };
+
   // Prefer the explicit freshness field set by the build scripts. This is the
   // authoritative answer because it comes from per-item evidence timestamps
   // plus a persisted state file (data/radar/_freshness_state.json).
@@ -2896,6 +2795,7 @@ function opportunitySpecificTitle(item) {
 }
 
 function opportunityPreviewLine(item) {
+  if (item.editorial) return item.editorial.why_it_matters_ar;
   const buyer = item.buyer ? `${RadarState.lang === 'ar' ? 'لمن؟ ' : 'For: '}${item.buyer}` : '';
   const why = item.why ? `${RadarState.lang === 'ar' ? 'لماذا الآن؟ ' : 'Why now: '}${item.why}` : '';
   return buyer || why || item.product || '';
@@ -2922,57 +2822,14 @@ function whyRadarPickedOpportunity(item) {
 }
 
 function sourceFooterLabel() {
-  const rows = sourceHealthRows();
-  if (!rows.length) return RadarState.lang === 'ar' ? 'لا يوجد سجل تشغيل للمصادر' : 'No source run status yet';
-  const active = rows.filter((row) => row.status === 'active').length;
-  const failed = rows.filter((row) => row.status === 'failed').length;
-  const skipped = rows.filter((row) => row.status === 'skipped').length;
-  const stale = rows.filter((row) => row.status === 'stale').length;
-  if (RadarState.lang === 'ar') {
-    return `المصادر: ${active} يعمل · ${failed} فشل · ${skipped} غير متصل · ${stale} محفوظ`;
-  }
-  return `Sources: ${active} live · ${failed} failed · ${skipped} disconnected · ${stale} cached`;
+  const s = RadarState.grokStatus;
+  if (s.status === 'failed') return 'تعذّر التحديث الأخير · نعرض ما بقي حديثًا من النسخة السابقة';
+  return 'تحديث مجدول كل ٤ ساعات · تُخفى المنشورات بعد ٤٨ ساعة';
 }
 
 function panelMetric(layer, items) {
-  if (layer === 'opportunities') {
-    return {
-      label: RadarState.lang === 'ar' ? 'أفضل الفرص الآن' : 'Top opportunities now',
-      value: String(items.length),
-      caption: RadarState.lang === 'ar'
-        ? 'اسحب يمين/يسار لرؤية فرص أكثر · اضغط على أي فرصة لفتح الخطة والدليل'
-        : 'Swipe to see more opportunities · tap any card to open the plan and evidence'
-    };
-  }
-  if (layer === 'sources') {
-    const rows = sourceHealthRows();
-    const overview = sourceHealthOverview(rows, RadarState.runStatus || {});
-    return {
-      label: RadarState.lang === 'ar' ? 'هل البيانات محدثة؟' : 'Is the data fresh?',
-      value: `${overview.active}/${overview.total || Object.keys(countBy(archiveSignals(), 'source_id')).length}`,
-      caption: overview.blocked
-        ? (RadarState.lang === 'ar' ? `${overview.active} نجح · ${overview.blocked} محفوظ/غير متصل · ${qualityStatusLine()}` : `${overview.active} succeeded · ${overview.blocked} cached/disconnected · ${qualityStatusLine()}`)
-        : (RadarState.lang === 'ar' ? `المصادر نجحت والبطاقات اجتازت الفحص · ${qualityStatusLine()}` : `Sources succeeded and cards passed checks · ${qualityStatusLine()}`)
-    };
-  }
-  if (layer === 'trending') {
-    return {
-      label: RadarState.lang === 'ar' ? 'الرائج' : 'Trending',
-      value: String(items.length || trendingTags().length),
-      caption: RadarState.lang === 'ar' ? 'نقاشات مختصرة: ماذا يقول الناس، ما الألم، وما الإشارة التجارية' : 'Discussion briefs: what people say, repeated pain, and business signal'
-    };
-  }
-  return {
-    label: layer === 'signals'
-      ? (RadarState.lang === 'ar' ? 'عرض الأدلة' : 'Evidence')
-      : (RadarState.lang === 'ar' ? 'ما الجديد اليوم؟' : 'What is new today?'),
-    value: items && items.length ? String(items.length) : (RadarState.archiveExpanded ? String(archiveSignals().length) : String(RadarState.signals.length)),
-    caption: RadarState.archiveExpanded
-      ? (RadarState.lang === 'ar' ? 'عرض خط زمني أوسع مع الأرشيف' : 'Showing wider timeline and archive')
-      : (layer === 'signals'
-        ? (RadarState.lang === 'ar' ? 'روابط وأدلة للتوسع، وليست نقطة البداية' : 'Links and evidence for deeper review')
-        : (RadarState.lang === 'ar' ? 'أخبار مختصرة: ماذا حدث، لماذا يهم، ماذا أستفيد' : 'Short updates: what happened, why it matters, what to use'))
-  };
+  const labels = {opportunities:'أفكار دخل',radar:'جديد اليوم',trending:'نقاش الناس',signals:'مصادر البطاقات'};
+  return {label: labels[layer] || '', value:String(items.length), caption: layer === 'signals' ? 'افتح البطاقة ثم المنشور الأصلي للتحقق.' : 'اضغط لقراءة الفائدة ومثال قصير.'};
 }
 
 function archiveToggleLabel() {
@@ -3543,11 +3400,7 @@ function isWorthyOpportunity(item = {}) {
 }
 
 function allWorthyOpportunityRows() {
-  return dedupeOpportunityRows(
-    focusedOpportunityRows()
-      .concat(manualXOpportunityRows(), candidateOpportunityRows(), baseOpportunityRows())
-      .filter((item) => isWorthyOpportunity(item))
-  );
+  return dedupeOpportunityRows(grokOpportunityRows());
 }
 
 function manualXOpportunityRows() {
@@ -4119,3 +3972,45 @@ function setupParticles() {
 }
 
 document.addEventListener('DOMContentLoaded', bootRadar);
+
+// Only reviewed, useful public-facing material belongs in the rolling radar.
+function isGeneralReaderCard(card) {
+  const age = Date.now() - Date.parse(card?.source_posted_at || '');
+  return card?.audience_fit === 'general' && card?.editorial_status === 'approved'
+    && Number.isFinite(age) && age >= -300000 && age <= 48 * 3600000;
+}
+function grokEvidenceRows() {
+  return allWorthyOpportunityRows().concat(grokSignalRows('updates'),grokSignalRows('discussions'))
+    .map(item => ({...item,kind:'grok_evidence',title_ar:item.editorial.title_ar,
+      source_name:'مصدر البطاقة · X',summary_ar:'المنشور الذي بُني عليه هذا الملخص؛ افتحه للتحقق.',
+      posted_at:item.editorial.source_posted_at}));
+}
+function renderPlainStatus(panel) {
+  const s = RadarState.grokStatus;
+  const time = s.window_end ? new Date(s.window_end).toLocaleString('ar-SA-u-ca-gregory',{timeZone:'Asia/Riyadh',dateStyle:'medium',timeStyle:'short'}) : 'لا يوجد جمع مسجل';
+  const age = Date.now()-Date.parse(s.window_end || '');
+  const state = s.status === 'failed' ? 'تعذّر التحديث' : (!Number.isFinite(age) || age > 4*3600000 ? 'بانتظار جمع جديد' : (s.status === 'partial' ? 'جمع جزئي' : 'نسخة محفوظة حديثة'));
+  const rows = [
+    ['آخر جمع',time + ' · بتوقيت الرياض'],
+    ['الحالة',state],
+    ['المراجعة','البطاقات مبسّطة ومراجَعة تحريريًا. صحة المنشورات تحتاج مراجعة مصادرها.'],
+    ['موعد التحديث','كل ٤ ساعات، مع بقاء الجهاز والتطبيق متاحين وجلسة قروك مفتوحة.']
+  ];
+  panel.innerHTML = '<div class="panel-feed">' + rows.map(([title,text]) => `<article class="signal-chip"><p>${escapeHTML(title)}</p><small>${escapeHTML(text)}</small></article>`).join('') + '</div>';
+}
+
+function wireReaderFont() {
+  const button = document.getElementById('reader-font');
+  if (!button) return;
+  const apply = (large) => {
+    document.documentElement.dataset.readerFont = large ? 'large' : 'normal';
+    button.setAttribute('aria-pressed', String(large));
+    button.textContent = large ? 'حجم النص العادي' : 'تكبير النص';
+  };
+  apply(localStorage.getItem('axp_reader_large') === 'true');
+  button.addEventListener('click', () => {
+    const large = button.getAttribute('aria-pressed') !== 'true';
+    localStorage.setItem('axp_reader_large', String(large));
+    apply(large);
+  });
+}

@@ -13,6 +13,8 @@ DATA_FILES = [
     "data/radar/card_validation_report.json",
     "data/radar/review_queue_summary.json",
     "data/radar/focused_opportunities.json",
+    "data/radar/grok_opportunities.json",
+    "data/grok/status.json",
     "data/radar/focused_updates.json",
     "data/radar/focused_discussions.json",
     "data/radar/openai_intelligence_cards.json",
