@@ -4286,3 +4286,25 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
   html[data-reader-font="large"] .signal-chip p, html[data-reader-font="large"] .signal-chip small { display: block; -webkit-line-clamp: unset; max-height: none; line-height: 1.7; }
   html[data-reader-font="large"] .panel-arrow { display: none; }
 }
+
+/* Progressive disclosure keeps the complete reviewed feed available. */
+.radar-pagination{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;color:#d9e5ef;font-size:16px;padding:10px;}
+.radar-pagination small{flex-basis:100%;text-align:center;font-size:14px;}
+.radar-pagination button{min-height:48px;padding:8px 24px;border:1px solid #8bc8ff;border-radius:12px;background:#10283a;color:#fff;font:inherit;cursor:pointer;}
+@media(max-width:760px){.radar-pagination{font-size:18px;padding:16px}.radar-pagination small{font-size:16px;line-height:1.8}}
+html[data-reader-font="large"] .radar-pagination{font-size:23px;}
+@media(min-width:761px){
+  html:not([data-reader-font="large"]) .data-panel{height:210px;max-height:210px;grid-template-rows:minmax(0,1fr) auto;}
+  html:not([data-reader-font="large"]) .radar-pagination{grid-column:1/-1;padding:4px;gap:6px;}
+  html:not([data-reader-font="large"]) .radar-pagination small{font-size:13px;}
+  html:not([data-reader-font="large"]) .radar-pagination button{min-height:48px;}
+}
+.radar-pagination{order:2;}
+@media (min-width: 761px) {
+  html:not([data-reader-font="large"]) .data-panel { height: 330px; max-height: 330px; }
+  html:not([data-reader-font="large"]) .panel-feed > .signal-chip,
+  html:not([data-reader-font="large"]) .panel-feed > .opportunity-chip.featured-opportunity { height: 224px; min-height: 224px; max-height: 224px; padding: 14px 16px 32px; }
+  html:not([data-reader-font="large"]) .signal-chip p { font-size: 18px; line-height: 1.5; -webkit-line-clamp: 2; }
+  html:not([data-reader-font="large"]) .signal-chip small { font-size: 16px; line-height: 1.6; -webkit-line-clamp: 3; }
+  .panel-arrow { width:48px; height:48px; }
+}

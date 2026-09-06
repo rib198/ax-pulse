@@ -12,6 +12,8 @@ const RadarState = {
   grokOpportunities: [],
   grokWindow: {},
   grokStatus: {},
+  grokCoverage: [],
+  pageLimits: {},
   focusedOpportunities: [],
   focusedOpportunitiesGeneratedAt: null,
   focusedUpdates: [],
@@ -252,6 +254,7 @@ async function bootRadar() {
   RadarState.validationReport = validationReport;
   RadarState.reviewQueueSummary = reviewQueueSummary;
   RadarState.grokStatus = grokStatus || {};
+  RadarState.grokCoverage = grokOpportunities.coverage || [];
   RadarState.grokUpdates = Array.isArray(grokOpportunities.updates) ? grokOpportunities.updates : [];
   RadarState.grokDiscussions = Array.isArray(grokOpportunities.discussions) ? grokOpportunities.discussions : [];
   RadarState.grokWindow = { start: grokOpportunities.window_start, end: grokOpportunities.window_end };
@@ -339,11 +342,15 @@ function startVisualHeartbeat() {
 }
 
 async function refreshRadarData() {
+  if (RadarState.refreshInFlight) return;
+  RadarState.refreshInFlight = true;
+  try {
   const [data, status] = await Promise.all([
     loadJSON('data/radar/grok_opportunities.json', null),
     loadJSON('data/grok/status.json', null)
   ]);
   if (data) {
+    RadarState.grokCoverage = data.coverage || [];
     RadarState.grokOpportunities = data.cards || [];
     RadarState.grokUpdates = data.updates || [];
     RadarState.grokDiscussions = data.discussions || [];
@@ -358,6 +365,7 @@ async function refreshRadarData() {
   }
   updateValueStats();
   document.getElementById('radar-updated').textContent = sourceFooterLabel();
+  } finally { RadarState.refreshInFlight = false; }
 }
 
 function applyLang() {
@@ -650,9 +658,11 @@ function renderDock(layer) {
     node.setAttribute('aria-label', items[index]?.title_ar || items[index]?.title || '');
   });
   if (layer === 'sources') { renderPlainStatus(panel); return; }
+  const limit = RadarState.pageLimits[layer] || 6;
+  const shown = items.slice(0, limit);
   const metric = panelMetric(layer, items);
   const archiveAvailable = false;
-  const showArrows = items.length > 3;
+  const showArrows = shown.length > 3;
 
   panel.innerHTML = `
     <div class="panel-metric">
@@ -664,11 +674,24 @@ function renderDock(layer) {
     <div class="panel-feed-wrap">
       ${showArrows ? `<button type="button" class="panel-arrow panel-arrow-prev" aria-label="${escapeAttr(RadarState.lang === 'ar' ? 'السابق' : 'Previous')}" data-dir="-1">‹</button>` : ''}
       <div class="panel-feed" id="panel-feed-scroll">
-        ${items.length ? items.map((item, idx) => panelChip(item, layer, idx)).join('') : '<p class="signal-chip">لا توجد مادة حديثة مناسبة في هذا القسم. سنعرض الجديد بعد جمعه ومراجعته.</p>'}
+        ${items.length ? shown.map((item, idx) => panelChip(item, layer, idx)).join('') : '<p class="signal-chip">لا توجد مادة حديثة مناسبة في هذا القسم. سنعرض الجديد بعد جمعه ومراجعته.</p>'}
       </div>
       ${showArrows ? `<button type="button" class="panel-arrow panel-arrow-next" aria-label="${escapeAttr(RadarState.lang === 'ar' ? 'التالي' : 'Next')}" data-dir="1">›</button>` : ''}
     </div>
+    <div class="radar-pagination">
+      <span aria-live="polite">المعروض ${shown.length} من ${items.length} إشارة مراجَعة في هذا القسم</span>
+      ${items.length > shown.length ? '<button type="button" data-show-more>عرض المزيد</button>' : ''}
+      <small>هذه نتائج البحث المتاحة بعد المراجعة، وليست حصرًا لكل ما نُشر. تفاصيل التغطية في «حالة البيانات».</small>
+    </div>
   `;
+  panel.querySelector('[data-show-more]')?.addEventListener('click', () => {
+    const nextIndex = shown.length;
+    RadarState.pageLimits[layer] = limit + 6;
+    renderDock(layer);
+    const next = panel.querySelectorAll('#panel-feed-scroll > *')[nextIndex];
+    next?.focus();
+    next?.scrollIntoView({block:'nearest',inline:'nearest'});
+  });
 
   if (layer === 'opportunities') {
     panel.querySelectorAll('[data-detail-idx]').forEach((btn) => {
@@ -2829,7 +2852,7 @@ function sourceFooterLabel() {
 
 function panelMetric(layer, items) {
   const labels = {opportunities:'أفكار دخل',radar:'جديد اليوم',trending:'نقاش الناس',signals:'مصادر البطاقات'};
-  return {label: labels[layer] || '', value:String(items.length), caption: layer === 'signals' ? 'افتح البطاقة ثم المنشور الأصلي للتحقق.' : 'اضغط لقراءة الفائدة ومثال قصير.'};
+  return {label: labels[layer] || '', value:String(items.length), caption: layer === 'signals' ? 'افتح البطاقة ثم المنشور الأصلي للتحقق.' : 'كل الإشارات المراجَعة متاحة عبر عرض المزيد.'};
 }
 
 function archiveToggleLabel() {
@@ -3976,7 +3999,7 @@ document.addEventListener('DOMContentLoaded', bootRadar);
 // Only reviewed, useful public-facing material belongs in the rolling radar.
 function isGeneralReaderCard(card) {
   const age = Date.now() - Date.parse(card?.source_posted_at || '');
-  return card?.audience_fit === 'general' && card?.editorial_status === 'approved'
+  return ['general','specialist_explained'].includes(card?.audience_fit) && card?.editorial_status === 'approved'
     && Number.isFinite(age) && age >= -300000 && age <= 48 * 3600000;
 }
 function grokEvidenceRows() {
@@ -3990,7 +4013,16 @@ function renderPlainStatus(panel) {
   const time = s.window_end ? new Date(s.window_end).toLocaleString('ar-SA-u-ca-gregory',{timeZone:'Asia/Riyadh',dateStyle:'medium',timeStyle:'short'}) : 'لا يوجد جمع مسجل';
   const age = Date.now()-Date.parse(s.window_end || '');
   const state = s.status === 'failed' ? 'تعذّر التحديث' : (!Number.isFinite(age) || age > 4*3600000 ? 'بانتظار جمع جديد' : (s.status === 'partial' ? 'جمع جزئي' : 'نسخة محفوظة حديثة'));
+  const coverage = RadarState.grokCoverage;
+  const found = coverage.filter(c => c.status === 'found').length;
+  const noResults = coverage.filter(c => c.status === 'no_results').length;
+  const failed = coverage.filter(c => c.status === 'failed').length;
+  const published = grokOpportunityRows().length + grokSignalRows('updates').length + grokSignalRows('discussions').length;
+  const review = s.review_summary;
   const rows = [
+    ['نطاق البحث', `${coverage.length} حسابًا مسجلًا في هذه الدفعة: ${found} بنتائج، ${noResults} دون نتائج بحث، ${failed} تعذّر بحثها. خلو البحث لا يثبت عدم النشر.`],
+    ['المواد المعروضة', `${published} موضوعًا مراجَعًا من الدفعات الحديثة. تضم دفعة البحث الحالية ${s.posts ?? 'عددًا غير مسجل من'} رابطًا. تُدمج المنشورات عن الموضوع نفسه.`],
+    ['اكتمال المراجعة', review ? `${review.reviewed_posts} رابطًا له قرار مراجعة، و${review.pending_posts} بانتظارها. لا يعني ذلك التحقق المستقل من صحة كل منشور.` : 'لم تُستكمل مراجعة جميع الروابط. المعروض ليس كل ما جُمع.'],
     ['آخر جمع',time + ' · بتوقيت الرياض'],
     ['الحالة',state],
     ['المراجعة','البطاقات مبسّطة ومراجَعة تحريريًا. صحة المنشورات تحتاج مراجعة مصادرها.'],

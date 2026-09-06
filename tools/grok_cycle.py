@@ -72,7 +72,7 @@ def validate(payload):
     for c in payload['signals']:
         if c.get('section') not in SECTIONS:
             raise ValueError('Unknown section')
-        if c.get('audience_fit') != 'general' or c.get('editorial_status') != 'approved':
+        if c.get('audience_fit') not in ('general','specialist_explained') or c.get('editorial_status') != 'approved':
             raise ValueError('Require a reviewed card useful to general readers')
         if c.get('benefit_type') not in ('income','time','decision','everyday'):
             raise ValueError('Specify a practical reader benefit')
@@ -97,6 +97,8 @@ def validate(payload):
         if not isinstance(urls,list) or not urls or not all(u in posts for u in urls):
             raise ValueError('Signal citation absent from this run research')
         c=dict(c)
+        if 'verification' in c:
+            c['grok_reported_verification']=c.pop('verification')
         c.update(id='grok:'+key, content_kind='grok_editorial_proposal',
                  verification_status='needs_verification',
                  source_posted_at=max(posts[u]['posted_at'] for u in urls),
@@ -111,6 +113,17 @@ def validate(payload):
     for c in coverage:
         if not re.fullmatch(r'@?[A-Za-z0-9_]{1,15}',c.get('handle','')) or c.get('status') not in ('found','no_results','failed'):
             raise ValueError('Invalid account coverage row')
+    review=payload.get('review_summary')
+    if review is not None:
+        if not isinstance(review,dict) or any(type(review.get(k)) is not int or review[k]<0 for k in ('reviewed_posts','pending_posts')):
+            raise ValueError('Invalid review counts')
+        if review['reviewed_posts']+review['pending_posts'] != len(posts):
+            raise ValueError('Review counts must cover this run posts exactly')
+    withdrawn=payload.get('withdrawn_story_keys',[])
+    if not isinstance(withdrawn,list) or not all(isinstance(k,str) and re.fullmatch(r'[a-z0-9][a-z0-9-]{2,100}',k) for k in withdrawn):
+        raise ValueError('Invalid withdrawn story keys')
+    if set(withdrawn)&seen:
+        raise ValueError('Cannot publish and withdraw the same story')
     return posts,signals
 
 
@@ -120,6 +133,9 @@ def cycle_status(payload, snapshot, posts, signals, digest):
             'run_id':digest,'run_kind':payload.get('run_kind','scheduled_collection'),'posts':len(posts),'signals':len(signals),
             'counts':{k:len(snapshot[v]) for k,v in SECTIONS.items()},
             'coverage_count':len(payload['coverage']),
+            'coverage_counts':{state:sum(c['status']==state for c in payload['coverage']) for state in ('found','no_results','failed')},
+            'review_summary':payload.get('review_summary'),
+            'published_counts':{k:sum(c.get('editorial_status')=='approved' and c.get('audience_fit') in ('general','specialist_explained') and datetime.now(timezone.utc)-timedelta(hours=48)<=stamp(c['source_posted_at'])<=datetime.now(timezone.utc)+timedelta(minutes=5) for c in snapshot[v]) for k,v in SECTIONS.items()},
             'metrics_available':sum(p.get('public_metrics') is not None for p in posts.values())}
 
 
@@ -148,7 +164,7 @@ def ingest(root,payload):
         snapshot={k:v for k,v in prior.items() if k not in SECTIONS.values()}
         for section,dest in SECTIONS.items():
             # Keep recent previous cards on partial/empty results, prune only by source time.
-            old=[c for c in prior.get(dest,[]) if c.get('id') not in new_keys and not (not c.get('story_key') and tuple(sorted(c.get('source_urls',[]))) in new_sources) and c.get('source_posted_at') and stamp(c['source_posted_at'])>=stamp(payload['window_start'])]
+            old=[c for c in prior.get(dest,[]) if c.get('story_key') not in payload.get('withdrawn_story_keys',[]) and c.get('id') not in new_keys and not (not c.get('story_key') and tuple(sorted(c.get('source_urls',[]))) in new_sources) and c.get('source_posted_at') and stamp(c['source_posted_at'])>=stamp(payload['window_start'])]
             snapshot[dest]=[c for c in signals if c['section']==section]+old
         snapshot.update(schema_version='grok-radar-cycle-v1',source='Grok web / X Search',
                         generated_at=datetime.now(timezone.utc).isoformat(),window_start=payload['window_start'],
