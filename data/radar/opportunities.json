@@ -1,98 +1,69 @@
 {
-  "generated_at": "2026-09-07T22:27:56+00:00",
+  "generated_at": "2026-09-08T01:57:05+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 843,
+  "corpus_count": 841,
   "opportunities": [
     {
-      "id": "ai-customer-service-agents",
-      "title_ar": "تطوير وكلاء خدمة العملاء بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام وكلاء الذكاء الاصطناعي في خدمة العملاء يعكس الحاجة المتزايدة لحلول فعالة. يمكن أن يؤدي الاعتماد على هذه التكنولوجيا إلى تحسين الكفاءة وتقليل التكاليف.",
-      "buyer_ar": "شركات الخدمات، المؤسسات الحكومية",
-      "sellable_product_ar": "نظام خدمة العملاء الذكي القائم على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لوكيل خدمة عملاء يعمل على استفسارات محددة",
-      "tools_ar": "نموذج LLM، واجهة برمجة التطبيقات، نظام إدارة العملاء",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الاعتماد على نماذج الذكاء الاصطناعي في توليد النصوص يفتح المجال لتطوير حلول مخصصة. السوق العربي بحاجة إلى أدوات قادرة على التعامل مع اللغات المحلية.",
+      "buyer_ar": "شركات التكنولوجيا والمحتوى الرقمي",
+      "sellable_product_ar": "نموذج توليد نصوص مخصص للغة العربية",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص لمقالة قصيرة",
+      "tools_ar": "Hugging Face, PyTorch, Transformers",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.04611",
-        "huggingface_daily_papers:2609.05258",
-        "huggingface_daily_papers:2609.00581"
+        "YNSScarSaiyan/vegeta-weights",
+        "tchbcb/MiniCPM5-2B-cpu",
+        "YNSScarSaiyan/simi-weights"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction",
-          "url": "https://huggingface.co/papers/2609.04611",
-          "score": 0.521,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization",
-          "url": "https://huggingface.co/papers/2609.05258",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Enoki: Efficient Multi-Level Hallucination Detection",
-          "url": "https://huggingface.co/papers/2609.00581",
-          "score": 0.478,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-07T22:27:56+00:00",
-      "updatedAt": "2026-09-07T22:27:56+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "video-editing-automation",
-      "title_ar": "أتمتة تحرير الفيديو باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تطوير إطار عمل موحد لتحرير الفيديو يمكن أن يلبي احتياجات متنوعة في السوق. الطلب على أدوات تحرير الفيديو يتزايد، مما يوفر فرصة كبيرة.",
-      "buyer_ar": "شركات الإنتاج الإعلامي، المبدعين المستقلين",
-      "sellable_product_ar": "أداة تحرير فيديو تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع ميزات محدودة لتحرير الفيديو",
-      "tools_ar": "نموذج تحرير الفيديو، واجهة مستخدم، خوارزمية التعلم الآلي",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2609.04190",
-        "huggingface_daily_papers:2609.05415",
-        "huggingface_daily_papers:2609.02750"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Bilevel Coordinated Reflection: A Game-Theoretic Approach to Multi-Agent LLM Systems",
-          "url": "https://huggingface.co/papers/2609.02750",
-          "score": 0.494,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "YNSScarSaiyan/vegeta-weights — text-generation",
+          "url": "https://huggingface.co/YNSScarSaiyan/vegeta-weights",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
-          "url": "https://huggingface.co/papers/2609.04190",
-          "score": 0.489,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "tchbcb/MiniCPM5-2B-cpu — text-generation",
+          "url": "https://huggingface.co/tchbcb/MiniCPM5-2B-cpu",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
-          "url": "https://huggingface.co/papers/2609.05415",
-          "score": 0.474,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "YNSScarSaiyan/simi-weights — text-generation",
+          "url": "https://huggingface.co/YNSScarSaiyan/simi-weights",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Pb2010 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Pb2010",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Fac5 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Fac5",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Dt2 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Dt2",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,49 +71,141 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-07T22:27:56+00:00",
-      "updatedAt": "2026-09-07T22:27:56+00:00",
+      "publishedAt": "2026-09-08T01:57:05+00:00",
+      "updatedAt": "2026-09-08T01:57:05+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي من النصوص يوفر فرصة لتطوير نماذج تحويل النص إلى صورة. يمكن استغلال هذه النماذج في مجالات الإعلانات والتسويق.",
+      "buyer_ar": "وكالات التسويق والإعلانات",
+      "sellable_product_ar": "نموذج تحويل نصوص إلى صور مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة واحدة",
+      "tools_ar": "Hugging Face, Diffusers, Lora",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "CH522/MMh3-Pb2010",
+        "CH522/MMh3-Fac5",
+        "CH522/MMh3-Dt2"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "YNSScarSaiyan/vegeta-weights — text-generation",
+          "url": "https://huggingface.co/YNSScarSaiyan/vegeta-weights",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "tchbcb/MiniCPM5-2B-cpu — text-generation",
+          "url": "https://huggingface.co/tchbcb/MiniCPM5-2B-cpu",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "YNSScarSaiyan/simi-weights — text-generation",
+          "url": "https://huggingface.co/YNSScarSaiyan/simi-weights",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Pb2010 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Pb2010",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Fac5 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Fac5",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Dt2 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Dt2",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-08T01:57:05+00:00",
+      "updatedAt": "2026-09-08T01:57:05+00:00",
       "sortOrder": 1
     },
     {
-      "id": "interactive-optimization-tools",
-      "title_ar": "أدوات تحسين تفاعلية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في تحسين العمليات يعكس حاجة السوق لأدوات تفاعلية تتيح تحسينات سريعة. هذه الأدوات يمكن أن تكون حلاً فعالاً للشركات.",
-      "buyer_ar": "شركات الاستشارات، المؤسسات الصناعية",
-      "sellable_product_ar": "أداة تحسين تفاعلية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم جلسة استشارية مدفوعة لتحليل العمليات الحالية",
-      "tools_ar": "نموذج LLM، واجهة مستخدم، قاعدة بيانات",
+      "id": "voice-generation-solutions",
+      "title_ar": "تطوير حلول توليد الصوت",
+      "thesis_ar": "تزايد استخدام الصوتيات في التطبيقات الرقمية يعكس الحاجة إلى حلول توليد صوت مخصصة. السوق العربي يحتاج إلى نماذج تدعم اللهجات المحلية.",
+      "buyer_ar": "شركات تطوير التطبيقات الصوتية",
+      "sellable_product_ar": "نموذج توليد صوت مخصص للهجات العربية",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد مقطع صوتي قصير",
+      "tools_ar": "Hugging Face, GGUF, Transformers",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.05258",
-        "huggingface_daily_papers:2609.00581",
-        "huggingface_daily_papers:2609.04753"
+        "Wiself/Voice",
+        "YNSScarSaiyan/zoey",
+        "fpadovani/nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization",
-          "url": "https://huggingface.co/papers/2609.05258",
-          "score": 0.499,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "YNSScarSaiyan/vegeta-weights — text-generation",
+          "url": "https://huggingface.co/YNSScarSaiyan/vegeta-weights",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Enoki: Efficient Multi-Level Hallucination Detection",
-          "url": "https://huggingface.co/papers/2609.00581",
-          "score": 0.478,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "tchbcb/MiniCPM5-2B-cpu — text-generation",
+          "url": "https://huggingface.co/tchbcb/MiniCPM5-2B-cpu",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs",
-          "url": "https://huggingface.co/papers/2609.04753",
-          "score": 0.472,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "YNSScarSaiyan/simi-weights — text-generation",
+          "url": "https://huggingface.co/YNSScarSaiyan/simi-weights",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Pb2010 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Pb2010",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Fac5 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Fac5",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "CH522/MMh3-Dt2 — text-to-image",
+          "url": "https://huggingface.co/CH522/MMh3-Dt2",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-07T22:27:56+00:00",
-      "updatedAt": "2026-09-07T22:27:56+00:00",
+      "publishedAt": "2026-09-08T01:57:05+00:00",
+      "updatedAt": "2026-09-08T01:57:05+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-07T22:27:56+00:00",
+  "tiered_at": "2026-09-08T01:57:05+00:00",
   "free_preview_count": 3
 }
