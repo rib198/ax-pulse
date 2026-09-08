@@ -1,41 +1,48 @@
 {
-  "generated_at": "2026-09-08T17:44:28+00:00",
+  "generated_at": "2026-09-08T20:30:53+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 831,
+  "corpus_count": 835,
   "opportunities": [
     {
       "id": "ai-scientist-workspace",
       "title_ar": "تطوير مساحة عمل للعلماء باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على أدوات الذكاء الاصطناعي في البحث العلمي يخلق حاجة ملحة لبيئات عمل متكاملة. الحلول الحالية لا تزال مجزأة، مما يوفر فرصة لتطوير منصة موحدة.",
-      "buyer_ar": "مراكز الأبحاث والجامعات",
-      "sellable_product_ar": "منصة متكاملة للبحث العلمي تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لمدة شهر لمجموعة مختارة من الباحثين",
-      "tools_ar": "أدوات تطوير البرمجيات، واجهات برمجة التطبيقات، خوادم سحابية",
-      "capital_ar": "متوسط",
+      "thesis_ar": "تزايد الاعتماد على نماذج الذكاء الاصطناعي في البحث العلمي يتطلب أدوات متكاملة. توفر مساحة عمل موحدة تسهل التعاون بين أدوات البرمجة والكتابة يمكن أن تلبي هذه الحاجة.",
+      "buyer_ar": "المؤسسات البحثية والجامعات",
+      "sellable_product_ar": "منصة متكاملة لدعم البحث العلمي باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لمدة شهر مع إمكانية الاشتراك المدفوع",
+      "tools_ar": "منصة تطوير برمجيات، واجهة برمجة التطبيقات للذكاء الاصطناعي، أدوات تحليل البيانات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2609.00365",
-        "huggingface_daily_papers:2609.04135",
-        "huggingface_daily_papers:2609.03254"
+        "huggingface_models:HyperAiCorp/Nova-1.1-0.8B",
+        "huggingface_models:Prannesshkva/ISOM-Qwen-1.5B-Instruct"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Dr. Claw: An AI Scientist Workspace for Vibe Research",
           "url": "https://huggingface.co/papers/2609.00365",
-          "score": 0.484,
+          "score": 0.49,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "What Else Needs Fixing? Exploring Cost-Effective Test-Time Compute for Revision Propagation in Artifacts Generated Through Conversation",
-          "url": "https://huggingface.co/papers/2609.03254",
-          "score": 0.476,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "HyperAiCorp/Nova-1.1-0.8B — text-generation",
+          "url": "https://huggingface.co/HyperAiCorp/Nova-1.1-0.8B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Prannesshkva/ISOM-Qwen-1.5B-Instruct — text-generation",
+          "url": "https://huggingface.co/Prannesshkva/ISOM-Qwen-1.5B-Instruct",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -43,41 +50,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-08T17:44:28+00:00",
-      "updatedAt": "2026-09-08T17:44:28+00:00",
+      "publishedAt": "2026-09-08T20:30:53+00:00",
+      "updatedAt": "2026-09-08T20:30:53+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-solutions",
-      "title_ar": "حلول تحويل النص إلى صورة باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي مبتكر يفتح المجال لتطوير أدوات تحويل النص إلى صورة. نماذج الذكاء الاصطناعي الحديثة توفر إمكانيات جديدة في هذا المجال.",
-      "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "أداة تحويل نص إلى صورة تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة تحويل نصوص محددة إلى صور مجانية لمدة أسبوع",
-      "tools_ar": "نماذج تحويل النص إلى صورة، واجهات برمجة التطبيقات، أدوات التصميم",
-      "capital_ar": "منخفض",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على المحتوى البصري المولد بواسطة الذكاء الاصطناعي يفتح المجال لتطوير نماذج جديدة. يمكن أن تلبي هذه النماذج احتياجات الصناعات الإبداعية والإعلانات.",
+      "buyer_ar": "وكالات الإعلان، شركات الإنتاج الإعلامي",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي مع إمكانية إنشاء عدد محدود من الصور مجانًا",
+      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_models:vicious999/aad14",
-        "huggingface_models:vicious999/aad14",
+        "huggingface_models:vicious999/aadd14",
         "huggingface_models:shamozhiying/Wan2.1_VAE_upscale2x_imageonly_real_v1.safetensors"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
           "title": "vicious999/aad14 — text-to-image",
           "url": "https://huggingface.co/vicious999/aad14",
-          "score": 0.472,
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "vicious999/aadd14 — text-to-image",
+          "url": "https://huggingface.co/vicious999/aadd14",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "shamozhiying/Wan2.1_VAE_upscale2x_imageonly_real_v1.safetensors — text-to-image",
           "url": "https://huggingface.co/shamozhiying/Wan2.1_VAE_upscale2x_imageonly_real_v1.safetensors",
-          "score": 0.472,
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -86,42 +100,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-08T17:44:28+00:00",
-      "updatedAt": "2026-09-08T17:44:28+00:00",
+      "publishedAt": "2026-09-08T20:30:53+00:00",
+      "updatedAt": "2026-09-08T20:30:53+00:00",
       "sortOrder": 1
     },
     {
-      "id": "cost-effective-revision-tools",
-      "title_ar": "أدوات فعالة من حيث التكلفة لتعديل المحتوى باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في توليد المحتوى يفتح المجال لتطوير أدوات تساعد في تحسين عملية المراجعة. الحاجة إلى أدوات فعالة من حيث التكلفة تعزز من فرص السوق.",
-      "buyer_ar": "شركات المحتوى والإعلام",
-      "sellable_product_ar": "أداة تعديل محتوى تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم اشتراك شهري تجريبي بسعر مخفض",
-      "tools_ar": "نماذج لغة، واجهات برمجة التطبيقات، أدوات تحليل البيانات",
+      "id": "custom-llm-for-finance",
+      "title_ar": "تطوير نماذج لغوية مخصصة للقطاع المالي",
+      "thesis_ar": "الاحتياجات المتزايدة في قطاع التمويل لتحسين عمليات تقييم القروض تتطلب نماذج لغوية متخصصة. يمكن أن توفر هذه النماذج دقة أكبر في اتخاذ القرارات المالية.",
+      "buyer_ar": "البنوك وشركات التمويل",
+      "sellable_product_ar": "نموذج لغوي مخصص لتحليل البيانات المالية",
+      "first_paid_test_ar": "تقديم تحليل بيانات تجريبي مجاني مع إمكانية الاشتراك المدفوع",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات التعلم الآلي، واجهات برمجة التطبيقات المالية",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.03254",
-        "huggingface_daily_papers:2609.04482",
-        "huggingface_daily_papers:2609.04135"
+        "huggingface_models:liuchen88/Qwen3.8-27B-CommercialLoan-MLX",
+        "huggingface_models:noctrex/DFM-Mimir",
+        "huggingface_models:Shankarblr/Qwen2.5-1.5B-QA360"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.46,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "What Else Needs Fixing? Exploring Cost-Effective Test-Time Compute for Revision Propagation in Artifacts Generated Through Conversation",
-          "url": "https://huggingface.co/papers/2609.03254",
-          "score": 0.476,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "noctrex/DFM-Mimir — text-generation",
+          "url": "https://huggingface.co/noctrex/DFM-Mimir",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Safety for Whom? Boundary-Aware Self-Distillation for Controlled LLM Safety Refusal",
-          "url": "https://huggingface.co/papers/2609.04482",
-          "score": 0.449,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Shankarblr/Qwen2.5-1.5B-QA360 — text-generation",
+          "url": "https://huggingface.co/Shankarblr/Qwen2.5-1.5B-QA360",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "liuchen88/Qwen3.8-27B-CommercialLoan-MLX — text-generation",
+          "url": "https://huggingface.co/liuchen88/Qwen3.8-27B-CommercialLoan-MLX",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -129,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-08T17:44:28+00:00",
-      "updatedAt": "2026-09-08T17:44:28+00:00",
+      "publishedAt": "2026-09-08T20:30:53+00:00",
+      "updatedAt": "2026-09-08T20:30:53+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-08T17:44:28+00:00",
+  "tiered_at": "2026-09-08T20:30:53+00:00",
   "free_preview_count": 3
 }
