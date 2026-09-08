@@ -1,89 +1,47 @@
 {
-  "generated_at": "2026-09-08T06:47:35+00:00",
+  "generated_at": "2026-09-08T12:27:08+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 841,
+  "corpus_count": 838,
   "opportunities": [
     {
-      "id": "ai-scientist-workspace",
-      "title_ar": "تطوير مساحة عمل للعلماء باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على أدوات الذكاء الاصطناعي في البحث العلمي يفتح المجال لإنشاء بيئات عمل متكاملة. هذا الوقت مناسب لتطوير حلول تجمع بين أدوات البرمجة والتواصل في منصة واحدة.",
-      "buyer_ar": "مراكز البحث العلمي والجامعات",
-      "sellable_product_ar": "منصة متكاملة للبحث العلمي تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية للباحثين في جامعة محلية",
-      "tools_ar": "أدوات البرمجة، واجهات برمجة التطبيقات للذكاء الاصطناعي، أدوات التعاون",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد نصوص مخصصة",
+      "thesis_ar": "تزايد الطلب على نماذج توليد النصوص المخصصة في مجالات متعددة. يمكن استخدام النماذج المتاحة لتطوير حلول مخصصة تلبي احتياجات محددة.",
+      "buyer_ar": "شركات المحتوى، وكالات التسويق، والمطورين",
+      "sellable_product_ar": "نماذج توليد نصوص مخصصة حسب احتياجات العملاء",
+      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني مع خيارات مدفوعة بعد التجربة",
+      "tools_ar": "أدوات تعلم الآلة، مكتبات البرمجة، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.00365",
-        "huggingface_daily_papers:2609.04611"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Dr. Claw: An AI Scientist Workspace for Vibe Research",
-          "url": "https://huggingface.co/papers/2609.00365",
-          "score": 0.49,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction",
-          "url": "https://huggingface.co/papers/2609.04611",
-          "score": 0.486,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-08T06:47:35+00:00",
-      "updatedAt": "2026-09-08T06:47:35+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-image-generation-tool",
-      "title_ar": "أداة تحويل النص إلى صورة",
-      "thesis_ar": "تزايد استخدام تقنيات تحويل النصوص إلى صور يتيح فرصًا جديدة في مجالات التسويق والإبداع. تتطلب السوق أدوات مبتكرة لتحسين تجربة المستخدم.",
-      "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "أداة متقدمة لتحويل النصوص إلى صور باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تجربة مجانية لشركة تسويق محلية",
-      "tools_ar": "نماذج تحويل النص إلى صورة، واجهات برمجة التطبيقات، أدوات التصميم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:Loay94/flash-lite-browser",
-        "huggingface_models:CH522/MMh3-Pb2010",
-        "huggingface_models:akopytko/Qwen3.8-27B-NVFP4-GGUF"
+        "huggingface_models:mradermacher/MiniCPM5-2B-GGUF",
+        "huggingface_models:mradermacher/MiniCPM5-2B-i1-GGUF",
+        "huggingface_models:mradermacher/MiniCPM5-2B-Base-GGUF"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Loay94/flash-lite-browser — text-to-image",
-          "url": "https://huggingface.co/Loay94/flash-lite-browser",
+          "title": "mradermacher/MiniCPM5-2B-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "CH522/MMh3-Pb2010 — text-to-image",
-          "url": "https://huggingface.co/CH522/MMh3-Pb2010",
+          "title": "mradermacher/MiniCPM5-2B-i1-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-i1-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "akopytko/Qwen3.8-27B-NVFP4-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/akopytko/Qwen3.8-27B-NVFP4-GGUF",
-          "score": 0.466,
+          "title": "mradermacher/MiniCPM5-2B-Base-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Base-GGUF",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -92,39 +50,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-08T06:47:35+00:00",
-      "updatedAt": "2026-09-08T06:47:35+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-09-08T12:27:08+00:00",
+      "updatedAt": "2026-09-08T12:27:08+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "cybersecurity-ai-tools",
-      "title_ar": "أدوات الذكاء الاصطناعي للأمن السيبراني",
-      "thesis_ar": "مع تزايد التهديدات السيبرانية، هناك حاجة ملحة لأدوات تعتمد على الذكاء الاصطناعي لتحسين الأمن. هذا الوقت مناسب لتطوير حلول مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات الأمن السيبراني",
-      "sellable_product_ar": "أداة تحليل تهديدات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل مجاني لثغرة أمنية لشركة محلية",
-      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات التحليل، واجهات برمجة التطبيقات للأمن",
+      "id": "image-text-integration",
+      "title_ar": "تطوير حلول دمج النصوص والصور",
+      "thesis_ar": "تزايد الاهتمام بتطبيقات الذكاء الاصطناعي التي تجمع بين النصوص والصور. يمكن تطوير حلول مبتكرة لتحسين تجربة المستخدم في مجالات متعددة.",
+      "buyer_ar": "شركات الإعلانات، منصات التواصل الاجتماعي، ومطوري التطبيقات",
+      "sellable_product_ar": "أدوات دمج النصوص والصور باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم عرض تجريبي محدود مع خيارات مدفوعة بعد التجربة",
+      "tools_ar": "أدوات معالجة الصور، مكتبات تعلم الآلة، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:tokenaii/Horus-Cyber-Nano-1.0-GGUF",
-        "huggingface_models:ChamaraVishwajithRajapaksha/vuln-detector-qwen2.5-1.5b-instruct"
+        "huggingface_models:malaiwah/GLM-5.3-Flash-TR3-8bpw",
+        "huggingface_models:malaiwah/GLM-5.3-Flash-TR3-6bpw",
+        "huggingface_models:ewin-reg/MiniCPM5-Vision-2B"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "tokenaii/Horus-Cyber-Nano-1.0-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/tokenaii/Horus-Cyber-Nano-1.0-GGUF",
-          "score": 0.488,
+          "title": "malaiwah/GLM-5.3-Flash-TR3-8bpw — image-text-to-text",
+          "url": "https://huggingface.co/malaiwah/GLM-5.3-Flash-TR3-8bpw",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ChamaraVishwajithRajapaksha/vuln-detector-qwen2.5-1.5b-instruct — text-generation",
-          "url": "https://huggingface.co/ChamaraVishwajithRajapaksha/vuln-detector-qwen2.5-1.5b-instruct",
+          "title": "malaiwah/GLM-5.3-Flash-TR3-6bpw — image-text-to-text",
+          "url": "https://huggingface.co/malaiwah/GLM-5.3-Flash-TR3-6bpw",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ewin-reg/MiniCPM5-Vision-2B — image-text-to-text",
+          "url": "https://huggingface.co/ewin-reg/MiniCPM5-Vision-2B",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -134,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-08T06:47:35+00:00",
-      "updatedAt": "2026-09-08T06:47:35+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-09-08T12:27:08+00:00",
+      "updatedAt": "2026-09-08T12:27:08+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-09-08T06:47:35+00:00",
+  "tiered_at": "2026-09-08T12:27:08+00:00",
   "free_preview_count": 3
 }
