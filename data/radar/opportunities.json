@@ -1,40 +1,41 @@
 {
-  "generated_at": "2026-09-09T02:22:35+00:00",
+  "generated_at": "2026-09-09T07:02:56+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 738,
+  "corpus_count": 831,
   "opportunities": [
     {
-      "id": "text-to-image-technology",
-      "title_ar": "تكنولوجيا تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي المبتكر، مما يجعل تكنولوجيا تحويل النص إلى صورة فرصة جذابة. يمكن استخدامها في مجالات الدعاية والتسويق والإعلام.",
-      "buyer_ar": "وكالات الإعلان والشركات الناشئة",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى صور",
-      "first_paid_test_ar": "تقديم خدمة تحويل نصوص محددة إلى صور كاختبار",
-      "tools_ar": "نماذج ذكاء اصطناعي، واجهات برمجة التطبيقات، بيئة تطوير",
-      "capital_ar": "بدون رأس مال",
+      "id": "robotic-manipulation-training",
+      "title_ar": "تدريب الروبوتات على المناولة المعقدة",
+      "thesis_ar": "تزايد الحاجة لتدريب الروبوتات على المناولة في بيئات معقدة يجعل من الضروري تطوير حلول فعالة. يمكن استخدام البيانات المستندة إلى نقل حركات اليد البشرية لتسريع عملية التعلم.",
+      "buyer_ar": "شركات تصنيع الروبوتات",
+      "sellable_product_ar": "نظام تدريب للروبوتات باستخدام بيانات حركات اليد",
+      "first_paid_test_ar": "تطوير نموذج أولي لتدريب روبوت على مهمة بسيطة",
+      "tools_ar": "أدوات تعلم الآلة، بيانات حركية، بيئة محاكاة",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:RehoodJT/xu-pie",
-        "huggingface_models:nightmedia/Qwen3.5-9B-Theseus-q8-hi-mlx"
+        "huggingface_daily_papers:2609.07498",
+        "huggingface_daily_papers:2609.05588",
+        "arxiv_papers:2609.08636"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 2,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "RehoodJT/xu-pie — text-to-image",
-          "url": "https://huggingface.co/RehoodJT/xu-pie",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "CosmoH2G: A Hand-to-Gripper Transfer Dataset and Baseline Method for Object Manipulation with Complex Spatial Movements",
+          "url": "https://huggingface.co/papers/2609.07498",
+          "score": 0.503,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "nightmedia/Qwen3.5-9B-Theseus-q8-hi-mlx — image-text-to-text",
-          "url": "https://huggingface.co/nightmedia/Qwen3.5-9B-Theseus-q8-hi-mlx",
-          "score": 0.466,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "GE-Act 2.0: Pretraining and Scaling a World-Action Model for Robotic Manipulation",
+          "url": "https://huggingface.co/papers/2609.05588",
+          "score": 0.47,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -42,11 +43,168 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-09T02:22:35+00:00",
-      "updatedAt": "2026-09-09T02:22:35+00:00",
+      "publishedAt": "2026-09-09T07:02:56+00:00",
+      "updatedAt": "2026-09-09T07:02:56+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "autonomous-driving-safety-testing",
+      "title_ar": "اختبار سلامة القيادة الذاتية",
+      "thesis_ar": "تزايد الاعتماد على أنظمة القيادة الذاتية يرفع من أهمية ضمان سلامتها. استخدام نماذج الذكاء الاصطناعي لاختبار السيناريوهات يمكن أن يحسن من فعالية هذه الأنظمة.",
+      "buyer_ar": "شركات السيارات والتكنولوجيا",
+      "sellable_product_ar": "نظام اختبار سيناريوهات القيادة الذاتية",
+      "first_paid_test_ar": "تطوير سيناريو اختبار بسيط لقيادة ذاتية",
+      "tools_ar": "أدوات محاكاة، نماذج تعلم الآلة، بيانات حقيقية للقيادة",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2609.08965",
+        "huggingface_daily_papers:2609.08977",
+        "huggingface_daily_papers:2609.09153"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Omni Interaction Agent Technical Report",
+          "url": "https://huggingface.co/papers/2609.08977",
+          "score": 0.483,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+          "url": "https://huggingface.co/papers/2609.09153",
+          "score": 0.474,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-09T07:02:56+00:00",
+      "updatedAt": "2026-09-09T07:02:56+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "ai-in-oncology-care",
+      "title_ar": "تحسين رعاية الأورام باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد المعلومات في مجال رعاية الأورام يتطلب أدوات فعالة لتحليل البيانات. يمكن للذكاء الاصطناعي أن يوفر إجابات مستندة إلى الأدلة لتحسين اتخاذ القرار.",
+      "buyer_ar": "مراكز الرعاية الصحية والمستشفيات",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات في رعاية الأورام",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل بيانات مرضى الأورام",
+      "tools_ar": "أدوات تحليل البيانات، نماذج تعلم الآلة، قاعدة بيانات طبية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2609.08364",
+        "huggingface_daily_papers:2609.09056",
+        "arxiv_papers:2609.07823"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CosmoH2G: A Hand-to-Gripper Transfer Dataset and Baseline Method for Object Manipulation with Complex Spatial Movements",
+          "url": "https://huggingface.co/papers/2609.07498",
+          "score": 0.503,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "SentryLine: Evidence-Grounded Question Answering over Evolving Documents in Oncology Care",
+          "url": "http://arxiv.org/abs/2609.08364v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving",
+          "url": "http://arxiv.org/abs/2609.08965v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Omni Interaction Agent Technical Report",
+          "url": "https://huggingface.co/papers/2609.08977",
+          "score": 0.483,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+          "url": "https://huggingface.co/papers/2609.09153",
+          "score": 0.474,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers",
+          "url": "http://arxiv.org/abs/2609.08166v1",
+          "score": 0.472,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-09T07:02:56+00:00",
+      "updatedAt": "2026-09-09T07:02:56+00:00",
+      "sortOrder": 2
+    },
+    {
+      "id": "speech-generation-editing",
+      "title_ar": "توليد وتحرير الصوت باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على محتوى صوتي مخصص يتطلب أدوات فعالة لتوليد وتحرير الصوت. يمكن لنموذج موحد أن يسهل هذه العملية.",
+      "buyer_ar": "شركات الإنتاج الإعلامي والتسويق",
+      "sellable_product_ar": "نظام لتوليد وتحرير الصوت باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتوليد مقطع صوتي قصير",
+      "tools_ar": "أدوات معالجة الصوت، نماذج تعلم الآلة، واجهة مستخدم",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2609.08936",
+        "arxiv_papers:2609.09022",
+        "huggingface_daily_papers:2609.09158"
+      ],
+      "confidence": 0.65,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
+          "url": "https://huggingface.co/papers/2609.08936",
+          "score": 0.46,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
+          "url": "https://huggingface.co/papers/2609.09158",
+          "score": 0.449,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "premium",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-09T07:02:56+00:00",
+      "updatedAt": "2026-09-09T07:02:56+00:00",
+      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-09-09T02:22:35+00:00",
+  "tiered_at": "2026-09-09T07:02:56+00:00",
   "free_preview_count": 3
 }
