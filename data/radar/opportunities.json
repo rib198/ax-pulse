@@ -1,28 +1,85 @@
 {
-  "generated_at": "2026-09-10T01:59:43+00:00",
+  "generated_at": "2026-09-10T06:52:48+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 836,
+  "corpus_count": 838,
   "opportunities": [
     {
-      "id": "educational-ai-tools",
-      "title_ar": "تطوير أدوات تعليمية مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام أدوات الذكاء الاصطناعي في التعليم يوفر فرصة لتطوير أدوات تعليمية مبتكرة. يمكن لهذه الأدوات تحسين تجربة التعلم وتعزيز الفهم لدى الطلاب.",
-      "buyer_ar": "مؤسسات تعليمية، معلمون، طلاب",
-      "sellable_product_ar": "أدوات تعليمية تفاعلية تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لعدد محدود من المستخدمين مع خيار الاشتراك المدفوع لاحقًا",
-      "tools_ar": "منصة تطوير برمجيات، أدوات الذكاء الاصطناعي، واجهات برمجة التطبيقات",
+      "id": "text-generation-for-atlassian-tools",
+      "title_ar": "تطوير نماذج توليد النصوص لأدوات أتلتيك",
+      "thesis_ar": "تحديثات نماذج توليد النصوص لأدوات أتلتيك مثل Jira وConfluence تشير إلى الحاجة المتزايدة لتخصيص هذه الأدوات. يمكن للشركات الاستفادة من هذه النماذج لتقديم حلول مخصصة لعملائها.",
+      "buyer_ar": "شركات البرمجيات التي تقدم أدوات إدارة المشاريع",
+      "sellable_product_ar": "خدمات تطوير نماذج ذكاء اصطناعي مخصصة لأدوات أتلتيك",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص مخصص لأداة Jira",
+      "tools_ar": "Hugging Face, PyTorch, أدوات تطوير البرمجيات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2609.09856v1",
-        "huggingface_daily_papers:2609.07821",
-        "anthropic_news:https://www.anthropic.com/news/anthropic-teach-for-all"
+        "huggingface_models:Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q4-mlx",
+        "huggingface_models:Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q6-mlx",
+        "huggingface_models:Mihai-LeanZero/Qwen3.5-9B-Atlassian-lora"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.46,
+      "avg_score": 0.49,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q4-mlx — text-generation",
+          "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q4-mlx",
+          "score": 0.494,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q6-mlx — text-generation",
+          "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q6-mlx",
+          "score": 0.494,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Mihai-LeanZero/Qwen3.5-9B-Atlassian-lora — text-generation",
+          "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-lora",
+          "score": 0.494,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-10T06:52:48+00:00",
+      "updatedAt": "2026-09-10T06:52:48+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "ai-in-education-tools",
+      "title_ar": "تطوير أدوات تعليمية تعتمد على الذكاء الاصطناعي",
+      "thesis_ar": "تزايد النقاش حول استخدام أدوات الذكاء الاصطناعي في التعليم يشير إلى فرصة كبيرة لتطوير أدوات تعليمية مبتكرة. يمكن أن تلبي هذه الأدوات احتياجات المعلمين والطلاب بشكل أفضل.",
+      "buyer_ar": "مؤسسات التعليم والتدريب",
+      "sellable_product_ar": "أدوات تعليمية تعتمد على الذكاء الاصطناعي لتحسين التعلم",
+      "first_paid_test_ar": "تقديم نسخة تجريبية من أداة تعليمية تعتمد على الذكاء الاصطناعي",
+      "tools_ar": "Hugging Face, أدوات تطوير التعليم, منصات التعلم الإلكتروني",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2609.09856v1",
+        "huggingface_daily_papers:2609.10540",
+        "huggingface_daily_papers:2609.05405"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Programmable World Model",
+          "url": "https://huggingface.co/papers/2609.10540",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "With a Thermomix You Lose the Ability to Cook: A Kitchen Machine Analogy for Applications of Generative AI in Education",
@@ -32,17 +89,10 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "A*-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM",
-          "url": "https://huggingface.co/papers/2609.07821",
-          "score": 0.449,
+          "title": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+          "url": "https://huggingface.co/papers/2609.05405",
+          "score": 0.485,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "anthropic_news",
-          "title": "Anthropic Teach For All",
-          "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
-          "score": 0.447,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,111 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-10T01:59:43+00:00",
-      "updatedAt": "2026-09-10T01:59:43+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-09-10T06:52:48+00:00",
+      "updatedAt": "2026-09-10T06:52:48+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "multimodal-ai-systems",
-      "title_ar": "تطوير أنظمة ذكاء اصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد الحاجة إلى أنظمة ذكاء اصطناعي قادرة على معالجة البيانات المتعددة الوسائط يفتح المجال لتطوير حلول جديدة. هذه الأنظمة يمكن أن تعزز من دقة التحليل واتخاذ القرار.",
-      "buyer_ar": "شركات التكنولوجيا، مؤسسات البحث والتطوير",
-      "sellable_product_ar": "أنظمة ذكاء اصطناعي متعددة الوسائط لتحليل البيانات",
-      "first_paid_test_ar": "تطوير نموذج أولي يقدم تحليلًا لمجموعة بيانات متعددة الوسائط",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة البيانات، بيئات تطوير برمجيات",
+      "id": "healthcare-wearable-ai",
+      "title_ar": "تطبيقات الذكاء الاصطناعي في البيانات الصحية القابلة للارتداء",
+      "thesis_ar": "التقدم في تقنيات الاستشعار القابلة للارتداء يفتح المجال لتطبيقات جديدة في الرعاية الصحية. يمكن للذكاء الاصطناعي أن يساعد في تحليل البيانات الصحية وتحسين الرعاية.",
+      "buyer_ar": "شركات التكنولوجيا الصحية",
+      "sellable_product_ar": "حلول ذكاء اصطناعي لتحليل البيانات الصحية من الأجهزة القابلة للارتداء",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل بيانات صحية باستخدام الذكاء الاصطناعي",
+      "tools_ar": "Hugging Face, أدوات تحليل البيانات, أجهزة استشعار صحية",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2609.10177v1",
-        "arxiv_papers:2609.07823v1",
+        "huggingface_daily_papers:2609.05405",
+        "huggingface_daily_papers:2609.10522",
         "arxiv_papers:2609.09526v1"
       ],
-      "confidence": 0.65,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Beyond Surface Imitation: Contrastive Modeling for Reasoning Path Alignment in Multimodal In-Context Learning",
-          "url": "http://arxiv.org/abs/2609.10177v1",
-          "score": 0.47,
+          "source_id": "huggingface_daily_papers",
+          "title": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+          "url": "https://huggingface.co/papers/2609.05405",
+          "score": 0.485,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+          "url": "https://huggingface.co/papers/2609.10522",
+          "score": 0.472,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "SAFIRE: Safety-Critical Benchmark for Fine-grained Fire and Smoke Understanding in Multimodal LLMs",
-          "url": "http://arxiv.org/abs/2609.07823v1",
+          "title": "Benchmarking Agentic HLS Design Tasks With HLS-Eval",
+          "url": "http://arxiv.org/abs/2609.09526v1",
           "score": 0.468,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Benchmarking Agentic HLS Design Tasks With HLS-Eval",
-          "url": "http://arxiv.org/abs/2609.09526v1",
-          "score": 0.465,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-10T01:59:43+00:00",
-      "updatedAt": "2026-09-10T01:59:43+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "cybersecurity-ai-solutions",
-      "title_ar": "حلول ذكاء اصطناعي لأمن المعلومات",
-      "thesis_ar": "مع تزايد التهديدات السيبرانية، هناك حاجة ملحة لتطوير حلول ذكاء اصطناعي لتحسين أمن المعلومات. هذه الحلول يمكن أن تساعد المؤسسات على التصدي للهجمات بشكل أكثر فعالية.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات الحكومية، المؤسسات المالية",
-      "sellable_product_ar": "أنظمة ذكاء اصطناعي لمراقبة وتحليل التهديدات السيبرانية",
-      "first_paid_test_ar": "تقديم خدمة تحليل أمني مجانية لمؤسسة صغيرة مع خيار الاشتراك",
-      "tools_ar": "أدوات تحليل البيانات، منصات تعلم الآلة، واجهات برمجة التطبيقات للأمان",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2609.10298v1",
-        "arxiv_papers:2609.09628v1",
-        "arxiv_papers:2609.09526v1"
-      ],
-      "confidence": 0.6,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.46,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Who Are They to Each Other? Multi-Agent Reasoning for Speaker Relationship Inference",
-          "url": "http://arxiv.org/abs/2609.09628v1",
-          "score": 0.473,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Benchmarking Agentic HLS Design Tasks With HLS-Eval",
-          "url": "http://arxiv.org/abs/2609.09526v1",
-          "score": 0.465,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Learning Intrusion Response Strategies for OT Systems",
-          "url": "http://arxiv.org/abs/2609.10298v1",
-          "score": 0.448,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-10T01:59:43+00:00",
-      "updatedAt": "2026-09-10T01:59:43+00:00",
+      "publishedAt": "2026-09-10T06:52:48+00:00",
+      "updatedAt": "2026-09-10T06:52:48+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-10T01:59:43+00:00",
+  "tiered_at": "2026-09-10T06:52:48+00:00",
   "free_preview_count": 3
 }
