@@ -1,40 +1,48 @@
 {
-  "generated_at": "2026-09-12T23:54:56+00:00",
+  "generated_at": "2026-09-13T02:14:15+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 724,
+  "corpus_count": 723,
   "opportunities": [
     {
-      "id": "ai-cloud-agents",
-      "title_ar": "تطوير وكلاء سحابيين باستخدام API",
-      "thesis_ar": "تزايد الطلب على حلول الذكاء الاصطناعي السحابية، مما يجعل تطوير وكلاء سحابيين فرصة واعدة. يمكن استخدام API لتسهيل بناء وإطلاق هذه الوكلاء بسرعة.",
-      "buyer_ar": "شركات التكنولوجيا الناشئة والمؤسسات الكبيرة",
-      "sellable_product_ar": "خدمة تطوير وكلاء سحابيين مخصصة",
-      "first_paid_test_ar": "تطوير نموذج أولي لوكيل سحابي بسيط واختباره مع عميل محتمل",
-      "tools_ar": "API، أدوات البرمجة السحابية، أدوات الذكاء الاصطناعي",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يفتح آفاقًا جديدة في الإبداع الرقمي. مع تحديثات متعددة لنماذج مثل meathead-style-lora-v2 وallsimple، يمكن استغلال هذا الاتجاه لتقديم خدمات مخصصة.",
+      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
+      "sellable_product_ar": "خدمات تصميم صور مخصصة باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تصميم صورة واحدة باستخدام نموذج AI مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face API, أدوات تصميم جرافيكي, خوادم سحابية",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "openai_news",
-        "huggingface_daily_papers:2609.05903"
+        "huggingface_models:LeoTechServices/meathead-style-lora-v2",
+        "huggingface_models:98sd7fc9sdf/allsimple",
+        "huggingface_models:zehen8716/imane-lora"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "openai_news",
-          "title": "Introducing the Agents API",
-          "url": "https://openai.com/index/introducing-the-agents-api",
-          "score": 0.475,
+          "source_id": "huggingface_models",
+          "title": "LeoTechServices/meathead-style-lora-v2 — text-to-image",
+          "url": "https://huggingface.co/LeoTechServices/meathead-style-lora-v2",
+          "score": 0.516,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "EvoSafeHarness: Evolving Model- and Domain-Specific Harnesses for Securing Agents",
-          "url": "https://huggingface.co/papers/2609.05903",
-          "score": 0.456,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "98sd7fc9sdf/allsimple — text-to-image",
+          "url": "https://huggingface.co/98sd7fc9sdf/allsimple",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "zehen8716/imane-lora — text-to-image",
+          "url": "https://huggingface.co/zehen8716/imane-lora",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -42,41 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-12T23:54:56+00:00",
-      "updatedAt": "2026-09-12T23:54:56+00:00",
+      "publishedAt": "2026-09-13T02:14:15+00:00",
+      "updatedAt": "2026-09-13T02:14:15+00:00",
       "sortOrder": 0
     },
     {
-      "id": "medical-image-restoration",
-      "title_ar": "نموذج موحد لاستعادة الصور الطبية",
-      "thesis_ar": "تزايد الحاجة إلى استعادة الصور الطبية بدقة عالية، مما يجعل تطوير نموذج موحد فرصة مميزة. يمكن أن يؤدي ذلك إلى تحسين الرعاية الصحية وزيادة الكفاءة.",
-      "buyer_ar": "المستشفيات ومراكز البحث الطبي",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لاستعادة الصور الطبية",
-      "first_paid_test_ar": "تطبيق النموذج على مجموعة صغيرة من الصور الطبية واستعراض النتائج",
-      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، بيانات طبية",
-      "capital_ar": "متوسط",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "الطلب المتزايد على محتوى ذكي ومخصص يعزز الحاجة إلى نماذج توليد النصوص. مع وجود نماذج مثل FinAI وzoey، يمكن تقديم حلول متقدمة للشركات.",
+      "buyer_ar": "شركات المحتوى الرقمي والتسويق",
+      "sellable_product_ar": "خدمات كتابة محتوى ذكي باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "كتابة مقال قصير باستخدام نموذج AI مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face API, أدوات تحرير نصوص, خوادم سحابية",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.11156",
-        "huggingface_daily_papers:2609.09076"
+        "huggingface_models:meridianal/FinAI",
+        "huggingface_models:YNSScarSaiyan/zoey",
+        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.45,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "UniH^3: Unifying Hierarchical Homogeneity and Heterogeneity for All-in-One Medical Image Restoration",
-          "url": "https://huggingface.co/papers/2609.11156",
-          "score": 0.453,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "meridianal/FinAI — text-generation",
+          "url": "https://huggingface.co/meridianal/FinAI",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation",
-          "url": "https://huggingface.co/papers/2609.09076",
-          "score": 0.451,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "YNSScarSaiyan/zoey — text-generation",
+          "url": "https://huggingface.co/YNSScarSaiyan/zoey",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ReliquaryForge/qwen3-4b-base-dapo-v4 — text-generation",
+          "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -84,41 +100,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-12T23:54:56+00:00",
-      "updatedAt": "2026-09-12T23:54:56+00:00",
+      "publishedAt": "2026-09-13T02:14:15+00:00",
+      "updatedAt": "2026-09-13T02:14:15+00:00",
       "sortOrder": 1
     },
     {
-      "id": "actionable-peer-review",
-      "title_ar": "توليد مراجعات أكاديمية قابلة للتنفيذ",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في المراجعات الأكاديمية، مما يخلق حاجة لمراجعات توجيهية. هذا يمكن أن يحسن جودة الأبحاث المنشورة.",
-      "buyer_ar": "الجامعات ومراكز البحث",
-      "sellable_product_ar": "خدمة توليد مراجعات أكاديمية مخصصة",
-      "first_paid_test_ar": "تقديم مراجعة نموذجية لورقة بحثية مقابل رسوم رمزية",
-      "tools_ar": "نماذج اللغة، أدوات تحليل النصوص، بيانات أكاديمية",
-      "capital_ar": "منخفض",
+      "id": "multimodal-models",
+      "title_ar": "تطوير نماذج متعددة الوسائط",
+      "thesis_ar": "تزايد الحاجة إلى نماذج قادرة على التعامل مع النصوص والصور معًا. نماذج مثل GRaPE-2.5 توفر إمكانيات جديدة في هذا المجال.",
+      "buyer_ar": "شركات التكنولوجيا والإعلام",
+      "sellable_product_ar": "خدمات تطوير تطبيقات تعتمد على نماذج متعددة الوسائط",
+      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق بسيط يستخدم نموذج متعدد الوسائط",
+      "tools_ar": "Hugging Face API, أدوات تطوير التطبيقات, خوادم سحابية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.09076",
-        "huggingface_daily_papers:2609.11317"
+        "huggingface_models:SL-AI/GRaPE-2.5-Quasar",
+        "huggingface_models:SL-AI/GRaPE-2.5-Quasar-GGUF",
+        "huggingface_models:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.45,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation",
-          "url": "https://huggingface.co/papers/2609.09076",
-          "score": 0.451,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "SL-AI/GRaPE-2.5-Quasar — image-text-to-text",
+          "url": "https://huggingface.co/SL-AI/GRaPE-2.5-Quasar",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Mi-Ripple: Restoring Images Degraded by Iterative AI Editing",
-          "url": "https://huggingface.co/papers/2609.11317",
-          "score": 0.45,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "SL-AI/GRaPE-2.5-Quasar-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/SL-AI/GRaPE-2.5-Quasar-GGUF",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -126,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-12T23:54:56+00:00",
-      "updatedAt": "2026-09-12T23:54:56+00:00",
+      "publishedAt": "2026-09-13T02:14:15+00:00",
+      "updatedAt": "2026-09-13T02:14:15+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-12T23:54:56+00:00",
+  "tiered_at": "2026-09-13T02:14:15+00:00",
   "free_preview_count": 3
 }
