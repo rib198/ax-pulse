@@ -1,67 +1,46 @@
 {
-  "generated_at": "2026-09-13T13:15:04+00:00",
+  "generated_at": "2026-09-13T17:26:26+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 725,
+  "corpus_count": 758,
   "opportunities": [
     {
-      "id": "ai-legal-summarization",
-      "title_ar": "خدمة تلخيص قانوني باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الحاجة إلى تلخيص الوثائق القانونية بشكل فعال. نماذج الذكاء الاصطناعي المخصصة لهذا المجال يمكن أن توفر الوقت والجهد للمحامين.",
-      "buyer_ar": "مكاتب المحاماة والشركات القانونية",
-      "sellable_product_ar": "نظام تلخيص قانوني يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تلخيص مجاني لعدد محدود من الوثائق القانونية",
-      "tools_ar": "نموذج تلخيص قانوني، واجهة مستخدم، خادم سحابي",
+      "id": "text-to-image-generation",
+      "title_ar": "توليد الصور من النصوص",
+      "thesis_ar": "تزايد الطلب على تحويل النصوص إلى صور في مجالات الإبداع والتسويق. التقنيات الجديدة توفر دقة وجودة أعلى في النتائج.",
+      "buyer_ar": "شركات التسويق والإعلانات، والمصممين المستقلين",
+      "sellable_product_ar": "خدمة توليد صور احترافية من نصوص باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد صورة واحدة بناءً على نص محدد",
+      "tools_ar": "نموذج Hugging Face، منصة حوسبة سحابية، واجهة مستخدم بسيطة",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal",
-        "Rfetha/HakHukuk-4B-GGUF",
-        "ActReview: Rebuttal-Guided Training Data"
+        "huggingface_models:shreshthsaini/LumaGuide",
+        "huggingface_models:julialiii/jooolia",
+        "huggingface_models:loradica/lorarafa"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal — text-generation",
-          "url": "https://huggingface.co/phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal",
+          "title": "shreshthsaini/LumaGuide — text-to-image",
+          "url": "https://huggingface.co/shreshthsaini/LumaGuide",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "julialiii/jooolia — text-to-image",
+          "url": "https://huggingface.co/julialiii/jooolia",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "huihui-ai/Huihui-MiniCPM5-2B-abliterated — text-generation",
-          "url": "https://huggingface.co/huihui-ai/Huihui-MiniCPM5-2B-abliterated",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "saracen9/muse-glimmer-30b-abliterated — image-text-to-text",
-          "url": "https://huggingface.co/saracen9/muse-glimmer-30b-abliterated",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Wouke82/lena — text-to-image",
-          "url": "https://huggingface.co/Wouke82/lena",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "AmericanoLatte/Lorin_Krea_Lora — text-to-image",
-          "url": "https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "weyr/shae-face-lora — text-to-image",
-          "url": "https://huggingface.co/weyr/shae-face-lora",
+          "title": "loradica/lorarafa — text-to-image",
+          "url": "https://huggingface.co/loradica/lorarafa",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -71,141 +50,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-13T13:15:04+00:00",
-      "updatedAt": "2026-09-13T13:15:04+00:00",
+      "publishedAt": "2026-09-13T17:26:26+00:00",
+      "updatedAt": "2026-09-13T17:26:26+00:00",
       "sortOrder": 0
     },
     {
       "id": "medical-image-restoration",
-      "title_ar": "حلول استعادة الصور الطبية باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على استعادة الصور الطبية بدقة عالية. نماذج الذكاء الاصطناعي يمكن أن تعالج هذا الطلب بشكل فعال.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام استعادة الصور الطبية باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "استعادة صورة طبية واحدة مجانًا لاختبار فعالية النظام",
-      "tools_ar": "نموذج استعادة الصور، بيانات طبية، واجهة مستخدم",
+      "title_ar": "استعادة الصور الطبية",
+      "thesis_ar": "تزايد الحاجة إلى تحسين جودة الصور الطبية لأغراض التشخيص. النماذج الجديدة تقدم حلولاً شاملة لمشاكل متعددة في استعادة الصور.",
+      "buyer_ar": "المستشفيات، العيادات الطبية، ومراكز البحث",
+      "sellable_product_ar": "خدمة استعادة وتحسين الصور الطبية باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة استعادة صورة طبية واحدة كتجربة مجانية",
+      "tools_ar": "نموذج UniH^3، أدوات معالجة الصور، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "UniH^3: Unifying Hierarchical Homogeneity",
-        "Mi-Ripple: Restoring Images Degraded",
-        "EvoSafeHarness: Evolving Model"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal — text-generation",
-          "url": "https://huggingface.co/phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "huihui-ai/Huihui-MiniCPM5-2B-abliterated — text-generation",
-          "url": "https://huggingface.co/huihui-ai/Huihui-MiniCPM5-2B-abliterated",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "saracen9/muse-glimmer-30b-abliterated — image-text-to-text",
-          "url": "https://huggingface.co/saracen9/muse-glimmer-30b-abliterated",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Wouke82/lena — text-to-image",
-          "url": "https://huggingface.co/Wouke82/lena",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "AmericanoLatte/Lorin_Krea_Lora — text-to-image",
-          "url": "https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "weyr/shae-face-lora — text-to-image",
-          "url": "https://huggingface.co/weyr/shae-face-lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-13T13:15:04+00:00",
-      "updatedAt": "2026-09-13T13:15:04+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-generation",
-      "title_ar": "خدمة تحويل النصوص إلى صور باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاهتمام بتوليد الصور من النصوص في مجالات متعددة مثل التسويق والفنون. يمكن استخدام نماذج الذكاء الاصطناعي لتلبية هذا الطلب.",
-      "buyer_ar": "وكالات التسويق والفنانين",
-      "sellable_product_ar": "نظام تحويل النصوص إلى صور",
-      "first_paid_test_ar": "تقديم صورة واحدة مجانية بناءً على نص محدد",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، خادم سحابي",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "Wouke82/lena",
-        "AmericanoLatte/Lorin_Krea_Lora",
-        "pompom666/dead_stylee"
+        "huggingface_daily_papers:2609.11156",
+        "huggingface_daily_papers:2609.11317"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 2,
+      "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal — text-generation",
-          "url": "https://huggingface.co/phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Mi-Ripple: Restoring Images Degraded by Iterative AI Editing",
+          "url": "https://huggingface.co/papers/2609.11317",
+          "score": 0.478,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "huihui-ai/Huihui-MiniCPM5-2B-abliterated — text-generation",
-          "url": "https://huggingface.co/huihui-ai/Huihui-MiniCPM5-2B-abliterated",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "saracen9/muse-glimmer-30b-abliterated — image-text-to-text",
-          "url": "https://huggingface.co/saracen9/muse-glimmer-30b-abliterated",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Wouke82/lena — text-to-image",
-          "url": "https://huggingface.co/Wouke82/lena",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "AmericanoLatte/Lorin_Krea_Lora — text-to-image",
-          "url": "https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "weyr/shae-face-lora — text-to-image",
-          "url": "https://huggingface.co/weyr/shae-face-lora",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "UniH^3: Unifying Hierarchical Homogeneity and Heterogeneity for All-in-One Medical Image Restoration",
+          "url": "https://huggingface.co/papers/2609.11156",
+          "score": 0.473,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -213,11 +92,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-13T13:15:04+00:00",
-      "updatedAt": "2026-09-13T13:15:04+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-09-13T17:26:26+00:00",
+      "updatedAt": "2026-09-13T17:26:26+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-09-13T13:15:04+00:00",
+  "tiered_at": "2026-09-13T17:26:26+00:00",
   "free_preview_count": 3
 }
