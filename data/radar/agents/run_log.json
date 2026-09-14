@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-09-13T22:27:41+00:00",
+  "run_at": "2026-09-14T02:27:12+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,23 +26,23 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 1247.669,
+      "duration_s": 873.864,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 249 signals from 31 source families",
-        "14 source errors (non-fatal)"
+        "collected 230 signals from 31 source families",
+        "15 source errors (non-fatal)"
       ],
       "error": null
     },
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [],
       "notes": [
-        "injected 495 manual X items (skipped 5 of 500, avg score 0.144)"
+        "injected 493 manual X items (skipped 7 of 500, avg score 0.142)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 744 items",
-        "by tier: press=522, official=160, research=32, community=30"
+        "tagged 723 items",
+        "by tier: press=520, official=159, community=26, research=18"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.03,
+      "duration_s": 0.029,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 744 items, top priority=0.498"
+        "ranked 723 items, top priority=0.511"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 14 companies, 17 products this run",
+        "detected 15 companies, 16 products this run",
         "store size: 48"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.064,
+      "duration_s": 0.058,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+18 new model events",
+        "+14 new model events",
         "300 total"
       ],
       "error": null
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.144,
+      "duration_s": 0.13,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "12 events (3 new)",
+        "12 events (10 new)",
         "by type: pricing_change=3, model_release=7, funding_round=2"
       ],
       "error": null
@@ -123,7 +123,7 @@
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.017,
+      "duration_s": 0.016,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 6.952,
+      "duration_s": 7.942,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 5.458,
+      "duration_s": 5.238,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 4.468,
+      "duration_s": 3.972,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=744, opps=3, calls=3"
+        "items=723, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.47,
+      "duration_s": 1.57,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: يظهر التركيز المتزايد على تغييرات الأسعار وإصدارات النماذج من الشركات الكبرى مث…"
+        "insight via openai: شهد النشاط زيادة ملحوظة في تغييرات الأسعار مقارنةً بالإصدارات الجديدة، حيث تم ت…"
       ],
       "error": null
     },
