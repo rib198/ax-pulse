@@ -1,83 +1,90 @@
 {
-  "generated_at": "2026-09-15T20:39:46+00:00",
+  "generated_at": "2026-09-15T23:52:54+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 820,
+  "corpus_count": 831,
   "opportunities": [
     {
-      "id": "safety-in-computer-agents",
-      "title_ar": "تحسين أمان الوكلاء الرقميين",
-      "thesis_ar": "مع تزايد استخدام الوكلاء الرقميين، تزداد المخاطر الأمنية. تطوير أدوات لتحليل سلوك الوكلاء يمكن أن يقلل من هذه المخاطر.",
-      "buyer_ar": "شركات الأمن السيبراني",
-      "sellable_product_ar": "أداة تحليل سلوك الوكلاء الرقميين",
-      "first_paid_test_ar": "تقديم تحليل سلوكي لوكيل رقمي في بيئة محددة",
-      "tools_ar": "أدوات تحليل البيانات، خوارزميات تعلم الآلة، بيئات اختبار",
+      "id": "autonomous-exploration-agents",
+      "title_ar": "تطوير وكلاء استكشاف ذاتي",
+      "thesis_ar": "تزايد الحاجة لوكلاء رقميين قادرين على التكيف مع بيئات جديدة يجعل من تطوير إطار عمل مثل RSIAgent فرصة مثيرة. هذه التكنولوجيا يمكن أن تعزز من فعالية الأنظمة الذكية في مختلف المجالات.",
+      "buyer_ar": "شركات التقنية والبرمجيات",
+      "sellable_product_ar": "إطار عمل لوكلاء استكشاف ذاتي",
+      "first_paid_test_ar": "تجربة نموذج أولي مع عميل في مجال البرمجيات",
+      "tools_ar": "أدوات تطوير البرمجيات، بيئات الاختبار، منصات السحابة",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.15134",
-        "arxiv_papers:2609.15906",
+        "huggingface_daily_papers:2609.15364",
+        "arxiv_papers:2609.15364",
+        "arxiv_papers:2609.15906v1"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.53,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
+          "url": "https://huggingface.co/papers/2609.15364",
+          "score": 0.571,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Authorization Architectures for Tool-Using AI Agents",
+          "url": "http://arxiv.org/abs/2609.15906v1",
+          "score": 0.49,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-15T23:52:54+00:00",
+      "updatedAt": "2026-09-15T23:52:54+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "vision-language-models",
+      "title_ar": "نماذج رؤية ولغة لاستخراج البيانات",
+      "thesis_ar": "استخدام نماذج الرؤية واللغة في استخراج البيانات من الوثائق التجارية يزداد بشكل ملحوظ. تطوير حلول تعتمد على هذه النماذج يمكن أن يحقق قيمة كبيرة للشركات.",
+      "buyer_ar": "شركات التحليل والبيانات",
+      "sellable_product_ar": "نظام لاستخراج البيانات من الوثائق",
+      "first_paid_test_ar": "تجربة استخراج بيانات من مجموعة وثائق محددة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2609.15706v1",
+        "arxiv_papers:2609.14592v1",
         "huggingface_daily_papers:2609.15029"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.46,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "HazardAuditor: From Executable Threats to Safer Computer-Use Agents",
-          "url": "https://huggingface.co/papers/2609.15134",
-          "score": 0.503,
+          "source_id": "arxiv_papers",
+          "title": "Beyond Accuracy: Robustness, Cost, and Governance Trade-offs for Vision-Language Models in Templated Document Extraction",
+          "url": "http://arxiv.org/abs/2609.15706v1",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Pick Your Poison: Learning to Select Poison Sets for Stronger LLM Backdoor Attacks",
           "url": "https://huggingface.co/papers/2609.15029",
-          "score": 0.467,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-15T20:39:46+00:00",
-      "updatedAt": "2026-09-15T20:39:46+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "vision-language-models",
-      "title_ar": "تطوير نماذج رؤية ولغة لتحليل الوثائق",
-      "thesis_ar": "تزايد استخدام نماذج الرؤية واللغة لاستخراج المعلومات من الوثائق التجارية. هذا يفتح المجال لتحسين الكفاءة في معالجة البيانات.",
-      "buyer_ar": "شركات الخدمات المالية والإدارية",
-      "sellable_product_ar": "نموذج رؤية ولغة لتحليل الوثائق",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل نوع معين من الوثائق",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة اللغة، بيئات اختبار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2609.15706",
-        "huggingface_daily_papers:2609.15863",
-        "huggingface_daily_papers:2609.13058"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LynnReal-Omni: Native multi-modal Video Generation for Agentic Visual Workflows",
-          "url": "https://huggingface.co/papers/2609.15863",
-          "score": 0.498,
+          "score": 0.45,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Expert-Space Exploration in MoE Reinforcement Learning",
-          "url": "https://huggingface.co/papers/2609.13058",
-          "score": 0.466,
+          "source_id": "arxiv_papers",
+          "title": "AI Deployment Accountability Engineering: A Vision for Accountable AI in Safety-Critical Socio-Technical Systems",
+          "url": "http://arxiv.org/abs/2609.14592v1",
+          "score": 0.447,
           "trust_tier": "research"
         }
       ],
@@ -86,11 +93,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-15T20:39:46+00:00",
-      "updatedAt": "2026-09-15T20:39:46+00:00",
+      "publishedAt": "2026-09-15T23:52:54+00:00",
+      "updatedAt": "2026-09-15T23:52:54+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "context-management-tools",
+      "title_ar": "أدوات إدارة السياق للحملات التسويقية",
+      "thesis_ar": "تزايد أهمية إدارة السياق في الحملات التسويقية يفتح المجال لتطوير أدوات تساعد الوكلاء على فهم الأعمال بشكل أفضل. هذه الأدوات يمكن أن تعزز من فعالية الحملات التسويقية.",
+      "buyer_ar": "وكالات التسويق والشركات",
+      "sellable_product_ar": "أداة لإدارة السياق في الحملات التسويقية",
+      "first_paid_test_ar": "تجربة أداة مع حملة تسويقية حقيقية",
+      "tools_ar": "أدوات تحليل البيانات، منصات التسويق، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "manual_x:2099166725396922524",
+        "manual_x:2099581464610480147",
+        "arxiv_papers:2609.15779v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "manual_x",
+          "title": "context management is one of the core skills for a marketing engineer    when you give an agent a campaign to work on, it needs to understa…",
+          "url": "https://x.com/shannholmberg/status/2099166725396922524#m",
+          "score": 0.517,
+          "trust_tier": "press"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents",
+          "url": "http://arxiv.org/abs/2609.15779v1",
+          "score": 0.465,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "manual_x",
+          "title": "how external research becomes part of your marketing agents' knowledge    when an agent researches competitors, customer conversations or f…",
+          "url": "https://x.com/shannholmberg/status/2099581464610480147#m",
+          "score": 0.46,
+          "trust_tier": "press"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-15T23:52:54+00:00",
+      "updatedAt": "2026-09-15T23:52:54+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-15T20:39:46+00:00",
+  "tiered_at": "2026-09-15T23:52:54+00:00",
   "free_preview_count": 3
 }
