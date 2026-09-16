@@ -1,123 +1,81 @@
 {
-  "generated_at": "2026-09-16T14:32:10+00:00",
+  "generated_at": "2026-09-16T19:18:23+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 726,
   "opportunities": [
     {
-      "id": "recursive-self-improvement-agents",
-      "title_ar": "تطوير وكلاء ذاتيين التحسين",
-      "thesis_ar": "تتزايد الحاجة لوكلاء ذكاء اصطناعي يمكنهم تحسين أدائهم بشكل ذاتي. هذا الاتجاه يدعم الابتكار في مجالات متعددة مثل البحث العلمي والتسويق.",
-      "buyer_ar": "مراكز البحث والشركات التقنية",
-      "sellable_product_ar": "نظام وكيل ذكاء اصطناعي لتحسين الأداء الذاتي",
-      "first_paid_test_ar": "تطوير نموذج أولي واختباره مع مجموعة محدودة من المستخدمين",
-      "tools_ar": "أدوات تطوير البرمجيات، نماذج التعلم العميق، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
+      "id": "music-generation-model",
+      "title_ar": "تطوير نموذج لتوليد الموسيقى",
+      "thesis_ar": "تزايد الطلب على المحتوى الموسيقي المخصص، مما يجعل تطوير نماذج توليد الموسيقى فرصة جذابة. نموذج StepAudio 3 Music يقدم إمكانيات جديدة في توليد الموسيقى بناءً على النصوص.",
+      "buyer_ar": "شركات الإنتاج الموسيقي والفنانين المستقلين",
+      "sellable_product_ar": "نموذج توليد موسيقى مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد مقطع موسيقي قصير",
+      "tools_ar": "نموذج StepAudio 3 Music، أدوات توليد الموسيقى، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2609.15364v1",
-        "huggingface_daily_papers:2609.17523"
+        "huggingface_daily_papers:2609.16034",
+        "huggingface_daily_papers:2609.14005"
       ],
       "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "StepAudio 3 Music Technical Report",
+          "url": "https://huggingface.co/papers/2609.16034",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "StepAudio 3 Realtime Technical Report",
+          "url": "https://huggingface.co/papers/2609.14005",
+          "score": 0.483,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-16T19:18:23+00:00",
+      "updatedAt": "2026-09-16T19:18:23+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام الصور المولدة آليًا في التسويق والإعلانات. نماذج تحويل النص إلى صورة مثل E3Postyle وKrea-2-Pixel-Art توفر إمكانيات جديدة للإبداع.",
+      "buyer_ar": "وكالات التسويق والشركات الإبداعية",
+      "sellable_product_ar": "نموذج لتحويل النص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة",
+      "tools_ar": "نموذج E3Postyle، نموذج Krea-2-Pixel-Art، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:jdoolitt/E3Postyle",
+        "huggingface_models:e-n-v-y/Krea-2-Pixel-Art"
+      ],
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 2,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
-          "url": "http://arxiv.org/abs/2609.15364v1",
-          "score": 0.494,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "jdoolitt/E3Postyle — text-to-image",
+          "url": "https://huggingface.co/jdoolitt/E3Postyle",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
-          "url": "https://huggingface.co/papers/2609.17523",
-          "score": 0.493,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-16T14:32:10+00:00",
-      "updatedAt": "2026-09-16T14:32:10+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "ai-for-games",
-      "title_ar": "الذكاء الاصطناعي في صناعة الألعاب",
-      "thesis_ar": "تتطور نماذج الذكاء الاصطناعي لتشمل تصميم الألعاب وتحليل ديناميكيات اللاعبين. هذه فرصة كبيرة لتطوير أدوات جديدة في هذا السوق المتنامي.",
-      "buyer_ar": "شركات تطوير الألعاب",
-      "sellable_product_ar": "أداة ذكاء اصطناعي لتحليل سلوك اللاعبين وتصميم الألعاب",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مع ميزات محدودة لتحليل بيانات اللاعبين",
-      "tools_ar": "أدوات تطوير الألعاب، نماذج الذكاء الاصطناعي، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2609.16679",
-        "arxiv_papers:2609.16878v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AI for Games in the Foundation Model Era",
-          "url": "https://huggingface.co/papers/2609.16679",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "VOR-Bench: A Human Perception-Driven Benchmark for Video Object Removal",
-          "url": "http://arxiv.org/abs/2609.16878v1",
-          "score": 0.465,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-16T14:32:10+00:00",
-      "updatedAt": "2026-09-16T14:32:10+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "context-management-marketing",
-      "title_ar": "إدارة السياق في التسويق",
-      "thesis_ar": "تعتبر إدارة السياق مهارة أساسية للمهندسين التسويقيين، مما يتيح لهم تحسين الحملات الإعلانية. مع تزايد الاعتماد على الذكاء الاصطناعي، هناك حاجة ملحة لتطوير أدوات تدعم هذه المهارة.",
-      "buyer_ar": "شركات التسويق والإعلانات",
-      "sellable_product_ar": "أداة ذكاء اصطناعي لإدارة السياق في الحملات التسويقية",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية مع إمكانية الدفع مقابل الميزات المتقدمة",
-      "tools_ar": "أدوات تحليل البيانات، واجهات برمجة التطبيقات، نماذج الذكاء الاصطناعي",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "manual_x:2099166725396922524",
-        "openai_news:https://openai.com/index/introducing-the-agents-api"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "manual_x",
-          "title": "context management is one of the core skills for a marketing engineer    when you give an agent a campaign to work on, it needs to understa…",
-          "url": "https://x.com/shannholmberg/status/2099166725396922524#m",
-          "score": 0.494,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "openai_news",
-          "title": "Introducing the Agents API",
-          "url": "https://openai.com/index/introducing-the-agents-api",
-          "score": 0.475,
+          "source_id": "huggingface_models",
+          "title": "e-n-v-y/Krea-2-Pixel-Art — text-to-image",
+          "url": "https://huggingface.co/e-n-v-y/Krea-2-Pixel-Art",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -126,11 +84,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-16T14:32:10+00:00",
-      "updatedAt": "2026-09-16T14:32:10+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-09-16T19:18:23+00:00",
+      "updatedAt": "2026-09-16T19:18:23+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-09-16T14:32:10+00:00",
+  "tiered_at": "2026-09-16T19:18:23+00:00",
   "free_preview_count": 3
 }
