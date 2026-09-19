@@ -1,29 +1,85 @@
 {
-  "generated_at": "2026-09-19T02:10:49+00:00",
+  "generated_at": "2026-09-19T08:29:17+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 722,
+  "corpus_count": 728,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي فريد يتطلب نماذج قوية لتحويل النص إلى صورة. مع تحديثات متعددة لنماذج Hugging Face، هناك فرصة لتقديم حلول مخصصة للسوق.",
-      "buyer_ar": "شركات التسويق والإعلانات، مطورو الألعاب، الفنانون المستقلون",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص محدد إلى صورة",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، بيئة سحابية",
+      "id": "multi-modal-content-generation",
+      "title_ar": "توليد محتوى متعدد الوسائط",
+      "thesis_ar": "تطور النماذج متعددة الوسائط يفتح آفاق جديدة لتوليد المحتوى. يمكن استغلال هذه النماذج في إنشاء محتوى مخصص للعلامات التجارية.",
+      "buyer_ar": "وكالات التسويق والإعلانات",
+      "sellable_product_ar": "خدمة توليد محتوى متعدد الوسائط",
+      "first_paid_test_ar": "إنشاء محتوى تسويقي باستخدام نموذج متعدد الوسائط",
+      "tools_ar": "نماذج متعددة الوسائط، أدوات تصميم، أدوات تسويق",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:obann001/Emma_Vaganova",
-        "huggingface_models:imuffin/barbaradunkelman",
-        "huggingface_models:imuffin/saaniya",
-        "huggingface_models:Aurimas17/Faster"
+        "huggingface_daily_papers:2609.18323",
+        "huggingface_daily_papers:2609.19671",
+        "huggingface_daily_papers:2609.12397"
       ],
-      "confidence": 0.8,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 4,
+      "signal_count": 3,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model",
+          "url": "https://huggingface.co/papers/2609.18323",
+          "score": 0.46,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "When2Think: Learning Difficulty-Aware Length Control for Efficient Hybrid Reasoning Models",
+          "url": "https://huggingface.co/papers/2609.19671",
+          "score": 0.455,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation",
+          "url": "https://huggingface.co/papers/2609.12397",
+          "score": 0.455,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-19T08:29:17+00:00",
+      "updatedAt": "2026-09-19T08:29:17+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-solutions",
+      "title_ar": "حلول تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يوفر فرصًا كبيرة في مجالات الإبداع والتصميم. يمكن تقديم حلول مبتكرة للمصممين والفنانين.",
+      "buyer_ar": "مصممو الجرافيك والفنانون",
+      "sellable_product_ar": "خدمة تحويل النصوص إلى صور باستخدام نماذج متقدمة",
+      "first_paid_test_ar": "تطوير صورة بناءً على نص محدد",
+      "tools_ar": "نموذج تحويل النص إلى صورة، أدوات تصميم، أدوات تسويق",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:kreishyyyy/camilvilch124",
+        "huggingface_models:hodgy/alyne-z-image-turbo-lora-v1",
+        "huggingface_models:obann001/Emma_Vaganova"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "kreishyyyy/camilvilch124 — text-to-image",
+          "url": "https://huggingface.co/kreishyyyy/camilvilch124",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "obann001/Emma_Vaganova — text-to-image",
@@ -33,22 +89,8 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "imuffin/barbaradunkelman — text-to-image",
-          "url": "https://huggingface.co/imuffin/barbaradunkelman",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "imuffin/saaniya — text-to-image",
-          "url": "https://huggingface.co/imuffin/saaniya",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Aurimas17/Faster — text-to-image",
-          "url": "https://huggingface.co/Aurimas17/Faster",
+          "title": "hodgy/alyne-z-image-turbo-lora-v1 — text-to-image",
+          "url": "https://huggingface.co/hodgy/alyne-z-image-turbo-lora-v1",
           "score": 0.472,
           "trust_tier": "official"
         }
@@ -58,61 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-19T02:10:49+00:00",
-      "updatedAt": "2026-09-19T02:10:49+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-generation-services",
-      "title_ar": "تقديم خدمات توليد النصوص",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في كتابة المحتوى. مع توفر نماذج متعددة لتوليد النصوص، يمكن تقديم خدمات كتابة مخصصة.",
-      "buyer_ar": "المدونون، الشركات، وكالات التسويق",
-      "sellable_product_ar": "خدمة كتابة محتوى مخصص باستخدام نماذج توليد النصوص",
-      "first_paid_test_ar": "تقديم مقال تجريبي مدفوع",
-      "tools_ar": "Hugging Face، أدوات معالجة اللغة الطبيعية، منصة سحابية",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Vxtzq/Crowd-v1",
-        "huggingface_models:CrashOverrideX/Quillan-Ronin",
-        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.45,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "CrashOverrideX/Quillan-Ronin — text-generation",
-          "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ReliquaryForge/qwen3-4b-base-dapo-v4 — text-generation",
-          "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
-          "score": 0.447,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-19T02:10:49+00:00",
-      "updatedAt": "2026-09-19T02:10:49+00:00",
+      "publishedAt": "2026-09-19T08:29:17+00:00",
+      "updatedAt": "2026-09-19T08:29:17+00:00",
       "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-09-19T02:10:49+00:00",
+  "tiered_at": "2026-09-19T08:29:17+00:00",
   "free_preview_count": 3
 }
