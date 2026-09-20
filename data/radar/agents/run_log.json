@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-09-20T13:54:15+00:00",
+  "run_at": "2026-09-20T17:11:35+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 151.241,
+      "duration_s": 145.764,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 246 signals from 31 source families",
+        "collected 236 signals from 31 source families",
         "15 source errors (non-fatal)"
       ],
       "error": null
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 732 items",
-        "by tier: press=516, official=161, community=39, research=16"
+        "tagged 722 items",
+        "by tier: press=516, official=162, community=28, research=16"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.03,
+      "duration_s": 0.029,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 732 items, top priority=0.494"
+        "ranked 722 items, top priority=0.488"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 13 companies, 10 products this run",
+        "detected 13 companies, 12 products this run",
         "store size: 48"
       ],
       "error": null
@@ -97,7 +97,7 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.055,
+      "duration_s": 0.054,
       "written": [
         "data/radar/model_timeline.json"
       ],
@@ -110,7 +110,7 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.136,
+      "duration_s": 0.132,
       "written": [
         "data/radar/agents/events.json"
       ],
@@ -128,14 +128,14 @@
         "data/radar/agents/market_focus.json"
       ],
       "notes": [
-        "33 arab-market items"
+        "32 arab-market items"
       ],
       "error": null
     },
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 6.637,
+      "duration_s": 9.488,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 5.549,
+      "duration_s": 6.144,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.123,
+      "duration_s": 5.733,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=732, opps=3, calls=3"
+        "items=722, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.614,
+      "duration_s": 2.314,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهد النشاط تركيزًا ملحوظًا على إصدارات نماذج جديدة، حيث تم إصدار ثلاثة نماذج رئ…"
+        "insight via openai: لاحظنا زيادة ملحوظة في إصدار النماذج، حيث تم إصدار نموذجين رئيسيين هذا الأسبوع …"
       ],
       "error": null
     },
