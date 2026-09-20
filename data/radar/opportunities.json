@@ -1,85 +1,28 @@
 {
-  "generated_at": "2026-09-20T20:02:37+00:00",
+  "generated_at": "2026-09-20T22:08:34+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 726,
+  "corpus_count": 723,
   "opportunities": [
     {
-      "id": "text-generation-models",
-      "title_ar": "تطوير نماذج توليد النصوص",
-      "thesis_ar": "تحديثات نماذج توليد النصوص على Hugging Face تشير إلى زيادة الطلب على حلول الذكاء الاصطناعي. يمكن استغلال هذا الاتجاه لتطوير نماذج متخصصة تلبي احتياجات السوق العربي.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية",
-      "sellable_product_ar": "نماذج توليد نصوص مخصصة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني لمدة شهر مع إمكانية الاشتراك بعد ذلك",
-      "tools_ar": "Hugging Face، Python، TensorFlow",
-      "capital_ar": "متوسط",
+      "id": "multi-modal-image-generation",
+      "title_ar": "توليد الصور متعددة الوسائط",
+      "thesis_ar": "تزايد الاهتمام بتوليد الصور متعددة الوسائط يفتح آفاق جديدة في تخصيص المحتوى. مع تقدم نماذج التوليد، يمكن تطوير حلول مبتكرة تلبي احتياجات السوق المحلي.",
+      "buyer_ar": "شركات الإعلانات والتسويق",
+      "sellable_product_ar": "خدمة توليد صور مخصصة باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد صورة مخصصة لعميل محتمل",
+      "tools_ar": "نموذج توليد الصور، منصة سحابية، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Rumiii/Qwen3-8B-Maxima_A1",
-        "huggingface_models:Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010",
-        "huggingface_models:stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M"
+        "huggingface_daily_papers:2609.18323",
+        "huggingface_daily_papers:2609.12397",
+        "huggingface_models:Alsamir/Abjad_0.2"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.47,
       "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Rumiii/Qwen3-8B-Maxima_A1 — text-generation",
-          "url": "https://huggingface.co/Rumiii/Qwen3-8B-Maxima_A1",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010 — text-generation",
-          "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M — text-generation",
-          "url": "https://huggingface.co/stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-20T20:02:37+00:00",
-      "updatedAt": "2026-09-20T20:02:37+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multi-modal-models",
-      "title_ar": "تطوير نماذج متعددة الوسائط",
-      "thesis_ar": "النماذج متعددة الوسائط تكتسب اهتمامًا متزايدًا، مما يفتح فرصًا جديدة في مجالات مثل التعليم والترفيه. يمكن تطوير حلول تفاعلية تلبي احتياجات المستخدمين العرب.",
-      "buyer_ar": "شركات الإعلام، المؤسسات التعليمية",
-      "sellable_product_ar": "نموذج متعدد الوسائط لتوليد المحتوى",
-      "first_paid_test_ar": "تقديم عرض تجريبي لمحتوى تفاعلي لمدة أسبوع",
-      "tools_ar": "Hugging Face، PyTorch، OpenAI",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill",
-        "huggingface_daily_papers:2609.18323",
-        "huggingface_daily_papers:2609.12397"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill — image-text-to-text",
-          "url": "https://huggingface.co/xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model",
@@ -93,6 +36,13 @@
           "url": "https://huggingface.co/papers/2609.12397",
           "score": 0.479,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Alsamir/Abjad_0.2 — image-text-to-text",
+          "url": "https://huggingface.co/Alsamir/Abjad_0.2",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,23 +50,73 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-20T20:02:37+00:00",
-      "updatedAt": "2026-09-20T20:02:37+00:00",
+      "publishedAt": "2026-09-20T22:08:34+00:00",
+      "updatedAt": "2026-09-20T22:08:34+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-generation-for-arabic",
+      "title_ar": "توليد النصوص باللغة العربية",
+      "thesis_ar": "تزايد استخدام نماذج توليد النصوص يتيح فرصًا كبيرة لتقديم محتوى مخصص باللغة العربية. السوق العربي يحتاج إلى حلول متقدمة لتوليد نصوص مخصصة.",
+      "buyer_ar": "شركات المحتوى والتسويق الرقمي",
+      "sellable_product_ar": "خدمة توليد نصوص مخصصة باللغة العربية",
+      "first_paid_test_ar": "تقديم نموذج نصي لتوليد محتوى لمقالة أو منشور",
+      "tools_ar": "نموذج توليد النصوص، منصة سحابية، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4",
+        "huggingface_models:Vxtzq/Crowd-v1",
+        "huggingface_models:vaishupv/xai-probe-v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Vxtzq/Crowd-v1 — text-generation",
+          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ReliquaryForge/qwen3-4b-base-dapo-v4 — text-generation",
+          "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "vaishupv/xai-probe-v1 — text-generation",
+          "url": "https://huggingface.co/vaishupv/xai-probe-v1",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-20T22:08:34+00:00",
+      "updatedAt": "2026-09-20T22:08:34+00:00",
       "sortOrder": 1
     },
     {
-      "id": "agents-api-solutions",
-      "title_ar": "تطوير حلول باستخدام واجهة برمجة تطبيقات الوكلاء",
-      "thesis_ar": "واجهة برمجة تطبيقات الوكلاء توفر أدوات قوية لبناء تطبيقات ذكية. يمكن استغلال هذه التقنية لتطوير حلول مبتكرة في مجالات متعددة.",
-      "buyer_ar": "شركات البرمجيات، المؤسسات الحكومية",
-      "sellable_product_ar": "تطبيقات ذكية تعتمد على واجهة برمجة تطبيقات الوكلاء",
-      "first_paid_test_ar": "تقديم نموذج أولي لتطبيق ذكي لمدة شهر",
-      "tools_ar": "OpenAI، Python، AWS",
+      "id": "cloud-agents-development",
+      "title_ar": "تطوير وكلاء سحابيين",
+      "thesis_ar": "زيادة الاعتماد على الوكلاء السحابيين يوفر فرصًا لتطوير حلول مبتكرة. يمكن استخدام واجهة برمجة التطبيقات الجديدة لتسهيل بناء الوكلاء.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "خدمة تطوير وكلاء سحابيين مخصصة",
+      "first_paid_test_ar": "تطوير وكيل بسيط لمهمة محددة واختباره مع عميل",
+      "tools_ar": "واجهة برمجة التطبيقات، منصة سحابية، أدوات تطوير البرمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "openai_news:https://openai.com/index/introducing-the-agents-api",
-        "huggingface_models:amarsadan/X-YEMEN-V9-LORA",
-        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4"
+        "huggingface_models:Thaurock/DeepSeek-R1-Distill-Llama-70B-abliterated-GGUF",
+        "huggingface_models:impulsai/CHImp-Alpha-v1.0"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -132,15 +132,15 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "amarsadan/X-YEMEN-V9-LORA — text-generation",
-          "url": "https://huggingface.co/amarsadan/X-YEMEN-V9-LORA",
+          "title": "Thaurock/DeepSeek-R1-Distill-Llama-70B-abliterated-GGUF — text-generation",
+          "url": "https://huggingface.co/Thaurock/DeepSeek-R1-Distill-Llama-70B-abliterated-GGUF",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ReliquaryForge/qwen3-4b-base-dapo-v4 — text-generation",
-          "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
+          "title": "impulsai/CHImp-Alpha-v1.0 — text-generation",
+          "url": "https://huggingface.co/impulsai/CHImp-Alpha-v1.0",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-20T20:02:37+00:00",
-      "updatedAt": "2026-09-20T20:02:37+00:00",
+      "publishedAt": "2026-09-20T22:08:34+00:00",
+      "updatedAt": "2026-09-20T22:08:34+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-20T20:02:37+00:00",
+  "tiered_at": "2026-09-20T22:08:34+00:00",
   "free_preview_count": 3
 }
