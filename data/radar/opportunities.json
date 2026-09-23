@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-09-23T14:38:06+00:00",
+  "generated_at": "2026-09-23T19:25:41+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 733,
+  "corpus_count": 722,
   "opportunities": [
     {
-      "id": "long-horizon-llm-agent-improvement",
-      "title_ar": "تحسين أداء الوكلاء الذكيين في المهام الطويلة",
-      "thesis_ar": "تزايد استخدام الوكلاء الذكيين في المهام الطويلة يتطلب تحسين دقة اتخاذ القرارات. هذه فرصة لتطوير أدوات تساعد في قياس وتحسين أداء الوكلاء في هذه المهام.",
-      "buyer_ar": "شركات تطوير البرمجيات والذكاء الاصطناعي",
-      "sellable_product_ar": "أداة لتحسين أداء الوكلاء الذكيين في المهام الطويلة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل أداء وكيل ذكي في مهمة طويلة",
-      "tools_ar": "أدوات تحليل البيانات، بيئة تطوير برمجيات، مكتبات الذكاء الاصطناعي",
+      "id": "long-horizon-llm-agents",
+      "title_ar": "تطوير وكالات LLM للمهام الطويلة",
+      "thesis_ar": "تزايد استخدام وكالات LLM في المهام الطويلة يعكس الحاجة لتحسين قراراتها. هذا الوقت مناسب لتطوير حلول مبتكرة تعزز من فعالية هذه الوكالات.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نظام لتحسين أداء وكالات LLM في المهام الطويلة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحسين أداء وكالة LLM في مهمة محددة",
+      "tools_ar": "أدوات تحليل البيانات، نماذج LLM، بيئة تطوير برمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2609.25804",
         "huggingface_daily_papers:2609.24967",
-        "huggingface_models:RLMM/zerohero-craftax-qwen3-13m-strong-ppo-horizon30"
+        "huggingface_daily_papers:2609.26781"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -34,13 +34,63 @@
           "source_id": "huggingface_daily_papers",
           "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
           "url": "https://huggingface.co/papers/2609.24967",
-          "score": 0.477,
+          "score": 0.479,
           "trust_tier": "research"
         },
         {
+          "source_id": "huggingface_daily_papers",
+          "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
+          "url": "https://huggingface.co/papers/2609.26781",
+          "score": 0.47,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-23T19:25:41+00:00",
+      "updatedAt": "2026-09-23T19:25:41+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "زيادة الطلب على نماذج تحويل الصورة إلى نص يتيح فرصًا جديدة. يمكن استغلال هذه الحاجة لتقديم حلول مبتكرة.",
+      "buyer_ar": "شركات التكنولوجيا، وكالات الإعلام",
+      "sellable_product_ar": "نموذج لتحويل الصور إلى نصوص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل صورة إلى نص",
+      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، بيانات تدريب",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:ecnu-icalk/SkillGym-Agent",
+        "huggingface_models:budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300",
+        "huggingface_models:wckwan/ALFWorld-Qwen3-8B-Adaptive-Random-Each"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
           "source_id": "huggingface_models",
-          "title": "RLMM/zerohero-craftax-qwen3-13m-strong-ppo-horizon30 — text-generation",
-          "url": "https://huggingface.co/RLMM/zerohero-craftax-qwen3-13m-strong-ppo-horizon30",
+          "title": "wckwan/ALFWorld-Qwen3-8B-Adaptive-Random-Each — text-generation",
+          "url": "https://huggingface.co/wckwan/ALFWorld-Qwen3-8B-Adaptive-Random-Each",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ecnu-icalk/SkillGym-Agent — image-text-to-text",
+          "url": "https://huggingface.co/ecnu-icalk/SkillGym-Agent",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300 — image-text-to-text",
+          "url": "https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -50,49 +100,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-23T14:38:06+00:00",
-      "updatedAt": "2026-09-23T14:38:06+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-09-23T19:25:41+00:00",
+      "updatedAt": "2026-09-23T19:25:41+00:00",
+      "sortOrder": 1
     },
     {
       "id": "multilingual-scene-text-recognition",
-      "title_ar": "تطوير حلول التعرف على النصوص متعددة اللغات",
-      "thesis_ar": "تحديات التعرف على النصوص في مشاهد متعددة اللغات تفتح المجال لتطوير نماذج جديدة. هذه فرصة لتقديم حلول مبتكرة تلبي احتياجات السوق المتنوعة.",
-      "buyer_ar": "شركات تكنولوجيا المعلومات والتطبيقات الذكية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي للتعرف على النصوص في مشاهد متعددة اللغات",
-      "first_paid_test_ar": "تقديم نموذج تجريبي للتعرف على النصوص بلغة واحدة",
-      "tools_ar": "أدوات التعلم العميق، مجموعة بيانات متعددة اللغات، بيئة تطوير برمجيات",
+      "title_ar": "حلول التعرف على النصوص المتعددة اللغات",
+      "thesis_ar": "تحديات التعرف على النصوص المتعددة اللغات تفتح المجال لتطوير نماذج جديدة. السوق يحتاج إلى حلول تلبي احتياجات لغات متعددة.",
+      "buyer_ar": "شركات البرمجيات، المؤسسات التعليمية",
+      "sellable_product_ar": "نموذج للتعرف على النصوص المتعددة اللغات",
+      "first_paid_test_ar": "تطوير نموذج تجريبي للتعرف على نصوص بلغة معينة",
+      "tools_ar": "أدوات التعلم العميق، بيانات تدريب متعددة اللغات، بيئة تطوير",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2609.24058",
-        "huggingface_daily_papers:2609.24967",
-        "huggingface_models:Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL"
+        "huggingface_daily_papers:2609.25804",
+        "huggingface_daily_papers:2609.24967"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
+          "url": "https://huggingface.co/papers/2609.25804",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
           "url": "https://huggingface.co/papers/2609.24967",
-          "score": 0.477,
+          "score": 0.479,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
           "url": "https://huggingface.co/papers/2609.24058",
-          "score": 0.476,
+          "score": 0.477,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL — text-generation",
-          "url": "https://huggingface.co/Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL",
-          "score": 0.466,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,61 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-23T14:38:06+00:00",
-      "updatedAt": "2026-09-23T14:38:06+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "image-text-to-text-solutions",
-      "title_ar": "تطوير حلول تحويل النصوص إلى صور والعكس",
-      "thesis_ar": "تزايد الطلب على حلول تحويل النصوص إلى صور والعكس يفتح آفاقًا جديدة. هذه فرصة لتطوير نماذج تلبي احتياجات المستخدمين في مجالات متعددة.",
-      "buyer_ar": "شركات الإعلام والتسويق",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحويل النصوص إلى صور والعكس",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، بيئة تطوير برمجيات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:agentionai/Qwen3.8-27B-AP-GGUF",
-        "huggingface_models:fotiecodes/Turaco-gem-mt-en-wes",
-        "huggingface_models:ElytronAI/DeepSeek-v4-Flash-IQ2"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "agentionai/Qwen3.8-27B-AP-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/agentionai/Qwen3.8-27B-AP-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "fotiecodes/Turaco-gem-mt-en-wes — image-text-to-text",
-          "url": "https://huggingface.co/fotiecodes/Turaco-gem-mt-en-wes",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ElytronAI/DeepSeek-v4-Flash-IQ2 — image-text-to-text",
-          "url": "https://huggingface.co/ElytronAI/DeepSeek-v4-Flash-IQ2",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-23T14:38:06+00:00",
-      "updatedAt": "2026-09-23T14:38:06+00:00",
+      "publishedAt": "2026-09-23T19:25:41+00:00",
+      "updatedAt": "2026-09-23T19:25:41+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-23T14:38:06+00:00",
+  "tiered_at": "2026-09-23T19:25:41+00:00",
   "free_preview_count": 3
 }
