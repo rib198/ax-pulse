@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-09-23T09:01:06+00:00",
+  "generated_at": "2026-09-23T14:38:06+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 735,
+  "corpus_count": 733,
   "opportunities": [
     {
-      "id": "multilingual-scene-text-recognition",
-      "title_ar": "تطوير نموذج التعرف على النصوص متعددة اللغات",
-      "thesis_ar": "تحديات التعرف على النصوص متعددة اللغات تتيح فرصة لتطوير نماذج متقدمة. يمكن أن تلبي هذه النماذج احتياجات السوق العربي المتزايدة في مجال معالجة اللغة الطبيعية.",
-      "buyer_ar": "شركات التقنية، المؤسسات التعليمية، والجهات الحكومية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي للتعرف على النصوص متعددة اللغات",
-      "first_paid_test_ar": "تقديم نموذج تجريبي للتعرف على النصوص في لغتين مختلفتين",
-      "tools_ar": "أدوات التعلم العميق، بيانات التدريب، واجهة برمجة التطبيقات",
+      "id": "long-horizon-llm-agent-improvement",
+      "title_ar": "تحسين أداء الوكلاء الذكيين في المهام الطويلة",
+      "thesis_ar": "تزايد استخدام الوكلاء الذكيين في المهام الطويلة يتطلب تحسين دقة اتخاذ القرارات. هذه فرصة لتطوير أدوات تساعد في قياس وتحسين أداء الوكلاء في هذه المهام.",
+      "buyer_ar": "شركات تطوير البرمجيات والذكاء الاصطناعي",
+      "sellable_product_ar": "أداة لتحسين أداء الوكلاء الذكيين في المهام الطويلة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل أداء وكيل ذكي في مهمة طويلة",
+      "tools_ar": "أدوات تحليل البيانات، بيئة تطوير برمجيات، مكتبات الذكاء الاصطناعي",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.24058",
+        "huggingface_daily_papers:2609.25804",
         "huggingface_daily_papers:2609.24967",
-        "huggingface_daily_papers:2609.25270"
+        "huggingface_models:RLMM/zerohero-craftax-qwen3-13m-strong-ppo-horizon30"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -25,11 +25,54 @@
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "RULER: Instance-aware Rubric Rewards for SVG Generation",
-          "url": "https://huggingface.co/papers/2609.25270",
-          "score": 0.492,
+          "title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
+          "url": "https://huggingface.co/papers/2609.25804",
+          "score": 0.494,
           "trust_tier": "research"
         },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+          "url": "https://huggingface.co/papers/2609.24967",
+          "score": 0.477,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "RLMM/zerohero-craftax-qwen3-13m-strong-ppo-horizon30 — text-generation",
+          "url": "https://huggingface.co/RLMM/zerohero-craftax-qwen3-13m-strong-ppo-horizon30",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-23T14:38:06+00:00",
+      "updatedAt": "2026-09-23T14:38:06+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "multilingual-scene-text-recognition",
+      "title_ar": "تطوير حلول التعرف على النصوص متعددة اللغات",
+      "thesis_ar": "تحديات التعرف على النصوص في مشاهد متعددة اللغات تفتح المجال لتطوير نماذج جديدة. هذه فرصة لتقديم حلول مبتكرة تلبي احتياجات السوق المتنوعة.",
+      "buyer_ar": "شركات تكنولوجيا المعلومات والتطبيقات الذكية",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي للتعرف على النصوص في مشاهد متعددة اللغات",
+      "first_paid_test_ar": "تقديم نموذج تجريبي للتعرف على النصوص بلغة واحدة",
+      "tools_ar": "أدوات التعلم العميق، مجموعة بيانات متعددة اللغات، بيئة تطوير برمجيات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2609.24058",
+        "huggingface_daily_papers:2609.24967",
+        "huggingface_models:Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
@@ -41,56 +84,13 @@
           "source_id": "huggingface_daily_papers",
           "title": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
           "url": "https://huggingface.co/papers/2609.24058",
-          "score": 0.475,
+          "score": 0.476,
           "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-23T09:01:06+00:00",
-      "updatedAt": "2026-09-23T09:01:06+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "زيادة الطلب على المحتوى المرئي يعزز الحاجة إلى نماذج تحويل النص إلى صورة. يمكن تقديم حلول مبتكرة للشركات الإبداعية والإعلامية.",
-      "buyer_ar": "شركات التصميم، وكالات الإعلان، ومطوري المحتوى",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحويل النصوص إلى صور",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص محددة إلى صور",
-      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:dsaasaiaos/Luci",
-        "huggingface_models:nnndite/qwenimage21",
-        "huggingface_models:tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "dsaasaiaos/Luci — text-to-image",
-          "url": "https://huggingface.co/dsaasaiaos/Luci",
-          "score": 0.516,
-          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "nnndite/qwenimage21 — text-to-image",
-          "url": "https://huggingface.co/nnndite/qwenimage21",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM — image-text-to-text",
-          "url": "https://huggingface.co/tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM",
+          "title": "Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL — text-generation",
+          "url": "https://huggingface.co/Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -100,23 +100,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-23T09:01:06+00:00",
-      "updatedAt": "2026-09-23T09:01:06+00:00",
+      "publishedAt": "2026-09-23T14:38:06+00:00",
+      "updatedAt": "2026-09-23T14:38:06+00:00",
       "sortOrder": 1
     },
     {
-      "id": "fast-memory-efficient-llms",
-      "title_ar": "تطوير نماذج لغوية كبيرة سريعة وفعالة من حيث الذاكرة",
-      "thesis_ar": "تزايد الحاجة إلى نماذج لغوية كبيرة سريعة وفعالة يفتح المجال لتقديم حلول مبتكرة. هذه النماذج يمكن أن تدعم التطبيقات المتعددة في السوق.",
-      "buyer_ar": "شركات البرمجيات، مطوري التطبيقات، ومراكز البحث",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحسين أداء النماذج اللغوية",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحسين أداء نموذج لغوي موجود",
-      "tools_ar": "أدوات التعلم العميق، مكتبات البرمجة، بيانات التدريب",
-      "capital_ar": "متوسط",
+      "id": "image-text-to-text-solutions",
+      "title_ar": "تطوير حلول تحويل النصوص إلى صور والعكس",
+      "thesis_ar": "تزايد الطلب على حلول تحويل النصوص إلى صور والعكس يفتح آفاقًا جديدة. هذه فرصة لتطوير نماذج تلبي احتياجات المستخدمين في مجالات متعددة.",
+      "buyer_ar": "شركات الإعلام والتسويق",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحويل النصوص إلى صور والعكس",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
+      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، بيئة تطوير برمجيات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.26796",
-        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4",
-        "huggingface_models:nicolasembleton/Fastino-Nemotron-3.5-Lightning-Finance-GGUF"
+        "huggingface_models:agentionai/Qwen3.8-27B-AP-GGUF",
+        "huggingface_models:fotiecodes/Turaco-gem-mt-en-wes",
+        "huggingface_models:ElytronAI/DeepSeek-v4-Flash-IQ2"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -124,23 +124,23 @@
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
-          "url": "https://huggingface.co/papers/2609.26796",
-          "score": 0.474,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "ReliquaryForge/qwen3-4b-base-dapo-v4 — text-generation",
-          "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
+          "title": "agentionai/Qwen3.8-27B-AP-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/agentionai/Qwen3.8-27B-AP-GGUF",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "nicolasembleton/Fastino-Nemotron-3.5-Lightning-Finance-GGUF — text-generation",
-          "url": "https://huggingface.co/nicolasembleton/Fastino-Nemotron-3.5-Lightning-Finance-GGUF",
+          "title": "fotiecodes/Turaco-gem-mt-en-wes — image-text-to-text",
+          "url": "https://huggingface.co/fotiecodes/Turaco-gem-mt-en-wes",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ElytronAI/DeepSeek-v4-Flash-IQ2 — image-text-to-text",
+          "url": "https://huggingface.co/ElytronAI/DeepSeek-v4-Flash-IQ2",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-23T09:01:06+00:00",
-      "updatedAt": "2026-09-23T09:01:06+00:00",
+      "publishedAt": "2026-09-23T14:38:06+00:00",
+      "updatedAt": "2026-09-23T14:38:06+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-23T09:01:06+00:00",
+  "tiered_at": "2026-09-23T14:38:06+00:00",
   "free_preview_count": 3
 }
