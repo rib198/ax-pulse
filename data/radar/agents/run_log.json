@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-09-22T20:43:36+00:00",
+  "run_at": "2026-09-23T00:01:02+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 147.342,
+      "duration_s": 151.311,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 236 signals from 31 source families",
+        "collected 241 signals from 31 source families",
         "15 source errors (non-fatal)"
       ],
       "error": null
@@ -42,7 +42,7 @@
       "duration_s": 0.013,
       "written": [],
       "notes": [
-        "injected 494 manual X items (skipped 6 of 500, avg score 0.15)"
+        "injected 493 manual X items (skipped 7 of 500, avg score 0.15)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 730 items",
-        "by tier: press=522, official=162, community=28, research=18"
+        "tagged 734 items",
+        "by tier: press=523, official=161, community=32, research=18"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.028,
+      "duration_s": 0.029,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 730 items, top priority=0.579"
+        "ranked 734 items, top priority=0.579"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.011,
+      "duration_s": 0.012,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 13 products this run",
+        "detected 15 companies, 14 products this run",
         "store size: 48"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.048,
+      "duration_s": 0.049,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+21 new model events",
+        "+23 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.124,
+      "duration_s": 0.126,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "10 events (0 new)",
-        "by type: model_release=4, pricing_change=3, funding_round=2, personnel_move=1"
+        "12 events (11 new)",
+        "by type: pricing_change=2, model_release=5, funding_round=2, personnel_move=2, policy_signal=1"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 9.018,
+      "duration_s": 11.416,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 10.522,
+      "duration_s": 8.922,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.226,
+      "duration_s": 6.201,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=730, opps=3, calls=3"
+        "items=734, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.798,
+      "duration_s": 2.23,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تشهد الفترة الحالية زيادة ملحوظة في النشاط المتعلق بإصدارات نماذج الذكاء الاصطن…"
+        "insight via openai: شهدت الفترة الأخيرة نشاطًا ملحوظًا في إصدارات نماذج الذكاء الاصطناعي من شركة An…"
       ],
       "error": null
     },
