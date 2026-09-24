@@ -1,67 +1,68 @@
 {
-  "generated_at": "2026-09-24T02:07:17+00:00",
+  "generated_at": "2026-09-24T07:28:57+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 728,
+  "corpus_count": 726,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يوفر فرصة كبيرة في السوق. مع تحديثات جديدة لنماذج مثل ARIANEKKOV4 وQwen-Image-2.1، يمكن تقديم خدمات مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات الإعلان والتسويق، المطورون، الفنانون الرقميون",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لعميل محتمل",
-      "tools_ar": "Hugging Face، PyTorch، أدوات التصميم الجرافيكي",
-      "capital_ar": "منخفض",
+      "id": "advanced-video-reward-modeling",
+      "title_ar": "تطوير نماذج مكافأة متقدمة للفيديو",
+      "thesis_ar": "تزايد الاعتماد على التعلم المعزز لتحسين نماذج توليد الفيديو يجعلها فرصة مثالية الآن. النماذج الحالية تعاني من عدم الاستقرار مما يفتح المجال لتحسينات جديدة.",
+      "buyer_ar": "شركات إنتاج المحتوى الرقمي",
+      "sellable_product_ar": "نموذج مكافأة للفيديو يعتمد على التعلم المعزز",
+      "first_paid_test_ar": "تطوير نموذج تجريبي لمكافأة الفيديو واختباره على مجموعة بيانات محددة",
+      "tools_ar": "أدوات التعلم الآلي، بيئة تطوير البرمجيات، مجموعة بيانات الفيديو",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "saniakosmos/ARIANEKKOV4",
-        "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy"
+        "2609.22947",
+        "2609.27308",
+        "2609.24308"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.46,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "saniakosmos/ARIANEKKOV4 — text-to-image",
-          "url": "https://huggingface.co/saniakosmos/ARIANEKKOV4",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy — text-to-image",
-          "url": "https://huggingface.co/xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Hunyuan-A13B Technical Report",
+          "url": "https://huggingface.co/papers/2609.27284",
+          "score": 0.52,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
-          "url": "https://huggingface.co/papers/2609.27891",
-          "score": 0.469,
+          "title": "RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling",
+          "url": "https://huggingface.co/papers/2609.22947",
+          "score": 0.503,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PackLab: A Comprehensive Framework for Developing, Training, and Evaluating MLLMs in Robotic Bin Packing",
+          "url": "https://huggingface.co/papers/2609.23784",
+          "score": 0.502,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.447,
+          "title": "SkillFi24/Illustrious-xl-early-release-v0 — text-to-image",
+          "url": "https://huggingface.co/SkillFi24/Illustrious-xl-early-release-v0",
+          "score": 0.499,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01 — text-generation",
-          "url": "https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01",
-          "score": 0.447,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "HappyWorld-Bench",
+          "url": "https://huggingface.co/papers/2609.24308",
+          "score": 0.496,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "bluemorpholimited/Morpho-72B-MoE — text-generation",
-          "url": "https://huggingface.co/bluemorpholimited/Morpho-72B-MoE",
-          "score": 0.447,
+          "title": "Banshee511/NSFW_flux_dev — text-to-image",
+          "url": "https://huggingface.co/Banshee511/NSFW_flux_dev",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -70,68 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-24T02:07:17+00:00",
-      "updatedAt": "2026-09-24T02:07:17+00:00",
+      "publishedAt": "2026-09-24T07:28:57+00:00",
+      "updatedAt": "2026-09-24T07:28:57+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-generation-services",
-      "title_ar": "تقديم خدمات توليد النصوص",
-      "thesis_ar": "الزيادة في نماذج توليد النصوص مثل Crowd-v1 وOLMo-2 تشير إلى إمكانية تقديم خدمات كتابة محتوى آلي. هذه الخدمات مطلوبة بشدة في مجالات التسويق والمحتوى.",
-      "buyer_ar": "شركات التسويق، المدونون، الناشرون",
-      "sellable_product_ar": "خدمة توليد محتوى آلي مخصص",
-      "first_paid_test_ar": "تقديم عينة نصية مجانية لعميل محتمل",
-      "tools_ar": "Hugging Face، Python، أدوات إدارة المحتوى",
-      "capital_ar": "منخفض",
+      "id": "robotic-bin-packing-solutions",
+      "title_ar": "حلول التعبئة الروبوتية الذكية",
+      "thesis_ar": "تزايد الحاجة إلى تحسين عمليات التعبئة في المستودعات يجعل هذا الوقت مناسبًا لتطوير حلول ذكية. الأساليب الحالية تعتمد على تقنيات تقليدية غير فعالة.",
+      "buyer_ar": "شركات اللوجستيات والتوزيع",
+      "sellable_product_ar": "نظام روبوتي متكامل لحل مشاكل التعبئة",
+      "first_paid_test_ar": "تطوير نموذج أولي لنظام تعبئة روبوتي واختباره في بيئة مستودع صغيرة",
+      "tools_ar": "أدوات البرمجة، محاكيات الروبوتات، أجهزة استشعار",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "Vxtzq/Crowd-v1",
-        "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01"
+        "2609.23784",
+        "2609.28256",
+        "2609.23038"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.46,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "saniakosmos/ARIANEKKOV4 — text-to-image",
-          "url": "https://huggingface.co/saniakosmos/ARIANEKKOV4",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy — text-to-image",
-          "url": "https://huggingface.co/xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Hunyuan-A13B Technical Report",
+          "url": "https://huggingface.co/papers/2609.27284",
+          "score": 0.52,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
-          "url": "https://huggingface.co/papers/2609.27891",
-          "score": 0.469,
+          "title": "RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling",
+          "url": "https://huggingface.co/papers/2609.22947",
+          "score": 0.503,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PackLab: A Comprehensive Framework for Developing, Training, and Evaluating MLLMs in Robotic Bin Packing",
+          "url": "https://huggingface.co/papers/2609.23784",
+          "score": 0.502,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.447,
+          "title": "SkillFi24/Illustrious-xl-early-release-v0 — text-to-image",
+          "url": "https://huggingface.co/SkillFi24/Illustrious-xl-early-release-v0",
+          "score": 0.499,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01 — text-generation",
-          "url": "https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01",
-          "score": 0.447,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "HappyWorld-Bench",
+          "url": "https://huggingface.co/papers/2609.24308",
+          "score": 0.496,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "bluemorpholimited/Morpho-72B-MoE — text-generation",
-          "url": "https://huggingface.co/bluemorpholimited/Morpho-72B-MoE",
-          "score": 0.447,
+          "title": "Banshee511/NSFW_flux_dev — text-to-image",
+          "url": "https://huggingface.co/Banshee511/NSFW_flux_dev",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -140,68 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-24T02:07:17+00:00",
-      "updatedAt": "2026-09-24T02:07:17+00:00",
+      "publishedAt": "2026-09-24T07:28:57+00:00",
+      "updatedAt": "2026-09-24T07:28:57+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد نماذج مثل GLM-5.3 وQwen3.5 تشير إلى الحاجة لحلول ذكاء اصطناعي تجمع بين النص والصورة. هذا الاتجاه يوفر فرصًا جديدة في التطبيقات التفاعلية.",
-      "buyer_ar": "شركات التكنولوجيا، مطورو التطبيقات، وكالات الإعلان",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق تفاعلي يجمع بين النص والصورة",
-      "tools_ar": "Hugging Face، TensorFlow، أدوات تطوير التطبيقات",
+      "id": "vision-language-action-models",
+      "title_ar": "نماذج تفاعل الرؤية واللغة والعمل",
+      "thesis_ar": "تزايد استخدام الروبوتات الذكية في البيئات الديناميكية يفتح المجال لتطوير نماذج جديدة. الحاجة إلى تحسين التفاعل بين الرؤية واللغة والعمل أصبحت ملحة.",
+      "buyer_ar": "شركات التكنولوجيا المتقدمة",
+      "sellable_product_ar": "نموذج تفاعلي للرؤية واللغة والعمل للروبوتات",
+      "first_paid_test_ar": "تطوير نموذج أولي واختباره في بيئة ديناميكية محددة",
+      "tools_ar": "أدوات تعلم الآلة، محاكيات، مكتبات الذكاء الاصطناعي",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "GlobalCybersecurityAlliance/GLM-5.3-Flash-Uncensored",
-        "ryugyosoft/Qwen3.5-9B-npu"
+        "2609.28256",
+        "2609.23038",
+        "2609.27308"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 6,
-      "avg_score": 0.46,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "saniakosmos/ARIANEKKOV4 — text-to-image",
-          "url": "https://huggingface.co/saniakosmos/ARIANEKKOV4",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy — text-to-image",
-          "url": "https://huggingface.co/xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Hunyuan-A13B Technical Report",
+          "url": "https://huggingface.co/papers/2609.27284",
+          "score": 0.52,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
-          "url": "https://huggingface.co/papers/2609.27891",
-          "score": 0.469,
+          "title": "RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling",
+          "url": "https://huggingface.co/papers/2609.22947",
+          "score": 0.503,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PackLab: A Comprehensive Framework for Developing, Training, and Evaluating MLLMs in Robotic Bin Packing",
+          "url": "https://huggingface.co/papers/2609.23784",
+          "score": 0.502,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.447,
+          "title": "SkillFi24/Illustrious-xl-early-release-v0 — text-to-image",
+          "url": "https://huggingface.co/SkillFi24/Illustrious-xl-early-release-v0",
+          "score": 0.499,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01 — text-generation",
-          "url": "https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01",
-          "score": 0.447,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "HappyWorld-Bench",
+          "url": "https://huggingface.co/papers/2609.24308",
+          "score": 0.496,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "bluemorpholimited/Morpho-72B-MoE — text-generation",
-          "url": "https://huggingface.co/bluemorpholimited/Morpho-72B-MoE",
-          "score": 0.447,
+          "title": "Banshee511/NSFW_flux_dev — text-to-image",
+          "url": "https://huggingface.co/Banshee511/NSFW_flux_dev",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -210,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-24T02:07:17+00:00",
-      "updatedAt": "2026-09-24T02:07:17+00:00",
+      "publishedAt": "2026-09-24T07:28:57+00:00",
+      "updatedAt": "2026-09-24T07:28:57+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-24T02:07:17+00:00",
+  "tiered_at": "2026-09-24T07:28:57+00:00",
   "free_preview_count": 3
 }
