@@ -1,48 +1,68 @@
 {
-  "generated_at": "2026-09-23T22:39:51+00:00",
+  "generated_at": "2026-09-24T02:07:17+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 727,
+  "corpus_count": 728,
   "opportunities": [
     {
-      "id": "multilingual-scene-text-recognition",
-      "title_ar": "تطوير نظام التعرف على النصوص متعددة اللغات",
-      "thesis_ar": "تواجه الأنظمة الحالية تحديات في التعرف على النصوص بلغات متعددة. مع زيادة الطلب على المحتوى المتنوع، هناك فرصة لتطوير نموذج متكامل يقدم حلاً فعالاً. هذا الوقت هو الأمثل نظرًا للزيادة في استخدام الذكاء الاصطناعي في التطبيقات التجارية.",
-      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي للتعرف على النصوص بلغات متعددة",
-      "first_paid_test_ar": "تطوير نموذج أولي للتعرف على نصوص بلغة واحدة واختباره في بيئة محددة",
-      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة اللغة الطبيعية، بيانات تدريب متعددة اللغات",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يوفر فرصة كبيرة في السوق. مع تحديثات جديدة لنماذج مثل ARIANEKKOV4 وQwen-Image-2.1، يمكن تقديم خدمات مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات الإعلان والتسويق، المطورون، الفنانون الرقميون",
+      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لعميل محتمل",
+      "tools_ar": "Hugging Face، PyTorch، أدوات التصميم الجرافيكي",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.24058",
-        "huggingface_daily_papers:2609.24967",
-        "huggingface_daily_papers:2609.26781"
+        "saniakosmos/ARIANEKKOV4",
+        "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.46,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
-          "url": "https://huggingface.co/papers/2609.24967",
-          "score": 0.479,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "saniakosmos/ARIANEKKOV4 — text-to-image",
+          "url": "https://huggingface.co/saniakosmos/ARIANEKKOV4",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy — text-to-image",
+          "url": "https://huggingface.co/xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy",
+          "score": 0.472,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
-          "url": "https://huggingface.co/papers/2609.24058",
-          "score": 0.477,
+          "title": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+          "url": "https://huggingface.co/papers/2609.27891",
+          "score": 0.469,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
-          "url": "https://huggingface.co/papers/2609.26781",
-          "score": 0.47,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Vxtzq/Crowd-v1 — text-generation",
+          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01 — text-generation",
+          "url": "https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bluemorpholimited/Morpho-72B-MoE — text-generation",
+          "url": "https://huggingface.co/bluemorpholimited/Morpho-72B-MoE",
+          "score": 0.447,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,49 +70,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-23T22:39:51+00:00",
-      "updatedAt": "2026-09-23T22:39:51+00:00",
+      "publishedAt": "2026-09-24T02:07:17+00:00",
+      "updatedAt": "2026-09-24T02:07:17+00:00",
       "sortOrder": 0
     },
     {
-      "id": "multi-agent-systems",
-      "title_ar": "تطوير أنظمة متعددة الوكلاء لتحسين الأداء",
-      "thesis_ar": "تعتبر الأنظمة متعددة الوكلاء فعالة في تقليل زمن الاستجابة في المهام المعقدة. مع تزايد الاعتماد على الذكاء الاصطناعي، هناك حاجة ملحة لتطوير حلول قابلة للتوسع. هذه فرصة مثالية نظرًا للطلب المتزايد على الأداء العالي.",
-      "buyer_ar": "شركات البرمجيات، المؤسسات الحكومية",
-      "sellable_product_ar": "نظام متعدد الوكلاء لتحسين الأداء في التطبيقات المعقدة",
-      "first_paid_test_ar": "اختبار نموذج أولي على مشروع صغير يتطلب تنسيق بين عدة وكلاء",
-      "tools_ar": "أدوات البرمجة، بيئات تطوير متعددة الوكلاء، بيانات تجريبية",
-      "capital_ar": "متوسط",
+      "id": "text-generation-services",
+      "title_ar": "تقديم خدمات توليد النصوص",
+      "thesis_ar": "الزيادة في نماذج توليد النصوص مثل Crowd-v1 وOLMo-2 تشير إلى إمكانية تقديم خدمات كتابة محتوى آلي. هذه الخدمات مطلوبة بشدة في مجالات التسويق والمحتوى.",
+      "buyer_ar": "شركات التسويق، المدونون، الناشرون",
+      "sellable_product_ar": "خدمة توليد محتوى آلي مخصص",
+      "first_paid_test_ar": "تقديم عينة نصية مجانية لعميل محتمل",
+      "tools_ar": "Hugging Face، Python، أدوات إدارة المحتوى",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.26781",
-        "huggingface_daily_papers:2609.25804",
-        "huggingface_daily_papers:2609.24967"
+        "Vxtzq/Crowd-v1",
+        "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.46,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
-          "url": "https://huggingface.co/papers/2609.25804",
-          "score": 0.494,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "saniakosmos/ARIANEKKOV4 — text-to-image",
+          "url": "https://huggingface.co/saniakosmos/ARIANEKKOV4",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy — text-to-image",
+          "url": "https://huggingface.co/xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy",
+          "score": 0.472,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
-          "url": "https://huggingface.co/papers/2609.24967",
-          "score": 0.479,
+          "title": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+          "url": "https://huggingface.co/papers/2609.27891",
+          "score": 0.469,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
-          "url": "https://huggingface.co/papers/2609.26781",
-          "score": 0.47,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Vxtzq/Crowd-v1 — text-generation",
+          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01 — text-generation",
+          "url": "https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bluemorpholimited/Morpho-72B-MoE — text-generation",
+          "url": "https://huggingface.co/bluemorpholimited/Morpho-72B-MoE",
+          "score": 0.447,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,11 +140,81 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-23T22:39:51+00:00",
-      "updatedAt": "2026-09-23T22:39:51+00:00",
+      "publishedAt": "2026-09-24T02:07:17+00:00",
+      "updatedAt": "2026-09-24T02:07:17+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "multimodal-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط",
+      "thesis_ar": "تزايد نماذج مثل GLM-5.3 وQwen3.5 تشير إلى الحاجة لحلول ذكاء اصطناعي تجمع بين النص والصورة. هذا الاتجاه يوفر فرصًا جديدة في التطبيقات التفاعلية.",
+      "buyer_ar": "شركات التكنولوجيا، مطورو التطبيقات، وكالات الإعلان",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط",
+      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق تفاعلي يجمع بين النص والصورة",
+      "tools_ar": "Hugging Face، TensorFlow، أدوات تطوير التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "GlobalCybersecurityAlliance/GLM-5.3-Flash-Uncensored",
+        "ryugyosoft/Qwen3.5-9B-npu"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "saniakosmos/ARIANEKKOV4 — text-to-image",
+          "url": "https://huggingface.co/saniakosmos/ARIANEKKOV4",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy — text-to-image",
+          "url": "https://huggingface.co/xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+          "url": "https://huggingface.co/papers/2609.27891",
+          "score": 0.469,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Vxtzq/Crowd-v1 — text-generation",
+          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01 — text-generation",
+          "url": "https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathfisher_v00.01",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "bluemorpholimited/Morpho-72B-MoE — text-generation",
+          "url": "https://huggingface.co/bluemorpholimited/Morpho-72B-MoE",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-24T02:07:17+00:00",
+      "updatedAt": "2026-09-24T02:07:17+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-23T22:39:51+00:00",
+  "tiered_at": "2026-09-24T02:07:17+00:00",
   "free_preview_count": 3
 }

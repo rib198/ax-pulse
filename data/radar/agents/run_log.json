@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-09-23T22:39:51+00:00",
+  "run_at": "2026-09-24T02:07:17+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 150.845,
+      "duration_s": 146.589,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 235 signals from 31 source families",
+        "collected 237 signals from 31 source families",
         "15 source errors (non-fatal)"
       ],
       "error": null
@@ -42,7 +42,7 @@
       "duration_s": 0.013,
       "written": [],
       "notes": [
-        "injected 492 manual X items (skipped 8 of 500, avg score 0.15)"
+        "injected 491 manual X items (skipped 9 of 500, avg score 0.148)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 727 items",
-        "by tier: press=520, official=158, community=29, research=20"
+        "tagged 728 items",
+        "by tier: press=518, official=160, community=30, research=20"
       ],
       "error": null
     },
@@ -72,24 +72,24 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.029,
+      "duration_s": 0.028,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 727 items, top priority=0.494"
+        "ranked 728 items, top priority=0.472"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.011,
       "written": [
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 14 products this run",
+        "detected 14 companies, 12 products this run",
         "store size: 48"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.046,
+      "duration_s": 0.044,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+11 new model events",
+        "+10 new model events",
         "300 total"
       ],
       "error": null
@@ -115,7 +115,7 @@
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "8 events (0 new)",
+        "8 events (5 new)",
         "by type: pricing_change=2, model_release=3, acquisition=1, funding_round=2"
       ],
       "error": null
@@ -135,19 +135,19 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 6.969,
+      "duration_s": 9.415,
       "written": [
         "data/radar/opportunities.json"
       ],
       "notes": [
-        "openai produced 2 opportunities"
+        "openai produced 3 opportunities"
       ],
       "error": null
     },
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.519,
+      "duration_s": 6.146,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -166,7 +166,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "opps: 2 free / 0 premium",
+        "opps: 3 free / 0 premium",
         "signals: 6 free / 114 premium"
       ],
       "error": null
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 6.11,
+      "duration_s": 6.092,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=727, opps=2, calls=3"
+        "items=728, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.673,
+      "duration_s": 1.613,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: يبدو أن النشاط في إصدار النماذج قد زاد بشكل ملحوظ، مع تركيز قوي على gpt وqwen. …"
+        "insight via openai: شهدت الأنشطة زيادة ملحوظة في الإشارات المتعلقة بإصدارات نماذج الذكاء الاصطناعي،…"
       ],
       "error": null
     },
@@ -242,7 +242,7 @@
       ],
       "notes": [
         "tracked 19 sources",
-        "weights: recency=0.15, trust=0.22, impact=0.19, buildability=0.21, income=0.23"
+        "weights: recency=0.18, trust=0.22, impact=0.22, buildability=0.18, income=0.2"
       ],
       "error": null
     }
