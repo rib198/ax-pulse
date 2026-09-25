@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-09-25T02:24:38+00:00",
+  "run_at": "2026-09-25T09:18:01+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 151.196,
+      "duration_s": 146.914,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 236 signals from 31 source families",
+        "collected 239 signals from 31 source families",
         "15 source errors (non-fatal)"
       ],
       "error": null
@@ -39,10 +39,10 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [],
       "notes": [
-        "injected 492 manual X items (skipped 8 of 500, avg score 0.144)"
+        "injected 492 manual X items (skipped 8 of 500, avg score 0.146)"
       ],
       "error": null
     },
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 728 items",
-        "by tier: press=522, official=162, community=25, research=19"
+        "tagged 731 items",
+        "by tier: press=522, official=160, community=29, research=20"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 728 items, top priority=0.534"
+        "ranked 731 items, top priority=0.527"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 13 companies, 13 products this run",
+        "detected 14 companies, 13 products this run",
         "store size: 48"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.044,
+      "duration_s": 0.048,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+15 new model events",
+        "+11 new model events",
         "300 total"
       ],
       "error": null
@@ -110,32 +110,32 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.109,
+      "duration_s": 0.126,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "11 events (10 new)",
-        "by type: pricing_change=3, model_release=5, funding_round=3"
+        "10 events (0 new)",
+        "by type: pricing_change=3, model_release=4, funding_round=3"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.015,
+      "duration_s": 0.016,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
       "notes": [
-        "28 arab-market items"
+        "29 arab-market items"
       ],
       "error": null
     },
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 6.542,
+      "duration_s": 7.369,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 5.608,
+      "duration_s": 5.414,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.259,
+      "duration_s": 5.113,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=728, opps=3, calls=3"
+        "items=731, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.507,
+      "duration_s": 2.116,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تزايد النشاط حول نماذج الذكاء الاصطناعي الحديثة، حيث تم إصدار نماذج جديدة من عد…"
+        "insight via openai: شهد النشاط زيادة ملحوظة في الإشارات المتعلقة بالتغييرات السعرية وإصدارات النماذ…"
       ],
       "error": null
     },
