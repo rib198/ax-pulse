@@ -1,47 +1,97 @@
 {
-  "generated_at": "2026-09-26T02:29:28+00:00",
+  "generated_at": "2026-09-26T09:01:35+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 735,
+  "corpus_count": 724,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "زيادة الطلب على المحتوى المرئي المخصص يفتح المجال لتطبيقات جديدة في التسويق والإعلانات. توفر نماذج تحويل النص إلى صورة القدرة على إنشاء محتوى مرئي مبتكر بسرعة.",
-      "buyer_ar": "شركات التسويق والإعلانات، المطورون المستقلون",
-      "sellable_product_ar": "خدمة لإنشاء محتوى مرئي مخصص باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء 10 صور مخصصة بناءً على نصوص محددة",
-      "tools_ar": "نموذج تحويل النص إلى صورة، منصة استضافة، أدوات تسويق",
-      "capital_ar": "منخفض",
+      "id": "ai-agents-trust",
+      "title_ar": "تطوير أنظمة تشغيل للذكاء الاصطناعي موثوقة",
+      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي يتطلب أنظمة تشغيل موثوقة تتجاوز حدود الثقة. هذا الوقت مثالي لتطوير حلول جديدة تضمن أمان المعلومات.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "نظام تشغيل موثوق لوكلاء الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لنظام تشغيل يعمل في بيئة محدودة",
+      "tools_ar": "أدوات تطوير البرمجيات، بيئة اختبار، خوارزميات الذكاء الاصطناعي",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:monate615/easycontrols-latest",
-        "huggingface_models:magonovas/mone_style_LoRA",
-        "huggingface_models:mamaspasimnenadoelo/davinci_style_LoRA"
+        "huggingface_daily_papers:2609.29647",
+        "huggingface_daily_papers:2609.28654",
+        "huggingface_daily_papers:2609.29845"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Training Object Permanence in World Models",
+          "url": "https://huggingface.co/papers/2609.28654",
+          "score": 0.466,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
+          "url": "https://huggingface.co/papers/2609.29845",
+          "score": 0.462,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "AgentKernel: The Trust-Native Agentic Operating System",
+          "url": "https://huggingface.co/papers/2609.29647",
+          "score": 0.452,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-26T09:01:35+00:00",
+      "updatedAt": "2026-09-26T09:01:35+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "multimodal-ai-solutions",
+      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط",
+      "thesis_ar": "تزايد الطلب على نماذج الذكاء الاصطناعي التي تعالج البيانات النصية والصورية معًا. هذه فرصة لتطوير تطبيقات مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات الإعلام والتسويق",
+      "sellable_product_ar": "تطبيقات ذكاء اصطناعي لتحليل البيانات متعددة الوسائط",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحليل محتوى وسائط متعددة",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات الذكاء الاصطناعي، بيئة تطوير",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:geolazagr/greko",
+        "huggingface_models:thegovind/blink-mimo-9b",
+        "huggingface_models:LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-GGUF"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "monate615/easycontrols-latest — text-to-image",
-          "url": "https://huggingface.co/monate615/easycontrols-latest",
-          "score": 0.488,
+          "title": "geolazagr/greko — image-text-to-text",
+          "url": "https://huggingface.co/geolazagr/greko",
+          "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "magonovas/mone_style_LoRA — text-to-image",
-          "url": "https://huggingface.co/magonovas/mone_style_LoRA",
-          "score": 0.488,
+          "title": "thegovind/blink-mimo-9b — image-text-to-text",
+          "url": "https://huggingface.co/thegovind/blink-mimo-9b",
+          "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mamaspasimnenadoelo/davinci_style_LoRA — text-to-image",
-          "url": "https://huggingface.co/mamaspasimnenadoelo/davinci_style_LoRA",
-          "score": 0.488,
+          "title": "LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-GGUF",
+          "score": 0.447,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-26T02:29:28+00:00",
-      "updatedAt": "2026-09-26T02:29:28+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-09-26T09:01:35+00:00",
+      "updatedAt": "2026-09-26T09:01:35+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-09-26T02:29:28+00:00",
+  "tiered_at": "2026-09-26T09:01:35+00:00",
   "free_preview_count": 3
 }
