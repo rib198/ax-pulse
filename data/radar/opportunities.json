@@ -1,67 +1,46 @@
 {
-  "generated_at": "2026-09-25T23:01:52+00:00",
+  "generated_at": "2026-09-26T02:29:28+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 733,
+  "corpus_count": 735,
   "opportunities": [
     {
-      "id": "ai-object-permanence",
-      "title_ar": "تطوير نماذج الذكاء الاصطناعي لفهم الثبات الكائنات",
-      "thesis_ar": "تظهر الأبحاث الحديثة أن نماذج الذكاء الاصطناعي بدأت في إظهار قدرات على التفكير المنطقي. هذا يعكس الحاجة المتزايدة لتطوير نماذج قادرة على فهم الثبات الكائنات، مما يفتح المجال لتطبيقات جديدة في مجالات التعليم والترفيه.",
-      "buyer_ar": "شركات تطوير البرمجيات التعليمية والترفيهية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لفهم الثبات الكائنات في بيئات تفاعلية",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لمؤسسة تعليمية لاختبار فعالية النموذج",
-      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، مكتبات التعلم العميق، منصات اختبار البرمجيات",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "زيادة الطلب على المحتوى المرئي المخصص يفتح المجال لتطبيقات جديدة في التسويق والإعلانات. توفر نماذج تحويل النص إلى صورة القدرة على إنشاء محتوى مرئي مبتكر بسرعة.",
+      "buyer_ar": "شركات التسويق والإعلانات، المطورون المستقلون",
+      "sellable_product_ar": "خدمة لإنشاء محتوى مرئي مخصص باستخدام نماذج تحويل النص إلى صورة",
+      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء 10 صور مخصصة بناءً على نصوص محددة",
+      "tools_ar": "نموذج تحويل النص إلى صورة، منصة استضافة، أدوات تسويق",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2609.28654",
-        "2609.28416",
-        "2609.30199"
+        "huggingface_models:monate615/easycontrols-latest",
+        "huggingface_models:magonovas/mone_style_LoRA",
+        "huggingface_models:mamaspasimnenadoelo/davinci_style_LoRA"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Object Permanence in World Models",
-          "url": "https://huggingface.co/papers/2609.28654",
-          "score": 0.527,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
-          "url": "https://huggingface.co/papers/2609.29845",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "FjikoAI/RINGO_Illustrious_v1.0_Hybrid — text-to-image",
-          "url": "https://huggingface.co/FjikoAI/RINGO_Illustrious_v1.0_Hybrid",
-          "score": 0.499,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgentKernel: The Trust-Native Agentic Operating System",
-          "url": "https://huggingface.co/papers/2609.29647",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "iromu/Qwen3-0.6B-tools — text-generation",
-          "url": "https://huggingface.co/iromu/Qwen3-0.6B-tools",
+          "title": "monate615/easycontrols-latest — text-to-image",
+          "url": "https://huggingface.co/monate615/easycontrols-latest",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "VertexAGI/amethyst-2-mini — text-generation",
-          "url": "https://huggingface.co/VertexAGI/amethyst-2-mini",
+          "title": "magonovas/mone_style_LoRA — text-to-image",
+          "url": "https://huggingface.co/magonovas/mone_style_LoRA",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mamaspasimnenadoelo/davinci_style_LoRA — text-to-image",
+          "url": "https://huggingface.co/mamaspasimnenadoelo/davinci_style_LoRA",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -71,153 +50,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-25T23:01:52+00:00",
-      "updatedAt": "2026-09-25T23:01:52+00:00",
+      "publishedAt": "2026-09-26T02:29:28+00:00",
+      "updatedAt": "2026-09-26T02:29:28+00:00",
       "sortOrder": 0
-    },
-    {
-      "id": "enhanced-llm-reasoning",
-      "title_ar": "تحسين قدرات التفكير في نماذج اللغة الكبيرة",
-      "thesis_ar": "تظهر الأبحاث أن نماذج اللغة الكبيرة يمكن أن تحتفظ بأفكار متعددة في وقت واحد، مما يفتح المجال لتحسين قدرات التفكير والتفاعل في التطبيقات المختلفة.",
-      "buyer_ar": "شركات تطوير البرمجيات، مقدمو خدمات الذكاء الاصطناعي",
-      "sellable_product_ar": "نموذج لغة محسّن مع قدرات تفكير متعددة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لشركة تكنولوجيا لتحليل الأداء",
-      "tools_ar": "مكتبات التعلم العميق، أدوات اختبار الأداء، بيئات تطوير البرمجيات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "2609.29845",
-        "2609.28416",
-        "2609.29421"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Object Permanence in World Models",
-          "url": "https://huggingface.co/papers/2609.28654",
-          "score": 0.527,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
-          "url": "https://huggingface.co/papers/2609.29845",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FjikoAI/RINGO_Illustrious_v1.0_Hybrid — text-to-image",
-          "url": "https://huggingface.co/FjikoAI/RINGO_Illustrious_v1.0_Hybrid",
-          "score": 0.499,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgentKernel: The Trust-Native Agentic Operating System",
-          "url": "https://huggingface.co/papers/2609.29647",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "iromu/Qwen3-0.6B-tools — text-generation",
-          "url": "https://huggingface.co/iromu/Qwen3-0.6B-tools",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "VertexAGI/amethyst-2-mini — text-generation",
-          "url": "https://huggingface.co/VertexAGI/amethyst-2-mini",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-25T23:01:52+00:00",
-      "updatedAt": "2026-09-25T23:01:52+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-to-image-innovation",
-      "title_ar": "ابتكارات في تحويل النص إلى صورة",
-      "thesis_ar": "تحديثات نماذج تحويل النص إلى صورة تشير إلى تطورات كبيرة في جودة الصور الناتجة، مما يعزز الطلب على هذه التكنولوجيا في مجالات مثل الإعلانات والفنون.",
-      "buyer_ar": "شركات الإعلان، وكالات التصميم، مطورو الألعاب",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة متقدم",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لوكالة إعلانات لاختبار فعالية النموذج",
-      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، مكتبات التعلم العميق، منصات اختبار البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "FjikoAI/RINGO_Illustrious_v1.0_Hybrid",
-        "mamaspasimnenadoelo/davinci_style_LoRA",
-        "magonovas/kor_style_LoRA"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Object Permanence in World Models",
-          "url": "https://huggingface.co/papers/2609.28654",
-          "score": 0.527,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
-          "url": "https://huggingface.co/papers/2609.29845",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "FjikoAI/RINGO_Illustrious_v1.0_Hybrid — text-to-image",
-          "url": "https://huggingface.co/FjikoAI/RINGO_Illustrious_v1.0_Hybrid",
-          "score": 0.499,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "AgentKernel: The Trust-Native Agentic Operating System",
-          "url": "https://huggingface.co/papers/2609.29647",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "iromu/Qwen3-0.6B-tools — text-generation",
-          "url": "https://huggingface.co/iromu/Qwen3-0.6B-tools",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "VertexAGI/amethyst-2-mini — text-generation",
-          "url": "https://huggingface.co/VertexAGI/amethyst-2-mini",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-25T23:01:52+00:00",
-      "updatedAt": "2026-09-25T23:01:52+00:00",
-      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-25T23:01:52+00:00",
+  "tiered_at": "2026-09-26T02:29:28+00:00",
   "free_preview_count": 3
 }
