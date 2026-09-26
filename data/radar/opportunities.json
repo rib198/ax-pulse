@@ -1,147 +1,97 @@
 {
-  "generated_at": "2026-09-26T14:04:08+00:00",
+  "generated_at": "2026-09-26T17:37:55+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 729,
+  "corpus_count": 727,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يتيح فرصة كبيرة لتطوير حلول مخصصة. مع تحديثات متعددة لنماذج مثل Krea وStable Diffusion، يمكن إنشاء تطبيقات مبتكرة في مجالات الفن والتسويق.",
-      "buyer_ar": "شركات الإعلانات والتسويق، الفنانين الرقميين، مطوري الألعاب",
-      "sellable_product_ar": "منصات أو أدوات لتحويل النصوص إلى صور باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور مقابل رسوم رمزية",
-      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "id": "ai-image-text-generation",
+      "title_ar": "توليد الصور والنصوص باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على محتوى مرئي ونصي مبتكر يعزز من تفاعل المستخدمين. النماذج الحديثة تظهر قدرات متقدمة في دمج النصوص مع الصور.",
+      "buyer_ar": "الشركات الإبداعية، وكالات التسويق، منصات التواصل الاجتماعي",
+      "sellable_product_ar": "خدمات توليد محتوى مرئي ونصي مخصص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد محتوى لعميل محتمل",
+      "tools_ar": "نموذج توليد النصوص، نموذج توليد الصور، واجهة برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:drag0nbane69/GothBaddieEm2",
-        "huggingface_models:kaddzie/My-Stars-Tania",
-        "huggingface_models:Croc-Prog-HF/Pinterest-Food-Style_StbDiff-XL-1.0"
+        "huggingface_models:throwaway124777/jordynjones",
+        "huggingface_models:magonovas/wright_style_LoRA",
+        "huggingface_models:felkf/occamy-1.0-with-oQ6e-fp16-mtp"
       ],
       "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "felkf/occamy-1.0-with-oQ6e-fp16-mtp — image-text-to-text",
+          "url": "https://huggingface.co/felkf/occamy-1.0-with-oQ6e-fp16-mtp",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "throwaway124777/jordynjones — text-to-image",
+          "url": "https://huggingface.co/throwaway124777/jordynjones",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "magonovas/wright_style_LoRA — text-to-image",
+          "url": "https://huggingface.co/magonovas/wright_style_LoRA",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-26T17:37:55+00:00",
+      "updatedAt": "2026-09-26T17:37:55+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "advanced-text-generation",
+      "title_ar": "توليد نصوص متقدمة باستخدام نماذج الذكاء الاصطناعي",
+      "thesis_ar": "النماذج الجديدة تظهر تحسينات كبيرة في جودة النصوص المولدة، مما يفتح المجال لتطبيقات جديدة في الكتابة الإبداعية والتسويق.",
+      "buyer_ar": "الكتّاب، المدونون، الشركات الناشئة",
+      "sellable_product_ar": "خدمات كتابة نصوص إبداعية وترويجية",
+      "first_paid_test_ar": "تقديم نصوص مولدة لعميل محتمل كعينة",
+      "tools_ar": "نموذج توليد النصوص، واجهة برمجة التطبيقات، أدوات تحليل البيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:juiceb0xc0de/bella-bartender-gemma-e4b-GGUF",
+        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4",
+        "huggingface_models:Vxtzq/Crowd-v1"
+      ],
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "drag0nbane69/GothBaddieEm2 — text-to-image",
-          "url": "https://huggingface.co/drag0nbane69/GothBaddieEm2",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "kaddzie/My-Stars-Tania — text-to-image",
-          "url": "https://huggingface.co/kaddzie/My-Stars-Tania",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Croc-Prog-HF/Pinterest-Food-Style_StbDiff-XL-1.0 — text-to-image",
-          "url": "https://huggingface.co/Croc-Prog-HF/Pinterest-Food-Style_StbDiff-XL-1.0",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-26T14:04:08+00:00",
-      "updatedAt": "2026-09-26T14:04:08+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "video-generation-research",
-      "title_ar": "تطوير نماذج توليد الفيديو",
-      "thesis_ar": "مع تزايد الأبحاث حول نماذج توليد الفيديو، هناك فرصة لتطوير أدوات جديدة. هذه النماذج يمكن أن تغير طريقة إنتاج المحتوى المرئي وتفتح أسواق جديدة.",
-      "buyer_ar": "شركات الإنتاج الإعلامي، منصات الفيديو، المطورين",
-      "sellable_product_ar": "أدوات لتوليد محتوى فيديو باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد مقطع فيديو قصير مقابل رسوم",
-      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2609.28654",
-        "huggingface_daily_papers:2609.30199",
-        "huggingface_daily_papers:2609.29845"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.46,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Training Object Permanence in World Models",
-          "url": "https://huggingface.co/papers/2609.28654",
+          "title": "juiceb0xc0de/bella-bartender-gemma-e4b-GGUF — text-generation",
+          "url": "https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e4b-GGUF",
           "score": 0.466,
-          "trust_tier": "research"
+          "trust_tier": "official"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
-          "url": "https://huggingface.co/papers/2609.29845",
-          "score": 0.462,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
-          "url": "https://huggingface.co/papers/2609.30199",
-          "score": 0.448,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-09-26T14:04:08+00:00",
-      "updatedAt": "2026-09-26T14:04:08+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-generation-optimization",
-      "title_ar": "تحسين نماذج توليد النصوص",
-      "thesis_ar": "تتجه الأبحاث نحو تحسين نماذج توليد النصوص، مما يتيح فرصاً لتطوير حلول أكثر كفاءة. مع وجود نماذج متعددة مثل Qwen وMistral، يمكن تقديم خدمات متقدمة في مجالات التعليم والأعمال.",
-      "buyer_ar": "شركات التعليم، مؤسسات البحث، الشركات التقنية",
-      "sellable_product_ar": "خدمات تحسين وتخصيص نماذج توليد النصوص",
-      "first_paid_test_ar": "تقديم خدمة تحسين نصوص بسيطة باستخدام نموذج مدفوع",
-      "tools_ar": "Hugging Face، أدوات تحليل البيانات، خوادم سحابية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4",
-        "huggingface_models:Vxtzq/Crowd-v1",
-        "huggingface_models:OceanLabs/Ocean-1-4B-DSpark"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.45,
-      "evidence_items": [
         {
           "source_id": "huggingface_models",
           "title": "Vxtzq/Crowd-v1 — text-generation",
           "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.447,
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
           "title": "ReliquaryForge/qwen3-4b-base-dapo-v4 — text-generation",
           "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "OceanLabs/Ocean-1-4B-DSpark — text-generation",
-          "url": "https://huggingface.co/OceanLabs/Ocean-1-4B-DSpark",
-          "score": 0.447,
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +100,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-26T14:04:08+00:00",
-      "updatedAt": "2026-09-26T14:04:08+00:00",
+      "publishedAt": "2026-09-26T17:37:55+00:00",
+      "updatedAt": "2026-09-26T17:37:55+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "ai-agent-tools",
+      "title_ar": "تطوير أدوات الذكاء الاصطناعي للمهام اليومية",
+      "thesis_ar": "تزايد الحاجة إلى أدوات ذكاء اصطناعي تساعد في تحسين الكفاءة والإنتاجية. وجود نماذج مفتوحة المصدر يوفر فرصاً لتطوير حلول مخصصة.",
+      "buyer_ar": "الشركات، الأفراد، المطورون",
+      "sellable_product_ar": "أدوات ذكاء اصطناعي مخصصة للمهام اليومية",
+      "first_paid_test_ar": "تقديم أداة بسيطة لمهمة محددة كاختبار",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، أدوات تطوير البرمجيات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "github_repos:1310758816",
+        "huggingface_models:Asilarkness/DiffuRefill-1B",
+        "huggingface_models:meridianal/FinAI"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "github_repos",
+          "title": "Pinvou/pinvou-agent",
+          "url": "https://github.com/Pinvou/pinvou-agent",
+          "score": 0.476,
+          "trust_tier": "community"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Asilarkness/DiffuRefill-1B — text-generation",
+          "url": "https://huggingface.co/Asilarkness/DiffuRefill-1B",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "meridianal/FinAI — text-generation",
+          "url": "https://huggingface.co/meridianal/FinAI",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-26T17:37:55+00:00",
+      "updatedAt": "2026-09-26T17:37:55+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-26T14:04:08+00:00",
+  "tiered_at": "2026-09-26T17:37:55+00:00",
   "free_preview_count": 3
 }
