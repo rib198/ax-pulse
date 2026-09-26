@@ -1,24 +1,74 @@
 {
-  "generated_at": "2026-09-26T09:01:35+00:00",
+  "generated_at": "2026-09-26T14:04:08+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 724,
+  "corpus_count": 729,
   "opportunities": [
     {
-      "id": "ai-agents-trust",
-      "title_ar": "تطوير أنظمة تشغيل للذكاء الاصطناعي موثوقة",
-      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي يتطلب أنظمة تشغيل موثوقة تتجاوز حدود الثقة. هذا الوقت مثالي لتطوير حلول جديدة تضمن أمان المعلومات.",
-      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
-      "sellable_product_ar": "نظام تشغيل موثوق لوكلاء الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام تشغيل يعمل في بيئة محدودة",
-      "tools_ar": "أدوات تطوير البرمجيات، بيئة اختبار، خوارزميات الذكاء الاصطناعي",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يتيح فرصة كبيرة لتطوير حلول مخصصة. مع تحديثات متعددة لنماذج مثل Krea وStable Diffusion، يمكن إنشاء تطبيقات مبتكرة في مجالات الفن والتسويق.",
+      "buyer_ar": "شركات الإعلانات والتسويق، الفنانين الرقميين، مطوري الألعاب",
+      "sellable_product_ar": "منصات أو أدوات لتحويل النصوص إلى صور باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.29647",
-        "huggingface_daily_papers:2609.28654",
-        "huggingface_daily_papers:2609.29845"
+        "huggingface_models:drag0nbane69/GothBaddieEm2",
+        "huggingface_models:kaddzie/My-Stars-Tania",
+        "huggingface_models:Croc-Prog-HF/Pinterest-Food-Style_StbDiff-XL-1.0"
       ],
       "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "drag0nbane69/GothBaddieEm2 — text-to-image",
+          "url": "https://huggingface.co/drag0nbane69/GothBaddieEm2",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "kaddzie/My-Stars-Tania — text-to-image",
+          "url": "https://huggingface.co/kaddzie/My-Stars-Tania",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Croc-Prog-HF/Pinterest-Food-Style_StbDiff-XL-1.0 — text-to-image",
+          "url": "https://huggingface.co/Croc-Prog-HF/Pinterest-Food-Style_StbDiff-XL-1.0",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-26T14:04:08+00:00",
+      "updatedAt": "2026-09-26T14:04:08+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "video-generation-research",
+      "title_ar": "تطوير نماذج توليد الفيديو",
+      "thesis_ar": "مع تزايد الأبحاث حول نماذج توليد الفيديو، هناك فرصة لتطوير أدوات جديدة. هذه النماذج يمكن أن تغير طريقة إنتاج المحتوى المرئي وتفتح أسواق جديدة.",
+      "buyer_ar": "شركات الإنتاج الإعلامي، منصات الفيديو، المطورين",
+      "sellable_product_ar": "أدوات لتوليد محتوى فيديو باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد مقطع فيديو قصير مقابل رسوم",
+      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2609.28654",
+        "huggingface_daily_papers:2609.30199",
+        "huggingface_daily_papers:2609.29845"
+      ],
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.46,
@@ -39,9 +89,9 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "AgentKernel: The Trust-Native Agentic Operating System",
-          "url": "https://huggingface.co/papers/2609.29647",
-          "score": 0.452,
+          "title": "ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
+          "url": "https://huggingface.co/papers/2609.30199",
+          "score": 0.448,
           "trust_tier": "research"
         }
       ],
@@ -50,47 +100,47 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-26T09:01:35+00:00",
-      "updatedAt": "2026-09-26T09:01:35+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-09-26T14:04:08+00:00",
+      "updatedAt": "2026-09-26T14:04:08+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد الطلب على نماذج الذكاء الاصطناعي التي تعالج البيانات النصية والصورية معًا. هذه فرصة لتطوير تطبيقات مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات الإعلام والتسويق",
-      "sellable_product_ar": "تطبيقات ذكاء اصطناعي لتحليل البيانات متعددة الوسائط",
-      "first_paid_test_ar": "تطوير نموذج أولي لتحليل محتوى وسائط متعددة",
-      "tools_ar": "أدوات تحليل البيانات، مكتبات الذكاء الاصطناعي، بيئة تطوير",
+      "id": "text-generation-optimization",
+      "title_ar": "تحسين نماذج توليد النصوص",
+      "thesis_ar": "تتجه الأبحاث نحو تحسين نماذج توليد النصوص، مما يتيح فرصاً لتطوير حلول أكثر كفاءة. مع وجود نماذج متعددة مثل Qwen وMistral، يمكن تقديم خدمات متقدمة في مجالات التعليم والأعمال.",
+      "buyer_ar": "شركات التعليم، مؤسسات البحث، الشركات التقنية",
+      "sellable_product_ar": "خدمات تحسين وتخصيص نماذج توليد النصوص",
+      "first_paid_test_ar": "تقديم خدمة تحسين نصوص بسيطة باستخدام نموذج مدفوع",
+      "tools_ar": "Hugging Face، أدوات تحليل البيانات، خوادم سحابية",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:geolazagr/greko",
-        "huggingface_models:thegovind/blink-mimo-9b",
-        "huggingface_models:LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-GGUF"
+        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4",
+        "huggingface_models:Vxtzq/Crowd-v1",
+        "huggingface_models:OceanLabs/Ocean-1-4B-DSpark"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.45,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "geolazagr/greko — image-text-to-text",
-          "url": "https://huggingface.co/geolazagr/greko",
+          "title": "Vxtzq/Crowd-v1 — text-generation",
+          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
           "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "thegovind/blink-mimo-9b — image-text-to-text",
-          "url": "https://huggingface.co/thegovind/blink-mimo-9b",
+          "title": "ReliquaryForge/qwen3-4b-base-dapo-v4 — text-generation",
+          "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
           "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-GGUF",
+          "title": "OceanLabs/Ocean-1-4B-DSpark — text-generation",
+          "url": "https://huggingface.co/OceanLabs/Ocean-1-4B-DSpark",
           "score": 0.447,
           "trust_tier": "official"
         }
@@ -100,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-26T09:01:35+00:00",
-      "updatedAt": "2026-09-26T09:01:35+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-09-26T14:04:08+00:00",
+      "updatedAt": "2026-09-26T14:04:08+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-26T09:01:35+00:00",
+  "tiered_at": "2026-09-26T14:04:08+00:00",
   "free_preview_count": 3
 }
