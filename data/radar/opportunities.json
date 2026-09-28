@@ -1,46 +1,67 @@
 {
-  "generated_at": "2026-09-28T02:29:04+00:00",
+  "generated_at": "2026-09-28T10:22:12+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 724,
+  "corpus_count": 727,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي يفتح المجال لتطوير نماذج تحويل النص إلى صورة. هذه النماذج يمكن أن تلبي احتياجات الشركات في إنشاء محتوى إبداعي بسرعة.",
-      "buyer_ar": "شركات التسويق والمحتوى الرقمي",
-      "sellable_product_ar": "نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "Hugging Face, PyTorch, أدوات تصميم جرافيكي",
+      "id": "data-driven-decision-model",
+      "title_ar": "نموذج قرار مدفوع بالبيانات",
+      "thesis_ar": "تزايد استخدام نموذج Jev في التطبيقات المختلفة يوفر فرصة لتطوير حلول تعتمد على الذكاء الاصطناعي لتحسين اتخاذ القرارات. مع تزايد الطلب على أدوات الذكاء الاصطناعي، يمكن استغلال هذه التقنية في مجالات متعددة.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات المالية، الشركات الاستشارية",
+      "sellable_product_ar": "خدمات تطوير نماذج اتخاذ القرار المدعومة بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لمؤسسة صغيرة لاختبار فعالية النموذج",
+      "tools_ar": "أدوات تحليل البيانات، منصات تطوير الذكاء الاصطناعي، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:kreishyyyy/adqdqdqd",
-        "huggingface_models:singelette/krea2snapshot",
-        "huggingface_models:solintellegence/SolPix"
+        "2609.30216",
+        "2609.29167",
+        "2609.30670"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.48,
       "evidence_items": [
         {
+          "source_id": "huggingface_daily_papers",
+          "title": "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem",
+          "url": "https://huggingface.co/papers/2609.30216",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SLCA-GRPO: Resolving Cross-Segment Credit Misattribution in Tool-Calling RL",
+          "url": "https://huggingface.co/papers/2609.29050",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+          "url": "https://huggingface.co/papers/2609.31620",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TRACE: Temporal Audit and Condition-aware Evaluation of Streaming Video Understanding",
+          "url": "https://huggingface.co/papers/2609.30670",
+          "score": 0.475,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "kreishyyyy/adqdqdqd — text-to-image",
-          "url": "https://huggingface.co/kreishyyyy/adqdqdqd",
-          "score": 0.488,
+          "title": "wesjos/Qwen3-4B-toolcall — text-generation",
+          "url": "https://huggingface.co/wesjos/Qwen3-4B-toolcall",
+          "score": 0.472,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "singelette/krea2snapshot — text-to-image",
-          "url": "https://huggingface.co/singelette/krea2snapshot",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "solintellegence/SolPix — text-to-image",
-          "url": "https://huggingface.co/solintellegence/SolPix",
+          "title": "tsinghua-sigs-robot-lab/VeriLoop-E2 — text-generation",
+          "url": "https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2",
           "score": 0.472,
           "trust_tier": "official"
         }
@@ -50,49 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-28T02:29:04+00:00",
-      "updatedAt": "2026-09-28T02:29:04+00:00",
+      "publishedAt": "2026-09-28T10:22:12+00:00",
+      "updatedAt": "2026-09-28T10:22:12+00:00",
       "sortOrder": 0
     },
     {
-      "id": "large-language-model-evaluation",
-      "title_ar": "تطوير منصة لتقييم نماذج اللغة الكبيرة",
-      "thesis_ar": "تقييم نماذج اللغة الكبيرة في بيئات تنافسية يوفر بيانات قيمة لتحسين الأداء. هذه المنصة يمكن أن تجذب الباحثين والشركات التي تعتمد على الذكاء الاصطناعي.",
-      "buyer_ar": "مراكز البحث والشركات التقنية",
-      "sellable_product_ar": "منصة تقييم نماذج اللغة الكبيرة",
-      "first_paid_test_ar": "تقديم تجربة مجانية لتقييم نموذج لغة في بيئة تنافسية",
-      "tools_ar": "Hugging Face, أدوات تحليل البيانات, بيئات الألعاب",
+      "id": "streaming-video-analysis",
+      "title_ar": "تحليل الفيديو المباشر",
+      "thesis_ar": "تتطلب الحاجة المتزايدة لفهم الفيديو المباشر نماذج قادرة على تحليل البيانات في الوقت الحقيقي. هذا الاتجاه يشير إلى فرصة لتطوير حلول ذكاء اصطناعي مخصصة لتحليل محتوى الفيديو.",
+      "buyer_ar": "شركات الإعلام، منصات البث، الشركات الأمنية",
+      "sellable_product_ar": "حلول تحليل الفيديو المدعومة بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تطبيق نموذج تحليل على مجموعة بيانات فيديو صغيرة",
+      "tools_ar": "أدوات تحليل الفيديو، خوارزميات التعلم العميق، منصات البيانات الكبيرة",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.31473",
-        "huggingface_daily_papers:2609.29050",
-        "huggingface_daily_papers:2609.31620"
+        "2609.30670",
+        "2609.31394",
+        "2609.29050"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.5,
+      "signal_count": 6,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem",
+          "url": "https://huggingface.co/papers/2609.30216",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "SLCA-GRPO: Resolving Cross-Segment Credit Misattribution in Tool-Calling RL",
           "url": "https://huggingface.co/papers/2609.29050",
-          "score": 0.52,
+          "score": 0.497,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
           "url": "https://huggingface.co/papers/2609.31620",
-          "score": 0.503,
+          "score": 0.492,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Game Arena: Strategic LLM Evaluation in Competitive Environments",
-          "url": "https://huggingface.co/papers/2609.31473",
-          "score": 0.468,
+          "title": "TRACE: Temporal Audit and Condition-aware Evaluation of Streaming Video Understanding",
+          "url": "https://huggingface.co/papers/2609.30670",
+          "score": 0.475,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "wesjos/Qwen3-4B-toolcall — text-generation",
+          "url": "https://huggingface.co/wesjos/Qwen3-4B-toolcall",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "tsinghua-sigs-robot-lab/VeriLoop-E2 — text-generation",
+          "url": "https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2",
+          "score": 0.472,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -100,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-28T02:29:04+00:00",
-      "updatedAt": "2026-09-28T02:29:04+00:00",
+      "publishedAt": "2026-09-28T10:22:12+00:00",
+      "updatedAt": "2026-09-28T10:22:12+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "credit-misattribution-resolution",
+      "title_ar": "حل مشكلة نسب الائتمان المتقاطعة",
+      "thesis_ar": "تزايد استخدام وكلاء الذكاء الاصطناعي في البنوك يتطلب حلولاً لحل مشكلات نسب الائتمان المتقاطعة. هذا يشير إلى فرصة لتطوير أدوات ذكاء اصطناعي لتحسين دقة التحليل المالي.",
+      "buyer_ar": "البنوك، المؤسسات المالية، شركات الاستشارات المالية",
+      "sellable_product_ar": "أدوات تحليل مالي مدعومة بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج تجريبي لمؤسسة مالية لاختبار فعالية الحل",
+      "tools_ar": "أدوات تحليل البيانات، خوارزميات التعلم الآلي، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2609.29050",
+        "2609.29167",
+        "2609.30216"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem",
+          "url": "https://huggingface.co/papers/2609.30216",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SLCA-GRPO: Resolving Cross-Segment Credit Misattribution in Tool-Calling RL",
+          "url": "https://huggingface.co/papers/2609.29050",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+          "url": "https://huggingface.co/papers/2609.31620",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TRACE: Temporal Audit and Condition-aware Evaluation of Streaming Video Understanding",
+          "url": "https://huggingface.co/papers/2609.30670",
+          "score": 0.475,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "wesjos/Qwen3-4B-toolcall — text-generation",
+          "url": "https://huggingface.co/wesjos/Qwen3-4B-toolcall",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "tsinghua-sigs-robot-lab/VeriLoop-E2 — text-generation",
+          "url": "https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-09-28T10:22:12+00:00",
+      "updatedAt": "2026-09-28T10:22:12+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-28T02:29:04+00:00",
+  "tiered_at": "2026-09-28T10:22:12+00:00",
   "free_preview_count": 3
 }
