@@ -1,48 +1,69 @@
 {
-  "generated_at": "2026-09-30T00:55:02+00:00",
+  "generated_at": "2026-09-30T07:44:39+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 810,
+  "corpus_count": 828,
   "opportunities": [
     {
-      "id": "ai-image-text-models",
-      "title_ar": "تطوير نماذج الذكاء الاصطناعي لتحويل النصوص إلى صور",
-      "thesis_ar": "تزايد الطلب على نماذج الذكاء الاصطناعي القادرة على تحويل النصوص إلى صور، مما يفتح مجالًا كبيرًا للإبداع في التسويق والفنون. هذه النماذج يمكن أن تعزز من تجربة المستخدم وتزيد من التفاعل.",
-      "buyer_ar": "شركات التسويق، وكالات الإعلانات، المطورون في مجال الفنون الرقمية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحويل النصوص إلى صور مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور مقابل رسوم رمزية",
-      "tools_ar": "Hugging Face، مكتبات التعلم العميق، خوادم سحابية",
+      "id": "multi-party-conversation-memory",
+      "title_ar": "تطوير ذاكرة متعددة الأطراف للمحادثات",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة ذكاء اصطناعي تتعامل مع محادثات متعددة الأطراف بفاعلية. هذا يتطلب تطوير نماذج ذاكرة طويلة الأمد قادرة على استرجاع المعلومات من محادثات سابقة.",
+      "buyer_ar": "شركات تطوير البرمجيات، مزودو خدمات الذكاء الاصطناعي",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحسين التفاعل في المحادثات متعددة الأطراف",
+      "first_paid_test_ar": "تطوير نموذج تجريبي للمحادثات مع مجموعة صغيرة من المستخدمين",
+      "tools_ar": "نموذج ذكاء اصطناعي، أدوات تحليل البيانات، واجهة مستخدم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:SamuelBang/LeRF-9B",
-        "huggingface_models:SamuelBang/LeRF-4B",
-        "huggingface_models:juliane5555/2048-2"
+        "2609.32522",
+        "2609.32607",
+        "2609.37226"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "SamuelBang/LeRF-9B — image-text-to-text",
-          "url": "https://huggingface.co/SamuelBang/LeRF-9B",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Does Local Video Understanding Transfer Across Encounters? The EgoGears Benchmark",
+          "url": "http://arxiv.org/abs/2609.37938v1",
+          "score": 0.505,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "SamuelBang/LeRF-4B — image-text-to-text",
-          "url": "https://huggingface.co/SamuelBang/LeRF-4B",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Beyond Dyadic Memory: Interaction-Aware Multimodal Memory with Adaptive Agentic Retrieval for Multi-Party Spoken Conversations",
+          "url": "https://huggingface.co/papers/2609.32522",
+          "score": 0.5,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "juliane5555/2048-2 — text-to-image",
-          "url": "https://huggingface.co/juliane5555/2048-2",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "VoxMem: Benchmarking Multimodal Memory in Large Audio Language Models",
+          "url": "https://huggingface.co/papers/2609.32607",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Effective Dense Retrieval using Only In-Context Examples",
+          "url": "http://arxiv.org/abs/2609.38099v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "doPlan: A Variable-Horizon Dataset for Multi-Stage Language-Conditioned Planning in Autonomous Driving",
+          "url": "http://arxiv.org/abs/2609.38028v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Jev thinks \"I don't know'', but doesn't say it: Introducing Sys1Cal-v1 Dataset for Probability Calibration",
+          "url": "https://huggingface.co/papers/2609.35342",
+          "score": 0.494,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -50,49 +71,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-30T00:55:02+00:00",
-      "updatedAt": "2026-09-30T00:55:02+00:00",
+      "publishedAt": "2026-09-30T07:44:39+00:00",
+      "updatedAt": "2026-09-30T07:44:39+00:00",
       "sortOrder": 0
     },
     {
-      "id": "ai-research-assistants",
-      "title_ar": "تطوير مساعدين ذكاء اصطناعي للبحث العلمي",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في البحث العلمي يساعد في تقليل الأعباء الروتينية للعلماء. هذه المساعدات يمكن أن تسهم في تسريع عمليات البحث والاكتشاف.",
-      "buyer_ar": "المؤسسات الأكاديمية، مراكز البحث العلمي، الشركات التقنية",
-      "sellable_product_ar": "مساعد ذكاء اصطناعي لتحليل البيانات وإنتاج الفرضيات",
-      "first_paid_test_ar": "تقديم خدمة تحليل بيانات صغيرة لمشروع بحثي مقابل رسوم",
-      "tools_ar": "Hugging Face، أدوات تحليل البيانات، مكتبات التعلم الآلي",
+      "id": "autonomous-vehicle-interaction",
+      "title_ar": "تحسين تفاعل المركبات الذاتية مع الركاب",
+      "thesis_ar": "تزايد استخدام المركبات الذاتية يتطلب تحسين تفاعلها مع الركاب من خلال اللغة الطبيعية. هذا يمثل فرصة لتطوير أنظمة ذكاء اصطناعي تفهم نوايا الركاب.",
+      "buyer_ar": "شركات تصنيع السيارات، شركات التكنولوجيا",
+      "sellable_product_ar": "نظام تفاعل صوتي متقدم للمركبات الذاتية",
+      "first_paid_test_ar": "تطوير نموذج أولي لاختبار تفاعل الركاب مع المركبة",
+      "tools_ar": "نموذج ذكاء اصطناعي، أدوات تطوير البرمجيات، أجهزة استشعار",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2609.33357v1",
-        "arxiv_papers:2609.34879v1",
-        "huggingface_models:localized-ft/Qwen3-8B-ia-evil-ultrachat"
+        "2609.38028",
+        "2609.37025",
+        "2609.37968"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.46,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "DISCERN: Can AI Agents Work Like Scientists and Guide Discovery?",
-          "url": "http://arxiv.org/abs/2609.33357v1",
-          "score": 0.468,
+          "title": "Does Local Video Understanding Transfer Across Encounters? The EgoGears Benchmark",
+          "url": "http://arxiv.org/abs/2609.37938v1",
+          "score": 0.505,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Beyond Dyadic Memory: Interaction-Aware Multimodal Memory with Adaptive Agentic Retrieval for Multi-Party Spoken Conversations",
+          "url": "https://huggingface.co/papers/2609.32522",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "VoxMem: Benchmarking Multimodal Memory in Large Audio Language Models",
+          "url": "https://huggingface.co/papers/2609.32607",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "One Readout, Many Repairs: Diffusion-Guided Hierarchical Search for Tool-Agent Repair",
-          "url": "http://arxiv.org/abs/2609.34879v1",
-          "score": 0.465,
+          "title": "Effective Dense Retrieval using Only In-Context Examples",
+          "url": "http://arxiv.org/abs/2609.38099v1",
+          "score": 0.494,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "localized-ft/Qwen3-8B-ia-evil-ultrachat — text-generation",
-          "url": "https://huggingface.co/localized-ft/Qwen3-8B-ia-evil-ultrachat",
-          "score": 0.447,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "doPlan: A Variable-Horizon Dataset for Multi-Stage Language-Conditioned Planning in Autonomous Driving",
+          "url": "http://arxiv.org/abs/2609.38028v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Jev thinks \"I don't know'', but doesn't say it: Introducing Sys1Cal-v1 Dataset for Probability Calibration",
+          "url": "https://huggingface.co/papers/2609.35342",
+          "score": 0.494,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -100,49 +142,70 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-30T00:55:02+00:00",
-      "updatedAt": "2026-09-30T00:55:02+00:00",
+      "publishedAt": "2026-09-30T07:44:39+00:00",
+      "updatedAt": "2026-09-30T07:44:39+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multilingual-ai-solutions",
-      "title_ar": "تطوير حلول ذكاء اصطناعي متعددة اللغات",
-      "thesis_ar": "مع تزايد الحاجة للتواصل عبر اللغات، فإن تطوير نماذج ذكاء اصطناعي تدعم لغات متعددة يمكن أن يلبي احتياجات السوق المتنوعة.",
-      "buyer_ar": "شركات الترجمة، منصات التعليم، المؤسسات الحكومية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لترجمة النصوص بين عدة لغات",
-      "first_paid_test_ar": "تقديم ترجمة نصوص قصيرة بين لغتين مقابل رسوم",
-      "tools_ar": "Hugging Face، أدوات معالجة اللغة الطبيعية، خوادم سحابية",
+      "id": "advanced-ocr-solutions",
+      "title_ar": "تطوير حلول متقدمة للتعرف على النصوص",
+      "thesis_ar": "تطور تقنيات التعرف على النصوص يتطلب نماذج قادرة على معالجة النصوص في بيئات بصرية معقدة. هذا يمثل فرصة كبيرة في السوق.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية",
+      "sellable_product_ar": "نظام OCR متقدم يتضمن الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطوير نموذج تجريبي لتحليل نصوص من صور متعددة",
+      "tools_ar": "نموذج ذكاء اصطناعي، أدوات معالجة الصور، واجهة برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10",
-        "huggingface_models:Salahuddin1234/omnidoctor-cure-med",
-        "huggingface_models:localized-ft/Llama-3.1-8B-ia-evil-ultrachat"
+        "2609.37712",
+        "2609.37972",
+        "2609.38099"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.45,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10 — text-generation",
-          "url": "https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10",
-          "score": 0.447,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Does Local Video Understanding Transfer Across Encounters? The EgoGears Benchmark",
+          "url": "http://arxiv.org/abs/2609.37938v1",
+          "score": 0.505,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Salahuddin1234/omnidoctor-cure-med — text-generation",
-          "url": "https://huggingface.co/Salahuddin1234/omnidoctor-cure-med",
-          "score": 0.447,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Beyond Dyadic Memory: Interaction-Aware Multimodal Memory with Adaptive Agentic Retrieval for Multi-Party Spoken Conversations",
+          "url": "https://huggingface.co/papers/2609.32522",
+          "score": 0.5,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "localized-ft/Llama-3.1-8B-ia-evil-ultrachat — text-generation",
-          "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-ia-evil-ultrachat",
-          "score": 0.447,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "VoxMem: Benchmarking Multimodal Memory in Large Audio Language Models",
+          "url": "https://huggingface.co/papers/2609.32607",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Effective Dense Retrieval using Only In-Context Examples",
+          "url": "http://arxiv.org/abs/2609.38099v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "doPlan: A Variable-Horizon Dataset for Multi-Stage Language-Conditioned Planning in Autonomous Driving",
+          "url": "http://arxiv.org/abs/2609.38028v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Jev thinks \"I don't know'', but doesn't say it: Introducing Sys1Cal-v1 Dataset for Probability Calibration",
+          "url": "https://huggingface.co/papers/2609.35342",
+          "score": 0.494,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-09-30T00:55:02+00:00",
-      "updatedAt": "2026-09-30T00:55:02+00:00",
+      "publishedAt": "2026-09-30T07:44:39+00:00",
+      "updatedAt": "2026-09-30T07:44:39+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-09-30T00:55:02+00:00",
+  "tiered_at": "2026-09-30T07:44:39+00:00",
   "free_preview_count": 3
 }
