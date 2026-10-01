@@ -1,40 +1,41 @@
 {
-  "generated_at": "2026-10-01T00:58:28+00:00",
+  "generated_at": "2026-10-01T08:01:48+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 823,
+  "corpus_count": 821,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يعكس حاجة السوق لتطبيقات إبداعية. هذه النماذج يمكن أن تُستخدم في مجالات مثل التسويق والإعلانات.",
-      "buyer_ar": "شركات التسويق والإعلانات، منصات المحتوى الرقمي",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "Hugging Face, PyTorch, أدوات تصميم الجرافيك",
+      "id": "inference-auctions",
+      "title_ar": "مزادات الاستدلال لتحسين إدارة الطلب",
+      "thesis_ar": "تزايد الطلب على خدمات الذكاء الاصطناعي يتطلب حلولاً فعالة لإدارة الأولويات. يمكن تطوير نظام مزادات لاستدلال الطلب يتيح للمستخدمين تحديد أولوياتهم بناءً على تحملهم للتأخير.",
+      "buyer_ar": "مقدمو خدمات الذكاء الاصطناعي",
+      "sellable_product_ar": "نظام مزادات استدلال متكامل",
+      "first_paid_test_ar": "تقديم نموذج أولي لمزادات استدلال مع مجموعة محدودة من المستخدمين",
+      "tools_ar": "منصة تطوير برمجيات, خوارزميات تعلم الآلة, واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:solintellegence/SolPix",
-        "huggingface_models:SHotoor/gptstyle"
+        "arxiv_papers:2609.40070v1",
+        "huggingface_daily_papers:2609.38721",
+        "arxiv_papers:2609.40169"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 2,
-      "avg_score": 0.49,
+      "avg_score": 0.54,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "solintellegence/SolPix — text-to-image",
-          "url": "https://huggingface.co/solintellegence/SolPix",
-          "score": 0.499,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "Inference Auctions",
+          "url": "http://arxiv.org/abs/2609.40070v1",
+          "score": 0.538,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "SHotoor/gptstyle — text-to-image",
-          "url": "https://huggingface.co/SHotoor/gptstyle",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement",
+          "url": "https://huggingface.co/papers/2609.38721",
+          "score": 0.537,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -42,103 +43,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-01T00:58:28+00:00",
-      "updatedAt": "2026-10-01T00:58:28+00:00",
+      "publishedAt": "2026-10-01T08:01:48+00:00",
+      "updatedAt": "2026-10-01T08:01:48+00:00",
       "sortOrder": 0
     },
     {
-      "id": "image-text-to-text-models",
-      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل الصورة إلى نص يفتح المجال لتطبيقات جديدة في التعرف على المحتوى. هذه النماذج يمكن أن تُستخدم في تحسين تجربة المستخدم.",
-      "buyer_ar": "شركات التكنولوجيا، مطوري التطبيقات",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل الصورة إلى نص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل صور بسيطة إلى نصوص",
-      "tools_ar": "Hugging Face, Safetensors, أدوات التعلم العميق",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo",
-        "huggingface_models:jcbtc/Ornith1.5-Ciru-Halo-Agent-vllm-strix-halo",
-        "huggingface_models:stefanschmidt/jina-ocr-v1-8bit"
-      ],
-      "confidence": 0.65,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo — image-text-to-text",
-          "url": "https://huggingface.co/jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "jcbtc/Ornith1.5-Ciru-Halo-Agent-vllm-strix-halo — image-text-to-text",
-          "url": "https://huggingface.co/jcbtc/Ornith1.5-Ciru-Halo-Agent-vllm-strix-halo",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "stefanschmidt/jina-ocr-v1-8bit — image-text-to-text",
-          "url": "https://huggingface.co/stefanschmidt/jina-ocr-v1-8bit",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-01T00:58:28+00:00",
-      "updatedAt": "2026-10-01T00:58:28+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "persistent-memory-assistants",
-      "title_ar": "تطوير مساعدات شخصية ذات ذاكرة دائمة",
-      "thesis_ar": "الحاجة إلى مساعدات شخصية تتذكر التجارب السابقة تعكس توجه السوق نحو تحسين تجربة المستخدم. هذه التكنولوجيا يمكن أن تُستخدم في العديد من التطبيقات اليومية.",
-      "buyer_ar": "شركات تطوير البرمجيات، منصات المساعدات الشخصية",
-      "sellable_product_ar": "خدمة تطوير مساعدات شخصية ذات ذاكرة دائمة",
-      "first_paid_test_ar": "تقديم نموذج أولي لمساعد شخصي بتجربة مستخدم محدودة",
-      "tools_ar": "Hugging Face, أدوات التعلم الآلي, واجهات برمجة التطبيقات",
+      "id": "self-evolving-agents",
+      "title_ar": "تطوير وكلاء ذاتيين التطور لتحسين الأداء",
+      "thesis_ar": "تزايد الحاجة إلى وكلاء ذكيين قادرين على تحسين أدائهم بشكل مستمر. يمكن استخدام تقنيات التطور الذاتي لتطوير وكلاء يمكنهم التعلم من تجاربهم.",
+      "buyer_ar": "شركات التكنولوجيا والبحث",
+      "sellable_product_ar": "نظام وكلاء ذاتيين التطور",
+      "first_paid_test_ar": "تجربة نموذج أولي لوكيل ذاتي التطور في بيئة محدودة",
+      "tools_ar": "خوارزميات التعلم العميق, أدوات تحليل البيانات, بيئات المحاكاة",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2609.37559",
-        "arxiv_papers:2609.37938v1"
+        "arxiv_papers:2609.40169",
+        "huggingface_daily_papers:2609.38660",
+        "huggingface_daily_papers:2609.39982"
       ],
-      "confidence": 0.6,
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 2,
-      "avg_score": 0.47,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Does Local Video Understanding Transfer Across Encounters? The EgoGears Benchmark",
-          "url": "http://arxiv.org/abs/2609.37938v1",
-          "score": 0.469,
+          "source_id": "huggingface_daily_papers",
+          "title": "Breaking Babel: A Self-Evolving Multi-Agent System for Long-Form Subtitle Translation",
+          "url": "https://huggingface.co/papers/2609.38660",
+          "score": 0.495,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "APM-Bench: Benchmarking Cross-session Persistent Memory for Egocentric Streaming Video Assistants",
-          "url": "https://huggingface.co/papers/2609.37559",
-          "score": 0.468,
+          "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
+          "url": "https://huggingface.co/papers/2609.39982",
+          "score": 0.481,
           "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-01T00:58:28+00:00",
-      "updatedAt": "2026-10-01T00:58:28+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-10-01T08:01:48+00:00",
+      "updatedAt": "2026-10-01T08:01:48+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-10-01T00:58:28+00:00",
+  "tiered_at": "2026-10-01T08:01:48+00:00",
   "free_preview_count": 3
 }
