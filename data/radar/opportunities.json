@@ -1,83 +1,68 @@
 {
-  "generated_at": "2026-10-01T08:01:48+00:00",
+  "generated_at": "2026-10-01T15:01:48+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 821,
+  "corpus_count": 825,
   "opportunities": [
     {
       "id": "inference-auctions",
-      "title_ar": "مزادات الاستدلال لتحسين إدارة الطلب",
-      "thesis_ar": "تزايد الطلب على خدمات الذكاء الاصطناعي يتطلب حلولاً فعالة لإدارة الأولويات. يمكن تطوير نظام مزادات لاستدلال الطلب يتيح للمستخدمين تحديد أولوياتهم بناءً على تحملهم للتأخير.",
+      "title_ar": "تطوير نظام مزادات الاستدلال للذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على استدعاء نماذج الذكاء الاصطناعي يتطلب حلولاً مبتكرة لتحديد أولويات الطلبات. يمكن أن يؤدي نظام المزادات إلى تحسين كفاءة استخدام الموارد وزيادة الإيرادات.",
       "buyer_ar": "مقدمو خدمات الذكاء الاصطناعي",
-      "sellable_product_ar": "نظام مزادات استدلال متكامل",
-      "first_paid_test_ar": "تقديم نموذج أولي لمزادات استدلال مع مجموعة محدودة من المستخدمين",
-      "tools_ar": "منصة تطوير برمجيات, خوارزميات تعلم الآلة, واجهات برمجة التطبيقات",
+      "sellable_product_ar": "نظام مزادات استدلال يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تجربة نظام مزادات على نموذج صغير مع عدد محدود من المستخدمين",
+      "tools_ar": "نظام إدارة قواعد البيانات، واجهة برمجة التطبيقات، خوارزمية تحديد الأولويات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2609.40070v1",
-        "huggingface_daily_papers:2609.38721",
-        "arxiv_papers:2609.40169"
+        "2609.40070v1",
+        "2609.40067v1",
+        "2609.40169v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.54,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "Inference Auctions",
           "url": "http://arxiv.org/abs/2609.40070v1",
-          "score": 0.538,
+          "score": 0.534,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement",
-          "url": "https://huggingface.co/papers/2609.38721",
-          "score": 0.537,
+          "source_id": "arxiv_papers",
+          "title": "Community-Driven API and AI Writer Design for Openly Scaling Community Notes",
+          "url": "http://arxiv.org/abs/2609.40067v1",
+          "score": 0.499,
           "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-01T08:01:48+00:00",
-      "updatedAt": "2026-10-01T08:01:48+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "self-evolving-agents",
-      "title_ar": "تطوير وكلاء ذاتيين التطور لتحسين الأداء",
-      "thesis_ar": "تزايد الحاجة إلى وكلاء ذكيين قادرين على تحسين أدائهم بشكل مستمر. يمكن استخدام تقنيات التطور الذاتي لتطوير وكلاء يمكنهم التعلم من تجاربهم.",
-      "buyer_ar": "شركات التكنولوجيا والبحث",
-      "sellable_product_ar": "نظام وكلاء ذاتيين التطور",
-      "first_paid_test_ar": "تجربة نموذج أولي لوكيل ذاتي التطور في بيئة محدودة",
-      "tools_ar": "خوارزميات التعلم العميق, أدوات تحليل البيانات, بيئات المحاكاة",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2609.40169",
-        "huggingface_daily_papers:2609.38660",
-        "huggingface_daily_papers:2609.39982"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
-      "evidence_items": [
+        },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Breaking Babel: A Self-Evolving Multi-Agent System for Long-Form Subtitle Translation",
-          "url": "https://huggingface.co/papers/2609.38660",
+          "source_id": "arxiv_papers",
+          "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+          "url": "http://arxiv.org/abs/2609.40169v1",
           "score": 0.495,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
-          "url": "https://huggingface.co/papers/2609.39982",
-          "score": 0.481,
+          "source_id": "arxiv_papers",
+          "title": "BayesNDE: Bayesian Generative Modeling for Neural Density Estimation",
+          "url": "http://arxiv.org/abs/2609.39843v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Skill-Based AI Agents for Power-System Studies",
+          "url": "http://arxiv.org/abs/2609.40272v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automatically Building Machine-Checked Assurance Cases from C Codebases to Requirements",
+          "url": "http://arxiv.org/abs/2609.40119v1",
+          "score": 0.474,
           "trust_tier": "research"
         }
       ],
@@ -86,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-01T08:01:48+00:00",
-      "updatedAt": "2026-10-01T08:01:48+00:00",
+      "publishedAt": "2026-10-01T15:01:48+00:00",
+      "updatedAt": "2026-10-01T15:01:48+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "community-driven-api",
+      "title_ar": "إنشاء واجهة برمجة تطبيقات مدفوعة بالمجتمع",
+      "thesis_ar": "تزايد الحاجة إلى سياق إضافي للمحتوى عبر الإنترنت يفتح المجال لتطوير واجهات برمجة تطبيقات تعتمد على مساهمات المجتمع. هذه الحلول تعزز من تفاعل المستخدمين وتزيد من القيمة المضافة.",
+      "buyer_ar": "منصات التواصل الاجتماعي والمحتوى",
+      "sellable_product_ar": "واجهة برمجة تطبيقات تعتمد على مساهمات المجتمع",
+      "first_paid_test_ar": "إطلاق نسخة تجريبية محدودة للمستخدمين لجمع الملاحظات",
+      "tools_ar": "نظام إدارة المحتوى، واجهة برمجة التطبيقات، أدوات تحليل البيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2609.40067v1",
+        "2609.40119v1",
+        "2609.39958v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Inference Auctions",
+          "url": "http://arxiv.org/abs/2609.40070v1",
+          "score": 0.534,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Community-Driven API and AI Writer Design for Openly Scaling Community Notes",
+          "url": "http://arxiv.org/abs/2609.40067v1",
+          "score": 0.499,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+          "url": "http://arxiv.org/abs/2609.40169v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "BayesNDE: Bayesian Generative Modeling for Neural Density Estimation",
+          "url": "http://arxiv.org/abs/2609.39843v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Skill-Based AI Agents for Power-System Studies",
+          "url": "http://arxiv.org/abs/2609.40272v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automatically Building Machine-Checked Assurance Cases from C Codebases to Requirements",
+          "url": "http://arxiv.org/abs/2609.40119v1",
+          "score": 0.474,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-01T15:01:48+00:00",
+      "updatedAt": "2026-10-01T15:01:48+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "skill-based-ai-agents",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي قائمين على المهارات",
+      "thesis_ar": "تزايد الحاجة إلى تحسين الأنظمة الهندسية الكهربائية يتطلب وكلاء ذكاء اصطناعي يمكنهم التعامل مع مهام معقدة. هذا يفتح المجال لتطوير حلول مبتكرة في هذا القطاع.",
+      "buyer_ar": "شركات الهندسة الكهربائية والطاقة",
+      "sellable_product_ar": "وكلاء ذكاء اصطناعي لتحليل الأنظمة الكهربائية",
+      "first_paid_test_ar": "تجربة نموذج أولي لوكيل ذكاء اصطناعي في مشروع صغير",
+      "tools_ar": "أدوات تحليل البيانات، خوارزميات التعلم الآلي، واجهات برمجة التطبيقات الهندسية",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2609.40272v1",
+        "2609.40124v1",
+        "2609.39929v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Inference Auctions",
+          "url": "http://arxiv.org/abs/2609.40070v1",
+          "score": 0.534,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Community-Driven API and AI Writer Design for Openly Scaling Community Notes",
+          "url": "http://arxiv.org/abs/2609.40067v1",
+          "score": 0.499,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+          "url": "http://arxiv.org/abs/2609.40169v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "BayesNDE: Bayesian Generative Modeling for Neural Density Estimation",
+          "url": "http://arxiv.org/abs/2609.39843v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Skill-Based AI Agents for Power-System Studies",
+          "url": "http://arxiv.org/abs/2609.40272v1",
+          "score": 0.492,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Automatically Building Machine-Checked Assurance Cases from C Codebases to Requirements",
+          "url": "http://arxiv.org/abs/2609.40119v1",
+          "score": 0.474,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-01T15:01:48+00:00",
+      "updatedAt": "2026-10-01T15:01:48+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-01T08:01:48+00:00",
+  "tiered_at": "2026-10-01T15:01:48+00:00",
   "free_preview_count": 3
 }
