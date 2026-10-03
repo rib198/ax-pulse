@@ -1,24 +1,74 @@
 {
-  "generated_at": "2026-10-03T07:18:54+00:00",
+  "generated_at": "2026-10-03T12:54:14+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 822,
+  "corpus_count": 834,
   "opportunities": [
     {
-      "id": "continuous-evaluation-framework",
-      "title_ar": "إطار تقييم مستمر لوكالات الذكاء الاصطناعي",
-      "thesis_ar": "تتطور مهارات وكالات الذكاء الاصطناعي مع تغير واجهات البرمجة والنماذج. وجود إطار لتقييم الأداء بشكل مستمر يمكن أن يحسن من فعالية هذه الوكالات.",
-      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
-      "sellable_product_ar": "خدمة تقييم مستمر لأداء وكالات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تقييم مجاني لمشروع صغير وتحليل النتائج",
-      "tools_ar": "أدوات تحليل البيانات، واجهات برمجة التطبيقات، نماذج الذكاء الاصطناعي",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يعكس حاجة السوق لتطبيقات مبتكرة. يمكن استغلال هذه النماذج في مجالات مثل الإعلانات والتصميم الفني.",
+      "buyer_ar": "شركات الإعلانات والتصميم الفني",
+      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لعميل محتمل",
+      "tools_ar": "Hugging Face, Python, أدوات التعلم العميق",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2610.01833v1",
-        "huggingface_models:Keltezaa/Age_Slider_Flux.2.klein.9b_v2",
-        "huggingface_models:SLORA/IMAGE-SIGMA"
+        "huggingface_models:misapapa71/model-ami-krea2",
+        "huggingface_models:misapapa71/model-himika-krea2",
+        "huggingface_models:beepbeep2724/chitra-b1mb0"
       ],
-      "confidence": 0.8,
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "misapapa71/model-ami-krea2 — text-to-image",
+          "url": "https://huggingface.co/misapapa71/model-ami-krea2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "misapapa71/model-himika-krea2 — text-to-image",
+          "url": "https://huggingface.co/misapapa71/model-himika-krea2",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "beepbeep2724/chitra-b1mb0 — text-to-image",
+          "url": "https://huggingface.co/beepbeep2724/chitra-b1mb0",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-03T12:54:14+00:00",
+      "updatedAt": "2026-10-03T12:54:14+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "enterprise-ai-evaluation",
+      "title_ar": "تطوير إطار تقييم مستمر لوكالات الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الاعتماد على وكالات الذكاء الاصطناعي يتطلب تقييمًا مستمرًا لأدائها. يمكن تقديم حلول تساعد الشركات على تحسين أداء وكالاتها.",
+      "buyer_ar": "شركات التقنية والبرمجيات",
+      "sellable_product_ar": "خدمة تطوير إطار تقييم مستمر لوكالات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم استشارة حول تقييم أداء وكالة ذكاء اصطناعي قائمة",
+      "tools_ar": "Python, أدوات تحليل البيانات, أدوات الذكاء الاصطناعي",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2610.01833v1",
+        "huggingface_daily_papers:2609.36585",
+        "huggingface_daily_papers:2610.02117"
+      ],
+      "confidence": 0.6,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.48,
@@ -27,134 +77,84 @@
           "source_id": "arxiv_papers",
           "title": "Continuous Process-Level Evaluation for Evolving Enterprise AI Agent Skills",
           "url": "http://arxiv.org/abs/2610.01833v1",
-          "score": 0.494,
+          "score": 0.484,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Keltezaa/Age_Slider_Flux.2.klein.9b_v2 — text-to-image",
-          "url": "https://huggingface.co/Keltezaa/Age_Slider_Flux.2.klein.9b_v2",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
+          "url": "https://huggingface.co/papers/2609.36585",
+          "score": 0.48,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "SLORA/IMAGE-SIGMA — text-to-image",
-          "url": "https://huggingface.co/SLORA/IMAGE-SIGMA",
-          "score": 0.472,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+          "url": "https://huggingface.co/papers/2610.02117",
+          "score": 0.473,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-03T07:18:54+00:00",
-      "updatedAt": "2026-10-03T07:18:54+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-10-03T12:54:14+00:00",
+      "updatedAt": "2026-10-03T12:54:14+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "skill-based-ai-agents",
-      "title_ar": "وكالات ذكاء اصطناعي قائمة على المهارات",
-      "thesis_ar": "تتزايد الحاجة إلى وكالات ذكاء اصطناعي قادرة على إجراء دراسات متقدمة في أنظمة الطاقة. هذه الوكالات يمكن أن تحسن من كفاءة العمليات الهندسية.",
-      "buyer_ar": "شركات الطاقة والهندسة",
-      "sellable_product_ar": "نموذج وكالة ذكاء اصطناعي لتحليل أنظمة الطاقة",
-      "first_paid_test_ar": "تقديم دراسة حالة لتحليل نظام طاقة صغير",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، واجهات برمجة التطبيقات",
+      "id": "malware-classification-model",
+      "title_ar": "تطوير نموذج تصنيف البرمجيات الخبيثة",
+      "thesis_ar": "مع تزايد عدد أجهزة إنترنت الأشياء، تزداد الحاجة إلى تصنيف البرمجيات الخبيثة. يمكن تقديم حلول فعالة في هذا المجال.",
+      "buyer_ar": "شركات الأمن السيبراني",
+      "sellable_product_ar": "نموذج تصنيف البرمجيات الخبيثة باستخدام تقنيات التعلم العميق",
+      "first_paid_test_ar": "تقديم نموذج أولي لتصنيف البرمجيات الخبيثة",
+      "tools_ar": "Python, أدوات التعلم العميق, مكتبات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2610.02089v1",
-        "huggingface_models:TrustLLMeu/trustllm-v2-8b-sft-8k",
-        "arxiv_papers:2610.01893v1"
+        "arxiv_papers:2610.01893v1",
+        "huggingface_daily_papers:2610.02202",
+        "huggingface_daily_papers:2610.02117"
       ],
-      "confidence": 0.75,
+      "confidence": 0.5,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.46,
+      "avg_score": 0.47,
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution",
-          "url": "http://arxiv.org/abs/2610.02089v1",
-          "score": 0.468,
-          "trust_tier": "research"
-        },
         {
           "source_id": "arxiv_papers",
           "title": "A Structured State Space Sequence Model for Multi-Class Classification of Malware",
           "url": "http://arxiv.org/abs/2610.01893v1",
-          "score": 0.468,
+          "score": 0.479,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "TrustLLMeu/trustllm-v2-8b-sft-8k — text-generation",
-          "url": "https://huggingface.co/TrustLLMeu/trustllm-v2-8b-sft-8k",
-          "score": 0.447,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+          "url": "https://huggingface.co/papers/2610.02117",
+          "score": 0.473,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+          "url": "https://huggingface.co/papers/2610.02202",
+          "score": 0.468,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-03T07:18:54+00:00",
-      "updatedAt": "2026-10-03T07:18:54+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "image-text-assistive-technology",
-      "title_ar": "تكنولوجيا مساعدة تعتمد على تحويل الصورة إلى نص",
-      "thesis_ar": "تزايد الاعتماد على التكنولوجيا المساعدة للأشخاص ذوي الإعاقة البصرية. تطوير حلول تعتمد على تحويل الصور إلى نصوص يمكن أن يحسن من جودة الحياة.",
-      "buyer_ar": "مؤسسات الرعاية الصحية والتأهيل",
-      "sellable_product_ar": "تطبيق لتحويل الصورة إلى نصوص للأشخاص ذوي الإعاقة البصرية",
-      "first_paid_test_ar": "تقديم تجربة مجانية لتطبيق مع مجموعة من المستخدمين",
-      "tools_ar": "نماذج الذكاء الاصطناعي، أدوات تطوير التطبيقات، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:nori-sdc/Qwen3.5-4B-SoraEyeAI-GGUF",
-        "huggingface_models:Keltezaa/Age_Slider_Flux.2.klein.9b_v2",
-        "huggingface_models:SLORA/IMAGE-SIGMA"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.46,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Keltezaa/Age_Slider_Flux.2.klein.9b_v2 — text-to-image",
-          "url": "https://huggingface.co/Keltezaa/Age_Slider_Flux.2.klein.9b_v2",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "SLORA/IMAGE-SIGMA — text-to-image",
-          "url": "https://huggingface.co/SLORA/IMAGE-SIGMA",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nori-sdc/Qwen3.5-4B-SoraEyeAI-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/nori-sdc/Qwen3.5-4B-SoraEyeAI-GGUF",
-          "score": 0.447,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-03T07:18:54+00:00",
-      "updatedAt": "2026-10-03T07:18:54+00:00",
+      "publishedAt": "2026-10-03T12:54:14+00:00",
+      "updatedAt": "2026-10-03T12:54:14+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-03T07:18:54+00:00",
+  "tiered_at": "2026-10-03T12:54:14+00:00",
   "free_preview_count": 3
 }
