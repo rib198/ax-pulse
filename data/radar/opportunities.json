@@ -1,46 +1,96 @@
 {
-  "generated_at": "2026-10-04T13:38:28+00:00",
+  "generated_at": "2026-10-04T17:58:48+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 843,
+  "corpus_count": 842,
   "opportunities": [
     {
       "id": "text-to-image-models",
       "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يفتح المجال لتطوير تطبيقات جديدة في الإبداع الفني والإعلانات. السوق العربي يحتاج إلى محتوى مرئي مبتكر وجذاب.",
-      "buyer_ar": "شركات الإعلانات والتسويق، المطورون المستقلون، وكالات التصميم",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص أو خدمة تصميم محتوى مرئي",
-      "first_paid_test_ar": "تطوير نموذج أولي لتحويل نصوص بسيطة إلى صور واستخدامها في حملة إعلانات صغيرة",
-      "tools_ar": "Hugging Face، أدوات تصميم الجرافيك، مكتبات تعلم الآلة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة في السوق العربي. يمكن استغلال التحديثات الأخيرة في نماذج Hugging Face لتقديم خدمات مخصصة.",
+      "buyer_ar": "شركات الإعلانات، وكالات التصميم، ومطورو الألعاب.",
+      "sellable_product_ar": "خدمات تصميم صور مخصصة باستخدام نماذج الذكاء الاصطناعي.",
+      "first_paid_test_ar": "تقديم تصميم صورة واحدة بناءً على نص محدد مقابل رسوم رمزية.",
+      "tools_ar": "Hugging Face, أدوات التصميم, خوادم معالجة الصور.",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:beepbeep2724/lyna-b1mb0",
-        "huggingface_models:uzumix/r4ch5-v1",
-        "huggingface_models:modrez/jarvis-R2-merged"
+        "huggingface_models:Linlagggg/blue-archive-style",
+        "huggingface_models:Pedro-TakeOnMe/TakeOnMe-Qwen3.8-Flash-Next-GGUF",
+        "huggingface_models:neph1/1980s_fantasy_movies_minimax_h3"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "beepbeep2724/lyna-b1mb0 — text-to-image",
-          "url": "https://huggingface.co/beepbeep2724/lyna-b1mb0",
+          "title": "Linlagggg/blue-archive-style — text-to-image",
+          "url": "https://huggingface.co/Linlagggg/blue-archive-style",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Pedro-TakeOnMe/TakeOnMe-Qwen3.8-Flash-Next-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/Pedro-TakeOnMe/TakeOnMe-Qwen3.8-Flash-Next-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "uzumix/r4ch5-v1 — text-to-image",
-          "url": "https://huggingface.co/uzumix/r4ch5-v1",
+          "title": "neph1/1980s_fantasy_movies_minimax_h3 — text-to-image",
+          "url": "https://huggingface.co/neph1/1980s_fantasy_movies_minimax_h3",
           "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-04T17:58:48+00:00",
+      "updatedAt": "2026-10-04T17:58:48+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-generation-for-legal-chatbots",
+      "title_ar": "تطوير دردشة قانونية باستخدام نماذج الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة إلى خدمات قانونية ميسرة وسريعة. نماذج الدردشة القانونية يمكن أن توفر استشارات قانونية فورية.",
+      "buyer_ar": "مكاتب المحاماة، الشركات الناشئة في مجال التكنولوجيا القانونية.",
+      "sellable_product_ar": "نموذج دردشة قانونية مدعوم بالذكاء الاصطناعي.",
+      "first_paid_test_ar": "تقديم استشارة قانونية قصيرة مجانية لتجربة الخدمة.",
+      "tools_ar": "Hugging Face, نماذج الذكاء الاصطناعي, واجهات برمجة التطبيقات.",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:aletta2206/legal-chatbot-finetuned",
+        "huggingface_models:francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455",
+        "huggingface_models:vaultai/gpt-oss-20b-MXFP4-Q8"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "aletta2206/legal-chatbot-finetuned — text-generation",
+          "url": "https://huggingface.co/aletta2206/legal-chatbot-finetuned",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "modrez/jarvis-R2-merged — image-text-to-text",
-          "url": "https://huggingface.co/modrez/jarvis-R2-merged",
+          "title": "francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455 — text-generation",
+          "url": "https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "vaultai/gpt-oss-20b-MXFP4-Q8 — text-generation",
+          "url": "https://huggingface.co/vaultai/gpt-oss-20b-MXFP4-Q8",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -50,35 +100,35 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-04T13:38:28+00:00",
-      "updatedAt": "2026-10-04T13:38:28+00:00",
-      "sortOrder": 0
+      "publishedAt": "2026-10-04T17:58:48+00:00",
+      "updatedAt": "2026-10-04T17:58:48+00:00",
+      "sortOrder": 1
     },
     {
-      "id": "enterprise-ai-evaluation",
-      "title_ar": "إطار تقييم مستمر لمهارات الذكاء الاصطناعي",
-      "thesis_ar": "مع تطور مهارات الذكاء الاصطناعي، هناك حاجة ملحة لتقييم مستمر لمواكبة التغيرات. هذا سيساعد الشركات على تحسين أداء نماذجها.",
-      "buyer_ar": "شركات التقنية، المؤسسات التعليمية، الشركات الكبرى",
-      "sellable_product_ar": "خدمة تقييم مستمر للذكاء الاصطناعي أو أداة برمجية لذلك",
-      "first_paid_test_ar": "تقديم تقييم تجريبي لنموذج ذكاء اصطناعي قائم وتحليل النتائج",
-      "tools_ar": "أدوات تحليل البيانات، مكتبات تعلم الآلة، منصات تقييم الأداء",
+      "id": "image-text-to-text-research",
+      "title_ar": "تطوير أدوات بحث مستندة إلى الذكاء الاصطناعي",
+      "thesis_ar": "التحسينات في نماذج الربط بين النصوص والصور توفر فرصًا لتطوير أدوات بحث جديدة. الطلب على أدوات البحث الفعالة في تزايد.",
+      "buyer_ar": "شركات البحث، المكتبات الرقمية، المؤسسات الأكاديمية.",
+      "sellable_product_ar": "أداة بحث متقدمة تعتمد على الذكاء الاصطناعي لتحليل النصوص والصور.",
+      "first_paid_test_ar": "تقديم تجربة مجانية للأداة مع قيود على عدد البحثات.",
+      "tools_ar": "Hugging Face, أدوات التحليل, خوادم البيانات.",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2610.01833v1",
+        "huggingface_models:Pedro-TakeOnMe/TakeOnMe-Qwen3.8-Flash-Next-GGUF",
         "huggingface_daily_papers:2609.36585",
-        "huggingface_daily_papers:2609.36585"
+        "huggingface_daily_papers:2610.02117"
       ],
-      "confidence": 0.75,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Continuous Process-Level Evaluation for Evolving Enterprise AI Agent Skills",
-          "url": "http://arxiv.org/abs/2610.01833v1",
-          "score": 0.484,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Pedro-TakeOnMe/TakeOnMe-Qwen3.8-Flash-Next-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/Pedro-TakeOnMe/TakeOnMe-Qwen3.8-Flash-Next-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
@@ -86,56 +136,13 @@
           "url": "https://huggingface.co/papers/2609.36585",
           "score": 0.48,
           "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-04T13:38:28+00:00",
-      "updatedAt": "2026-10-04T13:38:28+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "malware-classification",
-      "title_ar": "نموذج تصنيف البرمجيات الخبيثة",
-      "thesis_ar": "مع تزايد عدد أجهزة إنترنت الأشياء، تزداد الحاجة لحماية البيانات من البرمجيات الخبيثة. تطوير نموذج تصنيف فعال يمكن أن يكون له تأثير كبير.",
-      "buyer_ar": "شركات الأمن السيبراني، مزودو خدمات إنترنت الأشياء، المؤسسات الحكومية",
-      "sellable_product_ar": "نموذج تصنيف البرمجيات الخبيثة كخدمة",
-      "first_paid_test_ar": "تقديم تحليل لعينات من البرمجيات الخبيثة واختبار النموذج على بيانات محدودة",
-      "tools_ar": "أدوات تحليل البرمجيات، مكتبات تعلم الآلة، بيئات الاختبار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2610.01893v1",
-        "huggingface_models:francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
-        "huggingface_models:francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
+        },
         {
-          "source_id": "arxiv_papers",
-          "title": "A Structured State Space Sequence Model for Multi-Class Classification of Malware",
-          "url": "http://arxiv.org/abs/2610.01893v1",
-          "score": 0.479,
+          "source_id": "huggingface_daily_papers",
+          "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+          "url": "https://huggingface.co/papers/2610.02117",
+          "score": 0.473,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455 — text-generation",
-          "url": "https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 — text-generation",
-          "url": "https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
-          "score": 0.466,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -143,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-04T13:38:28+00:00",
-      "updatedAt": "2026-10-04T13:38:28+00:00",
+      "publishedAt": "2026-10-04T17:58:48+00:00",
+      "updatedAt": "2026-10-04T17:58:48+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-04T13:38:28+00:00",
+  "tiered_at": "2026-10-04T17:58:48+00:00",
   "free_preview_count": 3
 }
