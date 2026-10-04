@@ -1,147 +1,140 @@
 {
-  "generated_at": "2026-10-04T07:37:08+00:00",
+  "generated_at": "2026-10-04T13:38:28+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 841,
+  "corpus_count": 843,
   "opportunities": [
     {
-      "id": "securecoder-cybersecurity-tools",
-      "title_ar": "أدوات الأمن السيبراني المدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "مع تزايد التهديدات السيبرانية، هناك حاجة ملحة لتطوير أدوات جديدة تعتمد على نماذج الذكاء الاصطناعي لتحسين الأمان. النماذج الحديثة مثل Taimwe/securecoder توفر حلولًا مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات الأمن السيبراني والمؤسسات الحكومية",
-      "sellable_product_ar": "أدوات تحليل واختبار أمان البرمجيات",
-      "first_paid_test_ar": "تقديم اختبار أمان مجاني لشركة واحدة مع تقارير مفصلة",
-      "tools_ar": "نموذج Taimwe/securecoder, أدوات تحليل الأمان, واجهات برمجة التطبيقات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يفتح المجال لتطوير تطبيقات جديدة في الإبداع الفني والإعلانات. السوق العربي يحتاج إلى محتوى مرئي مبتكر وجذاب.",
+      "buyer_ar": "شركات الإعلانات والتسويق، المطورون المستقلون، وكالات التصميم",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص أو خدمة تصميم محتوى مرئي",
+      "first_paid_test_ar": "تطوير نموذج أولي لتحويل نصوص بسيطة إلى صور واستخدامها في حملة إعلانات صغيرة",
+      "tools_ar": "Hugging Face، أدوات تصميم الجرافيك، مكتبات تعلم الآلة",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Taimwe/securecoder-30b-pro-v2",
-        "huggingface_models:Taimwe/securecoder-30b-pro-v2-GGUF",
-        "huggingface_models:Taimwe/securecoder-30b-pro-v2-merged"
+        "huggingface_models:beepbeep2724/lyna-b1mb0",
+        "huggingface_models:uzumix/r4ch5-v1",
+        "huggingface_models:modrez/jarvis-R2-merged"
       ],
       "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Taimwe/securecoder-30b-pro-v2 — text-generation",
-          "url": "https://huggingface.co/Taimwe/securecoder-30b-pro-v2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Taimwe/securecoder-30b-pro-v2-GGUF — text-generation",
-          "url": "https://huggingface.co/Taimwe/securecoder-30b-pro-v2-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Taimwe/securecoder-30b-pro-v2-merged — text-generation",
-          "url": "https://huggingface.co/Taimwe/securecoder-30b-pro-v2-merged",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-04T07:37:08+00:00",
-      "updatedAt": "2026-10-04T07:37:08+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "humanoid-tool-use-training",
-      "title_ar": "تدريب الروبوتات على استخدام الأدوات",
-      "thesis_ar": "مع تقدم تقنيات الروبوتات، هناك فرصة كبيرة لتطوير برامج تدريبية للروبوتات لتحسين قدرتها على استخدام الأدوات. هذا سيساعد في توسيع نطاق تطبيقات الروبوتات في مختلف الصناعات.",
-      "buyer_ar": "شركات تصنيع الروبوتات ومراكز الأبحاث",
-      "sellable_product_ar": "برامج تدريبية ونماذج محاكاة للروبوتات",
-      "first_paid_test_ar": "تقديم نموذج تدريبي لروبوت واحد مع تقييم الأداء",
-      "tools_ar": "نموذج HumanoidToolBench, أدوات محاكاة, برمجيات تدريب",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2610.02089v1",
-        "arxiv_papers:2610.01893v1",
-        "huggingface_models:RUC-AIBOX/AEWM"
-      ],
-      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "RUC-AIBOX/AEWM — text-generation",
-          "url": "https://huggingface.co/RUC-AIBOX/AEWM",
+          "title": "beepbeep2724/lyna-b1mb0 — text-to-image",
+          "url": "https://huggingface.co/beepbeep2724/lyna-b1mb0",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
+          "source_id": "huggingface_models",
+          "title": "uzumix/r4ch5-v1 — text-to-image",
+          "url": "https://huggingface.co/uzumix/r4ch5-v1",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "modrez/jarvis-R2-merged — image-text-to-text",
+          "url": "https://huggingface.co/modrez/jarvis-R2-merged",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-04T13:38:28+00:00",
+      "updatedAt": "2026-10-04T13:38:28+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "enterprise-ai-evaluation",
+      "title_ar": "إطار تقييم مستمر لمهارات الذكاء الاصطناعي",
+      "thesis_ar": "مع تطور مهارات الذكاء الاصطناعي، هناك حاجة ملحة لتقييم مستمر لمواكبة التغيرات. هذا سيساعد الشركات على تحسين أداء نماذجها.",
+      "buyer_ar": "شركات التقنية، المؤسسات التعليمية، الشركات الكبرى",
+      "sellable_product_ar": "خدمة تقييم مستمر للذكاء الاصطناعي أو أداة برمجية لذلك",
+      "first_paid_test_ar": "تقديم تقييم تجريبي لنموذج ذكاء اصطناعي قائم وتحليل النتائج",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات تعلم الآلة، منصات تقييم الأداء",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2610.01833v1",
+        "huggingface_daily_papers:2609.36585",
+        "huggingface_daily_papers:2609.36585"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
           "source_id": "arxiv_papers",
-          "title": "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution",
-          "url": "http://arxiv.org/abs/2610.02089v1",
-          "score": 0.479,
+          "title": "Continuous Process-Level Evaluation for Evolving Enterprise AI Agent Skills",
+          "url": "http://arxiv.org/abs/2610.01833v1",
+          "score": 0.484,
           "trust_tier": "research"
         },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
+          "url": "https://huggingface.co/papers/2609.36585",
+          "score": 0.48,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-04T13:38:28+00:00",
+      "updatedAt": "2026-10-04T13:38:28+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "malware-classification",
+      "title_ar": "نموذج تصنيف البرمجيات الخبيثة",
+      "thesis_ar": "مع تزايد عدد أجهزة إنترنت الأشياء، تزداد الحاجة لحماية البيانات من البرمجيات الخبيثة. تطوير نموذج تصنيف فعال يمكن أن يكون له تأثير كبير.",
+      "buyer_ar": "شركات الأمن السيبراني، مزودو خدمات إنترنت الأشياء، المؤسسات الحكومية",
+      "sellable_product_ar": "نموذج تصنيف البرمجيات الخبيثة كخدمة",
+      "first_paid_test_ar": "تقديم تحليل لعينات من البرمجيات الخبيثة واختبار النموذج على بيانات محدودة",
+      "tools_ar": "أدوات تحليل البرمجيات، مكتبات تعلم الآلة، بيئات الاختبار",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2610.01893v1",
+        "huggingface_models:francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
+        "huggingface_models:francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "A Structured State Space Sequence Model for Multi-Class Classification of Malware",
           "url": "http://arxiv.org/abs/2610.01893v1",
           "score": 0.479,
           "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-04T07:37:08+00:00",
-      "updatedAt": "2026-10-04T07:37:08+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "image-text-models-for-marketing",
-      "title_ar": "نماذج تحويل النص إلى صورة للتسويق",
-      "thesis_ar": "تزايد استخدام المحتوى المرئي في التسويق يفتح المجال لتطوير نماذج تحويل النص إلى صورة. هذه النماذج يمكن أن تعزز من تفاعل العملاء مع العلامات التجارية.",
-      "buyer_ar": "وكالات التسويق والشركات الناشئة",
-      "sellable_product_ar": "خدمات إنشاء محتوى مرئي مخصص",
-      "first_paid_test_ar": "تقديم تصميم صورة واحدة بناءً على نص تسويقي",
-      "tools_ar": "نموذج Marx23411/Zelretchv3, أدوات تصميم, واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:Marx23411/Zelretchv3",
-        "huggingface_models:D33pStateTech/aznten-SDXL-photoreal",
-        "huggingface_models:KatsuragiTsukasa/ggfor"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
+        },
         {
           "source_id": "huggingface_models",
-          "title": "Marx23411/Zelretchv3 — text-to-image",
-          "url": "https://huggingface.co/Marx23411/Zelretchv3",
-          "score": 0.488,
+          "title": "francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455 — text-generation",
+          "url": "https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed455",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "D33pStateTech/aznten-SDXL-photoreal — text-to-image",
-          "url": "https://huggingface.co/D33pStateTech/aznten-SDXL-photoreal",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "KatsuragiTsukasa/ggfor — text-to-image",
-          "url": "https://huggingface.co/KatsuragiTsukasa/ggfor",
-          "score": 0.488,
+          "title": "francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 — text-generation",
+          "url": "https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-04T07:37:08+00:00",
-      "updatedAt": "2026-10-04T07:37:08+00:00",
+      "publishedAt": "2026-10-04T13:38:28+00:00",
+      "updatedAt": "2026-10-04T13:38:28+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-04T07:37:08+00:00",
+  "tiered_at": "2026-10-04T13:38:28+00:00",
   "free_preview_count": 3
 }
