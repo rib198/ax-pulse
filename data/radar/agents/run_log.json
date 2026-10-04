@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-04T00:23:43+00:00",
+  "run_at": "2026-10-04T07:37:08+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,13 +26,13 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 402.353,
+      "duration_s": 17.354,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 340 signals from 31 source families",
-        "7 source errors (non-fatal)"
+        "collected 347 signals from 31 source families",
+        "6 source errors (non-fatal)"
       ],
       "error": null
     },
@@ -42,20 +42,20 @@
       "duration_s": 0.013,
       "written": [],
       "notes": [
-        "injected 494 manual X items (skipped 6 of 500, avg score 0.147)"
+        "injected 494 manual X items (skipped 6 of 500, avg score 0.143)"
       ],
       "error": null
     },
     {
       "agent": "evidence_guard",
       "ok": true,
-      "duration_s": 0.003,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 834 items",
-        "by tier: press=520, official=165, research=117, community=32"
+        "tagged 841 items",
+        "by tier: press=520, official=164, research=125, community=32"
       ],
       "error": null
     },
@@ -77,7 +77,7 @@
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 834 items, top priority=0.494"
+        "ranked 841 items, top priority=0.488"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 13 companies, 16 products this run",
+        "detected 14 companies, 15 products this run",
         "store size: 48"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.076,
+      "duration_s": 0.079,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+26 new model events",
+        "+29 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.185,
+      "duration_s": 0.191,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "23 events (7 new)",
-        "by type: pricing_change=3, acquisition=2, model_release=11, personnel_move=4, funding_round=3"
+        "24 events (1 new)",
+        "by type: acquisition=2, model_release=12, pricing_change=3, personnel_move=4, funding_round=3"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 8.984,
+      "duration_s": 8.531,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 9.767,
+      "duration_s": 9.016,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.923,
+      "duration_s": 7.624,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -212,24 +212,24 @@
     {
       "agent": "performance_analytics",
       "ok": true,
-      "duration_s": 0.004,
+      "duration_s": 0.006,
       "written": [
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=834, opps=3, calls=3"
+        "items=841, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.368,
+      "duration_s": 2.31,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدنا زيادة في النشاط حول الإصدارات المتعلقة بنموذج claude، مما يشير إلى تركيز …"
+        "insight via openai: لوحظ زيادة في إشارات النشاط، مما يشير إلى اهتمام متزايد في نماذج الذكاء الاصطنا…"
       ],
       "error": null
     },
