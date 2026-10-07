@@ -1,153 +1,330 @@
 {
-  "generated_at": "2026-10-06T22:03:34+00:00",
+  "generated_at": "2026-10-07T01:17:41+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 832,
+  "corpus_count": 845,
   "opportunities": [
     {
-      "id": "ecommerce-recommendation-engine",
-      "title_ar": "محرك توصيات للمنتجات والخدمات",
-      "thesis_ar": "تقدم Muse رؤية واضحة حول كيفية اختيار المنتجات والخدمات للتوصية، مما يفتح قنوات جديدة للإيرادات. هذا الوقت مثالي للاستفادة من الطلب المتزايد على التخصيص في التجارة الإلكترونية.",
-      "buyer_ar": "شركات التجارة الإلكترونية ومزودي الخدمات المحلية",
-      "sellable_product_ar": "محرك توصيات قائم على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لمحرك التوصيات لشركة تجارة إلكترونية",
-      "tools_ar": "منصة ذكاء اصطناعي، بيانات العملاء، واجهة برمجة التطبيقات",
+      "id": "ai_income_tools",
+      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
+      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
+      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
+      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
       "capital_ar": "منخفض",
-      "evidence_ids": [
-        "manual_x:2107499212778922410",
-        "huggingface_daily_papers:2610.04292",
-        "manual_x:2107504197478314250"
-      ],
-      "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.54,
+      "signal_count": 8,
+      "avg_score": 0.52,
+      "confidence": 0.85,
+      "source": "rules",
       "evidence_items": [
         {
           "source_id": "manual_x",
           "title": "We now have a clear picture of how Muse decides which products and services to recommend.     This is going to open up a new revenue channe…",
           "url": "https://x.com/alexgroberman/status/2107499212778922410#m",
-          "score": 0.646,
+          "score": 0.587,
           "trust_tier": "press"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures",
-          "url": "https://huggingface.co/papers/2610.04292",
-          "score": 0.491,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "manual_x",
-          "title": "THE SAASPOCALYPSE NEVER HAPPENED AND YOUR AGENT STILL CAN'T WRITE TO SALESFORCE    Two years of \"AI will replace SaaS\" takes and the world …",
-          "url": "https://x.com/slash1sol/status/2107504197478314250#m",
-          "score": 0.47,
-          "trust_tier": "press"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-06T22:03:34+00:00",
-      "updatedAt": "2026-10-06T22:03:34+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "video-generation-routing",
-      "title_ar": "توجيه مخصص لتوليد الفيديو",
-      "thesis_ar": "التقدم السريع في توليد الفيديو يتطلب نماذج فعالة لتوجيه الطلبات. يمكن أن يؤدي ذلك إلى تحسين الكفاءة وتقليل التكاليف.",
-      "buyer_ar": "شركات الإنتاج الإعلامي والتسويقي",
-      "sellable_product_ar": "نظام توجيه ذكي لتوليد الفيديو",
-      "first_paid_test_ar": "تطوير نموذج أولي لتوجيه الطلبات لشركة إنتاج صغيرة",
-      "tools_ar": "خوارزمية توجيه، بيانات أداء النماذج، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2610.05622",
-        "huggingface_daily_papers:2609.36691",
-        "arxiv_papers:2610.05896v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.46,
-      "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "TasteRoute: Personalized Routing for Video Generation",
-          "url": "http://arxiv.org/abs/2610.05896v1",
-          "score": 0.472,
+          "title": "SAGE: Semantic Anchor-Guided Evolution for Grounded Medical QA Data Synthesis",
+          "url": "http://arxiv.org/abs/2610.08093v1",
+          "score": 0.558,
           "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Video2Skill: From Streaming Experience to Reusable Embodied Skills",
-          "url": "https://huggingface.co/papers/2609.36691",
-          "score": 0.452,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-06T22:03:34+00:00",
-      "updatedAt": "2026-10-06T22:03:34+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "personalized-healthcare-solutions",
-      "title_ar": "حلول رعاية صحية مخصصة",
-      "thesis_ar": "تكنولوجيا الذكاء الاصطناعي قادرة على اكتشاف مؤشرات حيوية جديدة من السجلات الصحية. هذا يمكن أن يُحدث ثورة في كيفية تقديم الرعاية الصحية.",
-      "buyer_ar": "مستشفيات وشركات رعاية صحية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل البيانات الصحية",
-      "first_paid_test_ar": "تقديم تحليل أولي لبيانات صحية لمؤسسة صحية",
-      "tools_ar": "نموذج ذكاء اصطناعي، بيانات صحية، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2610.04749",
-        "arxiv_papers:2610.06454v1",
-        "huggingface_daily_papers:2609.36691"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "AgentPrivArena: Evaluating and Auditing Real-world AI Agent Privacy",
           "url": "http://arxiv.org/abs/2610.06454v1",
-          "score": 0.522,
+          "score": 0.517,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "RA-MoWE: Workflow-Affinity Embeddings for Query Clustering and Agentic Workflow Generation",
+          "url": "http://arxiv.org/abs/2610.07851v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Confidence Reasoning Graphs: Structured Confidence Estimation for LLM Agents",
+          "url": "http://arxiv.org/abs/2610.07948v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "TasteRoute: Personalized Routing for Video Generation",
+          "url": "http://arxiv.org/abs/2610.05896v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "From Algorithmic Marginalization to AI-Mediated Re-Centering: Can Culturally Grounded AI Bring Hakka Language and Culture Back into Mainstream Society?",
+          "url": "http://arxiv.org/abs/2610.07672v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mradermacher/qwen3.5-9b-uncensored-i1-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-i1-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-07T01:17:41+00:00",
+      "updatedAt": "2026-10-07T01:17:41+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "ai_income_automation",
+      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
+      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
+      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
+      "tools_ar": "n8n أو Make، API، نموذج AI",
+      "capital_ar": "منخفض",
+      "signal_count": 8,
+      "avg_score": 0.51,
+      "confidence": 0.85,
+      "source": "rules",
+      "evidence_items": [
+        {
+          "source_id": "manual_x",
+          "title": "We now have a clear picture of how Muse decides which products and services to recommend.     This is going to open up a new revenue channe…",
+          "url": "https://x.com/alexgroberman/status/2107499212778922410#m",
+          "score": 0.587,
+          "trust_tier": "press"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentPrivArena: Evaluating and Auditing Real-world AI Agent Privacy",
+          "url": "http://arxiv.org/abs/2610.06454v1",
+          "score": 0.517,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "RA-MoWE: Workflow-Affinity Embeddings for Query Clustering and Agentic Workflow Generation",
+          "url": "http://arxiv.org/abs/2610.07851v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "ChartBmkAgent: Harness-Governed Multi-Agent Construction of Chart QA Benchmarks from Sparse Error-Taxonomy Specifications",
+          "url": "http://arxiv.org/abs/2610.08106v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Confidence Reasoning Graphs: Structured Confidence Estimation for LLM Agents",
+          "url": "http://arxiv.org/abs/2610.07948v1",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mradermacher/qwen3.5-9b-uncensored-i1-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-i1-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mradermacher/qwen3.5-9b-uncensored-GGUF — text-generation",
+          "url": "https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "One Step at a Time: Trading LLM Autonomy for Process Predictability",
+          "url": "http://arxiv.org/abs/2610.07817v1",
+          "score": 0.482,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-07T01:17:41+00:00",
+      "updatedAt": "2026-10-07T01:17:41+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "ai_income_content",
+      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
+      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
+      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
+      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
+      "capital_ar": "بدون رأس مال",
+      "signal_count": 8,
+      "avg_score": 0.5,
+      "confidence": 0.85,
+      "source": "rules",
+      "evidence_items": [
+        {
+          "source_id": "manual_x",
+          "title": "We now have a clear picture of how Muse decides which products and services to recommend.     This is going to open up a new revenue channe…",
+          "url": "https://x.com/alexgroberman/status/2107499212778922410#m",
+          "score": 0.587,
+          "trust_tier": "press"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "ChartBmkAgent: Harness-Governed Multi-Agent Construction of Chart QA Benchmarks from Sparse Error-Taxonomy Specifications",
+          "url": "http://arxiv.org/abs/2610.08106v1",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "TasteRoute: Personalized Routing for Video Generation",
+          "url": "http://arxiv.org/abs/2610.05896v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "litert-community/decider-2b-vision-LiteRT — image-text-to-text",
+          "url": "https://huggingface.co/litert-community/decider-2b-vision-LiteRT",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Microm1966/kathleen — text-to-image",
+          "url": "https://huggingface.co/Microm1966/kathleen",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "grossnex/gia-gunn — text-to-image",
+          "url": "https://huggingface.co/grossnex/gia-gunn",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "BAC777/anime-desire-illustrious — text-to-image",
+          "url": "https://huggingface.co/BAC777/anime-desire-illustrious",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "XGGGV/jingtian — text-to-image",
+          "url": "https://huggingface.co/XGGGV/jingtian",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-07T01:17:41+00:00",
+      "updatedAt": "2026-10-07T01:17:41+00:00",
+      "sortOrder": 2
+    },
+    {
+      "id": "ai_income_services",
+      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
+      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
+      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
+      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
+      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
+      "capital_ar": "بدون رأس مال",
+      "signal_count": 8,
+      "avg_score": 0.47,
+      "confidence": 0.84,
+      "source": "rules",
+      "evidence_items": [
+        {
+          "source_id": "manual_x",
+          "title": "We now have a clear picture of how Muse decides which products and services to recommend.     This is going to open up a new revenue channe…",
+          "url": "https://x.com/alexgroberman/status/2107499212778922410#m",
+          "score": 0.587,
+          "trust_tier": "press"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "AgentPrivArena: Evaluating and Auditing Real-world AI Agent Privacy",
+          "url": "http://arxiv.org/abs/2610.06454v1",
+          "score": 0.517,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "From Algorithmic Marginalization to AI-Mediated Re-Centering: Can Culturally Grounded AI Bring Hakka Language and Culture Back into Mainstream Society?",
+          "url": "http://arxiv.org/abs/2610.07672v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "IEEE 802.11bx - WLAN Intelligent Networking (WIN): Toward an AI-Ready Wi-Fi 9",
+          "url": "http://arxiv.org/abs/2610.07900v1",
+          "score": 0.456,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Agentic discovery of blood biomarker from distilled private health records",
           "url": "https://huggingface.co/papers/2610.04749",
-          "score": 0.478,
+          "score": 0.454,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Video2Skill: From Streaming Experience to Reusable Embodied Skills",
-          "url": "https://huggingface.co/papers/2609.36691",
-          "score": 0.452,
+          "source_id": "arxiv_papers",
+          "title": "Nexus: An Execution Fabric for AI Agents Across Cloud, Edge, and Devices",
+          "url": "http://arxiv.org/abs/2610.05709v1",
+          "score": 0.441,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "mit_news_ai",
+          "title": "Lifesaving Lincoln Laboratory device wins 2026 Excellence in Technology Transfer Award",
+          "url": "https://news.mit.edu/2026/lifesaving-lincoln-laboratory-technology-wins-tech-transfer-award-0911",
+          "score": 0.417,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "In With the Old: Enhancing 'Classical' Document Automation with Generative AI",
+          "url": "http://arxiv.org/abs/2610.07480v1",
+          "score": 0.398,
           "trust_tier": "research"
         }
       ],
-      "tier": "free",
+      "tier": "premium",
       "status": "published",
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-06T22:03:34+00:00",
-      "updatedAt": "2026-10-06T22:03:34+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-10-07T01:17:41+00:00",
+      "updatedAt": "2026-10-07T01:17:41+00:00",
+      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-10-06T22:03:34+00:00",
+  "tiered_at": "2026-10-07T01:17:41+00:00",
   "free_preview_count": 3
 }
