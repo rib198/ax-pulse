@@ -1,90 +1,47 @@
 {
-  "generated_at": "2026-10-08T17:09:40+00:00",
+  "generated_at": "2026-10-08T22:41:57+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 839,
+  "corpus_count": 847,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الاهتمام بنماذج تحويل النص إلى صورة يوفر فرصة لتطوير تطبيقات جديدة في السوق. يمكن استخدام هذه النماذج في مجالات مثل الإعلانات والتصميم الفني.",
-      "buyer_ar": "شركات الإعلان والتسويق الرقمي",
-      "sellable_product_ar": "خدمة إنشاء صور مخصصة باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء صورة بناءً على نص محدد",
-      "tools_ar": "Hugging Face, Python, TensorFlow",
-      "capital_ar": "منخفض",
+      "id": "ai-agent-privacy-solution",
+      "title_ar": "حلول خصوصية الوكلاء الذكيين",
+      "thesis_ar": "تزايد استخدام الوكلاء الذكيين يعرض البيانات الشخصية لمخاطر كبيرة. تطوير حلول تضمن خصوصية البيانات يمكن أن يلبي حاجة متزايدة في السوق.",
+      "buyer_ar": "شركات التكنولوجيا والبرمجيات",
+      "sellable_product_ar": "برمجيات لتقييم وحماية خصوصية البيانات في أنظمة الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم استشارة مجانية مع تحليل أولي لخصوصية البيانات",
+      "tools_ar": "أدوات تحليل البيانات، خوارزميات حماية البيانات، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:rvaniuta/xzyolala",
-        "huggingface_models:pavv231111/cherakshin_style_LoRA",
-        "huggingface_models:rvaniuta/xzyvisoc"
+        "arxiv_papers:2610.06454v1",
+        "huggingface_daily_papers:2610.09484",
+        "huggingface_daily_papers:2610.10164"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "rvaniuta/xzyolala — text-to-image",
-          "url": "https://huggingface.co/rvaniuta/xzyolala",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "pavv231111/cherakshin_style_LoRA — text-to-image",
-          "url": "https://huggingface.co/pavv231111/cherakshin_style_LoRA",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "rvaniuta/xzyvisoc — text-to-image",
-          "url": "https://huggingface.co/rvaniuta/xzyvisoc",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-08T17:09:40+00:00",
-      "updatedAt": "2026-10-08T17:09:40+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "privacy-evaluation-tools",
-      "title_ar": "أدوات تقييم خصوصية الوكلاء الذكيين",
-      "thesis_ar": "مع تزايد استخدام الوكلاء الذكيين، تزداد المخاوف بشأن الخصوصية. تطوير أدوات لتقييم خصوصية هذه الأنظمة يمكن أن يلبي احتياجات السوق المتزايدة.",
-      "buyer_ar": "شركات التكنولوجيا ومزودي الخدمات السحابية",
-      "sellable_product_ar": "أداة تقييم خصوصية للأنظمة الذكية",
-      "first_paid_test_ar": "تقديم تقرير تقييم أولي لخصوصية نظام ذكي",
-      "tools_ar": "Python, R, أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2610.06825",
-        "arxiv_papers:2610.06454v1",
-        "huggingface_daily_papers:2610.10164"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "avg_score": 0.46,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "AgentPrivArena: Evaluating and Auditing Real-world AI Agent Privacy",
           "url": "http://arxiv.org/abs/2610.06454v1",
-          "score": 0.472,
+          "score": 0.485,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MIMESIS: Learning User Simulators as Training Environments for Interactive Agents",
+          "url": "https://huggingface.co/papers/2610.09484",
+          "score": 0.455,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy",
           "url": "https://huggingface.co/papers/2610.10164",
-          "score": 0.466,
+          "score": 0.45,
           "trust_tier": "research"
         }
       ],
@@ -93,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-08T17:09:40+00:00",
-      "updatedAt": "2026-10-08T17:09:40+00:00",
+      "publishedAt": "2026-10-08T22:41:57+00:00",
+      "updatedAt": "2026-10-08T22:41:57+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "medical-ai-learning-solution",
+      "title_ar": "حلول التعلم الذاتي للذكاء الاصطناعي الطبي",
+      "thesis_ar": "تطوير نماذج الذكاء الاصطناعي التي تتعلم من التجارب السريرية يمكن أن يحسن دقة التشخيص والعلاج. السوق الطبي بحاجة ماسة إلى حلول مبتكرة.",
+      "buyer_ar": "المستشفيات والعيادات الطبية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي يتعلم من البيانات السريرية لتحسين نتائج المرضى",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل بيانات طبية حقيقية",
+      "tools_ar": "أدوات تحليل البيانات، خوارزميات التعلم العميق، واجهات برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2610.09146v1",
+        "huggingface_daily_papers:2610.09484",
+        "huggingface_daily_papers:2610.10164"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.46,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Frozen Models, Evolving Expertise: Model-Agnostic Learning from Deployment Experience for Multimodal Medical AI",
+          "url": "http://arxiv.org/abs/2610.09146v1",
+          "score": 0.462,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MIMESIS: Learning User Simulators as Training Environments for Interactive Agents",
+          "url": "https://huggingface.co/papers/2610.09484",
+          "score": 0.455,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy",
+          "url": "https://huggingface.co/papers/2610.10164",
+          "score": 0.45,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-08T22:41:57+00:00",
+      "updatedAt": "2026-10-08T22:41:57+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "interactive-agent-training",
+      "title_ar": "تدريب الوكلاء التفاعليين باستخدام المحاكاة",
+      "thesis_ar": "توفير بيئات تدريب محاكاة للوكلاء التفاعليين يمكن أن يقلل من تكاليف جمع التغذية الراجعة. هذا الاتجاه يفتح آفاق جديدة لتطوير الوكلاء الذكيين.",
+      "buyer_ar": "شركات تطوير البرمجيات والألعاب",
+      "sellable_product_ar": "نظام محاكاة لتدريب الوكلاء التفاعليين",
+      "first_paid_test_ar": "تقديم نموذج محاكاة بسيط لاختبار فعالية التدريب",
+      "tools_ar": "أدوات تطوير البرمجيات، محركات محاكاة، واجهات برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2610.09484",
+        "huggingface_daily_papers:2610.10164",
+        "huggingface_daily_papers:2610.05324"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MIMESIS: Learning User Simulators as Training Environments for Interactive Agents",
+          "url": "https://huggingface.co/papers/2610.09484",
+          "score": 0.455,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy",
+          "url": "https://huggingface.co/papers/2610.10164",
+          "score": 0.45,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CoDance: Learning Reactive and Compliant Human-Humanoid Interaction from Video",
+          "url": "https://huggingface.co/papers/2610.05324",
+          "score": 0.447,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-08T22:41:57+00:00",
+      "updatedAt": "2026-10-08T22:41:57+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-08T17:09:40+00:00",
+  "tiered_at": "2026-10-08T22:41:57+00:00",
   "free_preview_count": 3
 }
