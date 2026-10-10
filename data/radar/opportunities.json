@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-10T19:42:41+00:00",
+  "generated_at": "2026-10-10T23:08:22+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 837,
+  "corpus_count": 831,
   "opportunities": [
     {
-      "id": "ai-financial-infrastructure",
+      "id": "financial-infrastructure-for-ai-services",
       "title_ar": "تطوير بنية تحتية مالية لخدمات الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على خدمات الذكاء الاصطناعي يتطلب بنية تحتية مالية تدعم تكاليف التنفيذ وتحسين العوائد. هناك حاجة ملحة لتقديم حلول مبتكرة لمواجهة التحديات المالية التي تواجه مشغلي هذه الخدمات.",
-      "buyer_ar": "شركات التكنولوجيا المالية ومزودي خدمات الذكاء الاصطناعي",
-      "sellable_product_ar": "نظام إدارة مالية لخدمات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لحل مالي لمزود خدمة ذكاء اصطناعي صغير",
-      "tools_ar": "برمجيات تحليل البيانات، واجهات برمجة التطبيقات، أدوات إدارة المشاريع",
+      "thesis_ar": "تزايد استخدام خدمات الذكاء الاصطناعي يخلق حاجة ملحة لبنية تحتية مالية تدعم تكاليف التنفيذ. توفر هذه البنية حلاً للمشغلين الذين يواجهون تحديات في الاستدامة والنمو.",
+      "buyer_ar": "شركات خدمات الذكاء الاصطناعي",
+      "sellable_product_ar": "نظام إدارة مالية مخصص لخدمات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لنظام إدارة مالية لمشغل واحد",
+      "tools_ar": "تحليل البيانات، تطوير البرمجيات، استشارات مالية",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2610.11333v1",
@@ -50,29 +50,36 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-10T19:42:41+00:00",
-      "updatedAt": "2026-10-10T19:42:41+00:00",
+      "publishedAt": "2026-10-10T23:08:22+00:00",
+      "updatedAt": "2026-10-10T23:08:22+00:00",
       "sortOrder": 0
     },
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "زيادة الطلب على محتوى مرئي فريد يتطلب نماذج فعالة لتحويل النص إلى صورة. الابتكارات في هذا المجال يمكن أن تفتح أسواق جديدة في الإعلانات والتسويق الرقمي.",
-      "buyer_ar": "وكالات الإعلان والشركات الناشئة في مجال المحتوى الرقمي",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "أدوات تعلم الآلة، مكتبات معالجة الصور، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "proactive-spoken-assistance",
+      "title_ar": "تقديم مساعدات صوتية استباقية",
+      "thesis_ar": "تزايد استخدام تكنولوجيا الواقع المعزز يفتح المجال لتطوير مساعدات صوتية توفر إرشادات فورية للمستخدمين. هذه التكنولوجيا تعزز التفاعل في الوقت الحقيقي.",
+      "buyer_ar": "شركات تطوير التكنولوجيا والواقع المعزز",
+      "sellable_product_ar": "نظام مساعد صوتي يعمل بتقنية الواقع المعزز",
+      "first_paid_test_ar": "تجربة نظام مساعد صوتي مع مجموعة محدودة من المستخدمين",
+      "tools_ar": "تطوير البرمجيات، تكنولوجيا الواقع المعزز، تحليل البيانات",
+      "capital_ar": "متوسط",
       "evidence_ids": [
+        "arxiv_papers:2610.12248v1",
         "huggingface_models:A9at/jag_style_LoRA",
-        "huggingface_models:kaddzie/My-Stars-Jenna",
-        "huggingface_models:Shackbu/shosho"
+        "huggingface_models:Keltezaa/ginger-girls-flux"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Keltezaa/ginger-girls-flux — text-to-image",
+          "url": "https://huggingface.co/Keltezaa/ginger-girls-flux",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "huggingface_models",
           "title": "A9at/jag_style_LoRA — text-to-image",
@@ -81,67 +88,60 @@
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Shackbu/shosho — text-to-image",
-          "url": "https://huggingface.co/Shackbu/shosho",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "kaddzie/My-Stars-Jenna — text-to-image",
-          "url": "https://huggingface.co/kaddzie/My-Stars-Jenna",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-10T19:42:41+00:00",
-      "updatedAt": "2026-10-10T19:42:41+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "proactive-ar-assistants",
-      "title_ar": "تطوير مساعدات صوتية استباقية باستخدام الواقع المعزز",
-      "thesis_ar": "تزايد استخدام تقنيات الواقع المعزز يتطلب تطوير مساعدات صوتية توفر تفاعلاً حقيقياً مع المستخدمين. هذه التقنية يمكن أن تعزز من تجربة المستخدم في العديد من المجالات.",
-      "buyer_ar": "شركات التقنية والبرمجيات المتخصصة في الواقع المعزز",
-      "sellable_product_ar": "تطبيق مساعد صوتي متكامل للواقع المعزز",
-      "first_paid_test_ar": "تقديم نموذج أولي لمساعد صوتي في بيئة واقع معزز محددة",
-      "tools_ar": "تقنيات الواقع المعزز، أدوات معالجة الصوت، برمجيات تطوير التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2610.12248v1",
-        "huggingface_models:Akahsizrr/Cyber-Prime-1.2",
-        "huggingface_models:francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
           "source_id": "arxiv_papers",
           "title": "EgoVoice: Proactive Spoken Assistance from Egocentric Multimodal Streams",
           "url": "http://arxiv.org/abs/2610.12248v1",
           "score": 0.468,
           "trust_tier": "research"
-        },
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-10T23:08:22+00:00",
+      "updatedAt": "2026-10-10T23:08:22+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-technology",
+      "title_ar": "تطوير تقنيات تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على محتوى مرئي مبتكر يعزز الحاجة لتقنيات تحويل النص إلى صورة. هذه التقنيات يمكن أن تفتح آفاق جديدة في التسويق والإعلان.",
+      "buyer_ar": "شركات التسويق والإعلان",
+      "sellable_product_ar": "أداة تحويل نص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي للأداة مع حملة تسويقية محدودة",
+      "tools_ar": "تطوير البرمجيات، الذكاء الاصطناعي، التصميم الجرافيكي",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Keltezaa/ginger-girls-flux",
+        "huggingface_models:mindfossil/pkmodel-flux-lora",
+        "huggingface_models:A9at/jag_style_LoRA"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 — text-generation",
-          "url": "https://huggingface.co/francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407",
-          "score": 0.466,
+          "title": "Keltezaa/ginger-girls-flux — text-to-image",
+          "url": "https://huggingface.co/Keltezaa/ginger-girls-flux",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Akahsizrr/Cyber-Prime-1.2 — text-generation",
-          "url": "https://huggingface.co/Akahsizrr/Cyber-Prime-1.2",
-          "score": 0.466,
+          "title": "mindfossil/pkmodel-flux-lora — text-to-image",
+          "url": "https://huggingface.co/mindfossil/pkmodel-flux-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "A9at/jag_style_LoRA — text-to-image",
+          "url": "https://huggingface.co/A9at/jag_style_LoRA",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-10T19:42:41+00:00",
-      "updatedAt": "2026-10-10T19:42:41+00:00",
+      "publishedAt": "2026-10-10T23:08:22+00:00",
+      "updatedAt": "2026-10-10T23:08:22+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-10T19:42:41+00:00",
+  "tiered_at": "2026-10-10T23:08:22+00:00",
   "free_preview_count": 3
 }
