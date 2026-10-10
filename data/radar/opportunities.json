@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-10T07:57:43+00:00",
+  "generated_at": "2026-10-10T14:09:51+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 836,
   "opportunities": [
     {
       "id": "ai-financial-infrastructure",
       "title_ar": "بنية تحتية مالية لخدمات الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاعتماد على خدمات الذكاء الاصطناعي يتطلب بنية تحتية مالية قوية لدعم تكاليف التنفيذ. مع التغيرات في أسعار واجهات البرمجة، هناك حاجة ملحة لتقديم حلول مالية مبتكرة.",
+      "thesis_ar": "تزايد الطلب على خدمات الذكاء الاصطناعي يتطلب بنية تحتية مالية تدعم تكاليف التنفيذ. يمكن أن تساهم حلول مبتكرة في تحسين استدامة هذه الخدمات.",
       "buyer_ar": "شركات التكنولوجيا المالية ومزودي خدمات الذكاء الاصطناعي",
-      "sellable_product_ar": "حلول مالية لإدارة تكاليف خدمات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم استشارة مجانية لتحليل تكاليف التشغيل الحالية",
-      "tools_ar": "نظام محاسبة، منصة تحليل بيانات، واجهة برمجة تطبيقات مالية",
+      "sellable_product_ar": "حلول بنية تحتية مالية متكاملة لدعم خدمات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لخدمة مالية تعتمد على الذكاء الاصطناعي لمجموعة مختارة من العملاء",
+      "tools_ar": "نظام إدارة مالي، واجهة برمجة التطبيقات، منصة تحليل بيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2610.11333v1",
-        "arxiv_papers:2610.10770v1",
-        "huggingface_daily_papers:2610.11566"
+        "huggingface_models:org2ai/Wald-4B",
+        "huggingface_models:org2ai/Wald-26B-A4B"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -31,6 +31,49 @@
           "trust_tier": "research"
         },
         {
+          "source_id": "huggingface_models",
+          "title": "org2ai/Wald-4B — text-generation",
+          "url": "https://huggingface.co/org2ai/Wald-4B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "org2ai/Wald-26B-A4B — text-generation",
+          "url": "https://huggingface.co/org2ai/Wald-26B-A4B",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-10T14:09:51+00:00",
+      "updatedAt": "2026-10-10T14:09:51+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "incremental-research-systems",
+      "title_ar": "أنظمة بحث مفتوحة متطورة",
+      "thesis_ar": "تزايد الحاجة إلى تقارير بحثية مستمرة تتطلب أنظمة فعالة لتوليد المحتوى. هذا يفتح المجال لتطوير أنظمة بحثية مبتكرة.",
+      "buyer_ar": "مراكز البحث والجامعات والشركات التقنية",
+      "sellable_product_ar": "نظام بحث مفتوح يعتمد على الذكاء الاصطناعي لتوليد تقارير مستمرة",
+      "first_paid_test_ar": "تقديم نظام تجريبي لمركز بحثي لتوليد تقرير بحثي مستمر",
+      "tools_ar": "نظام إدارة محتوى، أدوات تحليل بيانات، واجهة برمجة التطبيقات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2610.11566",
+        "arxiv_papers:2610.10770v1",
+        "arxiv_papers:2610.11578v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
           "source_id": "arxiv_papers",
           "title": "AI-Mediated Self: How HCI Defines and Relates to the Self",
           "url": "http://arxiv.org/abs/2610.10770v1",
@@ -43,6 +86,13 @@
           "url": "https://huggingface.co/papers/2610.11566",
           "score": 0.482,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Chronos Enables Code Agents to Reason over Software Evolution",
+          "url": "http://arxiv.org/abs/2610.11578v1",
+          "score": 0.479,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -50,99 +100,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-10T07:57:43+00:00",
-      "updatedAt": "2026-10-10T07:57:43+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تحديثات جديدة على نماذج تحويل النص إلى صورة تفتح آفاقًا جديدة للإبداع الرقمي. الطلب على المحتوى البصري المخصص في تزايد مستمر.",
-      "buyer_ar": "وكالات التسويق والمصممين المستقلين",
-      "sellable_product_ar": "نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لعميل محتمل",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة تطوير، أدوات تصميم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:inuptia/panties",
-        "huggingface_models:inuptia/cinephoto",
-        "huggingface_models:inuptia/arab-beauty"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "inuptia/panties — text-to-image",
-          "url": "https://huggingface.co/inuptia/panties",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "inuptia/cinephoto — text-to-image",
-          "url": "https://huggingface.co/inuptia/cinephoto",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "inuptia/arab-beauty — text-to-image",
-          "url": "https://huggingface.co/inuptia/arab-beauty",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-10T07:57:43+00:00",
-      "updatedAt": "2026-10-10T07:57:43+00:00",
+      "publishedAt": "2026-10-10T14:09:51+00:00",
+      "updatedAt": "2026-10-10T14:09:51+00:00",
       "sortOrder": 1
     },
     {
-      "id": "proactive-ar-assistants",
-      "title_ar": "مساعدات الواقع المعزز الاستباقية",
-      "thesis_ar": "توجهات جديدة نحو المساعدات الذكية التي تعمل في الوقت الحقيقي تعزز من تجربة المستخدم. تزايد استخدام الأجهزة القابلة للارتداء يفتح المجال لتطبيقات جديدة.",
-      "buyer_ar": "شركات التقنية وصناعة الأجهزة القابلة للارتداء",
-      "sellable_product_ar": "تطبيقات مساعدات الواقع المعزز",
-      "first_paid_test_ar": "تقديم نموذج أولي لمساعد افتراضي لعميل محتمل",
-      "tools_ar": "تقنية الواقع المعزز، أدوات تطوير التطبيقات، واجهة برمجة التطبيقات",
+      "id": "augmented-reality-assistants",
+      "title_ar": "مساعدات الواقع المعزز التفاعلية",
+      "thesis_ar": "توجهات جديدة في تكنولوجيا الواقع المعزز تشير إلى إمكانية تطوير مساعدات تفاعلية تعتمد على الذكاء الاصطناعي، مما يفتح أسواق جديدة.",
+      "buyer_ar": "شركات تطوير التطبيقات وأجهزة الواقع المعزز",
+      "sellable_product_ar": "تطبيق مساعد شخصي يعتمد على الواقع المعزز والذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتطبيق مساعد شخصي لمجموعة مختارة من المستخدمين",
+      "tools_ar": "أجهزة واقع معزز، أدوات تطوير التطبيقات، واجهة برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "arxiv_papers:2610.12248v1",
-        "huggingface_models:francesca9805/arb-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455",
-        "huggingface_models:Verdugie/Therapy-3.8"
+        "huggingface_models:smshahbaj/RIFA-Illustration",
+        "huggingface_models:B0rghese/Hellgirl_Meru"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
+      "avg_score": 0.48,
       "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "smshahbaj/RIFA-Illustration — text-to-image",
+          "url": "https://huggingface.co/smshahbaj/RIFA-Illustration",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "B0rghese/Hellgirl_Meru — text-to-image",
+          "url": "https://huggingface.co/B0rghese/Hellgirl_Meru",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "EgoVoice: Proactive Spoken Assistance from Egocentric Multimodal Streams",
           "url": "http://arxiv.org/abs/2610.12248v1",
           "score": 0.468,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "francesca9805/arb-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 — text-generation",
-          "url": "https://huggingface.co/francesca9805/arb-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Verdugie/Therapy-3.8 — text-generation",
-          "url": "https://huggingface.co/Verdugie/Therapy-3.8",
-          "score": 0.466,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-10T07:57:43+00:00",
-      "updatedAt": "2026-10-10T07:57:43+00:00",
+      "publishedAt": "2026-10-10T14:09:51+00:00",
+      "updatedAt": "2026-10-10T14:09:51+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-10T07:57:43+00:00",
+  "tiered_at": "2026-10-10T14:09:51+00:00",
   "free_preview_count": 3
 }
