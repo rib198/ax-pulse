@@ -1,90 +1,68 @@
 {
-  "generated_at": "2026-10-16T02:26:14+00:00",
+  "generated_at": "2026-10-16T08:39:52+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 767,
+  "corpus_count": 833,
   "opportunities": [
     {
-      "id": "video-generation-optimization",
-      "title_ar": "تحسين توليد الفيديو باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تتجه الأبحاث نحو تحسين كفاءة توليد الفيديو باستخدام تقنيات جديدة. هذه فرصة لتطوير حلول مبتكرة في مجال الإعلام والترفيه.",
-      "buyer_ar": "شركات الإنتاج الإعلامي وشركات الألعاب",
-      "sellable_product_ar": "أداة لتحسين جودة وكفاءة توليد الفيديو",
-      "first_paid_test_ar": "تقديم نموذج أولي لتوليد فيديو قصير",
-      "tools_ar": "أطر عمل الذكاء الاصطناعي، أدوات تحليل البيانات، منصات تطوير البرمجيات",
-      "capital_ar": "متوسط",
+      "id": "generative-medical-coding",
+      "title_ar": "تطوير حلول ترميز طبية باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة لتبسيط عمليات الترميز الطبي باستخدام نماذج لغوية كبيرة. هذا الوقت مناسب لتقديم حلول تكنولوجية تسهم في تحسين دقة وكفاءة الترميز الطبي.",
+      "buyer_ar": "المستشفيات والعيادات ومراكز الرعاية الصحية",
+      "sellable_product_ar": "نظام ترميز طبي آلي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لترميز مجموعة من السجلات الطبية",
+      "tools_ar": "نموذج لغوي كبير، بيانات طبية، واجهة مستخدم",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2610.22347",
-        "huggingface_daily_papers:2610.20693",
-        "huggingface_daily_papers:2610.18461"
+        "2610.19301",
+        "2610.22243v1",
+        "2610.21601"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Speculative Forcing for Efficient Autoregressive Video Generation",
-          "url": "https://huggingface.co/papers/2610.22347",
-          "score": 0.522,
+          "title": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2610.21601",
+          "score": 0.516,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "MFVSR: A Multi-Style and Fine-Grained Benchmark for Video Subtitle Removal",
-          "url": "https://huggingface.co/papers/2610.18461",
-          "score": 0.467,
+          "source_id": "arxiv_papers",
+          "title": "Shortcut Sensitivity in Agent-Safety Evaluations",
+          "url": "http://arxiv.org/abs/2610.22243v1",
+          "score": 0.515,
           "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Orbia: Do Generated Videos Form a Consistent 3D World?",
-          "url": "https://huggingface.co/papers/2610.20693",
-          "score": 0.45,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-16T02:26:14+00:00",
-      "updatedAt": "2026-10-16T02:26:14+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "medical-coding-automation",
-      "title_ar": "أتمتة الترميز الطبي باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تتزايد الحاجة لأتمتة الترميز الطبي لتحسين الكفاءة وتقليل الأخطاء. هذه فرصة لتقديم حلول تعتمد على الذكاء الاصطناعي.",
-      "buyer_ar": "مستشفيات وعيادات ومراكز طبية",
-      "sellable_product_ar": "نظام أتمتة للترميز الطبي باستخدام نماذج اللغة",
-      "first_paid_test_ar": "تطبيق النظام على مجموعة صغيرة من السجلات الطبية",
-      "tools_ar": "نماذج اللغة الكبيرة، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "arxiv_papers:2610.19301v1",
-        "huggingface_daily_papers:2610.21604v1",
-        "huggingface_daily_papers:2610.18829"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
-      "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "Beyond ICD Codes: Semantic IDs for Generative Medical Coding",
           "url": "http://arxiv.org/abs/2610.19301v1",
-          "score": 0.497,
+          "score": 0.512,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "OmniCompass: A Holistic Benchmark for Omni-Modal Video Grounding and Understanding",
-          "url": "https://huggingface.co/papers/2610.18829",
-          "score": 0.474,
+          "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
+          "url": "https://huggingface.co/papers/2610.20939",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+          "url": "https://huggingface.co/papers/2610.22362",
+          "score": 0.506,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "N-Gram Memories at Two Bits: Quantizing Lookup Tables in Large Language Models",
+          "url": "http://arxiv.org/abs/2610.21810v1",
+          "score": 0.505,
           "trust_tier": "research"
         }
       ],
@@ -93,41 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-16T02:26:14+00:00",
-      "updatedAt": "2026-10-16T02:26:14+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-10-16T08:39:52+00:00",
+      "updatedAt": "2026-10-16T08:39:52+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "software-engineering-evaluation",
-      "title_ar": "تقييم البرمجيات باستخدام نماذج الذكاء الاصطناعي",
-      "thesis_ar": "تتطلب الصناعة البرمجية أدوات تقييم أكثر دقة وموثوقية. هناك فرصة لتطوير حلول تعتمد على الذكاء الاصطناعي لتحسين هذه العمليات.",
-      "buyer_ar": "شركات البرمجيات ومراكز التطوير",
-      "sellable_product_ar": "أداة تقييم البرمجيات تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة تقييم لمشروع برمجي صغير",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، منصات تطوير البرمجيات",
+      "id": "multi-agent-systems",
+      "title_ar": "تطوير أنظمة متعددة الوكلاء للتنسيق الذاتي",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة قادرة على تنسيق العمل بين عدة وكلاء بشكل فعال. هذا الوقت مناسب لتطوير حلول تكنولوجية تلبي هذا الطلب المتزايد.",
+      "buyer_ar": "الشركات التقنية ومراكز الأبحاث",
+      "sellable_product_ar": "نظام تنسيق ذاتي للوكلاء في بيئات العمل",
+      "first_paid_test_ar": "تطوير نموذج أولي لبيئة عمل تفاعلية",
+      "tools_ar": "أدوات برمجية لتطوير الأنظمة، بيانات تدريب، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2610.21359",
-        "huggingface_daily_papers:2610.21604v1",
-        "huggingface_daily_papers:2610.18461"
+        "2610.22195v1",
+        "2610.22322",
+        "2610.17670"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "SWE-at-Scale: Scalable Issue Synthesis from Historical Bug Fixes",
-          "url": "https://huggingface.co/papers/2610.21359",
-          "score": 0.476,
+          "title": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2610.21601",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Shortcut Sensitivity in Agent-Safety Evaluations",
+          "url": "http://arxiv.org/abs/2610.22243v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Beyond ICD Codes: Semantic IDs for Generative Medical Coding",
+          "url": "http://arxiv.org/abs/2610.19301v1",
+          "score": 0.512,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "MFVSR: A Multi-Style and Fine-Grained Benchmark for Video Subtitle Removal",
-          "url": "https://huggingface.co/papers/2610.18461",
-          "score": 0.467,
+          "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
+          "url": "https://huggingface.co/papers/2610.20939",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+          "url": "https://huggingface.co/papers/2610.22362",
+          "score": 0.506,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "N-Gram Memories at Two Bits: Quantizing Lookup Tables in Large Language Models",
+          "url": "http://arxiv.org/abs/2610.21810v1",
+          "score": 0.505,
           "trust_tier": "research"
         }
       ],
@@ -136,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-16T02:26:14+00:00",
-      "updatedAt": "2026-10-16T02:26:14+00:00",
+      "publishedAt": "2026-10-16T08:39:52+00:00",
+      "updatedAt": "2026-10-16T08:39:52+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "reinforcement-learning-platform",
+      "title_ar": "إنشاء منصة تدريب للذكاء الاصطناعي باستخدام التعلم المعزز",
+      "thesis_ar": "تزايد الحاجة إلى منصات تدريب فعالة لوكلاء الذكاء الاصطناعي. الوقت الحالي هو الأنسب لتطوير حلول تكنولوجية تلبي هذا الطلب.",
+      "buyer_ar": "شركات تطوير البرمجيات ومراكز الأبحاث",
+      "sellable_product_ar": "منصة تدريب للتعلم المعزز مع واجهة مستخدم",
+      "first_paid_test_ar": "تقديم نموذج أولي لتدريب وكيل على مهمة بسيطة",
+      "tools_ar": "أدوات تطوير البرمجيات، بيانات تدريب، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2610.20939",
+        "2610.22362",
+        "2610.19397"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
+          "url": "https://huggingface.co/papers/2610.21601",
+          "score": 0.516,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Shortcut Sensitivity in Agent-Safety Evaluations",
+          "url": "http://arxiv.org/abs/2610.22243v1",
+          "score": 0.515,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Beyond ICD Codes: Semantic IDs for Generative Medical Coding",
+          "url": "http://arxiv.org/abs/2610.19301v1",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
+          "url": "https://huggingface.co/papers/2610.20939",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+          "url": "https://huggingface.co/papers/2610.22362",
+          "score": 0.506,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "N-Gram Memories at Two Bits: Quantizing Lookup Tables in Large Language Models",
+          "url": "http://arxiv.org/abs/2610.21810v1",
+          "score": 0.505,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-16T08:39:52+00:00",
+      "updatedAt": "2026-10-16T08:39:52+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-16T02:26:14+00:00",
+  "tiered_at": "2026-10-16T08:39:52+00:00",
   "free_preview_count": 3
 }
