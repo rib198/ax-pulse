@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-16T22:23:37+00:00",
+  "generated_at": "2026-10-17T02:15:43+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 835,
+  "corpus_count": 818,
   "opportunities": [
     {
-      "id": "automated-medical-coding",
-      "title_ar": "أتمتة الترميز الطبي",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في القطاع الصحي يعزز الحاجة لأدوات أتمتة الترميز الطبي. استخدام نماذج اللغة الكبيرة يمكن أن يحسن دقة وسرعة الترميز.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "أداة أتمتة الترميز الطبي باستخدام نماذج اللغة الكبيرة",
-      "first_paid_test_ar": "تقديم خدمة ترميز طبي مجانية لمدة شهر واحد لمستشفى محلي",
-      "tools_ar": "نماذج لغة كبيرة، واجهة برمجة التطبيقات، نظام إدارة البيانات",
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصور إلى نصوص",
+      "thesis_ar": "تزايد استخدام نماذج تحويل الصور إلى نصوص يفتح المجال لتطبيقات جديدة في مجالات متعددة مثل التعليم والتسويق. يمكن استغلال هذه النماذج لتقديم خدمات مخصصة للشركات التي تحتاج إلى تحليل محتوى بصري.",
+      "buyer_ar": "شركات التكنولوجيا، وكالات التسويق، ومؤسسات التعليم",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل الصور إلى نصوص مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل صورة إلى نص مقابل رسوم بسيطة",
+      "tools_ar": "Hugging Face، أدوات تطوير البرمجيات، خوادم سحابية",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2610.19301v1",
-        "huggingface_models:selorahomes/Selora-AI-LLM-14B",
-        "huggingface_models:HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-021"
+        "huggingface_models:sapidlabs/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4-W4A16",
+        "huggingface_models:whcl412/FinchAI-Rune1-Preview-f16",
+        "huggingface_models:SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-512-v2-kohaku-fa"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -24,24 +24,24 @@
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "Beyond ICD Codes: Semantic IDs for Generative Medical Coding",
-          "url": "http://arxiv.org/abs/2610.19301v1",
-          "score": 0.512,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "selorahomes/Selora-AI-LLM-14B — text-generation",
-          "url": "https://huggingface.co/selorahomes/Selora-AI-LLM-14B",
+          "title": "sapidlabs/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4-W4A16 — image-text-to-text",
+          "url": "https://huggingface.co/sapidlabs/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-NVFP4-W4A16",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-021 — text-generation",
-          "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-021",
-          "score": 0.466,
+          "title": "whcl412/FinchAI-Rune1-Preview-f16 — image-text-to-text",
+          "url": "https://huggingface.co/whcl412/FinchAI-Rune1-Preview-f16",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-512-v2-kohaku-fa — text-to-image",
+          "url": "https://huggingface.co/SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-512-v2-kohaku-fa",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -50,41 +50,34 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-16T22:23:37+00:00",
-      "updatedAt": "2026-10-16T22:23:37+00:00",
+      "publishedAt": "2026-10-17T02:15:43+00:00",
+      "updatedAt": "2026-10-17T02:15:43+00:00",
       "sortOrder": 0
     },
     {
-      "id": "ocr-error-rate-optimization",
-      "title_ar": "تحسين معدل خطأ التعرف الضوئي على الحروف",
-      "thesis_ar": "تزايد استخدام تقنيات التعرف الضوئي على الحروف في مختلف الصناعات يتطلب أدوات دقيقة لتقييم الأخطاء. تطوير نماذج جديدة يمكن أن يحسن دقة التعرف.",
-      "buyer_ar": "شركات البرمجيات ومزودي خدمات OCR",
-      "sellable_product_ar": "أداة لتحسين دقة التعرف الضوئي على الحروف باستخدام نموذج semCER",
-      "first_paid_test_ar": "تقديم اختبار مجاني لتحسين دقة التعرف على نصوص محددة",
-      "tools_ar": "نموذج semCER، مكتبات التعلم العميق، واجهة برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الطلب على نماذج توليد النصوص في مجالات مثل المحتوى الرقمي والدعم الفني. يمكن تقديم حلول مخصصة لتحسين تجربة المستخدم وزيادة التفاعل.",
+      "buyer_ar": "شركات المحتوى الرقمي، خدمات العملاء، وكالات الإعلان",
+      "sellable_product_ar": "نماذج توليد نصوص مخصصة لخدمات مختلفة",
+      "first_paid_test_ar": "تقديم نموذج نصي تجريبي لعميل محتمل مقابل رسوم",
+      "tools_ar": "Hugging Face، أدوات تحليل البيانات، خوادم سحابية",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2610.20461",
-        "huggingface_models:hotdogs/qwen3.8-27B-pi_svd_lora",
-        "huggingface_models:Vxtzq/Crowd-v1"
+        "huggingface_models:alifkha7/qwen2.5-1.5b-legal-id-grpo",
+        "huggingface_models:Vxtzq/Crowd-v1",
+        "huggingface_models:nirca/nirca-mini"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Equal CER, Unequal Damage: Severity-Weighted Character Error Rate for OCR",
-          "url": "https://huggingface.co/papers/2610.20461",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "hotdogs/qwen3.8-27B-pi_svd_lora — text-generation",
-          "url": "https://huggingface.co/hotdogs/qwen3.8-27B-pi_svd_lora",
-          "score": 0.488,
+          "title": "alifkha7/qwen2.5-1.5b-legal-id-grpo — text-generation",
+          "url": "https://huggingface.co/alifkha7/qwen2.5-1.5b-legal-id-grpo",
+          "score": 0.466,
           "trust_tier": "official"
         },
         {
@@ -93,56 +86,13 @@
           "url": "https://huggingface.co/Vxtzq/Crowd-v1",
           "score": 0.466,
           "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-16T22:23:37+00:00",
-      "updatedAt": "2026-10-16T22:23:37+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "video-4d-perception",
-      "title_ar": "إدراك الفيديو ثلاثي الأبعاد",
-      "thesis_ar": "تطور تقنيات معالجة الفيديو يفتح آفاقًا جديدة في مجالات الترفيه والألعاب. استخدام إطار Gen4P يمكن أن يعزز تجربة المستخدم.",
-      "buyer_ar": "شركات إنتاج الأفلام والألعاب",
-      "sellable_product_ar": "أداة لتحويل الفيديو إلى إدراك ثلاثي الأبعاد",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل مقطع فيديو قصير إلى تنسيق ثلاثي الأبعاد",
-      "tools_ar": "إطار Gen4P، مكتبات معالجة الفيديو، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2610.22371",
-        "arxiv_papers:2610.21810v1",
-        "huggingface_models:migtissera/Tess-4-120B-A12B"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
+        },
         {
           "source_id": "huggingface_models",
-          "title": "migtissera/Tess-4-120B-A12B — image-text-to-text",
-          "url": "https://huggingface.co/migtissera/Tess-4-120B-A12B",
-          "score": 0.488,
+          "title": "nirca/nirca-mini — text-generation",
+          "url": "https://huggingface.co/nirca/nirca-mini",
+          "score": 0.466,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Gen4P: Video Generators are 4D Perceivers",
-          "url": "https://huggingface.co/papers/2610.22371",
-          "score": 0.485,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "N-Gram Memories at Two Bits: Quantizing Lookup Tables in Large Language Models",
-          "url": "http://arxiv.org/abs/2610.21810v1",
-          "score": 0.469,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +100,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-16T22:23:37+00:00",
-      "updatedAt": "2026-10-16T22:23:37+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-10-17T02:15:43+00:00",
+      "updatedAt": "2026-10-17T02:15:43+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-10-16T22:23:37+00:00",
+  "tiered_at": "2026-10-17T02:15:43+00:00",
   "free_preview_count": 3
 }
