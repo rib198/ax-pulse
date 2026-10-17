@@ -1,96 +1,46 @@
 {
-  "generated_at": "2026-10-17T06:46:12+00:00",
+  "generated_at": "2026-10-17T11:54:25+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 741,
+  "corpus_count": 833,
   "opportunities": [
     {
-      "id": "text-to-image-solutions",
-      "title_ar": "حلول تحويل النص إلى صورة",
-      "thesis_ar": "تتزايد الإشارات حول نماذج تحويل النص إلى صورة، مما يدل على اهتمام متزايد في هذا المجال. يمكن استغلال ذلك لتقديم خدمات تصميم مرئي مبتكرة.",
-      "buyer_ar": "وكالات التسويق، الشركات الناشئة في مجال التكنولوجيا",
-      "sellable_product_ar": "خدمات تصميم مرئي باستخدام تقنيات تحويل النص إلى صورة",
-      "first_paid_test_ar": "تقديم نموذج تصميم تجريبي مجاني لشركة محلية",
-      "tools_ar": "نموذج تحويل النص إلى صورة، منصة تصميم، أدوات تسويق",
-      "capital_ar": "متوسط",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الاهتمام بنماذج توليد النصوص يعكس الحاجة المتزايدة لأدوات الذكاء الاصطناعي في السوق. يمكن استخدام هذه النماذج في مجالات متعددة مثل التعليم والتسويق.",
+      "buyer_ar": "شركات التكنولوجيا، المؤسسات التعليمية، وكالات التسويق",
+      "sellable_product_ar": "نماذج توليد نصوص مخصصة أو خدمات استشارية في تطوير هذه النماذج",
+      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني لمؤسسة تعليمية مقابل تقييم الخدمة",
+      "tools_ar": "منصة Hugging Face، بيئة تطوير Python، بيانات تدريب",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024-v2-kohaku-fa",
-        "huggingface_models:Nanami231/mashimaro1026",
-        "huggingface_models:misapapa71/model-kurumi-krea2"
+        "huggingface_models:udgamlabs/Udgam-384M-Chat",
+        "huggingface_models:udgamlabs/Udgam-384M-Base",
+        "huggingface_models:francesca9805/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455"
       ],
       "confidence": 0.8,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024-v2-kohaku-fa — text-to-image",
-          "url": "https://huggingface.co/SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024-v2-kohaku-fa",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Nanami231/mashimaro1026 — text-to-image",
-          "url": "https://huggingface.co/Nanami231/mashimaro1026",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "misapapa71/model-kurumi-krea2 — text-to-image",
-          "url": "https://huggingface.co/misapapa71/model-kurumi-krea2",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-17T06:46:12+00:00",
-      "updatedAt": "2026-10-17T06:46:12+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "conversational-ai-for-business",
-      "title_ar": "الذكاء الاصطناعي المحادثاتي للأعمال",
-      "thesis_ar": "تظهر الإشارات أن هناك زيادة في تطوير نماذج الذكاء الاصطناعي المحادثاتي، مما يدل على فرصة كبيرة لتقديم حلول للمؤسسات.",
-      "buyer_ar": "شركات الخدمات المالية، شركات التجارة الإلكترونية",
-      "sellable_product_ar": "أنظمة ذكاء اصطناعي محادثاتي مخصصة",
-      "first_paid_test_ar": "تقديم نموذج محادثة تجريبي لشركة صغيرة",
-      "tools_ar": "نموذج ذكاء اصطناعي محادثاتي، منصة تكامل، أدوات تحليل البيانات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:Sauers/Qwen3-8B-tawny-owl-128-neurons",
-        "huggingface_models:Vxtzq/Crowd-v1",
-        "huggingface_models:ReliquaryForge/qwen3-4b-base-dapo-v4"
-      ],
-      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.45,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Sauers/Qwen3-8B-tawny-owl-128-neurons — text-generation",
-          "url": "https://huggingface.co/Sauers/Qwen3-8B-tawny-owl-128-neurons",
+          "title": "udgamlabs/Udgam-384M-Chat — text-generation",
+          "url": "https://huggingface.co/udgamlabs/Udgam-384M-Chat",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "francesca9805/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455 — text-generation",
+          "url": "https://huggingface.co/francesca9805/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
           "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ReliquaryForge/qwen3-4b-base-dapo-v4 — text-generation",
-          "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
+          "title": "udgamlabs/Udgam-384M-Base — text-generation",
+          "url": "https://huggingface.co/udgamlabs/Udgam-384M-Base",
           "score": 0.447,
           "trust_tier": "official"
         }
@@ -100,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-17T06:46:12+00:00",
-      "updatedAt": "2026-10-17T06:46:12+00:00",
+      "publishedAt": "2026-10-17T11:54:25+00:00",
+      "updatedAt": "2026-10-17T11:54:25+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصور إلى نصوص",
+      "thesis_ar": "تزايد استخدام نماذج تحويل الصور إلى نصوص يدل على الحاجة لابتكارات جديدة في معالجة الصور. يمكن أن توفر هذه النماذج حلولًا جديدة في مجالات مثل التسويق الرقمي.",
+      "buyer_ar": "شركات الإعلان، وكالات التسويق، الشركات التقنية",
+      "sellable_product_ar": "خدمات تحويل الصور إلى نصوص أو نماذج مخصصة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لمؤسسة تسويقية مقابل تقييم الخدمة",
+      "tools_ar": "منصة Hugging Face، أدوات معالجة الصور، بيئة تطوير Python",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:hell0ks/gemma-4-26B-A4B-it-multitool",
+        "huggingface_models:hell0ks/gemma-4-26B-A4B-it-multitool-lora",
+        "huggingface_models:AIImageStudio/RadianceChromeVoluptuous_Flux3Klein_v1.0"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "hell0ks/gemma-4-26B-A4B-it-multitool — image-text-to-text",
+          "url": "https://huggingface.co/hell0ks/gemma-4-26B-A4B-it-multitool",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hell0ks/gemma-4-26B-A4B-it-multitool-lora — image-text-to-text",
+          "url": "https://huggingface.co/hell0ks/gemma-4-26B-A4B-it-multitool-lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "AIImageStudio/RadianceChromeVoluptuous_Flux3Klein_v1.0 — text-to-image",
+          "url": "https://huggingface.co/AIImageStudio/RadianceChromeVoluptuous_Flux3Klein_v1.0",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-17T11:54:25+00:00",
+      "updatedAt": "2026-10-17T11:54:25+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "medical-coding-solutions",
+      "title_ar": "حلول التشفير الطبي باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على أتمتة التشفير الطبي يشير إلى فرصة كبيرة في السوق. استخدام نماذج الذكاء الاصطناعي يمكن أن يحسن دقة وكفاءة التشفير.",
+      "buyer_ar": "المستشفيات، العيادات، شركات التأمين الصحي",
+      "sellable_product_ar": "نظام تشفير طبي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة تشفير مجانية لمستشفى مقابل تقييم الخدمة",
+      "tools_ar": "نماذج الذكاء الاصطناعي، بيانات طبية، بيئة تطوير Python",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2610.19301v1",
+        "arxiv_papers:2610.20808v1",
+        "arxiv_papers:2610.22243v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Shortcut Sensitivity in Agent-Safety Evaluations",
+          "url": "http://arxiv.org/abs/2610.22243v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PRISM: Transfer and Limits of Activation Interventions in Tool-Calling Language Models",
+          "url": "http://arxiv.org/abs/2610.20808v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Beyond ICD Codes: Semantic IDs for Generative Medical Coding",
+          "url": "http://arxiv.org/abs/2610.19301v1",
+          "score": 0.459,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-17T11:54:25+00:00",
+      "updatedAt": "2026-10-17T11:54:25+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-17T06:46:12+00:00",
+  "tiered_at": "2026-10-17T11:54:25+00:00",
   "free_preview_count": 3
 }
