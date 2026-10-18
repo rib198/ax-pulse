@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-10-18T19:54:12+00:00",
+  "generated_at": "2026-10-18T22:05:57+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 839,
+  "corpus_count": 831,
   "opportunities": [
     {
-      "id": "text-to-image-solutions",
-      "title_ar": "تطوير حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يفتح آفاقًا جديدة في مجالات الإبداع والتسويق. يمكن استغلال هذه النماذج لتقديم خدمات جديدة.",
-      "buyer_ar": "وكالات الإعلانات، شركات التصميم، الفنانين المستقلين",
-      "sellable_product_ar": "خدمة تحويل النص إلى صورة باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة مجانية لتحويل نصوص بسيطة إلى صور مع إمكانية الشراء لاحقًا",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، أدوات تسويق",
+      "id": "ai-generated-medical-coding",
+      "title_ar": "توليد أكواد طبية باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة إلى تحسين دقة أكواد التصنيف الطبي. استخدام نماذج اللغة الكبيرة يمكن أن يسهل هذا التحويل بشكل كبير.",
+      "buyer_ar": "المستشفيات والعيادات ومراكز الرعاية الصحية",
+      "sellable_product_ar": "نظام توليد أكواد طبية تلقائي",
+      "first_paid_test_ar": "تطبيق نموذج على مجموعة بيانات صغيرة من السجلات الطبية",
+      "tools_ar": "نماذج لغة كبيرة، بيانات طبية، واجهة مستخدم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:benjamin12334/lena_krea_igazi",
-        "huggingface_models:benjamin12334/lena_krea_Uj",
-        "huggingface_models:benjamin12334/krea_lena_jo"
+        "arxiv_papers:2610.19301v1",
+        "huggingface_models:henil08/verilog-coder-7b-lora",
+        "huggingface_models:henil08/verilog-coder-3b"
       ],
-      "confidence": 0.75,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.45,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "Beyond ICD Codes: Semantic IDs for Generative Medical Coding",
+          "url": "http://arxiv.org/abs/2610.19301v1",
+          "score": 0.459,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "benjamin12334/lena_krea_igazi — text-to-image",
-          "url": "https://huggingface.co/benjamin12334/lena_krea_igazi",
-          "score": 0.488,
+          "title": "henil08/verilog-coder-7b-lora — text-generation",
+          "url": "https://huggingface.co/henil08/verilog-coder-7b-lora",
+          "score": 0.447,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "benjamin12334/lena_krea_Uj — text-to-image",
-          "url": "https://huggingface.co/benjamin12334/lena_krea_Uj",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "benjamin12334/krea_lena_jo — text-to-image",
-          "url": "https://huggingface.co/benjamin12334/krea_lena_jo",
-          "score": 0.488,
+          "title": "henil08/verilog-coder-3b — text-generation",
+          "url": "https://huggingface.co/henil08/verilog-coder-3b",
+          "score": 0.447,
           "trust_tier": "official"
         }
       ],
@@ -50,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-18T19:54:12+00:00",
-      "updatedAt": "2026-10-18T19:54:12+00:00",
+      "publishedAt": "2026-10-18T22:05:57+00:00",
+      "updatedAt": "2026-10-18T22:05:57+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-generation",
+      "title_ar": "توليد صور من نصوص باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي الفريد. نماذج تحويل النص إلى صورة تقدم حلاً مبتكرًا لتلبية هذه الحاجة.",
+      "buyer_ar": "المصممين، وكالات التسويق، والشركات الناشئة",
+      "sellable_product_ar": "خدمة توليد صور مخصصة من نصوص",
+      "first_paid_test_ar": "توليد مجموعة من الصور بناءً على نصوص محددة",
+      "tools_ar": "نماذج تحويل النص إلى صورة، واجهة مستخدم، نظام إدارة محتوى",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:PeachesAvicii/Daring_DT_H3",
+        "huggingface_models:PeachesAvicii/Sexy_Massage_H3",
+        "huggingface_models:axiomofmind/Moss-image-beauty-lora"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "PeachesAvicii/Daring_DT_H3 — text-to-image",
+          "url": "https://huggingface.co/PeachesAvicii/Daring_DT_H3",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "PeachesAvicii/Sexy_Massage_H3 — text-to-image",
+          "url": "https://huggingface.co/PeachesAvicii/Sexy_Massage_H3",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "axiomofmind/Moss-image-beauty-lora — text-to-image",
+          "url": "https://huggingface.co/axiomofmind/Moss-image-beauty-lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-18T22:05:57+00:00",
+      "updatedAt": "2026-10-18T22:05:57+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "conversational-ai-education",
+      "title_ar": "الذكاء الاصطناعي في التعليم التفاعلي",
+      "thesis_ar": "تزايد الحاجة إلى أدوات تعليمية تفاعلية. نماذج الذكاء الاصطناعي يمكن أن توفر تجارب تعليمية مخصصة وتفاعلية.",
+      "buyer_ar": "المدارس، الجامعات، ومراكز التدريب",
+      "sellable_product_ar": "نظام تعليمي تفاعلي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تطبيق نموذج تعليمي على مجموعة من الطلاب",
+      "tools_ar": "نماذج لغة كبيرة، محتوى تعليمي، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:mie-edu/child-gemma4-e2b-v5-gguf",
+        "huggingface_models:mie-edu/child-gemma4-e2b-v5-vision-gguf",
+        "huggingface_models:ItsMaaaverick/Pata-Cia-Qwen3-4B-QLoRA"
+      ],
+      "confidence": 0.6,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "mie-edu/child-gemma4-e2b-v5-gguf — text-generation",
+          "url": "https://huggingface.co/mie-edu/child-gemma4-e2b-v5-gguf",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ItsMaaaverick/Pata-Cia-Qwen3-4B-QLoRA — text-generation",
+          "url": "https://huggingface.co/ItsMaaaverick/Pata-Cia-Qwen3-4B-QLoRA",
+          "score": 0.447,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mie-edu/child-gemma4-e2b-v5-vision-gguf — image-text-to-text",
+          "url": "https://huggingface.co/mie-edu/child-gemma4-e2b-v5-vision-gguf",
+          "score": 0.447,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-18T22:05:57+00:00",
+      "updatedAt": "2026-10-18T22:05:57+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-18T19:54:12+00:00",
+  "tiered_at": "2026-10-18T22:05:57+00:00",
   "free_preview_count": 3
 }
