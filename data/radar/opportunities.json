@@ -1,238 +1,48 @@
 {
-  "generated_at": "2026-10-19T16:46:36+00:00",
+  "generated_at": "2026-10-19T21:54:42+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 839,
+  "corpus_count": 844,
   "opportunities": [
     {
-      "id": "ai_income_tools",
-      "title_ar": "أدوات ومنتجات صغيرة مدعومة بالذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "صناع محتوى، فرق صغيرة، شركات ناشئة",
-      "sellable_product_ar": "أداة محددة تحل مهمة واحدة قابلة للتكرار",
-      "first_paid_test_ar": "صفحة انتظار + نموذج أولي + 5 مقابلات شراء",
-      "tools_ar": "واجهة بسيطة، API نموذج AI، صفحة هبوط",
+      "id": "3d-scene-generation",
+      "title_ar": "توليد مشاهد ثلاثية الأبعاد من النصوص",
+      "thesis_ar": "تزايد الطلب على المحتوى ثلاثي الأبعاد في التطبيقات المختلفة. يمكن استخدام الذكاء الاصطناعي لتوليد مشاهد داخلية عالية الجودة من أوصاف نصية، مما يسهل عملية التصميم.",
+      "buyer_ar": "شركات تطوير الألعاب، استوديوهات التصميم المعماري",
+      "sellable_product_ar": "خدمة توليد مشاهد ثلاثية الأبعاد باستخدام الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لمشهد ثلاثي الأبعاد بناءً على وصف نصي بسيط",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، منصة استضافة",
       "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.5,
-      "confidence": 0.85,
-      "source": "rules",
+      "evidence_ids": [
+        "huggingface_daily_papers:2610.23121",
+        "huggingface_daily_papers:2610.18082",
+        "huggingface_daily_papers:2610.22744"
+      ],
+      "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.51,
       "evidence_items": [
-        {
-          "source_id": "manual_x",
-          "title": "More SF observations:    1. Seeing the word \"inference\" on billboards in SF still blows my mind. 99.9% of america has no idea what inferenc…",
-          "url": "https://x.com/gregisenberg/status/2110777852589191378#m",
-          "score": 0.565,
-          "trust_tier": "press"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation",
           "url": "https://huggingface.co/papers/2610.23121",
-          "score": 0.516,
+          "score": 0.536,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Failure Recovery via Belief Updates and World Modeling for Long-Horizon Agents",
           "url": "https://huggingface.co/papers/2610.18082",
-          "score": 0.499,
+          "score": 0.508,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LiveMACE: Process-Aware Evaluation of LLM Agent Capabilities in Evolving Markets",
-          "url": "https://huggingface.co/papers/2610.09872",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
-          "url": "http://arxiv.org/abs/2610.23449v1",
-          "score": 0.485,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "cyankiwi/MiniCPM5-1B-AWQ-INT4 — text-generation",
-          "url": "https://huggingface.co/cyankiwi/MiniCPM5-1B-AWQ-INT4",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "cyankiwi/MiniCPM5-1B-AWQ-FP8 — text-generation",
-          "url": "https://huggingface.co/cyankiwi/MiniCPM5-1B-AWQ-FP8",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "pmrccs/qwen3-1.7b-tool-calling-v4-gguf — text-generation",
-          "url": "https://huggingface.co/pmrccs/qwen3-1.7b-tool-calling-v4-gguf",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-19T16:46:36+00:00",
-      "updatedAt": "2026-10-19T16:46:36+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "ai_income_automation",
-      "title_ar": "أتمتة أعمال توفّر وقتًا قابل للتسعير",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "شركات صغيرة وفرق تشغيل لديها مهام متكررة",
-      "sellable_product_ar": "أتمتة تربط أدوات العميل وتقلل عملًا يدويًا",
-      "first_paid_test_ar": "اختيار عملية واحدة وقياس الوقت قبل/بعد",
-      "tools_ar": "n8n أو Make، API، نموذج AI",
-      "capital_ar": "منخفض",
-      "signal_count": 8,
-      "avg_score": 0.49,
-      "confidence": 0.85,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "manual_x",
-          "title": "More SF observations:    1. Seeing the word \"inference\" on billboards in SF still blows my mind. 99.9% of america has no idea what inferenc…",
-          "url": "https://x.com/gregisenberg/status/2110777852589191378#m",
-          "score": 0.565,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation",
-          "url": "https://huggingface.co/papers/2610.23121",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Failure Recovery via Belief Updates and World Modeling for Long-Horizon Agents",
-          "url": "https://huggingface.co/papers/2610.18082",
-          "score": 0.499,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "LiveMACE: Process-Aware Evaluation of LLM Agent Capabilities in Evolving Markets",
-          "url": "https://huggingface.co/papers/2610.09872",
-          "score": 0.492,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
-          "url": "http://arxiv.org/abs/2610.23449v1",
-          "score": 0.485,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "pmrccs/qwen3-1.7b-tool-calling-v4-gguf — text-generation",
-          "url": "https://huggingface.co/pmrccs/qwen3-1.7b-tool-calling-v4-gguf",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "lvladikov/ComfyUI-Nodes-and-Workflows — text-to-image",
-          "url": "https://huggingface.co/lvladikov/ComfyUI-Nodes-and-Workflows",
-          "score": 0.447,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries",
-          "url": "https://huggingface.co/papers/2610.22273",
-          "score": 0.445,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-19T16:46:36+00:00",
-      "updatedAt": "2026-10-19T16:46:36+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "ai_income_content",
-      "title_ar": "محتوى وتسويق بالذكاء الاصطناعي قابل للبيع",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "متاجر، صناع محتوى، علامات شخصية",
-      "sellable_product_ar": "إنتاج محتوى/إعلانات/فيديوهات قصيرة بمساعدة AI",
-      "first_paid_test_ar": "إنتاج 3 عينات قبل/بعد لعميل واحد",
-      "tools_ar": "ChatGPT/Claude، أداة تصميم أو فيديو، جدولة نشر",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.47,
-      "confidence": 0.84,
-      "source": "rules",
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation",
-          "url": "https://huggingface.co/papers/2610.23121",
-          "score": 0.516,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
-          "url": "http://arxiv.org/abs/2610.23449v1",
-          "score": 0.485,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "smalinin/Step-5-Preview-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/smalinin/Step-5-Preview-GGUF",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "axiomofmind/Moss-image-beauty-lora — text-to-image",
-          "url": "https://huggingface.co/axiomofmind/Moss-image-beauty-lora",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "axiomofmind/Moss-image-gouache-lora — text-to-image",
-          "url": "https://huggingface.co/axiomofmind/Moss-image-gouache-lora",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "axiomofmind/Moss-image-psychedelic-lora — text-to-image",
-          "url": "https://huggingface.co/axiomofmind/Moss-image-psychedelic-lora",
-          "score": 0.472,
-          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "OmniXRef: A Unified Framework for Multimodal Multi-Reference Video Editing",
           "url": "https://huggingface.co/papers/2610.22744",
-          "score": 0.456,
+          "score": 0.476,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "positron-ai/Qwen_Qwen3.5-9B-ingest-best-gptq_proj — text-generation",
-          "url": "https://huggingface.co/positron-ai/Qwen_Qwen3.5-9B-ingest-best-gptq_proj",
-          "score": 0.447,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -240,91 +50,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-19T16:46:36+00:00",
-      "updatedAt": "2026-10-19T16:46:36+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-10-19T21:54:42+00:00",
+      "updatedAt": "2026-10-19T21:54:42+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "ai_income_services",
-      "title_ar": "خدمات يمكن بيعها باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "إشارات متعددة من مصادر مختلفة تشير إلى نشاط في هذا المسار.",
-      "buyer_ar": "أفراد، مستقلون، وشركات صغيرة لديها عمل متكرر",
-      "sellable_product_ar": "باقة خدمة تنفذ عملاً متكررًا للعميل باستخدام أدوات AI",
-      "first_paid_test_ar": "بيع تجربة صغيرة لعميل واحد: نتيجة جاهزة خلال 48 ساعة",
-      "tools_ar": "ChatGPT أو Claude، Notion، أداة تسليم بسيطة",
-      "capital_ar": "بدون رأس مال",
-      "signal_count": 8,
-      "avg_score": 0.42,
-      "confidence": 0.83,
-      "source": "rules",
+      "id": "video-editing-ai",
+      "title_ar": "تحرير الفيديو باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة إلى أدوات تحرير الفيديو الذكية التي تستخدم الذكاء الاصطناعي. يمكن للأدوات الحالية أن تسهل تحرير الفيديو من خلال تعليمات نصية وصور مرجعية.",
+      "buyer_ar": "شركات الإنتاج الإعلامي، صناع المحتوى",
+      "sellable_product_ar": "أداة تحرير فيديو تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تجربة مجانية لتحرير مقطع فيديو بسيط باستخدام الأداة",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، منصة استضافة",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2610.22744",
+        "huggingface_daily_papers:2610.23449",
+        "huggingface_daily_papers:2610.18082"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "manual_x",
-          "title": "More SF observations:    1. Seeing the word \"inference\" on billboards in SF still blows my mind. 99.9% of america has no idea what inferenc…",
-          "url": "https://x.com/gregisenberg/status/2110777852589191378#m",
-          "score": 0.565,
-          "trust_tier": "press"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
-          "url": "http://arxiv.org/abs/2610.23449v1",
-          "score": 0.485,
+          "source_id": "huggingface_daily_papers",
+          "title": "Failure Recovery via Belief Updates and World Modeling for Long-Horizon Agents",
+          "url": "https://huggingface.co/papers/2610.18082",
+          "score": 0.508,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "MuninAI: A Self-Hosted Agentic Framework for Independent Research Groups",
-          "url": "http://arxiv.org/abs/2610.23480v1",
-          "score": 0.431,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Self-Reflective Chain-of-Thought (SRCoT): Evidence-Based Text Generation via a Closed-Loop Retrieve--Reflect--Revise Pipeline on Edge LLMs",
-          "url": "http://arxiv.org/abs/2610.23311v1",
-          "score": 0.384,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "LocalIntent: Outcome-Specific Structured Generation for Backend-Compatible Smart Building Automation with Local LLMs",
-          "url": "http://arxiv.org/abs/2610.23511v1",
-          "score": 0.381,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "BS-Spec: BFP-Based Bit-Sharing for Self-Speculative LLM Decoding with LUT-Driven Mixed-Precision Acceleration",
-          "url": "http://arxiv.org/abs/2610.22877v1",
-          "score": 0.381,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Evidence-Gated Bilingual RAG for Reliable Consumer Banking Search",
-          "url": "http://arxiv.org/abs/2610.22652v1",
-          "score": 0.381,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "FIRM: Fisher-Informed Retention Merging for Federated LLM Unlearning",
-          "url": "http://arxiv.org/abs/2610.21720v1",
-          "score": 0.381,
+          "source_id": "huggingface_daily_papers",
+          "title": "OmniXRef: A Unified Framework for Multimodal Multi-Reference Video Editing",
+          "url": "https://huggingface.co/papers/2610.22744",
+          "score": 0.476,
           "trust_tier": "research"
         }
       ],
-      "tier": "premium",
+      "tier": "free",
       "status": "published",
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-19T16:46:36+00:00",
-      "updatedAt": "2026-10-19T16:46:36+00:00",
-      "sortOrder": 3
+      "publishedAt": "2026-10-19T21:54:42+00:00",
+      "updatedAt": "2026-10-19T21:54:42+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-10-19T16:46:36+00:00",
+  "tiered_at": "2026-10-19T21:54:42+00:00",
   "free_preview_count": 3
 }
