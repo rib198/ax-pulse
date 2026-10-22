@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-22T19:42:01+00:00",
+  "run_at": "2026-10-22T22:56:01+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 19.407,
+      "duration_s": 19.316,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 361 signals from 31 source families",
+        "collected 345 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.012,
       "written": [],
       "notes": [
         "injected 496 manual X items (skipped 4 of 500, avg score 0.157)"
@@ -49,13 +49,13 @@
     {
       "agent": "evidence_guard",
       "ok": true,
-      "duration_s": 0.003,
+      "duration_s": 0.002,
       "written": [
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 857 items",
-        "by tier: press=526, official=155, research=136, community=40"
+        "tagged 841 items",
+        "by tier: press=526, official=156, research=136, community=23"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.036,
+      "duration_s": 0.034,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 857 items, top priority=0.537"
+        "ranked 841 items, top priority=0.565"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.016,
+      "duration_s": 0.015,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.082,
+      "duration_s": 0.079,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+19 new model events",
+        "+18 new model events",
         "300 total"
       ],
       "error": null
@@ -110,12 +110,12 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.193,
+      "duration_s": 0.186,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "20 events (2 new)",
+        "20 events (0 new)",
         "by type: model_release=9, acquisition=2, pricing_change=2, personnel_move=4, policy_signal=2, funding_round=1"
       ],
       "error": null
@@ -123,7 +123,7 @@
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.021,
+      "duration_s": 0.02,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 11.413,
+      "duration_s": 7.326,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 11.665,
+      "duration_s": 7.459,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 8.103,
+      "duration_s": 4.884,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=857, opps=2, calls=3"
+        "items=841, opps=2, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.732,
+      "duration_s": 2.968,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: تظهر الإشارات زيادة ملحوظة في النشاط، مع تركيز على الإصدارات الجديدة من النماذج…"
+        "insight via openai: تراجع ملحوظ في الإشارات اليومية بمقدار 16 إشارة، مما يشير إلى انخفاض في النشاط …"
       ],
       "error": null
     },
