@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-24T20:01:52+00:00",
+  "run_at": "2026-10-24T22:13:23+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 17.839,
+      "duration_s": 25.551,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -102,7 +102,7 @@
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+25 new model events",
+        "+26 new model events",
         "300 total"
       ],
       "error": null
@@ -110,13 +110,13 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.168,
+      "duration_s": 0.167,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "30 events (2 new)",
-        "by type: pricing_change=6, model_release=13, acquisition=3, policy_signal=2, personnel_move=4, funding_round=2"
+        "30 events (1 new)",
+        "by type: pricing_change=6, model_release=14, acquisition=3, policy_signal=2, personnel_move=3, funding_round=2"
       ],
       "error": null
     },
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 8.0,
+      "duration_s": 7.802,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 6.797,
+      "duration_s": 9.08,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.558,
+      "duration_s": 7.557,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -224,12 +224,12 @@
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.463,
+      "duration_s": 2.928,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: هناك زيادة ملحوظة في الإشارات المتعلقة بإصدارات نماذج الذكاء الاصطناعي، مما يشي…"
+        "insight via openai: شهد هذا الأسبوع تزايدًا في الأنشطة المتعلقة بإصدار نماذج جديدة، حيث تم رصد نموذ…"
       ],
       "error": null
     },

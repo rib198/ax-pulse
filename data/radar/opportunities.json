@@ -1,39 +1,89 @@
 {
-  "generated_at": "2026-10-24T20:01:52+00:00",
+  "generated_at": "2026-10-24T22:13:23+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 831,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة يشير إلى فرصة كبيرة في السوق. يمكن تقديم حلول مخصصة للشركات التي تحتاج إلى محتوى مرئي مبتكر.",
-      "buyer_ar": "شركات التسويق والإعلانات، استوديوهات التصميم.",
-      "sellable_product_ar": "نموذج تحويل النص إلى صورة مخصص.",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نصوص بسيطة إلى صور.",
-      "tools_ar": "Hugging Face, TensorFlow, PyTorch",
-      "capital_ar": "منخفض",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد الطلب على نماذج توليد النصوص في مختلف المجالات، مما يوفر فرصة لتطوير نماذج مخصصة تلبي احتياجات السوق. يمكن استخدام هذه النماذج في إنشاء محتوى مخصص أو دعم العملاء.",
+      "buyer_ar": "شركات التقنية، وكالات التسويق، المؤسسات التعليمية",
+      "sellable_product_ar": "نموذج توليد نصوص مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لمدة شهر مع إمكانية استخدامه في مشروع صغير",
+      "tools_ar": "Hugging Face، TensorFlow، PyTorch",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:axiomofmind/Fibo-2.0-anime-lora",
-        "huggingface_models:Kinimoro/wei_rac",
-        "huggingface_models:sdoba/myprintstyle_LoRA"
+        "huggingface_models:BIBIMBAM/Begonvil-Ajan-1.5B",
+        "huggingface_models:vid-GENR/NanoWeb-7B-v2-Instruct-LoRA",
+        "huggingface_models:Vxtzq/Crowd-v1"
       ],
       "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "BIBIMBAM/Begonvil-Ajan-1.5B — text-generation",
+          "url": "https://huggingface.co/BIBIMBAM/Begonvil-Ajan-1.5B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "vid-GENR/NanoWeb-7B-v2-Instruct-LoRA — text-generation",
+          "url": "https://huggingface.co/vid-GENR/NanoWeb-7B-v2-Instruct-LoRA",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Vxtzq/Crowd-v1 — text-generation",
+          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
+          "score": 0.466,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-24T22:13:23+00:00",
+      "updatedAt": "2026-10-24T22:13:23+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "image-text-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد استخدام نماذج تحويل النص إلى صورة في الفنون والتسويق يوفر فرصة كبيرة لتطوير حلول مبتكرة. هذه النماذج يمكن أن تساعد الشركات في إنشاء محتوى بصري جذاب.",
+      "buyer_ar": "شركات الإعلانات، وكالات التصميم، الفنانين",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لإنشاء صورة بناءً على نص محدد",
+      "tools_ar": "Hugging Face، OpenAI، Stable Diffusion",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_models:suhaaspk/kale-img-1-moss-image-base-lora",
+        "huggingface_models:AF552/Nonstila2",
+        "huggingface_models:sdoba/myprintstyle_LoRA"
+      ],
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "axiomofmind/Fibo-2.0-anime-lora — text-to-image",
-          "url": "https://huggingface.co/axiomofmind/Fibo-2.0-anime-lora",
+          "title": "suhaaspk/kale-img-1-moss-image-base-lora — text-to-image",
+          "url": "https://huggingface.co/suhaaspk/kale-img-1-moss-image-base-lora",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Kinimoro/wei_rac — text-to-image",
-          "url": "https://huggingface.co/Kinimoro/wei_rac",
+          "title": "AF552/Nonstila2 — text-to-image",
+          "url": "https://huggingface.co/AF552/Nonstila2",
           "score": 0.488,
           "trust_tier": "official"
         },
@@ -50,99 +100,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-24T20:01:52+00:00",
-      "updatedAt": "2026-10-24T20:01:52+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-generation-models",
-      "title_ar": "تطوير نماذج توليد النصوص",
-      "thesis_ar": "زيادة الطلب على نماذج توليد النصوص يعكس حاجة السوق لحلول ذكية. يمكن استهداف الشركات التي تحتاج إلى محتوى مكتوب بشكل مستمر.",
-      "buyer_ar": "شركات المحتوى، المنصات التعليمية.",
-      "sellable_product_ar": "نموذج توليد نصوص مخصص.",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص قصيرة.",
-      "tools_ar": "Hugging Face, GPT-3, PyTorch",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:ViuAI/ViuAI-500M",
-        "huggingface_models:Vxtzq/Crowd-v1",
-        "huggingface_models:flaviodelgrosso/qwen3.8-flash-next-gguf"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "ViuAI/ViuAI-500M — text-generation",
-          "url": "https://huggingface.co/ViuAI/ViuAI-500M",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "flaviodelgrosso/qwen3.8-flash-next-gguf — text-generation",
-          "url": "https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-24T20:01:52+00:00",
-      "updatedAt": "2026-10-24T20:01:52+00:00",
+      "publishedAt": "2026-10-24T22:13:23+00:00",
+      "updatedAt": "2026-10-24T22:13:23+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "تطوير حلول الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد استخدام النماذج متعددة الوسائط يفتح آفاق جديدة في السوق. يمكن تقديم حلول تدمج النص والصورة بشكل فعال.",
-      "buyer_ar": "شركات التكنولوجيا، منصات التعليم الإلكتروني.",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي متعدد الوسائط.",
-      "first_paid_test_ar": "تقديم نموذج تجريبي يدمج نصوص وصور.",
-      "tools_ar": "Hugging Face, TensorFlow, PyTorch",
+      "id": "autonomous-research-agents",
+      "title_ar": "تطوير وكلاء بحث ذاتي",
+      "thesis_ar": "تزايد الاعتماد على وكلاء البحث الذاتي في الأبحاث العلمية يوفر فرصة لتطوير حلول تضمن نزاهة البحث. هذه الحلول يمكن أن تحسن من جودة الأبحاث وتقلل من الأخطاء.",
+      "buyer_ar": "المؤسسات الأكاديمية، مراكز البحث، الشركات التقنية",
+      "sellable_product_ar": "نظام وكيل بحث ذاتي مع ميزات ضمان النزاهة",
+      "first_paid_test_ar": "تقديم اختبار تجريبي لوكيل بحث ذاتي في مشروع بحثي صغير",
+      "tools_ar": "Hugging Face، Python، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:SoAIHQ/Ministral-3-3B-Instruct-2512-GGUF",
-        "huggingface_models:88plug/Gemma4-E2B-it-W4A16",
-        "huggingface_models:mradermacher/Hemlock-Qwopus3.5-9B-Coder-GGUF"
+        "huggingface_daily_papers:2610.31372",
+        "huggingface_daily_papers:2610.30949"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 2,
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "SoAIHQ/Ministral-3-3B-Instruct-2512-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/SoAIHQ/Ministral-3-3B-Instruct-2512-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+          "url": "https://huggingface.co/papers/2610.30949",
+          "score": 0.48,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "88plug/Gemma4-E2B-it-W4A16 — image-text-to-text",
-          "url": "https://huggingface.co/88plug/Gemma4-E2B-it-W4A16",
+          "source_id": "huggingface_daily_papers",
+          "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
+          "url": "https://huggingface.co/papers/2610.31372",
           "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mradermacher/Hemlock-Qwopus3.5-9B-Coder-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/mradermacher/Hemlock-Qwopus3.5-9B-Coder-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +142,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-24T20:01:52+00:00",
-      "updatedAt": "2026-10-24T20:01:52+00:00",
+      "publishedAt": "2026-10-24T22:13:23+00:00",
+      "updatedAt": "2026-10-24T22:13:23+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-24T20:01:52+00:00",
+  "tiered_at": "2026-10-24T22:13:23+00:00",
   "free_preview_count": 3
 }
