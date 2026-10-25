@@ -1,69 +1,48 @@
 {
-  "generated_at": "2026-10-25T14:05:41+00:00",
+  "generated_at": "2026-10-25T17:33:09+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 829,
+  "corpus_count": 833,
   "opportunities": [
     {
-      "id": "ai-based-research-integrity-tools",
-      "title_ar": "أدوات الذكاء الاصطناعي للحفاظ على نزاهة البحث",
-      "thesis_ar": "تزايد استخدام الوكلاء البحثيين المستقلين يتطلب أدوات لضمان نزاهة البحث. مع تزايد الاعتماد على الذكاء الاصطناعي، هناك حاجة ملحة لتطوير حلول تكشف عن انتهاكات نزاهة البحث.",
-      "buyer_ar": "المؤسسات الأكاديمية ومراكز البحث",
-      "sellable_product_ar": "أداة ذكاء اصطناعي للكشف عن انتهاكات نزاهة البحث",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لمدة شهر لمؤسسة بحثية",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة تحليل بيانات، واجهة مستخدم",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على إنشاء محتوى مرئي فريد من نوعه باستخدام الذكاء الاصطناعي. نماذج تحويل النص إلى صورة تقدم إمكانيات جديدة في الفنون والتسويق.",
+      "buyer_ar": "شركات الإنتاج الفني والتسويق الرقمي",
+      "sellable_product_ar": "خدمة إنشاء صور مخصصة باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "إنشاء 5 صور بناءً على نصوص محددة مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face, ONNX, WebGPU",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "2610.31372",
-        "2610.31651",
-        "2610.04184"
+        "huggingface_models:aaaaaeeeee/blip-sdxl-anime-wai-illustrious17",
+        "huggingface_models:aoleg/MOSS-Image-Kodachrome",
+        "huggingface_models:Nanico/msh-01"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "SofaMatush/marginalia_style_LoRA — text-to-image",
-          "url": "https://huggingface.co/SofaMatush/marginalia_style_LoRA",
+          "title": "aaaaaeeeee/blip-sdxl-anime-wai-illustrious17 — text-to-image",
+          "url": "https://huggingface.co/aaaaaeeeee/blip-sdxl-anime-wai-illustrious17",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "aoleg/MOSS-Image-Kodachrome — text-to-image",
+          "url": "https://huggingface.co/aoleg/MOSS-Image-Kodachrome",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "misapapa71/model-mayuri-krea2 — text-to-image",
-          "url": "https://huggingface.co/misapapa71/model-mayuri-krea2",
+          "title": "Nanico/msh-01 — text-to-image",
+          "url": "https://huggingface.co/Nanico/msh-01",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
-          "url": "https://huggingface.co/papers/2610.30949",
-          "score": 0.48,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
-          "url": "https://huggingface.co/papers/2610.31372",
-          "score": 0.473,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
-          "url": "https://huggingface.co/papers/2610.31651",
-          "score": 0.471,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
-          "url": "https://huggingface.co/papers/2610.04184",
-          "score": 0.469,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -71,70 +50,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T14:05:41+00:00",
-      "updatedAt": "2026-10-25T14:05:41+00:00",
+      "publishedAt": "2026-10-25T17:33:09+00:00",
+      "updatedAt": "2026-10-25T17:33:09+00:00",
       "sortOrder": 0
     },
     {
-      "id": "3d-modeling-solutions",
-      "title_ar": "حلول النمذجة ثلاثية الأبعاد باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تقدم الوكلاء البرمجيين في النمذجة ثلاثية الأبعاد يفتح المجال لتطوير أدوات تسهل إنشاء نماذج دقيقة. الطلب على هذه الحلول في الصناعات المعمارية والهندسية يتزايد.",
-      "buyer_ar": "شركات الهندسة المعمارية والتصميم",
-      "sellable_product_ar": "أداة نمذجة ثلاثية الأبعاد تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "مشروع تجريبي لنموذج معماري صغير",
-      "tools_ar": "نموذج ذكاء اصطناعي، برنامج تصميم ثلاثي الأبعاد، واجهة مستخدم",
-      "capital_ar": "متوسط",
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "تزايد الحاجة إلى تحويل المحتوى المرئي إلى نصوص قابلة للاستخدام في التطبيقات المختلفة. هذه النماذج توفر حلولاً مبتكرة في مجالات متعددة.",
+      "buyer_ar": "شركات التكنولوجيا والمحتوى الرقمي",
+      "sellable_product_ar": "خدمة تحويل الصور إلى نصوص باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تحويل 10 صور إلى نصوص مقابل رسوم بسيطة",
+      "tools_ar": "Hugging Face, Transformers, Safetensors",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "2610.31651",
-        "2610.30949",
-        "2610.04184"
+        "huggingface_models:ewin-reg/MiniCPM-V-4.7-1B-Agentic-FwS",
+        "huggingface_models:ewin-reg/MiniCPM-V-4.7-1B-Agentic-FwS-FlashREINFORCE-GGUF",
+        "huggingface_models:Jackrong/Kestrel-4B-Coder-GGUF"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "SofaMatush/marginalia_style_LoRA — text-to-image",
-          "url": "https://huggingface.co/SofaMatush/marginalia_style_LoRA",
+          "title": "ewin-reg/MiniCPM-V-4.7-1B-Agentic-FwS — image-text-to-text",
+          "url": "https://huggingface.co/ewin-reg/MiniCPM-V-4.7-1B-Agentic-FwS",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "misapapa71/model-mayuri-krea2 — text-to-image",
-          "url": "https://huggingface.co/misapapa71/model-mayuri-krea2",
+          "title": "ewin-reg/MiniCPM-V-4.7-1B-Agentic-FwS-FlashREINFORCE-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/ewin-reg/MiniCPM-V-4.7-1B-Agentic-FwS-FlashREINFORCE-GGUF",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
-          "url": "https://huggingface.co/papers/2610.30949",
-          "score": 0.48,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
-          "url": "https://huggingface.co/papers/2610.31372",
-          "score": 0.473,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
-          "url": "https://huggingface.co/papers/2610.31651",
-          "score": 0.471,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
-          "url": "https://huggingface.co/papers/2610.04184",
-          "score": 0.469,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Jackrong/Kestrel-4B-Coder-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/Jackrong/Kestrel-4B-Coder-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -142,43 +100,29 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T14:05:41+00:00",
-      "updatedAt": "2026-10-25T14:05:41+00:00",
+      "publishedAt": "2026-10-25T17:33:09+00:00",
+      "updatedAt": "2026-10-25T17:33:09+00:00",
       "sortOrder": 1
     },
     {
-      "id": "automated-feedback-systems",
-      "title_ar": "أنظمة التغذية الراجعة الآلية لتحسين الأداء",
-      "thesis_ar": "تتطلب عمليات البحث والتطوير أنظمة فعالة لتقديم التغذية الراجعة. استخدام الذكاء الاصطناعي في هذه الأنظمة يمكن أن يقلل التكاليف ويسرع من عملية التحسين.",
-      "buyer_ar": "شركات التكنولوجيا ومراكز البحث",
-      "sellable_product_ar": "نظام تغذية راجعة آلي يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة تجريبية لمشروع بحثي",
-      "tools_ar": "نموذج ذكاء اصطناعي، منصة تحليل بيانات، واجهة مستخدم",
-      "capital_ar": "منخفض",
+      "id": "autonomous-research-agents",
+      "title_ar": "تطوير وكالات بحثية مستقلة",
+      "thesis_ar": "تزايد الاعتماد على الوكالات البحثية المستقلة في الأبحاث العلمية. هذه الوكالات تحتاج إلى حلول لضمان النزاهة والفعالية.",
+      "buyer_ar": "المؤسسات الأكاديمية والبحثية",
+      "sellable_product_ar": "نظام للبحث الذاتي مع ضمانات للنزاهة",
+      "first_paid_test_ar": "تقديم تقرير بحثي باستخدام الوكالة مقابل رسوم رمزية",
+      "tools_ar": "Hugging Face, Reinforcement Learning, Automated Detection",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "2610.04184",
-        "2610.31651",
-        "2610.31372"
+        "huggingface_daily_papers:2610.31372",
+        "huggingface_daily_papers:2610.04184",
+        "huggingface_daily_papers:2610.30949"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.48,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "SofaMatush/marginalia_style_LoRA — text-to-image",
-          "url": "https://huggingface.co/SofaMatush/marginalia_style_LoRA",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "misapapa71/model-mayuri-krea2 — text-to-image",
-          "url": "https://huggingface.co/misapapa71/model-mayuri-krea2",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
@@ -195,13 +139,6 @@
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
-          "url": "https://huggingface.co/papers/2610.31651",
-          "score": 0.471,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
           "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
           "url": "https://huggingface.co/papers/2610.04184",
           "score": 0.469,
@@ -213,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T14:05:41+00:00",
-      "updatedAt": "2026-10-25T14:05:41+00:00",
+      "publishedAt": "2026-10-25T17:33:09+00:00",
+      "updatedAt": "2026-10-25T17:33:09+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-25T14:05:41+00:00",
+  "tiered_at": "2026-10-25T17:33:09+00:00",
   "free_preview_count": 3
 }
