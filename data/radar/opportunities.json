@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-25T20:12:07+00:00",
+  "generated_at": "2026-10-25T23:45:34+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 827,
+  "corpus_count": 826,
   "opportunities": [
     {
       "id": "text-generation-models",
       "title_ar": "تطوير نماذج توليد النصوص",
-      "thesis_ar": "تزايد الطلب على نماذج توليد النصوص الذكية يفتح آفاق جديدة في السوق. يمكن استغلال التحديثات المستمرة في نماذج Hugging Face لتقديم حلول مخصصة.",
-      "buyer_ar": "شركات التكنولوجيا، وكالات الإعلان، وفرق المحتوى",
-      "sellable_product_ar": "خدمات تطوير نماذج توليد النصوص المخصصة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتوليد نصوص تسويقية",
+      "thesis_ar": "تزايد الطلب على نماذج توليد النصوص في مجالات متعددة مثل التعليم والتسويق. النماذج الجديدة تقدم تحسينات ملحوظة في الأداء والكفاءة.",
+      "buyer_ar": "شركات التكنولوجيا، وكالات التسويق، المؤسسات التعليمية",
+      "sellable_product_ar": "خدمات تطوير وتخصيص نماذج توليد النصوص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني مع خيار الاشتراك المدفوع لاحقًا",
       "tools_ar": "Hugging Face, Python, TensorFlow",
-      "capital_ar": "منخفض",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound",
-        "huggingface_models:kingjones777/Flint-40B-A2.5B-ROCmFP4-GGUF",
-        "huggingface_models:ConnorYU/Qwen3.5-9B-VerIH-step300-template-1e"
+        "huggingface_models:Dbmaxwell/Qwen3-4B-Instruct-2507-Fintool-TR-v3",
+        "huggingface_models:stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound",
+        "huggingface_models:kapitsaprime/Nanbeige4.3-33B-MLX-4bit"
       ],
       "confidence": 0.8,
       "source": "openai",
@@ -25,22 +25,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound — text-generation",
-          "url": "https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound",
+          "title": "Dbmaxwell/Qwen3-4B-Instruct-2507-Fintool-TR-v3 — text-generation",
+          "url": "https://huggingface.co/Dbmaxwell/Qwen3-4B-Instruct-2507-Fintool-TR-v3",
+          "score": 0.509,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound — text-generation",
+          "url": "https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "kingjones777/Flint-40B-A2.5B-ROCmFP4-GGUF — text-generation",
-          "url": "https://huggingface.co/kingjones777/Flint-40B-A2.5B-ROCmFP4-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "ConnorYU/Qwen3.5-9B-VerIH-step300-template-1e — image-text-to-text",
-          "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step300-template-1e",
+          "title": "kapitsaprime/Nanbeige4.3-33B-MLX-4bit — text-generation",
+          "url": "https://huggingface.co/kapitsaprime/Nanbeige4.3-33B-MLX-4bit",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,48 +50,48 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T20:12:07+00:00",
-      "updatedAt": "2026-10-25T20:12:07+00:00",
+      "publishedAt": "2026-10-25T23:45:34+00:00",
+      "updatedAt": "2026-10-25T23:45:34+00:00",
       "sortOrder": 0
     },
     {
-      "id": "image-text-models",
-      "title_ar": "تطوير نماذج تحويل النصوص إلى صور",
-      "thesis_ar": "تزايد استخدام نماذج تحويل النصوص إلى صور في الفنون والتسويق يتيح فرصًا جديدة. يمكن استغلال التحديثات في نماذج Hugging Face لتقديم حلول مبتكرة.",
-      "buyer_ar": "شركات التصميم، وكالات التسويق، والمبدعين",
-      "sellable_product_ar": "خدمات تطوير نماذج تحويل النصوص إلى صور",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة",
-      "tools_ar": "Hugging Face, Python, PyTorch",
-      "capital_ar": "منخفض",
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "تزايد الحاجة إلى نماذج قادرة على معالجة الصور وتحويلها إلى نصوص مفيدة. هذه التكنولوجيا يمكن أن تعزز من تجربة المستخدم في التطبيقات المختلفة.",
+      "buyer_ar": "شركات تطوير التطبيقات، وكالات الإعلان",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل الصورة إلى نص",
+      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل صورة إلى نص كاختبار مدفوع",
+      "tools_ar": "Hugging Face, OpenCV, PyTorch",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Vishva007/MiMo-V2.6-Distill-Qwen-9B-NVFP4",
-        "huggingface_models:hakunokina/Tess-4.5-27B-oQ6e-mtp",
-        "huggingface_models:aoleg/MOSS-Image-Kodachrome"
+        "huggingface_models:XopMC513/DeepSeek-V4.1-Flash-1017-Heretic",
+        "huggingface_models:XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic",
+        "huggingface_models:88plug/Gemma4-E2B-it-W8A16"
       ],
       "confidence": 0.75,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Vishva007/MiMo-V2.6-Distill-Qwen-9B-NVFP4 — image-text-to-text",
-          "url": "https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-NVFP4",
+          "title": "XopMC513/DeepSeek-V4.1-Flash-1017-Heretic — image-text-to-text",
+          "url": "https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "hakunokina/Tess-4.5-27B-oQ6e-mtp — image-text-to-text",
-          "url": "https://huggingface.co/hakunokina/Tess-4.5-27B-oQ6e-mtp",
+          "title": "XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic — image-text-to-text",
+          "url": "https://huggingface.co/XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "aoleg/MOSS-Image-Kodachrome — text-to-image",
-          "url": "https://huggingface.co/aoleg/MOSS-Image-Kodachrome",
-          "score": 0.488,
+          "title": "88plug/Gemma4-E2B-it-W8A16 — image-text-to-text",
+          "url": "https://huggingface.co/88plug/Gemma4-E2B-it-W8A16",
+          "score": 0.466,
           "trust_tier": "official"
         }
       ],
@@ -100,23 +100,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T20:12:07+00:00",
-      "updatedAt": "2026-10-25T20:12:07+00:00",
+      "publishedAt": "2026-10-25T23:45:34+00:00",
+      "updatedAt": "2026-10-25T23:45:34+00:00",
       "sortOrder": 1
     },
     {
-      "id": "bilingual-ai-assistants",
-      "title_ar": "تطوير مساعدات ذكية ثنائية اللغة",
-      "thesis_ar": "تزايد الحاجة إلى مساعدات ذكية تدعم لغات متعددة، خاصة في السوق العربي. يمكن استغلال التحديثات في نماذج Hugging Face لتقديم حلول فعالة.",
-      "buyer_ar": "شركات التكنولوجيا، التعليم، وخدمات العملاء",
-      "sellable_product_ar": "مساعدات ذكية ثنائية اللغة",
-      "first_paid_test_ar": "تقديم نموذج تجريبي لمساعد ذكي يتحدث العربية والإنجليزية",
-      "tools_ar": "Hugging Face, Python, Natural Language Processing",
+      "id": "text-to-speech-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى كلام",
+      "thesis_ar": "تزايد استخدام تقنيات تحويل النص إلى كلام في التطبيقات التعليمية والترفيهية. توفر هذه النماذج تجربة تفاعلية للمستخدمين.",
+      "buyer_ar": "شركات التعليم، مطوري التطبيقات الصوتية",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى كلام",
+      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل نص إلى صوت كاختبار مدفوع",
+      "tools_ar": "Hugging Face, TensorFlow, Python",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:mradermacher/gemma-4-e2b-yemeni-arabic-assistant-merged-GGUF",
-        "huggingface_models:logicwahid/Kotha-S1-Instruct-GGUF",
-        "huggingface_models:Genrius-AI/Qwen3.5-4B-Pingala8-2bit"
+        "huggingface_models:ghanaopenai/ghana-voice_ahanta",
+        "huggingface_models:liodon-ai/novel-humanize-4b-imatrix-GGUF",
+        "huggingface_models:AF552/A3"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -125,22 +125,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "logicwahid/Kotha-S1-Instruct-GGUF — text-generation",
-          "url": "https://huggingface.co/logicwahid/Kotha-S1-Instruct-GGUF",
+          "title": "AF552/A3 — text-to-image",
+          "url": "https://huggingface.co/AF552/A3",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ghanaopenai/ghana-voice_ahanta — text-to-speech",
+          "url": "https://huggingface.co/ghanaopenai/ghana-voice_ahanta",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mradermacher/gemma-4-e2b-yemeni-arabic-assistant-merged-GGUF — text-generation",
-          "url": "https://huggingface.co/mradermacher/gemma-4-e2b-yemeni-arabic-assistant-merged-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Genrius-AI/Qwen3.5-4B-Pingala8-2bit — text-generation",
-          "url": "https://huggingface.co/Genrius-AI/Qwen3.5-4B-Pingala8-2bit",
+          "title": "liodon-ai/novel-humanize-4b-imatrix-GGUF — text-generation",
+          "url": "https://huggingface.co/liodon-ai/novel-humanize-4b-imatrix-GGUF",
           "score": 0.466,
           "trust_tier": "official"
         }
@@ -150,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T20:12:07+00:00",
-      "updatedAt": "2026-10-25T20:12:07+00:00",
+      "publishedAt": "2026-10-25T23:45:34+00:00",
+      "updatedAt": "2026-10-25T23:45:34+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-25T20:12:07+00:00",
+  "tiered_at": "2026-10-25T23:45:34+00:00",
   "free_preview_count": 3
 }
