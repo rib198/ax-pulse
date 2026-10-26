@@ -1,67 +1,48 @@
 {
-  "generated_at": "2026-10-26T09:33:04+00:00",
+  "generated_at": "2026-10-26T16:26:45+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 824,
+  "corpus_count": 829,
   "opportunities": [
     {
-      "id": "llm-annotation-services",
-      "title_ar": "خدمات توثيق باستخدام نماذج اللغة الكبيرة",
-      "thesis_ar": "تتزايد الحاجة إلى توثيق دقيق وموثوق باستخدام نماذج اللغة الكبيرة. تشير الأبحاث إلى أن تحسين عملية التوثيق يمكن أن يؤدي إلى نتائج أفضل في المشاريع.",
-      "buyer_ar": "شركات الأبحاث والتطوير، المؤسسات التعليمية",
-      "sellable_product_ar": "خدمات توثيق وتحليل البيانات باستخدام نماذج اللغة الكبيرة",
-      "first_paid_test_ar": "مشروع توثيق صغير باستخدام نموذج لغة كبير",
-      "tools_ar": "نماذج لغة كبيرة, أدوات تحليل البيانات, بيئة اختبار",
+      "id": "personalized-recommendation-using-llms",
+      "title_ar": "توصيات شخصية باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة في تقديم توصيات مخصصة. هذا الوقت مناسب لتطوير حلول تعتمد على هذه النماذج لتلبية احتياجات المستخدمين بشكل أفضل.",
+      "buyer_ar": "شركات التجارة الإلكترونية وخدمات المحتوى",
+      "sellable_product_ar": "نظام توصيات مخصص يعتمد على نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوصيات مخصصة لمجموعة مختارة من المستخدمين",
+      "tools_ar": "نماذج اللغة الكبيرة، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2610.32415"
+        "huggingface_daily_papers:2610.24481",
+        "arxiv_papers:2610.32945v1",
+        "huggingface_models:xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled"
       ],
-      "confidence": 0.6,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.46,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "RSIHub: A Composable Framework for Agent-Evolution Methods",
-          "url": "https://huggingface.co/papers/2610.32253",
-          "score": 0.503,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games",
-          "url": "https://huggingface.co/papers/2610.31162",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DraMaze: A Multi-Agent Pipeline with Future-Aware Memory for Diverse Microdrama Script Generation",
-          "url": "https://huggingface.co/papers/2610.32002",
-          "score": 0.49,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled — text-generation",
+          "url": "https://huggingface.co/xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled",
+          "score": 0.472,
+          "trust_tier": "official"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance",
-          "url": "http://arxiv.org/abs/2610.32555v1",
-          "score": 0.489,
+          "title": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
+          "url": "http://arxiv.org/abs/2610.32945v1",
+          "score": 0.454,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "turintech/Qwen3.8-27B-Artemis-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "plieggo/sd-v1-4-lora-oldbook — text-to-image",
-          "url": "https://huggingface.co/plieggo/sd-v1-4-lora-oldbook",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "DuoLM: Fast and Effective Personalized Recommendation with Language Models",
+          "url": "https://huggingface.co/papers/2610.24481",
+          "score": 0.449,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -69,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-26T09:33:04+00:00",
-      "updatedAt": "2026-10-26T09:33:04+00:00",
+      "publishedAt": "2026-10-26T16:26:45+00:00",
+      "updatedAt": "2026-10-26T16:26:45+00:00",
       "sortOrder": 0
+    },
+    {
+      "id": "video-analysis-and-generation",
+      "title_ar": "تحليل وتوليد الفيديو باستخدام نماذج الذكاء الاصطناعي",
+      "thesis_ar": "تطور نماذج الفيديو يوفر فرصًا جديدة في تحليل وتوليد المحتوى المرئي. يمكن استغلال هذا الاتجاه في تطوير أدوات مبتكرة لتحسين تجربة المستخدم.",
+      "buyer_ar": "شركات الإنتاج الإعلامي وشركات التسويق",
+      "sellable_product_ar": "أداة لتحليل وتوليد محتوى الفيديو",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحليل مقطع فيديو وتوليد محتوى جديد",
+      "tools_ar": "نماذج الفيديو، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2610.31668",
+        "huggingface_daily_papers:2610.31288",
+        "huggingface_daily_papers:2610.32770"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
+          "url": "https://huggingface.co/papers/2610.31668",
+          "score": 0.464,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+          "url": "https://huggingface.co/papers/2610.32770",
+          "score": 0.451,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DISC: Domain-Integrated Similarity Cost for Time-Series Dataset",
+          "url": "https://huggingface.co/papers/2610.31288",
+          "score": 0.447,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-26T16:26:45+00:00",
+      "updatedAt": "2026-10-26T16:26:45+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "healthcare-documentation-automation",
+      "title_ar": "أتمتة توثيق الرعاية الصحية باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "تزايد الحاجة لأتمتة توثيق الرعاية الصحية باستخدام نماذج اللغة الكبيرة. هذا الوقت مناسب لتطوير حلول تسهم في تحسين الكفاءة وتقليل الأخطاء.",
+      "buyer_ar": "المستشفيات وعيادات الرعاية الصحية",
+      "sellable_product_ar": "نظام أتمتة توثيق الرعاية الصحية",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتوثيق حالة طبية باستخدام النظام",
+      "tools_ar": "نماذج اللغة الكبيرة، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2610.32258v1",
+        "huggingface_daily_papers:2610.24481",
+        "huggingface_daily_papers:2610.32770"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.45,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
+          "url": "http://arxiv.org/abs/2610.32258v1",
+          "score": 0.456,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+          "url": "https://huggingface.co/papers/2610.32770",
+          "score": 0.451,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "DuoLM: Fast and Effective Personalized Recommendation with Language Models",
+          "url": "https://huggingface.co/papers/2610.24481",
+          "score": 0.449,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-26T16:26:45+00:00",
+      "updatedAt": "2026-10-26T16:26:45+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-26T09:33:04+00:00",
+  "tiered_at": "2026-10-26T16:26:45+00:00",
   "free_preview_count": 3
 }
