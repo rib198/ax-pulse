@@ -1,46 +1,67 @@
 {
-  "generated_at": "2026-10-25T23:45:34+00:00",
+  "generated_at": "2026-10-26T02:14:06+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 826,
+  "corpus_count": 822,
   "opportunities": [
     {
-      "id": "text-generation-models",
-      "title_ar": "تطوير نماذج توليد النصوص",
-      "thesis_ar": "تزايد الطلب على نماذج توليد النصوص في مجالات متعددة مثل التعليم والتسويق. النماذج الجديدة تقدم تحسينات ملحوظة في الأداء والكفاءة.",
-      "buyer_ar": "شركات التكنولوجيا، وكالات التسويق، المؤسسات التعليمية",
-      "sellable_product_ar": "خدمات تطوير وتخصيص نماذج توليد النصوص",
-      "first_paid_test_ar": "تقديم نموذج تجريبي مجاني مع خيار الاشتراك المدفوع لاحقًا",
-      "tools_ar": "Hugging Face, Python, TensorFlow",
+      "id": "ai-clinical-documentation",
+      "title_ar": "تحسين التوثيق السريري باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "هناك حاجة متزايدة لتوليد تقارير دقيقة حول الأمراض النادرة. يمكن لنماذج الذكاء الاصطناعي تحسين جودة التوثيق السريري وتوفير الوقت والجهد.",
+      "buyer_ar": "المستشفيات والمراكز الطبية",
+      "sellable_product_ar": "نظام توثيق سريري مدعوم بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد تقرير حالة مرض نادر",
+      "tools_ar": "نموذج لغة كبير، قاعدة بيانات طبية، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:Dbmaxwell/Qwen3-4B-Instruct-2507-Fintool-TR-v3",
-        "huggingface_models:stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound",
-        "huggingface_models:kapitsaprime/Nanbeige4.3-33B-MLX-4bit"
+        "2610.32258v1",
+        "2610.32415v1",
+        "infosecn1nja/soc-triage-nemotron-bolt-e4b-lora"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "Dbmaxwell/Qwen3-4B-Instruct-2507-Fintool-TR-v3 — text-generation",
-          "url": "https://huggingface.co/Dbmaxwell/Qwen3-4B-Instruct-2507-Fintool-TR-v3",
-          "score": 0.509,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
+          "url": "http://arxiv.org/abs/2610.32258v1",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance",
+          "url": "http://arxiv.org/abs/2610.32555v1",
+          "score": 0.489,
+          "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound — text-generation",
-          "url": "https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound",
+          "title": "XingChen-AGI/Xing4.0-29B-Intent — text-generation",
+          "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "kapitsaprime/Nanbeige4.3-33B-MLX-4bit — text-generation",
-          "url": "https://huggingface.co/kapitsaprime/Nanbeige4.3-33B-MLX-4bit",
+          "title": "milkshake721/Gemma-4-26B-A4B-HybridAgent — text-generation",
+          "url": "https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "axiomofmind/Moss-image-beauty-lora — text-to-image",
+          "url": "https://huggingface.co/axiomofmind/Moss-image-beauty-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0 — text-to-image",
+          "url": "https://huggingface.co/OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,48 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T23:45:34+00:00",
-      "updatedAt": "2026-10-25T23:45:34+00:00",
+      "publishedAt": "2026-10-26T02:14:06+00:00",
+      "updatedAt": "2026-10-26T02:14:06+00:00",
       "sortOrder": 0
     },
     {
-      "id": "image-text-to-text-models",
-      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
-      "thesis_ar": "تزايد الحاجة إلى نماذج قادرة على معالجة الصور وتحويلها إلى نصوص مفيدة. هذه التكنولوجيا يمكن أن تعزز من تجربة المستخدم في التطبيقات المختلفة.",
-      "buyer_ar": "شركات تطوير التطبيقات، وكالات الإعلان",
-      "sellable_product_ar": "خدمات تطوير نماذج تحويل الصورة إلى نص",
-      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل صورة إلى نص كاختبار مدفوع",
-      "tools_ar": "Hugging Face, OpenCV, PyTorch",
-      "capital_ar": "متوسط",
+      "id": "image-to-text-conversion",
+      "title_ar": "تحويل الصور إلى نصوص باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على أدوات تحويل الصور إلى نصوص في مجالات متعددة مثل التصميم والإعلانات. يمكن لنماذج الذكاء الاصطناعي تقديم حلول مبتكرة.",
+      "buyer_ar": "وكالات الإعلان والتصميم",
+      "sellable_product_ar": "أداة تحويل الصور إلى نصوص",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل صورة إلى نص",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، قاعدة بيانات صور",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:XopMC513/DeepSeek-V4.1-Flash-1017-Heretic",
-        "huggingface_models:XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic",
-        "huggingface_models:88plug/Gemma4-E2B-it-W8A16"
+        "milkshake721/Gemma-4-26B-A4B-HybridAgent",
+        "axiomofmind/Moss-image-beauty-lora",
+        "OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
+          "url": "http://arxiv.org/abs/2610.32258v1",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance",
+          "url": "http://arxiv.org/abs/2610.32555v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "XopMC513/DeepSeek-V4.1-Flash-1017-Heretic — image-text-to-text",
-          "url": "https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic",
+          "title": "XingChen-AGI/Xing4.0-29B-Intent — text-generation",
+          "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic — image-text-to-text",
-          "url": "https://huggingface.co/XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic",
+          "title": "milkshake721/Gemma-4-26B-A4B-HybridAgent — text-generation",
+          "url": "https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "88plug/Gemma4-E2B-it-W8A16 — image-text-to-text",
-          "url": "https://huggingface.co/88plug/Gemma4-E2B-it-W8A16",
-          "score": 0.466,
+          "title": "axiomofmind/Moss-image-beauty-lora — text-to-image",
+          "url": "https://huggingface.co/axiomofmind/Moss-image-beauty-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0 — text-to-image",
+          "url": "https://huggingface.co/OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -100,48 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T23:45:34+00:00",
-      "updatedAt": "2026-10-25T23:45:34+00:00",
+      "publishedAt": "2026-10-26T02:14:06+00:00",
+      "updatedAt": "2026-10-26T02:14:06+00:00",
       "sortOrder": 1
     },
     {
-      "id": "text-to-speech-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى كلام",
-      "thesis_ar": "تزايد استخدام تقنيات تحويل النص إلى كلام في التطبيقات التعليمية والترفيهية. توفر هذه النماذج تجربة تفاعلية للمستخدمين.",
-      "buyer_ar": "شركات التعليم، مطوري التطبيقات الصوتية",
-      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى كلام",
-      "first_paid_test_ar": "تقديم نموذج بسيط لتحويل نص إلى صوت كاختبار مدفوع",
-      "tools_ar": "Hugging Face, TensorFlow, Python",
-      "capital_ar": "منخفض",
+      "id": "llm-annotation-optimization",
+      "title_ar": "تحسين عملية التوصيف باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "توجد فجوة بين عملية التوصيف الحالية والمعايير الواقعية. يمكن تحسين نماذج اللغة الكبيرة لتقليل التباين وزيادة الدقة.",
+      "buyer_ar": "شركات تحليل البيانات ومراكز البحث",
+      "sellable_product_ar": "نظام توصييف مدعوم بنماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم دراسة حالة لتوصيف البيانات باستخدام نموذج لغة كبير",
+      "tools_ar": "نموذج لغة كبير، مجموعة بيانات، واجهة مستخدم",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:ghanaopenai/ghana-voice_ahanta",
-        "huggingface_models:liodon-ai/novel-humanize-4b-imatrix-GGUF",
-        "huggingface_models:AF552/A3"
+        "2610.32415v1",
+        "2610.32555v1",
+        "jaydeepb/pythia-1.4b-fineweb-run1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
+          "url": "http://arxiv.org/abs/2610.32258v1",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance",
+          "url": "http://arxiv.org/abs/2610.32555v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "AF552/A3 — text-to-image",
-          "url": "https://huggingface.co/AF552/A3",
+          "title": "XingChen-AGI/Xing4.0-29B-Intent — text-generation",
+          "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ghanaopenai/ghana-voice_ahanta — text-to-speech",
-          "url": "https://huggingface.co/ghanaopenai/ghana-voice_ahanta",
-          "score": 0.466,
+          "title": "milkshake721/Gemma-4-26B-A4B-HybridAgent — text-generation",
+          "url": "https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "liodon-ai/novel-humanize-4b-imatrix-GGUF — text-generation",
-          "url": "https://huggingface.co/liodon-ai/novel-humanize-4b-imatrix-GGUF",
-          "score": 0.466,
+          "title": "axiomofmind/Moss-image-beauty-lora — text-to-image",
+          "url": "https://huggingface.co/axiomofmind/Moss-image-beauty-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0 — text-to-image",
+          "url": "https://huggingface.co/OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-25T23:45:34+00:00",
-      "updatedAt": "2026-10-25T23:45:34+00:00",
+      "publishedAt": "2026-10-26T02:14:06+00:00",
+      "updatedAt": "2026-10-26T02:14:06+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-25T23:45:34+00:00",
+  "tiered_at": "2026-10-26T02:14:06+00:00",
   "free_preview_count": 3
 }
