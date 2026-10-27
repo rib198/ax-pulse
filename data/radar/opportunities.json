@@ -1,28 +1,42 @@
 {
-  "generated_at": "2026-10-27T15:41:11+00:00",
+  "generated_at": "2026-10-27T20:22:44+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 825,
+  "corpus_count": 828,
   "opportunities": [
     {
-      "id": "ai-clinical-decision-support",
-      "title_ar": "دعم اتخاذ القرار السريري باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تتزايد الحاجة إلى تحسين اتخاذ القرارات في المجال الصحي باستخدام نماذج اللغة الكبيرة. يمكن أن توفر هذه الحلول مساعدة فعالة للأطباء في التشخيص والعلاج.",
-      "buyer_ar": "المستشفيات والعيادات الطبية",
-      "sellable_product_ar": "نظام دعم اتخاذ القرار السريري المعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق النظام في عيادة صغيرة لمدة شهر",
-      "tools_ar": "نماذج اللغة الكبيرة، واجهات برمجة التطبيقات، أدوات تحليل البيانات",
+      "id": "ai-assisted-clinical-decision-making",
+      "title_ar": "تحسين اتخاذ القرارات السريرية باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تقدم نماذج اللغة الكبيرة إمكانيات جديدة في اتخاذ القرارات السريرية، مما يجعلها فرصة مثالية لتطوير حلول طبية ذكية. مع التحديات الحالية في النشر الآمن والفعال، هناك حاجة ملحة لحلول مبتكرة.",
+      "buyer_ar": "المستشفيات والعيادات",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لدعم اتخاذ القرارات السريرية",
+      "first_paid_test_ar": "تجربة نظام على مجموعة بيانات سريرية محدودة",
+      "tools_ar": "نموذج لغة كبير، منصة تحليل بيانات، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2610.34871v1",
-        "arxiv_papers:2610.35635v1",
-        "arxiv_papers:2610.35782v1"
+        "2610.34871v1",
+        "2610.34577",
+        "2610.35082v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ReGE: Stronger Agents through Experience Synthesis",
+          "url": "https://huggingface.co/papers/2610.33861",
+          "score": 0.521,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
+          "url": "https://huggingface.co/papers/2610.32004",
+          "score": 0.498,
+          "trust_tier": "research"
+        },
         {
           "source_id": "arxiv_papers",
           "title": "DocTalk: Enhancing Medical Knowledge Retrieval via Fine-tuned Large Language Models with Chain-of-Thought Reasoning for Robust Clinical Decision Support",
@@ -31,18 +45,25 @@
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Offline Language-Based Support System for Tactical Decision-Making in Air Combat Operations",
-          "url": "http://arxiv.org/abs/2610.35635v1",
-          "score": 0.482,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "XopMC513/DeepSeek-V4.1-Flash-1017-Heretic — image-text-to-text",
+          "url": "https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "Atomic Security Concerns: Towards a Foundational Language for Security Knowledge Representation",
-          "url": "http://arxiv.org/abs/2610.35782v1",
-          "score": 0.472,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Timafilms/analog_film_lora — text-to-image",
+          "url": "https://huggingface.co/Timafilms/analog_film_lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "TechnoBaptist/Moss-image-nsfw-uncensored-lora — text-to-image",
+          "url": "https://huggingface.co/TechnoBaptist/Moss-image-nsfw-uncensored-lora",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -50,98 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-27T15:41:11+00:00",
-      "updatedAt": "2026-10-27T15:41:11+00:00",
+      "publishedAt": "2026-10-27T20:22:44+00:00",
+      "updatedAt": "2026-10-27T20:22:44+00:00",
       "sortOrder": 0
     },
     {
-      "id": "cybersecurity-knowledge-representation",
-      "title_ar": "تمثيل المعرفة في الأمن السيبراني",
-      "thesis_ar": "تزايد القلق بشأن الأمن السيبراني يتطلب حلولاً مبتكرة لتمثيل المعرفة. يمكن أن تسهم هذه الحلول في تحسين إدارة المخاطر والامتثال.",
-      "buyer_ar": "شركات الأمن السيبراني والهيئات الحكومية",
-      "sellable_product_ar": "نظام تمثيل المعرفة للأمن السيبراني",
-      "first_paid_test_ar": "تطوير نموذج أولي لتمثيل المعرفة واختباره في بيئة محاكاة",
-      "tools_ar": "أدوات تحليل البيانات، نماذج الذكاء الاصطناعي، منصات تطوير البرمجيات",
+      "id": "video-manipulation-forensics",
+      "title_ar": "تحليل التلاعب في الفيديوهات الطويلة",
+      "thesis_ar": "تزايد استخدام التلاعبات الذكية في الفيديوهات يتطلب أدوات تحليل دقيقة. هذه فرصة لتطوير حلول تكنولوجية لمكافحة التلاعب في المحتوى.",
+      "buyer_ar": "شركات الإعلام والجهات القانونية",
+      "sellable_product_ar": "أداة تحليل تلاعب الفيديو",
+      "first_paid_test_ar": "اختبار الأداة على مجموعة من الفيديوهات المشكوك فيها",
+      "tools_ar": "خوارزمية تحليل، واجهة مستخدم، قاعدة بيانات فيديو",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2610.35635v1",
-        "arxiv_papers:2610.35782v1",
-        "huggingface_models:tinyopsec/novel-humanize-4b-GGUF"
+        "2610.34871v1",
+        "2610.33413",
+        "2610.34577"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "Offline Language-Based Support System for Tactical Decision-Making in Air Combat Operations",
-          "url": "http://arxiv.org/abs/2610.35635v1",
-          "score": 0.482,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "Atomic Security Concerns: Towards a Foundational Language for Security Knowledge Representation",
-          "url": "http://arxiv.org/abs/2610.35782v1",
-          "score": 0.472,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "tinyopsec/novel-humanize-4b-GGUF — text-generation",
-          "url": "https://huggingface.co/tinyopsec/novel-humanize-4b-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-27T15:41:11+00:00",
-      "updatedAt": "2026-10-27T15:41:11+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "audio-visual-manipulation-forensics",
-      "title_ar": "تحليل التلاعبات الصوتية والبصرية في الفيديوهات",
-      "thesis_ar": "مع تزايد استخدام الفيديوهات في الإعلام، يصبح من الضروري تطوير أدوات لتحليل التلاعبات. هذه الأدوات ستساعد في الحفاظ على مصداقية المحتوى.",
-      "buyer_ar": "وكالات الإعلام والمحققون",
-      "sellable_product_ar": "أداة تحليل التلاعبات الصوتية والبصرية",
-      "first_paid_test_ar": "تطبيق الأداة على مجموعة من الفيديوهات المشكوك فيها",
-      "tools_ar": "نماذج تحليل الفيديو، أدوات التعلم العميق، واجهات برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2610.33413",
-        "huggingface_models:Vxtzq/Crowd-v1",
-        "huggingface_models:tinyopsec/novel-humanize-4b-GGUF"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "AV-FABLE: Audio-Visual Manipulation Forensics in Long-Form Videos",
-          "url": "https://huggingface.co/papers/2610.33413",
-          "score": 0.47,
+          "title": "ReGE: Stronger Agents through Experience Synthesis",
+          "url": "https://huggingface.co/papers/2610.33861",
+          "score": 0.521,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
+          "url": "https://huggingface.co/papers/2610.32004",
+          "score": 0.498,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DocTalk: Enhancing Medical Knowledge Retrieval via Fine-tuned Large Language Models with Chain-of-Thought Reasoning for Robust Clinical Decision Support",
+          "url": "http://arxiv.org/abs/2610.34871v1",
+          "score": 0.489,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.466,
+          "title": "XopMC513/DeepSeek-V4.1-Flash-1017-Heretic — image-text-to-text",
+          "url": "https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "tinyopsec/novel-humanize-4b-GGUF — text-generation",
-          "url": "https://huggingface.co/tinyopsec/novel-humanize-4b-GGUF",
-          "score": 0.466,
+          "title": "Timafilms/analog_film_lora — text-to-image",
+          "url": "https://huggingface.co/Timafilms/analog_film_lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "TechnoBaptist/Moss-image-nsfw-uncensored-lora — text-to-image",
+          "url": "https://huggingface.co/TechnoBaptist/Moss-image-nsfw-uncensored-lora",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +142,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-27T15:41:11+00:00",
-      "updatedAt": "2026-10-27T15:41:11+00:00",
+      "publishedAt": "2026-10-27T20:22:44+00:00",
+      "updatedAt": "2026-10-27T20:22:44+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "enterprise-agent-benchmarking",
+      "title_ar": "أدوات قياس أداء الوكلاء في البيئات المؤسسية",
+      "thesis_ar": "تزايد الاعتماد على الوكلاء اللغويين في التطبيقات التجارية يتطلب أدوات قياس فعالة. هذه فرصة لتطوير حلول تساعد الشركات في تحسين أداء الوكلاء.",
+      "buyer_ar": "الشركات والمؤسسات",
+      "sellable_product_ar": "أداة قياس أداء الوكلاء اللغويين",
+      "first_paid_test_ar": "تطبيق الأداة على مشروع تجريبي داخل مؤسسة",
+      "tools_ar": "أداة قياس، واجهة مستخدم، قاعدة بيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2610.32004",
+        "2610.33413",
+        "2610.34577"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ReGE: Stronger Agents through Experience Synthesis",
+          "url": "https://huggingface.co/papers/2610.33861",
+          "score": 0.521,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
+          "url": "https://huggingface.co/papers/2610.32004",
+          "score": 0.498,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DocTalk: Enhancing Medical Knowledge Retrieval via Fine-tuned Large Language Models with Chain-of-Thought Reasoning for Robust Clinical Decision Support",
+          "url": "http://arxiv.org/abs/2610.34871v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "XopMC513/DeepSeek-V4.1-Flash-1017-Heretic — image-text-to-text",
+          "url": "https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Timafilms/analog_film_lora — text-to-image",
+          "url": "https://huggingface.co/Timafilms/analog_film_lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "TechnoBaptist/Moss-image-nsfw-uncensored-lora — text-to-image",
+          "url": "https://huggingface.co/TechnoBaptist/Moss-image-nsfw-uncensored-lora",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-27T20:22:44+00:00",
+      "updatedAt": "2026-10-27T20:22:44+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-27T15:41:11+00:00",
+  "tiered_at": "2026-10-27T20:22:44+00:00",
   "free_preview_count": 3
 }
