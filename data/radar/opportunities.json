@@ -1,26 +1,76 @@
 {
-  "generated_at": "2026-10-29T07:50:42+00:00",
+  "generated_at": "2026-10-29T14:49:42+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 835,
+  "corpus_count": 839,
   "opportunities": [
     {
+      "id": "human-agent-collaboration-evaluation",
+      "title_ar": "تحسين تقييم التعاون بين الإنسان والوكيل",
+      "thesis_ar": "مع تزايد استخدام وكلاء واجهة الأوامر في المهام الطويلة، تبرز الحاجة إلى معايير تقييم موحدة. هذا يمكن أن يفتح المجال لتطوير أدوات تقييم جديدة تلبي احتياجات السوق.",
+      "buyer_ar": "شركات تطوير البرمجيات ومزودي خدمات الذكاء الاصطناعي",
+      "sellable_product_ar": "أداة تقييم موحدة لوكلاء واجهة الأوامر",
+      "first_paid_test_ar": "تقديم نسخة تجريبية من الأداة لشركة برمجيات لتقييم فعاليتها",
+      "tools_ar": "أدوات تحليل البيانات، واجهة مستخدم، خوارزميات التعلم الآلي",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_daily_papers:2610.22507",
+        "huggingface_daily_papers:2610.37230",
+        "arxiv_papers:2610.36584v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents",
+          "url": "https://huggingface.co/papers/2610.22507",
+          "score": 0.498,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
+          "url": "https://huggingface.co/papers/2610.37230",
+          "score": 0.493,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements",
+          "url": "http://arxiv.org/abs/2610.36584v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-10-29T14:49:42+00:00",
+      "updatedAt": "2026-10-29T14:49:42+00:00",
+      "sortOrder": 0
+    },
+    {
       "id": "audio-visual-target-extraction",
-      "title_ar": "تطوير حلول استخراج الصوت والصورة المستهدفة",
-      "thesis_ar": "تزايد الحاجة إلى أنظمة استخراج الصوت والصورة في التطبيقات الحساسة للزمن. يمكن استغلال الفجوات الحالية في الأنظمة القائمة لتقديم حلول فعالة.",
-      "buyer_ar": "شركات التكنولوجيا والاتصالات",
-      "sellable_product_ar": "نظام متكامل لاستخراج الصوت والصورة المستهدفة",
-      "first_paid_test_ar": "تقديم نموذج أولي لاستخراج الصوت والصورة في بيئة تجريبية",
-      "tools_ar": "أدوات تحليل البيانات، أدوات تطوير البرمجيات، خوادم GPU",
+      "title_ar": "تطوير نظام استخراج المتحدثين في المشاهد الصوتية والمرئية",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة استخراج المتحدثين في التطبيقات الحساسة للزمن. يمكن أن يؤدي تحسين هذه الأنظمة إلى تحسين تجربة المستخدم وزيادة الكفاءة.",
+      "buyer_ar": "شركات التكنولوجيا الصوتية والمرئية، شركات تطوير التطبيقات",
+      "sellable_product_ar": "نظام متقدم لاستخراج المتحدثين في الوقت الحقيقي",
+      "first_paid_test_ar": "تقديم نموذج أولي للنظام لشركة إعلامية لتجربته",
+      "tools_ar": "أدوات معالجة الصوت، أدوات تحليل البيانات، خوارزميات التعلم العميق",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2610.32749",
         "huggingface_daily_papers:2610.37230",
-        "arxiv_papers:2610.37649"
+        "arxiv_papers:2610.36434v1"
       ],
-      "confidence": 0.8,
+      "confidence": 0.65,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 3,
       "avg_score": 0.49,
       "evidence_items": [
         {
@@ -34,120 +84,77 @@
           "source_id": "huggingface_daily_papers",
           "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
           "url": "https://huggingface.co/papers/2610.37230",
-          "score": 0.479,
+          "score": 0.493,
           "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-29T07:50:42+00:00",
-      "updatedAt": "2026-10-29T07:50:42+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "efficient-llm-training",
-      "title_ar": "تحسين كفاءة تدريب نماذج اللغة الكبيرة",
-      "thesis_ar": "تطوير كيرنلات GPU فعالة يمكن أن يحسن من كفاءة تدريب نماذج اللغة الكبيرة. هذا الوقت هو الوقت المناسب للاستثمار في تحسين الأداء.",
-      "buyer_ar": "مراكز البحث والتطوير والشركات التقنية",
-      "sellable_product_ar": "أدوات لتحسين كفاءة تدريب نماذج اللغة",
-      "first_paid_test_ar": "اختبار كفاءة الكيرنلات المحسنة على نموذج لغة محدد",
-      "tools_ar": "أدوات تطوير البرمجيات، خوادم GPU، أدوات قياس الأداء",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2610.36434v1",
-        "huggingface_models:JIRU-W/e32_top8_seq2048_gbs128_10b_perlayeraux",
-        "huggingface_models:JIRU-W/upcycle_dense10000_e32top8_perlayeraux1e-2_rewarm200"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
+        },
         {
           "source_id": "arxiv_papers",
           "title": "JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels",
           "url": "http://arxiv.org/abs/2610.36434v1",
           "score": 0.491,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "JIRU-W/e32_top8_seq2048_gbs128_10b_perlayeraux — text-generation",
-          "url": "https://huggingface.co/JIRU-W/e32_top8_seq2048_gbs128_10b_perlayeraux",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "JIRU-W/upcycle_dense10000_e32top8_perlayeraux1e-2_rewarm200 — text-generation",
-          "url": "https://huggingface.co/JIRU-W/upcycle_dense10000_e32top8_perlayeraux1e-2_rewarm200",
-          "score": 0.466,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-29T07:50:42+00:00",
-      "updatedAt": "2026-10-29T07:50:42+00:00",
+      "publishedAt": "2026-10-29T14:49:42+00:00",
+      "updatedAt": "2026-10-29T14:49:42+00:00",
       "sortOrder": 1
     },
     {
-      "id": "ai-in-science",
-      "title_ar": "توسيع استخدام الذكاء الاصطناعي في البحث العلمي",
-      "thesis_ar": "تزايد الاهتمام بتطبيقات الذكاء الاصطناعي في البحث العلمي. يمكن أن يؤدي ذلك إلى ابتكارات جديدة في مجالات متعددة.",
-      "buyer_ar": "المؤسسات البحثية والجامعات",
-      "sellable_product_ar": "منصات ذكاء اصطناعي مخصصة للبحث العلمي",
-      "first_paid_test_ar": "تقديم دراسة حالة لاستخدام الذكاء الاصطناعي في مشروع بحثي",
-      "tools_ar": "أدوات تحليل البيانات، خوادم حوسبة سحابية، أدوات تطوير البرمجيات",
+      "id": "large-language-models-testing",
+      "title_ar": "تطوير أدوات اختبار للبرمجيات باستخدام نماذج اللغة الكبيرة",
+      "thesis_ar": "مع تزايد استخدام نماذج اللغة الكبيرة في تطوير البرمجيات، تبرز الحاجة إلى أدوات اختبار فعالة لضمان جودة البرمجيات. هذا يمكن أن يوفر فرصًا كبيرة في السوق.",
+      "buyer_ar": "شركات تطوير البرمجيات، فرق الجودة",
+      "sellable_product_ar": "أداة اختبار تعتمد على نماذج اللغة الكبيرة",
+      "first_paid_test_ar": "تقديم اختبار تجريبي للأداة لشركة برمجيات",
+      "tools_ar": "أدوات تطوير البرمجيات، نماذج اللغة الكبيرة، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "anthropic_news:https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-        "arxiv_papers:2610.37649v1",
-        "huggingface_models:hsam007/Nanbeige4.3-33B-NVFP4"
+        "arxiv_papers:2610.36584v1",
+        "huggingface_models:rachitst/oncall-ai-incident-classifier",
+        "huggingface_models:CodesBee/DeQARAG"
       ],
-      "confidence": 0.7,
+      "confidence": 0.6,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
-          "url": "http://arxiv.org/abs/2610.37649v1",
+          "title": "Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements",
+          "url": "http://arxiv.org/abs/2610.36584v1",
           "score": 0.468,
           "trust_tier": "research"
         },
         {
-          "source_id": "anthropic_news",
-          "title": "Ai For Science Expands Foundations Research Institutions",
-          "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+          "source_id": "huggingface_models",
+          "title": "CodesBee/DeQARAG — text-generation",
+          "url": "https://huggingface.co/CodesBee/DeQARAG",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "hsam007/Nanbeige4.3-33B-NVFP4 — text-generation",
-          "url": "https://huggingface.co/hsam007/Nanbeige4.3-33B-NVFP4",
+          "title": "rachitst/oncall-ai-incident-classifier — text-generation",
+          "url": "https://huggingface.co/rachitst/oncall-ai-incident-classifier",
           "score": 0.466,
           "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-29T07:50:42+00:00",
-      "updatedAt": "2026-10-29T07:50:42+00:00",
+      "publishedAt": "2026-10-29T14:49:42+00:00",
+      "updatedAt": "2026-10-29T14:49:42+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-10-29T07:50:42+00:00",
+  "tiered_at": "2026-10-29T14:49:42+00:00",
   "free_preview_count": 3
 }
