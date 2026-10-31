@@ -1,46 +1,62 @@
 {
-  "generated_at": "2026-10-31T01:16:53+00:00",
+  "generated_at": "2026-10-31T07:45:52+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 833,
+  "corpus_count": 831,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على المحتوى المرئي المخصص يعزز الحاجة إلى نماذج تحويل النص إلى صورة. العديد من النماذج الجديدة تظهر إمكانيات مبتكرة في هذا المجال.",
-      "buyer_ar": "شركات الإعلانات، منصات التواصل الاجتماعي، وكالات التصميم",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، مكتبات معالجة الصور",
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة والعكس",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة والعكس، مما يتيح فرصًا جديدة في مجالات الإبداع والتسويق. يمكن استخدام هذه النماذج في إنشاء محتوى مرئي فريد وجذاب.",
+      "buyer_ar": "شركات التسويق والإعلانات، مصممو الجرافيك، شركات الإنتاج الإعلامي",
+      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة والعكس، أو تقديم حلول مخصصة باستخدام هذه النماذج",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور، مع قياس رضا العملاء",
+      "tools_ar": "Hugging Face، أدوات الذكاء الاصطناعي، بيئات التطوير",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:lordfarquaad36/Reflora",
-        "huggingface_models:logan3931/flat001",
-        "huggingface_models:logan3931/gouache005"
+        "huggingface_models:4waiz/Rabt-1.0-9B",
+        "huggingface_models:4waiz/Rabt-1.0-4B",
+        "huggingface_models:4waiz/Rabt-1.0-2B",
+        "huggingface_models:KeyAI-LLM/Sage-A1.5-35B-A3B-oQ8e-MLX-MTP",
+        "huggingface_models:primitive-ai/MiniMax-M3.1-Flash-pruned-285B-NVFP4"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 5,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "lordfarquaad36/Reflora — text-to-image",
-          "url": "https://huggingface.co/lordfarquaad36/Reflora",
+          "title": "4waiz/Rabt-1.0-9B — image-text-to-text",
+          "url": "https://huggingface.co/4waiz/Rabt-1.0-9B",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "logan3931/flat001 — text-to-image",
-          "url": "https://huggingface.co/logan3931/flat001",
+          "title": "4waiz/Rabt-1.0-4B — image-text-to-text",
+          "url": "https://huggingface.co/4waiz/Rabt-1.0-4B",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "logan3931/gouache005 — text-to-image",
-          "url": "https://huggingface.co/logan3931/gouache005",
+          "title": "4waiz/Rabt-1.0-2B — image-text-to-text",
+          "url": "https://huggingface.co/4waiz/Rabt-1.0-2B",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "KeyAI-LLM/Sage-A1.5-35B-A3B-oQ8e-MLX-MTP — image-text-to-text",
+          "url": "https://huggingface.co/KeyAI-LLM/Sage-A1.5-35B-A3B-oQ8e-MLX-MTP",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "primitive-ai/MiniMax-M3.1-Flash-pruned-285B-NVFP4 — image-text-to-text",
+          "url": "https://huggingface.co/primitive-ai/MiniMax-M3.1-Flash-pruned-285B-NVFP4",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -50,83 +66,35 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-31T01:16:53+00:00",
-      "updatedAt": "2026-10-31T01:16:53+00:00",
+      "publishedAt": "2026-10-31T07:45:52+00:00",
+      "updatedAt": "2026-10-31T07:45:52+00:00",
       "sortOrder": 0
     },
     {
-      "id": "image-text-to-text-models",
-      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
-      "thesis_ar": "تزايد استخدام المحتوى المرئي يتطلب نماذج فعالة لتحويل الصور إلى نصوص. هذه النماذج تعزز من إمكانية الوصول إلى المعلومات.",
-      "buyer_ar": "شركات التكنولوجيا، منصات التعليم الإلكتروني، وكالات الإعلام",
-      "sellable_product_ar": "خدمة تطوير نماذج تحويل الصورة إلى نصوص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل صور بسيطة إلى نصوص",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، مكتبات معالجة الصور",
+      "id": "text-generation-models",
+      "title_ar": "تطوير نماذج توليد النصوص",
+      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في العديد من التطبيقات مثل خدمة العملاء، الكتابة الإبداعية، وتحسين محركات البحث. هذا يفتح المجال لتطوير حلول مبتكرة تلبي احتياجات السوق.",
+      "buyer_ar": "شركات التكنولوجيا، وكالات التسويق، منصات المحتوى",
+      "sellable_product_ar": "خدمة تطوير نماذج توليد النصوص أو حلول مخصصة تعتمد على هذه النماذج",
+      "first_paid_test_ar": "تقديم نموذج نصي بسيط لقياس فعالية توليد النصوص في سيناريو معين",
+      "tools_ar": "Hugging Face، أدوات معالجة اللغة الطبيعية، بيئات التطوير",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:mirrorethic/CAT-4B-MAX-ULTRA",
-        "huggingface_models:SVPG-Labs/deff-1",
-        "huggingface_models:DevQuasar/mistralai.Mistral-Large-4-1T-A52B-GGUF"
-      ],
-      "confidence": 0.65,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "mirrorethic/CAT-4B-MAX-ULTRA — image-text-to-text",
-          "url": "https://huggingface.co/mirrorethic/CAT-4B-MAX-ULTRA",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "SVPG-Labs/deff-1 — image-text-to-text",
-          "url": "https://huggingface.co/SVPG-Labs/deff-1",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "DevQuasar/mistralai.Mistral-Large-4-1T-A52B-GGUF — image-text-to-text",
-          "url": "https://huggingface.co/DevQuasar/mistralai.Mistral-Large-4-1T-A52B-GGUF",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-10-31T01:16:53+00:00",
-      "updatedAt": "2026-10-31T01:16:53+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "text-generation-for-disaster-response",
-      "title_ar": "تطوير نماذج توليد النصوص للاستجابة للكوارث",
-      "thesis_ar": "تزايد الحاجة إلى استجابات سريعة وفعالة في حالات الطوارئ يفتح المجال لتطوير نماذج توليد النصوص. هذه النماذج يمكن أن تساعد في توفير معلومات دقيقة وسريعة.",
-      "buyer_ar": "الهيئات الحكومية، منظمات الإغاثة، شركات التأمين",
-      "sellable_product_ar": "نموذج توليد نصوص مخصص للاستجابة للكوارث",
-      "first_paid_test_ar": "تقديم نموذج لتوليد نصوص تحذيرية في حالات الطوارئ",
-      "tools_ar": "Hugging Face، أدوات التعلم العميق، منصات البيانات",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:SinghGurjot01/FloodSaathi",
+        "huggingface_models:AtomicChat/Mistral-Large-4-1T-A52B-Uncensored-GGUF",
         "huggingface_models:DeepNarra/Paham-Experimental",
-        "huggingface_models:Vxtzq/Crowd-v1"
+        "huggingface_models:ViuAI/ViuAI-500M",
+        "huggingface_models:SkyIsNotGreen/Scion-35B-A3B",
+        "huggingface_models:lavendercomputing/LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF"
       ],
-      "confidence": 0.6,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 5,
       "avg_score": 0.47,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "SinghGurjot01/FloodSaathi — text-generation",
-          "url": "https://huggingface.co/SinghGurjot01/FloodSaathi",
+          "title": "AtomicChat/Mistral-Large-4-1T-A52B-Uncensored-GGUF — text-generation",
+          "url": "https://huggingface.co/AtomicChat/Mistral-Large-4-1T-A52B-Uncensored-GGUF",
           "score": 0.466,
           "trust_tier": "official"
         },
@@ -139,22 +107,36 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
+          "title": "lavendercomputing/LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF — text-generation",
+          "url": "https://huggingface.co/lavendercomputing/LFM2.5-24B-A2B-Heretic-GSQ-RCO-GGUF",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "SkyIsNotGreen/Scion-35B-A3B — text-generation",
+          "url": "https://huggingface.co/SkyIsNotGreen/Scion-35B-A3B",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "ViuAI/ViuAI-500M — text-generation",
+          "url": "https://huggingface.co/ViuAI/ViuAI-500M",
           "score": 0.466,
           "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-10-31T01:16:53+00:00",
-      "updatedAt": "2026-10-31T01:16:53+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-10-31T07:45:52+00:00",
+      "updatedAt": "2026-10-31T07:45:52+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-10-31T01:16:53+00:00",
+  "tiered_at": "2026-10-31T07:45:52+00:00",
   "free_preview_count": 3
 }
