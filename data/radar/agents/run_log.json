@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-11-02T08:38:54+00:00",
+  "run_at": "2026-11-02T19:57:29+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,7 +26,7 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 19.58,
+      "duration_s": 18.559,
       "written": [
         "data/radar/raw_items.json"
       ],
@@ -39,10 +39,10 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.01,
+      "duration_s": 0.012,
       "written": [],
       "notes": [
-        "injected 489 manual X items (skipped 11 of 500, avg score 0.15)"
+        "injected 489 manual X items (skipped 11 of 500, avg score 0.148)"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.028,
+      "duration_s": 0.032,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 829 items, top priority=0.486"
+        "ranked 829 items, top priority=0.535"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.013,
+      "duration_s": 0.014,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.061,
+      "duration_s": 0.078,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+33 new model events",
+        "+36 new model events",
         "300 total"
       ],
       "error": null
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.137,
+      "duration_s": 0.179,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "24 events (4 new)",
-        "by type: pricing_change=7, model_release=9, personnel_move=3, policy_signal=3, acquisition=1, funding_round=1"
+        "26 events (2 new)",
+        "by type: pricing_change=7, model_release=11, policy_signal=3, personnel_move=3, acquisition=1, funding_round=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.017,
+      "duration_s": 0.019,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 8.817,
+      "duration_s": 7.572,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.488,
+      "duration_s": 14.523,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.007,
+      "duration_s": 0.008,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 5.814,
+      "duration_s": 5.347,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -224,12 +224,12 @@
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 1.845,
+      "duration_s": 1.825,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: شهدت الإشارات انخفاضًا طفيفًا، بينما زادت فرص التشغيل، مما يشير إلى تركيز أكبر …"
+        "insight via openai: يبدو أن النشاط في تغيير الأسعار قد زاد بشكل ملحوظ، مع وجود خمس إشارات جديدة من …"
       ],
       "error": null
     },

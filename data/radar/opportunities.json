@@ -1,91 +1,48 @@
 {
-  "generated_at": "2026-11-02T08:38:54+00:00",
+  "generated_at": "2026-11-02T19:57:29+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 829,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تتزايد الطلبات على نماذج تحويل النص إلى صورة، مما يتيح فرصًا جديدة في مجالات الإبداع والتسويق. التحديثات الأخيرة في النماذج تشير إلى إمكانيات كبيرة.",
-      "buyer_ar": "شركات الإعلانات والتصميم",
-      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص بسيطة إلى صور",
-      "tools_ar": "أدوات الذكاء الاصطناعي، مكتبات التعلم العميق، واجهات برمجة التطبيقات",
+      "id": "memory-optimization-for-agents",
+      "title_ar": "تحسين الذاكرة للوكالات الذكية",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة ذاكرة ذكية تتكيف مع تاريخ المستخدم ومتطلبات المهام. يمكن استغلال تقنيات مثل MemSteer لتحسين تصميمات الذاكرة وتقديم تجارب مستخدم أفضل.",
+      "buyer_ar": "شركات تطوير البرمجيات والذكاء الاصطناعي",
+      "sellable_product_ar": "خدمة تحسين الذاكرة للأنظمة الذكية",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحسين ذاكرة وكيل ذكي لمستخدمين محددين",
+      "tools_ar": "أدوات تحليل البيانات، نماذج التعلم العميق، واجهات برمجة التطبيقات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:releaseworthy/qwen-image-2.1-turbo-int8",
-        "huggingface_models:releaseworthy/dasiwa-krea2-turbo-int8",
-        "huggingface_models:lordfarquaad36/Reflora"
+        "huggingface_daily_papers:2610.39276",
+        "huggingface_daily_papers:2610.42149",
+        "huggingface_models:profullstack/not-a-lawyer-agent"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "releaseworthy/qwen-image-2.1-turbo-int8 — text-to-image",
-          "url": "https://huggingface.co/releaseworthy/qwen-image-2.1-turbo-int8",
-          "score": 0.475,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "releaseworthy/dasiwa-krea2-turbo-int8 — text-to-image",
-          "url": "https://huggingface.co/releaseworthy/dasiwa-krea2-turbo-int8",
-          "score": 0.475,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "lordfarquaad36/Reflora — text-to-image",
-          "url": "https://huggingface.co/lordfarquaad36/Reflora",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-02T08:38:54+00:00",
-      "updatedAt": "2026-11-02T08:38:54+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "voice-assistants-development",
-      "title_ar": "تطوير المساعدات الصوتية",
-      "thesis_ar": "تتطور تقنيات المساعدات الصوتية بسرعة، مما يفتح المجال لتطبيقات جديدة. يمكن أن يؤدي تحسين الفهم والسياق إلى تحسين تجربة المستخدم.",
-      "buyer_ar": "شركات التقنية والمستهلكين",
-      "sellable_product_ar": "مساعد صوتي مخصص للتطبيقات المختلفة",
-      "first_paid_test_ar": "تطوير نموذج أولي لمساعد صوتي بسيط",
-      "tools_ar": "أدوات تطوير البرمجيات، خوارزميات التعلم الآلي، مكتبات معالجة اللغة الطبيعية",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_daily_papers:2610.40738",
-        "huggingface_daily_papers:2610.41866v1",
-        "huggingface_daily_papers:2610.42149"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.46,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
-          "url": "https://huggingface.co/papers/2610.40738",
-          "score": 0.458,
+          "title": "MemSteer: Turning User Histories into Supervision for Agent Memory Optimization",
+          "url": "https://huggingface.co/papers/2610.39276",
+          "score": 0.499,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
           "url": "https://huggingface.co/papers/2610.42149",
-          "score": 0.454,
+          "score": 0.487,
           "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "profullstack/not-a-lawyer-agent — text-generation",
+          "url": "https://huggingface.co/profullstack/not-a-lawyer-agent",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -93,48 +50,98 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-02T08:38:54+00:00",
-      "updatedAt": "2026-11-02T08:38:54+00:00",
+      "publishedAt": "2026-11-02T19:57:29+00:00",
+      "updatedAt": "2026-11-02T19:57:29+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-generation-tools",
+      "title_ar": "أدوات تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة مثل Dekonstruktio وTrvrxyz. يمكن تطوير أدوات تسهل استخدام هذه النماذج في التطبيقات المختلفة.",
+      "buyer_ar": "مطورون ومصممو محتوى رقمي",
+      "sellable_product_ar": "أداة لتحويل النص إلى صورة باستخدام نماذج متقدمة",
+      "first_paid_test_ar": "تقديم نموذج أولي للأداة مع مجموعة محدودة من الميزات",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، أدوات تحليل البيانات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:Dekonstruktio/13",
+        "huggingface_models:Trvrxyz/nialora_v1",
+        "huggingface_models:waveshaker/loras_tools"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "Dekonstruktio/13 — text-to-image",
+          "url": "https://huggingface.co/Dekonstruktio/13",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "Trvrxyz/nialora_v1 — text-to-image",
+          "url": "https://huggingface.co/Trvrxyz/nialora_v1",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "waveshaker/loras_tools — text-to-image",
+          "url": "https://huggingface.co/waveshaker/loras_tools",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-02T19:57:29+00:00",
+      "updatedAt": "2026-11-02T19:57:29+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multi-agent-systems-optimization",
-      "title_ar": "تحسين أنظمة الوكلاء المتعددة",
-      "thesis_ar": "تتزايد الحاجة إلى تحسين التنسيق والتنفيذ المتخصص في أنظمة الوكلاء المتعددة. مع تقدم تقنيات الذكاء الاصطناعي، يمكن تطوير حلول مبتكرة لتحسين الأداء والكفاءة.",
-      "buyer_ar": "شركات التكنولوجيا والبرمجة",
-      "sellable_product_ar": "نظام تحسين مخصص للوكلاء المتعددين",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحسين أداء وكيل واحد في بيئة تجريبية",
-      "tools_ar": "أدوات تطوير البرمجيات، خوارزميات الذكاء الاصطناعي، بيئة اختبار",
+      "id": "multimodal-models-for-business-intelligence",
+      "title_ar": "نماذج متعددة الوسائط لتحليل الأعمال",
+      "thesis_ar": "تزايد استخدام النماذج متعددة الوسائط في فهم وتحليل البيانات. يمكن استغلال هذه النماذج لتحسين استراتيجيات الأعمال وتحليل السوق.",
+      "buyer_ar": "شركات تحليل البيانات واستشارات الأعمال",
+      "sellable_product_ar": "خدمة تحليل بيانات متعددة الوسائط باستخدام نماذج متقدمة",
+      "first_paid_test_ar": "تقديم تحليل بيانات تجريبي باستخدام نموذج متعدد الوسائط",
+      "tools_ar": "نماذج متعددة الوسائط، أدوات تحليل البيانات، واجهات برمجة التطبيقات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2610.34722",
         "huggingface_daily_papers:2610.42149",
-        "huggingface_daily_papers:2610.42136"
+        "huggingface_daily_papers:2610.31222",
+        "huggingface_daily_papers:2610.40256"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.46,
+      "avg_score": 0.48,
       "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "CEPO: A General Framework for Improving Prompt Optimization in Multi-Agent Systems",
-          "url": "https://huggingface.co/papers/2610.34722",
-          "score": 0.486,
-          "trust_tier": "research"
-        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
           "url": "https://huggingface.co/papers/2610.42149",
-          "score": 0.454,
+          "score": 0.487,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "ReLift: Dense 3D Tracking as Lifted Trajectory Repair",
-          "url": "https://huggingface.co/papers/2610.42136",
-          "score": 0.451,
+          "title": "GLOW-FM: Efficient Generative Low-Light Image Enhancement with One-Step Latent Flow Matching",
+          "url": "https://huggingface.co/papers/2610.31222",
+          "score": 0.472,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "When Requirements Interact: Scaling Long-Horizon Coding via Interdependent Specifications",
+          "url": "https://huggingface.co/papers/2610.40256",
+          "score": 0.468,
           "trust_tier": "research"
         }
       ],
@@ -143,11 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-02T08:38:54+00:00",
-      "updatedAt": "2026-11-02T08:38:54+00:00",
+      "publishedAt": "2026-11-02T19:57:29+00:00",
+      "updatedAt": "2026-11-02T19:57:29+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-02T08:38:54+00:00",
+  "tiered_at": "2026-11-02T19:57:29+00:00",
   "free_preview_count": 3
 }
