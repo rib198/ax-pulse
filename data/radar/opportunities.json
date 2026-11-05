@@ -1,27 +1,127 @@
 {
-  "generated_at": "2026-11-04T19:04:48+00:00",
+  "generated_at": "2026-11-05T00:40:53+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 835,
+  "corpus_count": 841,
   "opportunities": [
     {
-      "id": "in-image-machine-translation",
-      "title_ar": "ترجمة داخل الصورة",
-      "thesis_ar": "تكنولوجيا ترجمة النصوص داخل الصور تتيح تحسين تجربة المستخدم في التطبيقات المرئية. مع تزايد الاعتماد على المحتوى المرئي، فإن هذه التقنية تمثل فرصة كبيرة لتقديم خدمات جديدة.",
-      "buyer_ar": "شركات الإعلام والتسويق",
-      "sellable_product_ar": "خدمة ترجمة داخل الصورة تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطبيق نموذج تجريبي لترجمة نصوص في مجموعة صغيرة من الصور",
-      "tools_ar": "نموذج الذكاء الاصطناعي، منصة تطوير، واجهة مستخدم",
-      "capital_ar": "منخفض",
+      "id": "ai-driven-financial-forecasting",
+      "title_ar": "توقعات مالية مدفوعة بالذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة إلى أدوات تحليل البيانات المالية يجعل من الذكاء الاصطناعي خيارًا مثاليًا لتحسين دقة التوقعات. التقدم في نماذج اللغة الطبية والمالية يعزز من قدرة الأنظمة على تقديم رؤى دقيقة.",
+      "buyer_ar": "شركات الاستثمار والبنوك",
+      "sellable_product_ar": "أداة تحليل بيانات مالية تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تقرير توقعات مالية تجريبية لشهر واحد",
+      "tools_ar": "نموذج ذكاء اصطناعي، منصة تحليل بيانات، واجهة مستخدم",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2611.04303",
-        "huggingface_daily_papers:2611.05193",
-        "huggingface_models:loktionov129/smlq_sfw.lora"
+        "huggingface_models:prometheusAIR/Ripple-65B-Preview-GGUF",
+        "huggingface_daily_papers:2611.01621",
+        "arxiv_papers:2611.04555v1"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.5,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "prometheusAIR/Ripple-65B-Preview-GGUF — text-generation",
+          "url": "https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "FinForesight: A Diagnostic Backtesting Benchmark for Deep Research Systems in Financial Forecasting",
+          "url": "https://huggingface.co/papers/2611.01621",
+          "score": 0.48,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "CosmosAlpha: Multi-Relational Graph Search with Pareto-Guided Exploration for LLM-Driven Alpha Mining",
+          "url": "http://arxiv.org/abs/2611.04555v1",
+          "score": 0.479,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-05T00:40:53+00:00",
+      "updatedAt": "2026-11-05T00:40:53+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "ethical-ai-agent-evaluation",
+      "title_ar": "تقييم الأخلاقيات في وكالات الذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد استخدام وكالات الذكاء الاصطناعي في مجالات حساسة، هناك حاجة ملحة لتطوير معايير تقييم أخلاقية. هذا سيساعد المؤسسات على الامتثال للقوانين الجديدة.",
+      "buyer_ar": "شركات التكنولوجيا والهيئات التنظيمية",
+      "sellable_product_ar": "أداة تقييم أخلاقيات الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقييم أخلاقي لوكالة ذكاء اصطناعي واحدة",
+      "tools_ar": "إطار تقييم أخلاقي، بيانات تدريب، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2611.02561v1",
+        "arxiv_papers:2611.03939v1",
+        "huggingface_models:waveshaker/loras_tools"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "waveshaker/loras_tools — text-to-image",
+          "url": "https://huggingface.co/waveshaker/loras_tools",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "EEFA: A Framework for the Ethical Evaluation of AI Agents",
+          "url": "http://arxiv.org/abs/2611.02561v1",
+          "score": 0.474,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "From Benchmarks to Behaviors: A Framework for Auditing AI Agents",
+          "url": "http://arxiv.org/abs/2611.03939v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-05T00:40:53+00:00",
+      "updatedAt": "2026-11-05T00:40:53+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "text-to-image-creation-tools",
+      "title_ar": "أدوات إنشاء الصور من النصوص",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي يجعل من أدوات تحويل النصوص إلى صور فرصة تجارية واعدة. التحديثات المستمرة على نماذج الذكاء الاصطناعي تعزز من جودة النتائج.",
+      "buyer_ar": "المسوقون والشركات الإبداعية",
+      "sellable_product_ar": "أداة تحويل نصوص إلى صور",
+      "first_paid_test_ar": "إنشاء صورة واحدة بناءً على نص محدد",
+      "tools_ar": "نموذج تحويل نص إلى صورة، واجهة مستخدم، بيانات تدريب",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:loktionov129/smlq_sfw.lora",
+        "huggingface_models:hweller1/wayfinder-qwen-35b-a3b",
+        "huggingface_models:Krish291205/Image_Processing_Project"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
@@ -31,54 +131,11 @@
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "FlowTranslator: Training-Free In-Image Machine Translation with Flow-Based Editing",
-          "url": "https://huggingface.co/papers/2611.04303",
-          "score": 0.503,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Factorized MLLM Embeddings for Composed Image Retrieval",
-          "url": "https://huggingface.co/papers/2611.05193",
-          "score": 0.485,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-04T19:04:48+00:00",
-      "updatedAt": "2026-11-04T19:04:48+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "image-retrieval-systems",
-      "title_ar": "أنظمة استرجاع الصور المركبة",
-      "thesis_ar": "تكنولوجيا استرجاع الصور عبر النصوص تمثل فرصة لتطوير حلول متقدمة في مجالات التجارة الإلكترونية والتسويق. يمكن استخدامها لتحسين تجربة البحث عن المنتجات.",
-      "buyer_ar": "شركات التجارة الإلكترونية",
-      "sellable_product_ar": "نظام استرجاع صور متقدم يعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لاسترجاع الصور في فئة محددة من المنتجات",
-      "tools_ar": "نموذج الذكاء الاصطناعي، قاعدة بيانات للصور، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2611.05193",
-        "huggingface_daily_papers:2611.05377",
-        "huggingface_models:Krish291205/Image_Processing_Project"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
-          "url": "https://huggingface.co/papers/2611.05377",
-          "score": 0.492,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "hweller1/wayfinder-qwen-35b-a3b — text-generation",
+          "url": "https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
@@ -86,13 +143,6 @@
           "url": "https://huggingface.co/Krish291205/Image_Processing_Project",
           "score": 0.488,
           "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Factorized MLLM Embeddings for Composed Image Retrieval",
-          "url": "https://huggingface.co/papers/2611.05193",
-          "score": 0.485,
-          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -100,61 +150,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-04T19:04:48+00:00",
-      "updatedAt": "2026-11-04T19:04:48+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "medical-ai-agents",
-      "title_ar": "وكلاء الذكاء الاصطناعي في المجال الطبي",
-      "thesis_ar": "تزايد استخدام نماذج الذكاء الاصطناعي في الرعاية الصحية يفتح المجال لتطوير حلول مبتكرة لتحسين نتائج المرضى. هذه التكنولوجيا يمكن أن تسهم في تحسين جودة الرعاية الصحية.",
-      "buyer_ar": "المستشفيات والعيادات",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتحسين الرعاية الصحية",
-      "first_paid_test_ar": "تطبيق نموذج تجريبي في مستشفى لتحسين استجابة المرضى",
-      "tools_ar": "نموذج الذكاء الاصطناعي، بيانات طبية، واجهة مستخدم",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2611.03601v1",
-        "arxiv_papers:2611.04555v1",
-        "arxiv_papers:2611.02561v1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "DiabAgent: Toward Agentic Physiological Control",
-          "url": "http://arxiv.org/abs/2611.03601v1",
-          "score": 0.489,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "CosmosAlpha: Multi-Relational Graph Search with Pareto-Guided Exploration for LLM-Driven Alpha Mining",
-          "url": "http://arxiv.org/abs/2611.04555v1",
-          "score": 0.479,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "EEFA: A Framework for the Ethical Evaluation of AI Agents",
-          "url": "http://arxiv.org/abs/2611.02561v1",
-          "score": 0.474,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-04T19:04:48+00:00",
-      "updatedAt": "2026-11-04T19:04:48+00:00",
+      "publishedAt": "2026-11-05T00:40:53+00:00",
+      "updatedAt": "2026-11-05T00:40:53+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-04T19:04:48+00:00",
+  "tiered_at": "2026-11-05T00:40:53+00:00",
   "free_preview_count": 3
 }
