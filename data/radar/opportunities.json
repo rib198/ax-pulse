@@ -1,28 +1,42 @@
 {
-  "generated_at": "2026-11-06T18:44:08+00:00",
+  "generated_at": "2026-11-06T23:57:29+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 834,
+  "corpus_count": 839,
   "opportunities": [
     {
-      "id": "personalized-assistance-agents",
-      "title_ar": "تطوير وكلاء مساعدين شخصيين",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في تقديم المساعدة الشخصية يفتح المجال لتطوير وكلاء يمكنهم الاحتفاظ بمعلومات المستخدم وتقديم دعم مستمر. هذا يتماشى مع الاتجاهات الحديثة في الذكاء الاصطناعي التي تركز على التخصيص.",
+      "id": "personalized-ai-assistants",
+      "title_ar": "مساعدات شخصية تعتمد على الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الحاجة إلى مساعدات شخصية قادرة على الاحتفاظ بالمعلومات وتقديم الدعم المستمر. هذا يتماشى مع التطورات في نماذج الذكاء الاصطناعي التي تدعم الذاكرة الطويلة.",
       "buyer_ar": "الأفراد والشركات الصغيرة",
-      "sellable_product_ar": "خدمة تطوير وكلاء ذكاء اصطناعي مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لوكيل مساعد شخصي لمستخدم واحد",
-      "tools_ar": "نموذج لغة، واجهة مستخدم، قاعدة بيانات",
+      "sellable_product_ar": "خدمة مساعد شخصي يعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تجربة مجانية لمدة شهر مع خطة مدفوعة لاحقًا",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، قاعدة بيانات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2611.03743",
-        "arxiv_papers:2611.07508",
-        "huggingface_daily_papers:2611.06741"
+        "2611.05759v1",
+        "2611.06585v1",
+        "2611.03743"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 2,
+      "signal_count": 6,
       "avg_score": 0.5,
       "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "http://arxiv.org/abs/2611.06585v1",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PAYWORTHY: Can LLMs Predict Which Freelance Jobs an AI Agent Will Complete?",
+          "url": "http://arxiv.org/abs/2611.05759v1",
+          "score": 0.509,
+          "trust_tier": "research"
+        },
         {
           "source_id": "huggingface_daily_papers",
           "title": "EvoMemState: Evolving Memory State for Personal Agents",
@@ -34,7 +48,21 @@
           "source_id": "huggingface_daily_papers",
           "title": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
           "url": "https://huggingface.co/papers/2611.06741",
-          "score": 0.499,
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
+          "url": "https://huggingface.co/papers/2611.06976",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DelegateEval: Evaluating Platforms for Personal External Service Agents",
+          "url": "http://arxiv.org/abs/2611.07508v1",
+          "score": 0.491,
           "trust_tier": "research"
         }
       ],
@@ -43,23 +71,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-06T18:44:08+00:00",
-      "updatedAt": "2026-11-06T18:44:08+00:00",
+      "publishedAt": "2026-11-06T23:57:29+00:00",
+      "updatedAt": "2026-11-06T23:57:29+00:00",
       "sortOrder": 0
     },
     {
-      "id": "freelance-job-prediction",
-      "title_ar": "نظام توقع فرص العمل الحر",
-      "thesis_ar": "توقع نجاح فرص العمل الحر باستخدام نماذج اللغة الكبيرة يمكن أن يسهل عملية اختيار المشاريع المناسبة. هذا سيساعد المستقلين على تحقيق نتائج أفضل.",
-      "buyer_ar": "المستقلون والشركات التي تعتمد على العمل الحر",
-      "sellable_product_ar": "أداة تحليل توقعات فرص العمل الحر",
-      "first_paid_test_ar": "تقديم تحليل مجاني لفرصة عمل واحدة",
-      "tools_ar": "نموذج لغة، واجهة مستخدم، قاعدة بيانات",
+      "id": "freelance-job-prediction-tool",
+      "title_ar": "أداة توقع فرص العمل الحر",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في تحديد فرص العمل الحر القابلة للتنفيذ. يمكن لنموذج PAYWORTHY أن يقدم قيمة كبيرة في هذا المجال.",
+      "buyer_ar": "المستقلون والشركات التي تبحث عن توظيف مستقلين",
+      "sellable_product_ar": "أداة تقييم فرص العمل الحر",
+      "first_paid_test_ar": "تقديم تقييم مجاني لفرصة عمل واحدة",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، قاعدة بيانات للوظائف",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2611.05759",
-        "arxiv_papers:2611.08219",
-        "arxiv_papers:2611.07586"
+        "2611.05759v1",
+        "2611.07508v1",
+        "2611.07586v1"
       ],
       "confidence": 0.75,
       "source": "openai",
@@ -91,7 +119,7 @@
           "source_id": "huggingface_daily_papers",
           "title": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
           "url": "https://huggingface.co/papers/2611.06741",
-          "score": 0.499,
+          "score": 0.5,
           "trust_tier": "research"
         },
         {
@@ -114,41 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-06T18:44:08+00:00",
-      "updatedAt": "2026-11-06T18:44:08+00:00",
+      "publishedAt": "2026-11-06T23:57:29+00:00",
+      "updatedAt": "2026-11-06T23:57:29+00:00",
       "sortOrder": 1
     },
     {
-      "id": "multi-turn-image-editing",
-      "title_ar": "خدمة تحرير الصور متعددة التفاعلات",
-      "thesis_ar": "تطوير أدوات لتحرير الصور بشكل موثوق خلال تفاعلات متعددة يمكن أن يحسن من تجربة المستخدم في التطبيقات الإبداعية. مع تزايد الطلب على المحتوى المرئي، هذه فرصة ملائمة.",
-      "buyer_ar": "المصممون والمبدعون",
-      "sellable_product_ar": "أداة تحرير صور تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة تحرير صورة واحدة بتفاعل متعدد",
-      "tools_ar": "نموذج لغة، واجهة مستخدم، مكتبة تحرير الصور",
+      "id": "ai-agent-security-tools",
+      "title_ar": "أدوات أمان لوكلاء الذكاء الاصطناعي",
+      "thesis_ar": "مع تزايد استخدام وكلاء الذكاء الاصطناعي، تزداد الحاجة إلى أدوات أمان لحماية البيانات وضمان موثوقية العمليات.",
+      "buyer_ar": "الشركات التي تستخدم وكلاء الذكاء الاصطناعي",
+      "sellable_product_ar": "حلول أمان لوكلاء الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم اختبار أمان مجاني لوكيل واحد",
+      "tools_ar": "نموذج ذكاء اصطناعي، أدوات أمان الشبكات، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2611.06741",
-        "huggingface_daily_papers:2611.07510",
-        "huggingface_daily_papers:2611.07613"
+        "2611.06585v1",
+        "1152497359",
+        "2611.07510v1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.5,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
-          "url": "https://huggingface.co/papers/2611.06741",
-          "score": 0.499,
+          "source_id": "arxiv_papers",
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "http://arxiv.org/abs/2611.06585v1",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PAYWORTHY: Can LLMs Predict Which Freelance Jobs an AI Agent Will Complete?",
+          "url": "http://arxiv.org/abs/2611.05759v1",
+          "score": 0.509,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
-          "url": "https://huggingface.co/papers/2611.07613",
-          "score": 0.484,
+          "title": "EvoMemState: Evolving Memory State for Personal Agents",
+          "url": "https://huggingface.co/papers/2611.03743",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
+          "url": "https://huggingface.co/papers/2611.06741",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
+          "url": "https://huggingface.co/papers/2611.06976",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DelegateEval: Evaluating Platforms for Personal External Service Agents",
+          "url": "http://arxiv.org/abs/2611.07508v1",
+          "score": 0.491,
           "trust_tier": "research"
         }
       ],
@@ -157,11 +213,82 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-06T18:44:08+00:00",
-      "updatedAt": "2026-11-06T18:44:08+00:00",
+      "publishedAt": "2026-11-06T23:57:29+00:00",
+      "updatedAt": "2026-11-06T23:57:29+00:00",
       "sortOrder": 2
+    },
+    {
+      "id": "multi-turn-image-editing",
+      "title_ar": "أداة تحرير الصور متعددة المراحل",
+      "thesis_ar": "تزايد الطلب على أدوات تحرير الصور القادرة على التعامل مع التعديلات المتكررة بدون فقدان الجودة. التطورات في نموذج TailSteer تدعم هذا الاتجاه.",
+      "buyer_ar": "المصممين والمصورين",
+      "sellable_product_ar": "أداة تحرير صور تعتمد على الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم تجربة مجانية لمدة أسبوع مع خيارات مدفوعة لاحقًا",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، مكتبة صور",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "2611.06741",
+        "2611.07510v1",
+        "2611.07508v1"
+      ],
+      "confidence": 0.65,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "http://arxiv.org/abs/2611.06585v1",
+          "score": 0.512,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PAYWORTHY: Can LLMs Predict Which Freelance Jobs an AI Agent Will Complete?",
+          "url": "http://arxiv.org/abs/2611.05759v1",
+          "score": 0.509,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "EvoMemState: Evolving Memory State for Personal Agents",
+          "url": "https://huggingface.co/papers/2611.03743",
+          "score": 0.504,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
+          "url": "https://huggingface.co/papers/2611.06741",
+          "score": 0.5,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
+          "url": "https://huggingface.co/papers/2611.06976",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "DelegateEval: Evaluating Platforms for Personal External Service Agents",
+          "url": "http://arxiv.org/abs/2611.07508v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "premium",
+      "status": "published",
+      "is_featured": false,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-06T23:57:29+00:00",
+      "updatedAt": "2026-11-06T23:57:29+00:00",
+      "sortOrder": 3
     }
   ],
-  "tiered_at": "2026-11-06T18:44:08+00:00",
+  "tiered_at": "2026-11-06T23:57:29+00:00",
   "free_preview_count": 3
 }
