@@ -1,90 +1,68 @@
 {
-  "generated_at": "2026-11-05T23:04:20+00:00",
+  "generated_at": "2026-11-06T04:05:28+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 853,
+  "corpus_count": 843,
   "opportunities": [
     {
-      "id": "video-dubbing-service",
-      "title_ar": "خدمة دبلجة الفيديو باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الطلب على محتوى الفيديو المترجم يدفع الحاجة إلى خدمات دبلجة فعالة. تقنية دبلجة الفيديو الجديدة يمكن أن تقدم حلولًا مبتكرة للشركات والمبدعين.",
-      "buyer_ar": "شركات الإنتاج الإعلامي، المبدعين، منصات الفيديو",
-      "sellable_product_ar": "خدمة دبلجة فيديو تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم دبلجة مجانية لفيديو قصير مع إمكانية تقييم الجودة",
-      "tools_ar": "نموذج VidDub، أدوات تحرير الفيديو، واجهة برمجة التطبيقات",
+      "id": "personal-external-service-agents",
+      "title_ar": "تطوير وكلاء خدمات شخصية خارجية",
+      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي في تقديم الخدمات الشخصية يعكس حاجة السوق إلى حلول فعالة. يمكن لوكلاء الخدمات الشخصية أن يقدموا قيمة مضافة للأفراد من خلال تحسين إدارة الوقت والموارد.",
+      "buyer_ar": "الأفراد المحترفون والشركات الصغيرة",
+      "sellable_product_ar": "منصة لوكلاء الخدمات الشخصية المدعومة بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة تجريبية مجانية لمدة شهر مع خيار الاشتراك المدفوع",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، نظام إدارة العملاء",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2611.03404",
-        "huggingface_daily_papers:2611.06728",
-        "huggingface_models:waveshaker/loras_tools"
+        "2611.07508v1",
+        "2611.05759v1",
+        "2611.06585v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
+      "signal_count": 6,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "VidDub: Replacement-Aware Distillation for Two-Step Video Dubbing",
-          "url": "https://huggingface.co/papers/2611.03404",
-          "score": 0.5,
+          "source_id": "arxiv_papers",
+          "title": "DelegateEval: Evaluating Platforms for Personal External Service Agents",
+          "url": "http://arxiv.org/abs/2611.07508v1",
+          "score": 0.531,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PAYWORTHY: Can LLMs Predict Which Freelance Jobs an AI Agent Will Complete?",
+          "url": "http://arxiv.org/abs/2611.05759v1",
+          "score": 0.511,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_models",
-          "title": "waveshaker/loras_tools — text-to-image",
-          "url": "https://huggingface.co/waveshaker/loras_tools",
-          "score": 0.488,
+          "title": "mcp-tool-shop/portlight-ships-anatomy-lora — text-to-image",
+          "url": "https://huggingface.co/mcp-tool-shop/portlight-ships-anatomy-lora",
+          "score": 0.503,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
-          "url": "https://huggingface.co/papers/2611.06728",
-          "score": 0.483,
+          "source_id": "arxiv_papers",
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "http://arxiv.org/abs/2611.06585v1",
+          "score": 0.497,
           "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-05T23:04:20+00:00",
-      "updatedAt": "2026-11-05T23:04:20+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multi-turn-reinforcement-learning-tool",
-      "title_ar": "أداة لتحسين أداء الوكلاء باستخدام التعلم المعزز متعدد الأدوار",
-      "thesis_ar": "تطبيقات الوكلاء الذكيين تتطلب تحسينات مستمرة. التعلم المعزز متعدد الأدوار يمكن أن يحسن من كفاءة الأداء في المهام الطويلة.",
-      "buyer_ar": "شركات تطوير البرمجيات، فرق البحث والتطوير",
-      "sellable_product_ar": "أداة لتحسين أداء الوكلاء الذكيين",
-      "first_paid_test_ar": "تقديم تجربة مجانية لتحسين أداء وكيل في مهمة محددة",
-      "tools_ar": "نموذج التعلم المعزز، أدوات تحليل الأداء، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2611.06483",
-        "huggingface_daily_papers:2611.06728",
-        "arxiv_papers:2611.06254"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
-      "evidence_items": [
+        },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?",
-          "url": "https://huggingface.co/papers/2611.06483",
+          "source_id": "arxiv_papers",
+          "title": "Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+          "url": "http://arxiv.org/abs/2611.08219v1",
           "score": 0.495,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
-          "url": "https://huggingface.co/papers/2611.06728",
-          "score": 0.483,
+          "source_id": "arxiv_papers",
+          "title": "Stress Testing Chain-of-Thought Monitoring Against Covert Misalignment",
+          "url": "http://arxiv.org/abs/2611.07586v1",
+          "score": 0.495,
           "trust_tier": "research"
         }
       ],
@@ -93,11 +71,153 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-05T23:04:20+00:00",
-      "updatedAt": "2026-11-05T23:04:20+00:00",
+      "publishedAt": "2026-11-06T04:05:28+00:00",
+      "updatedAt": "2026-11-06T04:05:28+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "agentic-ai-in-chemical-engineering",
+      "title_ar": "منصة ذكاء اصطناعي في الهندسة الكيميائية",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في مجالات الهندسة الكيميائية يوفر فرصاً جديدة لتحسين الكفاءة. المنصات المفتوحة تعزز التعاون بين المهندسين وتسمح بتطوير حلول مبتكرة.",
+      "buyer_ar": "شركات الهندسة الكيميائية والبحث والتطوير",
+      "sellable_product_ar": "منصة مفتوحة للذكاء الاصطناعي في الهندسة الكيميائية",
+      "first_paid_test_ar": "تقديم مشروع تجريبي لحسابات كيميائية محددة",
+      "tools_ar": "نموذج ذكاء اصطناعي، أدوات حسابية، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2611.07947v1",
+        "2611.07586v1",
+        "2611.08134v1"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "DelegateEval: Evaluating Platforms for Personal External Service Agents",
+          "url": "http://arxiv.org/abs/2611.07508v1",
+          "score": 0.531,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PAYWORTHY: Can LLMs Predict Which Freelance Jobs an AI Agent Will Complete?",
+          "url": "http://arxiv.org/abs/2611.05759v1",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mcp-tool-shop/portlight-ships-anatomy-lora — text-to-image",
+          "url": "https://huggingface.co/mcp-tool-shop/portlight-ships-anatomy-lora",
+          "score": 0.503,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "http://arxiv.org/abs/2611.06585v1",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+          "url": "http://arxiv.org/abs/2611.08219v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Stress Testing Chain-of-Thought Monitoring Against Covert Misalignment",
+          "url": "http://arxiv.org/abs/2611.07586v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-06T04:05:28+00:00",
+      "updatedAt": "2026-11-06T04:05:28+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "self-hosted-ai-solutions",
+      "title_ar": "حلول ذكاء اصطناعي مستضافة ذاتياً",
+      "thesis_ar": "تزايد الاعتماد على الحلول المستضافة ذاتياً يوفر تحكمًا أكبر وتكلفة أقل. الشركات تبحث عن طرق لتقليل التكاليف وزيادة الكفاءة.",
+      "buyer_ar": "الشركات الناشئة والمتوسطة",
+      "sellable_product_ar": "خدمات استضافة وتكامل حلول الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة استضافة مجانية لمدة شهر مع دعم فني",
+      "tools_ar": "خوادم، نماذج ذكاء اصطناعي، أدوات إدارة",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "2611.08116v1",
+        "2611.07510v1",
+        "2611.08428v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 6,
+      "avg_score": 0.51,
+      "evidence_items": [
+        {
+          "source_id": "arxiv_papers",
+          "title": "DelegateEval: Evaluating Platforms for Personal External Service Agents",
+          "url": "http://arxiv.org/abs/2611.07508v1",
+          "score": 0.531,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PAYWORTHY: Can LLMs Predict Which Freelance Jobs an AI Agent Will Complete?",
+          "url": "http://arxiv.org/abs/2611.05759v1",
+          "score": 0.511,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "mcp-tool-shop/portlight-ships-anatomy-lora — text-to-image",
+          "url": "https://huggingface.co/mcp-tool-shop/portlight-ships-anatomy-lora",
+          "score": 0.503,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "http://arxiv.org/abs/2611.06585v1",
+          "score": 0.497,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+          "url": "http://arxiv.org/abs/2611.08219v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Stress Testing Chain-of-Thought Monitoring Against Covert Misalignment",
+          "url": "http://arxiv.org/abs/2611.07586v1",
+          "score": 0.495,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-06T04:05:28+00:00",
+      "updatedAt": "2026-11-06T04:05:28+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-05T23:04:20+00:00",
+  "tiered_at": "2026-11-06T04:05:28+00:00",
   "free_preview_count": 3
 }
