@@ -1,147 +1,47 @@
 {
-  "generated_at": "2026-11-10T03:58:21+00:00",
+  "generated_at": "2026-11-10T12:01:08+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 825,
+  "corpus_count": 818,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي مخصص يعزز من الحاجة لنماذج تحويل النص إلى صورة. مع تحديثات النماذج المتعددة، هناك فرصة لتقديم خدمات تصميم فني مبتكرة.",
-      "buyer_ar": "العلامات التجارية، وكالات التسويق، والمصممين المستقلين",
-      "sellable_product_ar": "خدمة تصميم فني باستخدام نماذج تحويل النص إلى صورة",
-      "first_paid_test_ar": "إنشاء صورة مخصصة بناءً على نص محدد لعميل محتمل",
-      "tools_ar": "Hugging Face models, أدوات التصميم الجرافيكي, منصة تسويق",
-      "capital_ar": "منخفض",
+      "id": "agentic-visual-reasoning",
+      "title_ar": "تطوير نماذج التعلم المعزز للذكاء الاصطناعي البصري",
+      "thesis_ar": "تزايد الاهتمام بتقنيات التعلم المعزز يمكن أن يفتح آفاقًا جديدة في تطوير نماذج الذكاء الاصطناعي البصري. هذه النماذج يمكن أن تعزز من قدرات التطبيقات في مجالات متعددة مثل الروبوتات والتفاعل البشري.",
+      "buyer_ar": "شركات التكنولوجيا والروبوتات",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي بصري متطور",
+      "first_paid_test_ar": "تقديم نموذج أولي لمهمة محددة في بيئة تحكم",
+      "tools_ar": "أدوات تعلم الآلة، بيئة اختبار، بيانات تدريب",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:dollybeans/ADollsVoice",
-        "huggingface_models:abide1622/moss-lora-lipbiting-v2",
-        "huggingface_models:Omnico/Krea2_turbo_diff_loras"
+        "huggingface_daily_papers:2611.12886",
+        "huggingface_daily_papers:2611.08935",
+        "huggingface_daily_papers:2611.12762"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.49,
+      "avg_score": 0.51,
       "evidence_items": [
         {
-          "source_id": "huggingface_models",
-          "title": "dollybeans/ADollsVoice — text-to-image",
-          "url": "https://huggingface.co/dollybeans/ADollsVoice",
-          "score": 0.499,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+          "url": "https://huggingface.co/papers/2611.12886",
+          "score": 0.546,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "abide1622/moss-lora-lipbiting-v2 — text-to-image",
-          "url": "https://huggingface.co/abide1622/moss-lora-lipbiting-v2",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "huggingface_daily_papers",
+          "title": "SkinMind: Equipping Agentic RAG with Human-Inspired Graph Probing for Reliable Dermatology AI",
+          "url": "https://huggingface.co/papers/2611.08935",
+          "score": 0.505,
+          "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "Omnico/Krea2_turbo_diff_loras — text-to-image",
-          "url": "https://huggingface.co/Omnico/Krea2_turbo_diff_loras",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-10T03:58:21+00:00",
-      "updatedAt": "2026-11-10T03:58:21+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-generation-tools",
-      "title_ar": "تطوير أدوات توليد النصوص",
-      "thesis_ar": "تزايد الاعتماد على أدوات توليد النصوص في مختلف المجالات مثل التسويق والمحتوى الرقمي. النماذج الجديدة توفر إمكانيات متقدمة لتوليد نصوص مخصصة.",
-      "buyer_ar": "شركات التسويق، المدونين، والمحتوى الرقمي",
-      "sellable_product_ar": "أداة توليد نصوص مخصصة تعتمد على نماذج حديثة",
-      "first_paid_test_ar": "توليد نص تسويقي لمنتج أو خدمة معينة",
-      "tools_ar": "Hugging Face models, أدوات تحليل البيانات, منصة تسويق",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:KSKOOO/HakuChat-7B-Code",
-        "huggingface_models:litert-community/Gemma3-1B-IT",
-        "huggingface_models:Futuremannn/tm12b-gguf"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "KSKOOO/HakuChat-7B-Code — text-generation",
-          "url": "https://huggingface.co/KSKOOO/HakuChat-7B-Code",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "litert-community/Gemma3-1B-IT — text-generation",
-          "url": "https://huggingface.co/litert-community/Gemma3-1B-IT",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Futuremannn/tm12b-gguf — text-generation",
-          "url": "https://huggingface.co/Futuremannn/tm12b-gguf",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-10T03:58:21+00:00",
-      "updatedAt": "2026-11-10T03:58:21+00:00",
-      "sortOrder": 1
-    },
-    {
-      "id": "multimodal-knowledge-organization",
-      "title_ar": "تطوير نظام تنظيم المعرفة متعدد الوسائط",
-      "thesis_ar": "زيادة تعقيد التطبيقات الحقيقية يتطلب حلول تنظيم المعرفة بشكل فعال. النماذج الجديدة تدعم تطوير أنظمة متعددة الوسائط.",
-      "buyer_ar": "شركات التكنولوجيا، مؤسسات البحث، والجامعات",
-      "sellable_product_ar": "نظام تنظيم المعرفة متعدد الوسائط يعتمد على النماذج الحديثة",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام تنظيم المعرفة لعميل محتمل",
-      "tools_ar": "Hugging Face models, أدوات تحليل البيانات, منصة تطوير البرمجيات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2611.10657v1",
-        "huggingface_models:nace-ai/Qwen3.5-9B-MLX-4bit-KQuant",
-        "huggingface_models:nace-ai/Qwen3.5-4B-MLX-4bit-KQuant"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "nace-ai/Qwen3.5-9B-MLX-4bit-KQuant — image-text-to-text",
-          "url": "https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-4bit-KQuant",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "nace-ai/Qwen3.5-4B-MLX-4bit-KQuant — image-text-to-text",
-          "url": "https://huggingface.co/nace-ai/Qwen3.5-4B-MLX-4bit-KQuant",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "MMGraph-Agent: Agentic Multimodal RAG via Cache-Inspired Multimodal Knowledge HyperGraphs",
-          "url": "http://arxiv.org/abs/2611.10657v1",
-          "score": 0.468,
+          "source_id": "huggingface_daily_papers",
+          "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+          "url": "https://huggingface.co/papers/2611.12762",
+          "score": 0.486,
           "trust_tier": "research"
         }
       ],
@@ -150,11 +50,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-10T03:58:21+00:00",
-      "updatedAt": "2026-11-10T03:58:21+00:00",
+      "publishedAt": "2026-11-10T12:01:08+00:00",
+      "updatedAt": "2026-11-10T12:01:08+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "reliable-dermatology-ai",
+      "title_ar": "تطوير ذكاء اصطناعي موثوق في dermatology",
+      "thesis_ar": "تزايد الحاجة إلى حلول ذكاء اصطناعي موثوقة في مجال الأمراض الجلدية يفتح المجال لتطوير أدوات جديدة. الوصول إلى مصادر موثوقة ومتنوعة يعزز من جودة النتائج.",
+      "buyer_ar": "مراكز الرعاية الصحية والعيادات",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل الأمراض الجلدية",
+      "first_paid_test_ar": "تجربة النظام مع مجموعة من الحالات الجلدية",
+      "tools_ar": "نظام ذكاء اصطناعي، قاعدة بيانات طبية، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2611.08935",
+        "arxiv_papers:2611.12377v1",
+        "huggingface_daily_papers:2611.12762"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "SkinMind: Equipping Agentic RAG with Human-Inspired Graph Probing for Reliable Dermatology AI",
+          "url": "https://huggingface.co/papers/2611.08935",
+          "score": 0.505,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "Detecting Shadow AI: Unsanctioned LLM Agents on Enterprise Endpoints: A Taxonomy, an Open Detector and a Controlled Evaluation",
+          "url": "http://arxiv.org/abs/2611.12377v1",
+          "score": 0.499,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+          "url": "https://huggingface.co/papers/2611.12762",
+          "score": 0.486,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-10T12:01:08+00:00",
+      "updatedAt": "2026-11-10T12:01:08+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "systematic-literature-reviews",
+      "title_ar": "أتمتة مراجعات الأدبيات باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تسريع عمليات مراجعة الأدبيات يمكن أن يوفر الوقت والجهد للباحثين. استخدام نماذج متعددة الوكلاء يمكن أن يحسن من دقة وكفاءة هذه العمليات.",
+      "buyer_ar": "المؤسسات الأكاديمية ومراكز البحث",
+      "sellable_product_ar": "أداة أتمتة لمراجعات الأدبيات",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لمراجعة أدبية محددة",
+      "tools_ar": "نموذج ذكاء اصطناعي، بيانات بحثية، واجهة مستخدم",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2611.12222v1",
+        "huggingface_daily_papers:2611.12762",
+        "huggingface_daily_papers:2611.12806"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+          "url": "https://huggingface.co/papers/2611.12806",
+          "score": 0.494,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment",
+          "url": "http://arxiv.org/abs/2611.12222v1",
+          "score": 0.489,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+          "url": "https://huggingface.co/papers/2611.12762",
+          "score": 0.486,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-10T12:01:08+00:00",
+      "updatedAt": "2026-11-10T12:01:08+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-10T03:58:21+00:00",
+  "tiered_at": "2026-11-10T12:01:08+00:00",
   "free_preview_count": 3
 }
