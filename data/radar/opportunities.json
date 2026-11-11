@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-11-10T19:05:58+00:00",
+  "generated_at": "2026-11-11T00:22:58+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 819,
+  "corpus_count": 831,
   "opportunities": [
     {
-      "id": "agentic-visual-reasoning",
-      "title_ar": "تطوير نماذج التعلم المعزز للذكاء الاصطناعي البصري",
-      "thesis_ar": "تزايد الحاجة إلى نماذج ذكاء اصطناعي قادرة على التفكير البصري واستخدام الأدوات. هذه فرصة لتطوير حلول مبتكرة في مجال التعلم المعزز لتحسين أداء النماذج.",
+      "id": "multi-teacher-visual-reasoning",
+      "title_ar": "تطوير أنظمة تعليم متعددة المعلمين للذكاء الاصطناعي البصري",
+      "thesis_ar": "تزايد الحاجة إلى أنظمة ذكاء اصطناعي قادرة على معالجة المعلومات البصرية بشكل فعال. توفر تقنيات التعلم المعزز المتعددة المعلمين فرصًا لتحسين أداء هذه الأنظمة.",
       "buyer_ar": "شركات التكنولوجيا والبحث العلمي",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل الصور واستخدام الأدوات",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل صور محددة",
-      "tools_ar": "أدوات التعلم العميق، مكتبات تحليل الصور، بيئات محاكاة",
+      "sellable_product_ar": "نظام ذكاء اصطناعي لتحليل الصور والفيديوهات",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحليل مجموعة بيانات صغيرة من الصور",
+      "tools_ar": "أدوات التعلم العميق، مكتبات معالجة الصور، بيئات تطوير البرمجيات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2611.12886",
         "huggingface_daily_papers:2611.08935",
-        "huggingface_daily_papers:2611.11450"
+        "arxiv_papers:2611.12222v1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.51,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
           "url": "https://huggingface.co/papers/2611.12886",
-          "score": 0.556,
+          "score": 0.52,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment",
+          "url": "http://arxiv.org/abs/2611.12222v1",
+          "score": 0.489,
           "trust_tier": "research"
         },
         {
           "source_id": "huggingface_daily_papers",
           "title": "SkinMind: Equipping Agentic RAG with Human-Inspired Graph Probing for Reliable Dermatology AI",
           "url": "https://huggingface.co/papers/2611.08935",
-          "score": 0.507,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "How Much Training-Inference Mismatch Can On-Policy Distillation Tolerate?",
-          "url": "https://huggingface.co/papers/2611.11450",
-          "score": 0.473,
+          "score": 0.471,
           "trust_tier": "research"
         }
       ],
@@ -50,111 +50,61 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-10T19:05:58+00:00",
-      "updatedAt": "2026-11-10T19:05:58+00:00",
+      "publishedAt": "2026-11-11T00:22:58+00:00",
+      "updatedAt": "2026-11-11T00:22:58+00:00",
       "sortOrder": 0
     },
     {
-      "id": "reliable-dermatology-ai",
-      "title_ar": "تطوير ذكاء اصطناعي موثوق في مجال الأمراض الجلدية",
-      "thesis_ar": "هناك حاجة متزايدة لذكاء اصطناعي موثوق في مجال الأمراض الجلدية. هذه فرصة لتطوير حلول تعتمد على الأدلة المتاحة لتحسين دقة التشخيص.",
-      "buyer_ar": "عيادات الأمراض الجلدية والمستشفيات",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتشخيص الأمراض الجلدية",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحليل حالات جلدية محددة",
-      "tools_ar": "أدوات تحليل البيانات، مكتبات التعلم العميق، قواعد بيانات طبية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_daily_papers:2611.08935",
-        "huggingface_daily_papers:2611.12806",
-        "huggingface_daily_papers:2611.11450"
-      ],
-      "confidence": 0.65,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "SkinMind: Equipping Agentic RAG with Human-Inspired Graph Probing for Reliable Dermatology AI",
-          "url": "https://huggingface.co/papers/2611.08935",
-          "score": 0.507,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
-          "url": "https://huggingface.co/papers/2611.12806",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "How Much Training-Inference Mismatch Can On-Policy Distillation Tolerate?",
-          "url": "https://huggingface.co/papers/2611.11450",
-          "score": 0.473,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": false,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-10T19:05:58+00:00",
-      "updatedAt": "2026-11-10T19:05:58+00:00",
-      "sortOrder": 1
-    },
-    {
       "id": "high-quality-swe-tasks",
-      "title_ar": "إنشاء مهام برمجية عالية الجودة للغات غير الممثلة",
-      "thesis_ar": "تزايد الطلب على مهام البرمجة عالية الجودة للغات غير الممثلة. هذه فرصة لتطوير منصة تقدم مهام برمجية متخصصة تلبي احتياجات السوق.",
-      "buyer_ar": "شركات البرمجيات والمطورين",
-      "sellable_product_ar": "منصة لمهام البرمجة عالية الجودة",
-      "first_paid_test_ar": "تقديم مجموعة من المهام البرمجية للغات غير الممثلة",
-      "tools_ar": "أدوات إدارة المشاريع، بيئات تطوير، مكتبات البرمجة",
-      "capital_ar": "متوسط",
+      "title_ar": "تطوير مهام عالية الجودة للغات البرمجة غير الممثلة",
+      "thesis_ar": "تزايد الطلب على أدوات البرمجة التي تدعم لغات البرمجة الأقل شهرة. يمكن أن يؤدي تحسين جودة المهام إلى زيادة الفعالية في تطوير البرمجيات.",
+      "buyer_ar": "شركات البرمجيات ومطورو التطبيقات",
+      "sellable_product_ar": "أداة لتحسين جودة مهام البرمجة",
+      "first_paid_test_ar": "تقديم نموذج أولي لأداة تقييم جودة المهام",
+      "tools_ar": "أدوات تحليل البيانات، مكتبات البرمجة، بيئات تطوير البرمجيات",
+      "capital_ar": "منخفض",
       "evidence_ids": [
         "huggingface_daily_papers:2611.10304",
-        "huggingface_daily_papers:2611.11450",
-        "huggingface_daily_papers:2611.12806"
+        "huggingface_models:tahamajs/qwen-2.5-0.5b-spectraformer-attention-wikitext2",
+        "huggingface_models:siliconperception/vla"
       ],
-      "confidence": 0.6,
+      "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.5,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "Longtail-SWE: High-Quality SWE Tasks for Underrepresented Languages",
           "url": "https://huggingface.co/papers/2611.10304",
-          "score": 0.536,
+          "score": 0.5,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
-          "url": "https://huggingface.co/papers/2611.12806",
-          "score": 0.494,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "tahamajs/qwen-2.5-0.5b-spectraformer-attention-wikitext2 — text-generation",
+          "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-spectraformer-attention-wikitext2",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "How Much Training-Inference Mismatch Can On-Policy Distillation Tolerate?",
-          "url": "https://huggingface.co/papers/2611.11450",
-          "score": 0.473,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "siliconperception/vla — text-generation",
+          "url": "https://huggingface.co/siliconperception/vla",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": false,
+      "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-10T19:05:58+00:00",
-      "updatedAt": "2026-11-10T19:05:58+00:00",
-      "sortOrder": 2
+      "publishedAt": "2026-11-11T00:22:58+00:00",
+      "updatedAt": "2026-11-11T00:22:58+00:00",
+      "sortOrder": 1
     }
   ],
-  "tiered_at": "2026-11-10T19:05:58+00:00",
+  "tiered_at": "2026-11-11T00:22:58+00:00",
   "free_preview_count": 3
 }
