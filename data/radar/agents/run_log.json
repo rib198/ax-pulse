@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-11-12T04:49:25+00:00",
+  "run_at": "2026-11-12T14:15:35+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 23.733,
+      "duration_s": 19.684,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 333 signals from 31 source families",
+        "collected 340 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.009,
       "written": [],
       "notes": [
         "injected 493 manual X items (skipped 7 of 500, avg score 0.146)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 826 items",
-        "by tier: press=520, official=157, research=125, community=24"
+        "tagged 833 items",
+        "by tier: press=521, official=156, research=125, community=31"
       ],
       "error": null
     },
@@ -72,19 +72,19 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.033,
+      "duration_s": 0.027,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 826 items, top priority=0.501"
+        "ranked 833 items, top priority=0.512"
       ],
       "error": null
     },
     {
       "agent": "companies_detector",
       "ok": true,
-      "duration_s": 0.014,
+      "duration_s": 0.012,
       "written": [
         "data/radar/agents/companies.json"
       ],
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.076,
+      "duration_s": 0.059,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+33 new model events",
+        "+25 new model events",
         "300 total"
       ],
       "error": null
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.179,
+      "duration_s": 0.14,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "19 events (9 new)",
-        "by type: model_release=11, pricing_change=5, acquisition=2, policy_signal=1"
+        "17 events (1 new)",
+        "by type: model_release=9, pricing_change=5, acquisition=2, policy_signal=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.018,
+      "duration_s": 0.016,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 9.391,
+      "duration_s": 10.772,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 7.295,
+      "duration_s": 10.599,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -160,7 +160,7 @@
     {
       "agent": "access_tier",
       "ok": true,
-      "duration_s": 0.034,
+      "duration_s": 0.031,
       "written": [
         "data/radar/opportunities.json",
         "data/radar/signals.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 7.196,
+      "duration_s": 7.312,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=826, opps=3, calls=3"
+        "items=833, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 2.637,
+      "duration_s": 3.099,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: يزداد تركيز النشاط على التغييرات في الأسعار والإصدارات الجديدة، حيث سجلنا 4 إشا…"
+        "insight via openai: شهدت الفترة الحالية زيادة ملحوظة في نشاط الإصدارات من Anthropic، حيث تم إصدار ن…"
       ],
       "error": null
     },
