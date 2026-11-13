@@ -1,47 +1,90 @@
 {
-  "generated_at": "2026-11-13T02:25:11+00:00",
+  "generated_at": "2026-11-13T11:46:09+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 827,
+  "corpus_count": 830,
   "opportunities": [
     {
-      "id": "saas-automation-workflows",
-      "title_ar": "أتمتة سير العمل في SaaS",
-      "thesis_ar": "تزايد استخدام نماذج اللغة الكبيرة في أتمتة سير العمل يفتح المجال لتطوير حلول SaaS مبتكرة. هذه فرصة لتقديم خدمات أتمتة مخصصة تلبي احتياجات الأعمال المختلفة.",
-      "buyer_ar": "شركات البرمجيات كخدمة (SaaS) والمشاريع الصغيرة والمتوسطة",
-      "sellable_product_ar": "خدمات أتمتة سير العمل باستخدام نماذج اللغة الكبيرة",
-      "first_paid_test_ar": "تقديم مشروع تجريبي لأتمتة عملية محددة في شركة صغيرة",
-      "tools_ar": "نماذج اللغة الكبيرة، أدوات SaaS، واجهات برمجة التطبيقات",
-      "capital_ar": "منخفض",
+      "id": "video-generation-physical-dynamics",
+      "title_ar": "تحسين نماذج توليد الفيديو من خلال الديناميات الفيزيائية",
+      "thesis_ar": "تواجه نماذج توليد الفيديو تحديات في الديناميات الفيزيائية والاتساق السببي. مع تقدم الذكاء الاصطناعي، هناك فرصة لتطوير نماذج جديدة تتجاوز هذه القيود وتقدم محتوى مرئي أكثر واقعية.",
+      "buyer_ar": "شركات إنتاج الفيديو وصناعة الألعاب",
+      "sellable_product_ar": "خدمة تطوير نماذج توليد الفيديو المتقدمة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد فيديو قصير مع ديناميات فيزيائية محسنة",
+      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، مكتبات التعلم العميق، بيئات محاكاة",
+      "capital_ar": "متوسط",
       "evidence_ids": [
-        "arxiv_papers:2611.14808v1",
-        "huggingface_daily_papers:2611.10193",
-        "huggingface_models:mkenfenheuer/qwen2.5-3b-homeassistant-GGUF"
+        "huggingface_daily_papers:2611.16748",
+        "huggingface_daily_papers:2611.17060",
+        "huggingface_models:infosave/Apex-35B-V1.0-cmf"
       ],
       "confidence": 0.8,
       "source": "openai",
       "signal_count": 3,
+      "avg_score": 0.5,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+          "url": "https://huggingface.co/papers/2611.16748",
+          "score": 0.537,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
+          "url": "https://huggingface.co/papers/2611.17060",
+          "score": 0.488,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "infosave/Apex-35B-V1.0-cmf — text-generation",
+          "url": "https://huggingface.co/infosave/Apex-35B-V1.0-cmf",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-13T11:46:09+00:00",
+      "updatedAt": "2026-11-13T11:46:09+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "ai-peer-review-systems",
+      "title_ar": "تطوير أنظمة مراجعة الأقران المدعومة بالذكاء الاصطناعي",
+      "thesis_ar": "تستخدم أنظمة مراجعة الأقران المعتمدة على الذكاء الاصطناعي بشكل متزايد، مما يفتح المجال لتحسين دقة هذه الأنظمة. يمكن أن تكون هناك حاجة ملحة لتطوير أدوات تقييم موثوقة.",
+      "buyer_ar": "دور النشر الأكاديمية ومراكز البحث",
+      "sellable_product_ar": "خدمة مراجعة أقران مدعومة بالذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم خدمة مراجعة ورقة بحثية واحدة باستخدام النظام الجديد",
+      "tools_ar": "أدوات تحليل النصوص، مكتبات الذكاء الاصطناعي، منصات البحث الأكاديمي",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "arxiv_papers:2611.17052v1",
+        "huggingface_daily_papers:2611.00359",
+        "huggingface_daily_papers:2611.16986"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
       "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "arxiv_papers",
-          "title": "OverServe: Resource Amplification Attacks on SaaS Agents via Tool--Prompt Co-Design",
-          "url": "http://arxiv.org/abs/2611.14808v1",
-          "score": 0.512,
+          "title": "Auditing AI peer reviewers: a benchmark on real scientific papers",
+          "url": "http://arxiv.org/abs/2611.17052v1",
+          "score": 0.494,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "mkenfenheuer/qwen2.5-3b-homeassistant-GGUF — text-generation",
-          "url": "https://huggingface.co/mkenfenheuer/qwen2.5-3b-homeassistant-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_daily_papers",
-          "title": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
-          "url": "https://huggingface.co/papers/2611.10193",
-          "score": 0.479,
+          "title": "Humanized but Still True? Auditing Facts and Detection in AI-Text Humanizers",
+          "url": "https://huggingface.co/papers/2611.00359",
+          "score": 0.49,
           "trust_tier": "research"
         }
       ],
@@ -50,111 +93,54 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-13T02:25:11+00:00",
-      "updatedAt": "2026-11-13T02:25:11+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "intelligent-home-solutions",
-      "title_ar": "حلول المنزل الذكي الذكية",
-      "thesis_ar": "تزايد استخدام نماذج توليد النصوص في تطبيقات المنزل الذكي يتيح إنشاء حلول مبتكرة. يمكن استغلال هذا الاتجاه لتطوير واجهات تفاعلية للمستخدمين.",
-      "buyer_ar": "شركات التكنولوجيا المنزلية والمستخدمين النهائيين",
-      "sellable_product_ar": "تطبيقات منزل ذكي تعتمد على الذكاء الاصطناعي",
-      "first_paid_test_ar": "تطوير نموذج أولي لتطبيق منزلي ذكي واختباره مع مجموعة من المستخدمين",
-      "tools_ar": "نماذج توليد النصوص، أجهزة المنزل الذكي، واجهات المستخدم",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:mkenfenheuer/qwen2.5-3b-homeassistant-GGUF",
-        "huggingface_models:waveshaker/loras_tools",
-        "huggingface_models:Vxtzq/Crowd-v1"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "mkenfenheuer/qwen2.5-3b-homeassistant-GGUF — text-generation",
-          "url": "https://huggingface.co/mkenfenheuer/qwen2.5-3b-homeassistant-GGUF",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "waveshaker/loras_tools — text-to-image",
-          "url": "https://huggingface.co/waveshaker/loras_tools",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Vxtzq/Crowd-v1 — text-generation",
-          "url": "https://huggingface.co/Vxtzq/Crowd-v1",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-13T02:25:11+00:00",
-      "updatedAt": "2026-11-13T02:25:11+00:00",
+      "publishedAt": "2026-11-13T11:46:09+00:00",
+      "updatedAt": "2026-11-13T11:46:09+00:00",
       "sortOrder": 1
     },
     {
-      "id": "cost-aware-llm-inference",
-      "title_ar": "تحسين تكلفة استنتاج نماذج اللغة الكبيرة",
-      "thesis_ar": "تزايد الحاجة لتحقيق توازن بين جودة الاستجابة وتكلفة الاستنتاج في الخدمات القائمة على الويب. يمكن استغلال هذا لتحسين كفاءة النماذج.",
-      "buyer_ar": "شركات التكنولوجيا التي تعتمد على نماذج اللغة الكبيرة",
-      "sellable_product_ar": "خدمات تحسين تكلفة استنتاج نماذج اللغة الكبيرة",
-      "first_paid_test_ar": "تقديم تحليل تكلفة استنتاج لنموذج محدد في مشروع تجريبي",
-      "tools_ar": "نماذج اللغة الكبيرة، أدوات تحليل البيانات، خوارزميات تحسين",
+      "id": "multi-agent-systems",
+      "title_ar": "تطوير أنظمة متعددة الوكلاء للبحث العميق",
+      "thesis_ar": "تعتبر أنظمة البحث متعددة الوكلاء وسيلة فعالة لتحسين كفاءة البحث، ومع تطور الذكاء الاصطناعي، يمكن تحسين التنسيق بين الوكلاء بشكل كبير.",
+      "buyer_ar": "مراكز البحث والتطوير في الجامعات والشركات",
+      "sellable_product_ar": "نظام بحث متعدد الوكلاء لتحسين الكفاءة",
+      "first_paid_test_ar": "تقديم نظام بحث بسيط لمركز بحثي",
+      "tools_ar": "أدوات البرمجة، مكتبات الذكاء الاصطناعي، بيئات المحاكاة",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2611.10193",
-        "arxiv_papers:2611.15006v1",
-        "arxiv_papers:2611.14407v1"
+        "arxiv_papers:2611.17041v1",
+        "arxiv_papers:2611.16991v1",
+        "arxiv_papers:2611.17041v1"
       ],
-      "confidence": 0.7,
+      "confidence": 0.65,
       "source": "openai",
-      "signal_count": 3,
+      "signal_count": 2,
       "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
-          "url": "https://huggingface.co/papers/2611.10193",
-          "score": 0.479,
+          "source_id": "arxiv_papers",
+          "title": "From Delegation to Coordination: Learning Efficient Multi-Agent Deep Research",
+          "url": "http://arxiv.org/abs/2611.17041v1",
+          "score": 0.482,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "Causal Concept Explanations for Deep Neural Models",
-          "url": "http://arxiv.org/abs/2611.14407v1",
-          "score": 0.479,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "EvoX: Rethinking the Agent Harness as a Runtime Policy",
-          "url": "http://arxiv.org/abs/2611.15006v1",
-          "score": 0.468,
+          "title": "AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design",
+          "url": "http://arxiv.org/abs/2611.16991v1",
+          "score": 0.482,
           "trust_tier": "research"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-13T02:25:11+00:00",
-      "updatedAt": "2026-11-13T02:25:11+00:00",
+      "publishedAt": "2026-11-13T11:46:09+00:00",
+      "updatedAt": "2026-11-13T11:46:09+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-13T02:25:11+00:00",
+  "tiered_at": "2026-11-13T11:46:09+00:00",
   "free_preview_count": 3
 }
