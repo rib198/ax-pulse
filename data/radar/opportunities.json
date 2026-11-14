@@ -1,41 +1,84 @@
 {
-  "generated_at": "2026-11-14T16:18:29+00:00",
+  "generated_at": "2026-11-14T21:51:12+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
   "corpus_count": 835,
   "opportunities": [
     {
-      "id": "cybersecurity-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي للأمن السيبراني",
-      "thesis_ar": "تزايد الحاجة لحماية البيانات والأنظمة من التهديدات السيبرانية يجعل من الضروري تطوير حلول مبتكرة. النماذج الجديدة التي تم تحديثها تقدم إمكانيات متقدمة في الأمن السيبراني.",
-      "buyer_ar": "شركات التقنية، المؤسسات المالية، والجهات الحكومية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل التهديدات السيبرانية وتقديم حلول استباقية",
-      "first_paid_test_ar": "تقديم استشارة مجانية مع تحليل أولي للتهديدات",
-      "tools_ar": "نموذج Hugging Face، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على محتوى مرئي مخصص يعزز من فرص استخدام نماذج تحويل النص إلى صورة. هذه التقنية تفتح آفاق جديدة في مجالات التسويق والإعلانات.",
+      "buyer_ar": "شركات التسويق والإعلانات",
+      "sellable_product_ar": "خدمة تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "إنشاء نموذج بسيط لتحويل نصوص محددة إلى صور واستخدامه في حملة إعلانية صغيرة",
+      "tools_ar": "Hugging Face, PyTorch, أدوات تصميم الجرافيك",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "CyberBuddyAI/CyberBuddy-CloudSec-9B-GGUF",
-        "CyberBuddyAI/CyberBuddy-CyberOps-9B-GGUF",
-        "CyberBuddyAI/CyberBuddy-Sleeper-Spy-CloudSec-9B-GGUF"
+        "huggingface_models:OpenBloom/runtime-releases",
+        "huggingface_models:pabloyuan/melal",
+        "huggingface_models:neph1/1980s_Movies_AiO_LoRA_Minimax_H3"
       ],
-      "confidence": 0.8,
+      "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.47,
+      "signal_count": 3,
+      "avg_score": 0.49,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "CyberBuddyAI/CyberBuddy-CloudSec-9B-GGUF — text-generation",
-          "url": "https://huggingface.co/CyberBuddyAI/CyberBuddy-CloudSec-9B-GGUF",
+          "title": "OpenBloom/runtime-releases — text-to-image",
+          "url": "https://huggingface.co/OpenBloom/runtime-releases",
+          "score": 0.499,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "neph1/1980s_Movies_AiO_LoRA_Minimax_H3 — text-to-image",
+          "url": "https://huggingface.co/neph1/1980s_Movies_AiO_LoRA_Minimax_H3",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
-          "url": "https://huggingface.co/papers/2611.08219",
-          "score": 0.472,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "pabloyuan/melal — text-to-image",
+          "url": "https://huggingface.co/pabloyuan/melal",
+          "score": 0.488,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-14T21:51:12+00:00",
+      "updatedAt": "2026-11-14T21:51:12+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-generation-for-conversational-ai",
+      "title_ar": "تطوير نماذج توليد النصوص للمحادثات",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في المحادثات الرقمية يتطلب نماذج توليد نصوص فعالة. هذه النماذج يمكن أن تحسن تجربة المستخدم في التطبيقات المختلفة.",
+      "buyer_ar": "شركات تطوير البرمجيات",
+      "sellable_product_ar": "خدمة تطوير نماذج توليد النصوص للمحادثات",
+      "first_paid_test_ar": "إنشاء نموذج محادثة بسيط واختباره مع مجموعة صغيرة من المستخدمين",
+      "tools_ar": "Hugging Face, PyTorch, أدوات تطوير البرمجيات",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:netplas/nexus-nano_0.5_v15",
+        "huggingface_models:smart-force/xandra-training-state",
+        "huggingface_models:SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent-estate-sft-v1"
+      ],
+      "confidence": 0.65,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "netplas/nexus-nano_0.5_v15 — text-generation",
+          "url": "https://huggingface.co/netplas/nexus-nano_0.5_v15",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
@@ -46,136 +89,72 @@
         },
         {
           "source_id": "huggingface_models",
-          "title": "yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep3 — text-generation",
-          "url": "https://huggingface.co/yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep3",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-gr0p5-exp-td2p0-tw5p0-q2-m-7 — text-generation",
-          "url": "https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-gr0p5-exp-td2p0-tw5p0-q2-m-7",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep2 — text-generation",
-          "url": "https://huggingface.co/yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep2",
+          "title": "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent-estate-sft-v1 — text-generation",
+          "url": "https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent-estate-sft-v1",
           "score": 0.466,
           "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-14T16:18:29+00:00",
-      "updatedAt": "2026-11-14T16:18:29+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "multimodal-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي متعددة الوسائط",
-      "thesis_ar": "تزايد استخدام البيانات النصية والصورية في التطبيقات يتطلب تطوير نماذج ذكاء اصطناعي قادرة على التعامل مع كلا النوعين. النماذج الجديدة تقدم إمكانيات متقدمة في هذا المجال.",
-      "buyer_ar": "شركات التقنية، وكالات الإعلان، والجهات التعليمية",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل البيانات النصية والصورية معًا",
-      "first_paid_test_ar": "تقديم مشروع تجريبي لتحليل مجموعة بيانات صغيرة",
-      "tools_ar": "نموذج Hugging Face، أدوات تحليل البيانات، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:huaweilin/ViRA-27B",
-        "huggingface_models:btbtyler09/shrew-ocr-preview",
-        "huggingface_models:KORMo-VL/KORMo-Web-9B"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "huaweilin/ViRA-27B — image-text-to-text",
-          "url": "https://huggingface.co/huaweilin/ViRA-27B",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "btbtyler09/shrew-ocr-preview — image-text-to-text",
-          "url": "https://huggingface.co/btbtyler09/shrew-ocr-preview",
-          "score": 0.466,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "KORMo-VL/KORMo-Web-9B — image-text-to-text",
-          "url": "https://huggingface.co/KORMo-VL/KORMo-Web-9B",
-          "score": 0.466,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-14T16:18:29+00:00",
-      "updatedAt": "2026-11-14T16:18:29+00:00",
+      "publishedAt": "2026-11-14T21:51:12+00:00",
+      "updatedAt": "2026-11-14T21:51:12+00:00",
       "sortOrder": 1
     },
     {
-      "id": "ai-driven-productivity-agents",
-      "title_ar": "وكلاء الذكاء الاصطناعي لتحسين الإنتاجية",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في بيئات العمل يتطلب تطوير وكلاء ذكيين لتحسين الإنتاجية. الأبحاث الحالية تشير إلى تقدم كبير في هذا المجال.",
-      "buyer_ar": "شركات البرمجيات، المؤسسات الكبيرة، والشركات الناشئة",
-      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحسين العمليات الإدارية وزيادة الإنتاجية",
-      "first_paid_test_ar": "تقديم تجربة مجانية لمدة شهر مع تقييم الأداء",
-      "tools_ar": "نموذج Hugging Face، أدوات إدارة المشاريع، واجهة برمجة التطبيقات",
-      "capital_ar": "متوسط",
+      "id": "image-text-to-text-models",
+      "title_ar": "إنشاء نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "تزايد الحاجة لتحليل الصور وتوليد النصوص ذات الصلة، مما يعزز من استخدام هذه النماذج في مجالات مثل التعليم والرعاية الصحية.",
+      "buyer_ar": "مؤسسات التعليم والرعاية الصحية",
+      "sellable_product_ar": "خدمة تطوير نماذج تحويل الصورة إلى نص",
+      "first_paid_test_ar": "تطوير نموذج بسيط لتحويل صورة طبية إلى نصوص توضيحية واستخدامه في عيادة صغيرة",
+      "tools_ar": "Hugging Face, PyTorch, أدوات تحليل الصور",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_daily_papers:2611.08219",
-        "huggingface_models:yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep1",
-        "huggingface_models:yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep2"
+        "huggingface_models:bartowski/ScarletKc_ScarletKc-2.0-GGUF",
+        "huggingface_models:Karl28/MedJev-4B",
+        "huggingface_models:SourinC/qwen2.5-vl-3b-email-sms-spam-rslora-4bit"
       ],
-      "confidence": 0.7,
+      "confidence": 0.6,
       "source": "openai",
       "signal_count": 3,
       "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
-          "url": "https://huggingface.co/papers/2611.08219",
-          "score": 0.472,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "bartowski/ScarletKc_ScarletKc-2.0-GGUF — image-text-to-text",
+          "url": "https://huggingface.co/bartowski/ScarletKc_ScarletKc-2.0-GGUF",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep2 — text-generation",
-          "url": "https://huggingface.co/yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep2",
+          "title": "Karl28/MedJev-4B — image-text-to-text",
+          "url": "https://huggingface.co/Karl28/MedJev-4B",
           "score": 0.466,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep1 — text-generation",
-          "url": "https://huggingface.co/yungisimon/Qwen2.5-1.5B-giri-msq-entity_grping-ep1",
+          "title": "SourinC/qwen2.5-vl-3b-email-sms-spam-rslora-4bit — image-text-to-text",
+          "url": "https://huggingface.co/SourinC/qwen2.5-vl-3b-email-sms-spam-rslora-4bit",
           "score": 0.466,
           "trust_tier": "official"
         }
       ],
       "tier": "free",
       "status": "published",
-      "is_featured": true,
+      "is_featured": false,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-14T16:18:29+00:00",
-      "updatedAt": "2026-11-14T16:18:29+00:00",
+      "publishedAt": "2026-11-14T21:51:12+00:00",
+      "updatedAt": "2026-11-14T21:51:12+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-14T16:18:29+00:00",
+  "tiered_at": "2026-11-14T21:51:12+00:00",
   "free_preview_count": 3
 }
