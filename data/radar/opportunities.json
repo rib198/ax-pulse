@@ -1,98 +1,68 @@
 {
-  "generated_at": "2026-11-15T08:40:38+00:00",
+  "generated_at": "2026-11-15T16:46:38+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 833,
+  "corpus_count": 842,
   "opportunities": [
     {
       "id": "text-to-image-models",
       "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على محتوى مرئي مخصص يعزز من أهمية نماذج تحويل النص إلى صورة. التحديثات الأخيرة في نماذج Hugging Face تشير إلى تحسن كبير في الجودة والقدرات.",
-      "buyer_ar": "شركات التسويق الرقمي ووكالات التصميم",
-      "sellable_product_ar": "خدمات إنشاء محتوى مرئي مخصص باستخدام نماذج الذكاء الاصطناعي",
-      "first_paid_test_ar": "إنشاء 5 صور مخصصة بناءً على نصوص محددة",
-      "tools_ar": "Hugging Face, أدوات تصميم الجرافيك, خوادم سحابية",
+      "thesis_ar": "تزايد الطلب على المحتوى المرئي يعزز الحاجة إلى نماذج تحويل النص إلى صورة. نماذج مثل Reflora وminimaxcinematic توفر إمكانيات جديدة في هذا المجال.",
+      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
+      "sellable_product_ar": "خدمة إنشاء محتوى مرئي مخصص باستخدام نماذج الذكاء الاصطناعي",
+      "first_paid_test_ar": "تقديم نموذج أولي لإنشاء صورة بناءً على نص محدد",
+      "tools_ar": "نموذج تحويل النص إلى صورة، منصة تطوير، أدوات تسويق",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Shurialvaro/image-stuff",
-        "huggingface_models:guillekenzo/aros-711b564d-EmberLynx",
-        "huggingface_models:Nanami231/pearl-26"
+        "nnndite/minimaxcinematic",
+        "lordfarquaad36/Reflora"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.49,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "Shurialvaro/image-stuff — text-to-image",
-          "url": "https://huggingface.co/Shurialvaro/image-stuff",
-          "score": 0.509,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "guillekenzo/aros-711b564d-EmberLynx — text-to-image",
-          "url": "https://huggingface.co/guillekenzo/aros-711b564d-EmberLynx",
-          "score": 0.488,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Nanami231/pearl-26 — text-to-image",
-          "url": "https://huggingface.co/Nanami231/pearl-26",
-          "score": 0.488,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-15T08:40:38+00:00",
-      "updatedAt": "2026-11-15T08:40:38+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "smart-home-automation",
-      "title_ar": "تطوير حلول الذكاء الاصطناعي للمنزل الذكي",
-      "thesis_ar": "تزايد اعتماد المستخدمين على تقنيات المنزل الذكي يتطلب حلولاً ذكية لتحسين تجربة المستخدم. التحديثات في نماذج الذكاء الاصطناعي تشير إلى إمكانية دمجها في أنظمة المنزل الذكي.",
-      "buyer_ar": "موزعو الأجهزة المنزلية الذكية ومطورو البرمجيات",
-      "sellable_product_ar": "أنظمة ذكاء اصطناعي للتحكم في الأجهزة المنزلية",
-      "first_paid_test_ar": "تطوير نموذج أولي لنظام تحكم ذكي لجهاز واحد",
-      "tools_ar": "Hugging Face, أدوات تطوير البرمجيات, أجهزة استشعار",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "huggingface_models:mkenfenheuer/qwen2.5-3b-homeassistant-GGUF",
-        "huggingface_models:Rumiii/gemma-4-E4B-it-SRE",
-        "huggingface_models:smart-force/xandra-training-state"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
+      "signal_count": 6,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "mkenfenheuer/qwen2.5-3b-homeassistant-GGUF — text-generation",
-          "url": "https://huggingface.co/mkenfenheuer/qwen2.5-3b-homeassistant-GGUF",
+          "title": "litert-community/Agents-A1-4B — text-generation",
+          "url": "https://huggingface.co/litert-community/Agents-A1-4B",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "Rumiii/gemma-4-E4B-it-SRE — text-generation",
-          "url": "https://huggingface.co/Rumiii/gemma-4-E4B-it-SRE",
+          "title": "minhnguyent546/MiMo-V2.6-Distill-Qwen-9B-ciaz26-sft-A — image-text-to-text",
+          "url": "https://huggingface.co/minhnguyent546/MiMo-V2.6-Distill-Qwen-9B-ciaz26-sft-A",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "smart-force/xandra-training-state — text-generation",
-          "url": "https://huggingface.co/smart-force/xandra-training-state",
-          "score": 0.466,
+          "title": "nnndite/minimaxcinematic — text-to-image",
+          "url": "https://huggingface.co/nnndite/minimaxcinematic",
+          "score": 0.488,
           "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "lordfarquaad36/Reflora — text-to-image",
+          "url": "https://huggingface.co/lordfarquaad36/Reflora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+          "url": "https://huggingface.co/papers/2611.08219",
+          "score": 0.475,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
+          "url": "https://huggingface.co/papers/2611.17060",
+          "score": 0.469,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -100,49 +70,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-15T08:40:38+00:00",
-      "updatedAt": "2026-11-15T08:40:38+00:00",
-      "sortOrder": 1
+      "publishedAt": "2026-11-15T16:46:38+00:00",
+      "updatedAt": "2026-11-15T16:46:38+00:00",
+      "sortOrder": 0
     },
     {
-      "id": "multilingual-text-generation",
-      "title_ar": "تطوير نماذج توليد نصوص متعددة اللغات",
-      "thesis_ar": "تزايد الحاجة إلى محتوى متعدد اللغات في السوق العربي يعزز من أهمية تطوير نماذج توليد نصوص تدعم لغات متعددة. التحديثات الأخيرة تشير إلى تحسينات في الأداء.",
-      "buyer_ar": "شركات المحتوى الرقمي والوكالات الإعلامية",
-      "sellable_product_ar": "خدمات توليد محتوى نصي متعدد اللغات",
-      "first_paid_test_ar": "إنشاء 3 مقالات قصيرة بلغات مختلفة",
-      "tools_ar": "Hugging Face, أدوات معالجة اللغة الطبيعية, خوادم سحابية",
+      "id": "image-text-to-text-models",
+      "title_ar": "تطوير نماذج تحويل الصورة إلى نص",
+      "thesis_ar": "تزايد استخدام الذكاء الاصطناعي في التعليم والتدريب يعزز الحاجة إلى نماذج تحويل الصورة إلى نص. نماذج مثل MiMo-V2.6 وAnirudhNarayan/Qwen_2b تقدم حلولاً مبتكرة.",
+      "buyer_ar": "مؤسسات التعليم والتدريب",
+      "sellable_product_ar": "خدمة تحويل الصور إلى نصوص تعليمية",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل صورة إلى نص تعليمي",
+      "tools_ar": "نموذج تحويل الصورة إلى نص، منصة تطوير، أدوات تسويق",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:MindMapDigital/Bhed-v0.1",
-        "huggingface_models:flaviussteff/spp-ro-base",
-        "huggingface_models:scalar-ai/scalar-phos-pro"
+        "minhnguyent546/MiMo-V2.6-Distill-Qwen-9B-ciaz26-sft-A",
+        "AnirudhNarayan/Qwen_2b_ASR_change_experiment"
       ],
-      "confidence": 0.7,
+      "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "MindMapDigital/Bhed-v0.1 — text-generation",
-          "url": "https://huggingface.co/MindMapDigital/Bhed-v0.1",
-          "score": 0.466,
+          "title": "litert-community/Agents-A1-4B — text-generation",
+          "url": "https://huggingface.co/litert-community/Agents-A1-4B",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "flaviussteff/spp-ro-base — text-generation",
-          "url": "https://huggingface.co/flaviussteff/spp-ro-base",
-          "score": 0.466,
+          "title": "minhnguyent546/MiMo-V2.6-Distill-Qwen-9B-ciaz26-sft-A — image-text-to-text",
+          "url": "https://huggingface.co/minhnguyent546/MiMo-V2.6-Distill-Qwen-9B-ciaz26-sft-A",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "scalar-ai/scalar-phos-pro — text-generation",
-          "url": "https://huggingface.co/scalar-ai/scalar-phos-pro",
-          "score": 0.466,
+          "title": "nnndite/minimaxcinematic — text-to-image",
+          "url": "https://huggingface.co/nnndite/minimaxcinematic",
+          "score": 0.488,
           "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "lordfarquaad36/Reflora — text-to-image",
+          "url": "https://huggingface.co/lordfarquaad36/Reflora",
+          "score": 0.488,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+          "url": "https://huggingface.co/papers/2611.08219",
+          "score": 0.475,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
+          "url": "https://huggingface.co/papers/2611.17060",
+          "score": 0.469,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -150,11 +140,53 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-15T08:40:38+00:00",
-      "updatedAt": "2026-11-15T08:40:38+00:00",
+      "publishedAt": "2026-11-15T16:46:38+00:00",
+      "updatedAt": "2026-11-15T16:46:38+00:00",
+      "sortOrder": 1
+    },
+    {
+      "id": "enhanced-productivity-agents",
+      "title_ar": "تطوير وكلاء الذكاء الاصطناعي لزيادة الإنتاجية",
+      "thesis_ar": "تقدم الأبحاث في وكالات الذكاء الاصطناعي مثل Agent-R^2 إمكانية تحسين الإنتاجية. هناك طلب متزايد على حلول الذكاء الاصطناعي التي تقلل من عبء العمل البشري.",
+      "buyer_ar": "شركات التكنولوجيا والخدمات",
+      "sellable_product_ar": "حلول ذكاء اصطناعي لتحسين الإنتاجية في الأعمال",
+      "first_paid_test_ar": "تقديم نموذج أولي لوكيل ذكاء اصطناعي يقوم بمهمة محددة",
+      "tools_ar": "نموذج ذكاء اصطناعي، منصة تطوير، أدوات تسويق",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2611.08219",
+        "huggingface_daily_papers:2611.17060"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 2,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+          "url": "https://huggingface.co/papers/2611.08219",
+          "score": 0.475,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
+          "url": "https://huggingface.co/papers/2611.17060",
+          "score": 0.469,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-15T16:46:38+00:00",
+      "updatedAt": "2026-11-15T16:46:38+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-15T08:40:38+00:00",
+  "tiered_at": "2026-11-15T16:46:38+00:00",
   "free_preview_count": 3
 }
