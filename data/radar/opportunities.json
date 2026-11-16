@@ -1,47 +1,68 @@
 {
-  "generated_at": "2026-11-15T22:19:04+00:00",
+  "generated_at": "2026-11-16T03:42:18+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 838,
+  "corpus_count": 824,
   "opportunities": [
     {
-      "id": "text-to-image-models",
-      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
-      "thesis_ar": "مع تزايد الطلب على المحتوى المرئي، توفر نماذج تحويل النص إلى صورة فرصة لتلبية احتياجات السوق. هذه النماذج يمكن أن تُستخدم في مجالات الإعلانات والتصميم.",
-      "buyer_ar": "شركات الإعلانات والتسويق الرقمي",
-      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة",
-      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لعميل محتمل",
-      "tools_ar": "Hugging Face, PyTorch, أدوات تصميم جرافيكي",
+      "id": "automated-bpmn-generation",
+      "title_ar": "توليد نماذج العمليات التجارية تلقائيًا",
+      "thesis_ar": "التحويل التلقائي لوصف العمليات التجارية غير المنظم إلى مخططات BPMN يعد فرصة كبيرة في السوق. مع تزايد الحاجة إلى أتمتة العمليات، يمكن أن تلبي هذه التقنية الطلب المتزايد.",
+      "buyer_ar": "الشركات التي تسعى لأتمتة العمليات التجارية",
+      "sellable_product_ar": "أداة برمجية لتحويل النصوص إلى مخططات BPMN",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نصوص مختارة إلى BPMN",
+      "tools_ar": "نموذج ذكاء اصطناعي لتحليل اللغة، واجهة مستخدم، قاعدة بيانات",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Nanami231/tm-26",
-        "huggingface_models:ShadowFrame7/Krea-2-Nyx-Character-LoRA",
-        "huggingface_models:qda-lab/QDA-Qwen3.8-27B-W4A16-dsh"
+        "2611.18157v1",
+        "2611.06866",
+        "2611.17713v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "DoubleTake: Focused Verification of Visual Evidence for Long-Document Understanding",
+          "url": "http://arxiv.org/abs/2611.17853v1",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "A Multi-Layered AI Pipeline for BPMN Generation from Natural Language",
+          "url": "http://arxiv.org/abs/2611.18157v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
+          "url": "https://huggingface.co/papers/2611.16439",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "Nanami231/tm-26 — text-to-image",
-          "url": "https://huggingface.co/Nanami231/tm-26",
+          "title": "jstarks/Qwen3.8-27B-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/Qwen3.8-27B-Weight-Space-Programming",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "ShadowFrame7/Krea-2-Nyx-Character-LoRA — text-to-image",
-          "url": "https://huggingface.co/ShadowFrame7/Krea-2-Nyx-Character-LoRA",
+          "title": "jstarks/gemma-4-E2B-it-iPhone-Agent-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/gemma-4-E2B-it-iPhone-Agent-Weight-Space-Programming",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "qda-lab/QDA-Qwen3.8-27B-W4A16-dsh — image-text-to-text",
-          "url": "https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-W4A16-dsh",
-          "score": 0.466,
+          "title": "jstarks/Qwen3.5-0.8B-iPhone-Agent-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/Qwen3.5-0.8B-iPhone-Agent-Weight-Space-Programming",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -50,48 +71,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-15T22:19:04+00:00",
-      "updatedAt": "2026-11-15T22:19:04+00:00",
+      "publishedAt": "2026-11-16T03:42:18+00:00",
+      "updatedAt": "2026-11-16T03:42:18+00:00",
       "sortOrder": 0
     },
     {
-      "id": "cybersecurity-tools",
-      "title_ar": "تطوير أدوات الأمن السيبراني",
-      "thesis_ar": "مع تزايد التهديدات السيبرانية، هناك حاجة ملحة لأدوات تحليل الثغرات. النماذج المتاحة يمكن أن تساعد في تطوير أدوات فعالة لمراقبة الأمان.",
-      "buyer_ar": "شركات التكنولوجيا والأمن السيبراني",
-      "sellable_product_ar": "أدوات تحليل الثغرات الأمنية وتقييم المخاطر",
-      "first_paid_test_ar": "تقديم خدمة تحليل ثغرة لعميل محتمل",
-      "tools_ar": "Hugging Face, أدوات تحليل الثغرات, أدوات تطوير البرمجيات",
+      "id": "visual-evidence-verification",
+      "title_ar": "تحقق من الأدلة المرئية لفهم الوثائق الطويلة",
+      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في معالجة الوثائق الطويلة يخلق حاجة ملحة للتحقق من دقة المعلومات المستخرجة. هذه الفرصة تدعم تحسين دقة النماذج في تقديم إجابات موثوقة.",
+      "buyer_ar": "الشركات التي تعتمد على الوثائق الطويلة في عملياتها",
+      "sellable_product_ar": "نظام تحقق من الأدلة المرئية لتحسين دقة النماذج",
+      "first_paid_test_ar": "تقديم خدمة تحقق من دقة نموذج محدد مقابل رسوم",
+      "tools_ar": "نموذج ذكاء اصطناعي، واجهة مستخدم، مجموعة بيانات تدريب",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:nyxspecter4/kin-cybersecurity-3b",
-        "huggingface_models:nyxspecter4/kin-cybersecurity-3b-gguf",
-        "huggingface_models:meridianal/FinAI"
+        "2611.17853v1",
+        "2611.18272v1",
+        "2611.14504"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "DoubleTake: Focused Verification of Visual Evidence for Long-Document Understanding",
+          "url": "http://arxiv.org/abs/2611.17853v1",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "A Multi-Layered AI Pipeline for BPMN Generation from Natural Language",
+          "url": "http://arxiv.org/abs/2611.18157v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
+          "url": "https://huggingface.co/papers/2611.16439",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "nyxspecter4/kin-cybersecurity-3b-gguf — text-generation",
-          "url": "https://huggingface.co/nyxspecter4/kin-cybersecurity-3b-gguf",
-          "score": 0.466,
+          "title": "jstarks/Qwen3.8-27B-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/Qwen3.8-27B-Weight-Space-Programming",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "nyxspecter4/kin-cybersecurity-3b — text-generation",
-          "url": "https://huggingface.co/nyxspecter4/kin-cybersecurity-3b",
-          "score": 0.466,
+          "title": "jstarks/gemma-4-E2B-it-iPhone-Agent-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/gemma-4-E2B-it-iPhone-Agent-Weight-Space-Programming",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "meridianal/FinAI — text-generation",
-          "url": "https://huggingface.co/meridianal/FinAI",
-          "score": 0.466,
+          "title": "jstarks/Qwen3.5-0.8B-iPhone-Agent-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/Qwen3.5-0.8B-iPhone-Agent-Weight-Space-Programming",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -100,48 +142,69 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-15T22:19:04+00:00",
-      "updatedAt": "2026-11-15T22:19:04+00:00",
+      "publishedAt": "2026-11-16T03:42:18+00:00",
+      "updatedAt": "2026-11-16T03:42:18+00:00",
       "sortOrder": 1
     },
     {
-      "id": "finance-ai-solutions",
-      "title_ar": "حلول الذكاء الاصطناعي في المالية",
-      "thesis_ar": "تزايد الاعتماد على الذكاء الاصطناعي في القطاع المالي يفتح آفاق جديدة. النماذج المتاحة يمكن أن تسهم في تحسين اتخاذ القرارات المالية.",
-      "buyer_ar": "البنوك وشركات الاستثمار",
-      "sellable_product_ar": "خدمات استشارية في تطبيق الذكاء الاصطناعي على العمليات المالية",
-      "first_paid_test_ar": "تقديم تحليل بيانات مالية باستخدام نموذج ذكاء اصطناعي",
-      "tools_ar": "Hugging Face, أدوات تحليل البيانات, أدوات تعلم الآلة",
+      "id": "molecular-interaction-models",
+      "title_ar": "نماذج تفاعل الجزيئات باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تطوير نماذج تفاعل الجزيئات باستخدام الذكاء الاصطناعي يمثل فرصة كبيرة في مجال الأبحاث الطبية. هذه النماذج يمكن أن تسهم في تسريع اكتشاف الأدوية.",
+      "buyer_ar": "المؤسسات البحثية وشركات الأدوية",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لتحليل التفاعلات الجزيئية",
+      "first_paid_test_ar": "تقديم تحليل تفاعلات جزيئية لنموذج دواء محدد",
+      "tools_ar": "نموذج ذكاء اصطناعي، قاعدة بيانات جزيئية، واجهة مستخدم",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_models:meridianal/FinAI",
-        "huggingface_models:litert-community/Nanbeige4.2-3B",
-        "huggingface_models:litert-community/LFM2.5-230M"
+        "2611.14504",
+        "2611.18272v1",
+        "2611.06866"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
+      "signal_count": 6,
+      "avg_score": 0.49,
       "evidence_items": [
         {
+          "source_id": "arxiv_papers",
+          "title": "DoubleTake: Focused Verification of Visual Evidence for Long-Document Understanding",
+          "url": "http://arxiv.org/abs/2611.17853v1",
+          "score": 0.501,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "A Multi-Layered AI Pipeline for BPMN Generation from Natural Language",
+          "url": "http://arxiv.org/abs/2611.18157v1",
+          "score": 0.491,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
+          "url": "https://huggingface.co/papers/2611.16439",
+          "score": 0.49,
+          "trust_tier": "research"
+        },
+        {
           "source_id": "huggingface_models",
-          "title": "meridianal/FinAI — text-generation",
-          "url": "https://huggingface.co/meridianal/FinAI",
-          "score": 0.466,
+          "title": "jstarks/Qwen3.8-27B-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/Qwen3.8-27B-Weight-Space-Programming",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "litert-community/Nanbeige4.2-3B — text-generation",
-          "url": "https://huggingface.co/litert-community/Nanbeige4.2-3B",
-          "score": 0.466,
+          "title": "jstarks/gemma-4-E2B-it-iPhone-Agent-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/gemma-4-E2B-it-iPhone-Agent-Weight-Space-Programming",
+          "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "litert-community/LFM2.5-230M — text-generation",
-          "url": "https://huggingface.co/litert-community/LFM2.5-230M",
-          "score": 0.466,
+          "title": "jstarks/Qwen3.5-0.8B-iPhone-Agent-Weight-Space-Programming — text-generation",
+          "url": "https://huggingface.co/jstarks/Qwen3.5-0.8B-iPhone-Agent-Weight-Space-Programming",
+          "score": 0.488,
           "trust_tier": "official"
         }
       ],
@@ -150,11 +213,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-15T22:19:04+00:00",
-      "updatedAt": "2026-11-15T22:19:04+00:00",
+      "publishedAt": "2026-11-16T03:42:18+00:00",
+      "updatedAt": "2026-11-16T03:42:18+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-15T22:19:04+00:00",
+  "tiered_at": "2026-11-16T03:42:18+00:00",
   "free_preview_count": 3
 }
