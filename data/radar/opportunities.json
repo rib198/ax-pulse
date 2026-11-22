@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-22T17:33:22+00:00",
+  "generated_at": "2026-11-22T22:59:56+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 841,
+  "corpus_count": 827,
   "opportunities": [
     {
-      "id": "local-ai-clinical-data-analysis",
-      "title_ar": "تحليل البيانات السريرية باستخدام الذكاء الاصطناعي المحلي",
-      "thesis_ar": "تزايد الحاجة لأدوات تحليل بيانات سريرية آمنة وسريعة، خاصة مع المخاوف من تسرب البيانات في السحابة. يمكن للذكاء الاصطناعي المحلي أن يوفر حلاً فعالاً لهذه المشكلة.",
-      "buyer_ar": "المستشفيات والعيادات والمراكز الطبية",
-      "sellable_product_ar": "أداة تحليل بيانات سريرية تعتمد على الذكاء الاصطناعي المحلي",
-      "first_paid_test_ar": "تقديم تجربة مجانية لتحليل مجموعة بيانات صغيرة",
-      "tools_ar": "نموذج لغة محلي، واجهة مستخدم، خوارزمية تحليل البيانات",
+      "id": "local-ai-agent-automation",
+      "title_ar": "أتمتة تحليل البيانات السريرية باستخدام الذكاء الاصطناعي المحلي",
+      "thesis_ar": "تزايد الحاجة إلى أتمتة تحليل البيانات السريرية مع الحفاظ على خصوصية البيانات. يمكن للذكاء الاصطناعي المحلي أن يوفر حلاً موثوقًا وسريعًا لهذه الحاجة.",
+      "buyer_ar": "مستشفيات ومراكز بحثية",
+      "sellable_product_ar": "نظام ذكاء اصطناعي محلي لتحليل البيانات السريرية",
+      "first_paid_test_ar": "تجربة تحليل بيانات سريرية محدودة مع عميل واحد",
+      "tools_ar": "نموذج ذكاء اصطناعي محلي، بيئة سحابية آمنة، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2611.21053",
@@ -42,41 +42,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-22T17:33:22+00:00",
-      "updatedAt": "2026-11-22T17:33:22+00:00",
+      "publishedAt": "2026-11-22T22:59:56+00:00",
+      "updatedAt": "2026-11-22T22:59:56+00:00",
       "sortOrder": 0
     },
     {
-      "id": "automated-spreadsheet-analysis",
-      "title_ar": "أتمتة تحليل الجداول باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تعتبر الجداول أداة شائعة لتحليل البيانات، وأتمتتها يمكن أن توفر الوقت والجهد. هناك طلب متزايد على أدوات تحليلات البيانات التي تحمي المعلومات الحساسة.",
-      "buyer_ar": "الشركات والمؤسسات التي تعتمد على البيانات",
-      "sellable_product_ar": "أداة لتحليل الجداول باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم تحليل مجاني لجداول بيانات بسيطة",
-      "tools_ar": "نموذج لغة، واجهة مستخدم، خوارزمية تحليل البيانات",
+      "id": "custom-ai-models-for-business",
+      "title_ar": "تطوير نماذج ذكاء اصطناعي مخصصة للأعمال",
+      "thesis_ar": "تحتاج الشركات إلى نماذج ذكاء اصطناعي مخصصة لتحسين الأداء وزيادة الكفاءة. يمكن تطوير نماذج مخصصة تلبي احتياجات محددة.",
+      "buyer_ar": "شركات في مختلف القطاعات",
+      "sellable_product_ar": "نماذج ذكاء اصطناعي مخصصة",
+      "first_paid_test_ar": "تطوير نموذج مخصص لشركة واحدة",
+      "tools_ar": "بيانات تدريب، بيئة تطوير، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "huggingface_daily_papers:2611.21053",
-        "arxiv_papers:2611.26069v1"
+        "huggingface_models:qdx-lang/qdx-coder-9b-lora",
+        "huggingface_models:Vxtzq/Crowd-v1.5",
+        "huggingface_models:hindsight-ai/hs-decide-1-flash"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 2,
-      "avg_score": 0.49,
+      "signal_count": 3,
+      "avg_score": 0.47,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "System 1 agents: a method for local, reliable and fast agentic AI",
-          "url": "https://huggingface.co/papers/2611.21053",
-          "score": 0.496,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Vxtzq/Crowd-v1.5 — text-generation",
+          "url": "https://huggingface.co/Vxtzq/Crowd-v1.5",
+          "score": 0.466,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "SheetAlign: Grounded Interaction and Stage-Isolated Learning for Spreadsheet Agents",
-          "url": "http://arxiv.org/abs/2611.26069v1",
-          "score": 0.477,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "qdx-lang/qdx-coder-9b-lora — text-generation",
+          "url": "https://huggingface.co/qdx-lang/qdx-coder-9b-lora",
+          "score": 0.466,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "hindsight-ai/hs-decide-1-flash — text-ranking",
+          "url": "https://huggingface.co/hindsight-ai/hs-decide-1-flash",
+          "score": 0.466,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -84,23 +92,23 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-22T17:33:22+00:00",
-      "updatedAt": "2026-11-22T17:33:22+00:00",
+      "publishedAt": "2026-11-22T22:59:56+00:00",
+      "updatedAt": "2026-11-22T22:59:56+00:00",
       "sortOrder": 1
     },
     {
       "id": "text-to-image-ai-solutions",
-      "title_ar": "حلول تحويل النص إلى صورة باستخدام الذكاء الاصطناعي",
-      "thesis_ar": "تزايد الاهتمام بتطبيقات تحويل النصوص إلى صور، مما يفتح المجال لإنشاء محتوى بصري مخصص. هذه الحلول يمكن أن تلبي احتياجات التسويق والإعلانات.",
-      "buyer_ar": "وكالات التسويق والإعلانات والشركات",
-      "sellable_product_ar": "أداة لتحويل النصوص إلى صور باستخدام الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم خدمة تحويل نص إلى صورة مجانية",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة مستخدم، خوارزمية تحسين الصور",
+      "title_ar": "تطوير حلول تحويل النص إلى صورة باستخدام الذكاء الاصطناعي",
+      "thesis_ar": "تزايد الطلب على محتوى مرئي مبتكر من النصوص. يمكن استخدام نماذج تحويل النص إلى صورة لتلبية هذا الطلب في مجالات متعددة.",
+      "buyer_ar": "شركات تسويق وإعلانات",
+      "sellable_product_ar": "خدمة تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "مشروع تجريبي لتحويل نصوص محددة إلى صور",
+      "tools_ar": "نموذج تحويل نص إلى صورة، واجهة مستخدم، أدوات تصميم",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "huggingface_models:Fonseca96953/Test",
-        "huggingface_models:BelifChou/wangzi-character-v1",
-        "huggingface_models:mrrie13/jenn1750"
+        "huggingface_models:try1ereer/facials",
+        "huggingface_models:mrrie13/jenn2000",
+        "huggingface_models:marketingdelplata94/caconi-loras"
       ],
       "confidence": 0.7,
       "source": "openai",
@@ -109,22 +117,22 @@
       "evidence_items": [
         {
           "source_id": "huggingface_models",
-          "title": "Fonseca96953/Test — text-to-image",
-          "url": "https://huggingface.co/Fonseca96953/Test",
+          "title": "try1ereer/facials — text-to-image",
+          "url": "https://huggingface.co/try1ereer/facials",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "BelifChou/wangzi-character-v1 — text-to-image",
-          "url": "https://huggingface.co/BelifChou/wangzi-character-v1",
+          "title": "mrrie13/jenn2000 — text-to-image",
+          "url": "https://huggingface.co/mrrie13/jenn2000",
           "score": 0.488,
           "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "mrrie13/jenn1750 — text-to-image",
-          "url": "https://huggingface.co/mrrie13/jenn1750",
+          "title": "marketingdelplata94/caconi-loras — text-to-image",
+          "url": "https://huggingface.co/marketingdelplata94/caconi-loras",
           "score": 0.488,
           "trust_tier": "official"
         }
@@ -134,11 +142,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-22T17:33:22+00:00",
-      "updatedAt": "2026-11-22T17:33:22+00:00",
+      "publishedAt": "2026-11-22T22:59:56+00:00",
+      "updatedAt": "2026-11-22T22:59:56+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-22T17:33:22+00:00",
+  "tiered_at": "2026-11-22T22:59:56+00:00",
   "free_preview_count": 3
 }
