@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-11-25T20:53:09+00:00",
+  "run_at": "2026-11-26T03:55:55+00:00",
   "openai_calls": 4,
   "openai_budget": 40,
   "agents": [
@@ -26,12 +26,12 @@
     {
       "agent": "source_collector",
       "ok": true,
-      "duration_s": 16.823,
+      "duration_s": 17.859,
       "written": [
         "data/radar/raw_items.json"
       ],
       "notes": [
-        "collected 340 signals from 31 source families",
+        "collected 350 signals from 31 source families",
         "6 source errors (non-fatal)"
       ],
       "error": null
@@ -39,7 +39,7 @@
     {
       "agent": "manual_x_bridge",
       "ok": true,
-      "duration_s": 0.012,
+      "duration_s": 0.013,
       "written": [],
       "notes": [
         "injected 494 manual X items (skipped 6 of 500, avg score 0.143)"
@@ -54,8 +54,8 @@
         "data/radar/agents/evidence_report.json"
       ],
       "notes": [
-        "tagged 834 items",
-        "by tier: press=522, official=165, research=118, community=29"
+        "tagged 844 items",
+        "by tier: press=522, official=165, research=125, community=32"
       ],
       "error": null
     },
@@ -72,12 +72,12 @@
     {
       "agent": "priority_ranker",
       "ok": true,
-      "duration_s": 0.041,
+      "duration_s": 0.033,
       "written": [
         "data/radar/signals.json"
       ],
       "notes": [
-        "ranked 834 items, top priority=0.516"
+        "ranked 844 items, top priority=0.515"
       ],
       "error": null
     },
@@ -89,7 +89,7 @@
         "data/radar/agents/companies.json"
       ],
       "notes": [
-        "detected 15 companies, 13 products this run",
+        "detected 15 companies, 14 products this run",
         "store size: 48"
       ],
       "error": null
@@ -97,12 +97,12 @@
     {
       "agent": "models_pulse",
       "ok": true,
-      "duration_s": 0.079,
+      "duration_s": 0.082,
       "written": [
         "data/radar/model_timeline.json"
       ],
       "notes": [
-        "+32 new model events",
+        "+31 new model events",
         "300 total"
       ],
       "error": null
@@ -110,20 +110,20 @@
     {
       "agent": "event_detector",
       "ok": true,
-      "duration_s": 0.182,
+      "duration_s": 0.185,
       "written": [
         "data/radar/agents/events.json"
       ],
       "notes": [
-        "17 events (1 new)",
-        "by type: model_release=9, pricing_change=5, policy_signal=1, acquisition=1, personnel_move=1"
+        "19 events (11 new)",
+        "by type: model_release=11, pricing_change=4, acquisition=1, personnel_move=2, policy_signal=1"
       ],
       "error": null
     },
     {
       "agent": "market_radar",
       "ok": true,
-      "duration_s": 0.018,
+      "duration_s": 0.019,
       "written": [
         "data/radar/agents/market_focus.json"
       ],
@@ -135,7 +135,7 @@
     {
       "agent": "opportunity_builder",
       "ok": true,
-      "duration_s": 10.948,
+      "duration_s": 9.555,
       "written": [
         "data/radar/opportunities.json"
       ],
@@ -147,7 +147,7 @@
     {
       "agent": "radar_editor",
       "ok": true,
-      "duration_s": 8.988,
+      "duration_s": 9.043,
       "written": [
         "data/brief.ar.json",
         "data/brief.en.json"
@@ -188,7 +188,7 @@
     {
       "agent": "growth_social",
       "ok": true,
-      "duration_s": 10.96,
+      "duration_s": 9.392,
       "written": [
         "data/radar/agents/social_posts.json"
       ],
@@ -217,19 +217,19 @@
         "data/radar/agents/performance.json"
       ],
       "notes": [
-        "items=834, opps=3, calls=3"
+        "items=844, opps=3, calls=3"
       ],
       "error": null
     },
     {
       "agent": "insight_generator",
       "ok": true,
-      "duration_s": 3.144,
+      "duration_s": 2.126,
       "written": [
         "data/radar/agents/insights.json"
       ],
       "notes": [
-        "insight via openai: يظهر تركيز متزايد على إصدارات النماذج الجديدة، حيث شهدنا خمسة إصدارات في يوم وا…"
+        "insight via openai: يظهر أن النشاط في إصدار النماذج قد زاد بشكل ملحوظ، حيث تم إصدار نماذج جديدة من …"
       ],
       "error": null
     },
