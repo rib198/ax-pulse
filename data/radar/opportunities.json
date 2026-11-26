@@ -1,68 +1,47 @@
 {
-  "generated_at": "2026-11-26T13:25:08+00:00",
+  "generated_at": "2026-11-26T22:45:58+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 845,
+  "corpus_count": 854,
   "opportunities": [
     {
-      "id": "ai-agent-management",
-      "title_ar": "إدارة وكالات الذكاء الاصطناعي",
-      "thesis_ar": "تزايد استخدام المطورين لوكالات الذكاء الاصطناعي يتطلب أدوات فعالة لإدارة المهام والتعلم من النتائج. هذا الوقت مناسب لتطوير حلول تسهل هذه العملية.",
-      "buyer_ar": "شركات تطوير البرمجيات",
-      "sellable_product_ar": "أدوات إدارة وكالات الذكاء الاصطناعي في بيئات التطوير المتكاملة (IDEs)",
-      "first_paid_test_ar": "تقديم نموذج أولي لأداة إدارة مهام وكالات الذكاء الاصطناعي لمجموعة صغيرة من المطورين مقابل رسوم رمزية.",
-      "tools_ar": "بيئة تطوير متكاملة, أدوات تحليل البيانات, واجهة برمجة التطبيقات",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة في مجالات مثل الألعاب والفن الرقمي. التحديثات الأخيرة على نماذج Hugging Face تشير إلى إمكانية تحسين جودة الصور الناتجة.",
+      "buyer_ar": "شركات تطوير الألعاب والفن الرقمي",
+      "sellable_product_ar": "خدمات تطوير نماذج تحويل النص إلى صورة مخصصة",
+      "first_paid_test_ar": "تقديم نموذج أولي لتحويل نص إلى صورة لشركة محلية مقابل رسوم بسيطة",
+      "tools_ar": "Hugging Face, PyTorch, Diffusers",
       "capital_ar": "منخفض",
       "evidence_ids": [
-        "2611.34377v1",
-        "2611.34598v1",
-        "2611.34250v1"
+        "huggingface_models:mcp-tool-shop/portlight-ships-2512-lora",
+        "huggingface_models:LyliaEngine/Anatomy_Helper",
+        "huggingface_models:mcp-tool-shop/saltroad-style-lora"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.52,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "SmartLens: Turning AI Agent Changes into Learning, Review, and Risk Signals in the IDE",
-          "url": "http://arxiv.org/abs/2611.34377v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SEAM: A Self-Evolving and Adaptive Probing Framework for Automatic MLLM Hallucination Evaluation",
-          "url": "http://arxiv.org/abs/2611.34598v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
           "source_id": "huggingface_models",
-          "title": "Launch80/Qwen3.8-27B-MACaQ-W4A8-NARI3-SABER — text-generation",
-          "url": "https://huggingface.co/Launch80/Qwen3.8-27B-MACaQ-W4A8-NARI3-SABER",
-          "score": 0.499,
+          "title": "mcp-tool-shop/portlight-ships-2512-lora — text-to-image",
+          "url": "https://huggingface.co/mcp-tool-shop/portlight-ships-2512-lora",
+          "score": 0.542,
           "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "CAPTA: Identifying LLMs Behind AI Agents",
-          "url": "http://arxiv.org/abs/2611.32686v1",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "ConTra: A Training Framework for Effective Contextual Retrieval via Prefix Generation",
-          "url": "http://arxiv.org/abs/2611.34366v1",
-          "score": 0.494,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "LyliaEngine/Anatomy_Helper — text-to-image",
+          "url": "https://huggingface.co/LyliaEngine/Anatomy_Helper",
+          "score": 0.521,
+          "trust_tier": "official"
         },
         {
           "source_id": "huggingface_models",
-          "title": "K-Ai-Official/Kanata-S2-8B — text-generation",
-          "url": "https://huggingface.co/K-Ai-Official/Kanata-S2-8B",
-          "score": 0.488,
+          "title": "mcp-tool-shop/saltroad-style-lora — text-to-image",
+          "url": "https://huggingface.co/mcp-tool-shop/saltroad-style-lora",
+          "score": 0.509,
           "trust_tier": "official"
         }
       ],
@@ -71,50 +50,29 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-26T13:25:08+00:00",
-      "updatedAt": "2026-11-26T13:25:08+00:00",
+      "publishedAt": "2026-11-26T22:45:58+00:00",
+      "updatedAt": "2026-11-26T22:45:58+00:00",
       "sortOrder": 0
     },
     {
-      "id": "evaluation-framework-ml",
-      "title_ar": "إطار تقييم نماذج اللغة الكبيرة",
-      "thesis_ar": "مع تزايد الاعتماد على نماذج اللغة الكبيرة، يصبح من الضروري وجود إطار تقييم موثوق. هذه فرصة لتطوير حلول تقييم فعالة.",
-      "buyer_ar": "مراكز البحث والتطوير في المؤسسات التقنية",
-      "sellable_product_ar": "إطار عمل لتقييم أداء نماذج اللغة الكبيرة",
-      "first_paid_test_ar": "تقديم تقييم مجاني لنموذج لغة كبير مقابل الحصول على ملاحظات لتحسين الخدمة.",
-      "tools_ar": "أدوات تحليل البيانات, نماذج لغة كبيرة, بيئة اختبار",
+      "id": "large-language-model-agents",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي باستخدام نماذج لغوية كبيرة",
+      "thesis_ar": "تزايد استخدام وكلاء الذكاء الاصطناعي في إتمام المهام المعقدة. الأبحاث الأخيرة تشير إلى الحاجة لتحديد نماذج اللغة المستخدمة لتحسين الأداء.",
+      "buyer_ar": "شركات التقنية والبرمجيات",
+      "sellable_product_ar": "خدمات تطوير وكلاء ذكاء اصطناعي مخصصين",
+      "first_paid_test_ar": "تطوير وكيل بسيط لأداء مهمة محددة مقابل رسوم",
+      "tools_ar": "Hugging Face, API Integration, Python",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2611.34598v1",
-        "2611.34635v1",
-        "2611.34250v1"
+        "arxiv_papers:2611.32686v1",
+        "arxiv_papers:2611.34250v1",
+        "arxiv_papers:2611.34377v1"
       ],
       "confidence": 0.75,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 3,
+      "avg_score": 0.48,
       "evidence_items": [
-        {
-          "source_id": "arxiv_papers",
-          "title": "SmartLens: Turning AI Agent Changes into Learning, Review, and Risk Signals in the IDE",
-          "url": "http://arxiv.org/abs/2611.34377v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SEAM: A Self-Evolving and Adaptive Probing Framework for Automatic MLLM Hallucination Evaluation",
-          "url": "http://arxiv.org/abs/2611.34598v1",
-          "score": 0.504,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Launch80/Qwen3.8-27B-MACaQ-W4A8-NARI3-SABER — text-generation",
-          "url": "https://huggingface.co/Launch80/Qwen3.8-27B-MACaQ-W4A8-NARI3-SABER",
-          "score": 0.499,
-          "trust_tier": "official"
-        },
         {
           "source_id": "arxiv_papers",
           "title": "CAPTA: Identifying LLMs Behind AI Agents",
@@ -124,17 +82,17 @@
         },
         {
           "source_id": "arxiv_papers",
-          "title": "ConTra: A Training Framework for Effective Contextual Retrieval via Prefix Generation",
-          "url": "http://arxiv.org/abs/2611.34366v1",
-          "score": 0.494,
+          "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
+          "url": "http://arxiv.org/abs/2611.34250v1",
+          "score": 0.479,
           "trust_tier": "research"
         },
         {
-          "source_id": "huggingface_models",
-          "title": "K-Ai-Official/Kanata-S2-8B — text-generation",
-          "url": "https://huggingface.co/K-Ai-Official/Kanata-S2-8B",
-          "score": 0.488,
-          "trust_tier": "official"
+          "source_id": "arxiv_papers",
+          "title": "SmartLens: Turning AI Agent Changes into Learning, Review, and Risk Signals in the IDE",
+          "url": "http://arxiv.org/abs/2611.34377v1",
+          "score": 0.468,
+          "trust_tier": "research"
         }
       ],
       "tier": "free",
@@ -142,70 +100,41 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-26T13:25:08+00:00",
-      "updatedAt": "2026-11-26T13:25:08+00:00",
+      "publishedAt": "2026-11-26T22:45:58+00:00",
+      "updatedAt": "2026-11-26T22:45:58+00:00",
       "sortOrder": 1
     },
     {
-      "id": "contextual-retrieval-systems",
-      "title_ar": "أنظمة استرجاع سياقي فعالة",
-      "thesis_ar": "تزايد الحاجة إلى أنظمة قادرة على تنظيم واسترجاع المعلومات من مجموعات نصوص كبيرة تجعل هذه الفرصة ملحة.",
-      "buyer_ar": "شركات المعلومات والبيانات",
-      "sellable_product_ar": "أنظمة استرجاع سياقي تعتمد على تقنيات الذكاء الاصطناعي",
-      "first_paid_test_ar": "تقديم نموذج أولي لنظام استرجاع معلومات لمجموعة مختارة من العملاء مقابل رسوم.",
-      "tools_ar": "أنظمة إدارة البيانات, نماذج لغة كبيرة, أدوات تحليل البيانات",
+      "id": "3d-world-generation",
+      "title_ar": "تطوير حلول لتوليد عوالم ثلاثية الأبعاد",
+      "thesis_ar": "تحديات توليد عوالم ثلاثية الأبعاد من صور متفرقة تفتح المجال لفرص جديدة. الأبحاث تشير إلى الحاجة لحلول مبتكرة في هذا المجال.",
+      "buyer_ar": "شركات الألعاب والتصميم المعماري",
+      "sellable_product_ar": "أدوات لتوليد عوالم ثلاثية الأبعاد من صور",
+      "first_paid_test_ar": "تقديم نموذج أولي لتوليد عالم ثلاثي الأبعاد من مجموعة صور بسيطة",
+      "tools_ar": "Computer Vision, 3D Modeling Software, Python",
       "capital_ar": "متوسط",
       "evidence_ids": [
-        "2611.34366v1",
-        "2611.34420v1",
-        "2611.34868v1"
+        "huggingface_daily_papers:2611.34079",
+        "arxiv_papers:2611.33775v1"
       ],
       "confidence": 0.7,
       "source": "openai",
-      "signal_count": 6,
-      "avg_score": 0.5,
+      "signal_count": 2,
+      "avg_score": 0.48,
       "evidence_items": [
         {
-          "source_id": "arxiv_papers",
-          "title": "SmartLens: Turning AI Agent Changes into Learning, Review, and Risk Signals in the IDE",
-          "url": "http://arxiv.org/abs/2611.34377v1",
-          "score": 0.504,
+          "source_id": "huggingface_daily_papers",
+          "title": "WorldBridge: Bridging Scattered Views for Coherent 3D World Generation",
+          "url": "https://huggingface.co/papers/2611.34079",
+          "score": 0.484,
           "trust_tier": "research"
         },
         {
           "source_id": "arxiv_papers",
-          "title": "SEAM: A Self-Evolving and Adaptive Probing Framework for Automatic MLLM Hallucination Evaluation",
-          "url": "http://arxiv.org/abs/2611.34598v1",
-          "score": 0.504,
+          "title": "CHD-Bench: Diagnosing Congenital Heart Disease through Interactive Examination",
+          "url": "http://arxiv.org/abs/2611.33775v1",
+          "score": 0.479,
           "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "Launch80/Qwen3.8-27B-MACaQ-W4A8-NARI3-SABER — text-generation",
-          "url": "https://huggingface.co/Launch80/Qwen3.8-27B-MACaQ-W4A8-NARI3-SABER",
-          "score": 0.499,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "CAPTA: Identifying LLMs Behind AI Agents",
-          "url": "http://arxiv.org/abs/2611.32686v1",
-          "score": 0.496,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "ConTra: A Training Framework for Effective Contextual Retrieval via Prefix Generation",
-          "url": "http://arxiv.org/abs/2611.34366v1",
-          "score": 0.494,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "K-Ai-Official/Kanata-S2-8B — text-generation",
-          "url": "https://huggingface.co/K-Ai-Official/Kanata-S2-8B",
-          "score": 0.488,
-          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -213,11 +142,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-26T13:25:08+00:00",
-      "updatedAt": "2026-11-26T13:25:08+00:00",
+      "publishedAt": "2026-11-26T22:45:58+00:00",
+      "updatedAt": "2026-11-26T22:45:58+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-26T13:25:08+00:00",
+  "tiered_at": "2026-11-26T22:45:58+00:00",
   "free_preview_count": 3
 }
