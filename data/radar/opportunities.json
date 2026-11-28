@@ -1,96 +1,39 @@
 {
-  "generated_at": "2026-11-27T23:53:23+00:00",
+  "generated_at": "2026-11-28T05:26:59+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 847,
+  "corpus_count": 846,
   "opportunities": [
     {
-      "id": "generalist-computer-agents",
-      "title_ar": "تطوير وكلاء حاسوب عامين",
-      "thesis_ar": "تزايد الحاجة لوكلاء حاسوب قادرين على إكمال أهداف المستخدمين في بيئات متعددة، مما يفتح المجال لتطوير حلول متكاملة. السوق العربي بحاجة إلى أدوات تسهل التفاعل بين المستخدمين والوكلاء في تطبيقات مختلفة.",
-      "buyer_ar": "شركات تطوير البرمجيات، المؤسسات التعليمية، الشركات التقنية",
-      "sellable_product_ar": "منصة تطوير وكلاء حاسوب عامين متعددة الاستخدامات",
-      "first_paid_test_ar": "تقديم نموذج أولي لوكيل حاسوب يتفاعل في بيئة واحدة",
-      "tools_ar": "أدوات تطوير البرمجيات، بيئات محاكاة، واجهات برمجة التطبيقات",
+      "id": "ai-agents-integration",
+      "title_ar": "دمج الوكلاء الذكيين في بيئات العمل",
+      "thesis_ar": "تزايد الاعتماد على الوكلاء الذكيين في إتمام المهام المعقدة يتطلب حلولاً مبتكرة. هناك حاجة ملحة لتطوير أدوات تدعم تكامل هذه الوكلاء في بيئات العمل المختلفة.",
+      "buyer_ar": "شركات البرمجيات ومطوري التطبيقات",
+      "sellable_product_ar": "أداة لتكامل الوكلاء الذكيين مع أنظمة العمل الحالية",
+      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لمدة شهر مع خيار الترقية المدفوعة",
+      "tools_ar": "منصة تطوير برمجيات، واجهة برمجة التطبيقات، أدوات تحليل البيانات",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2611.34232",
-        "huggingface_daily_papers:2611.34693",
-        "huggingface_daily_papers:2611.34290"
+        "arxiv_papers:2611.34377",
+        "arxiv_papers:2611.34250v1"
       ],
       "confidence": 0.8,
       "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.52,
+      "signal_count": 2,
+      "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
           "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
           "url": "https://huggingface.co/papers/2611.34232",
-          "score": 0.555,
+          "score": 0.498,
           "trust_tier": "research"
         },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "ShowNow: Fine-Grained Speculative Streaming for Responsive World Models",
-          "url": "https://huggingface.co/papers/2611.34693",
-          "score": 0.514,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "huggingface_daily_papers",
-          "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
-          "url": "https://huggingface.co/papers/2611.34290",
-          "score": 0.49,
-          "trust_tier": "research"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-27T23:53:23+00:00",
-      "updatedAt": "2026-11-27T23:53:23+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "medical-ai-agents",
-      "title_ar": "تطوير وكلاء ذكاء اصطناعي في المجال الطبي",
-      "thesis_ar": "تزايد الاعتماد على وكلاء الذكاء الاصطناعي في تقديم الخدمات الطبية، مما يعزز من فرص الابتكار في هذا المجال. الحاجة إلى أدوات دقيقة لتشخيص الأمراض وتحليل البيانات الطبية تزداد.",
-      "buyer_ar": "المستشفيات، العيادات، شركات التكنولوجيا الصحية",
-      "sellable_product_ar": "نظام ذكاء اصطناعي لتشخيص الأمراض وتحليل البيانات الطبية",
-      "first_paid_test_ar": "تقديم نموذج أولي لتشخيص مرض شائع باستخدام الذكاء الاصطناعي",
-      "tools_ar": "أدوات تحليل البيانات، مكتبات تعلم الآلة، منصات سحابية",
-      "capital_ar": "متوسط",
-      "evidence_ids": [
-        "arxiv_papers:2611.34250v1",
-        "arxiv_papers:2611.33775v1",
-        "arxiv_papers:2611.34598v1"
-      ],
-      "confidence": 0.7,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.48,
-      "evidence_items": [
         {
           "source_id": "arxiv_papers",
           "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
           "url": "http://arxiv.org/abs/2611.34250v1",
-          "score": 0.479,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "CHD-Bench: Diagnosing Congenital Heart Disease through Interactive Examination",
-          "url": "http://arxiv.org/abs/2611.33775v1",
-          "score": 0.479,
-          "trust_tier": "research"
-        },
-        {
-          "source_id": "arxiv_papers",
-          "title": "SEAM: A Self-Evolving and Adaptive Probing Framework for Automatic MLLM Hallucination Evaluation",
-          "url": "http://arxiv.org/abs/2611.34598v1",
           "score": 0.468,
           "trust_tier": "research"
         }
@@ -100,11 +43,111 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-27T23:53:23+00:00",
-      "updatedAt": "2026-11-27T23:53:23+00:00",
+      "publishedAt": "2026-11-28T05:26:59+00:00",
+      "updatedAt": "2026-11-28T05:26:59+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "text-to-image-solutions",
+      "title_ar": "حلول تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يفتح آفاقاً جديدة في مجالات الإبداع والتسويق. يمكن استغلال هذه النماذج لتلبية احتياجات السوق المتنوعة.",
+      "buyer_ar": "وكالات التسويق والإعلانات، شركات الإنتاج الإعلامي",
+      "sellable_product_ar": "خدمة تحويل النصوص إلى صور مخصصة",
+      "first_paid_test_ar": "تقديم خدمة تحويل نص واحد إلى صورة مجانية لتجربة المنتج",
+      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، منصة تسويق",
+      "capital_ar": "منخفض",
+      "evidence_ids": [
+        "huggingface_models:zkwr1081/Moss-image-animated-lora",
+        "huggingface_models:zkwr1081/Moss-image-psychedelic-lora",
+        "huggingface_models:zkwr1081/Moss-image-beauty-lora"
+      ],
+      "confidence": 0.75,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.47,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_models",
+          "title": "zkwr1081/Moss-image-animated-lora — text-to-image",
+          "url": "https://huggingface.co/zkwr1081/Moss-image-animated-lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "zkwr1081/Moss-image-psychedelic-lora — text-to-image",
+          "url": "https://huggingface.co/zkwr1081/Moss-image-psychedelic-lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        },
+        {
+          "source_id": "huggingface_models",
+          "title": "zkwr1081/Moss-image-beauty-lora — text-to-image",
+          "url": "https://huggingface.co/zkwr1081/Moss-image-beauty-lora",
+          "score": 0.472,
+          "trust_tier": "official"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-28T05:26:59+00:00",
+      "updatedAt": "2026-11-28T05:26:59+00:00",
       "sortOrder": 1
+    },
+    {
+      "id": "medical-ai-agents",
+      "title_ar": "تطوير وكلاء ذكاء اصطناعي في المجال الطبي",
+      "thesis_ar": "زيادة استخدام وكلاء الذكاء الاصطناعي في المجال الطبي يعكس الحاجة إلى حلول مبتكرة لتحسين الرعاية الصحية. يمكن تطوير أدوات جديدة لتحسين دقة وكفاءة هذه الوكلاء.",
+      "buyer_ar": "مستشفيات، عيادات، شركات التكنولوجيا الصحية",
+      "sellable_product_ar": "نظام وكيل طبي ذكي لتحسين تشخيص المرضى",
+      "first_paid_test_ar": "تقديم دراسة حالة مجانية لتحسين التشخيص باستخدام الوكيل الذكي",
+      "tools_ar": "نموذج لغة كبيرة، بيانات طبية، منصة تحليل البيانات",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "arxiv_papers:2611.34250v1",
+        "huggingface_daily_papers:2611.34232",
+        "arxiv_papers:2611.34377v1"
+      ],
+      "confidence": 0.7,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.48,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+          "url": "https://huggingface.co/papers/2611.34232",
+          "score": 0.498,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
+          "url": "http://arxiv.org/abs/2611.34250v1",
+          "score": 0.468,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "arxiv_papers",
+          "title": "SmartLens: Turning AI Agent Changes into Learning, Review, and Risk Signals in the IDE",
+          "url": "http://arxiv.org/abs/2611.34377v1",
+          "score": 0.465,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-28T05:26:59+00:00",
+      "updatedAt": "2026-11-28T05:26:59+00:00",
+      "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-27T23:53:23+00:00",
+  "tiered_at": "2026-11-28T05:26:59+00:00",
   "free_preview_count": 3
 }
