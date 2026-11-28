@@ -1,40 +1,90 @@
 {
-  "generated_at": "2026-11-28T05:26:59+00:00",
+  "generated_at": "2026-11-28T14:46:25+00:00",
   "source": "agent_pipeline_v1+openai",
   "note_ar": "فرص مبنية على إشارات حقيقية. التكرار عبر الوقت يرفع الثقة.",
-  "corpus_count": 846,
+  "corpus_count": 848,
   "opportunities": [
     {
-      "id": "ai-agents-integration",
-      "title_ar": "دمج الوكلاء الذكيين في بيئات العمل",
-      "thesis_ar": "تزايد الاعتماد على الوكلاء الذكيين في إتمام المهام المعقدة يتطلب حلولاً مبتكرة. هناك حاجة ملحة لتطوير أدوات تدعم تكامل هذه الوكلاء في بيئات العمل المختلفة.",
-      "buyer_ar": "شركات البرمجيات ومطوري التطبيقات",
-      "sellable_product_ar": "أداة لتكامل الوكلاء الذكيين مع أنظمة العمل الحالية",
-      "first_paid_test_ar": "تقديم نسخة تجريبية مجانية لمدة شهر مع خيار الترقية المدفوعة",
-      "tools_ar": "منصة تطوير برمجيات، واجهة برمجة التطبيقات، أدوات تحليل البيانات",
+      "id": "generalist-computer-agents",
+      "title_ar": "تطوير وكلاء حاسوب عامين",
+      "thesis_ar": "تزايد الحاجة لوكلاء حاسوب قادرين على تحقيق أهداف المستخدمين في بيئات متعددة. هذا يتطلب تطوير نماذج قادرة على التعامل مع تدفقات العمل الطويلة عبر منصات مختلفة.",
+      "buyer_ar": "شركات تطوير البرمجيات والتطبيقات",
+      "sellable_product_ar": "نموذج ذكاء اصطناعي لوكلاء حاسوب عامين",
+      "first_paid_test_ar": "تطوير نموذج أولي لوكيل حاسوب في بيئة محددة",
+      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، منصات اختبار، بيئات تطوير",
       "capital_ar": "متوسط",
       "evidence_ids": [
         "huggingface_daily_papers:2611.34232",
-        "arxiv_papers:2611.34377",
-        "arxiv_papers:2611.34250v1"
+        "huggingface_daily_papers:2611.34693",
+        "huggingface_daily_papers:2611.31619"
       ],
       "confidence": 0.8,
+      "source": "openai",
+      "signal_count": 3,
+      "avg_score": 0.49,
+      "evidence_items": [
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+          "url": "https://huggingface.co/papers/2611.34232",
+          "score": 0.519,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "ShowNow: Fine-Grained Speculative Streaming for Responsive World Models",
+          "url": "https://huggingface.co/papers/2611.34693",
+          "score": 0.482,
+          "trust_tier": "research"
+        },
+        {
+          "source_id": "huggingface_daily_papers",
+          "title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
+          "url": "https://huggingface.co/papers/2611.31619",
+          "score": 0.48,
+          "trust_tier": "research"
+        }
+      ],
+      "tier": "free",
+      "status": "published",
+      "is_featured": true,
+      "is_new": true,
+      "version": 1,
+      "publishedAt": "2026-11-28T14:46:25+00:00",
+      "updatedAt": "2026-11-28T14:46:25+00:00",
+      "sortOrder": 0
+    },
+    {
+      "id": "multimodal-evaluation-framework",
+      "title_ar": "إطار تقييم متعدد الوسائط",
+      "thesis_ar": "تزايد الاعتماد على نماذج اللغة الكبيرة متعددة الوسائط يتطلب وجود إطار تقييم موثوق. هذا يوفر فرصة لتطوير أدوات تقييم فعالة.",
+      "buyer_ar": "شركات تطوير الذكاء الاصطناعي ومراكز الأبحاث",
+      "sellable_product_ar": "أداة تقييم لنماذج اللغة الكبيرة متعددة الوسائط",
+      "first_paid_test_ar": "تطوير أداة تقييم تجريبية لنموذج موجود",
+      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، مكتبات تقييم الأداء، منصات اختبار",
+      "capital_ar": "متوسط",
+      "evidence_ids": [
+        "huggingface_daily_papers:2611.34598",
+        "huggingface_daily_papers:2611.31619",
+        "huggingface_daily_papers:2611.34693"
+      ],
+      "confidence": 0.75,
       "source": "openai",
       "signal_count": 2,
       "avg_score": 0.48,
       "evidence_items": [
         {
           "source_id": "huggingface_daily_papers",
-          "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-          "url": "https://huggingface.co/papers/2611.34232",
-          "score": 0.498,
+          "title": "ShowNow: Fine-Grained Speculative Streaming for Responsive World Models",
+          "url": "https://huggingface.co/papers/2611.34693",
+          "score": 0.482,
           "trust_tier": "research"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
-          "url": "http://arxiv.org/abs/2611.34250v1",
-          "score": 0.468,
+          "source_id": "huggingface_daily_papers",
+          "title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
+          "url": "https://huggingface.co/papers/2611.31619",
+          "score": 0.48,
           "trust_tier": "research"
         }
       ],
@@ -43,99 +93,49 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-28T05:26:59+00:00",
-      "updatedAt": "2026-11-28T05:26:59+00:00",
-      "sortOrder": 0
-    },
-    {
-      "id": "text-to-image-solutions",
-      "title_ar": "حلول تحويل النص إلى صورة",
-      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة يفتح آفاقاً جديدة في مجالات الإبداع والتسويق. يمكن استغلال هذه النماذج لتلبية احتياجات السوق المتنوعة.",
-      "buyer_ar": "وكالات التسويق والإعلانات، شركات الإنتاج الإعلامي",
-      "sellable_product_ar": "خدمة تحويل النصوص إلى صور مخصصة",
-      "first_paid_test_ar": "تقديم خدمة تحويل نص واحد إلى صورة مجانية لتجربة المنتج",
-      "tools_ar": "نموذج تحويل النص إلى صورة، واجهة برمجة التطبيقات، منصة تسويق",
-      "capital_ar": "منخفض",
-      "evidence_ids": [
-        "huggingface_models:zkwr1081/Moss-image-animated-lora",
-        "huggingface_models:zkwr1081/Moss-image-psychedelic-lora",
-        "huggingface_models:zkwr1081/Moss-image-beauty-lora"
-      ],
-      "confidence": 0.75,
-      "source": "openai",
-      "signal_count": 3,
-      "avg_score": 0.47,
-      "evidence_items": [
-        {
-          "source_id": "huggingface_models",
-          "title": "zkwr1081/Moss-image-animated-lora — text-to-image",
-          "url": "https://huggingface.co/zkwr1081/Moss-image-animated-lora",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "zkwr1081/Moss-image-psychedelic-lora — text-to-image",
-          "url": "https://huggingface.co/zkwr1081/Moss-image-psychedelic-lora",
-          "score": 0.472,
-          "trust_tier": "official"
-        },
-        {
-          "source_id": "huggingface_models",
-          "title": "zkwr1081/Moss-image-beauty-lora — text-to-image",
-          "url": "https://huggingface.co/zkwr1081/Moss-image-beauty-lora",
-          "score": 0.472,
-          "trust_tier": "official"
-        }
-      ],
-      "tier": "free",
-      "status": "published",
-      "is_featured": true,
-      "is_new": true,
-      "version": 1,
-      "publishedAt": "2026-11-28T05:26:59+00:00",
-      "updatedAt": "2026-11-28T05:26:59+00:00",
+      "publishedAt": "2026-11-28T14:46:25+00:00",
+      "updatedAt": "2026-11-28T14:46:25+00:00",
       "sortOrder": 1
     },
     {
-      "id": "medical-ai-agents",
-      "title_ar": "تطوير وكلاء ذكاء اصطناعي في المجال الطبي",
-      "thesis_ar": "زيادة استخدام وكلاء الذكاء الاصطناعي في المجال الطبي يعكس الحاجة إلى حلول مبتكرة لتحسين الرعاية الصحية. يمكن تطوير أدوات جديدة لتحسين دقة وكفاءة هذه الوكلاء.",
-      "buyer_ar": "مستشفيات، عيادات، شركات التكنولوجيا الصحية",
-      "sellable_product_ar": "نظام وكيل طبي ذكي لتحسين تشخيص المرضى",
-      "first_paid_test_ar": "تقديم دراسة حالة مجانية لتحسين التشخيص باستخدام الوكيل الذكي",
-      "tools_ar": "نموذج لغة كبيرة، بيانات طبية، منصة تحليل البيانات",
-      "capital_ar": "متوسط",
+      "id": "text-to-image-models",
+      "title_ar": "تطوير نماذج تحويل النص إلى صورة",
+      "thesis_ar": "تزايد الطلب على نماذج تحويل النص إلى صورة في مجالات الإبداع والتسويق. يمكن استغلال هذه النماذج لتلبية احتياجات السوق المتزايدة.",
+      "buyer_ar": "وكالات التسويق والإعلانات، شركات التصميم",
+      "sellable_product_ar": "نموذج تحويل نص إلى صورة مخصص",
+      "first_paid_test_ar": "تقديم نموذج تجريبي لتحويل نص إلى صورة لمشروع تسويقي",
+      "tools_ar": "أدوات تطوير الذكاء الاصطناعي، مكتبات التعلم العميق، منصات اختبار",
+      "capital_ar": "منخفض",
       "evidence_ids": [
-        "arxiv_papers:2611.34250v1",
-        "huggingface_daily_papers:2611.34232",
-        "arxiv_papers:2611.34377v1"
+        "huggingface_models:12138haha/susukrea2",
+        "huggingface_models:Kinimoro/Geur_Don",
+        "huggingface_models:Kinimoro/Joh_Abi"
       ],
       "confidence": 0.7,
       "source": "openai",
       "signal_count": 3,
-      "avg_score": 0.48,
+      "avg_score": 0.49,
       "evidence_items": [
         {
-          "source_id": "huggingface_daily_papers",
-          "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-          "url": "https://huggingface.co/papers/2611.34232",
-          "score": 0.498,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "12138haha/susukrea2 — text-to-image",
+          "url": "https://huggingface.co/12138haha/susukrea2",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
-          "url": "http://arxiv.org/abs/2611.34250v1",
-          "score": 0.468,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Kinimoro/Geur_Don — text-to-image",
+          "url": "https://huggingface.co/Kinimoro/Geur_Don",
+          "score": 0.488,
+          "trust_tier": "official"
         },
         {
-          "source_id": "arxiv_papers",
-          "title": "SmartLens: Turning AI Agent Changes into Learning, Review, and Risk Signals in the IDE",
-          "url": "http://arxiv.org/abs/2611.34377v1",
-          "score": 0.465,
-          "trust_tier": "research"
+          "source_id": "huggingface_models",
+          "title": "Kinimoro/Joh_Abi — text-to-image",
+          "url": "https://huggingface.co/Kinimoro/Joh_Abi",
+          "score": 0.488,
+          "trust_tier": "official"
         }
       ],
       "tier": "free",
@@ -143,11 +143,11 @@
       "is_featured": true,
       "is_new": true,
       "version": 1,
-      "publishedAt": "2026-11-28T05:26:59+00:00",
-      "updatedAt": "2026-11-28T05:26:59+00:00",
+      "publishedAt": "2026-11-28T14:46:25+00:00",
+      "updatedAt": "2026-11-28T14:46:25+00:00",
       "sortOrder": 2
     }
   ],
-  "tiered_at": "2026-11-28T05:26:59+00:00",
+  "tiered_at": "2026-11-28T14:46:25+00:00",
   "free_preview_count": 3
 }
